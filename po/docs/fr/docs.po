@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-02-28 17:22+0100\n"
-"PO-Revision-Date: 2007-03-04 12:22+0100\n"
+"PO-Revision-Date: 2007-03-04 15:08+0100\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -183,7 +183,7 @@ msgstr "Documentation Technique:"
 # type: Bullet: '* '
 #: index.txt:51 index-user.txt:50
 msgid "link:makepkg.html[Creating new packages]"
-msgstr "link:makepkg.html[Création de nouveau paquets]"
+msgstr "link:makepkg.html[Création de nouveaux paquets]"
 
 # type: Bullet: '* '
 #: index.txt:53 index-devel.txt:16
@@ -326,7 +326,7 @@ msgid ""
 "door open, keys swinging from the lock and engine gently purring with\n"
 "a promise of power...\n"
 "________________________________________________________________________________\n"
-msgstr ""
+msgstr "\"Observer cette débauche de codes merveilleux étalés sous mes yeux fut une expérience bien plus puissante que de me contenter de savoir, d'un point de vue uniquement intellectuel, que toutes les portions existaient probablement déjà quelque part. C'est comme si je m'étais baladé au milieu de piles de pièces de rechange dépareillées pendant des années pour me retrouver face aux mêmes pièces, assemblées sous la forme d'une Ferrari rouge et rutilante, portière ouverte, les clefs se balançant sur le contact, et le moteur ronronnant des promesses de puissance...\""
 
 # type: Plain text
 #: user.txt:21 about.txt:19
@@ -336,7 +336,7 @@ msgid ""
 "answer a few questions which were asked in several interview with VMiklos, "
 "the founder of the project. You can reach the full list of articles that "
 "have been posted about Frugalware http://frugalware.org/media[here]."
-msgstr ""
+msgstr "L'optique en créant Frugalware était de vous aider à travailler plus simple et plus rapidement. Nous espérons que vous l'aimerez. Dans cette introduction, nous aimerions répondre à quelques questions qui ont été posées dans une interview avec VMiklos, le créateur du projet. Vous pouvez lire la liste complète des articles parlant de Frugalware http://frugalware.org/media[ici]."
 
 # type: Plain text
 #: user.txt:23
@@ -6710,7 +6710,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:2846
 msgid "== Creating new packages"
-msgstr ""
+msgstr "== Création de nouveaux paquets"
 
 # type: Plain text
 #: user.txt:2853 makepkg.txt:9
@@ -6719,13 +6719,14 @@ msgid ""
 "belong to some package. You can easily query which package does the "
 "specified file belong to. If you want to know which package contains "
 "'/etc/frugalware-release', you should use:"
-msgstr ""
+msgstr "Frugalware est composée de milliers de paquets. Chaque fichier de la distribution appartient à un paquet. Vous pouvez facilement vérifier à quel paquet un fichier spécifique appartient. Si vous souhaitez savoir quel paquet contient /etc/frugalware-release, vous devez saisir:"
 
 # type: Plain text
 #: user.txt:2854 makepkg.txt:10
 #, no-wrap
 msgid "----------------------------------------------------\n"
 msgstr ""
+"----------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:2857 makepkg.txt:13
@@ -6735,6 +6736,9 @@ msgid ""
 "/etc/frugalware-release is owned by frugalware 0.6rc1-1\n"
 "----------------------------------------------------\n"
 msgstr ""
+"$ pacman-g2 -Qo /etc/frugalware-release\n"
+"/etc/frugalware-release is owned by frugalware 0.6rc1-1\n"
+"----------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:2868 makepkg.txt:24
@@ -6758,7 +6762,7 @@ msgid ""
 "the binary directory of the repo. The sources of packages are a little bit "
 "more complex. Each package has a category, and each category and package has "
 "its own directory in the source dir."
-msgstr ""
+msgstr "Chaque dépôt à un répertoire source et un répertoire binaire. Les répertoires du dépôt frugalware sont source/ and frugalware-$arch/. Les paquets binaires sont dans les répertoires binaires des dépôts. Les sources des paquets sont un peu plus complexes. Chaque paquet à une catégorie, et chaque paquet et chaque catégorie à son propre répertoire dans le répertoire source."
 
 # type: Plain text
 #: user.txt:2879 makepkg.txt:35
@@ -6769,6 +6773,9 @@ msgid ""
 "'frugalware-<arch>/cabextract-<version>-<release>-<arch>.fpm' and its\n"
 " source is placed in the source/apps/cabextract dir.\n"
 msgstr ""
+"Voyons un exemple. Vous cherchez le paquet cabextract.\n"
+"Le paquet binaire s'appelle \n"
+"`frugalware-<arch>/cabextract-<version>-<release>-<arch>.fpm' et ses ses sources se trouvent dans le répertoire source/apps/cabextract.\n"
 
 # type: Plain text
 #: user.txt:2887 makepkg.txt:43
@@ -6806,17 +6813,20 @@ msgid ""
 "sha1sums=(`lynx -dump http://foo.com/bar.sha1`)\n"
 "-----------------------------------------------\n"
 msgstr ""
+"sha1sums=(`lynx -dump http://foo.com/bar.sha1`)\n"
+"-----------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:2902 makepkg.txt:58
 msgid "but you should use:"
-msgstr ""
+msgstr "mais vous devez utiliser:"
 
 # type: Plain text
 #: user.txt:2903 makepkg.txt:59
 #, no-wrap
 msgid "-----------------------------------------------------\n"
 msgstr ""
+"-----------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:2906 makepkg.txt:62
@@ -6826,6 +6836,9 @@ msgid ""
 "sha1sums=('094e3afb2fe8dfe82f63731cdcd3b999f4856cff')\n"
 "-----------------------------------------------------\n"
 msgstr ""
+"# http://foo.com/bar.sha1\n"
+"sha1sums=('094e3afb2fe8dfe82f63731cdcd3b999f4856cff')\n"
+"-----------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:2910 makepkg.txt:66
@@ -6845,7 +6858,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:2916
 msgid "=== Recompiling packages"
-msgstr ""
+msgstr "=== Recompiler des paquets"
 
 # type: Plain text
 #: user.txt:2923 makepkg.txt:79
@@ -6856,7 +6869,7 @@ msgid ""
 "as root.  Or, as a regular user, copy edit '~/.repoman.conf', and add the "
 "fst_root dir in it (by default, it would download the files to /var/fst, and "
 "it is not writable as a user, of course) and issue `repoman upd`."
-msgstr ""
+msgstr "Avant de créer un nouveau paquet, nous allons en recompiler un existant dans cet howto. C'est très simple. Dans notre exemple nous allons recompiler le paquet mplayer. Tout d'abord, vous devez télécharger l'arborescence de sources (FST) courante : `$ repoman upd', en tant que root. Ou, en tant qu'utilisateur classique, copier /etc/repoman.conf vers ~/.repoman.conf, changer le répertoire fst_root pour le faire pointer dessus (par défaut, cela téléchargerait les fichiers dans /var/fst, et ce l'utilisateur n'y a pas les droits d'écriture, évidement) et exécuter repoman upd."
 
 # type: Plain text
 #: user.txt:2928 makepkg.txt:84
@@ -6865,12 +6878,12 @@ msgid ""
 "`fst` user exists on your system. Check your '/etc/passwd' file. If not, "
 "then please check your '/etc/passwd.pacnew' file, that contains the relevant "
 "entry, just copy that line to '/etc/passwd'."
-msgstr ""
+msgstr "Avant de construire l'environnement chroot, vous devriez vous assurer que l'utilisateur fst existe sur système. Vérifiez votre fichier /etc/passwd. Si l'utilisateur n'existe pas, alors veuillez vérifier dans votre fichier /etc/passwd.pacnew, il contient l'entrée appropriée, copier simplement cette ligne dans le fichier /etc/passwd."
 
 # type: Plain text
 #: user.txt:2930 makepkg.txt:86
 msgid "Now that you have the fst user, continue with"
-msgstr ""
+msgstr "Maintenant que vous avez l'utilisateur fst, continuer avec"
 
 # type: Plain text
 #: user.txt:2934 makepkg.txt:90
@@ -6880,6 +6893,9 @@ msgid ""
 "$ sudo makepkg\n"
 "-----------------------------------\n"
 msgstr ""
+"$ cd $fst_root/source/xapps/mplayer\n"
+"$ sudo makepkg\n"
+"-----------------------------------\n"
 
 # type: Plain text
 #: user.txt:2943 makepkg.txt:99
@@ -6898,7 +6914,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:2945 makepkg.txt:101
 msgid "`%devels ALL=NOPASSWD:/usr/bin/makepkg`"
-msgstr ""
+msgstr "`%devels ALL=NOPASSWD:/usr/bin/makepkg`"
 
 # type: Plain text
 #: user.txt:2950 makepkg.txt:106
@@ -6907,24 +6923,24 @@ msgid ""
 "be built in a chroot at a time, so maybe you'll want to specify a separate "
 "chroot for each user. In order to do this, set the $CHROOTDIR variable in "
 "your '/etc/makepkg.conf' from:"
-msgstr ""
+msgstr "Le chroot sera par défaut situé dans /var/chroot. Un seul paquet peut être construit en chroot à la fois, aussi vous voudrez peut être spécifier un chroot spécifique pour chaque utilisateur. Pour ce faire, modifiez la variable $CHROOTDIR dans votre /etc/makepkg.conf de:"
 
 # type: Plain text
 #: user.txt:2952 makepkg.txt:108
 msgid "`export CHROOTDIR=\"/var/chroot\"`"
-msgstr ""
+msgstr "`export CHROOTDIR=\"/var/chroot\"`"
 
 # type: Plain text
 #: user.txt:2954 makepkg.txt:110
 msgid "to"
-msgstr ""
+msgstr "à"
 
 # type: Plain text
 #: user.txt:2956 makepkg.txt:112
 msgid ""
 "`export CHROOTDIR=\"/var/chroot.`echo $HOME|sed "
 "\\'s|.\\*/\\(.*\\)$|\\1|'`\"`"
-msgstr ""
+msgstr "`export CHROOTDIR=\"/var/chroot.`echo $HOME|sed \\'s|.\\*/\\(.*\\)$|\\1|'`\"`"
 
 # type: Plain text
 #: user.txt:2959 makepkg.txt:115
@@ -6936,29 +6952,29 @@ msgstr ""
 # type: Plain text
 #: user.txt:2961 makepkg.txt:117
 msgid "(See man makepkg for more info about the benefits of building in a chroot)."
-msgstr ""
+msgstr "(Voir man makepkg pour plus d'infos sur les bénéfices de construction en chroot)"
 
 # type: Plain text
 #: user.txt:2963 makepkg.txt:119
 msgid "In the next section we will see an example for a simple FrugalBuild script."
-msgstr ""
+msgstr "Dans la section suivante, nous allons voir un exemple de script FrugalBuild simple."
 
 # type: Plain text
 #: user.txt:2965
 msgid "=== A simple example"
-msgstr ""
+msgstr "=== Un exemple simple"
 
 # type: Plain text
 #: user.txt:2967 makepkg.txt:123
 msgid ""
 "Let's see a simple example, the FrugalBuild script of the cabextract "
 "package."
-msgstr ""
+msgstr "Voyons un exemple simple, le script FrugalBuild du paquet cabextract."
 
 # type: Plain text
 #: user.txt:2971 makepkg.txt:127
 msgid "# Compiling Time: 0.06 SBU # Maintainer: VMiklos <vmiklos@frugalware.org>"
-msgstr ""
+msgstr "# Compiling Time: 0.06 SBU # Maintainer: VMiklos <vmiklos@frugalware.org>"
 
 # type: Plain text
 #: user.txt:2984 makepkg.txt:140
@@ -6978,6 +6994,16 @@ msgid ""
 "source=(http://www.kyz.uklinux.net/downloads/$pkgname-$pkgver.tar.gz)\n"
 "sha1sums=('871b3db4bc2629eb5726659c147aecea1af6a6d0')\n"
 msgstr ""
+"pkgname=cabextract\n"
+"pkgver=1.2\n"
+"pkgrel=1\n"
+"pkgdesc=\"a program to extract Microsoft Cabinet files\"\n"
+"url=\"http://www.kyz.uklinux.net/cabextract.php\"depends=('glibc')\n"
+"groups=('apps')\n"
+"archs=('i686' 'x86_64')\n"
+"up2date=\"lynx -dump http://www.kyz.uklinux.net/cabextract.php |grep 'cabextract \\\n"
+"\tsource code'|tr -s ' '|cut -d ' ' -f 6\"source=(http://www.kyz.uklinux.net/downloads/$pkgname-$pkgver.tar.gz)\n"
+"sha1sums=('871b3db4bc2629eb5726659c147aecea1af6a6d0')\n"
 
 # type: Plain text
 #: user.txt:2986 makepkg.txt:142
@@ -6986,16 +7012,18 @@ msgid ""
 "# optimization OK\n"
 "-------------------------------------------------------------------------------\n"
 msgstr ""
+"# optimization OK\n"
+"-------------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:2989 makepkg.txt:145
 msgid "And here comes the description for each line:"
-msgstr ""
+msgstr "Voici une description de chaque ligne:"
 
 # type: Plain text
 #: user.txt:2991 makepkg.txt:147
 msgid "`# Compiling Time: 0.06 SBU`"
-msgstr ""
+msgstr "`# Compiling Time: 0.06 SBU`"
 
 # type: Plain text
 #: user.txt:2995 makepkg.txt:151
@@ -7003,7 +7031,7 @@ msgid ""
 "You should write here how much time did it take to build the package.  Of "
 "course, it depends on your hardware, so we use SBUs instead of minutes as a "
 "unit."
-msgstr ""
+msgstr "Vous devriez inscrire ici le temps qu'à prit la génération. Evidement, cela dépend de votre matériel, aussi nous utilisons des SBUs au lieu des minutes comme unité."
 
 # type: Plain text
 #: user.txt:3000 makepkg.txt:156
@@ -7012,12 +7040,12 @@ msgid ""
 "takes on your machine. By default makepkg will print out how many seconds "
 "the build took. After you built binutils, you should update your "
 "'/etc/makepkg.conf':"
-msgstr ""
+msgstr "SBU signifie Static Binutils Unit, ce qui est le temps que repoman merge binutils prend sur votre machine. Par défaut makepkg va afficher combien de secondes la construction à prise. Après avoir construit binutils, vous devriez mettre à jour votre /etc/makepkg.conf:"
 
 # type: Plain text
 #: user.txt:3002 makepkg.txt:158
 msgid "`SBU=\"257\"`"
-msgstr ""
+msgstr "`SBU=\"257\"`"
 
 # type: Plain text
 #: user.txt:3006 makepkg.txt:162
@@ -7025,12 +7053,12 @@ msgid ""
 "The line above means compiling binutils on your machine took 257 seconds.  "
 "From this point, makepkg will print out SBUs instead of seconds after "
 "successful builds, and this SBU value will be equal on anyone's machine."
-msgstr ""
+msgstr "La ligne ci dessus indique que la compilation de binutils sur votre machine a pris 257 seconds. A partir de là, makepkg va afficher des SBUs au lieu de seconds après des constructions de paquets réussies, et cette valeur SBU sera la même sur n'importe quelle machine."
 
 # type: Plain text
 #: user.txt:3008 makepkg.txt:164
 msgid "`# Maintainer: VMiklos <vmiklos@frugalware.org>`"
-msgstr ""
+msgstr "`# Maintainer: VMiklos <vmiklos@frugalware.org>`"
 
 # type: Plain text
 #: user.txt:3016 makepkg.txt:172
@@ -7047,31 +7075,31 @@ msgstr ""
 # type: Plain text
 #: user.txt:3018 makepkg.txt:174
 msgid "`pkgname=cabextract`"
-msgstr ""
+msgstr "`pkgname=cabextract`"
 
 # type: Plain text
 #: user.txt:3021 makepkg.txt:177
 msgid ""
 "This will be the name of the package. It's allowed to include numbers, "
 "hyphens (-), etc., and should be lowercase."
-msgstr ""
+msgstr "Ce sera le nom du paquet. On peut inscrire des chiffres, tirets (-), etc., et cela doit être en minuscules."
 
 # type: Plain text
 #: user.txt:3023 makepkg.txt:179
 msgid "`pkgver=1.2`"
-msgstr ""
+msgstr "`pkgver=1.2`"
 
 # type: Plain text
 #: user.txt:3026 makepkg.txt:182
 msgid ""
 "The package's version. Hyphens are not allowed, so a 1.0-6111 will be "
 "usually converted to 1.0_6111."
-msgstr ""
+msgstr "La version du paquet. Les tirets ne sont pas autorisés, aussi 1.0-6111 sera en général converti en 1.0_6111."
 
 # type: Plain text
 #: user.txt:3028 makepkg.txt:184
 msgid "`pkgrel=1`"
-msgstr ""
+msgstr "`pkgrel=1`"
 
 # type: Plain text
 #: user.txt:3033 makepkg.txt:189
@@ -7080,12 +7108,12 @@ msgid ""
 "package, you should increase this number. If you upgrade to a newer version, "
 "don't forget to reset this number back to 1. If you design a new package, "
 "set this to 1."
-msgstr ""
+msgstr "Le numéro de release spécifique aux changement pour Frugalware. Si vous recompilez un paquet, vous devriez augmenter ce numéro. Si vous mettez à jour vers une nouvelle version, n'oubliez pas de réinitialiser ce chiffre à 1. Si vous créez un nouveau paquet, affectez cette valeur à 1."
 
 # type: Plain text
 #: user.txt:3035 makepkg.txt:191
 msgid "`pkgdesc=\"a program to extract Microsoft Cabinet files\"`"
-msgstr ""
+msgstr "`pkgdesc=\"a program to extract Microsoft Cabinet files\"`"
 
 # type: Plain text
 #: user.txt:3038 makepkg.txt:194
@@ -7094,22 +7122,22 @@ msgid ""
 "A short one-line description for the package. Usually taken from the "
 "project's\n"
 " homepage or manpage.\n"
-msgstr ""
+msgstr "Une courte description du paquet. Généralement issue du site ou de la documentation du programme."
 
 # type: Plain text
 #: user.txt:3040 makepkg.txt:196
 msgid "`url=\"http://www.kyz.uklinux.net/cabextract.php\"`"
-msgstr ""
+msgstr "`url=\"http://www.kyz.uklinux.net/cabextract.php\"`"
 
 # type: Plain text
 #: user.txt:3042 makepkg.txt:198
 msgid "The website of the project."
-msgstr ""
+msgstr "Le site web du projet."
 
 # type: Plain text
 #: user.txt:3044 makepkg.txt:200
 msgid "`depends=(\\'glibc\\')`"
-msgstr ""
+msgstr "`depends=(\\'glibc\\')`"
 
 # type: Plain text
 #: user.txt:3051 makepkg.txt:207
@@ -7119,12 +7147,12 @@ msgid ""
 "should run chkdep -p foo.fpm that will suggest the dependencies, but handle "
 "that information with caution! Reading the README, INSTALL and configure.ac "
 "files is also a good idea to find out dependencies."
-msgstr ""
+msgstr "La liste de dépendance du paquet, définie dans un tableau bash. Habituellement vous devriez compiler un paquet au moins 2 fois: une avec depends=(), puis executer chkdep -p foo.fpm qui suggerera les dépendances, mais prenez cette information avec des pincettes! Lire les fichier README, INSTALL et configure.ac est également une bonne idée pour déterminer les dépendances."
 
 # type: Plain text
 #: user.txt:3053 makepkg.txt:209
 msgid "`groups=(\\'apps\\')`"
-msgstr ""
+msgstr "`groups=(\\'apps\\')`"
 
 # type: Plain text
 #: user.txt:3059 makepkg.txt:215
@@ -7134,12 +7162,12 @@ msgid ""
 "multimedia or network, if it depends on X (or on a pkg depending on X, of "
 "course). Packages in the extra repository get the '-extra' suffix to the "
 "group name."
-msgstr ""
+msgstr "Il est nécessaire de savoir à catégorie le paquet est rattaché. La chose la plus importante: ne placez pas votre paquet dans apps, base, devel, lib, multimedia or network, s'il dépend de X (ou d'un paquet dépendant de X, évidement). Les paquets dans le dépôt extra reçoivent le suffixe '-extra' dans le nom du groupe."
 
 # type: Plain text
 #: user.txt:3061 makepkg.txt:217
 msgid "`archs=(\\'i686\\' \\'x86_64\\')`"
-msgstr ""
+msgstr "`archs=(\\'i686\\' \\'x86_64\\')`"
 
 # type: Plain text
 #: user.txt:3068 makepkg.txt:224
@@ -7150,13 +7178,14 @@ msgid ""
 "given arch, don't include that in archs()! For example, no matter if the "
 "package could be compiled in x86_64, if you haven't compiled it ourself, "
 "don't include it."
-msgstr ""
+msgstr "Ce tableau défini pour quelles architectures le paquet est disponible. Si ce n'est pas disponible, cela implique que gensync va l'omettre pendant la génération de la base de données des paquets. Si vous n'êtes pas à même de fournir un paquet pour une architecture donnée, ne l'incluez pas dans archs()! Par exemple, peut importe si le paquet peut être compilé pour x86_64, si vous ne l'avez pas compilé vous même, ne l'incluez pas."
 
 # type: Plain text
 #: user.txt:3069 user.txt:3084 makepkg.txt:225 makepkg.txt:240
 #, no-wrap
 msgid "---------------------------------------------------------------------------------\n"
 msgstr ""
+"---------------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:3072 makepkg.txt:228
@@ -7167,6 +7196,9 @@ msgid ""
 "\tsource code' |sed 's/.*-\\(.*\\).t.*/\\1/'\"\n"
 "---------------------------------------------------------------------------------\n"
 msgstr ""
+"up2date=\"lynx -dump http://www.kyz.uklinux.net/cabextract.php |grep 'cabextract \\\n"
+"n\tsource code' |sed 's/.*-\\(.*\\).t.*/\\1/'\"\n"
+"---------------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:3083 makepkg.txt:239
@@ -7192,11 +7224,14 @@ msgid ""
 "\t'cabextractsource code'|tr -s ' '|cut -d ' ' -f 6\"\n"
 "---------------------------------------------------------------------------------\n"
 msgstr ""
+"up2date=\"lynx -dump http://www.kyz.uklinux.net/cabextract.php |grep \\\n"
+"\t'cabextractsource code'|tr -s ' '|cut -d ' ' -f 6\"\n"
+"---------------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:3090 makepkg.txt:246
 msgid "`source=(http://www.kyz.uklinux.net/downloads/$pkgname-$pkgver.tar.gz)`"
-msgstr ""
+msgstr "`source=(http://www.kyz.uklinux.net/downloads/$pkgname-$pkgver.tar.gz)`"
 
 # type: Plain text
 #: user.txt:3102 makepkg.txt:258
@@ -7218,7 +7253,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:3104 makepkg.txt:260
 msgid "`sha1sums=(\\'094e3afb2fe8dfe82f63731cdcd3b999f4856cff\\')`"
-msgstr ""
+msgstr "`sha1sums=(\\'094e3afb2fe8dfe82f63731cdcd3b999f4856cff\\')`"
 
 # type: Plain text
 #: user.txt:3109 makepkg.txt:265
@@ -7230,7 +7265,7 @@ msgid ""
 " original sha1sums from the projects website, if possible. It's a good "
 "idea\n"
 " to leave a comment above this line about where to find these sha1sums.\n"
-msgstr ""
+msgstr "Un autre tableau bash pour éviter de compiler depuis de mauvaises sources. Évidement c'est sans intérêt si vous lancez simplement sha1sum foo.tar.gz après le téléchargement. Essayez de trouvez les sommes sha1 sur le site du projet si possible. C'est également une bonne idée de laisser un commentaire sur cette ligne pour indiquer où on peut trouver ces sommes."
 
 # type: Plain text
 #: user.txt:3114 makepkg.txt:270
@@ -7246,6 +7281,7 @@ msgstr ""
 #, no-wrap
 msgid "------------------------------------------------------------\n"
 msgstr ""
+"------------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:3124 makepkg.txt:280
@@ -7772,7 +7808,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:3391
 msgid "== GNU Free Documentation License"
-msgstr ""
+msgstr "== GNU Free Documentation License"
 
 # type: Plain text
 #: user.txt:3393 license.txt:4
