@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-02-28 17:22+0100\n"
-"PO-Revision-Date: 2007-03-13 10:26+0100\n"
-"Last-Translator: Daniel <devil505linux@gmail.com>\n"
+"PO-Revision-Date: 2007-03-15 23:29+0100\n"
+"Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2687,31 +2687,31 @@ msgid ""
 ". Description of Problem - never say \"does not work\", quote the error "
 "message . Steps to reproduce the problem . Actual Results . Expected Results "
 ". How often does this happen? . Additional Information"
-msgstr ""
+msgstr ". Description du problème - ne dit jamais \"ça marche pas\", copier le message d'erreur . Etapes pour reproduire le problème . Les résultats obtenus . Les résultats escomptés . Avec quelle fréquence le problème est apparu? . Information complémentaires"
 
 # type: Plain text
 #: user.txt:1061 bugs.txt:41
 msgid ""
 "The default arch is i686 and the default version is -current. If these are "
 "not true, don't forget to change them!"
-msgstr ""
+msgstr "L'architecture par défaut est i686 et la version par défaut est -current. Si ce n'est pas le cas,  n'oubliez pas de les changer!"
 
 # type: Plain text
 #: user.txt:1064 bugs.txt:44
 msgid ""
 "If you report a -current installer bug, then maybe -current is not enough, "
 "please specify the snapshot date."
-msgstr ""
+msgstr "Si vous rapportez un problème avec l'installateur -current, il est possible que la version -current ne soit pas une information suffisante, spécifié aussi la date de mise à jour."
 
 # type: Plain text
 #: user.txt:1066 bugs.txt:46
 msgid "If you found a security bug, then use the [SEC] prefix in the task name."
-msgstr ""
+msgstr "Si vous avez trouvé une faille de sécurité, veuillez préfixé le nom de la tache avec [SEC]."
 
 # type: Plain text
 #: user.txt:1068
 msgid "=== Feature Requests"
-msgstr ""
+msgstr "=== Requêtes de fonctionnalités"
 
 # type: Plain text
 #: user.txt:1072 bugs.txt:52
@@ -2719,7 +2719,7 @@ msgid ""
 "Please don't request more than one package in a feature request. Open a task "
 "for every package. (Of course you don't have to open task for dependencies "
 "if they are also missing from out packages.)"
-msgstr ""
+msgstr "Vous etes prié de ne pas demander plus d'un seul paquets par requêtes. Ouvrer une tache par paquet. (Evidement vous n'avez pas à ouvrir une tache pour chacune des dépendances si elle sont aussi manquantes pour le paquet demandé.)"
 
 # type: Plain text
 #: user.txt:1078 bugs.txt:58
@@ -2731,6 +2731,10 @@ msgid ""
 ". Optionally a short note about why do you think this package would be\n"
 "  interesting for others, too\n"
 msgstr ""
+"Si vous demandez la création d'un paquet, veuillez ajouter:\n"
+". Le nom de l'application (oui, \"plus de jeux\" n'est pas assez!)\n"
+". L'URL où l'application peut être trouvée\n"
+". Optionnellement une courte note indiquant pourquoi vous pensez que l'application peut aussi être intéressante pour les autres utilisateurs\n"
 
 # type: Plain text
 #: user.txt:1082 bugs.txt:62
@@ -2738,7 +2742,7 @@ msgid ""
 "If you have a FrugalBuild for the package already, then after opening the "
 "task, upload it as an attachment. In this case, please prefix your task name "
 "with [FB], because this way it'll be reviewed sooner."
-msgstr ""
+msgstr "Si vous avez déjà créé un FrugalBuild pour un paquet, alors apres avoir ouvert une tache, déposez la en tant que pièce jointe. Dans ce cas la, veuillez préfixé le nom de votre tache par [FB], pour que celui si soit contrôlé plus rapidement."
 
 # type: Plain text
 #: user.txt:1084
@@ -2750,12 +2754,12 @@ msgstr "=== Problèmes avec pacman-g2"
 msgid ""
 "If you get a crash from our package manager then we need a backtrace from "
 "gdb.  Here are the instructions to get a backtrace:"
-msgstr ""
+msgstr "Si notre gestionnaire de paquet venais à se planté, nous aurons alors besoin d'un trace de la pile d'exécution fournis par gdb.  Voici les instructions afin d'obtenir la pile d'exécution:"
 
 # type: Bullet: '- '
 #: user.txt:1091 bugs.txt:71
 msgid "Find the command line that triggers the crash. For example: pacman-g2 -Sy"
-msgstr ""
+msgstr "Cherchez la ligne de commande qui déclenche le plantage. Par example: pacman-g2 -Sy"
 
 # type: Plain text
 #: user.txt:1091 bugs.txt:71
@@ -2764,6 +2768,8 @@ msgid ""
 "- Get the pacman-g2 darcs repo and compile it with debug symbols enabled:\n"
 "--------------------------------------------------------------\n"
 msgstr ""
+"- Télécharger le dépôt darcs de pacman-g2 et compiler le en activant les options de déverminage:\n"
+"--------------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:1097 bugs.txt:77
@@ -2814,6 +2820,8 @@ msgid ""
 "example:\n"
 "----------------------------------------------------------------\n"
 msgstr ""
+"- Quand pacman-g2 se plante, taper 'bt' pour obtenir la pile. Voici un exemple: \n"
+"----------------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:1113 bugs.txt:93
@@ -2828,11 +2836,19 @@ msgid ""
 "(gdb)\n"
 "----------------------------------------------------------------\n"
 msgstr ""
+"Program received signal SIGSEGV, Segmentation fault.\n"
+"0x0805035e in pacman_sync (targets=0x0) at sync.c:354\n"
+"354             *p = 1;\n"
+"(gdb) bt\n"
+"#0  0x0805035e in pacman_sync (targets=0x0) at sync.c:354\n"
+"#1  0x08054594 in main (argc=2, argv=0xbfee1844) at pacman.c:609\n"
+"(gdb)\n"
+"----------------------------------------------------------------\n"
 
 # type: Bullet: '- '
 #: user.txt:1115 bugs.txt:95
 msgid "Attach the output of 'bt' to your bugreport."
-msgstr ""
+msgstr "Joindre ce que 'bt' à sorti a votre rapport de problème."
 
 # type: Plain text
 #: user.txt:1117
@@ -2865,18 +2881,19 @@ msgstr "=== Batterie"
 msgid ""
 "Notebook users are usually interested in the state of their battery. Usually "
 "the following steps are required to enable this functionality:"
-msgstr ""
+msgstr "Les utilisateurs de portables sont habituellement intéressés par l'état de charge de leurs batteries. Habituellement les étapes suivantes sont nécessaire pour activer cette fonctionnalité:"
 
 # type: Plain text
 #: user.txt:1132 mobile.txt:9
 msgid "Add the following two lines to your '/etc/sysconfig/modules':"
-msgstr ""
+msgstr "Ajouter les deux lignes suivante au fichier '/etc/sysconfig/modules':"
 
 # type: Plain text
 #: user.txt:1133 mobile.txt:10
 #, no-wrap
 msgid "-------\n"
 msgstr ""
+"-------\n"
 
 # type: Plain text
 #: user.txt:1136 mobile.txt:13
@@ -2886,27 +2903,31 @@ msgid ""
 "ac\n"
 "-------\n"
 msgstr ""
+"battery\n"
+"ac\n"
+"-------\n"
 
 # type: Plain text
 #: user.txt:1139 mobile.txt:16
 msgid "The next task is to enable the acpid service:"
-msgstr ""
+msgstr "L'étape suivante est d'activer le service acpid:"
 
 # type: Plain text
 #: user.txt:1141 mobile.txt:18
 msgid "`service acpid add`"
-msgstr ""
+msgstr "`service acpid add`"
 
 # type: Plain text
 #: user.txt:1143 mobile.txt:20
 msgid "Then the easiest way is to reboot, or if you don't want do do so:"
-msgstr ""
+msgstr "Puis la méthode la plus simple est de redémarrer, ou si vous ne voulez pas faire ainsi:"
 
 # type: Plain text
 #: user.txt:1144 user.txt:1786 mobile.txt:21 packages.txt:579
 #, no-wrap
 msgid "--------------------\n"
 msgstr ""
+"--------------------\n"
 
 # type: Plain text
 #: user.txt:1152 mobile.txt:29
@@ -2921,6 +2942,14 @@ msgid ""
 "service hald start\n"
 "--------------------\n"
 msgstr ""
+"modprobe battery\n"
+"modprobe ac\n"
+"service hald stop\n"
+"service dbus stop\n"
+"service acpid start\n"
+"service dbus start\n"
+"service hald start\n"
+"--------------------\n"
 
 # type: Plain text
 #: user.txt:1156 mobile.txt:33
@@ -2946,13 +2975,14 @@ msgstr ""
 # type: Plain text
 #: user.txt:1165 mobile.txt:42
 msgid "From kernel/suspend.c:"
-msgstr ""
+msgstr "Extrait de kernel/suspend.c:"
 
 # type: Plain text
 #: user.txt:1166 user.txt:2742 mobile.txt:43 irc-rules.txt:36
 #, no-wrap
 msgid "---------------------------------------------------------------------------\n"
 msgstr ""
+"---------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:1186 mobile.txt:63
@@ -2980,6 +3010,27 @@ msgid ""
 "* (*) suspend/resume support is needed to make it safe.\n"
 "---------------------------------------------------------------------------\n"
 msgstr ""
+"* BIG FAT WARNING\n"
+"*********************************************************\n"
+"*\n"
+"* If you have unsupported (*) devices using DMA...\n"
+"*                              ...say goodbye to your data.\n"
+"*\n"
+"* If you touch anything on disk between suspend and resume... \n"
+"*                              ...kiss your data goodbye.\n"
+"*\n"
+"* If your disk driver does not support suspend... (IDE does)\n"
+"*                              ...you'd better find out how to get along\n"
+"*                                 without your data.\n"
+"*\n"
+"* If you change kernel command line between suspend and resume...\n"
+"*                              ...prepare for nasty fsck or worse.\n"
+"*\n"
+"* If you change your hardware while system is suspended...\n"
+"*                              ...well, it was not good idea.\n"
+"*\n"
+"* (*) suspend/resume support is needed to make it safe.\n"
+"---------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:1189 mobile.txt:66
@@ -3002,7 +3053,7 @@ msgstr "`kernel (hd0,2)/boot/vmlinuz ro root=/dev/hda3 quiet vga=788`"
 # type: Plain text
 #: user.txt:1197 mobile.txt:74
 msgid "The new line:"
-msgstr ""
+msgstr "La nouvelle ligne:"
 
 # type: Plain text
 #: user.txt:1199 mobile.txt:76
@@ -3016,7 +3067,7 @@ msgstr "`kernel (hd0,2)/boot/vmlinuz ro root=/dev/hda3 quiet vga=788 resume=/dev
 msgid ""
 "After the above are done, you must reboot. The hibernation can be started "
 "with:"
-msgstr ""
+msgstr "Après que ce qui précède a été fait, vous devez redémarrer. L'hibernation peut être démarré avec:"
 
 # type: Plain text
 #: user.txt:1203 mobile.txt:80
