@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-02-28 17:22+0100\n"
-"PO-Revision-Date: 2007-03-12 16:53+0100\n"
+"PO-Revision-Date: 2007-03-13 10:26+0100\n"
 "Last-Translator: Daniel <devil505linux@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -410,7 +410,7 @@ msgid ""
 "are available under the GPL license, too. For more info about the license of "
 "the packages included in Frugalware, refer to the /usr/share/doc/*/COPYING "
 "files.''"
-msgstr ""
+msgstr "``La licence de Frugalware s'établit elle-même sur la licence des scripts utilisés pour la conception de Frugalware. Cette source est disponible sous licence GPL http://darcs.frugalware.org[ici]. Les scripts init originaux de Frugalware furent écris pas Patrick J. Volkerding, créateur de la distribution linux Slackware. Nous rendons libres nos additifs, mais le code de Patrick J. Volkerding est encore sous licence BSD._ _Frugalware a aussi d'autres projets, comme notre gestionnaire de paquets pacman-g2, l'installateur de Frugalware. Ils sont disponibles également sous licence GPL. Pour plus d'information sur les licences de paquets inclus dans Frugalware, repotez-vous au fichiers /usr/share/doc/*/COPYING.\""
 
 # type: Plain text
 #: user.txt:56 about.txt:54
@@ -442,7 +442,7 @@ msgid ""
 "necessary dependencies directly from one of our ftp servers, you should "
 "issue `pacman-g2 -S foo`. For more information, refer to the pacman-g2 man "
 "page.''"
-msgstr ""
+msgstr "``Nous n'avons aucun programme autonome pour la mise à jour des paquets car pacman-g2 s'occupe déjà de cette tâche. Pour mettre à jour votre liste de paquets, faites `pacman-g2 -Sy`, et pour mettre à jour vos paquets en accord avec la liste des paquets qui vient d'être mise à jour, faites `pacman-g2 -Su`. Pour installer le paquet `foo` avec les dépendances nécéssaires depuis l'un de nos serveurs ftp, vous devez utiliser `pacman-g2 -S foo`. Pour plus d'information, reférez-vous au pages pacman-g2 man.\""
 
 # type: Plain text
 #: user.txt:73 about.txt:71
@@ -498,7 +498,7 @@ msgid ""
 "currently unsupported program. Then open feature requests in the "
 "http://bugs.frugalware.org[Bug Tracking System] and attach your "
 "patches. From this point everything will come naturally to you :)''"
-msgstr ""
+msgstr "``Soyez impliquez ! :) Télécharger le FST (Arbre des sources de Frugalware) en utilisant la commande `repoman upd`, qui est disponible avec le paquet pacman-tools. Pour commencez à jouer avec les scripts Frugalbuilds, pour voir la structure, referez-vous au repertoire `/docs/skel`. Essayez de les améliorer, ou écrivez en un nouveau pour un programme non supporté. Puis ouvrez une demande \"feature requests\" sur le ttp://bugs.frugalware.org[Bug Tracking System] et attaché vos patches à cette demande. A partir de là, tout viendra naturellement à vous :)\""
 
 # type: Plain text
 #: user.txt:101 about.txt:99
@@ -1493,7 +1493,7 @@ msgstr "`pacman-g2 -Qs perl`"
 # type: Plain text
 #: user.txt:510 pacman.txt:63
 msgid "Shows every installed packages whose name contains the string perl."
-msgstr ""
+msgstr "Affiche chaque paquets installés dont le nom contient l'espression perl."
 
 # type: Plain text
 #: user.txt:514 pacman.txt:67
@@ -1981,7 +1981,7 @@ msgstr "`su -c \\'service alsa load\\'`"
 # type: Plain text
 #: user.txt:728 user.txt:2410 user.txt:2557 user.txt:2829 sound.txt:31 packages.txt:1203 packages.txt:1350 gpg.txt:12
 msgid "command."
-msgstr ""
+msgstr "commande."
 
 # type: Plain text
 #: user.txt:730
@@ -2072,7 +2072,7 @@ msgid ""
 "the proper printer driver (hpijs for HP printers, splix for Samsung, "
 "gutenprint for Cannon, etc).  After installing do not forget to restart "
 "cups: `su -c \\'service cups restart\\'`"
-msgstr ""
+msgstr "Si la marque ou modèle de votre imprimante n'est pas listée dans le, vous devez vérifier sur http://openprinting.org/printer_list.cgi[http://openprinting.org/printer_list.cgi] si elle est reconnue sur Linux ou pas. Habituellement il suffit d'installer le bon pilote (hpijs pour les imprimantes HP, splix pour les Samsung, gutenprint pour les Canon, etc)._ _Après l'installation du pilote n'oubliez pas de redémarrer cups: `su -c \\'service cups restart\\'`"
 
 # type: Plain text
 #: user.txt:776 printing.txt:48
@@ -2105,7 +2105,7 @@ msgstr "Sauver le fichier PPD dans le répertoire /usr/share/cups/model/. Le fic
 msgid ""
 "If you do not want to search ppd, try to install foomatic-filters-ppds "
 "package. It has a bunch of ppd files for various printers."
-msgstr ""
+msgstr "Si vous ne voulez pas recherche le fichier ppd, essayez d'installer le paquet foomatic-filters-ppds. Ce dernier contient un lot de fichiers ppd pour diverses imprimantes."
 
 # type: Plain text
 #: user.txt:792 printing.txt:64
@@ -2236,7 +2236,7 @@ msgid ""
 "manager users there is `ivman` for automounting, but do not expect as fine "
 "work as in KDE, Gnome, XFCE4.  See also the automounting part of the "
 "documentation."
-msgstr ""
+msgstr "Si vous utilisez KDE, Gnome ou XFCE4 ils vont monter automatiquement ces périphériques. Vous ne devez éditer le fichier /etc/fstab au risque de ne plus faire fonctionner l'automontage._ _Pour Blackbox, Fluxbox,enlightenment, e17 et les autres petits gestionnaires de fenetres, il y a `ivman` pour l'automontage, cependant ce ne sera pas aussi bon que sur KDE, Gnome et XFCE4._ _Voir aussi la partie automontage de la documentation."
 
 # type: Plain text
 #: user.txt:854
@@ -2322,6 +2322,8 @@ msgid ""
 "by\n"
 "pressing `Alt-F2` and press ENTER to get a shell.\n"
 msgstr ""
+"1) Après l'installation terminée, avant de taper ENTREE pour redémarrer la machine, permuttez sur `tty2` en\n"
+"pressant `Alt-F2` et presser ENTREE pour obtenir un shell.\n"
 
 # type: Bullet: '2) '
 #: user.txt:897 init.txt:17
@@ -2345,6 +2347,9 @@ msgid ""
 "you don't want to compile as a module anymore, and exit from the menu with\n"
 "saving changes.\n"
 msgstr ""
+"3) La source de votre kernel (avec les patchs appliqués) peut etre trouvé\n"
+"dans le repertoire `/usr/src/linux`. Alors allez donc au repertoire `/usr/src/linux` et entrer dans le/n menu de configuration en tapant `make menuconfig`. Dedans, sélectionner le driver\n"
+"si vous ne voulez pas le compiler comme un module, puis sortez du menu en/nsauvegardant vos modifications.\n"
 
 # type: Bullet: '4) '
 #: user.txt:907 init.txt:27
@@ -2364,7 +2369,7 @@ msgstr "`cp /usr/src/linux/arch/yourarch/boot/bzImage /boot/vmlinuz`"
 # type: Plain text
 #: user.txt:913 init.txt:33
 msgid "command. On x86, yourarch is i386."
-msgstr ""
+msgstr "commande. Sur x86, votre architecture est i386."
 
 # type: Plain text
 #: user.txt:915
@@ -2483,7 +2488,7 @@ msgid ""
 "user-space, so there is no need for patching the kernel.  If you dislike it "
 "or want to switch it off for whatever reason add nosplashy for your kernel "
 "parameters in '/boot/grub/menu.lst'. For example:"
-msgstr ""
+msgstr "Frugalware utilise splashy pour afficher une jolie image de démarrage et une barre de progression à la place des messages texte durant la procédure de démarrage. Splashy ne nécéssite pas de patcher le kernel._ _Si vous ne l'aimez pas ou si vous voulez le desactiver pour n'importe quelle raison, ajouter nosplashy à vos paramètre kernel dans le fichier '/boot/grub/menu.lst'. Par exemple:"
 
 # type: Plain text
 #: user.txt:971 init.txt:90
@@ -2577,7 +2582,7 @@ msgid ""
 "We usually update our artwork (background images, grub splash, desktop "
 "manager themes, window manager splashes and so on) for each release. If you "
 "are skilled to help, you're welcome. :)"
-msgstr ""
+msgstr "Nous mettons à jour régulièrement notre thème graphique (images de fond d'écran, du grub, de démarrage, thème de bureau, image d'entrée des gestionnaires de fenetres...) pour chaque nouvelle version de Frugalware. Si vous etes prêt à aider, vouss erez les bienvenues. :)"
 
 # type: Plain text
 #: user.txt:1011
@@ -2590,24 +2595,24 @@ msgid ""
 "If you have time and knowledge, monitor the forums, read the mailing list "
 "posts, hang around on IRC and try to answer the questions, solve the occured "
 "problems."
-msgstr ""
+msgstr "Si vous avez du temp et des connaissances, surveillez les forums, lisez les messages de la liste de discussions, connectez-vous sur IRC et essayez de répondre aux questions, résolvez les problèmes posés."
 
 # type: Plain text
 #: user.txt:1017
 msgid "=== Find bugs"
-msgstr ""
+msgstr "=== Trouver les bugs"
 
 # type: Plain text
 #: user.txt:1020 contribute.txt:48
 msgid ""
 "If you find bugs, you can help with submitting well-written bugreports, see "
 "the Reporting Bugs section for more info."
-msgstr ""
+msgstr "Si vous avez trouvé des bugs, vous pouvez nous aider en soumettant un rapport de bug bien écrit et détaillé, voir la section Report de bugs pour plus d'infos."
 
 # type: Plain text
 #: user.txt:1022
 msgid "== The Frugalware Bugreporting HOWTO"
-msgstr ""
+msgstr "== TUTORIEL d'utilisation du Rapport de bug de Frugalware"
 
 # type: Plain text
 #: user.txt:1028 bugs.txt:8
@@ -2615,7 +2620,7 @@ msgid ""
 "The aim of this HOWTO is to explain how to choose a task name and what to "
 "include in a feature request/bugreport to help Frugalware developers speed "
 "up the process of fixing a bug or fulfilling a feature request."
-msgstr ""
+msgstr "Le but de cu tutoriel est d'expliquer comment choisir le nom de la tache et quoi inclure dans la demande de nouvelle fonctionalité (feature request) ou du rapport de bug (bug report) afin d'aider les developpeurs de Frugalware à réparer le bug ou ajouter la nouvelle fonctionnalité  le plus rapidement possible."
 
 # type: Plain text
 #: user.txt:1030
@@ -2655,7 +2660,7 @@ msgid ""
 "Before opening a task, use the search function, maybe there is a task for "
 "your bug/feature. In that case just add a comment about \"I can reproduce "
 "this, too.\" or \"I would enjoy this feature, too.\""
-msgstr ""
+msgstr "Avant d'ouvrir une nouvelle tache, utilisez la fonction recherche, il est peut être possible qu'il y ait une tache similaire déjà ouverte. Dans ce cas ajouter juste un commentaire à cette tache pour signaler que vous avez le même bug écrivez \"I can reproduce this, too.\" ou pour également réclamer une nouvelle focntionnalité écrivez \"I would enjoy this feature too.\""
 
 # type: Plain text
 #: user.txt:1047 bugs.txt:27
@@ -2664,7 +2669,7 @@ msgid ""
 "http://frugalware.org/~vmiklos/stats/chkworld.html[this site].  When your "
 "package is listed please do *not* report it as we know there is a new "
 "version and we will update it as soon as possible."
-msgstr ""
+msgstr "Si vous voulez signaler un paquet obsolète vérifier avant s'il n'est pas listé surhttp://frugalware.org/~vmiklos/stats/chkworld.html[ce site]._ _Quand votre paquet est listé, s'il vous plait, ne nous signalez pas qu'il existe une nouvelle version de ce paquet et nous le mettrons à jour dès que possible."
 
 # type: Plain text
 #: user.txt:1049
@@ -2674,7 +2679,7 @@ msgstr "=== Rapport de bug"
 # type: Plain text
 #: user.txt:1051 bugs.txt:31
 msgid "Please include the following things, unless you know what you are doing:"
-msgstr ""
+msgstr "S'il vous plait signalez les indications suivantes, à moins de savoir ce que vous etes entrain de faire:"
 
 # type: Plain text
 #: user.txt:1058 bugs.txt:38
