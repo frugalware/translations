@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-02-28 17:22+0100\n"
-"PO-Revision-Date: 2007-03-20 13:12+0100\n"
-"Last-Translator: Emmanuel Galland <enda@netou.com>\n"
+"PO-Revision-Date: 2007-03-20 21:42+0100\n"
+"Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -3795,6 +3795,8 @@ msgid ""
 "runlevel:\n"
 "----------------------\n"
 msgstr ""
+"avant d'essayer de lancer scratchbox. Vous pouvez également l'ajouter au niveau de démarrage (runleve)l par défaut:\n"
+"----------------------\n"
 
 # type: Plain text
 #: user.txt:1453 packages.txt:246
@@ -3803,6 +3805,8 @@ msgid ""
 "service scratchbox add\n"
 "----------------------\n"
 msgstr ""
+"service scratchbox add\n"
+"----------------------\n"
 
 # type: Plain text
 #: user.txt:1456 packages.txt:249
@@ -3821,6 +3825,8 @@ msgid ""
 "/usr/lib/scratchbox/login\n"
 "-------------------------\n"
 msgstr ""
+"/usr/lib/scratchbox/login\n"
+"-------------------------\n"
 
 # type: Plain text
 #: user.txt:1460 packages.txt:253
@@ -3837,7 +3843,7 @@ msgstr "NOTE: Pour pouvoir démarrer scratchbox, vous devez faire parti du group
 msgid ""
 "=== pyro You'll find pyro's scripts in "
 "'/usr/lib/python2.5/site-packages/Pyro/bin'"
-msgstr ""
+msgstr "=== pyro Vous trouverez les scripts pyro dans '/usr/lib/python2.5/site-packages/Pyro/bin'"
 
 # type: Plain text
 #: user.txt:1469
@@ -3847,7 +3853,7 @@ msgstr "=== synaptics Avant tout, lisez le fichier INSTALL pour les instructions
 # type: Plain text
 #: user.txt:1471 packages.txt:264
 msgid "For lazy users, here's what i had to do to get the driver working:"
-msgstr ""
+msgstr "Pour les utilisateurs paresseux, voici ce que j'ai du faire pour faire fonctionner les drivers:"
 
 # type: Plain text
 #: user.txt:1474 packages.txt:267
@@ -3857,6 +3863,7 @@ msgid ""
 "server\n"
 "started (or restart it after you loaded the module).\n"
 msgstr ""
+"1. Assurez vous d'avoir le module noyau 'evdev' chargé _avant_ que le serveur x ne démarre (ou redémarrez le après avoir chargé le moodule).\n"
 
 # type: Plain text
 #: user.txt:1477 packages.txt:270
@@ -3866,7 +3873,7 @@ msgid ""
 "+\n"
 "----------------\n"
 msgstr ""
-"2. Maintenant ouvrez votre fichier '/etc/X11/xorg.conf' et ajouter la ligne suivante:\n"
+"2. Maintenant ouvrez votre fichier '/etc/X11/xorg.conf' et ajoutez la ligne suivante:\n"
 "+\n"
 "----------------\n"
 
@@ -3884,7 +3891,7 @@ msgstr ""
 # type: '
 #: user.txt:1482 packages.txt:275
 msgid "to the \"Module\" section."
-msgstr "a la section \"Module\"."
+msgstr "à la section \"Module\"."
 
 # type: Plain text
 #: user.txt:1485 packages.txt:278
@@ -3894,7 +3901,7 @@ msgid ""
 "+\n"
 "-----------------------------------------------\n"
 msgstr ""
-"3. Remplacer le contenu de votre section \"InputDevice\" par ce qui suit:\n"
+"3. Remplacez le contenu de votre section \"InputDevice\" par ce qui suit:\n"
 "+\n"
 "-----------------------------------------------\n"
 
@@ -3985,6 +3992,9 @@ msgid ""
 "users\n"
 "who want a bit of Mac OS X-like eye-candy.\n"
 msgstr ""
+"1. Serveur Xgl\n"
+"+\n"
+"Xgl est un nouveau serveur X accéléré matériellement. Bien qu'il soit encore en développement, il considéré comme valide pour une utilisation quotidienne. C'est particulièrement bien pour les utilisateurs de Gnome et Xfce qui souhaitent une apparence sympathique à la Mac OS X.\n"
 
 # type: Plain text
 #: user.txt:1530 packages.txt:323
@@ -3999,11 +4009,14 @@ msgid ""
 "images/movies\n"
 "below.\n"
 msgstr ""
+"2. Compiz\n"
+"+\n"
+"Compiz est un nouveau gestionnaire de fenêtre qui a été spécialement conçu pour être utilisé avec Xgl. Malheureusement, si vous êtes utilisateur de KDE, cela ne fonctionnera pas pour vous (pour le moment). Compiz permet quelques superbes effets dont vous avez démonstration dans les images/vidéos ci-dessous.\n"
 
 # type: Plain text
 #: user.txt:1533
 msgid "See it in action ^^^^^^^^^^^^^^^^"
-msgstr ""
+msgstr "Voyez le en action ^^^^^^^^^^^^^^^^"
 
 # type: Plain text
 #: user.txt:1550 packages.txt:343
@@ -4026,6 +4039,22 @@ msgid ""
 "* Wobbling windows:\n"
 "  http://frugalware.org/~alex/xgl/wobble.png\n"
 msgstr ""
+"1. Captures d'écran\n"
+"+\n"
+"* Cube pour le changement de bureau:\n"
+"  http://frugalware.org/~alex/xgl/cube.png\n"
+"* Scale, le changement de fenêtre qui ressemble à Expose:\n"
+"  http://frugalware.org/~alex/xgl/expose.png\n"
+"* Effets de transparence:\n"
+"  http://frugalware.org/~alex/xgl/translucency.png\n"
+"* Encore des effets de transparence:\n"
+"  http://frugalware.org/~alex/xgl/moretranslucency.png\n"
+"* Transparence avec Scale\n"
+"  http://frugalware.org/~alex/xgl/translucexpose.png\n"
+"* Remplacement de Alt+Tab:\n"
+"  http://frugalware.org/~alex/xgl/switcher.png\n"
+"* Fenêtres 'vacillantes':\n"
+"  http://frugalware.org/~alex/xgl/wobble.png\n"
 
 # type: Plain text
 #: user.txt:1556 packages.txt:349
@@ -4039,6 +4068,9 @@ msgid ""
 "trusty\n"
 "700Mhz Pentium 3 :)\n"
 msgstr ""
+"2. Vidéos\n"
+"+\n"
+"Nous disposons actuellement de 2 vidéos de Xgl en action. Nous pourrions en ajouter plus dans le futur.Notez que ces vidéos pourraient sautiller ou sauter quelques frames, car elles ont étés filmées sur mon très fiable Pentium3 700Mhz :)\n"
 
 # type: Bullet: '* '
 #: user.txt:1561 packages.txt:354
@@ -4057,7 +4089,7 @@ msgstr "Demo 2 (1024x768, 6.4MB, format AVI): http://frugalware.org/~alex/xgl/vi
 # type: Plain text
 #: user.txt:1564
 msgid "Getting it working (for Gnome)  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
-msgstr ""
+msgstr "Mise en place (pour Gnome)  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
 
 # type: Plain text
 #: user.txt:1568 user.txt:1596 packages.txt:361 packages.txt:389
@@ -4065,12 +4097,12 @@ msgid ""
 "Note that this *only* works for nVidia, i810 and ATI users currently! nVidia "
 "users, please make sure that you have the nVidia binary drivers set up and "
 "working correctly (pacman -Sy nvidia)"
-msgstr ""
+msgstr "Notez que cela marchera actuellement *seulement* pour des utilisateurs de nVidia, i810 et ATI! Utilisateurs de nVidia, veuillez vous assurer que vous avez les drivers binaires installés et fonctionnels (pacman -Sy nvidia)"
 
 # type: Plain text
 #: user.txt:1570 packages.txt:363
 msgid "Fire up your Gnome Terminal, Xterm, Linux Console, or whatever. Do"
-msgstr ""
+msgstr "Ouvrez votre Terminal Gnomel, Xterm, Linux Console, ou ce que vous voulez. Faites"
 
 # type: Plain text
 #: user.txt:1571 user.txt:1599 packages.txt:364 packages.txt:392
@@ -4092,13 +4124,14 @@ msgstr ""
 # type: Plain text
 #: user.txt:1576 user.txt:1604 packages.txt:369 packages.txt:397
 msgid "Enter your root password, then run:"
-msgstr ""
+msgstr "Saisissez votre mot de passe root, puis lancez:"
 
 # type: Plain text
 #: user.txt:1577 packages.txt:370
 #, no-wrap
 msgid "----------------------------------\n"
 msgstr ""
+"----------------------------------\n"
 
 # type: Plain text
 #: user.txt:1579 packages.txt:372
@@ -4113,7 +4146,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:1582 user.txt:1611 packages.txt:375 packages.txt:404
 msgid "Now run:"
-msgstr ""
+msgstr "Maintenant lancez:"
 
 # type: Plain text
 #: user.txt:1583 user.txt:1612 packages.txt:376 packages.txt:405
@@ -4129,23 +4162,25 @@ msgid ""
 "fw-xgl-control --enable\n"
 "-----------------------\n"
 msgstr ""
+"fw-xgl-control --enable\n"
+"-----------------------\n"
 
 # type: Plain text
 #: user.txt:1589 packages.txt:382
 msgid ""
 "Now you can reboot (or run gdm-restart as root, for advanced users), and "
 "hopefully you will be running on a nice fancy desktop :)"
-msgstr ""
+msgstr "Maintenant vous pouvez redémarrer (ou exécuter gdm-restart en tant que root, pour les utilisateurs avancés), et si tout va bien, vous disposerez d'un joli bureau fantaisiste :)"
 
 # type: Plain text
 #: user.txt:1592
 msgid "Getting it working (for KDE)  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
-msgstr ""
+msgstr "Mise en place (pour KDE)  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
 
 # type: Plain text
 #: user.txt:1598 packages.txt:391
 msgid "Fire up your Konsole, Xterm, Linux Console, or whatever. Do"
-msgstr ""
+msgstr "Ouvrez votre Konsole, Xterm, Linux Console, ou ce que vous voulez. Faites"
 
 # type: Plain text
 #: user.txt:1608 packages.txt:401
@@ -4156,18 +4191,21 @@ msgid ""
 "           beryl-dbus beryl-settings emerald emerald-themes\n"
 "-------------------------------------------------------------------------------\n"
 msgstr ""
+"pacman -Sy xgl kicker-compiz taskbar-compiz beryl beryl-manager beryl-plugins \\\n"
+"           beryl-dbus beryl-settings emerald emerald-themes\n"
+"-------------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:1618 packages.txt:411
 msgid ""
 "Now you can reboot (or restart KDM, for advanced users), and hopefully you "
 "will be running on a nice fancy desktop :)"
-msgstr ""
+msgstr "Maintenant vous pouvez redémarrer (ou relancer KDM, pour les utilisateurs avancés), et si tout va bien, vous disposerez d'un joli bureau fantaisiste :)"
 
 # type: Plain text
 #: user.txt:1621
 msgid "Extra resources ^^^^^^^^^^^^^^^"
-msgstr ""
+msgstr "Ressources supplémentaires ^^^^^^^^^^^^^^^"
 
 # type: Bullet: '* '
 #: user.txt:1624 packages.txt:417
@@ -4179,7 +4217,7 @@ msgstr "http://en.opensuse.org/Xgl[Page Xgl de SuSE]"
 msgid ""
 "http://gentoo-wiki.com/HOWTO_XGL[Gentoo Wiki HOWTO] - Contains usage info "
 "for all the effects"
-msgstr ""
+msgstr "http://gentoo-wiki.com/HOWTO_XGL[Comment faire d'après le Wiki Gentoo] - Contient des informations sur l'utilisation des différents effets"
 
 # type: Plain text
 #: user.txt:1628
@@ -4190,6 +4228,9 @@ msgid ""
 "make sure you have something similar in '/etc/fstab':\n"
 "-----------------------------------------\n"
 msgstr ""
+"=== fglrx\n"
+"Si l'accélération matérielle ne fonctionne pas, assurez vous d'avoir quelque chose de similaire dans '/etc/fstab':\n"
+"-----------------------------------------\n"
 
 # type: Plain text
 #: user.txt:1630 packages.txt:423
@@ -4198,6 +4239,8 @@ msgid ""
 "tmpfs /dev/shm  tmpfs   defaults     0  0\n"
 "-----------------------------------------\n"
 msgstr ""
+"tmpfs /dev/shm  tmpfs   defaults     0  0\n"
+"-----------------------------------------\n"
 
 # type: Plain text
 #: user.txt:1634 packages.txt:427
@@ -4207,6 +4250,8 @@ msgid ""
 "to '/etx/X11/xorg.conf''s Device section:\n"
 "--------------------------\n"
 msgstr ""
+"Si la sortie xv ne fonctionne pas dans mplayer ajoutez la ligne suivante à '/etc/X11/xorg.conf' dans la partie Device:\n"
+"--------------------------\n"
 
 # type: Plain text
 #: user.txt:1636 packages.txt:429
@@ -4215,6 +4260,8 @@ msgid ""
 "Option \"VideoOverlay\" \"on\"\n"
 "--------------------------\n"
 msgstr ""
+"Option \"VideoOverlay\" \"on\"\n"
+"--------------------------\n"
 
 # type: Plain text
 #: user.txt:1641 packages.txt:434
@@ -4222,7 +4269,7 @@ msgid ""
 "On the following page you can find some useful solutions for different fglrx "
 "problems: http://www.thinkwiki.org/wiki/Problems_with_fglrx[Thinkwiki "
 "fglrx]."
-msgstr ""
+msgstr "Sur la page qui suit, vous pourrez trouver quelques solutions intéressantes à divers problèmes fglrx: http://www.thinkwiki.org/wiki/Problems_with_fglrx[Thinkwiki fglrx]."
 
 # type: Plain text
 #: user.txt:1647
@@ -4235,6 +4282,9 @@ msgid ""
 "you want to rebuild the database for:\n"
 "--------------------------\n"
 msgstr ""
+"=== rhythmbox\n"
+"Si vous avez fait un mise à jour depuis une version de Rhythmbox qui figeait pendant l'import des chansons,vous devez effacer la base de donnée rhythmbox sans quoi le problème se reproduira. Ceci peut être effectué en lançant la commande suivante sous l'utilisateur pour lequel vous souhaitez reconstruire la base de données:\n"
+"--------------------------\n"
 
 # type: Plain text
 #: user.txt:1649 packages.txt:442
@@ -4252,28 +4302,29 @@ msgid ""
 "=== gnome-applets The Mini Commander applet has been replaced by Deskbar. If "
 "you want the functionality provided by the Mini Commander applet, please "
 "install the deskbar-applet package with pacman"
-msgstr ""
+msgstr "=== gnome-applets L'applet Mini Commander à été remplacée par Deskbar. Si vous souhaitez les fonctionnalités fournies par Mini Commander, merci d'installer le paquet deskbar-applet avec pacman"
 
 # type: Plain text
 #: user.txt:1658
 msgid "=== dazuko If you got errors saying:"
-msgstr ""
+msgstr "=== dazuko Si vous rencontrez des erreurs qui disent:"
 
 # type: Plain text
 #: user.txt:1660 packages.txt:453
 msgid "'dazuko: failed to register'"
-msgstr ""
+msgstr "'dazuko: échec à l'enregistrement'"
 
 # type: Plain text
 #: user.txt:1662 packages.txt:455
 msgid "then you need to do:"
-msgstr ""
+msgstr "alors vous devez faire:"
 
 # type: Plain text
 #: user.txt:1663 packages.txt:456
 #, no-wrap
 msgid "-------------------\n"
 msgstr ""
+"-------------------\n"
 
 # type: Plain text
 #: user.txt:1667 packages.txt:460
@@ -4284,11 +4335,15 @@ msgid ""
 "modprobe capability\n"
 "-------------------\n"
 msgstr ""
+"rmmod capability\n"
+"modprobe dazuko\n"
+"modprobe capability\n"
+"-------------------\n"
 
 # type: Plain text
 #: user.txt:1670 packages.txt:463
 msgid "It will work."
-msgstr ""
+msgstr "Cela marchera"
 
 # type: Plain text
 #: user.txt:1676
@@ -4297,7 +4352,7 @@ msgid ""
 "files easier. It support several compressors and archiver programs, chooses "
 "the right one(s) automatically and extracts one or more files in one go. It "
 "detects the right type from the file extensions or the \"file\" output."
-msgstr ""
+msgstr "=== unp unp est un petit script perl qui rend l'extraction de n'importe quel fichier d'archive plus simple. Il supporte de nombreux programmes de compression et d'archivage, choisi automatiquement le bon et extrait un ou plusieurs fichiers d'un seul coup. Il détecte le bon type de fichier grâce à l'extension ou à la sortie de \"file\"."
 
 # type: Plain text
 #: user.txt:1680 packages.txt:473
@@ -4305,12 +4360,12 @@ msgid ""
 "unp was written by Andre Karwath (http://www.aka-online.de) in 1997, I "
 "(Eduard Bloch <blade@debian.org>) found it later and improved it to fill my "
 "needs. Have fun!"
-msgstr ""
+msgstr "unp a été écrit par Andre Karwath (http://www.aka-online.de) en 1997, Je (Eduard Bloch <blade@debian.org>) l'ai trouvé plus tard et adapté à mes besoins. Prenez plaisir!"
 
 # type: Plain text
 #: user.txt:1683
 msgid "=== festival To test festival, try:"
-msgstr ""
+msgstr "=== festival Pour tester festival, essayez:"
 
 # type: Plain text
 #: user.txt:1686 packages.txt:479
@@ -4319,16 +4374,19 @@ msgid ""
 "echo \"Frugalware can speak\" | festival --tts\n"
 "--------------------------------------------\n"
 msgstr ""
+"echo \"Frugalware can speak\" | festival --tts\n"
+"(NDT: la même en français passe nettement moins bien :p)\n"
+"--------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:1690
 msgid "To test it with kttsd: ^^^^^^^^^^^^^^^^^^^^^^"
-msgstr ""
+msgstr "Pour tester avec kttsd: ^^^^^^^^^^^^^^^^^^^^^^"
 
 # type: Bullet: '1. '
 #: user.txt:1694 packages.txt:487
 msgid "Start KTTSD (if not already running): `kttsd`"
-msgstr ""
+msgstr "Démarrer KTTSD (s'il ne fonctionne pas déjà): `kttsd`"
 
 # type: Plain text
 #: user.txt:1694 packages.txt:487
@@ -4338,6 +4396,9 @@ msgid ""
 "+\n"
 "------------------------------------------------------\n"
 msgstr ""
+"2. Envoyer \"Frugalware peut parler\" à KTTSD pour qu'il parle en français:\n"
+"+\n"
+"------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:1696 packages.txt:489
@@ -4346,6 +4407,8 @@ msgid ""
 "dcop kttsd KSpeech setText \"Frugalware can speak\" \"en\"\n"
 "------------------------------------------------------\n"
 msgstr ""
+"dcop kttsd KSpeech setText \"Frugalware peut parler\" \"fr\"\n"
+"------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:1699 packages.txt:492
@@ -4355,6 +4418,9 @@ msgid ""
 "+\n"
 "------------------------------\n"
 msgstr ""
+"3. 'Parler' le texte:\n"
+"+\n"
+"------------------------------\n"
 
 # type: Plain text
 #: user.txt:1701 packages.txt:494
@@ -4363,6 +4429,8 @@ msgid ""
 "dcop kttsd KSpeech startText 0\n"
 "------------------------------\n"
 msgstr ""
+"dcop kttsd KSpeech startText 0\n"
+"------------------------------\n"
 
 # type: Plain text
 #: user.txt:1708
@@ -4372,18 +4440,19 @@ msgid ""
 "explain some weirdness of building it, getting the latest stable version "
 "number etc.  "
 "http://frugalware.org/pipermail/frugalware-devel/2005-November/001432.html[Mail]"
-msgstr ""
+msgstr "=== foo2zjs Ce pilote est en évolution constante, par conséquent il n'exite pas de version \"stable\". De plus, les communications avec l'auteur non mené à rien, cela peut expliquer les bizarreries pour le construire, obtenir la numéro de la version stable etc.  http://frugalware.org/pipermail/frugalware-devel/2005-November/001432.html[Mail]"
 
 # type: Plain text
 #: user.txt:1711
 msgid "=== monit You can set up Monit by adding these lines to '/etc/inittab':"
-msgstr ""
+msgstr "=== monit Vous pouvez configurer Monit en ajoutant ces lignes à '/etc/inittab':"
 
 # type: Plain text
 #: user.txt:1712 user.txt:1884 packages.txt:505 packages.txt:677
 #, no-wrap
 msgid "------------------------------------------------------\n"
 msgstr ""
+"------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:1715 packages.txt:508
@@ -4393,6 +4462,9 @@ msgid ""
 "mo:2345:respawn:/usr/sbin/monit -Ic /etc/monit/monitrc\n"
 "------------------------------------------------------\n"
 msgstr ""
+"# Démarrage de monit dans les run-levels standard\n"
+"mo:2345:respawn:/usr/sbin/monit -Ic /etc/monit/monitrc\n"
+"------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:1719
@@ -4402,12 +4474,12 @@ msgstr ""
 # type: Plain text
 #: user.txt:1722
 msgid "Creating ^^^^^^^^"
-msgstr ""
+msgstr "Création ^^^^^^^^"
 
 # type: Bullet: '1. '
 #: user.txt:1727 packages.txt:520
 msgid "cryptsetup luksFormat /dev/partition"
-msgstr ""
+msgstr "cryptsetup luksFormat /dev/partition"
 
 # type: Bullet: '1. '
 #: user.txt:1727 user.txt:1735 packages.txt:520 packages.txt:528
@@ -4427,17 +4499,17 @@ msgstr "mount /dev/mapper/label /mnt/label"
 # type: Plain text
 #: user.txt:1730
 msgid "Mounting ^^^^^^^^"
-msgstr ""
+msgstr "Montage ^^^^^^^^"
 
 # type: Plain text
 #: user.txt:1732 packages.txt:525
 msgid "Of course later you don't have to use lunkFormat and mke2fs:"
-msgstr ""
+msgstr "Bien évidemment par la suite vous n'avez plus à utiliser lunkFormat et mke2fs:"
 
 # type: Plain text
 #: user.txt:1738
 msgid "Umounting ^^^^^^^^^"
-msgstr ""
+msgstr "Démontage ^^^^^^^^^"
 
 # type: Bullet: '1. '
 #: user.txt:1741 packages.txt:534
@@ -4447,17 +4519,17 @@ msgstr "umount /mnt/label"
 # type: Bullet: '2. '
 #: user.txt:1741 packages.txt:534
 msgid "cryptsetup luksClose label"
-msgstr ""
+msgstr "cryptsetup luksClose label"
 
 # type: Plain text
 #: user.txt:1743 packages.txt:536
 msgid "Really simple :-)"
-msgstr ""
+msgstr "Vraiment simple :-)"
 
 # type: Plain text
 #: user.txt:1746
 msgid "=== lirc After installing lirc you need to take the following steps:"
-msgstr ""
+msgstr "=== lirc Après installation de lirc vous devez procéder aux étapes suivantes:"
 
 # type: Bullet: '1. '
 #: user.txt:1755 packages.txt:548
@@ -4466,22 +4538,22 @@ msgid ""
 "http://lirc.sourceforge.net/remotes/[remotes] You can also take a look on "
 "'/usr/share/remotes' directory if you do not have an internet connection.  "
 "If you do not find your remote controller, try `irrecord myremote` command."
-msgstr ""
+msgstr "Trouver un lird.conf pour votre télécommande sur http://lirc.sourceforge.net/remotes/[remotes] Vous pouvez également jeter un coup d'oeil dans le répertoire '/usr/share/remotes' si vous ne disposez pas d'une connexion internet.  Si vous ne trouvez pas votre télécommande, essayez la commande `irrecord myremote`."
 
 # type: Bullet: '2. '
 #: user.txt:1755 packages.txt:548
 msgid "Copy your lircd.conf to '/etc/' directory as root."
-msgstr ""
+msgstr "Copier votre lircd.conf dans le répertoire '/etc/' en tant que root."
 
 # type: Bullet: '3. '
 #: user.txt:1755 packages.txt:548
 msgid "Add evdev to '/etc/sysconfig/modules'."
-msgstr ""
+msgstr "Ajouter evdev à '/etc/sysconfig/modules'."
 
 # type: Bullet: '4. '
 #: user.txt:1755 packages.txt:548
 msgid "Load the module with `modprobe evdev`."
-msgstr ""
+msgstr "Charger le module module avec `modprobe evdev`."
 
 # type: Plain text
 #: user.txt:1755 packages.txt:548
@@ -4491,6 +4563,9 @@ msgid ""
 "+\n"
 "--------------------------------------------\n"
 msgstr ""
+"5. Editer '/etc/sysconfig/lirc' si nécessaire.\n"
+"+\n"
+"--------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:1757 packages.txt:550
@@ -4506,30 +4581,31 @@ msgstr ""
 # type: '
 #: user.txt:1760 packages.txt:553
 msgid "will show you the event# you should use. (Default is 2.)"
-msgstr ""
+msgstr "vous montrera l'évènement# que vous devrez utiliser. (Le défaut est 2.)"
 
 # type: Bullet: '6. '
 #: user.txt:1762 packages.txt:555
 msgid "Start lircd and lircmd with `sudo service lirc start`."
-msgstr ""
+msgstr "Démarrer lircd et lircmd avec `sudo service lirc start`."
 
 # type: Plain text
 #: user.txt:1765
 msgid ""
 "=== kexec-tools WARNING: kexec works just like 'reboot', so please save your "
 "data before using it!"
-msgstr ""
+msgstr "=== kexec-tools ATTENTION: kexec fonctionne comme 'reboot', merci de sauver vos données avant de l'utiliser!"
 
 # type: Plain text
 #: user.txt:1767 packages.txt:560
 msgid "Loading the new kernel:"
-msgstr ""
+msgstr "Charger le nouveau noyau:"
 
 # type: Plain text
 #: user.txt:1768 packages.txt:561
 #, no-wrap
 msgid "---------------------------------------------------------------------------------------------\n"
 msgstr ""
+"---------------------------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:1770 packages.txt:563
@@ -4539,17 +4615,20 @@ msgid ""
 "resume=/dev/hda2\"\n"
 "---------------------------------------------------------------------------------------------\n"
 msgstr ""
+"kexec -l /boot/vmlinuz-2.6.18-fw1 --append=\"ro root=/dev/hda3 quiet vga=792 resume=/dev/hda2\"\n"
+"---------------------------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:1773 packages.txt:566
 msgid "Booting it:"
-msgstr ""
+msgstr "Démarrage de ce dernier:"
 
 # type: Plain text
 #: user.txt:1774 packages.txt:567
 #, no-wrap
 msgid "--------\n"
 msgstr ""
+"--------\n"
 
 # type: Plain text
 #: user.txt:1776 packages.txt:569
@@ -4558,6 +4637,8 @@ msgid ""
 "kexec -e\n"
 "--------\n"
 msgstr ""
+"kexec -e\n"
+"--------\n"
 
 # type: Plain text
 #: user.txt:1781
@@ -4565,7 +4646,7 @@ msgid ""
 "=== cpuspeed After installing cpuspeed, make sure you edit the configuration "
 "file before starting it. The configuration file is located in "
 "'/etc/cpuspeed.conf'."
-msgstr ""
+msgstr "=== cpuspeed Après l'installation de cpuspeed, assurez vous d'éditer le fichier de configuration avant de le lancer. Le fichier de configuration est '/etc/cpuspeed.conf'."
 
 # type: Plain text
 #: user.txt:1785 packages.txt:578
@@ -4600,6 +4681,9 @@ msgid ""
 "In order to use acoc you should start it with\n"
 "--------------\n"
 msgstr ""
+"=== acoc\n"
+"Pour utiliser acoc vous devez le démarrer avec\n"
+"--------------\n"
 
 # type: Plain text
 #: user.txt:1797 packages.txt:590
@@ -4608,6 +4692,8 @@ msgid ""
 "acoc <command>\n"
 "--------------\n"
 msgstr ""
+"acoc <commande>\n"
+"--------------\n"
 
 # type: Plain text
 #: user.txt:1799 packages.txt:592
@@ -4616,6 +4702,8 @@ msgid ""
 "for example, or you can create an alias like this:\n"
 "--------------------------\n"
 msgstr ""
+"par exemple, ou vous pouvez créer un alias comme suivant:\n"
+"--------------------------\n"
 
 # type: Plain text
 #: user.txt:1801 packages.txt:594
@@ -4624,6 +4712,8 @@ msgid ""
 "alias pacman='acoc pacman'\n"
 "--------------------------\n"
 msgstr ""
+"alias pacman='acoc pacman'\n"
+"--------------------------\n"
 
 # type: Plain text
 #: user.txt:1808
@@ -4641,6 +4731,9 @@ msgid ""
 "Install script has generated default certificate use:\n"
 "-----------------------\n"
 msgstr ""
+"=== nessus-core\n"
+"Le script d'installation a créer un certificat par défaut. Utiliser:\n"
+"-----------------------\n"
 
 # type: Plain text
 #: user.txt:1813 user.txt:2437 packages.txt:606 packages.txt:1230
@@ -4655,7 +4748,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:1815 user.txt:2439 packages.txt:608 packages.txt:1232
 msgid "if you need to make a personalized one."
-msgstr ""
+msgstr "si vous voulez en créer un personnaliser."
 
 # type: Plain text
 #: user.txt:1817 user.txt:2441 packages.txt:610 packages.txt:1234
@@ -4664,6 +4757,8 @@ msgid ""
 "Remember to create a user with:\n"
 "------------------------\n"
 msgstr ""
+"Rappeler vous de créer un utilisateur avec:\n"
+"------------------------\n"
 
 # type: Plain text
 #: user.txt:1819 user.txt:2443 packages.txt:612 packages.txt:1236
@@ -4672,30 +4767,32 @@ msgid ""
 "/usr/sbin/nessus-adduser\n"
 "------------------------\n"
 msgstr ""
+"/usr/sbin/nessus-adduser\n"
+"------------------------\n"
 
 # type: Plain text
 #: user.txt:1822 user.txt:2446 packages.txt:615 packages.txt:1239
 msgid "Use '/etc/sysconfig/nessusd' for setting nessusd starting arguments."
-msgstr ""
+msgstr "Utiliser '/etc/sysconfig/nessusd' pour modifier les arguments de démarrage de nessusd."
 
 # type: Plain text
 #: user.txt:1826
 msgid ""
 "=== phpbb After installing this package, please run '/usr/bin/phpbbsetup' as "
 "root to setup phpBB"
-msgstr ""
+msgstr "=== phpbb Après avoir installé ce paquet, vous devez exécuter '/usr/bin/phpbbsetup' en tant que root pour configurer phpBB"
 
 # type: Plain text
 #: user.txt:1828 packages.txt:621
 msgid "After upgrading, make sure to run the database update script"
-msgstr ""
+msgstr "Après une mise à jour, assurez vous de bien lancer le scripte de mise à jour de la base de données"
 
 # type: Plain text
 #: user.txt:1831
 msgid ""
 "=== bcm43xx-fwcutter Since version 2.6.17, the bcm43xx driver is part of the "
 "kernel."
-msgstr ""
+msgstr "=== bcm43xx-fwcutter Le pilote bcm43xx est inclus dans de le noyau depuis la version 2.6.17."
 
 # type: Plain text
 #: user.txt:1834 packages.txt:627
@@ -4709,6 +4806,7 @@ msgstr ""
 #, no-wrap
 msgid "----------------\n"
 msgstr ""
+"----------------\n"
 
 # type: Plain text
 #: user.txt:1837 packages.txt:630
@@ -4717,6 +4815,8 @@ msgid ""
 "# modprobe bcm43xx\n"
 "----------------\n"
 msgstr ""
+"# modprobe bcm43xx\n"
+"----------------\n"
 
 # type: Plain text
 #: user.txt:1841 packages.txt:634
@@ -4730,6 +4830,7 @@ msgstr ""
 #, no-wrap
 msgid "------------------\n"
 msgstr ""
+"------------------\n"
 
 # type: Plain text
 #: user.txt:1844 packages.txt:637
@@ -4759,13 +4860,14 @@ msgstr ""
 # type: Plain text
 #: user.txt:1853 packages.txt:646
 msgid "Then you can set it:"
-msgstr ""
+msgstr "Puis vous pouvez le configurer:"
 
 # type: Plain text
 #: user.txt:1854 user.txt:3180 user.txt:3220 packages.txt:647 makepkg.txt:336 makepkg.txt:376
 #, no-wrap
 msgid "-------------------------\n"
 msgstr ""
+"-------------------------\n"
 
 # type: Plain text
 #: user.txt:1856 packages.txt:649
@@ -4787,6 +4889,7 @@ msgstr ""
 #, no-wrap
 msgid "-------------------------------\n"
 msgstr ""
+"-------------------------------\n"
 
 # type: Plain text
 #: user.txt:1862 packages.txt:655
@@ -4795,6 +4898,8 @@ msgid ""
 "# iwconfig ethX essid \"myessid\"\n"
 "-------------------------------\n"
 msgstr ""
+"# iwconfig ethX essid \"myessid\"\n"
+"-------------------------------\n"
 
 # type: Plain text
 #: user.txt:1865 packages.txt:658
@@ -4830,6 +4935,7 @@ msgstr ""
 #, no-wrap
 msgid "---------\n"
 msgstr ""
+"---------\n"
 
 # type: Plain text
 #: user.txt:1879 packages.txt:672
@@ -4855,6 +4961,8 @@ msgid ""
 "lspci -n | egrep 'Class (0280|0200):' |  cut -d' ' -f4\n"
 "------------------------------------------------------\n"
 msgstr ""
+"lspci -n | egrep 'Class (0280|0200):' |  cut -d' ' -f4\n"
+"------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:1889 packages.txt:682
@@ -4881,6 +4989,7 @@ msgstr ""
 #, no-wrap
 msgid "        ln -s /var/www/SugarSuite /var/www/html/sugarcrm\n"
 msgstr ""
+"ln -s /var/www/SugarSuite /var/www/html/sugarcrm\n"
 
 # type: Plain text
 #: user.txt:1901 packages.txt:694
@@ -4892,18 +5001,19 @@ msgstr ""
 # type: Plain text
 #: user.txt:1904
 msgid "=== midpssh-http-server Do not forget to open port 8080 on your firewall!"
-msgstr ""
+msgstr "=== midpssh-http-server N'oublier par d'ouvrir le port 8080 dans votre pare-feu!"
 
 # type: Plain text
 #: user.txt:1906 user.txt:2033 packages.txt:699 packages.txt:826
 msgid "To do this, add the following two lines to your '/etc/sysconfig/firewall':"
-msgstr ""
+msgstr "Pour le faire, ajouter les deux lignes suivantes à '/etc/sysconfig/firewall':"
 
 # type: Plain text
 #: user.txt:1907 user.txt:2034 packages.txt:700 packages.txt:827
 #, no-wrap
 msgid "---------------------------------------------\n"
 msgstr ""
+"---------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:1910 packages.txt:703
@@ -4932,7 +5042,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:1918 packages.txt:711
 msgid "If you are too lazy to read the documentaion :)"
-msgstr ""
+msgstr "Si vous êtes trop paresseux pour lire la documentation :)"
 
 # type: Plain text
 #: user.txt:1919 user.txt:2897 packages.txt:712 makepkg.txt:53
