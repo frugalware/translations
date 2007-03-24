@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-02-28 17:22+0100\n"
-"PO-Revision-Date: 2007-03-24 09:20+0100\n"
-"Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
+"PO-Revision-Date: 2007-03-24 16:09+0100\n"
+"Last-Translator: Emmanuel Galland <enda@netou.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -5276,6 +5276,22 @@ msgid ""
 "without\n"
 "any authentication.\n"
 msgstr ""
+"2. Configure\n"
+"+\n"
+"Controlez le fichier config.inc.php. Vous pouvez y préciser les paramètres appropriés à voter installation.\n"
+"+\n"
+"Postfix Admin contient 3 vues d'administration.\n"
+"Il y'a la vue Site Admin, accessible par http://domain.tld/postfixadmin/admin/.\n"
+"Il y'a également la vue Domain Admin, accessible par http://domain.tld/postfixadmin/.\n"
+"Et la vue User Admin View, accessible par http://domain.tld/postfixadmin/users/.\n"
+"+\n"
+"Afin d'effectuer la configuration initiale, vous devez ouvrir la vue Site Admin.\n"
+"+\n"
+"Le mot de passe par défaut pour la vue Site Admin de Postfix Admin est admin/admin.\n"
+"+\n"
+"C'est défini dans le fichier .htpasswd dans le répertoire /admin. Assurez vous que l'emplacerment du fichier .htpasswd corresponde à votre chemin.\n"
+"+\n"
+"Quand vous avez fini, vous devez redémarrer apache (service httpd restart) afin de pouvoir identifier l'admin principal. Si vous échouez à faire cela, n'importe qui pourra faire ce qu'il veut en tant qu'administrateur de postfixadmin sans aucune identification.\n"
 
 # type: Plain text
 #: user.txt:2031
@@ -5343,45 +5359,45 @@ msgstr "NOTE: Lire avec attention la documentation ('/usr/share/doc/speedtouch-p
 msgid ""
 "=== ddclient Please configure '/etc/ddclient/ddclient.conf' before running "
 "ddclient!"
-msgstr ""
+msgstr "=== ddclient Veuillez configurer '/etc/ddclient/ddclient.conf' avant de lancer ddclient!"
 
 # type: Plain text
 #: user.txt:2061 packages.txt:854
 msgid ""
 "Samples for common configurations can be found in: "
 "/usr/share/doc/ddclient-$package_version/sample*"
-msgstr ""
+msgstr "Des exemples de configurations classiques peuvent être trouvés dans: /usr/share/doc/ddclient-$package_version/sample*"
 
 # type: Plain text
 #: user.txt:2064 packages.txt:857
 msgid ""
 "Additional details and instructions can be found in: "
 "/usr/share/doc/ddclient-$package_version/README"
-msgstr ""
+msgstr "Des détails et instructions supplémentaires peuvent être trouvés dans: /usr/share/doc/ddclient-$package_version/README"
 
 # type: Plain text
 #: user.txt:2068 packages.txt:861
 msgid ""
 "Once you have finished configuring the 'ddclient.conf' file, you can start "
 "ddclient as a daemon by running as root, the following command:"
-msgstr ""
+msgstr "Une fois que vous avez fini de configurer le fichier 'ddclient.conf', vous pouvez démarrer ddclient en tant que démon en lançant en tant que root, la commande suivante:"
 
 # type: Plain text
 #: user.txt:2070 packages.txt:863
 msgid "service ddclient start"
-msgstr ""
+msgstr "service ddclient start"
 
 # type: Plain text
 #: user.txt:2074
 msgid ""
 "=== drupal After installing this package, please run '/usr/bin/drupalsetup' "
 "as root to setup Drupal"
-msgstr ""
+msgstr "=== drupal Après avoir installé ce paquet, veuillez exécuter '/usr/bin/drupalsetup' en tant que root pour configurer Drupal"
 
 # type: Plain text
 #: user.txt:2078
 msgid "=== xcache Installing As PHP Extension? ^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
-msgstr ""
+msgstr "=== xcache Installer en tant qu'extension PHP? ^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
 
 # type: Plain text
 #: user.txt:2081 packages.txt:874
@@ -5391,6 +5407,9 @@ msgid ""
 "+\n"
 "------------------------------------------------------------\n"
 msgstr ""
+"1. Vérifiez '/etc/php.ini'\n"
+"+\n"
+"------------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:2083 packages.txt:876
@@ -5399,6 +5418,8 @@ msgid ""
 "cat /usr/share/doc/xcache-$pkgver/xcache.ini >> /etc/php.ini\n"
 "------------------------------------------------------------\n"
 msgstr ""
+"cat /usr/share/doc/xcache-$pkgver/xcache.ini >> /etc/php.ini\n"
+"------------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:2087 packages.txt:880
@@ -5408,6 +5429,9 @@ msgid ""
 "+\n"
 "--------------------\n"
 msgstr ""
+"2. Ajustez php.ini à vos besoins:\n"
+"+\n"
+"--------------------\n"
 
 # type: Plain text
 #: user.txt:2089 packages.txt:882
@@ -5422,24 +5446,24 @@ msgstr ""
 # type: Bullet: '3. '
 #: user.txt:2092 packages.txt:885
 msgid "Restart php"
-msgstr ""
+msgstr "Redémarrez php"
 
 # type: Plain text
 #: user.txt:2094 packages.txt:887
 msgid "WARNING: Use >> with cat, not simply >"
-msgstr ""
+msgstr "ATTENTION: Utilisez >> avec cat, pas simplement >"
 
 # type: Plain text
 #: user.txt:2096 packages.txt:889
 msgid "Please take a look on http://trac.lighttpd.net/xcache/wiki[xcache wiki]."
-msgstr ""
+msgstr "Veuillez jeter un coup d'oeil au http://trac.lighttpd.net/xcache/wiki[wiki xcache]."
 
 # type: Plain text
 #: user.txt:2100
 msgid ""
 "=== mediawiki After installing this package, please run "
 "'/usr/bin/mediawikisetup' as root to setup MediaWiki"
-msgstr ""
+msgstr "=== mediawiki Après avoir installé ce paquet, veuillez lancer '/usr/bin/mediawikisetup' en tant que root pour préparer MediaWiki"
 
 # type: Plain text
 #: user.txt:2109
@@ -5449,7 +5473,7 @@ msgid ""
 "http://web.archive.org/web/20030416131233/www.counterpane.com/pptpv2-paper.html[here].  "
 "Also you could use ssh+pppd, but that's rather problematic on platforms "
 "other than Unix."
-msgstr ""
+msgstr "=== pptpd 1. Preface + On m'a demandé un VPN utilisant PPTP. Un moyen plus sécurisé est d'utiliser IPSec, plus de détails ici: http://web.archive.org/web/20030416131233/www.counterpane.com/pptpv2-paper.html[ici].  Vous pouvez également utiliser ssh+pppd, mais c'est assez problématique sur d'autres plateformes qu'Unix."
 
 # type: Plain text
 #: user.txt:2121 packages.txt:914
@@ -5470,6 +5494,15 @@ msgid ""
 "+\n"
 "----------------\n"
 msgstr ""
+"2. Installer le serveur\n"
+"+\n"
+"Le gros problème est que beaucoup de docs dépassées commencent par patcher le noyau et ppp. Ceci n'est plus nécessaire!\n"
+"+\n"
+"Besoins: Il vous faut un kernel>=2.6.15 ou plus récent (Frugalware 0.4 ou plus récent sont OK).Il vous faut également ppp>=2.4.2.\n"
+"+\n"
+"Il est probablement déjà installé sur vote système, voyons le nouveau paquet: pptpd. Installez le avec l'habituel\n"
+"+\n"
+"----------------\n"
 
 # type: Plain text
 #: user.txt:2123 packages.txt:916
@@ -5478,24 +5511,26 @@ msgid ""
 "pacman -Sy pptpd\n"
 "----------------\n"
 msgstr ""
+"pacman -Sy pptpd\n"
+"----------------\n"
 
 # type: Bullet: '+
 # type: '
 #: user.txt:2129 packages.txt:922
 msgid "Probably this is done if you're reading this HOWTO :-)"
-msgstr ""
+msgstr "C'est probablement déjà fait si vous êtes en train de lire cette doc :-)"
 
 # type: Bullet: '+
 # type: '
 #: user.txt:2129 packages.txt:922
 msgid "Here comes my '/etc/pptp.conf':"
-msgstr ""
+msgstr "Voilà mon '/etc/pptp.conf':"
 
 # type: Bullet: '+
 # type: '
 #: user.txt:2129 packages.txt:922
 msgid "-------------------------------------"
-msgstr ""
+msgstr "-------------------------------------"
 
 # type: Plain text
 #: user.txt:2135 packages.txt:928
@@ -5508,6 +5543,12 @@ msgid ""
 "remoteip 10.0.0.89-127\n"
 "-------------------------------------\n"
 msgstr ""
+"$ grep -v '^\\(#\\|$\\)' /etc/pptpd.conf\n"
+"option /etc/ppp/options.pptpd\n"
+"logwtmp\n"
+"localip 10.0.0.88\n"
+"remoteip 10.0.0.89-127\n"
+"-------------------------------------\n"
 
 # type: Plain text
 #: user.txt:2142 packages.txt:935
@@ -5522,6 +5563,12 @@ msgid ""
 "+\n"
 "--------------------------------------------\n"
 msgstr ""
+"+\n"
+"10.0.0.88 est l'adresse interne du serveur, 10.0.0.89-127 est la plagequi peut être utilisée par les clients pptp.\n"
+"+\n"
+"Voyons ensuite ce fichier '/etc/ppp/options.pptpd':\n"
+"+\n"
+"--------------------------------------------"
 
 # type: Plain text
 #: user.txt:2158 packages.txt:951
@@ -5544,6 +5591,22 @@ msgid ""
 "nologfd\n"
 "---------------------------------------------\n"
 msgstr ""
+"$ grep -v '^\\(#\\|$\\)' /etc/ppp/options.pptpd\n"
+"name pptpd\n"
+"domain nemesis.example.net\n"
+"refuse-pap\n"
+"refuse-chap\n"
+"refuse-mschap\n"
+"require-mschap-v2\n"
+"require-mppe-128\n"
+"proxyarp\n"
+"debug\n"
+"lock\n"
+"nobsdcomp\n"
+"novj\n"
+"novjccomp\n"
+"nologfd\n"
+"---------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:2165 packages.txt:958
@@ -5559,6 +5622,13 @@ msgid ""
 "+\n"
 "----------------------------------\n"
 msgstr ""
+"+\n"
+"nemesis.example.net est le nom complet de la machine, remplacez le avec le votre.\n"
+"Une fois que tout marchera correctement, vous pourrez retirer la ligne \"debug\" de votre config.\n"
+"+\n"
+"Ensuite ajoutez au moins un utilisateur:\n"
+"+\n"
+"----------------------------------\n"
 
 # type: Plain text
 #: user.txt:2169 packages.txt:962
@@ -5569,6 +5639,10 @@ msgid ""
 "vmiklos  pptpd   \"secret\"        *\n"
 "----------------------------------\n"
 msgstr ""
+"# cat /etc/ppp/chap-secrets\n"
+"Password:\n"
+"vmiklos  pptpd   \"secret\"        *\n"
+"----------------------------------\n"
 
 # type: Plain text
 #: user.txt:2177 packages.txt:970
@@ -5586,6 +5660,12 @@ msgid ""
 "+\n"
 "---------------------------------------------\n"
 msgstr ""
+"+\n"
+"Il reste à authoriser pptp dans le firewall (Je présumes que vous utilisez la configuration par défaut de Frugalware: INPUT est à DROP par défaut, mais FORWARD est autorisé, de même que OUTPUT.)\n"
+"+\n"
+"Ajoutez les 2 lignes suivantes à la section filter de '/etc/sysconfig/firewall':\n"
+"+\n"
+"---------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:2180 packages.txt:973
@@ -5595,18 +5675,21 @@ msgid ""
 "-A INPUT -p tcp -m tcp --dport 1723 -j ACCEPT\n"
 "---------------------------------------------\n"
 msgstr ""
+"-A INPUT -p gre -j ACCEPT\n"
+"-A INPUT -p tcp -m tcp --dport 1723 -j ACCEPT\n"
+"---------------------------------------------\n"
 
 # type: Bullet: '+
 # type: '
 #: user.txt:2184 packages.txt:977
 msgid "Now we're ready to start:"
-msgstr ""
+msgstr "Maintenant nous sommes prêts à démarrer:"
 
 # type: Bullet: '+
 # type: '
 #: user.txt:2184 packages.txt:977
 msgid "----------------------------------"
-msgstr ""
+msgstr "----------------------------------"
 
 # type: Plain text
 #: user.txt:2186 packages.txt:979
@@ -5615,6 +5698,8 @@ msgid ""
 "pptpd -f -o /etc/ppp/options.pptpd\n"
 "----------------------------------\n"
 msgstr ""
+"pptpd -f -o /etc/ppp/options.pptpd\n"
+"----------------------------------\n"
 
 # type: Bullet: '+
 # type: '
@@ -5622,14 +5707,14 @@ msgstr ""
 msgid ""
 "If no error messages are reported, omit the -f option so it will go "
 "background."
-msgstr ""
+msgstr "S'il n'y a pas de message d'erreur, enlevez l'option -f de sorte qu'il passe en tâche de fond."
 
 # type: Plain text
 #: user.txt:2192 packages.txt:985
 msgid ""
 "+ Later you can put this to your '/etc/rc.d/rc.local'. Debug messages will "
 "appear in '/var/log/messages' if you're interested in them."
-msgstr ""
+msgstr "+ Par la suite, vous pourrez mettre ceci dans votre '/etc/rc.d/rc.local'. Les messages de débogage apparaitront dans '/var/log/messages' s'ils vous intéressent."
 
 # type: Plain text
 #: user.txt:2197 packages.txt:990
@@ -5641,6 +5726,11 @@ msgid ""
 "+\n"
 "---------------\n"
 msgstr ""
+"3. Coté client\n"
+"+\n"
+"Installez l'indispensable paquet \"pptp\":\n"
+"+\n"
+"---------------\n"
 
 # type: Plain text
 #: user.txt:2199 packages.txt:992
@@ -5649,6 +5739,8 @@ msgid ""
 "pacman -Sy pptp\n"
 "---------------\n"
 msgstr ""
+"pacman -Sy pptp\n"
+"---------------\n"
 
 # type: Plain text
 #: user.txt:2212 packages.txt:1005
@@ -5670,6 +5762,16 @@ msgid ""
 "+\n"
 "---------------------------------------------\n"
 msgstr ""
+"+\n"
+"La plupart des docs suggèrent l'outil pptpconfig (http://pptpclient.sourceforge.net/),il est écrit en PHP et utilise GTK+2. Vous ne souhaitez pas utiliser des outils graphiques locaux (et installer XOrg) pour administrer votre machine, si?\n"
+"+\n"
+"Nous pouvons le faire à la main, ce n'est pas si compliqué.\n"
+"+\n"
+"Vous pouvez nommer chaque tunnel que vous créez, j'utiliserais ici le nom \"mytunnel\".\n"
+"+\n"
+"Ouvrez votre éditeur favoris et créez le fichier /etc/ppp/peers/mytunnel avec le contenu suivant:\n"
+"+\n"
+"---------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:2219 packages.txt:1012
@@ -5683,18 +5785,25 @@ msgid ""
 "require-mppe\n"
 "---------------------------------------------\n"
 msgstr ""
+"$ grep -v '^\\(#\\|$\\)' /etc/ppp/peers/mytunnel\n"
+"name vmiklos\n"
+"remotename PPTP\n"
+"file /etc/ppp/options.pptp\n"
+"pty \"pptp IP_DU_SERVEUR --nolaunchpppd \"\n"
+"require-mppe\n"
+"---------------------------------------------\n"
 
 # type: Bullet: '+
 # type: '
 #: user.txt:2223 packages.txt:1016
 msgid "Your /etc/ppp/chap-secrets should contain the following line:"
-msgstr ""
+msgstr "Votre /etc/ppp/chap-secrets doit contenir la ligne suivante:"
 
 # type: Bullet: '+
 # type: '
 #: user.txt:2223 packages.txt:1016
 msgid "--------------------------"
-msgstr ""
+msgstr "--------------------------"
 
 # type: Plain text
 #: user.txt:2225 packages.txt:1018
@@ -5703,18 +5812,20 @@ msgid ""
 "vmiklos  PPTP    secret  *\n"
 "--------------------------\n"
 msgstr ""
+"vmiklos  PPTP    secret  *\n"
+"--------------------------\n"
 
 # type: Bullet: '+
 # type: '
 #: user.txt:2229 packages.txt:1022
 msgid "We're ready to start the client:"
-msgstr ""
+msgstr "Nous sommes prêts à démarrer le client:"
 
 # type: Bullet: '+
 # type: '
 #: user.txt:2229 packages.txt:1022
 msgid "-------------------------------------------------------------------------------"
-msgstr ""
+msgstr "-------------------------------------------------------------------------------"
 
 # type: Plain text
 #: user.txt:2231 packages.txt:1024
@@ -5724,6 +5835,8 @@ msgid ""
 "nodetach\n"
 "-------------------------------------------------------------------------------\n"
 msgstr ""
+"pppd pty 'pptp server --nolaunchpppd' call mytunnel debug dump logfd 2 nodetach\n"
+"-------------------------------------------------------------------------------\n"
 
 # type: Bullet: '+
 # type: '
@@ -5731,13 +5844,13 @@ msgstr ""
 msgid ""
 "A lot of debug messages will be printed, check on an other console if you "
 "got a new pppx interface or not:"
-msgstr ""
+msgstr "Un tas de messages de debogage vont être affichés, contrôlez sur une autre console si vous avez obtenu une nouvelle interface pppx ou non"
 
 # type: Bullet: '+
 # type: '
 #: user.txt:2235 packages.txt:1028
 msgid "------------------------------------------------------------------"
-msgstr ""
+msgstr "------------------------------------------------------------------"
 
 # type: Plain text
 #: user.txt:2244 packages.txt:1037
@@ -5753,6 +5866,14 @@ msgid ""
 "        RX bytes:70 (70.0 b)  TX bytes:76 (76.0 b)\n"
 "------------------------------------------------------------------\n"
 msgstr ""
+"# ifconfig ppp0\n"
+"ppp0    Link encap:Point-to-Point Protocol\n"
+"        inet addr:10.0.0.89  P-t-P:10.0.0.88  Mask:255.255.255.255\n"
+"        UP POINTOPOINT RUNNING NOARP MULTICAST  MTU:996  Metric:1\n"
+"        RX packets:7 errors:0 dropped:0 overruns:0 frame:0\n"
+"        TX packets:7 errors:0 dropped:0 overruns:0 carrier:0\n"
+"        collisions:0 txqueuelen:3\n"
+"        RX bytes:70 (70.0 b)  TX bytes:76 (76.0 b)------------------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:2249 packages.txt:1042
@@ -5765,6 +5886,10 @@ msgid ""
 "+\n"
 "---------------------------------------------------\n"
 msgstr ""
+"+\n"
+"Si ça a l'air ok, vous n'avez plus besoin des messages de debogage et pppd peut tourner en tâche de fond:\n"
+"+\n"
+"---------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:2251 packages.txt:1044
@@ -5773,31 +5898,33 @@ msgid ""
 "pppd pty 'pptp server --nolaunchpppd' call mytunnel\n"
 "---------------------------------------------------\n"
 msgstr ""
+"pppd pty 'pptp server --nolaunchpppd' call mytunnel\n"
+"---------------------------------------------------\n"
 
 # type: Bullet: '+
 # type: '
 #: user.txt:2254 packages.txt:1047
 msgid "That was all. Not so simple but anyone can do it :-)"
-msgstr ""
+msgstr "C'est tout. Pas si simple, mais tout le monde peut le faire :-)"
 
 # type: Bullet: '4. '
 #: user.txt:2256 packages.txt:1049
 msgid "Resources"
-msgstr ""
+msgstr "Ressources"
 
 # type: Bullet: '* '
 #: user.txt:2259 packages.txt:1052
 msgid ""
 "http://czeh.hu/linuxdoc/vpn-pptp.html - VPN connection using PPTP and Linux "
 "by Istvan Czeh (Hungarian)"
-msgstr ""
+msgstr "http://czeh.hu/linuxdoc/vpn-pptp.html - connexions VPN avec PPTP et Linux par Istvan Czeh (Hongrois)"
 
 # type: Bullet: '* '
 #: user.txt:2259 packages.txt:1052
 msgid ""
 "http://webb.gotdns.com:2080/kernel-mppe/pptp-command.html - 'pptp-command' "
 "HOWTO"
-msgstr ""
+msgstr "http://webb.gotdns.com:2080/kernel-mppe/pptp-command.html - Doc pour 'pptp-command'"
 
 # type: Plain text
 #: user.txt:2265
