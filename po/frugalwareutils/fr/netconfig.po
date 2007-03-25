@@ -8,24 +8,26 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-03-20 15:24+0100\n"
-"PO-Revision-Date: 2006-06-20 21:15+0200\n"
-"Last-Translator: Enda <enda@netou.com>\n"
+"PO-Revision-Date: 2007-03-20 19:52+0100\n"
+"Last-Translator: Emmanuel Galland <enda@netou.com>\n"
 "Language-Team: French <traduc@traduc.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Translate Toolkit 0.10.1\n"
+"X-Generator: Pootle 0.10.1\n"
 
 #: ../netconfig.c:46
 #, c-format
 msgid "usage: %s [options] start|stop|restart|status|list\n"
 msgstr ""
+"utilisation: %s [options] start|stop|restart|status|list\n"
 
 #: ../netconfig.c:47
 #, c-format
 msgid "       %s [options] [profile]\n"
 msgstr ""
+"       %s [options] [profil]\n"
 
 #: ../netconfig.c:48
 #, c-format
@@ -44,12 +46,14 @@ msgid ""
 "-l | --loop              After bringing up the profile, loop in the "
 "foreground.\n"
 msgstr ""
+"-l | --loop              Après avoir chargé le profil, boucle en premier plan.\n"
 
 #: ../netconfig.c:51
 #, c-format
 msgid ""
 "                         SIGHUP will unload and reload the current profile.\n"
 msgstr ""
+"                         SIGHUP va décharger et recharger le profil courant.\n"
 
 #: ../netconfig.c:52
 #, c-format
@@ -108,38 +112,36 @@ msgid "Do you want to configure a DSL connetion now?"
 msgstr "Souhaitez vous configurer une connexion DSL maintenant?"
 
 #: ../netconfig.c:86
-#, fuzzy
 msgid "Enter user name"
-msgstr "Saisir le nom de la machine"
+msgstr "Saisir le nom d'utilisateur"
 
 #: ../netconfig.c:87
 msgid "Enter your PPPoE user name:"
-msgstr ""
+msgstr "Saisissez votre nom d'utilisateur PPPoE:"
 
 #: ../netconfig.c:91 ../netconfig.c:93
 msgid "Password"
-msgstr ""
+msgstr "Mot de passe"
 
 #: ../netconfig.c:92
 msgid "Please enter your PPPoE password"
-msgstr ""
+msgstr "Merci d'entrer votre mot de passe PPPoE"
 
 #: ../netconfig.c:94
 msgid "Please re-enter your PPPoE password"
-msgstr ""
+msgstr "Merci de re-saisir votre mot de passe PPPoE"
 
 #: ../netconfig.c:100
 msgid "Passwords don't match"
-msgstr ""
+msgstr "Les mots de passe ne correspondent pas"
 
 #: ../netconfig.c:101
 msgid "Sorry, the passwords do not match. Try again?"
-msgstr ""
+msgstr "Désolé, les mots de passe ne correspondent pas. Ré-essayer?"
 
 #: ../netconfig.c:104 ../netconfig.c:153
-#, fuzzy
 msgid "Enter interface name"
-msgstr "Saisir le nom de la machine"
+msgstr "Entrez le nom de l'interface"
 
 #: ../netconfig.c:105
 msgid ""
@@ -148,6 +150,9 @@ msgid ""
 "If unsure, just hit enter.\n"
 "Enter interface name:"
 msgstr ""
+"Entrez le nom de l'interface ethernet connectée au modem DSL. Ce doit être ethn, où 'n' est un nombre.\n"
+"Si vous n'êtes pas sur, appuyez juste sur entrée.\n"
+"Saisir le nom de l'interface:"
 
 #: ../netconfig.c:134
 msgid "Network configuration"
@@ -180,6 +185,9 @@ msgid ""
 "If unsure, just hit enter.\n"
 "Enter interface name:"
 msgstr ""
+"Nous allons avoir besoin du nom de l'interface que vous allez utiliser pour votre connexion réseau.\n"
+"Si vous n'êtes pas sur, appuyez juste sur entrée.\n"
+"Saisir le nom de l'interface:"
 
 #: ../netconfig.c:162
 msgid "Extended network name"
