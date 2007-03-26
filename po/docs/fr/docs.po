@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-03-26 05:01+0200\n"
-"PO-Revision-Date: 2007-03-26 13:26+0200\n"
+"PO-Revision-Date: 2007-03-26 23:33+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -1911,9 +1911,13 @@ msgstr ""
 "En général c'est eth0, mais cela peut varier lorsque vous utilisez une carte wifi par exemple.\n"
 "Si vous configurez une carte wifi, netconfig vous demandera également votre ESSID et la clef de cryptage.\n"
 "+\n"
-"2.1 Si vous choisissez statique, vous devez indiquer votre adresse IP, le masque de votre réseau local, l'adresse de votre passerelle (vous pouvez laisser vie) et l'adresse IP de votre serveur DNS principal (vous pourrez en ajouter d'avantage ultérieurement en éditant le '/etc/resolv.conf'). A ce moment, la configuration est terminée.\n"
+"2.1 Si vous avez choisi statique, vous devez indiquer votre adresse IP, le masque de votre réseau local, l'adresse de votre passerelle (vous pouvez laisser vie) et l'adresse IP de votre serveur DNS principal (vous pourrez en ajouter d'avantage ultérieurement en éditant le '/etc/resolv.conf'). A ce moment, la configuration est terminée.\n"
 "+\n"
-"2.2 If you chose dhcp, you can optionally give your dhcp hostname, however,netconfig will not ask more questions about your network, since allother data will be provided by the DHCP server.+2.3 In dsl part you must give your username, something like 'someone@provider.net'.Then you'll have to specify the network interface (usually eth0) throughwhich the ADSL connecting script will try to communicate with your ADSLmodem. Then enter your password twice.+2.4 If you chose lo, you don't have to answer any questions."
+"2.2 si vous avez choisi dhcp, alors netconfig ne vous posera plus de questions à propos de votre réseau dans la mesure ou le serveur DHCP fournira les informations.\n"
+"+\n"
+"2.3 Dans la partie dsl vous devrez indiquer votre nom d'utilisateur, quelque chose du genre 'someone@provider.net'. Ensuite vous devrez spécifier l'interface réseau (généralement eth0) sur laquelle le script de connexion ADSL essaiera de communiquer avec votre modem ADSL. Entrez ensuite votre mot de passe 2 fois.\n"
+"+\n"
+"2.4 Si vous avez choisi lo, vous n'aurez à répondre à aucune question."
 
 # type: Plain text
 #: user.txt:603 network.txt:55
@@ -1925,7 +1929,7 @@ msgid ""
 "default in most cases. It's because you can set up more then one profile.\n"
 "It's very useful when you got a laptop so you can set up options for all\n"
 "networks you use.\n"
-msgstr "3. Finalement, netconfig va écrire tous vos fichier de config. Si vous voulez éditer vos paramétrages à la main, les éléments relatifs aux interfaces sont enregistrés dans le répertoire /etc/sysconfig/network. La plus part du temps un seul fichier nommé default est contenu dans ce dernier. Cela est du au fait que vous pouvez définir plus d'un profil. Cela est très utile lorsque vous possédez un portable, de telle façon que vous pouvez le modifier rapidement pour toute vos configuration réseau."
+msgstr "3. Finalement, netconfig va écrire tous vos fichiers de config. Si vous voulez éditer vos paramétres à la main, les éléments relatifs aux interfaces sont enregistrés dans le répertoire /etc/sysconfig/network. La plupart du temps un seul fichier nommé \"default\" est contenu dans ce dernier. Cela est du au fait que vous pouvez définir plus d'un profil. Cela est très utile lorsque vous possédez un portable, de telle façon que vous pouvez le modifier rapidement pour toutes vos configurations réseau."
 
 # type: Plain text
 #: user.txt:605
@@ -3223,7 +3227,7 @@ msgid ""
 "Please don't request custom kernels. We try to use as less patches as "
 "possible.  See `man kernel.sh` on building your own packages using various "
 "patchsets.  Really, building such a kernel requires a buildscript of 5 lines!"
-msgstr ""
+msgstr "Merci de ne pas demander de noyau personnalisés. Nous essayons d'apporter aussi peu de modifications que possible.  Voir `man kernel.sh` pour la façon de construire vos propres paquets utilisant divers jeu de modifications.  Sincèrement, construire un tel noyau nécessite un fichier de construction de 5 lignes!"
 
 # type: Plain text
 #: user.txt:1084
@@ -3637,19 +3641,19 @@ msgid ""
 "Change your LastFM username and password in `/etc/lastfmsubmitd.conf` and "
 "the MPD server settings in `/etc/lastmp.conf` before starting the LastFM "
 "submit daemon."
-msgstr ""
+msgstr "Changez vos noms d'utilisateur et mot de passe LastFM dans `/etc/lastfmsubmitd.conf` et les paramètes de serveur MPD dans `/etc/lastmp.conf` avant de démarrer le démon de soumission/proposition LastFM."
 
 # type: Plain text
 #: user.txt:1227
 msgid "==== Starting the daemon(s)"
-msgstr "==== Démarrage des démons"
+msgstr "==== Démarrage du/des démon(s)"
 
 # type: Plain text
 #: user.txt:1230 packages.txt:23
 msgid ""
 "After configuring `lastfmsubmitd`, you should run the following commands to "
 "start the daemons:"
-msgstr ""
+msgstr "Après avoir configuré `lastfmsubmitd`, vous devriez exécuter les commandes suivantes pour lancer les démons:"
 
 # type: Plain text
 #: user.txt:1231 packages.txt:24
@@ -5976,7 +5980,7 @@ msgstr "=== postgrey"
 # type: Plain text
 #: user.txt:2040 packages.txt:833
 msgid "To use postgrey, put something along the lines of"
-msgstr ""
+msgstr "Pour utiliser postgrey, remplir les lignes"
 
 # type: Plain text
 #: user.txt:2045 packages.txt:838
@@ -5987,11 +5991,15 @@ msgid ""
 "        reject_unauth_destination\n"
 "        check_policy_service inet:127.0.0.1:60000\n"
 msgstr ""
+"    smtpd_recipient_restrictions =\n"
+"        ...\n"
+"        reject_unauth_destination\n"
+"        check_policy_service inet:127.0.0.1:60000\n"
 
 # type: Plain text
 #: user.txt:2047 packages.txt:840
 msgid "in your /etc/postfix/main.cf (postfix 2.1 or newer is required.)"
-msgstr ""
+msgstr "dans votre /etc/postfix/main.cf (postfix 2.1 ou plus récent est requis.)"
 
 # type: Plain text
 #: user.txt:2049
@@ -6104,17 +6112,14 @@ msgstr "Pilote pour SpeedTouch USB et SpeedTouch 330"
 # type: Plain text
 #: user.txt:2102 packages.txt:895
 msgid "The binaries (modem_run and pppoax) have been installed in `/usr/sbin`."
-msgstr ""
-"Les pilotes binaires (modem_run et pppoax) ont été installé dans `/usr/sbin`."
+msgstr "Les pilotes binaires (modem_run et pppoax) ont été installés dans `/usr/sbin`."
 
 # type: Plain text
 #: user.txt:2104 packages.txt:897
 msgid ""
 "You will find the documentation and example script files in: `/usr/share/doc/"
 "speedtouch-pkgver`"
-msgstr ""
-"Vous trouverez la documentation ainsi que des examples de scripts dans: `/"
-"usr/share/doc/speedtouch-pkgver`"
+msgstr "Vous trouverez la documentation ainsi que des exemples de scripts dans: `/usr/share/doc/speedtouch-pkgver`"
 
 # type: Plain text
 #: user.txt:2106 packages.txt:899
@@ -6123,7 +6128,7 @@ msgid ""
 "You can start configuring your modem by running\n"
 "-------------------------\n"
 msgstr ""
-"Vous pouvez configurer votre modem en executant\n"
+"Vous pouvez configurer votre modem en exécutant\n"
 "-------------------------\n"
 
 # type: Plain text
@@ -6306,7 +6311,7 @@ msgid ""
 "Also you could use ssh+pppd, but that's rather problematic on platforms\n"
 "other than Unix.\n"
 msgstr ""
-"1. Preface\n"
+"1. Préface\n"
 "+\n"
 "On m'a demandé d'établir un VPN utilisant PPTP. Une façon plus sécurisée d'établir un VPN est d'utiliser IPSec, plus de détails ici:\n"
 "http://web.archive.org/web/20030416131233/www.counterpane.com/pptpv2-paper.html[here].  Vous pouvez également utiliser ssh+pppd, mais c'est assez problématique sur des plateformes autre qu'Unix.\n"
@@ -6332,7 +6337,7 @@ msgstr ""
 "+\n"
 "Le gros problème est que beaucoup de docs dépassées commencent par patcher le noyau et ppp. Ceci n'est plus nécessaire!\n"
 "+\n"
-"Besoins: Il vous faut un kernel>=2.6.15 ou plus récent (Frugalware 0.4 ou plus récent sont OK).Il vous faut également ppp>=2.4.2.\n"
+"Besoins: Il vous faut un noyau>=2.6.15 ou plus récent (Frugalware 0.4 ou plus récent sont OK).Il vous faut également ppp>=2.4.2.\n"
 "+\n"
 "Il est probablement déjà installé sur vote système, voyons le nouveau paquet: pptpd. Installez le avec l'habituel\n"
 "+\n"
@@ -6490,7 +6495,7 @@ msgid ""
 "---------------------------------------------\n"
 msgstr ""
 "+\n"
-"Il reste à authoriser pptp dans le firewall (Je présumes que vous utilisez la configuration par défaut de Frugalware: INPUT est à DROP par défaut, mais FORWARD est autorisé, de même que OUTPUT.)\n"
+"Il reste à autoriser pptp dans le firewall (Je présumes que vous utilisez la configuration par défaut de Frugalware: INPUT est à DROP par défaut, mais FORWARD est autorisé, de même que OUTPUT.)\n"
 "+\n"
 "Ajoutez les 2 lignes suivantes à la section filter de '/etc/sysconfig/firewall':\n"
 "+\n"
@@ -6819,9 +6824,7 @@ msgstr "=== kiax"
 msgid ""
 "If you want to test this package, you can use for example the server of "
 "http://www.voipbuster.com/en/index.html[VoipBuster]."
-msgstr ""
-"Si vous voulez tester ce paquet, vous pouvez utilisé comme exemple le "
-"serveur de http://www.voipbuster.com/fr/index.html[VoipBuster]."
+msgstr "Si vous voulez tester ce paquet, vous pouvez utiliser comme exemple le serveur de http://www.voipbuster.com/fr/index.html[VoipBuster]."
 
 # type: Plain text
 #: user.txt:2351 packages.txt:1144
@@ -6946,7 +6949,7 @@ msgstr "=== k3b"
 # type: Plain text
 #: user.txt:2389 packages.txt:1182
 msgid "If you want to rip a video DVD, install the transcode package as well."
-msgstr ""
+msgstr "Si vous voulez extraire une vidéo d'un DVD, installer aussi le paquet transcode."
 
 # type: Plain text
 #: user.txt:2391
@@ -6980,7 +6983,7 @@ msgstr "Après avoir installé lineakd, prenez le soin d'éditer le fichier de c
 # type: Plain text
 #: user.txt:2403 packages.txt:1196
 msgid "You can then start the lineak daemon by running the following command:"
-msgstr ""
+msgstr "Vous pouvez démarer le démon lineak en exécutant la commande suivante:"
 
 # type: Plain text
 #: user.txt:2404 packages.txt:1197
@@ -7152,9 +7155,7 @@ msgstr "=== maxima"
 msgid ""
 "Install the 'tk' package if you intend to use the gui \"xmaxima\".  Detailed "
 "documentation can be found using"
-msgstr ""
-"Installer le paquet 'tk' si vous prévoyez d'utiliser le gui \"xmaxima\".  "
-"Une documentation détaillée peut être trouvée en utilisant"
+msgstr "Installez le paquet 'tk' si vous prévoyez d'utiliser le gui \"xmaxima\".  Une documentation détaillée peut être trouvée en utilisant"
 
 # type: Bullet: '* '
 #: user.txt:2459 packages.txt:1252
@@ -7372,7 +7373,7 @@ msgid ""
 "If you want to be able to use the VirtualBox guest additions, run this "
 "command as root to get the Additions ISO (requires an active Internet "
 "connection):"
-msgstr ""
+msgstr "Si vous souhaitez pouvoir utiliser les modules VirtualBox pour les systèmes invités, lancez cette commande en tant que root pour obtenir l'iso contenant les ajouts (nécessite une connexion internet active):"
 
 # type: Plain text
 #: user.txt:2529 packages.txt:1322
@@ -7538,7 +7539,7 @@ msgstr ""
 # type: Bullet: '3. '
 #: user.txt:2601 packages.txt:1394
 msgid "Reboot and select the Xen option at the Grub menu."
-msgstr "Redémarrez et sélécionnez l'option Xen dans le menu Grub."
+msgstr "Redémarrez et séléctionnez l'option Xen dans le menu Grub."
 
 # type: Bullet: '4. '
 #: user.txt:2601 packages.txt:1394
@@ -7884,7 +7885,7 @@ msgstr ""
 msgid ""
 "          Important: Give a real address here, otherwise you'll get\n"
 "          warnings in your browser!\n"
-msgstr ""
+msgstr "          Important: Indiquez une adresse valide sans quoi votre navigateur vous enverra des avertissements!"
 
 # type: Bullet: '       7) '
 #: user.txt:2720 packages.txt:1513
@@ -7898,6 +7899,8 @@ msgid ""
 "          I usually give the email address of the webmaster here.\n"
 "          (webmaster@domain.com)\n"
 msgstr ""
+"          J'ai pour habitude d'indiquer ici l'adresse du webmaster.\n"
+"          (webmaster@domain.com)"
 
 # type: Bullet: '       8) '
 #: user.txt:2725 packages.txt:1518
@@ -7909,12 +7912,13 @@ msgstr ""
 #, no-wrap
 msgid "          In most cases, one year will be good.\n"
 msgstr ""
+"          Dans la plupart des cas, un an conviendra.\n"
 
 # type: Plain text
 #: user.txt:2729 packages.txt:1522
 #, no-wrap
 msgid "          Then, we should choose the version of our certificate:\n"
-msgstr ""
+msgstr "          Ensuite, nous devons choisir la version pour notre certificat:"
 
 # type: Plain text
 #: user.txt:2731 packages.txt:1524
@@ -7928,7 +7932,7 @@ msgstr "          Version du certificat (1 ou 3) [3]:\n"
 msgid ""
 "          The default 3 will be good, so just hit enter. In the next\n"
 "          step we can  encrypt our private key:\n"
-msgstr "          La valeur par défaut 3 est suffisante, valider donc en appuyant sur entrée. Dans l'étape          suivant nous pouvons crypter notre clef privée:"
+msgstr "          La valeur par défaut 3 est correcte, valider donc en appuyant sur entrée. Dans l'étape          suivant nous pouvons crypter notre clef privée:"
 
 # type: Plain text
 #: user.txt:2736 packages.txt:1529
@@ -7949,7 +7953,7 @@ msgstr ""
 # type: '
 #: user.txt:2743 packages.txt:1536
 msgid "So the following files are created:"
-msgstr ""
+msgstr "Les fichiers suivant ont été créés:"
 
 # type: Bullet: '+
 # type: '
@@ -8218,7 +8222,7 @@ msgstr ""
 msgid ""
 "Also, If you are using iptables, please uncomment this line in '/etc/"
 "sysconfig/firewall':"
-msgstr ""
+msgstr "Aussi, si vous utilisez iptables, vous êtes prié de dé-commenter la ligne suivante dans '/etc/sysconfig/firewall':"
 
 # type: Plain text
 #: user.txt:2835 packages.txt:1628
@@ -8271,6 +8275,8 @@ msgid ""
 "So if you want to use lmsensors try to run\n"
 "--------------\n"
 msgstr ""
+"Si vous voulez utilisez lmsensors essayé d'exécuter\n"
+"--------------\n"
 
 # type: Plain text
 #: user.txt:2855 packages.txt:1648
@@ -8290,6 +8296,8 @@ msgid ""
 "for generate lm_sensors. Then issue:\n"
 "-----------------------\n"
 msgstr ""
+"dites ensuite OUI à la fin de sensors-detect pour écrire '/etc/sysconfig/lm_sensors'. Faite ensuite:\n"
+"-----------------------\n"
 
 # type: Plain text
 #: user.txt:2860 packages.txt:1653
@@ -8351,6 +8359,11 @@ msgid ""
 "  developers can 'speak' on this channel but everyone can see what's being\n"
 "  discussed).\n"
 msgstr ""
+".Il y a 4 salon pour Frugalware Linux\n"
+"* frugalware (principal, Anglais seulement)\n"
+"* frugalware.hu (Hongrois seulement)\n"
+"* frugalware.fr (Français seulement)\n"
+"* frugalware.dev (Discussion sur le développement de Frugalware. Seuls les développeurs de Frugalware peuvent 'parler' dans ce salon mais tout le monde peut voir ce qui est dit).\n"
 
 # type: Plain text
 #: user.txt:2890 irc-rules.txt:28
@@ -8358,7 +8371,7 @@ msgid ""
 "Please use only the language appropriate to the channel.  If you don't do "
 "so, you'll be asked to change channels.  If you know of other non-English "
 "channels, please tell us."
-msgstr ""
+msgstr "Vous êtes prié d'utiliser seulement la bonne langue dans chaque salon. Si vous ne faite pas ainsi, on vous demandera de changer de salon. Si vous connaissez d'autre salon non-Anglais, dites le nous."
 
 # type: Plain text
 #: user.txt:2892
@@ -8372,7 +8385,7 @@ msgid ""
 "developer channels.  Since users don't have the right to speak on the "
 "frugalware.dev channel, your presence on a non-developer channel is the only "
 "way they can chat with you."
-msgstr ""
+msgstr "Si vous êtes un développeur Frugalware, rejoignez au moins un autre salon non-développeur. Comme les utilisateurs ne sont pas autorisés à parler sur le salon frugalware.dev, votre présence sur un salon non-développeur est la seule façon qu'il ont de discuter avec vous."
 
 # type: Plain text
 #: user.txt:2899
@@ -8382,7 +8395,7 @@ msgstr "=== Discussion hors-sujet"
 # type: Plain text
 #: user.txt:2901
 msgid "==== Other Linux distributions' features"
-msgstr ""
+msgstr "==== Fonctionnalités des autres distribution Linux"
 
 # type: Plain text
 #: user.txt:2904 irc-rules.txt:42
@@ -8399,13 +8412,14 @@ msgstr ""
 #, no-wrap
 msgid "  How can i set up my network so that it works as it does under Gentoo?\n"
 msgstr ""
+"  Comment puis-je configurer mon réseau de telle façon que cela fonction comme sous Gentoo?\n"
 
 # type: Plain text
 #: user.txt:2909 irc-rules.txt:47
 msgid ""
 "is impossible to answer for someone who hasn't used Gentoo.  Instead, tell "
 "everyone what it is that you're trying to achieve, for example:"
-msgstr ""
+msgstr "est impossible à répondre pour quelqu'un qui n'a jamais utilisé Gentoo.  A la place, dites nous ce que vous essayer de faire, par example:"
 
 # type: Plain text
 #: user.txt:2912 irc-rules.txt:50
@@ -8429,7 +8443,7 @@ msgid ""
 "this doesn't prevent others from talking about Frugalware. We are a "
 "community, so maybe you want to share other ideas, but don't make it "
 "impossible for others to get help."
-msgstr ""
+msgstr "Les discutions qui non aucun rapport avec Frugalware (ou avec Linux non plus) sont autorisées, du moment que ça n'empêche pas les autres de discuté de Frugalware. Nous somme une communauté, il est donc possible que nous partagions d'autres idées, mais n'empêcher pas les autres d'obtenir de l'aide."
 
 # type: Plain text
 #: user.txt:2921
@@ -8448,7 +8462,7 @@ msgid ""
 "Frugalware for the first time, but first you would like to get some of your "
 "questions answered. No problem, but first please read the about page, you "
 "can reach it here: http://frugalware.org/about"
-msgstr ""
+msgstr "Bienvenue! vous avez probablement des questions générale, puisque vous êtes sur le point d'installer Frugalware pour la première fois, mais avant tout vous voulez avoir des réponse à quelques unes de vos questions. Pas de problème, mais tout d'abord vous êtes prié de lire la page d'information (NDT: about), que vous pouvez lire ici: http://frugalware.org/about"
 
 # type: Plain text
 #: user.txt:2930
@@ -8475,7 +8489,7 @@ msgstr "==== Ne pas demander si on peu demander une question, juste demander la"
 msgid ""
 "Go ahead and ask your question.  The worst that can happen is that you don't "
 "get an answer."
-msgstr ""
+msgstr "Lancez vous et posez votre question. Le pire que vous vous puissiez obtenir est que vous n'aillez pas de réponse."
 
 # type: Plain text
 #: user.txt:2943
@@ -8488,7 +8502,7 @@ msgid ""
 "If you have a few lines of an error message or something similar to show to "
 "others in the channel, don't paste it into the channel.  This is because: # "
 "IRC is slow and, # it breaks the flow of other peoples' conversations."
-msgstr ""
+msgstr "Si vous avez quelques lignes d'un message d'erreur ou quelque chose de similaire à montrer au autres personne dans le salon, ne le copier pas dedans. Parce que: # IRC est lent et, # cela casse la continuité de la discutions des autres personnes."
 
 # type: Plain text
 #: user.txt:2951 irc-rules.txt:89
@@ -8510,12 +8524,12 @@ msgid ""
 "Yes, it is. It informs users about new binary packages, manages rights on "
 "the channel and so on. If you want a new feature to be implemented then feel "
 "free to request it at http://bugs.frugalware.org/."
-msgstr ""
+msgstr "Oui, il l'est. Il informe les utilisateurs de nouveaux paquets binaires, gère les droits sur le salon et ainsi de suite. Si vous voulez une nouvelle fonctionnalité à être implémentée vous pouvez librement crées une requêtes sur http://bugs.frugalware.org/."
 
 # type: Plain text
 #: user.txt:2959
 msgid "=== Bouncers, leaving your client online when you're away"
-msgstr ""
+msgstr "=== Bouncers, restez en ligne quand vous êtes absent"
 
 # type: Plain text
 #: user.txt:2966 irc-rules.txt:104
@@ -8526,18 +8540,19 @@ msgid ""
 "think that we're talking to you while we're talking with /dev/null. Also if "
 "you're online and you have been highlighted and asked, please try to "
 "answer.  If you have no time, then a simple"
-msgstr ""
+msgstr "Ce n'est pas un problème, mais garder en tête ce qui suit: si vous êtes absent vous devez être capable de lire l'historique quand vous avez étés mis en lumière.  Si ce n'est pas possible il est alors mieux que vous quittiez le salon, puisque nous penserons que nous vous parlions alors que nous parlions à /dev/null. Aussi puisque vous étiez en ligne et que vous avez été mis en lumière et interrogé, essayé autant que possible de répondre. Si vous n'avez pas le temps, alors un simple"
 
 # type: Plain text
 #: user.txt:2968 irc-rules.txt:106
 #, no-wrap
 msgid "  alex: i don't have time atm to answer, sorry\n"
 msgstr ""
+"  alex: je n'ai pas le temps de répondre pour le moment, désolé\n"
 
 # type: Plain text
 #: user.txt:2970 irc-rules.txt:108
 msgid "is enough. So that he won't wait for your answer."
-msgstr ""
+msgstr "est suffisant. Ainsi il n'aura pas à attendre pour votre réponse."
 
 # type: Plain text
 #: user.txt:2972
@@ -8550,7 +8565,7 @@ msgid ""
 "Please do _not_ /msg users unless you asked about it and you're allowed.  "
 "This is a support channel: you ask in the channel and who have time / "
 "knowledge to answer, he/she will. That the fastest way, believe us."
-msgstr ""
+msgstr "Vous êtes priez de _ne pas_ /msg des utilisateurs à moins que ce dernier vous ait autorisé à le faire. Ceci est un salon d'aide: vous demandez dans le salon et celui qui a le temps / la connaissance pour répondre,le fera. Ceci est la façon la plus rapide, croyez nous."
 
 # type: Plain text
 #: user.txt:2980 irc-rules.txt:118
@@ -8558,7 +8573,7 @@ msgid ""
 "You should also know that some of us (voroskoi, vmiklos, maybe others too) "
 "set up their clients to ignore msgs on freenode, so you talk to /dev/null "
 "when you /msg to us."
-msgstr ""
+msgstr "Vous devez aussi savoir que quelques un d'entre nous (voroskoi, vmiklos, et probablement d'autres) configure leur client pour ignorer les msgs sur freenode, vous parlez avec /dev/null quand vous leur envoyez des /msg."
 
 # type: Plain text
 #: user.txt:2982
@@ -8586,7 +8601,7 @@ msgstr "=== Comment vérifier"
 # type: Bullet: '- '
 #: user.txt:2992 gpg.txt:6
 msgid "Import our public keyring with the"
-msgstr ""
+msgstr "Charger notre clef jeux de clefs avec"
 
 # type: Plain text
 #: user.txt:2995 gpg.txt:9
@@ -8595,11 +8610,13 @@ msgid ""
 "$ gpg --recv-keys 20F55619\n"
 "------------------------\n"
 msgstr ""
+"$ gpg --recv-keys 20F55619\n"
+"------------------------\n"
 
 # type: Bullet: '- '
 #: user.txt:3000 gpg.txt:14
 msgid "Verify the tarball. Here is an example:"
-msgstr ""
+msgstr "Vérification d'une archive. Voici un exemple:"
 
 # type: Plain text
 #: user.txt:3006 gpg.txt:20
@@ -8611,6 +8628,11 @@ msgid ""
 "\t<frugalware-devel@frugalware.org>\"\n"
 "------------------------------------------------------------------------------\n"
 msgstr ""
+"$ gpg --verify pacman-tools-0.7.2.tar.gz.asc pacman-tools-0.7.2.tar.gz\n"
+"gpg: Signature made Sun 14 May 2006 02:35:34 AM CEST using DSA key ID 20F55619\n"
+"gpg: Good signature from \"Frugalware Linux Archives Verification Key \\\n"
+"<frugalware-devel@frugalware.org>\"\n"
+"------------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:3009
@@ -8623,7 +8645,7 @@ msgid ""
 "This signature does not guarantee that the Frugalware Linux Archives master "
 "site itself has not been compromised. However, if we suffer an intrusion we "
 "will revoke the key and post information here as quickly as possible."
-msgstr ""
+msgstr "Cette signature ne garantie pas que le maître du site des archives de Frugalware Linux Archives en personne n'as pas été compromis. Néanmoins, si nous subissons une intrusion nous révoquerons la clef et posterons des informations ici aussi rapidement que possible."
 
 # type: Plain text
 #: user.txt:3015
@@ -8673,7 +8695,7 @@ msgid ""
 "xapps/xlib, if not then use apps/lib.  For each task there is a default "
 "package. For example postfix is our default MTA, so exim, sendmail, etc must "
 "be in some extra dir."
-msgstr ""
+msgstr "Si vous naviguez dans la FST (Frugalware Source Tree), vous pouvez voir, que dans le répertoire des sourcesil y a des répertoires de catégories et des catégories-extra. Ceux sans le tag -extra contiennent les paquets basiquepour une catégorie donnée ansi que les dépendances de ses derniers. Par conséquent un paquet dans ses répertoires ne peuvent dépendre de paquets des répertoires -extra. Cela est aussi vrai pour les applications console/graphique: si votre application/libraries est graphique, utilisez alors xapps/xlib, dans le cas contraire utilisez apps/lib. Pour chaque tache il y a un paquet part défaut. Par exemple postfix est notre MTA par défaut, donc exim, sendmail, etc doivent être dans un des répertoires -extra."
 
 # type: Plain text
 #: user.txt:3043 makepkg.txt:30
@@ -8731,7 +8753,7 @@ msgid ""
 "NOTE: During the package database generation we source all the FrugalBuilds, "
 "so it must be a very short time to do so for each FrugalBuild. Because of "
 "this, you should not use something like:"
-msgstr ""
+msgstr "NOTE: Durant la génération de la base de donnée nous chargeons tous les FrugalBuilds, donc cette opération doit ce faire très rapidement. A cause de ça, vous ne devez en aucun cas faire comme suivant:"
 
 # type: Plain text
 #: user.txt:3068 makepkg.txt:55
@@ -8771,7 +8793,7 @@ msgstr ""
 msgid ""
 "This way gensync will be fast even if reaching foo.com takes a lot of time.  "
 "Also using the `-u` option an offline build is possible."
-msgstr ""
+msgstr "De cette façon gensync sera rapide même si joindre foo.com prend énormément de temps. Cela permet aussi d'utiliser l'option `-u` pour une compilation hors ligne."
 
 # type: Plain text
 #: user.txt:3083 makepkg.txt:70
@@ -8784,7 +8806,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:3085
 msgid "=== Recompiling packages"
-msgstr "=== Recompiler des paquets"
+msgstr "=== Recompilation de paquets"
 
 # type: Plain text
 #: user.txt:3092 makepkg.txt:79
