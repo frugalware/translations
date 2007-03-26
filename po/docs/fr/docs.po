@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-03-26 05:01+0200\n"
-"PO-Revision-Date: 2007-03-26 12:05+0200\n"
+"PO-Revision-Date: 2007-03-26 13:26+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -1905,6 +1905,15 @@ msgid ""
 "+\n"
 "2.4 If you chose lo, you don't have to answer any questions.\n"
 msgstr ""
+"2. Dans le dialogue suivant, vous devez choisir comment votre machine est connectée au réseau. Si vous avez une carte réseau interne, une adresse IP assiggnée, ainsi qu'une passerelle et un DNS, choisissez statique pour entrer ces valeurs. Si votre adresse IP est assignée par un serveur DHCP (communément utilisé pour les connexions cables), choisissez dhcp. Si vous avez une connexion DSL  (eg. ADSL) choisissez l'option dsl (NDT:pour les *box [eg. Freebox] il vaut mieux choisir dhcp)! Enfin, si vous n'avez pas de carte réseau, choisissez lo. L'option lo est également le bon choix si vous utilisez une carte pcmcia.\n"
+"+\n"
+"Lorsque vous configurez le réseau, la première question portera sur le choix de la carte réseau.\n"
+"En général c'est eth0, mais cela peut varier lorsque vous utilisez une carte wifi par exemple.\n"
+"Si vous configurez une carte wifi, netconfig vous demandera également votre ESSID et la clef de cryptage.\n"
+"+\n"
+"2.1 Si vous choisissez statique, vous devez indiquer votre adresse IP, le masque de votre réseau local, l'adresse de votre passerelle (vous pouvez laisser vie) et l'adresse IP de votre serveur DNS principal (vous pourrez en ajouter d'avantage ultérieurement en éditant le '/etc/resolv.conf'). A ce moment, la configuration est terminée.\n"
+"+\n"
+"2.2 If you chose dhcp, you can optionally give your dhcp hostname, however,netconfig will not ask more questions about your network, since allother data will be provided by the DHCP server.+2.3 In dsl part you must give your username, something like 'someone@provider.net'.Then you'll have to specify the network interface (usually eth0) throughwhich the ADSL connecting script will try to communicate with your ADSLmodem. Then enter your password twice.+2.4 If you chose lo, you don't have to answer any questions."
 
 # type: Plain text
 #: user.txt:603 network.txt:55
@@ -1943,7 +1952,7 @@ msgstr ""
 msgid ""
 "NOTE: You will not find this file if you have not installed iptables package "
 "as this is an iptables firewall."
-msgstr ""
+msgstr "NOTE: Vous ne trouverez pas se fichier si vous n'avez pas installé ke paquet iptables comme le pare-feu est basé sur iptables."
 
 # type: Plain text
 #: user.txt:618 network.txt:70
@@ -3599,7 +3608,7 @@ msgstr "== Paquets"
 # type: Plain text
 #: user.txt:1213
 msgid "=== gspcav1"
-msgstr ""
+msgstr "=== gspcav1"
 
 # type: Plain text
 #: user.txt:1217 packages.txt:10
@@ -3615,7 +3624,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:1219
 msgid "=== lastfmsubmitd"
-msgstr ""
+msgstr "=== lastfmsubmitd"
 
 # type: Plain text
 #: user.txt:1221
@@ -3633,7 +3642,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:1227
 msgid "==== Starting the daemon(s)"
-msgstr ""
+msgstr "==== Démarrage des démons"
 
 # type: Plain text
 #: user.txt:1230 packages.txt:23
@@ -4859,7 +4868,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:1677
 msgid "=== dazuko"
-msgstr ""
+msgstr "=== dazuko"
 
 # type: Plain text
 #: user.txt:1679 packages.txt:472
@@ -5197,7 +5206,7 @@ msgstr "Démarrer lircd et lircmd avec `sudo service lirc start`."
 # type: Plain text
 #: user.txt:1791
 msgid "=== kexec-tools"
-msgstr ""
+msgstr "=== kexec-tools"
 
 # type: Plain text
 #: user.txt:1793 packages.txt:586
@@ -5439,7 +5448,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:1863
 msgid "=== bcm43xx-fwcutter"
-msgstr ""
+msgstr "=== bcm43xx-fwcutter"
 
 # type: Plain text
 #: user.txt:1865 packages.txt:658
@@ -5564,7 +5573,7 @@ msgstr "Prêt!"
 # type: Plain text
 #: user.txt:1901
 msgid "=== ndiswrapper"
-msgstr ""
+msgstr "=== ndiswrapper"
 
 # type: Plain text
 #: user.txt:1904 packages.txt:697
@@ -5679,7 +5688,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:1939
 msgid "=== midpssh-http-server"
-msgstr ""
+msgstr "=== midpssh-http-server"
 
 # type: Plain text
 #: user.txt:1941 packages.txt:734
@@ -5719,7 +5728,7 @@ msgstr "par exemple après l'entrée MySQL."
 # type: Plain text
 #: user.txt:1952
 msgid "=== mb2md"
-msgstr ""
+msgstr "=== mb2md"
 
 # type: Plain text
 #: user.txt:1954 packages.txt:747
@@ -5818,7 +5827,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:1988
 msgid "=== squirrelmail"
-msgstr ""
+msgstr "=== squirrelmail"
 
 # type: Plain text
 #: user.txt:1990 packages.txt:783
@@ -5830,7 +5839,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:1992
 msgid "=== rss2email"
-msgstr ""
+msgstr "=== rss2email"
 
 # type: Plain text
 #: user.txt:1995
@@ -5987,7 +5996,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:2049
 msgid "=== postfixadmin"
-msgstr ""
+msgstr "=== postfixadmin"
 
 # type: Plain text
 #: user.txt:2055 packages.txt:848
@@ -6063,7 +6072,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:2085
 msgid "=== httpircproxy"
-msgstr ""
+msgstr "=== httpircproxy"
 
 # type: Plain text
 #: user.txt:2087 packages.txt:880
@@ -6085,7 +6094,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:2098
 msgid "=== speedtouch"
-msgstr ""
+msgstr "=== speedtouch"
 
 # type: Plain text
 #: user.txt:2100 packages.txt:893
@@ -6269,7 +6278,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:2158
 msgid "=== mediawiki"
-msgstr ""
+msgstr "=== mediawiki"
 
 # type: Plain text
 #: user.txt:2161 packages.txt:954
@@ -6932,7 +6941,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:2387
 msgid "=== k3b"
-msgstr ""
+msgstr "=== k3b"
 
 # type: Plain text
 #: user.txt:2389 packages.txt:1182
@@ -6957,21 +6966,16 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:2397
-#, fuzzy
 msgid "=== lineakd"
-msgstr "=== En général"
+msgstr "=== lineakd"
 
 # type: Plain text
 #: user.txt:2401 packages.txt:1194
-#, fuzzy
 msgid ""
 "After installing lineakd, make sure you create a configuration file before "
 "starting it.  An example configuration file is located in '/etc/lineak/"
 "lineakd.conf.example' for the user's reference."
-msgstr ""
-"Après avoir installé cpuspeed, prenez le soin d'éditer le fichier de "
-"configuration avant de le démarrer. Le fichier de configuration est situé "
-"dans '/etc/cpuspeed.conf'."
+msgstr "Après avoir installé lineakd, prenez le soin d'éditer le fichier de configuration avant de le démarrer. Un exemple de fichier de configuration est disponible dans '/etc/lineak/lineakd.conf.example' pour référence."
 
 # type: Plain text
 #: user.txt:2403 packages.txt:1196
@@ -6980,17 +6984,20 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:2404 packages.txt:1197
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "----------\n"
-msgstr "---------\n"
+msgstr ""
+"----------\n"
 
 # type: Plain text
 #: user.txt:2406 packages.txt:1199
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "$ lineakd\n"
 "----------\n"
-msgstr "---------\n"
+msgstr ""
+"$ lineakd\n"
+"----------\n"
 
 # type: Plain text
 #: user.txt:2409
@@ -7356,9 +7363,8 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:2522
-#, fuzzy
 msgid "=== virtualbox"
-msgstr "=== drupal"
+msgstr "=== virtualbox"
 
 # type: Plain text
 #: user.txt:2526 packages.txt:1319
@@ -7370,13 +7376,13 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:2529 packages.txt:1322
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "/usr/bin/get-vbox-additions\n"
 "---------------------------\n"
 msgstr ""
-"/usr/sbin/nessus-adduser\n"
-"------------------------\n"
+"/usr/bin/get-vbox-additions\n"
+"---------------------------\n"
 
 # type: Plain text
 #: user.txt:2533
@@ -8061,7 +8067,7 @@ msgstr "Certificat auto-signé pour Apache ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
 # type: Plain text
 #: user.txt:2780 packages.txt:1573
 msgid "This must be done as root."
-msgstr ""
+msgstr "Ceci doit être effectuer en tant que root."
 
 # type: Plain text
 #: user.txt:2781 packages.txt:1574
@@ -8135,6 +8141,7 @@ msgstr ""
 #, no-wrap
 msgid "------------------------------------------------------------------------------\n"
 msgstr ""
+"------------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:2807 packages.txt:1600
@@ -8177,7 +8184,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:2820
 msgid "=== nss-mdns"
-msgstr ""
+msgstr "=== nss-mdns"
 
 # type: Plain text
 #: user.txt:2823 packages.txt:1616
@@ -8237,7 +8244,7 @@ msgstr "------------------------\n"
 # type: Plain text
 #: user.txt:2844
 msgid "=== lmsensors"
-msgstr ""
+msgstr "=== lmsensors"
 
 # type: Plain text
 #: user.txt:2851 packages.txt:1644
@@ -8427,7 +8434,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:2921
 msgid "=== Asking questions"
-msgstr ""
+msgstr "=== Poser des questions"
 
 # type: Plain text
 #: user.txt:2923
@@ -8461,7 +8468,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:2938
 msgid "==== Don't ask if you can ask a question, just go ahead and ask"
-msgstr ""
+msgstr "==== Ne pas demander si on peu demander une question, juste demander la"
 
 # type: Plain text
 #: user.txt:2941 irc-rules.txt:79
@@ -8569,12 +8576,12 @@ msgstr ""
 # type: Plain text
 #: user.txt:2988
 msgid "== Checking if Frugalware tarballs are from trusted source"
-msgstr ""
+msgstr "== Vérification de la validité des archives Frugalware"
 
 # type: Plain text
 #: user.txt:2990
 msgid "=== How to verify"
-msgstr "=== Comment verifier"
+msgstr "=== Comment vérifier"
 
 # type: Bullet: '- '
 #: user.txt:2992 gpg.txt:6
@@ -11110,9 +11117,8 @@ msgstr "== xen"
 
 # type: Plain text
 #: packages.txt:1190
-#, fuzzy
 msgid "== lineakd"
-msgstr "== Généralités"
+msgstr "== lineakd"
 
 # type: Plain text
 #: packages.txt:1202
@@ -11146,9 +11152,8 @@ msgstr "== freenx"
 
 # type: Plain text
 #: packages.txt:1315
-#, fuzzy
 msgid "== virtualbox"
-msgstr "== drupal"
+msgstr "== virtualbox"
 
 # type: Plain text
 #: packages.txt:1326
