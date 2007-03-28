@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-03-28 05:00+0200\n"
-"PO-Revision-Date: 2007-03-28 18:19+0200\n"
+"PO-Revision-Date: 2007-03-28 22:59+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -6746,7 +6746,7 @@ msgid ""
 "installation, INDEX, CREATE, DELETE, and DROP privileges are also required - "
 "this can be carried out if you provide the (MySQL) superuser's credentials "
 "to the installer."
-msgstr ""
+msgstr "Vous devez donnez (GRANT) certains privilèges (au moins pour l'utilisateur qui utilisera le système) pour pouvoir utiliser ce paquet, comme l'installateur ne les donnent pas. L'utilisateur du système nécessite les privileges ALTER, SELECT, INSERT, et UPDATE. Pour l'installation, les privilèges INDEX, CREATE, DELETE, et DROP sont aussi requis - ceci peut être fait si vous fournissez les identifiants super-utilisateur (MySQL) au programme d'installation."
 
 # type: Plain text
 #: user.txt:2327 packages.txt:1120
@@ -9655,7 +9655,7 @@ msgid ""
 "differs.  In this case the mutt package must also contain this line: "
 "`conflicts=(\\'mutt-devel\\')`.  Of course, if two or more packages conflict "
 "each other, only one of them can be placed in a non-extra group."
-msgstr ""
+msgstr "C'est nécessaire dans la mesure ou les paquets sont quasiment identiques, mais les binaires diffèrent  Dans ce cas, le paquet mutt doit également contenir la ligne: `conflicts=(\\'mutt-devel\\')`.  Evidement, si 2 paquets ou plus entrent en conflit les uns avec les autres, un seul de ceux ci peut être placé ailleurs que dans un group autre *-extra."
 
 # type: Plain text
 #: user.txt:3395 makepkg.txt:375
@@ -9695,6 +9695,7 @@ msgid ""
 "The last one in this list is the replaces directive. The module-init-tools\n"
 " package is a good example:\n"
 msgstr ""
+"La dernière de cette liste est la directive replaces. Le paquet module-init-tools est un bon example:\n"
 
 # type: Plain text
 #: user.txt:3410 makepkg.txt:390
@@ -9717,7 +9718,7 @@ msgid ""
 "each other. Using the replaces directive when users use pacman -Su next "
 "time, if modutils is installed (probably :)), they will be asked to remove "
 "modutils and install module-init-tools."
-msgstr ""
+msgstr "Comme vous pouvez le voir, nous faisons souvent des nouveaux paquets de ce genre qui vont rentrer en conflit les uns avec les autres. En utilisant la directive replaces, la prochaine fois que les utilisateurs utiliseront pacman -Su, si le paquet modutils est installé (probablement :)), il leur sera demandé de retirer modutils et d'installer module-init-tools."
 
 # type: Plain text
 #: user.txt:3419 makepkg.txt:399
@@ -9735,7 +9736,7 @@ msgid ""
 "This directive is optional. At the moment, you may add such a field, but "
 "copy the LICENSE field from the source root to the packages's documentation "
 "dir, so this isn't really necessary."
-msgstr ""
+msgstr "Cette directive est optionnelle. Pour le moment, vous pouvez ajouter un tel champ, mais copiez le champs LICENSE de la racine des sources vers le répertoire de documentation du paquet, du coup, ce n'est pas vraiment nécessaire."
 
 # type: Plain text
 #: user.txt:3426
@@ -9749,7 +9750,7 @@ msgid ""
 "package has graphical parts based on qt for example. It's a pain for gnome "
 "users as they want the package, but they do not want the qt part. So you "
 "create a subpackage for qt part and both side is happy. Let's see an example:"
-msgstr ""
+msgstr "Depuis la version 0.5 de Frugalware, makepkg peut également créer des sous paquets. C'est très utile quand voter paquet à des éléments basé sur qt par exemple. C'est une plaie pour les utilisateurs gnome qui veulent le paquets, mais pas les éléments Qt. Donc vous créez un sous paquet pour la partie qt et tout le monde est content. Voyons un exemple:"
 
 # type: Plain text
 #: user.txt:3432 makepkg.txt:412
@@ -9805,7 +9806,25 @@ msgid ""
 "\tFln /usr/lib/netscape/plugins/nsdejavu.so \\\n"
 "\t\t/usr/lib/mozilla/plugins/nsdejavu.so\n"
 "\tFln djview3.1.gz usr/share/man/man1/djview.1\n"
-msgstr "build(){FcdFpatchallFautoreconfexport CFLAGS=\"$CFLAGS\"export CXXFLAGS=\"$CXXFLAGS\"Fconf \\--enable-threads \\--disable-desktopfiles \\--enable-xmltools \\--enable-djviewmake depend || Fdiemake || FdieFmakeinstallFln /usr/lib/netscape/plugins/nsdejavu.so \\/usr/lib/mozilla/plugins/nsdejavu.soFln djview3.1.gz usr/share/man/man1/djview.1"
+msgstr ""
+"build()\n"
+"{\n"
+"\tFcd\n"
+"\tFpatchall\n"
+"\tFautoreconf\n"
+"\texport CFLAGS=\"$CFLAGS\"\n"
+"\texport CXXFLAGS=\"$CXXFLAGS\"\n"
+"\tFconf \\\n"
+"\t\t--enable-threads \\\n"
+"\t\t--disable-desktopfiles \\\n"
+"\t\t--enable-xmltools \\\n"
+"\t\t--enable-djview\n"
+"\tmake depend || Fdie\n"
+"\tmake || Fdie\n"
+"\tFmakeinstall\n"
+"\tFln /usr/lib/netscape/plugins/nsdejavu.so \\\n"
+"\t\t/usr/lib/mozilla/plugins/nsdejavu.so\n"
+"\tFln djview3.1.gz usr/share/man/man1/djview.1\n"
 
 # type: Plain text
 #: user.txt:3489 makepkg.txt:469
@@ -9823,7 +9842,19 @@ msgid ""
 "\tFsplit djview usr/share/djvu/djview3\n"
 "}\n"
 "-----------------------------------------------------------------------------\n"
-msgstr "Fsplit djview usr/bin/djviewFsplit djview usr/bin/djview3Fsplit djview usr/lib/mozillaFsplit djview usr/lib/netscapefor i in . ja; do[[ $i == . ]] && Fsplit djview usr/share/man/$i/man1/djview.1Fsplit djview usr/share/man/$i/man1/djview3.1Fsplit djview usr/share/man/$i/man1/nsdejavu.1doneFsplit djview usr/share/djvu/djview3}-----------------------------------------------------------------------------"
+msgstr ""
+"\tFsplit djview usr/bin/djview\n"
+"\tFsplit djview usr/bin/djview3\n"
+"\tFsplit djview usr/lib/mozilla\n"
+"\tFsplit djview usr/lib/netscape\n"
+"\tfor i in . ja; do\n"
+"\t\t[[ $i == . ]] && Fsplit djview usr/share/man/$i/man1/djview.1\n"
+"\t\tFsplit djview usr/share/man/$i/man1/djview3.1\n"
+"\t\tFsplit djview usr/share/man/$i/man1/nsdejavu.1\n"
+"\tdone\n"
+"\tFsplit djview usr/share/djvu/djview3\n"
+"}\n"
+"-----------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:3496 makepkg.txt:476
@@ -9834,7 +9865,7 @@ msgid ""
 "FrugalBuild` for details.  Also note that bash does not support two-"
 "dimensional arrays, so when defining the array of arrays, then quotes are "
 "the major separators and spaces are the minor ones."
-msgstr ""
+msgstr "Ici vous pouvez voir le FrugalBuild djvulibre. Notez subpkgs, subdescs, subdepends, subgroups et subarchs. Ces 5 valeurs sont vitale pour un sous-paquet. Il y'a aussi d'autres variables pour un sous-paquet. Voir `man FrugalBuild` pour les détails.  Notez également que bash ne supporte pas les tableaux à 2 dimensions, lors de la création d'un tableau de tableau, les quotes sont les séparateurs majeurs et les espaces les séparateurs mineurs"
 
 # type: Plain text
 #: user.txt:3502 makepkg.txt:482
@@ -9844,14 +9875,14 @@ msgid ""
 "Fsplit command for this. First parameter is the subpackage name, second is "
 "the file you want to move.  Please never use a trailing slash when defining "
 "file patterns, especially if you use wildcards in it!"
-msgstr ""
+msgstr "Définir un sous-paquet n'est que la première étape de sa création. Vous devez indiquer à makepkg quels fichiers vous souhaitez mettre dans le sous-paquet. Nous utilisons la commande Fsplit pour cela. Le premier paramètre est le nom du sous-paquet, le second est le fichier que vous souhaitez déplacer.  Veillez à ne jamais utiliser de slash initial lors de la définition de modèles de fichiers, particulièrement si vous utilisez des wildcards (jokers) à l'intérieur!"
 
 # type: Plain text
 #: user.txt:3504 makepkg.txt:484
 msgid ""
 "If you need more example just take a look on avahi FrugalBuild in network "
 "group."
-msgstr "Si vous avez besoin d'un exemple supplémentaire regarder le FrugalBuild de avahi  dans le groupe network."
+msgstr "Si vous avez besoin d'un exemple supplémentaire regardez le FrugalBuild d'avahi dans le groupe network."
 
 # type: Plain text
 #: user.txt:3508 makepkg.txt:488
@@ -9860,7 +9891,7 @@ msgid ""
 "devel, foo-common, foo-not-so-common, foo-quite-common-but-not-that-common "
 "packages :) Making too much subpackage makes maintaining too hard and "
 "simplicity is the frugal way."
-msgstr ""
+msgstr "NOTE: Utilisez des sous-paquets quand c'est nécessaire, mais ne commencez pas à faire des paquets foo-devel, foo-common, foo-not-so-common, foo-quite-common-but-not-that-common :) Faires trop de sous-paquets rend la maintenance trop compliquée et la simplicité est la façon de faire \"frugal\"."
 
 # type: Plain text
 #: user.txt:3510
@@ -9879,11 +9910,14 @@ msgid ""
 "Please do not forget to check your FrugalBuild with 'fblint' command before uploading\n"
 "it. Fblint is available in pacman-tools package.\n"
 msgstr ""
+"C'est plutôt simple. Dans le répertoire du paquet vous devez effectuer la meme chose\n"
+" que décrit dans la section recompilation de paquets. Si vous voulez donner se paquet au projet Frugalware, allez alors sur le http://bugs.frugalware.org[BTS],\n"
+" ouvrez une demande de fonctionnalité et envoyer tous les fichiers non téléchargeable (c'est à dire: FrugalBuild, install scriptlet, patches) en attachement.Vous êtes prié de ne pas oublier de vérifier votre FrugalBuild avec la commande 'fblint' avant de l'envoyer. 'fblint' est disponible dans le paquet pacman-tools."
 
 # type: Plain text
 #: user.txt:3520 makepkg.txt:500
 msgid "Happy packaging!"
-msgstr ""
+msgstr "Joyeux empaquetage!"
 
 # type: Plain text
 #: user.txt:3530 makepkg.txt:510
@@ -9895,7 +9929,7 @@ msgid ""
 "You can use the modinfo command for this. If crosscompiling does not work "
 "always add Fcheckkernel to the build(). So here is the list of conditions a "
 "kernel module package have to satisfy:"
-msgstr ""
+msgstr "Quelques mots supplémentaires à propos des modules noyau. Ils sont spéciaux dans le sens où même si vous avez installer la bonne version du paquet du noyau (ainsi que les sources du noyau), quelques fois les modules sont compilés pour le noyau en cour d'exécution, il faut donc vérifier si la compilation avec un autre noyau que celui en court d'exécution fonctionne ou pas. La commande modinfo peut être utilisé pour cela. Si la crosscompilation ne fonctionne pas ajouté toujours Fcheckkernel à build(). Voici la liste des conditions qu'un paquet de module noyau doit satisfaire:"
 
 # type: Plain text
 #: user.txt:3533 makepkg.txt:513
@@ -9903,12 +9937,12 @@ msgstr ""
 msgid ""
 "1) Should depend on kernel=version, where version is the version of the kernel\n"
 "defined in '$fst_root/source/include/kernel-module.sh'. (Always use up-to-date FST!)\n"
-msgstr ""
+msgstr "1) Doit dépendre de kernel=version, ou version est la version du noyau définie dans '$fst_root/source/include/kernel-module.sh'. (Toujours utiliser une FST à jour!)"
 
 # type: Bullet: '2) '
 #: user.txt:3535 makepkg.txt:515
 msgid "Should Finclude the kernel-module scheme."
-msgstr ""
+msgstr "Doit inclure (Finclude) le module-noyeau schema."
 
 # type: Plain text
 #: user.txt:3540 makepkg.txt:520
@@ -9919,6 +9953,9 @@ msgid ""
 "should run depmod -a. Otherwise the scheme will provide so a scriptlet which\n"
 "does so.\n"
 msgstr ""
+"3) Si vous voulez utiliser un script d'installation personalisé (dire de lancer depmod -a seulement\n"
+"après l'installation/la mise a jour n'est pas suffisant pour vous) alors le script d'installation\n"
+"doit lancer depmod -a. Au quel cas le  schema devra fournir un fragment de script qui fait de même.\n"
 
 # type: Plain text
 #: user.txt:3546 makepkg.txt:526
@@ -9930,6 +9967,11 @@ msgid ""
 "may not run the kernel provided by the given package tree. (They can't run\n"
 "-stable _and_ -current kernels at the same time :) ).\n"
 msgstr ""
+"4) build() doit appeler 'Fcheckkernel' pour s'assurer que le module sera compilé pour \n"
+"la bonne version du noyau ou etre commenté si vous avez verifié la\n"
+"compilation avec d'autre version du noyau. Cela est bien pour la construction de serveur comme ils \n"
+"n'exécuteront probablement pas le noyau fourni par l'arborescence de paquets. (Ils ne peuvent pas\n"
+"exécuter des noyaux -stable _et_ -current en au même instant :) ).\n"
 
 # type: Plain text
 #: user.txt:3548
@@ -9941,12 +9983,12 @@ msgstr "=== Repoman"
 msgid ""
 "Repoman is simple tool to download all packages' buildscript and compile "
 "programs from source."
-msgstr ""
+msgstr "Repoman un outils simple permettant de télécharger tout les scripts de compilation des paquets et compiler les programmes à partir de leurs sources."
 
 # type: Plain text
 #: user.txt:3553 makepkg.txt:533
 msgid "The most commonly used repoman commands are the followings:"
-msgstr ""
+msgstr "Les commandes les plus communément utilisées de repoman sont les suivantes:"
 
 # type: Plain text
 #: user.txt:3555 makepkg.txt:535
@@ -9968,7 +10010,7 @@ msgstr "`repoman m paquet`"
 msgid ""
 "builds a package from source and installs it. You can configure the build "
 "options in the makepkg_opts directive of '/etc/repoman.conf'."
-msgstr ""
+msgstr "construit un paquet depuis son source et l'installe. Vous pouvez configurer les options de constructions avec la directive makepkg_opts de '/etc/repoman.conf'."
 
 # type: Plain text
 #: user.txt:3566 makepkg.txt:546
@@ -9976,7 +10018,7 @@ msgid ""
 "By default repoman will install the missing dependencies with pacman, clean "
 "up the leftover work files, install the package, and write the resulting "
 "package to the current working directory."
-msgstr ""
+msgstr "Par défaut repoman installera les dépendances manquante avec pacman, nettoieras les fichiers de travail restant, installera le paquet, et copiera le paquet résultant dans les répertoire de travail courrent."
 
 # type: Plain text
 #: user.txt:3568 makepkg.txt:548
@@ -9993,7 +10035,7 @@ msgstr "`repoman upd`"
 msgid ""
 "updates FST in /var/fst (or the directory set in '~/.repoman.conf'). First "
 "time repoman will download it (it may take some time!)."
-msgstr ""
+msgstr "met à jour le FST dans /var/fst (ou le répertoire défini dans '~/.repoman.conf'). La première fois repoman le téléchargera (cette opération risque d'être longue!)."
 
 # type: Plain text
 #: user.txt:3577
@@ -10014,12 +10056,12 @@ msgid ""
 "Everyone is permitted to copy and distribute verbatim copies\n"
 "of this license document, but changing it is not allowed.\n"
 "------------------------------------------------------------\n"
-msgstr ""
+msgstr "Copyright (C) 2000,2001,2002  Free Software Foundation, Inc.51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USAEveryone is permitted to copy and distribute verbatim copiesof this license document, but changing it is not allowed.------------------------------------------------------------"
 
 # type: Plain text
 #: user.txt:3589
 msgid "=== PREAMBLE"
-msgstr "=== Préambule"
+msgstr "=== PREAMBLE"
 
 # type: Plain text
 #: user.txt:3596 license.txt:21
@@ -10031,7 +10073,7 @@ msgid ""
 "License preserves for the author and publisher a way to get credit for their "
 "work, while not being considered responsible for modifications made by "
 "others."
-msgstr ""
+msgstr "The purpose of this License is to make a manual, textbook, or other functional and useful document \"free\" in the sense of freedom: to assure everyone the effective freedom to copy and redistribute it, with or without modifying it, either commercially or noncommercially. Secondarily, this License preserves for the author and publisher a way to get credit for their work, while not being considered responsible for modifications made by others."
 
 # type: Plain text
 #: user.txt:3600 license.txt:25
@@ -10040,7 +10082,7 @@ msgid ""
 "the document must themselves be free in the same sense. It complements the "
 "GNU General Public License, which is a copyleft license designed for free "
 "software."
-msgstr ""
+msgstr "This License is a kind of \"copyleft\", which means that derivative works of the document must themselves be free in the same sense. It complements the GNU General Public License, which is a copyleft license designed for free software."
 
 # type: Plain text
 #: user.txt:3608 license.txt:33
@@ -10052,12 +10094,12 @@ msgid ""
 "textual work, regardless of subject matter or whether it is published as a "
 "printed book. We recommend this License principally for works whose purpose "
 "is instruction or reference."
-msgstr ""
+msgstr "We have designed this License in order to use it for manuals for free software, because free software needs free documentation: a free program should come with manuals providing the same freedoms that the software does. But this License is not limited to software manuals; it can be used for any textual work, regardless of subject matter or whether it is published as a printed book. We recommend this License principally for works whose purpose is instruction or reference."
 
 # type: Plain text
 #: user.txt:3610
 msgid "=== APPLICABILITY AND DEFINITIONS"
-msgstr ""
+msgstr "=== APPLICABILITY AND DEFINITIONS"
 
 # type: Plain text
 #: user.txt:3619 license.txt:44
@@ -10070,7 +10112,7 @@ msgid ""
 "manual or work. Any member of the public is a licensee, and is addressed as "
 "\"you\". You accept the license if you copy, modify or distribute the work "
 "in a way requiring permission under copyright law."
-msgstr ""
+msgstr "This License applies to any manual or other work, in any medium, that contains a notice placed by the copyright holder saying it can be distributed under the terms of this License. Such a notice grants a world-wide, royalty-free license, unlimited in duration, to use that work under the conditions stated herein. The \"Document\", below, refers to any such manual or work. Any member of the public is a licensee, and is addressed as \"you\". You accept the license if you copy, modify or distribute the work in a way requiring permission under copyright law."
 
 # type: Plain text
 #: user.txt:3623 license.txt:48
@@ -10078,7 +10120,7 @@ msgid ""
 "A \"Modified Version\" of the Document means any work containing the "
 "Document or a portion of it, either copied verbatim, or with modifications "
 "and/or translated into another language."
-msgstr ""
+msgstr "A \"Modified Version\" of the Document means any work containing the Document or a portion of it, either copied verbatim, or with modifications and/or translated into another language."
 
 # type: Plain text
 #: user.txt:3632 license.txt:57
@@ -10092,7 +10134,7 @@ msgid ""
 "be a matter of historical connection with the subject or with related "
 "matters, or of legal, commercial, philosophical, ethical or political "
 "position regarding them."
-msgstr ""
+msgstr "A \"Secondary Section\" is a named appendix or a front-matter section of the Document that deals exclusively with the relationship of the publishers or authors of the Document to the Document's overall subject (or to related matters) and contains nothing that could fall directly within that overall subject. (Thus, if the Document is in part a textbook of mathematics, a Secondary Section may not explain any mathematics.) The relationship could be a matter of historical connection with the subject or with related matters, or of legal, commercial, philosophical, ethical or political position regarding them."
 
 # type: Plain text
 #: user.txt:3639 license.txt:64
@@ -10103,7 +10145,7 @@ msgid ""
 "the above definition of Secondary then it is not allowed to be designated as "
 "Invariant. The Document may contain zero Invariant Sections. If the Document "
 "does not identify any Invariant Sections then there are none."
-msgstr ""
+msgstr "The \"Invariant Sections\" are certain Secondary Sections whose titles are designated, as being those of Invariant Sections, in the notice that says that the Document is released under this License. If a section does not fit the above definition of Secondary then it is not allowed to be designated as Invariant. The Document may contain zero Invariant Sections. If the Document does not identify any Invariant Sections then there are none."
 
 # type: Plain text
 #: user.txt:3644 license.txt:69
@@ -10112,7 +10154,7 @@ msgid ""
 "Front-Cover Texts or Back-Cover Texts, in the notice that says that the "
 "Document is released under this License. A Front-Cover Text may be at most 5 "
 "words, and a Back-Cover Text may be at most 25 words."
-msgstr ""
+msgstr "The \"Cover Texts\" are certain short passages of text that are listed, as Front-Cover Texts or Back-Cover Texts, in the notice that says that the Document is released under this License. A Front-Cover Text may be at most 5 words, and a Back-Cover Text may be at most 25 words."
 
 # type: Plain text
 #: user.txt:3656 license.txt:81
@@ -10129,7 +10171,7 @@ msgid ""
 "not Transparent. An image format is not Transparent if used for any "
 "substantial amount of text. A copy that is not \"Transparent\" is called "
 "\"Opaque\"."
-msgstr ""
+msgstr "A \"Transparent\" copy of the Document means a machine-readable copy, represented in a format whose specification is available to the general public, that is suitable for revising the document straightforwardly with generic text editors or (for images composed of pixels) generic paint programs or (for drawings)  some widely available drawing editor, and that is suitable for input to text formatters or for automatic translation to a variety of formats suitable for input to text formatters. A copy made in an otherwise Transparent file format whose markup, or absence of markup, has been arranged to thwart or discourage subsequent modification by readers is not Transparent. An image format is not Transparent if used for any substantial amount of text. A copy that is not \"Transparent\" is called \"Opaque\"."
 
 # type: Plain text
 #: user.txt:3665 license.txt:90
@@ -10143,7 +10185,7 @@ msgid ""
 "which the DTD and/or processing tools are not generally available, and the "
 "machine-generated HTML, PostScript or PDF produced by some word processors "
 "for output purposes only."
-msgstr ""
+msgstr "Examples of suitable formats for Transparent copies include plain ASCII without markup, Texinfo input format, LaTeX input format, SGML or XML using a publicly available DTD, and standard-conforming simple HTML, PostScript or PDF designed for human modification. Examples of transparent image formats include PNG, XCF and JPG. Opaque formats include proprietary formats that can be read and edited only by proprietary word processors, SGML or XML for which the DTD and/or processing tools are not generally available, and the machine-generated HTML, PostScript or PDF produced by some word processors for output purposes only."
 
 # type: Plain text
 #: user.txt:3672 license.txt:97
@@ -10154,7 +10196,7 @@ msgid ""
 "not have any title page as such, \"Title Page\" means the text near the most "
 "prominent appearance of the work's title, preceding the beginning of the "
 "body of the text."
-msgstr ""
+msgstr "The \"Title Page\" means, for a printed book, the title page itself, plus such following pages as are needed to hold, legibly, the material this License requires to appear in the title page. For works in formats which do not have any title page as such, \"Title Page\" means the text near the most prominent appearance of the work's title, preceding the beginning of the body of the text."
 
 # type: Plain text
 #: user.txt:3680 license.txt:105
@@ -10166,7 +10208,7 @@ msgid ""
 "\"Endorsements\", or \"History\".) To \"Preserve the Title\" of such a "
 "section when you modify the Document means that it remains a section "
 "\"Entitled XYZ\" according to this definition."
-msgstr ""
+msgstr "A section \"Entitled XYZ\" means a named subunit of the Document whose title either is precisely XYZ or contains XYZ in parentheses following text that translates XYZ in another language. (Here XYZ stands for a specific section name mentioned below, such as \"Acknowledgements\", \"Dedications\", \"Endorsements\", or \"History\".) To \"Preserve the Title\" of such a section when you modify the Document means that it remains a section \"Entitled XYZ\" according to this definition."
 
 # type: Plain text
 #: user.txt:3686 license.txt:111
@@ -10177,12 +10219,12 @@ msgid ""
 "regards disclaiming warranties: any other implication that these Warranty "
 "Disclaimers may have is void and has no effect on the meaning of this "
 "License."
-msgstr ""
+msgstr "The Document may include Warranty Disclaimers next to the notice which states that this License applies to the Document. These Warranty Disclaimers are considered to be included by reference in this License, but only as regards disclaiming warranties: any other implication that these Warranty Disclaimers may have is void and has no effect on the meaning of this License."
 
 # type: Plain text
 #: user.txt:3688
 msgid "=== VERBATIM COPYING"
-msgstr ""
+msgstr "=== VERBATIM COPYING"
 
 # type: Plain text
 #: user.txt:3697 license.txt:122
@@ -10196,19 +10238,19 @@ msgid ""
 "However, you may accept compensation in exchange for copies. If you "
 "distribute a large enough number of copies you must also follow the "
 "conditions in section 3."
-msgstr ""
+msgstr "You may copy and distribute the Document in any medium, either commercially or noncommercially, provided that this License, the copyright notices, and the license notice saying this License applies to the Document are reproduced in all copies, and that you add no other conditions whatsoever to those of this License. You may not use technical measures to obstruct or control the reading or further copying of the copies you make or distribute. However, you may accept compensation in exchange for copies. If you distribute a large enough number of copies you must also follow the conditions in section 3."
 
 # type: Plain text
 #: user.txt:3700 license.txt:125
 msgid ""
 "You may also lend copies, under the same conditions stated above, and you "
 "may publicly display copies."
-msgstr ""
+msgstr "You may also lend copies, under the same conditions stated above, and you may publicly display copies."
 
 # type: Plain text
 #: user.txt:3702
 msgid "=== COPYING IN QUANTITY"
-msgstr ""
+msgstr "=== COPYING IN QUANTITY"
 
 # type: Plain text
 #: user.txt:3714 license.txt:139
@@ -10224,7 +10266,7 @@ msgid ""
 "Copying with changes limited to the covers, as long as they preserve the "
 "title of the Document and satisfy these conditions, can be treated as "
 "verbatim copying in other respects."
-msgstr ""
+msgstr "If you publish printed copies (or copies in media that commonly have printed covers) of the Document, numbering more than 100, and the Document's license notice requires Cover Texts, you must enclose the copies in covers that carry, clearly and legibly, all these Cover Texts: Front-Cover Texts on the front cover, and Back-Cover Texts on the back cover. Both covers must also clearly and legibly identify you as the publisher of these copies. The front cover must present the full title with all words of the title equally prominent and visible. You may add other material on the covers in addition. Copying with changes limited to the covers, as long as they preserve the title of the Document and satisfy these conditions, can be treated as verbatim copying in other respects."
 
 # type: Plain text
 #: user.txt:3718 license.txt:143
@@ -10232,7 +10274,7 @@ msgid ""
 "If the required texts for either cover are too voluminous to fit legibly, "
 "you should put the first ones listed (as many as fit reasonably) on the "
 "actual cover, and continue the rest onto adjacent pages."
-msgstr ""
+msgstr "If the required texts for either cover are too voluminous to fit legibly, you should put the first ones listed (as many as fit reasonably) on the actual cover, and continue the rest onto adjacent pages."
 
 # type: Plain text
 #: user.txt:3730 license.txt:155
@@ -10248,7 +10290,7 @@ msgid ""
 "accessible at the stated location until at least one year after the last "
 "time you distribute an Opaque copy (directly or through your agents or "
 "retailers) of that edition to the public."
-msgstr ""
+msgstr "If you publish or distribute Opaque copies of the Document numbering more than 100, you must either include a machine-readable Transparent copy along with each Opaque copy, or state in or with each Opaque copy a computer-network location from which the general network-using public has access to download using public-standard network protocols a complete Transparent copy of the Document, free of added material. If you use the latter option, you must take reasonably prudent steps, when you begin distribution of Opaque copies in quantity, to ensure that this Transparent copy will remain thus accessible at the stated location until at least one year after the last time you distribute an Opaque copy (directly or through your agents or retailers) of that edition to the public."
 
 # type: Plain text
 #: user.txt:3734 license.txt:159
@@ -10256,12 +10298,12 @@ msgid ""
 "It is requested, but not required, that you contact the authors of the "
 "Document well before redistributing any large number of copies, to give them "
 "a chance to provide you with an updated version of the Document."
-msgstr ""
+msgstr "It is requested, but not required, that you contact the authors of the Document well before redistributing any large number of copies, to give them a chance to provide you with an updated version of the Document."
 
 # type: Plain text
 #: user.txt:3736
 msgid "=== MODIFICATIONS"
-msgstr ""
+msgstr "=== MODIFICATIONS"
 
 # type: Plain text
 #: user.txt:3743 license.txt:168
@@ -10272,7 +10314,7 @@ msgid ""
 "role of the Document, thus licensing distribution and modification of the "
 "Modified Version to whoever possesses a copy of it. In addition, you must do "
 "these things in the Modified Version:"
-msgstr ""
+msgstr "You may copy and distribute a Modified Version of the Document under the conditions of sections 2 and 3 above, provided that you release the Modified Version under precisely this License, with the Modified Version filling the role of the Document, thus licensing distribution and modification of the Modified Version to whoever possesses a copy of it. In addition, you must do these things in the Modified Version:"
 
 # type: Plain text
 #: user.txt:3749 license.txt:174
@@ -10282,7 +10324,7 @@ msgid ""
 "there were any, be listed in the History section of the Document). You may "
 "use the same title as a previous version if the original publisher of that "
 "version gives permission."
-msgstr ""
+msgstr "A. Use in the Title Page (and on the covers, if any) a title distinct from that of the Document, and from those of previous versions (which should, if there were any, be listed in the History section of the Document). You may use the same title as a previous version if the original publisher of that version gives permission."
 
 # type: Plain text
 #: user.txt:3755 license.txt:180
@@ -10292,26 +10334,26 @@ msgid ""
 "together with at least five of the principal authors of the Document (all of "
 "its principal authors, if it has fewer than five), unless they release you "
 "from this requirement."
-msgstr ""
+msgstr "B. List on the Title Page, as authors, one or more persons or entities responsible for authorship of the modifications in the Modified Version, together with at least five of the principal authors of the Document (all of its principal authors, if it has fewer than five), unless they release you from this requirement."
 
 # type: Plain text
 #: user.txt:3758 license.txt:183
 msgid ""
 "C. State on the Title page the name of the publisher of the Modified "
 "Version, as the publisher."
-msgstr ""
+msgstr "C. State on the Title page the name of the publisher of the Modified Version, as the publisher."
 
 # type: Plain text
 #: user.txt:3760 license.txt:185
 msgid "D. Preserve all the copyright notices of the Document."
-msgstr ""
+msgstr "D. Preserve all the copyright notices of the Document."
 
 # type: Plain text
 #: user.txt:3763 license.txt:188
 msgid ""
 "E. Add an appropriate copyright notice for your modifications adjacent to "
 "the other copyright notices."
-msgstr ""
+msgstr "E. Add an appropriate copyright notice for your modifications adjacent to the other copyright notices."
 
 # type: Plain text
 #: user.txt:3767 license.txt:192
@@ -10319,19 +10361,19 @@ msgid ""
 "F. Include, immediately after the copyright notices, a license notice giving "
 "the public permission to use the Modified Version under the terms of this "
 "License, in the form shown in the Addendum below."
-msgstr ""
+msgstr "F. Include, immediately after the copyright notices, a license notice giving the public permission to use the Modified Version under the terms of this License, in the form shown in the Addendum below."
 
 # type: Plain text
 #: user.txt:3770 license.txt:195
 msgid ""
 "G. Preserve in that license notice the full lists of Invariant Sections and "
 "required Cover Texts given in the Document's license notice."
-msgstr ""
+msgstr "G. Preserve in that license notice the full lists of Invariant Sections and required Cover Texts given in the Document's license notice."
 
 # type: Plain text
 #: user.txt:3772 license.txt:197
 msgid "H. Include an unaltered copy of this License."
-msgstr ""
+msgstr "H. Include an unaltered copy of this License."
 
 # type: Plain text
 #: user.txt:3779 license.txt:204
@@ -10342,7 +10384,7 @@ msgid ""
 "Entitled \"History\" in the Document, create one stating the title, year, "
 "authors, and publisher of the Document as given on its Title Page, then add "
 "an item describing the Modified Version as stated in the previous sentence."
-msgstr ""
+msgstr "I. Preserve the section Entitled \"History\", Preserve its Title, and add to it an item stating at least the title, year, new authors, and publisher of the Modified Version as given on the Title Page. If there is no section Entitled \"History\" in the Document, create one stating the title, year, authors, and publisher of the Document as given on its Title Page, then add an item describing the Modified Version as stated in the previous sentence."
 
 # type: Plain text
 #: user.txt:3786 license.txt:211
@@ -10354,7 +10396,7 @@ msgid ""
 "for a work that was published at least four years before the Document "
 "itself, or if the original publisher of the version it refers to gives "
 "permission."
-msgstr ""
+msgstr "J. Preserve the network location, if any, given in the Document for public access to a Transparent copy of the Document, and likewise the network locations given in the Document for previous versions it was based on. These may be placed in the \"History\" section. You may omit a network location for a work that was published at least four years before the Document itself, or if the original publisher of the version it refers to gives permission."
 
 # type: Plain text
 #: user.txt:3790 license.txt:215
@@ -10363,7 +10405,7 @@ msgid ""
 "Preserve the Title of the section, and preserve in the section all the "
 "substance and tone of each of the contributor acknowledgements and/or "
 "dedications given therein."
-msgstr ""
+msgstr "K. For any section Entitled \"Acknowledgements\" or \"Dedications\", Preserve the Title of the section, and preserve in the section all the substance and tone of each of the contributor acknowledgements and/or dedications given therein."
 
 # type: Plain text
 #: user.txt:3794 license.txt:219
@@ -10371,26 +10413,26 @@ msgid ""
 "L. Preserve all the Invariant Sections of the Document, unaltered in their "
 "text and in their titles. Section numbers or the equivalent are not "
 "considered part of the section titles."
-msgstr ""
+msgstr "L. Preserve all the Invariant Sections of the Document, unaltered in their text and in their titles. Section numbers or the equivalent are not considered part of the section titles."
 
 # type: Plain text
 #: user.txt:3797 license.txt:222
 msgid ""
 "M. Delete any section Entitled \"Endorsements\". Such a section may not be "
 "included in the Modified Version."
-msgstr ""
+msgstr "M. Delete any section Entitled \"Endorsements\". Such a section may not be included in the Modified Version."
 
 # type: Plain text
 #: user.txt:3800 license.txt:225
 msgid ""
 "N. Do not retitle any existing section to be Entitled \"Endorsements\" or to "
 "conflict in title with any Invariant Section."
-msgstr ""
+msgstr "N. Do not retitle any existing section to be Entitled \"Endorsements\" or to conflict in title with any Invariant Section."
 
 # type: Plain text
 #: user.txt:3802 license.txt:227
 msgid "O. Preserve any Warranty Disclaimers."
-msgstr ""
+msgstr "O. Preserve any Warranty Disclaimers."
 
 # type: Plain text
 #: user.txt:3809 license.txt:234
@@ -10401,7 +10443,7 @@ msgid ""
 "invariant. To do this, add their titles to the list of Invariant Sections in "
 "the Modified Version's license notice. These titles must be distinct from "
 "any other section titles."
-msgstr ""
+msgstr "If the Modified Version includes new front-matter sections or appendices that qualify as Secondary Sections and contain no material copied from the Document, you may at your option designate some or all of these sections as invariant. To do this, add their titles to the list of Invariant Sections in the Modified Version's license notice. These titles must be distinct from any other section titles."
 
 # type: Plain text
 #: user.txt:3814 license.txt:239
@@ -10410,7 +10452,7 @@ msgid ""
 "nothing but endorsements of your Modified Version by various parties--for "
 "example, statements of peer review or that the text has been approved by an "
 "organization as the authoritative definition of a standard."
-msgstr ""
+msgstr "You may add a section Entitled \"Endorsements\", provided it contains nothing but endorsements of your Modified Version by various parties--for example, statements of peer review or that the text has been approved by an organization as the authoritative definition of a standard."
 
 # type: Plain text
 #: user.txt:3823 license.txt:248
@@ -10424,7 +10466,7 @@ msgid ""
 "are acting on behalf of, you may not add another; but you may replace the "
 "old one, on explicit permission from the previous publisher that added the "
 "old one."
-msgstr ""
+msgstr "You may add a passage of up to five words as a Front-Cover Text, and a passage of up to 25 words as a Back-Cover Text, to the end of the list of Cover Texts in the Modified Version. Only one passage of Front-Cover Text and one of Back-Cover Text may be added by (or through arrangements made by) any one entity. If the Document already includes a cover text for the same cover, previously added by you or by arrangement made by the same entity you are acting on behalf of, you may not add another; but you may replace the old one, on explicit permission from the previous publisher that added the old one."
 
 # type: Plain text
 #: user.txt:3827 license.txt:252
@@ -10432,12 +10474,12 @@ msgid ""
 "The author(s) and publisher(s) of the Document do not by this License give "
 "permission to use their names for publicity for or to assert or imply "
 "endorsement of any Modified Version."
-msgstr ""
+msgstr "The author(s) and publisher(s) of the Document do not by this License give permission to use their names for publicity for or to assert or imply endorsement of any Modified Version."
 
 # type: Plain text
 #: user.txt:3829
 msgid "=== COMBINING DOCUMENTS"
-msgstr ""
+msgstr "=== COMBINING DOCUMENTS"
 
 # type: Plain text
 #: user.txt:3836 license.txt:261
@@ -10448,7 +10490,7 @@ msgid ""
 "of all of the original documents, unmodified, and list them all as Invariant "
 "Sections of your combined work in its license notice, and that you preserve "
 "all their Warranty Disclaimers."
-msgstr ""
+msgstr "You may combine the Document with other documents released under this License, under the terms defined in section 4 above for modified versions, provided that you include in the combination all of the Invariant Sections of all of the original documents, unmodified, and list them all as Invariant Sections of your combined work in its license notice, and that you preserve all their Warranty Disclaimers."
 
 # type: Plain text
 #: user.txt:3844 license.txt:269
@@ -10461,7 +10503,7 @@ msgid ""
 "known, or else a unique number. Make the same adjustment to the section "
 "titles in the list of Invariant Sections in the license notice of the "
 "combined work."
-msgstr ""
+msgstr "The combined work need only contain one copy of this License, and multiple identical Invariant Sections may be replaced with a single copy. If there are multiple Invariant Sections with the same name but different contents, make the title of each such section unique by adding at the end of it, in parentheses, the name of the original author or publisher of that section if known, or else a unique number. Make the same adjustment to the section titles in the list of Invariant Sections in the license notice of the combined work."
 
 # type: Plain text
 #: user.txt:3849 license.txt:274
@@ -10471,12 +10513,12 @@ msgid ""
 "likewise combine any sections Entitled \"Acknowledgements\", and any "
 "sections Entitled \"Dedications\". You must delete all sections Entitled "
 "\"Endorsements.\""
-msgstr ""
+msgstr "In the combination, you must combine any sections Entitled \"History\" in the various original documents, forming one section Entitled \"History\"; likewise combine any sections Entitled \"Acknowledgements\", and any sections Entitled \"Dedications\". You must delete all sections Entitled \"Endorsements.\""
 
 # type: Plain text
 #: user.txt:3851
 msgid "=== COLLECTIONS OF DOCUMENTS"
-msgstr ""
+msgstr "=== COLLECTIONS OF DOCUMENTS"
 
 # type: Plain text
 #: user.txt:3857 license.txt:282
@@ -10486,7 +10528,7 @@ msgid ""
 "License in the various documents with a single copy that is included in the "
 "collection, provided that you follow the rules of this License for verbatim "
 "copying of each of the documents in all other respects."
-msgstr ""
+msgstr "You may make a collection consisting of the Document and other documents released under this License, and replace the individual copies of this License in the various documents with a single copy that is included in the collection, provided that you follow the rules of this License for verbatim copying of each of the documents in all other respects."
 
 # type: Plain text
 #: user.txt:3862 license.txt:287
@@ -10495,12 +10537,12 @@ msgid ""
 "individually under this License, provided you insert a copy of this License "
 "into the extracted document, and follow this License in all other respects "
 "regarding verbatim copying of that document."
-msgstr ""
+msgstr "You may extract a single document from such a collection, and distribute it individually under this License, provided you insert a copy of this License into the extracted document, and follow this License in all other respects regarding verbatim copying of that document."
 
 # type: Plain text
 #: user.txt:3864
 msgid "=== AGGREGATION WITH INDEPENDENT WORKS"
-msgstr ""
+msgstr "=== AGGREGATION WITH INDEPENDENT WORKS"
 
 # type: Plain text
 #: user.txt:3872 license.txt:297
@@ -10513,7 +10555,7 @@ msgid ""
 "Document is included in an aggregate, this License does not apply to the "
 "other works in the aggregate which are not themselves derivative works of "
 "the Document."
-msgstr ""
+msgstr "A compilation of the Document or its derivatives with other separate and independent documents or works, in or on a volume of a storage or distribution medium, is called an \"aggregate\" if the copyright resulting from the compilation is not used to limit the legal rights of the compilation's users beyond what the individual works permit. When the Document is included in an aggregate, this License does not apply to the other works in the aggregate which are not themselves derivative works of the Document."
 
 # type: Plain text
 #: user.txt:3879 license.txt:304
@@ -10524,12 +10566,12 @@ msgid ""
 "the Document within the aggregate, or the electronic equivalent of covers if "
 "the Document is in electronic form. Otherwise they must appear on printed "
 "covers that bracket the whole aggregate."
-msgstr ""
+msgstr "If the Cover Text requirement of section 3 is applicable to these copies of the Document, then if the Document is less than one half of the entire aggregate, the Document's Cover Texts may be placed on covers that bracket the Document within the aggregate, or the electronic equivalent of covers if the Document is in electronic form. Otherwise they must appear on printed covers that bracket the whole aggregate."
 
 # type: Plain text
 #: user.txt:3881
 msgid "=== TRANSLATION"
-msgstr ""
+msgstr "=== TRANSLATION"
 
 # type: Plain text
 #: user.txt:3893 license.txt:318
@@ -10545,7 +10587,7 @@ msgid ""
 "versions of those notices and disclaimers. In case of a disagreement between "
 "the translation and the original version of this License or a notice or "
 "disclaimer, the original version will prevail."
-msgstr ""
+msgstr "Translation is considered a kind of modification, so you may distribute translations of the Document under the terms of section 4. Replacing Invariant Sections with translations requires special permission from their copyright holders, but you may include translations of some or all Invariant Sections in addition to the original versions of these Invariant Sections. You may include a translation of this License, and all the license notices in the Document, and any Warranty Disclaimers, provided that you also include the original English version of this License and the original versions of those notices and disclaimers. In case of a disagreement between the translation and the original version of this License or a notice or disclaimer, the original version will prevail."
 
 # type: Plain text
 #: user.txt:3897 license.txt:322
@@ -10553,12 +10595,12 @@ msgid ""
 "If a section in the Document is Entitled \"Acknowledgements\", \"Dedications"
 "\", or \"History\", the requirement (section 4) to Preserve its Title "
 "(section 1) will typically require changing the actual title."
-msgstr ""
+msgstr "If a section in the Document is Entitled \"Acknowledgements\", \"Dedications\", or \"History\", the requirement (section 4) to Preserve its Title (section 1) will typically require changing the actual title."
 
 # type: Plain text
 #: user.txt:3899
 msgid "=== TERMINATION"
-msgstr ""
+msgstr "=== TERMINATION"
 
 # type: Plain text
 #: user.txt:3906 license.txt:331
@@ -10569,12 +10611,12 @@ msgid ""
 "automatically terminate your rights under this License. However, parties who "
 "have received copies, or rights, from you under this License will not have "
 "their licenses terminated so long as such parties remain in full compliance."
-msgstr ""
+msgstr "You may not copy, modify, sublicense, or distribute the Document except as expressly provided for under this License. Any other attempt to copy, modify, sublicense or distribute the Document is void, and will automatically terminate your rights under this License. However, parties who have received copies, or rights, from you under this License will not have their licenses terminated so long as such parties remain in full compliance."
 
 # type: Plain text
 #: user.txt:3908
 msgid "=== FUTURE REVISIONS OF THIS LICENSE"
-msgstr ""
+msgstr "=== FUTURE REVISIONS OF THIS LICENSE"
 
 # type: Plain text
 #: user.txt:3913 license.txt:338
@@ -10583,7 +10625,7 @@ msgid ""
 "Free Documentation License from time to time. Such new versions will be "
 "similar in spirit to the present version, but may differ in detail to "
 "address new problems or concerns. See http://www.gnu.org/copyleft/."
-msgstr ""
+msgstr "The Free Software Foundation may publish new, revised versions of the GNU Free Documentation License from time to time. Such new versions will be similar in spirit to the present version, but may differ in detail to address new problems or concerns. See http://www.gnu.org/copyleft/."
 
 # type: Plain text
 #: user.txt:3921 license.txt:345
@@ -10596,7 +10638,7 @@ msgid ""
 "Foundation. If the Document does not specify a version number of this "
 "License, you may choose any version ever published (not as a draft) by the "
 "Free Software Foundation."
-msgstr ""
+msgstr "Each version of the License is given a distinguishing version number. If the Document specifies that a particular numbered version of this License \"or any later version\" applies to it, you have the option of following the terms and conditions either of that specified version or of any later version that has been published (not as a draft) by the Free Software Foundation. If the Document does not specify a version number of this License, you may choose any version ever published (not as a draft) by the Free Software Foundation."
 
 # type: Plain text
 #: about.txt:2
@@ -10616,7 +10658,7 @@ msgstr "== Long"
 # type: Plain text
 #: quickref.txt:2
 msgid "= Quick reference"
-msgstr ""
+msgstr "= Références rapides"
 
 # type: Plain text
 #: quickref.txt:4
@@ -10626,7 +10668,7 @@ msgstr "== Informations"
 # type: Plain text
 #: quickref.txt:12
 msgid "== Features"
-msgstr ""
+msgstr "== Fonctionnalités"
 
 # type: Plain text
 #: install.txt:2
@@ -10636,7 +10678,7 @@ msgstr "= Installation"
 # type: Plain text
 #: install.txt:4
 msgid "== Choosing installation flavor"
-msgstr ""
+msgstr "== Choisir le type d'installation"
 
 # type: Plain text
 #: install.txt:9
@@ -10656,24 +10698,24 @@ msgstr "=== Netinstall"
 # type: Plain text
 #: install.txt:39
 msgid "=== Fwbootstrap (self-contained chroot)"
-msgstr ""
+msgstr "=== Fwbootstrap (chroot auto-contenu)"
 
 # type: Plain text
 #: install.txt:68
 msgid "=== A manual bootstrap"
-msgstr ""
+msgstr "=== Un bootstrap manuel"
 
 # type: Plain text
 #: install.txt:88
 msgid "== Obtaining a source media"
-msgstr ""
+msgstr "== Obtenir un média source"
 
 # type: Plain text
 #: install.txt:121
 msgid ""
 "== I have a skeleton system installed from CD/DVD, and I want to use the "
 "packages on the media afterwards"
-msgstr ""
+msgstr "== J'ai le squelette d'un système installé depuis le CD/DVD, et je veut utiliser les paquets du média par la suite"
 
 # type: Plain text
 #: install.txt:150
@@ -10813,17 +10855,17 @@ msgstr "== Mon imprimante n'est pas listée"
 # type: Plain text
 #: printing.txt:66
 msgid "== Multiple pages on a single sheet"
-msgstr ""
+msgstr "== Pages multiples dans une seule feuille"
 
 # type: Plain text
 #: printing.txt:81
 msgid "== Troubleshooting"
-msgstr ""
+msgstr "== Dépannage"
 
 # type: Plain text
 #: hotplug.txt:2
 msgid "= The hotplug subsystem"
-msgstr ""
+msgstr "= Le sous-système hotplug"
 
 # type: Plain text
 #: hotplug.txt:4 packages.txt:1122
@@ -10833,12 +10875,12 @@ msgstr "== udev"
 # type: Plain text
 #: hotplug.txt:19
 msgid "== Pen/Thumbdrives"
-msgstr ""
+msgstr "== Clefs usb"
 
 # type: Plain text
 #: hotplug.txt:42
 msgid "== Digital cameras"
-msgstr ""
+msgstr "== Appareils photos numérique"
 
 # type: Plain text
 #: hotplug.txt:54
@@ -10848,7 +10890,7 @@ msgstr "== Automontage: D-BUS, HAL et Ivman"
 # type: Plain text
 #: init.txt:2
 msgid "= The init scripts, bootup"
-msgstr ""
+msgstr "= Les scripts de démarrage (init), bootup"
 
 # type: Plain text
 #: init.txt:4
@@ -10888,7 +10930,7 @@ msgstr "== Traduction"
 # type: Plain text
 #: contribute.txt:15
 msgid "== Application packaging"
-msgstr ""
+msgstr "== Empaquetage d'application"
 
 # type: Plain text
 #: contribute.txt:23
@@ -10973,7 +11015,7 @@ msgstr "== Mise en veille prolongée"
 # type: Plain text
 #: packages.txt:6
 msgid "== lastfmsubmitd"
-msgstr ""
+msgstr "== lastfmsubmitd"
 
 # type: Plain text
 #: packages.txt:8
@@ -10983,7 +11025,7 @@ msgstr "=== Configurer Lastfmsubmitd"
 # type: Plain text
 #: packages.txt:14
 msgid "=== Starting the daemon(s)"
-msgstr ""
+msgstr "=== Démarrage de démon(s)"
 
 # type: Plain text
 #: packages.txt:24
@@ -11458,7 +11500,7 @@ msgstr "== Discussions hors-sujet"
 # type: Plain text
 #: irc-rules.txt:39
 msgid "=== Other Linux distributions' features"
-msgstr ""
+msgstr "=== Fonctionnalités d'autres distributions Linux"
 
 # type: Plain text
 #: irc-rules.txt:52
@@ -11468,7 +11510,7 @@ msgstr "=== Discussion en dehors de Frugalware"
 # type: Plain text
 #: irc-rules.txt:59
 msgid "== Asking questions"
-msgstr ""
+msgstr "== Poser des questions"
 
 # type: Plain text
 #: irc-rules.txt:61
@@ -11483,7 +11525,7 @@ msgstr "=== En premier lire la documentation en ligne"
 # type: Plain text
 #: irc-rules.txt:76
 msgid "=== Don't ask if you can ask a question, just go ahead and ask"
-msgstr ""
+msgstr "=== Ne demandez pas si vous pouvez une question, allez de l'avant et posez la"
 
 # type: Plain text
 #: irc-rules.txt:81
