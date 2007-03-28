@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-03-28 05:00+0200\n"
-"PO-Revision-Date: 2007-03-28 13:03+0200\n"
+"PO-Revision-Date: 2007-03-28 18:19+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -1760,19 +1760,19 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:539 pacman.txt:83
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "`-------------------------------------------`------------------------`-----------------\n"
 "Action                                      Apt command              Pacman command\n"
 "---------------------------------------------------------------------------------------\n"
 msgstr ""
-"`--------------------------------------------------------------------`------------------------`-----------------\n"
-"Action Commandes Apt Commande Pacman\n"
-"----------------------------------------------------------------------------------------------------------------\n"
+"`-------------------------------------------`------------------------`-----------------\n"
+"Action                                      Commande apt             Commande pacman\n"
+"---------------------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:547 pacman.txt:91
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "Refresh the package database:               apt-get update           pacman-g2 -Sy\n"
 "Upgrade currently installed packages:       apt-get upgrade          pacman-g2 -Su\n"
@@ -1784,9 +1784,9 @@ msgid ""
 "---------------------------------------------------------------------------------------\n"
 msgstr ""
 "Rafraichir la liste des paquets:                                        apt-get update           pacman-g2 -Sy\n"
-"Mettre à jour les paquets installés vers leur nouvelle version: apt-get upgrade pacman-g2 -Su\n"
-"Installer un nouveau paquet: apt-get install foo pacman-g2 -S foo\n"
-"Retirer un paquet: apt-get remove foo pacman-g2 -Rc foo\n"
+"Mettre à jour les paquets installés:   apt-get upgrade pacman-g2 -Su\n"
+"Installer un nouveau paquet:   apt-get install foo pacman-g2 -S foo\n"
+"Retirer un paquet:        apt-get remove foo pacman-g2 -Rc foo\n"
 "Rechercher dans la liste des paquets: apt-cache search foo pacman-g2 -Ss foo\n"
 "Installer un paquet depuis un fichier: dpkg -i foo.deb pacman-g2 -A foo.fpm\n"
 "Nettoyer le cache des paquets: apt-get clean pacman-g2 -Sc\n"
@@ -1936,10 +1936,7 @@ msgid ""
 "Let's see an example: you would like to allow others to ssh into your "
 "computer. Edit /etc/sysconfig/firewall, remove the hashmark (#) from the "
 "beginning of the line under the # ssh description, and restart the firewall:"
-msgstr ""
-"Voyons un exemple: vous voudriez autoriser l'accès en ssh à votre machine. "
-"Editer /etc/sysconfig/firewall, enlevez les dièses (#) du début de ligne "
-"sous la description # ssh, et redémarrez le firewall:"
+msgstr "Voyons un exemple: vous voudriez autoriser l'accès en ssh à votre machine. Editez /etc/sysconfig/firewall, enlevez les dièses (#) du début de ligne sous la description # ssh, et redémarrez le firewall:"
 
 # type: Plain text
 #: user.txt:620 network.txt:72
@@ -7875,7 +7872,7 @@ msgstr "          Le nom de notre 'section'.\n"
 # type: Bullet: '       6) '
 #: user.txt:2721 packages.txt:1514
 msgid "Common Name (eg, FQDN) [www.snakeoil.com]:"
-msgstr ""
+msgstr "Common Name (eg, FQDN) [www.snakeoil.com]:"
 
 # type: Plain text
 #: user.txt:2724 packages.txt:1517
@@ -7888,7 +7885,7 @@ msgstr "          Important: Indiquez une adresse valide sans quoi votre navigat
 # type: Bullet: '       7) '
 #: user.txt:2726 packages.txt:1519
 msgid "Email Address (eg, `name@FQDN') [`www@snakeoil.com']:"
-msgstr ""
+msgstr "Email Address (eg, `name@FQDN') [`www@snakeoil.com']:"
 
 # type: Plain text
 #: user.txt:2729 packages.txt:1522
@@ -7903,7 +7900,7 @@ msgstr ""
 # type: Bullet: '       8) '
 #: user.txt:2731 packages.txt:1524
 msgid "Certificate Validity (days) [365]:"
-msgstr ""
+msgstr "Certificate Validity (days) [365]:"
 
 # type: Plain text
 #: user.txt:2733 packages.txt:1526
@@ -9597,7 +9594,7 @@ msgstr "Pour plus d'informations à ce sujet, voir gérer les fichiers de config
 msgid ""
 "The depends array has been discussed already, except I haven't mentioned\n"
 " before that the elements may include version information, for example:\n"
-msgstr ""
+msgstr "La liste depends a déjà été mentionné, excepté qu'il à été omis auparavant que les éléments peuvent contenir des informations de version, par exemple:"
 
 # type: Plain text
 #: user.txt:3369 makepkg.txt:349
@@ -9665,7 +9662,7 @@ msgstr ""
 msgid ""
 "The provides array is used to create virtual dependencies. It means both "
 "postfix and sendmail provides mta, so we can do:"
-msgstr ""
+msgstr "La liste provides (NDT: fournit) est utilisée pour créer des dépendances virtuelles. Cela signifie que, par exemple, comme postfix et sendmail fournissent mta, nous pouvons alors faire:"
 
 # type: Plain text
 #: user.txt:3396 makepkg.txt:376
@@ -9689,7 +9686,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:3402 makepkg.txt:382
 msgid "The user has a choice between postfix and sendmail."
-msgstr ""
+msgstr "L'utilisateur a le choix entre postfix et sendmail."
 
 # type: Plain text
 #: user.txt:3405 makepkg.txt:385
@@ -9854,7 +9851,7 @@ msgstr ""
 msgid ""
 "If you need more example just take a look on avahi FrugalBuild in network "
 "group."
-msgstr ""
+msgstr "Si vous avez besoin d'un exemple supplémentaire regarder le FrugalBuild de avahi  dans le groupe network."
 
 # type: Plain text
 #: user.txt:3508 makepkg.txt:488
