@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bmh 1980\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-02-23 17:28+0100\n"
+"POT-Creation-Date: 2007-03-29 05:32+0200\n"
 "PO-Revision-Date: 2006-05-04 17:10+0200\n"
 "Last-Translator: Marcus Habermehl <bmh1980@frugalware.org>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../add.c:69 ../deptest.c:64 ../remove.c:83 ../sync.c:395 ../sync.c:434
+#: ../add.c:69 ../deptest.c:64 ../remove.c:83 ../sync.c:396 ../sync.c:435
 #, fuzzy, c-format
 msgid ""
 "       if you're sure a package manager is not already running,\n"
@@ -39,7 +39,7 @@ msgstr "Konnte Paket '%s' nicht hinzufügen (%s)\n"
 msgid "done."
 msgstr "erledigt."
 
-#: ../add.c:92 ../remove.c:102 ../sync.c:522
+#: ../add.c:92 ../remove.c:102 ../sync.c:523
 #, c-format
 msgid "failed to prepare transaction (%s)\n"
 msgstr "Konnte Durchführung nicht vorbereiten (%s)\n"
@@ -49,22 +49,22 @@ msgstr "Konnte Durchführung nicht vorbereiten (%s)\n"
 msgid ":: %s: requires %s"
 msgstr ":: %s: Benötigt %s"
 
-#: ../add.c:111 ../sync.c:543
+#: ../add.c:111 ../sync.c:544
 #, c-format
 msgid ":: %s: conflicts with %s"
 msgstr ":: %s: Steht im Konflikt mit %s"
 
-#: ../add.c:121 ../sync.c:668
+#: ../add.c:121 ../sync.c:669
 #, c-format
 msgid "%s%s exists in \"%s\" (target) and \"%s\" (target)"
 msgstr "%s%s existiert in \"%s\" (Paket) und \"%s\" (Paket)"
 
-#: ../add.c:128 ../sync.c:675
+#: ../add.c:128 ../sync.c:676
 #, c-format
 msgid "%s: %s%s exists in filesystem"
 msgstr "%s: %s%s existiert im Dateisystem"
 
-#: ../add.c:136 ../sync.c:683 ../sync.c:690
+#: ../add.c:136 ../sync.c:684 ../sync.c:691
 msgid ""
 "\n"
 "errors occurred, no packages were upgraded.\n"
@@ -72,17 +72,17 @@ msgstr ""
 "\n"
 "Fehler aufgetreten, kein Paket wird aktualisiert.\n"
 
-#: ../add.c:143 ../sync.c:553
+#: ../add.c:143 ../sync.c:554
 #, c-format
 msgid ":: %.1f MB required, have %.1f MB"
 msgstr ""
 
-#: ../add.c:157 ../remove.c:142 ../sync.c:661
+#: ../add.c:157 ../remove.c:142 ../sync.c:662
 #, c-format
 msgid "failed to commit transaction (%s)\n"
 msgstr ""
 
-#: ../add.c:164 ../remove.c:152 ../sync.c:427 ../sync.c:703
+#: ../add.c:164 ../remove.c:152 ../sync.c:428 ../sync.c:704
 #, c-format
 msgid "failed to release transaction (%s)\n"
 msgstr ""
@@ -795,50 +795,50 @@ msgstr "Keine Pakete angegeben (benutzen Sie -h für Hilfe)\n"
 msgid "no operation specified (use -h for help)\n"
 msgstr "Keine Operation angegeben (benutzen Sie -h für Hilfe)\n"
 
-#: ../query.c:55
+#: ../query.c:56
 msgid "no file was specified for --owns\n"
 msgstr "Es wurde keine Datei für --owns angegeben\n"
 
-#: ../query.c:60
+#: ../query.c:61
 #, c-format
 msgid "%s is not a file.\n"
 msgstr "%s ist keine Datei.\n"
 
-#: ../query.c:77
+#: ../query.c:78
 #, c-format
 msgid "%s is owned by %s %s\n"
 msgstr "%s ist in %s %s enthalten\n"
 
-#: ../query.c:85
+#: ../query.c:86
 #, c-format
 msgid "No package owns %s\n"
 msgstr "Kein Paket enthält %s\n"
 
-#: ../query.c:124 ../sync.c:357
+#: ../query.c:125 ../sync.c:358
 msgid "no usable package repositories configured.\n"
 msgstr "Keine brauchbaren Paketrepositories konfiguriert.\n"
 
-#: ../query.c:163
+#: ../query.c:164
 #, c-format
 msgid "group \"%s\" was not found\n"
 msgstr "Gruppe \"%s\" wurde nicht gefunden\n"
 
-#: ../query.c:173
+#: ../query.c:174
 msgid "no package file was specified for --file\n"
 msgstr "Es wurde kein Paket für --file angegeben\n"
 
-#: ../query.c:177
+#: ../query.c:178
 #, c-format
 msgid "failed to load package '%s' (%s)\n"
 msgstr "Konnte Paket '%s' nicht laden (%s)\n"
 
 #. something weird happened
-#: ../query.c:216 ../query.c:258
+#: ../query.c:217 ../query.c:259
 #, c-format
 msgid "package \"%s\" not found\n"
 msgstr "Paket \"%s\" nicht gefunden\n"
 
-#: ../remove.c:64 ../sync.c:473
+#: ../remove.c:64 ../sync.c:474
 #, c-format
 msgid ":: group %s:\n"
 msgstr ":: Gruppe %s:\n"
@@ -852,7 +852,7 @@ msgstr "    Entferne den gesamten Inhalt? [J/n] "
 msgid ":: Remove %s from group %s? [Y/n] "
 msgstr ":: Entferne %s aus Gruppe %s? [J/n] "
 
-#: ../remove.c:81 ../sync.c:393 ../sync.c:432
+#: ../remove.c:81 ../sync.c:394 ../sync.c:433
 #, c-format
 msgid "failed to init transaction (%s)\n"
 msgstr ""
@@ -879,83 +879,83 @@ msgstr ""
 "\n"
 "Möchten Sie all diese Pakete entfernen? [J/n] "
 
-#: ../sync.c:72
+#: ../sync.c:73
 msgid "Do you want to remove old packages from cache? [Y/n] "
 msgstr "Möchten Sie alte Pakete aus dem Cache entfernen? [J/n] "
 
-#: ../sync.c:74
+#: ../sync.c:75
 msgid "removing old packages from cache... "
 msgstr "Entferne alte Pakete aus dem Cache ... "
 
-#: ../sync.c:77
+#: ../sync.c:78
 msgid "could not access cache directory\n"
 msgstr "Konnte nicht auf Cacheverzeichnis zugreifen\n"
 
 #. full cleanup
-#: ../sync.c:137
+#: ../sync.c:138
 msgid "Do you want to remove all packages from cache? [Y/n] "
 msgstr "Wollen Sie alle Pakete aus dem Cache entfernen? [J/n] "
 
-#: ../sync.c:139
+#: ../sync.c:140
 msgid "removing all packages from cache... "
 msgstr "Entferne alle Pakete aus dem Cache ... "
 
-#: ../sync.c:142
+#: ../sync.c:143
 msgid "could not remove cache directory\n"
 msgstr "Konnte Cacheverzeichnis nicht entfernen\n"
 
-#: ../sync.c:147
+#: ../sync.c:148
 msgid "could not create new cache directory\n"
 msgstr "Konnte neues Cacheverzeichnis nicht erstellen\n"
 
-#: ../sync.c:152 ../trans.c:72 ../trans.c:80 ../trans.c:94 ../trans.c:108
-#: ../trans.c:124 ../trans.c:136
+#: ../sync.c:153 ../trans.c:73 ../trans.c:81 ../trans.c:95 ../trans.c:109
+#: ../trans.c:125 ../trans.c:137
 msgid "done.\n"
 msgstr "beendet.\n"
 
-#: ../sync.c:167
+#: ../sync.c:168
 #, c-format
 msgid "failed to synchronize %s\n"
 msgstr "Konnte %s nicht synchronisieren\n"
 
-#: ../sync.c:169
+#: ../sync.c:170
 #, c-format
 msgid "failed to update %s (%s)\n"
 msgstr "Konnte %s nicht aktualisieren (%s)\n"
 
-#: ../sync.c:173
+#: ../sync.c:174
 #, c-format
 msgid " %s is up to date\n"
 msgstr " %s ist aktuell\n"
 
-#: ../sync.c:282
+#: ../sync.c:283
 #, c-format
 msgid "package \"%s\" was not found.\n"
 msgstr "Paket \"%s\" wurde nicht gefunden.\n"
 
-#: ../sync.c:320
+#: ../sync.c:321
 #, c-format
 msgid "repository \"%s\" was not found.\n"
 msgstr "Repository \"%s\" wurde nicht gefunden.\n"
 
 #. grab a fresh package list
-#: ../sync.c:367
+#: ../sync.c:368
 msgid ":: Synchronizing package databases...\n"
 msgstr ":: Synchronisiere Paketdatenbank ...\n"
 
-#: ../sync.c:368
+#: ../sync.c:369
 msgid "synchronizing package lists"
 msgstr "Synchronisiere Paketlisten"
 
-#: ../sync.c:402
+#: ../sync.c:403
 msgid ":: Starting local database upgrade...\n"
 msgstr ":: Starte Aktualisierung der lokalen Datenbank ...\n"
 
-#: ../sync.c:403
+#: ../sync.c:404
 msgid "starting full system upgrade"
 msgstr "Starte komplette Systemaktualisierung"
 
-#: ../sync.c:421
+#: ../sync.c:422
 #, fuzzy
 msgid ""
 "\n"
@@ -964,49 +964,49 @@ msgstr ""
 "\n"
 ":: pacman hat eine neuere Version des \"pacman\" Paketes gefunden.\n"
 
-#: ../sync.c:422
+#: ../sync.c:423
 #, fuzzy
 msgid ":: It is recommended that you allow pacman-g2 to upgrade itself\n"
 msgstr ":: Es wird empfohlen, zuerst pacman zu aktualisieren und\n"
 
-#: ../sync.c:423
+#: ../sync.c:424
 msgid ":: first, then you can re-run the operation with the newer version.\n"
 msgstr ":: danach Ihre Eingabe mit der neueren Version zu wiederholen.\n"
 
-#: ../sync.c:425
+#: ../sync.c:426
 #, fuzzy
 msgid ":: Upgrade pacman-g2 first? [Y/n] "
 msgstr ":: Zuerst pacman aktualisieren? [J/n] "
 
-#: ../sync.c:440 ../sync.c:461
+#: ../sync.c:441 ../sync.c:462
 #, c-format
 msgid "could not add target '%s': %s\n"
 msgstr "Konnte Paket '%s' nicht hinzufügen: %s\n"
 
-#: ../sync.c:479
+#: ../sync.c:480
 msgid ":: Install whole content? [Y/n] "
 msgstr ":: Gesamten Inhalt installieren? [J/n] "
 
-#: ../sync.c:486
+#: ../sync.c:487
 #, c-format
 msgid ":: Install %s from group %s? [Y/n] "
 msgstr ":: %s aus Gruppe %s installieren? [J/n] "
 
-#: ../sync.c:509
+#: ../sync.c:510
 #, c-format
 msgid "could not add target '%s': not found in sync db\n"
 msgstr "Konnte Paket '%s' nicht hinzufügen: Nicht in sync db gefunden\n"
 
-#: ../sync.c:528
+#: ../sync.c:529
 msgid "is required by"
 msgstr "wird benötigt von"
 
-#: ../sync.c:528
+#: ../sync.c:529
 #, fuzzy
 msgid "requries"
 msgstr "benötigt"
 
-#: ../sync.c:605
+#: ../sync.c:606
 msgid ""
 "\n"
 "Remove:  "
@@ -1014,7 +1014,7 @@ msgstr ""
 "\n"
 "Entfernen: "
 
-#: ../sync.c:621
+#: ../sync.c:622
 msgid ""
 "\n"
 "Targets: "
@@ -1022,7 +1022,7 @@ msgstr ""
 "\n"
 "Pakete:  "
 
-#: ../sync.c:624
+#: ../sync.c:625
 #, c-format
 msgid ""
 "\n"
@@ -1031,7 +1031,7 @@ msgstr ""
 "\n"
 "Gesamtgröße:          %.1f MB\n"
 
-#: ../sync.c:626
+#: ../sync.c:627
 #, fuzzy, c-format
 msgid ""
 "\n"
@@ -1040,7 +1040,7 @@ msgstr ""
 "\n"
 "Gesamtgröße:          %.1f MB\n"
 
-#: ../sync.c:633
+#: ../sync.c:634
 msgid ""
 "\n"
 "Beginning download...\n"
@@ -1048,11 +1048,11 @@ msgstr ""
 "\n"
 "Beginne download ...\n"
 
-#: ../sync.c:637
+#: ../sync.c:638
 msgid "Proceed with download? [Y/n] "
 msgstr "Download fortsetzen? [J/n] "
 
-#: ../sync.c:645
+#: ../sync.c:646
 msgid ""
 "\n"
 "Beginning upgrade process...\n"
@@ -1060,70 +1060,70 @@ msgstr ""
 "\n"
 "Beginne Aktualisierungsprozess ...\n"
 
-#: ../sync.c:649
+#: ../sync.c:650
 msgid "Proceed with upgrade? [Y/n] "
 msgstr "Aktualisierung fortsetzen? [J/n] "
 
-#: ../trans.c:57
+#: ../trans.c:58
 msgid "checking dependencies... "
 msgstr "Prüfe Abhängigkeiten ... "
 
-#: ../trans.c:61
+#: ../trans.c:62
 msgid "checking for file conflicts... "
 msgstr "Prüfe auf Dateikonflikte ... "
 
-#: ../trans.c:65
+#: ../trans.c:66
 msgid "resolving dependencies... "
 msgstr "Löse Abhängigkeiten auf ... "
 
-#: ../trans.c:68
+#: ../trans.c:69
 msgid "looking for inter-conflicts... "
 msgstr ""
 
-#: ../trans.c:89
+#: ../trans.c:90
 #, c-format
 msgid "installing %s... "
 msgstr "Installiere %s ... "
 
-#: ../trans.c:96
+#: ../trans.c:97
 #, c-format
 msgid "installed %s (%s)"
 msgstr "Installiert %s (%s)"
 
-#: ../trans.c:103
+#: ../trans.c:104
 #, c-format
 msgid "removing %s... "
 msgstr "Entferne %s ... "
 
-#: ../trans.c:112
+#: ../trans.c:113
 #, c-format
 msgid "removed %s (%s)"
 msgstr "Entfernt %s (%s)"
 
-#: ../trans.c:119
+#: ../trans.c:120
 #, c-format
 msgid "upgrading %s... "
 msgstr "Aktualisiere %s ... "
 
-#: ../trans.c:126
+#: ../trans.c:127
 #, c-format
 msgid "upgraded %s (%s -> %s)"
 msgstr "Aktualisiert %s (%s -> %s)"
 
-#: ../trans.c:133
+#: ../trans.c:134
 msgid "checking package integrity... "
 msgstr "Prüfe Paketintegrität ... "
 
-#: ../trans.c:147
+#: ../trans.c:148
 #, fuzzy
 msgid " done.\n"
 msgstr "beendet.\n"
 
-#: ../trans.c:149
+#: ../trans.c:150
 msgid " failed.\n"
 msgstr ""
 
-#: ../trans.c:156
+#: ../trans.c:157
 #, c-format
 msgid ""
 "\n"
@@ -1132,61 +1132,61 @@ msgstr ""
 "\n"
 ":: Empfange Pakete von %s ...\n"
 
-#: ../trans.c:166
+#: ../trans.c:167
 msgid "] 100%    LOCAL "
 msgstr "] 100 %    LOKAL "
 
-#: ../trans.c:184
+#: ../trans.c:185
 #, c-format
 msgid ":: %s requires %s, but it is in IgnorePkg. Install anyway? [Y/n] "
 msgstr ""
 ":: %s ist in IgnorePkg, wird aber von %s benötigt. Trotzdem installieren? [J/"
 "n] "
 
-#: ../trans.c:198
+#: ../trans.c:199
 #, c-format
 msgid ":: %s is designated as a HoldPkg.  Remove anyway? [Y/n] "
 msgstr ":: %s ist als ein HoldPkg gekennzeichnet. Trotzdem entfernen? [J/n] "
 
-#: ../trans.c:211
+#: ../trans.c:212
 #, c-format
 msgid ":: Replace %s with %s/%s? [Y/n] "
 msgstr ":: %s mit %s/%s ersetzen? [J/n] "
 
-#: ../trans.c:226
+#: ../trans.c:227
 #, c-format
 msgid ":: %s conflicts with %s. Remove %s? [Y/n] "
 msgstr ":: %s steht im Konflikt mit %s. %s entfernen? [J/n] "
 
-#: ../trans.c:242
+#: ../trans.c:243
 #, c-format
 msgid ":: %s-%s: local version is newer. Upgrade anyway? [Y/n] "
 msgstr ":: %s-%s: Lokale Version ist neuer. Trotzdem aktualisieren? [J/n] "
 
-#: ../trans.c:260
+#: ../trans.c:261
 #, c-format
 msgid ":: %s-%s: local version is up to date. Upgrade anyway? [Y/n] "
 msgstr ":: %s-%s: Lokale Version ist aktuell. Trotzdem aktualisieren? [J/n] "
 
-#: ../trans.c:278
+#: ../trans.c:279
 #, c-format
 msgid ":: Archive %s is corrupted. Do you want to delete it? [Y/n] "
 msgstr ":: Archiv %s ist beschädigt. Möchten Sie es löschen? [J/n] "
 
-#: ../trans.c:294
+#: ../trans.c:295
 msgid "installing"
 msgstr "installiere"
 
-#: ../trans.c:295
+#: ../trans.c:296
 msgid "upgrading"
 msgstr "aktualisiere"
 
-#: ../trans.c:296
+#: ../trans.c:297
 #, fuzzy
 msgid "removing"
 msgstr "Entferne %s ... "
 
-#: ../trans.c:297
+#: ../trans.c:298
 #, fuzzy
 msgid "checking for file conflicts"
 msgstr "Prüfe auf Dateikonflikte ... "
