@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-03-29 05:32+0200\n"
-"PO-Revision-Date: 2007-03-01 19:13+0100\n"
+"POT-Creation-Date: 2007-04-07 05:33+0200\n"
+"PO-Revision-Date: 2007-04-07 09:29+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: Français\n"
 "MIME-Version: 1.0\n"
@@ -77,7 +77,7 @@ msgstr "mise a jour du paquet %s-%s"
 msgid "loading FILES info for '%s'"
 msgstr "chargement des informations de fichiers pour '%s'"
 
-#: ../add.c:363 ../alpm.c:542 ../alpm.c:589 ../package.c:511
+#: ../add.c:363 ../pacman.c:542 ../pacman.c:589 ../package.c:511
 #, c-format
 msgid "loading DESC info for '%s'"
 msgstr "chargement des informations descriptives pour '%s'"
@@ -298,17 +298,17 @@ msgstr ""
 msgid "running \"ldconfig -r %s\""
 msgstr "execute \"ldconfig -r %s\""
 
-#: ../alpm.c:211
+#: ../pacman.c:211
 #, c-format
 msgid "unregistering database '%s'"
 msgstr "désenregistre la base de données '%s'"
 
-#: ../alpm.c:216
+#: ../pacman.c:216
 #, c-format
 msgid "closing database '%s'"
 msgstr "ferme la base de données '%s'"
 
-#: ../alpm.c:294
+#: ../pacman.c:294
 #, c-format
 msgid ""
 "adding new server to database '%s': protocol '%s', server '%s', path '%s'"
@@ -316,131 +316,131 @@ msgstr ""
 "ajout d'un nouveau serveur à la base de donnée '%s': protocole '%s', serveur "
 "'%s', chemin '%s'"
 
-#: ../alpm.c:298
+#: ../pacman.c:298
 #, c-format
 msgid "serverlist flushed for '%s'"
 msgstr "liste des serveurs rechargée pour '%s'"
 
-#: ../alpm.c:334
+#: ../pacman.c:334
 #, c-format
 msgid "failed to get lastupdate time for %s (no big deal)\n"
 msgstr ""
 "échec de la récupération de la date de la dernière mise à jour pour %s (sans "
 "incidence)\n"
 
-#: ../alpm.c:348
+#: ../pacman.c:348
 #, c-format
 msgid "failed to sync db: %s [%d]\n"
 msgstr "echec de synchronisation de la base de données: %s [%d]\n"
 
-#: ../alpm.c:354
+#: ../pacman.c:354
 #, c-format
 msgid "sync: new mtime for %s: %s\n"
 msgstr "sync: nouveau mtime pour %s: %s\n"
 
 #. remove the old dir
-#: ../alpm.c:360
+#: ../pacman.c:360
 #, c-format
 msgid "flushing database %s/%s"
 msgstr "recharge la base de données %s/%s"
 
-#: ../alpm.c:364
+#: ../pacman.c:364
 #, c-format
 msgid "could not remove database entry %s/%s"
 msgstr "n'a pas pu retirer l'entrée de base de données %s/%s"
 
-#: ../alpm.c:536
+#: ../pacman.c:536
 #, c-format
 msgid "could not get sha1 checksum for package %s-%s\n"
 msgstr "n'a pas pu obtenir la 'signature' sha1 pour le paquet %s-%s\n"
 
-#: ../alpm.c:547 ../alpm.c:594
+#: ../pacman.c:547 ../pacman.c:594
 #, c-format
 msgid "checksums for package %s-%s are matching"
 msgstr "les 'signatures' correspondent pour le paquet %s-%s"
 
-#: ../alpm.c:550
+#: ../pacman.c:550
 #, c-format
 msgid "sha1sums do not match for package %s-%s\n"
 msgstr "les 'signatures' sha1 ne correspondent pas pour le paquet %s-%s\n"
 
-#: ../alpm.c:583
+#: ../pacman.c:583
 #, c-format
 msgid "could not get md5 checksum for package %s-%s\n"
 msgstr "n'a pas pu obtenir la 'signature' md5 pour le paquet %s-%s\n"
 
-#: ../alpm.c:597
+#: ../pacman.c:597
 #, c-format
 msgid "md5sums do not match for package %s-%s\n"
 msgstr "les 'signatures' md5 ne correspondent pas pour le paquet %s-%s\n"
 
-#: ../alpm.c:866
+#: ../pacman.c:866
 #, c-format
 msgid "could not remove lock file %s"
 msgstr "n'a pas pu effacer le fichier de verrou %s"
 
-#: ../alpm.c:867
+#: ../pacman.c:867
 #, c-format
 msgid "warning: could not remove lock file %s"
 msgstr "avertissement: n'a pas pu effacer le fichier de verrou %s"
 
-#: ../alpm.c:1117
+#: ../pacman.c:1117
 #, c-format
 msgid "config: new section '%s'\n"
 msgstr "config: new section '%s'\n"
 
-#: ../alpm.c:1148
+#: ../pacman.c:1148
 msgid "config: usesyslog\n"
 msgstr "config: usesyslog\n"
 
-#: ../alpm.c:1159
+#: ../pacman.c:1159
 #, c-format
 msgid "config: including %s\n"
 msgstr "config: including %s\n"
 
-#: ../alpm.c:1171 ../alpm.c:1179
+#: ../pacman.c:1171 ../pacman.c:1179
 #, c-format
 msgid "config: noupgrade: %s\n"
 msgstr "config: noupgrade: %s\n"
 
-#: ../alpm.c:1189 ../alpm.c:1197
+#: ../pacman.c:1189 ../pacman.c:1197
 #, c-format
 msgid "config: noextract: %s\n"
 msgstr "config: noextract: %s\n"
 
-#: ../alpm.c:1207 ../alpm.c:1215
+#: ../pacman.c:1207 ../pacman.c:1215
 #, c-format
 msgid "config: ignorepkg: %s\n"
 msgstr "config: ignorepkg: %s\n"
 
-#: ../alpm.c:1225 ../alpm.c:1233
+#: ../pacman.c:1225 ../pacman.c:1233
 #, c-format
 msgid "config: holdpkg: %s\n"
 msgstr "config: holdpkg: %s\n"
 
-#: ../alpm.c:1243
+#: ../pacman.c:1243
 #, c-format
 msgid "config: dbpath: %s\n"
 msgstr "config: dbpath: %s\n"
 
-#: ../alpm.c:1253
+#: ../pacman.c:1253
 #, c-format
 msgid "config: cachedir: %s\n"
 msgstr "config: cachedir: %s\n"
 
-#: ../alpm.c:1259
+#: ../pacman.c:1259
 #, c-format
 msgid "config: log file: %s\n"
 msgstr "config: log file: %s\n"
 
 #. The config value is in days, we use seconds
-#: ../alpm.c:1267
+#: ../pacman.c:1267
 #, c-format
 msgid "config: UpgradeDelay: %i\n"
 msgstr "config: UpgradeDelay: %i\n"
 
 #. add to the list
-#: ../alpm.c:1293
+#: ../pacman.c:1293
 #, c-format
 msgid "config: %s: server: %s\n"
 msgstr "config: %s: server: %s\n"
@@ -459,8 +459,8 @@ msgid "invalid name for dabatase entry '%s'"
 msgstr "nom invalide pour l'entrée de base de données '%s'"
 
 #: ../be_files.c:192
-msgid "invalid package entry provided to _alpm_db_read"
-msgstr "entrée de paquet invalid donné à _alpm_db_read"
+msgid "invalid package entry provided to _pacman_db_read"
+msgstr "entrée de paquet invalid donné à _pacman_db_read"
 
 #: ../be_files.c:456
 #, c-format
