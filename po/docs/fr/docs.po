@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-04-07 05:02+0200\n"
-"PO-Revision-Date: 2007-04-07 21:57+0200\n"
+"POT-Creation-Date: 2007-04-09 05:00+0200\n"
+"PO-Revision-Date: 2007-04-09 18:50+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -1412,7 +1412,7 @@ msgid "== Basic configuration"
 msgstr "== Configuration de base"
 
 # type: Plain text
-#: user.txt:398 user.txt:1021 user.txt:2949 user.txt:3099 packages.txt:757
+#: user.txt:398 user.txt:1021 user.txt:2994 user.txt:3144 packages.txt:802
 msgid "=== Introduction"
 msgstr "=== Introduction"
 
@@ -1463,7 +1463,7 @@ msgstr ""
 "d'amorçage installé, mais souhaitez garder votre MBR en l'état."
 
 # type: Plain text
-#: user.txt:417 user.txt:3597
+#: user.txt:417 user.txt:3642
 msgid "=== Kernel modules"
 msgstr "=== Modules du noyau"
 
@@ -2255,8 +2255,8 @@ msgid "`su -c \\'service alsa load\\'`"
 msgstr "`su -c \\'service alsa load\\'`"
 
 # type: Plain text
-#: user.txt:721 user.txt:2583 user.txt:2750 user.txt:3080 sound.txt:31
-#: packages.txt:1345 packages.txt:1512 gpg.txt:12
+#: user.txt:721 user.txt:2628 user.txt:2795 user.txt:3125 sound.txt:31
+#: packages.txt:1390 packages.txt:1557 gpg.txt:12
 msgid "command."
 msgstr "commande."
 
@@ -2507,7 +2507,7 @@ msgid "== The hotplug subsystem"
 msgstr "== Le sous système de reconnaissance du matériel à chaud (hotplug)"
 
 # type: Plain text
-#: user.txt:809 user.txt:2365
+#: user.txt:809 user.txt:2410
 msgid "=== udev"
 msgstr "=== udev"
 
@@ -3098,7 +3098,7 @@ msgid "The URL of our Bug tracking system is:"
 msgstr "L'URL du Bug Tracking System est:"
 
 # type: Plain text
-#: user.txt:1030 user.txt:2609 bugs.txt:13 packages.txt:1371
+#: user.txt:1030 user.txt:2654 bugs.txt:13 packages.txt:1416
 #, no-wrap
 msgid "---------------------------\n"
 msgstr "---------------------------\n"
@@ -3962,7 +3962,8 @@ msgid "Do not forget to create the cache directory as well:"
 msgstr "N'oubliez pas de créer également le répertoire de cache:"
 
 # type: Plain text
-#: user.txt:1325 user.txt:1930 packages.txt:87 packages.txt:692
+#: user.txt:1325 user.txt:1876 user.txt:1975 packages.txt:87 packages.txt:638
+#: packages.txt:737
 #, no-wrap
 msgid "----------------------------\n"
 msgstr "----------------------------\n"
@@ -3985,7 +3986,7 @@ msgid "Configuration Options: ^^^^^^^^^^^^^^^^^^^^^^"
 msgstr "Options de configuration: ^^^^^^^^^^^^^^^^^^^^^^"
 
 # type: Plain text
-#: user.txt:1333 user.txt:1657 user.txt:3219 packages.txt:95 packages.txt:419
+#: user.txt:1333 user.txt:1657 user.txt:3264 packages.txt:95 packages.txt:419
 #: makepkg.txt:124
 #, no-wrap
 msgid "-------------------------------------------------------------------------------\n"
@@ -4368,7 +4369,7 @@ msgid "You need to run"
 msgstr "Vous devez exécuter"
 
 # type: Plain text
-#: user.txt:1480 user.txt:3182 packages.txt:242 makepkg.txt:87
+#: user.txt:1480 user.txt:3227 packages.txt:242 makepkg.txt:87
 #, no-wrap
 msgid "-----------------------------------\n"
 msgstr "-----------------------------------\n"
@@ -4814,7 +4815,8 @@ msgid "Now run:"
 msgstr "Maintenant lancez:"
 
 # type: Plain text
-#: user.txt:1635 user.txt:1664 packages.txt:397 packages.txt:426
+#: user.txt:1635 user.txt:1664 user.txt:1888 packages.txt:397 packages.txt:426
+#: packages.txt:650
 #, no-wrap
 msgid "-----------------------\n"
 msgstr "-----------------------\n"
@@ -5144,7 +5146,7 @@ msgid "You can set up Monit by adding these lines to '/etc/inittab':"
 msgstr "Vous pouvez activer Monit en ajoutant ces lignes à '/etc/inittab':"
 
 # type: Plain text
-#: user.txt:1762 user.txt:1944 packages.txt:524 packages.txt:706
+#: user.txt:1762 user.txt:1989 packages.txt:524 packages.txt:751
 #, no-wrap
 msgid "------------------------------------------------------\n"
 msgstr "------------------------------------------------------\n"
@@ -5405,11 +5407,147 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:1848
+msgid "=== fuse"
+msgstr "=== fuse"
+
+# type: Plain text
+#: user.txt:1854 packages.txt:616
+msgid ""
+"Fuse is a virtual filesystem \"helper\" which makes possible to mount "
+"unusual things as a filesystem, letting the thing's interpreter program be a "
+"simple one, not a kernel-space module (which is much harder to write). In "
+"Frugalware, users can mount things, too. First as root, let's install the "
+"tools:"
+msgstr "Fuse est un système de fichiers virtuel d'\"aide\" qui permet de monter des choses inhabituelles en tant que système de fichiers, autorisant les programmes d'interprétation d'être simple, sans être un module en espace noyau (ce qui est beaucoup plus dur à écrire). Dans Frugalware, les utilisateurs peuvent aussi monter des choses. Tout d'abord en tant que root, vous devez installer les outils nécessaires:"
+
+# type: Bullet: '+
+# type: '
+#: user.txt:1855 packages.txt:617
+#, no-wrap
+msgid "--------------\n"
+msgstr ""
+"--------------\n"
+
+# type: Plain text
+#: user.txt:1857 packages.txt:619
+#, no-wrap
+msgid ""
+"pacman-g2 -S fuse\n"
+"--------------\n"
+msgstr ""
+"pacman-g2 -S fuse\n"
+"--------------\n"
+
+# type: Plain text
+#: user.txt:1860 packages.txt:622
+msgid "then"
+msgstr "puis"
+
+# type: Plain text
+#: user.txt:1861 user.txt:1946 user.txt:1952 user.txt:3503 user.txt:3537
+#: packages.txt:623 packages.txt:708 packages.txt:714 makepkg.txt:363
+#: makepkg.txt:397
+#, no-wrap
+msgid "------------------\n"
+msgstr "------------------\n"
+
+# type: Plain text
+#: user.txt:1864 packages.txt:626
+#, no-wrap
+msgid ""
+"service fuse add\n"
+"service fuse start\n"
+"------------------\n"
+msgstr ""
+"service fuse add\n"
+"service fuse start\n"
+"------------------\n"
+
+# type: Plain text
+#: user.txt:1868 packages.txt:630
+msgid ""
+"Now, having the base of fuse, we need to install the programs for each "
+"specific filesystem type. The command"
+msgstr "Maintenant, puisque vous la base de fuse, vous devez installer les programmes pour chaque type de système de fichier spécifique. La commande"
+
+# type: Plain text
+#: user.txt:1869 packages.txt:631
+#, no-wrap
+msgid "---------------\n"
+msgstr ""
+"---------------\n"
+
+# type: Plain text
+#: user.txt:1871 packages.txt:633
+#, no-wrap
+msgid ""
+"pacman-g2 -Ss fuse\n"
+"---------------\n"
+msgstr ""
+"pacman-g2 -Ss fuse\n"
+"---------------\n"
+
+# type: Plain text
+#: user.txt:1875 packages.txt:637
+msgid ""
+"should give some hint what's available. The two most used (ftp, ssh) plugins "
+"can be installed with"
+msgstr "devrait vous donner une idée de ce qui est disponible. Les deux extensions les plus utilisées (ftp, ssh) peuvent être installées avec"
+
+# type: Plain text
+#: user.txt:1878 packages.txt:640
+#, no-wrap
+msgid ""
+"pacman-g2 -S fuseftp sshfs-fuse\n"
+"----------------------------\n"
+msgstr ""
+"pacman-g2 -S fuseftp sshfs-fuse\n"
+"----------------------------\n"
+
+# type: Plain text
+#: user.txt:1881 packages.txt:643
+msgid "Then, mounting a remote dir with sftp access as a regular user:"
+msgstr "Ensuite, pour monter un répertoire distant via un accès sftp en tant que simple utilisateur:"
+
+# type: Plain text
+#: user.txt:1882 packages.txt:644
+#, no-wrap
+msgid "-----------------------------------------------------------------------------------\n"
+msgstr ""
+"---------------------------------------------------------------------------------\n"
+
+# type: Plain text
+#: user.txt:1884 packages.txt:646
+#, no-wrap
+msgid ""
+"/sbin/mount.fuse  sshfs#YOURUSERNAME@SERVER:/REMOTEDIR /LOCALDIR -o rw,OTHEROPTIONS\n"
+"-----------------------------------------------------------------------------------\n"
+msgstr ""
+"/sbin/mount.fuse  sshfs#YOURUSERNAME@SERVER:/REMOTEDIR /LOCALDIR -o rw,OTHEROPTIONS\n"
+"-----------------------------------------------------------------------------------\n"
+
+# type: Plain text
+#: user.txt:1887 packages.txt:649
+msgid "You can unmount it as an user by"
+msgstr "Vous pouvez le démonter en tant que simple utilisateur en faisant"
+
+# type: Plain text
+#: user.txt:1890 packages.txt:652
+#, no-wrap
+msgid ""
+"fusermount -u /LOCALDIR \n"
+"-----------------------\n"
+msgstr ""
+"fusermount -u /LOCALDIR\n"
+"-----------------------\n"
+
+# type: Plain text
+#: user.txt:1893
 msgid "=== acoc"
 msgstr "=== acoc"
 
 # type: Plain text
-#: user.txt:1850 packages.txt:612
+#: user.txt:1895 packages.txt:657
 #, no-wrap
 msgid ""
 "In order to use acoc you should start it with\n"
@@ -5419,7 +5557,7 @@ msgstr ""
 "--------------\n"
 
 # type: Plain text
-#: user.txt:1852 packages.txt:614
+#: user.txt:1897 packages.txt:659
 #, no-wrap
 msgid ""
 "acoc <command>\n"
@@ -5429,7 +5567,7 @@ msgstr ""
 "--------------\n"
 
 # type: Plain text
-#: user.txt:1854 packages.txt:616
+#: user.txt:1899 packages.txt:661
 #, no-wrap
 msgid ""
 "for example, or you can create an alias like this:\n"
@@ -5439,7 +5577,7 @@ msgstr ""
 "--------------------------\n"
 
 # type: Plain text
-#: user.txt:1856 packages.txt:618
+#: user.txt:1901 packages.txt:663
 #, no-wrap
 msgid ""
 "alias pacman='acoc pacman'\n"
@@ -5449,12 +5587,12 @@ msgstr ""
 "--------------------------\n"
 
 # type: Plain text
-#: user.txt:1859
+#: user.txt:1904
 msgid "=== mailman"
 msgstr "=== mailman"
 
 # type: Plain text
-#: user.txt:1864 packages.txt:626
+#: user.txt:1909 packages.txt:671
 msgid ""
 "There is no any kind of http server in mailman's depends.  It's because they "
 "are not needed to get a working mailman.  Of cource if you want to provide "
@@ -5466,12 +5604,12 @@ msgstr ""
 "disposer d'un serveur http."
 
 # type: Plain text
-#: user.txt:1866
+#: user.txt:1911
 msgid "=== nessus-core"
 msgstr "=== nessus-core"
 
 # type: Plain text
-#: user.txt:1868 user.txt:2621 packages.txt:630 packages.txt:1383
+#: user.txt:1913 user.txt:2666 packages.txt:675 packages.txt:1428
 #, no-wrap
 msgid ""
 "Install script has generated default certificate use:\n"
@@ -5481,7 +5619,7 @@ msgstr ""
 "-----------------------\n"
 
 # type: Plain text
-#: user.txt:1870 user.txt:2623 packages.txt:632 packages.txt:1385
+#: user.txt:1915 user.txt:2668 packages.txt:677 packages.txt:1430
 #, no-wrap
 msgid ""
 "/usr/sbin/nessus-mkcert\n"
@@ -5491,12 +5629,12 @@ msgstr ""
 "-----------------------\n"
 
 # type: Plain text
-#: user.txt:1872 user.txt:2625 packages.txt:634 packages.txt:1387
+#: user.txt:1917 user.txt:2670 packages.txt:679 packages.txt:1432
 msgid "if you need to make a personalized one."
 msgstr "si vous devez en créer un personnalisé."
 
 # type: Plain text
-#: user.txt:1874 user.txt:2627 packages.txt:636 packages.txt:1389
+#: user.txt:1919 user.txt:2672 packages.txt:681 packages.txt:1434
 #, no-wrap
 msgid ""
 "Remember to create a user with:\n"
@@ -5506,7 +5644,7 @@ msgstr ""
 "------------------------\n"
 
 # type: Plain text
-#: user.txt:1876 user.txt:2629 packages.txt:638 packages.txt:1391
+#: user.txt:1921 user.txt:2674 packages.txt:683 packages.txt:1436
 #, no-wrap
 msgid ""
 "/usr/sbin/nessus-adduser\n"
@@ -5516,19 +5654,19 @@ msgstr ""
 "------------------------\n"
 
 # type: Plain text
-#: user.txt:1879 user.txt:2632 packages.txt:641 packages.txt:1394
+#: user.txt:1924 user.txt:2677 packages.txt:686 packages.txt:1439
 msgid "Use '/etc/sysconfig/nessusd' for setting nessusd starting arguments."
 msgstr ""
 "Utiliser '/etc/sysconfig/nessusd' pour modifier les arguments de démarrage "
 "de nessusd."
 
 # type: Plain text
-#: user.txt:1881
+#: user.txt:1926
 msgid "=== phpbb"
 msgstr "=== phpbb"
 
 # type: Plain text
-#: user.txt:1884 packages.txt:646
+#: user.txt:1929 packages.txt:691
 msgid ""
 "After installing this package, please run '/usr/bin/phpbbsetup' as root to "
 "setup phpBB"
@@ -5537,24 +5675,24 @@ msgstr ""
 "tant que root pour configurer phpBB"
 
 # type: Plain text
-#: user.txt:1886 packages.txt:648
+#: user.txt:1931 packages.txt:693
 msgid "After upgrading, make sure to run the database update script"
 msgstr ""
 "Après une mise à jour, assurez vous de bien lancer le script de mise à jour "
 "de la base de données"
 
 # type: Plain text
-#: user.txt:1888
+#: user.txt:1933
 msgid "=== bcm43xx-fwcutter"
 msgstr "=== bcm43xx-fwcutter"
 
 # type: Plain text
-#: user.txt:1890 packages.txt:652
+#: user.txt:1935 packages.txt:697
 msgid "Since version 2.6.17, the bcm43xx driver is part of the kernel."
 msgstr "Depuis la version 2.6.17, le driver bcm43xx fait partie du kernel."
 
 # type: Plain text
-#: user.txt:1893 packages.txt:655
+#: user.txt:1938 packages.txt:700
 msgid ""
 "The module should be loaded automatically, in case it isn't, you can load it "
 "manually:"
@@ -5563,13 +5701,13 @@ msgstr ""
 "pouvez le charger manuellement:"
 
 # type: Plain text
-#: user.txt:1894 packages.txt:656
+#: user.txt:1939 packages.txt:701
 #, no-wrap
 msgid "----------------\n"
 msgstr "----------------\n"
 
 # type: Plain text
-#: user.txt:1896 packages.txt:658
+#: user.txt:1941 packages.txt:703
 #, no-wrap
 msgid ""
 "# modprobe bcm43xx\n"
@@ -5579,7 +5717,7 @@ msgstr ""
 "----------------\n"
 
 # type: Plain text
-#: user.txt:1900 packages.txt:662
+#: user.txt:1945 packages.txt:707
 msgid ""
 "You must bring the device up with ifconfig before doing any other "
 "configuration steps."
@@ -5588,14 +5726,7 @@ msgstr ""
 "loin dans la configuration."
 
 # type: Plain text
-#: user.txt:1901 user.txt:1907 user.txt:3458 user.txt:3492 packages.txt:663
-#: packages.txt:669 makepkg.txt:363 makepkg.txt:397
-#, no-wrap
-msgid "------------------\n"
-msgstr "------------------\n"
-
-# type: Plain text
-#: user.txt:1903 packages.txt:665
+#: user.txt:1948 packages.txt:710
 #, no-wrap
 msgid ""
 "# ifconfig ethX up\n"
@@ -5605,13 +5736,13 @@ msgstr ""
 "------------------\n"
 
 # type: Plain text
-#: user.txt:1906 packages.txt:668
+#: user.txt:1951 packages.txt:713
 msgid "Since the channel must be set manually, first do a scan:"
 msgstr ""
 "Puisque le canal doit être fixé manuellement, commencez par faire un scan:"
 
 # type: Plain text
-#: user.txt:1909 packages.txt:671
+#: user.txt:1954 packages.txt:716
 #, no-wrap
 msgid ""
 "# iwlist ethX scan\n"
@@ -5621,19 +5752,19 @@ msgstr ""
 "------------------\n"
 
 # type: Plain text
-#: user.txt:1912 packages.txt:674
+#: user.txt:1957 packages.txt:719
 msgid "Then you can set it:"
 msgstr "Puis vous pouvez le configurer:"
 
 # type: Plain text
-#: user.txt:1913 user.txt:3441 user.txt:3481 packages.txt:675 makepkg.txt:346
+#: user.txt:1958 user.txt:3486 user.txt:3526 packages.txt:720 makepkg.txt:346
 #: makepkg.txt:386
 #, no-wrap
 msgid "-------------------------\n"
 msgstr "-------------------------\n"
 
 # type: Plain text
-#: user.txt:1915 packages.txt:677
+#: user.txt:1960 packages.txt:722
 #, no-wrap
 msgid ""
 "# iwconfig ethX channel Y\n"
@@ -5643,18 +5774,18 @@ msgstr ""
 "-------------------------\n"
 
 # type: Plain text
-#: user.txt:1918 packages.txt:680
+#: user.txt:1963 packages.txt:725
 msgid "Finally set your essid:"
 msgstr "Enfin, définissez votre essid:"
 
 # type: Plain text
-#: user.txt:1919 packages.txt:681
+#: user.txt:1964 packages.txt:726
 #, no-wrap
 msgid "-------------------------------\n"
 msgstr "-------------------------------\n"
 
 # type: Plain text
-#: user.txt:1921 packages.txt:683
+#: user.txt:1966 packages.txt:728
 #, no-wrap
 msgid ""
 "# iwconfig ethX essid \"myessid\"\n"
@@ -5664,17 +5795,17 @@ msgstr ""
 "-------------------------------\n"
 
 # type: Plain text
-#: user.txt:1924 packages.txt:686
+#: user.txt:1969 packages.txt:731
 msgid "Ready!"
 msgstr "Prêt!"
 
 # type: Plain text
-#: user.txt:1926
+#: user.txt:1971
 msgid "=== ndiswrapper"
 msgstr "=== ndiswrapper"
 
 # type: Plain text
-#: user.txt:1929 packages.txt:691
+#: user.txt:1974 packages.txt:736
 msgid ""
 "Ndiswrapper requires .inf and .sys files from a Windows(tm) driver to "
 "function.  Download these to /root for example, then run:"
@@ -5684,7 +5815,7 @@ msgstr ""
 "lancez la commande:"
 
 # type: Plain text
-#: user.txt:1932 packages.txt:694
+#: user.txt:1977 packages.txt:739
 #, no-wrap
 msgid ""
 "ndiswrapper -i /root/foo.inf\n"
@@ -5694,7 +5825,7 @@ msgstr ""
 "----------------------------\n"
 
 # type: Plain text
-#: user.txt:1936 packages.txt:698
+#: user.txt:1981 packages.txt:743
 msgid ""
 "After that you can delete them. They will be copied to the proper location. "
 "Once done, please run:"
@@ -5703,13 +5834,13 @@ msgstr ""
 "approprié. Une fois que c'est fait, veuillez exécuter:"
 
 # type: Plain text
-#: user.txt:1937 packages.txt:699
+#: user.txt:1982 packages.txt:744
 #, no-wrap
 msgid "---------\n"
 msgstr "---------\n"
 
 # type: Plain text
-#: user.txt:1939 packages.txt:701
+#: user.txt:1984 packages.txt:746
 #, no-wrap
 msgid ""
 "depmod -a\n"
@@ -5719,7 +5850,7 @@ msgstr ""
 "---------\n"
 
 # type: Plain text
-#: user.txt:1943 packages.txt:705
+#: user.txt:1988 packages.txt:750
 msgid ""
 "Check this http://ndiswrapper.sf.net/mediawiki/index.php/List[list] of "
 "drivers.  You can get your possible hadware with:"
@@ -5728,7 +5859,7 @@ msgstr ""
 "pilotes.  Vous pouvez potentiellement déterminer votre matériel avec:"
 
 # type: Plain text
-#: user.txt:1946 packages.txt:708
+#: user.txt:1991 packages.txt:753
 #, no-wrap
 msgid ""
 "lspci -n | egrep 'Class (0280|0200):' |  cut -d' ' -f4\n"
@@ -5738,12 +5869,12 @@ msgstr ""
 "------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:1949 packages.txt:711
+#: user.txt:1994 packages.txt:756
 msgid "Look for that on the above page for your driver."
 msgstr "Recherchez cela dans la page précédente pour votre pilote."
 
 # type: Plain text
-#: user.txt:1952 packages.txt:714
+#: user.txt:1997 packages.txt:759
 msgid ""
 "Please have a look at the http://ndiswrapper.sourceforge.net/wiki/[wiki] for "
 "the FAQ, HowTos, Tips, Configuration, and installation information."
@@ -5753,12 +5884,12 @@ msgstr ""
 "configuration."
 
 # type: Plain text
-#: user.txt:1954
+#: user.txt:1999
 msgid "=== sugarcrm"
 msgstr "=== sugarcrm"
 
 # type: Plain text
-#: user.txt:1957 packages.txt:719
+#: user.txt:2002 packages.txt:764
 msgid ""
 "In order to use the sugarcrm, you have to symlink it to somewhere. For "
 "example, if you want to use it under http://localhost/sugarcrm, then use:"
@@ -5768,13 +5899,13 @@ msgstr ""
 "alors utilisez:"
 
 # type: Plain text
-#: user.txt:1959 packages.txt:721
+#: user.txt:2004 packages.txt:766
 #, no-wrap
 msgid "        ln -s /var/www/SugarSuite /var/www/html/sugarcrm\n"
 msgstr "        ln -s /var/www/SugarSuite /var/www/html/sugarcrm\n"
 
 # type: Plain text
-#: user.txt:1962 packages.txt:724
+#: user.txt:2007 packages.txt:769
 msgid ""
 "After installing this package, please run in a browser http://localhost/"
 "sugarcrm/install.php to setup SugarSuite (sugarcrm)."
@@ -5784,30 +5915,30 @@ msgstr ""
 "(sugarcrm)."
 
 # type: Plain text
-#: user.txt:1964
+#: user.txt:2009
 msgid "=== midpssh-http-server"
 msgstr "=== midpssh-http-server"
 
 # type: Plain text
-#: user.txt:1966 packages.txt:728
+#: user.txt:2011 packages.txt:773
 msgid "Do not forget to open port 8080 on your firewall!"
 msgstr "N'oubliez pas d'ouvrir le port 8080 sur votre parefeu!"
 
 # type: Plain text
-#: user.txt:1968 user.txt:2118 packages.txt:730 packages.txt:880
+#: user.txt:2013 user.txt:2163 packages.txt:775 packages.txt:925
 msgid ""
 "To do this, add the following two lines to your '/etc/sysconfig/firewall':"
 msgstr ""
 "Pour ce faire, ajoutez les deux lignes suivantes à '/etc/sysconfig/firewall':"
 
 # type: Plain text
-#: user.txt:1969 user.txt:2119 packages.txt:731 packages.txt:881
+#: user.txt:2014 user.txt:2164 packages.txt:776 packages.txt:926
 #, no-wrap
 msgid "---------------------------------------------\n"
 msgstr "---------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:1972 packages.txt:734
+#: user.txt:2017 packages.txt:779
 #, no-wrap
 msgid ""
 "# midpssh-http-server\n"
@@ -5819,17 +5950,17 @@ msgstr ""
 "---------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:1975 user.txt:2125 packages.txt:737 packages.txt:887
+#: user.txt:2020 user.txt:2170 packages.txt:782 packages.txt:932
 msgid "for example after MySQL's entry."
 msgstr "par exemple après l'entrée MySQL."
 
 # type: Plain text
-#: user.txt:1977
+#: user.txt:2022
 msgid "=== mb2md"
 msgstr "=== mb2md"
 
 # type: Plain text
-#: user.txt:1979 packages.txt:741
+#: user.txt:2024 packages.txt:786
 msgid ""
 "How to convert each users mbox from /var/mail to Maildir (under /home/$user)?"
 msgstr ""
@@ -5837,18 +5968,18 @@ msgstr ""
 "Maildir (dans /home/$user)?"
 
 # type: Plain text
-#: user.txt:1981 packages.txt:743
+#: user.txt:2026 packages.txt:788
 msgid "If you are too lazy to read the documentaion :)"
 msgstr "Si vous êtes trop paresseux pour lire la documentation :)"
 
 # type: Plain text
-#: user.txt:1982 user.txt:3148 packages.txt:744 makepkg.txt:53
+#: user.txt:2027 user.txt:3193 packages.txt:789 makepkg.txt:53
 #, no-wrap
 msgid "-----------------------------------------------\n"
 msgstr "-----------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:1990 packages.txt:752
+#: user.txt:2035 packages.txt:797
 #, no-wrap
 msgid ""
 "cd /var/mail\n"
@@ -5870,17 +6001,17 @@ msgstr ""
 "-----------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:1993
+#: user.txt:2038
 msgid "=== pootle"
 msgstr "=== pootle"
 
 # type: Plain text
-#: user.txt:1995
+#: user.txt:2040
 msgid "==== Introduction"
 msgstr "==== Introduction"
 
 # type: Plain text
-#: user.txt:1998 packages.txt:760
+#: user.txt:2043 packages.txt:805
 msgid ""
 "Pootle provides a separate webserver, after starting it, you should be able "
 "to reach it at http://127.0.0.1:8080/."
@@ -5889,12 +6020,12 @@ msgstr ""
 "pouvoir y accéder par http://127.0.0.1:8080/."
 
 # type: Plain text
-#: user.txt:2000
+#: user.txt:2045
 msgid "==== Creating users"
 msgstr "==== Créer des utilisateurs"
 
 # type: Plain text
-#: user.txt:2006 packages.txt:768
+#: user.txt:2051 packages.txt:813
 msgid ""
 "No-one can login to Pootle by default. You should edit `/usr/lib/python2.5/"
 "site-packages/Pootle/users.prefs`, and uncomment the 'startup' user. Its "
@@ -5909,12 +6040,12 @@ msgstr ""
 "nouveau le fichier de configuration et commentez l'utilisateur 'startup'."
 
 # type: Plain text
-#: user.txt:2008
+#: user.txt:2053
 msgid "=== fudforum"
 msgstr "=== fudforum"
 
 # type: Plain text
-#: user.txt:2011 packages.txt:773
+#: user.txt:2056 packages.txt:818
 msgid ""
 "After installing this package, please run '/usr/bin/fudforumsetup' as root "
 "to setup FUDforum"
@@ -5923,51 +6054,51 @@ msgstr ""
 "en tant que root pour configurer FUDforum"
 
 # type: Plain text
-#: user.txt:2013
+#: user.txt:2058
 msgid "=== squirrelmail"
 msgstr "=== squirrelmail"
 
 # type: Plain text
-#: user.txt:2015 packages.txt:777
+#: user.txt:2060 packages.txt:822
 msgid ""
 "Please start the 'configure' script in the /var/www/squirrelmail directory!"
 msgstr ""
 "Lancez le script 'configure' dans le répertoire /var/www/squirrelmail !"
 
 # type: Plain text
-#: user.txt:2017
+#: user.txt:2062
 msgid "=== rss2email"
 msgstr "=== rss2email"
 
 # type: Plain text
-#: user.txt:2020
+#: user.txt:2065
 msgid "Configure: ^^^^^^^^^^"
 msgstr "Configurer: ^^^^^^^^^^"
 
 # type: Plain text
-#: user.txt:2022 packages.txt:784
+#: user.txt:2067 packages.txt:829
 msgid "Create a new feed database:"
 msgstr "Créer une nouvelle base de données pour les flux:"
 
 # type: Plain text
-#: user.txt:2024 packages.txt:786
+#: user.txt:2069 packages.txt:831
 #, no-wrap
 msgid "  r2e new you@yourdomain.com\n"
 msgstr "  r2e new you@yourdomain.com\n"
 
 # type: Plain text
-#: user.txt:2026 packages.txt:788
+#: user.txt:2071 packages.txt:833
 msgid "Subscribe to some feeds:"
 msgstr "Inscription à quelques flux:"
 
 # type: Plain text
-#: user.txt:2028 packages.txt:790
+#: user.txt:2073 packages.txt:835
 #, no-wrap
 msgid "  r2e add http://www.aaronsw.com/2002/rss2email/updates.rss\n"
 msgstr "  r2e add http://www.aaronsw.com/2002/rss2email/updates.rss\n"
 
 # type: Plain text
-#: user.txt:2031 packages.txt:793
+#: user.txt:2076 packages.txt:838
 msgid ""
 "(That's the feed to be notified when there's a new version of rss2email.)  "
 "Repeat this for each feed you want to subscribe to."
@@ -5977,7 +6108,7 @@ msgstr ""
 "souscrire."
 
 # type: Plain text
-#: user.txt:2035 packages.txt:797
+#: user.txt:2080 packages.txt:842
 msgid ""
 "When you run rss2email, it emails you about every story it hasn't seen "
 "before.  But the first time you run it, that will be every story. To avoid "
@@ -5990,37 +6121,37 @@ msgstr ""
 "vous envoyer aucune info lors le première exécution:"
 
 # type: Plain text
-#: user.txt:2037 packages.txt:799
+#: user.txt:2082 packages.txt:844
 #, no-wrap
 msgid "  r2e run --no-send\n"
 msgstr "  r2e run --no-send\n"
 
 # type: Plain text
-#: user.txt:2039 packages.txt:801
+#: user.txt:2084 packages.txt:846
 msgid "Then later, you can ask it to email you new stories:"
 msgstr ""
 "Par la suite, vous pourrez lui demander de vous envoyer les nouvelles "
 "publications:"
 
 # type: Plain text
-#: user.txt:2041 packages.txt:803
+#: user.txt:2086 packages.txt:848
 #, no-wrap
 msgid "  r2e run\n"
 msgstr "  r2e run\n"
 
 # type: Plain text
-#: user.txt:2043 packages.txt:805
+#: user.txt:2088 packages.txt:850
 msgid "You probably want to set this up as a cron job or something."
 msgstr ""
 "Vous souhaiterez probablement automatiser cela avec une tâche cron ou autre."
 
 # type: Plain text
-#: user.txt:2046
+#: user.txt:2091
 msgid "Customize: ^^^^^^^^^^"
 msgstr "Personnaliser: ^^^^^^^^^^"
 
 # type: Plain text
-#: user.txt:2050 packages.txt:812
+#: user.txt:2095 packages.txt:857
 msgid ""
 "There are a few options, described at the top of rss2email.py. If you want "
 "to change something, add it to config.py. For example, to be notified every "
@@ -6032,13 +6163,13 @@ msgstr ""
 "fois par publication:"
 
 # type: Plain text
-#: user.txt:2052 packages.txt:814
+#: user.txt:2097 packages.txt:859
 #, no-wrap
 msgid "  echo \"TRUST_GUID = 0\" >>~/.rss2email/config.py\n"
 msgstr "  echo \"TRUST_GUID = 0\" >>~/.rss2email/config.py\n"
 
 # type: Plain text
-#: user.txt:2054 packages.txt:816
+#: user.txt:2099 packages.txt:861
 msgid ""
 "And you can ask rss2email to make the emails look as if they were sent when "
 "the item was actually posted:"
@@ -6047,18 +6178,18 @@ msgstr ""
 "semblent avoir étés envoyés au moment où l'actualité à été postée:"
 
 # type: Plain text
-#: user.txt:2056 packages.txt:818
+#: user.txt:2101 packages.txt:863
 #, no-wrap
 msgid "  echo \"DATE_HEADER = 1\" >>~/.rss2email/config.py\n"
 msgstr "  echo \"DATE_HEADER = 1\" >>~/.rss2email/config.py\n"
 
 # type: Plain text
-#: user.txt:2058
+#: user.txt:2103
 msgid "=== joomla"
 msgstr "=== joomla"
 
 # type: Plain text
-#: user.txt:2061 packages.txt:823
+#: user.txt:2106 packages.txt:868
 msgid ""
 "After installing this package, please run '/usr/bin/joomlasetup' as root to "
 "setup Joomla"
@@ -6067,17 +6198,17 @@ msgstr ""
 "root pour configurer Joomla"
 
 # type: Plain text
-#: user.txt:2063
+#: user.txt:2108
 msgid "=== postgrey"
 msgstr "=== postgrey"
 
 # type: Plain text
-#: user.txt:2065 packages.txt:827
+#: user.txt:2110 packages.txt:872
 msgid "To use postgrey, put something along the lines of"
 msgstr "Pour utiliser postgrey, remplir les lignes"
 
 # type: Plain text
-#: user.txt:2070 packages.txt:832
+#: user.txt:2115 packages.txt:877
 #, no-wrap
 msgid ""
 "    smtpd_recipient_restrictions =\n"
@@ -6091,18 +6222,18 @@ msgstr ""
 "        check_policy_service inet:127.0.0.1:60000\n"
 
 # type: Plain text
-#: user.txt:2072 packages.txt:834
+#: user.txt:2117 packages.txt:879
 msgid "in your /etc/postfix/main.cf (postfix 2.1 or newer is required.)"
 msgstr ""
 "dans votre /etc/postfix/main.cf (postfix 2.1 ou plus récent est requis.)"
 
 # type: Plain text
-#: user.txt:2074
+#: user.txt:2119
 msgid "=== postfixadmin"
 msgstr "=== postfixadmin"
 
 # type: Plain text
-#: user.txt:2080 packages.txt:842
+#: user.txt:2125 packages.txt:887
 msgid ""
 "This package relies on correct install of postfix's virtual tables and it "
 "needs to be configured by hand before usage. Copy /var/www/postfixadmin/"
@@ -6116,7 +6247,7 @@ msgstr ""
 "un extrait du fichier INSTALL.TXT fourni en amont."
 
 # type: Bullet: '1. '
-#: user.txt:2086 packages.txt:848
+#: user.txt:2131 packages.txt:893
 msgid ""
 "Create the Database Tables In DATABASE_MYSQL.TXT you can find the table "
 "structure for MySQL that you need in order to configure Postfix Admin and "
@@ -6130,7 +6261,7 @@ msgstr ""
 "la structure de table pour PostgreSQL."
 
 # type: Plain text
-#: user.txt:2108 packages.txt:870
+#: user.txt:2153 packages.txt:915
 #, no-wrap
 msgid ""
 "2. Configure\n"
@@ -6173,28 +6304,30 @@ msgstr ""
 "Quand vous avez fini, vous devez redémarrer apache (service httpd restart) afin de pouvoir identifier l'admin principal. Si vous échouez à faire cela, n'importe qui pourra faire ce qu'il veut en tant qu'administrateur de postfixadmin sans aucune identification.\n"
 
 # type: Plain text
-#: user.txt:2110
+#: user.txt:2155
 msgid "=== squirrelmail-check_quota"
 msgstr "=== squirrelmail-check_quota"
 
 # type: Plain text
-#: user.txt:2112 packages.txt:874
+#: user.txt:2157 packages.txt:919
 msgid ""
 "You have to install this plugin with squirrelmail's own +./configure+ tool."
-msgstr "Vous devez installer cet extension avec le propre outil de configuration +./configure+ de squirrelmail."
+msgstr ""
+"Vous devez installer cet extension avec le propre outil de configuration +./"
+"configure+ de squirrelmail."
 
 # type: Plain text
-#: user.txt:2114
+#: user.txt:2159
 msgid "=== httpircproxy"
 msgstr "=== httpircproxy"
 
 # type: Plain text
-#: user.txt:2116 packages.txt:878
+#: user.txt:2161 packages.txt:923
 msgid "Don't forget to open port 8080 on your firewall!"
 msgstr "N'oubliez pas d'ouvrir le port 8080 sur votre pare-feu!"
 
 # type: Plain text
-#: user.txt:2122 packages.txt:884
+#: user.txt:2167 packages.txt:929
 #, no-wrap
 msgid ""
 "# httpircproxy\n"
@@ -6206,24 +6339,24 @@ msgstr ""
 "---------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2127
+#: user.txt:2172
 msgid "=== speedtouch"
 msgstr "=== speedtouch"
 
 # type: Plain text
-#: user.txt:2129 packages.txt:891
+#: user.txt:2174 packages.txt:936
 msgid "Driver for the SpeedTouch USB and SpeedTouch 330"
 msgstr "Pilote pour SpeedTouch USB et SpeedTouch 330"
 
 # type: Plain text
-#: user.txt:2131 packages.txt:893
+#: user.txt:2176 packages.txt:938
 msgid "The binaries (modem_run and pppoax) have been installed in `/usr/sbin`."
 msgstr ""
 "Les pilotes binaires (modem_run et pppoax) ont été installés dans `/usr/"
 "sbin`."
 
 # type: Plain text
-#: user.txt:2133 packages.txt:895
+#: user.txt:2178 packages.txt:940
 msgid ""
 "You will find the documentation and example script files in: `/usr/share/doc/"
 "speedtouch-pkgver`"
@@ -6232,7 +6365,7 @@ msgstr ""
 "usr/share/doc/speedtouch-pkgver`"
 
 # type: Plain text
-#: user.txt:2135 packages.txt:897
+#: user.txt:2180 packages.txt:942
 #, no-wrap
 msgid ""
 "You can start configuring your modem by running\n"
@@ -6242,7 +6375,7 @@ msgstr ""
 "-------------------------\n"
 
 # type: Plain text
-#: user.txt:2137 packages.txt:899
+#: user.txt:2182 packages.txt:944
 #, no-wrap
 msgid ""
 "/usr/bin/speedtouch-setup\n"
@@ -6252,7 +6385,7 @@ msgstr ""
 "-------------------------\n"
 
 # type: Plain text
-#: user.txt:2141 packages.txt:903
+#: user.txt:2186 packages.txt:948
 msgid ""
 "NOTE: Read the documentation ('/usr/share/doc/speedtouch-pkgver/howto')  "
 "carefully to use this driver correctly!"
@@ -6261,18 +6394,18 @@ msgstr ""
 "pkgver/howto')  afin d'utiliser correctement ce pilote!"
 
 # type: Plain text
-#: user.txt:2143
+#: user.txt:2188
 msgid "=== ddclient"
 msgstr "=== ddclient"
 
 # type: Plain text
-#: user.txt:2145 packages.txt:907
+#: user.txt:2190 packages.txt:952
 msgid "Please configure '/etc/ddclient/ddclient.conf' before running ddclient!"
 msgstr ""
 "Configurez le fichier '/etc/ddclient/ddclient.conf' avant de lancer ddclient!"
 
 # type: Plain text
-#: user.txt:2148 packages.txt:910
+#: user.txt:2193 packages.txt:955
 msgid ""
 "Samples for common configurations can be found in: /usr/share/doc/ddclient-"
 "$package_version/sample*"
@@ -6281,7 +6414,7 @@ msgstr ""
 "share/doc/ddclient-$package_version/sample*"
 
 # type: Plain text
-#: user.txt:2151 packages.txt:913
+#: user.txt:2196 packages.txt:958
 msgid ""
 "Additional details and instructions can be found in: /usr/share/doc/ddclient-"
 "$package_version/README"
@@ -6290,7 +6423,7 @@ msgstr ""
 "share/doc/ddclient-$package_version/README"
 
 # type: Plain text
-#: user.txt:2155 packages.txt:917
+#: user.txt:2200 packages.txt:962
 msgid ""
 "Once you have finished configuring the 'ddclient.conf' file, you can start "
 "ddclient as a daemon by running as root, the following command:"
@@ -6300,17 +6433,17 @@ msgstr ""
 "commande suivante:"
 
 # type: Plain text
-#: user.txt:2157 packages.txt:919
+#: user.txt:2202 packages.txt:964
 msgid "service ddclient start"
 msgstr "service ddclient start"
 
 # type: Plain text
-#: user.txt:2159
+#: user.txt:2204
 msgid "=== drupal"
 msgstr "=== drupal"
 
 # type: Plain text
-#: user.txt:2162 packages.txt:924
+#: user.txt:2207 packages.txt:969
 msgid ""
 "After installing this package, please run '/usr/bin/drupalsetup' as root to "
 "setup Drupal"
@@ -6319,17 +6452,17 @@ msgstr ""
 "tant que root pour configurer Drupal"
 
 # type: Plain text
-#: user.txt:2164
+#: user.txt:2209
 msgid "=== xcache"
 msgstr "=== xcache"
 
 # type: Plain text
-#: user.txt:2167
+#: user.txt:2212
 msgid "Installing As PHP Extension? ^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
 msgstr "Installer en tant qu'extension PHP? ^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
 
 # type: Plain text
-#: user.txt:2170 packages.txt:932
+#: user.txt:2215 packages.txt:977
 #, no-wrap
 msgid ""
 "1. Check '/etc/php.ini'\n"
@@ -6341,7 +6474,7 @@ msgstr ""
 "------------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2172 packages.txt:934
+#: user.txt:2217 packages.txt:979
 #, no-wrap
 msgid ""
 "cat /usr/share/doc/xcache-$pkgver/xcache.ini >> /etc/php.ini\n"
@@ -6351,7 +6484,7 @@ msgstr ""
 "------------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2176 packages.txt:938
+#: user.txt:2221 packages.txt:983
 #, no-wrap
 msgid ""
 "2. Modify php.ini for your needs:\n"
@@ -6363,7 +6496,7 @@ msgstr ""
 "--------------------\n"
 
 # type: Plain text
-#: user.txt:2178 packages.txt:940
+#: user.txt:2223 packages.txt:985
 #, no-wrap
 msgid ""
 "$EDITOR /etc/php.ini\n"
@@ -6373,17 +6506,17 @@ msgstr ""
 "--------------------\n"
 
 # type: Bullet: '3. '
-#: user.txt:2181 packages.txt:943
+#: user.txt:2226 packages.txt:988
 msgid "Restart php"
 msgstr "Redémarrez php"
 
 # type: Plain text
-#: user.txt:2183 packages.txt:945
+#: user.txt:2228 packages.txt:990
 msgid "WARNING: Use >> with cat, not simply >"
 msgstr "WARNING: Utilisez >> avec cat, pas simplement >"
 
 # type: Plain text
-#: user.txt:2185 packages.txt:947
+#: user.txt:2230 packages.txt:992
 msgid ""
 "Please take a look on http://trac.lighttpd.net/xcache/wiki[xcache wiki]."
 msgstr ""
@@ -6391,12 +6524,12 @@ msgstr ""
 "xcache]."
 
 # type: Plain text
-#: user.txt:2187
+#: user.txt:2232
 msgid "=== mediawiki"
 msgstr "=== mediawiki"
 
 # type: Plain text
-#: user.txt:2190 packages.txt:952
+#: user.txt:2235 packages.txt:997
 msgid ""
 "After installing this package, please run '/usr/bin/mediawikisetup' as root "
 "to setup MediaWiki"
@@ -6405,12 +6538,12 @@ msgstr ""
 "en tant que root pour configurer MediaWiki"
 
 # type: Plain text
-#: user.txt:2192
+#: user.txt:2237
 msgid "=== pptpd"
 msgstr "=== pptpd"
 
 # type: Plain text
-#: user.txt:2200 packages.txt:962
+#: user.txt:2245 packages.txt:1007
 #, no-wrap
 msgid ""
 "1. Preface\n"
@@ -6427,7 +6560,7 @@ msgstr ""
 "http://web.archive.org/web/20030416131233/www.counterpane.com/pptpv2-paper.html[ici].  Vous pouvez également utiliser ssh+pppd, mais c'est assez problématique sur des plateformes autre qu'Unix.\n"
 
 # type: Plain text
-#: user.txt:2212 packages.txt:974
+#: user.txt:2257 packages.txt:1019
 #, no-wrap
 msgid ""
 "2. Setting up the server\n"
@@ -6454,7 +6587,7 @@ msgstr ""
 "----------------\n"
 
 # type: Plain text
-#: user.txt:2214 packages.txt:976
+#: user.txt:2259 packages.txt:1021
 #, no-wrap
 msgid ""
 "pacman-g2 -Sy pptpd\n"
@@ -6465,27 +6598,27 @@ msgstr ""
 
 # type: Bullet: '+
 # type: '
-#: user.txt:2220 packages.txt:982
+#: user.txt:2265 packages.txt:1027
 msgid "Probably this is done if you're reading this HOWTO :-)"
 msgstr ""
 "C'est probablement déjà fait si vous êtes en train de lire cette doc :-)"
 
 # type: Bullet: '+
 # type: '
-#: user.txt:2220 packages.txt:982
+#: user.txt:2265 packages.txt:1027
 msgid "Here comes my '/etc/pptp.conf':"
 msgstr "Voilà mon '/etc/pptp.conf':"
 
 # type: Bullet: '+
 # type: '
-#: user.txt:2220 packages.txt:982
+#: user.txt:2265 packages.txt:1027
 msgid "-------------------------------------"
 msgstr ""
 "\n"
 "-------------------------------------"
 
 # type: Plain text
-#: user.txt:2226 packages.txt:988
+#: user.txt:2271 packages.txt:1033
 #, no-wrap
 msgid ""
 "$ grep -v '^\\(#\\|$\\)' /etc/pptpd.conf\n"
@@ -6503,7 +6636,7 @@ msgstr ""
 "-------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2233 packages.txt:995
+#: user.txt:2278 packages.txt:1040
 #, no-wrap
 msgid ""
 "+\n"
@@ -6522,7 +6655,7 @@ msgstr ""
 "--------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2249 packages.txt:1011
+#: user.txt:2294 packages.txt:1056
 #, no-wrap
 msgid ""
 "$ grep -v '^\\(#\\|$\\)' /etc/ppp/options.pptpd\n"
@@ -6560,7 +6693,7 @@ msgstr ""
 "---------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2256 packages.txt:1018
+#: user.txt:2301 packages.txt:1063
 #, no-wrap
 msgid ""
 "+\n"
@@ -6580,7 +6713,7 @@ msgstr ""
 "----------------------------------\n"
 
 # type: Plain text
-#: user.txt:2260 packages.txt:1022
+#: user.txt:2305 packages.txt:1067
 #, no-wrap
 msgid ""
 "# cat /etc/ppp/chap-secrets\n"
@@ -6594,7 +6727,7 @@ msgstr ""
 "----------------------------------\n"
 
 # type: Plain text
-#: user.txt:2268 packages.txt:1030
+#: user.txt:2313 packages.txt:1075
 #, no-wrap
 msgid ""
 "+\n"
@@ -6614,7 +6747,7 @@ msgstr ""
 "---------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2271 packages.txt:1033
+#: user.txt:2316 packages.txt:1078
 #, no-wrap
 msgid ""
 "-A INPUT -p gre -j ACCEPT\n"
@@ -6627,18 +6760,18 @@ msgstr ""
 
 # type: Bullet: '+
 # type: '
-#: user.txt:2275 packages.txt:1037
+#: user.txt:2320 packages.txt:1082
 msgid "Now we're ready to start:"
 msgstr "Maintenant nous sommes prêts à démarrer:"
 
 # type: Bullet: '+
 # type: '
-#: user.txt:2275 packages.txt:1037
+#: user.txt:2320 packages.txt:1082
 msgid "----------------------------------"
 msgstr "----------------------------------"
 
 # type: Plain text
-#: user.txt:2277 packages.txt:1039
+#: user.txt:2322 packages.txt:1084
 #, no-wrap
 msgid ""
 "pptpd -f -o /etc/ppp/options.pptpd\n"
@@ -6649,7 +6782,7 @@ msgstr ""
 
 # type: Bullet: '+
 # type: '
-#: user.txt:2283 packages.txt:1045
+#: user.txt:2328 packages.txt:1090
 msgid ""
 "If no error messages are reported, omit the -f option so it will go "
 "background."
@@ -6658,7 +6791,7 @@ msgstr ""
 "en tâche de fond."
 
 # type: Plain text
-#: user.txt:2283 packages.txt:1045
+#: user.txt:2328 packages.txt:1090
 msgid ""
 "+ Later you can put this to your '/etc/rc.d/rc.local'. Debug messages will "
 "appear in '/var/log/messages' if you're interested in them."
@@ -6668,7 +6801,7 @@ msgstr ""
 "intéressent."
 
 # type: Plain text
-#: user.txt:2288 packages.txt:1050
+#: user.txt:2333 packages.txt:1095
 #, no-wrap
 msgid ""
 "3. Client side\n"
@@ -6684,7 +6817,7 @@ msgstr ""
 "---------------\n"
 
 # type: Plain text
-#: user.txt:2290 packages.txt:1052
+#: user.txt:2335 packages.txt:1097
 #, no-wrap
 msgid ""
 "pacman-g2 -Sy pptp\n"
@@ -6694,7 +6827,7 @@ msgstr ""
 "---------------\n"
 
 # type: Plain text
-#: user.txt:2303 packages.txt:1065
+#: user.txt:2348 packages.txt:1110
 #, no-wrap
 msgid ""
 "+\n"
@@ -6723,7 +6856,7 @@ msgstr ""
 "---------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2310 packages.txt:1072
+#: user.txt:2355 packages.txt:1117
 #, no-wrap
 msgid ""
 "$ grep -v '^\\(#\\|$\\)' /etc/ppp/peers/mytunnel\n"
@@ -6744,18 +6877,18 @@ msgstr ""
 
 # type: Bullet: '+
 # type: '
-#: user.txt:2314 packages.txt:1076
+#: user.txt:2359 packages.txt:1121
 msgid "Your /etc/ppp/chap-secrets should contain the following line:"
 msgstr "Votre /etc/ppp/chap-secrets doit contenir la ligne suivante:"
 
 # type: Bullet: '+
 # type: '
-#: user.txt:2314 packages.txt:1076
+#: user.txt:2359 packages.txt:1121
 msgid "--------------------------"
 msgstr "--------------------------"
 
 # type: Plain text
-#: user.txt:2316 packages.txt:1078
+#: user.txt:2361 packages.txt:1123
 #, no-wrap
 msgid ""
 "vmiklos  PPTP    secret  *\n"
@@ -6766,18 +6899,18 @@ msgstr ""
 
 # type: Bullet: '+
 # type: '
-#: user.txt:2320 packages.txt:1082
+#: user.txt:2365 packages.txt:1127
 msgid "We're ready to start the client:"
 msgstr "Nous sommes prêts à démarrer le client:"
 
 # type: Bullet: '+
 # type: '
-#: user.txt:2320 packages.txt:1082
+#: user.txt:2365 packages.txt:1127
 msgid "-------------------------------------------------------------------------------"
 msgstr "-------------------------------------------------------------------------------"
 
 # type: Plain text
-#: user.txt:2322 packages.txt:1084
+#: user.txt:2367 packages.txt:1129
 #, no-wrap
 msgid ""
 "pppd pty 'pptp server --nolaunchpppd' call mytunnel debug dump logfd 2 nodetach\n"
@@ -6788,7 +6921,7 @@ msgstr ""
 
 # type: Bullet: '+
 # type: '
-#: user.txt:2326 packages.txt:1088
+#: user.txt:2371 packages.txt:1133
 msgid ""
 "A lot of debug messages will be printed, check on an other console if you "
 "got a new pppx interface or not:"
@@ -6798,12 +6931,12 @@ msgstr ""
 
 # type: Bullet: '+
 # type: '
-#: user.txt:2326 packages.txt:1088
+#: user.txt:2371 packages.txt:1133
 msgid "------------------------------------------------------------------"
 msgstr "------------------------------------------------------------------"
 
 # type: Plain text
-#: user.txt:2335 packages.txt:1097
+#: user.txt:2380 packages.txt:1142
 #, no-wrap
 msgid ""
 "# ifconfig ppp0\n"
@@ -6826,7 +6959,7 @@ msgstr ""
 "        RX bytes:70 (70.0 b)  TX bytes:76 (76.0 b)------------------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2340 packages.txt:1102
+#: user.txt:2385 packages.txt:1147
 #, no-wrap
 msgid ""
 "+\n"
@@ -6841,7 +6974,7 @@ msgstr ""
 "---------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2342 packages.txt:1104
+#: user.txt:2387 packages.txt:1149
 #, no-wrap
 msgid ""
 "pppd pty 'pptp server --nolaunchpppd' call mytunnel\n"
@@ -6852,17 +6985,17 @@ msgstr ""
 
 # type: Bullet: '+
 # type: '
-#: user.txt:2345 packages.txt:1107
+#: user.txt:2390 packages.txt:1152
 msgid "That was all. Not so simple but anyone can do it :-)"
 msgstr "C'est tout. Pas si simple, mais tout le monde peut le faire :-)"
 
 # type: Bullet: '4. '
-#: user.txt:2347 packages.txt:1109
+#: user.txt:2392 packages.txt:1154
 msgid "Resources"
 msgstr "Ressources"
 
 # type: Bullet: '* '
-#: user.txt:2350 packages.txt:1112
+#: user.txt:2395 packages.txt:1157
 msgid ""
 "http://czeh.hu/linuxdoc/vpn-pptp.html - VPN connection using PPTP and Linux "
 "by Istvan Czeh (Hungarian)"
@@ -6871,7 +7004,7 @@ msgstr ""
 "par Istvan Czeh (Hongrois)"
 
 # type: Bullet: '* '
-#: user.txt:2350 packages.txt:1112
+#: user.txt:2395 packages.txt:1157
 msgid ""
 "http://webb.gotdns.com:2080/kernel-mppe/pptp-command.html - 'pptp-command' "
 "HOWTO"
@@ -6880,12 +7013,12 @@ msgstr ""
 "command'"
 
 # type: Plain text
-#: user.txt:2352
+#: user.txt:2397
 msgid "=== mantis"
 msgstr "=== mantis"
 
 # type: Plain text
-#: user.txt:2359 packages.txt:1121
+#: user.txt:2404 packages.txt:1166
 msgid ""
 "You have to GRANT some privileges (at least for the operating user) to be "
 "able to use this package, as the installer does not GRANT them. The "
@@ -6905,7 +7038,7 @@ msgstr ""
 "d'installation."
 
 # type: Plain text
-#: user.txt:2363 packages.txt:1125
+#: user.txt:2408 packages.txt:1170
 msgid ""
 "Do not forget to +rm -rf /var/www/mantis/admin+ after a successful install "
 "to prevent hijacking your bugtracker, and chage the default administrator's "
@@ -6916,7 +7049,7 @@ msgstr ""
 "administrateur par défaut."
 
 # type: Plain text
-#: user.txt:2370 packages.txt:1132
+#: user.txt:2415 packages.txt:1177
 msgid ""
 "/lib/udev/devices is the directory where packages or you can place real "
 "device nodes, which get copied over to /dev at every boot. This replaces our "
@@ -6929,12 +7062,12 @@ msgstr ""
 "changement était recommandé en amont.)"
 
 # type: Plain text
-#: user.txt:2372
+#: user.txt:2417
 msgid "=== nautilus-share"
 msgstr "=== nautilus-share"
 
 # type: Plain text
-#: user.txt:2375 packages.txt:1137
+#: user.txt:2420 packages.txt:1182
 msgid ""
 "Here is an excerpt from the Samba documentation explaining what you need to "
 "do to make this work:"
@@ -6943,18 +7076,18 @@ msgstr ""
 "que vous devez faire pour le faire fonctionner:"
 
 # type: Plain text
-#: user.txt:2376 packages.txt:1138
+#: user.txt:2421 packages.txt:1183
 #, no-wrap
 msgid "------------------------------------------------------------------------------------------------------------\n"
 msgstr "------------------------------------------------------------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2378 packages.txt:1140
+#: user.txt:2423 packages.txt:1185
 msgid "USERSHARE"
 msgstr "PARTAGES UTILISATEURS"
 
 # type: Plain text
-#: user.txt:2382 packages.txt:1144
+#: user.txt:2427 packages.txt:1189
 msgid ""
 "Starting with version 3.0.23, a Samba server now supports the ability for "
 "non-root users to add user define shares to be exported using the \"net "
@@ -6965,7 +7098,7 @@ msgstr ""
 "utilisant les commandes \"net usershare\"."
 
 # type: Plain text
-#: user.txt:2385 packages.txt:1147
+#: user.txt:2430 packages.txt:1192
 msgid ""
 "To set this up, first set up your smb.conf by adding to the [global] section:"
 msgstr ""
@@ -6973,12 +7106,12 @@ msgstr ""
 "ajoutant a la section [global]:"
 
 # type: Plain text
-#: user.txt:2387 packages.txt:1149
+#: user.txt:2432 packages.txt:1194
 msgid "usershare path = /home/usershares"
 msgstr "usershare path = /home/usershares"
 
 # type: Plain text
-#: user.txt:2396 packages.txt:1158
+#: user.txt:2441 packages.txt:1203
 msgid ""
 "Next create the directory /home/usershares, change the owner to root and set "
 "the group owner to the UNIX group who should have the ability to create "
@@ -7000,12 +7133,12 @@ msgstr ""
 "comme:"
 
 # type: Plain text
-#: user.txt:2398 packages.txt:1160
+#: user.txt:2443 packages.txt:1205
 msgid "usershare max shares = 100"
 msgstr "usershare max shares = 100"
 
 # type: Plain text
-#: user.txt:2401 packages.txt:1163
+#: user.txt:2446 packages.txt:1208
 msgid ""
 "to allow 100 usershare definitions. Now, members of the UNIX group \"users\" "
 "can create user defined shares on demand using the commands below."
@@ -7015,12 +7148,12 @@ msgstr ""
 "en utilisant la commande ci-dessous."
 
 # type: Plain text
-#: user.txt:2403 packages.txt:1165
+#: user.txt:2448 packages.txt:1210
 msgid "The usershare commands are:"
 msgstr "Les commandes usershare (partages utilisateurs) sont:"
 
 # type: Plain text
-#: user.txt:2408 packages.txt:1170
+#: user.txt:2453 packages.txt:1215
 #, no-wrap
 msgid ""
 "net usershare add sharename path [comment] [acl] [guest_ok=[y|n]] - to add or change a user defined share.\n"
@@ -7036,12 +7169,12 @@ msgstr ""
 "------------------------------------------------------------------------------------------------------------"
 
 # type: Plain text
-#: user.txt:2412
+#: user.txt:2457
 msgid "=== firestarter"
 msgstr "=== firestarter"
 
 # type: Plain text
-#: user.txt:2416 packages.txt:1178
+#: user.txt:2461 packages.txt:1223
 msgid ""
 "This version comes with a system init script now. You have to run the "
 "'firestarter' executable from the command line (in an X driven console)  "
@@ -7052,7 +7185,7 @@ msgstr ""
 "(dans une console X) pour générer les scripts de démarrage."
 
 # type: Plain text
-#: user.txt:2420 packages.txt:1182
+#: user.txt:2465 packages.txt:1227
 msgid ""
 "To add it to startup, run this: chkconfig --del rc.firewall chkconfig --add "
 "rc.firestarter"
@@ -7061,7 +7194,7 @@ msgstr ""
 "chkconfig --add rc.firestarter"
 
 # type: Plain text
-#: user.txt:2424 packages.txt:1186
+#: user.txt:2469 packages.txt:1231
 msgid ""
 "To remove it from startup: chkconfig --del rc.firestarter chkconfig --add rc."
 "firewall"
@@ -7070,12 +7203,12 @@ msgstr ""
 "rc.firewall"
 
 # type: Plain text
-#: user.txt:2426
+#: user.txt:2471
 msgid "=== kiax"
 msgstr "=== kiax"
 
 # type: Plain text
-#: user.txt:2429 packages.txt:1191
+#: user.txt:2474 packages.txt:1236
 msgid ""
 "If you want to test this package, you can use for example the server of "
 "http://www.voipbuster.com/en/index.html[VoipBuster]."
@@ -7084,7 +7217,7 @@ msgstr ""
 "serveur de http://www.voipbuster.com/fr/index.html[VoipBuster]."
 
 # type: Plain text
-#: user.txt:2433 packages.txt:1195
+#: user.txt:2478 packages.txt:1240
 msgid ""
 "First, you should register a user name and password with their native "
 "(Windows-only) client. After that give 'iax.voipbuster.com' as the server "
@@ -7096,19 +7229,19 @@ msgstr ""
 "vous venez juste d'enregistrer."
 
 # type: Plain text
-#: user.txt:2435 packages.txt:1197
+#: user.txt:2480 packages.txt:1242
 msgid "Now you should able to dial (currently the first minute is for free)."
 msgstr ""
 "Vous devriez maintenant être capable de composer (actuellement, la première "
 "minute est gratuite)."
 
 # type: Plain text
-#: user.txt:2437
+#: user.txt:2482
 msgid "=== xpenguinsapplet"
 msgstr "=== xpenguinsapplet"
 
 # type: Plain text
-#: user.txt:2441 packages.txt:1203
+#: user.txt:2486 packages.txt:1248
 msgid ""
 "If no penguins appear on your desktop after you hit the launch button, go in "
 "'KDE Control Center' -> 'LookNFeel' -> 'Behavior' and make sure 'Allow "
@@ -7120,24 +7253,24 @@ msgstr ""
 "du bureau' est coché."
 
 # type: Plain text
-#: user.txt:2443
+#: user.txt:2488
 msgid "=== kvpnc"
 msgstr "=== kvpnc"
 
 # type: Plain text
-#: user.txt:2445 packages.txt:1207
+#: user.txt:2490 packages.txt:1252
 msgid "Howto setup KVpnc for use without root password - sudo"
 msgstr ""
 "Comment configurer KVpnc pour une utilisation sans le mot de passe root - "
 "sudo"
 
 # type: Bullet: '1. '
-#: user.txt:2447 packages.txt:1209
+#: user.txt:2492 packages.txt:1254
 msgid "Install sudo"
 msgstr "Installez sudo"
 
 # type: Plain text
-#: user.txt:2450 packages.txt:1212
+#: user.txt:2495 packages.txt:1257
 #, no-wrap
 msgid ""
 "2. Edit '/etc/sudoers': add an command alias\n"
@@ -7149,14 +7282,14 @@ msgstr ""
 "---------------------------------\n"
 
 # type: Plain text
-#: user.txt:2453 packages.txt:1215
+#: user.txt:2498 packages.txt:1260
 msgid "# Cmnd alias specification Cmnd_Alias KVPNC = /usr/bin/kvpnc"
 msgstr ""
 "# Spécification d'alias Cmnd\n"
 "Cmnd_Alias KVPNC = /usr/bin/kvpnc"
 
 # type: Plain text
-#: user.txt:2456 packages.txt:1218
+#: user.txt:2501 packages.txt:1263
 #, no-wrap
 msgid ""
 "# User privilege specification\n"
@@ -7168,19 +7301,19 @@ msgstr ""
 "---------------------------------\n"
 
 # type: Plain text
-#: user.txt:2459 packages.txt:1221
+#: user.txt:2504 packages.txt:1266
 msgid "WARNING: Do it gently! (As always, when you edit '/etc/sudoers'.)"
 msgstr ""
 "WARNING: Allez y doucement! (comme toujours lorsque vous éditez '/etc/"
 "sudoers'.)"
 
 # type: Plain text
-#: user.txt:2461
+#: user.txt:2506
 msgid "=== motion"
 msgstr "=== motion"
 
 # type: Plain text
-#: user.txt:2464 packages.txt:1226
+#: user.txt:2509 packages.txt:1271
 msgid ""
 "You should edit the settings: videodevice, input, norm, frequency, width, "
 "height and target_dir in '/etc/motion.conf'"
@@ -7189,7 +7322,7 @@ msgstr ""
 "width, height et target_dir in '/etc/motion.conf'"
 
 # type: Plain text
-#: user.txt:2467 packages.txt:1229
+#: user.txt:2512 packages.txt:1274
 msgid ""
 "If the file already exists, it wont be overwritten by the package while "
 "upgrading. You can refer '/etc/motion-dist.conf' for configuring motion."
@@ -7199,24 +7332,24 @@ msgstr ""
 "motion."
 
 # type: Plain text
-#: user.txt:2469
+#: user.txt:2514
 msgid "=== k3b"
 msgstr "=== k3b"
 
 # type: Plain text
-#: user.txt:2471 packages.txt:1233
+#: user.txt:2516 packages.txt:1278
 msgid "If you want to rip a video DVD, install the transcode package as well."
 msgstr ""
 "Si vous voulez extraire une vidéo d'un DVD, installer aussi le paquet "
 "transcode."
 
 # type: Plain text
-#: user.txt:2473
+#: user.txt:2518
 msgid "=== xen"
 msgstr "=== xen"
 
 # type: Plain text
-#: user.txt:2477 packages.txt:1239
+#: user.txt:2522 packages.txt:1284
 msgid ""
 "WARNING: Xen is unstable software, meaning that it should not be used on "
 "your main PC, it may destroy your data. As an example, I destroyed my file "
@@ -7227,12 +7360,12 @@ msgstr ""
 "données. Par exemple, j'ai détruit mon système de fichier en testant."
 
 # type: Plain text
-#: user.txt:2479
+#: user.txt:2524
 msgid "=== lineakd"
 msgstr "=== lineakd"
 
 # type: Plain text
-#: user.txt:2483 packages.txt:1245
+#: user.txt:2528 packages.txt:1290
 msgid ""
 "After installing lineakd, make sure you create a configuration file before "
 "starting it.  An example configuration file is located in '/etc/lineak/"
@@ -7243,18 +7376,18 @@ msgstr ""
 "est disponible dans '/etc/lineak/lineakd.conf.example' pour référence."
 
 # type: Plain text
-#: user.txt:2485 packages.txt:1247
+#: user.txt:2530 packages.txt:1292
 msgid "You can then start the lineak daemon by running the following command:"
 msgstr "Vous pouvez démarer le démon lineak en exécutant la commande suivante:"
 
 # type: Plain text
-#: user.txt:2486 packages.txt:1248
+#: user.txt:2531 packages.txt:1293
 #, no-wrap
 msgid "----------\n"
 msgstr "----------\n"
 
 # type: Plain text
-#: user.txt:2488 packages.txt:1250
+#: user.txt:2533 packages.txt:1295
 #, no-wrap
 msgid ""
 "$ lineakd\n"
@@ -7264,12 +7397,12 @@ msgstr ""
 "----------\n"
 
 # type: Plain text
-#: user.txt:2491
+#: user.txt:2536
 msgid "=== qemu"
 msgstr "=== qemu"
 
 # type: Plain text
-#: user.txt:2493 packages.txt:1255
+#: user.txt:2538 packages.txt:1300
 msgid ""
 "QuickStart for lazy users aka. \"I am new to qemu and I want to use it, help!"
 "\" :)"
@@ -7278,13 +7411,13 @@ msgstr ""
 "je voudrais l'utiliser, à l'aide!\" :)"
 
 # type: Plain text
-#: user.txt:2494 packages.txt:1256
+#: user.txt:2539 packages.txt:1301
 #, no-wrap
 msgid "--------------------------------\n"
 msgstr "--------------------------------\n"
 
 # type: Plain text
-#: user.txt:2498 packages.txt:1260
+#: user.txt:2543 packages.txt:1305
 #, no-wrap
 msgid ""
 "qemu-img create foo.img 8G\n"
@@ -7298,12 +7431,12 @@ msgstr ""
 "--------------------------------\n"
 
 # type: Plain text
-#: user.txt:2501
+#: user.txt:2546
 msgid "=== dillo"
 msgstr "=== dillo"
 
 # type: Plain text
-#: user.txt:2506 packages.txt:1268
+#: user.txt:2551 packages.txt:1313
 msgid ""
 "Dillo is moving to FLTK2. As of 2006-04-29 it is unstable (both unreleased "
 "and has some random erratic bugs, but upstream is working on it), and some "
@@ -7315,7 +7448,7 @@ msgstr ""
 "par conséquent ce n'est pas une idée de s'empêtrer avec."
 
 # type: Plain text
-#: user.txt:2509 packages.txt:1271
+#: user.txt:2554 packages.txt:1316
 msgid ""
 "Dillo is now \"crippled\" by removing the new FLTK based download GUI, as it "
 "is only this needs FLTK2, but for the next release more FLTK2 expected."
@@ -7325,12 +7458,12 @@ msgstr ""
 "mais pour la prochaine version, plus de FLTK2 est attendu."
 
 # type: Plain text
-#: user.txt:2512
+#: user.txt:2557
 msgid "=== ooextras"
 msgstr "=== ooextras"
 
 # type: Plain text
-#: user.txt:2514 packages.txt:1276
+#: user.txt:2559 packages.txt:1321
 msgid ""
 "Please add '/usr/lib/ooextras' to your template paths in OpenOffice.org!"
 msgstr ""
@@ -7338,29 +7471,29 @@ msgstr ""
 "OpenOffice.org! (NDT options/OpenOffice.org/Chemins/Modèles/éditer)"
 
 # type: Plain text
-#: user.txt:2517 packages.txt:1279
+#: user.txt:2562 packages.txt:1324
 msgid "You can do this under: + 'Tools > Options > OpenOffice.org > Paths'"
 msgstr ""
 "Vous pouvez le faire via + 'Options > OpenOffice.org > Chemins > Modèles > "
 "éditer'"
 
 # type: Plain text
-#: user.txt:2519 packages.txt:1281
+#: user.txt:2564 packages.txt:1326
 msgid "Enjoy the new templates! :-)"
 msgstr "Profitez des nouveaux modèles! :-)"
 
 # type: Plain text
-#: user.txt:2521
+#: user.txt:2566
 msgid "=== mythtv"
 msgstr "=== mythtv"
 
 # type: Plain text
-#: user.txt:2523 packages.txt:1285
+#: user.txt:2568 packages.txt:1330
 msgid "You can configure MythTV this way:"
 msgstr "Vous pouvez configurer MythTV de cette façon:"
 
 # type: Bullet: '1. '
-#: user.txt:2530 packages.txt:1292
+#: user.txt:2575 packages.txt:1337
 msgid ""
 "Start mysql service and setup mysql database password with `mysqladmin -u "
 "root password mysqlpassword`."
@@ -7369,7 +7502,7 @@ msgstr ""
 "donnée mysql avec `mysqladmin -u root password mysqlpassword`."
 
 # type: Bullet: '2. '
-#: user.txt:2530 packages.txt:1292
+#: user.txt:2575 packages.txt:1337
 msgid ""
 "Set up the initial database with `mysql -u root -p < /usr/share/mythtv/mc."
 "sql` and enter mysqlpassword."
@@ -7378,27 +7511,27 @@ msgstr ""
 "mythtv/mc.sql` et saisissez mysqlpassword."
 
 # type: Bullet: '3. '
-#: user.txt:2530 packages.txt:1292
+#: user.txt:2575 packages.txt:1337
 msgid "Run `sudo mythtv-setup` for tune your tvcard."
 msgstr "Lancez `sudo mythtv-setup` pour personnaliser votre carte tv."
 
 # type: Bullet: '4. '
-#: user.txt:2530 packages.txt:1292
+#: user.txt:2575 packages.txt:1337
 msgid "Start mythtv backend with `sudo service mythtv start`."
 msgstr "Démarrez le backend mythtv avec `sudo service mythtv start`."
 
 # type: Bullet: '5. '
-#: user.txt:2530 packages.txt:1292
+#: user.txt:2575 packages.txt:1337
 msgid "Use `mythfilldatabase` to fill in your database."
 msgstr "Utilisez `mythfilldatabase` pour remplir votre base de donnée."
 
 # type: Bullet: '6. '
-#: user.txt:2530 packages.txt:1292
+#: user.txt:2575 packages.txt:1337
 msgid "Finally run `mythfrontend` and have fun!"
 msgstr "Lancez enfin `mythfrontend` et profitez en!"
 
 # type: Plain text
-#: user.txt:2533 packages.txt:1295
+#: user.txt:2578 packages.txt:1340
 msgid ""
 "For more information see MythTV http://www.mythtv.org/modules.php?"
 "name=MythInstall[documentation]."
@@ -7407,12 +7540,12 @@ msgstr ""
 "name=MythInstall[documentation MythTV]."
 
 # type: Bullet: '* '
-#: user.txt:2535
+#: user.txt:2580
 msgid "=== maxima"
 msgstr "=== maxima"
 
 # type: Plain text
-#: user.txt:2538 packages.txt:1300
+#: user.txt:2583 packages.txt:1345
 msgid ""
 "Install the 'tk' package if you intend to use the gui \"xmaxima\".  Detailed "
 "documentation can be found using"
@@ -7421,22 +7554,22 @@ msgstr ""
 "Une documentation détaillée peut être trouvée en utilisant"
 
 # type: Bullet: '* '
-#: user.txt:2541 packages.txt:1303
+#: user.txt:2586 packages.txt:1348
 msgid "info maxima"
 msgstr "info maxima"
 
 # type: Bullet: '* '
-#: user.txt:2541 packages.txt:1303
+#: user.txt:2586 packages.txt:1348
 msgid "in the directory /usr/share/maxima/$package_version/doc/"
 msgstr "dans le répertoire /usr/share/maxima/$package_version/doc/"
 
 # type: Plain text
-#: user.txt:2544
+#: user.txt:2589
 msgid "=== freenx"
 msgstr "=== freenx"
 
 # type: Plain text
-#: user.txt:2549 packages.txt:1311
+#: user.txt:2594 packages.txt:1356
 #, no-wrap
 msgid ""
 "1. Installation\n"
@@ -7452,7 +7585,7 @@ msgstr ""
 "-----------------\n"
 
 # type: Plain text
-#: user.txt:2551 packages.txt:1313
+#: user.txt:2596 packages.txt:1358
 #, no-wrap
 msgid ""
 "pacman-g2 -Sy freenx\n"
@@ -7463,18 +7596,18 @@ msgstr ""
 
 # type: Bullet: '+
 # type: '
-#: user.txt:2555 packages.txt:1317
+#: user.txt:2600 packages.txt:1362
 msgid "On the client:"
 msgstr "Sur le client:"
 
 # type: Bullet: '+
 # type: '
-#: user.txt:2555 packages.txt:1317
+#: user.txt:2600 packages.txt:1362
 msgid "--------------"
 msgstr "--------------"
 
 # type: Plain text
-#: user.txt:2557 packages.txt:1319
+#: user.txt:2602 packages.txt:1364
 #, no-wrap
 msgid ""
 "pacman-g2 -Sy knx\n"
@@ -7484,7 +7617,7 @@ msgstr ""
 "--------------\n"
 
 # type: Plain text
-#: user.txt:2563 packages.txt:1325
+#: user.txt:2608 packages.txt:1370
 #, no-wrap
 msgid ""
 "2. Configuration\n"
@@ -7500,7 +7633,7 @@ msgstr ""
 "---------\n"
 
 # type: Plain text
-#: user.txt:2565 packages.txt:1327
+#: user.txt:2610 packages.txt:1372
 #, no-wrap
 msgid ""
 "passwd nx\n"
@@ -7510,7 +7643,7 @@ msgstr ""
 "---------\n"
 
 # type: Plain text
-#: user.txt:2571 packages.txt:1333
+#: user.txt:2616 packages.txt:1378
 #, no-wrap
 msgid ""
 "+\n"
@@ -7528,7 +7661,7 @@ msgstr ""
 "------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2573 packages.txt:1335
+#: user.txt:2618 packages.txt:1380
 #, no-wrap
 msgid ""
 "chmod 644 /usr/share/knx/client.id_dsa.key\n"
@@ -7538,7 +7671,7 @@ msgstr ""
 "------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2578 packages.txt:1340
+#: user.txt:2623 packages.txt:1385
 #, no-wrap
 msgid ""
 "+\n"
@@ -7554,7 +7687,7 @@ msgstr ""
 "------------------------\n"
 
 # type: Plain text
-#: user.txt:2580 user.txt:2923 packages.txt:1342 packages.txt:1685
+#: user.txt:2625 user.txt:2968 packages.txt:1387 packages.txt:1730
 #, no-wrap
 msgid ""
 "service firewall restart\n"
@@ -7564,7 +7697,7 @@ msgstr ""
 "------------------------\n"
 
 # type: Plain text
-#: user.txt:2589 packages.txt:1351
+#: user.txt:2634 packages.txt:1396
 #, no-wrap
 msgid ""
 "3. Users\n"
@@ -7581,7 +7714,7 @@ msgstr ""
 "-----------------------------\n"
 
 # type: Plain text
-#: user.txt:2591 packages.txt:1353
+#: user.txt:2636 packages.txt:1398
 #, no-wrap
 msgid ""
 "nxserver --adduser <username>\n"
@@ -7592,19 +7725,19 @@ msgstr ""
 
 # type: Bullet: '+
 # type: '
-#: user.txt:2595 packages.txt:1357
+#: user.txt:2640 packages.txt:1402
 msgid "then set a separate (for nx) password for the user:"
 msgstr ""
 "puis définissez un mot de passe différent (pour nx) pour l'utilisateur:"
 
 # type: Bullet: '+
 # type: '
-#: user.txt:2595 packages.txt:1357
+#: user.txt:2640 packages.txt:1402
 msgid "----------------------------"
 msgstr "----------------------------"
 
 # type: Plain text
-#: user.txt:2597 packages.txt:1359
+#: user.txt:2642 packages.txt:1404
 #, no-wrap
 msgid ""
 "nxserver --passwd <username>\n"
@@ -7614,7 +7747,7 @@ msgstr ""
 "----------------------------\n"
 
 # type: Plain text
-#: user.txt:2602 packages.txt:1364
+#: user.txt:2647 packages.txt:1409
 #, no-wrap
 msgid ""
 "4. The client\n"
@@ -7626,12 +7759,12 @@ msgstr ""
 "Maintenant démarrez knx, l'utilisation de cette application s'explique tout seul.\n"
 
 # type: Plain text
-#: user.txt:2604
+#: user.txt:2649
 msgid "=== virtualbox"
 msgstr "=== virtualbox"
 
 # type: Plain text
-#: user.txt:2608 packages.txt:1370
+#: user.txt:2653 packages.txt:1415
 msgid ""
 "If you want to be able to use the VirtualBox guest additions, run this "
 "command as root to get the Additions ISO (requires an active Internet "
@@ -7642,7 +7775,7 @@ msgstr ""
 "les ajouts (nécessite une connexion internet active):"
 
 # type: Plain text
-#: user.txt:2611 packages.txt:1373
+#: user.txt:2656 packages.txt:1418
 #, no-wrap
 msgid ""
 "/usr/bin/get-vbox-additions\n"
@@ -7652,12 +7785,12 @@ msgstr ""
 "---------------------------\n"
 
 # type: Plain text
-#: user.txt:2615
+#: user.txt:2660
 msgid "=== wifi-radar"
 msgstr "=== wifi-radar"
 
 # type: Plain text
-#: user.txt:2617 packages.txt:1379
+#: user.txt:2662 packages.txt:1424
 msgid ""
 "Don't forget to change the wifi interface name in '/etc/wifi_radar.conf'!"
 msgstr ""
@@ -7665,17 +7798,17 @@ msgstr ""
 "conf'!"
 
 # type: Plain text
-#: user.txt:2619
+#: user.txt:2664
 msgid "=== nessus-core-gtk"
 msgstr "=== nessus-core-gtk"
 
 # type: Plain text
-#: user.txt:2634
+#: user.txt:2679
 msgid "=== cairo-clock"
 msgstr "=== cairo-clock"
 
 # type: Plain text
-#: user.txt:2638 packages.txt:1400
+#: user.txt:2683 packages.txt:1445
 #, no-wrap
 msgid ""
 "Cairo-Clock requires the Composite option to be enabled in your Xorg\n"
@@ -7689,7 +7822,7 @@ msgstr ""
 "-----------------------------\n"
 
 # type: Plain text
-#: user.txt:2642 packages.txt:1404
+#: user.txt:2687 packages.txt:1449
 #, no-wrap
 msgid ""
 "Section \"Extensions\"\n"
@@ -7703,12 +7836,12 @@ msgstr ""
 "-----------------------------\n"
 
 # type: Plain text
-#: user.txt:2645
+#: user.txt:2690
 msgid "=== entrance"
 msgstr "=== entrance"
 
 # type: Plain text
-#: user.txt:2649 packages.txt:1411
+#: user.txt:2694 packages.txt:1456
 msgid ""
 "If your keyboard doesn't work that can be because wrong virtual terminal "
 "number set in entrance config.  Use the following command to set the proper "
@@ -7719,13 +7852,13 @@ msgstr ""
 "d'entrance.  Utilisez la commande suivante pour définir la valeur appropriée:"
 
 # type: Plain text
-#: user.txt:2650 packages.txt:1412
+#: user.txt:2695 packages.txt:1457
 #, no-wrap
 msgid "------------------------------------------------------------------------------------------------------------------\n"
 msgstr "------------------------------------------------------------------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2652 packages.txt:1414
+#: user.txt:2697 packages.txt:1459
 #, no-wrap
 msgid ""
 "sudo ecore_config -c /etc/entrance_config.cfg -k /entranced/xserver -s \"/usr/X11R6/bin/X -quiet -nolisten tcp vt7\"\n"
@@ -7735,36 +7868,36 @@ msgstr ""
 "------------------------------------------------------------------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2655 packages.txt:1417
+#: user.txt:2700 packages.txt:1462
 msgid "In this example you want to run entrance on vt7."
 msgstr ""
 "Dans cet exemple, vous souhaitez lancer entrance sur le terminal virtuel 7 "
 "(vt7)."
 
 # type: Plain text
-#: user.txt:2657
+#: user.txt:2702
 msgid "=== kernel-xen0"
 msgstr "=== kernel-xen0"
 
 # type: Plain text
-#: user.txt:2660
+#: user.txt:2705
 msgid "Usage instructions: ^^^^^^^^^^^^^^^^^^^"
 msgstr "Instructions d'utilisation: ^^^^^^^^^^^^^^^^^^^"
 
 # type: Plain text
-#: user.txt:2662 packages.txt:1424
+#: user.txt:2707 packages.txt:1469
 msgid "// Dots are only for asciidoc, you should not copy them to command line"
 msgstr ""
 "// Les points sont uniquement pour asciidoc, vous ne devriez pas le copier "
 "dans la ligne de commande"
 
 # type: Bullet: '1. '
-#: user.txt:2666 packages.txt:1428
+#: user.txt:2711 packages.txt:1473
 msgid "`pacman-g2 -Syu && pacman-g2 -S kernel-xen0`"
 msgstr "`pacman-g2 -Syu && pacman-g2 -S kernel-xen0`"
 
 # type: Plain text
-#: user.txt:2666 packages.txt:1428
+#: user.txt:2711 packages.txt:1473
 #, no-wrap
 msgid ""
 "2. Add the following lines to the bottom of '/boot/grub/menu.lst'\n"
@@ -7776,7 +7909,7 @@ msgstr ""
 "-----------------------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2670 packages.txt:1432
+#: user.txt:2715 packages.txt:1477
 #, no-wrap
 msgid ""
 "title Frugalware 0.5 (Siwenna) - With Xen\n"
@@ -7790,7 +7923,7 @@ msgstr ""
 "-----------------------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2676 packages.txt:1438
+#: user.txt:2721 packages.txt:1483
 msgid ""
 "+ Replace (hd0,13) with the grub reference to your Frugalware partition, "
 "and /dev/hda14 with the Linux device name for your partition (use the "
@@ -7803,12 +7936,12 @@ msgstr ""
 "également être remplacé par une valeur avoisinant la moitié de votre mémoire."
 
 # type: Bullet: '3. '
-#: user.txt:2683 packages.txt:1445
+#: user.txt:2728 packages.txt:1490
 msgid "Reboot and select the Xen option at the Grub menu."
 msgstr "Redémarrez et séléctionnez l'option Xen dans le menu Grub."
 
 # type: Bullet: '4. '
-#: user.txt:2683 packages.txt:1445
+#: user.txt:2728 packages.txt:1490
 msgid ""
 "Hopefully nothing bad will happen. If it does, write down the last few "
 "messages that you see, and file a bugreport at http://bugs.frugalware.org"
@@ -7818,7 +7951,7 @@ msgstr ""
 "rapport de bogue sur http://bugs.frugalware.org"
 
 # type: Bullet: '5. '
-#: user.txt:2683 packages.txt:1445
+#: user.txt:2728 packages.txt:1490
 msgid ""
 "If all works OK after the first few boots, you should be able to safely "
 "remove noreboot from the kernel command line. If you run into problems later "
@@ -7830,7 +7963,7 @@ msgstr ""
 "noreboot"
 
 # type: Plain text
-#: user.txt:2685 packages.txt:1447
+#: user.txt:2730 packages.txt:1492
 msgid ""
 "NOTE: on i686, you need the glibc-xen package instead of the normal glibc!"
 msgstr ""
@@ -7838,17 +7971,17 @@ msgstr ""
 "glibc!"
 
 # type: Plain text
-#: user.txt:2687
+#: user.txt:2732
 msgid "=== xchat"
 msgstr "=== xchat"
 
 # type: Plain text
-#: user.txt:2689 packages.txt:1451
+#: user.txt:2734 packages.txt:1496
 msgid "How should I remote control xmms from xchat?"
 msgstr "Comment puis-je contrôler xmms depuis xchat?"
 
 # type: Plain text
-#: user.txt:2691 packages.txt:1453
+#: user.txt:2736 packages.txt:1498
 msgid ""
 "First make sure you really need it - some people think it's a security hole."
 msgstr ""
@@ -7856,7 +7989,7 @@ msgstr ""
 "s'agit d'une faille de sécurité."
 
 # type: Plain text
-#: user.txt:2703 packages.txt:1465
+#: user.txt:2748 packages.txt:1510
 msgid ""
 "You need http://inconnu.isu.edu/~ink/new/projects/xchat-xmms/xchat-xmms-"
 "0.8.1.tar.gz[XChat-XMMS plugin] from http://scripts.xchat.org/cgi-bin/search?"
@@ -7880,12 +8013,12 @@ msgstr ""
 "PDF en Allemand, qui va être traduit en Anglais/Hongrois.)"
 
 # type: Plain text
-#: user.txt:2705
+#: user.txt:2750
 msgid "=== openttd"
 msgstr "=== openttd"
 
 # type: Plain text
-#: user.txt:2709 packages.txt:1471
+#: user.txt:2754 packages.txt:1516
 #, no-wrap
 msgid ""
 "You require the data files of the original Transport Tycoon Deluxe\n"
@@ -7899,7 +8032,7 @@ msgstr ""
 "----------\n"
 
 # type: Plain text
-#: user.txt:2716 packages.txt:1478
+#: user.txt:2761 packages.txt:1523
 #, no-wrap
 msgid ""
 "sample.cat\n"
@@ -7919,7 +8052,7 @@ msgstr ""
 "----------\n"
 
 # type: Plain text
-#: user.txt:2720 packages.txt:1482
+#: user.txt:2765 packages.txt:1527
 #, no-wrap
 msgid ""
 "If you want to use the included scenarios, run openttd with the\n"
@@ -7930,7 +8063,7 @@ msgstr ""
 "-----------------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2722 packages.txt:1484
+#: user.txt:2767 packages.txt:1529
 #, no-wrap
 msgid ""
 "openttd -g openttd -g /usr/share/openttd/scenario/<scenario_name>\n"
@@ -7940,12 +8073,12 @@ msgstr ""
 "-----------------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2725
+#: user.txt:2770
 msgid "=== dhcp"
 msgstr "=== dhcp"
 
 # type: Plain text
-#: user.txt:2728 packages.txt:1490
+#: user.txt:2773 packages.txt:1535
 msgid ""
 "If you are in trouble setting up your dhclient, use the following options. "
 "These are quite good defaults:"
@@ -7954,13 +8087,13 @@ msgstr ""
 "les options suivantes Ce sont d'assez bons paramètres par défaut:"
 
 # type: Plain text
-#: user.txt:2729 packages.txt:1491
+#: user.txt:2774 packages.txt:1536
 #, no-wrap
 msgid "-------------------------------------------------------\n"
 msgstr "-------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2735 packages.txt:1497
+#: user.txt:2780 packages.txt:1542
 #, no-wrap
 msgid ""
 "request subnet-mask, broadcast-address, time-offset, \\\n"
@@ -7978,24 +8111,24 @@ msgstr ""
 "-------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2738
+#: user.txt:2783
 msgid "=== apache"
 msgstr "=== apache"
 
 # type: Plain text
-#: user.txt:2741
+#: user.txt:2786
 msgid "How to configure Apache ^^^^^^^^^^^^^^^^^^^^^^^"
 msgstr "Comment configurer Apache ^^^^^^^^^^^^^^^^^^^^^^^"
 
 # type: Bullet: '1. '
-#: user.txt:2745 packages.txt:1507
+#: user.txt:2790 packages.txt:1552
 msgid "These steps require root privileges, so use su - to get a root shell."
 msgstr ""
 "Ces étapes nécessitent les droits root, utilisez donc su - pour obtenir un "
 "shell root."
 
 # type: Plain text
-#: user.txt:2745 packages.txt:1507
+#: user.txt:2790 packages.txt:1552
 #, no-wrap
 msgid ""
 "2. The Apache server isn't started by default. You can change this with the\n"
@@ -8007,7 +8140,7 @@ msgstr ""
 "-----------------\n"
 
 # type: Plain text
-#: user.txt:2747 packages.txt:1509
+#: user.txt:2792 packages.txt:1554
 #, no-wrap
 msgid ""
 "service httpd add\n"
@@ -8017,7 +8150,7 @@ msgstr ""
 "-----------------\n"
 
 # type: Plain text
-#: user.txt:2753 packages.txt:1515
+#: user.txt:2798 packages.txt:1560
 #, no-wrap
 msgid ""
 "3. We don't want to reboot, so start it manually:\n"
@@ -8029,7 +8162,7 @@ msgstr ""
 "-------------------\n"
 
 # type: Plain text
-#: user.txt:2755 packages.txt:1517
+#: user.txt:2800 packages.txt:1562
 #, no-wrap
 msgid ""
 "service httpd start\n"
@@ -8040,22 +8173,22 @@ msgstr ""
 
 # type: Bullet: '+
 # type: '
-#: user.txt:2758 packages.txt:1520
+#: user.txt:2803 packages.txt:1565
 msgid "`Starting Apache web server (no SSL) [ OK ]`"
 msgstr "`Starting Apache web server (no SSL) [ OK ]`"
 
 # type: Plain text
-#: user.txt:2760 packages.txt:1522
+#: user.txt:2805 packages.txt:1567
 msgid "You have finished if you don't need SSL support."
 msgstr "Si vous n'avez pas besoin de SSL, vous avez terminé."
 
 # type: Plain text
-#: user.txt:2763
+#: user.txt:2808
 msgid "Setting up SSL support for Apache ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
 msgstr "Installer le support SSL pour Apache ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
 
 # type: Plain text
-#: user.txt:2766 packages.txt:1528
+#: user.txt:2811 packages.txt:1573
 #, no-wrap
 msgid ""
 "1. Creating the certifications:\n"
@@ -8067,17 +8200,17 @@ msgstr ""
 "-------------------------------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2769 packages.txt:1531
+#: user.txt:2814 packages.txt:1576
 msgid "# cd /etc/httpd/conf/ # sh mkcert.sh"
 msgstr "# cd /etc/httpd/conf/ # sh mkcert.sh"
 
 # type: Plain text
-#: user.txt:2771 packages.txt:1533
+#: user.txt:2816 packages.txt:1578
 msgid "Signature Algorithm ((R)SA or (D)SA) [R]:"
 msgstr "Algorithme de Signature ((R)SA ou (D)SA) [R]:"
 
 # type: Plain text
-#: user.txt:2777 packages.txt:1539
+#: user.txt:2822 packages.txt:1584
 #, no-wrap
 msgid ""
 "     Here we can accept the default RSA signature algorithm first. Then\n"
@@ -8090,63 +8223,63 @@ msgstr ""
 "       1) Country Name (2 letter code) [XY]:\n"
 
 # type: Plain text
-#: user.txt:2779 packages.txt:1541
+#: user.txt:2824 packages.txt:1586
 #, no-wrap
 msgid "          Give the 2-letter code of our contry (for example US)\n"
 msgstr "          Indiquez le code à 2 lettres de votre pays (par exemple FR)\n"
 
 # type: Bullet: '       2) '
-#: user.txt:2781 packages.txt:1543
+#: user.txt:2826 packages.txt:1588
 msgid "State or Province Name (full name) [Snake Desert]:"
 msgstr "Nom de l'état ou de la région (Nom complet) [Snake Desert]:"
 
 # type: Plain text
-#: user.txt:2783 packages.txt:1545
+#: user.txt:2828 packages.txt:1590
 #, no-wrap
 msgid "          We type our state.\n"
 msgstr "          Nous entrons notre état.\n"
 
 # type: Bullet: '       3) '
-#: user.txt:2785 packages.txt:1547
+#: user.txt:2830 packages.txt:1592
 msgid "Locality Name (eg, city) [Snake Town]:"
 msgstr "Nome de la localité (ex, ville) [Snake Town]:"
 
 # type: Plain text
-#: user.txt:2787 packages.txt:1549
+#: user.txt:2832 packages.txt:1594
 #, no-wrap
 msgid "         The name of our city.\n"
 msgstr "         Nous entrons le nom de notre ville.\n"
 
 # type: Bullet: '       4) '
-#: user.txt:2789 packages.txt:1551
+#: user.txt:2834 packages.txt:1596
 msgid "Organization Name (eg, company) [Snake Oil, Ltd]:"
 msgstr "Nom de votre organisation (ex, société) [Snake Oil, Ltd]:"
 
 # type: Plain text
-#: user.txt:2791 packages.txt:1553
+#: user.txt:2836 packages.txt:1598
 #, no-wrap
 msgid "          Our organization's name.\n"
 msgstr "          Nous entrons le nom de notre organisation.\n"
 
 # type: Bullet: '       5) '
-#: user.txt:2793 packages.txt:1555
+#: user.txt:2838 packages.txt:1600
 msgid "Organizational Unit Name (eg, section) [Webserver Team]:"
 msgstr ""
 "Nom de votre unité dans votre organisation (ex, section) [Webserver Team]:"
 
 # type: Plain text
-#: user.txt:2795 packages.txt:1557
+#: user.txt:2840 packages.txt:1602
 #, no-wrap
 msgid "          Our section's name.\n"
 msgstr "          Le nom de notre 'section'.\n"
 
 # type: Bullet: '       6) '
-#: user.txt:2797 packages.txt:1559
+#: user.txt:2842 packages.txt:1604
 msgid "Common Name (eg, FQDN) [www.snakeoil.com]:"
 msgstr "Common Name (eg, FQDN) [www.snakeoil.com]:"
 
 # type: Plain text
-#: user.txt:2800 packages.txt:1562
+#: user.txt:2845 packages.txt:1607
 #, no-wrap
 msgid ""
 "          Important: Give a real address here, otherwise you'll get\n"
@@ -8154,12 +8287,12 @@ msgid ""
 msgstr "          Important: Indiquez une adresse valide sans quoi votre navigateur vous enverra des avertissements!\n"
 
 # type: Bullet: '       7) '
-#: user.txt:2802 packages.txt:1564
+#: user.txt:2847 packages.txt:1609
 msgid "Email Address (eg, `name@FQDN') [`www@snakeoil.com']:"
 msgstr "Email Address (eg, `name@FQDN') [`www@snakeoil.com']:"
 
 # type: Plain text
-#: user.txt:2805 packages.txt:1567
+#: user.txt:2850 packages.txt:1612
 #, no-wrap
 msgid ""
 "          I usually give the email address of the webmaster here.\n"
@@ -8169,30 +8302,30 @@ msgstr ""
 "          (webmaster@domain.com)\n"
 
 # type: Bullet: '       8) '
-#: user.txt:2807 packages.txt:1569
+#: user.txt:2852 packages.txt:1614
 msgid "Certificate Validity (days) [365]:"
 msgstr "Certificate Validity (days) [365]:"
 
 # type: Plain text
-#: user.txt:2809 packages.txt:1571
+#: user.txt:2854 packages.txt:1616
 #, no-wrap
 msgid "          In most cases, one year will be good.\n"
 msgstr "          Dans la plupart des cas, un an conviendra.\n"
 
 # type: Plain text
-#: user.txt:2811 packages.txt:1573
+#: user.txt:2856 packages.txt:1618
 #, no-wrap
 msgid "          Then, we should choose the version of our certificate:\n"
 msgstr "          Ensuite, nous devons choisir la version pour notre certificat:\n"
 
 # type: Plain text
-#: user.txt:2813 packages.txt:1575
+#: user.txt:2858 packages.txt:1620
 #, no-wrap
 msgid "          Certificate Version (1 or 3) [3]:\n"
 msgstr "          Version du certificat (1 ou 3) [3]:\n"
 
 # type: Plain text
-#: user.txt:2816 packages.txt:1578
+#: user.txt:2861 packages.txt:1623
 #, no-wrap
 msgid ""
 "          The default 3 will be good, so just hit enter. In the next\n"
@@ -8200,13 +8333,13 @@ msgid ""
 msgstr "          La valeur par défaut 3 est correcte, valider donc en appuyant sur entrée. Dans l'étape          suivant nous pouvons crypter notre clef privée:\n"
 
 # type: Plain text
-#: user.txt:2818 packages.txt:1580
+#: user.txt:2863 packages.txt:1625
 #, no-wrap
 msgid "          Encrypt the private key now? [Y/n]:\n"
 msgstr "          Crypter votre clef privée maintenant? [O/n]:\n"
 
 # type: Plain text
-#: user.txt:2821 packages.txt:1583
+#: user.txt:2866 packages.txt:1628
 #, no-wrap
 msgid ""
 "          The keys will not be readable by users, so we can leave this\n"
@@ -8218,18 +8351,18 @@ msgstr ""
 
 # type: Bullet: '+
 # type: '
-#: user.txt:2825 packages.txt:1587
+#: user.txt:2870 packages.txt:1632
 msgid "So the following files are created:"
 msgstr "Les fichiers suivant ont été créés:"
 
 # type: Bullet: '+
 # type: '
-#: user.txt:2825 packages.txt:1587
+#: user.txt:2870 packages.txt:1632
 msgid "------------------------------------------------------------"
 msgstr "------------------------------------------------------------"
 
 # type: Plain text
-#: user.txt:2829 packages.txt:1591
+#: user.txt:2874 packages.txt:1636
 #, no-wrap
 msgid ""
 "/etc/httpd/conf/ssl.key/server.key (keep this file private!)\n"
@@ -8243,7 +8376,7 @@ msgstr ""
 "------------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2835 packages.txt:1597
+#: user.txt:2880 packages.txt:1642
 #, no-wrap
 msgid ""
 "2. Enable SSL in '/etc/httpd/conf/httpd.conf':\n"
@@ -8259,7 +8392,7 @@ msgstr ""
 "-----------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2840 packages.txt:1602
+#: user.txt:2885 packages.txt:1647
 #, no-wrap
 msgid ""
 "# Uncomment this if you want SSL support!\n"
@@ -8276,12 +8409,12 @@ msgstr ""
 
 # type: Bullet: '+
 # type: '
-#: user.txt:2843 packages.txt:1605
+#: user.txt:2888 packages.txt:1650
 msgid "Uncomment them."
 msgstr "Décommenter les."
 
 # type: Plain text
-#: user.txt:2846 packages.txt:1608
+#: user.txt:2891 packages.txt:1653
 #, no-wrap
 msgid ""
 "3. Now we should restart Apache:\n"
@@ -8293,7 +8426,7 @@ msgstr ""
 "---------------------\n"
 
 # type: Plain text
-#: user.txt:2848 user.txt:2895 packages.txt:1610 packages.txt:1657
+#: user.txt:2893 user.txt:2940 packages.txt:1655 packages.txt:1702
 #, no-wrap
 msgid ""
 "service httpd restart\n"
@@ -8303,7 +8436,7 @@ msgstr ""
 "---------------------\n"
 
 # type: Plain text
-#: user.txt:2852 packages.txt:1614
+#: user.txt:2897 packages.txt:1659
 #, no-wrap
 msgid ""
 "4. Then we can check if the task was successful:\n"
@@ -8315,7 +8448,7 @@ msgstr ""
 "-------------------------\n"
 
 # type: Plain text
-#: user.txt:2854 packages.txt:1616
+#: user.txt:2899 packages.txt:1661
 #, no-wrap
 msgid ""
 "elinks https://localhost/\n"
@@ -8326,28 +8459,28 @@ msgstr ""
 
 # type: Bullet: '+
 # type: '
-#: user.txt:2857 packages.txt:1619
+#: user.txt:2902 packages.txt:1664
 msgid "This should show the default homapage, received via SSL :)"
 msgstr "Vous devriez voir la page par défaut, reçu via SSL :)"
 
 # type: Plain text
-#: user.txt:2860
+#: user.txt:2905
 msgid "Self-signed Apache certificate ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
 msgstr "Certificat auto-signé pour Apache ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
 
 # type: Plain text
-#: user.txt:2862 packages.txt:1624
+#: user.txt:2907 packages.txt:1669
 msgid "This must be done as root."
 msgstr "Ceci doit être effectuer en tant que root."
 
 # type: Plain text
-#: user.txt:2863 packages.txt:1625
+#: user.txt:2908 packages.txt:1670
 #, no-wrap
 msgid "-----------------------------------------\n"
 msgstr "-----------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2865 packages.txt:1627
+#: user.txt:2910 packages.txt:1672
 #, no-wrap
 msgid ""
 "openssl genrsa -des3 -out server.key 1024\n"
@@ -8357,18 +8490,18 @@ msgstr ""
 "-----------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2868 packages.txt:1630
+#: user.txt:2913 packages.txt:1675
 msgid "Enter \"foobar\" twice as passphrase."
 msgstr "Saisir \"foobar\" deux fois en tant que passphrase."
 
 # type: Plain text
-#: user.txt:2869 packages.txt:1631
+#: user.txt:2914 packages.txt:1676
 #, no-wrap
 msgid "------------------------------------------------\n"
 msgstr "------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2871 packages.txt:1633
+#: user.txt:2916 packages.txt:1678
 #, no-wrap
 msgid ""
 "openssl req -new -key server.key -out server.csr\n"
@@ -8378,7 +8511,7 @@ msgstr ""
 "------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2875 packages.txt:1637
+#: user.txt:2920 packages.txt:1682
 msgid ""
 "Enter \"foobar\" when asked for passphrase, answer the questions. Leave "
 "\"challenge password\" \"and optional company name\" empty."
@@ -8388,13 +8521,13 @@ msgstr ""
 "company name\"."
 
 # type: Plain text
-#: user.txt:2876 user.txt:2915 packages.txt:1638 packages.txt:1677
+#: user.txt:2921 user.txt:2960 packages.txt:1683 packages.txt:1722
 #, no-wrap
 msgid "----------------------------------------------\n"
 msgstr "----------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2879 packages.txt:1641
+#: user.txt:2924 packages.txt:1686
 #, no-wrap
 msgid ""
 "cp server.key server.key.org\n"
@@ -8406,18 +8539,18 @@ msgstr ""
 "----------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2882 packages.txt:1644
+#: user.txt:2927 packages.txt:1689
 msgid "Enter \"foobar\" when asked for passphrase."
 msgstr "Saisir \"foobar\" quand on vous demande une passphrase."
 
 # type: Plain text
-#: user.txt:2883 user.txt:3083 packages.txt:1645 gpg.txt:15
+#: user.txt:2928 user.txt:3128 packages.txt:1690 gpg.txt:15
 #, no-wrap
 msgid "------------------------------------------------------------------------------\n"
 msgstr "------------------------------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2889 packages.txt:1651
+#: user.txt:2934 packages.txt:1696
 #, no-wrap
 msgid ""
 "openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt\n"
@@ -8435,7 +8568,7 @@ msgstr ""
 "------------------------------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2892 packages.txt:1654
+#: user.txt:2937 packages.txt:1699
 msgid ""
 "Uncomment the marked three lines around line 1044 (look for \"SSL support\")."
 msgstr ""
@@ -8443,13 +8576,13 @@ msgstr ""
 "\"SSL support\")."
 
 # type: Plain text
-#: user.txt:2893 packages.txt:1655
+#: user.txt:2938 packages.txt:1700
 #, no-wrap
 msgid "---------------------\n"
 msgstr "---------------------\n"
 
 # type: Plain text
-#: user.txt:2900 packages.txt:1662
+#: user.txt:2945 packages.txt:1707
 msgid ""
 "Don't forget to open port 443 on your firewall, if any. (Based on link:"
 "http://www.akadia.com/services/ssh_test_certificate.html[How to create a "
@@ -8461,12 +8594,12 @@ msgstr ""
 "current 2007-02-14.)"
 
 # type: Plain text
-#: user.txt:2902
+#: user.txt:2947
 msgid "=== nss-mdns"
 msgstr "=== nss-mdns"
 
 # type: Plain text
-#: user.txt:2905 packages.txt:1667
+#: user.txt:2950 packages.txt:1712
 msgid ""
 "To enable IPv4 multicast DNS lookups, append 'mdns4' to the hosts line in '/"
 "etc/nsswitch.conf'. Use 'mdns6' for IPv6 or 'mdns' for both."
@@ -8476,12 +8609,12 @@ msgstr ""
 "'mdns' pour les deux."
 
 # type: Plain text
-#: user.txt:2907
+#: user.txt:2952
 msgid "=== avahi"
 msgstr "=== avahi"
 
 # type: Plain text
-#: user.txt:2911 packages.txt:1673
+#: user.txt:2956 packages.txt:1718
 msgid ""
 "WARNING: If you have rlocate installed on your system, Avahi will not run "
 "and therefore Zeroconf functionality in programs will be disabled. If you "
@@ -8493,7 +8626,7 @@ msgstr ""
 "désinstaller rlocate."
 
 # type: Plain text
-#: user.txt:2914 packages.txt:1676
+#: user.txt:2959 packages.txt:1721
 msgid ""
 "Also, If you are using iptables, please uncomment this line in '/etc/"
 "sysconfig/firewall':"
@@ -8502,7 +8635,7 @@ msgstr ""
 "suivante dans '/etc/sysconfig/firewall':"
 
 # type: Plain text
-#: user.txt:2917 packages.txt:1679
+#: user.txt:2962 packages.txt:1724
 #, no-wrap
 msgid ""
 "#-A INPUT -p udp -m udp --dport 5353 -j ACCEPT\n"
@@ -8512,23 +8645,23 @@ msgstr ""
 "----------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2920 packages.txt:1682
+#: user.txt:2965 packages.txt:1727
 msgid "After that do not forget to restart iptables with:"
 msgstr "Apres ca ne pas oublier de redémarrer iptables avec:"
 
 # type: Plain text
-#: user.txt:2921 user.txt:3075 packages.txt:1683 gpg.txt:7
+#: user.txt:2966 user.txt:3120 packages.txt:1728 gpg.txt:7
 #, no-wrap
 msgid "------------------------\n"
 msgstr "------------------------\n"
 
 # type: Plain text
-#: user.txt:2926
+#: user.txt:2971
 msgid "=== lmsensors"
 msgstr "=== lmsensors"
 
 # type: Plain text
-#: user.txt:2933 packages.txt:1695
+#: user.txt:2978 packages.txt:1740
 msgid ""
 "Lmsensors is a hardware monitoring tool which is able to read thermal and "
 "voltage values and fan speeds from the sensor chips of your motherboard.  "
@@ -8546,7 +8679,7 @@ msgstr ""
 "automatiquement au boot."
 
 # type: Plain text
-#: user.txt:2935 packages.txt:1697
+#: user.txt:2980 packages.txt:1742
 #, no-wrap
 msgid ""
 "So if you want to use lmsensors try to run\n"
@@ -8556,7 +8689,7 @@ msgstr ""
 "--------------\n"
 
 # type: Plain text
-#: user.txt:2937 packages.txt:1699
+#: user.txt:2982 packages.txt:1744
 #, no-wrap
 msgid ""
 "sensors-detect\n"
@@ -8566,7 +8699,7 @@ msgstr ""
 "--------------\n"
 
 # type: Plain text
-#: user.txt:2939 packages.txt:1701
+#: user.txt:2984 packages.txt:1746
 msgid ""
 "and say YES at end of sensors-detect to write '/etc/sysconfig/lm_sensors'."
 msgstr ""
@@ -8574,7 +8707,7 @@ msgstr ""
 "lm_sensors'."
 
 # type: Plain text
-#: user.txt:2941 packages.txt:1703
+#: user.txt:2986 packages.txt:1748
 #, no-wrap
 msgid ""
 "Then issue:\n"
@@ -8584,7 +8717,7 @@ msgstr ""
 "-----------------------\n"
 
 # type: Plain text
-#: user.txt:2943 packages.txt:1705
+#: user.txt:2988 packages.txt:1750
 #, no-wrap
 msgid ""
 "service lmsensors start\n"
@@ -8594,12 +8727,12 @@ msgstr ""
 "-----------------------\n"
 
 # type: Plain text
-#: user.txt:2947
+#: user.txt:2992
 msgid "== IRC Rules"
 msgstr "== Règles d'IRC"
 
 # type: Plain text
-#: user.txt:2952 irc-rules.txt:7
+#: user.txt:2997 irc-rules.txt:7
 msgid ""
 "This document describes the rules to be followed by everyone who joins the "
 "users' and/or developers' IRC channels of Frugalware Linux."
@@ -8608,12 +8741,12 @@ msgstr ""
 "les salons utilisateurs et/ou développeur de Frugalware Linux."
 
 # type: Plain text
-#: user.txt:2954
+#: user.txt:2999
 msgid "=== Welcome"
 msgstr "=== Bienvenue"
 
 # type: Plain text
-#: user.txt:2959 irc-rules.txt:14
+#: user.txt:3004 irc-rules.txt:14
 msgid ""
 "You have joined us on IRC, to get help from or to give help to other "
 "Frugalware users. We're sure you have made a good decision :) This document "
@@ -8627,12 +8760,12 @@ msgstr ""
 "chacun puissent les lire."
 
 # type: Plain text
-#: user.txt:2961
+#: user.txt:3006
 msgid "=== IRC channels"
 msgstr "== Les salons IRC"
 
 # type: Plain text
-#: user.txt:2969 irc-rules.txt:24
+#: user.txt:3014 irc-rules.txt:24
 #, no-wrap
 msgid ""
 ".There are four (4) Frugalware Linux channels\n"
@@ -8650,7 +8783,7 @@ msgstr ""
 "* #frugalware.dev (Discussion sur le développement de Frugalware. Seuls les développeurs de Frugalware peuvent 'parler' dans ce salon mais tout le monde peut voir ce qui est dit).\n"
 
 # type: Plain text
-#: user.txt:2973 irc-rules.txt:28
+#: user.txt:3018 irc-rules.txt:28
 msgid ""
 "Please use only the language appropriate to the channel.  If you don't do "
 "so, you'll be asked to change channels.  If you know of other non-English "
@@ -8661,52 +8794,61 @@ msgstr ""
 "connaissez d'autre salon non-Anglais, dites le nous."
 
 # type: Plain text
-#: user.txt:2975
+#: user.txt:3020
 msgid "=== Frugalware developers"
 msgstr "=== Les développeurs de Frugalware"
 
 # type: Plain text
-#: user.txt:2981 irc-rules.txt:36
+#: user.txt:3026 irc-rules.txt:36
 msgid ""
 "If you're a Frugalware developer, please also join one or more of the user "
 "channels.  Since users don't have the right to speak on the #frugalware.dev "
 "channel, your presence on a user channel is the only way they can chat with "
 "you.  Keep in mind that today's Frugalware users may be tomorrow's "
 "Frugalware developers."
-msgstr "Si vous êtes un développeur Frugalware, rejoignez au moins un autre salon non-développeur. Comme les utilisateurs ne sont pas autorisés à parler sur le salon #frugalware.dev, votre présence sur un salon non-développeur est la seule façon qu'ils ont de discuter avec vous.  Gardez à l'esprit que les utilisateur de Frugalware peuvent être nos développeurs de demain."
+msgstr ""
+"Si vous êtes un développeur Frugalware, rejoignez au moins un autre salon "
+"non-développeur. Comme les utilisateurs ne sont pas autorisés à parler sur "
+"le salon #frugalware.dev, votre présence sur un salon non-développeur est la "
+"seule façon qu'ils ont de discuter avec vous.  Gardez à l'esprit que les "
+"utilisateur de Frugalware peuvent être nos développeurs de demain."
 
 # type: Plain text
-#: user.txt:2983
+#: user.txt:3028
 msgid "=== Off-topic discussion"
 msgstr "=== Discussion hors-sujet"
 
 # type: Plain text
-#: user.txt:2985
+#: user.txt:3030
 msgid "==== Other Linux distributions' features"
 msgstr "==== Fonctionnalités des autres distribution Linux"
 
 # type: Plain text
-#: user.txt:2989 irc-rules.txt:44
+#: user.txt:3034 irc-rules.txt:44
 msgid ""
 "You may discuss other distributions' features but don't expect everyone to "
 "be familiar with them. For example the following question is impossible to "
 "answer for someone who hasn't used Gentoo:"
-msgstr "Vous pouvez parler de fonctionnalités d'autres distributions mais n'attendez que d'autres soient familières de celles-ci. Par exemple la question suivante n'a pas de réponse possible pour quelqu'un qui n'a jamais utilisé Gentoo:"
+msgstr ""
+"Vous pouvez parler de fonctionnalités d'autres distributions mais n'attendez "
+"que d'autres soient familières de celles-ci. Par exemple la question "
+"suivante n'a pas de réponse possible pour quelqu'un qui n'a jamais utilisé "
+"Gentoo:"
 
 # type: Plain text
-#: user.txt:2991 irc-rules.txt:46
+#: user.txt:3036 irc-rules.txt:46
 #, no-wrap
 msgid "  How can i set up my network so that it works as it does under Gentoo?\n"
 msgstr "  Comment puis-je configurer mon réseau de telle façon que cela fonction comme sous Gentoo?\n"
 
 # type: Plain text
-#: user.txt:2993 irc-rules.txt:48
+#: user.txt:3038 irc-rules.txt:48
 msgid ""
 "Instead, describe what it is that you're trying to achieve, for example:"
 msgstr "A la place, dites nous ce que vous essayer de faire, par exemple:"
 
 # type: Plain text
-#: user.txt:2996 irc-rules.txt:51
+#: user.txt:3041 irc-rules.txt:51
 #, no-wrap
 msgid ""
 "  Is it possible to use network profiles so that I can change all my settings\n"
@@ -8716,44 +8858,52 @@ msgstr ""
 "  avec une seule commande quand je rentre à la maison de mon travail?\n"
 
 # type: Plain text
-#: user.txt:2998
+#: user.txt:3043
 msgid "==== Non-Frugalware discussion"
 msgstr "=== Discutions en dehors de Frugalware"
 
 # type: Plain text
-#: user.txt:3003 irc-rules.txt:58
+#: user.txt:3048 irc-rules.txt:58
 msgid ""
 "Talking about non-Frugalware topics (or even non-Linux) is okay, as long as "
 "this doesn't prevent others from talking about Frugalware. We are a "
 "community, so you're welcome to share your ideas, but don't make it "
 "impossible for others to get help."
-msgstr "Les discutions qui non aucun rapport avec Frugalware (ou avec Linux non plus) sont autorisées, du moment que ça n'empêche pas les autres de discuté de Frugalware. Nous somme une communauté, il est donc bienvenu de partager d'autres idées, mais n'empêchez pas les autres d'obtenir de l'aide."
+msgstr ""
+"Les discutions qui non aucun rapport avec Frugalware (ou avec Linux non "
+"plus) sont autorisées, du moment que ça n'empêche pas les autres de discuté "
+"de Frugalware. Nous somme une communauté, il est donc bienvenu de partager "
+"d'autres idées, mais n'empêchez pas les autres d'obtenir de l'aide."
 
 # type: Plain text
-#: user.txt:3005
+#: user.txt:3050
 msgid "=== Asking questions"
 msgstr "=== Poser des questions"
 
 # type: Plain text
-#: user.txt:3007
+#: user.txt:3052
 msgid "==== I'm new to Frugalware"
 msgstr "==== Je suis un nouvel utilisateur de Frugalware"
 
 # type: Plain text
-#: user.txt:3011 irc-rules.txt:66
+#: user.txt:3056 irc-rules.txt:66
 msgid ""
 "Welcome! You've either installed or are wanting to install Frugalware and so "
 "have some general questions.  Before asking them in the IRC channel, please "
 "read the http://frugalware.org/about[about] page."
-msgstr "Bienvenue! Vous avez installé ou vous voulez installer Frugalware et en conséquence vous avez des questions d'ordre générales.  Avant de les poser dans le salon IRC, vous êtes prié de lire la page http://frugalware.org/about[à propos]."
+msgstr ""
+"Bienvenue! Vous avez installé ou vous voulez installer Frugalware et en "
+"conséquence vous avez des questions d'ordre générales.  Avant de les poser "
+"dans le salon IRC, vous êtes prié de lire la page http://frugalware.org/about"
+"[à propos]."
 
 # type: Plain text
-#: user.txt:3013
+#: user.txt:3058
 msgid "==== First read the Frugalware documentation"
 msgstr "==== Avant tout, lire la documentation en ligne"
 
 # type: Plain text
-#: user.txt:3019 irc-rules.txt:74
+#: user.txt:3064 irc-rules.txt:74
 msgid ""
 "Before asking a question, first read the Frugalware documentation to be sure "
 "that the answer is not already there.  Those who wrote the documentation "
@@ -8769,53 +8919,66 @@ msgstr ""
 "- lisez la documentation et ne soyez pas paresseux."
 
 # type: Plain text
-#: user.txt:3021
+#: user.txt:3066
 msgid "==== Go ahead and ask"
 msgstr "==== Allez de l'avant et posez votre question"
 
 # type: Plain text
-#: user.txt:3024 irc-rules.txt:79
+#: user.txt:3069 irc-rules.txt:79
 msgid ""
 "Don't first ask if you can ask a question, just go ahead and ask.  The worst "
 "that can happen is that you don't get an answer."
-msgstr "Ne demandez pas en premier si vous pouvez posez une question, allez de l'avant et posez la question. Le pire qui puisse vous arriver est de ne pas obtenir de réponse."
+msgstr ""
+"Ne demandez pas en premier si vous pouvez posez une question, allez de "
+"l'avant et posez la question. Le pire qui puisse vous arriver est de ne pas "
+"obtenir de réponse."
 
 # type: Plain text
-#: user.txt:3026
+#: user.txt:3071
 msgid "=== Paste"
 msgstr "=== Copier du contenu"
 
 # type: Plain text
-#: user.txt:3032 irc-rules.txt:87
+#: user.txt:3077 irc-rules.txt:87
 msgid ""
 "If you have a few lines of an error message or something similar to show to "
 "others in the channel, don't paste it into the channel.  This is because (1) "
 "IRC is slow and (2) it breaks the flow of other peoples' conversations.  "
 "Instead, please use our Pastebin, which is available http://frugalware.org/"
 "paste[here]."
-msgstr "Si vous avez quelques lignes d'un message d'erreur ou quelque chose de similaire à montrer aux autres personnes dans le salon, ne le copier pas dedans. Parce que: (1) IRC est lent et, (2) cela casse la continuité de la discussion des autres personnes.  A la place, vous êtes prié d'utiliser notre Pastebin, disponible http://frugalware.org/paste[ici]."
+msgstr ""
+"Si vous avez quelques lignes d'un message d'erreur ou quelque chose de "
+"similaire à montrer aux autres personnes dans le salon, ne le copier pas "
+"dedans. Parce que: (1) IRC est lent et, (2) cela casse la continuité de la "
+"discussion des autres personnes.  A la place, vous êtes prié d'utiliser "
+"notre Pastebin, disponible http://frugalware.org/paste[ici]."
 
 # type: Plain text
-#: user.txt:3034
+#: user.txt:3079
 msgid "=== Is mxw_ a bot?"
 msgstr "=== mxw_ est-il un robot?"
 
 # type: Plain text
-#: user.txt:3039 irc-rules.txt:94
+#: user.txt:3084 irc-rules.txt:94
 msgid ""
 "Yes, it is. It informs users about new binary packages, manages rights on "
 "the channel and so on. If you want a new feature to be implemented then feel "
 "free to request it at the Frugalware Bug Tracker System (BTS) which is "
 "available http://bugs.frugalware.org[here]."
-msgstr "Oui, il l'est. Il informe les utilisateurs de nouveaux paquets binaires, gère les droits sur le salon et ainsi de suite. Si vous voulez une nouvelle fonctionnalité à être implémentée vous pouvez librement crées une requêtes sur notre système de suivit de Bugs (BTS), disponible http://bugs.frugalware.org/[ici]."
+msgstr ""
+"Oui, il l'est. Il informe les utilisateurs de nouveaux paquets binaires, "
+"gère les droits sur le salon et ainsi de suite. Si vous voulez une nouvelle "
+"fonctionnalité à être implémentée vous pouvez librement crées une requêtes "
+"sur notre système de suivit de Bugs (BTS), disponible http://bugs.frugalware."
+"org/[ici]."
 
 # type: Plain text
-#: user.txt:3041
+#: user.txt:3086
 msgid "=== Bouncers, leaving your client online when you're away"
 msgstr "=== Bouncers, restez en ligne quand vous êtes absent"
 
 # type: Plain text
-#: user.txt:3048 irc-rules.txt:103
+#: user.txt:3093 irc-rules.txt:103
 msgid ""
 "That's not a problem, but please keep in mind the following: if you are away "
 "then you should be able to read back the lines when you were highlighted.  "
@@ -8833,31 +8996,35 @@ msgstr ""
 "répondre. Si vous n'avez pas le temps, alors un simple"
 
 # type: Plain text
-#: user.txt:3050 irc-rules.txt:105
+#: user.txt:3095 irc-rules.txt:105
 #, no-wrap
 msgid "  alex: i don't have time atm to answer, sorry\n"
 msgstr "  alex: je n'ai pas le temps de répondre pour le moment, désolé\n"
 
 # type: Plain text
-#: user.txt:3052 irc-rules.txt:107
+#: user.txt:3097 irc-rules.txt:107
 msgid "is enough. So that he won't wait for your answer."
 msgstr "est suffisant. Ainsi il n'aura pas à attendre pour votre réponse."
 
 # type: Plain text
-#: user.txt:3054
+#: user.txt:3099
 msgid "=== Private messaging"
 msgstr "=== Messages privés"
 
 # type: Plain text
-#: user.txt:3058 irc-rules.txt:113
+#: user.txt:3103 irc-rules.txt:113
 msgid ""
 "Please do _not_ /msg users unless you first asked for permission to do so.  "
 "This is a support channel: you ask in the channel and whoever has the time/"
 "knowledge to answer, he/she will. That the fastest way, believe us."
-msgstr "Vous êtes priés de _ne pas_ /msg les utilisateurs à moins que ces derniers vous ait autorisés à le faire.  Ceci est un salon d'aide: vous demandez dans le salon et celui qui a le temps / la connaissance pour répondre, le fera. Ceci est la façon la plus rapide, croyez nous."
+msgstr ""
+"Vous êtes priés de _ne pas_ /msg les utilisateurs à moins que ces derniers "
+"vous ait autorisés à le faire.  Ceci est un salon d'aide: vous demandez dans "
+"le salon et celui qui a le temps / la connaissance pour répondre, le fera. "
+"Ceci est la façon la plus rapide, croyez nous."
 
 # type: Plain text
-#: user.txt:3062 irc-rules.txt:117
+#: user.txt:3107 irc-rules.txt:117
 msgid ""
 "You should also know that some of us (voroskoi, vmiklos, maybe others too) "
 "set up their clients to ignore msgs on freenode, so you talk to /dev/null "
@@ -8868,35 +9035,39 @@ msgstr ""
 "freenode, vous parlez avec /dev/null quand vous leur envoyez des /msg."
 
 # type: Plain text
-#: user.txt:3064
+#: user.txt:3109
 msgid "=== Logging"
 msgstr "=== Connexion"
 
 # type: Plain text
-#: user.txt:3068 irc-rules.txt:122
+#: user.txt:3113 irc-rules.txt:122
 msgid ""
 "All Frugalware channels are logged and public.  The logs are linked from the "
 "home page, and the main goal is to allow search engines to index them. If "
 "you don't like this then your only choice is to not join ;-)"
-msgstr "Tous les salons Frugalware sont archivés et public. L'historique est lié depuis la page d'accueil, et le but principal est de permettre aux moteurs de recherche des les indexer. Si vous n'aimez pas ça, alors votre seul choix est de ne pas vous connecter ;-)"
+msgstr ""
+"Tous les salons Frugalware sont archivés et public. L'historique est lié "
+"depuis la page d'accueil, et le but principal est de permettre aux moteurs "
+"de recherche des les indexer. Si vous n'aimez pas ça, alors votre seul choix "
+"est de ne pas vous connecter ;-)"
 
 # type: Plain text
-#: user.txt:3070
+#: user.txt:3115
 msgid "== Checking if Frugalware tarballs are from trusted source"
 msgstr "== Vérification de la validité des archives Frugalware"
 
 # type: Plain text
-#: user.txt:3072
+#: user.txt:3117
 msgid "=== How to verify"
 msgstr "=== Comment vérifier"
 
 # type: Bullet: '- '
-#: user.txt:3074 gpg.txt:6
+#: user.txt:3119 gpg.txt:6
 msgid "Import our public keyring with the"
 msgstr "Charger notre clef jeux de clefs avec"
 
 # type: Plain text
-#: user.txt:3077 gpg.txt:9
+#: user.txt:3122 gpg.txt:9
 #, no-wrap
 msgid ""
 "$ gpg --recv-keys 20F55619\n"
@@ -8906,12 +9077,12 @@ msgstr ""
 "------------------------\n"
 
 # type: Bullet: '- '
-#: user.txt:3082 gpg.txt:14
+#: user.txt:3127 gpg.txt:14
 msgid "Verify the tarball. Here is an example:"
 msgstr "Vérification d'une archive. Voici un exemple:"
 
 # type: Plain text
-#: user.txt:3088 gpg.txt:20
+#: user.txt:3133 gpg.txt:20
 #, no-wrap
 msgid ""
 "$ gpg --verify pacman-tools-0.7.2.tar.gz.asc pacman-tools-0.7.2.tar.gz\n"
@@ -8927,12 +9098,12 @@ msgstr ""
 "------------------------------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:3091
+#: user.txt:3136
 msgid "=== The meaning of this signature"
 msgstr "=== La signification de cette signature"
 
 # type: Plain text
-#: user.txt:3095 gpg.txt:26
+#: user.txt:3140 gpg.txt:26
 msgid ""
 "This signature does not guarantee that the Frugalware Linux Archives master "
 "site itself has not been compromised. However, if we suffer an intrusion we "
@@ -8944,12 +9115,12 @@ msgstr ""
 "informations ici aussi rapidement que possible."
 
 # type: Plain text
-#: user.txt:3097
+#: user.txt:3142
 msgid "== Creating new packages"
 msgstr "== Créer de nouveaux paquets"
 
 # type: Plain text
-#: user.txt:3104 makepkg.txt:9
+#: user.txt:3149 makepkg.txt:9
 msgid ""
 "Frugalware consists of thousands of packages. Each files in the distribution "
 "belong to some package. You can easily query which package does the "
@@ -8962,13 +9133,13 @@ msgstr ""
 "paquet contient /etc/frugalware-release, vous devez saisir:"
 
 # type: Plain text
-#: user.txt:3105 makepkg.txt:10
+#: user.txt:3150 makepkg.txt:10
 #, no-wrap
 msgid "----------------------------------------------------\n"
 msgstr "----------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:3108 makepkg.txt:13
+#: user.txt:3153 makepkg.txt:13
 #, no-wrap
 msgid ""
 "$ pacman-g2 -Qo /etc/frugalware-release\n"
@@ -8980,7 +9151,7 @@ msgstr ""
 "----------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:3119 makepkg.txt:24
+#: user.txt:3164 makepkg.txt:24
 msgid ""
 "If you browse the FST (Frugalware Source Tree), you can see, that in the "
 "source directory there are category and category-extra dirs. The dirs "
@@ -9004,7 +9175,7 @@ msgstr ""
 "exim, sendmail, etc doivent être dans un des répertoires -extra."
 
 # type: Plain text
-#: user.txt:3125 makepkg.txt:30
+#: user.txt:3170 makepkg.txt:30
 msgid ""
 "The repo has a source and a binary directory. The frugalware repo's "
 "directories are source/ and frugalware-$arch/. The binary packages are in "
@@ -9020,7 +9191,7 @@ msgstr ""
 "source."
 
 # type: Plain text
-#: user.txt:3130 makepkg.txt:35
+#: user.txt:3175 makepkg.txt:35
 #, no-wrap
 msgid ""
 "Let's see an example. You are searching for the cabextract package.\n"
@@ -9033,7 +9204,7 @@ msgstr ""
 "`frugalware-<arch>/cabextract-<version>-<release>-<arch>.fpm' et ses sources se trouvent dans le répertoire source/apps/cabextract.\n"
 
 # type: Plain text
-#: user.txt:3138 makepkg.txt:43
+#: user.txt:3183 makepkg.txt:43
 msgid ""
 "In the package's own dir, we store everything required to compile the "
 "package.  You may say we should store only the patches and so, but in our "
@@ -9053,7 +9224,7 @@ msgstr ""
 "vous nous les demandez par mail)."
 
 # type: Plain text
-#: user.txt:3143 makepkg.txt:48
+#: user.txt:3188 makepkg.txt:48
 msgid ""
 "Besides, there is a FrugalBuild file in each package's source directory.  "
 "This is a simple bash shell script, that will be included by makepkg.  So in "
@@ -9066,7 +9237,7 @@ msgstr ""
 "tout ce qui pourrait être utilisé dans un script bash."
 
 # type: Plain text
-#: user.txt:3147 makepkg.txt:52
+#: user.txt:3192 makepkg.txt:52
 msgid ""
 "NOTE: During the package database generation we source all the FrugalBuilds, "
 "so it must be a very short time to do so for each FrugalBuild. Because of "
@@ -9077,7 +9248,7 @@ msgstr ""
 "ça, vous ne devez en aucun cas faire de la façon suivante:"
 
 # type: Plain text
-#: user.txt:3150 makepkg.txt:55
+#: user.txt:3195 makepkg.txt:55
 #, no-wrap
 msgid ""
 "sha1sums=(`lynx -dump http://foo.com/bar.sha1`)\n"
@@ -9087,18 +9258,18 @@ msgstr ""
 "-----------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:3153 makepkg.txt:58
+#: user.txt:3198 makepkg.txt:58
 msgid "but you should use:"
 msgstr "mais vous devez utiliser:"
 
 # type: Plain text
-#: user.txt:3154 makepkg.txt:59
+#: user.txt:3199 makepkg.txt:59
 #, no-wrap
 msgid "-----------------------------------------------------\n"
 msgstr "-----------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:3157 makepkg.txt:62
+#: user.txt:3202 makepkg.txt:62
 #, no-wrap
 msgid ""
 "# http://foo.com/bar.sha1\n"
@@ -9110,7 +9281,7 @@ msgstr ""
 "-----------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:3161 makepkg.txt:66
+#: user.txt:3206 makepkg.txt:66
 msgid ""
 "This way gensync will be fast even if reaching foo.com takes a lot of time.  "
 "Also using the `-u` option an offline build is possible."
@@ -9120,7 +9291,7 @@ msgstr ""
 "hors ligne."
 
 # type: Plain text
-#: user.txt:3165 makepkg.txt:70
+#: user.txt:3210 makepkg.txt:70
 msgid ""
 "Briefly, packaging means collecting the sources, adding additional files "
 "(for example init scripts or config files) and writing the FrugalBuild "
@@ -9131,12 +9302,12 @@ msgstr ""
 "config) et écrire le script Frugalbuild."
 
 # type: Plain text
-#: user.txt:3167
+#: user.txt:3212
 msgid "=== Recompiling packages"
 msgstr "=== Recompilation de paquets"
 
 # type: Plain text
-#: user.txt:3174 makepkg.txt:79
+#: user.txt:3219 makepkg.txt:79
 msgid ""
 "Before creating a new package, first we will recompile an existing package "
 "in this howto. It's very simple. In our example we will recompile the "
@@ -9155,7 +9326,7 @@ msgstr ""
 "pas les droits d'écriture, évidement) et exécuter repoman upd."
 
 # type: Plain text
-#: user.txt:3179 makepkg.txt:84
+#: user.txt:3224 makepkg.txt:84
 msgid ""
 "Before building the chroot environment, you should make sure about that the "
 "`fst` user exists on your system. Check your '/etc/passwd' file. If not, "
@@ -9169,12 +9340,12 @@ msgstr ""
 "ligne dans le fichier /etc/passwd."
 
 # type: Plain text
-#: user.txt:3181 makepkg.txt:86
+#: user.txt:3226 makepkg.txt:86
 msgid "Now that you have the fst user, continue with"
 msgstr "Maintenant que vous avez l'utilisateur fst, continuer avec"
 
 # type: Plain text
-#: user.txt:3185 makepkg.txt:90
+#: user.txt:3230 makepkg.txt:90
 #, no-wrap
 msgid ""
 "$ cd $fst_root/source/xapps/mplayer\n"
@@ -9186,7 +9357,7 @@ msgstr ""
 "-----------------------------------\n"
 
 # type: Plain text
-#: user.txt:3194 makepkg.txt:99
+#: user.txt:3239 makepkg.txt:99
 #, no-wrap
 msgid ""
 "First we enter the directory of mplayer then (like make and Makefile\n"
@@ -9199,12 +9370,12 @@ msgid ""
 msgstr "Tout d'abord nous nous plaçons dans le répertoire de mplayer puis (comme make et Makefile) nous exécutons makepkg qui va construire le paquet conformément au paramètres indiqués dans FrugalBuild. Nous avions l'habitude d'utiliser l'option -R pour construire le paquet dans un environnement chrooté. Depuis Frugalware 0.5 la construction en chroot est la méthode par défaut, vous devez utiliser -H si vous souhaitez construire le paquet sur le système hôte.Chroot nécessite les privilèges root. Pour autoriser un groupe (par exemple le groupe devels) à utiliser sudo makepkg, lancer visudo en tant que root, et ajoutez les lignes suivantes:\n"
 
 # type: Plain text
-#: user.txt:3196 makepkg.txt:101
+#: user.txt:3241 makepkg.txt:101
 msgid "`%devels ALL=NOPASSWD:/usr/bin/makepkg`"
 msgstr "`%devels ALL=NOPASSWD:/usr/bin/makepkg`"
 
 # type: Plain text
-#: user.txt:3201 makepkg.txt:106
+#: user.txt:3246 makepkg.txt:106
 msgid ""
 "The chroot will be placed by default in '/var/chroot'. Only one package can "
 "be built in a chroot at a time, so maybe you'll want to specify a separate "
@@ -9217,24 +9388,24 @@ msgstr ""
 "variable $CHROOTDIR dans votre /etc/makepkg.conf de:"
 
 # type: Plain text
-#: user.txt:3203 makepkg.txt:108
+#: user.txt:3248 makepkg.txt:108
 msgid "`export CHROOTDIR=\"/var/chroot\"`"
 msgstr "`export CHROOTDIR=\"/var/chroot\"`"
 
 # type: Plain text
-#: user.txt:3205 makepkg.txt:110
+#: user.txt:3250 makepkg.txt:110
 msgid "to"
 msgstr "en"
 
 # type: Plain text
-#: user.txt:3207 makepkg.txt:112
+#: user.txt:3252 makepkg.txt:112
 msgid ""
 "`export CHROOTDIR=\"/var/chroot.`echo $HOME|sed \\'s|.\\*/\\(.*\\)$|\\1|'`\"`"
 msgstr ""
 "`export CHROOTDIR=\"/var/chroot.`echo $HOME|sed \\'s|.\\*/\\(.*\\)$|\\1|'`\"`"
 
 # type: Plain text
-#: user.txt:3210 makepkg.txt:115
+#: user.txt:3255 makepkg.txt:115
 msgid ""
 "This way the 'one parallel build / one system' limit is increased to 'one "
 "parallel build / one user'."
@@ -9243,7 +9414,7 @@ msgstr ""
 "augmenté vers 'une construction à la fois / un utilisateur'."
 
 # type: Plain text
-#: user.txt:3212 makepkg.txt:117
+#: user.txt:3257 makepkg.txt:117
 msgid ""
 "(See man makepkg for more info about the benefits of building in a chroot)."
 msgstr ""
@@ -9251,7 +9422,7 @@ msgstr ""
 "en chroot)."
 
 # type: Plain text
-#: user.txt:3214 makepkg.txt:119
+#: user.txt:3259 makepkg.txt:119
 msgid ""
 "In the next section we will see an example for a simple FrugalBuild script."
 msgstr ""
@@ -9259,25 +9430,25 @@ msgstr ""
 "simple."
 
 # type: Plain text
-#: user.txt:3216
+#: user.txt:3261
 msgid "=== A simple example"
 msgstr "=== Un exemple simple"
 
 # type: Plain text
-#: user.txt:3218 makepkg.txt:123
+#: user.txt:3263 makepkg.txt:123
 msgid ""
 "Let's see a simple example, the FrugalBuild script of the cabextract package."
 msgstr "Voyons un exemple simple, le script FrugalBuild du paquet cabextract."
 
 # type: Plain text
-#: user.txt:3222 makepkg.txt:127
+#: user.txt:3267 makepkg.txt:127
 msgid ""
 "# Compiling Time: 0.06 SBU # Maintainer: VMiklos <vmiklos@frugalware.org>"
 msgstr ""
 "# Compiling Time: 0.06 SBU # Maintainer: VMiklos <vmiklos@frugalware.org>"
 
 # type: Plain text
-#: user.txt:3235 makepkg.txt:140
+#: user.txt:3280 makepkg.txt:140
 #, no-wrap
 msgid ""
 "pkgname=cabextract\n"
@@ -9306,7 +9477,7 @@ msgstr ""
 "sha1sums=('871b3db4bc2629eb5726659c147aecea1af6a6d0')\n"
 
 # type: Plain text
-#: user.txt:3237 makepkg.txt:142
+#: user.txt:3282 makepkg.txt:142
 #, no-wrap
 msgid ""
 "# optimization OK\n"
@@ -9316,17 +9487,17 @@ msgstr ""
 "-------------------------------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:3240 makepkg.txt:145
+#: user.txt:3285 makepkg.txt:145
 msgid "And here comes the description for each line:"
 msgstr "Voici une description de chaque ligne:"
 
 # type: Plain text
-#: user.txt:3242 makepkg.txt:147
+#: user.txt:3287 makepkg.txt:147
 msgid "`# Compiling Time: 0.06 SBU`"
 msgstr "`# Compiling Time: 0.06 SBU`"
 
 # type: Plain text
-#: user.txt:3246 makepkg.txt:151
+#: user.txt:3291 makepkg.txt:151
 msgid ""
 "You should write here how much time did it take to build the package.  Of "
 "course, it depends on your hardware, so we use SBUs instead of minutes as a "
@@ -9337,7 +9508,7 @@ msgstr ""
 "comme unité."
 
 # type: Plain text
-#: user.txt:3251 makepkg.txt:156
+#: user.txt:3296 makepkg.txt:156
 msgid ""
 "SBU is the Static Binutils Unit, which means the time repoman merge binutils "
 "takes on your machine. By default makepkg will print out how many seconds "
@@ -9350,12 +9521,12 @@ msgstr ""
 "devriez mettre à jour votre /etc/makepkg.conf:"
 
 # type: Plain text
-#: user.txt:3253 makepkg.txt:158
+#: user.txt:3298 makepkg.txt:158
 msgid "`SBU=\"257\"`"
 msgstr "`SBU=\"257\"`"
 
 # type: Plain text
-#: user.txt:3257 makepkg.txt:162
+#: user.txt:3302 makepkg.txt:162
 msgid ""
 "The line above means compiling binutils on your machine took 257 seconds.  "
 "From this point, makepkg will print out SBUs instead of seconds after "
@@ -9367,12 +9538,12 @@ msgstr ""
 "sera la même sur n'importe quelle machine."
 
 # type: Plain text
-#: user.txt:3259 makepkg.txt:164
+#: user.txt:3304 makepkg.txt:164
 msgid "`# Maintainer: VMiklos <vmiklos@frugalware.org>`"
 msgstr "`# Maintainer: VMiklos <vmiklos@frugalware.org>`"
 
 # type: Plain text
-#: user.txt:3267 makepkg.txt:172
+#: user.txt:3312 makepkg.txt:172
 msgid ""
 "If you are the maintainer of the package, write your name or nick and e-mail "
 "address here. If you probably you won't maintain the package, write "
@@ -9392,12 +9563,12 @@ msgstr ""
 "suivi de version pour rechercher."
 
 # type: Plain text
-#: user.txt:3269 makepkg.txt:174
+#: user.txt:3314 makepkg.txt:174
 msgid "`pkgname=cabextract`"
 msgstr "`pkgname=cabextract`"
 
 # type: Plain text
-#: user.txt:3272 makepkg.txt:177
+#: user.txt:3317 makepkg.txt:177
 msgid ""
 "This will be the name of the package. It's allowed to include numbers, "
 "hyphens (-), etc., and should be lowercase."
@@ -9406,12 +9577,12 @@ msgstr ""
 "et cela doit être en minuscules."
 
 # type: Plain text
-#: user.txt:3274 makepkg.txt:179
+#: user.txt:3319 makepkg.txt:179
 msgid "`pkgver=1.2`"
 msgstr "`pkgver=1.2`"
 
 # type: Plain text
-#: user.txt:3277 makepkg.txt:182
+#: user.txt:3322 makepkg.txt:182
 msgid ""
 "The package's version. Hyphens are not allowed, so a 1.0-6111 will be "
 "usually converted to 1.0_6111."
@@ -9420,12 +9591,12 @@ msgstr ""
 "en général converti en 1.0_6111."
 
 # type: Plain text
-#: user.txt:3279 makepkg.txt:184
+#: user.txt:3324 makepkg.txt:184
 msgid "`pkgrel=1`"
 msgstr "`pkgrel=1`"
 
 # type: Plain text
-#: user.txt:3284 makepkg.txt:189
+#: user.txt:3329 makepkg.txt:189
 msgid ""
 "Release number marks Frugalware-specific changes. If you recompile a "
 "package, you should increase this number. If you upgrade to a newer version, "
@@ -9438,12 +9609,12 @@ msgstr ""
 "1. Si vous créez un nouveau paquet, affectez cette valeur à 1."
 
 # type: Plain text
-#: user.txt:3286 makepkg.txt:191
+#: user.txt:3331 makepkg.txt:191
 msgid "`pkgdesc=\"a program to extract Microsoft Cabinet files\"`"
 msgstr "`pkgdesc=\"a program to extract Microsoft Cabinet files\"`"
 
 # type: Plain text
-#: user.txt:3289 makepkg.txt:194
+#: user.txt:3334 makepkg.txt:194
 #, no-wrap
 msgid ""
 "A short one-line description for the package. Usually taken from the project's\n"
@@ -9451,22 +9622,22 @@ msgid ""
 msgstr "Une courte description du paquet. Généralement issue du site ou de la documentation du programme.\n"
 
 # type: Plain text
-#: user.txt:3291 makepkg.txt:196
+#: user.txt:3336 makepkg.txt:196
 msgid "`url=\"http://www.kyz.uklinux.net/cabextract.php\"`"
 msgstr "`url=\"http://www.kyz.uklinux.net/cabextract.php\"`"
 
 # type: Plain text
-#: user.txt:3293 makepkg.txt:198
+#: user.txt:3338 makepkg.txt:198
 msgid "The website of the project."
 msgstr "Le site web du projet."
 
 # type: Plain text
-#: user.txt:3295 makepkg.txt:200
+#: user.txt:3340 makepkg.txt:200
 msgid "`depends=(\\'glibc\\')`"
 msgstr "`depends=(\\'glibc\\')`"
 
 # type: Plain text
-#: user.txt:3302 makepkg.txt:207
+#: user.txt:3347 makepkg.txt:207
 msgid ""
 "List of dependencies of the package, defined in a bash array.  Usually you "
 "should compile a package at least two times: first with depends=(), then you "
@@ -9482,12 +9653,12 @@ msgstr ""
 "dépendances."
 
 # type: Plain text
-#: user.txt:3304 makepkg.txt:209
+#: user.txt:3349 makepkg.txt:209
 msgid "`groups=(\\'apps\\')`"
 msgstr "`groups=(\\'apps\\')`"
 
 # type: Plain text
-#: user.txt:3310 makepkg.txt:215
+#: user.txt:3355 makepkg.txt:215
 msgid ""
 "It is needed to know where, in which category the package belongs.  The most "
 "important thing: don't put your package in apps, base, devel, lib, "
@@ -9502,7 +9673,7 @@ msgstr ""
 "dans le nom du groupe."
 
 # type: Plain text
-#: user.txt:3315 makepkg.txt:220
+#: user.txt:3360 makepkg.txt:220
 msgid ""
 "You should use groups for creating metapackages. The method is the "
 "following: put each package to an existing group (group without a hyphen or "
@@ -9517,22 +9688,22 @@ msgstr ""
 "moment que le nom n'est pas un 'groupe existant'."
 
 # type: Plain text
-#: user.txt:3317 makepkg.txt:222
+#: user.txt:3362 makepkg.txt:222
 msgid "Example:"
 msgstr "Exemple:"
 
 # type: Plain text
-#: user.txt:3319 makepkg.txt:224
+#: user.txt:3364 makepkg.txt:224
 msgid "`groups=(\\'lib-extra\\' \\'foo-suite\\')`"
 msgstr "`groups=(\\'lib-extra\\' \\'foo-suite\\')`"
 
 # type: Plain text
-#: user.txt:3322 makepkg.txt:227
+#: user.txt:3367 makepkg.txt:227
 msgid "`archs=(\\'i686\\' \\'x86_64\\')`"
 msgstr "`archs=(\\'i686\\' \\'x86_64\\')`"
 
 # type: Plain text
-#: user.txt:3329 makepkg.txt:234
+#: user.txt:3374 makepkg.txt:234
 msgid ""
 "This array defines for which architectures the given package is available.  "
 "If it's not available, it means that gensync will skip it when generating "
@@ -9549,13 +9720,13 @@ msgstr ""
 "vous ne l'avez pas compilé vous même, ne l'incluez pas."
 
 # type: Plain text
-#: user.txt:3330 user.txt:3345 makepkg.txt:235 makepkg.txt:250
+#: user.txt:3375 user.txt:3390 makepkg.txt:235 makepkg.txt:250
 #, no-wrap
 msgid "---------------------------------------------------------------------------------\n"
 msgstr "---------------------------------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:3333 makepkg.txt:238
+#: user.txt:3378 makepkg.txt:238
 #, no-wrap
 msgid ""
 "up2date=\"lynx -dump http://www.kyz.uklinux.net/cabextract.php |grep 'cabextract \\\n"
@@ -9567,7 +9738,7 @@ msgstr ""
 "---------------------------------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:3344 makepkg.txt:249
+#: user.txt:3389 makepkg.txt:249
 #, no-wrap
 msgid ""
 "A short command that will give us the latest stable version of the package.\n"
@@ -9585,7 +9756,7 @@ msgstr ""
 "L'exemple précédent donnerait cela avec tr et cut:\n"
 
 # type: Plain text
-#: user.txt:3348 makepkg.txt:253
+#: user.txt:3393 makepkg.txt:253
 #, no-wrap
 msgid ""
 "up2date=\"lynx -dump http://www.kyz.uklinux.net/cabextract.php |grep \\\n"
@@ -9597,13 +9768,13 @@ msgstr ""
 "---------------------------------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:3351 makepkg.txt:256
+#: user.txt:3396 makepkg.txt:256
 msgid "`source=(http://www.kyz.uklinux.net/downloads/$pkgname-$pkgver.tar.gz)`"
 msgstr ""
 "`source=(http://www.kyz.uklinux.net/downloads/$pkgname-$pkgver.tar.gz)`"
 
 # type: Plain text
-#: user.txt:3363 makepkg.txt:268
+#: user.txt:3408 makepkg.txt:268
 #, no-wrap
 msgid ""
 "Here you define the sources of the package in a bash array.\n"
@@ -9624,12 +9795,12 @@ msgstr ""
 "Si vous utilisez des patchs exotiques provenant des sources inconnues, ne vous attendez pas à ce que quelqu'un porte ces patchs vers une nouvelle version . Vous aurez à faire le travail vous même. Vous avez été prévenu! Pour le moment essayez d'éviter les patchs, à moins qu'ils ne soient réellement nécessaires (eg: secfix, bugfix).\n"
 
 # type: Plain text
-#: user.txt:3365 makepkg.txt:270
+#: user.txt:3410 makepkg.txt:270
 msgid "`sha1sums=(\\'094e3afb2fe8dfe82f63731cdcd3b999f4856cff\\')`"
 msgstr "`sha1sums=(\\'094e3afb2fe8dfe82f63731cdcd3b999f4856cff\\')`"
 
 # type: Plain text
-#: user.txt:3370 makepkg.txt:275
+#: user.txt:3415 makepkg.txt:275
 #, no-wrap
 msgid ""
 "Another bash array to prevent compiling from wrong sources. Of course this\n"
@@ -9639,7 +9810,7 @@ msgid ""
 msgstr "Un autre tableau bash pour éviter de compiler depuis de mauvaises sources. Évidement c'est sans intérêt si vous lancez simplement sha1sum foo.tar.gz après le téléchargement. Essayez de trouvez les sommes sha1 sur le site du projet si possible. C'est également une bonne idée de laisser un commentaire sur cette ligne pour indiquer où on peut trouver ces sommes sha1.\n"
 
 # type: Plain text
-#: user.txt:3375 makepkg.txt:280
+#: user.txt:3420 makepkg.txt:280
 msgid ""
 "As you can see there in no build() function in this FB. It's because we have "
 "wrote some F* functions to make our work easier. It's somethin similar you "
@@ -9654,13 +9825,13 @@ msgstr ""
 "signifie actuellement:"
 
 # type: Plain text
-#: user.txt:3376 user.txt:3655 makepkg.txt:281 license.txt:5
+#: user.txt:3421 user.txt:3700 makepkg.txt:281 license.txt:5
 #, no-wrap
 msgid "------------------------------------------------------------\n"
 msgstr "------------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:3385 makepkg.txt:290
+#: user.txt:3430 makepkg.txt:290
 #, no-wrap
 msgid ""
 "build() {\n"
@@ -9684,7 +9855,7 @@ msgstr ""
 "------------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:3391 makepkg.txt:296
+#: user.txt:3436 makepkg.txt:296
 msgid ""
 "So Fpatchall will apply all the patches in source() array, then Fmake calls "
 "the configure script and make command, then Fmakeinstall acts like make "
@@ -9698,7 +9869,7 @@ msgstr ""
 "de détails, voir le fichier utils.sh, c'est bien documenté."
 
 # type: Plain text
-#: user.txt:3395 makepkg.txt:300
+#: user.txt:3440 makepkg.txt:300
 msgid ""
 "NOTE: You don't have to use these F* commands, but we *highly* recommend "
 "it.  Also if you use simple commands do not forget to add || return 1 after "
@@ -9710,12 +9881,12 @@ msgstr ""
 "le script s'arrête en cas d'erreur!"
 
 # type: Plain text
-#: user.txt:3397 makepkg.txt:302
+#: user.txt:3442 makepkg.txt:302
 msgid "`# optimization OK`"
 msgstr "`# optimization OK`"
 
 # type: Plain text
-#: user.txt:3405 makepkg.txt:310
+#: user.txt:3450 makepkg.txt:310
 msgid ""
 "This line will be added automatically to the end of the FrugalBuild if the "
 "build() function used your $CFLAGS or $CXXFLAGS. This is handy if you want "
@@ -9735,17 +9906,17 @@ msgstr ""
 "ne le détectera pas."
 
 # type: Plain text
-#: user.txt:3407
+#: user.txt:3452
 msgid "=== Full reference"
 msgstr "=== Références completes"
 
 # type: Plain text
-#: user.txt:3409 makepkg.txt:314
+#: user.txt:3454 makepkg.txt:314
 msgid "Now here is a full list of directives available."
 msgstr "Maintenant voici une liste complète des instructions disponibles."
 
 # type: Plain text
-#: user.txt:3416 makepkg.txt:321
+#: user.txt:3461 makepkg.txt:321
 msgid ""
 "First, let's start with the install directive. Here you can refer to an "
 "install file (usually $pkgname.install) to use. If there is a $pkgname."
@@ -9762,7 +9933,7 @@ msgstr ""
 "paquet. Un modèle de ce fichier peut être trouvé sous /docs/skel dans FST."
 
 # type: Plain text
-#: user.txt:3420 makepkg.txt:325
+#: user.txt:3465 makepkg.txt:325
 msgid ""
 "Of course, you probably will not need all of these functions, just remove "
 "what you don't need. If you want to do exactly the same after upgrading as "
@@ -9776,7 +9947,7 @@ msgstr ""
 "post_upgrade()."
 
 # type: Plain text
-#: user.txt:3424 makepkg.txt:329
+#: user.txt:3469 makepkg.txt:329
 msgid ""
 "Save this file as $pkgname.install, thus makepkg will automatically use it.  "
 "You should not specify the install script in the source array as it is not "
@@ -9788,7 +9959,7 @@ msgstr ""
 "()."
 
 # type: Plain text
-#: user.txt:3427 makepkg.txt:332
+#: user.txt:3472 makepkg.txt:332
 msgid ""
 "The pkgname, pkgver, pkgrel, url, source and sha1sums directives were "
 "discussed in the previous section."
@@ -9797,7 +9968,7 @@ msgstr ""
 "évoquées dans la section précédente."
 
 # type: Plain text
-#: user.txt:3430 makepkg.txt:335
+#: user.txt:3475 makepkg.txt:335
 msgid ""
 "The backup array is used to make some files in the package as config files.  "
 "If possible, we don't modify config files during an upgrade. Example:"
@@ -9807,17 +9978,17 @@ msgstr ""
 "config durant une mise à jour. Exemple:"
 
 # type: Plain text
-#: user.txt:3432 makepkg.txt:337
+#: user.txt:3477 makepkg.txt:337
 msgid "`backup=(\\'etc/pacman.conf\\')`"
 msgstr "`backup=(\\'etc/pacman.conf\\')`"
 
 # type: Plain text
-#: user.txt:3434 makepkg.txt:339
+#: user.txt:3479 makepkg.txt:339
 msgid "Note that the leading slash is missing!"
 msgstr "Notez qu'on ne met pas le slash initial!"
 
 # type: Plain text
-#: user.txt:3437 makepkg.txt:342
+#: user.txt:3482 makepkg.txt:342
 msgid ""
 "For more information about this, see the handling config files section in "
 "the pacman-g2 manpage."
@@ -9826,7 +9997,7 @@ msgstr ""
 "configuration dans le manuel de pacman-g2.\n"
 
 # type: Plain text
-#: user.txt:3440 makepkg.txt:345
+#: user.txt:3485 makepkg.txt:345
 #, no-wrap
 msgid ""
 "The depends array has been discussed already, except I haven't mentioned\n"
@@ -9834,7 +10005,7 @@ msgid ""
 msgstr "La liste depends a déjà été mentionné, excepté qu'il à été omis auparavant que les éléments peuvent contenir des informations de version, par exemple:\n"
 
 # type: Plain text
-#: user.txt:3444 makepkg.txt:349
+#: user.txt:3489 makepkg.txt:349
 #, no-wrap
 msgid ""
 "pkgname=kdewebdev\n"
@@ -9846,12 +10017,12 @@ msgstr ""
 "-------------------------\n"
 
 # type: Plain text
-#: user.txt:3447 makepkg.txt:352
+#: user.txt:3492 makepkg.txt:352
 msgid "Here you can use <>, <=, >= or = operators."
 msgstr "Vous pouvez utilisez les opérateurs <>, <=, >= ou = ."
 
 # type: Plain text
-#: user.txt:3450 makepkg.txt:355
+#: user.txt:3495 makepkg.txt:355
 msgid ""
 "The makedepends array defines packages required only in build time. For "
 "example if the source is in SRPM format, probably alien is a build-time "
@@ -9862,7 +10033,7 @@ msgstr ""
 "soit requis pour la construction."
 
 # type: Plain text
-#: user.txt:3454 makepkg.txt:359
+#: user.txt:3499 makepkg.txt:359
 msgid ""
 "The rodepends array defines packages required only in runtime. It must be "
 "used in any case when putting the given package to depends() would "
@@ -9873,7 +10044,7 @@ msgstr ""
 "liste depends() causerait une dépendance circulaire."
 
 # type: Plain text
-#: user.txt:3457 makepkg.txt:362
+#: user.txt:3502 makepkg.txt:362
 msgid ""
 "In the conflicts array, you can define a list of packages that shouldn't be "
 "installed if you want to install this package. Let's see an another example:"
@@ -9882,7 +10053,7 @@ msgstr ""
 "être installés si vous voulez installer ce paquet. Voyons un autre exemple:"
 
 # type: Plain text
-#: user.txt:3461 makepkg.txt:366
+#: user.txt:3506 makepkg.txt:366
 #, no-wrap
 msgid ""
 "pkgname=mutt-devel\n"
@@ -9894,7 +10065,7 @@ msgstr ""
 "------------------\n"
 
 # type: Plain text
-#: user.txt:3467 makepkg.txt:372
+#: user.txt:3512 makepkg.txt:372
 msgid ""
 "It is necessary as the two package almost the same, but the binaries "
 "differs.  In this case the mutt package must also contain this line: "
@@ -9908,7 +10079,7 @@ msgstr ""
 "être placé ailleurs que dans un group autre *-extra."
 
 # type: Plain text
-#: user.txt:3470 makepkg.txt:375
+#: user.txt:3515 makepkg.txt:375
 msgid ""
 "The provides array is used to create virtual dependencies. It means both "
 "postfix and sendmail provides mta, so we can do:"
@@ -9918,13 +10089,13 @@ msgstr ""
 "fournissent mta, nous pouvons alors faire:"
 
 # type: Plain text
-#: user.txt:3471 makepkg.txt:376
+#: user.txt:3516 makepkg.txt:376
 #, no-wrap
 msgid "-----------------\n"
 msgstr "-----------------\n"
 
 # type: Plain text
-#: user.txt:3474 makepkg.txt:379
+#: user.txt:3519 makepkg.txt:379
 #, no-wrap
 msgid ""
 "pkgname=mailman\n"
@@ -9936,12 +10107,12 @@ msgstr ""
 "-----------------\n"
 
 # type: Plain text
-#: user.txt:3477 makepkg.txt:382
+#: user.txt:3522 makepkg.txt:382
 msgid "The user has a choice between postfix and sendmail."
 msgstr "L'utilisateur a le choix entre postfix et sendmail."
 
 # type: Plain text
-#: user.txt:3480 makepkg.txt:385
+#: user.txt:3525 makepkg.txt:385
 #, no-wrap
 msgid ""
 "The last one in this list is the replaces directive. The module-init-tools\n"
@@ -9949,7 +10120,7 @@ msgid ""
 msgstr "La dernière de cette liste est la directive replaces. Le paquet module-init-tools est un bon example:\n"
 
 # type: Plain text
-#: user.txt:3485 makepkg.txt:390
+#: user.txt:3530 makepkg.txt:390
 #, no-wrap
 msgid ""
 "pkgname=module-init-tools\n"
@@ -9963,7 +10134,7 @@ msgstr ""
 "-------------------------\n"
 
 # type: Plain text
-#: user.txt:3491 makepkg.txt:396
+#: user.txt:3536 makepkg.txt:396
 msgid ""
 "As you can see, we often make such new packages which also conflict with "
 "each other. Using the replaces directive when users use pacman-g2 -Su next "
@@ -9977,7 +10148,7 @@ msgstr ""
 "sera demandé de retirer modutils et d'installer module-init-tools."
 
 # type: Plain text
-#: user.txt:3494 makepkg.txt:399
+#: user.txt:3539 makepkg.txt:399
 #, no-wrap
 msgid ""
 "license=(\\'GPL2\\')\n"
@@ -9987,7 +10158,7 @@ msgstr ""
 "------------------\n"
 
 # type: Plain text
-#: user.txt:3499 makepkg.txt:404
+#: user.txt:3544 makepkg.txt:404
 msgid ""
 "This directive is optional. At the moment, you may add such a field, but "
 "copy the LICENSE field from the source root to the packages's documentation "
@@ -9999,12 +10170,12 @@ msgstr ""
 "nécessaire."
 
 # type: Plain text
-#: user.txt:3501
+#: user.txt:3546
 msgid "=== Subpackages"
 msgstr "=== Sous-paquets"
 
 # type: Plain text
-#: user.txt:3506 makepkg.txt:411
+#: user.txt:3551 makepkg.txt:411
 msgid ""
 "Since 0.5 makepkg can also create subpackages. It is very useful when your "
 "package has graphical parts based on qt for example. It's a pain for gnome "
@@ -10018,18 +10189,18 @@ msgstr ""
 "et tout le monde est content. Voyons un exemple:"
 
 # type: Plain text
-#: user.txt:3507 makepkg.txt:412
+#: user.txt:3552 makepkg.txt:412
 #, no-wrap
 msgid "-----------------------------------------------------------------------------\n"
 msgstr "-----------------------------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:3510 makepkg.txt:415
+#: user.txt:3555 makepkg.txt:415
 msgid "# Compiling Time: 1.43 SBU # Maintainer: crazy <crazy@frugalware.org>"
 msgstr "# Compiling Time: 1.43 SBU # Maintainer: crazy <crazy@frugalware.org>"
 
 # type: Plain text
-#: user.txt:3526 makepkg.txt:431
+#: user.txt:3571 makepkg.txt:431
 msgid ""
 "pkgname=djvulibre pkgver=3.5.18 pkgrel=2 pkgdesc=\"DjVu is a web-centric "
 "format for distributing documents and images.\" depends=('libtiff' "
@@ -10048,7 +10219,7 @@ msgstr ""
 "djvuzone.org/\" source=(${source[@]} head_-n1.patch no-OPTS-FLAGS-thx.patch)"
 
 # type: Plain text
-#: user.txt:3533 makepkg.txt:438
+#: user.txt:3578 makepkg.txt:438
 msgid ""
 "subpkgs=('djview')  subdescs=('DjVu viewer for qt and mozilla plugins.')  "
 "subdepends=('libxi libgl qt libxmu')  subrodepends=('djvulibre')  subgroups="
@@ -10059,7 +10230,7 @@ msgstr ""
 "('xapps-extra')  subarchs=('i686 x86_64')"
 
 # type: Plain text
-#: user.txt:3552 makepkg.txt:457
+#: user.txt:3597 makepkg.txt:457
 #, no-wrap
 msgid ""
 "build()\n"
@@ -10101,7 +10272,7 @@ msgstr ""
 "\tFln djview3.1.gz usr/share/man/man1/djview.1\n"
 
 # type: Plain text
-#: user.txt:3564 makepkg.txt:469
+#: user.txt:3609 makepkg.txt:469
 #, no-wrap
 msgid ""
 "\tFsplit djview usr/bin/djview\n"
@@ -10131,7 +10302,7 @@ msgstr ""
 "-----------------------------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:3571 makepkg.txt:476
+#: user.txt:3616 makepkg.txt:476
 msgid ""
 "Here you can see the djvulibre FrugalBuild. Note subpkgs, subdescs, "
 "subdepends, subgroups and subarchs. These 5 value is lethal for a "
@@ -10148,7 +10319,7 @@ msgstr ""
 "quotes sont les séparateurs majeurs et les espaces les séparateurs mineurs."
 
 # type: Plain text
-#: user.txt:3577 makepkg.txt:482
+#: user.txt:3622 makepkg.txt:482
 msgid ""
 "Defining the subpackage is only the first part of creating a subpackage. You "
 "have to tell makepkg which files you want to put in the subpackage. We use "
@@ -10165,7 +10336,7 @@ msgstr ""
 "wildcards (jokers) à l'intérieur!"
 
 # type: Plain text
-#: user.txt:3579 makepkg.txt:484
+#: user.txt:3624 makepkg.txt:484
 msgid ""
 "If you need more example just take a look on avahi FrugalBuild in network "
 "group."
@@ -10174,7 +10345,7 @@ msgstr ""
 "d'avahi dans le groupe network."
 
 # type: Plain text
-#: user.txt:3583 makepkg.txt:488
+#: user.txt:3628 makepkg.txt:488
 msgid ""
 "NOTE: Use subpackages when they are necessary, but do not start making foo-"
 "devel, foo-common, foo-not-so-common, foo-quite-common-but-not-that-common "
@@ -10188,12 +10359,12 @@ msgstr ""
 "\"."
 
 # type: Plain text
-#: user.txt:3585
+#: user.txt:3630
 msgid "=== Compiling the package"
 msgstr "=== Compiler le paquet"
 
 # type: Plain text
-#: user.txt:3593 makepkg.txt:498
+#: user.txt:3638 makepkg.txt:498
 #, no-wrap
 msgid ""
 "That's fairly simple. In the package directory you should do exactly the same\n"
@@ -10209,12 +10380,12 @@ msgstr ""
 " ouvrez une demande de fonctionnalité et envoyer tous les fichiers non téléchargeable (c'est à dire: FrugalBuild, install scriptlet, patches) en attachement.Vous êtes prié de ne pas oublier de vérifier votre FrugalBuild avec la commande 'fblint' avant de l'envoyer. 'fblint' est disponible dans le paquet pacman-tools.\n"
 
 # type: Plain text
-#: user.txt:3595 makepkg.txt:500
+#: user.txt:3640 makepkg.txt:500
 msgid "Happy packaging!"
 msgstr "Joyeux empaquetage!"
 
 # type: Plain text
-#: user.txt:3605 makepkg.txt:510
+#: user.txt:3650 makepkg.txt:510
 msgid ""
 "A few words about kernel modules. They're special as even if you installed "
 "the correct version of the kernel (and kernel-source) package, sometimes the "
@@ -10234,7 +10405,7 @@ msgstr ""
 "conditions qu'un paquet de module noyau doit satisfaire:"
 
 # type: Plain text
-#: user.txt:3608 makepkg.txt:513
+#: user.txt:3653 makepkg.txt:513
 #, no-wrap
 msgid ""
 "1) Should depend on kernel=version, where version is the version of the kernel\n"
@@ -10242,12 +10413,12 @@ msgid ""
 msgstr "1) Doit dépendre de kernel=version, ou version est la version du noyau définie dans '$fst_root/source/include/kernel-module.sh'. (Toujours utiliser une FST à jour!)\n"
 
 # type: Bullet: '2) '
-#: user.txt:3610 makepkg.txt:515
+#: user.txt:3655 makepkg.txt:515
 msgid "Should Finclude the kernel-module scheme."
 msgstr "Doit inclure (Finclude) le module-noyeau schema."
 
 # type: Plain text
-#: user.txt:3615 makepkg.txt:520
+#: user.txt:3660 makepkg.txt:520
 #, no-wrap
 msgid ""
 "3) If you want to use a custom install script (saying running just depmod -a\n"
@@ -10260,7 +10431,7 @@ msgstr ""
 "doit lancer depmod -a. Au quel cas le  schema devra fournir un fragment de script qui fait de même.\n"
 
 # type: Plain text
-#: user.txt:3621 makepkg.txt:526
+#: user.txt:3666 makepkg.txt:526
 #, no-wrap
 msgid ""
 "4) build() should call 'Fcheckkernel' to ensure the module will be compiled for\n"
@@ -10276,12 +10447,12 @@ msgstr ""
 "exécuter des noyaux -stable _et_ -current en au même instant :) ).\n"
 
 # type: Plain text
-#: user.txt:3623
+#: user.txt:3668
 msgid "=== Repoman"
 msgstr "=== Repoman"
 
 # type: Plain text
-#: user.txt:3626 makepkg.txt:531
+#: user.txt:3671 makepkg.txt:531
 msgid ""
 "Repoman is simple tool to download all packages' buildscript and compile "
 "programs from source."
@@ -10290,28 +10461,28 @@ msgstr ""
 "compilation des paquets et compiler les programmes à partir de leurs sources."
 
 # type: Plain text
-#: user.txt:3628 makepkg.txt:533
+#: user.txt:3673 makepkg.txt:533
 msgid "The most commonly used repoman commands are the followings:"
 msgstr ""
 "Les commandes les plus communément utilisées de repoman sont les suivantes:"
 
 # type: Plain text
-#: user.txt:3630 makepkg.txt:535
+#: user.txt:3675 makepkg.txt:535
 msgid "`repoman merge package`"
 msgstr "`repoman merge paquet`"
 
 # type: Plain text
-#: user.txt:3632 user.txt:3645 makepkg.txt:537 makepkg.txt:550
+#: user.txt:3677 user.txt:3690 makepkg.txt:537 makepkg.txt:550
 msgid "or simply"
 msgstr "ou plus simplement"
 
 # type: Plain text
-#: user.txt:3634 makepkg.txt:539
+#: user.txt:3679 makepkg.txt:539
 msgid "`repoman m package`"
 msgstr "`repoman m paquet`"
 
 # type: Plain text
-#: user.txt:3637 makepkg.txt:542
+#: user.txt:3682 makepkg.txt:542
 msgid ""
 "builds a package from source and installs it. You can configure the build "
 "options in the makepkg_opts directive of '/etc/repoman.conf'."
@@ -10321,7 +10492,7 @@ msgstr ""
 "conf'."
 
 # type: Plain text
-#: user.txt:3641 makepkg.txt:546
+#: user.txt:3686 makepkg.txt:546
 msgid ""
 "By default repoman will install the missing dependencies with pacman, clean "
 "up the leftover work files, install the package, and write the resulting "
@@ -10332,17 +10503,17 @@ msgstr ""
 "le paquet résultant dans les répertoire de travail courrent."
 
 # type: Plain text
-#: user.txt:3643 makepkg.txt:548
+#: user.txt:3688 makepkg.txt:548
 msgid "`repoman update`"
 msgstr "`repoman update`"
 
 # type: Plain text
-#: user.txt:3647 makepkg.txt:552
+#: user.txt:3692 makepkg.txt:552
 msgid "`repoman upd`"
 msgstr "`repoman upd`"
 
 # type: Plain text
-#: user.txt:3650 makepkg.txt:554
+#: user.txt:3695 makepkg.txt:554
 msgid ""
 "updates FST in /var/fst (or the directory set in '~/.repoman.conf'). First "
 "time repoman will download it (it may take some time!)."
@@ -10352,17 +10523,17 @@ msgstr ""
 "d'être longue!)."
 
 # type: Plain text
-#: user.txt:3652
+#: user.txt:3697
 msgid "== GNU Free Documentation License"
 msgstr "== GNU Free Documentation License"
 
 # type: Plain text
-#: user.txt:3654 license.txt:4
+#: user.txt:3699 license.txt:4
 msgid "Version 1.2, November 2002"
 msgstr "Version 1.2, Novembre 2002"
 
 # type: Plain text
-#: user.txt:3660 license.txt:10
+#: user.txt:3705 license.txt:10
 #, no-wrap
 msgid ""
 "Copyright (C) 2000,2001,2002  Free Software Foundation, Inc.\n"
@@ -10378,12 +10549,12 @@ msgstr ""
 "------------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:3664
+#: user.txt:3709
 msgid "=== PREAMBLE"
 msgstr "=== PREAMBLE"
 
 # type: Plain text
-#: user.txt:3671 license.txt:21
+#: user.txt:3716 license.txt:21
 msgid ""
 "The purpose of this License is to make a manual, textbook, or other "
 "functional and useful document \"free\" in the sense of freedom: to assure "
@@ -10402,7 +10573,7 @@ msgstr ""
 "others."
 
 # type: Plain text
-#: user.txt:3675 license.txt:25
+#: user.txt:3720 license.txt:25
 msgid ""
 "This License is a kind of \"copyleft\", which means that derivative works of "
 "the document must themselves be free in the same sense. It complements the "
@@ -10415,7 +10586,7 @@ msgstr ""
 "software."
 
 # type: Plain text
-#: user.txt:3683 license.txt:33
+#: user.txt:3728 license.txt:33
 msgid ""
 "We have designed this License in order to use it for manuals for free "
 "software, because free software needs free documentation: a free program "
@@ -10434,12 +10605,12 @@ msgstr ""
 "is instruction or reference."
 
 # type: Plain text
-#: user.txt:3685
+#: user.txt:3730
 msgid "=== APPLICABILITY AND DEFINITIONS"
 msgstr "=== APPLICABILITY AND DEFINITIONS"
 
 # type: Plain text
-#: user.txt:3694 license.txt:44
+#: user.txt:3739 license.txt:44
 msgid ""
 "This License applies to any manual or other work, in any medium, that "
 "contains a notice placed by the copyright holder saying it can be "
@@ -10460,7 +10631,7 @@ msgstr ""
 "in a way requiring permission under copyright law."
 
 # type: Plain text
-#: user.txt:3698 license.txt:48
+#: user.txt:3743 license.txt:48
 msgid ""
 "A \"Modified Version\" of the Document means any work containing the "
 "Document or a portion of it, either copied verbatim, or with modifications "
@@ -10471,7 +10642,7 @@ msgstr ""
 "and/or translated into another language."
 
 # type: Plain text
-#: user.txt:3707 license.txt:57
+#: user.txt:3752 license.txt:57
 msgid ""
 "A \"Secondary Section\" is a named appendix or a front-matter section of the "
 "Document that deals exclusively with the relationship of the publishers or "
@@ -10494,7 +10665,7 @@ msgstr ""
 "position regarding them."
 
 # type: Plain text
-#: user.txt:3714 license.txt:64
+#: user.txt:3759 license.txt:64
 msgid ""
 "The \"Invariant Sections\" are certain Secondary Sections whose titles are "
 "designated, as being those of Invariant Sections, in the notice that says "
@@ -10511,7 +10682,7 @@ msgstr ""
 "does not identify any Invariant Sections then there are none."
 
 # type: Plain text
-#: user.txt:3719 license.txt:69
+#: user.txt:3764 license.txt:69
 msgid ""
 "The \"Cover Texts\" are certain short passages of text that are listed, as "
 "Front-Cover Texts or Back-Cover Texts, in the notice that says that the "
@@ -10524,7 +10695,7 @@ msgstr ""
 "words, and a Back-Cover Text may be at most 25 words."
 
 # type: Plain text
-#: user.txt:3731 license.txt:81
+#: user.txt:3776 license.txt:81
 msgid ""
 "A \"Transparent\" copy of the Document means a machine-readable copy, "
 "represented in a format whose specification is available to the general "
@@ -10553,7 +10724,7 @@ msgstr ""
 "\"Opaque\"."
 
 # type: Plain text
-#: user.txt:3740 license.txt:90
+#: user.txt:3785 license.txt:90
 msgid ""
 "Examples of suitable formats for Transparent copies include plain ASCII "
 "without markup, Texinfo input format, LaTeX input format, SGML or XML using "
@@ -10576,7 +10747,7 @@ msgstr ""
 "for output purposes only."
 
 # type: Plain text
-#: user.txt:3747 license.txt:97
+#: user.txt:3792 license.txt:97
 msgid ""
 "The \"Title Page\" means, for a printed book, the title page itself, plus "
 "such following pages as are needed to hold, legibly, the material this "
@@ -10593,7 +10764,7 @@ msgstr ""
 "body of the text."
 
 # type: Plain text
-#: user.txt:3755 license.txt:105
+#: user.txt:3800 license.txt:105
 msgid ""
 "A section \"Entitled XYZ\" means a named subunit of the Document whose title "
 "either is precisely XYZ or contains XYZ in parentheses following text that "
@@ -10612,7 +10783,7 @@ msgstr ""
 "\"Entitled XYZ\" according to this definition."
 
 # type: Plain text
-#: user.txt:3761 license.txt:111
+#: user.txt:3806 license.txt:111
 msgid ""
 "The Document may include Warranty Disclaimers next to the notice which "
 "states that this License applies to the Document. These Warranty Disclaimers "
@@ -10629,12 +10800,12 @@ msgstr ""
 "License."
 
 # type: Plain text
-#: user.txt:3763
+#: user.txt:3808
 msgid "=== VERBATIM COPYING"
 msgstr "=== VERBATIM COPYING"
 
 # type: Plain text
-#: user.txt:3772 license.txt:122
+#: user.txt:3817 license.txt:122
 msgid ""
 "You may copy and distribute the Document in any medium, either commercially "
 "or noncommercially, provided that this License, the copyright notices, and "
@@ -10657,7 +10828,7 @@ msgstr ""
 "conditions in section 3."
 
 # type: Plain text
-#: user.txt:3775 license.txt:125
+#: user.txt:3820 license.txt:125
 msgid ""
 "You may also lend copies, under the same conditions stated above, and you "
 "may publicly display copies."
@@ -10666,12 +10837,12 @@ msgstr ""
 "may publicly display copies."
 
 # type: Plain text
-#: user.txt:3777
+#: user.txt:3822
 msgid "=== COPYING IN QUANTITY"
 msgstr "=== COPYING IN QUANTITY"
 
 # type: Plain text
-#: user.txt:3789 license.txt:139
+#: user.txt:3834 license.txt:139
 msgid ""
 "If you publish printed copies (or copies in media that commonly have printed "
 "covers) of the Document, numbering more than 100, and the Document's license "
@@ -10698,7 +10869,7 @@ msgstr ""
 "verbatim copying in other respects."
 
 # type: Plain text
-#: user.txt:3793 license.txt:143
+#: user.txt:3838 license.txt:143
 msgid ""
 "If the required texts for either cover are too voluminous to fit legibly, "
 "you should put the first ones listed (as many as fit reasonably) on the "
@@ -10709,7 +10880,7 @@ msgstr ""
 "actual cover, and continue the rest onto adjacent pages."
 
 # type: Plain text
-#: user.txt:3805 license.txt:155
+#: user.txt:3850 license.txt:155
 msgid ""
 "If you publish or distribute Opaque copies of the Document numbering more "
 "than 100, you must either include a machine-readable Transparent copy along "
@@ -10736,7 +10907,7 @@ msgstr ""
 "retailers) of that edition to the public."
 
 # type: Plain text
-#: user.txt:3809 license.txt:159
+#: user.txt:3854 license.txt:159
 msgid ""
 "It is requested, but not required, that you contact the authors of the "
 "Document well before redistributing any large number of copies, to give them "
@@ -10747,12 +10918,12 @@ msgstr ""
 "a chance to provide you with an updated version of the Document."
 
 # type: Plain text
-#: user.txt:3811
+#: user.txt:3856
 msgid "=== MODIFICATIONS"
 msgstr "=== MODIFICATIONS"
 
 # type: Plain text
-#: user.txt:3818 license.txt:168
+#: user.txt:3863 license.txt:168
 msgid ""
 "You may copy and distribute a Modified Version of the Document under the "
 "conditions of sections 2 and 3 above, provided that you release the Modified "
@@ -10769,7 +10940,7 @@ msgstr ""
 "these things in the Modified Version:"
 
 # type: Plain text
-#: user.txt:3824 license.txt:174
+#: user.txt:3869 license.txt:174
 msgid ""
 "A. Use in the Title Page (and on the covers, if any) a title distinct from "
 "that of the Document, and from those of previous versions (which should, if "
@@ -10784,7 +10955,7 @@ msgstr ""
 "version gives permission."
 
 # type: Plain text
-#: user.txt:3830 license.txt:180
+#: user.txt:3875 license.txt:180
 msgid ""
 "B. List on the Title Page, as authors, one or more persons or entities "
 "responsible for authorship of the modifications in the Modified Version, "
@@ -10799,7 +10970,7 @@ msgstr ""
 "from this requirement."
 
 # type: Plain text
-#: user.txt:3833 license.txt:183
+#: user.txt:3878 license.txt:183
 msgid ""
 "C. State on the Title page the name of the publisher of the Modified "
 "Version, as the publisher."
@@ -10808,12 +10979,12 @@ msgstr ""
 "Version, as the publisher."
 
 # type: Plain text
-#: user.txt:3835 license.txt:185
+#: user.txt:3880 license.txt:185
 msgid "D. Preserve all the copyright notices of the Document."
 msgstr "D. Preserve all the copyright notices of the Document."
 
 # type: Plain text
-#: user.txt:3838 license.txt:188
+#: user.txt:3883 license.txt:188
 msgid ""
 "E. Add an appropriate copyright notice for your modifications adjacent to "
 "the other copyright notices."
@@ -10822,7 +10993,7 @@ msgstr ""
 "the other copyright notices."
 
 # type: Plain text
-#: user.txt:3842 license.txt:192
+#: user.txt:3887 license.txt:192
 msgid ""
 "F. Include, immediately after the copyright notices, a license notice giving "
 "the public permission to use the Modified Version under the terms of this "
@@ -10833,7 +11004,7 @@ msgstr ""
 "License, in the form shown in the Addendum below."
 
 # type: Plain text
-#: user.txt:3845 license.txt:195
+#: user.txt:3890 license.txt:195
 msgid ""
 "G. Preserve in that license notice the full lists of Invariant Sections and "
 "required Cover Texts given in the Document's license notice."
@@ -10842,12 +11013,12 @@ msgstr ""
 "required Cover Texts given in the Document's license notice."
 
 # type: Plain text
-#: user.txt:3847 license.txt:197
+#: user.txt:3892 license.txt:197
 msgid "H. Include an unaltered copy of this License."
 msgstr "H. Include an unaltered copy of this License."
 
 # type: Plain text
-#: user.txt:3854 license.txt:204
+#: user.txt:3899 license.txt:204
 msgid ""
 "I. Preserve the section Entitled \"History\", Preserve its Title, and add to "
 "it an item stating at least the title, year, new authors, and publisher of "
@@ -10864,7 +11035,7 @@ msgstr ""
 "an item describing the Modified Version as stated in the previous sentence."
 
 # type: Plain text
-#: user.txt:3861 license.txt:211
+#: user.txt:3906 license.txt:211
 msgid ""
 "J. Preserve the network location, if any, given in the Document for public "
 "access to a Transparent copy of the Document, and likewise the network "
@@ -10883,7 +11054,7 @@ msgstr ""
 "permission."
 
 # type: Plain text
-#: user.txt:3865 license.txt:215
+#: user.txt:3910 license.txt:215
 msgid ""
 "K. For any section Entitled \"Acknowledgements\" or \"Dedications\", "
 "Preserve the Title of the section, and preserve in the section all the "
@@ -10896,7 +11067,7 @@ msgstr ""
 "dedications given therein."
 
 # type: Plain text
-#: user.txt:3869 license.txt:219
+#: user.txt:3914 license.txt:219
 msgid ""
 "L. Preserve all the Invariant Sections of the Document, unaltered in their "
 "text and in their titles. Section numbers or the equivalent are not "
@@ -10907,7 +11078,7 @@ msgstr ""
 "considered part of the section titles."
 
 # type: Plain text
-#: user.txt:3872 license.txt:222
+#: user.txt:3917 license.txt:222
 msgid ""
 "M. Delete any section Entitled \"Endorsements\". Such a section may not be "
 "included in the Modified Version."
@@ -10916,7 +11087,7 @@ msgstr ""
 "included in the Modified Version."
 
 # type: Plain text
-#: user.txt:3875 license.txt:225
+#: user.txt:3920 license.txt:225
 msgid ""
 "N. Do not retitle any existing section to be Entitled \"Endorsements\" or to "
 "conflict in title with any Invariant Section."
@@ -10925,12 +11096,12 @@ msgstr ""
 "conflict in title with any Invariant Section."
 
 # type: Plain text
-#: user.txt:3877 license.txt:227
+#: user.txt:3922 license.txt:227
 msgid "O. Preserve any Warranty Disclaimers."
 msgstr "O. Preserve any Warranty Disclaimers."
 
 # type: Plain text
-#: user.txt:3884 license.txt:234
+#: user.txt:3929 license.txt:234
 msgid ""
 "If the Modified Version includes new front-matter sections or appendices "
 "that qualify as Secondary Sections and contain no material copied from the "
@@ -10947,7 +11118,7 @@ msgstr ""
 "any other section titles."
 
 # type: Plain text
-#: user.txt:3889 license.txt:239
+#: user.txt:3934 license.txt:239
 msgid ""
 "You may add a section Entitled \"Endorsements\", provided it contains "
 "nothing but endorsements of your Modified Version by various parties--for "
@@ -10960,7 +11131,7 @@ msgstr ""
 "organization as the authoritative definition of a standard."
 
 # type: Plain text
-#: user.txt:3898 license.txt:248
+#: user.txt:3943 license.txt:248
 msgid ""
 "You may add a passage of up to five words as a Front-Cover Text, and a "
 "passage of up to 25 words as a Back-Cover Text, to the end of the list of "
@@ -10983,7 +11154,7 @@ msgstr ""
 "old one."
 
 # type: Plain text
-#: user.txt:3902 license.txt:252
+#: user.txt:3947 license.txt:252
 msgid ""
 "The author(s) and publisher(s) of the Document do not by this License give "
 "permission to use their names for publicity for or to assert or imply "
@@ -10994,12 +11165,12 @@ msgstr ""
 "endorsement of any Modified Version."
 
 # type: Plain text
-#: user.txt:3904
+#: user.txt:3949
 msgid "=== COMBINING DOCUMENTS"
 msgstr "=== COMBINING DOCUMENTS"
 
 # type: Plain text
-#: user.txt:3911 license.txt:261
+#: user.txt:3956 license.txt:261
 msgid ""
 "You may combine the Document with other documents released under this "
 "License, under the terms defined in section 4 above for modified versions, "
@@ -11016,7 +11187,7 @@ msgstr ""
 "all their Warranty Disclaimers."
 
 # type: Plain text
-#: user.txt:3919 license.txt:269
+#: user.txt:3964 license.txt:269
 msgid ""
 "The combined work need only contain one copy of this License, and multiple "
 "identical Invariant Sections may be replaced with a single copy. If there "
@@ -11037,7 +11208,7 @@ msgstr ""
 "combined work."
 
 # type: Plain text
-#: user.txt:3924 license.txt:274
+#: user.txt:3969 license.txt:274
 msgid ""
 "In the combination, you must combine any sections Entitled \"History\" in "
 "the various original documents, forming one section Entitled \"History\"; "
@@ -11052,12 +11223,12 @@ msgstr ""
 "\"Endorsements.\""
 
 # type: Plain text
-#: user.txt:3926
+#: user.txt:3971
 msgid "=== COLLECTIONS OF DOCUMENTS"
 msgstr "=== COLLECTIONS OF DOCUMENTS"
 
 # type: Plain text
-#: user.txt:3932 license.txt:282
+#: user.txt:3977 license.txt:282
 msgid ""
 "You may make a collection consisting of the Document and other documents "
 "released under this License, and replace the individual copies of this "
@@ -11072,7 +11243,7 @@ msgstr ""
 "copying of each of the documents in all other respects."
 
 # type: Plain text
-#: user.txt:3937 license.txt:287
+#: user.txt:3982 license.txt:287
 msgid ""
 "You may extract a single document from such a collection, and distribute it "
 "individually under this License, provided you insert a copy of this License "
@@ -11085,12 +11256,12 @@ msgstr ""
 "regarding verbatim copying of that document."
 
 # type: Plain text
-#: user.txt:3939
+#: user.txt:3984
 msgid "=== AGGREGATION WITH INDEPENDENT WORKS"
 msgstr "=== AGGREGATION WITH INDEPENDENT WORKS"
 
 # type: Plain text
-#: user.txt:3947 license.txt:297
+#: user.txt:3992 license.txt:297
 msgid ""
 "A compilation of the Document or its derivatives with other separate and "
 "independent documents or works, in or on a volume of a storage or "
@@ -11111,7 +11282,7 @@ msgstr ""
 "the Document."
 
 # type: Plain text
-#: user.txt:3954 license.txt:304
+#: user.txt:3999 license.txt:304
 msgid ""
 "If the Cover Text requirement of section 3 is applicable to these copies of "
 "the Document, then if the Document is less than one half of the entire "
@@ -11128,12 +11299,12 @@ msgstr ""
 "covers that bracket the whole aggregate."
 
 # type: Plain text
-#: user.txt:3956
+#: user.txt:4001
 msgid "=== TRANSLATION"
 msgstr "=== TRANSLATION"
 
 # type: Plain text
-#: user.txt:3968 license.txt:318
+#: user.txt:4013 license.txt:318
 msgid ""
 "Translation is considered a kind of modification, so you may distribute "
 "translations of the Document under the terms of section 4. Replacing "
@@ -11160,7 +11331,7 @@ msgstr ""
 "disclaimer, the original version will prevail."
 
 # type: Plain text
-#: user.txt:3972 license.txt:322
+#: user.txt:4017 license.txt:322
 msgid ""
 "If a section in the Document is Entitled \"Acknowledgements\", \"Dedications"
 "\", or \"History\", the requirement (section 4) to Preserve its Title "
@@ -11171,12 +11342,12 @@ msgstr ""
 "(section 1) will typically require changing the actual title."
 
 # type: Plain text
-#: user.txt:3974
+#: user.txt:4019
 msgid "=== TERMINATION"
 msgstr "=== TERMINATION"
 
 # type: Plain text
-#: user.txt:3981 license.txt:331
+#: user.txt:4026 license.txt:331
 msgid ""
 "You may not copy, modify, sublicense, or distribute the Document except as "
 "expressly provided for under this License. Any other attempt to copy, "
@@ -11193,12 +11364,12 @@ msgstr ""
 "their licenses terminated so long as such parties remain in full compliance."
 
 # type: Plain text
-#: user.txt:3983
+#: user.txt:4028
 msgid "=== FUTURE REVISIONS OF THIS LICENSE"
 msgstr "=== FUTURE REVISIONS OF THIS LICENSE"
 
 # type: Plain text
-#: user.txt:3988 license.txt:338
+#: user.txt:4033 license.txt:338
 msgid ""
 "The Free Software Foundation may publish new, revised versions of the GNU "
 "Free Documentation License from time to time. Such new versions will be "
@@ -11211,7 +11382,7 @@ msgstr ""
 "address new problems or concerns. See http://www.gnu.org/copyleft/."
 
 # type: Plain text
-#: user.txt:3996 license.txt:345
+#: user.txt:4041 license.txt:345
 msgid ""
 "Each version of the License is given a distinguishing version number. If the "
 "Document specifies that a particular numbered version of this License \"or "
@@ -11461,7 +11632,7 @@ msgid "= The hotplug subsystem"
 msgstr "= Le sous-système hotplug"
 
 # type: Plain text
-#: hotplug.txt:4 packages.txt:1127
+#: hotplug.txt:4 packages.txt:1172
 msgid "== udev"
 msgstr "== udev"
 
@@ -11777,306 +11948,311 @@ msgstr "== cpuspeed"
 
 # type: Plain text
 #: packages.txt:610
+msgid "== fuse"
+msgstr "== fuse"
+
+# type: Plain text
+#: packages.txt:655
 msgid "== acoc"
 msgstr "== acoc"
 
 # type: Plain text
-#: packages.txt:621
+#: packages.txt:666
 msgid "== mailman"
 msgstr "== mailman"
 
 # type: Plain text
-#: packages.txt:628
+#: packages.txt:673
 msgid "== nessus-core"
 msgstr "== nessus-core"
 
 # type: Plain text
-#: packages.txt:643
+#: packages.txt:688
 msgid "== phpbb"
 msgstr "== phpbb"
 
 # type: Plain text
-#: packages.txt:650
+#: packages.txt:695
 msgid "== bcm43xx-fwcutter"
 msgstr "== bcm43xx-fwcutter"
 
 # type: Plain text
-#: packages.txt:688
+#: packages.txt:733
 msgid "== ndiswrapper"
 msgstr "== ndiswrapper"
 
 # type: Plain text
-#: packages.txt:716
+#: packages.txt:761
 msgid "== sugarcrm"
 msgstr "== sugarcrm"
 
 # type: Plain text
-#: packages.txt:726
+#: packages.txt:771
 msgid "== midpssh-http-server"
 msgstr "== midpssh-http-server"
 
 # type: Plain text
-#: packages.txt:739
+#: packages.txt:784
 msgid "== mb2md"
 msgstr "== mb2md"
 
 # type: Plain text
-#: packages.txt:755
+#: packages.txt:800
 msgid "== pootle"
 msgstr "== pootle"
 
 # type: Plain text
-#: packages.txt:762
+#: packages.txt:807
 msgid "=== Creating users"
 msgstr "=== Création d'utilisateurs"
 
 # type: Plain text
-#: packages.txt:770
+#: packages.txt:815
 msgid "== fudforum"
 msgstr "== fudforum"
 
 # type: Plain text
-#: packages.txt:775
+#: packages.txt:820
 msgid "== squirrelmail"
 msgstr "== squirrelmail"
 
 # type: Plain text
-#: packages.txt:779
+#: packages.txt:824
 msgid "== rss2email"
 msgstr "== rss2email"
 
 # type: Plain text
-#: packages.txt:782
+#: packages.txt:827
 msgid "Configure: ~~~~~~~~~~"
 msgstr "Configuration: ~~~~~~~~~~"
 
 # type: Plain text
-#: packages.txt:808
+#: packages.txt:853
 msgid "Customize: ~~~~~~~~~~"
 msgstr "Personnalisation: ~~~~~~~~~~"
 
 # type: Plain text
-#: packages.txt:820
+#: packages.txt:865
 msgid "== joomla"
 msgstr "== joomla"
 
 # type: Plain text
-#: packages.txt:825
+#: packages.txt:870
 msgid "== postgrey"
 msgstr "== postgrey"
 
 # type: Plain text
-#: packages.txt:836
+#: packages.txt:881
 msgid "== postfixadmin"
 msgstr "== postfixadmin"
 
 # type: Plain text
-#: packages.txt:872
+#: packages.txt:917
 msgid "== squirrelmail-check_quota"
 msgstr "== squirrelmail-check_quota"
 
 # type: Plain text
-#: packages.txt:876
+#: packages.txt:921
 msgid "== httpircproxy"
 msgstr "== httpircproxy"
 
 # type: Plain text
-#: packages.txt:889
+#: packages.txt:934
 msgid "== speedtouch"
 msgstr "== speedtouch"
 
 # type: Plain text
-#: packages.txt:905
+#: packages.txt:950
 msgid "== ddclient"
 msgstr "== ddclient"
 
 # type: Plain text
-#: packages.txt:921
+#: packages.txt:966
 msgid "== drupal"
 msgstr "== drupal"
 
 # type: Plain text
-#: packages.txt:926
+#: packages.txt:971
 msgid "== xcache"
 msgstr "== xcache"
 
 # type: Plain text
-#: packages.txt:929
+#: packages.txt:974
 msgid "Installing As PHP Extension? ~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 msgstr "Installation comme extension PHP? ~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 
 # type: Plain text
-#: packages.txt:949
+#: packages.txt:994
 msgid "== mediawiki"
 msgstr "== mediawiki"
 
 # type: Plain text
-#: packages.txt:954
+#: packages.txt:999
 msgid "== pptpd"
 msgstr "== pptpd"
 
 # type: Plain text
-#: packages.txt:1114
+#: packages.txt:1159
 msgid "== mantis"
 msgstr "== mantis"
 
 # type: Plain text
-#: packages.txt:1134
+#: packages.txt:1179
 msgid "== nautilus-share"
 msgstr "== nautilus-share"
 
 # type: Plain text
-#: packages.txt:1174
+#: packages.txt:1219
 msgid "== firestarter"
 msgstr "== firestarter"
 
 # type: Plain text
-#: packages.txt:1188
+#: packages.txt:1233
 msgid "== kiax"
 msgstr "== kiax"
 
 # type: Plain text
-#: packages.txt:1199
+#: packages.txt:1244
 msgid "== xpenguinsapplet"
 msgstr "== xpenguinsapplet"
 
 # type: Plain text
-#: packages.txt:1205
+#: packages.txt:1250
 msgid "== kvpnc"
 msgstr "== kvpnc"
 
 # type: Plain text
-#: packages.txt:1223
+#: packages.txt:1268
 msgid "== motion"
 msgstr "== motion"
 
 # type: Plain text
-#: packages.txt:1231
+#: packages.txt:1276
 msgid "== k3b"
 msgstr "== k3b"
 
 # type: Plain text
-#: packages.txt:1235
+#: packages.txt:1280
 msgid "== xen"
 msgstr "== xen"
 
 # type: Plain text
-#: packages.txt:1241
+#: packages.txt:1286
 msgid "== lineakd"
 msgstr "== lineakd"
 
 # type: Plain text
-#: packages.txt:1253
+#: packages.txt:1298
 msgid "== qemu"
 msgstr "== qemu"
 
 # type: Plain text
-#: packages.txt:1263
+#: packages.txt:1308
 msgid "== dillo"
 msgstr "== dillo"
 
 # type: Plain text
-#: packages.txt:1274
+#: packages.txt:1319
 msgid "== ooextras"
 msgstr "== ooextras"
 
 # type: Plain text
-#: packages.txt:1283
+#: packages.txt:1328
 msgid "== mythtv"
 msgstr "== mythtv"
 
 # type: Bullet: '* '
-#: packages.txt:1297
+#: packages.txt:1342
 msgid "== maxima"
 msgstr "== maxima"
 
 # type: Plain text
-#: packages.txt:1306
+#: packages.txt:1351
 msgid "== freenx"
 msgstr "== freenx"
 
 # type: Plain text
-#: packages.txt:1366
+#: packages.txt:1411
 msgid "== virtualbox"
 msgstr "== virtualbox"
 
 # type: Plain text
-#: packages.txt:1377
+#: packages.txt:1422
 msgid "== wifi-radar"
 msgstr "== wifi-radar"
 
 # type: Plain text
-#: packages.txt:1381
+#: packages.txt:1426
 msgid "== nessus-core-gtk"
 msgstr "== nessus-core-gtk"
 
 # type: Plain text
-#: packages.txt:1396
+#: packages.txt:1441
 msgid "== cairo-clock"
 msgstr "== cairo-clock"
 
 # type: Plain text
-#: packages.txt:1407
+#: packages.txt:1452
 msgid "== entrance"
 msgstr "== entrance"
 
 # type: Plain text
-#: packages.txt:1419
+#: packages.txt:1464
 msgid "== kernel-xen0"
 msgstr "== kernel-xen0"
 
 # type: Plain text
-#: packages.txt:1422
+#: packages.txt:1467
 msgid "Usage instructions: ~~~~~~~~~~~~~~~~~~~"
 msgstr "Instructions d'utilisation: ~~~~~~~~~~~~~~~~~~~"
 
 # type: Plain text
-#: packages.txt:1449
+#: packages.txt:1494
 msgid "== xchat"
 msgstr "== xchat"
 
 # type: Plain text
-#: packages.txt:1467
+#: packages.txt:1512
 msgid "== openttd"
 msgstr "== openttd"
 
 # type: Plain text
-#: packages.txt:1487
+#: packages.txt:1532
 msgid "== dhcp"
 msgstr "== dhcp"
 
 # type: Plain text
-#: packages.txt:1500
+#: packages.txt:1545
 msgid "== apache"
 msgstr "== apache"
 
 # type: Plain text
-#: packages.txt:1503
+#: packages.txt:1548
 msgid "How to configure Apache ~~~~~~~~~~~~~~~~~~~~~~~"
 msgstr "Comment configurer Apache ~~~~~~~~~~~~~~~~~~~~~~~"
 
 # type: Plain text
-#: packages.txt:1525
+#: packages.txt:1570
 msgid "Setting up SSL support for Apache ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 msgstr "Configuration de SSL pour Apache ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 
 # type: Plain text
-#: packages.txt:1622
+#: packages.txt:1667
 msgid "Self-signed Apache certificate ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 msgstr "Certificat auto-signé pour Apache ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 
 # type: Plain text
-#: packages.txt:1664
+#: packages.txt:1709
 msgid "== nss-mdns"
 msgstr "== nss-mdns"
 
 # type: Plain text
-#: packages.txt:1669
+#: packages.txt:1714
 msgid "== avahi"
 msgstr "== avahi"
 
 # type: Plain text
-#: packages.txt:1688
+#: packages.txt:1733
 msgid "== lmsensors"
 msgstr "== lmsensors"
 
