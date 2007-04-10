@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-04-09 05:00+0200\n"
-"PO-Revision-Date: 2007-04-09 18:50+0200\n"
+"POT-Creation-Date: 2007-04-10 05:04+0200\n"
+"PO-Revision-Date: 2007-04-10 19:12+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -5418,15 +5418,20 @@ msgid ""
 "simple one, not a kernel-space module (which is much harder to write). In "
 "Frugalware, users can mount things, too. First as root, let's install the "
 "tools:"
-msgstr "Fuse est un système de fichiers virtuel d'\"aide\" qui permet de monter des choses inhabituelles en tant que système de fichiers, autorisant les programmes d'interprétation d'être simple, sans être un module en espace noyau (ce qui est beaucoup plus dur à écrire). Dans Frugalware, les utilisateurs peuvent aussi monter des choses. Tout d'abord en tant que root, vous devez installer les outils nécessaires:"
+msgstr ""
+"Fuse est un système de fichiers virtuel d'\"aide\" qui permet de monter des "
+"choses inhabituelles en tant que système de fichiers, autorisant les "
+"programmes d'interprétation d'être simple, sans être un module en espace "
+"noyau (ce qui est beaucoup plus dur à écrire). Dans Frugalware, les "
+"utilisateurs peuvent aussi monter des choses. Tout d'abord en tant que root, "
+"vous devez installer les outils nécessaires:"
 
 # type: Bullet: '+
 # type: '
 #: user.txt:1855 packages.txt:617
 #, no-wrap
 msgid "--------------\n"
-msgstr ""
-"--------------\n"
+msgstr "--------------\n"
 
 # type: Plain text
 #: user.txt:1857 packages.txt:619
@@ -5440,8 +5445,8 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:1860 packages.txt:622
-msgid "then"
-msgstr "puis"
+msgid "Then you have to register the fuse service and start it:"
+msgstr "Puis vous devez enregistrer le service fuse et le démarrer:"
 
 # type: Plain text
 #: user.txt:1861 user.txt:1946 user.txt:1952 user.txt:3503 user.txt:3537
@@ -5464,21 +5469,21 @@ msgstr ""
 "------------------\n"
 
 # type: Plain text
-#: user.txt:1868 packages.txt:630
+#: user.txt:1869 packages.txt:631
 msgid ""
 "Now, having the base of fuse, we need to install the programs for each "
-"specific filesystem type. The command"
-msgstr "Maintenant, puisque vous la base de fuse, vous devez installer les programmes pour chaque type de système de fichier spécifique. La commande"
+"specific filesystem type. To get a hint on what is available, you can issue "
+"the following command:"
+msgstr "Maintenant, puisque vous la base de fuse, vous devez installer les programmes pour chaque type de système de fichier spécifique. Pour avoir une idée de ce qui est disponible, vous pouvez lancer la commande suivante:"
 
 # type: Plain text
-#: user.txt:1869 packages.txt:631
+#: user.txt:1870 packages.txt:632
 #, no-wrap
 msgid "---------------\n"
-msgstr ""
-"---------------\n"
+msgstr "---------------\n"
 
 # type: Plain text
-#: user.txt:1871 packages.txt:633
+#: user.txt:1872 packages.txt:634
 #, no-wrap
 msgid ""
 "pacman-g2 -Ss fuse\n"
@@ -5489,10 +5494,8 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:1875 packages.txt:637
-msgid ""
-"should give some hint what's available. The two most used (ftp, ssh) plugins "
-"can be installed with"
-msgstr "devrait vous donner une idée de ce qui est disponible. Les deux extensions les plus utilisées (ftp, ssh) peuvent être installées avec"
+msgid "The two most used (ftp, ssh) plugins can be installed running:"
+msgstr "Les deux extensions les plus utilisées (ftp, ssh) peuvent être installées avec:"
 
 # type: Plain text
 #: user.txt:1878 packages.txt:640
@@ -5506,15 +5509,15 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:1881 packages.txt:643
-msgid "Then, mounting a remote dir with sftp access as a regular user:"
+msgid ""
+"Then, you can mount a remote dir with sftp access as a regular user doing:"
 msgstr "Ensuite, pour monter un répertoire distant via un accès sftp en tant que simple utilisateur:"
 
 # type: Plain text
 #: user.txt:1882 packages.txt:644
 #, no-wrap
 msgid "-----------------------------------------------------------------------------------\n"
-msgstr ""
-"---------------------------------------------------------------------------------\n"
+msgstr "---------------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:1884 packages.txt:646
@@ -5528,8 +5531,8 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:1887 packages.txt:649
-msgid "You can unmount it as an user by"
-msgstr "Vous pouvez le démonter en tant que simple utilisateur en faisant"
+msgid "You can also unmount it as a regular user doing:"
+msgstr "Vous pouvez le démonter en tant que simple utilisateur en faisant:"
 
 # type: Plain text
 #: user.txt:1890 packages.txt:652
@@ -12446,6 +12449,10 @@ msgstr "== ARRÊT"
 #: license.txt:333
 msgid "== FUTURE REVISIONS OF THIS LICENSE"
 msgstr "== FUTURES VERSIONS DE CETTE LICENCE"
+
+# type: Plain text
+#~ msgid "then"
+#~ msgstr "puis"
 
 # type: Plain text
 #~ msgid ""
