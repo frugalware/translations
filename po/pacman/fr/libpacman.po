@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-04-07 05:33+0200\n"
-"PO-Revision-Date: 2007-04-07 09:29+0200\n"
+"POT-Creation-Date: 2007-04-11 15:31+0200\n"
+"PO-Revision-Date: 2007-04-11 20:59+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: Français\n"
 "MIME-Version: 1.0\n"
@@ -72,12 +72,12 @@ msgstr "recherche de conflits entre fichiers"
 msgid "upgrading package %s-%s"
 msgstr "mise a jour du paquet %s-%s"
 
-#: ../add.c:353 ../conflict.c:276 ../conflict.c:306 ../package.c:530
+#: ../add.c:353 ../conflict.c:276 ../conflict.c:306 ../package.c:531
 #, c-format
 msgid "loading FILES info for '%s'"
 msgstr "chargement des informations de fichiers pour '%s'"
 
-#: ../add.c:363 ../pacman.c:542 ../pacman.c:589 ../package.c:511
+#: ../add.c:363 ../pacman.c:551 ../pacman.c:598 ../package.c:512
 #, c-format
 msgid "loading DESC info for '%s'"
 msgstr "chargement des informations descriptives pour '%s'"
@@ -349,98 +349,98 @@ msgstr "recharge la base de données %s/%s"
 msgid "could not remove database entry %s/%s"
 msgstr "n'a pas pu retirer l'entrée de base de données %s/%s"
 
-#: ../pacman.c:536
+#: ../pacman.c:545
 #, c-format
 msgid "could not get sha1 checksum for package %s-%s\n"
 msgstr "n'a pas pu obtenir la 'signature' sha1 pour le paquet %s-%s\n"
 
-#: ../pacman.c:547 ../pacman.c:594
+#: ../pacman.c:556 ../pacman.c:603
 #, c-format
 msgid "checksums for package %s-%s are matching"
 msgstr "les 'signatures' correspondent pour le paquet %s-%s"
 
-#: ../pacman.c:550
+#: ../pacman.c:559
 #, c-format
 msgid "sha1sums do not match for package %s-%s\n"
 msgstr "les 'signatures' sha1 ne correspondent pas pour le paquet %s-%s\n"
 
-#: ../pacman.c:583
+#: ../pacman.c:592
 #, c-format
 msgid "could not get md5 checksum for package %s-%s\n"
 msgstr "n'a pas pu obtenir la 'signature' md5 pour le paquet %s-%s\n"
 
-#: ../pacman.c:597
+#: ../pacman.c:606
 #, c-format
 msgid "md5sums do not match for package %s-%s\n"
 msgstr "les 'signatures' md5 ne correspondent pas pour le paquet %s-%s\n"
 
-#: ../pacman.c:866
+#: ../pacman.c:875
 #, c-format
 msgid "could not remove lock file %s"
 msgstr "n'a pas pu effacer le fichier de verrou %s"
 
-#: ../pacman.c:867
+#: ../pacman.c:876
 #, c-format
 msgid "warning: could not remove lock file %s"
 msgstr "avertissement: n'a pas pu effacer le fichier de verrou %s"
 
-#: ../pacman.c:1117
+#: ../pacman.c:1126
 #, c-format
 msgid "config: new section '%s'\n"
 msgstr "config: new section '%s'\n"
 
-#: ../pacman.c:1148
+#: ../pacman.c:1157
 msgid "config: usesyslog\n"
 msgstr "config: usesyslog\n"
 
-#: ../pacman.c:1159
+#: ../pacman.c:1168
 #, c-format
 msgid "config: including %s\n"
 msgstr "config: including %s\n"
 
-#: ../pacman.c:1171 ../pacman.c:1179
+#: ../pacman.c:1180 ../pacman.c:1188
 #, c-format
 msgid "config: noupgrade: %s\n"
 msgstr "config: noupgrade: %s\n"
 
-#: ../pacman.c:1189 ../pacman.c:1197
+#: ../pacman.c:1198 ../pacman.c:1206
 #, c-format
 msgid "config: noextract: %s\n"
 msgstr "config: noextract: %s\n"
 
-#: ../pacman.c:1207 ../pacman.c:1215
+#: ../pacman.c:1216 ../pacman.c:1224
 #, c-format
 msgid "config: ignorepkg: %s\n"
 msgstr "config: ignorepkg: %s\n"
 
-#: ../pacman.c:1225 ../pacman.c:1233
+#: ../pacman.c:1234 ../pacman.c:1242
 #, c-format
 msgid "config: holdpkg: %s\n"
 msgstr "config: holdpkg: %s\n"
 
-#: ../pacman.c:1243
+#: ../pacman.c:1252
 #, c-format
 msgid "config: dbpath: %s\n"
 msgstr "config: dbpath: %s\n"
 
-#: ../pacman.c:1253
+#: ../pacman.c:1262
 #, c-format
 msgid "config: cachedir: %s\n"
 msgstr "config: cachedir: %s\n"
 
-#: ../pacman.c:1259
+#: ../pacman.c:1268
 #, c-format
 msgid "config: log file: %s\n"
 msgstr "config: log file: %s\n"
 
 #. The config value is in days, we use seconds
-#: ../pacman.c:1267
+#: ../pacman.c:1276
 #, c-format
 msgid "config: UpgradeDelay: %i\n"
 msgstr "config: UpgradeDelay: %i\n"
 
 #. add to the list
-#: ../pacman.c:1293
+#: ../pacman.c:1302
 #, c-format
 msgid "config: %s: server: %s\n"
 msgstr "config: %s: server: %s\n"
@@ -539,7 +539,7 @@ msgid "db vs targs: found %s as a conflict for %s"
 msgstr "comparaison base de donnée / cibles: trouve %s en conflit avec %s"
 
 #: ../conflict.c:238 ../conflict.c:337 ../deps.c:54 ../deps.c:619
-#: ../deps.c:659 ../group.c:40 ../handle.c:51 ../package.c:100 ../sync.c:63
+#: ../deps.c:659 ../group.c:40 ../handle.c:51 ../package.c:101 ../sync.c:63
 #: ../sync.c:601 ../sync.c:617 ../sync.c:713 ../trans.c:47 ../util.c:586
 #: ../util.c:593
 #, c-format
@@ -664,7 +664,7 @@ msgstr "cycle de dépendances détecte: %s"
 msgid "out of memory!"
 msgstr "dépassement de mémoire!"
 
-#: ../error.c:36 ../error.c:141
+#: ../error.c:36 ../error.c:143
 msgid "unexpected error"
 msgstr "erreur non prévue"
 
@@ -846,6 +846,10 @@ msgstr "échec de connection à l'hôte distant"
 msgid "forking process failed"
 msgstr "échec de duplication de processus"
 
+#: ../error.c:141
+msgid "no package owns the file"
+msgstr "aucun paquet ne contient le fichier"
+
 #: ../handle.c:134
 #, c-format
 msgid "PM_OPT_DBPATH set to '%s'"
@@ -956,46 +960,46 @@ msgstr "PM_OPT_MAXTRIES défini à '%d'"
 msgid "%s can't be opened\n"
 msgstr "%s ne peut etre ouvert\n"
 
-#: ../package.c:187
+#: ../package.c:188
 #, c-format
 msgid "could not open file %s"
 msgstr "ne peut ouvrir le fichier %s"
 
-#: ../package.c:204 ../package.c:264
+#: ../package.c:205 ../package.c:265
 #, c-format
 msgid "%s: syntax error in description file line %d"
 msgstr "%s: erreur de syntaxe dans le fichier de description à la ligne %d"
 
-#: ../package.c:321
+#: ../package.c:322
 msgid "could not parse the package description file"
 msgstr "n'a pas pu analyser le fichier de description"
 
-#: ../package.c:329
+#: ../package.c:330
 #, c-format
 msgid "missing package name in %s"
 msgstr "nom de paquet manquant dans %s"
 
-#: ../package.c:337
+#: ../package.c:338
 #, c-format
 msgid "missing package version in %s"
 msgstr "version de paquet manquant dans %s"
 
-#: ../package.c:376
+#: ../package.c:377
 #, c-format
 msgid "could not remove tempfile %s"
 msgstr "ne peut effacer le fichier temporaire %s"
 
-#: ../package.c:393
+#: ../package.c:394
 #, c-format
 msgid "bad package file in %s"
 msgstr "mauvais fichier de paquet dans %s"
 
-#: ../package.c:401
+#: ../package.c:402
 #, c-format
 msgid "missing package info file in %s"
 msgstr "fichier d'information manquant dans le paquet %s"
 
-#: ../package.c:537
+#: ../package.c:538
 #, c-format
 msgid "loading SCRIPLET info for '%s'"
 msgstr "charge les infos de SCRIPLET pour '%s'"
