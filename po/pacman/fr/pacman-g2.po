@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-04-07 05:33+0200\n"
-"PO-Revision-Date: 2007-04-07 09:29+0200\n"
+"POT-Creation-Date: 2007-04-11 15:31+0200\n"
+"PO-Revision-Date: 2007-04-11 20:59+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: Français\n"
 "MIME-Version: 1.0\n"
@@ -711,8 +711,7 @@ msgstr "vous ne pouvez effectuer cette opération à moins d'être root.\n"
 #: ../pacman-g2.c:512
 #, c-format
 msgid "failed to initilize pacman library (%s)\n"
-msgstr ""
-"échec d'initialisation de la librairie pacman (%s)\n"
+msgstr "échec d'initialisation de la librairie pacman (%s)\n"
 
 #: ../pacman-g2.c:518
 #, c-format
@@ -806,45 +805,37 @@ msgstr "aucune cible spécifiée (utiliser -h pour de l'aide)\n"
 msgid "no operation specified (use -h for help)\n"
 msgstr "aucune opération spécifiée (utiliser -h pour de l'aide)\n"
 
-#: ../query.c:56
-msgid "no file was specified for --owns\n"
-msgstr "aucun fichier spécifié pour --owns\n"
-
-#: ../query.c:61
-#, c-format
-msgid "%s is not a file.\n"
-msgstr "%s n'est pas un fichier.\n"
-
-#: ../query.c:78
-#, c-format
-msgid "%s is owned by %s %s\n"
-msgstr "%s appartient à %s %s\n"
-
-#: ../query.c:86
-#, c-format
-msgid "No package owns %s\n"
-msgstr "Aucun paquet ne contient %s\n"
-
-#: ../query.c:125 ../sync.c:358
+#: ../query.c:76 ../sync.c:358
 msgid "no usable package repositories configured.\n"
 msgstr "aucun dépot de paquet utilisable n'est définit.\n"
 
-#: ../query.c:164
+#: ../query.c:115
 #, c-format
 msgid "group \"%s\" was not found\n"
 msgstr "le groupe \"%s\" n'a pas été trouvé\n"
 
-#: ../query.c:174
+#: ../query.c:125
 msgid "no package file was specified for --file\n"
 msgstr "aucun fichier du paquet spécifié pour --file\n"
 
-#: ../query.c:178
+#: ../query.c:129
 #, c-format
 msgid "failed to load package '%s' (%s)\n"
 msgstr "échec de chargement du paquet '%s' (%s)\n"
 
+#: ../query.c:151
+#, c-format
+msgid "No package owns %s\n"
+msgstr "Aucun paquet ne contient %s\n"
+
+#: ../query.c:157
+#, c-format
+msgid "%s %s is an owner of %s\n"
+msgstr ""
+"%s %s est un des propriétaires de %s\n"
+
 #. something weird happened
-#: ../query.c:217 ../query.c:259
+#: ../query.c:179 ../query.c:221
 #, c-format
 msgid "package \"%s\" not found\n"
 msgstr "paquet \"%s\" non trouvé\n"
@@ -1206,3 +1197,9 @@ msgstr "vérification des conflits de fichiers"
 #, c-format
 msgid "failed to allocated %d bytes\n"
 msgstr "échec lors de l'allocation de %d bytes\n"
+
+#~ msgid "no file was specified for --owns\n"
+#~ msgstr "aucun fichier spécifié pour --owns\n"
+
+#~ msgid "%s is not a file.\n"
+#~ msgstr "%s n'est pas un fichier.\n"
