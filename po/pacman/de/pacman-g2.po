@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bmh 1980\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-03-29 05:32+0200\n"
+"POT-Creation-Date: 2007-04-19 05:33+0200\n"
 "PO-Revision-Date: 2006-05-04 17:10+0200\n"
 "Last-Translator: Marcus Habermehl <bmh1980@frugalware.org>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../add.c:69 ../deptest.c:64 ../remove.c:83 ../sync.c:396 ../sync.c:435
+#: ../add.c:69 ../deptest.c:64 ../remove.c:83 ../sync.c:317 ../sync.c:356
 #, fuzzy, c-format
 msgid ""
 "       if you're sure a package manager is not already running,\n"
@@ -39,7 +39,7 @@ msgstr "Konnte Paket '%s' nicht hinzufügen (%s)\n"
 msgid "done."
 msgstr "erledigt."
 
-#: ../add.c:92 ../remove.c:102 ../sync.c:523
+#: ../add.c:92 ../remove.c:102 ../sync.c:444
 #, c-format
 msgid "failed to prepare transaction (%s)\n"
 msgstr "Konnte Durchführung nicht vorbereiten (%s)\n"
@@ -49,22 +49,22 @@ msgstr "Konnte Durchführung nicht vorbereiten (%s)\n"
 msgid ":: %s: requires %s"
 msgstr ":: %s: Benötigt %s"
 
-#: ../add.c:111 ../sync.c:544
+#: ../add.c:111 ../sync.c:465
 #, c-format
 msgid ":: %s: conflicts with %s"
 msgstr ":: %s: Steht im Konflikt mit %s"
 
-#: ../add.c:121 ../sync.c:669
+#: ../add.c:121 ../sync.c:590
 #, c-format
 msgid "%s%s exists in \"%s\" (target) and \"%s\" (target)"
 msgstr "%s%s existiert in \"%s\" (Paket) und \"%s\" (Paket)"
 
-#: ../add.c:128 ../sync.c:676
+#: ../add.c:128 ../sync.c:597
 #, c-format
 msgid "%s: %s%s exists in filesystem"
 msgstr "%s: %s%s existiert im Dateisystem"
 
-#: ../add.c:136 ../sync.c:684 ../sync.c:691
+#: ../add.c:136 ../sync.c:605 ../sync.c:612
 msgid ""
 "\n"
 "errors occurred, no packages were upgraded.\n"
@@ -72,17 +72,17 @@ msgstr ""
 "\n"
 "Fehler aufgetreten, kein Paket wird aktualisiert.\n"
 
-#: ../add.c:143 ../sync.c:554
+#: ../add.c:143 ../sync.c:475
 #, c-format
 msgid ":: %.1f MB required, have %.1f MB"
 msgstr ""
 
-#: ../add.c:157 ../remove.c:142 ../sync.c:662
+#: ../add.c:157 ../remove.c:142 ../sync.c:583
 #, c-format
 msgid "failed to commit transaction (%s)\n"
 msgstr ""
 
-#: ../add.c:164 ../remove.c:152 ../sync.c:428 ../sync.c:704
+#: ../add.c:164 ../remove.c:152 ../sync.c:349 ../sync.c:625
 #, c-format
 msgid "failed to release transaction (%s)\n"
 msgstr ""
@@ -686,159 +686,150 @@ msgstr ""
 msgid "                       the terms of the GNU General Public License\n"
 msgstr ""
 
-#: ../pacman-g2.c:362
+#: ../pacman-g2.c:357
 msgid "bad root path"
 msgstr "Schlechter root Pfad"
 
-#: ../pacman-g2.c:389
+#: ../pacman-g2.c:384
 msgid "only one operation may be used at a time\n"
 msgstr ""
 
-#: ../pacman-g2.c:488
+#: ../pacman-g2.c:484
 msgid "you cannot perform this operation unless you are root.\n"
 msgstr "Sie benötigen root Rechte um diese Operation ausführen zu können\n"
 
-#: ../pacman-g2.c:512
-#, c-format
-msgid "failed to initilize alpm library (%s)\n"
+#: ../pacman-g2.c:508
+#, fuzzy, c-format
+msgid "failed to initilize pacman library (%s)\n"
 msgstr "Konnte alpm Bibliothek nicht initialisieren (%s)\n"
 
-#: ../pacman-g2.c:518
+#: ../pacman-g2.c:514
 #, c-format
 msgid "failed to set option LOGMASK (%s)\n"
 msgstr "Konnte Option LOGMASK nicht setzen (%s)\n"
 
-#: ../pacman-g2.c:522
+#: ../pacman-g2.c:518
 #, fuzzy, c-format
 msgid "failed to set option DBPATH (%s)\n"
 msgstr "Konnte Option DBPATH nicht setzen (%s)\n"
 
-#: ../pacman-g2.c:526
+#: ../pacman-g2.c:522
 #, c-format
 msgid "failed to set option LOGCB (%s)\n"
 msgstr "Konnte Option LOGCB nicht setzen (%s)\n"
 
-#: ../pacman-g2.c:534
+#: ../pacman-g2.c:530
 #, fuzzy, c-format
 msgid "failed to parse config (%s)\n"
 msgstr "Konnte Durchführung nicht vorbereiten (%s)\n"
 
-#: ../pacman-g2.c:540
+#: ../pacman-g2.c:536
 #, fuzzy, c-format
 msgid "failed to set option DLCB (%s)\n"
 msgstr "Konnte Option LOGCB nicht setzen (%s)\n"
 
-#: ../pacman-g2.c:544
+#: ../pacman-g2.c:540
 #, fuzzy, c-format
 msgid "failed to set option DLFNM (%s)\n"
 msgstr "Konnte Option LOGFILE nicht setzen (%s)\n"
 
-#: ../pacman-g2.c:548
+#: ../pacman-g2.c:544
 #, fuzzy, c-format
 msgid "failed to set option DLOFFSET (%s)\n"
 msgstr "Konnte Option LOGFILE nicht setzen (%s)\n"
 
-#: ../pacman-g2.c:552
+#: ../pacman-g2.c:548
 #, fuzzy, c-format
 msgid "failed to set option DLT0 (%s)\n"
 msgstr "Konnte Option DBPATH nicht setzen (%s)\n"
 
-#: ../pacman-g2.c:556
+#: ../pacman-g2.c:552
 #, fuzzy, c-format
 msgid "failed to set option DLT (%s)\n"
 msgstr "Konnte Option DBPATH nicht setzen (%s)\n"
 
-#: ../pacman-g2.c:560
+#: ../pacman-g2.c:556
 #, fuzzy, c-format
 msgid "failed to set option DLRATE (%s)\n"
 msgstr "Konnte Option DBPATH nicht setzen (%s)\n"
 
-#: ../pacman-g2.c:564
+#: ../pacman-g2.c:560
 #, fuzzy, c-format
 msgid "failed to set option DLXFERED1 (%s)\n"
 msgstr "Konnte Option LOGFILE nicht setzen (%s)\n"
 
-#: ../pacman-g2.c:568
+#: ../pacman-g2.c:564
 #, fuzzy, c-format
 msgid "failed to set option DLETA_H (%s)\n"
 msgstr "Konnte Option DBPATH nicht setzen (%s)\n"
 
-#: ../pacman-g2.c:572
+#: ../pacman-g2.c:568
 #, fuzzy, c-format
 msgid "failed to set option DLETA_M (%s)\n"
 msgstr "Konnte Option DBPATH nicht setzen (%s)\n"
 
-#: ../pacman-g2.c:576
+#: ../pacman-g2.c:572
 #, fuzzy, c-format
 msgid "failed to set option DLETA_S (%s)\n"
 msgstr "Konnte Option LOGMASK nicht setzen (%s)\n"
 
-#: ../pacman-g2.c:584
+#: ../pacman-g2.c:580
 #, c-format
 msgid "failed to set option IGNOREPKG (%s)\n"
 msgstr "Konnte Option IGNOREPKG nicht setzen (%s)\n"
 
-#: ../pacman-g2.c:592
+#: ../pacman-g2.c:588
 msgid "Targets:"
 msgstr "Pakete:"
 
-#: ../pacman-g2.c:598
+#: ../pacman-g2.c:594
 #, c-format
 msgid "could not register 'local' database (%s)\n"
 msgstr ""
 
-#: ../pacman-g2.c:605
+#: ../pacman-g2.c:601
 msgid "no targets specified (use -h for help)\n"
 msgstr "Keine Pakete angegeben (benutzen Sie -h für Hilfe)\n"
 
-#: ../pacman-g2.c:618
+#: ../pacman-g2.c:614
 msgid "no operation specified (use -h for help)\n"
 msgstr "Keine Operation angegeben (benutzen Sie -h für Hilfe)\n"
 
-#: ../query.c:56
-msgid "no file was specified for --owns\n"
-msgstr "Es wurde keine Datei für --owns angegeben\n"
-
-#: ../query.c:61
-#, c-format
-msgid "%s is not a file.\n"
-msgstr "%s ist keine Datei.\n"
-
-#: ../query.c:78
-#, c-format
-msgid "%s is owned by %s %s\n"
-msgstr "%s ist in %s %s enthalten\n"
-
-#: ../query.c:86
-#, c-format
-msgid "No package owns %s\n"
-msgstr "Kein Paket enthält %s\n"
-
-#: ../query.c:125 ../sync.c:358
+#: ../query.c:76 ../sync.c:261
 msgid "no usable package repositories configured.\n"
 msgstr "Keine brauchbaren Paketrepositories konfiguriert.\n"
 
-#: ../query.c:164
+#: ../query.c:115
 #, c-format
 msgid "group \"%s\" was not found\n"
 msgstr "Gruppe \"%s\" wurde nicht gefunden\n"
 
-#: ../query.c:174
+#: ../query.c:125
 msgid "no package file was specified for --file\n"
 msgstr "Es wurde kein Paket für --file angegeben\n"
 
-#: ../query.c:178
+#: ../query.c:129
 #, c-format
 msgid "failed to load package '%s' (%s)\n"
 msgstr "Konnte Paket '%s' nicht laden (%s)\n"
 
+#: ../query.c:151
+#, c-format
+msgid "No package owns %s\n"
+msgstr "Kein Paket enthält %s\n"
+
+#: ../query.c:157
+#, fuzzy, c-format
+msgid "%s %s is an owner of %s\n"
+msgstr "%s ist in %s %s enthalten\n"
+
 #. something weird happened
-#: ../query.c:217 ../query.c:259
+#: ../query.c:179 ../query.c:221
 #, c-format
 msgid "package \"%s\" not found\n"
 msgstr "Paket \"%s\" nicht gefunden\n"
 
-#: ../remove.c:64 ../sync.c:474
+#: ../remove.c:64 ../sync.c:395
 #, c-format
 msgid ":: group %s:\n"
 msgstr ":: Gruppe %s:\n"
@@ -852,7 +843,7 @@ msgstr "    Entferne den gesamten Inhalt? [J/n] "
 msgid ":: Remove %s from group %s? [Y/n] "
 msgstr ":: Entferne %s aus Gruppe %s? [J/n] "
 
-#: ../remove.c:81 ../sync.c:394 ../sync.c:433
+#: ../remove.c:81 ../sync.c:315 ../sync.c:354
 #, c-format
 msgid "failed to init transaction (%s)\n"
 msgstr ""
@@ -879,83 +870,75 @@ msgstr ""
 "\n"
 "Möchten Sie all diese Pakete entfernen? [J/n] "
 
-#: ../sync.c:73
-msgid "Do you want to remove old packages from cache? [Y/n] "
-msgstr "Möchten Sie alte Pakete aus dem Cache entfernen? [J/n] "
-
-#: ../sync.c:75
-msgid "removing old packages from cache... "
-msgstr "Entferne alte Pakete aus dem Cache ... "
-
-#: ../sync.c:78
-msgid "could not access cache directory\n"
-msgstr "Konnte nicht auf Cacheverzeichnis zugreifen\n"
-
-#. full cleanup
-#: ../sync.c:138
-msgid "Do you want to remove all packages from cache? [Y/n] "
-msgstr "Wollen Sie alle Pakete aus dem Cache entfernen? [J/n] "
-
-#: ../sync.c:140
-msgid "removing all packages from cache... "
-msgstr "Entferne alle Pakete aus dem Cache ... "
-
-#: ../sync.c:143
-msgid "could not remove cache directory\n"
-msgstr "Konnte Cacheverzeichnis nicht entfernen\n"
-
-#: ../sync.c:148
-msgid "could not create new cache directory\n"
-msgstr "Konnte neues Cacheverzeichnis nicht erstellen\n"
-
-#: ../sync.c:153 ../trans.c:73 ../trans.c:81 ../trans.c:95 ../trans.c:109
-#: ../trans.c:125 ../trans.c:137
-msgid "done.\n"
-msgstr "beendet.\n"
-
-#: ../sync.c:168
+#: ../sync.c:66
 #, c-format
 msgid "failed to synchronize %s\n"
 msgstr "Konnte %s nicht synchronisieren\n"
 
-#: ../sync.c:170
+#: ../sync.c:68
 #, c-format
 msgid "failed to update %s (%s)\n"
 msgstr "Konnte %s nicht aktualisieren (%s)\n"
 
-#: ../sync.c:174
+#: ../sync.c:73
 #, c-format
 msgid " %s is up to date\n"
 msgstr " %s ist aktuell\n"
 
-#: ../sync.c:283
+#: ../sync.c:184
 #, c-format
 msgid "package \"%s\" was not found.\n"
 msgstr "Paket \"%s\" wurde nicht gefunden.\n"
 
-#: ../sync.c:321
+#: ../sync.c:222
 #, c-format
 msgid "repository \"%s\" was not found.\n"
 msgstr "Repository \"%s\" wurde nicht gefunden.\n"
 
+#: ../sync.c:269
+msgid "Do you want to remove old packages from cache? [Y/n] "
+msgstr "Möchten Sie alte Pakete aus dem Cache entfernen? [J/n] "
+
+#: ../sync.c:271
+msgid "removing old packages from cache... "
+msgstr "Entferne alte Pakete aus dem Cache ... "
+
+#: ../sync.c:274
+msgid "Do you want to remove all packages from cache? [Y/n] "
+msgstr "Wollen Sie alle Pakete aus dem Cache entfernen? [J/n] "
+
+#: ../sync.c:276
+msgid "removing all packages from cache... "
+msgstr "Entferne alle Pakete aus dem Cache ... "
+
+#: ../sync.c:280 ../trans.c:73 ../trans.c:81 ../trans.c:95 ../trans.c:109
+#: ../trans.c:125 ../trans.c:137
+msgid "done.\n"
+msgstr "beendet.\n"
+
+#: ../sync.c:282
+#, fuzzy, c-format
+msgid "failed to clean the cache (%s)\n"
+msgstr "Konnte %s nicht aktualisieren (%s)\n"
+
 #. grab a fresh package list
-#: ../sync.c:368
+#: ../sync.c:289
 msgid ":: Synchronizing package databases...\n"
 msgstr ":: Synchronisiere Paketdatenbank ...\n"
 
-#: ../sync.c:369
+#: ../sync.c:290
 msgid "synchronizing package lists"
 msgstr "Synchronisiere Paketlisten"
 
-#: ../sync.c:403
+#: ../sync.c:324
 msgid ":: Starting local database upgrade...\n"
 msgstr ":: Starte Aktualisierung der lokalen Datenbank ...\n"
 
-#: ../sync.c:404
+#: ../sync.c:325
 msgid "starting full system upgrade"
 msgstr "Starte komplette Systemaktualisierung"
 
-#: ../sync.c:422
+#: ../sync.c:343
 #, fuzzy
 msgid ""
 "\n"
@@ -964,49 +947,49 @@ msgstr ""
 "\n"
 ":: pacman hat eine neuere Version des \"pacman\" Paketes gefunden.\n"
 
-#: ../sync.c:423
+#: ../sync.c:344
 #, fuzzy
 msgid ":: It is recommended that you allow pacman-g2 to upgrade itself\n"
 msgstr ":: Es wird empfohlen, zuerst pacman zu aktualisieren und\n"
 
-#: ../sync.c:424
+#: ../sync.c:345
 msgid ":: first, then you can re-run the operation with the newer version.\n"
 msgstr ":: danach Ihre Eingabe mit der neueren Version zu wiederholen.\n"
 
-#: ../sync.c:426
+#: ../sync.c:347
 #, fuzzy
 msgid ":: Upgrade pacman-g2 first? [Y/n] "
 msgstr ":: Zuerst pacman aktualisieren? [J/n] "
 
-#: ../sync.c:441 ../sync.c:462
+#: ../sync.c:362 ../sync.c:383
 #, c-format
 msgid "could not add target '%s': %s\n"
 msgstr "Konnte Paket '%s' nicht hinzufügen: %s\n"
 
-#: ../sync.c:480
+#: ../sync.c:401
 msgid ":: Install whole content? [Y/n] "
 msgstr ":: Gesamten Inhalt installieren? [J/n] "
 
-#: ../sync.c:487
+#: ../sync.c:408
 #, c-format
 msgid ":: Install %s from group %s? [Y/n] "
 msgstr ":: %s aus Gruppe %s installieren? [J/n] "
 
-#: ../sync.c:510
+#: ../sync.c:431
 #, c-format
 msgid "could not add target '%s': not found in sync db\n"
 msgstr "Konnte Paket '%s' nicht hinzufügen: Nicht in sync db gefunden\n"
 
-#: ../sync.c:529
+#: ../sync.c:450
 msgid "is required by"
 msgstr "wird benötigt von"
 
-#: ../sync.c:529
+#: ../sync.c:450
 #, fuzzy
 msgid "requries"
 msgstr "benötigt"
 
-#: ../sync.c:606
+#: ../sync.c:527
 msgid ""
 "\n"
 "Remove:  "
@@ -1014,7 +997,7 @@ msgstr ""
 "\n"
 "Entfernen: "
 
-#: ../sync.c:622
+#: ../sync.c:543
 msgid ""
 "\n"
 "Targets: "
@@ -1022,7 +1005,7 @@ msgstr ""
 "\n"
 "Pakete:  "
 
-#: ../sync.c:625
+#: ../sync.c:546
 #, c-format
 msgid ""
 "\n"
@@ -1031,7 +1014,7 @@ msgstr ""
 "\n"
 "Gesamtgröße:          %.1f MB\n"
 
-#: ../sync.c:627
+#: ../sync.c:548
 #, fuzzy, c-format
 msgid ""
 "\n"
@@ -1040,7 +1023,7 @@ msgstr ""
 "\n"
 "Gesamtgröße:          %.1f MB\n"
 
-#: ../sync.c:634
+#: ../sync.c:555
 msgid ""
 "\n"
 "Beginning download...\n"
@@ -1048,11 +1031,11 @@ msgstr ""
 "\n"
 "Beginne download ...\n"
 
-#: ../sync.c:638
+#: ../sync.c:559
 msgid "Proceed with download? [Y/n] "
 msgstr "Download fortsetzen? [J/n] "
 
-#: ../sync.c:646
+#: ../sync.c:567
 msgid ""
 "\n"
 "Beginning upgrade process...\n"
@@ -1060,7 +1043,7 @@ msgstr ""
 "\n"
 "Beginne Aktualisierungsprozess ...\n"
 
-#: ../sync.c:650
+#: ../sync.c:571
 msgid "Proceed with upgrade? [Y/n] "
 msgstr "Aktualisierung fortsetzen? [J/n] "
 
@@ -1195,6 +1178,21 @@ msgstr "Prüfe auf Dateikonflikte ... "
 #, c-format
 msgid "failed to allocated %d bytes\n"
 msgstr ""
+
+#~ msgid "could not access cache directory\n"
+#~ msgstr "Konnte nicht auf Cacheverzeichnis zugreifen\n"
+
+#~ msgid "could not remove cache directory\n"
+#~ msgstr "Konnte Cacheverzeichnis nicht entfernen\n"
+
+#~ msgid "could not create new cache directory\n"
+#~ msgstr "Konnte neues Cacheverzeichnis nicht erstellen\n"
+
+#~ msgid "no file was specified for --owns\n"
+#~ msgstr "Es wurde keine Datei für --owns angegeben\n"
+
+#~ msgid "%s is not a file.\n"
+#~ msgstr "%s ist keine Datei.\n"
 
 #, fuzzy
 #~ msgid "Size (uncompressed):%ld\n"
