@@ -2,71 +2,77 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-04-20 05:32+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2007-04-23 05:45+0200\n"
+"PO-Revision-Date: 2007-04-23 23:09+0200\n"
+"Last-Translator: andrej prochazka <a.prochazka@gsi.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 0.11\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Pootle 0.10.1\n"
 
 #: ../netconfig.c:46
 #, c-format
 msgid "usage: %s [options] start|stop|restart|status|list\n"
 msgstr ""
+"použitie: %s [options] start|stop|restart|status|list\n"
 
 #: ../netconfig.c:47
 #, c-format
 msgid "       %s [options] [profile]\n"
 msgstr ""
+"%s [options] [profile]\n"
 
 #: ../netconfig.c:48
 #, c-format
 msgid "-h | --help              This help.\n"
 msgstr ""
+"-h | --help              Tento help.\n"
 
 #: ../netconfig.c:49
 #, c-format
 msgid "-f | --fast              Fast mode, used by the setup.\n"
 msgstr ""
+"f | --fast              Rýchly mód, používaný pri inštalácii.\n"
+"../netconfig.c:49"
 
 #: ../netconfig.c:50
 #, c-format
 msgid ""
 "                         SIGHUP will unload and reload the current profile.\n"
 msgstr ""
+"SIGHUP znovu načíta aktuálny profil.\n"
 
 #: ../netconfig.c:51
 #, c-format
 msgid "     --dry-run           Do not actually perform the operation.\n"
 msgstr ""
+"  --dry-run           V skutočnosti nevykonaj operáciu.\n"
 
 #: ../netconfig.c:60
 msgid "Use a DHCP server"
-msgstr ""
+msgstr "Použi DHCP server"
 
 #: ../netconfig.c:61
 msgid "Use a static IP address"
-msgstr ""
+msgstr "Použi statickú IP adresu"
 
 #: ../netconfig.c:62
 msgid "DSL connection"
-msgstr ""
+msgstr "DSL pripojenie"
 
 #: ../netconfig.c:63
 msgid "No network - loopback connection only"
-msgstr ""
+msgstr "Žiadne pripojenie - použi iba loopback spojenie"
 
 #: ../netconfig.c:65
 msgid "Select network connection type"
-msgstr ""
+msgstr "Vyber typ pripojenia"
 
 #: ../netconfig.c:66
 msgid ""
@@ -80,46 +86,51 @@ msgid ""
 "select 'dsl'. \n"
 "Finally, if you do not have a network card, select the 'lo' choice. \n"
 msgstr ""
+"Potrebujeme vedieť ako je váš počítač pripojení na sieť.\n"
+"Ak máte internú sieťovú kartu a priradenú IP adresu, bránu (gateway) a DNS, použite statcké pripojenie  na zadanie týchto hodnôt. Túto možnosť použite ak máte DSL pripojenie. \n"
+". Ak vám IP adresu prideluje DHCP server, vyberte \"dhcp\".\n"
+"Ak máte sieťovú kartu priamo pripojenú na DSL modem , vyberte \"dsl\". \n"
+"Ak nemáte sieťovú kartu, vyberte loopback. "
 
 #: ../netconfig.c:83
 msgid "DSL configuration"
-msgstr ""
+msgstr "konfigurácia DSL"
 
 #: ../netconfig.c:83
 msgid "Do you want to configure a DSL connetion now?"
-msgstr ""
+msgstr "Chcete nakonfigurovať DSL pripojenie teraz?"
 
 #: ../netconfig.c:85
 msgid "Enter user name"
-msgstr ""
+msgstr "Nápište užívateľské meno"
 
 #: ../netconfig.c:86
 msgid "Enter your PPPoE user name:"
-msgstr ""
+msgstr "Napíšte vaše PPPoE užívateľské meno:"
 
 #: ../netconfig.c:90 ../netconfig.c:92
 msgid "Password"
-msgstr ""
+msgstr "heslo"
 
 #: ../netconfig.c:91
 msgid "Please enter your PPPoE password"
-msgstr ""
+msgstr "Napíšte prosím vaše PPPoE heslo"
 
 #: ../netconfig.c:93
 msgid "Please re-enter your PPPoE password"
-msgstr ""
+msgstr "Napíšte prosím vaše PPPoE heslo ešte raz"
 
 #: ../netconfig.c:99
 msgid "Passwords don't match"
-msgstr ""
+msgstr "Zadané heslá sa nezhodujú"
 
 #: ../netconfig.c:100
 msgid "Sorry, the passwords do not match. Try again?"
-msgstr ""
+msgstr "Prepáčte, ale zadané heslá sa nezhodujú, pokúsiť sa znova ?"
 
 #: ../netconfig.c:103 ../netconfig.c:151
 msgid "Enter interface name"
-msgstr ""
+msgstr "Napíšte meno interfaceu :"
 
 #: ../netconfig.c:104
 msgid ""
@@ -128,14 +139,17 @@ msgid ""
 "If unsure, just hit enter.\n"
 "Enter interface name:"
 msgstr ""
+"Napíšte sieťový interface, ktorý je napojený na DSL modem. Je to ethn, kde 'n' je nejaké číslo. \n"
+"Ak si nie ste istý, stačte enter.\n"
+"Napíšte meno interfaceu"
 
 #: ../netconfig.c:132
 msgid "Network configuration"
-msgstr ""
+msgstr "Konfigurácia siete"
 
 #: ../netconfig.c:135
 msgid "Enter hostname"
-msgstr ""
+msgstr "Zadaj názov hosta"
 
 #: ../netconfig.c:135
 msgid ""
@@ -146,6 +160,12 @@ msgid ""
 "\n"
 "Enter full hostname:"
 msgstr ""
+"Potrebujeme názov, ktorý chcete mať ako host. \n"
+" Celé meno je potrebné, napr. \n"
+"\n"
+"frugalware.example.net\n"
+"\n"
+"Zadajte celé meno :"
 
 #: ../netconfig.c:152
 msgid ""
@@ -154,30 +174,35 @@ msgid ""
 "If unsure, just hit enter.\n"
 "Enter interface name:"
 msgstr ""
+"Potrebujeme meno sieťového interfaceu, s ktorým sa chcete pripájať do siete. \n"
+"Ak si nie ste istý, stačte enter.\n"
+"Zadajte meno interfaceu:"
 
 #: ../netconfig.c:160
 msgid "Extended network name"
-msgstr ""
+msgstr "Meno rozšírenej siete - ESSID"
 
 #: ../netconfig.c:160
 msgid ""
 "It seems that this network card has a wireless extension. In order to use "
 "it, you must set your extended netwok name (ESSID). Enter your ESSID:"
-msgstr ""
+msgstr "Vyzerá, že táto karta podporuje bezdôtové pripojenie. Ak ho chcete využiť, musíte zadať meno rozšírenej siete - ESSID. Zadajte váš ESSID:"
 
 #: ../netconfig.c:165
 msgid "Encryption key"
-msgstr ""
+msgstr "šifrovací kľúč "
 
 #: ../netconfig.c:165
 msgid ""
 "If you have an encryption key, then please enter it below.\n"
 "Examples: 4567-89AB-CD or  s:password"
 msgstr ""
+"Ak máte šifrovací kľúč, tak ho prosím zadajte.\n"
+" Príklad: 4567-89AB-CDalebo s:heslo"
 
 #: ../netconfig.c:172
 msgid "Set DHCP hostname"
-msgstr ""
+msgstr "Nastavenie DHCP host mena"
 
 #: ../netconfig.c:172
 msgid ""
@@ -185,20 +210,20 @@ msgid ""
 "connect. If so, they'll have assigned a hostname to your machine. If you "
 "wereassigned a DHCP hostname, please enter it below. If you do not have a "
 "DHCP hostname, justhit enter."
-msgstr ""
+msgstr "Niektorý providery vyžadujú, aby bolo hostname zadanané správne ak sa chcete pripojiť pomocou DHCP servera. Ak je to váš prípad, pridelili vám hostname vášho počítača.  Ak máte takéto pridelené meno zadajte ho. Ak nemáte žiadne, stačte enter "
 
 #. options = ip netmask netmask
 #: ../netconfig.c:185
 msgid "Enter ip address"
-msgstr ""
+msgstr "Zadanie IP adresy"
 
 #: ../netconfig.c:185
 msgid "Enter your IP address for the local machine."
-msgstr ""
+msgstr "Zadajte IP adresu počítača"
 
 #: ../netconfig.c:186
 msgid "Enter netmask for local network"
-msgstr ""
+msgstr "Zadanie masky siete - netmask"
 
 #: ../netconfig.c:187
 msgid ""
@@ -206,20 +231,22 @@ msgid ""
 "255.255.255.0\n"
 "If unsure, just hit enter."
 msgstr ""
+"Zadajte masku siete. Vo všeobecnosti vyzerá niečo ako 255.255.255.0\n"
+"Ak si nie ste istý stačte enter"
 
 #: ../netconfig.c:194
 msgid "Enter gateway address"
-msgstr ""
+msgstr "Nastavenie gateway - brány"
 
 #: ../netconfig.c:194
 msgid ""
 "Enter the address for the gateway on your network. If you don't have a "
 "gateway on your network just hit enter, without entering any ip address."
-msgstr ""
+msgstr "Nastavte váš gateway pre vašu sieť. Ak nemáte žiadny, stlačte enter bez zadania ip adresy"
 
 #: ../netconfig.c:200
 msgid "Select nameserver"
-msgstr ""
+msgstr "Výber DNS servera"
 
 #: ../netconfig.c:200
 msgid ""
@@ -228,21 +255,25 @@ msgid ""
 "If you don't have a name server on your network just hit enter, without "
 "entering any ip address."
 msgstr ""
+"Zadajte prosím IP adresu DNS servera. Môžete zadať viacero DNS serverov neskôr editovaním súboru /etc/sysconfig/network/default.\n"
+"Ak nemáte žiadny, stlačte enter bez zadania ip adresy"
 
 #: ../netconfig.c:211
 msgid "Adjust configuration files"
-msgstr ""
+msgstr "nastavenie konfiguračných súborov"
 
 #: ../netconfig.c:211
 msgid "Accept these settings and adjust configuration files?"
-msgstr ""
+msgstr "Akceptovať nastavenia a nastaviť konfiguračné súbory ?"
 
 #: ../netconfig.c:275
 #, c-format
 msgid "No profile loaded.\n"
 msgstr ""
+"Nie je načítaný žiadny profil\n"
 
 #: ../netconfig.c:280
 #, c-format
 msgid "Current profile: %s\n"
 msgstr ""
+"Aktuálny profil: %s\n"
