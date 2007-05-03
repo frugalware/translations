@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hu\n"
-"POT-Creation-Date: 2007-04-30 05:21+0200\n"
+"POT-Creation-Date: 2007-05-02 05:23+0200\n"
 "PO-Revision-Date: 2007-04-27 20:23+0200\n"
 "Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
 "Language-Team: <hu@li.org>\n"
@@ -316,9 +316,10 @@ msgstr "== Bevezetés"
 
 # type: Plain text
 #: user.txt:7
+#, fuzzy
 msgid ""
-"Before you start to read this documents, you should know some important "
-"things about how to read this document."
+"Before you start to read this document, you should know some important "
+"things about how to read it."
 msgstr ""
 "Mielőtt elkezdené olvasni ezt a dokumentumot, tudnia kell néhány fontos "
 "dologról azzal kapcsolatban, hogy hogyan tegye azt."
@@ -354,10 +355,11 @@ msgstr "=== Parancssoros programok futtatása"
 
 # type: Plain text
 #: user.txt:23
+#, fuzzy
 msgid ""
 "Along this document, there are boxed text that shows you a console log. "
 "These logs are important and requires quite some attentions since most off "
-"the time you are expected to run them and get the expected output."
+"the time you are expected to run them and get the same output."
 msgstr ""
 "A dokumentum olvasása folyamán találkozni fog bekeretezett szövegekkel, "
 "melyek egy parancssori kimenetet mutatnak be. Ezek fontosak, és figyelmet "
@@ -384,26 +386,29 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:30
+#, fuzzy
 msgid ""
-"This is how a console log look. Lets details it so you understand what does."
+"This is how a console log look. Lets details it so you understand what means."
 msgstr ""
 "Így néz ki egy parancssor kimenete. Nézzük meg részletesen, így meg fogja "
 "érteni hogy mi mit jelent."
 
 # type: Plain text
 #: user.txt:33
+#, fuzzy
 msgid ""
 "The `echo foo bar` part is what you should type and it's the command. The "
-"following next line `foo bar` is the ouput of the previous commad."
+"following line `foo bar` is the ouput of the previous commad."
 msgstr ""
 "Az `echo akar micsoda` rész az amit be kell gépeljen és ez a parancs. A "
 "következő sor az pedig a kimenete az előző parancsnak."
 
 # type: Plain text
 #: user.txt:38
+#, fuzzy
 msgid ""
 "You may wonder what differenciate the command from the output. You see that "
-"in front of the command there is a `$`. This indicates that ist's a command "
+"in front of the command there is a `$`. This indicates that it's a command "
 "line, but there is more meaning in this symbol. This symbol can change "
 "depending on the user priviledges required to run the command."
 msgstr ""
@@ -414,8 +419,9 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:46
+#, fuzzy
 msgid ""
-".Here is the list of the common prefix for the console commands.  * `$` "
+".Here is the list of the common prefix for the console commands: * `$` "
 "indicates that any user can run the command. Most of the time it means you "
 "have to run the command with your user.  * `user$` indicates that a the "
 "pecified user priviledge are required to run this command. Usually this is "
@@ -1171,8 +1177,9 @@ msgstr ""
 # type: Plain text
 #: user.txt:312 install.txt:102
 msgid ""
-"The following examples explains how you can get the iso. You have to replace "
-"respectively `$version$`, `$arch$` and `$media$` to get the wanted iso."
+"The following examples explains how you can get the iso images. You have to "
+"replace respectively `$version$`, `$arch$` and `$media$` to get the wanted "
+"iso image."
 msgstr ""
 
 # type: Plain text
@@ -1908,56 +1915,67 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:635 network.txt:19
-#, no-wrap
 msgid ""
-"1. First, we have to give a name to your computer. The name must consist of at\n"
-"least two parts, separated by a dot (.).\n"
+". First, we have to give a name to your computer. The name must consist of "
+"at least two parts, separated by a dot (.)."
+msgstr ""
+
+# type: Plain text
+#: user.txt:648 network.txt:32
+msgid ""
+". In the next dialog, you should choose how your machine connects to the "
+"network.  If you have an internal network card and an assigned IP address, "
+"gateway, and DNS, use static to enter these values. If your IP address is "
+"assigned by a DHCP server (commonly used by cable modem services, not equal "
+"to dsl services), select dhcp. In case you've got a DSL connection (eg. "
+"ADSL) chose the dsl option! Finally, if you do not have a network card, "
+"select the lo choice. The lo is also the correct choice if you are using a "
+"PCMCIA network card.  + When you set up the network first question will be "
+"the interface you want to set up.  It is usually eth0, but it can differ "
+"when you set up wireless interfaces for example.  If you set up a wireless "
+"card netconfig will also ask your ESSID and encription key."
+msgstr ""
+
+# type: Plain text
+#: user.txt:653 network.txt:37
+msgid ""
+".. If you chose static, you must give your IP address, the netmask of your "
+"local network, your gateway address (you may leave it blank) and the IP "
+"address of your primary name server (you can add more nameservers later by "
+"editing the '/etc/resolv.conf' file) and then the configuration is finished."
+msgstr ""
+
+# type: Plain text
+#: user.txt:657 network.txt:41
+msgid ""
+".. If you chose dhcp, you can optionally give your dhcp hostname, however, "
+"netconfig will not ask more questions about your network, since all other "
+"data will be provided by the DHCP server."
+msgstr ""
+
+# type: Plain text
+#: user.txt:662 network.txt:46
+msgid ""
+".. In dsl part you must give your username, something like 'someone@provider."
+"net'.  Then you'll have to specify the network interface (usually eth0) "
+"through which the ADSL connecting script will try to communicate with your "
+"ADSL modem. Then enter your password twice."
 msgstr ""
 
 # type: Plain text
 #: user.txt:664 network.txt:48
-#, no-wrap
-msgid ""
-"2. In the next dialog, you should choose how your machine connects to the network.\n"
-"If you have an internal network card and an assigned IP address, gateway, and\n"
-"DNS, use static to enter these values. If your IP address is assigned by a\n"
-"DHCP server (commonly used by cable modem services, not equal to dsl\n"
-"services), select dhcp. In case you've got a DSL connection (eg. ADSL) chose\n"
-"the dsl option! Finally, if you do not have a network card,\n"
-"select the lo choice. The lo is also the correct choice if you are\n"
-"using a PCMCIA network card.\n"
-"+\n"
-"When you set up the network first question will be the interface you want to set up.\n"
-"It is usually eth0, but it can differ when you set up wireless interfaces for example.\n"
-"If you set up a wireless card netconfig will also ask your ESSID and encription key.\n"
-"+\n"
-"2.1 If you chose static, you must give your IP address, the netmask of your\n"
-"local network, your gateway address (you may leave it blank) and the IP\n"
-"address of your primary name server (you can add more nameservers later\n"
-"by editing the '/etc/resolv.conf' file) and then the configuration is finished.\n"
-"+\n"
-"2.2 If you chose dhcp, you can optionally give your dhcp hostname, however,\n"
-"netconfig will not ask more questions about your network, since all\n"
-"other data will be provided by the DHCP server.\n"
-"+\n"
-"2.3 In dsl part you must give your username, something like 'someone@provider.net'.\n"
-"Then you'll have to specify the network interface (usually eth0) through\n"
-"which the ADSL connecting script will try to communicate with your ADSL\n"
-"modem. Then enter your password twice.\n"
-"+\n"
-"2.4 If you chose lo, you don't have to answer any questions.\n"
+msgid ".. If you chose lo, you don't have to answer any questions."
 msgstr ""
 
 # type: Plain text
 #: user.txt:671 network.txt:55
-#, no-wrap
 msgid ""
-"3. Finally, netconfig will write all your network configuration files. If you\n"
-"want to edit your settings by hand, the interface information is stored in\n"
-"the '/etc/sysconfig/network' directory. There is only one file there called\n"
-"default in most cases. It's because you can set up more then one profile.\n"
-"It's very useful when you got a laptop so you can set up options for all\n"
-"networks you use.\n"
+". Finally, netconfig will write all your network configuration files. If you "
+"want to edit your settings by hand, the interface information is stored in "
+"the '/etc/sysconfig/network' directory. There is only one file there called "
+"default in most cases. It's because you can set up more then one profile.  "
+"It's very useful when you got a laptop so you can set up options for all "
+"networks you use."
 msgstr ""
 
 # type: Plain text
@@ -2666,17 +2684,16 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:980 init.txt:15
-#, no-wrap
 msgid ""
-"1. After setup is finished, before hitting ENTER to reboot, switch to `tty2` by\n"
-"pressing `Alt-F2` and press ENTER to get a shell.\n"
+". After setup is finished, before hitting ENTER to reboot, switch to `tty2` "
+"by pressing `Alt-F2` and press ENTER to get a shell."
 msgstr ""
 
 # type: Plain text
 #: user.txt:983 init.txt:18
 #, fuzzy, no-wrap
 msgid ""
-"2. Change your root directory to /mnt/target:\n"
+". Change your root directory to /mnt/target:\n"
 "+\n"
 "--------------------\n"
 msgstr ""
@@ -2693,26 +2710,25 @@ msgstr "--------------------------------\n"
 
 # type: Plain text
 #: user.txt:992 init.txt:27
-#, no-wrap
 msgid ""
-"3. The source of your kernel (with additional patches applied) can be found\n"
-"at `/usr/src/linux`. So go to the `/usr/src/linux` directory and enter the\n"
-"configuration menu by typing `make menuconfig`. Inside it, select the driver\n"
-"you don't want to compile as a module anymore, and exit from the menu with\n"
-"saving changes.\n"
+". The source of your kernel (with additional patches applied) can be found "
+"at `/usr/src/linux`. So go to the `/usr/src/linux` directory and enter the "
+"configuration menu by typing `make menuconfig`. Inside it, select the driver "
+"you don't want to compile as a module anymore, and exit from the menu with "
+"saving changes."
 msgstr ""
 
-# type: Bullet: '4) '
+# type: Plain text
 #: user.txt:994 init.txt:29
 msgid ""
-"Compile your kernel with the `make` command. This may take several minutes."
+". Compile your kernel with the `make` command. This may take several minutes."
 msgstr ""
 
 # type: Plain text
 #: user.txt:997 init.txt:32
 #, fuzzy, no-wrap
 msgid ""
-"5. Copy your new kernel to `/boot` by typing the following command:\n"
+". Copy your new kernel to `/boot` by typing the following command:\n"
 "+\n"
 "------------------------------------------------------------\n"
 msgstr ""
@@ -2772,7 +2788,7 @@ msgid ""
 "In the following examples we will explain how to alter the running state of "
 "a given service. You will have to replace `$service_name$` with the wanted "
 "service name.  As you will see the syntax is simple, and you may get more "
-"help looking and the service manual doing:"
+"help looking and the `service` manual doing:"
 msgstr ""
 
 # type: Plain text
@@ -8254,9 +8270,10 @@ msgid ""
 "Before creating a new package, first we will recompile an existing package "
 "in this howto. It's very simple. In our example we will recompile the "
 "mplayer package. First, you have to download the current FST: `repoman upd`, "
-"as root.  Or, as a regular user, copy edit '~/.repoman.conf', and add the "
-"fst_root dir in it (by default, it would download the files to /var/fst, and "
-"it is not writable as a user, of course) and issue `repoman upd`."
+"as root.  Or, as a regular user, copy '/etc/repoman.conf' to '~/.repoman."
+"conf' and edit it, change the fst_root dir in it (by default, it would "
+"download the files to /var/fst, and it is not writable as a user, of course) "
+"and issue `repoman upd`."
 msgstr ""
 
 # type: Plain text
@@ -8284,15 +8301,14 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:3444 makepkg.txt:99
-#, no-wrap
 msgid ""
-"First we enter the directory of mplayer then (like make and Makefile\n"
-") we run makepkg that will build the package according to the parameters\n"
-"described in FrugalBuild. We used use the -R option to build the package\n"
-" in a chroot-ed environment. Since 0.5 building in chroot is the default\n"
-"methot, you have to use -H if you want to build on the host system.\n"
-"Chroot requires root privileges. To allow group (for example the devels\n"
-"group) to use sudo makepkg, start visudo as root, and add the following line:\n"
+"First we enter the directory of mplayer then (like make and Makefile)  we "
+"run makepkg that will build the package according to the parameters "
+"described in FrugalBuild. We used use the -R option to build the package in "
+"a chroot-ed environment. Since 0.5 building in chroot is the default methot, "
+"you have to use -H if you want to build on the host system.  Chroot requires "
+"root privileges. To allow group (for example the devels group) to use sudo "
+"makepkg, start visudo as root, and add the following line:"
 msgstr ""
 
 # type: Plain text

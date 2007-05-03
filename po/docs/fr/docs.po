@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-05-02 05:23+0200\n"
-"PO-Revision-Date: 2007-05-02 13:48+0200\n"
+"PO-Revision-Date: 2007-05-03 08:48+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -3108,7 +3108,7 @@ msgstr "Compilez votre noyau avec la commande `make`. Cela peut prendre plusieur
 
 # type: Plain text
 #: user.txt:997 init.txt:32
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 ". Copy your new kernel to `/boot` by typing the following command:\n"
 "+\n"
@@ -3176,18 +3176,12 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:1021 init.txt:56
-#, fuzzy
 msgid ""
 "In the following examples we will explain how to alter the running state of "
 "a given service. You will have to replace `$service_name$` with the wanted "
 "service name.  As you will see the syntax is simple, and you may get more "
 "help looking and the `service` manual doing:"
-msgstr ""
-"Dans les exemples suivant, nous allons expliquer comment modifier l'état "
-"d'un service donné. Vous devrez remplacer `$nom_de_service$` avec le nom du "
-"service voulu.  Comme vous allez le voir la syntaxe est très simple, et vous "
-"pouvez avoir des informations plus détaillées en regardant le manuel de "
-"`service` en tapant:"
+msgstr "Dans les exemples suivants, nous allons expliquer comment modifier l'état d'un service donné. Vous devrez remplacer `$nom_de_service$` avec le nom du service voulu. Comme vous allez le voir la syntaxe est très simple, et vous pouvez avoir des informations plus détaillées en regardant le manuel de `service` en tapant:"
 
 # type: Bullet: '+
 # type: '
@@ -9831,7 +9825,6 @@ msgstr "=== Recompilation de paquets"
 
 # type: Plain text
 #: user.txt:3424 makepkg.txt:79
-#, fuzzy
 msgid ""
 "Before creating a new package, first we will recompile an existing package "
 "in this howto. It's very simple. In our example we will recompile the "
@@ -9840,15 +9833,7 @@ msgid ""
 "conf' and edit it, change the fst_root dir in it (by default, it would "
 "download the files to /var/fst, and it is not writable as a user, of course) "
 "and issue `repoman upd`."
-msgstr ""
-"Avant de créer un nouveau paquet, nous allons en recompiler un existant dans "
-"cet howto. C'est très simple. Dans notre exemple nous allons recompiler le "
-"paquet mplayer. Tout d'abord, vous devez télécharger l'arborescence de "
-"sources (FST) courante : `$ repoman upd', en tant que root. Ou, en tant "
-"qu'utilisateur classique, copier /etc/repoman.conf vers ~/.repoman.conf, "
-"changer le répertoire fst_root pour le faire pointer dessus (par défaut, "
-"cela téléchargerait les fichiers dans /var/fst, et ce l'utilisateur n'y a "
-"pas les droits d'écriture, évidement) et exécuter repoman upd."
+msgstr "Avant de créer un nouveau paquet, nous allons en recompiler un existant dans cet howto. C'est très simple. Dans notre exemple nous allons recompiler le paquet mplayer. Tout d'abord, vous devez télécharger l'arborescence de sources (FST) courante : `$ repoman upd`, en tant que root. Ou, en tant qu'utilisateur classique, copier '/etc/repoman.conf' vers '~/.repoman.conf', changer le répertoire fst_root pour le faire pointer dessus (par défaut, cela téléchargerait les fichiers dans /var/fst, et ce l'utilisateur n'y a pas les droits d'écriture, évidement) et exécuter `repoman upd`."
 
 # type: Plain text
 #: user.txt:3429 makepkg.txt:84
@@ -9883,7 +9868,6 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:3444 makepkg.txt:99
-#, fuzzy
 msgid ""
 "First we enter the directory of mplayer then (like make and Makefile)  we "
 "run makepkg that will build the package according to the parameters "
@@ -9892,16 +9876,7 @@ msgid ""
 "you have to use -H if you want to build on the host system.  Chroot requires "
 "root privileges. To allow group (for example the devels group) to use sudo "
 "makepkg, start visudo as root, and add the following line:"
-msgstr ""
-"Tout d'abord nous nous plaçons dans le répertoire de mplayer puis (comme "
-"make et Makefile) nous exécutons makepkg qui va construire le paquet "
-"conformément au paramètres indiqués dans FrugalBuild. Nous avions l'habitude "
-"d'utiliser l'option -R pour construire le paquet dans un environnement "
-"chrooté. Depuis Frugalware 0.5 la construction en chroot est la méthode par "
-"défaut, vous devez utiliser -H si vous souhaitez construire le paquet sur le "
-"système hôte.Chroot nécessite les privilèges root. Pour autoriser un groupe "
-"(par exemple le groupe devels) à utiliser sudo makepkg, lancer visudo en "
-"tant que root, et ajoutez les lignes suivantes:\n"
+msgstr "Tout d'abord nous nous plaçons dans le répertoire de mplayer puis (comme make et Makefile) nous exécutons makepkg qui va construire le paquet conformément au paramètres indiqués dans FrugalBuild. Nous avions l'habitude d'utiliser l'option -R pour construire le paquet dans un environnement chrooté. Depuis Frugalware 0.5 la construction en chroot est la méthode par défaut, vous devez utiliser -H si vous souhaitez construire le paquet sur le système hôte.Chroot nécessite les privilèges root. Pour autoriser un groupe (par exemple le groupe devels) à utiliser sudo makepkg, lancer visudo en tant que root, et ajoutez les lignes suivantes:"
 
 # type: Plain text
 #: user.txt:3446 makepkg.txt:101
