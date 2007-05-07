@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-05-02 06:23+0200\n"
-"PO-Revision-Date: 2007-04-10 09:44+0200\n"
+"POT-Creation-Date: 2007-05-07 05:28+0200\n"
+"PO-Revision-Date: 2007-05-07 18:23+0200\n"
 "Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
 "Language-Team: <hu@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -460,17 +460,17 @@ msgstr "érvénytelen név a '%s' adatbázis-bejegyzés számára"
 msgid "invalid package entry provided to _pacman_db_read"
 msgstr "a _pacman_db_read nem érvényes csomag bejegyzést adott"
 
-#: ../be_files.c:464
+#: ../be_files.c:468
 #, c-format
 msgid "db_write: could not open file %s/desc"
 msgstr "db_write: sikertelen a %s/desc fájl megnyitása"
 
-#: ../be_files.c:549
+#: ../be_files.c:553
 #, c-format
 msgid "db_write: could not open file %s/files"
 msgstr "db_write: sikertelen a %s/files fájl megnyitása"
 
-#: ../be_files.c:575
+#: ../be_files.c:579
 #, c-format
 msgid "db_write: could not open file %s/depends"
 msgstr "db_write: sikertelen a %s/depends fájl megnyitása"
@@ -844,19 +844,16 @@ msgid "no package owns the file"
 msgstr "a fájl egyik csomaghoz se tartozik"
 
 #: ../error.c:143
-#, fuzzy
 msgid "could not access cache directory"
-msgstr "nem sikerült létrehozni az ideiglenes könyvtárat"
+msgstr "nem sikerült elérni a gyorsítótár könyvtárát"
 
 #: ../error.c:145
-#, fuzzy
 msgid "could not remove cache directory"
-msgstr "nem sikerült létrehozni az ideiglenes könyvtárat"
+msgstr "nem sikerült eltávolítani a gyorsítótár könyvtárát"
 
 #: ../error.c:147
-#, fuzzy
 msgid "could not create new cache directory"
-msgstr "nem sikerült létrehozni az ideiglenes könyvtárat"
+msgstr "nem sikerült létrehozni az új gyorsítótár könyvtárát"
 
 #: ../handle.c:134
 #, c-format
@@ -1155,9 +1152,9 @@ msgid "%s-%s: delaying upgrade of package (%s)\n"
 msgstr "%s-%s: a csomag frissítésének késleltetése (%s)\n"
 
 #: ../sync.c:231
-#, fuzzy, c-format
+#, c-format
 msgid "%s-%s: please upgrade manually (%s => %s)"
-msgstr "a(z) %s-%s kiválasztva frissítésre (%s => %s)"
+msgstr "%s-%s: frissítse kézzel (%s => %s)"
 
 #: ../sync.c:234
 #, c-format
