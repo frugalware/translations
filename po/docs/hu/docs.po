@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hu\n"
 "POT-Creation-Date: 2007-05-08 05:04+0200\n"
-"PO-Revision-Date: 2007-05-08 11:11+0200\n"
+"PO-Revision-Date: 2007-05-08 11:21+0200\n"
 "Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
 "Language-Team: <hu@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -1104,14 +1104,14 @@ msgstr ""
 # type: Plain text
 #: user.txt:282
 msgid "==== A manual bootstrap"
-msgstr ""
+msgstr "==== Teljesen kézi telepítés"
 
 # type: Plain text
 #: user.txt:285 install.txt:75
 msgid ""
 "So you want a complete Frugalware installed into /mnt/foo. First of all, you "
 "must have a running Frugalware where you are able to do"
-msgstr ""
+msgstr "Tehát szeretnénk egy teljes Frugalware rendszert telepíteni a /mnt/foo helyre. Először is egy létező Frugalware rendszerre van szükségünk, ahol kiadhatjuk a következő parancsot:"
 
 # type: Plain text
 #: user.txt:286 user.txt:883 user.txt:1902 install.txt:76 printing.txt:81
@@ -1133,7 +1133,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:291 install.txt:81
 msgid "which installs the core and base pkgs into it. But beware:"
-msgstr ""
+msgstr "Ez telepíti az alapvető csomagokat. De figyeljük csak meg:"
 
 # type: Plain text
 #: user.txt:292 user.txt:1475 install.txt:82 packages.txt:83
@@ -1153,16 +1153,23 @@ msgid ""
 "No package owns /etc/fstab\n"
 "--------------------------------------------\n"
 msgstr ""
+"$ pacman-g2 -Qo /etc/sysconfig/keymap\n"
+"hiba: Egyik csomag sem tartalmazza a következőt: /etc/sysconfig/keymap\n"
+"$ pacman-g2 -Qo /etc/profile.d/lang.sh\n"
+"hiba: Egyik csomag sem tartalmazza a következőt: /etc/profile.d/lang.sh\n"
+"$ pacman-g2 -Qo /etc/fstab\n"
+"hiba: Egyik csomag sem tartalmazza a következőt: /etc/fstab\n"
+"--------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:302 install.txt:92
 msgid "so you have to copy or forge them by hand."
-msgstr ""
+msgstr "Tehát ezeket a file-okat az eredeti rendszerből kell átmásolni és szerkeszteni igény szerint."
 
 # type: Plain text
 #: user.txt:304
 msgid "=== Obtaining a source media"
-msgstr ""
+msgstr "=== Telepítési forrás beszerzése"
 
 # type: Plain text
 #: user.txt:309 install.txt:99
