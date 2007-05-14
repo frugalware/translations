@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-05-14 05:03+0200\n"
-"PO-Revision-Date: 2007-05-14 08:24+0200\n"
+"PO-Revision-Date: 2007-05-14 13:08+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -3911,13 +3911,15 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:1248 bugs.txt:77
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "- Find the command line that triggers the crash. For example:\n"
 "  pacman-g2 -Sy\n"
 "- Get the pacman-g2 darcs repo and compile it with debug symbols enabled:\n"
 "--------------------------------------------------------------\n"
 msgstr ""
+"- Trouvez la ligne de commande qui déclenche le crash. Par exemple:\n"
+"  pacman-g2 -Sy\n"
 "- Télécharger le dépôt darcs de pacman-g2 et compiler le en activant les options de débogage:\n"
 "--------------------------------------------------------------\n"
 
@@ -4442,6 +4444,10 @@ msgid ""
 "3. mke2fs -j /dev/mapper/label\n"
 "4. mount /dev/mapper/label /mnt/label\n"
 msgstr ""
+"1. cryptsetup luksFormat /dev/partition\n"
+"2. cryptsetup luksOpen /dev/partition label\n"
+"3. mke2fs -j /dev/mapper/label\n"
+"4. mount /dev/mapper/label /mnt/label\n"
 
 # type: Plain text
 #: user.txt:1441
@@ -4552,14 +4558,15 @@ msgstr "Pour tester avec kttsd: ^^^^^^^^^^^^^^^^^^^^^^"
 
 # type: Plain text
 #: user.txt:1485 packages.txt:93
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "1. Start KTTSD (if not already running): `kttsd`\n"
 "2. Send \"Frugalware can speak\" to KTTSD for speaking in English:\n"
 "+\n"
 "------------------------------------------------------\n"
 msgstr ""
-"2. Envoyer \"Frugalware peut parler\" à KTTSD pour qu'il parle en français:\n"
+"1. Démarrez KTTSD (si il ne l'est pas déjà): `kttsd`\n"
+"2. Envoyez \"Frugalware peut parler\" à KTTSD pour qu'il parle en français:\n"
 "+\n"
 "------------------------------------------------------\n"
 
@@ -4832,7 +4839,7 @@ msgstr "Apres l'installation de lirc, vous devez suivre les étapes suivantes:"
 
 # type: Bullet: '1. '
 #: user.txt:1580 packages.txt:188
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "1. Find a lird.conf for your remote control on http://lirc.sourceforge.net/remotes/[remotes]\n"
 "   You can also take a look on '/usr/share/remotes' directory if you do not have an internet connection.\n"
@@ -4843,7 +4850,15 @@ msgid ""
 "5. Edit '/etc/sysconfig/lirc' if necessary.\n"
 "+\n"
 "----------------------------------------------\n"
-msgstr "Trouver un lird.conf pour votre télécommande sur http://lirc.sourceforge.net/remotes/[remotes] Vous pouvez également jeter un coup d'oeil dans le répertoire '/usr/share/remotes' si vous ne disposez pas d'une connexion internet.  Si vous ne trouvez pas votre télécommande, essayez la commande `irrecord myremote`."
+msgstr ""
+"1. Trouver un lird.conf pour votre télécommande sur http://lirc.sourceforge.net/remotes/[remotes]\n"
+"  Vous pouvez également jeter un coup d'oeil dans le répertoire '/usr/share/remotes' si vous ne disposez pas d'une connexion internet.\n"
+"  Si vous ne trouvez pas votre télécommande, essayez la commande `irrecord myremote`.2. Copiez votre lircd.conf dans le répertoire '/etc/' en tant que root.\n"
+"3. Ajoutez evdev au fichier '/etc/sysconfig/modules'.\n"
+"4. Charger le module avec `modprobe evdev`.\n"
+"5. Editez '/etc/sysconfig/lirc' si nécessaire.\n"
+"+\n"
+"----------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:1582 packages.txt:190
@@ -5181,7 +5196,7 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:1703 packages.txt:311
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "1. Use makepkg. It uses ccache if the package is installed unless\n"
 "   you use the -B option.\n"
@@ -5189,6 +5204,7 @@ msgid ""
 "+\n"
 "--------------------------------\n"
 msgstr ""
+"1. Utilisez makepkg. Il utilise ccache si le paquet est installé a moins que vous utilisiez l'option -B.\n"
 "2. La plupart des scripts ./configure des paquets supportent la spécification d'un compilateur par le biais d'une option:\n"
 "+\n"
 "------------------------------\n"
@@ -6544,13 +6560,17 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:2197 packages.txt:805
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "+\n"
 "So the following files are created:\n"
 "+\n"
 "------------------------------------------------------------\n"
-msgstr "------------------------------------------------------------\n"
+msgstr ""
+"+\n"
+"Les fichiers suivant sont créés:\n"
+"+\n"
+"------------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:2201 packages.txt:809
@@ -7031,18 +7051,19 @@ msgstr "=== dspam"
 # type: Plain text
 #: user.txt:2369 packages.txt:977
 msgid "To populate the DSPAM database, you need to follow several steps."
-msgstr ""
+msgstr "Pour remplir la base de donnée DSPAM, vous devez suivre plusieurs étapes."
 
 # type: Bullet: '3) '
 #: user.txt:2372 packages.txt:980
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "1. First create a database. Login to the mysql command prompt.\n"
 "+\n"
 "-----------------------------\n"
 msgstr ""
-"3. Entrez dans le chroot. Le paramètre est la racine du chroot.\n"
-"--------------------------------\n"
+"1. Tout d'abord créez une base de données. Entrez dans le shell de mysql.\n"
+"+\n"
+"-----------------------------\n"
 
 # type: Plain text
 #: user.txt:2375 packages.txt:983
@@ -7108,15 +7129,17 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:2395 packages.txt:1003
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "+\n"
 "If you want a speed optimized db do:\n"
 "+\n"
 "------------------------------------------------------------------------\n"
 msgstr ""
-"# optimization OK\n"
-"-------------------------------------------------------------------------------\n"
+"+\n"
+"Si vous voulez une base de données optimisez pour la vitesse, faites:\n"
+"+\n"
+"------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:2397 packages.txt:1005
@@ -7499,14 +7522,18 @@ msgstr ""
 
 # type: Bullet: '1. '
 #: user.txt:2539 packages.txt:1147
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "1. Create the Database Tables\n"
 "   In DATABASE_MYSQL.TXT you can find the table structure for MySQL that you need\n"
 "   in order to configure Postfix Admin and Postfix in general to work with\n"
 "   Virtual Domains and Users. +\n"
 "   In DATABASE_PGSQL.TXT you can find the table structure for PostgreSQL.\n"
-msgstr "Créez les tables de base de données. Dans le fichier DATABASE_MYSQL.TXT vous trouverez la structure de table pour MySQL dont vous aurez besoin afin de pouvoir faire fonctionner Postfix Admin et Postfixavec des domaines et utilisateurs virtuels. + Dans le fichier DATABASE_PGSQL.TXT vous trouverez la structure de table pour PostgreSQL."
+msgstr ""
+"1. Créez les tables de base de données\n"
+"  Dans le fichier DATABASE_MYSQL.TXT vous trouverez la structure de table pour MySQL dont vous aurez besoin afin de pouvoir faire fonctionner Postfix Admin et Postfixavec des domaines et utilisateurs virtuels.\n"
+"+\n"
+"Dans le fichier DATABASE_PGSQL.TXT vous trouverez la structure de table pour PostgreSQL.\n"
 
 # type: Plain text
 #: user.txt:2561 packages.txt:1169
@@ -7803,16 +7830,17 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:2659 packages.txt:1267
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "+\n"
 "Now we're ready to start:\n"
 "+\n"
 "------------------------------------\n"
 msgstr ""
-"3. 'Parler' le texte:\n"
 "+\n"
-"------------------------------\n"
+"Nous somme a présent prêt à démarrer:\n"
+"+\n"
+"------------------------------------\n"
 
 # type: Plain text
 #: user.txt:2661 packages.txt:1269
@@ -7914,13 +7942,17 @@ msgstr ""
 # type: Bullet: '+
 # type: '
 #: user.txt:2698 packages.txt:1306
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "+\n"
 "Your /etc/ppp/chap-secrets should contain the following line:\n"
 "+\n"
 "--------------------------\n"
-msgstr "Votre /etc/ppp/chap-secrets doit contenir la ligne suivante:"
+msgstr ""
+"+\n"
+"Votre /etc/ppp/chap-secrets doit contenir la ligne suivante:\n"
+"+\n"
+"--------------------------\n"
 
 # type: Plain text
 #: user.txt:2700 packages.txt:1308
@@ -7958,13 +7990,17 @@ msgstr ""
 # type: Bullet: '+
 # type: '
 #: user.txt:2710 packages.txt:1318
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "+\n"
 "A lot of debug messages will be printed, check on an other console if you got a new pppx interface or not:\n"
 "+\n"
 "------------------------------------------------------------------\n"
-msgstr "Un tas de messages de débogage vont être affichés, contrôlez sur une autre console si vous avez obtenu une nouvelle interface pppx ou non:"
+msgstr ""
+"+\n"
+"Une grande quantité de messages de débogage vont être affichés, contrôlez sur une autre console si vous avez obtenu une nouvelle interface pppx ou non:\n"
+"+\n"
+"------------------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:2719 packages.txt:1327
@@ -8913,18 +8949,17 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:3068 packages.txt:1676
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "+\n"
 "On the client:\n"
 "+\n"
 "------------------\n"
 msgstr ""
-"1. Installation\n"
 "+\n"
-"Sur le serveur:\n"
+"Sur le client:\n"
 "+\n"
-"-----------------\n"
+"------------------\n"
 
 # type: Plain text
 #: user.txt:3070 packages.txt:1678
@@ -9036,13 +9071,17 @@ msgstr ""
 # type: Bullet: '+
 # type: '
 #: user.txt:3108 packages.txt:1716
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "+\n"
 "then set a separate (for nx) password for the user:\n"
 "+\n"
 "------------------------------\n"
-msgstr "puis définissez un mot de passe différent (pour nx) pour l'utilisateur:"
+msgstr ""
+"+\n"
+"puis définissez un mot de passe différent (pour nx) pour l'utilisateur:\n"
+"+\n"
+"------------------------------\n"
 
 # type: Plain text
 #: user.txt:3110 packages.txt:1718
@@ -9113,11 +9152,13 @@ msgstr ""
 
 # type: Bullet: '* '
 #: user.txt:3135 packages.txt:1743
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "* info maxima\n"
 "* in the directory /usr/share/maxima/$package_version/doc/\n"
-msgstr "dans le répertoire /usr/share/maxima/$package_version/doc/"
+msgstr ""
+"* info maxima\n"
+"* dans le répertoire /usr/share/maxima/$package_version/doc/\n"
 
 # type: Plain text
 #: user.txt:3138
@@ -9446,11 +9487,8 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:3281 irc-rules.txt:46
-#, fuzzy
 msgid "`How can i set up my network so that it works as it does under Gentoo?`"
-msgstr ""
-"  Comment puis-je configurer mon réseau de telle façon que cela fonction "
-"comme sous Gentoo?\n"
+msgstr "`Comment puis-je configurer mon réseau de telle façon que cela fonction comme sous Gentoo?`"
 
 # type: Plain text
 #: user.txt:3283 irc-rules.txt:48
@@ -9460,14 +9498,10 @@ msgstr "A la place, dites nous ce que vous essayer de faire, par exemple:"
 
 # type: Plain text
 #: user.txt:3286 irc-rules.txt:51
-#, fuzzy
 msgid ""
 "`Is it possible to use network profiles so that I can change all my settings "
 "with one command when I get home from my workplace?`"
-msgstr ""
-"  Est-il possible d'utiliser des profils réseaux de telle façon que je "
-"puisse changer toute ma configuration\n"
-"  avec une seule commande quand je rentre à la maison de mon travail?\n"
+msgstr "`Est-il possible d'utiliser des profils réseaux de telle façon que je puisse changer toute ma configuration avec une seule commande quand je rentre à la maison de mon travail?`"
 
 # type: Plain text
 #: user.txt:3288
@@ -9609,9 +9643,8 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:3340 irc-rules.txt:105
-#, fuzzy
 msgid "Alex: I don't have time ATM to answer, sorry."
-msgstr "  alex: je n'ai pas le temps de répondre pour le moment, désolé\n"
+msgstr "  Alex: je n'ai pas le temps de répondre pour le moment, désolé."
 
 # type: Plain text
 #: user.txt:3342 irc-rules.txt:107
@@ -9675,9 +9708,8 @@ msgstr "=== Comment vérifier"
 
 # type: Bullet: '- '
 #: user.txt:3364 gpg.txt:6
-#, fuzzy
 msgid "- Import our public keyring with the"
-msgstr "Charger notre clef jeux de clefs avec"
+msgstr "- Chargez notre clef jeux de clefs avec"
 
 # type: Plain text
 #: user.txt:3367 gpg.txt:9
@@ -10002,13 +10034,17 @@ msgstr ""
 # type: Bullet: '+
 # type: '
 #: user.txt:3486 makepkg.txt:101
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "+\n"
 "And finally to get the FST, issue:\n"
 "+\n"
 "-------------\n"
-msgstr "Et finalement pour obtenir le FST, faite:"
+msgstr ""
+"+\n"
+"Et finalement pour obtenir le FST, faite:\n"
+"+\n"
+"-------------\n"
 
 # type: Plain text
 #: user.txt:3488 makepkg.txt:103
