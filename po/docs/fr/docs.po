@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-05-18 05:04+0200\n"
+"POT-Creation-Date: 2007-05-19 05:03+0200\n"
 "PO-Revision-Date: 2007-05-18 12:55+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -6399,8 +6399,7 @@ msgstr "          Indiquez le code à 2 lettres de votre pays (par exemple FR)\n
 #: user.txt:2153 packages.txt:761
 #, no-wrap
 msgid "       2) State or Province Name (full name) [Snake Desert]:\n"
-msgstr ""
-"       2) State or Province Name (full name) [Snake Desert]:\n"
+msgstr "       2) State or Province Name (full name) [Snake Desert]:\n"
 
 # type: Plain text
 #: user.txt:2155 packages.txt:763
@@ -6412,8 +6411,7 @@ msgstr "          Nous entrons notre état.\n"
 #: user.txt:2157 packages.txt:765
 #, no-wrap
 msgid "       3) Locality Name (eg, city) [Snake Town]:\n"
-msgstr ""
-"       3) Locality Name (eg, city) [Snake Town]:\n"
+msgstr "       3) Locality Name (eg, city) [Snake Town]:\n"
 
 # type: Plain text
 #: user.txt:2159 packages.txt:767
@@ -6425,8 +6423,7 @@ msgstr "         Nous entrons le nom de notre ville.\n"
 #: user.txt:2161 packages.txt:769
 #, no-wrap
 msgid "       4) Organization Name (eg, company) [Snake Oil, Ltd]:\n"
-msgstr ""
-"       4) Organization Name (eg, company) [Snake Oil, Ltd]:\n"
+msgstr "       4) Organization Name (eg, company) [Snake Oil, Ltd]:\n"
 
 # type: Plain text
 #: user.txt:2163 packages.txt:771
@@ -6438,8 +6435,7 @@ msgstr "          Nous entrons le nom de notre organisation.\n"
 #: user.txt:2165 packages.txt:773
 #, no-wrap
 msgid "       5) Organizational Unit Name (eg, section) [Webserver Team]:\n"
-msgstr ""
-"       5) Organizational Unit Name (eg, section) [Webserver Team]:\n"
+msgstr "       5) Organizational Unit Name (eg, section) [Webserver Team]:\n"
 
 # type: Plain text
 #: user.txt:2167 packages.txt:775
@@ -6451,8 +6447,7 @@ msgstr "          Le nom de notre 'section'.\n"
 #: user.txt:2169 packages.txt:777
 #, no-wrap
 msgid "       6) Common Name (eg, FQDN) [www.snakeoil.com]:\n"
-msgstr ""
-"       6) Common Name (eg, FQDN) [www.snakeoil.com]:\n"
+msgstr "       6) Common Name (eg, FQDN) [www.snakeoil.com]:\n"
 
 # type: Plain text
 #: user.txt:2172 packages.txt:780
@@ -6466,8 +6461,7 @@ msgstr "          Important: Indiquez une adresse valide sans quoi votre navigat
 #: user.txt:2174 packages.txt:782
 #, no-wrap
 msgid "       7) Email Address (eg, `name@FQDN') [`www@snakeoil.com']:\n"
-msgstr ""
-"       7) Email Address (eg, `name@FQDN') [`www@snakeoil.com']:\n"
+msgstr "       7) Email Address (eg, `name@FQDN') [`www@snakeoil.com']:\n"
 
 # type: Plain text
 #: user.txt:2177 packages.txt:785
@@ -6483,8 +6477,7 @@ msgstr ""
 #: user.txt:2179 packages.txt:787
 #, no-wrap
 msgid "       8) Certificate Validity (days) [365]:\n"
-msgstr ""
-"       8) Certificate Validity (days) [365]:\n"
+msgstr "       8) Certificate Validity (days) [365]:\n"
 
 # type: Plain text
 #: user.txt:2181 packages.txt:789
@@ -7051,9 +7044,8 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:2379 packages.txt:987
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
-"+\n"
 "2. Next, you need to create a dspam user. At the same MySQL prompt:\n"
 "+\n"
 "-----------------------------------------------------------------------------------\n"
@@ -7074,12 +7066,14 @@ msgstr ""
 "-----------------------------------------------------------------------------------\n"
 
 # type: Plain text
+#: user.txt:2384 packages.txt:992
+msgid "+ Replacing passwd with your chosen password."
+msgstr ""
+
+# type: Plain text
 #: user.txt:2389 packages.txt:997
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
-"+\n"
-"Replacing passwd with your chosen password.\n"
-"+\n"
 "3. Optimizing the datebase:\n"
 "+\n"
 "If you want a space optimized db do:\n"
@@ -7087,11 +7081,7 @@ msgid ""
 "------------------------------------------------------------------------\n"
 msgstr ""
 "+\n"
-"Remplacer passwd par le mot de passe que vous avez choisi.\n"
-"+\n"
-"3. Optimiser la base de données:\n"
-"+\n"
-"Si vous voulez une base de donnée optimisée pour l'espace faites:\n"
+"Si vous voulez une base de données optimisez pour la vitesse, faites:\n"
 "+\n"
 "------------------------------------------------------------------------\n"
 
@@ -7130,10 +7120,16 @@ msgstr ""
 "------------------------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:2402 packages.txt:1010
+#: user.txt:2400 packages.txt:1008
 msgid ""
 "+ Enter the password you set in the previous step, and the database should "
-"be populated.  + 4. Remember to edit /etc/dspam/dspam.conf accordenly"
+"be populated."
+msgstr ""
+
+# type: Plain text
+#: user.txt:2402 packages.txt:1010
+#, no-wrap
+msgid "4. Remember to edit /etc/dspam/dspam.conf accordenly\n"
 msgstr ""
 
 # type: Plain text
@@ -7838,9 +7834,12 @@ msgid ""
 "messages will appear in '/var/log/messages' if you're interested in them."
 msgstr ""
 "+\n"
-"Si aucune erreur n'a été rapportée, vous pouvez omettre l'option -f de façon a ce que le programme aille en arrière plan.\n"
+"Si aucune erreur n'a été rapportée, vous pouvez omettre l'option -f de façon "
+"a ce que le programme aille en arrière plan.\n"
 "+\n"
-"Par la suite, vous pourrez mettre ceci dans votre '/etc/rc.d/rc.local'. Les messages de débogage apparaîtront dans '/var/log/messages' s'ils vous intéressent."
+"Par la suite, vous pourrez mettre ceci dans votre '/etc/rc.d/rc.local'. Les "
+"messages de débogage apparaîtront dans '/var/log/messages' s'ils vous "
+"intéressent."
 
 # type: Plain text
 #: user.txt:2672 packages.txt:1280
@@ -13173,6 +13172,26 @@ msgstr "== TERMINATION"
 #: license.txt:333
 msgid "== FUTURE REVISIONS OF THIS LICENSE"
 msgstr "== FUTURE REVISIONS OF THIS LICENSE"
+
+# type: Plain text
+#~ msgid ""
+#~ "+\n"
+#~ "Replacing passwd with your chosen password.\n"
+#~ "+\n"
+#~ "3. Optimizing the datebase:\n"
+#~ "+\n"
+#~ "If you want a space optimized db do:\n"
+#~ "+\n"
+#~ "------------------------------------------------------------------------\n"
+#~ msgstr ""
+#~ "+\n"
+#~ "Remplacer passwd par le mot de passe que vous avez choisi.\n"
+#~ "+\n"
+#~ "3. Optimiser la base de données:\n"
+#~ "+\n"
+#~ "Si vous voulez une base de donnée optimisée pour l'espace faites:\n"
+#~ "+\n"
+#~ "------------------------------------------------------------------------\n"
 
 # type: Bullet: '* '
 #~ msgid "Package management: pacman-g2 (command line)"
