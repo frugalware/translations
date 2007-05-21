@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-05-13 05:43+0200\n"
+"POT-Creation-Date: 2007-05-21 05:31+0200\n"
 "PO-Revision-Date: 2007-05-13 20:36+0200\n"
 "Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
 "Language-Team: Hungarian <translation-team-hu@lists.sourceforge.net>\n"
@@ -37,9 +37,10 @@ msgstr "csomag adatainak betöltése... "
 msgid "failed to add target '%s' (%s)\n"
 msgstr "nem sikerült a(z) '%s' célt hozzáadni (%s)\n"
 
-#: ../add.c:84
-msgid "done."
-msgstr "kész."
+#: ../add.c:84 ../sync.c:266 ../trans.c:73 ../trans.c:81 ../trans.c:95
+#: ../trans.c:109 ../trans.c:125 ../trans.c:137
+msgid "done.\n"
+msgstr "kész.\n"
 
 #: ../add.c:92 ../remove.c:102 ../sync.c:430
 #, c-format
@@ -563,8 +564,7 @@ msgstr "  -s, --search        keresés a helyileg telepített csomagok között\n"
 #: ../pacman-g2.c:141
 #, c-format
 msgid "  -t, --test          search problems in the local database\n"
-msgstr ""
-"  -t, --test          problámák kersése a helyi adatbázisban\n"
+msgstr "  -t, --test          problámák kersése a helyi adatbázisban\n"
 
 #: ../pacman-g2.c:143
 #, c-format
@@ -803,8 +803,7 @@ msgstr ""
 #: ../query.c:77
 #, c-format
 msgid ":: the database seems to be consistent\n"
-msgstr ""
-":: az adatbázis konzisztens\n"
+msgstr ":: az adatbázis konzisztens\n"
 
 #: ../query.c:89 ../sync.c:247
 msgid "no usable package repositories configured.\n"
@@ -921,11 +920,6 @@ msgstr "El kíván távolítani minden csomagot a gyorsítótárból? [I/n] "
 #: ../sync.c:262
 msgid "removing all packages from cache... "
 msgstr "az összes csomag eltávolítása a gyorsítótárból... "
-
-#: ../sync.c:266 ../trans.c:73 ../trans.c:81 ../trans.c:95 ../trans.c:109
-#: ../trans.c:125 ../trans.c:137
-msgid "done.\n"
-msgstr "kész.\n"
 
 #: ../sync.c:268
 #, c-format
@@ -1184,6 +1178,9 @@ msgstr "fájlütközések vizsgálata"
 #, c-format
 msgid "failed to allocated %d bytes\n"
 msgstr "nem sikerült lefoglalni %d bájtot\n"
+
+#~ msgid "done."
+#~ msgstr "kész."
 
 #~ msgid "could not access cache directory\n"
 #~ msgstr "nem sikerült elérni a gyorsítótár könyvtárát\n"
