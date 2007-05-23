@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-05-21 05:02+0200\n"
-"PO-Revision-Date: 2007-05-21 11:01+0200\n"
+"POT-Creation-Date: 2007-05-23 05:03+0200\n"
+"PO-Revision-Date: 2007-05-23 22:56+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -895,6 +895,14 @@ msgid ""
 "* About 3000 source packages and (as of Februrary 2007) 3200 binary packages\n"
 "  supported.\n"
 msgstr ""
+"* Architectures Supportées : i686, x86_64\n"
+"* Versions stables tous les 6 mois\n"
+"* Mise à jour de sécurité pour les versions stables\n"
+"* Installation en mode texte\n"
+"* Installation hors-ligne, installation réseau supportée\n"
+"* Images CD/DVD, USB, TFTP disponibles\n"
+"* Localisation supportée partout ou cela est possible\n"
+"* Environs 3000 paquets sources et (au mois de février 2007) 3200 paquets binaires supportés.\n"
 
 # type: Plain text
 #: user.txt:212
@@ -7132,19 +7140,22 @@ msgid ""
 "+ Enter the password you set in the previous step, and the database should "
 "be populated."
 msgstr ""
+"+\n"
+"Entrez le mot de passe que vous avez défini lors de l'étape précédente, et la base de données devrez être maintenant peuplée.\n"
 
 # type: Plain text
 #: user.txt:2402 packages.txt:1010
 #, no-wrap
 msgid "4. Remember to edit /etc/dspam/dspam.conf accordenly\n"
 msgstr ""
+"4. Rappelez vous de modifier /etc/dspam/dspam.conf en conséquence.\n"
 
 # type: Plain text
 #: user.txt:2405 packages.txt:1013
 msgid ""
 "If you want to use the postgresql, sqlite3 or Berekely DB4 backends you can "
 "find instructions in the dspam documentation."
-msgstr ""
+msgstr "Si vous voulez utiliser les bases de données postgresql, sqlite3 ou Berekely DB4, vous pouvez trouver des instructions dans la documentation de dspam."
 
 # type: Plain text
 #: user.txt:2407
@@ -7667,6 +7678,12 @@ msgid ""
 "+\n"
 "-------------------------------------\n"
 msgstr ""
+"+\n"
+"Cela est probablement fait si vous est êtes en train de lire ce manuel HOWTO :-)\n"
+"+\n"
+"Voici mon '/etc/pptp.conf':\n"
+"+\n"
+"-------------------------------------\n"
 
 # type: Plain text
 #: user.txt:2610 packages.txt:1218
@@ -9170,6 +9187,12 @@ msgid ""
 "5. Use `mythfilldatabase` to fill in your database.\n"
 "6. Finally run `mythfrontend` and have fun!\n"
 msgstr ""
+"1. Démarrez le service mysql et configurer le mot de passe de la base de données mysql avec `mysqladmin -u root password mysqlpassword`.\n"
+"2. Définissez la base de données initiale avec `mysql -u root -p < /usr/share/mythtv/mc.sql` et entrez le mysqlpassword.\n"
+"3. Exécutez `sudo mythtv-setup` pour configurer votre carte télé.\n"
+"4. Démarrez le service mythtv avec `sudo service mythtv start`.\n"
+"5. Utilisez `mythfilldatabase` pour remplir votre base données.\n"
+"6. Pour finir exécutez `mythfrontend` et amusez vous bien!\n"
 
 # type: Plain text
 #: user.txt:3150 packages.txt:1758
