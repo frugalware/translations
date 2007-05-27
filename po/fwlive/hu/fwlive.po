@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fwlive\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-05-21 05:30+0200\n"
-"PO-Revision-Date: 2007-05-07 16:59+0200\n"
+"POT-Creation-Date: 2007-05-28 00:22+0200\n"
+"PO-Revision-Date: 2007-05-28 01:07+0200\n"
 "Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
 "Language-Team: none\n"
 "MIME-Version: 1.0\n"
@@ -17,9 +17,10 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 0.10.1\n"
 
-#: ../configsave.sh:12
-msgid "Only root can run %s\\n."
-msgstr "Csak a rendszergazda futtathaja a következõ programot: %s\\n."
+#: ../configsave.sh:12 ../fileswap.sh:11 ../fpm2lzm.sh:33
+msgid "Only root can run %s.\\n"
+msgstr ""
+"Csak rendszergazda futtathatja a következõt: %s.\n"
 
 #: ../configsave.sh:23
 msgid "usage: %s /media/sda?/%s\\n"
@@ -49,10 +50,6 @@ msgstr "kész."
 msgid "Restoring changes from %s... "
 msgstr "Változások visszaállítása a %s file-ból... "
 
-#: ../fileswap.sh:11
-msgid "Only root can run %s\\n"
-msgstr "Csak rendszergazda futtathatja a következõt: %s\\n"
-
 #: ../fileswap.sh:18
 msgid "File Swap - create swap as a file in writable filesystem"
 msgstr "File Swap - virtuális memóriát hoz létre egy írható filerendszeren"
@@ -77,11 +74,7 @@ msgstr "Linux virtuális memória létrehozása itt: %s\\n"
 msgid "activating swap on %s\\n"
 msgstr "virtuális memória engedélyezése: %s\\n"
 
-#: ../fpm2lzm.sh:33
-msgid "you are not root. bye"
-msgstr "nem rendszergazda. viszlát"
-
-#: ../fpm2lzm.sh:38
+#: ../fpm2lzm.sh:37
 msgid "usage: %s out.lzm pkg1 [ pkg2 [ ... ] ]\\n"
 msgstr "használat: %s kimenet.lzm csomag1 [ csomag2 [ ... ] ]\\n"
 
@@ -142,3 +135,9 @@ msgstr "\\e[01mÜdvözli az \\e[01;36mFwlive\\e[0m\\e[01m!\\e[0m"
 #: ../rc.parse_cmdline.sh:17
 msgid "Parsing /proc/cmdline"
 msgstr "Boot paraméterek feldolgozása"
+
+#~ msgid "Only root can run %s\\n."
+#~ msgstr "Csak a rendszergazda futtathaja a következõ programot: %s\\n."
+
+#~ msgid "you are not root. bye"
+#~ msgstr "nem rendszergazda. viszlát"
