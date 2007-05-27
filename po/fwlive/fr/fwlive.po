@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-05-25 05:48+0200\n"
-"PO-Revision-Date: 2007-05-25 22:11+0200\n"
+"POT-Creation-Date: 2007-05-27 05:41+0200\n"
+"PO-Revision-Date: 2007-05-27 15:36+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,20 +16,18 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 0.10.1\n"
 
-#: ../configsave.sh:12
-msgid "Only root can run %s\\n."
+#: ../configsave.sh:12 ../fileswap.sh:11 ../fpm2lzm.sh:33
+msgid "Only root can run %s.\\n"
 msgstr ""
 "Seulement root peut exécuter %s.\n"
 
 #: ../configsave.sh:23
 msgid "usage: %s /media/sda?/%s\\n"
-msgstr ""
-"usage: %s /media/sda?/%s\n"
+msgstr "usage: %s /media/sda?/%s\n"
 
 #: ../configsave.sh:24
 msgid "Not a regular file: %s\\n"
-msgstr ""
-"N'est pas un fichier régulier: %s\n"
+msgstr "N'est pas un fichier régulier: %s\n"
 
 #: ../configsave.sh:28
 msgid "This script can work only from FWLive."
@@ -41,8 +39,7 @@ msgstr "Enregistrement des modifications dans %s... "
 
 #: ../configsave.sh:45
 msgid "Can't write config to %s\\n"
-msgstr ""
-"N'a pas pu sauver la confuration dans %s\n"
+msgstr "N'a pas pu sauver la confuration dans %s\n"
 
 #: ../configsave.sh:47 ../configsave.sh:58
 msgid "done."
@@ -52,19 +49,15 @@ msgstr "fini."
 msgid "Restoring changes from %s... "
 msgstr "Chargement des changements depuis %s... "
 
-#: ../fileswap.sh:11
-msgid "Only root can run %s\\n"
-msgstr ""
-"Seulement root peut exécuter %s.\n"
-
 #: ../fileswap.sh:18
 msgid "File Swap - create swap as a file in writable filesystem"
-msgstr "Fichier d'échange (swap) - créer un fichier d'échange dans un système de fichiers en écriture"
+msgstr ""
+"Fichier d'échange (swap) - créer un fichier d'échange dans un système de "
+"fichiers en écriture"
 
 #: ../fileswap.sh:19
 msgid "usage: %s [/media/partition/new_name.swap] [size MB]\\n"
-msgstr ""
-"usage: %s [/media/partition/nouveau_nom.swap] [taille MB]\n"
+msgstr "usage: %s [/media/partition/nouveau_nom.swap] [taille MB]\n"
 
 #: ../fileswap.sh:29
 msgid "you must use path in /media"
@@ -72,27 +65,19 @@ msgstr "vous devez utiliser un chemin dans /media"
 
 #: ../fileswap.sh:33
 msgid "creating empty %s\\n"
-msgstr ""
-"création du fichier vide %s\n"
+msgstr "création du fichier vide %s\n"
 
 #: ../fileswap.sh:37
 msgid "setting up Linux swap area on %s\\n"
-msgstr ""
-"configuration du fichier d'échange Linux sur %s\n"
+msgstr "configuration du fichier d'échange Linux sur %s\n"
 
 #: ../fileswap.sh:41
 msgid "activating swap on %s\\n"
-msgstr ""
-"activation du fichier d'échange sur %s\n"
+msgstr "activation du fichier d'échange sur %s\n"
 
-#: ../fpm2lzm.sh:33
-msgid "you are not root. bye"
-msgstr "Vous n'êtes pas root. Au revoir"
-
-#: ../fpm2lzm.sh:38
+#: ../fpm2lzm.sh:37
 msgid "usage: %s out.lzm pkg1 [ pkg2 [ ... ] ]\\n"
-msgstr ""
-"usage: %s out.lzm pkg1 [ pkg2 [ ... ] ]\n"
+msgstr "usage: %s out.lzm pkg1 [ pkg2 [ ... ] ]\n"
 
 #: ../rc.config.sh:30
 msgid "Searching for a previous FWLive configuration file"
@@ -104,8 +89,7 @@ msgstr "Un fichier de configuration de FWLive  à été trouvé."
 
 #: ../rc.config.sh:34
 msgid "Do you want to restore saved settings from %s?\\n"
-msgstr ""
-"Voulez vous rétablir la configuration sauvée dans %s?\n"
+msgstr "Voulez vous rétablir la configuration sauvée dans %s?\n"
 
 #: ../rc.config.sh:39 ../rc.config.sh:73
 msgid "No previous FWLive config file found."
@@ -129,8 +113,7 @@ msgstr "Sauvegarde du fichier de configuration de FWLive"
 
 #: ../rc.config.sh:68
 msgid "Save settings to %s?\\n"
-msgstr ""
-"Enregistrer les paramètres de configuration dans %s?\n"
+msgstr "Enregistrer les paramètres de configuration dans %s?\n"
 
 #: ../rc.config.sh:74
 msgid "Do you want to save settings?"
@@ -138,7 +121,9 @@ msgstr "Voulez-vous sauvegarder les paramètres de configuration?"
 
 #: ../rc.config.sh:75
 msgid "Where do you want to save your settings? [example: /media/hda1]: "
-msgstr "Où voulez-vous sauvegarder vos paramètres de configuration? [exemple: /media/hda1]: "
+msgstr ""
+"Où voulez-vous sauvegarder vos paramètres de configuration? [exemple: /media/"
+"hda1]: "
 
 #: ../rc.config.sh:81
 msgid "No such directory."
@@ -155,3 +140,9 @@ msgstr "\\e[01mBienvenue dans \\e[01;36mFwlive\\e[0m\\e[01m!\\e[0m"
 #: ../rc.parse_cmdline.sh:17
 msgid "Parsing /proc/cmdline"
 msgstr "Traitement de /proc/cmdline"
+
+#~ msgid "Only root can run %s\\n."
+#~ msgstr "Seulement root peut exécuter %s.\n"
+
+#~ msgid "you are not root. bye"
+#~ msgstr "Vous n'êtes pas root. Au revoir"
