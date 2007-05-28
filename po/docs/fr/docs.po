@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-05-28 05:21+0200\n"
-"PO-Revision-Date: 2007-05-28 08:45+0200\n"
+"PO-Revision-Date: 2007-05-28 13:19+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -439,14 +439,10 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:33
-#, fuzzy
 msgid ""
 "The `echo foo bar` part is what you should type and it's the command. The "
 "following line `foo bar` is the ouput of the previous command."
-msgstr ""
-"La partie `echo foo bar` est ce que vous devez taper et cela correspond à la "
-"commande. La ligne suivante `foo bar` est la sortie de la commande "
-"précédente."
+msgstr "La partie `echo foo bar` est ce que vous devez taper et cela correspond à la commande. La ligne suivante `foo bar` est la sortie de la commande précédente."
 
 # type: Plain text
 #: user.txt:38
@@ -469,6 +465,8 @@ msgid ""
 "indicates that any user can run the command. Most of the time it means you "
 "have to run the command with your user."
 msgstr ""
+".Voici la liste des préfixes communs aux commandes de consoles:\n"
+"* `$` indique que n'importe quel utilisateur peut exécuter la commande. La plus part du temps cela signifie que vous avez a l'exécuter avec votre utilisateur.\n"
 
 # type: Plain text
 #: user.txt:49
@@ -482,16 +480,22 @@ msgid ""
 "+\n"
 "-----------\n"
 msgstr ""
+"* `utilisateur$` indique que les privileges spécifique de 'utilisateur' sont requis pour exécuter cette commande.\n"
+"Habituellement ceci est requis pour des questions de sécurité.\n"
+"+\n"
+"Vous pouvez obtenir un console interactive pour cet utilisateur, en replaçant 'utilisateur' par\n"
+"le nom d'utilisateur souhaité, en exécutant:+\n"
+"-----------\n"
 
 # type: Plain text
 #: user.txt:51
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "$ su - user\n"
 "-----------\n"
 msgstr ""
-"$ su -\n"
-"------\n"
+"$ su - utilisateur\n"
+"-----------\n"
 
 # type: Plain text
 #: user.txt:58
@@ -504,10 +508,15 @@ msgid ""
 "+\n"
 "------\n"
 msgstr ""
+"* `#` indique que les privilèges utilisateurs de `root` sont requis pour exécuter cette commande.\n"
+"Habituellement ceci est requis pour contrôler la configuration du système.\n"
+"+\n"
+"Vous pouvez obtenir une console interactive pour 'root' en exécutant:+\n"
+"------\n"
 
 # type: Plain text
 #: user.txt:60
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "$ su - \n"
 "------\n"
@@ -702,7 +711,6 @@ msgstr "'Existe-t-il une aide communautaire disponible pour Frugalware?'"
 
 # type: Plain text
 #: user.txt:139 about.txt:77
-#, fuzzy
 msgid ""
 "``We have mailing lists, irc channels and forums that can be used to "
 "communicate with us or with other users and to get help. You can reach the "
@@ -710,13 +718,7 @@ msgid ""
 "[here]. The irc channels are on the Freenode network (server: `irc.freenode."
 "net`), the discussion forums are available http://forums.frugalware.org"
 "[here].''"
-msgstr ""
-"``Nous avons des mailing lists, des canaux irc ainsi que des forums qui "
-"peuvent être utilisés pour communiquer avec nous ou avec d'autres "
-"utilisateurs et ainsi obtenir de l'aide. Vous pouvez obtenir une liste des "
-"mailing listes disponibles http://frugalware.org/mailman/listinfo[ici]. Les "
-"canaux irc sont disponibles sur le réseau Freenode (serveur: `irc.freenode."
-"net`), les forums sont disponible http://forums.frugalware.org[ici].''"
+msgstr "``Nous avons des mailing lists, des canaux irc ainsi que des forums qui peuvent être utilisés pour communiquer avec nous ou avec d'autres utilisateurs et ainsi obtenir de l'aide. Vous pouvez obtenir une liste des mailing listes disponibles http://frugalware.org/mailman/listinfo[ici]. Les canaux irc sont disponibles sur le réseau Freenode (serveur: `irc.freenode.net`), les forums sont disponible http://forums.frugalware.org[ici].''"
 
 # type: Plain text
 #: user.txt:141 about.txt:79
@@ -1485,37 +1487,21 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:415 install.txt:190
-#, fuzzy
 msgid ""
 ".. Now you should select your connection type. The installer uses the "
 "netconfig utility. You can also find the documentation for netconfig in this "
 "documentation.  See the part called: 'Networking'."
 msgstr ""
-".. Maintenant vous devriez sélectionner votre type de connexion. "
-"L'installateur utilise l'utilitaire netconfig. Vous pouvez trouver de la "
-"documentation concernant netconfig dans cette documentation. Voir la section "
-"intitulée: 'Réseau'.\n"
-".. Après avoir configuré correctement la connexion réseau vous pouvez "
-"choisir un miroir pour télécharger les paquets.  L'installateur essaiera "
-"également d'autres miroirs. Cette fonction est utile lorsque vous avez un "
-"miroir local rapide ou tout autre système équivalent."
+".. Maintenant vous devriez sélectionner votre type de connexion. L'installateur utilise l'utilitaire netconfig. Vous pouvez trouver de la documentation concernant netconfig dans cette documentation.\n"
+"Voir la section intitulée: 'Réseau'.\n"
 
 # type: Plain text
 #: user.txt:419 install.txt:194
-#, fuzzy
 msgid ""
 ".. After setting up the network you can choose a mirror for downloading the "
 "packages.  The installer will try other mirrors too. This feature is useful "
 "when you have got a fast local mirror or something similar."
-msgstr ""
-".. Maintenant vous devriez sélectionner votre type de connexion. "
-"L'installateur utilise l'utilitaire netconfig. Vous pouvez trouver de la "
-"documentation concernant netconfig dans cette documentation. Voir la section "
-"intitulée: 'Réseau'.\n"
-".. Après avoir configuré correctement la connexion réseau vous pouvez "
-"choisir un miroir pour télécharger les paquets.  L'installateur essaiera "
-"également d'autres miroirs. Cette fonction est utile lorsque vous avez un "
-"miroir local rapide ou tout autre système équivalent."
+msgstr ".. Après avoir configuré correctement la connexion réseau vous pouvez choisir un miroir pour télécharger les paquets.  L'installateur essaiera également d'autres miroirs. Cette fonction est utile lorsque vous avez un miroir local rapide ou tout autre système équivalent"
 
 # type: Plain text
 #: user.txt:426 install.txt:201
@@ -2699,11 +2685,9 @@ msgstr "=== Avant de commencer"
 
 # type: Plain text
 #: user.txt:832 printing.txt:9
-#, fuzzy
 msgid ""
 "Here comes a few advice depending on what manufacturer made your printer."
-msgstr ""
-"Voici quelques conseils dépendants du constructeur de votre imprimante."
+msgstr "Voici quelques conseils dépendants du constructeur de votre imprimante."
 
 # type: Plain text
 #: user.txt:834
@@ -2712,15 +2696,11 @@ msgstr "==== Hewlett-Packard"
 
 # type: Plain text
 #: user.txt:838 printing.txt:15
-#, fuzzy
 msgid ""
 "You need 'hpijs' at least, but you can also install 'hplip' for advanced HP "
 "support. Also if you have got some priter&scanner machine it's a good idea "
 "to use 'hplip'."
-msgstr ""
-"Vous avez besoin au minimum de 'hpijs', mais vous pouvez aussi installer "
-"'hplip' pour un support HP avancé. Aussi si vous avez une imprimante faisant "
-"aussi scanner il est conseillé d'utiliser 'hplip'."
+msgstr "Vous avez besoin au minimum de 'hpijs', mais vous pouvez aussi installer 'hplip' pour un support HP avancé. Aussi si vous avez une imprimante faisant aussi scanner, il est conseillé d'utiliser 'hplip'."
 
 # type: Plain text
 #: user.txt:840
@@ -2729,13 +2709,10 @@ msgstr "==== Canon"
 
 # type: Plain text
 #: user.txt:843 printing.txt:20
-#, fuzzy
 msgid ""
 "Most likely you need one of the bjfilter packages. The following list tell "
 "you which package you should use."
-msgstr ""
-"Vous devriez avoir besoin de l'un des paquets bjfilter. Voici une liste qui "
-"vous indique le paquet que vous devez choisir."
+msgstr "Vous devriez avoir besoin de l'un des paquets bjfilter. Voici une liste qui vous indique le paquet que vous devez utiliser."
 
 # type: Plain text
 #: user.txt:849 printing.txt:26
@@ -2767,15 +2744,11 @@ msgstr "==== Epson"
 
 # type: Plain text
 #: user.txt:856 printing.txt:33
-#, fuzzy
 msgid ""
 "If you own an Epson Color InkJet Printer you need the 'pipslite' package. "
 "After installing the package do not forget to restart 'cups' and start the "
 "'ekp' daemon!"
-msgstr ""
-"Si vous posséder une imprimante Epson Color InkJet vous avez besoin du "
-"paquet 'pipslite'. Apres avoir installer le paquet, n'oubliez pas de "
-"redémarrer 'cups' et de démarrer le démon 'ekp'!"
+msgstr "Si vous posséder une imprimante Epson Color InkJet vous avez besoin du paquet 'pipslite'. Après avoir installer le paquet, n'oubliez pas de redémarrer 'cups' et de démarrer le démon 'ekp'!"
 
 # type: Plain text
 #: user.txt:857 user.txt:1678 user.txt:1722 user.txt:2468 user.txt:2935
@@ -2815,14 +2788,10 @@ msgstr "==== Samsung"
 
 # type: Plain text
 #: user.txt:869 printing.txt:46
-#, fuzzy
 msgid ""
 "The Samsung printer driver for cups is called 'splix'. After installing it "
 "and restarting 'cups' you will find your printer when you add it in 'cups'."
-msgstr ""
-"Le pilote 'cups' pour les imprimantes Samsung est nomé 'splix'. Apres "
-"l'avoir installeret avoir redémarré 'cups', vous trouverez votre imprimante "
-"quand vous l'ajouterez dans 'cups'."
+msgstr "Le pilote 'cups' pour les imprimantes Samsung est nomé 'splix'. Après l'avoir installer et avoir redémarré 'cups', vous trouverez votre imprimante quand vous l'ajouterez dans 'cups'."
 
 # type: Plain text
 #: user.txt:871
@@ -4076,23 +4045,24 @@ msgstr ""
 
 # type: Bullet: '- '
 #: user.txt:1309 bugs.txt:76
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "- Find the command line that triggers the crash. For example:\n"
 "  pacman-g2 -Sy\n"
-msgstr "Cherchez la ligne de commande qui déclenche le plantage. Par exemple: pacman-g2 -Sy"
+msgstr ""
+"- Cherchez la ligne de commande qui déclenche le plantage. Par exemple:\n"
+"    pacman-g2 -Sy\n"
 
 # type: Plain text
 #: user.txt:1312 bugs.txt:79
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "- Get the pacman-g2 darcs repo and compile it with debug symbols enabled:\n"
 "+\n"
 "--------------------------------------------------------------\n"
 msgstr ""
-"- Trouvez la ligne de commande qui déclenche le crash. Par exemple:\n"
-"  pacman-g2 -Sy\n"
 "- Télécharger le dépôt darcs de pacman-g2 et compiler le en activant les options de débogage:\n"
+"+\n"
 "--------------------------------------------------------------\n"
 
 # type: Plain text
@@ -4115,13 +4085,14 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:1322 bugs.txt:89
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "- Then run pacman-g2 in gdb and get the trace:\n"
 "+\n"
 "----------------------------\n"
 msgstr ""
-"- Then run pacman-g2 in gdb and get the trace:\n"
+"- Exécutez ensuite pacman-g2 ans gdb et obtenez la trace de l'erreur:\n"
+"+\n"
 "----------------------------\n"
 
 # type: Plain text
@@ -4140,18 +4111,19 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:1330 bugs.txt:97
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "- When pacman-g2 crashed, get the trace by typing 'bt'. Here is an example:\n"
 "+\n"
 "----------------------------------------------------------------\n"
 msgstr ""
-"- Quand pacman-g2 se plante, taper 'bt' pour obtenir la pile. Voici un exemple: \n"
+"- Quand pacman-g2 se plante, taper 'bt' pour obtenir la trace de l'erreur. Voici un exemple:\n"
+"+\n"
 "----------------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:1337 bugs.txt:104
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "Program received signal SIGSEGV, Segmentation fault.\n"
 "0x0805035e in pacman_sync (targets=0x0) at sync.c:354\n"
@@ -4167,7 +4139,6 @@ msgstr ""
 "(gdb) bt\n"
 "#0  0x0805035e in pacman_sync (targets=0x0) at sync.c:354\n"
 "#1  0x08054594 in main (argc=2, argv=0xbfee1844) at pacman.c:609\n"
-"(gdb)\n"
 "----------------------------------------------------------------\n"
 
 # type: Bullet: '- '
@@ -4261,12 +4232,12 @@ msgstr "L'étape suivante est l'activation du service acpid:"
 
 # type: Plain text
 #: user.txt:1373 mobile.txt:25
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "# service acpid add\n"
 "-------------------\n"
 msgstr ""
-"# service httpd add\n"
+"# service acpid add\n"
 "-------------------\n"
 
 # type: Plain text
@@ -5277,13 +5248,12 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:1737 packages.txt:275
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "2. Add the following lines to the bottom of '/boot/grub/menu.lst'\n"
 "+\n"
 "-----------------------------------------------------------------------\n"
 msgstr ""
-"+\n"
 "2. Ajoutez les lignes suivantes en bas de '/boot/grub/menu.lst'\n"
 "+\n"
 "-----------------------------------------------------------------------\n"
@@ -5318,28 +5288,27 @@ msgstr ""
 
 # type: Bullet: '3. '
 #: user.txt:1749 packages.txt:287
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "3. Reboot and select the Xen option at the Grub menu.\n"
-msgstr "Redémarrez et séléctionnez l'option Xen dans le menu Grub."
+msgstr ""
+"3. Redémarrez et séléctionnez l'option Xen dans le menu Grub.\n"
 
 # type: Bullet: '4. '
 #: user.txt:1752 packages.txt:290
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "4. Hopefully nothing bad will happen. If it does, write down the last few\n"
 "   messages that you see, and file a bugreport at http://bugs.frugalware.org\n"
-msgstr "Si tout va bien, rien de gênant ne se produira. Si cela arrive malgré tout, inscrivez les quelques derniers messages que vous voyez et remplissez un rapport de bogue sur http://bugs.frugalware.org"
+msgstr "4. Tout devrais fonctionné normalement. Si cela arrive malgré tout, inscrivez les quelques derniers messages que vous voyez et remplissez un rapport de bogue sur http://bugs.frugalware.org"
 
 # type: Bullet: '5. '
 #: user.txt:1756 packages.txt:294
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "5. If all works OK after the first few boots, you should be able to safely remove\n"
 "   noreboot from the kernel command line. If you run into problems later and Xen\n"
 "   reboots before you can see the error, just readd noreboot\n"
 msgstr ""
-"3. Redémmarez et selectionnez l'option Xen dans le menu de Grub.\n"
-"4. Heureusement rien de méchant devrait arrivé. Si cela venait à arriver, copiez les deniers message que vous vouillez, et remplissez un rapport de bug à http://bugs.frugalware.org\n"
 "5. Si tout marche correctement après quelques démarrages, vous devriez pouvoir retirer l'option noreboot de la ligne de commande du noyau. Si vous rencontrez des problèmes par la suite, ré-ajoutez simplement l'option noreboot\n"
 
 # type: Plain text
@@ -6154,19 +6123,20 @@ msgstr ""
 # type: Bullet: '+
 # type: '
 #: user.txt:2070 user.txt:2076 packages.txt:608 packages.txt:614
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "------------\n"
-msgstr "-------------\n"
+msgstr ""
+"------------\n"
 
 # type: Plain text
 #: user.txt:2072 packages.txt:610
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "$ firefox -g\n"
 "------------\n"
 msgstr ""
 "$ firefox -g\n"
-"----------\n"
+"------------\n"
 
 # type: Plain text
 #: user.txt:2075 packages.txt:613
@@ -6175,13 +6145,13 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:2078 packages.txt:616
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "(gdb) run\n"
 "------------\n"
 msgstr ""
-"run\n"
-"----------\n"
+"(gdb) run\n"
+"------------\n"
 
 # type: Plain text
 #: user.txt:2081
