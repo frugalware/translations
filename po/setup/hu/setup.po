@@ -9,17 +9,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-04-01 05:32+0200\n"
-"PO-Revision-Date: 2007-02-28 13:32+0100\n"
+"POT-Creation-Date: 2007-05-29 05:48+0200\n"
+"PO-Revision-Date: 2007-05-30 00:17+0200\n"
 "Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
 "Language-Team: <hu@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-2\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 0.10.1\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 1.0\n"
 
-#: ../src/plugins/asklang.c:72
+#: ../src/plugins/asklang.c:70
 msgid "Selecting language"
 msgstr "Nyelv kiválasztása"
 
@@ -33,7 +33,7 @@ msgstr "Nem sikerült olvasásra megnyitni a kimeneti fájlt"
 
 #: ../src/plugins/configsource.c:95 ../src/plugins/configsource.c:100
 #: ../src/plugins/dolangsh.c:58 ../src/plugins/formatdisk.c:244
-#: ../src/plugins/formatdisk.c:394 ../src/plugins/layout.c:123
+#: ../src/plugins/formatdisk.c:394 ../src/plugins/layout.c:131
 #: ../src/plugins/loadsource.c:82 ../src/plugins/select.c:336
 #: ../src/util.c:308
 msgid "Could not open output file for writing"
@@ -56,8 +56,8 @@ msgstr ""
 "A legtöbb esetben az alapértelmezett érték megfelelõ lesz."
 
 #: ../src/plugins/configsource.c:154 ../src/plugins/hotplug.c:59
-#: ../src/plugins/select.c:407 ../src/plugins/select.c:417
-#: ../src/plugins/select.c:449
+#: ../src/plugins/select.c:413 ../src/plugins/select.c:423
+#: ../src/plugins/select.c:455
 msgid "Please wait"
 msgstr "Kérem várjon"
 
@@ -220,21 +220,21 @@ msgid ""
 "You may use your other partitions to distribute your Linux system across "
 "more than one partition. Currently, you have only mounted your / partition. "
 "You might want to mount directories such as /boot, /home or /usr/local on "
-"separate partitions. You should not try to mount /usr, /etc, /sbin, or /bin "
+"separate partitions. You should not try to mount /usr, /etc, /sbin or /bin "
 "on their own partitions since they contain utilities needed to bring the "
 "system up and mount partitions. Also, do not reuse a partition that you've "
 "already entered before. Please select one of the partitions listed below, or "
 "if you're done, hit Continue."
 msgstr ""
-"Felhasználhatja egyéb partíciót arra, hogy Linux rendszere több partícióra "
-"legyen telepítve. Jelenleg csak a / partíció van csatolva. Külön partícióra "
-"tehet könyvtárakat például a partíciók /boot/, /home vagy /usr/local-ba való "
-"csatolásával. Ne próbálja az /usr-t, az /etc-t, az /sbin-t vagy a /bin-t "
-"külön partícióra tenni, mivel olyan eszközöket tartalmaznak, amelyek "
-"szükségesek a rendszer indulásához és a partíciók csatolásához. Szintén "
-"figyeljen arra, hogy két partíciót ne csatoljon egy helyre. Kérem válasszon "
-"ki egyet az alább listázott partíciók közül, majd ha végzett, válassza a "
-"Folytatást."
+"Felhasználhat egyéb partíciókat arra, hogy Linux rendszere egynél több "
+"partícióra legyen telepítve. Jelenleg csak a / partíció van csatolva. Külön "
+"partícióra tehet könyvtárakat például a partíciók /boot/, /home vagy /usr"
+"/local-ba való csatolásával. Ne próbálja az /usr-t, az /etc-t, az /sbin-t "
+"vagy a /bin-t külön partícióra tenni, mivel olyan eszközöket tartalmaznak, "
+"amelyek szükségesek a rendszer indulásához és a partíciók csatolásához. "
+"Szintén figyeljen arra, hogy két partíciót ne csatoljon egy helyre. Kérem "
+"válasszon ki egyet az alább listázott partíciók közül, majd ha végzett, "
+"válassza a Folytatást."
 
 #: ../src/plugins/greet.c:46
 msgid "Welcome splash"
@@ -277,15 +277,15 @@ msgstr "SCSI és PCI kártyák keresése"
 msgid "Selecting the keyboard map"
 msgstr "A billentyûzetkiosztás kiválasztása"
 
-#: ../src/plugins/layout.c:99
+#: ../src/plugins/layout.c:107
 msgid "Configuring the keyboard"
 msgstr "A billentyûzet beállítása"
 
-#: ../src/plugins/layout.c:102
+#: ../src/plugins/layout.c:110
 msgid "Keyboard map selection"
 msgstr "Billentyûzetkiosztás kiválasztása"
 
-#: ../src/plugins/layout.c:103
+#: ../src/plugins/layout.c:111
 msgid ""
 "You may select one of the following keyboard maps. If you do not select a "
 "keyboard map, 'qwerty/us.map.gz' (the US keyboard map) is the default. Use "
@@ -323,7 +323,7 @@ msgid "A Frugalware install disc was found in device /dev/%s."
 msgstr "Frugalware telepítõ lemez a /dev/%s eszközön"
 
 #: ../src/plugins/partdisk.c:53
-msgid "Partitionong the disk drives"
+msgid "Partitioning the disk drives"
 msgstr "A merevlemezek particionálása"
 
 #: ../src/plugins/partdisk.c:114
@@ -406,7 +406,7 @@ msgstr ""
 "ENTER-t az újraindításhoz."
 
 #: ../src/plugins/select.c:53 ../src/plugins/select.c:278
-#: ../src/plugins/select.c:404
+#: ../src/plugins/select.c:410
 msgid "Selecting packages"
 msgstr "Csomagok kiválasztása"
 
@@ -444,7 +444,7 @@ msgstr ""
 "kiválasztását támogató haladó menükhöz."
 
 #: ../src/plugins/select.c:349 ../src/plugins/select.c:357
-#: ../src/plugins/select.c:367 ../src/plugins/select.c:371
+#: ../src/plugins/select.c:371 ../src/plugins/select.c:375
 msgid "Error"
 msgstr "Hiba"
 
@@ -458,25 +458,25 @@ msgstr "Nem sikerült értelmezni a pacman-g2 beállítási fájlját (%s)"
 msgid "Could not register '%s' database (%s)"
 msgstr "Nem sikerült regisztrálni a '%s' adatbázist (%s)"
 
-#: ../src/plugins/select.c:367
+#: ../src/plugins/select.c:371
 #, c-format
 msgid "Failed to synchronize %s"
 msgstr "Nem sikerült szinkronizálni a %s adatbázist"
 
-#: ../src/plugins/select.c:371
+#: ../src/plugins/select.c:375
 #, c-format
 msgid "Failed to update %s (%s)"
 msgstr "Nem sikerült frissiteni: %s (%s)"
 
-#: ../src/plugins/select.c:407
+#: ../src/plugins/select.c:413
 msgid "Searching for categories..."
 msgstr "Kategóriák keresése..."
 
-#: ../src/plugins/select.c:417
+#: ../src/plugins/select.c:423
 msgid "Searching for packages..."
 msgstr "Csomagok keresése..."
 
-#: ../src/plugins/select.c:449
+#: ../src/plugins/select.c:455
 msgid "Searching for missing dependencies..."
 msgstr "Hiányzó függõségek keresése..."
 
