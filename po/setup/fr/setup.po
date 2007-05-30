@@ -7,18 +7,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-04-01 05:32+0200\n"
-"PO-Revision-Date: 2007-03-25 05:59+0200\n"
-"Last-Translator: Emmanuel Galland <enda@netou.com>\n"
+"POT-Creation-Date: 2007-05-30 05:38+0200\n"
+"PO-Revision-Date: 2007-05-30 08:44+0200\n"
+"Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-15\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Pootle 1.0\n"
 "X-Poedit-Language: French\n"
 "X-Poedit-Country: FRANCE\n"
-"X-Generator: Pootle 0.10.1\n"
 
-#: ../src/plugins/asklang.c:72
+#: ../src/plugins/asklang.c:70
 msgid "Selecting language"
 msgstr "Sélection de la langue"
 
@@ -32,7 +32,7 @@ msgstr "N'a pas pu ouvrir le fichier en mode lecture"
 
 #: ../src/plugins/configsource.c:95 ../src/plugins/configsource.c:100
 #: ../src/plugins/dolangsh.c:58 ../src/plugins/formatdisk.c:244
-#: ../src/plugins/formatdisk.c:394 ../src/plugins/layout.c:123
+#: ../src/plugins/formatdisk.c:394 ../src/plugins/layout.c:131
 #: ../src/plugins/loadsource.c:82 ../src/plugins/select.c:336
 #: ../src/util.c:308
 msgid "Could not open output file for writing"
@@ -56,8 +56,8 @@ msgstr ""
 "par défaut est correct."
 
 #: ../src/plugins/configsource.c:154 ../src/plugins/hotplug.c:59
-#: ../src/plugins/select.c:407 ../src/plugins/select.c:417
-#: ../src/plugins/select.c:449
+#: ../src/plugins/select.c:413 ../src/plugins/select.c:423
+#: ../src/plugins/select.c:455
 msgid "Please wait"
 msgstr "Veuillez attendre"
 
@@ -224,7 +224,7 @@ msgid ""
 "You may use your other partitions to distribute your Linux system across "
 "more than one partition. Currently, you have only mounted your / partition. "
 "You might want to mount directories such as /boot, /home or /usr/local on "
-"separate partitions. You should not try to mount /usr, /etc, /sbin, or /bin "
+"separate partitions. You should not try to mount /usr, /etc, /sbin or /bin "
 "on their own partitions since they contain utilities needed to bring the "
 "system up and mount partitions. Also, do not reuse a partition that you've "
 "already entered before. Please select one of the partitions listed below, or "
@@ -282,15 +282,15 @@ msgstr "Recherche les cartes SCSI et PCI"
 msgid "Selecting the keyboard map"
 msgstr "Selection du type de clavier"
 
-#: ../src/plugins/layout.c:99
+#: ../src/plugins/layout.c:107
 msgid "Configuring the keyboard"
 msgstr "Configuration du clavier"
 
-#: ../src/plugins/layout.c:102
+#: ../src/plugins/layout.c:110
 msgid "Keyboard map selection"
 msgstr "Sélection de la disposition du clavier"
 
-#: ../src/plugins/layout.c:103
+#: ../src/plugins/layout.c:111
 msgid ""
 "You may select one of the following keyboard maps. If you do not select a "
 "keyboard map, 'qwerty/us.map.gz' (the US keyboard map) is the default. Use "
@@ -332,7 +332,7 @@ msgstr ""
 "périphérique /dev/%s."
 
 #: ../src/plugins/partdisk.c:53
-msgid "Partitionong the disk drives"
+msgid "Partitioning the disk drives"
 msgstr "Partitionnement des disques"
 
 #: ../src/plugins/partdisk.c:114
@@ -417,7 +417,7 @@ msgstr ""
 "média de votre lecteur et appuyer sur Entrée pour redémarrer."
 
 #: ../src/plugins/select.c:53 ../src/plugins/select.c:278
-#: ../src/plugins/select.c:404
+#: ../src/plugins/select.c:410
 msgid "Selecting packages"
 msgstr "Sélection des paquets"
 
@@ -455,7 +455,7 @@ msgstr ""
 "chaque paquet."
 
 #: ../src/plugins/select.c:349 ../src/plugins/select.c:357
-#: ../src/plugins/select.c:367 ../src/plugins/select.c:371
+#: ../src/plugins/select.c:371 ../src/plugins/select.c:375
 msgid "Error"
 msgstr "Erreur"
 
@@ -469,25 +469,25 @@ msgstr "Echec d'analyse du fichier de configuration de pacman-g2 (%s)"
 msgid "Could not register '%s' database (%s)"
 msgstr "N'a pas pu enregistrer la base de donnée '%s' (%s)"
 
-#: ../src/plugins/select.c:367
+#: ../src/plugins/select.c:371
 #, c-format
 msgid "Failed to synchronize %s"
 msgstr "Echec de synchronisation %s"
 
-#: ../src/plugins/select.c:371
+#: ../src/plugins/select.c:375
 #, c-format
 msgid "Failed to update %s (%s)"
 msgstr "Echec de mise à jour %s (%s)"
 
-#: ../src/plugins/select.c:407
+#: ../src/plugins/select.c:413
 msgid "Searching for categories..."
 msgstr "Recherche des catégories..."
 
-#: ../src/plugins/select.c:417
+#: ../src/plugins/select.c:423
 msgid "Searching for packages..."
 msgstr "Recherche de paquets..."
 
-#: ../src/plugins/select.c:449
+#: ../src/plugins/select.c:455
 msgid "Searching for missing dependencies..."
 msgstr "Recherche de dépendances non satisfaites..."
 
