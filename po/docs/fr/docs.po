@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-06-03 05:15+0200\n"
-"PO-Revision-Date: 2007-06-03 23:07+0200\n"
+"POT-Creation-Date: 2007-06-04 05:23+0200\n"
+"PO-Revision-Date: 2007-06-04 18:11+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -1701,7 +1701,7 @@ msgstr ""
 "d'amorçage installé, mais souhaitez garder votre MBR en l'état."
 
 # type: Plain text
-#: user.txt:487 user.txt:4071
+#: user.txt:487 user.txt:4080
 msgid "=== Kernel modules"
 msgstr "=== Modules du noyau"
 
@@ -2034,7 +2034,7 @@ msgstr ""
 "situé dans le répertoire courant."
 
 # type: Plain text
-#: user.txt:595 user.txt:3945 pacman-g2.txt:69 makepkg.txt:401
+#: user.txt:595 user.txt:3954 pacman-g2.txt:69 makepkg.txt:410
 #, no-wrap
 msgid "-----------------\n"
 msgstr "-----------------\n"
@@ -2779,10 +2779,10 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:857 user.txt:1678 user.txt:1722 user.txt:2468 user.txt:2935
-#: user.txt:3150 user.txt:3179 user.txt:3314 user.txt:3915 user.txt:3955
+#: user.txt:3150 user.txt:3179 user.txt:3314 user.txt:3924 user.txt:3964
 #: printing.txt:34 packages.txt:216 packages.txt:260 packages.txt:1006
 #: packages.txt:1473 packages.txt:1688 packages.txt:1717 packages.txt:1852
-#: makepkg.txt:371 makepkg.txt:411
+#: makepkg.txt:380 makepkg.txt:420
 #, no-wrap
 msgid "-------------------------\n"
 msgstr "-------------------------\n"
@@ -4847,9 +4847,9 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:1588 user.txt:2084 user.txt:2449 user.txt:2456 user.txt:2462
-#: user.txt:3932 user.txt:3966 packages.txt:126 packages.txt:622
-#: packages.txt:987 packages.txt:994 packages.txt:1000 makepkg.txt:388
-#: makepkg.txt:422
+#: user.txt:3941 user.txt:3975 packages.txt:126 packages.txt:622
+#: packages.txt:987 packages.txt:994 packages.txt:1000 makepkg.txt:397
+#: makepkg.txt:431
 #, no-wrap
 msgid "------------------\n"
 msgstr "------------------\n"
@@ -6071,6 +6071,11 @@ msgid ""
 "applet, and asks if you trust the applet.  Be aware though that this dialog "
 "is mostly informative and doesn't provide much protection:"
 msgstr ""
+"Quand gcjwebplugin est activé, il vous interrogeras avec une boite de "
+"dialogue avant de charge l'applet. La boite de dialogue vous informe qu'une "
+"URL souhaiterait charger une applet, et vous demande si vous avez confiance "
+"en l'applet. Soyez néanmoins averti que cette boite de dialogue est "
+"principalement informative et ne fourni quasiment aucune protection:"
 
 # type: Plain text
 #: user.txt:2035 packages.txt:573
@@ -6078,8 +6083,7 @@ msgstr ""
 msgid ""
 "- http and DNS can be spoofed meaning that the URL named in the\n"
 "  warning dialog cannot be trusted\n"
-msgstr "- http et DNS peuvent être détourné ce qui veut dire que l'on ne peut avoir "
-"confience en l'URL visible dans la boite de dialogue.\n"
+msgstr "- http et DNS peuvent être détourné ce qui veut dire que l'on ne peut avoir confience en l'URL visible dans la boite de dialogue.\n"
 
 # type: Plain text
 #: user.txt:2040 packages.txt:578
@@ -8712,9 +8716,8 @@ msgid ""
 "backend you want to use."
 msgstr ""
 "Après avoir installé trac vous devez effectué quelques étapes supplémentaire "
-"pour la configuré. Tout d'abord, n'oubliez pas d'installer "
-"postgresql/mysql/sqlite en fonction de la base de données que vous voulez "
-"utiliser."
+"pour la configuré. Tout d'abord, n'oubliez pas d'installer postgresql/mysql/"
+"sqlite en fonction de la base de données que vous voulez utiliser."
 
 # type: Plain text
 #: user.txt:2969 packages.txt:1507
@@ -8760,8 +8763,8 @@ msgstr ""
 #: user.txt:2979 packages.txt:1517
 msgid "Then, fire up a browser and visit http://localhost:8000"
 msgstr ""
-"Puis, démarrez votre navigateur internet favori et visitez "
-"http://localhost:8000"
+"Puis, démarrez votre navigateur internet favori et visitez http://"
+"localhost:8000"
 
 # type: Plain text
 #: user.txt:2983 packages.txt:1521
@@ -8770,8 +8773,8 @@ msgid ""
 "see http://trac.edgewall.org/wiki/TracGuide[TracGuide]"
 msgstr ""
 "Pour plus de documentation sur trac, pour savoir comment le configurer avec "
-"différents démons HTTP allez consulté le "
-"http://trac.edgewall.org/wiki/TracGuide[Guide de Trac]"
+"différents démons HTTP allez consulté le http://trac.edgewall.org/wiki/"
+"TracGuide[Guide de Trac]"
 
 # type: Plain text
 #: user.txt:2985
@@ -10985,12 +10988,25 @@ msgstr ""
 "Si vous utilisez des patchs exotiques provenant des sources inconnues, ne vous attendez pas à ce que quelqu'un porte ces patchs vers une nouvelle version . Vous aurez à faire le travail vous même. Vous avez été prévenu! Pour le moment essayez d'éviter les patchs, à moins qu'ils ne soient réellement nécessaires (eg: secfix, bugfix).\n"
 
 # type: Plain text
-#: user.txt:3839 makepkg.txt:295
+#: user.txt:3846 makepkg.txt:302
+msgid ""
+"A few words about the size of the sources. If you use an URL then the size "
+"is almost unlimited, but if the source is not an url then the source will be "
+"added to the FST when the package will be accepted. We don't allow files "
+"bigger than 100KB in FST. To solve this problem, the sources for a given "
+"package are placed in the /pub/other/sources/pkgname dir for each package. "
+"If the source is not compressed, we use gzip or bzip2 to compess it first. "
+"After this one can use a `http://ftp.frugalware.org/pub/other/sources/"
+"pkgname/foo`-styled URL for those big sources."
+msgstr ""
+
+# type: Plain text
+#: user.txt:3848 makepkg.txt:304
 msgid "`sha1sums=(\\'094e3afb2fe8dfe82f63731cdcd3b999f4856cff\\')`"
 msgstr "`sha1sums=(\\'094e3afb2fe8dfe82f63731cdcd3b999f4856cff\\')`"
 
 # type: Plain text
-#: user.txt:3844 makepkg.txt:300
+#: user.txt:3853 makepkg.txt:309
 #, no-wrap
 msgid ""
 "Another bash array to prevent compiling from wrong sources. Of course this\n"
@@ -11000,7 +11016,7 @@ msgid ""
 msgstr "Un autre tableau bash pour éviter de compiler depuis de mauvaises sources. Évidement c'est sans intérêt si vous lancez simplement sha1sum foo.tar.gz après le téléchargement. Essayez de trouvez les sommes sha1 sur le site du projet si possible. C'est également une bonne idée de laisser un commentaire sur cette ligne pour indiquer où on peut trouver ces sommes sha1.\n"
 
 # type: Plain text
-#: user.txt:3849 makepkg.txt:305
+#: user.txt:3858 makepkg.txt:314
 msgid ""
 "As you can see there in no build() function in this FB. It's because we have "
 "wrote some F* functions to make our work easier. It's somethin similar you "
@@ -11015,13 +11031,13 @@ msgstr ""
 "signifie actuellement:"
 
 # type: Plain text
-#: user.txt:3850 user.txt:4129 makepkg.txt:306 license.txt:5
+#: user.txt:3859 user.txt:4138 makepkg.txt:315 license.txt:5
 #, no-wrap
 msgid "------------------------------------------------------------\n"
 msgstr "------------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:3859 makepkg.txt:315
+#: user.txt:3868 makepkg.txt:324
 #, no-wrap
 msgid ""
 "build() {\n"
@@ -11045,7 +11061,7 @@ msgstr ""
 "------------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:3865 makepkg.txt:321
+#: user.txt:3874 makepkg.txt:330
 msgid ""
 "So Fpatchall will apply all the patches in source() array, then Fmake calls "
 "the configure script and make command, then Fmakeinstall acts like make "
@@ -11059,7 +11075,7 @@ msgstr ""
 "de détails, voir le fichier utils.sh, c'est bien documenté."
 
 # type: Plain text
-#: user.txt:3869 makepkg.txt:325
+#: user.txt:3878 makepkg.txt:334
 msgid ""
 "NOTE: You don't have to use these F* commands, but we *highly* recommend "
 "it.  Also if you use simple commands do not forget to add || return 1 after "
@@ -11071,12 +11087,12 @@ msgstr ""
 "le script s'arrête en cas d'erreur!"
 
 # type: Plain text
-#: user.txt:3871 makepkg.txt:327
+#: user.txt:3880 makepkg.txt:336
 msgid "`# optimization OK`"
 msgstr "`# optimization OK`"
 
 # type: Plain text
-#: user.txt:3879 makepkg.txt:335
+#: user.txt:3888 makepkg.txt:344
 msgid ""
 "This line will be added automatically to the end of the FrugalBuild if the "
 "build() function used your $CFLAGS or $CXXFLAGS. This is handy if you want "
@@ -11096,17 +11112,17 @@ msgstr ""
 "ne le détectera pas."
 
 # type: Plain text
-#: user.txt:3881
+#: user.txt:3890
 msgid "=== Full reference"
 msgstr "=== Références completes"
 
 # type: Plain text
-#: user.txt:3883 makepkg.txt:339
+#: user.txt:3892 makepkg.txt:348
 msgid "Now here is a full list of directives available."
 msgstr "Maintenant voici une liste complète des instructions disponibles."
 
 # type: Plain text
-#: user.txt:3890 makepkg.txt:346
+#: user.txt:3899 makepkg.txt:355
 msgid ""
 "First, let's start with the install directive. Here you can refer to an "
 "install file (usually $pkgname.install) to use. If there is a $pkgname."
@@ -11123,7 +11139,7 @@ msgstr ""
 "paquet. Un modèle de ce fichier peut être trouvé sous /docs/skel dans FST."
 
 # type: Plain text
-#: user.txt:3894 makepkg.txt:350
+#: user.txt:3903 makepkg.txt:359
 msgid ""
 "Of course, you probably will not need all of these functions, just remove "
 "what you don't need. If you want to do exactly the same after upgrading as "
@@ -11137,7 +11153,7 @@ msgstr ""
 "post_upgrade()."
 
 # type: Plain text
-#: user.txt:3898 makepkg.txt:354
+#: user.txt:3907 makepkg.txt:363
 msgid ""
 "Save this file as $pkgname.install, thus makepkg will automatically use it.  "
 "You should not specify the install script in the source array as it is not "
@@ -11149,7 +11165,7 @@ msgstr ""
 "()."
 
 # type: Plain text
-#: user.txt:3901 makepkg.txt:357
+#: user.txt:3910 makepkg.txt:366
 msgid ""
 "The pkgname, pkgver, pkgrel, url, source and sha1sums directives were "
 "discussed in the previous section."
@@ -11158,7 +11174,7 @@ msgstr ""
 "évoquées dans la section précédente."
 
 # type: Plain text
-#: user.txt:3904 makepkg.txt:360
+#: user.txt:3913 makepkg.txt:369
 msgid ""
 "The backup array is used to make some files in the package as config files.  "
 "If possible, we don't modify config files during an upgrade. Example:"
@@ -11168,17 +11184,17 @@ msgstr ""
 "config durant une mise à jour. Exemple:"
 
 # type: Plain text
-#: user.txt:3906 makepkg.txt:362
+#: user.txt:3915 makepkg.txt:371
 msgid "`backup=(\\'etc/pacman.conf\\')`"
 msgstr "`backup=(\\'etc/pacman.conf\\')`"
 
 # type: Plain text
-#: user.txt:3908 makepkg.txt:364
+#: user.txt:3917 makepkg.txt:373
 msgid "Note that the leading slash is missing!"
 msgstr "Notez qu'on ne met pas le slash initial!"
 
 # type: Plain text
-#: user.txt:3911 makepkg.txt:367
+#: user.txt:3920 makepkg.txt:376
 msgid ""
 "For more information about this, see the handling config files section in "
 "the pacman-g2 manpage."
@@ -11187,7 +11203,7 @@ msgstr ""
 "configuration dans le manuel de pacman-g2.\n"
 
 # type: Plain text
-#: user.txt:3914 makepkg.txt:370
+#: user.txt:3923 makepkg.txt:379
 #, no-wrap
 msgid ""
 "The depends array has been discussed already, except I haven't mentioned\n"
@@ -11195,7 +11211,7 @@ msgid ""
 msgstr "La liste depends a déjà été mentionné, excepté qu'il à été omis auparavant que les éléments peuvent contenir des informations de version, par exemple:\n"
 
 # type: Plain text
-#: user.txt:3918 makepkg.txt:374
+#: user.txt:3927 makepkg.txt:383
 #, no-wrap
 msgid ""
 "pkgname=kdewebdev\n"
@@ -11207,12 +11223,12 @@ msgstr ""
 "-------------------------\n"
 
 # type: Plain text
-#: user.txt:3921 makepkg.txt:377
+#: user.txt:3930 makepkg.txt:386
 msgid "Here you can use <>, <=, >= or = operators."
 msgstr "Vous pouvez utilisez les opérateurs <>, <=, >= ou = ."
 
 # type: Plain text
-#: user.txt:3924 makepkg.txt:380
+#: user.txt:3933 makepkg.txt:389
 msgid ""
 "The makedepends array defines packages required only in build time. For "
 "example if the source is in SRPM format, probably alien is a build-time "
@@ -11223,7 +11239,7 @@ msgstr ""
 "soit requis pour la construction."
 
 # type: Plain text
-#: user.txt:3928 makepkg.txt:384
+#: user.txt:3937 makepkg.txt:393
 msgid ""
 "The rodepends array defines packages required only in runtime. It must be "
 "used in any case when putting the given package to depends() would "
@@ -11234,7 +11250,7 @@ msgstr ""
 "liste depends() causerait une dépendance circulaire."
 
 # type: Plain text
-#: user.txt:3931 makepkg.txt:387
+#: user.txt:3940 makepkg.txt:396
 msgid ""
 "In the conflicts array, you can define a list of packages that shouldn't be "
 "installed if you want to install this package. Let's see an another example:"
@@ -11243,7 +11259,7 @@ msgstr ""
 "être installés si vous voulez installer ce paquet. Voyons un autre exemple:"
 
 # type: Plain text
-#: user.txt:3935 makepkg.txt:391
+#: user.txt:3944 makepkg.txt:400
 #, no-wrap
 msgid ""
 "pkgname=mutt-devel\n"
@@ -11255,7 +11271,7 @@ msgstr ""
 "------------------\n"
 
 # type: Plain text
-#: user.txt:3941 makepkg.txt:397
+#: user.txt:3950 makepkg.txt:406
 msgid ""
 "It is necessary as the two package almost the same, but the binaries "
 "differs.  In this case the mutt package must also contain this line: "
@@ -11269,7 +11285,7 @@ msgstr ""
 "être placé ailleurs que dans un group autre *-extra."
 
 # type: Plain text
-#: user.txt:3944 makepkg.txt:400
+#: user.txt:3953 makepkg.txt:409
 msgid ""
 "The provides array is used to create virtual dependencies. It means both "
 "postfix and sendmail provides mta, so we can do:"
@@ -11279,7 +11295,7 @@ msgstr ""
 "fournissent mta, nous pouvons alors faire:"
 
 # type: Plain text
-#: user.txt:3948 makepkg.txt:404
+#: user.txt:3957 makepkg.txt:413
 #, no-wrap
 msgid ""
 "pkgname=mailman\n"
@@ -11291,12 +11307,12 @@ msgstr ""
 "-----------------\n"
 
 # type: Plain text
-#: user.txt:3951 makepkg.txt:407
+#: user.txt:3960 makepkg.txt:416
 msgid "The user has a choice between postfix and sendmail."
 msgstr "L'utilisateur a le choix entre postfix et sendmail."
 
 # type: Plain text
-#: user.txt:3954 makepkg.txt:410
+#: user.txt:3963 makepkg.txt:419
 #, no-wrap
 msgid ""
 "The last one in this list is the replaces directive. The module-init-tools\n"
@@ -11304,7 +11320,7 @@ msgid ""
 msgstr "La dernière de cette liste est la directive replaces. Le paquet module-init-tools est un bon example:\n"
 
 # type: Plain text
-#: user.txt:3959 makepkg.txt:415
+#: user.txt:3968 makepkg.txt:424
 #, no-wrap
 msgid ""
 "pkgname=module-init-tools\n"
@@ -11318,7 +11334,7 @@ msgstr ""
 "-------------------------\n"
 
 # type: Plain text
-#: user.txt:3965 makepkg.txt:421
+#: user.txt:3974 makepkg.txt:430
 msgid ""
 "As you can see, we often make such new packages which also conflict with "
 "each other. Using the replaces directive when users use pacman-g2 -Su next "
@@ -11332,7 +11348,7 @@ msgstr ""
 "sera demandé de retirer modutils et d'installer module-init-tools."
 
 # type: Plain text
-#: user.txt:3968 makepkg.txt:424
+#: user.txt:3977 makepkg.txt:433
 #, no-wrap
 msgid ""
 "license=(\\'GPL2\\')\n"
@@ -11342,7 +11358,7 @@ msgstr ""
 "------------------\n"
 
 # type: Plain text
-#: user.txt:3973 makepkg.txt:429
+#: user.txt:3982 makepkg.txt:438
 msgid ""
 "This directive is optional. At the moment, you may add such a field, but "
 "copy the LICENSE field from the source root to the packages's documentation "
@@ -11354,12 +11370,12 @@ msgstr ""
 "nécessaire."
 
 # type: Plain text
-#: user.txt:3975
+#: user.txt:3984
 msgid "=== Subpackages"
 msgstr "=== Sous-paquets"
 
 # type: Plain text
-#: user.txt:3980 makepkg.txt:436
+#: user.txt:3989 makepkg.txt:445
 msgid ""
 "Since 0.5 makepkg can also create subpackages. It is very useful when your "
 "package has graphical parts based on qt for example. It's a pain for gnome "
@@ -11373,18 +11389,18 @@ msgstr ""
 "et tout le monde est content. Voyons un exemple:"
 
 # type: Plain text
-#: user.txt:3981 makepkg.txt:437
+#: user.txt:3990 makepkg.txt:446
 #, no-wrap
 msgid "-----------------------------------------------------------------------------\n"
 msgstr "-----------------------------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:3984 makepkg.txt:440
+#: user.txt:3993 makepkg.txt:449
 msgid "# Compiling Time: 1.43 SBU # Maintainer: crazy <crazy@frugalware.org>"
 msgstr "# Compiling Time: 1.43 SBU # Maintainer: crazy <crazy@frugalware.org>"
 
 # type: Plain text
-#: user.txt:4000 makepkg.txt:456
+#: user.txt:4009 makepkg.txt:465
 msgid ""
 "pkgname=djvulibre pkgver=3.5.18 pkgrel=2 pkgdesc=\"DjVu is a web-centric "
 "format for distributing documents and images.\" depends=('libtiff' "
@@ -11403,7 +11419,7 @@ msgstr ""
 "djvuzone.org/\" source=(${source[@]} head_-n1.patch no-OPTS-FLAGS-thx.patch)"
 
 # type: Plain text
-#: user.txt:4007 makepkg.txt:463
+#: user.txt:4016 makepkg.txt:472
 msgid ""
 "subpkgs=('djview')  subdescs=('DjVu viewer for qt and mozilla plugins.')  "
 "subdepends=('libxi libgl qt libxmu')  subrodepends=('djvulibre')  subgroups="
@@ -11414,7 +11430,7 @@ msgstr ""
 "('xapps-extra')  subarchs=('i686 x86_64')"
 
 # type: Plain text
-#: user.txt:4026 makepkg.txt:482
+#: user.txt:4035 makepkg.txt:491
 #, no-wrap
 msgid ""
 "build()\n"
@@ -11456,7 +11472,7 @@ msgstr ""
 "\tFln djview3.1.gz usr/share/man/man1/djview.1\n"
 
 # type: Plain text
-#: user.txt:4038 makepkg.txt:494
+#: user.txt:4047 makepkg.txt:503
 #, no-wrap
 msgid ""
 "\tFsplit djview usr/bin/djview\n"
@@ -11486,7 +11502,7 @@ msgstr ""
 "-----------------------------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:4045 makepkg.txt:501
+#: user.txt:4054 makepkg.txt:510
 msgid ""
 "Here you can see the djvulibre FrugalBuild. Note subpkgs, subdescs, "
 "subdepends, subgroups and subarchs. These 5 value is lethal for a "
@@ -11503,7 +11519,7 @@ msgstr ""
 "quotes sont les séparateurs majeurs et les espaces les séparateurs mineurs."
 
 # type: Plain text
-#: user.txt:4051 makepkg.txt:507
+#: user.txt:4060 makepkg.txt:516
 msgid ""
 "Defining the subpackage is only the first part of creating a subpackage. You "
 "have to tell makepkg which files you want to put in the subpackage. We use "
@@ -11520,7 +11536,7 @@ msgstr ""
 "wildcards (jokers) à l'intérieur!"
 
 # type: Plain text
-#: user.txt:4053 makepkg.txt:509
+#: user.txt:4062 makepkg.txt:518
 msgid ""
 "If you need more example just take a look on avahi FrugalBuild in network "
 "group."
@@ -11529,7 +11545,7 @@ msgstr ""
 "d'avahi dans le groupe network."
 
 # type: Plain text
-#: user.txt:4057 makepkg.txt:513
+#: user.txt:4066 makepkg.txt:522
 msgid ""
 "NOTE: Use subpackages when they are necessary, but do not start making foo-"
 "devel, foo-common, foo-not-so-common, foo-quite-common-but-not-that-common "
@@ -11543,12 +11559,12 @@ msgstr ""
 "\"."
 
 # type: Plain text
-#: user.txt:4059
+#: user.txt:4068
 msgid "=== Compiling the package"
 msgstr "=== Compiler le paquet"
 
 # type: Plain text
-#: user.txt:4067 makepkg.txt:523
+#: user.txt:4076 makepkg.txt:532
 #, no-wrap
 msgid ""
 "That's fairly simple. In the package directory you should do exactly the same\n"
@@ -11564,12 +11580,12 @@ msgstr ""
 " ouvrez une demande de fonctionnalité et envoyer tous les fichiers non téléchargeable (c'est à dire: FrugalBuild, install scriptlet, patches) en attachement.Vous êtes prié de ne pas oublier de vérifier votre FrugalBuild avec la commande 'fblint' avant de l'envoyer. 'fblint' est disponible dans le paquet pacman-tools.\n"
 
 # type: Plain text
-#: user.txt:4069 makepkg.txt:525
+#: user.txt:4078 makepkg.txt:534
 msgid "Happy packaging!"
 msgstr "Joyeux empaquetage!"
 
 # type: Plain text
-#: user.txt:4079 makepkg.txt:535
+#: user.txt:4088 makepkg.txt:544
 msgid ""
 "A few words about kernel modules. They're special as even if you installed "
 "the correct version of the kernel (and kernel-source) package, sometimes the "
@@ -11589,7 +11605,7 @@ msgstr ""
 "conditions qu'un paquet de module noyau doit satisfaire:"
 
 # type: Plain text
-#: user.txt:4082 makepkg.txt:538
+#: user.txt:4091 makepkg.txt:547
 #, no-wrap
 msgid ""
 "1) Should depend on kernel=version, where version is the version of the kernel\n"
@@ -11597,13 +11613,13 @@ msgid ""
 msgstr "1) Doit dépendre de kernel=version, ou version est la version du noyau définie dans '$fst_root/source/include/kernel-module.sh'. (Toujours utiliser une FST à jour!)\n"
 
 # type: Bullet: '2) '
-#: user.txt:4084 makepkg.txt:540
+#: user.txt:4093 makepkg.txt:549
 #, no-wrap
 msgid "2) Should Finclude the kernel-module scheme.\n"
 msgstr "2) Doit inclure (Finclude) le schéma du module-noyau.\n"
 
 # type: Plain text
-#: user.txt:4089 makepkg.txt:545
+#: user.txt:4098 makepkg.txt:554
 #, no-wrap
 msgid ""
 "3) If you want to use a custom install script (saying running just depmod -a\n"
@@ -11616,7 +11632,7 @@ msgstr ""
 "doit lancer depmod -a. Au quel cas le  schema devra fournir un fragment de script qui fait de même.\n"
 
 # type: Plain text
-#: user.txt:4095 makepkg.txt:551
+#: user.txt:4104 makepkg.txt:560
 #, no-wrap
 msgid ""
 "4) build() should call 'Fcheckkernel' to ensure the module will be compiled for\n"
@@ -11632,12 +11648,12 @@ msgstr ""
 "exécuter des noyaux -stable _et_ -current en au même instant :) ).\n"
 
 # type: Plain text
-#: user.txt:4097
+#: user.txt:4106
 msgid "=== Repoman"
 msgstr "=== Repoman"
 
 # type: Plain text
-#: user.txt:4100 makepkg.txt:556
+#: user.txt:4109 makepkg.txt:565
 msgid ""
 "Repoman is simple tool to download all packages' buildscript and compile "
 "programs from source."
@@ -11646,28 +11662,28 @@ msgstr ""
 "compilation des paquets et compiler les programmes à partir de leurs sources."
 
 # type: Plain text
-#: user.txt:4102 makepkg.txt:558
+#: user.txt:4111 makepkg.txt:567
 msgid "The most commonly used repoman commands are the followings:"
 msgstr ""
 "Les commandes les plus communément utilisées de repoman sont les suivantes:"
 
 # type: Plain text
-#: user.txt:4104 makepkg.txt:560
+#: user.txt:4113 makepkg.txt:569
 msgid "`repoman merge package`"
 msgstr "`repoman merge paquet`"
 
 # type: Plain text
-#: user.txt:4106 user.txt:4119 makepkg.txt:562 makepkg.txt:575
+#: user.txt:4115 user.txt:4128 makepkg.txt:571 makepkg.txt:584
 msgid "or simply"
 msgstr "ou plus simplement"
 
 # type: Plain text
-#: user.txt:4108 makepkg.txt:564
+#: user.txt:4117 makepkg.txt:573
 msgid "`repoman m package`"
 msgstr "`repoman m paquet`"
 
 # type: Plain text
-#: user.txt:4111 makepkg.txt:567
+#: user.txt:4120 makepkg.txt:576
 msgid ""
 "builds a package from source and installs it. You can configure the build "
 "options in the makepkg_opts directive of '/etc/repoman.conf'."
@@ -11677,7 +11693,7 @@ msgstr ""
 "conf'."
 
 # type: Plain text
-#: user.txt:4115 makepkg.txt:571
+#: user.txt:4124 makepkg.txt:580
 msgid ""
 "By default repoman will install the missing dependencies with pacman, clean "
 "up the leftover work files, install the package, and write the resulting "
@@ -11688,17 +11704,17 @@ msgstr ""
 "le paquet résultant dans les répertoire de travail courrent."
 
 # type: Plain text
-#: user.txt:4117 makepkg.txt:573
+#: user.txt:4126 makepkg.txt:582
 msgid "`repoman update`"
 msgstr "`repoman update`"
 
 # type: Plain text
-#: user.txt:4121 makepkg.txt:577
+#: user.txt:4130 makepkg.txt:586
 msgid "`repoman upd`"
 msgstr "`repoman upd`"
 
 # type: Plain text
-#: user.txt:4124 makepkg.txt:579
+#: user.txt:4133 makepkg.txt:588
 msgid ""
 "updates FST in /var/fst (or the directory set in '~/.repoman.conf'). First "
 "time repoman will download it (it may take some time!)."
@@ -11708,17 +11724,17 @@ msgstr ""
 "d'être longue!)."
 
 # type: Plain text
-#: user.txt:4126
+#: user.txt:4135
 msgid "== GNU Free Documentation License"
 msgstr "== GNU Free Documentation License"
 
 # type: Plain text
-#: user.txt:4128 license.txt:4
+#: user.txt:4137 license.txt:4
 msgid "Version 1.2, November 2002"
 msgstr "Version 1.2, Novembre 2002"
 
 # type: Plain text
-#: user.txt:4134 license.txt:10
+#: user.txt:4143 license.txt:10
 #, no-wrap
 msgid ""
 "Copyright (C) 2000,2001,2002  Free Software Foundation, Inc.\n"
@@ -11734,12 +11750,12 @@ msgstr ""
 "------------------------------------------------------------\n"
 
 # type: Plain text
-#: user.txt:4138
+#: user.txt:4147
 msgid "=== PREAMBLE"
 msgstr "=== PREAMBLE"
 
 # type: Plain text
-#: user.txt:4145 license.txt:21
+#: user.txt:4154 license.txt:21
 msgid ""
 "The purpose of this License is to make a manual, textbook, or other "
 "functional and useful document \"free\" in the sense of freedom: to assure "
@@ -11758,7 +11774,7 @@ msgstr ""
 "others."
 
 # type: Plain text
-#: user.txt:4149 license.txt:25
+#: user.txt:4158 license.txt:25
 msgid ""
 "This License is a kind of \"copyleft\", which means that derivative works of "
 "the document must themselves be free in the same sense. It complements the "
@@ -11771,7 +11787,7 @@ msgstr ""
 "software."
 
 # type: Plain text
-#: user.txt:4157 license.txt:33
+#: user.txt:4166 license.txt:33
 msgid ""
 "We have designed this License in order to use it for manuals for free "
 "software, because free software needs free documentation: a free program "
@@ -11790,12 +11806,12 @@ msgstr ""
 "is instruction or reference."
 
 # type: Plain text
-#: user.txt:4159
+#: user.txt:4168
 msgid "=== APPLICABILITY AND DEFINITIONS"
 msgstr "=== APPLICABILITY AND DEFINITIONS"
 
 # type: Plain text
-#: user.txt:4168 license.txt:44
+#: user.txt:4177 license.txt:44
 msgid ""
 "This License applies to any manual or other work, in any medium, that "
 "contains a notice placed by the copyright holder saying it can be "
@@ -11816,7 +11832,7 @@ msgstr ""
 "in a way requiring permission under copyright law."
 
 # type: Plain text
-#: user.txt:4172 license.txt:48
+#: user.txt:4181 license.txt:48
 msgid ""
 "A \"Modified Version\" of the Document means any work containing the "
 "Document or a portion of it, either copied verbatim, or with modifications "
@@ -11827,7 +11843,7 @@ msgstr ""
 "and/or translated into another language."
 
 # type: Plain text
-#: user.txt:4181 license.txt:57
+#: user.txt:4190 license.txt:57
 msgid ""
 "A \"Secondary Section\" is a named appendix or a front-matter section of the "
 "Document that deals exclusively with the relationship of the publishers or "
@@ -11850,7 +11866,7 @@ msgstr ""
 "position regarding them."
 
 # type: Plain text
-#: user.txt:4188 license.txt:64
+#: user.txt:4197 license.txt:64
 msgid ""
 "The \"Invariant Sections\" are certain Secondary Sections whose titles are "
 "designated, as being those of Invariant Sections, in the notice that says "
@@ -11867,7 +11883,7 @@ msgstr ""
 "does not identify any Invariant Sections then there are none."
 
 # type: Plain text
-#: user.txt:4193 license.txt:69
+#: user.txt:4202 license.txt:69
 msgid ""
 "The \"Cover Texts\" are certain short passages of text that are listed, as "
 "Front-Cover Texts or Back-Cover Texts, in the notice that says that the "
@@ -11880,7 +11896,7 @@ msgstr ""
 "words, and a Back-Cover Text may be at most 25 words."
 
 # type: Plain text
-#: user.txt:4205 license.txt:81
+#: user.txt:4214 license.txt:81
 msgid ""
 "A \"Transparent\" copy of the Document means a machine-readable copy, "
 "represented in a format whose specification is available to the general "
@@ -11909,7 +11925,7 @@ msgstr ""
 "\"Opaque\"."
 
 # type: Plain text
-#: user.txt:4214 license.txt:90
+#: user.txt:4223 license.txt:90
 msgid ""
 "Examples of suitable formats for Transparent copies include plain ASCII "
 "without markup, Texinfo input format, LaTeX input format, SGML or XML using "
@@ -11932,7 +11948,7 @@ msgstr ""
 "for output purposes only."
 
 # type: Plain text
-#: user.txt:4221 license.txt:97
+#: user.txt:4230 license.txt:97
 msgid ""
 "The \"Title Page\" means, for a printed book, the title page itself, plus "
 "such following pages as are needed to hold, legibly, the material this "
@@ -11949,7 +11965,7 @@ msgstr ""
 "body of the text."
 
 # type: Plain text
-#: user.txt:4229 license.txt:105
+#: user.txt:4238 license.txt:105
 msgid ""
 "A section \"Entitled XYZ\" means a named subunit of the Document whose title "
 "either is precisely XYZ or contains XYZ in parentheses following text that "
@@ -11968,7 +11984,7 @@ msgstr ""
 "\"Entitled XYZ\" according to this definition."
 
 # type: Plain text
-#: user.txt:4235 license.txt:111
+#: user.txt:4244 license.txt:111
 msgid ""
 "The Document may include Warranty Disclaimers next to the notice which "
 "states that this License applies to the Document. These Warranty Disclaimers "
@@ -11985,12 +12001,12 @@ msgstr ""
 "License."
 
 # type: Plain text
-#: user.txt:4237
+#: user.txt:4246
 msgid "=== VERBATIM COPYING"
 msgstr "=== VERBATIM COPYING"
 
 # type: Plain text
-#: user.txt:4246 license.txt:122
+#: user.txt:4255 license.txt:122
 msgid ""
 "You may copy and distribute the Document in any medium, either commercially "
 "or noncommercially, provided that this License, the copyright notices, and "
@@ -12013,7 +12029,7 @@ msgstr ""
 "conditions in section 3."
 
 # type: Plain text
-#: user.txt:4249 license.txt:125
+#: user.txt:4258 license.txt:125
 msgid ""
 "You may also lend copies, under the same conditions stated above, and you "
 "may publicly display copies."
@@ -12022,12 +12038,12 @@ msgstr ""
 "may publicly display copies."
 
 # type: Plain text
-#: user.txt:4251
+#: user.txt:4260
 msgid "=== COPYING IN QUANTITY"
 msgstr "=== COPYING IN QUANTITY"
 
 # type: Plain text
-#: user.txt:4263 license.txt:139
+#: user.txt:4272 license.txt:139
 msgid ""
 "If you publish printed copies (or copies in media that commonly have printed "
 "covers) of the Document, numbering more than 100, and the Document's license "
@@ -12054,7 +12070,7 @@ msgstr ""
 "verbatim copying in other respects."
 
 # type: Plain text
-#: user.txt:4267 license.txt:143
+#: user.txt:4276 license.txt:143
 msgid ""
 "If the required texts for either cover are too voluminous to fit legibly, "
 "you should put the first ones listed (as many as fit reasonably) on the "
@@ -12065,7 +12081,7 @@ msgstr ""
 "actual cover, and continue the rest onto adjacent pages."
 
 # type: Plain text
-#: user.txt:4279 license.txt:155
+#: user.txt:4288 license.txt:155
 msgid ""
 "If you publish or distribute Opaque copies of the Document numbering more "
 "than 100, you must either include a machine-readable Transparent copy along "
@@ -12092,7 +12108,7 @@ msgstr ""
 "retailers) of that edition to the public."
 
 # type: Plain text
-#: user.txt:4283 license.txt:159
+#: user.txt:4292 license.txt:159
 msgid ""
 "It is requested, but not required, that you contact the authors of the "
 "Document well before redistributing any large number of copies, to give them "
@@ -12103,12 +12119,12 @@ msgstr ""
 "a chance to provide you with an updated version of the Document."
 
 # type: Plain text
-#: user.txt:4285
+#: user.txt:4294
 msgid "=== MODIFICATIONS"
 msgstr "=== MODIFICATIONS"
 
 # type: Plain text
-#: user.txt:4292 license.txt:168
+#: user.txt:4301 license.txt:168
 msgid ""
 "You may copy and distribute a Modified Version of the Document under the "
 "conditions of sections 2 and 3 above, provided that you release the Modified "
@@ -12125,7 +12141,7 @@ msgstr ""
 "these things in the Modified Version:"
 
 # type: Plain text
-#: user.txt:4298 license.txt:174
+#: user.txt:4307 license.txt:174
 msgid ""
 "A. Use in the Title Page (and on the covers, if any) a title distinct from "
 "that of the Document, and from those of previous versions (which should, if "
@@ -12140,7 +12156,7 @@ msgstr ""
 "version gives permission."
 
 # type: Plain text
-#: user.txt:4304 license.txt:180
+#: user.txt:4313 license.txt:180
 msgid ""
 "B. List on the Title Page, as authors, one or more persons or entities "
 "responsible for authorship of the modifications in the Modified Version, "
@@ -12155,7 +12171,7 @@ msgstr ""
 "from this requirement."
 
 # type: Plain text
-#: user.txt:4307 license.txt:183
+#: user.txt:4316 license.txt:183
 msgid ""
 "C. State on the Title page the name of the publisher of the Modified "
 "Version, as the publisher."
@@ -12164,12 +12180,12 @@ msgstr ""
 "Version, as the publisher."
 
 # type: Plain text
-#: user.txt:4309 license.txt:185
+#: user.txt:4318 license.txt:185
 msgid "D. Preserve all the copyright notices of the Document."
 msgstr "D. Preserve all the copyright notices of the Document."
 
 # type: Plain text
-#: user.txt:4312 license.txt:188
+#: user.txt:4321 license.txt:188
 msgid ""
 "E. Add an appropriate copyright notice for your modifications adjacent to "
 "the other copyright notices."
@@ -12178,7 +12194,7 @@ msgstr ""
 "the other copyright notices."
 
 # type: Plain text
-#: user.txt:4316 license.txt:192
+#: user.txt:4325 license.txt:192
 msgid ""
 "F. Include, immediately after the copyright notices, a license notice giving "
 "the public permission to use the Modified Version under the terms of this "
@@ -12189,7 +12205,7 @@ msgstr ""
 "License, in the form shown in the Addendum below."
 
 # type: Plain text
-#: user.txt:4319 license.txt:195
+#: user.txt:4328 license.txt:195
 msgid ""
 "G. Preserve in that license notice the full lists of Invariant Sections and "
 "required Cover Texts given in the Document's license notice."
@@ -12198,12 +12214,12 @@ msgstr ""
 "required Cover Texts given in the Document's license notice."
 
 # type: Plain text
-#: user.txt:4321 license.txt:197
+#: user.txt:4330 license.txt:197
 msgid "H. Include an unaltered copy of this License."
 msgstr "H. Include an unaltered copy of this License."
 
 # type: Plain text
-#: user.txt:4328 license.txt:204
+#: user.txt:4337 license.txt:204
 msgid ""
 "I. Preserve the section Entitled \"History\", Preserve its Title, and add to "
 "it an item stating at least the title, year, new authors, and publisher of "
@@ -12220,7 +12236,7 @@ msgstr ""
 "an item describing the Modified Version as stated in the previous sentence."
 
 # type: Plain text
-#: user.txt:4335 license.txt:211
+#: user.txt:4344 license.txt:211
 msgid ""
 "J. Preserve the network location, if any, given in the Document for public "
 "access to a Transparent copy of the Document, and likewise the network "
@@ -12239,7 +12255,7 @@ msgstr ""
 "permission."
 
 # type: Plain text
-#: user.txt:4339 license.txt:215
+#: user.txt:4348 license.txt:215
 msgid ""
 "K. For any section Entitled \"Acknowledgements\" or \"Dedications\", "
 "Preserve the Title of the section, and preserve in the section all the "
@@ -12252,7 +12268,7 @@ msgstr ""
 "dedications given therein."
 
 # type: Plain text
-#: user.txt:4343 license.txt:219
+#: user.txt:4352 license.txt:219
 msgid ""
 "L. Preserve all the Invariant Sections of the Document, unaltered in their "
 "text and in their titles. Section numbers or the equivalent are not "
@@ -12263,7 +12279,7 @@ msgstr ""
 "considered part of the section titles."
 
 # type: Plain text
-#: user.txt:4346 license.txt:222
+#: user.txt:4355 license.txt:222
 msgid ""
 "M. Delete any section Entitled \"Endorsements\". Such a section may not be "
 "included in the Modified Version."
@@ -12272,7 +12288,7 @@ msgstr ""
 "included in the Modified Version."
 
 # type: Plain text
-#: user.txt:4349 license.txt:225
+#: user.txt:4358 license.txt:225
 msgid ""
 "N. Do not retitle any existing section to be Entitled \"Endorsements\" or to "
 "conflict in title with any Invariant Section."
@@ -12281,12 +12297,12 @@ msgstr ""
 "conflict in title with any Invariant Section."
 
 # type: Plain text
-#: user.txt:4351 license.txt:227
+#: user.txt:4360 license.txt:227
 msgid "O. Preserve any Warranty Disclaimers."
 msgstr "O. Preserve any Warranty Disclaimers."
 
 # type: Plain text
-#: user.txt:4358 license.txt:234
+#: user.txt:4367 license.txt:234
 msgid ""
 "If the Modified Version includes new front-matter sections or appendices "
 "that qualify as Secondary Sections and contain no material copied from the "
@@ -12303,7 +12319,7 @@ msgstr ""
 "any other section titles."
 
 # type: Plain text
-#: user.txt:4363 license.txt:239
+#: user.txt:4372 license.txt:239
 msgid ""
 "You may add a section Entitled \"Endorsements\", provided it contains "
 "nothing but endorsements of your Modified Version by various parties--for "
@@ -12316,7 +12332,7 @@ msgstr ""
 "organization as the authoritative definition of a standard."
 
 # type: Plain text
-#: user.txt:4372 license.txt:248
+#: user.txt:4381 license.txt:248
 msgid ""
 "You may add a passage of up to five words as a Front-Cover Text, and a "
 "passage of up to 25 words as a Back-Cover Text, to the end of the list of "
@@ -12339,7 +12355,7 @@ msgstr ""
 "old one."
 
 # type: Plain text
-#: user.txt:4376 license.txt:252
+#: user.txt:4385 license.txt:252
 msgid ""
 "The author(s) and publisher(s) of the Document do not by this License give "
 "permission to use their names for publicity for or to assert or imply "
@@ -12350,12 +12366,12 @@ msgstr ""
 "endorsement of any Modified Version."
 
 # type: Plain text
-#: user.txt:4378
+#: user.txt:4387
 msgid "=== COMBINING DOCUMENTS"
 msgstr "=== COMBINING DOCUMENTS"
 
 # type: Plain text
-#: user.txt:4385 license.txt:261
+#: user.txt:4394 license.txt:261
 msgid ""
 "You may combine the Document with other documents released under this "
 "License, under the terms defined in section 4 above for modified versions, "
@@ -12372,7 +12388,7 @@ msgstr ""
 "all their Warranty Disclaimers."
 
 # type: Plain text
-#: user.txt:4393 license.txt:269
+#: user.txt:4402 license.txt:269
 msgid ""
 "The combined work need only contain one copy of this License, and multiple "
 "identical Invariant Sections may be replaced with a single copy. If there "
@@ -12393,7 +12409,7 @@ msgstr ""
 "combined work."
 
 # type: Plain text
-#: user.txt:4398 license.txt:274
+#: user.txt:4407 license.txt:274
 msgid ""
 "In the combination, you must combine any sections Entitled \"History\" in "
 "the various original documents, forming one section Entitled \"History\"; "
@@ -12408,12 +12424,12 @@ msgstr ""
 "\"Endorsements.\""
 
 # type: Plain text
-#: user.txt:4400
+#: user.txt:4409
 msgid "=== COLLECTIONS OF DOCUMENTS"
 msgstr "=== COLLECTIONS OF DOCUMENTS"
 
 # type: Plain text
-#: user.txt:4406 license.txt:282
+#: user.txt:4415 license.txt:282
 msgid ""
 "You may make a collection consisting of the Document and other documents "
 "released under this License, and replace the individual copies of this "
@@ -12428,7 +12444,7 @@ msgstr ""
 "copying of each of the documents in all other respects."
 
 # type: Plain text
-#: user.txt:4411 license.txt:287
+#: user.txt:4420 license.txt:287
 msgid ""
 "You may extract a single document from such a collection, and distribute it "
 "individually under this License, provided you insert a copy of this License "
@@ -12441,12 +12457,12 @@ msgstr ""
 "regarding verbatim copying of that document."
 
 # type: Plain text
-#: user.txt:4413
+#: user.txt:4422
 msgid "=== AGGREGATION WITH INDEPENDENT WORKS"
 msgstr "=== AGGREGATION WITH INDEPENDENT WORKS"
 
 # type: Plain text
-#: user.txt:4421 license.txt:297
+#: user.txt:4430 license.txt:297
 msgid ""
 "A compilation of the Document or its derivatives with other separate and "
 "independent documents or works, in or on a volume of a storage or "
@@ -12467,7 +12483,7 @@ msgstr ""
 "the Document."
 
 # type: Plain text
-#: user.txt:4428 license.txt:304
+#: user.txt:4437 license.txt:304
 msgid ""
 "If the Cover Text requirement of section 3 is applicable to these copies of "
 "the Document, then if the Document is less than one half of the entire "
@@ -12484,12 +12500,12 @@ msgstr ""
 "covers that bracket the whole aggregate."
 
 # type: Plain text
-#: user.txt:4430
+#: user.txt:4439
 msgid "=== TRANSLATION"
 msgstr "=== TRANSLATION"
 
 # type: Plain text
-#: user.txt:4442 license.txt:318
+#: user.txt:4451 license.txt:318
 msgid ""
 "Translation is considered a kind of modification, so you may distribute "
 "translations of the Document under the terms of section 4. Replacing "
@@ -12516,7 +12532,7 @@ msgstr ""
 "disclaimer, the original version will prevail."
 
 # type: Plain text
-#: user.txt:4446 license.txt:322
+#: user.txt:4455 license.txt:322
 msgid ""
 "If a section in the Document is Entitled \"Acknowledgements\", \"Dedications"
 "\", or \"History\", the requirement (section 4) to Preserve its Title "
@@ -12527,12 +12543,12 @@ msgstr ""
 "(section 1) will typically require changing the actual title."
 
 # type: Plain text
-#: user.txt:4448
+#: user.txt:4457
 msgid "=== TERMINATION"
 msgstr "=== TERMINATION"
 
 # type: Plain text
-#: user.txt:4455 license.txt:331
+#: user.txt:4464 license.txt:331
 msgid ""
 "You may not copy, modify, sublicense, or distribute the Document except as "
 "expressly provided for under this License. Any other attempt to copy, "
@@ -12549,12 +12565,12 @@ msgstr ""
 "their licenses terminated so long as such parties remain in full compliance."
 
 # type: Plain text
-#: user.txt:4457
+#: user.txt:4466
 msgid "=== FUTURE REVISIONS OF THIS LICENSE"
 msgstr "=== FUTURE REVISIONS OF THIS LICENSE"
 
 # type: Plain text
-#: user.txt:4462 license.txt:338
+#: user.txt:4471 license.txt:338
 msgid ""
 "The Free Software Foundation may publish new, revised versions of the GNU "
 "Free Documentation License from time to time. Such new versions will be "
@@ -12567,7 +12583,7 @@ msgstr ""
 "address new problems or concerns. See http://www.gnu.org/copyleft/."
 
 # type: Plain text
-#: user.txt:4470 license.txt:345
+#: user.txt:4479 license.txt:345
 msgid ""
 "Each version of the License is given a distinguishing version number. If the "
 "Document specifies that a particular numbered version of this License \"or "
@@ -12678,7 +12694,7 @@ msgid "== GRUB"
 msgstr "== GRUB"
 
 # type: Plain text
-#: postinst.txt:23 makepkg.txt:527
+#: postinst.txt:23 makepkg.txt:536
 msgid "== Kernel modules"
 msgstr "== Modules du kernel"
 
@@ -13594,22 +13610,22 @@ msgid "== A simple example"
 msgstr "== Un exemple simple"
 
 # type: Plain text
-#: makepkg.txt:337
+#: makepkg.txt:346
 msgid "== Full reference"
 msgstr "== Référence complète"
 
 # type: Plain text
-#: makepkg.txt:431
+#: makepkg.txt:440
 msgid "== Subpackages"
 msgstr "== Sous-paquets"
 
 # type: Plain text
-#: makepkg.txt:515
+#: makepkg.txt:524
 msgid "== Compiling the package"
 msgstr "== Compilation du paquet"
 
 # type: Plain text
-#: makepkg.txt:553
+#: makepkg.txt:562
 msgid "== Repoman"
 msgstr "== Repoman"
 
