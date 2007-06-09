@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-05-29 05:48+0200\n"
-"PO-Revision-Date: 2007-05-30 00:17+0200\n"
+"POT-Creation-Date: 2007-06-09 06:22+0200\n"
+"PO-Revision-Date: 2007-06-09 13:46+0200\n"
 "Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
 "Language-Team: <hu@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -31,37 +31,49 @@ msgstr "A telepítés forrásának beállítása"
 msgid "Could not open output file for reading"
 msgstr "Nem sikerült olvasásra megnyitni a kimeneti fájlt"
 
-#: ../src/plugins/configsource.c:95 ../src/plugins/configsource.c:100
-#: ../src/plugins/dolangsh.c:58 ../src/plugins/formatdisk.c:244
-#: ../src/plugins/formatdisk.c:394 ../src/plugins/layout.c:131
-#: ../src/plugins/loadsource.c:82 ../src/plugins/select.c:336
-#: ../src/util.c:308
+#: ../src/plugins/configsource.c:122 ../src/plugins/dolangsh.c:58
+#: ../src/plugins/formatdisk.c:244 ../src/plugins/formatdisk.c:394
+#: ../src/plugins/layout.c:131 ../src/plugins/loadsource.c:82
+#: ../src/plugins/select.c:336 ../src/util.c:308
 msgid "Could not open output file for writing"
 msgstr "Nem sikerült írásra megnyitni a kimeneti fájlt"
 
-#: ../src/plugins/configsource.c:128
+#: ../src/plugins/configsource.c:145
 msgid "Selecting a mirror"
 msgstr "Tükör kiválasztása"
 
-#: ../src/plugins/configsource.c:131
-msgid "Please select a mirror"
-msgstr "Válasszon ki egy tükröt"
+#: ../src/plugins/configsource.c:152
+#, fuzzy
+msgid "Please select mirrors"
+msgstr "Tükörszerverek kiválasztása"
 
-#: ../src/plugins/configsource.c:131
+#: ../src/plugins/configsource.c:153
 msgid ""
-"You may now specify the mirror closest to you in order to download the "
-"packages faster. In most cases the default value will be fine."
+"Here you can chose one or more nearby mirror to speed up package dowloading."
 msgstr ""
-"A gyorsabb letöltés érdekében megadhatja a legközelebbi tükörszerver címét. "
-"A legtöbb esetben az alapértelmezett érték megfelelõ lesz."
+"Itt egy vagy több közeli tükörszervert választhat ki a csomagok gyorsabb "
+"letöltése érdekében."
 
-#: ../src/plugins/configsource.c:154 ../src/plugins/hotplug.c:59
+#: ../src/plugins/configsource.c:181
+msgid "Custom mirror"
+msgstr "Egyedi tükörszerver"
+
+#: ../src/plugins/configsource.c:181
+#, fuzzy
+msgid ""
+"You may now specify a custom mirror (eg. LAN) so you can download packages "
+"faster. In most cases a Cancel enough here."
+msgstr ""
+"A gyorsabb letöltés érdekében megadhatja a legközelebbi (pl. helyi) "
+"tükörszerver címét. A legtöbb esetben elég csak a Mégsem választása."
+
+#: ../src/plugins/configsource.c:206 ../src/plugins/hotplug.c:59
 #: ../src/plugins/select.c:413 ../src/plugins/select.c:423
 #: ../src/plugins/select.c:455
 msgid "Please wait"
 msgstr "Kérem várjon"
 
-#: ../src/plugins/configsource.c:154
+#: ../src/plugins/configsource.c:206
 msgid "Configuring the network interface..."
 msgstr "Hálózati felület beállítása..."
 
@@ -228,8 +240,8 @@ msgid ""
 msgstr ""
 "Felhasználhat egyéb partíciókat arra, hogy Linux rendszere egynél több "
 "partícióra legyen telepítve. Jelenleg csak a / partíció van csatolva. Külön "
-"partícióra tehet könyvtárakat például a partíciók /boot/, /home vagy /usr"
-"/local-ba való csatolásával. Ne próbálja az /usr-t, az /etc-t, az /sbin-t "
+"partícióra tehet könyvtárakat például a partíciók /boot/, /home vagy /usr/"
+"local-ba való csatolásával. Ne próbálja az /usr-t, az /etc-t, az /sbin-t "
 "vagy a /bin-t külön partícióra tenni, mivel olyan eszközöket tartalmaznak, "
 "amelyek szükségesek a rendszer indulásához és a partíciók csatolásához. "
 "Szintén figyeljen arra, hogy két partíciót ne csatoljon egy helyre. Kérem "
