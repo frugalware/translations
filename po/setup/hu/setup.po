@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-06-09 06:22+0200\n"
-"PO-Revision-Date: 2007-06-09 13:47+0200\n"
+"POT-Creation-Date: 2007-06-10 05:55+0200\n"
+"PO-Revision-Date: 2007-06-10 14:25+0200\n"
 "Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
 "Language-Team: <hu@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -31,33 +31,39 @@ msgstr "A telepítés forrásának beállítása"
 msgid "Could not open output file for reading"
 msgstr "Nem sikerült olvasásra megnyitni a kimeneti fájlt"
 
-#: ../src/plugins/configsource.c:122 ../src/plugins/dolangsh.c:58
+#. this string should be the best mirror for the given language from
+#. * /etc/pacman.d
+#: ../src/plugins/configsource.c:95
+msgid "ftp://ftp5."
+msgstr "ftp://ftp4."
+
+#: ../src/plugins/configsource.c:129 ../src/plugins/dolangsh.c:58
 #: ../src/plugins/formatdisk.c:244 ../src/plugins/formatdisk.c:394
-#: ../src/plugins/layout.c:131 ../src/plugins/loadsource.c:82
+#: ../src/plugins/layout.c:138 ../src/plugins/loadsource.c:82
 #: ../src/plugins/select.c:336 ../src/util.c:308
 msgid "Could not open output file for writing"
 msgstr "Nem sikerült írásra megnyitni a kimeneti fájlt"
 
-#: ../src/plugins/configsource.c:145
+#: ../src/plugins/configsource.c:152
 msgid "Selecting a mirror"
 msgstr "Tükör kiválasztása"
 
-#: ../src/plugins/configsource.c:152
+#: ../src/plugins/configsource.c:159
 msgid "Please select mirrors"
 msgstr "Tükörszerverek kiválasztása"
 
-#: ../src/plugins/configsource.c:153
+#: ../src/plugins/configsource.c:160
 msgid ""
 "Here you can chose one or more nearby mirror to speed up package dowloading."
 msgstr ""
 "Itt egy vagy több közeli tükörszervert választhat ki a csomagok gyorsabb "
 "letöltése érdekében."
 
-#: ../src/plugins/configsource.c:181
+#: ../src/plugins/configsource.c:190
 msgid "Custom mirror"
 msgstr "Egyedi tükörszerver"
 
-#: ../src/plugins/configsource.c:181
+#: ../src/plugins/configsource.c:190
 msgid ""
 "You may now specify a custom mirror (eg. LAN) so you can download packages "
 "faster. In most cases a Cancel enough here."
@@ -65,13 +71,13 @@ msgstr ""
 "A gyorsabb letöltés érdekében megadhatja a legközelebbi (pl. helyi) "
 "tükörszerver címét. A legtöbb esetben elég csak a Mégsem választása."
 
-#: ../src/plugins/configsource.c:206 ../src/plugins/hotplug.c:59
+#: ../src/plugins/configsource.c:215 ../src/plugins/hotplug.c:59
 #: ../src/plugins/select.c:413 ../src/plugins/select.c:423
 #: ../src/plugins/select.c:455
 msgid "Please wait"
 msgstr "Kérem várjon"
 
-#: ../src/plugins/configsource.c:206
+#: ../src/plugins/configsource.c:215
 msgid "Configuring the network interface..."
 msgstr "Hálózati felület beállítása..."
 
@@ -287,15 +293,21 @@ msgstr "SCSI és PCI kártyák keresése"
 msgid "Selecting the keyboard map"
 msgstr "A billentyûzetkiosztás kiválasztása"
 
-#: ../src/plugins/layout.c:107
+#: ../src/plugins/layout.c:108
 msgid "Configuring the keyboard"
 msgstr "A billentyûzet beállítása"
 
-#: ../src/plugins/layout.c:110
+#. this string should be the best keyboard layout for the given
+#. * language from /usr/share/kbd/keymaps/i386
+#: ../src/plugins/layout.c:113
+msgid "qwerty/us.map.gz"
+msgstr "qwertz/hu.map.gz"
+
+#: ../src/plugins/layout.c:114
 msgid "Keyboard map selection"
 msgstr "Billentyûzetkiosztás kiválasztása"
 
-#: ../src/plugins/layout.c:111
+#: ../src/plugins/layout.c:115
 msgid ""
 "You may select one of the following keyboard maps. If you do not select a "
 "keyboard map, 'qwerty/us.map.gz' (the US keyboard map) is the default. Use "
