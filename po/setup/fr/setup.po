@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-05-30 05:38+0200\n"
-"PO-Revision-Date: 2007-05-30 08:44+0200\n"
+"POT-Creation-Date: 2007-06-11 06:00+0200\n"
+"PO-Revision-Date: 2007-06-11 12:46+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -30,38 +30,54 @@ msgstr "Configuration de la source d'installation"
 msgid "Could not open output file for reading"
 msgstr "N'a pas pu ouvrir le fichier en mode lecture"
 
-#: ../src/plugins/configsource.c:95 ../src/plugins/configsource.c:100
-#: ../src/plugins/dolangsh.c:58 ../src/plugins/formatdisk.c:244
-#: ../src/plugins/formatdisk.c:394 ../src/plugins/layout.c:131
-#: ../src/plugins/loadsource.c:82 ../src/plugins/select.c:336
-#: ../src/util.c:308
+#. this string should be the best mirror for the given language from
+#. * /etc/pacman.d
+#: ../src/plugins/configsource.c:95
+msgid "ftp://ftp5."
+msgstr "ftp://ftp5."
+
+#: ../src/plugins/configsource.c:129 ../src/plugins/dolangsh.c:58
+#: ../src/plugins/formatdisk.c:244 ../src/plugins/formatdisk.c:394
+#: ../src/plugins/layout.c:138 ../src/plugins/loadsource.c:82
+#: ../src/plugins/select.c:336 ../src/util.c:308
 msgid "Could not open output file for writing"
 msgstr "N'a pas pu ouvrir le fichier en mode écriture"
 
-#: ../src/plugins/configsource.c:128
+#: ../src/plugins/configsource.c:152
 msgid "Selecting a mirror"
 msgstr "Sélection d'un miroir"
 
-#: ../src/plugins/configsource.c:131
-msgid "Please select a mirror"
-msgstr "Veuillez sélectionner un miroir"
+#: ../src/plugins/configsource.c:159
+msgid "Please select mirrors"
+msgstr "Veuillez sélectionner des miroirs"
 
-#: ../src/plugins/configsource.c:131
+#: ../src/plugins/configsource.c:160
 msgid ""
-"You may now specify the mirror closest to you in order to download the "
-"packages faster. In most cases the default value will be fine."
+"Here you can chose one or more nearby mirror to speed up package dowloading."
 msgstr ""
-"Vous pouvez maintenant spécifier le miroir le plus proche de chez vous afin "
-"de télécharger les paquets plus rapidement. Dans la plupart des cas le choix "
-"par défaut est correct."
+"Vous pouvez choisir ici un ou plusieurs miroirs proches pour augmenté la "
+"vitesse de téléchargement des paquets."
 
-#: ../src/plugins/configsource.c:154 ../src/plugins/hotplug.c:59
+#: ../src/plugins/configsource.c:190
+msgid "Custom mirror"
+msgstr "Miroir personnalisé"
+
+#: ../src/plugins/configsource.c:190
+msgid ""
+"You may now specify a custom mirror (eg. LAN) so you can download packages "
+"faster. In most cases a Cancel enough here."
+msgstr ""
+"Vous pouvez maintenant spécifier un miroir miroir personnalisé (ex. LAN) "
+"afin que vous puissiez télécharger les paquets plus rapidement. Dans la "
+"plupart des cas Annuler est suffisant ici."
+
+#: ../src/plugins/configsource.c:215 ../src/plugins/hotplug.c:59
 #: ../src/plugins/select.c:413 ../src/plugins/select.c:423
 #: ../src/plugins/select.c:455
 msgid "Please wait"
 msgstr "Veuillez attendre"
 
-#: ../src/plugins/configsource.c:154
+#: ../src/plugins/configsource.c:215
 msgid "Configuring the network interface..."
 msgstr "Configuration de l'interface réseau..."
 
@@ -282,15 +298,21 @@ msgstr "Recherche les cartes SCSI et PCI"
 msgid "Selecting the keyboard map"
 msgstr "Selection du type de clavier"
 
-#: ../src/plugins/layout.c:107
+#: ../src/plugins/layout.c:108
 msgid "Configuring the keyboard"
 msgstr "Configuration du clavier"
 
-#: ../src/plugins/layout.c:110
+#. this string should be the best keyboard layout for the given
+#. * language from /usr/share/kbd/keymaps/i386
+#: ../src/plugins/layout.c:113
+msgid "qwerty/us.map.gz"
+msgstr "azerty/fr-latin1.map.gz"
+
+#: ../src/plugins/layout.c:114
 msgid "Keyboard map selection"
 msgstr "Sélection de la disposition du clavier"
 
-#: ../src/plugins/layout.c:111
+#: ../src/plugins/layout.c:115
 msgid ""
 "You may select one of the following keyboard maps. If you do not select a "
 "keyboard map, 'qwerty/us.map.gz' (the US keyboard map) is the default. Use "
