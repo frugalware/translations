@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-06-12 05:25+0200\n"
-"PO-Revision-Date: 2007-06-12 14:07+0200\n"
+"PO-Revision-Date: 2007-06-12 14:20+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -5633,7 +5633,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:1866 packages.txt:404
 msgid "Compeleted!"
-msgstr ""
+msgstr "C'est fini!"
 
 # type: Plain text
 #: user.txt:1868
@@ -5690,6 +5690,27 @@ msgid ""
 "Connection closed by foreign host.\n"
 "--------------\n"
 msgstr ""
+"$ telnet host.com 25\n"
+"Trying ip...\n"
+"Connected to host.com.\n"
+"Escape character is '^]'.\n"
+"220 host.com ESMTP Postfix\n"
+"ehlo my.dhcp\n"
+"250-host.com\n"
+"250-PIPELINING\n"
+"250-SIZE 10240000\n"
+"250-VRFY\n"
+"250-ETRN\n"
+"250-AUTH LOGIN PLAIN\n"
+"250-ENHANCEDSTATUSCODES\n"
+"250-8BITMIME\n"
+"250 DSN\n"
+"AUTH PLAIN dm1pa2xvcwB2bWlrbG9zAHNlY3JldA==\n"
+"235 2.0.0 Authentication successful\n"
+"quit\n"
+"221 2.0.0 Bye\n"
+"Connection closed by foreign host.\n"
+"--------------\n"
 
 # type: Plain text
 #: user.txt:1903
@@ -5740,6 +5761,11 @@ msgid ""
 "}\n"
 "----\n"
 msgstr ""
+"route {\n"
+"        from: 0.0.0.0/0 to: 0.0.0.0/0 via: 127.0.0.1 port = 8080\n"
+"        proxyprotocol: socks_v4\n"
+"}\n"
+"----\n"
 
 # type: Plain text
 #: user.txt:1918
@@ -7869,6 +7895,8 @@ msgid ""
 "modprobe dm-mod\n"
 "----\n"
 msgstr ""
+"modprobe dm-mod\n"
+"----\n"
 
 # type: Plain text
 #: user.txt:2686 packages.txt:1224
@@ -7877,6 +7905,8 @@ msgid ""
 "vgchange -a y\n"
 "----\n"
 msgstr ""
+"vgchange -a y\n"
+"----\n"
 
 # type: Plain text
 #: user.txt:2691 packages.txt:1229
@@ -7906,6 +7936,8 @@ msgid ""
 "pvcreate /dev/hda2 /dev/hdc1\n"
 "----\n"
 msgstr ""
+"pvcreate /dev/hda2 /dev/hdc1\n"
+"----\n"
 
 # type: Plain text
 #: user.txt:2703 packages.txt:1241
@@ -7919,6 +7951,8 @@ msgid ""
 "vgcreate vg /dev/hda2\n"
 "----\n"
 msgstr ""
+"vgcreate vg /dev/hda2\n"
+"----\n"
 
 # type: Plain text
 #: user.txt:2709 packages.txt:1247
@@ -7932,6 +7966,8 @@ msgid ""
 "vgextend vg /dev/hdc1\n"
 "----\n"
 msgstr ""
+"vgextend vg /dev/hdc1\n"
+"----\n"
 
 # type: Plain text
 #: user.txt:2715 packages.txt:1253
@@ -7945,6 +7981,8 @@ msgid ""
 "lvcreate -L400G -nhome vg\n"
 "----\n"
 msgstr ""
+"lvcreate -L400G -nhome vg\n"
+"----\n"
 
 # type: Plain text
 #: user.txt:2721 packages.txt:1259
@@ -7973,6 +8011,8 @@ msgid ""
 "mount /dev/vg/home /mnt/target/home\n"
 "----\n"
 msgstr ""
+"mount /dev/vg/home /mnt/target/home\n"
+"----\n"
 
 # type: Plain text
 #: user.txt:2733
@@ -8001,6 +8041,11 @@ msgid ""
 "mount /dev/vg/home /mnt/target/home\n"
 "----\n"
 msgstr ""
+"umount /mnt/target/home\n"
+"lvextend -L+900M /dev/vg/home\n"
+"resize2fs /dev/vg/home\n"
+"mount /dev/vg/home /mnt/target/home\n"
+"----\n"
 
 # type: Plain text
 #: user.txt:2748 packages.txt:1286
@@ -8022,6 +8067,9 @@ msgid ""
 "resize_reiserfs /dev/vg/home\n"
 "----\n"
 msgstr ""
+"lvextend -L+900M /dev/vg/home\n"
+"resize_reiserfs /dev/vg/home\n"
+"----\n"
 
 # type: Plain text
 #: user.txt:2757
@@ -8040,6 +8088,8 @@ msgid ""
 "lvremove /dev/vg/home\n"
 "----\n"
 msgstr ""
+"lvremove /dev/vg/home\n"
+"----\n"
 
 # type: Plain text
 #: user.txt:2765 packages.txt:1303
@@ -8053,6 +8103,8 @@ msgid ""
 "vgreduce vg /dev/hdc1\n"
 "----\n"
 msgstr ""
+"vgreduce vg /dev/hdc1\n"
+"----\n"
 
 # type: Plain text
 #: user.txt:2771 packages.txt:1309
@@ -8066,6 +8118,8 @@ msgid ""
 "vgremove vg\n"
 "----\n"
 msgstr ""
+"vgremove vg\n"
+"----\n"
 
 # type: Plain text
 #: user.txt:2777 packages.txt:1315
@@ -8075,7 +8129,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:2779 user.txt:3722 packages.txt:1317 packages.txt:2260
 msgid "// vim: ft=asciidoc"
-msgstr ""
+msgstr "// vim: ft=asciidoc"
 
 # type: Plain text
 #: user.txt:2781
@@ -8884,6 +8938,8 @@ msgid ""
 "mail.ispserver.com    username:password\n"
 "------\n"
 msgstr ""
+"mail.ispserver.com    username:password\n"
+"------\n"
 
 # type: Plain text
 #: user.txt:3097 packages.txt:1635
@@ -8894,6 +8950,10 @@ msgid ""
 "# postmap /etc/postfix/sasl_passwd\n"
 "------\n"
 msgstr ""
+"# chown root:root /etc/postfix/sasl_passwd\n"
+"# chmod 600 /etc/postfix/sasl_passwd\n"
+"# postmap /etc/postfix/sasl_passwd\n"
+"------\n"
 
 # type: Plain text
 #: user.txt:3100 packages.txt:1638
@@ -8910,6 +8970,11 @@ msgid ""
 "smtp_sasl_security_options =\n"
 "------\n"
 msgstr ""
+"relayhost = mail.ispserver.com\n"
+"smtp_sasl_auth_enable = yes\n"
+"smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd\n"
+"smtp_sasl_security_options =\n"
+"------\n"
 
 # type: Plain text
 #: user.txt:3109 packages.txt:1647
@@ -10176,7 +10241,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:3556
 msgid "=== user-mode-linux"
-msgstr ""
+msgstr "=== user-mode-linux"
 
 # type: Plain text
 #: user.txt:3558
@@ -10195,6 +10260,8 @@ msgid ""
 "# dd if=/dev/zero of=root_fs bs=1M count=1000\n"
 "----\n"
 msgstr ""
+"# dd if=/dev/zero of=root_fs bs=1M count=1000\n"
+"----\n"
 
 # type: Plain text
 #: user.txt:3566 packages.txt:2104
@@ -10225,6 +10292,10 @@ msgid ""
 "# cd uml\n"
 "----\n"
 msgstr ""
+"# mkdir uml\n"
+"# mount root_fs -o loop uml\n"
+"# cd uml\n"
+"----\n"
 
 # type: Plain text
 #: user.txt:3580 packages.txt:2118
@@ -10239,6 +10310,9 @@ msgid ""
 "# pacman-g2 -Sy base openssh -r ./\n"
 "----\n"
 msgstr ""
+"# mkdir -p var/log tmp\n"
+"# pacman-g2 -Sy base openssh -r ./\n"
+"----\n"
 
 # type: Plain text
 #: user.txt:3587 packages.txt:2125
@@ -10255,6 +10329,11 @@ msgid ""
 "/dev/ubda        /                ext3        defaults         1   1\n"
 "----\n"
 msgstr ""
+"none             /proc            proc        defaults         0   0\n"
+"none             /sys             sysfs       defaults         0   0\n"
+"devpts           /dev/pts         devpts      gid=5,mode=620   0   0\n"
+"/dev/ubda        /                ext3        defaults         1   1\n"
+"----\n"
 
 # type: Plain text
 #: user.txt:3596 packages.txt:2134
@@ -10269,6 +10348,8 @@ msgid ""
 "keymap=us\n"
 "----\n"
 msgstr ""
+"keymap=fr-latin1\n"
+"----\n"
 
 # type: Plain text
 #: user.txt:3602 packages.txt:2140
@@ -10284,6 +10365,9 @@ msgid ""
 "export LC_ALL=$LANG\n"
 "----\n"
 msgstr ""
+"export LANG=fr_FR\n"
+"export LC_ALL=$LANG\n"
+"----\n"
 
 # type: Plain text
 #: user.txt:3609 packages.txt:2147
@@ -10300,6 +10384,10 @@ msgid ""
 "gateway = default gw 192.168.0.254\n"
 "----\n"
 msgstr ""
+"[eth0]\n"
+"options = 192.168.0.1\n"
+"gateway = default gw 192.168.0.254\n"
+"----\n"
 
 # type: Plain text
 #: user.txt:3618 packages.txt:2156
@@ -10321,6 +10409,9 @@ msgid ""
 "# chroot ./\n"
 "----\n"
 msgstr ""
+"# cp -a /dev/tty dev/\n"
+"# chroot ./\n"
+"----\n"
 
 # type: Plain text
 #: user.txt:3627 packages.txt:2165
@@ -10334,6 +10425,8 @@ msgid ""
 "# adduser\n"
 "----\n"
 msgstr ""
+"# adduser\n"
+"----\n"
 
 # type: Plain text
 #: user.txt:3633 packages.txt:2171
@@ -10350,6 +10443,11 @@ msgid ""
 "# service sshd add\n"
 "----\n"
 msgstr ""
+"# service keymap del\n"
+"# service time del\n"
+"# rm /etc/rc.d/rcS.d/S18rc.time\n"
+"# service sshd add\n"
+"----\n"
 
 # type: Plain text
 #: user.txt:3642 packages.txt:2180
@@ -10380,6 +10478,8 @@ msgid ""
 "ca::ctrlaltdel:/sbin/shutdown -t5 -r now\n"
 "----\n"
 msgstr ""
+"ca::ctrlaltdel:/sbin/shutdown -t5 -r now\n"
+"----\n"
 
 # type: Plain text
 #: user.txt:3658 packages.txt:2196
@@ -10388,6 +10488,8 @@ msgid ""
 "ca::ctrlaltdel:/sbin/shutdown -t5 -h now\n"
 "----\n"
 msgstr ""
+"ca::ctrlaltdel:/sbin/shutdown -t5 -h now\n"
+"----\n"
 
 # type: Plain text
 #: user.txt:3661 packages.txt:2199
@@ -10403,6 +10505,10 @@ msgid ""
 "# umount uml\n"
 "----\n"
 msgstr ""
+"# exit\n"
+"# cd ..\n"
+"# umount uml\n"
+"----\n"
 
 # type: Plain text
 #: user.txt:3669 packages.txt:2207
@@ -10428,6 +10534,9 @@ msgid ""
 "machines=('ubd0=/home/uml/root_fs_0 eth0=tuntap,,,192.168.0.254 mem=128MB con0=null,fd:1 con=null')\n"
 "----\n"
 msgstr ""
+"machines=('ubd0=/home/uml/root_fs_0 eth0=tuntap,,,192.168.0.254 mem=128MB "
+"con0=null,fd:1 con=null')\n"
+"----\n"
 
 # type: Plain text
 #: user.txt:3680 packages.txt:2218
@@ -10482,6 +10591,9 @@ msgid ""
 "# echo tun >> /etc/sysconfig/module\n"
 "----\n"
 msgstr ""
+"# modprobe tun\n"
+"# echo tun >> /etc/sysconfig/module\n"
+"----\n"
 
 # type: Plain text
 #: user.txt:3703 packages.txt:2241
@@ -10498,6 +10610,8 @@ msgid ""
 "post_up = iptables -t nat -A POSTROUTING -j MASQUERADE\n"
 "----\n"
 msgstr ""
+"post_up = iptables -t nat -A POSTROUTING -j MASQUERADE\n"
+"----\n"
 
 # type: Bullet: '+
 # type: '
@@ -10530,7 +10644,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:3720 packages.txt:2258
 msgid "// TODO: How to start X?"
-msgstr ""
+msgstr "// TODO: How to start X?"
 
 # type: Plain text
 #: user.txt:3724
@@ -14648,7 +14762,7 @@ msgstr "== unp"
 # type: Plain text
 #: packages.txt:2094
 msgid "== user-mode-linux"
-msgstr ""
+msgstr "== user-mode-linux"
 
 # type: Plain text
 #: packages.txt:2096
