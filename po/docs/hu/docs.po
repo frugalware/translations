@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hu\n"
 "POT-Creation-Date: 2007-06-28 05:08+0200\n"
-"PO-Revision-Date: 2007-06-28 13:14+0200\n"
+"PO-Revision-Date: 2007-06-28 22:49+0200\n"
 "Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
 "Language-Team: <hu@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -506,7 +506,7 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:60
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "$ su - \n"
 "------\n"
@@ -3655,18 +3655,20 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:1330 bugs.txt:97
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "- When pacman-g2 crashed, get the trace by typing 'bt'. Here is an example:\n"
 "+\n"
 "----------------------------------------------------------------\n"
 msgstr ""
-"- Mikor a pacman-g2 összeomlik, kérje le a nyomvonalat a 'bt' paranccsal. Itt egy példa:\n"
+"- Mikor a pacman-g2 összeomlik, kérje le a nyomvonalat a 'bt' paranccsal. "
+"Itt egy példa:\n"
+"+\n"
 "----------------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:1337 bugs.txt:104
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "Program received signal SIGSEGV, Segmentation fault.\n"
 "0x0805035e in pacman_sync (targets=0x0) at sync.c:354\n"
@@ -3682,7 +3684,6 @@ msgstr ""
 "(gdb) bt\n"
 "#0  0x0805035e in pacman_sync (targets=0x0) at sync.c:354\n"
 "#1  0x08054594 in main (argc=2, argv=0xbfee1844) at pacman.c:609\n"
-"(gdb)\n"
 "----------------------------------------------------------------\n"
 
 # type: Bullet: '- '
@@ -3763,12 +3764,12 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:1373 mobile.txt:25
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "# service acpid add\n"
 "-------------------\n"
 msgstr ""
-"# service httpd add\n"
+"# service acpid add\n"
 "-------------------\n"
 
 # type: Plain text
@@ -4736,15 +4737,13 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:1780
-#, fuzzy
 msgid "=== cyrus-sasl"
-msgstr "== rss2email"
+msgstr "=== cyrus-sasl"
 
 # type: Plain text
 #: user.txt:1782
-#, fuzzy
 msgid "==== Configuring"
-msgstr "=== Nyomtató beállítása"
+msgstr "==== Beállítás"
 
 # type: Plain text
 #: user.txt:1785 packages.txt:323
@@ -4761,13 +4760,13 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:1790 packages.txt:328
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "# pacman-g2 -S postfix saslauthd\n"
 "--------------\n"
 msgstr ""
-"# pacman-g2 -Su\n"
-"---------------\n"
+"# pacman-g2 -S postfix saslauthd\n"
+"--------------\n"
 
 # type: Plain text
 #: user.txt:1794 packages.txt:332
@@ -4825,11 +4824,13 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:1820 packages.txt:358
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "SASL_DIE=1\n"
 "--------------\n"
-msgstr "--------------\n"
+msgstr ""
+"SASL_DIE=1\n"
+"--------------\n"
 
 # type: Plain text
 #: user.txt:1823 user.txt:1835 user.txt:3720 user.txt:4310 packages.txt:361
@@ -4839,11 +4840,13 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:1826 packages.txt:364
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "SASL_DIE=0\n"
 "--------------\n"
-msgstr "--------------\n"
+msgstr ""
+"SASL_DIE=0\n"
+"--------------\n"
 
 # type: Plain text
 #: user.txt:1829 user.txt:2710 packages.txt:367 packages.txt:1248
@@ -4852,22 +4855,22 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:1832 packages.txt:370
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "auth_mechanism=\"\"\n"
 "--------------\n"
 msgstr ""
-"$ pacman-g2 -h\n"
+"auth_mechanism=\"\"\n"
 "--------------\n"
 
 # type: Plain text
 #: user.txt:1838 packages.txt:376
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "auth_mechanism=\"shadow\"\n"
 "--------------\n"
 msgstr ""
-"$ pacman-g2 -h\n"
+"auth_mechanism=\"shadow\"\n"
 "--------------\n"
 
 # type: Plain text
@@ -4877,13 +4880,13 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:1844 packages.txt:382
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "service saslauthd start\n"
 "--------------\n"
 msgstr ""
-"# service alsa save\n"
-"-------------------\n"
+"service saslauthd start\n"
+"--------------\n"
 
 # type: Plain text
 #: user.txt:1847 packages.txt:385
@@ -4892,13 +4895,13 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:1850 packages.txt:388
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "service saslauthd add\n"
 "--------------\n"
 msgstr ""
-"# service alsa load\n"
-"-------------------\n"
+"service saslauthd add\n"
+"--------------\n"
 
 # type: Plain text
 #: user.txt:1854 packages.txt:392
@@ -4909,13 +4912,13 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:1857 packages.txt:395
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "usermod -G daemon postfix\n"
 "--------------\n"
 msgstr ""
-"# depmod -a\n"
-"-----------\n"
+"usermod -G daemon postfix\n"
+"--------------\n"
 
 # type: Plain text
 #: user.txt:1860 packages.txt:398
@@ -4924,13 +4927,13 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:1863 packages.txt:401
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "service postfix restart\n"
 "--------------\n"
 msgstr ""
-"# service cups restart\n"
-"----------------------\n"
+"service postfix restart\n"
+"--------------\n"
 
 # type: Plain text
 #: user.txt:1866 packages.txt:404
@@ -4939,11 +4942,8 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:1868
-#, fuzzy
 msgid "==== Verifying"
-msgstr ""
-"\n"
-"== Nyomtatás"
+msgstr "==== Ellenőrzés"
 
 # type: Plain text
 #: user.txt:1871 packages.txt:409
@@ -4995,15 +4995,13 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:1903
-#, fuzzy
 msgid "=== dante"
-msgstr "=== Beillesztés"
+msgstr "=== dante"
 
 # type: Plain text
 #: user.txt:1905
-#, fuzzy
 msgid "==== Configuration"
-msgstr "=== Nyomtató beállítása"
+msgstr "==== Beállítás"
 
 # type: Plain text
 #: user.txt:1909 packages.txt:447
@@ -5033,7 +5031,7 @@ msgstr ""
 #: packages.txt:2265 packages.txt:2278 packages.txt:2298 packages.txt:2307
 #: packages.txt:2313 packages.txt:2332 packages.txt:2340 packages.txt:2346
 #: packages.txt:2352 packages.txt:2361 packages.txt:2368 packages.txt:2377
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "----\n"
 msgstr "------\n"
 
@@ -5050,15 +5048,13 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:1918
-#, fuzzy
 msgid "==== Testing it"
-msgstr "==== Telepítés hálózatról"
+msgstr "==== Tesztelés"
 
 # type: Plain text
 #: user.txt:1920 packages.txt:458
-#, fuzzy
 msgid "Try for example:"
-msgstr "Íme néhány példa:"
+msgstr "Próbáljuk ki például:"
 
 # type: Plain text
 #: user.txt:1923 packages.txt:461
@@ -5077,9 +5073,8 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:1929
-#, fuzzy
 msgid "=== darcs"
-msgstr "=== acoc"
+msgstr "=== darcs"
 
 # type: Plain text
 #: user.txt:1934 packages.txt:472
@@ -6339,13 +6334,13 @@ msgstr "-----------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:2480 packages.txt:1018
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "ln -s /usr/lib/gcj-*/libgcjwebplugin.so ~/.mozilla/plugins/\n"
 "-----------------------------------------------------------\n"
 msgstr ""
-"# cp /usr/src/linux/arch/$yourarch$/boot/bzImage /boot/vmlinuz\n"
-"------------------------------------------------------------\n"
+"ln -s /usr/lib/gcj-*/libgcjwebplugin.so ~/.mozilla/plugins/\n"
+"-----------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:2484 packages.txt:1022
@@ -6356,19 +6351,19 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:2485 user.txt:2491 packages.txt:1023 packages.txt:1029
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "------------\n"
 msgstr "-------------\n"
 
 # type: Plain text
 #: user.txt:2487 packages.txt:1025
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "$ firefox -g\n"
 "------------\n"
 msgstr ""
-"# kexec -e\n"
-"----------\n"
+"$ firefox -g\n"
+"------------\n"
 
 # type: Plain text
 #: user.txt:2490 packages.txt:1028
@@ -6377,23 +6372,23 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:2493 packages.txt:1031
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "(gdb) run\n"
 "------------\n"
-msgstr "----------\n"
+msgstr ""
+"(gdb) run\n"
+"------------\n"
 
 # type: Plain text
 #: user.txt:2496
-#, fuzzy
 msgid "=== git"
-msgstr "=== monit"
+msgstr "=== git"
 
 # type: Plain text
 #: user.txt:2498
-#, fuzzy
 msgid "==== gitweb"
-msgstr "==== Telepítés hálózatról"
+msgstr "==== gitweb"
 
 # type: Plain text
 #: user.txt:2500 packages.txt:1038
@@ -6425,9 +6420,8 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:2513
-#, fuzzy
 msgid "=== horde-webmail"
-msgstr "== rss2email"
+msgstr "=== horde-webmail"
 
 # type: Plain text
 #: user.txt:2518 packages.txt:1056
@@ -6535,14 +6529,13 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:2556 packages.txt:1094
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "2. Add the following lines to the bottom of '/boot/grub/menu.lst'\n"
 "+\n"
 "-----------------------------------------------------------------------\n"
 msgstr ""
-"+\n"
-"2. Adja hozzá a következő sorokat a '/boot/grub/menu.lst' aljához\n"
+"2. Adjuk hozzá a következő sorokat a '/boot/grub/menu.lst' aljához\n"
 "+\n"
 "-----------------------------------------------------------------------\n"
 
@@ -6883,15 +6876,13 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:2697
-#, fuzzy
 msgid "=== lvm2"
-msgstr "=== xgl"
+msgstr "=== lvm2"
 
 # type: Bullet: '* '
 #: user.txt:2699
-#, fuzzy
 msgid "==== Creating"
-msgstr "==== Felhasználók létrehozása"
+msgstr "==== Létrehozás"
 
 # type: Plain text
 #: user.txt:2702 packages.txt:1240
@@ -7017,9 +7008,8 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:2760
-#, fuzzy
 msgid "==== Extending"
-msgstr "=== xen"
+msgstr "==== Kiterjesztés"
 
 # type: Plain text
 #: user.txt:2763 packages.txt:1301
@@ -7067,9 +7057,8 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:2784
-#, fuzzy
 msgid "==== Removing"
-msgstr "=== motion"
+msgstr "==== Eltávolítás"
 
 # type: Plain text
 #: user.txt:2786 packages.txt:1324
@@ -7203,7 +7192,7 @@ msgstr "-----------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:2850 packages.txt:1388
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "cd /var/mail\n"
 "for i in *\n"
@@ -7214,8 +7203,14 @@ msgid ""
 "done\n"
 "-----------------------------------------------\n"
 msgstr ""
-"$ cat /proc/bus/input/devices | grep -e N -e H\n"
-"----------------------------------------------\n"
+"cd /var/mail\n"
+"for i in *\n"
+"do\n"
+"\techo $i\n"
+"\tsu - $i -c \"mb2md -m\"\n"
+"\trm -v $i\n"
+"done\n"
+"-----------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:2853
@@ -7569,32 +7564,30 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:3020
-#, fuzzy
 msgid "=== openssh"
-msgstr "=== openttd"
+msgstr "=== openssh"
 
 # type: Bullet: '* '
 #: user.txt:3022
-#, fuzzy
 msgid "==== Forwarding ports"
-msgstr "==== Felhasználók létrehozása"
+msgstr "==== Portok továbbítása"
 
 # type: Plain text
 #: user.txt:3023 user.txt:3031 user.txt:3043 packages.txt:1561
 #: packages.txt:1569 packages.txt:1581
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "--------------------------------------\n"
 msgstr "---------------------------------------\n"
 
 # type: Plain text
 #: user.txt:3025 packages.txt:1563
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "# ssh -L 8000:server.com:80 server.com\n"
 "--------------------------------------\n"
 msgstr ""
-"# openssl req -new -key server.key -out server.csr\n"
-"--------------------------------------------------\n"
+"# ssh -L 8000:server.com:80 server.com\n"
+"--------------------------------------\n"
 
 # type: Plain text
 #: user.txt:3030 packages.txt:1568
@@ -7607,13 +7600,13 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:3033 packages.txt:1571
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "# ssh -L 8000:server.com:80 ssh.server.com\n"
 "--------------------------------------\n"
 msgstr ""
-"# openssl req -new -key server.key -out server.csr\n"
-"--------------------------------------------------\n"
+"# ssh -L 8000:server.com:80 ssh.server.com\n"
+"--------------------------------------\n"
 
 # type: Plain text
 #: user.txt:3036
