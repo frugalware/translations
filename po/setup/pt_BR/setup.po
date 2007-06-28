@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-04-01 05:32+0200\n"
+"POT-Creation-Date: 2007-06-28 05:39+0200\n"
 "PO-Revision-Date: 2006-04-01 13:43+0100\n"
 "Last-Translator: Pedro Leite <pedro.leite@gmail.com>\n"
 "Language-Team: \n"
@@ -12,7 +12,7 @@ msgstr ""
 "X-Poedit-Language: Portuguese (Brazillian)\n"
 "X-Poedit-Country: BRAZIL\n"
 
-#: ../src/plugins/asklang.c:72
+#: ../src/plugins/asklang.c:70
 #, fuzzy
 msgid "Selecting language"
 msgstr "Selecionando os pacotes"
@@ -26,37 +26,53 @@ msgstr ""
 msgid "Could not open output file for reading"
 msgstr "O arquivo de saída não pôde ser aberto para escrita"
 
-#: ../src/plugins/configsource.c:95 ../src/plugins/configsource.c:100
-#: ../src/plugins/dolangsh.c:58 ../src/plugins/formatdisk.c:244
-#: ../src/plugins/formatdisk.c:394 ../src/plugins/layout.c:123
-#: ../src/plugins/loadsource.c:82 ../src/plugins/select.c:336
-#: ../src/util.c:308
+#. this string should be the best mirror for the given language from
+#. * /etc/pacman.d
+#: ../src/plugins/configsource.c:95
+msgid "ftp://ftp5."
+msgstr ""
+
+#: ../src/plugins/configsource.c:129 ../src/plugins/dolangsh.c:58
+#: ../src/plugins/formatdisk.c:244 ../src/plugins/formatdisk.c:394
+#: ../src/plugins/layout.c:138 ../src/plugins/loadsource.c:82
+#: ../src/plugins/select.c:336 ../src/util.c:308
 msgid "Could not open output file for writing"
 msgstr "O arquivo de saída não pôde ser aberto para escrita"
 
-#: ../src/plugins/configsource.c:128
+#: ../src/plugins/configsource.c:152
 msgid "Selecting a mirror"
 msgstr "Selecionando um mirror"
 
-#: ../src/plugins/configsource.c:131
-msgid "Please select a mirror"
+#: ../src/plugins/configsource.c:159
+#, fuzzy
+msgid "Please select mirrors"
 msgstr "Por favor selecione um mirror"
 
-#: ../src/plugins/configsource.c:131
+#: ../src/plugins/configsource.c:160
 msgid ""
-"You may now specify the mirror closest to you in order to download the "
-"packages faster. In most cases the default value will be fine."
+"Here you can chose one or more nearby mirror to speed up package dowloading."
+msgstr ""
+
+#: ../src/plugins/configsource.c:190
+msgid "Custom mirror"
+msgstr ""
+
+#: ../src/plugins/configsource.c:190
+#, fuzzy
+msgid ""
+"You may now specify a custom mirror (eg. LAN) so you can download packages "
+"faster. In most cases a Cancel enough here."
 msgstr ""
 "Você pode agora especificar o mirror mais próximo para que o download dos "
 "pacotes seja mais rápido. Na maioria dos casos, o mirror padrão servirá."
 
-#: ../src/plugins/configsource.c:154 ../src/plugins/hotplug.c:59
-#: ../src/plugins/select.c:407 ../src/plugins/select.c:417
-#: ../src/plugins/select.c:449
+#: ../src/plugins/configsource.c:215 ../src/plugins/hotplug.c:59
+#: ../src/plugins/select.c:413 ../src/plugins/select.c:423
+#: ../src/plugins/select.c:455
 msgid "Please wait"
 msgstr "Aguarde por favor"
 
-#: ../src/plugins/configsource.c:154
+#: ../src/plugins/configsource.c:215
 msgid "Configuring the network interface..."
 msgstr "Configurando a interface de rede..."
 
@@ -218,11 +234,12 @@ msgid "Select other Linux partitions for /etc/fstab"
 msgstr "Selecione outras partições Linux para o /etc/fstab"
 
 #: ../src/plugins/formatdisk.c:572
+#, fuzzy
 msgid ""
 "You may use your other partitions to distribute your Linux system across "
 "more than one partition. Currently, you have only mounted your / partition. "
 "You might want to mount directories such as /boot, /home or /usr/local on "
-"separate partitions. You should not try to mount /usr, /etc, /sbin, or /bin "
+"separate partitions. You should not try to mount /usr, /etc, /sbin or /bin "
 "on their own partitions since they contain utilities needed to bring the "
 "system up and mount partitions. Also, do not reuse a partition that you've "
 "already entered before. Please select one of the partitions listed below, or "
@@ -281,15 +298,21 @@ msgstr "Procurando por placas SCSI e PCI"
 msgid "Selecting the keyboard map"
 msgstr "Configurando o teclado"
 
-#: ../src/plugins/layout.c:99
+#: ../src/plugins/layout.c:108
 msgid "Configuring the keyboard"
 msgstr "Configurando o teclado"
 
-#: ../src/plugins/layout.c:102
+#. this string should be the best keyboard layout for the given
+#. * language from /usr/share/kbd/keymaps/i386
+#: ../src/plugins/layout.c:113
+msgid "qwerty/us.map.gz"
+msgstr ""
+
+#: ../src/plugins/layout.c:114
 msgid "Keyboard map selection"
 msgstr "Seleção do mapa de teclado"
 
-#: ../src/plugins/layout.c:103
+#: ../src/plugins/layout.c:115
 msgid ""
 "You may select one of the following keyboard maps. If you do not select a "
 "keyboard map, 'qwerty/us.map.gz' (the US keyboard map) is the default. Use "
@@ -329,7 +352,7 @@ msgid "A Frugalware install disc was found in device /dev/%s."
 msgstr "Um disco de instalação do Frugalware foi encontrado em /dev/%s."
 
 #: ../src/plugins/partdisk.c:53
-msgid "Partitionong the disk drives"
+msgid "Partitioning the disk drives"
 msgstr ""
 
 #: ../src/plugins/partdisk.c:114
@@ -417,7 +440,7 @@ msgstr ""
 "aperte ENTER para reiniciar o computador."
 
 #: ../src/plugins/select.c:53 ../src/plugins/select.c:278
-#: ../src/plugins/select.c:404
+#: ../src/plugins/select.c:410
 msgid "Selecting packages"
 msgstr "Selecionando os pacotes"
 
@@ -456,7 +479,7 @@ msgstr ""
 "onde você pode escolher cada pacote individualmente."
 
 #: ../src/plugins/select.c:349 ../src/plugins/select.c:357
-#: ../src/plugins/select.c:367 ../src/plugins/select.c:371
+#: ../src/plugins/select.c:371 ../src/plugins/select.c:375
 msgid "Error"
 msgstr ""
 
@@ -470,25 +493,25 @@ msgstr ""
 msgid "Could not register '%s' database (%s)"
 msgstr ""
 
-#: ../src/plugins/select.c:367
+#: ../src/plugins/select.c:371
 #, c-format
 msgid "Failed to synchronize %s"
 msgstr ""
 
-#: ../src/plugins/select.c:371
+#: ../src/plugins/select.c:375
 #, c-format
 msgid "Failed to update %s (%s)"
 msgstr ""
 
-#: ../src/plugins/select.c:407
+#: ../src/plugins/select.c:413
 msgid "Searching for categories..."
 msgstr "Procurando categorias..."
 
-#: ../src/plugins/select.c:417
+#: ../src/plugins/select.c:423
 msgid "Searching for packages..."
 msgstr "Procurando pacotes..."
 
-#: ../src/plugins/select.c:449
+#: ../src/plugins/select.c:455
 #, fuzzy
 msgid "Searching for missing dependencies..."
 msgstr "Procurando pacotes..."

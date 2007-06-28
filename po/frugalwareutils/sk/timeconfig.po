@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-05-02 06:24+0200\n"
+"POT-Creation-Date: 2007-06-28 05:39+0200\n"
 "PO-Revision-Date: 2007-04-23 23:20+0200\n"
 "Last-Translator: andrej prochazka <a.prochazka@gsi.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,21 +34,27 @@ msgstr ""
 msgid ""
 "If the hardware clock is set to the Coordinated Universal time select 'UTC'. "
 "Else if it is set to the current local time (this is how most PCs are set "
-"up) or if you are unsure, then select 'local' here."
+"up) or if you are unsure, then select 'localtime' here."
 msgstr ""
 "Sú hardware hodiny nastavené na UTC/GMT ? Ak sú vyberte \"ano\". Ak sú "
 "nastavené na miestny čas(väčšina prípadov), tak vyberte \"nie\". Ak ste si "
 "nie istý tak vyberte \"nie\"."
 
-#: ../timeconfig.c:88
+#. this string should be the best timezone for the given language from
+#. * /usr/share/zoneinfo
+#: ../timeconfig.c:92
+msgid "Africa/Abidjan"
+msgstr ""
+
+#: ../timeconfig.c:93
 msgid "Timezone configuration"
 msgstr "Nastavenie časovej zóny"
 
-#: ../timeconfig.c:89
+#: ../timeconfig.c:94
 msgid "Please select one of the following timezones for your machine:"
 msgstr "Vyberte jednu z nasledovných časových zón:"
 
-#: ../timeconfig.c:107
+#: ../timeconfig.c:113
 msgid "Time configuration"
 msgstr "Nastavenie času"
 

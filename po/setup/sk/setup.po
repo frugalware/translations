@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-04-01 05:32+0200\n"
+"POT-Creation-Date: 2007-06-28 05:39+0200\n"
 "PO-Revision-Date: 2007-04-12 11:17+0200\n"
 "Last-Translator: andrej prochazka <a.prochazka@gsi.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Pootle 0.10.1\n"
 
-#: ../src/plugins/asklang.c:72
+#: ../src/plugins/asklang.c:70
 msgid "Selecting language"
 msgstr "Vyber jazyk"
 
@@ -28,37 +28,53 @@ msgstr "Nastavenie zdroja inštalácie"
 msgid "Could not open output file for reading"
 msgstr "Nemožem otvoriť súbor na čítanie"
 
-#: ../src/plugins/configsource.c:95 ../src/plugins/configsource.c:100
-#: ../src/plugins/dolangsh.c:58 ../src/plugins/formatdisk.c:244
-#: ../src/plugins/formatdisk.c:394 ../src/plugins/layout.c:123
-#: ../src/plugins/loadsource.c:82 ../src/plugins/select.c:336
-#: ../src/util.c:308
+#. this string should be the best mirror for the given language from
+#. * /etc/pacman.d
+#: ../src/plugins/configsource.c:95
+msgid "ftp://ftp5."
+msgstr ""
+
+#: ../src/plugins/configsource.c:129 ../src/plugins/dolangsh.c:58
+#: ../src/plugins/formatdisk.c:244 ../src/plugins/formatdisk.c:394
+#: ../src/plugins/layout.c:138 ../src/plugins/loadsource.c:82
+#: ../src/plugins/select.c:336 ../src/util.c:308
 msgid "Could not open output file for writing"
 msgstr "Nemožem otvoriť súbor na zápis"
 
-#: ../src/plugins/configsource.c:128
+#: ../src/plugins/configsource.c:152
 msgid "Selecting a mirror"
 msgstr "Vyber link"
 
-#: ../src/plugins/configsource.c:131
-msgid "Please select a mirror"
+#: ../src/plugins/configsource.c:159
+#, fuzzy
+msgid "Please select mirrors"
 msgstr "Výber linku"
 
-#: ../src/plugins/configsource.c:131
+#: ../src/plugins/configsource.c:160
 msgid ""
-"You may now specify the mirror closest to you in order to download the "
-"packages faster. In most cases the default value will be fine."
+"Here you can chose one or more nearby mirror to speed up package dowloading."
+msgstr ""
+
+#: ../src/plugins/configsource.c:190
+msgid "Custom mirror"
+msgstr ""
+
+#: ../src/plugins/configsource.c:190
+#, fuzzy
+msgid ""
+"You may now specify a custom mirror (eg. LAN) so you can download packages "
+"faster. In most cases a Cancel enough here."
 msgstr ""
 "Môžeš vybrať najbližší server, aby bolo sťahovanie čo najrýchlejšie. "
 "Väčšinou je to jedno"
 
-#: ../src/plugins/configsource.c:154 ../src/plugins/hotplug.c:59
-#: ../src/plugins/select.c:407 ../src/plugins/select.c:417
-#: ../src/plugins/select.c:449
+#: ../src/plugins/configsource.c:215 ../src/plugins/hotplug.c:59
+#: ../src/plugins/select.c:413 ../src/plugins/select.c:423
+#: ../src/plugins/select.c:455
 msgid "Please wait"
 msgstr "Prosím čakaj"
 
-#: ../src/plugins/configsource.c:154
+#: ../src/plugins/configsource.c:215
 msgid "Configuring the network interface..."
 msgstr "Nastavenie siete"
 
@@ -209,11 +225,12 @@ msgid "Select other Linux partitions for /etc/fstab"
 msgstr "Výber ďalších Linuxových partícii"
 
 #: ../src/plugins/formatdisk.c:572
+#, fuzzy
 msgid ""
 "You may use your other partitions to distribute your Linux system across "
 "more than one partition. Currently, you have only mounted your / partition. "
 "You might want to mount directories such as /boot, /home or /usr/local on "
-"separate partitions. You should not try to mount /usr, /etc, /sbin, or /bin "
+"separate partitions. You should not try to mount /usr, /etc, /sbin or /bin "
 "on their own partitions since they contain utilities needed to bring the "
 "system up and mount partitions. Also, do not reuse a partition that you've "
 "already entered before. Please select one of the partitions listed below, or "
@@ -264,15 +281,21 @@ msgstr "Hľadám SCSI a PCI karty"
 msgid "Selecting the keyboard map"
 msgstr "Výber klávesnice"
 
-#: ../src/plugins/layout.c:99
+#: ../src/plugins/layout.c:108
 msgid "Configuring the keyboard"
 msgstr "Nastavenie klávesnice"
 
-#: ../src/plugins/layout.c:102
+#. this string should be the best keyboard layout for the given
+#. * language from /usr/share/kbd/keymaps/i386
+#: ../src/plugins/layout.c:113
+msgid "qwerty/us.map.gz"
+msgstr ""
+
+#: ../src/plugins/layout.c:114
 msgid "Keyboard map selection"
 msgstr "Nastavenie rozloženia klávesnice"
 
-#: ../src/plugins/layout.c:103
+#: ../src/plugins/layout.c:115
 msgid ""
 "You may select one of the following keyboard maps. If you do not select a "
 "keyboard map, 'qwerty/us.map.gz' (the US keyboard map) is the default. Use "
@@ -309,7 +332,8 @@ msgid "A Frugalware install disc was found in device /dev/%s."
 msgstr "Frugalware inštalačný disk nájdený na /dev/%s"
 
 #: ../src/plugins/partdisk.c:53
-msgid "Partitionong the disk drives"
+#, fuzzy
+msgid "Partitioning the disk drives"
 msgstr "Rozdelenie disku na partície"
 
 #: ../src/plugins/partdisk.c:114
@@ -390,7 +414,7 @@ msgstr ""
 "počítač bude reštartovaný"
 
 #: ../src/plugins/select.c:53 ../src/plugins/select.c:278
-#: ../src/plugins/select.c:404
+#: ../src/plugins/select.c:410
 msgid "Selecting packages"
 msgstr "Výber balíčkov"
 
@@ -425,7 +449,7 @@ msgstr ""
 "použitie normálneho menu alebo ´ano´ pre použitie menu pre expertov"
 
 #: ../src/plugins/select.c:349 ../src/plugins/select.c:357
-#: ../src/plugins/select.c:367 ../src/plugins/select.c:371
+#: ../src/plugins/select.c:371 ../src/plugins/select.c:375
 msgid "Error"
 msgstr "Chyba"
 
@@ -439,25 +463,25 @@ msgstr "chyba pri analyzovaní pacman-g2 súboru (%s)"
 msgid "Could not register '%s' database (%s)"
 msgstr "Nemôžem zaregistrovať  '%s' databázu (%s)"
 
-#: ../src/plugins/select.c:367
+#: ../src/plugins/select.c:371
 #, c-format
 msgid "Failed to synchronize %s"
 msgstr "Chyba pri synchronizovaní %s"
 
-#: ../src/plugins/select.c:371
+#: ../src/plugins/select.c:375
 #, c-format
 msgid "Failed to update %s (%s)"
 msgstr "Chyba pri updatovaní %s (%s)"
 
-#: ../src/plugins/select.c:407
+#: ../src/plugins/select.c:413
 msgid "Searching for categories..."
 msgstr "Hľadám kategórie"
 
-#: ../src/plugins/select.c:417
+#: ../src/plugins/select.c:423
 msgid "Searching for packages..."
 msgstr "Hľadám balíčky"
 
-#: ../src/plugins/select.c:449
+#: ../src/plugins/select.c:455
 msgid "Searching for missing dependencies..."
 msgstr "Hľadám chýbajúce balíčky"
 

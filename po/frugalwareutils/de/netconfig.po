@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-05-02 06:24+0200\n"
+"POT-Creation-Date: 2007-06-28 05:39+0200\n"
 "PO-Revision-Date: 2007-04-28 18:10+0200\n"
 "Last-Translator: Daniel Exner <dex@dragonslave.de>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
@@ -17,58 +17,62 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 0.10.1\n"
 
-#: ../netconfig.c:46
-#, c-format
-msgid "usage: %s [options] start|stop|restart|status|list\n"
+#: ../netconfig.c:48
+#, fuzzy, c-format
+msgid "usage: %s [options] start|stop|restart|status|list [interface]\n"
 msgstr "Anleitung: %s [Optionen] start|stop|restart|status|list\n"
 
-#: ../netconfig.c:47
-#, c-format
-msgid "       %s [options] [profile]\n"
+#: ../netconfig.c:49
+#, fuzzy, c-format
+msgid "       %s [options] [profile] [interface]\n"
 msgstr "%s [Optionen] [Profil]\n"
 
-#: ../netconfig.c:48
+#: ../netconfig.c:50
 #, c-format
 msgid "-h | --help              This help.\n"
 msgstr "-h | --help Diese Hilfe.\n"
 
-#: ../netconfig.c:49
+#: ../netconfig.c:51
 #, c-format
 msgid "-f | --fast              Fast mode, used by the setup.\n"
 msgstr "-f | --fast Schneller Modus, wie ihn das Setup benutzt.\n"
 
-#: ../netconfig.c:50
-#, c-format
-msgid ""
-"                         SIGHUP will unload and reload the current profile.\n"
-msgstr "SIGHUP läd das aktuelle Profil neu.\n"
-
-#: ../netconfig.c:51
+#: ../netconfig.c:52
 #, c-format
 msgid "     --dry-run           Do not actually perform the operation.\n"
 msgstr "--dry-run Simulationslauf.\n"
 
-#: ../netconfig.c:60
+#: ../netconfig.c:53
+#, c-format
+msgid "     --loup              Bring up the loopback interface.\n"
+msgstr ""
+
+#: ../netconfig.c:54
+#, c-format
+msgid "     --lodown            Bring down the loopback interface.\n"
+msgstr ""
+
+#: ../netconfig.c:63
 msgid "Use a DHCP server"
 msgstr "Benutze DHCP Server"
 
-#: ../netconfig.c:61
+#: ../netconfig.c:64
 msgid "Use a static IP address"
 msgstr "Benutze eine statische IP"
 
-#: ../netconfig.c:62
+#: ../netconfig.c:65
 msgid "DSL connection"
 msgstr "DSL Verbindung"
 
-#: ../netconfig.c:63
+#: ../netconfig.c:66
 msgid "No network - loopback connection only"
 msgstr "Kein Netzwerk - Nur Loopback Verbindung"
 
-#: ../netconfig.c:65
+#: ../netconfig.c:68
 msgid "Select network connection type"
 msgstr "Wähle Netzwerk Verbindungstyp"
 
-#: ../netconfig.c:66
+#: ../netconfig.c:69
 msgid ""
 "Now we need to know how your machine connects to the network.\n"
 "If you have an internal network card and an assigned IP address, gateway, "
@@ -91,47 +95,48 @@ msgstr ""
 "wähle 'dsl'.\n"
 "Wenn du keine Netzwerkkarte besitzt, wähle 'lo'.\n"
 
-#: ../netconfig.c:83
+#: ../netconfig.c:86
 msgid "DSL configuration"
 msgstr "DSL Konfiguration"
 
-#: ../netconfig.c:83
-msgid "Do you want to configure a DSL connetion now?"
+#: ../netconfig.c:86
+#, fuzzy
+msgid "Do you want to configure a DSL connection now?"
 msgstr "Willst du jetzt eine DSL Verbindung konfigurieren?"
 
-#: ../netconfig.c:85
+#: ../netconfig.c:88
 msgid "Enter user name"
 msgstr "Bitte Benutzernamen eingeben"
 
-#: ../netconfig.c:86
+#: ../netconfig.c:89
 msgid "Enter your PPPoE user name:"
 msgstr "Bitte PPPoE Benutzernamen eingeben"
 
-#: ../netconfig.c:90 ../netconfig.c:92
+#: ../netconfig.c:93 ../netconfig.c:95
 msgid "Password"
 msgstr "Passwort"
 
-#: ../netconfig.c:91
+#: ../netconfig.c:94
 msgid "Please enter your PPPoE password"
 msgstr "Bitte gib dein PPPoE Passwort ein"
 
-#: ../netconfig.c:93
+#: ../netconfig.c:96
 msgid "Please re-enter your PPPoE password"
 msgstr "Bitte gib dein PPPoE Passwort nochmals ein"
 
-#: ../netconfig.c:99
+#: ../netconfig.c:102
 msgid "Passwords don't match"
 msgstr "Nicht das gleiche Passwort eingegeben!"
 
-#: ../netconfig.c:100
+#: ../netconfig.c:103
 msgid "Sorry, the passwords do not match. Try again?"
 msgstr "Sorry, die Passwörter stimmen nicht überein. Nochmal?"
 
-#: ../netconfig.c:103 ../netconfig.c:151
+#: ../netconfig.c:106 ../netconfig.c:156
 msgid "Enter interface name"
 msgstr "Bitte gib den Namen des Interfaces ein"
 
-#: ../netconfig.c:104
+#: ../netconfig.c:107
 msgid ""
 "Enter the Ethernet interface connected to the DSL modem. It will be ethn, "
 "where 'n' is a number.\n"
@@ -139,15 +144,15 @@ msgid ""
 "Enter interface name:"
 msgstr ""
 
-#: ../netconfig.c:132
+#: ../netconfig.c:135
 msgid "Network configuration"
 msgstr ""
 
-#: ../netconfig.c:135
+#: ../netconfig.c:138
 msgid "Enter hostname"
 msgstr ""
 
-#: ../netconfig.c:135
+#: ../netconfig.c:138
 msgid ""
 "We'll need the name you'd like to give your host.\n"
 "The full hostname is needed, such as:\n"
@@ -157,7 +162,7 @@ msgid ""
 "Enter full hostname:"
 msgstr ""
 
-#: ../netconfig.c:152
+#: ../netconfig.c:157
 msgid ""
 "We'll need the name of the interface you'd like to use for your network "
 "connection.\n"
@@ -165,31 +170,31 @@ msgid ""
 "Enter interface name:"
 msgstr ""
 
-#: ../netconfig.c:160
+#: ../netconfig.c:166
 msgid "Extended network name"
 msgstr ""
 
-#: ../netconfig.c:160
+#: ../netconfig.c:166
 msgid ""
 "It seems that this network card has a wireless extension. In order to use "
 "it, you must set your extended netwok name (ESSID). Enter your ESSID:"
 msgstr ""
 
-#: ../netconfig.c:165
+#: ../netconfig.c:171
 msgid "Encryption key"
 msgstr ""
 
-#: ../netconfig.c:165
+#: ../netconfig.c:171
 msgid ""
 "If you have an encryption key, then please enter it below.\n"
 "Examples: 4567-89AB-CD or  s:password"
 msgstr ""
 
-#: ../netconfig.c:172
+#: ../netconfig.c:178
 msgid "Set DHCP hostname"
 msgstr ""
 
-#: ../netconfig.c:172
+#: ../netconfig.c:178
 msgid ""
 "Some network providers require that the DHCP hostname beset in order to "
 "connect. If so, they'll have assigned a hostname to your machine. If you "
@@ -198,40 +203,40 @@ msgid ""
 msgstr ""
 
 #. options = ip netmask netmask
-#: ../netconfig.c:185
+#: ../netconfig.c:193
 msgid "Enter ip address"
 msgstr ""
 
-#: ../netconfig.c:185
+#: ../netconfig.c:193
 msgid "Enter your IP address for the local machine."
 msgstr ""
 
-#: ../netconfig.c:186
+#: ../netconfig.c:194
 msgid "Enter netmask for local network"
 msgstr ""
 
-#: ../netconfig.c:187
+#: ../netconfig.c:195
 msgid ""
 "Enter your netmask. This will generally look something like this: "
 "255.255.255.0\n"
 "If unsure, just hit enter."
 msgstr ""
 
-#: ../netconfig.c:194
+#: ../netconfig.c:202
 msgid "Enter gateway address"
 msgstr ""
 
-#: ../netconfig.c:194
+#: ../netconfig.c:202
 msgid ""
 "Enter the address for the gateway on your network. If you don't have a "
 "gateway on your network just hit enter, without entering any ip address."
 msgstr ""
 
-#: ../netconfig.c:200
+#: ../netconfig.c:208
 msgid "Select nameserver"
 msgstr ""
 
-#: ../netconfig.c:200
+#: ../netconfig.c:208
 msgid ""
 "Please give the IP address of the name server to use. You canadd more Domain "
 "Name Servers later by editing /etc/sysconfig/network/default.\n"
@@ -239,20 +244,25 @@ msgid ""
 "entering any ip address."
 msgstr ""
 
-#: ../netconfig.c:211
+#: ../netconfig.c:219
 msgid "Adjust configuration files"
 msgstr ""
 
-#: ../netconfig.c:211
+#: ../netconfig.c:219
 msgid "Accept these settings and adjust configuration files?"
 msgstr ""
 
-#: ../netconfig.c:275
+#: ../netconfig.c:303
 #, c-format
 msgid "No profile loaded.\n"
 msgstr ""
 
-#: ../netconfig.c:280
+#: ../netconfig.c:308
 #, c-format
 msgid "Current profile: %s\n"
 msgstr ""
+
+#~ msgid ""
+#~ "                         SIGHUP will unload and reload the current "
+#~ "profile.\n"
+#~ msgstr "SIGHUP läd das aktuelle Profil neu.\n"
