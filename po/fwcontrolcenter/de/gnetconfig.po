@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-06-28 20:01+0200\n"
-"PO-Revision-Date: 2007-06-29 00:23+0200\n"
+"POT-Creation-Date: 2007-06-29 05:41+0200\n"
+"PO-Revision-Date: 2007-06-29 21:19+0200\n"
 "Last-Translator: Finn <detto_o@freenet.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -18,11 +18,11 @@ msgstr ""
 
 #: ../src/gnetconfig-about.c:62
 msgid "(C) 2007 Frugalware Developer Team (GPL)"
-msgstr ""
+msgstr "(C) 2007 Frugalware Entwickler Team (GPL)"
 
 #: ../src/gnetconfig-about.c:63
 msgid "A graphical network configuration tool for Frugalware Linux."
-msgstr ""
+msgstr "Ein grafisches Netzwerk Konfigurationstool für Frugalware Linux."
 
 #: ../src/gnetconfig-interface.c:151
 msgid "Configure interface"
@@ -30,7 +30,7 @@ msgstr "Konfiguriere Verbindung"
 
 #: ../src/gnetconfig-interface.c:339
 msgid "Error parsing profile directory."
-msgstr ""
+msgstr "Fehler beim Analysieren des Profilverzeichnis."
 
 #: ../src/gnetconfig-interface.c:358
 msgid "Active network profile:"
@@ -38,7 +38,7 @@ msgstr "Aktives Netzwerkprofil:"
 
 #: ../src/gnetconfig-interface.c:488
 msgid "Couldn't read hostname."
-msgstr ""
+msgstr "Konnte Rechnername nicht lesen."
 
 #: ../src/gnetconfig-interface.c:517
 msgid "New DNS"
@@ -46,7 +46,7 @@ msgstr "Neue DNS"
 
 #: ../src/gnetconfig-interface.c:517
 msgid "Enter the ip address of the nameserver:"
-msgstr ""
+msgstr "Gib die IP-Adresse des Nameservers ein:"
 
 #: ../src/gnetconfig-interface.c:522
 msgid "Required field cannot be left blank."
@@ -57,7 +57,8 @@ msgid "Are you sure you want to delete this profile ?"
 msgstr "Dieses Profil wirklich löschen?"
 
 #: ../src/gnetconfig-interface.c:595
-msgid "The was an error deleting the profile."
+#, fuzzy
+msgid "There was an error deleting the profile."
 msgstr "Es gab einen Fehler beim Löschen des Profils."
 
 #: ../src/gnetconfig-interface.c:597
@@ -79,6 +80,10 @@ msgstr ""
 msgid "Unknown error."
 msgstr "Unbekannter Fehler."
 
+#: ../src/gnetconfig-interface.c:682
+msgid "Interface is already started."
+msgstr "Verbindung ist bereits gestartet."
+
 #: ../src/gnetconfig-interface.c:712
 msgid ""
 "This interface cannot be de-activated. It belongs to an inactive profile."
@@ -88,7 +93,7 @@ msgstr ""
 
 #: ../src/gnetconfig-interface.c:737
 msgid "Interface is not running."
-msgstr ""
+msgstr "Verbindung läuft nicht."
 
 #: ../src/gnetconfig-interface.c:893
 msgid "No network interface found."
@@ -100,7 +105,7 @@ msgstr "Diese Verbindung wirklich löschen?"
 
 #: ../src/gnetconfig-interface.c:939
 msgid "The selected interface is running. Please stop it first."
-msgstr ""
+msgstr "Die ausgewählte Verbindung läuft gerade. Bitte stoppe sie erst."
 
 #: ../src/gnetconfig-interface.c:945
 msgid "Interface deleted successfully"
@@ -115,20 +120,24 @@ msgid ""
 " (Wireless Connection)\n"
 "\n"
 msgstr ""
+" (Kabellose Verbindung)\n"
+"\n"
 
 #: ../src/gnetconfig-interface.c:1025
 msgid ""
 "\n"
 "Wireless connection details:\n"
 msgstr ""
+"\n"
+"Kabellose Verbindung Details:\n"
 
 #: ../src/gnetconfig-interface.c:1084 ../glade/gnetconfig.glade.h:60
 msgid "Start"
-msgstr ""
+msgstr "Start"
 
 #: ../src/gnetconfig-interface.c:1091 ../glade/gnetconfig.glade.h:61
 msgid "Stop"
-msgstr ""
+msgstr "Stop"
 
 #: ../src/gnetconfig-interface.c:1098 ../glade/gnetconfig.glade.h:43
 msgid "Configure"
@@ -140,7 +149,7 @@ msgstr "Löschen"
 
 #: ../src/gnetconfig-interface.c:1304 ../src/gnetconfig-new_interface.c:318
 msgid "Required fields for DSL connection cannot be left blank."
-msgstr ""
+msgstr "Benötigte Felder für DSL Verbindung können nicht leer gelassen werden."
 
 #: ../src/gnetconfig-interface.c:1309 ../src/gnetconfig-new_interface.c:324
 msgid "PPPoE passwords do not match. Please re-enter."
@@ -166,6 +175,13 @@ msgstr "Konfiguriert"
 msgid "Not Configured"
 msgstr "Nicht konfiguriert"
 
+#: ../src/gnetconfig-interface_detect.c:210
+msgid ""
+"The selected interface is already configured. Please select another interface"
+msgstr ""
+"Die ausgewählte Verbindung ist bereits konfiguriert. Bitte wähle eine andere "
+"Verbindung."
+
 #: ../src/gnetconfig-interface_detect.c:218
 msgid ""
 "Gnetconfig has detected that the selected interface is a wireless device."
@@ -186,6 +202,25 @@ msgstr "Füge neue Verbindung hinzu"
 msgid "There is already an interface configured for DSL connection."
 msgstr "Es gibt bereits eine konfigurierte DSL-Verbindung."
 
+#: ../src/gnetconfig-new_interface.c:256
+#, fuzzy
+msgid "Interface name cannot be blank."
+msgstr "Benötigtes Feld kann nicht leer gelassen werden."
+
+#: ../src/gnetconfig-new_interface.c:262
+msgid "Error allocating memory for new interface."
+msgstr "Fehler beim Zuweisen des Speichers für neue Verbindung."
+
+#: ../src/gnetconfig-new_interface.c:267
+msgid "No connection type selected. Please select a connection type first."
+msgstr ""
+"Keine Verbindungsart ausgewählt. Bitte wähle zuerst eine Verbindungsart."
+
+#: ../src/gnetconfig-new_interface.c:279
+#, fuzzy
+msgid "Required fields cannot be blank."
+msgstr "Benötigtes Feld kann nicht leer gelassen werden."
+
 #: ../src/gnetconfig-new_profile.c:54 ../src/gnetconfig-new_profile.c:102
 msgid "New Profile"
 msgstr "Neues Profil"
@@ -201,6 +236,16 @@ msgid ""
 msgstr ""
 "Ein gleichnamiges Profil existiert bereits. Bitte gib einen eindeutigen "
 "Profilnamen ein."
+
+#: ../src/gnetconfig-new_profile.c:72
+#, fuzzy
+msgid "Error setting up new profile"
+msgstr "Es gab einen Fehler beim Löschen des Profils."
+
+#: ../src/gnetconfig-new_profile.c:94
+#, fuzzy
+msgid "Error creating profile."
+msgstr "Es gab einen Fehler beim Löschen des Profils."
 
 #: ../src/gnetconfig-new_profile.c:97
 msgid "Do you want to give a description to the new profile?"
@@ -244,11 +289,11 @@ msgstr "<b>Verbindungsart: </b>"
 
 #: ../glade/gnetconfig.glade.h:5
 msgid "<b>DHCP Client: </b>"
-msgstr ""
+msgstr "<b>DHCP Klient: </b>"
 
 #: ../glade/gnetconfig.glade.h:6
 msgid "<b>DHCP Hostname:</b>"
-msgstr ""
+msgstr "<b>DHCP Rechnername:</b>"
 
 #: ../glade/gnetconfig.glade.h:7
 msgid "<b>Description:</b>"
@@ -287,11 +332,15 @@ msgid ""
 "<b>POST DOWN:</b> Command(s) to be executed after an interface is brought "
 "down."
 msgstr ""
+"<b>POST DOWN:</b> Befehl(e) die ausgeführt werden nachdem eine Verbindung "
+"beendet wurde."
 
 #: ../glade/gnetconfig.glade.h:16
 msgid ""
 "<b>POST UP:</b> Command(s) to be executed after an interface is brought up."
 msgstr ""
+"<b>POST UP:</b> Befehl(e) die ausgeführt werden nachdem eine Verbindung "
+"hergestellt wurde."
 
 #: ../glade/gnetconfig.glade.h:17
 msgid "<b>PPPoE password:</b>"
@@ -306,11 +355,15 @@ msgid ""
 "<b>PRE DOWN:</b> Command(s) to be executed before an interface is brought "
 "down."
 msgstr ""
+"<b>PRE DOWN:</b> Befehl(e) die ausgeführt werden bevor eine Verbindung "
+"beendet wurde."
 
 #: ../glade/gnetconfig.glade.h:20
 msgid ""
 "<b>PRE UP:</b> Command(s) to be executed before an interface is brought up."
 msgstr ""
+"<b>PRE UP:</b> Befehl(e) die ausgeführt werden bevor eine Verbindung "
+"hergestellt wurde."
 
 #: ../glade/gnetconfig.glade.h:21
 msgid "<b>Select profile: </b>"
@@ -328,6 +381,11 @@ msgid ""
 "You may add more than one name servers. \n"
 "If you don't have a name server on your network, just leave this blank.\n"
 msgstr ""
+"<span size=\"large\"><b>DNS Server: </b></span>\n"
+"\n"
+"Gib die IP-Adresse(n) des/der zu benutzenden Nameserver ein.\n"
+"Du kannst mehr als einen Namerserver hinzufügen. \n"
+"Wenn du keinen Nameserver in deinem Netzwerk hast, lasse dies leer.\n"
 
 #: ../glade/gnetconfig.glade.h:29
 msgid "<span size=\"larger\"><b>Interfaces:</b></span>"
@@ -338,6 +396,8 @@ msgid ""
 "<span size=\"larger\"><b>gnetconfig</b></span>\n"
 "Graphical network configuration tool for Frugalware linux."
 msgstr ""
+"<span size=\"larger\"><b>gnetconfig</b></span>\n"
+"Grafisches Netzwerk Konfigurationstool für Frugalware Linux."
 
 #: ../glade/gnetconfig.glade.h:32
 msgid "About gnetconfig"
@@ -353,6 +413,13 @@ msgid ""
 "Secondary\n"
 "Auto\n"
 msgstr ""
+"Ad-Hoc\n"
+"Verwaltet\n"
+"Master\n"
+"Monitor\n"
+"Wiederholer\n"
+"Untergeordnet\n"
+"Automatisch\n"
 
 #: ../glade/gnetconfig.glade.h:41
 msgid "Add"
@@ -360,7 +427,7 @@ msgstr "Hinzufügen"
 
 #: ../glade/gnetconfig.glade.h:42
 msgid "Autodetect"
-msgstr ""
+msgstr "Automatisch erkennen"
 
 #: ../glade/gnetconfig.glade.h:44
 msgid "Configure this interface for DSL connection"
@@ -391,75 +458,83 @@ msgid ""
 "\n"
 "<b>frugalware.example.net</b>\n"
 msgstr ""
+"Gib den Namen ein den du für deinen Rechner benutzen möchtest.\n"
+"Der volle Rechnername wird benötigt, wie zum Beispiel:\n"
+"\n"
+"<b>frugalware.beispiel.net</b>\n"
 
 #: ../glade/gnetconfig.glade.h:56
 msgid "Host"
-msgstr ""
+msgstr "Rechner"
 
 #: ../glade/gnetconfig.glade.h:57
 msgid "New profile"
-msgstr ""
+msgstr "Neues Profil"
 
 #: ../glade/gnetconfig.glade.h:58
 msgid "Options"
-msgstr ""
+msgstr "Optionen"
 
 #: ../glade/gnetconfig.glade.h:59
 msgid "Settings"
-msgstr ""
+msgstr "Einstellungen"
 
 #: ../glade/gnetconfig.glade.h:62
 msgid ""
 "You can add commands that you want to be executed before or after an "
 "interface is brought up or down respectively.\n"
 msgstr ""
+"Du kannst Befehle hinzufügen, die, nachdem diese Verbindung aufgebaut oder "
+"beendet wurde, ausgeführt werden."
 
 #: ../glade/gnetconfig.glade.h:64
 msgid "_File"
-msgstr ""
+msgstr "_Datei"
 
 #: ../glade/gnetconfig.glade.h:65
 msgid "_Help"
-msgstr ""
+msgstr "_Hilfe"
 
 #: ../glade/gnetconfig.glade.h:66
 msgid "_Profile"
-msgstr ""
+msgstr "_Profil"
 
 #: ../glade/gnetconfig.glade.h:67
 msgid ""
 "dhcpcd (default)\n"
 "dhclient"
 msgstr ""
+"dhcpcd (standard)\n"
+"dhclient"
 
 #: ../glade/gnetconfig.glade.h:69
 msgid "gtk-about"
-msgstr ""
+msgstr "gtk-about"
 
 #: ../glade/gnetconfig.glade.h:70
 msgid "gtk-add"
-msgstr ""
+msgstr "gtk-add"
 
 #: ../glade/gnetconfig.glade.h:71
 msgid "gtk-close"
-msgstr ""
+msgstr "gtk-close"
 
 #: ../glade/gnetconfig.glade.h:72
 msgid "gtk-delete"
-msgstr ""
+msgstr "gtk-delete"
 
 #: ../glade/gnetconfig.glade.h:73
 msgid "gtk-new"
-msgstr ""
+msgstr "gtk-new"
 
 #: ../glade/gnetconfig.glade.h:74
 msgid "gtk-quit"
-msgstr ""
+msgstr "gtk-quit"
 
 #: ../glade/gnetconfig.glade.h:75
 msgid "gtk-remove"
-msgstr ""
+msgstr "gtk-remove"
 
 #: ../glade/gnetconfig.glade.h:76
 msgid "gtk-save"
-msgstr ""
+msgstr "gtk-save"
