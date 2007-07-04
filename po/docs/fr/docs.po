@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-07-04 05:25+0200\n"
-"PO-Revision-Date: 2007-07-04 13:13+0200\n"
+"PO-Revision-Date: 2007-07-04 21:20+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -5615,6 +5615,8 @@ msgid ""
 "Issue `id postfix` and see if the `daemon` group is listed. If not, then add "
 "`postfix` to the `daemon` group:"
 msgstr ""
+"Faites `id postfix` et contrôlez si le groupe `daemon` est listé. Si ce "
+"n'est pas le cas, puis ajoutez `postfix` au groupe `daemon`:"
 
 # type: Plain text
 #: user.txt:1857 packages.txt:395
@@ -7283,7 +7285,10 @@ msgid ""
 "  page with hundreds of applet tags, causing gcjwebplugin to create\n"
 "  warning dialog after warning dialog.  The browser would have to be\n"
 "  closed to eliminate the latest dialog\n"
-msgstr ""
+msgstr "- quelqu'un peut provoquer une attaque dénie-de-service pour le navigateur "
+"en créant une page avec des centaines de tags applet, forçant gcjwebplugin à "
+"créer des boites de dialogues d'avertissement, les unes après les autres. "
+"Le navigateur doit être fermer pour éliminer la dernière boite de dialogue.\n"
 
 # type: Plain text
 #: user.txt:2460 packages.txt:998
@@ -7294,6 +7299,11 @@ msgid ""
 "  If that domain is in the whitelist then the warning dialog will not\n"
 "  appear when loading the new malicious applet.\n"
 msgstr ""
+"- Une liste blanche est fourni par convenance, mais cela n'est pas sur car "
+"un domaine peu changer de main depuis un propriétaire respectable à un "
+"beaucoup moins. Si un domaine est dans la liste blanche alors la boite de "
+"dialogue d'avertissement n'apparaîtra pas lors du chargement d'une applet "
+"malicieuse."
 
 # type: Plain text
 #: user.txt:2466 packages.txt:1004
@@ -7319,6 +7329,11 @@ msgid ""
 "loading).  When run on the command line, gappletviewer issues a warning on "
 "startup and asks you if you want to continue."
 msgstr ""
+"Le même avertissement s'applique à gappletviewer, qui s'exécute aussi sans "
+"security manager (en fait, gcjwebplugin démarre gappletviewer pour le "
+"chargement de l'applet). Lorsqu'il est démarré à partir de la ligne de "
+"commande, gappletviewer génère un message d'avertissement et vous demande si "
+"vous voulez continuer."
 
 # type: Plain text
 #: user.txt:2477 packages.txt:1015
@@ -7329,6 +7344,12 @@ msgid ""
 "web.  If you're interested in trying gcjwebplugin, you can do so by creating "
 "a symbolic link in ~/.mozilla/plugins like so:"
 msgstr ""
+"Malgré les risques qui peuvent en découler, vous voudrez sûrement essayer "
+"gcjwebplugin. Les implémentations de GNU Classpath d'AWT et Swing sont "
+"suffisamment mature pour qu'ils soit capable d'exécuter la plus part des "
+"applets disponible sur le web. Si vous êtes intéressé pour essayer "
+"gcjwebplugin, vous pouvez le faire en créant un lien symbolique dans "
+"~/.mozilla/plugins comme suit:"
 
 # type: Plain text
 #: user.txt:2478 user.txt:3417 packages.txt:1016 packages.txt:1955
@@ -8827,6 +8848,10 @@ msgid ""
 "server.com but you have one to a machine which is allowed to access server."
 "com:80, use"
 msgstr ""
+"Après cela vous pouvez accédez à server.com:80 sur localhost:8000 même si "
+"server.com:80 n'est pas accéssible depuis votre machine. Au cas où vous "
+"n'avez pas un accès ssh vers server.com mais vous en avez un sur une machine "
+"qui possède une accès à server.com:80, utilisez:"
 
 # type: Plain text
 #: user.txt:3033 packages.txt:1571
@@ -8853,6 +8878,13 @@ msgid ""
 "unencrypted in a wired network. This is much more secure. Set up the socks "
 "proxy on localhost:8080:"
 msgstr ""
+"Beaucoup d'utilisateur nomade ont le problème suivant: ils doivent utiliser "
+"un réseau sans fil non crypté et ils veulent accéder à des serveurs webs qui "
+"ne supportent pas https. Il existe une solution simple pour cela: "
+"transférez les données vers un serveur au travers d'un tunnel ssh puis les "
+"données peuvent être transférées vers le serveur non crypté dans un réseau "
+"câblé. Ceci est beaucoup plus sûr. Configurer un proxy socks proxy sur "
+"localhost:8080:"
 
 # type: Plain text
 #: user.txt:3045 packages.txt:1583
@@ -9741,6 +9773,10 @@ msgid ""
 "bit confusing. Most users want to install an operating system from a cdrom "
 "image to a virtual harddisk. Here is what you need:"
 msgstr ""
+"Si vous découvrez `qemu`, vous pouvez trouver la grande liste d'option un "
+"peu troublante. La plupart des utilisateurs veulent installer un système "
+"d'exploitation depuis une image iso vers un disque virtuel. Voila ce que "
+"vous devez faire:"
 
 # type: Plain text
 #: user.txt:3364 packages.txt:1902
@@ -9813,6 +9849,9 @@ msgid ""
 "Use the `-monitor unix:/tmp/qemu,server,nowait` option, then send the "
 "`sendkey ctrl-alt-delete` string to the socket, for example using python:"
 msgstr ""
+"Utilisez l'option `-monitor unix:/tmp/qemu,server,nowait`, puis envoyez la "
+"chaîne `sendkey ctrl-alt-delete` dans la socket, par exemple en utilisant "
+"python:"
 
 # type: Plain text
 #: user.txt:3393 packages.txt:1931
@@ -10620,7 +10659,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:3685 packages.txt:2223
 msgid "Let's copy in the terminal device and change our root:"
-msgstr ""
+msgstr "Copiez dans le périphérique du terminal et changez de racine:"
 
 # type: Plain text
 #: user.txt:3689 packages.txt:2227
@@ -10829,6 +10868,9 @@ msgid ""
 "`eth0` interface, then edit `/etc/sysconfig/network/default` and search the "
 "end of the `[eth0]` section. Just append"
 msgstr ""
+"Ensuite, vous aurez besoin de NAT. Si vous accédez au réseau extérieur au "
+"travers de l'interface `eth0`, éditez alors `/etc/sysconfig/network/default` "
+"et cherchez la fin de la section `[eth0]`. Ajoutez simplement"
 
 # type: Plain text
 #: user.txt:3771 packages.txt:2309
@@ -10962,6 +11004,9 @@ msgid ""
 "The incorrect words are coloured red by default. You can reach a list of "
 "suggested words by pressing `z=` when the cursor is at the given word."
 msgstr ""
+"Les mots incorrects sont colorés en rouge par défaut. Vous pouvez obtenir "
+"une liste de propositions en pressant `z=` quand le curseur est au niveau du "
+"mot choisi."
 
 # type: Plain text
 #: user.txt:3822 packages.txt:2360
@@ -12174,6 +12219,10 @@ msgid ""
 "defaults to current. this can be removed once sayshell is out NOTE: If you "
 "are using stable, you probably want to use the `-t stable` option!"
 msgstr ""
+"// in current, makepkg defaults to the first enabled repo, in stable, it\n"
+"// defaults to current. this can be removed once sayshell is out\n"
+"NOTE: Si vous utilisé stable, vous voudrez probablement utiliser l'option "
+"`-t stable`!"
 
 # type: Plain text
 #: user.txt:4303 makepkg.txt:128
