@@ -2,20 +2,20 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-07-05 05:54+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2007-07-07 14:46+0200\n"
+"PO-Revision-Date: 2007-07-07 16:01+0200\n"
+"Last-Translator: Serge Vinogradov <boogie_byte@mail.ru>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 1.0\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Pootle 1.0\n"
 
 #. FIXME: use docs/about.txt as a source instead of this one
 #: ../about.php:36
@@ -23,10 +23,12 @@ msgid ""
 "Frugalware is a general purpose linux distribution, designed for "
 "intermediate users (who are not afraid of text mode)."
 msgstr ""
+"Frugalware - это дистрибутив linux общего назначения, разработанный для "
+"опытных пользователей (тех, кто не боится командной строки)."
 
 #: ../about.php:38
 msgid "What branches does Frugalware have?"
-msgstr ""
+msgstr "Какие ветви разработки существуют у Frugalware?"
 
 #: ../about.php:39
 msgid ""
@@ -34,11 +36,14 @@ msgid ""
 "branch is updated daily, and we update our <i>stable</i> branch around every "
 "6 months."
 msgstr ""
+"Существуют ветви <i>current</i> и <i>stable</i>. Ветвь <i>current</i> "
+"обновляется ежедневно, а <i>stable</i> - каждые 6 месяцев."
 
 #: ../about.php:40
 msgid "What is &quot;The Frugalware Philosophy&quot; about?"
-msgstr ""
+msgstr "В чем заключается \"Философия Frugalware\"?"
 
+# "simplicity, multimedia, design" - in russian it sounds meaningless and ugly. Any ideas about other one-word descriptions?
 #: ../about.php:41
 msgid ""
 "Briefly: simplicity, multimedia, design. We try to make Frugalware as simple "
@@ -47,10 +52,15 @@ msgid ""
 "possible, because in our opinion most software is the best as is, and "
 "doesn't need patching."
 msgstr ""
+"Вкратце, это: простота, мультимедиа, дизайн. Мы стремимся к тому, чтобы "
+"сделать Frugalware как можно проще, не забывая при этом об удобстве "
+"пользователя. Мы стараемся поставлять свежее и стабильное ПО, максимально "
+"близкое к оригиналу, так как мы считаем, что большинство программного "
+"обеспечения не нуждается в патчах, и хорошо, будучи таким, как оно есть."
 
 #: ../about.php:42
 msgid "What is the license of Frugalware?"
-msgstr ""
+msgstr "Под какой лицензией выпускается Frugalware?"
 
 #: ../about.php:43
 msgid ""
@@ -64,10 +74,21 @@ msgid ""
 "code is still under the BSD license. For more information, refer to the "
 "COPYRIGHT file in the root directory of the FST (Frugalware Source Tree)."
 msgstr ""
+"Это сложный вопрос. Большинство ПО, включенного в Frugalware выпускаются под "
+"GPL- или BSD-совместимыми лицензиями. Чтобы получить больше данных о "
+"лицензии конкретного пакета, обратитесь к файлам LICENSE или COPYRIGHT в "
+"тарболле исходных кодов этого пакета.Та часть ПО, которая разрабатывается "
+"нашей командой (сценарии Frugalware, программа установки, домашняя страница, "
+"и т.д.) выпускается под лицензией GPL. Некоторые части программы установки и "
+"сценарии запуска написаны Patrick J. Volkerding. Мы лицензируем код, который "
+"добавляем под GPL, однако код, написаный Patrick J. Volkerding, все еще "
+"выпускается под BSD-лицензией. Для получения более полной информации "
+"обратитесь к файлу COPYRIGHT в корневой директории FST (Frugalware Source "
+"Tree - дерева исходных кодов Frugalware)."
 
 #: ../about.php:44
 msgid "What package manager does Frugalware use?"
-msgstr ""
+msgstr "Какой менеджер пакетов использует Frugalware?"
 
 #: ../about.php:45
 msgid ""
@@ -77,10 +98,16 @@ msgid ""
 "extension is .fpm to differentiate them from regular tarballs. Unlike "
 "Slackware's scripts, pacman is written in C, so it's much faster."
 msgstr ""
+"У нас нет собственного менеджера пакетов, мы используем замечательный "
+"инструмент, написанный Judd Vinet, <a href=\"http://www.archlinux.org/pacman"
+"\">pacman</a>. Он использует пакеты в формате .tar.bz2, похожие на .tgz от "
+"Slackware. Мы дали нашим пакетам расширение .fpm, чтобы их можно было легко "
+"отличить от обычных тарболлов. В отличие от сценариев Slackware, pacman "
+"написан на С, поэтому он работает гораздо быстрее."
 
 #: ../about.php:46
 msgid "How does Frugalware manage updating obsolete packages?"
-msgstr ""
+msgstr "Как Frugalware управляет обновлением устаревших пакетов?"
 
 #: ../about.php:47
 msgid ""
@@ -92,10 +119,18 @@ msgid ""
 "<tt>pacman&nbsp;-S&nbsp;foo</tt>. For more information, refer to the pacman "
 "man page."
 msgstr ""
+"У нас нет отдельной программы для обновления пакетов, так как эту функцию "
+"выполняет pacman. Чтобы обновить базу данных пакетов, используйте команду "
+"<tt>pacman&nbsp;-Sy</tt>, а чтобы обновить пакеты согласно только что "
+"обновленной базе, используйте команду <tt>pacman&nbsp;-Su</tt>. Для "
+"установки пакета с удовлетворением всех необходимых зависимостей "
+"непосредственно с ftp-зеркала используйте <tt>pacman&nbsp;-S&nbsp;&it;"
+"название пакета&gt;</tt>. Для получения более полной информации, обратитесь "
+"к man-странице менеджера пакетов pacman."
 
 #: ../about.php:48
 msgid "Is there any community support available for Frugalware?"
-msgstr ""
+msgstr "Оказывается ли поддержка сообществом Frugalware?"
 
 #: ../about.php:49
 msgid ""
@@ -105,18 +140,24 @@ msgid ""
 "about our mailing lists, please refer to the <a href=\"mailman/listinfo"
 "\">list section</a> of our web site."
 msgstr ""
+"На данный момент у нас есть три списка почтовой рассылки, канал IRC и форум, "
+"которые могут быть использованы для связи с нами или другими пользователями "
+"для получения помощи. Наш IRC канал доступен в сети Freenode (сервер irc."
+"freenode.net). Для получения более подробной информации о наших списках "
+"почтовой рассылки, обратитесь, пожалуйста, к <a href=\"mailman/listinfo"
+"\">соответствующему разделу</a> нашего сайта."
 
 #: ../about.php:50
 msgid "Is there any commercial support available for Frugalware?"
-msgstr ""
+msgstr "Существует ли коммерческая поддержка Frugalware?"
 
 #: ../about.php:51
 msgid "No, there isn't for now, and <i>currently</i> it isn't planned, either."
-msgstr ""
+msgstr "Нет, не существует, и <i>на данный момент</i> не планируется."
 
 #: ../about.php:52
 msgid "For whom is Frugalware recommended to use?"
-msgstr ""
+msgstr "Кому рекомендуется использовать Frugalware?"
 
 #: ../about.php:53
 msgid ""
@@ -124,11 +165,15 @@ msgid ""
 "a magic, of course, but you should know what a partition, an MBR (Master "
 "Boot Record), etc. is."
 msgstr ""
+"Frugalware разработан для опытных пользователей. Например, установка "
+"Frugalware не происходит каким-то волшебным образом, вам надо знать, что "
+"такое раздел жесткого диска, MBR, и т.д."
 
 #: ../about.php:54
 msgid "How to become a developer?"
-msgstr ""
+msgstr "Как стать разработчиком?"
 
+# "From this point everything will come naturally to you" - that`s originally meant "now it`s all depends on you"?..
 #: ../about.php:55
 msgid ""
 "Get involved! :) If you installed Frugalware from CDs, get the full FST via "
@@ -140,11 +185,20 @@ msgid ""
 "\">devel</a> mailing list. From this point everything will come naturally to "
 "you :)"
 msgstr ""
+"Присоединяйтесь! :) Если вы устанавливали Frugalware с CD, получите FST с "
+"помощью утилиты repoman, которая входит в пакет pacman-tools. Исходные коды "
+"доступны в DVD-выпуске. Теперь попробуйте поиграть со сценариями "
+"FrugalBuild, к примеру, в пакете <a href=\"/packages/44\">cabextract</a>. "
+"Попробуйте улучшить их, или напишите новый для еще не поддерживаемой "
+"программы. После этого пошлите ваши патчи в список рассылки <a href="
+"\"mailman/listinfo/frugalware-devel\">frugalware-devel</a>. С этого момента "
+"все, естественно, зависит от вас :)"
 
 #: ../about.php:56
 msgid "What do developers do?"
-msgstr ""
+msgstr "Что делают разработчики?"
 
+# Uh... "square game"? Untranslatable, I think. 
 #: ../about.php:57
 msgid ""
 "In short, what they want to, if they play a square game. They may maintain "
@@ -156,26 +210,41 @@ msgid ""
 "hack, you may help in translating Frugalware to your or other language. And, "
 "of course, we happily accept <a href=\"donations.php\">donations</a> :)"
 msgstr ""
+"Если вкратце, то они могут делать, что хотят. Они могут сопровождать пакеты: "
+"собирать их, если вышла новая версия ПО и обновлять сценарии FrugalBuild для "
+"нормального их функционирования с новой версией. Могут вносить вклад в "
+"разработку новыми сценариями сборки для ранее не существовавших пакетов. "
+"Разработчики могут писать статьи о Frugalware или о чем-либо другом, "
+"связанном с сообществом Frugalware. Если вы просто хотите нам помочь, но при "
+"этом не хотите заниматься разработкой, вы можете участвовать в переводе "
+"Frugalware на другие языки. И, разумеется, мы с радостью принимаем <a href="
+"\"donations.php\">пожертвования</a> :)"
 
 #: ../about.php:58
 msgid "Who develops Frugalware?"
-msgstr ""
+msgstr "Кто разрабатывает Frugalware?"
 
+# Translated as: "A young group of developers, but your age is not conditional to join us"
 #: ../about.php:59
 msgid "A young group, but your age is not conditional to become a developer"
 msgstr ""
+"Группа молодых разработчиков, однако ваш возраст не важен, для того, чтобы к "
+"нам присоединиться."
 
 #: ../about.php:60
 msgid "Is Frugalware specialized in a certain purpose?"
 msgstr ""
+"Frugalware разработан для использования в каких-то специфических областях?"
 
 #: ../about.php:61
 msgid "No, it's a general purpose distribution, for desktops and servers."
 msgstr ""
+"Нет, это дистрибутив общего назначения, как для настольных систем, так и для "
+"серверов."
 
 #: ../about.php:62
 msgid "Do you plan to release a live cd?"
-msgstr ""
+msgstr "Вы планируете выпустить Live-CD?"
 
 #: ../about.php:63
 msgid ""
@@ -183,10 +252,14 @@ msgid ""
 "i686, but an x86_64 version is also under development. You can find it <a "
 "href=\"http://fwlive.frugalware.hu\">here</a>."
 msgstr ""
+"Ну, у нас уже есть Live-CD, он называется FwLive. На данный момент он "
+"поддерживает только архитектуру i686, однако версия под x86_64 уже находится "
+"на стадии разработки. Вы можете FwLive <a href=\"http://fwlive.frugalware.hu"
+"\">здесь</a>."
 
 #: ../about.php:64
 msgid "Does Frugalware support languages other than English?"
-msgstr ""
+msgstr "Поддерживает ли Frugalware еще какие-нибудь языки кроме английского?"
 
 #: ../about.php:65
 msgid ""
@@ -194,18 +267,21 @@ msgid ""
 "scripts or the setup is not available in your language, then it simply means "
 "it haven't yet translated."
 msgstr ""
+"Да, Frugalware поддерживает все те языки, которые поддерживаются пакетами. "
+"Если сценарий загрузки или программа установки не доступна на вашем языке, "
+"это значит, что их еще не перевели."
 
 #: ../about.php:66
 msgid "What about Asian languages?"
-msgstr ""
+msgstr "А что с азиатскими языками?"
 
 #: ../about.php:67
 msgid "Frugalware does not support Asian languages currently."
-msgstr ""
+msgstr "Frugalware на данный момент не поддерживает азиатских языков."
 
 #: ../about.php:68
 msgid "What architectures does Frugalware support?"
-msgstr ""
+msgstr "Какие архитектуры поддерживаются Frugalware?"
 
 #: ../about.php:69
 msgid ""
@@ -217,180 +293,192 @@ msgid ""
 "patches or any effort to create non-x86 optimized packages. We are also "
 "working on a PowerPC port"
 msgstr ""
+"На данный момент Frugalware поддерживает платформы x86 и x86_64. На "
+"платформе x86 это i686 (набор инструкций Pentium Pro или старше), а на "
+"платформе x86_64 это только k8 (amd64). При наличии просьб будет создан порт "
+"на архитектуру i386, однако на данный момент у нас нет свободных ресурсов "
+"для сборки и сопровождения этих пакетов. Касательно не-x86, у нас на данный "
+"момент нет не-x86 оборудования, но мы всегда рады патчам или любым иным "
+"попыткам создания не-x86-оптимизированных пакетов. Так же мы работаем над "
+"PowerPC-портом."
 
 #: ../about.php:76
 msgid "Short"
-msgstr ""
+msgstr "Вкратце"
 
 #: ../about.php:80
 msgid "Question"
-msgstr ""
+msgstr "Вопрос"
 
 #: ../about.php:81
 msgid "Answer"
-msgstr ""
+msgstr "Ответ"
 
 #: ../about.php:83
 msgid "Long"
-msgstr ""
+msgstr "Подробно"
 
-#: ../authors.php:61 ../config.inc.php:79
+#: ../authors.php:61 ../config.inc.php:80
 msgid "Developers"
-msgstr ""
+msgstr "Разработчики"
 
-#: ../authors.php:84 ../config.inc.php:80
+#: ../authors.php:84 ../config.inc.php:81
 msgid "Contributors"
-msgstr ""
+msgstr "Участники"
 
 #: ../changelog.php:75
 msgid "Read full current changelog"
-msgstr ""
+msgstr "Просмотр полного журнала изменений"
 
 #: ../changelog.php:75
 msgid "here"
-msgstr ""
+msgstr "здесь"
 
 #. $menucontent = '<a class="menu" href="' . $fwng_root . '">' . gettext('News') . "</a> &middot; \n";
 #: ../config.inc.php:42 ../rss.php:171
 msgid "News"
-msgstr ""
+msgstr "Новости"
 
 #: ../config.inc.php:44
 msgid "Announcements"
-msgstr ""
+msgstr "Объявления"
 
 #: ../config.inc.php:45 ../rss.php:177
 msgid "Security announcements"
-msgstr ""
+msgstr "Объявления о безопасности"
 
 #: ../config.inc.php:46
 msgid "News feeds"
-msgstr ""
+msgstr "Новостная лента"
 
 #: ../config.inc.php:48
 msgid "About"
-msgstr ""
+msgstr "О проекте"
 
 #: ../config.inc.php:50
 msgid "Summary"
-msgstr ""
+msgstr "Общие сведения"
 
 #: ../config.inc.php:51
 msgid "Frugalware in the Press"
-msgstr ""
+msgstr "Frugalware в СМИ"
 
 #: ../config.inc.php:52
 msgid "Documentation"
-msgstr ""
+msgstr "Документация"
 
 #: ../config.inc.php:54
 msgid "Community"
-msgstr ""
+msgstr "Сообщество"
 
 #: ../config.inc.php:56
 msgid "Mailing Lists"
-msgstr ""
+msgstr "Списки почтовой рассылки"
 
 #: ../config.inc.php:57
 msgid "Discussion Forums"
-msgstr ""
+msgstr "Форум"
 
 #: ../config.inc.php:58
 msgid "Wiki"
-msgstr ""
+msgstr "Вики"
 
 #: ../config.inc.php:59
 msgid "IRC"
-msgstr ""
+msgstr "IRC"
 
 #: ../config.inc.php:60
 msgid "Pastebin"
-msgstr ""
+msgstr "Опубликовать код"
 
 #: ../config.inc.php:61
 msgid "Screenshots"
-msgstr ""
+msgstr "Скриншоты"
 
 #: ../config.inc.php:62
 msgid "Map"
-msgstr ""
+msgstr "Карта"
 
 #: ../config.inc.php:63
 msgid "Last.fm group"
-msgstr ""
+msgstr "Группа Last.fm"
 
 #: ../config.inc.php:65
 msgid "Download"
-msgstr ""
+msgstr "Загрузки"
 
 #: ../config.inc.php:67
 msgid "ISO images"
-msgstr ""
+msgstr "ISO-образы"
 
 #: ../config.inc.php:68
 msgid "Packages"
-msgstr ""
+msgstr "Пакеты"
 
 #: ../config.inc.php:70
 msgid "Development"
-msgstr ""
+msgstr "Разработка"
 
 #: ../config.inc.php:72
 msgid "Roadmap"
-msgstr ""
+msgstr "План разработки"
 
 #: ../config.inc.php:73
 msgid "Darcs repository"
-msgstr ""
+msgstr "Репозиторий Darcs"
 
 #: ../config.inc.php:74
-msgid "Bug Tracker"
-msgstr ""
+msgid "Git repository"
+msgstr "Репозиторий Git"
 
 #: ../config.inc.php:75
-msgid "Translation portal"
-msgstr ""
+msgid "Bug Tracker"
+msgstr "Трекер ошибок"
 
 #: ../config.inc.php:76
-msgid "ChangeLog"
-msgstr ""
+msgid "Translation portal"
+msgstr "Портал переводов"
 
 #: ../config.inc.php:77
+msgid "ChangeLog"
+msgstr "Журнал изменений"
+
+#: ../config.inc.php:78
 msgid "Blogs"
-msgstr ""
+msgstr "Блоги"
 
-#: ../config.inc.php:78 ../donations.php:50 ../header.php:54
+#: ../config.inc.php:79 ../donations.php:50 ../header.php:54
 msgid "Donations"
-msgstr ""
+msgstr "Пожертвования"
 
-#: ../config.inc.php:91 ../config.inc.php:93 ../config.inc.php:95
-#: ../config.inc.php:97
+#: ../config.inc.php:92 ../config.inc.php:94 ../config.inc.php:96
+#: ../config.inc.php:98
 msgid "Change language"
-msgstr ""
+msgstr "Сменить язык"
 
 #: ../docs.php:60 ../docs.php:67
 msgid "The following categories are available:"
-msgstr ""
+msgstr "Доступны следующие категории:"
 
 #: ../docs.php:62 ../docs.php:69
 msgid "Full manual"
-msgstr ""
+msgstr "Полное руководство"
 
 #: ../docs.php:63 ../docs.php:70
 msgid "User documentation"
-msgstr ""
+msgstr "Документация для пользователя"
 
 #: ../docs.php:64 ../docs.php:71
 msgid "Developer documentation"
-msgstr ""
+msgstr "Документация для разработчика"
 
 #: ../docs.php:74
 msgid "View online documentation (stable release)"
-msgstr ""
+msgstr "Просмотр онлайн-документации (стабильный выпуск)"
 
 #: ../docs.php:75
 msgid "View online documentation (development version)"
-msgstr ""
+msgstr "Просмотр онлайн-документации (разрабатываемая версия)"
 
 #: ../donations.php:38
 msgid ""
@@ -414,104 +502,121 @@ msgid ""
 "on the side of the page\n"
 "if you wish to donate money.</div>"
 msgstr ""
+"<div align=\"left\">Пожертвования - хороший способ показать то, что вы "
+"цените и поддерживаете Frugalware Linux. На этой странице мы приводим список "
+"пожертвований, которые мы уже получили, и которые помогут нам в нашей "
+"дальнейшей работе над Frugalware Linux. Если у вас есть комплектующие, или "
+"что-то, поддержка чего в Frugalware может быть улучшена, то хороший способ "
+"этого достигнуть - пожертвовать это оборудование разработчику.<br /><br /"
+">Если вы хотите помочь чем-либо всему проекту (например, зеркало), "
+"пожалуйста, отправьте письмо в список почтовой рассылки <a href=\"http://"
+"frugalware.org/mailman/listinfo/frugalware-devel\">frugalware-devel</a>, "
+"или, если вы не хотите подписываться, отправьте письмо непосредственно на "
+"vmiklos_at_frugalware_dot_org.Если вы хотите пожертвовать что-либо "
+"конкретному разработчику, ознакомьтесь со страницей, где перечислены наши <a "
+"href=\"authors.php\">авторы</a>, и отправьте этому разработчику письмо. Так "
+"же вы можете использовать кнопку пожертвований PayPal сбоку страницы, если "
+"вы желаете пожертвовать деньги.</div>"
 
 #: ../donations.php:77
 msgid "The Frugalware Team"
-msgstr ""
+msgstr "Команда Frugalware"
 
 #: ../header.php:52
 msgid "Releases"
-msgstr ""
+msgstr "Выпуски"
 
 #: ../header.php:55
 msgid "Recent updates"
-msgstr ""
+msgstr "Последние обновления"
 
 #: ../header.php:56
 msgid "Languages"
-msgstr ""
+msgstr "Языки"
 
 #: ../header.php:57
 msgid "Information"
-msgstr ""
+msgstr "Информация"
 
 #: ../header.php:58
 msgid "Server information"
-msgstr ""
+msgstr "Информация о сервере"
 
 #: ../index.php:97 ../index.php:116
 msgid "Sorry, no news on your language, using English instead."
-msgstr ""
+msgstr "Sorry, no news on your language, using English instead."
 
 #: ../index.php:105
 msgid " edited this news on "
-msgstr ""
+msgstr " редактировал эту новость "
 
 #: ../index.php:107 ../index.php:120 ../security.php:82
 msgid "Posted by"
-msgstr ""
+msgstr "Опубликовано"
 
 #: ../index.php:108
 msgid "News history"
-msgstr ""
+msgstr "История новостей"
 
 #: ../irc.php:59
 msgid "General information"
-msgstr ""
+msgstr "Основная информация"
 
 #: ../irc.php:59
 msgid ""
 "Our irc channel is on the freenode network (server: irc.freenode.net), at "
 "#frugalware. This is the official Frugalware Linux irc help station."
 msgstr ""
+"Наш IRC-канал #frugalware находится в сети freenode (сервер irc.freenode."
+"net). Это официальный канал поддержки Frugalware Linux."
 
 #: ../irc.php:105
 msgid "Please enter a valid nickname"
-msgstr ""
+msgstr "Пожалуйста, введите действующий никнейм"
 
 #: ../irc.php:121
 msgid "Nickname:"
-msgstr ""
+msgstr "Никнейм:"
 
 #: ../irc.php:125
 msgid "Server:"
-msgstr ""
+msgstr "Сервер:"
 
 #: ../irc.php:129
 msgid "Channel:"
-msgstr ""
+msgstr "Канал:"
 
 #: ../irc.php:133
 msgid "Advanced..."
-msgstr ""
+msgstr "Дополнительно..."
 
 #: ../irc.php:134
 msgid "Login"
-msgstr ""
+msgstr "Логин"
 
 #: ../irc.php:140
 msgid "Login via web"
-msgstr ""
+msgstr "Войти через веб-интерфейс"
 
 #: ../irc.php:141
 msgid "Social diagram"
-msgstr ""
+msgstr "Социальный граф канала"
 
 #: ../irc.php:173 ../irc.php:175
 msgid "Log of the channel: #frugalware"
-msgstr ""
+msgstr "Журнал канала #frugalware"
 
 #: ../irc.php:173
 msgid "Sorry, currently no log available"
-msgstr ""
+msgstr "Приносим извинения, на данный момент журнал не доступен"
 
 #: ../media.php:46
 msgid "Sorry, a media file has not been written yet."
-msgstr ""
+msgstr "Приносим извинения, страница статей еще не была написана."
 
 #: ../media.php:52
 msgid "Frugalware in the press"
-msgstr ""
+msgstr "Frugalware в СМИ"
 
 #: ../media.php:53
 msgid ""
@@ -519,538 +624,546 @@ msgid ""
 "on the Internet about Frugalware. If you find an article not listed here, "
 "please tell us about it!"
 msgstr ""
+"Эта страница содержит информацию о статьях о Frugalware, которые были "
+"опубликованы в интернете. Если вы нашли статью, которая здесь не указана, "
+"сообщите нам!"
 
 #: ../media.php:76
 msgid "Title"
-msgstr ""
+msgstr "Заголовок"
 
 #: ../media.php:77
 msgid "Where"
-msgstr ""
+msgstr "Где"
 
 #: ../media.php:78 ../security.php:81
 msgid "Date"
-msgstr ""
+msgstr "Дата"
 
 #: ../media.php:79
 msgid "Language"
-msgstr ""
+msgstr "Язык"
 
 #: ../media.php:80
 msgid "Link"
-msgstr ""
+msgstr "Ссылка"
 
 #: ../packages.php:91
 msgid "Package search"
-msgstr ""
+msgstr "Поиск по пакетам"
 
 #: ../packages.php:92
 msgid "Search for:"
-msgstr ""
+msgstr "Искать:"
 
 #: ../packages.php:94
 msgid "Search in description"
-msgstr ""
+msgstr "Искать в описании"
 
 #: ../packages.php:97
 msgid "Regular expression"
-msgstr ""
+msgstr "Регулярное выражение"
 
 #: ../packages.php:100 ../packages.php:319 ../packages.php:328
 msgid "Architecture:"
-msgstr ""
+msgstr "Архитектура:"
 
 #: ../packages.php:107 ../packages.php:319 ../packages.php:328
 #: ../packages.php:392
 msgid "Version:"
-msgstr ""
+msgstr "Версия: "
 
 #: ../packages.php:119
 msgid "Search"
-msgstr ""
+msgstr "Поиск"
 
 #: ../packages.php:119
 msgid "Reset"
-msgstr ""
+msgstr "Сброс"
 
 #: ../packages.php:120
 #, php-format
 msgid "Searching in %d binary and %d source-only packages."
-msgstr ""
+msgstr "Поиск в %d бинарных пакетах и %d пакетах с исходным кодом."
 
 #: ../packages.php:134
 msgid "You will need a Mozilla based browser to install a search plugin."
 msgstr ""
+"Вам нужен Mozilla-совместимый браузер, чтобы установить поисковый плагин."
 
 #: ../packages.php:138
 msgid ""
 "Click <a href=\"javascript:addEngine()\">here</a> to install the Firefox "
 "search plugin."
 msgstr ""
+"Кликните <a href=\"javascript:addEngine()\">здесь</a>, чтобы установить "
+"поисковый плагин для Firefox."
 
 #: ../packages.php:185
 msgid "No package found"
-msgstr ""
+msgstr "Нет найденых пакетов"
 
 #: ../packages.php:222
 msgid "No such file or directory"
-msgstr ""
+msgstr "Нет такого файла или директории"
 
 #: ../packages.php:261 ../packages.php:294
 msgid "No such group"
-msgstr ""
+msgstr "Нет такой группы"
 
 #: ../packages.php:303
 msgid "Listing groups"
-msgstr ""
+msgstr "Список групп"
 
 #: ../packages.php:314
 msgid "Listing contents of group:"
-msgstr ""
+msgstr "Список содержимого группы"
 
 #: ../packages.php:316 ../packages.php:325
 msgid "Search result for:"
-msgstr ""
+msgstr "Результаты поиска"
 
 #: ../packages.php:388
 msgid "Package information:"
-msgstr ""
+msgstr "Информация о пакете"
 
 #: ../packages.php:390
 msgid "Name:"
-msgstr ""
+msgstr "Имя:"
 
 #: ../packages.php:391
 msgid "Parent:"
-msgstr ""
+msgstr "Родительский пакет:"
 
 #: ../packages.php:394
 msgid "Documentation:"
-msgstr ""
+msgstr "Документация:"
 
 #: ../packages.php:396
 msgid "Buildlog:"
-msgstr ""
+msgstr "Журнал сборки:"
 
 #: ../packages.php:397
 msgid "Changelog:"
-msgstr ""
+msgstr "Журнал изменений:"
 
 #: ../packages.php:398
 msgid "Darcs:"
-msgstr ""
+msgstr "Darcs:"
 
 #: ../packages.php:401
 msgid "Groups:"
-msgstr ""
+msgstr "Группы:"
 
 #: ../packages.php:406
 msgid "URL:"
-msgstr ""
+msgstr "URL:"
 
 #: ../packages.php:409
 msgid "Depends:"
-msgstr ""
+msgstr "Зависимости:"
 
 #: ../packages.php:416
 msgid "Exact reverse depends:"
-msgstr ""
+msgstr "Четкие обратные зависимости:"
 
 #: ../packages.php:423
 msgid "Other reverse depends:"
-msgstr ""
+msgstr "Другие обратные зависимости:"
 
 #: ../packages.php:430
 msgid "Conflicts:"
-msgstr ""
+msgstr "Конфликты:"
 
 #: ../packages.php:437
 msgid "Provides:"
-msgstr ""
+msgstr "Обеспечивает:"
 
 #: ../packages.php:442
 msgid "Compressed size:"
-msgstr ""
+msgstr "Сжатый размер:"
 
 #: ../packages.php:443
 msgid "Uncompressed size:"
-msgstr ""
+msgstr "Несжатый размер:"
 
 #: ../packages.php:444
 msgid "Arch:"
-msgstr ""
+msgstr "Архитектура:"
 
 #: ../packages.php:445
 msgid "Description:"
-msgstr ""
+msgstr "Описание:"
 
 #. FIXME: latin -> utf8 conversion hardwired
 #: ../packages.php:447
 msgid "Maintainer:"
-msgstr ""
+msgstr "Сопровождающий:"
 
 #: ../packages.php:448
 msgid "Uploaded by:"
-msgstr ""
+msgstr "Загружен:"
 
 #: ../packages.php:449
 msgid "Download:"
-msgstr ""
+msgstr "Скачать:"
 
 #: ../packages.php:454
 msgid "Forums:"
-msgstr ""
+msgstr "Форум:"
 
 #: ../packages.php:454
 msgid "Related posts"
-msgstr ""
+msgstr "Связанные посты"
 
 #: ../packages.php:455
 msgid "Wiki:"
-msgstr ""
+msgstr "Вики:"
 
 #: ../packages.php:455
 msgid "Related pages"
-msgstr ""
+msgstr "Связанные страницы"
 
 #: ../packages.php:456
 msgid "Bug Tracking System:"
-msgstr ""
+msgstr "Трекер ошибок:"
 
 #: ../packages.php:456
 msgid "Related open bugs"
-msgstr ""
+msgstr "Связанные нерешенные ошибки"
 
 #: ../packages.php:457
 msgid "Syndicate:"
-msgstr ""
+msgstr "Анонсы:"
 
 #: ../packages.php:457
 msgid "RSS"
-msgstr ""
+msgstr "RSS"
 
 #: ../packages.php:458
 msgid "SHA1 Sum:"
-msgstr ""
+msgstr "Контрольная сумма SHA1:"
 
 #: ../packages.php:459
 msgid "Frugalware version:"
-msgstr ""
+msgstr "Версия Frugalware:"
 
 #: ../packages.php:460
 msgid "Updated:"
-msgstr ""
+msgstr "Обновлен:"
 
 #: ../packages.php:465 ../packages.php:516 ../packages.php:565
 #: ../packages.php:623 ../packages.php:653
 msgid "No such package!"
-msgstr ""
+msgstr "Нет такого пакета!"
 
 #: ../packages.php:501
 #, php-format
 msgid "Changelog for %s"
-msgstr ""
+msgstr "Журнал изменений %s"
 
 #: ../packages.php:512 ../packages.php:561
 msgid "Sorry, currently no log available."
-msgstr ""
+msgstr "Приносим извинения, на данный момент журнал не доступен."
 
 #: ../packages.php:550
 #, php-format
 msgid "Build log for %s"
-msgstr ""
+msgstr "Журнал сборки %s"
 
 #: ../packages.php:599
 #, php-format
 msgid "Documentation for %s"
-msgstr ""
+msgstr "Документация для %s"
 
 #: ../packages.php:619
 msgid "Sorry, currently no documentation available."
-msgstr ""
+msgstr "Приносим извинения, на данный момент документация не доступна."
 
 #: ../packages.php:638
 msgid "File list for"
-msgstr ""
+msgstr "Список файлов для"
 
 #: ../roadmap.php:51
 msgid "Sorry, a roadmap has not been written yet."
-msgstr ""
+msgstr "Приносим извинения, план разработки еще не был написан."
 
 #: ../roadmap.php:70 ../roadmap.php:79
 msgid "done"
-msgstr ""
+msgstr "сделано"
 
 #: ../roadmap.php:72 ../roadmap.php:81
 msgid "pending"
-msgstr ""
+msgstr "в процессе"
 
 #: ../rss.php:172
 msgid "Stable releases"
-msgstr ""
+msgstr "Стабильные выпуски"
 
 #: ../rss.php:173
 msgid "Darcs commits"
-msgstr ""
+msgstr "Пополнения в Darcs"
 
 #: ../rss.php:174
 msgid "BTS entries"
-msgstr ""
+msgstr "Записи в трекере ошибок"
 
 #: ../rss.php:175
 msgid "Package updates"
-msgstr ""
+msgstr "Обновления пакета"
 
 #: ../rss.php:176
 msgid "Blog posts"
-msgstr ""
+msgstr "Публикации в блоге"
 
 #: ../screenshots.php:32
 msgid "01_splash.png"
-msgstr ""
+msgstr "01_splash.png"
 
 #: ../screenshots.php:34
 msgid "02_lang.png"
-msgstr ""
+msgstr "02_lang.png"
 
 #: ../screenshots.php:36
 msgid "03_welcome.png"
-msgstr ""
+msgstr "03_welcome.png"
 
 #: ../screenshots.php:38
 msgid "04_key.png"
-msgstr ""
+msgstr "04_key.png"
 
 #: ../screenshots.php:40
 msgid "05_raid.png"
-msgstr ""
+msgstr "05_raid.png"
 
 #: ../screenshots.php:42
 msgid "06_part.png"
-msgstr ""
+msgstr "06_part.png"
 
 #: ../screenshots.php:44
 msgid "07_part.png"
-msgstr ""
+msgstr "07_part.png"
 
 #: ../screenshots.php:46
 msgid "08_part.png"
-msgstr ""
+msgstr "08_part.png"
 
 #: ../screenshots.php:48
 msgid "09_part.png"
-msgstr ""
+msgstr "09_part.png"
 
 #: ../screenshots.php:50
 msgid "10_part.png"
-msgstr ""
+msgstr "10_part.png"
 
 #: ../screenshots.php:52
 msgid "11_part.png"
-msgstr ""
+msgstr "11_part.png"
 
 #: ../screenshots.php:54
 msgid "12_part.png"
-msgstr ""
+msgstr "12_part.png"
 
 #: ../screenshots.php:56
 msgid "13_part.png"
-msgstr ""
+msgstr "13_part.png"
 
 #: ../screenshots.php:58
 msgid "14_part.png"
-msgstr ""
+msgstr "14_part.png"
 
 #: ../screenshots.php:60
 msgid "15_pack.png"
-msgstr ""
+msgstr "15_pack.png"
 
 #: ../screenshots.php:62
 msgid "16_pack.png"
-msgstr ""
+msgstr "16_pack.png"
 
 #: ../screenshots.php:64
 msgid "17_pack.png"
-msgstr ""
+msgstr "17_pack.png"
 
 #: ../screenshots.php:66
 msgid "18_pack.png"
-msgstr ""
+msgstr "18_pack.png"
 
 #: ../screenshots.php:68
 msgid "19_pack.png"
-msgstr ""
+msgstr "19_pack.png"
 
 #: ../screenshots.php:70
 msgid "20_grub.png"
-msgstr ""
+msgstr "20_grub.png"
 
 #: ../screenshots.php:72
 msgid "21_grub.png"
-msgstr ""
+msgstr "21_grub.png"
 
 #: ../screenshots.php:74
 msgid "22_modules.png"
-msgstr ""
+msgstr "22_modules.png"
 
 #: ../screenshots.php:76
 msgid "23_root.png"
-msgstr ""
+msgstr "23_root.png"
 
 #: ../screenshots.php:78
 msgid "24_root.png"
-msgstr ""
+msgstr "24_root.png"
 
 #: ../screenshots.php:80
 msgid "25_user.png"
-msgstr ""
+msgstr "25_user.png"
 
 #: ../screenshots.php:82
 msgid "26_user.png"
-msgstr ""
+msgstr "26_user.png"
 
 #: ../screenshots.php:84
 msgid "27_user.png"
-msgstr ""
+msgstr "27_user.png"
 
 #: ../screenshots.php:86
 msgid "28_hostname.png"
-msgstr ""
+msgstr "28_hostname.png"
 
 #: ../screenshots.php:88
 msgid "29_network.png"
-msgstr ""
+msgstr "29_network.png"
 
 #: ../screenshots.php:90
 msgid "30_network.png"
-msgstr ""
+msgstr "30_network.png"
 
 #: ../screenshots.php:92
 msgid "31_config.png"
-msgstr ""
+msgstr "31_config.png"
 
 #: ../screenshots.php:94
 msgid "32_localtime.png"
-msgstr ""
+msgstr "32_localtime.png"
 
 #: ../screenshots.php:96
 msgid "33_timezone.png"
-msgstr ""
+msgstr "33_timezone.png"
 
 #: ../screenshots.php:98
 msgid "34_mouse.png"
-msgstr ""
+msgstr "34_mouse.png"
 
 #: ../screenshots.php:100
 msgid "35_success.png"
-msgstr ""
+msgstr "35_success.png"
 
 #: ../screenshots.php:102
 msgid "01_grub.png"
-msgstr ""
+msgstr "01_grub.png"
 
 #: ../screenshots.php:104
 msgid "02_boot.png"
-msgstr ""
+msgstr "02_boot.png"
 
 #: ../screenshots.php:106
 msgid "03_boot.png"
-msgstr ""
+msgstr "03_boot.png"
 
 #: ../screenshots.php:108
 msgid "04_boot.png"
-msgstr ""
+msgstr "04_boot.png"
 
 #: ../screenshots.php:110
 msgid "05_console.png"
-msgstr ""
+msgstr "05_console.png"
 
 #: ../screenshots.php:112
 msgid "06_console.png"
-msgstr ""
+msgstr "06_console.png"
 
 #: ../screenshots.php:114
 msgid "08_kde_login.png"
-msgstr ""
+msgstr "08_kde_login.png"
 
 #: ../screenshots.php:116
 msgid "09_kde.png"
-msgstr ""
+msgstr "09_kde.png"
 
 #: ../screenshots.php:118
 msgid "10_kde_menu.png"
-msgstr ""
+msgstr "10_kde_menu.png"
 
 #: ../screenshots.php:120
 msgid "11_gdm.png"
-msgstr ""
+msgstr "11_gdm.png"
 
 #: ../screenshots.php:122
 msgid "13_gnome.png"
-msgstr ""
+msgstr "13_gnome.png"
 
 #: ../screenshots.php:124
 msgid "14_gnome_menu.png"
-msgstr ""
+msgstr "14_gnome_menu.png"
 
 #: ../screenshots.php:126
 msgid "15_gnome_menu.png"
-msgstr ""
+msgstr "15_gnome_menu.png"
 
 #: ../screenshots.php:128
 msgid "16_gnome_menu.png"
-msgstr ""
+msgstr "16_gnome_menu.png"
 
 #: ../screenshots.php:130
 msgid "17_package_manager.png"
-msgstr ""
+msgstr "17_package_manager.png"
 
 #: ../screenshots.php:132
 msgid "18_runlevel_editor.png"
-msgstr ""
+msgstr "18_runlevel_editor.png"
 
 #: ../screenshots.php:139
 msgid "Installer"
-msgstr ""
+msgstr "Программа установки"
 
 #: ../screenshots.php:147
 msgid "Default Desktop"
-msgstr ""
+msgstr "Рабочий стол по умолчанию"
 
 #: ../security.php:46
 msgid "Sorry, a security file has not been written yet."
-msgstr ""
+msgstr "Приносим извинения, файл безопасности еще не был написан."
 
 #: ../security.php:52
 msgid "Frugalware Security Announcements (FSAs)"
-msgstr ""
+msgstr "Объявления о безопасности Frugalware (FSA)"
 
 #: ../security.php:53
 msgid ""
 "This is a list of security announcments that have been released for the "
 "current stable version of Frugalware"
 msgstr ""
+"Это список объявлений о безопасности, который был выпущен для текущей "
+"стабильной версии Frugalware"
 
 #: ../security.php:80
 msgid "Package"
-msgstr ""
+msgstr "Пакет"
 
 #: ../security.php:83
 msgid "Vulnerable version"
-msgstr ""
+msgstr "Уязвимая версия"
 
 #: ../security.php:84
 msgid "Unaffected version"
-msgstr ""
+msgstr "Неподверженная уязвимости версия"
 
 #: ../security.php:85
 msgid "Bug tracker entry"
-msgstr ""
+msgstr "Запись в трекере ошибок"
 
 #: ../security.php:86
 msgid "CVEs"
-msgstr ""
+msgstr "CVE"
 
 #: ../security.php:87
 msgid "Description"
-msgstr ""
+msgstr "Описание"
