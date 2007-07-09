@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-06-29 05:41+0200\n"
+"POT-Creation-Date: 2007-07-09 05:33+0200\n"
 "PO-Revision-Date: 2007-06-29 21:19+0200\n"
 "Last-Translator: Finn <detto_o@freenet.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,98 +24,122 @@ msgstr "(C) 2007 Frugalware Entwickler Team (GPL)"
 msgid "A graphical network configuration tool for Frugalware Linux."
 msgstr "Ein grafisches Netzwerk Konfigurationstool für Frugalware Linux."
 
-#: ../src/gnetconfig-interface.c:151
+#: ../src/gnetconfig-interface.c:155
 msgid "Configure interface"
 msgstr "Konfiguriere Verbindung"
 
-#: ../src/gnetconfig-interface.c:339
+#: ../src/gnetconfig-interface.c:357
 msgid "Error parsing profile directory."
 msgstr "Fehler beim Analysieren des Profilverzeichnis."
 
-#: ../src/gnetconfig-interface.c:358
+#: ../src/gnetconfig-interface.c:376
 msgid "Active network profile:"
 msgstr "Aktives Netzwerkprofil:"
 
-#: ../src/gnetconfig-interface.c:488
+#: ../src/gnetconfig-interface.c:438
+#, fuzzy
+msgid "Wireless Connection / DHCP"
+msgstr ""
+" (Kabellose Verbindung)\n"
+"\n"
+
+#: ../src/gnetconfig-interface.c:440
+#, fuzzy
+msgid "Wireless Connection / Static IP"
+msgstr "Verbindungsart: Statische IP"
+
+#: ../src/gnetconfig-interface.c:442
+#, fuzzy
+msgid "Wired Connection / DHCP"
+msgstr ""
+" (Kabellose Verbindung)\n"
+"\n"
+
+#: ../src/gnetconfig-interface.c:444
+#, fuzzy
+msgid "Wired Connection / Static IP"
+msgstr "Verbindungsart: Statische IP"
+
+#: ../src/gnetconfig-interface.c:527
 msgid "Couldn't read hostname."
 msgstr "Konnte Rechnername nicht lesen."
 
-#: ../src/gnetconfig-interface.c:517
+#: ../src/gnetconfig-interface.c:556
 msgid "New DNS"
 msgstr "Neue DNS"
 
-#: ../src/gnetconfig-interface.c:517
+#: ../src/gnetconfig-interface.c:556
 msgid "Enter the ip address of the nameserver:"
 msgstr "Gib die IP-Adresse des Nameservers ein:"
 
-#: ../src/gnetconfig-interface.c:522
+#: ../src/gnetconfig-interface.c:561
 msgid "Required field cannot be left blank."
 msgstr "Benötigtes Feld kann nicht leer gelassen werden."
 
-#: ../src/gnetconfig-interface.c:589
+#: ../src/gnetconfig-interface.c:628
 msgid "Are you sure you want to delete this profile ?"
 msgstr "Dieses Profil wirklich löschen?"
 
-#: ../src/gnetconfig-interface.c:595
+#: ../src/gnetconfig-interface.c:634
 #, fuzzy
 msgid "There was an error deleting the profile."
 msgstr "Es gab einen Fehler beim Löschen des Profils."
 
-#: ../src/gnetconfig-interface.c:597
+#: ../src/gnetconfig-interface.c:636
 msgid "Profile deleted successfully"
 msgstr "Profil erfolgreich gelöscht"
 
-#: ../src/gnetconfig-interface.c:609
+#: ../src/gnetconfig-interface.c:648
 msgid "You cannot delete an active network profile."
 msgstr "Du kannst kein aktives Netzwerkprofil löschen."
 
-#: ../src/gnetconfig-interface.c:657
+#: ../src/gnetconfig-interface.c:696
 msgid "This interface cannot be activated. It belongs to an inactive profile."
 msgstr ""
 "Diese Verbindung kann nicht aktiviert werden. Sie gehört zu einem inaktiven "
 "Profil."
 
-#: ../src/gnetconfig-interface.c:678 ../src/gnetconfig-interface.c:733
-#: ../src/gnetconfig-interface.c:931
+#: ../src/gnetconfig-interface.c:717 ../src/gnetconfig-interface.c:772
+#: ../src/gnetconfig-interface.c:970
 msgid "Unknown error."
 msgstr "Unbekannter Fehler."
 
-#: ../src/gnetconfig-interface.c:682
+#: ../src/gnetconfig-interface.c:721
 msgid "Interface is already started."
 msgstr "Verbindung ist bereits gestartet."
 
-#: ../src/gnetconfig-interface.c:712
+#: ../src/gnetconfig-interface.c:751
 msgid ""
 "This interface cannot be de-activated. It belongs to an inactive profile."
 msgstr ""
 "Diese Verbindung kann nicht deaktiviert werden. Sie gehört zu einem "
 "inaktiven Profil."
 
-#: ../src/gnetconfig-interface.c:737
+#: ../src/gnetconfig-interface.c:776
 msgid "Interface is not running."
 msgstr "Verbindung läuft nicht."
 
-#: ../src/gnetconfig-interface.c:893
+#: ../src/gnetconfig-interface.c:932
 msgid "No network interface found."
 msgstr "Keine Netzwerkverbindung gefunden."
 
-#: ../src/gnetconfig-interface.c:911
+#: ../src/gnetconfig-interface.c:950
 msgid "Are you sure you want to delete this interface ?"
 msgstr "Diese Verbindung wirklich löschen?"
 
-#: ../src/gnetconfig-interface.c:939
+#: ../src/gnetconfig-interface.c:978
 msgid "The selected interface is running. Please stop it first."
 msgstr "Die ausgewählte Verbindung läuft gerade. Bitte stoppe sie erst."
 
-#: ../src/gnetconfig-interface.c:945
+#: ../src/gnetconfig-interface.c:984
 msgid "Interface deleted successfully"
 msgstr "Verbindung erfolgreich gelöscht."
 
-#: ../src/gnetconfig-interface.c:994
+#: ../src/gnetconfig-interface.c:1033
 msgid "Connection type: Static IP"
 msgstr "Verbindungsart: Statische IP"
 
-#: ../src/gnetconfig-interface.c:999
+#: ../src/gnetconfig-interface.c:1038
 msgid ""
 " (Wireless Connection)\n"
 "\n"
@@ -123,7 +147,7 @@ msgstr ""
 " (Kabellose Verbindung)\n"
 "\n"
 
-#: ../src/gnetconfig-interface.c:1025
+#: ../src/gnetconfig-interface.c:1064
 msgid ""
 "\n"
 "Wireless connection details:\n"
@@ -131,27 +155,27 @@ msgstr ""
 "\n"
 "Kabellose Verbindung Details:\n"
 
-#: ../src/gnetconfig-interface.c:1084 ../glade/gnetconfig.glade.h:60
+#: ../src/gnetconfig-interface.c:1123 ../glade/gnetconfig.glade.h:60
 msgid "Start"
 msgstr "Start"
 
-#: ../src/gnetconfig-interface.c:1091 ../glade/gnetconfig.glade.h:61
+#: ../src/gnetconfig-interface.c:1130 ../glade/gnetconfig.glade.h:61
 msgid "Stop"
 msgstr "Stop"
 
-#: ../src/gnetconfig-interface.c:1098 ../glade/gnetconfig.glade.h:43
+#: ../src/gnetconfig-interface.c:1137 ../glade/gnetconfig.glade.h:43
 msgid "Configure"
 msgstr "Konfiguriere"
 
-#: ../src/gnetconfig-interface.c:1105
+#: ../src/gnetconfig-interface.c:1144
 msgid "Delete"
 msgstr "Löschen"
 
-#: ../src/gnetconfig-interface.c:1304 ../src/gnetconfig-new_interface.c:318
+#: ../src/gnetconfig-interface.c:1343 ../src/gnetconfig-new_interface.c:331
 msgid "Required fields for DSL connection cannot be left blank."
 msgstr "Benötigte Felder für DSL Verbindung können nicht leer gelassen werden."
 
-#: ../src/gnetconfig-interface.c:1309 ../src/gnetconfig-new_interface.c:324
+#: ../src/gnetconfig-interface.c:1348 ../src/gnetconfig-new_interface.c:337
 msgid "PPPoE passwords do not match. Please re-enter."
 msgstr "PPPoE Passwörter stimmen nicht überein. Bitte neu eingeben."
 
@@ -187,36 +211,53 @@ msgid ""
 "Gnetconfig has detected that the selected interface is a wireless device."
 msgstr "Gnetconfig hat erkannt, dass die ausgewählte Verbindung kabellos ist."
 
-#: ../src/gnetconfig-interface_opts.c:253
-#: ../src/gnetconfig-interface_opts.c:310
-#: ../src/gnetconfig-interface_opts.c:367
-#: ../src/gnetconfig-interface_opts.c:424
+#: ../src/gnetconfig-interface_opts.c:252
+#: ../src/gnetconfig-interface_opts.c:309
+#: ../src/gnetconfig-interface_opts.c:366
+#: ../src/gnetconfig-interface_opts.c:423
 msgid "Enter the name of the command:"
 msgstr "Gib den Namen des Befehls ein:"
 
-#: ../src/gnetconfig-new_interface.c:99
+#: ../src/gnetconfig-interface_opts.c:257
+#: ../src/gnetconfig-interface_opts.c:314
+#: ../src/gnetconfig-interface_opts.c:371
+#: ../src/gnetconfig-interface_opts.c:428
+#, fuzzy
+msgid "Required field cannot be blank. Please provide a valid command name."
+msgstr "Benötigtes Feld kann nicht leer gelassen werden."
+
+#: ../src/gnetconfig-new_interface.c:98
 msgid "Add new interface"
 msgstr "Füge neue Verbindung hinzu"
 
-#: ../src/gnetconfig-new_interface.c:195
+#: ../src/gnetconfig-new_interface.c:194
 msgid "There is already an interface configured for DSL connection."
 msgstr "Es gibt bereits eine konfigurierte DSL-Verbindung."
 
-#: ../src/gnetconfig-new_interface.c:256
+#: ../src/gnetconfig-new_interface.c:257
 #, fuzzy
 msgid "Interface name cannot be blank."
 msgstr "Benötigtes Feld kann nicht leer gelassen werden."
 
-#: ../src/gnetconfig-new_interface.c:262
+#: ../src/gnetconfig-new_interface.c:263
 msgid "Error allocating memory for new interface."
 msgstr "Fehler beim Zuweisen des Speichers für neue Verbindung."
 
-#: ../src/gnetconfig-new_interface.c:267
+#: ../src/gnetconfig-new_interface.c:268
 msgid "No connection type selected. Please select a connection type first."
 msgstr ""
 "Keine Verbindungsart ausgewählt. Bitte wähle zuerst eine Verbindungsart."
 
 #: ../src/gnetconfig-new_interface.c:279
+#, fuzzy
+msgid ""
+"An interface with the specified name already exists, please provide a "
+"different name."
+msgstr ""
+"Ein gleichnamiges Profil existiert bereits. Bitte gib einen eindeutigen "
+"Profilnamen ein."
+
+#: ../src/gnetconfig-new_interface.c:292
 #, fuzzy
 msgid "Required fields cannot be blank."
 msgstr "Benötigtes Feld kann nicht leer gelassen werden."
@@ -256,18 +297,19 @@ msgid "Enter a description for this profile:"
 msgstr "Gib eine Beschreibung für dieses Profil ein:"
 
 #: ../src/gnetconfig-new_profile.c:113
+#, fuzzy
 msgid ""
 "Please enter a valid description for the new profile or click the Cancel "
-"button to contiune without entering a description."
+"button to continue without entering a description."
 msgstr ""
 "Bitte gib eine gültige Beschreibung für das neue Profil ein oder klicke auf "
 "Abbrechen um ohne eine Beschreibung fortzufahren."
 
-#: ../src/gnetconfig.c:51
+#: ../src/gnetconfig.c:50
 msgid "Gnetconfig should be run as root."
 msgstr "Gnetconfig muss als root gestartet werden."
 
-#: ../src/gnetconfig.c:61
+#: ../src/gnetconfig.c:60
 msgid "Failed to initialize interface."
 msgstr "Konnte Verbindung nicht initialisieren."
 
