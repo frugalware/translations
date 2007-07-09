@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-07-08 05:34+0200\n"
+"POT-Creation-Date: 2007-07-09 05:33+0200\n"
 "PO-Revision-Date: 2007-07-08 10:46+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -160,12 +160,12 @@ msgstr "Configurer"
 msgid "Delete"
 msgstr "Supprimer"
 
-#: ../src/gnetconfig-interface.c:1343 ../src/gnetconfig-new_interface.c:317
+#: ../src/gnetconfig-interface.c:1343 ../src/gnetconfig-new_interface.c:331
 msgid "Required fields for DSL connection cannot be left blank."
 msgstr ""
 "Les champs requis pour la connexion DSL ne peuvent pas être laissés vides."
 
-#: ../src/gnetconfig-interface.c:1348 ../src/gnetconfig-new_interface.c:323
+#: ../src/gnetconfig-interface.c:1348 ../src/gnetconfig-new_interface.c:337
 msgid "PPPoE passwords do not match. Please re-enter."
 msgstr ""
 "Les mots de passe PPPoE ne correspondent pas. Vous êtes priés de les entrer "
@@ -229,20 +229,28 @@ msgstr "Ajouter une nouvelle interface"
 msgid "There is already an interface configured for DSL connection."
 msgstr "Une interface est déjà configurée pour la connexion DSL."
 
-#: ../src/gnetconfig-new_interface.c:255
+#: ../src/gnetconfig-new_interface.c:257
 msgid "Interface name cannot be blank."
 msgstr "Le nom de l'interface ne peut rester vide."
 
-#: ../src/gnetconfig-new_interface.c:261
+#: ../src/gnetconfig-new_interface.c:263
 msgid "Error allocating memory for new interface."
 msgstr "Erreur lors de l'allocation de la mémoire pour une nouvelle interface."
 
-#: ../src/gnetconfig-new_interface.c:266
+#: ../src/gnetconfig-new_interface.c:268
 msgid "No connection type selected. Please select a connection type first."
 msgstr ""
 "Aucun type de connexion sélectionnée. Commencez par choisir une connection."
 
-#: ../src/gnetconfig-new_interface.c:278
+#: ../src/gnetconfig-new_interface.c:279
+#, fuzzy
+msgid ""
+"An interface with the specified name already exists, please provide a "
+"different name."
+msgstr ""
+"Un profil avec ce nom existe déjà. Veuillez choisir un nom de profil unique."
+
+#: ../src/gnetconfig-new_interface.c:292
 msgid "Required fields cannot be blank."
 msgstr "Des champs requis ne peuvent être vide."
 
@@ -506,7 +514,8 @@ msgstr "Configuration"
 msgid ""
 "You can add commands that you want to be executed before or after an "
 "interface is brought up or down respectively.\n"
-msgstr "Vous pouvez ajouter des commandes à exécuter avant et/ou après qu'un "
+msgstr ""
+"Vous pouvez ajouter des commandes à exécuter avant et/ou après qu'un "
 "interface soit activée ou désactivé respectivement.\n"
 
 #: ../glade/gnetconfig.glade.h:64

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-07-03 05:55+0200\n"
+"POT-Creation-Date: 2007-07-09 05:33+0200\n"
 "PO-Revision-Date: 2007-07-03 23:33+0200\n"
 "Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,101 +16,125 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 1.0\n"
 
-#: ../src/gnetconfig-about.c:60
+#: ../src/gnetconfig-about.c:62
 msgid "(C) 2007 Frugalware Developer Team (GPL)"
 msgstr "(C) 2007 Frugalware Fejlesztő Csapat (GPL)"
 
-#: ../src/gnetconfig-about.c:61
+#: ../src/gnetconfig-about.c:63
 msgid "A graphical network configuration tool for Frugalware Linux."
 msgstr "Egy grafikus beállítóeszköz a Frugalware Linux számára."
 
-#: ../src/gnetconfig-interface.c:150
+#: ../src/gnetconfig-interface.c:155
 msgid "Configure interface"
 msgstr "Interfész beállítása"
 
-#: ../src/gnetconfig-interface.c:338
+#: ../src/gnetconfig-interface.c:357
 msgid "Error parsing profile directory."
 msgstr "Hiba a profilok könyvtárának olvasása közben."
 
-#: ../src/gnetconfig-interface.c:357
+#: ../src/gnetconfig-interface.c:376
 msgid "Active network profile:"
 msgstr "Aktív hálózati profil:"
 
-#: ../src/gnetconfig-interface.c:487
+#: ../src/gnetconfig-interface.c:438
+#, fuzzy
+msgid "Wireless Connection / DHCP"
+msgstr ""
+" (Vezetéknéküli kapcsolat)\n"
+"\n"
+
+#: ../src/gnetconfig-interface.c:440
+#, fuzzy
+msgid "Wireless Connection / Static IP"
+msgstr "Kapcsolat típusa: Statikus IP"
+
+#: ../src/gnetconfig-interface.c:442
+#, fuzzy
+msgid "Wired Connection / DHCP"
+msgstr ""
+" (Vezetéknéküli kapcsolat)\n"
+"\n"
+
+#: ../src/gnetconfig-interface.c:444
+#, fuzzy
+msgid "Wired Connection / Static IP"
+msgstr "Kapcsolat típusa: Statikus IP"
+
+#: ../src/gnetconfig-interface.c:527
 msgid "Couldn't read hostname."
 msgstr "Nem sikerült beolvasni a gépnevet."
 
-#: ../src/gnetconfig-interface.c:516
+#: ../src/gnetconfig-interface.c:556
 msgid "New DNS"
 msgstr "Új DNS"
 
-#: ../src/gnetconfig-interface.c:516
+#: ../src/gnetconfig-interface.c:556
 msgid "Enter the ip address of the nameserver:"
 msgstr "Adjuk meg a névszerver ip címét:"
 
-#: ../src/gnetconfig-interface.c:521
+#: ../src/gnetconfig-interface.c:561
 msgid "Required field cannot be left blank."
 msgstr "A kötelező mező nem lehet üres."
 
-#: ../src/gnetconfig-interface.c:588
+#: ../src/gnetconfig-interface.c:628
 msgid "Are you sure you want to delete this profile ?"
 msgstr "Biztosan törölni akarjuk ezt a profilt?"
 
-#: ../src/gnetconfig-interface.c:594
+#: ../src/gnetconfig-interface.c:634
 msgid "There was an error deleting the profile."
 msgstr "Hiba történt a profil törlése közben."
 
-#: ../src/gnetconfig-interface.c:596
+#: ../src/gnetconfig-interface.c:636
 msgid "Profile deleted successfully"
 msgstr "A profil sikeresen törölve."
 
-#: ../src/gnetconfig-interface.c:608
+#: ../src/gnetconfig-interface.c:648
 msgid "You cannot delete an active network profile."
 msgstr "Az aktív hálózati profil nem törölhető."
 
-#: ../src/gnetconfig-interface.c:656
+#: ../src/gnetconfig-interface.c:696
 msgid "This interface cannot be activated. It belongs to an inactive profile."
 msgstr "Ez az interfész nem aktiválható. Egy inaktív profilhoz tartozik."
 
-#: ../src/gnetconfig-interface.c:677 ../src/gnetconfig-interface.c:732
-#: ../src/gnetconfig-interface.c:930
+#: ../src/gnetconfig-interface.c:717 ../src/gnetconfig-interface.c:772
+#: ../src/gnetconfig-interface.c:970
 msgid "Unknown error."
 msgstr "Ismeretlen hiba."
 
-#: ../src/gnetconfig-interface.c:681
+#: ../src/gnetconfig-interface.c:721
 msgid "Interface is already started."
 msgstr "Az interész már el van indítva."
 
-#: ../src/gnetconfig-interface.c:711
+#: ../src/gnetconfig-interface.c:751
 msgid ""
 "This interface cannot be de-activated. It belongs to an inactive profile."
 msgstr "Ez az interfész nem kapcsolható ki. Egy inaktív profilhoz tartozik."
 
-#: ../src/gnetconfig-interface.c:736
+#: ../src/gnetconfig-interface.c:776
 msgid "Interface is not running."
 msgstr "Ez az interfész nincs bekapcsolva."
 
-#: ../src/gnetconfig-interface.c:892
+#: ../src/gnetconfig-interface.c:932
 msgid "No network interface found."
 msgstr "Nem található hálózati interfész."
 
-#: ../src/gnetconfig-interface.c:910
+#: ../src/gnetconfig-interface.c:950
 msgid "Are you sure you want to delete this interface ?"
 msgstr "Biztosan törölni akarjuk ezt az interfészt?"
 
-#: ../src/gnetconfig-interface.c:938
+#: ../src/gnetconfig-interface.c:978
 msgid "The selected interface is running. Please stop it first."
 msgstr "A kiválasztott interfész be van kapcsolva. Állísuk le először."
 
-#: ../src/gnetconfig-interface.c:944
+#: ../src/gnetconfig-interface.c:984
 msgid "Interface deleted successfully"
 msgstr "Az interfész sikeresen törölve."
 
-#: ../src/gnetconfig-interface.c:993
+#: ../src/gnetconfig-interface.c:1033
 msgid "Connection type: Static IP"
 msgstr "Kapcsolat típusa: Statikus IP"
 
-#: ../src/gnetconfig-interface.c:998
+#: ../src/gnetconfig-interface.c:1038
 msgid ""
 " (Wireless Connection)\n"
 "\n"
@@ -118,7 +142,7 @@ msgstr ""
 " (Vezetéknéküli kapcsolat)\n"
 "\n"
 
-#: ../src/gnetconfig-interface.c:1024
+#: ../src/gnetconfig-interface.c:1064
 msgid ""
 "\n"
 "Wireless connection details:\n"
@@ -126,27 +150,27 @@ msgstr ""
 "\n"
 "A vezetéknélküli kapcsolat részletei:\n"
 
-#: ../src/gnetconfig-interface.c:1083 ../glade/gnetconfig.glade.h:60
+#: ../src/gnetconfig-interface.c:1123 ../glade/gnetconfig.glade.h:60
 msgid "Start"
 msgstr "Indítás"
 
-#: ../src/gnetconfig-interface.c:1090 ../glade/gnetconfig.glade.h:61
+#: ../src/gnetconfig-interface.c:1130 ../glade/gnetconfig.glade.h:61
 msgid "Stop"
 msgstr "Leállítás"
 
-#: ../src/gnetconfig-interface.c:1097 ../glade/gnetconfig.glade.h:43
+#: ../src/gnetconfig-interface.c:1137 ../glade/gnetconfig.glade.h:43
 msgid "Configure"
 msgstr "Beállítás"
 
-#: ../src/gnetconfig-interface.c:1104
+#: ../src/gnetconfig-interface.c:1144
 msgid "Delete"
 msgstr "Törlés"
 
-#: ../src/gnetconfig-interface.c:1303 ../src/gnetconfig-new_interface.c:317
+#: ../src/gnetconfig-interface.c:1343 ../src/gnetconfig-new_interface.c:331
 msgid "Required fields for DSL connection cannot be left blank."
 msgstr "A DSL kapcsolat kötelező mezői nem lehetnek üresek."
 
-#: ../src/gnetconfig-interface.c:1308 ../src/gnetconfig-new_interface.c:323
+#: ../src/gnetconfig-interface.c:1348 ../src/gnetconfig-new_interface.c:337
 msgid "PPPoE passwords do not match. Please re-enter."
 msgstr "A PPPoE jelszavak nem egyeznek meg. Adjuk meg újra."
 
@@ -190,6 +214,14 @@ msgstr ""
 msgid "Enter the name of the command:"
 msgstr "Adja meg a parancs nevét:"
 
+#: ../src/gnetconfig-interface_opts.c:257
+#: ../src/gnetconfig-interface_opts.c:314
+#: ../src/gnetconfig-interface_opts.c:371
+#: ../src/gnetconfig-interface_opts.c:428
+#, fuzzy
+msgid "Required field cannot be blank. Please provide a valid command name."
+msgstr "A kötelező mezők nem lehetnek üresek."
+
 #: ../src/gnetconfig-new_interface.c:98
 msgid "Add new interface"
 msgstr "Új interfész hozzáadása"
@@ -198,19 +230,26 @@ msgstr "Új interfész hozzáadása"
 msgid "There is already an interface configured for DSL connection."
 msgstr "Már egy interfész be lett állítva DSL kapcsolatra."
 
-#: ../src/gnetconfig-new_interface.c:255
+#: ../src/gnetconfig-new_interface.c:257
 msgid "Interface name cannot be blank."
 msgstr "Az interfész neve nem lehet üres."
 
-#: ../src/gnetconfig-new_interface.c:261
+#: ../src/gnetconfig-new_interface.c:263
 msgid "Error allocating memory for new interface."
 msgstr "Hiba az interfész memóriájának lefoglalása közben."
 
-#: ../src/gnetconfig-new_interface.c:266
+#: ../src/gnetconfig-new_interface.c:268
 msgid "No connection type selected. Please select a connection type first."
 msgstr "Nincs kiválasztva a kapcsolat típusa. Válasszunk egy típust először."
 
-#: ../src/gnetconfig-new_interface.c:278
+#: ../src/gnetconfig-new_interface.c:279
+#, fuzzy
+msgid ""
+"An interface with the specified name already exists, please provide a "
+"different name."
+msgstr "Egy profil már létezik ilyen néven. Adjunk meg egy egyedi nevet."
+
+#: ../src/gnetconfig-new_interface.c:292
 msgid "Required fields cannot be blank."
 msgstr "A kötelező mezők nem lehetnek üresek."
 
@@ -245,9 +284,10 @@ msgid "Enter a description for this profile:"
 msgstr "Adjon megy egy leírást ehhez a profilhoz:"
 
 #: ../src/gnetconfig-new_profile.c:113
+#, fuzzy
 msgid ""
 "Please enter a valid description for the new profile or click the Cancel "
-"button to contiune without entering a description."
+"button to continue without entering a description."
 msgstr ""
 "Adjunk meg egy érvényes leírást az új profilhoz vagy kattintsunk a Mégsem "
 "gombak hogy leírás megadása nélkül folytassuk."
