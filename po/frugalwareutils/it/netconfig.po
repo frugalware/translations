@@ -1,0 +1,252 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-07-19 05:31+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=(n != 1);\n"
+"X-Generator: Translate Toolkit 1.0\n"
+
+#: ../netconfig.c:48
+#, c-format
+msgid "usage: %s [options] start|stop|restart|status|list [interface]\n"
+msgstr ""
+
+#: ../netconfig.c:49
+#, c-format
+msgid "       %s [options] [profile] [interface]\n"
+msgstr ""
+
+#: ../netconfig.c:50
+#, c-format
+msgid "-h | --help              This help.\n"
+msgstr ""
+
+#: ../netconfig.c:51
+#, c-format
+msgid "-f | --fast              Fast mode, used by the setup.\n"
+msgstr ""
+
+#: ../netconfig.c:52
+#, c-format
+msgid "     --dry-run           Do not actually perform the operation.\n"
+msgstr ""
+
+#: ../netconfig.c:53
+#, c-format
+msgid "     --loup              Bring up the loopback interface.\n"
+msgstr ""
+
+#: ../netconfig.c:54
+#, c-format
+msgid "     --lodown            Bring down the loopback interface.\n"
+msgstr ""
+
+#: ../netconfig.c:63
+msgid "Use a DHCP server"
+msgstr ""
+
+#: ../netconfig.c:64
+msgid "Use a static IP address"
+msgstr ""
+
+#: ../netconfig.c:65
+msgid "DSL connection"
+msgstr ""
+
+#: ../netconfig.c:66
+msgid "No network - loopback connection only"
+msgstr ""
+
+#: ../netconfig.c:68
+msgid "Select network connection type"
+msgstr ""
+
+#: ../netconfig.c:69
+msgid ""
+"Now we need to know how your machine connects to the network.\n"
+"If you have an internal network card and an assigned IP address, gateway, "
+"and DNS, use 'static' to enter these values. You may also use this if you "
+"have a DSL connection.\n"
+"If your IP address is assigned by a DHCP server (commonly used by cable "
+"modem services), select 'dhcp'. \n"
+"If you just have a network card to connect directly to a DSL modem, then "
+"select 'dsl'. \n"
+"Finally, if you do not have a network card, select the 'lo' choice. \n"
+msgstr ""
+
+#: ../netconfig.c:86
+msgid "DSL configuration"
+msgstr ""
+
+#: ../netconfig.c:86
+msgid "Do you want to configure a DSL connection now?"
+msgstr ""
+
+#: ../netconfig.c:88
+msgid "Enter user name"
+msgstr ""
+
+#: ../netconfig.c:89
+msgid "Enter your PPPoE user name:"
+msgstr ""
+
+#: ../netconfig.c:93 ../netconfig.c:95
+msgid "Password"
+msgstr ""
+
+#: ../netconfig.c:94
+msgid "Please enter your PPPoE password"
+msgstr ""
+
+#: ../netconfig.c:96
+msgid "Please re-enter your PPPoE password"
+msgstr ""
+
+#: ../netconfig.c:102
+msgid "Passwords don't match"
+msgstr ""
+
+#: ../netconfig.c:103
+msgid "Sorry, the passwords do not match. Try again?"
+msgstr ""
+
+#: ../netconfig.c:106 ../netconfig.c:156
+msgid "Enter interface name"
+msgstr ""
+
+#: ../netconfig.c:107
+msgid ""
+"Enter the Ethernet interface connected to the DSL modem. It will be ethn, "
+"where 'n' is a number.\n"
+"If unsure, just hit enter.\n"
+"Enter interface name:"
+msgstr ""
+
+#: ../netconfig.c:135
+msgid "Network configuration"
+msgstr ""
+
+#: ../netconfig.c:138
+msgid "Enter hostname"
+msgstr ""
+
+#: ../netconfig.c:138
+msgid ""
+"We'll need the name you'd like to give your host.\n"
+"The full hostname is needed, such as:\n"
+"\n"
+"frugalware.example.net\n"
+"\n"
+"Enter full hostname:"
+msgstr ""
+
+#: ../netconfig.c:157
+msgid ""
+"We'll need the name of the interface you'd like to use for your network "
+"connection.\n"
+"If unsure, just hit enter.\n"
+"Enter interface name:"
+msgstr ""
+
+#: ../netconfig.c:166
+msgid "Extended network name"
+msgstr ""
+
+#: ../netconfig.c:166
+msgid ""
+"It seems that this network card has a wireless extension. In order to use "
+"it, you must set your extended netwok name (ESSID). Enter your ESSID:"
+msgstr ""
+
+#: ../netconfig.c:171
+msgid "Encryption key"
+msgstr ""
+
+#: ../netconfig.c:171
+msgid ""
+"If you have an encryption key, then please enter it below.\n"
+"Examples: 4567-89AB-CD or  s:password"
+msgstr ""
+
+#: ../netconfig.c:178
+msgid "Set DHCP hostname"
+msgstr ""
+
+#: ../netconfig.c:178
+msgid ""
+"Some network providers require that the DHCP hostname beset in order to "
+"connect. If so, they'll have assigned a hostname to your machine. If you "
+"wereassigned a DHCP hostname, please enter it below. If you do not have a "
+"DHCP hostname, justhit enter."
+msgstr ""
+
+#. options = ip netmask netmask
+#: ../netconfig.c:193
+msgid "Enter ip address"
+msgstr ""
+
+#: ../netconfig.c:193
+msgid "Enter your IP address for the local machine."
+msgstr ""
+
+#: ../netconfig.c:194
+msgid "Enter netmask for local network"
+msgstr ""
+
+#: ../netconfig.c:195
+msgid ""
+"Enter your netmask. This will generally look something like this: "
+"255.255.255.0\n"
+"If unsure, just hit enter."
+msgstr ""
+
+#: ../netconfig.c:202
+msgid "Enter gateway address"
+msgstr ""
+
+#: ../netconfig.c:202
+msgid ""
+"Enter the address for the gateway on your network. If you don't have a "
+"gateway on your network just hit enter, without entering any ip address."
+msgstr ""
+
+#: ../netconfig.c:208
+msgid "Select nameserver"
+msgstr ""
+
+#: ../netconfig.c:208
+msgid ""
+"Please give the IP address of the name server to use. You canadd more Domain "
+"Name Servers later by editing /etc/sysconfig/network/default.\n"
+"If you don't have a name server on your network just hit enter, without "
+"entering any ip address."
+msgstr ""
+
+#: ../netconfig.c:219
+msgid "Adjust configuration files"
+msgstr ""
+
+#: ../netconfig.c:219
+msgid "Accept these settings and adjust configuration files?"
+msgstr ""
+
+#: ../netconfig.c:303
+#, c-format
+msgid "No profile loaded.\n"
+msgstr ""
+
+#: ../netconfig.c:308
+#, c-format
+msgid "Current profile: %s\n"
+msgstr ""
