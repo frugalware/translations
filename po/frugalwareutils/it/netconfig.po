@@ -2,75 +2,74 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-07-19 05:31+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2007-07-21 05:34+0200\n"
+"PO-Revision-Date: 2007-07-20 11:15+0200\n"
+"Last-Translator: Mikko C. <mikko.cal@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 1.0\n"
 
 #: ../netconfig.c:48
 #, c-format
 msgid "usage: %s [options] start|stop|restart|status|list [interface]\n"
-msgstr ""
+msgstr "uso: %s [opzioni] start|stop|restart|status|list [interfaccia]\n"
 
 #: ../netconfig.c:49
 #, c-format
 msgid "       %s [options] [profile] [interface]\n"
-msgstr ""
+msgstr "      %s [opzioni] [profilo] [interfaccia]\n"
 
 #: ../netconfig.c:50
 #, c-format
 msgid "-h | --help              This help.\n"
-msgstr ""
+msgstr "-h | --help              This help.\n"
 
 #: ../netconfig.c:51
 #, c-format
 msgid "-f | --fast              Fast mode, used by the setup.\n"
-msgstr ""
+msgstr "-f | --fast              Fast mode, usato dal setup.\n"
 
 #: ../netconfig.c:52
 #, c-format
 msgid "     --dry-run           Do not actually perform the operation.\n"
-msgstr ""
+msgstr "     --dry-run           Non esegue l'operazione.\n"
 
 #: ../netconfig.c:53
 #, c-format
 msgid "     --loup              Bring up the loopback interface.\n"
-msgstr ""
+msgstr "     --loup              Attiva l'interfaccia di loopback.\n"
 
 #: ../netconfig.c:54
 #, c-format
 msgid "     --lodown            Bring down the loopback interface.\n"
-msgstr ""
+msgstr "    --lodown            Disattiva l'interfaccia di loopback.\n"
 
 #: ../netconfig.c:63
 msgid "Use a DHCP server"
-msgstr ""
+msgstr "Usa un server DHCP"
 
 #: ../netconfig.c:64
 msgid "Use a static IP address"
-msgstr ""
+msgstr "Usa uno indirizzo IP statico"
 
 #: ../netconfig.c:65
 msgid "DSL connection"
-msgstr ""
+msgstr "Connessione DSL"
 
 #: ../netconfig.c:66
 msgid "No network - loopback connection only"
-msgstr ""
+msgstr "No network - solo connessione loopback"
 
 #: ../netconfig.c:68
 msgid "Select network connection type"
-msgstr ""
+msgstr "Seleziona un tipo di connessione"
 
 #: ../netconfig.c:69
 msgid ""
@@ -84,46 +83,54 @@ msgid ""
 "select 'dsl'. \n"
 "Finally, if you do not have a network card, select the 'lo' choice. \n"
 msgstr ""
+"Ora dobbiamo sapere come il tuo pc si connette ad internet.\n"
+"Se hai un indirizzo IP già assegnato, un gateway e DNS, usa 'statico' ed "
+"immetti questi valori. Puoi anche usarlo se hai una connessione DSL.\n"
+"Se il tuo indirizzo IP è assegnato da un server DHCP (comunemente usato dai "
+"servizi con modem via cavo), selziona 'DHCP'.\n"
+"Se hai una scheda per connetterti direttiamente ad un model DSL, seleziona "
+"'DSL'.\n"
+"Se non hai una scheda di rete, seleziona 'lo'.\n"
 
 #: ../netconfig.c:86
 msgid "DSL configuration"
-msgstr ""
+msgstr "Configurazione DSL"
 
 #: ../netconfig.c:86
 msgid "Do you want to configure a DSL connection now?"
-msgstr ""
+msgstr "Vuoi configurare la connessione DSL adesso?"
 
 #: ../netconfig.c:88
 msgid "Enter user name"
-msgstr ""
+msgstr "Inserisci lo username"
 
 #: ../netconfig.c:89
 msgid "Enter your PPPoE user name:"
-msgstr ""
+msgstr "Inserisci il tuo username PPPoE:"
 
 #: ../netconfig.c:93 ../netconfig.c:95
 msgid "Password"
-msgstr ""
+msgstr "Password"
 
 #: ../netconfig.c:94
 msgid "Please enter your PPPoE password"
-msgstr ""
+msgstr "Per favore inserisci la tua password PPPoE:"
 
 #: ../netconfig.c:96
 msgid "Please re-enter your PPPoE password"
-msgstr ""
+msgstr "Per favore re-inserisci la tua password PPPoE:"
 
 #: ../netconfig.c:102
 msgid "Passwords don't match"
-msgstr ""
+msgstr "Le password non sono uguali"
 
 #: ../netconfig.c:103
 msgid "Sorry, the passwords do not match. Try again?"
-msgstr ""
+msgstr "Spiacente, le password non sono uguali. Provare di nuovo?"
 
 #: ../netconfig.c:106 ../netconfig.c:156
 msgid "Enter interface name"
-msgstr ""
+msgstr "Inserisci il nome dell'interfaccia"
 
 #: ../netconfig.c:107
 msgid ""
@@ -132,14 +139,18 @@ msgid ""
 "If unsure, just hit enter.\n"
 "Enter interface name:"
 msgstr ""
+"Inserisci l'interfaccia connessa col modem DSL. Sarà ethn, dove 'n' è un "
+"numero.\n"
+"Se non sei sicuro, premi solamente Invio.\n"
+"Inserisci il nome dell'interfaccia:"
 
 #: ../netconfig.c:135
 msgid "Network configuration"
-msgstr ""
+msgstr "Configurazione del network"
 
 #: ../netconfig.c:138
 msgid "Enter hostname"
-msgstr ""
+msgstr "Inserisci lo hostname"
 
 #: ../netconfig.c:138
 msgid ""
@@ -150,6 +161,12 @@ msgid ""
 "\n"
 "Enter full hostname:"
 msgstr ""
+"Abbiamo bisogno del nome che vorresti dare al tuo host.\n"
+"Lo hostname completo è richiesto, per esempio:\n"
+"\n"
+"frugalware.example.net\n"
+"\n"
+"Inserisci lo hostname completo:"
 
 #: ../netconfig.c:157
 msgid ""
@@ -158,30 +175,38 @@ msgid ""
 "If unsure, just hit enter.\n"
 "Enter interface name:"
 msgstr ""
+"Abbiamo bisogno del nome dell'interfaccia che vorresti usare per la "
+"connessione.\n"
+"Se non sei sicuro, premi solamente Invio.\n"
+"Inserisci il nome dell'interfaccia:"
 
 #: ../netconfig.c:166
 msgid "Extended network name"
-msgstr ""
+msgstr "Nome del network esteso"
 
 #: ../netconfig.c:166
 msgid ""
 "It seems that this network card has a wireless extension. In order to use "
 "it, you must set your extended netwok name (ESSID). Enter your ESSID:"
 msgstr ""
+"Sembra che la tua scheda di rete ha un'estensione wireless. Per utilizzarla, "
+"devi inserire il nome del tuo network esteso (ESSID). Inserisci il tuo ESSID:"
 
 #: ../netconfig.c:171
 msgid "Encryption key"
-msgstr ""
+msgstr "Chiave di criptazione"
 
 #: ../netconfig.c:171
 msgid ""
 "If you have an encryption key, then please enter it below.\n"
 "Examples: 4567-89AB-CD or  s:password"
 msgstr ""
+"Se hai una chiave di criptazione, inseriscila qua.\n"
+"Esempi: 4567-89AB-CD o  s:password"
 
 #: ../netconfig.c:178
 msgid "Set DHCP hostname"
-msgstr ""
+msgstr "DHCP hostname"
 
 #: ../netconfig.c:178
 msgid ""
@@ -190,19 +215,23 @@ msgid ""
 "wereassigned a DHCP hostname, please enter it below. If you do not have a "
 "DHCP hostname, justhit enter."
 msgstr ""
+"Alcune reti richiedono che sia settato il DHCP hostname per connettersi. Se "
+"è così, hanno assegnato uno hostname alla tua macchina. Se ti hanno "
+"assegnato uno hostname, per favore inseriscilo. Se non hai uno hostname, "
+"premi Invio."
 
 #. options = ip netmask netmask
 #: ../netconfig.c:193
 msgid "Enter ip address"
-msgstr ""
+msgstr "Inserisci un indirizzo IP"
 
 #: ../netconfig.c:193
 msgid "Enter your IP address for the local machine."
-msgstr ""
+msgstr "Inserisci il tuo indirizzo IP per la macchina locale."
 
 #: ../netconfig.c:194
 msgid "Enter netmask for local network"
-msgstr ""
+msgstr "Inserisci la netmask per la rete locale"
 
 #: ../netconfig.c:195
 msgid ""
@@ -210,20 +239,24 @@ msgid ""
 "255.255.255.0\n"
 "If unsure, just hit enter."
 msgstr ""
+"Inserisci la tua netmask. Questa sarà del tipo:255.255.255.0\n"
+"Se non sei sicuro, premi solamente Invio."
 
 #: ../netconfig.c:202
 msgid "Enter gateway address"
-msgstr ""
+msgstr "Inserisci l'indirizzo del gateway"
 
 #: ../netconfig.c:202
 msgid ""
 "Enter the address for the gateway on your network. If you don't have a "
 "gateway on your network just hit enter, without entering any ip address."
 msgstr ""
+"Inserisci l'indirizzo del gateway sulla tua rete. Se non hai un gateway "
+"sulla tua rete, premi Invio, senza immettere alcun indirizzo IP."
 
 #: ../netconfig.c:208
 msgid "Select nameserver"
-msgstr ""
+msgstr "Seleziona il nameserver"
 
 #: ../netconfig.c:208
 msgid ""
@@ -232,21 +265,26 @@ msgid ""
 "If you don't have a name server on your network just hit enter, without "
 "entering any ip address."
 msgstr ""
+"Per favore inserisci l'indirizzo IP del name server da usare. Potrai "
+"aggiungere altri Domain Name Servers più tardi, editando /etc/sysconfig/"
+"network/default.\n"
+"Se non hai un name server sulla tua rete premi Invio, senza inserire alcun "
+"indirizzo IP."
 
 #: ../netconfig.c:219
 msgid "Adjust configuration files"
-msgstr ""
+msgstr "Sistemazione dei file di configurazione"
 
 #: ../netconfig.c:219
 msgid "Accept these settings and adjust configuration files?"
-msgstr ""
+msgstr "Accettare questi settaggi e sistemare i file di configurazione?"
 
 #: ../netconfig.c:303
 #, c-format
 msgid "No profile loaded.\n"
-msgstr ""
+msgstr "Nessun profilo caricato.\n"
 
 #: ../netconfig.c:308
 #, c-format
 msgid "Current profile: %s\n"
-msgstr ""
+msgstr "Profilo corrente: %s\n"
