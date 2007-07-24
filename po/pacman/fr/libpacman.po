@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-07-19 05:31+0200\n"
-"PO-Revision-Date: 2007-06-11 12:59+0200\n"
+"POT-Creation-Date: 2007-07-24 05:33+0200\n"
+"PO-Revision-Date: 2007-07-25 00:17+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: Français\n"
 "MIME-Version: 1.0\n"
@@ -45,7 +45,7 @@ msgid "looking for unsatisfied dependencies"
 msgstr "recherche des dépendances non satisfaites"
 
 #. no unsatisfied deps, so look for conflicts
-#: ../add.c:225 ../sync.c:473
+#: ../add.c:225 ../sync.c:498
 msgid "looking for conflicts"
 msgstr "recherche des conflits"
 
@@ -67,7 +67,7 @@ msgstr "recherche de conflits entre fichiers"
 msgid "upgrading package %s-%s"
 msgstr "mise a jour du paquet %s-%s"
 
-#: ../add.c:341 ../conflict.c:276 ../conflict.c:306 ../package.c:550
+#: ../add.c:341 ../conflict.c:282 ../conflict.c:312 ../package.c:550
 #, c-format
 msgid "loading FILES info for '%s'"
 msgstr "chargement des informations de fichiers pour '%s'"
@@ -434,8 +434,14 @@ msgstr "config: log file: %s\n"
 msgid "config: UpgradeDelay: %i\n"
 msgstr "config: UpgradeDelay: %i\n"
 
+#. The config value is in days, we use seconds
+#: ../pacman.c:1316
+#, c-format
+msgid "config: OldDelay: %i\n"
+msgstr "config: AncienDelay: %i\n"
+
 #. add to the list
-#: ../pacman.c:1335
+#: ../pacman.c:1342
 #, c-format
 msgid "config: %s: server: %s\n"
 msgstr "config: %s: server: %s\n"
@@ -513,44 +519,44 @@ msgid "loading group cache for repository '%s'"
 msgstr "chargement du group depuis le cache pour le dépot '%s'"
 
 #. CHECK 1: check targets against database
-#: ../conflict.c:72
+#: ../conflict.c:78
 #, c-format
 msgid "checkconflicts: targ '%s' vs db"
 msgstr "analyse des conflits: cible '%s' comparée à la base"
 
 #. conflict
 #. confict
-#: ../conflict.c:81 ../conflict.c:95
+#: ../conflict.c:87 ../conflict.c:101
 #, c-format
 msgid "targs vs db: found %s as a conflict for %s"
 msgstr "comparaison cibles / base de données : trouve %s comme conflit pour %s"
 
 #. CHECK 2: check targets against targets
-#: ../conflict.c:108
+#: ../conflict.c:114
 #, c-format
 msgid "checkconflicts: targ '%s' vs targs"
 msgstr "analyse des conflits: cible '%s' comparée aux cibles"
 
 #. otp is listed in tp's conflict list
-#: ../conflict.c:117 ../conflict.c:130
+#: ../conflict.c:123 ../conflict.c:136
 #, c-format
 msgid "targs vs targs: found %s as a conflict for %s"
 msgstr "comparaison cible / liste de cibles : trouve %s comme conflit pour %s"
 
 #. CHECK 3: check database against targets
-#: ../conflict.c:144
+#: ../conflict.c:150
 #, c-format
 msgid "checkconflicts: db vs targ '%s'"
 msgstr "analyse des conflits: base de donnes comparée a la cible '%s'"
 
-#: ../conflict.c:171 ../conflict.c:186
+#: ../conflict.c:177 ../conflict.c:192
 #, c-format
 msgid "db vs targs: found %s as a conflict for %s"
 msgstr "comparaison base de donnée / cibles: trouve %s en conflit avec %s"
 
-#: ../conflict.c:238 ../conflict.c:337 ../deps.c:55 ../deps.c:590
+#: ../conflict.c:244 ../conflict.c:343 ../deps.c:55 ../deps.c:590
 #: ../deps.c:630 ../group.c:40 ../handle.c:52 ../package.c:103 ../sync.c:63
-#: ../sync.c:604 ../sync.c:620 ../sync.c:716 ../trans.c:47 ../util.c:587
+#: ../sync.c:629 ../sync.c:645 ../sync.c:741 ../trans.c:47 ../util.c:587
 #: ../util.c:594
 #, c-format
 msgid "malloc failure: could not allocate %d bytes"
@@ -963,37 +969,37 @@ msgstr "PM_OPT_NEEDLES rechargé"
 msgid "PM_OPT_USESYSLOG set to '%d'"
 msgstr "PM_OPT_USESYSLOG défini à '%d'"
 
-#: ../handle.c:267
+#: ../handle.c:270
 #, c-format
 msgid "PM_OPT_LOGMASK set to '%02x'"
 msgstr "PM_OPT_LOGMASK défini à '%02x'"
 
-#: ../handle.c:286
+#: ../handle.c:289
 #, c-format
 msgid "PM_OPT_PROXYHOST set to '%s'"
 msgstr "PM_OPT_PROXYHOST défini à '%s'"
 
-#: ../handle.c:290
+#: ../handle.c:293
 #, c-format
 msgid "PM_OPT_PROXYPORT set to '%d'"
 msgstr "PM_OPT_PROXYPORT défini à '%d'"
 
-#: ../handle.c:301
+#: ../handle.c:304
 #, c-format
 msgid "PM_OPT_XFERCOMMAND set to '%s'"
 msgstr "PM_OPT_XFERCOMMAND défini à '%s'"
 
-#: ../handle.c:305
+#: ../handle.c:308
 #, c-format
 msgid "PM_OPT_NOPASSIVEFTP set to '%d'"
 msgstr "PM_OPT_NOPASSIVEFTP défini à '%d'"
 
-#: ../handle.c:309
+#: ../handle.c:312
 #, c-format
 msgid "PM_OPT_CHOMP set to '%d'"
 msgstr "PM_OPT_CHOMP défini à '%d'"
 
-#: ../handle.c:313
+#: ../handle.c:316
 #, c-format
 msgid "PM_OPT_MAXTRIES set to '%d'"
 msgstr "PM_OPT_MAXTRIES défini à '%d'"
@@ -1176,7 +1182,7 @@ msgstr "vérification des mises à jour de paquets"
 msgid "'%s' not found in sync db -- skipping"
 msgstr "'%s' non trouvé dans la liste de synchronisation -- ignoré"
 
-#: ../sync.c:209 ../sync.c:499
+#: ../sync.c:209 ../sync.c:524
 #, c-format
 msgid "'%s' is already elected for removal -- skipping"
 msgstr "'%s' est déjà sélectionné pour retrait -- ignoré"
@@ -1235,25 +1241,30 @@ msgstr "%s-%s est à jour -- ignoré"
 msgid "adding target '%s' to the transaction set"
 msgstr "ajout de la cible '%s' au jeu de transaction"
 
-#: ../sync.c:402
+#: ../sync.c:395
+#, c-format
+msgid "local copy of '%s' repo is too old"
+msgstr "La copie locale du répertoire '%s' est trop ancienne"
+
+#: ../sync.c:427
 msgid "resolving targets dependencies"
 msgstr "résolution des dépendances pour les cibles"
 
-#: ../sync.c:422
+#: ../sync.c:447
 #, c-format
 msgid "adding package %s-%s to the transaction targets"
 msgstr "ajout du paquet %s-%s à la liste de transactions"
 
-#: ../sync.c:454
+#: ../sync.c:479
 msgid "looking for unresolvable dependencies"
 msgstr "recherche de dépendancea non soluble"
 
-#: ../sync.c:484
+#: ../sync.c:509
 #, c-format
 msgid "package '%s' is conflicting with '%s'"
 msgstr "le paquet '%s' est en conflit avec '%s'"
 
-#: ../sync.c:506
+#: ../sync.c:531
 #, c-format
 msgid "'%s' not found in transaction set -- skipping"
 msgstr "'%s' non trouve dans le jeu de transaction -- ignoré"
@@ -1261,65 +1272,65 @@ msgstr "'%s' non trouve dans le jeu de transaction -- ignoré"
 #. so just treat it like a "replaces" item so the REQUIREDBY
 #. * fields are inherited properly.
 #.
-#: ../sync.c:517
+#: ../sync.c:542
 #, c-format
 msgid "package '%s' provides its own conflict"
 msgstr "le paquet '%s' génère son propre conflit"
 
-#: ../sync.c:540 ../sync.c:545
+#: ../sync.c:565 ../sync.c:570
 #, c-format
 msgid "'%s' is in the target list -- keeping it"
 msgstr "'%s' est dans la liste de cibles -- conservation"
 
-#: ../sync.c:557 ../sync.c:594
+#: ../sync.c:582 ../sync.c:619
 #, c-format
 msgid "removing '%s' from target list"
 msgstr "retire '%s' de la liste de cibles"
 
 #. It's a conflict -- see if they want to remove it
 #.
-#: ../sync.c:566
+#: ../sync.c:591
 #, c-format
 msgid "resolving package '%s' conflict"
 msgstr "résolution du conflit de paquet '%s'"
 
 #. append to the replaces list
-#: ../sync.c:589
+#: ../sync.c:614
 #, c-format
 msgid "electing '%s' for removal"
 msgstr "sélection de '%s' pour retrait"
 
 #. abort
-#: ../sync.c:600 ../sync.c:616
+#: ../sync.c:625 ../sync.c:641
 msgid "unresolvable package conflicts detected"
 msgstr "conflit de paquets non soluble détecté"
 
-#: ../sync.c:668
+#: ../sync.c:693
 msgid "checking dependencies of packages designated for removal"
 msgstr "analyse des dépendances pour les paquets marques à retirer"
 
-#: ../sync.c:682
+#: ../sync.c:707
 msgid "something has gone horribly wrong"
 msgstr "quelque chose s'est horriblement mal passé"
 
 #. found matching provisio -- we're good to go
-#: ../sync.c:701
+#: ../sync.c:726
 #, c-format
 msgid "found '%s' as a provision for '%s' -- conflict aborted"
 msgstr "trouvé '%s' comme disposition pour '%s' -- conflit annulé"
 
-#: ../sync.c:802
+#: ../sync.c:830
 #, c-format
 msgid "%s-%s-%s%s is already in the cache\n"
 msgstr "%s-%s-%s%s est déjà dans le cache\n"
 
 #. no cache directory.... try creating it
-#: ../sync.c:814
+#: ../sync.c:842
 #, c-format
 msgid "no %s cache exists.  creating...\n"
 msgstr "pas de cache %s existant.  création...\n"
 
-#: ../sync.c:815
+#: ../sync.c:843
 #, c-format
 msgid "warning: no %s cache exists.  creating..."
 msgstr "attention: pas de cache %s existant.  création..."
@@ -1327,98 +1338,98 @@ msgstr "attention: pas de cache %s existant.  création..."
 #. couldn't mkdir the cache directory, so fall back to /tmp and unlink
 #. * the package afterwards.
 #.
-#: ../sync.c:820
+#: ../sync.c:848
 msgid "couldn't create package cache, using /tmp instead\n"
 msgstr ""
 "echec de la création du cache de paquet, utilisation de /tmp en "
 "remplacement\n"
 
-#: ../sync.c:821
+#: ../sync.c:849
 msgid "warning: couldn't create package cache, using /tmp instead"
 msgstr ""
 "attention: echec de la création du cache de paquet, utilisation de /tmp en "
 "remplacement"
 
-#: ../sync.c:824
+#: ../sync.c:852
 #, c-format
 msgid "failed to set option CACHEDIR (%s)\n"
 msgstr "échec de la définition de l'option CACHEDIR (%s)\n"
 
-#: ../sync.c:831
+#: ../sync.c:859
 #, c-format
 msgid "failed to retrieve some files from %s\n"
 msgstr "echec de la récupération de quelques fichiers depuis %s\n"
 
-#: ../sync.c:861 ../sync.c:873
+#: ../sync.c:889 ../sync.c:901
 #, c-format
 msgid "can't get md5 or sha1 checksum for package %s\n"
 msgstr "ne peut obtenir la 'signature' md5 ou sha1 pour le paquet %s\n"
 
-#: ../sync.c:892
+#: ../sync.c:920
 #, c-format
 msgid "archive %s was corrupted (bad MD5 or SHA1 checksum)\n"
 msgstr "l'archive %s était corrompue (mauvaise somme MD5 ou SHA1)\n"
 
-#: ../sync.c:894
+#: ../sync.c:922
 #, c-format
 msgid "archive %s is corrupted (bad MD5 or SHA1 checksum)\n"
 msgstr "l'archive %s est corrompue (mauvaise somme MD5 ou SHA1)\n"
 
-#: ../sync.c:922
+#: ../sync.c:950
 msgid "could not create removal transaction"
 msgstr "n'a pas pu créer la transaction de retrait"
 
-#: ../sync.c:928
+#: ../sync.c:956
 msgid "could not initialize the removal transaction"
 msgstr "n'a pas pu initialiser la transaction de retrait"
 
-#: ../sync.c:948
+#: ../sync.c:976
 msgid "removing conflicting and to-be-replaced packages"
 msgstr "efface les paquets en conflit et ceux à remplacer"
 
-#: ../sync.c:950
+#: ../sync.c:978
 msgid "could not prepare removal transaction"
 msgstr "n'a pas pu préparer la transaction de retrait"
 
-#: ../sync.c:956
+#: ../sync.c:984
 msgid "could not commit removal transaction"
 msgstr "n'a pas pu appliquer la transaction de retrait"
 
 #. install targets
-#: ../sync.c:963
+#: ../sync.c:991
 msgid "installing packages"
 msgstr "installe les paquets"
 
-#: ../sync.c:966
+#: ../sync.c:994
 msgid "could not create transaction"
 msgstr "n'a pas pu créer la transaction"
 
-#: ../sync.c:971
+#: ../sync.c:999
 msgid "could not initialize transaction"
 msgstr "n'a pas pu initialiser la transaction"
 
-#: ../sync.c:990
+#: ../sync.c:1018
 msgid "could not prepare transaction"
 msgstr "n'a pas pu préparer la transaction"
 
-#: ../sync.c:995
+#: ../sync.c:1023
 msgid "could not commit transaction"
 msgstr "n'a pas pu appliquer la transaction"
 
-#: ../sync.c:1002
+#: ../sync.c:1030
 msgid "updating database for replaced packages' dependencies"
 msgstr ""
 "mise a jour de la base de données concernant les dépendances de paquets "
 "remplaces"
 
-#: ../sync.c:1031
+#: ../sync.c:1059
 #, c-format
 msgid "could not update requiredby for database entry %s-%s"
 msgstr ""
 "n'a pas pu mettre a jour les pré-requis pour l'entrée de base de données %s-%"
 "s"
 
-#: ../sync.c:1040
+#: ../sync.c:1068
 #, c-format
 msgid "could not update new database entry %s-%s"
 msgstr "n'a pu mettre a jour la nouvelle entrée de base de données %s-%s"
