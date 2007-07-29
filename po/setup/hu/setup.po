@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-07-19 05:31+0200\n"
-"PO-Revision-Date: 2007-06-10 14:25+0200\n"
+"POT-Creation-Date: 2007-07-29 05:42+0200\n"
+"PO-Revision-Date: 2007-07-29 13:12+0200\n"
 "Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
 "Language-Team: <hu@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -546,11 +546,58 @@ msgstr ""
 "ha a gépe az internetre van csatlakozva. Szeretné beállítani a rendszergazda "
 "jelszavát?"
 
-#: ../src/plugins/postconf.c:117
+#: ../src/plugins/postconf.c:100
+#, c-format
+msgid "Please enter a password for %s"
+msgstr "Adjon megy egy jelszót a(z) %s számára"
+
+#: ../src/plugins/postconf.c:101 ../src/plugins/postconf.c:107
+msgid "Password"
+msgstr "Jelszó"
+
+#: ../src/plugins/postconf.c:106
+#, c-format
+msgid "Please re-enter your password for %s"
+msgstr "Adja meg újra a jelszót a(z) %s számára"
+
+#: ../src/plugins/postconf.c:114
+msgid "Passwords don't match"
+msgstr "A jelszavak nem egyeznek"
+
+#: ../src/plugins/postconf.c:115
+msgid "Sorry, the passwords do not match. Try again?"
+msgstr "Sajnos a jelszavak nem egyeznek. Megpróbálja újra?"
+
+#: ../src/plugins/postconf.c:140
+#, c-format
+msgid "Are you sure you want to skip setting the password for %s?"
+msgstr "Biztos benne nem akar beállítani jelszót %s számára?"
+
+#: ../src/plugins/postconf.c:141
+msgid "Ignore setting password"
+msgstr "A jelszó beállításának kihagyása"
+
+#: ../src/plugins/postconf.c:152
+msgid "Enter login"
+msgstr "Felhasználónév megadása"
+
+#: ../src/plugins/postconf.c:152
+msgid "Please enter the login name you should like to create:"
+msgstr "Adja meg a létrehozandó felhasználói fiók nevét:"
+
+#: ../src/plugins/postconf.c:155
+msgid "Enter full name"
+msgstr "Teljes név megadása"
+
+#: ../src/plugins/postconf.c:155
+msgid "Please enter the full name of the user you would like to create:"
+msgstr "Adja meg a létrehozandó felhasználó teljes nevét:"
+
+#: ../src/plugins/postconf.c:200
 msgid "No normal user account detected"
 msgstr "Nem található normál felhasználói fiók"
 
-#: ../src/plugins/postconf.c:118
+#: ../src/plugins/postconf.c:201
 msgid ""
 "There is currently no non-root user account configured. It is strongly "
 "recommended to create one. Would you like to create a normal user account "
@@ -560,15 +607,15 @@ msgstr ""
 "ajánlott létrehozni legalább egyet. Szeretne létrehozni most egy normál "
 "felhasználói fiókot?"
 
-#: ../src/plugins/postconf.c:146
+#: ../src/plugins/postconf.c:229
 msgid "Post-install configuration"
 msgstr "Telepítés utáni beállítások"
 
-#: ../src/plugins/postconf.c:158
+#: ../src/plugins/postconf.c:241
 msgid "Configuring kernel modules"
 msgstr "Kernelmodulok beállítása"
 
-#: ../src/plugins/postconf.c:159
+#: ../src/plugins/postconf.c:242
 msgid "Updating module dependencies..."
 msgstr "Modulfüggõségek frissítése..."
 
