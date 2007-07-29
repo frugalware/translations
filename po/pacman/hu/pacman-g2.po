@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-07-19 05:31+0200\n"
-"PO-Revision-Date: 2007-06-10 14:10+0200\n"
+"POT-Creation-Date: 2007-07-29 05:42+0200\n"
+"PO-Revision-Date: 2007-07-29 13:08+0200\n"
 "Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
 "Language-Team: Hungarian <translation-team-hu@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 1.0\n"
 
-#: ../add.c:69 ../deptest.c:64 ../remove.c:83 ../sync.c:303 ../sync.c:342
+#: ../add.c:69 ../deptest.c:64 ../remove.c:83 ../sync.c:304 ../sync.c:343
 #, c-format
 msgid ""
 "       if you're sure a package manager is not already running,\n"
@@ -37,12 +37,12 @@ msgstr "csomag adatainak betöltése... "
 msgid "failed to add target '%s' (%s)\n"
 msgstr "nem sikerült a(z) '%s' célt hozzáadni (%s)\n"
 
-#: ../add.c:84 ../sync.c:266 ../trans.c:73 ../trans.c:81 ../trans.c:95
-#: ../trans.c:109 ../trans.c:125 ../trans.c:137
+#: ../add.c:84 ../sync.c:267 ../trans.c:75 ../trans.c:84 ../trans.c:101
+#: ../trans.c:115 ../trans.c:131 ../trans.c:143
 msgid "done.\n"
 msgstr "kész.\n"
 
-#: ../add.c:92 ../remove.c:102 ../sync.c:430
+#: ../add.c:92 ../remove.c:102 ../sync.c:431
 #, c-format
 msgid "failed to prepare transaction (%s)\n"
 msgstr "nem sikerült elõkészíteni a tranzakciót (%s)\n"
@@ -52,22 +52,22 @@ msgstr "nem sikerült elõkészíteni a tranzakciót (%s)\n"
 msgid ":: %s: requires %s"
 msgstr ":: %s: igényli a következõt: %s"
 
-#: ../add.c:111 ../sync.c:451
+#: ../add.c:111 ../sync.c:452
 #, c-format
 msgid ":: %s: conflicts with %s"
 msgstr ":: %s: ütközik a következõvel: %s"
 
-#: ../add.c:121 ../sync.c:576
+#: ../add.c:121 ../sync.c:577
 #, c-format
 msgid "%s%s exists in \"%s\" (target) and \"%s\" (target)"
 msgstr "%s%s: létezik ebben: \"%s\" (cél) és ebben: \"%s\" (cél)"
 
-#: ../add.c:128 ../sync.c:583
+#: ../add.c:128 ../sync.c:584
 #, c-format
 msgid "%s: %s%s exists in filesystem"
 msgstr "%s: a(z) %s%s létezik a fájlrendszerben"
 
-#: ../add.c:136 ../sync.c:591 ../sync.c:598
+#: ../add.c:136 ../sync.c:592 ../sync.c:599
 msgid ""
 "\n"
 "errors occurred, no packages were upgraded.\n"
@@ -75,17 +75,17 @@ msgstr ""
 "\n"
 "hibák léptek fel, nem frissült csomag.\n"
 
-#: ../add.c:143 ../sync.c:461
+#: ../add.c:143 ../sync.c:462
 #, c-format
 msgid ":: %.1f MB required, have %.1f MB"
 msgstr ":: %.1f MB szükséges, %.1f MB áll rendelkezésre"
 
-#: ../add.c:157 ../remove.c:142 ../sync.c:569
+#: ../add.c:157 ../remove.c:142 ../sync.c:570
 #, c-format
 msgid "failed to commit transaction (%s)\n"
 msgstr "nem sikerült végrehajtani a tranzakciót (%s)\n"
 
-#: ../add.c:164 ../remove.c:152 ../sync.c:335 ../sync.c:611
+#: ../add.c:164 ../remove.c:152 ../sync.c:336 ../sync.c:612
 #, c-format
 msgid "failed to release transaction (%s)\n"
 msgstr "nem sikerült lezárni a tranzakciót (%s)\n"
@@ -777,25 +777,35 @@ msgstr "nem sikerült beállítani a DBETA_M opciót (%s)\n"
 msgid "failed to set option DLETA_S (%s)\n"
 msgstr "nem sikerült beállítani a DLETA_S opciót (%s)\n"
 
+#: ../pacman-g2.c:578
+#, c-format
+msgid "failed to set option DLREMAIN (%s)\n"
+msgstr "nem sikerült beállítani a DLREMAIN opciót (%s)\n"
+
 #: ../pacman-g2.c:582
+#, c-format
+msgid "failed to set option DLHOWMANY (%s)\n"
+msgstr "nem sikerült beállítani a DLHOWMANY opciót (%s)\n"
+
+#: ../pacman-g2.c:590
 #, c-format
 msgid "failed to set option IGNOREPKG (%s)\n"
 msgstr "nem sikerült beállítani az IGNOREPKG opciót (%s)\n"
 
-#: ../pacman-g2.c:590
+#: ../pacman-g2.c:598
 msgid "Targets:"
 msgstr "Célok:"
 
-#: ../pacman-g2.c:596
+#: ../pacman-g2.c:604
 #, c-format
 msgid "could not register 'local' database (%s)\n"
 msgstr "nem sikerült regisztrálni a 'local' adatbázist (%s)\n"
 
-#: ../pacman-g2.c:603
+#: ../pacman-g2.c:611
 msgid "no targets specified (use -h for help)\n"
 msgstr "nem adott meg egyetlen célt sem (használja a '-h'-t segítségért)\n"
 
-#: ../pacman-g2.c:616
+#: ../pacman-g2.c:624
 msgid "no operation specified (use -h for help)\n"
 msgstr ""
 "nem adott meg egyetlen mûveletet sem (használja a '-h'-t segítségért)\n"
@@ -805,7 +815,7 @@ msgstr ""
 msgid ":: the database seems to be consistent\n"
 msgstr ":: az adatbázis konzisztens\n"
 
-#: ../query.c:89 ../sync.c:247
+#: ../query.c:89 ../sync.c:248
 msgid "no usable package repositories configured.\n"
 msgstr "egyetlen használható csomag repó sincs beállítva.\n"
 
@@ -839,7 +849,7 @@ msgstr "a(z) %s %s egy tulajdonosa a következõnek: %s\n"
 msgid "package \"%s\" not found\n"
 msgstr "a(z) \"%s\" csomag nem található\n"
 
-#: ../remove.c:64 ../sync.c:381
+#: ../remove.c:64 ../sync.c:382
 #, c-format
 msgid ":: group %s:\n"
 msgstr ":: %s csoport:\n"
@@ -853,7 +863,7 @@ msgstr "    Eltávolítja a teljes tartalmat? [I/n] "
 msgid ":: Remove %s from group %s? [Y/n] "
 msgstr ":: Eltávolítja a(z) %s csomagot a(z) %s csoportból? [I/n] "
 
-#: ../remove.c:81 ../sync.c:301 ../sync.c:340
+#: ../remove.c:81 ../sync.c:302 ../sync.c:341
 #, c-format
 msgid "failed to init transaction (%s)\n"
 msgstr "nem sikerült inicializálni a tranzakciót (%s)\n"
@@ -895,55 +905,55 @@ msgstr "nem sikerült frissíteni a következõt: %s (%s)\n"
 msgid " %s is up to date\n"
 msgstr " a(z) %s naprakész\n"
 
-#: ../sync.c:170
+#: ../sync.c:171
 #, c-format
 msgid "package \"%s\" was not found.\n"
 msgstr "a(z) \"%s\" csomag nem található.\n"
 
-#: ../sync.c:208
+#: ../sync.c:209
 #, c-format
 msgid "repository \"%s\" was not found.\n"
 msgstr "a(z) \"%s\" repó nem található.\n"
 
-#: ../sync.c:255
+#: ../sync.c:256
 msgid "Do you want to remove old packages from cache? [Y/n] "
 msgstr "El kívánja távolítani a régi csomagokat a gyorsítótárból? [I/n] "
 
-#: ../sync.c:257
+#: ../sync.c:258
 msgid "removing old packages from cache... "
 msgstr "a régi csomagok eltávolítása a gyorsítótárból... "
 
-#: ../sync.c:260
+#: ../sync.c:261
 msgid "Do you want to remove all packages from cache? [Y/n] "
 msgstr "El kíván távolítani minden csomagot a gyorsítótárból? [I/n] "
 
-#: ../sync.c:262
+#: ../sync.c:263
 msgid "removing all packages from cache... "
 msgstr "az összes csomag eltávolítása a gyorsítótárból... "
 
-#: ../sync.c:268
+#: ../sync.c:269
 #, c-format
 msgid "failed to clean the cache (%s)\n"
 msgstr "nem sikerült törölni a gyorsítótárat (%s)\n"
 
 #. grab a fresh package list
-#: ../sync.c:275
+#: ../sync.c:276
 msgid ":: Synchronizing package databases...\n"
 msgstr ":: A csomagadatbázisok szinkronizálása...\n"
 
-#: ../sync.c:276
+#: ../sync.c:277
 msgid "synchronizing package lists"
 msgstr "a csomaglisták szinkronizálása"
 
-#: ../sync.c:310
+#: ../sync.c:311
 msgid ":: Starting local database upgrade...\n"
 msgstr ":: A helyi adatbázis frissítésének indítása...\n"
 
-#: ../sync.c:311
+#: ../sync.c:312
 msgid "starting full system upgrade"
 msgstr "teljes rendszerfrissítés indítása"
 
-#: ../sync.c:329
+#: ../sync.c:330
 msgid ""
 "\n"
 ":: pacman-g2 has detected a newer version of the \"pacman-g2\" package.\n"
@@ -951,47 +961,47 @@ msgstr ""
 "\n"
 ":: a pacman-g2 egy újabb verzióját észlelte a \"pacman-g2\" csomagnak.\n"
 
-#: ../sync.c:330
+#: ../sync.c:331
 msgid ":: It is recommended that you allow pacman-g2 to upgrade itself\n"
 msgstr ":: Ajánlott, hogy engedje, hogy a pacman-g2 elõbb saját magát\n"
 
-#: ../sync.c:331
+#: ../sync.c:332
 msgid ":: first, then you can re-run the operation with the newer version.\n"
 msgstr ":: frissítse, majd újra futtathatja a mûveletet az újabb verzióval.\n"
 
-#: ../sync.c:333
+#: ../sync.c:334
 msgid ":: Upgrade pacman-g2 first? [Y/n] "
 msgstr ":: Elõször csak a pacman-g2 frissítése? [I/n] "
 
-#: ../sync.c:348 ../sync.c:369
+#: ../sync.c:349 ../sync.c:370
 #, c-format
 msgid "could not add target '%s': %s\n"
 msgstr "nem sikerült hozzáadni a(z) '%s' célt: %s\n"
 
-#: ../sync.c:387
+#: ../sync.c:388
 msgid ":: Install whole content? [Y/n] "
 msgstr ":: A teljes tartalom telepítése? [I/n] "
 
-#: ../sync.c:394
+#: ../sync.c:395
 #, c-format
 msgid ":: Install %s from group %s? [Y/n] "
 msgstr ":: Telepíti a(z) %s csomagot a(z) %s csoportból? [I/n] "
 
-#: ../sync.c:417
+#: ../sync.c:418
 #, c-format
 msgid "could not add target '%s': not found in sync db\n"
 msgstr ""
 "nem sikerült hozzáadni a(z) '%s' célt: nem található a távoli adatbázisban\n"
 
-#: ../sync.c:436
-msgid "is required by"
-msgstr "igényli a(z)"
-
-#: ../sync.c:436
+#: ../sync.c:437
 msgid "requires"
 msgstr "igényli a következõt:"
 
-#: ../sync.c:513
+#: ../sync.c:437
+msgid "is required by"
+msgstr "igényli a(z)"
+
+#: ../sync.c:514
 msgid ""
 "\n"
 "Remove:  "
@@ -999,7 +1009,7 @@ msgstr ""
 "\n"
 "Eltávolítás:  "
 
-#: ../sync.c:529
+#: ../sync.c:530
 msgid ""
 "\n"
 "Targets: "
@@ -1007,7 +1017,7 @@ msgstr ""
 "\n"
 "Célok:   "
 
-#: ../sync.c:532
+#: ../sync.c:533
 #, c-format
 msgid ""
 "\n"
@@ -1016,7 +1026,7 @@ msgstr ""
 "\n"
 "Teljes csomagméret:   %.1f MB\n"
 
-#: ../sync.c:534
+#: ../sync.c:535
 #, c-format
 msgid ""
 "\n"
@@ -1025,7 +1035,7 @@ msgstr ""
 "\n"
 "Teljes tömörítetlen csomagméret:   %.1f MB\n"
 
-#: ../sync.c:541
+#: ../sync.c:542
 msgid ""
 "\n"
 "Beginning download...\n"
@@ -1033,11 +1043,11 @@ msgstr ""
 "\n"
 "A letöltés megkezdése...\n"
 
-#: ../sync.c:545
+#: ../sync.c:546
 msgid "Proceed with download? [Y/n] "
 msgstr "Kezdõdhet a letöltés? [I/n] "
 
-#: ../sync.c:553
+#: ../sync.c:554
 msgid ""
 "\n"
 "Beginning upgrade process...\n"
@@ -1045,7 +1055,7 @@ msgstr ""
 "\n"
 "A frissítési folyamat megkezdése...\n"
 
-#: ../sync.c:557
+#: ../sync.c:558
 msgid "Proceed with upgrade? [Y/n] "
 msgstr "Kezdõdhet a frissítés? [I/n] "
 
@@ -1061,53 +1071,53 @@ msgstr "fájlütközések vizsgálata... "
 msgid "resolving dependencies... "
 msgstr "függõségek feloldása... "
 
-#: ../trans.c:69
+#: ../trans.c:70
 msgid "looking for inter-conflicts... "
 msgstr "belsõ ütközések keresése... "
 
-#: ../trans.c:90
+#: ../trans.c:96
 #, c-format
 msgid "installing %s... "
 msgstr "%s telepítése... "
 
-#: ../trans.c:97
+#: ../trans.c:103
 #, c-format
 msgid "installed %s (%s)"
 msgstr "%s telepítve (%s)"
 
-#: ../trans.c:104
+#: ../trans.c:110
 #, c-format
 msgid "removing %s... "
 msgstr "%s eltávolítása... "
 
-#: ../trans.c:113
+#: ../trans.c:119
 #, c-format
 msgid "removed %s (%s)"
 msgstr "%s eltávolítva (%s)"
 
-#: ../trans.c:120
+#: ../trans.c:126
 #, c-format
 msgid "upgrading %s... "
 msgstr "%s frissítése... "
 
-#: ../trans.c:127
+#: ../trans.c:133
 #, c-format
 msgid "upgraded %s (%s -> %s)"
 msgstr "%s frissítve (%s -> %s)"
 
-#: ../trans.c:134
+#: ../trans.c:140
 msgid "checking package integrity... "
 msgstr "a csomagok integritásának ellenõrzése... "
 
-#: ../trans.c:148
+#: ../trans.c:154
 msgid " done.\n"
 msgstr " kész.\n"
 
-#: ../trans.c:150
+#: ../trans.c:156
 msgid " failed.\n"
 msgstr " sikertelen.\n"
 
-#: ../trans.c:157
+#: ../trans.c:163
 #, c-format
 msgid ""
 "\n"
@@ -1116,63 +1126,67 @@ msgstr ""
 "\n"
 ":: Csomagok letöltése a(z) %s repóból...\n"
 
-#: ../trans.c:167
+#: ../trans.c:173
 msgid "] 100%    LOCAL "
 msgstr "] 100%    HELYI "
 
-#: ../trans.c:185
+#: ../trans.c:191
 #, c-format
 msgid ":: %s requires %s, but it is in IgnorePkg. Install anyway? [Y/n] "
 msgstr ""
 ":: a(z) %s igényli a(z) %s csomagot, de az az IgnorePkg része. Mégis "
 "telepíti? [I/n] "
 
-#: ../trans.c:199
+#: ../trans.c:205
 #, c-format
 msgid ":: %s is designated as a HoldPkg.  Remove anyway? [Y/n] "
 msgstr ":: a(z) %s HoldPkgnak lett jelölve. Biztosan eltávolítja? [I/n] "
 
-#: ../trans.c:212
+#: ../trans.c:218
 #, c-format
 msgid ":: Replace %s with %s/%s? [Y/n] "
 msgstr ":: Lecseréli a(z) %s csomagot erre: %s/%s? [I/n] "
 
-#: ../trans.c:227
+#: ../trans.c:233
 #, c-format
 msgid ":: %s conflicts with %s. Remove %s? [Y/n] "
 msgstr ""
 ":: a(z) %s ütközik a következõvel: %s. Eltávolítja a(z) %s csomagot? [I/n] "
 
-#: ../trans.c:243
+#: ../trans.c:249
 #, c-format
 msgid ":: %s-%s: local version is newer. Upgrade anyway? [Y/n] "
 msgstr ":: %s-%s: a helyi verzió újabb. Mégis frissíti? [I/n] "
 
-#: ../trans.c:261
+#: ../trans.c:267
 #, c-format
 msgid ":: %s-%s: local version is up to date. Upgrade anyway? [Y/n] "
 msgstr ":: %s-%s: a helyi verzió naprakész. Mégis frissíti? [I/n] "
 
-#: ../trans.c:279
+#: ../trans.c:285
 #, c-format
 msgid ":: Archive %s is corrupted. Do you want to delete it? [Y/n] "
 msgstr ":: A(z) %s sérült. Kívánja törölni? [I/n] "
 
-#: ../trans.c:295
+#: ../trans.c:301
 msgid "installing"
 msgstr "telepítés:"
 
-#: ../trans.c:296
+#: ../trans.c:302
 msgid "upgrading"
 msgstr "frissítés:"
 
-#: ../trans.c:297
+#: ../trans.c:303
 msgid "removing"
 msgstr "eltávolítás:"
 
-#: ../trans.c:298
+#: ../trans.c:304
 msgid "checking for file conflicts"
 msgstr "fájlütközések vizsgálata"
+
+#: ../trans.c:305
+msgid "looking for inter-conflicts"
+msgstr "belsõ ütközések keresése"
 
 #: ../util.c:177
 #, c-format
