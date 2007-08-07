@@ -6,25 +6,25 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-07-19 05:31+0200\n"
-"PO-Revision-Date: 2007-05-01 01:04+0200\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2007-08-07 05:35+0200\n"
+"PO-Revision-Date: 2007-07-29 15:48+0200\n"
+"Last-Translator: Fredrik Liljedahl <fredrik.lilj@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 0.10.1\n"
+"X-Generator: Pootle 1.0\n"
 
 #: ../netconfig.c:48
-#, fuzzy, c-format
+#, c-format
 msgid "usage: %s [options] start|stop|restart|status|list [interface]\n"
-msgstr "användning: %s [val] start|stop|restart|status|list\n"
+msgstr "användning: %s [val] start|stop|restart|status|list [gränssnitt]\n"
 
 #: ../netconfig.c:49
-#, fuzzy, c-format
+#, c-format
 msgid "       %s [options] [profile] [interface]\n"
-msgstr "       %s [val] [profil]\n"
+msgstr "       %s [val] [profil] [gränssnitt]\n"
 
 #: ../netconfig.c:50
 #, c-format
@@ -37,19 +37,19 @@ msgid "-f | --fast              Fast mode, used by the setup.\n"
 msgstr "-f | --fast              Snabbt läge, används av installationen.\n"
 
 #: ../netconfig.c:52
-#, c-format
+#, fuzzy, c-format
 msgid "     --dry-run           Do not actually perform the operation.\n"
-msgstr ""
+msgstr "--dry-run Kör operationen, men utför den egentligen inte. \n"
 
 #: ../netconfig.c:53
 #, c-format
 msgid "     --loup              Bring up the loopback interface.\n"
-msgstr ""
+msgstr "--loup Starta loopback-gränssnittet.\n"
 
 #: ../netconfig.c:54
 #, c-format
 msgid "     --lodown            Bring down the loopback interface.\n"
-msgstr ""
+msgstr "--lodown Stoppa loopback-gränssnittet.\n"
 
 #: ../netconfig.c:63
 msgid "Use a DHCP server"
@@ -64,13 +64,15 @@ msgid "DSL connection"
 msgstr "DSL-uppkoppling"
 
 #: ../netconfig.c:66
+#, fuzzy
 msgid "No network - loopback connection only"
-msgstr ""
+msgstr "Inget nätverk - endast loopback-uppkoppling"
 
 #: ../netconfig.c:68
 msgid "Select network connection type"
 msgstr "Välj uppkopplingstyp"
 
+# Det är vissa problem med denna ovan: ordet 'static' har inte översatts tidigare i processen. Ska vi då använda "static" eller "statisk"? Jag ögr som dom gjort i den ungerska översättningen och sätter "static'
 #: ../netconfig.c:69
 msgid ""
 "Now we need to know how your machine connects to the network.\n"
@@ -83,23 +85,31 @@ msgid ""
 "select 'dsl'. \n"
 "Finally, if you do not have a network card, select the 'lo' choice. \n"
 msgstr ""
+"Nu måste vi veta hur din maskin är uppkopplad mot nätverket.\n"
+"Om du har ett internt nätverkskort och en tilldelad IP-adress, nätsluss "
+"(gateway) och DNS, använd 'static' för att ange dessa värden. Du kan också "
+"använda det om du har en DSL-uppkoppling.\n"
+" Om din IP-adress är tilldelad av en DHCP-server (vanligt förekommande om du "
+"har bredband via kabel), välj 'dhcp'.\n"
+"Om du bara har ett nätverkskort som är kopplat direkt till ett DSL-modem, "
+"välj 'dsl'. \n"
+"Slutligen, om du inte har ett nätverkskort, välj alternativet 'lo'.\n"
 
 #: ../netconfig.c:86
 msgid "DSL configuration"
 msgstr "DSL-konfiguration"
 
 #: ../netconfig.c:86
-#, fuzzy
 msgid "Do you want to configure a DSL connection now?"
 msgstr "Vill du konfigurera en DSL-uppkoppling nu?"
 
 #: ../netconfig.c:88
 msgid "Enter user name"
-msgstr "Skriv in användarnamn"
+msgstr "Ange användarnamn"
 
 #: ../netconfig.c:89
 msgid "Enter your PPPoE user name:"
-msgstr ""
+msgstr "Ange ditt PPPoE-användarnamn:"
 
 #: ../netconfig.c:93 ../netconfig.c:95
 msgid "Password"
@@ -107,23 +117,23 @@ msgstr "Lösenord"
 
 #: ../netconfig.c:94
 msgid "Please enter your PPPoE password"
-msgstr ""
+msgstr "Ange ditt PPPoE-lösenord:"
 
 #: ../netconfig.c:96
 msgid "Please re-enter your PPPoE password"
-msgstr ""
+msgstr "Var god bekräfta PPPoE-lösenordet:"
 
 #: ../netconfig.c:102
 msgid "Passwords don't match"
-msgstr ""
+msgstr "Lösenorden stämmer inte överens"
 
 #: ../netconfig.c:103
 msgid "Sorry, the passwords do not match. Try again?"
-msgstr "Tyvärr, lösenorden matchade inte varandra. Vill du försöka igen?"
+msgstr "Tyvärr, lösenorden stämmer inte överens. Vill du försöka igen?"
 
 #: ../netconfig.c:106 ../netconfig.c:156
 msgid "Enter interface name"
-msgstr ""
+msgstr "Ange gränssnittets namn"
 
 #: ../netconfig.c:107
 msgid ""
@@ -132,6 +142,10 @@ msgid ""
 "If unsure, just hit enter.\n"
 "Enter interface name:"
 msgstr ""
+"Ange det Ethernetgränssnitt som är anslutet till DSL-modemet. Det kommer att "
+"vara ethn, där 'n' är ett nummer.\n"
+"Om du är osäker trycker du bara på enter.\n"
+"Ange gränssnittsnamn:"
 
 #: ../netconfig.c:135
 msgid "Network configuration"
@@ -139,7 +153,7 @@ msgstr "Nätverkskonfiguration"
 
 #: ../netconfig.c:138
 msgid "Enter hostname"
-msgstr ""
+msgstr "Ange värdnamn"
 
 #: ../netconfig.c:138
 msgid ""
@@ -150,6 +164,11 @@ msgid ""
 "\n"
 "Enter full hostname:"
 msgstr ""
+"Vi behöver namnet du vill ge din värd.\n"
+"Hela värdnamnet behövs, såsom:\n"
+"\n"
+"frugalware.example.net\n"
+"Ange hela värdnamnet:"
 
 #: ../netconfig.c:157
 msgid ""
@@ -158,30 +177,41 @@ msgid ""
 "If unsure, just hit enter.\n"
 "Enter interface name:"
 msgstr ""
+"Vi behöver namnet på det gränssnitt du vill använda för din "
+"nätverksuppkoppling.\n"
+" Om du är osäker, tryck bara enter.\n"
+"Ange gränssnittets namn:"
 
 #: ../netconfig.c:166
 msgid "Extended network name"
-msgstr ""
+msgstr "Utökat nätverksnamn"
 
+# Är ESSID ESSID på svenska? - Ja!
 #: ../netconfig.c:166
+#, fuzzy
 msgid ""
 "It seems that this network card has a wireless extension. In order to use "
 "it, you must set your extended netwok name (ESSID). Enter your ESSID:"
 msgstr ""
+"Det verkar som att detta nätverkskort har en trådlös utökning. För att kunna "
+"använda det måste du ställa in ditt utökade nätverksnamn (ESSID). Ange ditt "
+"ESSID:"
 
 #: ../netconfig.c:171
 msgid "Encryption key"
-msgstr ""
+msgstr "Krypteringsnyckel"
 
 #: ../netconfig.c:171
 msgid ""
 "If you have an encryption key, then please enter it below.\n"
 "Examples: 4567-89AB-CD or  s:password"
 msgstr ""
+"Om du har en krypteringsnyckel, ange den nedan.\n"
+"Exempel: 4567-89AB-CD eller s:password"
 
 #: ../netconfig.c:178
 msgid "Set DHCP hostname"
-msgstr ""
+msgstr "Ställ in DHCP-värdnamn"
 
 #: ../netconfig.c:178
 msgid ""
@@ -190,19 +220,23 @@ msgid ""
 "wereassigned a DHCP hostname, please enter it below. If you do not have a "
 "DHCP hostname, justhit enter."
 msgstr ""
+"Vissa internetleverantörer kräver att DHCP-värdnamnet är inställt för att "
+"kunna koppla upp. Om du har en sådan leverantör så har de tilldelat ett "
+"värdnamn till din maskin. Om du blev tilldelad ett DHCP-värdnamn, vänligen "
+"ange det nedan. Om du inte har ett DHCP-värdnamn, tryck bara på enter."
 
 #. options = ip netmask netmask
 #: ../netconfig.c:193
 msgid "Enter ip address"
-msgstr ""
+msgstr "Ange ip-adress"
 
 #: ../netconfig.c:193
 msgid "Enter your IP address for the local machine."
-msgstr ""
+msgstr "Ange din IP-adress för den lokala maskinen."
 
 #: ../netconfig.c:194
 msgid "Enter netmask for local network"
-msgstr ""
+msgstr "Ange nätmask för det lokala nätverket"
 
 #: ../netconfig.c:195
 msgid ""
@@ -210,21 +244,26 @@ msgid ""
 "255.255.255.0\n"
 "If unsure, just hit enter."
 msgstr ""
+"Ange din nätmask. Den ser oftast ut ungefär såhär:255.255.255.0\n"
+"Om du är osäker, tryck bara på retur."
 
 #: ../netconfig.c:202
 msgid "Enter gateway address"
-msgstr ""
+msgstr "Ange nätsluss(gateway)-adress"
 
 #: ../netconfig.c:202
 msgid ""
 "Enter the address for the gateway on your network. If you don't have a "
 "gateway on your network just hit enter, without entering any ip address."
 msgstr ""
+"Ange adressen för nätslussen (gateway) för ditt nätverk. Om du inte har en "
+"nätsluss för ditt nätverk tryck bara på enter utan att ange någon IP-adress."
 
 #: ../netconfig.c:208
 msgid "Select nameserver"
-msgstr ""
+msgstr "Välj namnserver"
 
+# Kände mig tvungen att förtydliga, då DNS-server är betydligt mycket vanligare än mnamn-server
 #: ../netconfig.c:208
 msgid ""
 "Please give the IP address of the name server to use. You canadd more Domain "
@@ -232,21 +271,28 @@ msgid ""
 "If you don't have a name server on your network just hit enter, without "
 "entering any ip address."
 msgstr ""
+"Vänligen ange IP-adressen till den namnserver (DNS-server) du vill använda. "
+"Du kan lägga till fler servrer senare genom att redigera /etc/sysconfig/"
+"network/default.\n"
+"Om du inte har en namnserver i ditt nätverk, tryck bara på enter utan att "
+"skriva in någon IP-adress"
 
+# är justera rätt ord?
 #: ../netconfig.c:219
 msgid "Adjust configuration files"
-msgstr ""
+msgstr "Ändra konfigurationsfiler"
 
+# är justera rätt ord?
 #: ../netconfig.c:219
 msgid "Accept these settings and adjust configuration files?"
-msgstr ""
+msgstr "Acceptera dessa inställningar och ändra konfigurationsfilerna?"
 
 #: ../netconfig.c:303
 #, c-format
 msgid "No profile loaded.\n"
-msgstr ""
+msgstr "Ingen profil laddad.\n"
 
 #: ../netconfig.c:308
 #, c-format
 msgid "Current profile: %s\n"
-msgstr ""
+msgstr "Nuvarande profil: %s\n"

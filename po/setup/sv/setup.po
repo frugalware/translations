@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-07-19 05:31+0200\n"
-"PO-Revision-Date: 2007-04-30 19:45+0200\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2007-08-07 05:35+0200\n"
+"PO-Revision-Date: 2007-07-29 14:07+0200\n"
+"Last-Translator: Fredrik Liljedahl <fredrik.lilj@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 0.10.1\n"
+"X-Generator: Pootle 1.0\n"
 
 #: ../src/plugins/asklang.c:70
 msgid "Selecting language"
@@ -24,11 +24,12 @@ msgstr "Väljer språk"
 msgid "Configuring the source of the installation"
 msgstr "Konfigurerar källa för installationen"
 
+# is there a swedish mirror?
 #. this string should be the best mirror for the given language from
 #. * /etc/pacman.d
 #: ../src/plugins/configsource.c:68
 msgid "ftp://ftp5."
-msgstr ""
+msgstr "ftp://ftp5."
 
 #: ../src/plugins/configsource.c:102 ../src/plugins/dolangsh.c:58
 #: ../src/plugins/formatdisk.c:248 ../src/plugins/formatdisk.c:401
@@ -42,27 +43,27 @@ msgid "Selecting a mirror"
 msgstr "Väljer en spegel"
 
 #: ../src/plugins/configsource.c:132
-#, fuzzy
 msgid "Please select mirrors"
-msgstr "Var god välj en spegel"
+msgstr "Var god välj speglar"
 
 #: ../src/plugins/configsource.c:133
 msgid ""
 "Here you can chose one or more nearby mirror to speed up package dowloading."
 msgstr ""
+"Här väljer du en eller fler speglar i närheten av dig för att snabba upp "
+"hämtningen av paket."
 
 #: ../src/plugins/configsource.c:165
 msgid "Custom mirror"
-msgstr ""
+msgstr "Anpassad spegel"
 
 #: ../src/plugins/configsource.c:165
-#, fuzzy
 msgid ""
 "You may now specify a custom mirror (eg. LAN) so you can download packages "
 "faster. In most cases a Cancel enough here."
 msgstr ""
-"Du får nu välja spegeln närmast dig för att fortare ladda ner paketen. I de "
-"flesta fallen blir standardvärdet bra."
+"Du får nu välja en anpassad spegel (tex. LAN) för att snabbare hämta "
+"paketen. I de flesta fallen blir standardvärdet bra."
 
 #: ../src/plugins/configsource.c:193 ../src/plugins/hotplug.c:59
 #: ../src/plugins/select.c:408 ../src/plugins/select.c:418
@@ -97,11 +98,11 @@ msgstr ""
 
 #: ../src/plugins/formatdisk.c:171 ../src/plugins/formatdisk.c:194
 msgid "Quick format with no bad block checking"
-msgstr "Snabb formatering som inte söker efter dåliga områden"
+msgstr "Snabb formatering som inte söker efter dåliga block"
 
 #: ../src/plugins/formatdisk.c:172 ../src/plugins/formatdisk.c:195
 msgid "Slow format that checks for bad blocks"
-msgstr "Långsam formatering som söker efter dåliga områden"
+msgstr "Långsam formatering som söker efter dåliga block"
 
 #: ../src/plugins/formatdisk.c:175 ../src/plugins/formatdisk.c:199
 #: ../src/plugins/formatdisk.c:224
@@ -181,8 +182,8 @@ msgid ""
 "Please select a partition from the following list to use for your root (/) "
 "partition. The following ones are available:"
 msgstr ""
-"Var god välj en partition från den följande listan att använda som din root "
-"(/) partition. De följande är tillgängliga:"
+"Var god välj en partition från den följande listan att använda som din root- "
+"partition (/). Följande partitioner är tillgängliga:"
 
 #: ../src/plugins/formatdisk.c:320
 msgid "Formatting"
@@ -191,7 +192,7 @@ msgstr "Formaterar"
 #: ../src/plugins/formatdisk.c:321
 #, c-format
 msgid "Creating %s filesystem on %s and checking for bad blocks"
-msgstr "Skapar %s filsystem på %s och söker efter dåliga område"
+msgstr "Skapar %s filsystem på %s och söker efter dåliga block"
 
 #: ../src/plugins/formatdisk.c:322
 #, c-format
@@ -201,7 +202,7 @@ msgstr "Skapar %s filsystem på %s"
 #: ../src/plugins/formatdisk.c:425
 #, c-format
 msgid "Select mount point for %s"
-msgstr "Väljer monteringsplats för %s"
+msgstr "Väljer monteringspunkt för %s"
 
 #: ../src/plugins/formatdisk.c:449 ../src/plugins/formatdisk.c:614
 msgid "(in use)"
@@ -226,7 +227,6 @@ msgid "Select other Linux partitions for /etc/fstab"
 msgstr "Välj andra Linuxpartitioner för /etc/fstab"
 
 #: ../src/plugins/formatdisk.c:599
-#, fuzzy
 msgid ""
 "You may use your other partitions to distribute your Linux system across "
 "more than one partition. Currently, you have only mounted your / partition. "
@@ -295,7 +295,7 @@ msgstr "Konfigruerar tangentbordet"
 #. * language from /usr/share/kbd/keymaps/i386
 #: ../src/plugins/layout.c:113
 msgid "qwerty/us.map.gz"
-msgstr ""
+msgstr "qwerty/sv-latin1.map.gz"
 
 #: ../src/plugins/layout.c:114
 msgid "Keyboard map selection"
@@ -317,30 +317,29 @@ msgstr ""
 msgid "Loading the installation source"
 msgstr "Laddar installations-mediumet"
 
-#: ../src/plugins/loadsource.c:117
+#: ../src/plugins/loadsource.c:119
 msgid "Selecting source media"
 msgstr "Väljer medium"
 
-#: ../src/plugins/loadsource.c:120
+#: ../src/plugins/loadsource.c:122
 msgid "Scanning"
 msgstr "Söker"
 
-#: ../src/plugins/loadsource.c:120
+#: ../src/plugins/loadsource.c:122
 msgid "Scanning for a CD/DVD drive containing a Frugalware install disc..."
 msgstr ""
 "Söker efter en CD/DVD-rom som innehåller en Frugalware installationsdisk..."
 
-#: ../src/plugins/loadsource.c:131
+#: ../src/plugins/loadsource.c:133
 msgid "CD/DVD drive found"
 msgstr "CD/DVD-enhet hittad"
 
-#: ../src/plugins/loadsource.c:131
+#: ../src/plugins/loadsource.c:133
 #, c-format
 msgid "A Frugalware install disc was found in device /dev/%s."
 msgstr "En Frugalware installationsdisk hittades i enheten /dev/%s"
 
 #: ../src/plugins/partdisk.c:53
-#, fuzzy
 msgid "Partitioning the disk drives"
 msgstr "Partitionerar hårddiskarna"
 
@@ -400,7 +399,8 @@ msgstr "Välj en hårddisk att partitionera"
 msgid ""
 "Please select a hard disk to partition. The following ones are available:"
 msgstr ""
-"Var god välj en hårddisk att partitionera. De följande är tillgängliga:"
+"Var god välj en hårddisk att partitionera. Följande hårddiskar är "
+"tillgängliga:"
 
 #: ../src/plugins/restart.c:51
 msgid "Restarting your computer"
@@ -417,9 +417,9 @@ msgid ""
 "that you will enjoy %s. Please remove the media from your drive and press "
 "ENTER to reboot."
 msgstr ""
-"Systeminstallation och konfiguration är fullständigt slutfört. Vi hoppas att "
+"Systeminstallation och konfiguration är fullständigt slutförd. Vi hoppas att "
 "du kommer att tycka om %s. Var god ta bort mediumet från din CD/DVD-enhet "
-"och tyck ENTER för att starta om."
+"och tryck ENTER för att starta om."
 
 #: ../src/plugins/select.c:53 ../src/plugins/select.c:278
 #: ../src/plugins/select.c:405
@@ -492,7 +492,7 @@ msgstr "Söker efter paket..."
 
 #: ../src/plugins/select.c:450
 msgid "Searching for missing dependencies..."
-msgstr "Söker efter saknade beroenden..."
+msgstr "Söker efter saknade paketberoenden..."
 
 #: ../src/plugins/install.c:52
 msgid "Installing the selected packages"
@@ -543,11 +543,58 @@ msgstr ""
 "när du startar om din dator. Detta är väldigt viktigt om din dator är "
 "ansluten till internet via LAN. Vill du ställa in lösenordet för root?"
 
-#: ../src/plugins/postconf.c:117
+#: ../src/plugins/postconf.c:100
+#, c-format
+msgid "Please enter a password for %s"
+msgstr "Var god välj ett lösenord för %s"
+
+#: ../src/plugins/postconf.c:101 ../src/plugins/postconf.c:107
+msgid "Password"
+msgstr "Lösenord"
+
+#: ../src/plugins/postconf.c:106
+#, c-format
+msgid "Please re-enter your password for %s"
+msgstr "Var god bekräfta lösenordet för %s"
+
+#: ../src/plugins/postconf.c:114
+msgid "Passwords don't match"
+msgstr "Lösenorden stämmer inte överens"
+
+#: ../src/plugins/postconf.c:115
+msgid "Sorry, the passwords do not match. Try again?"
+msgstr "Tyvärr, lösenorden stämmer inte överens. Vill du försöka igen?"
+
+#: ../src/plugins/postconf.c:140
+#, c-format
+msgid "Are you sure you want to skip setting the password for %s?"
+msgstr "Är du säker på att du vill hoppa över lösenordsinställningar för %s?"
+
+#: ../src/plugins/postconf.c:141
+msgid "Ignore setting password"
+msgstr "Ignorera lösenordsinställningar"
+
+#: ../src/plugins/postconf.c:153
+msgid "Enter login"
+msgstr "Ange användarnamn"
+
+#: ../src/plugins/postconf.c:153
+msgid "Please enter the login name you should like to create:"
+msgstr "Var god ange användarnamn för det konto du vill skapa:"
+
+#: ../src/plugins/postconf.c:156
+msgid "Enter full name"
+msgstr "Ange fullständigt namn"
+
+#: ../src/plugins/postconf.c:156
+msgid "Please enter the full name of the user you would like to create:"
+msgstr "Var god ange fullständigt namn för det användarkonto du vill skapa:"
+
+#: ../src/plugins/postconf.c:201
 msgid "No normal user account detected"
 msgstr "Inget normalt användarkonto hittades"
 
-#: ../src/plugins/postconf.c:118
+#: ../src/plugins/postconf.c:202
 msgid ""
 "There is currently no non-root user account configured. It is strongly "
 "recommended to create one. Would you like to create a normal user account "
@@ -557,15 +604,15 @@ msgstr ""
 "konfigurerat. Det är starkt rekomenderat att skapa ett. Vill du skapa ett "
 "normalt användarkonto nu?"
 
-#: ../src/plugins/postconf.c:146
+#: ../src/plugins/postconf.c:230
 msgid "Post-install configuration"
 msgstr "Inställningar efter installationen"
 
-#: ../src/plugins/postconf.c:158
+#: ../src/plugins/postconf.c:244
 msgid "Configuring kernel modules"
 msgstr "Konfigruerar kärnmoduler"
 
-#: ../src/plugins/postconf.c:159
+#: ../src/plugins/postconf.c:245
 msgid "Updating module dependencies..."
 msgstr "Uppdaterar modulberoenden..."
 
@@ -591,9 +638,9 @@ msgid ""
 "abort the installation, however you may want to ignore this problem. Do you "
 "want to leave the installer?"
 msgstr ""
-"Fel inträffade under installationen av de valda paketen. Det är rekomenderat "
-"att avbryta installation, men du kan även ignorera detta. Vill du lämna "
-"installationsprogrammet?"
+"Fel inträffade under installationen av de valda paketen. Det är "
+"rekommenderat att avbryta installation, men du kan välja att ignorera detta. "
+"Vill du lämna installationsprogrammet?"
 
 #: ../src/util.c:183
 msgid "Exit from the installer"

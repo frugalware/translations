@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: setup current\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-07-19 05:31+0200\n"
+"POT-Creation-Date: 2007-08-07 05:35+0200\n"
 "PO-Revision-Date: 2005-11-25 18:06+0100\n"
 "Last-Translator: Marcus Habermehl <bmh1980de@yahoo.de>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
@@ -331,25 +331,25 @@ msgstr ""
 msgid "Loading the installation source"
 msgstr ""
 
-#: ../src/plugins/loadsource.c:117
+#: ../src/plugins/loadsource.c:119
 msgid "Selecting source media"
 msgstr "Quell-Datenträger auswählen"
 
-#: ../src/plugins/loadsource.c:120
+#: ../src/plugins/loadsource.c:122
 msgid "Scanning"
 msgstr "Untersuche"
 
-#: ../src/plugins/loadsource.c:120
+#: ../src/plugins/loadsource.c:122
 msgid "Scanning for a CD/DVD drive containing a Frugalware install disc..."
 msgstr ""
 "Suche nach einem CD/DVD Laufwerk, dass eine Frugalware Installations-Quelle "
 "enthält..."
 
-#: ../src/plugins/loadsource.c:131
+#: ../src/plugins/loadsource.c:133
 msgid "CD/DVD drive found"
 msgstr "CD/DVD Laufwerk gefunden"
 
-#: ../src/plugins/loadsource.c:131
+#: ../src/plugins/loadsource.c:133
 #, c-format
 msgid "A Frugalware install disc was found in device /dev/%s."
 msgstr "Eine Frugalware Installations-Quelle wurde in /dev/%s gefunden."
@@ -569,11 +569,58 @@ msgstr ""
 "ist zu empfehlen, dass Sie jetzt ein Passwort setzen. Möchten Sie ein root "
 "Passwort vergeben?"
 
-#: ../src/plugins/postconf.c:117
+#: ../src/plugins/postconf.c:100
+#, c-format
+msgid "Please enter a password for %s"
+msgstr ""
+
+#: ../src/plugins/postconf.c:101 ../src/plugins/postconf.c:107
+msgid "Password"
+msgstr ""
+
+#: ../src/plugins/postconf.c:106
+#, c-format
+msgid "Please re-enter your password for %s"
+msgstr ""
+
+#: ../src/plugins/postconf.c:114
+msgid "Passwords don't match"
+msgstr ""
+
+#: ../src/plugins/postconf.c:115
+msgid "Sorry, the passwords do not match. Try again?"
+msgstr ""
+
+#: ../src/plugins/postconf.c:140
+#, fuzzy, c-format
+msgid "Are you sure you want to skip setting the password for %s?"
+msgstr "Sind Sie sicher, dass Sie die Installation beenden möchten?"
+
+#: ../src/plugins/postconf.c:141
+msgid "Ignore setting password"
+msgstr ""
+
+#: ../src/plugins/postconf.c:153
+msgid "Enter login"
+msgstr ""
+
+#: ../src/plugins/postconf.c:153
+msgid "Please enter the login name you should like to create:"
+msgstr ""
+
+#: ../src/plugins/postconf.c:156
+msgid "Enter full name"
+msgstr ""
+
+#: ../src/plugins/postconf.c:156
+msgid "Please enter the full name of the user you would like to create:"
+msgstr ""
+
+#: ../src/plugins/postconf.c:201
 msgid "No normal user account detected"
 msgstr "Kein normales Benutzerkonto gefunden"
 
-#: ../src/plugins/postconf.c:118
+#: ../src/plugins/postconf.c:202
 #, fuzzy
 msgid ""
 "There is currently no non-root user account configured. It is strongly "
@@ -583,15 +630,15 @@ msgstr ""
 "Es wurde noch kein Benutzerkonto angelegt. Es ist wirklich zu empfehlen, "
 "einen an zu legen. Möchten Sie jetzt einen normalen Benutzer anlegen?"
 
-#: ../src/plugins/postconf.c:146
+#: ../src/plugins/postconf.c:230
 msgid "Post-install configuration"
 msgstr "Post-Install Konfiguration"
 
-#: ../src/plugins/postconf.c:158
+#: ../src/plugins/postconf.c:244
 msgid "Configuring kernel modules"
 msgstr "Konfiguriere Kernel Module"
 
-#: ../src/plugins/postconf.c:159
+#: ../src/plugins/postconf.c:245
 msgid "Updating module dependencies..."
 msgstr "Aktualisiere Modul-Abhängigkeiten..."
 
