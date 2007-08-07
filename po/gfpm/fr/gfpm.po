@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-08-07 11:30+0200\n"
-"PO-Revision-Date: 2007-08-07 17:17+0200\n"
+"PO-Revision-Date: 2007-08-07 22:45+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -217,6 +217,8 @@ msgstr "Êtes vous sûr de vouloir retirer tout les paquets du cache ?"
 #: ../src/gfpm-interface.c:1253
 msgid "No package selected for install. Please select a package to install."
 msgstr ""
+"Aucun paquet sélectionné pour installation. Veuillez sélectionner un paquet "
+"à installer."
 
 #: ../src/gfpm-interface.c:1256
 msgid "Are you sure you want to install this package ?"
@@ -225,12 +227,14 @@ msgstr "Êtes vous sûr de vouloir installer ce paquet ?"
 #: ../src/gfpm-interface.c:1285
 #, c-format
 msgid "Failed to prepare transaction (%s)\n"
-msgstr "La préparation de la transaction à échoué (%s)"
+msgstr "Echec de préparation de la transaction (%s)\n"
 
 #: ../src/gfpm-interface.c:1317
 msgid ""
 "Following dependencies were not met. Please install these packages first."
 msgstr ""
+"Les dépendances suivantes n'ont pu être satisfaites. Veuillez installer ces "
+"paquets en premier."
 
 #: ../src/gfpm-interface.c:1329
 msgid "This package conflicts with the following packages"
@@ -239,7 +243,7 @@ msgstr "Ce paquet est en conflit avec les paquets suivants"
 #: ../src/gfpm-interface.c:1337
 #, c-format
 msgid "Failed to commit transaction (%s)\n"
-msgstr ""
+msgstr "Echec de validation de la transaction (%s)\n"
 
 #: ../src/gfpm-interface.c:1344
 msgid "Package successfully installed"
@@ -271,11 +275,11 @@ msgstr "Désinstallation du paquet"
 
 #: ../src/gfpm-progress.c:181
 msgid "Checking packages for file conflicts"
-msgstr ""
+msgstr "Vérification des paquets pour conflits entre fichiers"
 
 #: ../src/gfpm-progress.c:183
 msgid "Checking package for file conflicts"
-msgstr ""
+msgstr "Recherche de conflits de fichiers du paquet"
 
 #: ../src/gfpm-progress.c:211
 msgid "Checking dependencies"
@@ -283,15 +287,15 @@ msgstr "Vérification des dépendances"
 
 #: ../src/gfpm-progress.c:213
 msgid "Checking for file conflicts"
-msgstr ""
+msgstr "Vérification de conflits entre fichiers"
 
 #: ../src/gfpm-progress.c:215
 msgid "Resolving dependencies"
-msgstr ""
+msgstr "résolution des dépendances"
 
 #: ../src/gfpm-progress.c:217
 msgid "Looking for inter-conflicts"
-msgstr ""
+msgstr "recherche inter-conflits"
 
 #: ../src/gfpm-progress.c:221 ../src/gfpm-progress.c:236
 #: ../src/gfpm-progress.c:240 ../src/gfpm-progress.c:246
@@ -306,34 +310,34 @@ msgstr "Installation de %s"
 #: ../src/gfpm-progress.c:225
 #, c-format
 msgid "installed %s"
-msgstr ""
+msgstr "%s installé"
 
 #: ../src/gfpm-progress.c:227
 #, c-format
 msgid "upgrading %s"
-msgstr ""
+msgstr "mise à jour de %s"
 
 #: ../src/gfpm-progress.c:229
 #, c-format
 msgid "upgraded %s from %s to %s"
-msgstr ""
+msgstr "mis à jour %s depuis %s vers %s"
 
 #: ../src/gfpm-progress.c:238
 msgid "Checking package integrity"
-msgstr ""
+msgstr "Vérification de l'intégrité des paquets..."
 
 #: ../src/gfpm-progress.c:248
 #, c-format
 msgid "Retrieving packages from %s"
-msgstr ""
+msgstr "Récupération des paquets depuis %s"
 
 #: ../src/gfpm.c:64
 msgid "Failed to initialize interface."
-msgstr ""
+msgstr "Echec de l'initialisation avec l'interface."
 
 #: ../src/gfpm.c:72
 msgid "Failed to initialize libpacman"
-msgstr ""
+msgstr "Echec de l'initialisation avec libpacman"
 
 #: ../src/gfpm-messages.c:71 ../src/gfpm-messages.c:76
 #: ../src/gfpm-messages.c:313 ../src/gfpm-messages.c:421
@@ -473,7 +477,7 @@ msgstr "_A propos de Gfpm"
 
 #: ../data/gfpm.glade.h:29
 msgid "_Clear package cache"
-msgstr ""
+msgstr "_Nettoyer le cache des paquets"
 
 #: ../data/gfpm.glade.h:30
 msgid "_Gfpm"
