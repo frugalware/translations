@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-08-07 05:03+0200\n"
-"PO-Revision-Date: 2007-08-04 01:09+0200\n"
+"PO-Revision-Date: 2007-08-07 13:34+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -4568,9 +4568,8 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:1482
-#, fuzzy
 msgid "=== amavisd-new"
-msgstr "=== mantis"
+msgstr "=== amavisd-new"
 
 # type: Plain text
 #: user.txt:1486 packages.txt:24
@@ -4579,6 +4578,10 @@ msgid ""
 "ones. Because of this amavis service will not start if you have it installed "
 "before, so you have to correct this by issuing these commands:"
 msgstr ""
+"Depuis amavisd-new-2.5.2-1 nous n'utilisons plus des uid/gid aléatoires, "
+"mais des valeurs dédiées. À cause de cela, le service amavis ne démarrera "
+"pas si vous l'avez installer auparavant, vous devez alors corriger cela en "
+"exécutant les commandes suivantes:"
 
 # type: Bullet: '+
 # type: '
@@ -4598,6 +4601,11 @@ msgid ""
 "chown -R amavis:amavis /var/lock/amavis\n"
 "------------\n"
 msgstr ""
+"groupmod -g 40 amavis\n"
+"usermod -u 40 -g 40 amavis\n"
+"chown -R amavis:amavis /var/lib/amavis\n"
+"chown -R amavis:amavis /var/lock/amavis\n"
+"------------\n"
 
 # type: Plain text
 #: user.txt:1496 packages.txt:34
@@ -4605,6 +4613,8 @@ msgid ""
 "You should chown any other amavis-owned stuff you may have lying around, "
 "these are only the default ones."
 msgstr ""
+"Vous devez chown tous les autres contenu de amavis que vous trouverez "
+"autour, les précédent n'étant que ceux contenu par défaut."
 
 # type: Plain text
 #: user.txt:1498
@@ -14937,9 +14947,8 @@ msgstr "== acoc"
 
 # type: Plain text
 #: packages.txt:20
-#, fuzzy
 msgid "== amavisd-new"
-msgstr "== mantis"
+msgstr "== amavisd-new"
 
 # type: Plain text
 #: packages.txt:36
