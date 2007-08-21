@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-08 05:34+0200\n"
+"POT-Creation-Date: 2007-08-21 05:35+0200\n"
 "PO-Revision-Date: 2007-08-08 19:14+0200\n"
 "Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,7 @@ msgstr "Telepített verzió"
 msgid "Latest Version"
 msgstr "Legújabb verzió"
 
-#: ../src/gfpm-interface.c:261
+#: ../src/gfpm-interface.c:261 ../src/gfpm-interface.c:981
 msgid "No changes to apply."
 msgstr "Nincsenek alkalmazásra váró változások."
 
@@ -56,193 +56,194 @@ msgstr ""
 "Biztosak vagyunk benne, hogy mégsem akarjuk ezt a műveletet ? \n"
 "Megjegyzéts: Az összes idágigi változtatás vissza lesz vonva."
 
-#: ../src/gfpm-interface.c:288 ../src/gfpm-interface.c:338
-#: ../src/gfpm-interface.c:895 ../src/gfpm-interface.c:1268
+#: ../src/gfpm-interface.c:288 ../src/gfpm-interface.c:339
+#: ../src/gfpm-interface.c:961 ../src/gfpm-interface.c:1345
 #, c-format
 msgid "Failed to init transaction (%s)\n"
 msgstr "Nem sikerült inicializálni a tranzakciót (%s)\n"
 
-#: ../src/gfpm-interface.c:292 ../src/gfpm-interface.c:342
-#: ../src/gfpm-interface.c:899 ../src/gfpm-interface.c:1272
+#: ../src/gfpm-interface.c:292 ../src/gfpm-interface.c:343
+#: ../src/gfpm-interface.c:965 ../src/gfpm-interface.c:1349
 msgid ""
 "If you're sure a package manager is not already running, you can delete /tmp/"
 "pacman-g2.lck"
 msgstr ""
-"Ha biztosak vagyunk benne, hogy nem fut semmilyen csomagkezelő, a "
-"/tmp/pacman-g2.lck fájl törölhető"
+"Ha biztosak vagyunk benne, hogy nem fut semmilyen csomagkezelő, a /tmp/"
+"pacman-g2.lck fájl törölhető"
 
-#: ../src/gfpm-interface.c:425
+#: ../src/gfpm-interface.c:429
 #, c-format
 msgid "Loading groups ... [%s]"
 msgstr "Csoportok betöltése ... [%s]"
 
-#: ../src/gfpm-interface.c:435
+#: ../src/gfpm-interface.c:439
 msgid "Loading groups ... DONE"
 msgstr "Csoportok betöltése ... KÉSZ"
 
-#: ../src/gfpm-interface.c:463
+#: ../src/gfpm-interface.c:467
 msgid "Loading package list ..."
 msgstr "Csomaglista betöltése ..."
 
-#: ../src/gfpm-interface.c:548
+#: ../src/gfpm-interface.c:552
 msgid "Loading package list ...DONE"
 msgstr "Csomaglista betöltése ... KÉSZ"
 
-#: ../src/gfpm-interface.c:601
+#: ../src/gfpm-interface.c:605
 msgid "Name:"
 msgstr "Név:"
 
-#: ../src/gfpm-interface.c:608
+#: ../src/gfpm-interface.c:612
 msgid "Version:"
 msgstr "Verzió:"
 
-#: ../src/gfpm-interface.c:615
+#: ../src/gfpm-interface.c:619
 msgid "Description:"
 msgstr "Leírás:"
 
-#: ../src/gfpm-interface.c:633
+#: ../src/gfpm-interface.c:637
 msgid "License:"
 msgstr "Licenc:"
 
-#: ../src/gfpm-interface.c:652
+#: ../src/gfpm-interface.c:656
 msgid "Depends:"
 msgstr "Függőségek:"
 
-#: ../src/gfpm-interface.c:669
+#: ../src/gfpm-interface.c:673
 msgid "Group(s):"
 msgstr "Csoport(ok):"
 
-#: ../src/gfpm-interface.c:688
+#: ../src/gfpm-interface.c:692
 msgid "Provides:"
 msgstr "Szolgáltatja:"
 
-#: ../src/gfpm-interface.c:708
+#: ../src/gfpm-interface.c:712
 msgid "Conflicts:"
 msgstr "Ütközik:"
 
-#: ../src/gfpm-interface.c:720
+#: ../src/gfpm-interface.c:724
 msgid "URL:"
 msgstr "URL:"
 
-#: ../src/gfpm-interface.c:727
+#: ../src/gfpm-interface.c:731
 msgid "Packager:"
 msgstr "Csomagoló:"
 
-#: ../src/gfpm-interface.c:734
+#: ../src/gfpm-interface.c:738
 msgid "Install Date:"
 msgstr "Telepítési dátum:"
 
-#: ../src/gfpm-interface.c:743
+#: ../src/gfpm-interface.c:747
 msgid "Size:"
 msgstr "Méret:"
 
-#: ../src/gfpm-interface.c:756
+#: ../src/gfpm-interface.c:760
 msgid "Size (Compressed):"
 msgstr "Méret (tömörített):"
 
-#: ../src/gfpm-interface.c:766
+#: ../src/gfpm-interface.c:770
 msgid "Size (Uncompressed):"
 msgstr "Méret (tömörítetlen):"
 
-#: ../src/gfpm-interface.c:777
+#: ../src/gfpm-interface.c:781
 msgid "SHA1SUM:"
 msgstr "SHA1SUM:"
 
-#: ../src/gfpm-interface.c:796
+#: ../src/gfpm-interface.c:800
 msgid "Required By:"
 msgstr "Igényli:"
 
-#: ../src/gfpm-interface.c:805
+#: ../src/gfpm-interface.c:809
 msgid "Reason:"
 msgstr "Telepítési ok:"
 
-#: ../src/gfpm-interface.c:811
+#: ../src/gfpm-interface.c:815
 msgid "Explicitly Installed"
 msgstr "Kézzel telepítve"
 
-#: ../src/gfpm-interface.c:816
+#: ../src/gfpm-interface.c:820
 msgid "Installed as a dependency for another package"
 msgstr "Függőségként lett telepítve egy másik csomag miatt"
 
-#: ../src/gfpm-interface.c:842
+#: ../src/gfpm-interface.c:846
 msgid "Files in package:\n"
 msgstr "Fájlok a csomagban:\n"
 
-#: ../src/gfpm-interface.c:852
+#: ../src/gfpm-interface.c:856
 msgid "Package is not installed.\n"
 msgstr "A csomag nincs telepítve:\n"
 
-#: ../src/gfpm-interface.c:873
-msgid "Synchronizing package databases"
-msgstr "A csomagadatbázisok szinkronizálása"
-
-#: ../src/gfpm-interface.c:908
-msgid "Following packages will be upgraded. Do you want to continue ?"
-msgstr "A következő csomagok lesznek telepítve. Folytatás?"
-
-#: ../src/gfpm-interface.c:1033
-msgid "Search Complete"
-msgstr "Keresés kész"
-
-#: ../src/gfpm-interface.c:1034
-msgid "No package found"
-msgstr "Nem található csomag"
-
-#: ../src/gfpm-interface.c:1049
-msgid "Searching for packages ..."
-msgstr "Csomagok keresése ..."
-
-#: ../src/gfpm-interface.c:1133
-msgid "Searching for packages ...DONE"
-msgstr "Csomagok keresése ... KÉSZ"
-
-#: ../src/gfpm-interface.c:1203
-msgid "Are you sure you want to remove old packages from cache ?"
-msgstr "Biztosan el akarjuk távolítani a régi csomagokat a gyorsítótárból?"
-
-#: ../src/gfpm-interface.c:1209 ../src/gfpm-interface.c:1227
-msgid "Finished clearing the cache"
-msgstr "A gyorsítótár ürítése befejeződött"
-
-#: ../src/gfpm-interface.c:1212 ../src/gfpm-interface.c:1230
-#, c-format
-msgid "Failed to clean the cache (%s)"
-msgstr "A gyorsítótár törlése sikertelen (%s)"
-
-#: ../src/gfpm-interface.c:1221
-msgid "Are you sure you want to remove all packages from cache ?"
-msgstr "Biztosan el akarjuk távolítani az összes csomagot a gyorsítótárból?"
-
-#: ../src/gfpm-interface.c:1253
-msgid "No package selected for install. Please select a package to install."
-msgstr ""
-"Nincs telepítésre kiválasztott csomag. Válasszunk egy telepítendő csomagot."
-
-#: ../src/gfpm-interface.c:1256
-msgid "Are you sure you want to install this package ?"
-msgstr "Biztosan telepíteni akarjuk ezt a csomagot?"
-
-#: ../src/gfpm-interface.c:1285
+#: ../src/gfpm-interface.c:871
 #, c-format
 msgid "Failed to prepare transaction (%s)\n"
 msgstr "Nem sikerült előkészíteni a tranzakciót (%s)\n"
 
-#: ../src/gfpm-interface.c:1317
+#: ../src/gfpm-interface.c:903
 msgid ""
 "Following dependencies were not met. Please install these packages first."
 msgstr ""
 "A következő függőségek nem egyeznek. Telepítsük ezeket a csomagokat először."
 
-#: ../src/gfpm-interface.c:1329
+#: ../src/gfpm-interface.c:915
 msgid "This package conflicts with the following packages"
 msgstr "Ez a csomag a következő csomagokkal ütközik"
 
-#: ../src/gfpm-interface.c:1337
+#: ../src/gfpm-interface.c:939
+msgid "Synchronizing package databases"
+msgstr "A csomagadatbázisok szinkronizálása"
+
+#. FIXME END
+#: ../src/gfpm-interface.c:985
+msgid "Following packages will be upgraded. Do you want to continue ?"
+msgstr "A következő csomagok lesznek telepítve. Folytatás?"
+
+#: ../src/gfpm-interface.c:1110
+msgid "Search Complete"
+msgstr "Keresés kész"
+
+#: ../src/gfpm-interface.c:1111
+msgid "No package found"
+msgstr "Nem található csomag"
+
+#: ../src/gfpm-interface.c:1126
+msgid "Searching for packages ..."
+msgstr "Csomagok keresése ..."
+
+#: ../src/gfpm-interface.c:1210
+msgid "Searching for packages ...DONE"
+msgstr "Csomagok keresése ... KÉSZ"
+
+#: ../src/gfpm-interface.c:1280
+msgid "Are you sure you want to remove old packages from cache ?"
+msgstr "Biztosan el akarjuk távolítani a régi csomagokat a gyorsítótárból?"
+
+#: ../src/gfpm-interface.c:1286 ../src/gfpm-interface.c:1304
+msgid "Finished clearing the cache"
+msgstr "A gyorsítótár ürítése befejeződött"
+
+#: ../src/gfpm-interface.c:1289 ../src/gfpm-interface.c:1307
+#, c-format
+msgid "Failed to clean the cache (%s)"
+msgstr "A gyorsítótár törlése sikertelen (%s)"
+
+#: ../src/gfpm-interface.c:1298
+msgid "Are you sure you want to remove all packages from cache ?"
+msgstr "Biztosan el akarjuk távolítani az összes csomagot a gyorsítótárból?"
+
+#: ../src/gfpm-interface.c:1330
+msgid "No package selected for install. Please select a package to install."
+msgstr ""
+"Nincs telepítésre kiválasztott csomag. Válasszunk egy telepítendő csomagot."
+
+#: ../src/gfpm-interface.c:1333
+msgid "Are you sure you want to install this package ?"
+msgstr "Biztosan telepíteni akarjuk ezt a csomagot?"
+
+#: ../src/gfpm-interface.c:1361
 #, c-format
 msgid "Failed to commit transaction (%s)\n"
 msgstr "Nem sikerült végrehajtani a tranzakciót (%s)\n"
 
-#: ../src/gfpm-interface.c:1344
+#: ../src/gfpm-interface.c:1368
 msgid "Package successfully installed"
 msgstr "A csomag sikeresen telepítve"
 
