@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-09-05 05:35+0200\n"
+"POT-Creation-Date: 2007-09-07 14:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,232 +17,291 @@ msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "X-Generator: Translate Toolkit 1.0\n"
 
-#: ../src/gfpm-about.c:64
+#: ../src/gfpm-about.c:73
 msgid "(C) 2006-2007 Frugalware Developer Team (GPL)"
 msgstr ""
 
-#: ../src/gfpm-about.c:65
+#: ../src/gfpm-about.c:74
 msgid "A graphical package manager for Frugalware Linux."
 msgstr ""
 
-#: ../src/gfpm-interface.c:146
+#: ../src/gfpm-interface.c:109
+msgid "Installed Packages"
+msgstr ""
+
+#: ../src/gfpm-interface.c:169
 msgid "S"
 msgstr ""
 
-#: ../src/gfpm-interface.c:154
+#: ../src/gfpm-interface.c:177
 msgid "Status"
 msgstr ""
 
-#: ../src/gfpm-interface.c:162
+#: ../src/gfpm-interface.c:185
 msgid "Package Name"
 msgstr ""
 
-#: ../src/gfpm-interface.c:172
+#: ../src/gfpm-interface.c:195
 msgid "Installed Version"
 msgstr ""
 
-#: ../src/gfpm-interface.c:180
+#: ../src/gfpm-interface.c:203
 msgid "Latest Version"
 msgstr ""
 
-#: ../src/gfpm-interface.c:265 ../src/gfpm-interface.c:977
+#: ../src/gfpm-interface.c:285 ../data/gfpm.glade.h:13
+msgid "Gfpm"
+msgstr ""
+
+#: ../src/gfpm-interface.c:285
 msgid "No changes to apply."
 msgstr ""
 
-#: ../src/gfpm-interface.c:270
+#: ../src/gfpm-interface.c:290
+msgid "Cancel Operation"
+msgstr ""
+
+#: ../src/gfpm-interface.c:290
 msgid ""
 "Are you sure you want to cancel this operation ? \n"
 "Note: All changes made till now will be reverted."
 msgstr ""
 
-#: ../src/gfpm-interface.c:292 ../src/gfpm-interface.c:343
-#: ../src/gfpm-interface.c:957 ../src/gfpm-interface.c:1399
+#: ../src/gfpm-interface.c:312 ../src/gfpm-interface.c:363
+#: ../src/gfpm-interface.c:974 ../src/gfpm-interface.c:1405
 #, c-format
 msgid "Failed to init transaction (%s)\n"
 msgstr ""
 
-#: ../src/gfpm-interface.c:296 ../src/gfpm-interface.c:347
-#: ../src/gfpm-interface.c:961 ../src/gfpm-interface.c:1403
+#: ../src/gfpm-interface.c:316 ../src/gfpm-interface.c:367
+#: ../src/gfpm-interface.c:978 ../src/gfpm-interface.c:1409
 msgid ""
 "If you're sure a package manager is not already running, you can delete /tmp/"
 "pacman-g2.lck"
 msgstr ""
 
-#: ../src/gfpm-interface.c:433
+#: ../src/gfpm-interface.c:317 ../src/gfpm-interface.c:339
+#: ../src/gfpm-interface.c:368 ../src/gfpm-interface.c:383
+#: ../src/gfpm-interface.c:390 ../src/gfpm-interface.c:883
+#: ../src/gfpm-interface.c:979 ../src/gfpm-interface.c:1410
+#: ../src/gfpm-interface.c:1422
+msgid "Error"
+msgstr ""
+
+#: ../src/gfpm-interface.c:448
 #, c-format
 msgid "Loading groups ... [%s]"
 msgstr ""
 
-#: ../src/gfpm-interface.c:443
+#: ../src/gfpm-interface.c:458
 msgid "Loading groups ... DONE"
 msgstr ""
 
-#: ../src/gfpm-interface.c:471
+#: ../src/gfpm-interface.c:486
 msgid "Loading package list ..."
 msgstr ""
 
-#: ../src/gfpm-interface.c:545
+#: ../src/gfpm-interface.c:560
 msgid "Loading package list ...DONE"
 msgstr ""
 
-#: ../src/gfpm-interface.c:598
+#: ../src/gfpm-interface.c:613
 msgid "Name:"
 msgstr ""
 
-#: ../src/gfpm-interface.c:605
+#: ../src/gfpm-interface.c:620
 msgid "Version:"
 msgstr ""
 
-#: ../src/gfpm-interface.c:612
+#: ../src/gfpm-interface.c:627
 msgid "Description:"
 msgstr ""
 
-#: ../src/gfpm-interface.c:630
+#: ../src/gfpm-interface.c:645
 msgid "License:"
 msgstr ""
 
-#: ../src/gfpm-interface.c:649
+#: ../src/gfpm-interface.c:664
 msgid "Depends:"
 msgstr ""
 
-#: ../src/gfpm-interface.c:666
+#: ../src/gfpm-interface.c:681
 msgid "Group(s):"
 msgstr ""
 
-#: ../src/gfpm-interface.c:685
+#: ../src/gfpm-interface.c:700
 msgid "Provides:"
 msgstr ""
 
-#: ../src/gfpm-interface.c:705
+#: ../src/gfpm-interface.c:720
 msgid "Conflicts:"
 msgstr ""
 
-#: ../src/gfpm-interface.c:717
+#: ../src/gfpm-interface.c:732
 msgid "URL:"
 msgstr ""
 
-#: ../src/gfpm-interface.c:724
+#: ../src/gfpm-interface.c:739
 msgid "Packager:"
 msgstr ""
 
-#: ../src/gfpm-interface.c:731
+#: ../src/gfpm-interface.c:746
 msgid "Install Date:"
 msgstr ""
 
-#: ../src/gfpm-interface.c:740
+#: ../src/gfpm-interface.c:755
 msgid "Size:"
 msgstr ""
 
-#: ../src/gfpm-interface.c:753
+#: ../src/gfpm-interface.c:768
 msgid "Size (Compressed):"
 msgstr ""
 
-#: ../src/gfpm-interface.c:763
+#: ../src/gfpm-interface.c:778
 msgid "Size (Uncompressed):"
 msgstr ""
 
-#: ../src/gfpm-interface.c:774
+#: ../src/gfpm-interface.c:789
 msgid "SHA1SUM:"
 msgstr ""
 
-#: ../src/gfpm-interface.c:793
+#: ../src/gfpm-interface.c:808
 msgid "Required By:"
 msgstr ""
 
-#: ../src/gfpm-interface.c:802
+#: ../src/gfpm-interface.c:817
 msgid "Reason:"
 msgstr ""
 
-#: ../src/gfpm-interface.c:809
+#: ../src/gfpm-interface.c:824
 msgid "Explicitly Installed"
 msgstr ""
 
-#: ../src/gfpm-interface.c:815
+#: ../src/gfpm-interface.c:830
 msgid "Installed as a dependency for another package"
 msgstr ""
 
-#: ../src/gfpm-interface.c:842
+#: ../src/gfpm-interface.c:857
 msgid "Files in package:\n"
 msgstr ""
 
-#: ../src/gfpm-interface.c:852
+#: ../src/gfpm-interface.c:867
 msgid "Package is not installed.\n"
 msgstr ""
 
-#: ../src/gfpm-interface.c:867
+#: ../src/gfpm-interface.c:882
 #, c-format
 msgid "Failed to prepare transaction (%s)\n"
 msgstr ""
 
-#: ../src/gfpm-interface.c:899
+#: ../src/gfpm-interface.c:914
+msgid "Missing dependencies"
+msgstr ""
+
+#: ../src/gfpm-interface.c:914
 msgid ""
 "Following dependencies were not met. Please install these packages first."
 msgstr ""
 
-#: ../src/gfpm-interface.c:911
+#: ../src/gfpm-interface.c:926
+msgid "Package conflict"
+msgstr ""
+
+#: ../src/gfpm-interface.c:926
 msgid "This package conflicts with the following packages"
 msgstr ""
 
-#: ../src/gfpm-interface.c:935
+#: ../src/gfpm-interface.c:950
 msgid "Synchronizing package databases"
 msgstr ""
 
-#. FIXME END
-#: ../src/gfpm-interface.c:981
+#: ../src/gfpm-interface.c:962
+msgid "Update pacman-g2"
+msgstr ""
+
+#: ../src/gfpm-interface.c:992
+msgid "No new package updates are available. The system is up to date."
+msgstr ""
+
+#: ../src/gfpm-interface.c:996
+msgid "Package upgrade"
+msgstr ""
+
+#: ../src/gfpm-interface.c:996
 msgid "Following packages will be upgraded. Do you want to continue ?"
 msgstr ""
 
-#: ../src/gfpm-interface.c:1092
+#: ../src/gfpm-interface.c:1098
 msgid "Mark for upgrade"
 msgstr ""
 
-#: ../src/gfpm-interface.c:1173
+#: ../src/gfpm-interface.c:1179
 msgid "Search Complete"
 msgstr ""
 
-#: ../src/gfpm-interface.c:1174
-msgid "No package found"
+#: ../src/gfpm-interface.c:1180
+msgid "Package not found"
 msgstr ""
 
 #: ../src/gfpm-interface.c:1180
+msgid "No such package found"
+msgstr ""
+
+#: ../src/gfpm-interface.c:1186
 msgid "Searching for packages ..."
 msgstr ""
 
-#: ../src/gfpm-interface.c:1264
+#: ../src/gfpm-interface.c:1270
 msgid "Searching for packages ...DONE"
 msgstr ""
 
-#: ../src/gfpm-interface.c:1334
+#: ../src/gfpm-interface.c:1340 ../src/gfpm-interface.c:1358
+msgid "Clear package cache"
+msgstr ""
+
+#: ../src/gfpm-interface.c:1340
 msgid "Are you sure you want to remove old packages from cache ?"
 msgstr ""
 
-#: ../src/gfpm-interface.c:1340 ../src/gfpm-interface.c:1358
+#: ../src/gfpm-interface.c:1346 ../src/gfpm-interface.c:1364
 msgid "Finished clearing the cache"
 msgstr ""
 
-#: ../src/gfpm-interface.c:1343 ../src/gfpm-interface.c:1361
+#: ../src/gfpm-interface.c:1349 ../src/gfpm-interface.c:1367
 #, c-format
 msgid "Failed to clean the cache (%s)"
 msgstr ""
 
-#: ../src/gfpm-interface.c:1352
+#: ../src/gfpm-interface.c:1350 ../src/gfpm-interface.c:1368
+msgid "Error clearing cache"
+msgstr ""
+
+#: ../src/gfpm-interface.c:1358
 msgid "Are you sure you want to remove all packages from cache ?"
 msgstr ""
 
-#: ../src/gfpm-interface.c:1384
+#: ../src/gfpm-interface.c:1390
+msgid "No packages selected"
+msgstr ""
+
+#: ../src/gfpm-interface.c:1390
 msgid "No package selected for install. Please select a package to install."
 msgstr ""
 
-#: ../src/gfpm-interface.c:1387
+#: ../src/gfpm-interface.c:1393
+msgid "Install package"
+msgstr ""
+
+#: ../src/gfpm-interface.c:1393
 msgid "Are you sure you want to install this package ?"
 msgstr ""
 
-#: ../src/gfpm-interface.c:1415
+#: ../src/gfpm-interface.c:1421
 #, c-format
 msgid "Failed to commit transaction (%s)\n"
 msgstr ""
 
-#: ../src/gfpm-interface.c:1422
+#: ../src/gfpm-interface.c:1428
 msgid "Package successfully installed"
 msgstr ""
 
@@ -295,7 +354,7 @@ msgid "Looking for inter-conflicts"
 msgstr ""
 
 #: ../src/gfpm-progress.c:216 ../src/gfpm-progress.c:240
-#: ../src/gfpm-progress.c:246 ../src/gfpm-progress.c:256
+#: ../src/gfpm-progress.c:246 ../src/gfpm-progress.c:255
 msgid "Done"
 msgstr ""
 
@@ -323,9 +382,13 @@ msgstr ""
 msgid "Checking package integrity"
 msgstr ""
 
-#: ../src/gfpm-progress.c:259
+#: ../src/gfpm-progress.c:258
 #, c-format
 msgid "Retrieving packages from %s"
+msgstr ""
+
+#: ../src/gfpm.c:56
+msgid "Interface initialization failed"
 msgstr ""
 
 #: ../src/gfpm.c:56
@@ -333,16 +396,20 @@ msgid "Failed to initialize interface."
 msgstr ""
 
 #: ../src/gfpm.c:64
+msgid "Error initializing libpacman"
+msgstr ""
+
+#: ../src/gfpm.c:64
 msgid "Failed to initialize libpacman"
 msgstr ""
 
 #: ../src/gfpm-messages.c:71 ../src/gfpm-messages.c:76
-#: ../src/gfpm-messages.c:314 ../src/gfpm-messages.c:422
+#: ../src/gfpm-messages.c:317 ../src/gfpm-messages.c:426
 msgid "Package"
 msgstr ""
 
 #: ../src/gfpm-messages.c:72 ../src/gfpm-messages.c:77
-#: ../src/gfpm-messages.c:326
+#: ../src/gfpm-messages.c:329
 msgid "Size"
 msgstr ""
 
@@ -351,12 +418,32 @@ msgstr ""
 msgid "Total package size: %0.2f MB"
 msgstr ""
 
-#: ../src/gfpm-messages.c:308
+#: ../src/gfpm-messages.c:311
 msgid "Upgrade"
 msgstr ""
 
-#: ../src/gfpm-messages.c:320
+#: ../src/gfpm-messages.c:323
 msgid "Version"
+msgstr ""
+
+#: ../src/gfpm-messages.c:495
+msgid "Replace package"
+msgstr ""
+
+#: ../src/gfpm-messages.c:522
+msgid "Conflict"
+msgstr ""
+
+#: ../src/gfpm-messages.c:531
+msgid "Local version newer"
+msgstr ""
+
+#: ../src/gfpm-messages.c:540
+msgid "Local version up to date"
+msgstr ""
+
+#: ../src/gfpm-messages.c:548
+msgid "Package corrupted"
 msgstr ""
 
 #: ../data/gfpm.glade.h:1
@@ -405,10 +492,6 @@ msgstr ""
 
 #: ../data/gfpm.glade.h:12
 msgid "Force install"
-msgstr ""
-
-#: ../data/gfpm.glade.h:13
-msgid "Gfpm"
 msgstr ""
 
 #: ../data/gfpm.glade.h:14
