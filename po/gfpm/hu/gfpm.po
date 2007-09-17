@@ -6,458 +6,599 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-09-07 14:03+0200\n"
+"POT-Creation-Date: 2007-09-17 05:01+0200\n"
 "PO-Revision-Date: 2007-09-08 00:32+0200\n"
 "Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=ISO-8859-2\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 1.0\n"
 
-#: ../src/gfpm-about.c:73
+#: ../src/gfpm-about.c:69
 msgid "(C) 2006-2007 Frugalware Developer Team (GPL)"
-msgstr "(C) 2006-2007 Frugalware FejlesztÅ‘ Csapat (GPL)"
+msgstr "(C) 2006-2007 Frugalware Fejlesztõ Csapat (GPL)"
+
+#: ../src/gfpm-about.c:70
+msgid "A graphical package manager for Frugalware Linux."
+msgstr "Egy grafikus csomagkezelõ a Frugalware Linux számára."
 
 #: ../src/gfpm-about.c:74
-msgid "A graphical package manager for Frugalware Linux."
-msgstr "Egy grafikus csomagkezelÅ‘ a Frugalware Linux szÃ¡mÃ¡ra."
+msgid "translator-name"
+msgstr ""
 
-#: ../src/gfpm-interface.c:109
+#: ../src/gfpm-interface.c:113
 msgid "Installed Packages"
-msgstr "TelepÃ­tett csomagok"
+msgstr "Telepített csomagok"
 
-#: ../src/gfpm-interface.c:169
+#: ../src/gfpm-interface.c:175
 msgid "S"
 msgstr "S"
 
-#: ../src/gfpm-interface.c:177
+#: ../src/gfpm-interface.c:183
 msgid "Status"
-msgstr "StÃ¡tusz"
+msgstr "Státusz"
 
-#: ../src/gfpm-interface.c:185
+#: ../src/gfpm-interface.c:191
 msgid "Package Name"
-msgstr "CsomagnÃ©v"
+msgstr "Csomagnév"
 
-#: ../src/gfpm-interface.c:195
+#: ../src/gfpm-interface.c:201
 msgid "Installed Version"
-msgstr "TelepÃ­tett verziÃ³"
+msgstr "Telepített verzió"
 
-#: ../src/gfpm-interface.c:203
+#: ../src/gfpm-interface.c:209
 msgid "Latest Version"
-msgstr "LegÃºjabb verziÃ³"
+msgstr "Legújabb verzió"
 
-#: ../src/gfpm-interface.c:285 ../data/gfpm.glade.h:13
+#: ../src/gfpm-interface.c:269 ../src/gfpm-interface.c:328
+#: ../src/gfpm-interface.c:357 ../src/gfpm-interface.c:385
+#: ../src/gfpm-interface.c:407 ../src/gfpm-interface.c:414
+#: ../src/gfpm-interface.c:974 ../src/gfpm-interface.c:1087
+#: ../src/gfpm-interface.c:1580 ../src/gfpm-interface.c:1595
+#: ../src/gfpm-optimizedb.c:122 ../src/gfpm-optimizedb.c:129
+msgid "Error"
+msgstr "Hiba"
+
+#: ../src/gfpm-interface.c:269
+#, fuzzy
+msgid "Failed to initialize local package database."
+msgstr "Nem sikerült inicializálni a libpacmant"
+
+#: ../src/gfpm-interface.c:297 ../data/gfpm.glade.h:18
 msgid "Gfpm"
 msgstr "Gfpm"
 
-#: ../src/gfpm-interface.c:285
+#: ../src/gfpm-interface.c:297
 msgid "No changes to apply."
-msgstr "Nincsenek alkalmazÃ¡sra vÃ¡rÃ³ vÃ¡ltozÃ¡sok."
+msgstr "Nincsenek alkalmazásra váró változások."
 
-#: ../src/gfpm-interface.c:290
+#: ../src/gfpm-interface.c:302
 msgid "Cancel Operation"
-msgstr "MÅ±velet megszakÃ­tÃ¡sa"
+msgstr "Mûvelet megszakítása"
 
-#: ../src/gfpm-interface.c:290
+#: ../src/gfpm-interface.c:302
 msgid ""
 "Are you sure you want to cancel this operation ? \n"
 "Note: All changes made till now will be reverted."
 msgstr ""
-"Biztosak vagyunk benne, hogy mÃ©gsem akarjuk ezt a mÅ±veletet ? \n"
-"MegjegyzÃ©ts: Az Ã¶sszes idÃ¡gigi vÃ¡ltoztatÃ¡s vissza lesz vonva."
+"Biztosak vagyunk benne, hogy mégsem akarjuk ezt a mûveletet ? \n"
+"Megjegyzéts: Az összes idágigi változtatás vissza lesz vonva."
 
-#: ../src/gfpm-interface.c:312 ../src/gfpm-interface.c:363
-#: ../src/gfpm-interface.c:974 ../src/gfpm-interface.c:1405
+#: ../src/gfpm-interface.c:324 ../src/gfpm-interface.c:381
+#: ../src/gfpm-interface.c:1082 ../src/gfpm-interface.c:1575
 #, c-format
 msgid "Failed to init transaction (%s)\n"
-msgstr "Nem sikerÃ¼lt inicializÃ¡lni a tranzakciÃ³t (%s)\n"
+msgstr "Nem sikerült inicializálni a tranzakciót (%s)\n"
 
-#: ../src/gfpm-interface.c:316 ../src/gfpm-interface.c:367
-#: ../src/gfpm-interface.c:978 ../src/gfpm-interface.c:1409
+#: ../src/gfpm-interface.c:474
+#, c-format
+msgid "Loading groups ... [%s]"
+msgstr "Csoportok betöltése ... [%s]"
+
+#: ../src/gfpm-interface.c:484
+msgid "Loading groups ... DONE"
+msgstr "Csoportok betöltése ... KÉSZ"
+
+#: ../src/gfpm-interface.c:513
+msgid "Loading package list ..."
+msgstr "Csomaglista betöltése ..."
+
+#. while (gtk_events_pending())
+#. gtk_main_iteration_do (TRUE);
+#: ../src/gfpm-interface.c:606
+msgid "Loading package list ...DONE"
+msgstr "Csomaglista betöltése ... KÉSZ"
+
+#: ../src/gfpm-interface.c:657
+msgid "Name:"
+msgstr "Név:"
+
+#: ../src/gfpm-interface.c:664
+msgid "Version:"
+msgstr "Verzió:"
+
+#: ../src/gfpm-interface.c:671
+msgid "Description:"
+msgstr "Leírás:"
+
+#: ../src/gfpm-interface.c:689
+msgid "License:"
+msgstr "Licenc:"
+
+#: ../src/gfpm-interface.c:708
+msgid "Depends:"
+msgstr "Függõségek:"
+
+#: ../src/gfpm-interface.c:725
+msgid "Group(s):"
+msgstr "Csoport(ok):"
+
+#: ../src/gfpm-interface.c:744
+msgid "Provides:"
+msgstr "Szolgáltatja:"
+
+#: ../src/gfpm-interface.c:764
+msgid "Conflicts:"
+msgstr "Ütközik:"
+
+#: ../src/gfpm-interface.c:776
+msgid "URL:"
+msgstr "URL:"
+
+#: ../src/gfpm-interface.c:783
+msgid "Packager:"
+msgstr "Csomagoló:"
+
+#: ../src/gfpm-interface.c:790
+msgid "Install Date:"
+msgstr "Telepítési dátum:"
+
+#: ../src/gfpm-interface.c:799
+msgid "Size:"
+msgstr "Méret:"
+
+#: ../src/gfpm-interface.c:812
+msgid "Size (Compressed):"
+msgstr "Méret (tömörített):"
+
+#: ../src/gfpm-interface.c:822
+msgid "Size (Uncompressed):"
+msgstr "Méret (tömörítetlen):"
+
+#: ../src/gfpm-interface.c:833
+msgid "SHA1SUM:"
+msgstr "SHA1SUM:"
+
+#: ../src/gfpm-interface.c:852
+msgid "Required By:"
+msgstr "Igényli:"
+
+#: ../src/gfpm-interface.c:861
+msgid "Reason:"
+msgstr "Telepítési ok:"
+
+#: ../src/gfpm-interface.c:868
+msgid "Explicitly Installed"
+msgstr "Kézzel telepítve"
+
+#: ../src/gfpm-interface.c:874
+msgid "Installed as a dependency for another package"
+msgstr "Függõségként lett telepítve egy másik csomag miatt"
+
+#: ../src/gfpm-interface.c:900
+msgid "Files in package:\n"
+msgstr "Fájlok a csomagban:\n"
+
+#: ../src/gfpm-interface.c:910
+msgid "Package is not installed.\n"
+msgstr "A csomag nincs telepítve:\n"
+
+#: ../src/gfpm-interface.c:944
+msgid "No changelog available for this package"
+msgstr ""
+
+#: ../src/gfpm-interface.c:959
+#, fuzzy
+msgid "Package is not installed"
+msgstr "A csomag nincs telepítve:\n"
+
+#: ../src/gfpm-interface.c:973
+#, c-format
+msgid "Failed to prepare transaction (%s)\n"
+msgstr "Nem sikerült elõkészíteni a tranzakciót (%s)\n"
+
+#: ../src/gfpm-interface.c:989
+#, fuzzy
+msgid "is required by"
+msgstr "Igényli:"
+
+#: ../src/gfpm-interface.c:1019
+msgid "Missing dependencies"
+msgstr "Hiányzó függõségek"
+
+#: ../src/gfpm-interface.c:1019
+msgid ""
+"Following dependencies were not met. Please install these packages first."
+msgstr ""
+"A következõ függõségek nem egyeznek. Telepítsük ezeket a csomagokat elõször."
+
+#: ../src/gfpm-interface.c:1021
+#, fuzzy
+msgid "Could not satisfy dependencies"
+msgstr "Függõségek feloldása"
+
+#: ../src/gfpm-interface.c:1021
+#, fuzzy
+msgid ""
+"The packages you are trying to remove are required by the following packages:"
+msgstr "Ez a csomag a következõ csomagokkal ütközik"
+
+#: ../src/gfpm-interface.c:1033
+msgid "Package conflict"
+msgstr "Csomag-ütközés"
+
+#: ../src/gfpm-interface.c:1033
+msgid "This package conflicts with the following packages"
+msgstr "Ez a csomag a következõ csomagokkal ütközik"
+
+#: ../src/gfpm-interface.c:1057
+msgid "Synchronizing package databases"
+msgstr "A csomagadatbázisok szinkronizálása"
+
+#: ../src/gfpm-interface.c:1070
+msgid "Update pacman-g2"
+msgstr "A pacman-g2 frissítése"
+
+#: ../src/gfpm-interface.c:1086 ../src/gfpm-interface.c:1579
 msgid ""
 "If you're sure a package manager is not already running, you can delete /tmp/"
 "pacman-g2.lck"
 msgstr ""
-"Ha biztosak vagyunk benne, hogy nem fut semmilyen csomagkezelÅ‘, a /tmp/"
-"pacman-g2.lck fÃ¡jl tÃ¶rÃ¶lhetÅ‘"
+"Ha biztosak vagyunk benne, hogy nem fut semmilyen csomagkezelõ, a /tmp/"
+"pacman-g2.lck fájl törölhetõ"
 
-#: ../src/gfpm-interface.c:317 ../src/gfpm-interface.c:339
-#: ../src/gfpm-interface.c:368 ../src/gfpm-interface.c:383
-#: ../src/gfpm-interface.c:390 ../src/gfpm-interface.c:883
-#: ../src/gfpm-interface.c:979 ../src/gfpm-interface.c:1410
-#: ../src/gfpm-interface.c:1422
-msgid "Error"
-msgstr "Hiba"
-
-#: ../src/gfpm-interface.c:448
-#, c-format
-msgid "Loading groups ... [%s]"
-msgstr "Csoportok betÃ¶ltÃ©se ... [%s]"
-
-#: ../src/gfpm-interface.c:458
-msgid "Loading groups ... DONE"
-msgstr "Csoportok betÃ¶ltÃ©se ... KÃ‰SZ"
-
-#: ../src/gfpm-interface.c:486
-msgid "Loading package list ..."
-msgstr "Csomaglista betÃ¶ltÃ©se ..."
-
-#: ../src/gfpm-interface.c:560
-msgid "Loading package list ...DONE"
-msgstr "Csomaglista betÃ¶ltÃ©se ... KÃ‰SZ"
-
-#: ../src/gfpm-interface.c:613
-msgid "Name:"
-msgstr "NÃ©v:"
-
-#: ../src/gfpm-interface.c:620
-msgid "Version:"
-msgstr "VerziÃ³:"
-
-#: ../src/gfpm-interface.c:627
-msgid "Description:"
-msgstr "LeÃ­rÃ¡s:"
-
-#: ../src/gfpm-interface.c:645
-msgid "License:"
-msgstr "Licenc:"
-
-#: ../src/gfpm-interface.c:664
-msgid "Depends:"
-msgstr "FÃ¼ggÅ‘sÃ©gek:"
-
-#: ../src/gfpm-interface.c:681
-msgid "Group(s):"
-msgstr "Csoport(ok):"
-
-#: ../src/gfpm-interface.c:700
-msgid "Provides:"
-msgstr "SzolgÃ¡ltatja:"
-
-#: ../src/gfpm-interface.c:720
-msgid "Conflicts:"
-msgstr "ÃœtkÃ¶zik:"
-
-#: ../src/gfpm-interface.c:732
-msgid "URL:"
-msgstr "URL:"
-
-#: ../src/gfpm-interface.c:739
-msgid "Packager:"
-msgstr "CsomagolÃ³:"
-
-#: ../src/gfpm-interface.c:746
-msgid "Install Date:"
-msgstr "TelepÃ­tÃ©si dÃ¡tum:"
-
-#: ../src/gfpm-interface.c:755
-msgid "Size:"
-msgstr "MÃ©ret:"
-
-#: ../src/gfpm-interface.c:768
-msgid "Size (Compressed):"
-msgstr "MÃ©ret (tÃ¶mÃ¶rÃ­tett):"
-
-#: ../src/gfpm-interface.c:778
-msgid "Size (Uncompressed):"
-msgstr "MÃ©ret (tÃ¶mÃ¶rÃ­tetlen):"
-
-#: ../src/gfpm-interface.c:789
-msgid "SHA1SUM:"
-msgstr "SHA1SUM:"
-
-#: ../src/gfpm-interface.c:808
-msgid "Required By:"
-msgstr "IgÃ©nyli:"
-
-#: ../src/gfpm-interface.c:817
-msgid "Reason:"
-msgstr "TelepÃ­tÃ©si ok:"
-
-#: ../src/gfpm-interface.c:824
-msgid "Explicitly Installed"
-msgstr "KÃ©zzel telepÃ­tve"
-
-#: ../src/gfpm-interface.c:830
-msgid "Installed as a dependency for another package"
-msgstr "FÃ¼ggÅ‘sÃ©gkÃ©nt lett telepÃ­tve egy mÃ¡sik csomag miatt"
-
-#: ../src/gfpm-interface.c:857
-msgid "Files in package:\n"
-msgstr "FÃ¡jlok a csomagban:\n"
-
-#: ../src/gfpm-interface.c:867
-msgid "Package is not installed.\n"
-msgstr "A csomag nincs telepÃ­tve:\n"
-
-#: ../src/gfpm-interface.c:882
-#, c-format
-msgid "Failed to prepare transaction (%s)\n"
-msgstr "Nem sikerÃ¼lt elÅ‘kÃ©szÃ­teni a tranzakciÃ³t (%s)\n"
-
-#: ../src/gfpm-interface.c:914
-msgid "Missing dependencies"
-msgstr "HiÃ¡nyzÃ³ fÃ¼ggÅ‘sÃ©gek"
-
-#: ../src/gfpm-interface.c:914
-msgid ""
-"Following dependencies were not met. Please install these packages first."
-msgstr ""
-"A kÃ¶vetkezÅ‘ fÃ¼ggÅ‘sÃ©gek nem egyeznek. TelepÃ­tsÃ¼k ezeket a csomagokat elÅ‘szÃ¶r."
-
-#: ../src/gfpm-interface.c:926
-msgid "Package conflict"
-msgstr "Csomag-Ã¼tkÃ¶zÃ©s"
-
-#: ../src/gfpm-interface.c:926
-msgid "This package conflicts with the following packages"
-msgstr "Ez a csomag a kÃ¶vetkezÅ‘ csomagokkal Ã¼tkÃ¶zik"
-
-#: ../src/gfpm-interface.c:950
-msgid "Synchronizing package databases"
-msgstr "A csomagadatbÃ¡zisok szinkronizÃ¡lÃ¡sa"
-
-#: ../src/gfpm-interface.c:962
-msgid "Update pacman-g2"
-msgstr "A pacman-g2 frissÃ­tÃ©se"
-
-#: ../src/gfpm-interface.c:992
+#: ../src/gfpm-interface.c:1100
 msgid "No new package updates are available. The system is up to date."
-msgstr "Nincs frissÃ­tendÅ‘ csomag. A rendszer mÃ¡r naprakÃ©sz."
+msgstr "Nincs frissítendõ csomag. A rendszer már naprakész."
 
-#: ../src/gfpm-interface.c:996
+#: ../src/gfpm-interface.c:1104
 msgid "Package upgrade"
-msgstr "CsomagfrissÃ­tÃ©s"
+msgstr "Csomagfrissítés"
 
-#: ../src/gfpm-interface.c:996
+#: ../src/gfpm-interface.c:1104
 msgid "Following packages will be upgraded. Do you want to continue ?"
-msgstr "A kÃ¶vetkezÅ‘ csomagok lesznek telepÃ­tve. FolytatÃ¡s?"
+msgstr "A következõ csomagok lesznek telepítve. Folytatás?"
 
-#: ../src/gfpm-interface.c:1098
+#: ../src/gfpm-interface.c:1241
 msgid "Mark for upgrade"
-msgstr "MegjelÃ¶lÃ©s frissÃ­tÃ©shez"
+msgstr "Megjelölés frissítéshez"
 
-#: ../src/gfpm-interface.c:1179
+#: ../src/gfpm-interface.c:1325
 msgid "Search Complete"
-msgstr "KeresÃ©s kÃ©sz"
+msgstr "Keresés kész"
 
-#: ../src/gfpm-interface.c:1180
+#: ../src/gfpm-interface.c:1326
 msgid "Package not found"
-msgstr "Nem talÃ¡lhatÃ³ csomag"
+msgstr "Nem található csomag"
 
-#: ../src/gfpm-interface.c:1180
+#: ../src/gfpm-interface.c:1326
 msgid "No such package found"
-msgstr "Nem talÃ¡lhatÃ³ ilyen csomag"
+msgstr "Nem található ilyen csomag"
 
-#: ../src/gfpm-interface.c:1186
+#: ../src/gfpm-interface.c:1333
 msgid "Searching for packages ..."
-msgstr "Csomagok keresÃ©se ..."
+msgstr "Csomagok keresése ..."
 
-#: ../src/gfpm-interface.c:1270
+#: ../src/gfpm-interface.c:1438
 msgid "Searching for packages ...DONE"
-msgstr "Csomagok keresÃ©se ... KÃ‰SZ"
+msgstr "Csomagok keresése ... KÉSZ"
 
-#: ../src/gfpm-interface.c:1340 ../src/gfpm-interface.c:1358
+#: ../src/gfpm-interface.c:1510 ../src/gfpm-interface.c:1528
 msgid "Clear package cache"
-msgstr "GyorsÃ­tÃ³tÃ¡r Ã¼rÃ­tÃ©se"
+msgstr "Gyorsítótár ürítése"
 
-#: ../src/gfpm-interface.c:1340
+#: ../src/gfpm-interface.c:1510
 msgid "Are you sure you want to remove old packages from cache ?"
-msgstr "Biztosan el akarjuk tÃ¡volÃ­tani a rÃ©gi csomagokat a gyorsÃ­tÃ³tÃ¡rbÃ³l?"
+msgstr "Biztosan el akarjuk távolítani a régi csomagokat a gyorsítótárból?"
 
-#: ../src/gfpm-interface.c:1346 ../src/gfpm-interface.c:1364
+#: ../src/gfpm-interface.c:1516 ../src/gfpm-interface.c:1534
 msgid "Finished clearing the cache"
-msgstr "A gyorsÃ­tÃ³tÃ¡r Ã¼rÃ­tÃ©se befejezÅ‘dÃ¶tt"
+msgstr "A gyorsítótár ürítése befejezõdött"
 
-#: ../src/gfpm-interface.c:1349 ../src/gfpm-interface.c:1367
+#: ../src/gfpm-interface.c:1519 ../src/gfpm-interface.c:1537
 #, c-format
 msgid "Failed to clean the cache (%s)"
-msgstr "A gyorsÃ­tÃ³tÃ¡r tÃ¶rlÃ©se sikertelen (%s)"
+msgstr "A gyorsítótár törlése sikertelen (%s)"
 
-#: ../src/gfpm-interface.c:1350 ../src/gfpm-interface.c:1368
+#: ../src/gfpm-interface.c:1520 ../src/gfpm-interface.c:1538
 msgid "Error clearing cache"
-msgstr "A gyorsÃ­tÃ³tÃ¡r Ã¼rÃ­tÃ©se sikertelen"
+msgstr "A gyorsítótár ürítése sikertelen"
 
-#: ../src/gfpm-interface.c:1358
+#: ../src/gfpm-interface.c:1528
 msgid "Are you sure you want to remove all packages from cache ?"
-msgstr "Biztosan el akarjuk tÃ¡volÃ­tani az Ã¶sszes csomagot a gyorsÃ­tÃ³tÃ¡rbÃ³l?"
+msgstr "Biztosan el akarjuk távolítani az összes csomagot a gyorsítótárból?"
 
-#: ../src/gfpm-interface.c:1390
+#: ../src/gfpm-interface.c:1560
 msgid "No packages selected"
-msgstr "Nincsenek kivÃ¡lasztott csomagok"
+msgstr "Nincsenek kiválasztott csomagok"
 
-#: ../src/gfpm-interface.c:1390
+#: ../src/gfpm-interface.c:1560
 msgid "No package selected for install. Please select a package to install."
 msgstr ""
-"Nincs telepÃ­tÃ©sre kivÃ¡lasztott csomag. VÃ¡lasszunk egy telepÃ­tendÅ‘ csomagot."
+"Nincs telepítésre kiválasztott csomag. Válasszunk egy telepítendõ csomagot."
 
-#: ../src/gfpm-interface.c:1393
+#: ../src/gfpm-interface.c:1563
 msgid "Install package"
-msgstr "Csomag telepÃ­tÃ©se"
+msgstr "Csomag telepítése"
 
-#: ../src/gfpm-interface.c:1393
+#: ../src/gfpm-interface.c:1563
 msgid "Are you sure you want to install this package ?"
-msgstr "Biztosan telepÃ­teni akarjuk ezt a csomagot?"
+msgstr "Biztosan telepíteni akarjuk ezt a csomagot?"
 
-#: ../src/gfpm-interface.c:1421
+#: ../src/gfpm-interface.c:1594
 #, c-format
 msgid "Failed to commit transaction (%s)\n"
-msgstr "Nem sikerÃ¼lt vÃ©grehajtani a tranzakciÃ³t (%s)\n"
+msgstr "Nem sikerült végrehajtani a tranzakciót (%s)\n"
 
-#: ../src/gfpm-interface.c:1428
+#: ../src/gfpm-interface.c:1601
 msgid "Package successfully installed"
-msgstr "A csomag sikeresen telepÃ­tve"
+msgstr "A csomag sikeresen telepítve"
 
-#: ../src/gfpm-progress.c:152
-msgid "Installing packages"
-msgstr "Csomagok telepÃ­tÃ©se"
+#: ../src/gfpm-progress.c:238
+#, fuzzy
+msgid "Installing packages..."
+msgstr "Csomagok telepítése"
 
-#: ../src/gfpm-progress.c:154
-msgid "Installing package"
-msgstr "Csomag telepÃ­tÃ©se"
+#: ../src/gfpm-progress.c:240
+#, fuzzy
+msgid "Installing package..."
+msgstr "Csomag telepítése"
 
-#: ../src/gfpm-progress.c:158
-msgid "Upgrading packages"
-msgstr "Csomagok frisÃ­tÃ©se"
+#: ../src/gfpm-progress.c:244
+#, fuzzy
+msgid "Upgrading packages..."
+msgstr "Csomagok frisítése"
 
-#: ../src/gfpm-progress.c:160
-msgid "Upgrading package"
-msgstr "Csomag frissÃ­tÃ©se"
+#: ../src/gfpm-progress.c:246
+#, fuzzy
+msgid "Upgrading package..."
+msgstr "Csomag frissítése"
 
-#: ../src/gfpm-progress.c:164
-msgid "Removing packages"
-msgstr "Csomagok eltÃ¡volÃ­tÃ¡sa"
+#: ../src/gfpm-progress.c:250
+#, fuzzy
+msgid "Removing packages..."
+msgstr "Csomagok eltávolítása"
 
-#: ../src/gfpm-progress.c:166 ../src/gfpm-progress.c:237
-msgid "Removing package"
-msgstr "Csomag eltÃ¡volÃ­tÃ¡sa"
+#: ../src/gfpm-progress.c:252
+#, fuzzy
+msgid "Removing package..."
+msgstr "Csomag eltávolítása"
 
-#: ../src/gfpm-progress.c:170
-msgid "Checking packages for file conflicts"
-msgstr "A csomagok fÃ¡jlÃ¼tkÃ¶zÃ©seinek vizsgÃ¡lata"
-
-#: ../src/gfpm-progress.c:172
-msgid "Checking package for file conflicts"
-msgstr "A csomag fÃ¡jlÃ¼tkÃ¶zÃ©seinek vizsgÃ¡lata"
-
-#: ../src/gfpm-progress.c:202
-msgid "Checking dependencies"
-msgstr "FÃ¼ggÅ‘sÃ©gek vizsgÃ¡lata"
-
-#: ../src/gfpm-progress.c:205
-msgid "Checking for file conflicts"
-msgstr "FÃ¡jlÃ¼tkÃ¶zÃ©sek vizsgÃ¡lata"
-
-#: ../src/gfpm-progress.c:208
-msgid "Resolving dependencies"
-msgstr "FÃ¼ggÅ‘sÃ©gek feloldÃ¡sa"
-
-#: ../src/gfpm-progress.c:211
-msgid "Looking for inter-conflicts"
-msgstr "BelsÅ‘ Ã¼tkÃ¶zÃ©sek keresÃ©se"
-
-#: ../src/gfpm-progress.c:216 ../src/gfpm-progress.c:240
-#: ../src/gfpm-progress.c:246 ../src/gfpm-progress.c:255
-msgid "Done"
-msgstr "KÃ©sz"
-
-#: ../src/gfpm-progress.c:219
-#, c-format
-msgid "installing %s"
-msgstr "%s telepÃ­tÃ©se"
-
-#: ../src/gfpm-progress.c:223
-#, c-format
-msgid "installed %s"
-msgstr "%s telepÃ­tve"
-
-#: ../src/gfpm-progress.c:227
-#, c-format
-msgid "upgrading %s"
-msgstr "%s frissÃ­tÃ©se"
-
-#: ../src/gfpm-progress.c:231
-#, c-format
-msgid "upgraded %s from %s to %s"
-msgstr "%s frissÃ­tve: %s -> %s"
-
-#: ../src/gfpm-progress.c:243
-msgid "Checking package integrity"
-msgstr "A csomagok integritÃ¡sÃ¡nak ellenÅ‘rzÃ©se"
+#: ../src/gfpm-progress.c:256
+#, fuzzy
+msgid "Checking packages for file conflicts..."
+msgstr "A csomagok fájlütközéseinek vizsgálata"
 
 #: ../src/gfpm-progress.c:258
+#, fuzzy
+msgid "Checking package for file conflicts..."
+msgstr "A csomag fájlütközéseinek vizsgálata"
+
+#: ../src/gfpm-progress.c:291
+msgid "Checking dependencies"
+msgstr "Függõségek vizsgálata"
+
+#: ../src/gfpm-progress.c:295
+msgid "Checking for file conflicts"
+msgstr "Fájlütközések vizsgálata"
+
+#: ../src/gfpm-progress.c:299
+msgid "Resolving dependencies"
+msgstr "Függõségek feloldása"
+
+#: ../src/gfpm-progress.c:302
+msgid "Looking for inter-conflicts"
+msgstr "Belsõ ütközések keresése"
+
+#: ../src/gfpm-progress.c:308 ../src/gfpm-progress.c:348
+#: ../src/gfpm-progress.c:358
+msgid "Done"
+msgstr "Kész"
+
+#: ../src/gfpm-progress.c:311
+#, fuzzy, c-format
+msgid "Installing %s-%s"
+msgstr "%s telepítése"
+
+#: ../src/gfpm-progress.c:317
+#, fuzzy
+msgid "Package installation finished"
+msgstr "Az interfész inicializálása sikertelen"
+
+#: ../src/gfpm-progress.c:318
+#, fuzzy, c-format
+msgid "Installed %s-%s"
+msgstr "%s telepítve"
+
+#: ../src/gfpm-progress.c:323
+#, fuzzy, c-format
+msgid "Upgrading %s"
+msgstr "%s frissítése"
+
+#: ../src/gfpm-progress.c:328
+#, fuzzy
+msgid "Package upgrade finished"
+msgstr "Csomagfrissítés"
+
+#: ../src/gfpm-progress.c:329
+#, c-format
+msgid "upgraded %s from %s to %s"
+msgstr "%s frissítve: %s -> %s"
+
+#: ../src/gfpm-progress.c:335
+#, fuzzy, c-format
+msgid "removing %s"
+msgstr "Csomagok eltávolítása"
+
+#: ../src/gfpm-progress.c:339
+#, fuzzy
+msgid "Package removal finished"
+msgstr "Nem található csomag"
+
+#: ../src/gfpm-progress.c:340
+#, c-format
+msgid "removed %s"
+msgstr ""
+
+#: ../src/gfpm-progress.c:345
+msgid "Checking package integrity"
+msgstr "A csomagok integritásának ellenõrzése"
+
+#: ../src/gfpm-progress.c:362
 #, c-format
 msgid "Retrieving packages from %s"
-msgstr "Csomagok letÃ¶ltÃ©se a(z) %s repÃ³bÃ³l"
+msgstr "Csomagok letöltése a(z) %s repóból"
 
 #: ../src/gfpm.c:56
 msgid "Interface initialization failed"
-msgstr "Az interfÃ©sz inicializÃ¡lÃ¡sa sikertelen"
+msgstr "Az interfész inicializálása sikertelen"
 
 #: ../src/gfpm.c:56
 msgid "Failed to initialize interface."
-msgstr "Nem sikerÃ¼lt inicializÃ¡lni az interfÃ©szt."
+msgstr "Nem sikerült inicializálni az interfészt."
 
 #: ../src/gfpm.c:64
 msgid "Error initializing libpacman"
-msgstr "Nem sikerÃ¼lt inicializÃ¡lni a libpacmant"
+msgstr "Nem sikerült inicializálni a libpacmant"
 
 #: ../src/gfpm.c:64
 msgid "Failed to initialize libpacman"
-msgstr "Nem sikerÃ¼lt inicializÃ¡lni a libpacmant"
+msgstr "Nem sikerült inicializálni a libpacmant"
+
+#: ../src/gfpm-optimizedb.c:94
+msgid "Ready"
+msgstr ""
+
+#: ../src/gfpm-optimizedb.c:122
+msgid ""
+"Cannot optimize database. Another instance of pacman-g2 or gfpm is already "
+"running."
+msgstr ""
+
+#: ../src/gfpm-optimizedb.c:129
+msgid "Error creating lockfile. Failed to optimize package database"
+msgstr ""
+
+#. generate checksums for the old database
+#: ../src/gfpm-optimizedb.c:134
+msgid "generating checksums for the old database"
+msgstr ""
+
+#. copy the old database to a new directory
+#: ../src/gfpm-optimizedb.c:143
+#, fuzzy, c-format
+msgid "copying %s"
+msgstr "Csomagok eltávolítása"
+
+#. generate checksums for the new database
+#: ../src/gfpm-optimizedb.c:153
+msgid "generating checksums for the new database"
+msgstr ""
+
+#. check integrity
+#: ../src/gfpm-optimizedb.c:170
+msgid "performing integrity check"
+msgstr ""
+
+#: ../src/gfpm-optimizedb.c:174
+#, fuzzy
+msgid "Optimization failed"
+msgstr "Az interfész inicializálása sikertelen"
+
+#: ../src/gfpm-optimizedb.c:174
+msgid "Integrity check failed"
+msgstr ""
+
+#: ../src/gfpm-optimizedb.c:175
+#, fuzzy
+msgid "Failed."
+msgstr "Fájlok"
+
+#. remove old database
+#: ../src/gfpm-optimizedb.c:187
+#, fuzzy
+msgid "removing old database"
+msgstr "Csomagok eltávolítása"
+
+#. remove temp files
+#: ../src/gfpm-optimizedb.c:195
+msgid "removing temporary files"
+msgstr ""
+
+#: ../src/gfpm-optimizedb.c:202
+msgid "Database optimized."
+msgstr ""
+
+#: ../src/gfpm-optimizedb.c:203
+msgid "Database optimized"
+msgstr ""
+
+#: ../src/gfpm-optimizedb.c:203
+msgid "Your package database is now optimized."
+msgstr ""
 
 #: ../src/gfpm-messages.c:71 ../src/gfpm-messages.c:76
-#: ../src/gfpm-messages.c:317 ../src/gfpm-messages.c:426
+#: ../src/gfpm-messages.c:318 ../src/gfpm-messages.c:427
 msgid "Package"
 msgstr "Csomag"
 
 #: ../src/gfpm-messages.c:72 ../src/gfpm-messages.c:77
-#: ../src/gfpm-messages.c:329
+#: ../src/gfpm-messages.c:330
 msgid "Size"
-msgstr "MÃ©ret"
+msgstr "Méret"
 
-#: ../src/gfpm-messages.c:130 ../src/gfpm-messages.c:161
+#: ../src/gfpm-messages.c:130 ../src/gfpm-messages.c:162
 #, c-format
 msgid "Total package size: %0.2f MB"
-msgstr "Teljes csomagmÃ©ret: %0.2f MB"
+msgstr "Teljes csomagméret: %0.2f MB"
 
-#: ../src/gfpm-messages.c:311
+#: ../src/gfpm-messages.c:312 ../data/gfpm.glade.h:34
 msgid "Upgrade"
-msgstr "FrissÃ­tÃ©s"
+msgstr "Frissítés"
 
-#: ../src/gfpm-messages.c:323
+#: ../src/gfpm-messages.c:324
 msgid "Version"
-msgstr "VerziÃ³"
+msgstr "Verzió"
 
-#: ../src/gfpm-messages.c:495
+#: ../src/gfpm-messages.c:496
 msgid "Replace package"
-msgstr "Csomag cserÃ©je"
+msgstr "Csomag cseréje"
 
-#: ../src/gfpm-messages.c:522
+#: ../src/gfpm-messages.c:523
 msgid "Conflict"
-msgstr "ÃœtkÃ¶zÃ©s"
+msgstr "Ütközés"
 
-#: ../src/gfpm-messages.c:531
+#: ../src/gfpm-messages.c:532
 msgid "Local version newer"
-msgstr "A helyi verziÃ³ Ãºjabb"
+msgstr "A helyi verzió újabb"
 
-#: ../src/gfpm-messages.c:540
+#: ../src/gfpm-messages.c:541
 msgid "Local version up to date"
-msgstr "A helyi verziÃ³ naprakÃ©sz"
+msgstr "A helyi verzió naprakész"
 
-#: ../src/gfpm-messages.c:548
+#: ../src/gfpm-messages.c:549
 msgid "Package corrupted"
-msgstr "SÃ©rÃ¼lt csomag"
+msgstr "Sérült csomag"
 
 #: ../data/gfpm.glade.h:1
 msgid "<b>Information</b>"
-msgstr "<b>InformÃ¡ciÃ³</b>"
+msgstr "<b>Információ</b>"
 
 #: ../data/gfpm.glade.h:2
 msgid "<b>Install packages:</b>"
-msgstr "<b>TelepÃ­tendÅ‘ csomagok:</b>"
+msgstr "<b>Telepítendõ csomagok:</b>"
 
 #: ../data/gfpm.glade.h:3
 msgid "<b>Packages</b>"
@@ -465,116 +606,162 @@ msgstr "<b>Csomagok</b>"
 
 #: ../data/gfpm.glade.h:4
 msgid "<b>Remove packages:</b>"
-msgstr "<b>EltÃ¡volÃ­tandÃ³ csomagok:</b>"
+msgstr "<b>Eltávolítandó csomagok:</b>"
 
 #: ../data/gfpm.glade.h:5
-msgid "About Gfpm"
-msgstr "A GfpmrÅ‘l"
+msgid "<b>Status : </b>"
+msgstr ""
 
 #: ../data/gfpm.glade.h:6
+msgid "<span size=\"larger\"><b>Optimize package database</b></span>"
+msgstr ""
+
+#: ../data/gfpm.glade.h:7
+msgid "About Gfpm"
+msgstr "A Gfpmrõl"
+
+#: ../data/gfpm.glade.h:8
 msgid "Apply"
 msgstr "Alkalmaz"
 
-#: ../data/gfpm.glade.h:7
-msgid "Apply Changes"
-msgstr "VÃ¡ltoztatÃ¡sok alkalmazÃ¡sa"
-
-#: ../data/gfpm.glade.h:8
-msgid "Detials"
-msgstr "RÃ©szletek"
-
 #: ../data/gfpm.glade.h:9
-msgid "Download only (do not install/upgrade)"
-msgstr "Csak letÃ¶ltÃ©s (ne legyen telepÃ­tÃ©s/frissÃ­tÃ©s)"
+msgid "Apply Changes"
+msgstr "Változtatások alkalmazása"
 
 #: ../data/gfpm.glade.h:10
-msgid "E_xit"
-msgstr "_KilÃ©pÃ©s"
+msgid "Changelog"
+msgstr ""
 
 #: ../data/gfpm.glade.h:11
-msgid "Files"
-msgstr "FÃ¡jlok"
+msgid "Close"
+msgstr ""
 
 #: ../data/gfpm.glade.h:12
-msgid "Force install"
-msgstr "TelepÃ­tÃ©s erÃ¶ltetÃ©se"
+msgid "Close this dialog when the operation is finished"
+msgstr ""
+
+#: ../data/gfpm.glade.h:13
+#, fuzzy
+msgid "Details"
+msgstr "Részletek"
 
 #: ../data/gfpm.glade.h:14
-msgid "Install"
-msgstr "TelepÃ­tÃ©s"
+msgid "Download only (do not install/upgrade)"
+msgstr "Csak letöltés (ne legyen telepítés/frissítés)"
 
 #: ../data/gfpm.glade.h:15
-msgid "Install package from file"
-msgstr "Csomag telepÃ­tÃ©se fÃ¡jlbÃ³l"
+msgid "E_xit"
+msgstr "_Kilépés"
 
 #: ../data/gfpm.glade.h:16
-msgid "Options"
-msgstr "OpciÃ³k"
+msgid "Files"
+msgstr "Fájlok"
 
 #: ../data/gfpm.glade.h:17
-msgid "Please wait..."
-msgstr "TÃ¼relem..."
-
-#: ../data/gfpm.glade.h:18
-msgid "Quit"
-msgstr "KilÃ©pÃ©s"
+msgid "Force install"
+msgstr "Telepítés eröltetése"
 
 #: ../data/gfpm.glade.h:19
-msgid "Refresh the package lists"
-msgstr "Csomaglista frissÃ­tÃ©se"
+msgid "Install"
+msgstr "Telepítés"
 
 #: ../data/gfpm.glade.h:20
-msgid "Remove all packages from cache"
-msgstr "Minden csomag eltÃ¡volÃ­tÃ¡sa a gyorsÃ­tÃ³tÃ¡rbÃ³l"
+msgid "Install package from file"
+msgstr "Csomag telepítése fájlból"
 
 #: ../data/gfpm.glade.h:21
-msgid "Remove old packages from cache"
-msgstr "RÃ©gi csomagok eltÃ¡volÃ­tÃ¡sa a gyorsÃ­tÃ³tÃ¡rbÃ³l"
+msgid "Optimize"
+msgstr ""
 
 #: ../data/gfpm.glade.h:22
-msgid "Search packages"
-msgstr "Csomagok keresÃ©se"
+msgid "Options"
+msgstr "Opciók"
 
 #: ../data/gfpm.glade.h:23
-msgid "Skip dependency checks"
-msgstr "FÃ¼ggÅ‘sÃ©gek ellenÅ‘rzÃ©sÃ©nek kihagyÃ¡sa"
+msgid "Please wait..."
+msgstr "Türelem..."
 
 #: ../data/gfpm.glade.h:24
-msgid "The following operations will be performed"
-msgstr "A kÃ¶vetkezÅ‘ mÅ±veletek lesznek vÃ©grehajtva"
+msgid "Quit"
+msgstr "Kilépés"
 
 #: ../data/gfpm.glade.h:25
-msgid "Total size:"
-msgstr "Teljes mÃ©ret:"
+msgid "Refresh the package lists"
+msgstr "Csomaglista frissítése"
 
 #: ../data/gfpm.glade.h:26
-msgid "Transfer Rate:  "
-msgstr "Ãtviteli sebessÃ©g:  "
+msgid "Remove"
+msgstr ""
 
 #: ../data/gfpm.glade.h:27
-msgid "Upgrade existing"
-msgstr "LÃ©tezÅ‘ frissÃ­tÃ©se"
+msgid "Remove all packages from cache"
+msgstr "Minden csomag eltávolítása a gyorsítótárból"
 
 #: ../data/gfpm.glade.h:28
-msgid "_About Gfpm"
-msgstr "_A GfpmrÅ‘l"
+msgid "Remove old packages from cache"
+msgstr "Régi csomagok eltávolítása a gyorsítótárból"
 
 #: ../data/gfpm.glade.h:29
-msgid "_Clear package cache"
-msgstr "_GyorsÃ­tÃ³tÃ¡r Ã¼rÃ­tÃ©se"
+msgid "Search packages"
+msgstr "Csomagok keresése"
 
 #: ../data/gfpm.glade.h:30
+msgid "Skip dependency checks"
+msgstr "Függõségek ellenõrzésének kihagyása"
+
+#: ../data/gfpm.glade.h:31
+msgid "The following operations will be performed"
+msgstr "A következõ mûveletek lesznek végrehajtva"
+
+#: ../data/gfpm.glade.h:32
+msgid "Total size:"
+msgstr "Teljes méret:"
+
+#: ../data/gfpm.glade.h:33
+msgid "Transfer Rate:  "
+msgstr "Átviteli sebesség:  "
+
+#: ../data/gfpm.glade.h:35
+msgid "Upgrade existing"
+msgstr "Létezõ frissítése"
+
+#: ../data/gfpm.glade.h:36
+msgid "_About Gfpm"
+msgstr "_A Gfpmrõl"
+
+#: ../data/gfpm.glade.h:37
+msgid "_Clear package cache"
+msgstr "_Gyorsítótár ürítése"
+
+#: ../data/gfpm.glade.h:38
 msgid "_Gfpm"
 msgstr "G_fpm"
 
-#: ../data/gfpm.glade.h:31
+#: ../data/gfpm.glade.h:39
 msgid "_Help"
-msgstr "_SegÃ­tÃ©g"
+msgstr "_Segítég"
 
-#: ../data/gfpm.glade.h:32
+#: ../data/gfpm.glade.h:40
+#, fuzzy
+msgid "_Optimize package database"
+msgstr "A csomagadatbázisok szinkronizálása"
+
+#: ../data/gfpm.glade.h:41
+#, fuzzy
+msgid "clear package cache"
+msgstr "Gyorsítótár ürítése"
+
+#: ../data/gfpm.glade.h:42
 msgid "gtk-apply"
 msgstr "gtk-apply"
 
-#: ../data/gfpm.glade.h:33
+#: ../data/gfpm.glade.h:43
 msgid "gtk-close"
 msgstr "gtk-close"
+
+#: ../data/gfpm.glade.h:44
+msgid "optimize your package database to improve performance"
+msgstr ""
+
+#~ msgid "Detials"
+#~ msgstr "Részletek"
