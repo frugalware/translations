@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-09-21 05:27+0200\n"
+"POT-Creation-Date: 2007-09-26 05:04+0200\n"
 "PO-Revision-Date: 2007-09-18 17:04+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -428,47 +428,53 @@ msgstr ""
 msgid "usage:  %s {-A --add} [options] <file>\n"
 msgstr "brug:  %s {-A --add} [valgmuligheder] <fil>\n"
 
-#: ../pacman-g2.c:107 ../pacman-g2.c:112 ../pacman-g2.c:124 ../pacman-g2.c:129
-#: ../pacman-g2.c:144
+#: ../pacman-g2.c:107 ../pacman-g2.c:113 ../pacman-g2.c:125 ../pacman-g2.c:130
+#: ../pacman-g2.c:145
 #, c-format
 msgid "options:\n"
 msgstr "valgmuligheder:\n"
 
-#: ../pacman-g2.c:108 ../pacman-g2.c:114 ../pacman-g2.c:125 ../pacman-g2.c:146
+#: ../pacman-g2.c:108 ../pacman-g2.c:115 ../pacman-g2.c:126 ../pacman-g2.c:147
 #, c-format
 msgid "  -d, --nodeps        skip dependency checks\n"
 msgstr "  -d, --nodeps        spring afhængigheds tjeks over\n"
 
-#: ../pacman-g2.c:109 ../pacman-g2.c:126 ../pacman-g2.c:148
+#: ../pacman-g2.c:109 ../pacman-g2.c:127 ../pacman-g2.c:149
 #, c-format
 msgid "  -f, --force         force install, overwrite conflicting files\n"
 msgstr ""
 "  -f, --force         gennemtving installation, overskriv konfliktende "
 "filer\n"
 
-#: ../pacman-g2.c:111
+#: ../pacman-g2.c:110
+#, c-format
+msgid ""
+"      --noarch        install the package, even if it is for an other arch\n"
+msgstr ""
+
+#: ../pacman-g2.c:112
 #, c-format
 msgid "usage:  %s {-R --remove} [options] <package>\n"
 msgstr "brug:  %s {-R --remove} [valgmuligheder] <pakke>\n"
 
-#: ../pacman-g2.c:113
+#: ../pacman-g2.c:114
 #, c-format
 msgid ""
 "  -c, --cascade       remove packages and all packages that depend on them\n"
 msgstr ""
 "  -c, --cascade       fjern pakker og alle pakker der afhænger af dem\n"
 
-#: ../pacman-g2.c:115
+#: ../pacman-g2.c:116
 #, c-format
 msgid "  -k, --dbonly        only remove database entry, do not remove files\n"
 msgstr "  -k, --dbonly        fjern kun database post, fjern ikke filer\n"
 
-#: ../pacman-g2.c:116
+#: ../pacman-g2.c:117
 #, c-format
 msgid "  -n, --nosave        remove configuration files as well\n"
 msgstr "  -n, --nosave        fjern også konfigurations filerne\n"
 
-#: ../pacman-g2.c:117
+#: ../pacman-g2.c:118
 #, c-format
 msgid ""
 "  -s, --recursive     remove dependencies also (that won't break packages)\n"
@@ -476,27 +482,27 @@ msgstr ""
 "  -s, --recursive     fjern også afhængigheder (det vil ikke ødelægge "
 "pakker)\n"
 
-#: ../pacman-g2.c:120
+#: ../pacman-g2.c:121
 #, c-format
 msgid "usage:  %s {-F --freshen} [options] <file>\n"
 msgstr "brug:  %s {-F --freshen} [valgmuligheder] <fil>\n"
 
-#: ../pacman-g2.c:122
+#: ../pacman-g2.c:123
 #, c-format
 msgid "usage:  %s {-U --upgrade} [options] <file>\n"
 msgstr "brug:  %s {-U --upgrade} [valgmuligheder] <fil>\n"
 
-#: ../pacman-g2.c:128
+#: ../pacman-g2.c:129
 #, c-format
 msgid "usage:  %s {-Q --query} [options] [package]\n"
 msgstr "brug:  %s {-Q --query} [valgmuligheder] [pakke]\n"
 
-#: ../pacman-g2.c:130
+#: ../pacman-g2.c:131
 #, c-format
 msgid "  -c, --changelog     view the changelog of a package\n"
 msgstr "  -c, --changelog     se ændrings log på en pakke\n"
 
-#: ../pacman-g2.c:131
+#: ../pacman-g2.c:132
 #, c-format
 msgid ""
 "  -e, --orphans       list all packages that were installed as a dependency\n"
@@ -504,27 +510,27 @@ msgstr ""
 "  -e, --orphans       liste alle pakker der er installeret som en "
 "afhængighed\n"
 
-#: ../pacman-g2.c:132
+#: ../pacman-g2.c:133
 #, c-format
 msgid "                      and are not required by any other packages\n"
 msgstr "                      og er ikke krævet af nogen andre pakker\n"
 
-#: ../pacman-g2.c:133 ../pacman-g2.c:149
+#: ../pacman-g2.c:134 ../pacman-g2.c:150
 #, c-format
 msgid "  -g, --groups        view all members of a package group\n"
 msgstr "  -g, --groups        se alle medlemmer af en pakke gruppe\n"
 
-#: ../pacman-g2.c:134
+#: ../pacman-g2.c:135
 #, c-format
 msgid "  -i, --info          view package information\n"
 msgstr "  -i, --info          se pakke information\n"
 
-#: ../pacman-g2.c:135
+#: ../pacman-g2.c:136
 #, c-format
 msgid "  -l, --list          list the contents of the queried package\n"
 msgstr "  -l, --list          liste indholdet af den forespurgte pakke\n"
 
-#: ../pacman-g2.c:136
+#: ../pacman-g2.c:137
 #, c-format
 msgid ""
 "  -m, --foreign       list all packages that were not found in the sync db"
@@ -533,12 +539,12 @@ msgstr ""
 "  -m, --foreign       liste alle pakker der ikke var fundet i synkron "
 "databasse(r)\n"
 
-#: ../pacman-g2.c:137
+#: ../pacman-g2.c:138
 #, c-format
 msgid "  -o, --owns <file>   query the package that owns <file>\n"
 msgstr "  -o, --owns <fil>   forespørge pakken der ejer <fil>\n"
 
-#: ../pacman-g2.c:138
+#: ../pacman-g2.c:139
 #, c-format
 msgid ""
 "  -p, --file          pacman-g2 will query the package file [package] "
@@ -547,12 +553,12 @@ msgstr ""
 "  -p, --file          pacman-g2 vil forespørge pakke filen [pakke] i stedet "
 "for\n"
 
-#: ../pacman-g2.c:139
+#: ../pacman-g2.c:140
 #, c-format
 msgid "                      looking in the database\n"
 msgstr "                      ser efter i databassen\n"
 
-#: ../pacman-g2.c:140
+#: ../pacman-g2.c:141
 #, c-format
 msgid ""
 "  -s, --search        search locally-installed packages for matching "
@@ -561,17 +567,17 @@ msgstr ""
 "  -s, --search        søger lokale-installerede pakker for matchende "
 "strenge\n"
 
-#: ../pacman-g2.c:141
+#: ../pacman-g2.c:142
 #, c-format
 msgid "  -t, --test          search problems in the local database\n"
 msgstr "  -t, --test          søger efter problemer i den lokale database\n"
 
-#: ../pacman-g2.c:143
+#: ../pacman-g2.c:144
 #, c-format
 msgid "usage:  %s {-S --sync} [options] [package]\n"
 msgstr "brug:  %s {-S --sync} [valgmuligheder] [pakke]\n"
 
-#: ../pacman-g2.c:145
+#: ../pacman-g2.c:146
 #, c-format
 msgid ""
 "  -c, --clean         remove old packages from cache directory (use -cc for "
@@ -580,12 +586,12 @@ msgstr ""
 "  -c, --clean         fjern gamle pakker fra cache katalog (brug -cc for "
 "alle)\n"
 
-#: ../pacman-g2.c:147
+#: ../pacman-g2.c:148
 #, c-format
 msgid "  -e, --dependsonly   install dependencies only\n"
 msgstr "  -e, --dependsonly   installer kun afhængigheder\n"
 
-#: ../pacman-g2.c:150
+#: ../pacman-g2.c:151
 #, c-format
 msgid ""
 "  -p, --print-uris    print out URIs for given packages and their "
@@ -594,30 +600,30 @@ msgstr ""
 "  -p, --print-uris    udskriv URIs for givende pakker og deres "
 "afhængigheder\n"
 
-#: ../pacman-g2.c:151
+#: ../pacman-g2.c:152
 #, c-format
 msgid "  -s, --search        search remote repositories for matching strings\n"
 msgstr "  -s, --search        søg ekstern arkiv for matchende strenge\n"
 
-#: ../pacman-g2.c:152
+#: ../pacman-g2.c:153
 #, c-format
 msgid "  -u, --sysupgrade    upgrade all packages that are out of date\n"
 msgstr "  -u, --sysupgrade    opgrader alle pakker der er forældet\n"
 
-#: ../pacman-g2.c:153
+#: ../pacman-g2.c:154
 #, c-format
 msgid ""
 "  -w, --downloadonly  download packages but do not install/upgrade anything\n"
 msgstr ""
 "  -w, --downloadonly  download pakker men installer/opgrader ikke alting\n"
 
-#: ../pacman-g2.c:154
+#: ../pacman-g2.c:155
 #, c-format
 msgid ""
 "  -y, --refresh       download fresh package databases from the server\n"
 msgstr "  -y, --refresh       download ny pakke database fra serveren\n"
 
-#: ../pacman-g2.c:155
+#: ../pacman-g2.c:156
 #, c-format
 msgid ""
 "      --ignore <pkg>  ignore a package upgrade (can be used more than once)\n"
@@ -625,7 +631,7 @@ msgstr ""
 "      --ignore <pkg>  ignorere en pakke opgradering (kan bruges mere ind en "
 "gang)\n"
 
-#: ../pacman-g2.c:156
+#: ../pacman-g2.c:157
 #, c-format
 msgid ""
 "      --nointegrity   don't check the integrity of the packages using sha1\n"
@@ -633,177 +639,177 @@ msgstr ""
 "      --nointegrity   tjek ikke integriteten af pakkerne ved anvendelse af "
 "sha1\n"
 
-#: ../pacman-g2.c:158
+#: ../pacman-g2.c:159
 #, c-format
 msgid "      --config <path> set an alternate configuration file\n"
 msgstr "      --config <sti> vælg en alternativ konfigurations fil\n"
 
-#: ../pacman-g2.c:159
+#: ../pacman-g2.c:160
 #, c-format
 msgid "      --noconfirm     do not ask for anything confirmation\n"
 msgstr "      --noconfirm     spørg ikke om nogen bekræftelse\n"
 
-#: ../pacman-g2.c:160
+#: ../pacman-g2.c:161
 #, c-format
 msgid "      --ask  <number> pre-specify answers for questions (see manpage)\n"
 msgstr ""
 "      --ask  <nummer> forrige-specificeret svar på spørgsmål (se man side)\n"
 
-#: ../pacman-g2.c:161
+#: ../pacman-g2.c:162
 #, c-format
 msgid ""
 "      --noprogressbar do not show a progress bar when downloading files\n"
 msgstr ""
 "      --noprogressbar vis ikke et statusmeter når filer bliver hentet\n"
 
-#: ../pacman-g2.c:162
+#: ../pacman-g2.c:163
 #, c-format
 msgid ""
 "      --noscriptlet   do not execute the install scriptlet if there is any\n"
 msgstr ""
 "      --noscriptlet   udfør ikke installations skriptet hvis der er nogen\n"
 
-#: ../pacman-g2.c:163
+#: ../pacman-g2.c:164
 #, c-format
 msgid "  -v, --verbose       be verbose\n"
 msgstr "  -v, --verbose       se det hele\n"
 
-#: ../pacman-g2.c:164
+#: ../pacman-g2.c:165
 #, c-format
 msgid "  -r, --root <path>   set an alternate installation root\n"
 msgstr "  -r, --root <sti>   vælg en alternativ installations root\n"
 
-#: ../pacman-g2.c:165
+#: ../pacman-g2.c:166
 #, c-format
 msgid "  -b, --dbpath <path> set an alternate database location\n"
 msgstr "  -b, --dbpath <sti> vælg en alternativ database placering\n"
 
-#: ../pacman-g2.c:178
+#: ../pacman-g2.c:179
 #, c-format
 msgid "                       This program may be freely redistributed under\n"
 msgstr "                       Dette program må frit gen-distribueres under\n"
 
-#: ../pacman-g2.c:179
+#: ../pacman-g2.c:180
 #, c-format
 msgid "                       the terms of the GNU General Public License\n"
 msgstr "                       reglerne af GNU General Public Licens\n"
 
-#: ../pacman-g2.c:358
+#: ../pacman-g2.c:361
 msgid "bad root path"
 msgstr "dårlig root sti"
 
-#: ../pacman-g2.c:386
+#: ../pacman-g2.c:389
 msgid "only one operation may be used at a time\n"
 msgstr "kun en handling må blive udført en af gangen\n"
 
-#: ../pacman-g2.c:486
+#: ../pacman-g2.c:489
 msgid "you cannot perform this operation unless you are root.\n"
 msgstr "du kan ikke udføre denne handling med-mindre du er root.\n"
 
-#: ../pacman-g2.c:510
+#: ../pacman-g2.c:513
 #, c-format
 msgid "failed to initilize pacman library (%s)\n"
 msgstr "fejlede at initialisere pacman programbibliotek (%s)\n"
 
-#: ../pacman-g2.c:516
+#: ../pacman-g2.c:519
 #, c-format
 msgid "failed to set option LOGMASK (%s)\n"
 msgstr "fejlede at opsætte indstilling LOGMASK (%s)\n"
 
-#: ../pacman-g2.c:520
+#: ../pacman-g2.c:523
 #, c-format
 msgid "failed to set option DBPATH (%s)\n"
 msgstr "fejlede at opsætte indstilling DBPATH (%s)\n"
 
-#: ../pacman-g2.c:524
+#: ../pacman-g2.c:527
 #, c-format
 msgid "failed to set option LOGCB (%s)\n"
 msgstr "fejlede at opsætte indstilling LOGCB (%s)\n"
 
-#: ../pacman-g2.c:532
+#: ../pacman-g2.c:535
 #, c-format
 msgid "failed to parse config (%s)\n"
 msgstr "fejlede at fortolke konfig (%s)\n"
 
-#: ../pacman-g2.c:538
+#: ../pacman-g2.c:541
 #, c-format
 msgid "failed to set option DLCB (%s)\n"
 msgstr "fejlede at opsætte indstilling DLCB (%s)\n"
 
-#: ../pacman-g2.c:542
+#: ../pacman-g2.c:545
 #, c-format
 msgid "failed to set option DLFNM (%s)\n"
 msgstr "fejlede at opsætte indstilling DLFNM (%s)\n"
 
-#: ../pacman-g2.c:546
+#: ../pacman-g2.c:549
 #, c-format
 msgid "failed to set option DLOFFSET (%s)\n"
 msgstr "fejlede at opsætte indstilling DLOFFSET (%s)\n"
 
-#: ../pacman-g2.c:550
+#: ../pacman-g2.c:553
 #, c-format
 msgid "failed to set option DLT0 (%s)\n"
 msgstr "fejlede at opsætte indstilling DLT0 (%s)\n"
 
-#: ../pacman-g2.c:554
+#: ../pacman-g2.c:557
 #, c-format
 msgid "failed to set option DLT (%s)\n"
 msgstr "fejlede at opsætte indstilling DLT (%s)\n"
 
-#: ../pacman-g2.c:558
+#: ../pacman-g2.c:561
 #, c-format
 msgid "failed to set option DLRATE (%s)\n"
 msgstr "fejlede at opsætte indstilling DLRATE (%s)\n"
 
-#: ../pacman-g2.c:562
+#: ../pacman-g2.c:565
 #, c-format
 msgid "failed to set option DLXFERED1 (%s)\n"
 msgstr "fejlede at opsætte indstilling DLXFERED1 (%s)\n"
 
-#: ../pacman-g2.c:566
+#: ../pacman-g2.c:569
 #, c-format
 msgid "failed to set option DLETA_H (%s)\n"
 msgstr "fejlede at opsætte indstilling DLETA_H (%s)\n"
 
-#: ../pacman-g2.c:570
+#: ../pacman-g2.c:573
 #, c-format
 msgid "failed to set option DLETA_M (%s)\n"
 msgstr "fejlede at opsætte indstilling DLETA_M (%s)\n"
 
-#: ../pacman-g2.c:574
+#: ../pacman-g2.c:577
 #, c-format
 msgid "failed to set option DLETA_S (%s)\n"
 msgstr "fejlede at opsætte indstilling DLETA_S (%s)\n"
 
-#: ../pacman-g2.c:578
+#: ../pacman-g2.c:581
 #, c-format
 msgid "failed to set option DLREMAIN (%s)\n"
 msgstr "fejlede at opsætte indstilling DLREMAIN (%s)\n"
 
-#: ../pacman-g2.c:582
+#: ../pacman-g2.c:585
 #, c-format
 msgid "failed to set option DLHOWMANY (%s)\n"
 msgstr "fejlede at opsætte indstilling DLHOWMANY (%s)\n"
 
-#: ../pacman-g2.c:590
+#: ../pacman-g2.c:593
 #, c-format
 msgid "failed to set option IGNOREPKG (%s)\n"
 msgstr "fejlede at opsætte indstilling IGNOREPKG (%s)\n"
 
-#: ../pacman-g2.c:598
+#: ../pacman-g2.c:601
 msgid "Targets:"
 msgstr "Målene:"
 
-#: ../pacman-g2.c:604
+#: ../pacman-g2.c:607
 #, c-format
 msgid "could not register 'local' database (%s)\n"
 msgstr "kunne ikke registre 'local' database (%s)\n"
 
-#: ../pacman-g2.c:611
+#: ../pacman-g2.c:614
 msgid "no targets specified (use -h for help)\n"
 msgstr "ingen mål specificeret (brug -h for hjælp)\n"
 
-#: ../pacman-g2.c:624
+#: ../pacman-g2.c:627
 msgid "no operation specified (use -h for help)\n"
 msgstr "ingen handling specificeret (brug -h for hjælp)\n"
 
