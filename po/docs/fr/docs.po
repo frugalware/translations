@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-10-05 04:49+0200\n"
-"PO-Revision-Date: 2007-10-05 12:59+0200\n"
+"PO-Revision-Date: 2007-10-05 13:14+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -10395,6 +10395,8 @@ msgid ""
 "To really activate quotas, you'll need to add `usrquota` to the appropriate "
 "partitions as listed in `/etc/fstab`.  Here's an example:"
 msgstr ""
+"Pour activé réellement les quotas, vous devez ajouter `usrquota` au "
+"partitions appropriées listés dans `/etc/fstab`.  Voici un exemple:"
 
 # type: Plain text
 #: user.txt:3604 packages.txt:2140
@@ -10403,6 +10405,8 @@ msgid ""
 "/dev/hda2   /home   ext2   defaults,usrquota    1   1\n"
 "----\n"
 msgstr ""
+"/dev/hda2   /home   ext2   defaults,usrquota    1   1\n"
+"----\n"
 
 # type: Plain text
 #: user.txt:3608 packages.txt:2144
@@ -10410,6 +10414,9 @@ msgid ""
 "When you want quota support for a given partition, some special files have "
 "to be created boot-time. This is not done by default. To do so, you need to"
 msgstr ""
+"Quand vous voulez le support pour les quota sur une partition donnée, "
+"quelques fichiers spéciaux doivent être créé au démarrage. Cela ne ce fait "
+"pas automatiquement par défaut. Pour le réaliser, vous devez faire"
 
 # type: Plain text
 #: user.txt:3611 packages.txt:2147
@@ -10418,16 +10425,20 @@ msgid ""
 "# touch /var/lib/quota/new\n"
 "----\n"
 msgstr ""
+"# touch /var/lib/quota/new\n"
+"----\n"
 
 # type: Plain text
 #: user.txt:3614 packages.txt:2150
 msgid "then, reboot to create those files."
-msgstr ""
+msgstr "ensuite, redémarrer pour créer ces fichiers."
 
 # type: Plain text
 #: user.txt:3616 packages.txt:2152
 msgid "To edit user quotas, use `edquota`.  See `man edquota`."
 msgstr ""
+"Pour éditer les quotas utilisateurs, utilisez `edquota`.  Regardez `man "
+"edquota` pour plus d'information."
 
 # type: Plain text
 #: user.txt:3618
@@ -15757,9 +15768,8 @@ msgstr "== gnome-applets"
 
 # type: Plain text
 #: packages.txt:1215
-#, fuzzy
 msgid "== help2man"
-msgstr "== Repoman"
+msgstr "== help2man"
 
 # type: Plain text
 #: packages.txt:1223
@@ -16023,9 +16033,8 @@ msgstr "=== Astuces"
 
 # type: Plain text
 #: packages.txt:2134
-#, fuzzy
 msgid "== quota-tools"
-msgstr "== kexec-tools"
+msgstr "== quota-tools"
 
 # type: Plain text
 #: packages.txt:2154
