@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hu\n"
-"POT-Creation-Date: 2007-10-20 04:51+0200\n"
-"PO-Revision-Date: 2007-10-20 23:12+0200\n"
+"POT-Creation-Date: 2007-10-21 04:53+0200\n"
+"PO-Revision-Date: 2007-10-21 22:34+0200\n"
 "Last-Translator: Konkoly Katalin <katalin.konkoly@gmail.com>\n"
 "Language-Team: <hu@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -226,9 +226,9 @@ msgstr "* link:security.html[Biztonsági frissítések]\n"
 
 # type: Bullet: '* '
 #: index.txt:59 index-devel.txt:18
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "* link:repos.html[Handling git repos]\n"
-msgstr "* link:repos.html[Git repók kezelése]\n"
+msgstr "* link:repos.html[Git tárolók kezelése]\n"
 
 # type: Bullet: '* '
 #: index.txt:61 index-devel.txt:22
@@ -470,8 +470,7 @@ msgid ""
 msgstr ""
 ".Itt egy lista az általában a parancssorokhoz használt prefixekről: * A `$` "
 "azt jelenti, hogy bármilyen felhasználó futtathatja a parancsot. Ez a "
-"legtöbb esetben azt jelenti, hogy a saját felhasználóneveddel kell "
-"futtatnod."
+"legtöbb esetben azt jelenti, hogy a saját felhasználóneveddel kell futtatnod."
 
 # type: Plain text
 #: user.txt:49
@@ -485,11 +484,9 @@ msgid ""
 "+\n"
 "-----------\n"
 msgstr ""
-"* `felhasznalo$` azt jelenti, hogy egy bizonyos felhasználó nevében kell "
-"futtatni a parancsot. Ez a legtöbb esetben biztonsági okok miatt szükséges.\n"
+"* `felhasznalo$` azt jelenti, hogy egy bizonyos felhasználó nevében kell futtatni a parancsot. Ez a legtöbb esetben biztonsági okok miatt szükséges.\n"
 "+\n"
-"Ha egy interaktív shellt szeretnénk a 'felhasznalo' számára, a következő "
-"parancsra lesz szükségünk:\n"
+"Ha egy interaktív shellt szeretnénk a 'felhasznalo' számára, a következő parancsra lesz szükségünk:\n"
 "+\n"
 "-----------\n"
 
@@ -514,8 +511,7 @@ msgid ""
 "+\n"
 "------\n"
 msgstr ""
-"* `#` azt jelzi, hogy a `root` felhasználó jogosultságai szükségesek a "
-"parancs futtatásához.\n"
+"* `#` azt jelzi, hogy a `root` felhasználó jogosultságai szükségesek a parancs futtatásához.\n"
 "Ez általában a rendszerbeállítások megváltoztatásakor fordul elő.\n"
 "+\n"
 "A 'root' felhasználó interaktív shelljét a következő módon kapod meg:\n"
@@ -567,8 +563,7 @@ msgstr ""
 "rendezgettem volna, majd ezek a részek egyszer csak csillogó\n"
 "piros Ferrarivá álltak volna össze, nyitott ajtóval, a zárban lógó\n"
 "kulccsal és a motor hatalmas erőt ígérő nyájas dorombolásával...\n"
-"____________________________________________________________________________"
-"____\n"
+"________________________________________________________________________________\n"
 
 # type: Plain text
 #: user.txt:81 about.txt:19
@@ -583,8 +578,8 @@ msgstr ""
 "gyorsabbá tétele volt. Reméljük, hogy elnyeri tetszésedet. Ebben a "
 "bevezetőben meg szeretnénk válaszolni néhány kérdést, amelyeket számos "
 "VMiklossal készült interjúban feltettek már, aki projekt alapítója. A "
-"Frugalware-rel kapcsolatban megjelent cikkek teljes listáját "
-"http://frugalware.org/media[itt] érheted el."
+"Frugalware-rel kapcsolatban megjelent cikkek teljes listáját http://"
+"frugalware.org/media[itt] érheted el."
 
 # type: Plain text
 #: user.txt:83
@@ -662,15 +657,15 @@ msgid ""
 "files.''"
 msgstr ""
 "``A Frugalware licence a Frugalware elkészítéséhez használt buildscriptek "
-"licencét jelentik. A forráskód elérhető GPL licenc alatt "
-"http://git.frugalware.org[itt]. A Frugalware eredetileg használtt Patrick J. "
+"licencét jelentik. A forráskód elérhető GPL licenc alatt http://git."
+"frugalware.org[itt]. A Frugalware eredetileg használtt Patrick J. "
 "Volkerding, a Slackware Linux disztribúció alapítója, által írt "
 "rendszerindító scripteket. A mi változtatásaink GPL alatt érhetőek el, de "
 "Patrick J. Volkerding kódja önmagában BSD licencű.  A Frugalware-hez "
 "kapcsolódik néhány projekt, mint például a pacman-g2 csomagkezelő, a "
 "Frugalware telepítő, és hasonlók. Ezek is a GPL licenc alatt érhetőek el. A "
-"Frugalware-ben szállított csomagok licencével kapcsolatban a "
-"/usr/share/doc/*/COPYING file-ok a mérvadóak.''"
+"Frugalware-ben szállított csomagok licencével kapcsolatban a /usr/share/doc/"
+"*/COPYING file-ok a mérvadóak.''"
 
 # type: Plain text
 #: user.txt:116 about.txt:54
@@ -710,10 +705,9 @@ msgid ""
 msgstr ""
 "``Nincsen különálló programunk a programok frissítéséhez, mivel a pacman-g2 "
 "ezt a feladatot is elvégzi. A csomagadatbázis frissítéséhez használható a "
-"`pacman-g2 -Sy` parancs, és a tényleges csomagfrissítéshez a `pacman-g2 "
-"-Su`. A `foo` csomag és függőségeinek telepítéséhez az ftp szervereinkről a "
-"`pacman-g2 -S foo` használandó. További információ a pacman-g2 man "
-"oldalán.''"
+"`pacman-g2 -Sy` parancs, és a tényleges csomagfrissítéshez a `pacman-g2 -"
+"Su`. A `foo` csomag és függőségeinek telepítéséhez az ftp szervereinkről a "
+"`pacman-g2 -S foo` használandó. További információ a pacman-g2 man oldalán.''"
 
 # type: Plain text
 #: user.txt:133 about.txt:71
@@ -734,8 +728,8 @@ msgstr ""
 "fórumokon tudunk kommunikálni a fejlesztőkkel vagy a többi felhasználóval. "
 "Az elérhető levelezési listákról http://frugalware.org/mailman/listinfo[itt] "
 "található több információ.  Az irc csatornák a Freenode hálózaton "
-"találhatóak (kiszolgáló: `irc.freenode.net`), a fórumok "
-"http://forums.frugalware.org[itt] érhetőek el.''"
+"találhatóak (kiszolgáló: `irc.freenode.net`), a fórumok http://forums."
+"frugalware.org[itt] érhetőek el.''"
 
 # type: Plain text
 #: user.txt:141 about.txt:79
@@ -855,8 +849,8 @@ msgid ""
 "``Yes, you can reach test iso images in our http://frugalware.org/download/"
 "frugalware-testing-iso[testing-iso] directory.''"
 msgstr ""
-"``Igen, az iso-fájlok a http://frugalware.org/download/frugalware-testing-"
-"iso[testing-iso] könyvtárban találhatók.''"
+"``Igen, az iso-fájlok a http://frugalware.org/download/frugalware-testing-iso"
+"[testing-iso] könyvtárban találhatók.''"
 
 # type: Plain text
 #: user.txt:188 about.txt:126
@@ -954,8 +948,7 @@ msgstr ""
 "* Offline és netboot telepítés támogatott\n"
 "* Előre gyártott CD/DVD, USB és TFTP képmások érhetőek el\n"
 "* A honosítás támogatott, ahol csak lehet\n"
-"* Körülbelül 3000 forráscsomag és 3200 bináris csomag érhető el. (2007 "
-"február)\n"
+"* Körülbelül 3000 forráscsomag és 3200 bináris csomag érhető el. (2007 február)\n"
 
 # type: Plain text
 #: user.txt:226
@@ -973,10 +966,7 @@ msgstr "=== A telepítés módjának kiválasztása"
 msgid ""
 "Depending on your needs, there are different installers with\n"
 " different characteristics. You can choose which fits you the best.\n"
-msgstr ""
-"A követelményektől függően különböző telepítők érhetőek el, különböző "
-"tulajdonságokkal. Azt érdemes választanod, amelyik a legmegfelelőbb "
-"számodra."
+msgstr "A követelményektől függően különböző telepítők érhetőek el, különböző tulajdonságokkal. Azt érdemes választanod, amelyik a legmegfelelőbb számodra."
 
 # type: Plain text
 #: user.txt:233
@@ -1013,9 +1003,7 @@ msgstr "==== Telepítés DVD-ről"
 msgid ""
 "If you don't have any Internet connection but you want language packs and\n"
 " other optional packages, you'll need two DVDs.\n"
-msgstr ""
-"Ha nincsen internet-kapcsolatod, de szeretnél nyelvi csomagokat és egyéb "
-"opcionális csomagokat, akkor két DVD-re lesz szükséged."
+msgstr "Ha nincsen internet-kapcsolatod, de szeretnél nyelvi csomagokat és egyéb opcionális csomagokat, akkor két DVD-re lesz szükséged."
 
 # type: Plain text
 #: user.txt:246 install.txt:22
@@ -1044,8 +1032,7 @@ msgid ""
 "which are downloaded on-the-fly as required."
 msgstr ""
 "Ez egy kicsi, 32MB-nál kisebb ISO kép, mely be tud bootolni, hálózatot "
-"beállítani és a kijelölt csomagokat a netről letöltve a rendszert "
-"telepíteni."
+"beállítani és a kijelölt csomagokat a netről letöltve a rendszert telepíteni."
 
 # type: Plain text
 #: user.txt:258 install.txt:34
@@ -1105,8 +1092,7 @@ msgid ""
 msgstr ""
 "$ wget ftp://ftp5.frugalware.org/packages/frugalware/pub/frugalware/\\\n"
 "frugalware-stable-iso/fwchroot-<verzió>-<architektúra>.tar.bz2\n"
-"----------------------------------------------------------------------------"
-"----\n"
+"--------------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:278 install.txt:54
@@ -1164,8 +1150,7 @@ msgstr "4. Használd (fordíts le egy-két csomagot)\n"
 #: user.txt:292 install.txt:68
 #, no-wrap
 msgid "5. Exit from the shell and fwbootstrap will unmount the necessary dirs for you.\n"
-msgstr "5. Lépj ki a parancssorból és az fwbootstrap le fogja mountolni a megfelelő "
-"könyvtárakat.\n"
+msgstr "5. Lépj ki a parancssorból és az fwbootstrap le fogja mountolni a megfelelő könyvtárakat.\n"
 
 # type: Plain text
 #: user.txt:295 install.txt:71
@@ -1258,11 +1243,7 @@ msgid ""
 "A Frugalware installation media can be obtained from several sources. You can\n"
 " download it freely via HTTP, FTP or rsync. You can also grab it via bittorrent,\n"
 "see http://linuxtracker.org/torrents-details.php?id=2864[Linuxtracker] for example.\n"
-msgstr ""
-"A Frugalware telepítő több helyről is beszerezhető. Ingyenesen letölthető "
-"HTTP-n, FTP-n vagy rsync-en keresztül. Esetleg bittorrent segítségével is "
-"letöltheted, például a http://linuxtracker.org/torrents-"
-"details.php?id=2864[Linuxtracker] oldalról."
+msgstr "A Frugalware telepítő több helyről is beszerezhető. Ingyenesen letölthető HTTP-n, FTP-n vagy rsync-en keresztül. Esetleg bittorrent segítségével is letöltheted, például a http://linuxtracker.org/torrents-details.php?id=2864[Linuxtracker] oldalról."
 
 # type: Plain text
 #: user.txt:327 install.txt:103
@@ -1297,8 +1278,7 @@ msgid ""
 msgstr ""
 "$ wget ftp://ftp3.frugalware.org/mirrors/frugalware/pub/frugalware/\\\n"
 "frugalware-$version$-iso/frugalware-$version$-$arch$-$media$.iso\n"
-"----------------------------------------------------------------------------"
-"----\n"
+"--------------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:336 install.txt:112
@@ -1315,8 +1295,7 @@ msgid ""
 msgstr ""
 "$ wget http://www5.frugalware.org/linux/frugalware/pub/frugalware/\\\n"
 "frugalware-$version$-iso/frugalware-$version$-$arch$-$media$.iso\n"
-"----------------------------------------------------------------------------"
-"----\n"
+"--------------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:343 install.txt:119
@@ -1332,10 +1311,8 @@ msgid ""
 "--------------------------------------------------------------------------------\n"
 msgstr ""
 "$ rsync -avP rsync://rsync4.frugalware.org/ftp/pub/linux/distributions/\\\n"
-"frugalware/frugalware-$version$-iso/frugalware-$version$-$arch$-$media$.iso "
-"./\n"
-"----------------------------------------------------------------------------"
-"----\n"
+"frugalware/frugalware-$version$-iso/frugalware-$version$-$arch$-$media$.iso ./\n"
+"--------------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:351 install.txt:127
@@ -1367,10 +1344,10 @@ msgid ""
 "pacman-g2 -Scc ;) ): mount the media and install all the .fpm's found in "
 "frugalware-i686 (or frugalware-x86_64) dir to '/var/cache/pacman/pkg'."
 msgstr ""
-"Az első az egyszerűbb, de elég sok szabad helyet igényel (továbbá a "
-"pacman-g2 -Scc elkerülését ;) ): csatoljuk fel a telepítő médiát és másoljuk "
-"át a frugalware-i686 (vagy frugalware-x86_64) könyvtár tartalmát a "
-"'/var/cache/pacman/pkg' könyvtárba."
+"Az első az egyszerűbb, de elég sok szabad helyet igényel (továbbá a pacman-"
+"g2 -Scc elkerülését ;) ): csatoljuk fel a telepítő médiát és másoljuk át a "
+"frugalware-i686 (vagy frugalware-x86_64) könyvtár tartalmát a '/var/cache/"
+"pacman/pkg' könyvtárba."
 
 # type: Plain text
 #: user.txt:364 install.txt:140
@@ -1505,7 +1482,6 @@ msgstr ""
 
 # type: Plain text
 #: user.txt:414 install.txt:190
-#, fuzzy
 msgid ""
 ".. Now you should select your connection type. The installer uses the "
 "netconfig utility. You can also find the documentation for netconfig in this "
@@ -1538,6 +1514,13 @@ msgid ""
 "swap'). The swap size should be 500-1000MB. When you have finished "
 "partitioning, press <Continue>."
 msgstr ""
+"A következő lépés a particionálás. A Frugalware telepítő felsorolja a "
+"meglévő merevlemezeket, válaszd ki azt, amelyiket particionálni akarod. A "
+"particionáló programot a következő ablakban lehet kiválasztani, jelenleg az "
+"fdisk és a cfdisk áll rendelkezésre. Létre kell hozni legalább egy 'Linux' "
+"típusú partíciót, és ajánlatos egy swap partíció is ('Linux swap' típusú). A "
+"swap mérete 500-1000 MB legyen. Ha elkészültél a particionálással, nyomd "
+"meg a <Tovább> gombot."
 
 # type: Plain text
 #: user.txt:429 install.txt:205
@@ -1547,6 +1530,9 @@ msgid ""
 "formats your swap partitions. If you have no swap partition just press "
 "<Cancel>!"
 msgstr ""
+"- Az alábbi lista tartalmazza a swap partíciókat. Itt kiválaszthatod, hogy a "
+"Frugalware ezek közül melyiket használhatja. Ezután a telepítő formázza a "
+"swap partíciót. Ha nincs ilyen partíciód, nyomd meg a <Mégsem> gombot."
 
 # type: Plain text
 #: user.txt:435 install.txt:211
@@ -1557,6 +1543,12 @@ msgid ""
 "optionally format them, and set their mount points. Using a separate "
 "partition is supported for /boot, /home, /var, but not yet for /usr."
 msgstr ""
+"- A következő ablakban előbb ki kell választani a gyökérpartíciót, majd "
+"eldöntheted, hogy akarod-e formázni, vagy megtartod a rajta lévő "
+"fájlrendszert. A gyökérpartíció kiválasztása után más Linux partíciókat is "
+"megadhatsz, tetszőlegesen formázhatod is ezeket, és beállíthatod a csatolási "
+"pontokat. A /boot, /home, /var lehet külön partíción, az /usr esetében ez "
+"egyelőre nem támogatott."
 
 # type: Plain text
 #: user.txt:439 install.txt:215
@@ -1565,6 +1557,9 @@ msgid ""
 "your DOS/Windows ones. Setup will display a list of them, if any exists.  "
 "You should simply choose a mount point for them here."
 msgstr ""
+"- Miután megadtad a Linux partíciók csatolási pontját, ugyenezt megteheted a "
+"DOS/Windows partíciókkal is. A telepítő kilistázza ezeket, egyszerűen csak "
+"meg kell adni nekik egy csatolási pontot."
 
 # type: Plain text
 #: user.txt:449 install.txt:225
@@ -3637,8 +3632,7 @@ msgid ""
 "+\n"
 "--------------------------------------------------------------\n"
 msgstr ""
-"- Töltsük le a pacman-g2 git repót és fordítsuk le hibakeresési "
-"támogatással:\n"
+"- Töltsük le a pacman-g2 git repót és fordítsuk le hibakeresési támogatással:\n"
 "+\n"
 "--------------------------------------------------------------\n"
 
@@ -3739,11 +3733,11 @@ msgid ""
 "implemented only in git, without increasing the package release. This means "
 "that it will be automatically included in the next release."
 msgstr ""
-"Sokszor egy funkciókérést vagy hibajelentést a \"Fixed in git ...\" üzenettel "
-"zárjuk le. A git a forráskódkezelõ (SCM) rendszerünk (olyan, mint a CVS). Ha "
-"az adott hiba/funkció nem elég fontos ahhoz, hogy egy új csomagot adjunk "
-"ki, akkor csak a git-ben javítjuk. Ez azt jelenti, hogy a következő kiadásba "
-"automatikusan be fog kerülni."
+"Sokszor egy funkciókérést vagy hibajelentést a \"Fixed in git ...\" "
+"üzenettel zárjuk le. A git a forráskódkezelõ (SCM) rendszerünk (olyan, mint "
+"a CVS). Ha az adott hiba/funkció nem elég fontos ahhoz, hogy egy új csomagot "
+"adjunk ki, akkor csak a git-ben javítjuk. Ez azt jelenti, hogy a következő "
+"kiadásba automatikusan be fog kerülni."
 
 # type: Bullet: '* '
 #: user.txt:1352
