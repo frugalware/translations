@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hu\n"
-"POT-Creation-Date: 2007-10-21 04:53+0200\n"
-"PO-Revision-Date: 2007-10-21 22:34+0200\n"
+"POT-Creation-Date: 2007-10-22 04:51+0200\n"
+"PO-Revision-Date: 2007-10-22 22:07+0200\n"
 "Last-Translator: Konkoly Katalin <katalin.konkoly@gmail.com>\n"
 "Language-Team: <hu@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -643,7 +643,6 @@ msgstr "'Mi a Frugalware licence?'"
 
 # type: Plain text
 #: user.txt:114 about.txt:52
-#, fuzzy
 msgid ""
 "``The license of Frugalware itself stands for the license of the "
 "buildscripts used for building Frugalware. That source is available under "
@@ -657,15 +656,15 @@ msgid ""
 "files.''"
 msgstr ""
 "``A Frugalware licence a Frugalware elkészítéséhez használt buildscriptek "
-"licencét jelentik. A forráskód elérhető GPL licenc alatt http://git."
-"frugalware.org[itt]. A Frugalware eredetileg használtt Patrick J. "
-"Volkerding, a Slackware Linux disztribúció alapítója, által írt "
-"rendszerindító scripteket. A mi változtatásaink GPL alatt érhetőek el, de "
+"licencét jelentik. A forráskód elérhető GPL licenc alatt "
+"http://git.frugalware.org[itt]. A Frugalware eredetileg használt néhány "
+"rendszerindító scriptet, amelyeket Patrick J. Volkerding, a Slackware Linux "
+"disztribúció alapítója írt. A mi változtatásaink GPL alatt érhetőek el, de "
 "Patrick J. Volkerding kódja önmagában BSD licencű.  A Frugalware-hez "
 "kapcsolódik néhány projekt, mint például a pacman-g2 csomagkezelő, a "
 "Frugalware telepítő, és hasonlók. Ezek is a GPL licenc alatt érhetőek el. A "
-"Frugalware-ben szállított csomagok licencével kapcsolatban a /usr/share/doc/"
-"*/COPYING file-ok a mérvadóak.''"
+"Frugalware-ben szállított csomagok licencével kapcsolatban a "
+"/usr/share/doc/*/COPYING file-ok a mérvadóak.''"
 
 # type: Plain text
 #: user.txt:116 about.txt:54
@@ -1519,8 +1518,8 @@ msgstr ""
 "particionáló programot a következő ablakban lehet kiválasztani, jelenleg az "
 "fdisk és a cfdisk áll rendelkezésre. Létre kell hozni legalább egy 'Linux' "
 "típusú partíciót, és ajánlatos egy swap partíció is ('Linux swap' típusú). A "
-"swap mérete 500-1000 MB legyen. Ha elkészültél a particionálással, nyomd "
-"meg a <Tovább> gombot."
+"swap mérete 500-1000 MB legyen. Ha elkészültél a particionálással, nyomd meg "
+"a <Tovább> gombot."
 
 # type: Plain text
 #: user.txt:429 install.txt:205
@@ -1573,6 +1572,16 @@ msgid ""
 "the default) then you will only see the groups, but not the individual "
 "packages. So after picking the groups installation starts."
 msgstr ""
+"A következő lépésben el kell döntened, hogy akarod-e használni a haladó "
+"menüt, vagy sem. A haladó menüben a kategóriák kiválasztása után egyesével "
+"lehet dönteni az adott kategóriában található egyes csomagok telepítéséről. "
+"Ha például az \"apps\" és \"base\" kategóriákat választod, a telepítő felkínálja "
+"az \"apps\"-ban található csomagokat, majd ha ezekből kiválasztottad a "
+"szükségeseket, megteheted ugyanezt a \"base\"-ben lévőkkel. A válogatás "
+"befejeztével elindul a telepítés. + Ha a normál menüt választod (ez az "
+"alapértelmezés), akkor csak a csoportokat fogod látni, nem az egyes "
+"csomagokat. Ekkor a neked megfelelő csoportok kiválasztása után indul a "
+"telepítés."
 
 # type: Plain text
 #: user.txt:458 install.txt:234
@@ -1601,6 +1610,10 @@ msgid ""
 "have only one disc, feel free to abort installing packages, you can install "
 "anything else from the net later."
 msgstr ""
+"A telepítő felrakja azokat a csomagokat, amelyeket az első CD-ről "
+"választottál ki. Ha ez kész, kéri, hogy tedd be  akövetkező Frugalware "
+"telepítő CD-t. Ha csak egy CD-d van, nyugodtan kiléphetsz a "
+"csomagtelepítésből, a netről később bármit lehet telepíteni."
 
 # type: Plain text
 #: user.txt:465
@@ -1619,6 +1632,9 @@ msgid ""
 "new Frugalware system. If you installed the packages manually, then you'll "
 "have to perform those configuration steps manually."
 msgstr ""
+"A csomagok telepítése után a Frugalware telepítő beállítja az új Frugalware "
+"rendszert. Ha kézzel telepítetted a csomagokat, akkor a beállításokat is "
+"kézzel kell elvégezned."
 
 # type: Plain text
 #: user.txt:474 postinst.txt:11
@@ -1626,6 +1642,8 @@ msgid ""
 "NOTE: If any problem occurs, there is a debug console on `tty4`, you can see "
 "that by pressing `Alt-F4`. You can switch back by hitting `Alt-F1`."
 msgstr ""
+"NOTE: Ha bármi gond van, a `tty4`-en van egy hibakereső konzol, amit az "
+"`Alt-F4` megnyomásával érhetsz el. Az első konzolra az `Alt-F1` visz vissza."
 
 # type: Plain text
 #: user.txt:476
@@ -1643,6 +1661,13 @@ msgid ""
 "your existing boot manager. Floppy is a good idea for example if you don't "
 "have any boot manager installed, but you want to leave your MBR unmodified."
 msgstr ""
+"Az első lépés a GRUB telepítése a merevlemezre. Itt négy választási "
+"lehetőség adódik: telepítés az MBR-be, a gyökérpartícióra, floppyra, vagy a "
+"telepítés kihagyása. Ha a Frugalware-re bízod a számítógép indítását, akkor "
+"az MBR jó választás. A gyökérpartícióra akkor telepítsd, ha nem akarod, hogy "
+"megváltozzon a már meglévő rendszerindítód (boot manager). A floppy akkor "
+"lehet jó megoldás, ha nincs telepítve rendszerindító program, de nem is "
+"akarod megváltoztatni az MBR meglévő állapotát."
 
 # type: Plain text
 #: user.txt:486 user.txt:5133
@@ -1655,6 +1680,8 @@ msgid ""
 "After the installation of grub, the installer will configure your kernel "
 "modules. This means that an information dialog appears, but nothing more."
 msgstr ""
+"A GRUB telepítése után a telepítő beállítja a kernelmodulokat. Ez annyit "
+"jelent, hogy megjelenik egy tájékoztató ablak, semmi más."
 
 # type: Plain text
 #: user.txt:491
@@ -1668,6 +1695,9 @@ msgid ""
 "very important as there is no default password. If you skip this step, "
 "anybody will be able to login as root."
 msgstr ""
+"A modulok beállítása után következik a root jelszó megadása. Ez nagyon "
+"fontos, hiszen nincs előre megadva jelszó. Ha ezt a lépést kihagyod, bárki "
+"képes lesz rootként belépni a rendszerbe."
 
 # type: Plain text
 #: user.txt:500 postinst.txt:37
@@ -1677,6 +1707,11 @@ msgid ""
 "command should be run as root, you should use su or sudo under console, and "
 "`gksu` or `kdesu` under X."
 msgstr ""
+"Ezután létrehozhatsz egy hétköznapi (nem-root) felhasználót. Erősen "
+"ajánljuk, hogy hozz létre egy ilyen felhasználót, és ezt a fiókot használd a "
+"mindennapi belépéshez. Ha egy parancsot rootként kell futtatni, használd a "
+"su vagy sudo parancsot konzolon, illetve grafikus felületen a `gksu` vagy "
+"`kdesu` lehetőségeket."
 
 # type: Plain text
 #: user.txt:502
@@ -1689,6 +1724,9 @@ msgid ""
 "After this, setup will configure your network settings. Setup simply runs "
 "the netconfig utility, which is described in the Networking section."
 msgstr ""
+"Most a telepítő beállítja a hálózatot. Itt egyszerűen a netconfig nevű "
+"segédprogram futtatásáról van szó, amit a Hálózatkezelés részben magyarázunk "
+"el."
 
 # type: Plain text
 #: user.txt:507
@@ -1705,6 +1743,12 @@ msgid ""
 "are set up), say no here. If you are not sure what is this, you should "
 "answer no here."
 msgstr ""
+"A hálózat beállítása után a rendszeridő következik. Ez két dolgot jelent: "
+"először is meg kell határozni, hogy a hardver (BIOS) óra a koordinált "
+"világidőre (UTC) van-e beállítva. Ha igen, itt válaszd az Igen gombot. Ha a "
+"hardveróra a helyi időre van beállítva (a legtöbb PC-n így van), akkor "
+"válaszd a Nem-et. Ha nem tudod, mi is ez az egész, inkább a Nem gombot "
+"válaszd."
 
 # type: Plain text
 #: user.txt:515
@@ -1718,6 +1762,9 @@ msgid ""
 "on the console mouse services (gpm) and on the X server.  The setting is "
 "done by xconfig later."
 msgstr ""
+"A következő lépés az egér beállítása. A beállított értékek a konzolon (gpm) "
+"és az X szerveren is érvényesülnek.  A beállítást később az xconfig "
+"segítségével végezheted el."
 
 # type: Plain text
 #: user.txt:521
@@ -1731,6 +1778,9 @@ msgid ""
 "xconfig. For more information on xconfig, see the section Graphical "
 "interface (X11)."
 msgstr ""
+"Ha telepítettél X szervert (alapértelmezésben ez az xorg), a telepítő most "
+"lefuttatja az xconfig-ot. Erről további információt a Grafikus felület (X11) "
+"fejezetben olvashatsz."
 
 # type: Plain text
 #: user.txt:527
@@ -1740,7 +1790,7 @@ msgstr "== Pacman-G2"
 # type: Plain text
 #: user.txt:529
 msgid "=== Basics"
-msgstr ""
+msgstr "=== Alapok"
 
 # type: Plain text
 #: user.txt:536 pacman-g2.txt:11
@@ -1752,11 +1802,18 @@ msgid ""
 "for details.  If you want to do anything with packages, you'll always have "
 "to use the `pacman-g2` command. Here are some basic actions with `pacman-g2`:"
 msgstr ""
+"A Frugalware a Pacman-G2 csomagkezelőt használja. A Pacman-G2 tulajdonképpen "
+"egy forkja az Aurelien Foret által teljesen újraírt pacman-g1 még ki nem "
+"adott cvs-verziójának (a régi monolitikus pacman-g1-et Judd Vinet írta). "
+"Részleteket olvashatsz a  "
+"http://ftp.frugalware.org/pub/other/pacman-g2/pacman-g2/README[README] "
+"oldalon. ha bármilyen csomagműveletet akarsz végrehajtani, mindig a "
+"`pacman-g2` parancsot használd. Alább láthatsz néhány példát a használatára:"
 
 # type: Plain text
 #: user.txt:538 pacman-g2.txt:13
 msgid "Actions usually used with remote installation from an FTP server:"
-msgstr ""
+msgstr "FTP szerverről történő távoli telepítéshez használt parancsok:"
 
 # type: Plain text
 #: user.txt:539 user.txt:546 user.txt:2593 pacman-g2.txt:14 pacman-g2.txt:21
@@ -1781,6 +1838,8 @@ msgid ""
 "Updates the package database. Before searching for packages or installing "
 "them from an FTP server, you will have to use this command."
 msgstr ""
+"Frissíti a csomagadatbázist. Csomagok keresése vagy FTP szerverről való "
+"telepítés előtt ezt a parancsot kell kiadni."
 
 # type: Plain text
 #: user.txt:548 pacman-g2.txt:23
@@ -1798,6 +1857,8 @@ msgid ""
 "Upgrades all packages that are currently installed but a newer version of "
 "the package is available on the FTP server."
 msgstr ""
+"Frissít minden olyan csomagot, amely jelenleg telepítve van, de létezik "
+"frissebb változata az FTP szerveren."
 
 # type: Plain text
 #: user.txt:553 user.txt:559 user.txt:2953 pacman-g2.txt:28 pacman-g2.txt:34
@@ -1821,6 +1882,8 @@ msgstr ""
 msgid ""
 "The combination of the above two, that is the command most users use daily."
 msgstr ""
+"Az előbbi két parancs kombinációja, a legtöbb felhasználó naponta "
+"alkalmazza."
 
 # type: Plain text
 #: user.txt:561 pacman-g2.txt:36
@@ -1840,13 +1903,18 @@ msgid ""
 "pacman/pkg. This is very useful if you have limited bandwidth at your "
 "computer, but you can access high bandwidth elsewhere."
 msgstr ""
+"Kiírja mindazon csomagok URL-jét, amelyeket a pacman-g2 le fog tölteni. Ily "
+"módon bárhol letöltheted a szükséges csomagokat, majd bemásolhatod a "
+"/var/cache/pacman/pkg könyvtárba. Ez olyankor hasznos lehetőség, ha "
+"korlátozott sávszélességed van a számítógépeden, de valahol másutt nagyobb "
+"sávszélességhez tudsz hozzáférni."
 
 # type: Plain text
 #: user.txt:568 user.txt:1654 user.txt:2614 pacman-g2.txt:43 packages.txt:190
 #: packages.txt:1150
 #, no-wrap
 msgid "-----------------------\n"
-msgstr ""
+msgstr "-----------------------\n"
 
 # type: Plain text
 #: user.txt:570 pacman-g2.txt:45
@@ -1865,13 +1933,16 @@ msgid ""
 "conflicts with any package, you will be asked if pacman-g2 is allowed to "
 "remove them."
 msgstr ""
+"Telepíti a sendmailt minden függőségével együtt egy FTP szerverről. Ha "
+"bármilyen csomaggal ütközik, akkor a pacman-g2 megkérdezi, hogy "
+"eltávolíthatja-e az ütközést okozó csomago(ka)t."
 
 # type: Plain text
 #: user.txt:576 user.txt:600 user.txt:1379 user.txt:1762 pacman-g2.txt:51
 #: pacman-g2.txt:75 mobile.txt:29 packages.txt:298
 #, no-wrap
 msgid "--------------------\n"
-msgstr ""
+msgstr "--------------------\n"
 
 # type: Plain text
 #: user.txt:578 pacman-g2.txt:53
@@ -1890,6 +1961,9 @@ msgid ""
 "probably display the perl package and all perl modules.  Regular expression "
 "based search is also supported."
 msgstr ""
+"Keresés a csomagadatbázisban (az FTP szerveren). A fenti példa eredménye egy "
+"lista lesz a perl csomagról és az összes perl modulról. A szabályos "
+"kifejezéseket (regular expression) tartalmazó keresés is támogatott."
 
 # type: Plain text
 #: user.txt:586 pacman-g2.txt:61
@@ -1897,6 +1971,8 @@ msgid ""
 "Of course, you can treat packages as normal files, and you can manually add/"
 "remove/etc them. Here are some examples:"
 msgstr ""
+"A csomagok kezelhetők normál fájlokként is, és kézzel is lehet "
+"telepíteni/eltávolítani őket. Néhány példa:"
 
 # type: Plain text
 #: user.txt:587 user.txt:1098 user.txt:3244 pacman-g2.txt:62 init.txt:72
@@ -1921,12 +1997,14 @@ msgid ""
 "Adds (or if it's already installed, upgrades) the zsh package, which is "
 "located in the current directory."
 msgstr ""
+"Telepíti (vagy ha már fent van, frissíti) a zsh csomagot, ami az aktuális "
+"könyvtárban van."
 
 # type: Plain text
 #: user.txt:594 user.txt:5007 pacman-g2.txt:69 makepkg.txt:441
 #, no-wrap
 msgid "-----------------\n"
-msgstr ""
+msgstr "-----------------\n"
 
 # type: Plain text
 #: user.txt:596 pacman-g2.txt:71
@@ -1941,7 +2019,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:599 pacman-g2.txt:74
 msgid "Removes the qt package."
-msgstr ""
+msgstr "Eltávolítja a qt csomagot."
 
 # type: Plain text
 #: user.txt:602 pacman-g2.txt:77
@@ -1957,6 +2035,8 @@ msgstr ""
 #: user.txt:605 pacman-g2.txt:80
 msgid "Shows every installed packages whose name contains the string perl."
 msgstr ""
+"Kilistázza az összes olyan csomagot, amelynek a neve tartalmazza a perl "
+"szót."
 
 # type: Plain text
 #: user.txt:609 pacman-g2.txt:84
@@ -1965,6 +2045,9 @@ msgid ""
 "should use the -f parameter, and if you want to turn off all dependency "
 "checking, you should use the -d switch."
 msgstr ""
+"Ha ki akarod kapcsolni az ütköző fájlok ellenőrzését, használd a -f "
+"kapcsolót, ha pedig minden függőség-ellenőrzést mellőzni akarsz, a -d "
+"kapcsolóval teheted meg."
 
 # type: Plain text
 #: user.txt:612 pacman-g2.txt:87
@@ -1983,6 +2066,9 @@ msgid ""
 "again, these are only the basics.  You can also use pacman-g2 -Sh or similar "
 "to get help on a particular task."
 msgstr ""
+"Megmutatja az összes lehetséges kapcsolót. Ezek persze csak az alapok. Egy "
+"adott feladat részletesebb leírását a pacman-g2 -Sh és hasonlók segítségével "
+"kaphatod meg."
 
 # type: Plain text
 #: user.txt:619 pacman-g2.txt:94
@@ -1990,11 +2076,13 @@ msgid ""
 "NOTE: Full documentation for pacman-g2 can be reached by issuing `man pacman-"
 "g2`."
 msgstr ""
+"NOTE: A pacman-g2 teljes dokumentációja a `man pacman-g2` parancs kiadásával "
+"érhető el."
 
 # type: Plain text
 #: user.txt:621
 msgid "=== Apt - pacman-g2 cross reference"
-msgstr ""
+msgstr "=== Apt - pacman-g2 összehasonlítása"
 
 # type: Plain text
 #: user.txt:624 pacman-g2.txt:99
@@ -2002,6 +2090,8 @@ msgid ""
 "For those who are familiar with the apt package management tool, here is a "
 "quick cross-reference."
 msgstr ""
+"Azoknak, akik jól ismerik az apt csomagkezelőt, összeállítottunk egy gyors "
+"kereszthivatkozási rendszert."
 
 # type: Plain text
 #: user.txt:627 pacman-g2.txt:102
@@ -2011,9 +2101,12 @@ msgid ""
 "Action                                      Apt command              Pacman command\n"
 "---------------------------------------------------------------------------------------\n"
 msgstr ""
-"`-------------------------------------------`------------------------`-----------------\n"
-"Action                                      Apt command              Pacman command\n"
-"---------------------------------------------------------------------------------------\n"
+"`-------------------------------------------`------------------------`------"
+"-----------\n"
+"Művelet                                      Apt parancs              Pacman "
+"parancs\n"
+"----------------------------------------------------------------------------"
+"-----------\n"
 
 # type: Plain text
 #: user.txt:635 pacman-g2.txt:110
@@ -2028,11 +2121,27 @@ msgid ""
 "Clean the package cache:                    apt-get clean            pacman-g2 -Sc\n"
 "---------------------------------------------------------------------------------------\n"
 msgstr ""
+"A csomagadatbázis frissítése:               apt-get update           "
+"pacman-g2 -Sy\n"
+"A telepített csomagok frissítése:       apt-get upgrade          pacman-g2 "
+"-Su\n"
+"Új csomag telepítése:                      apt-get install foo      "
+"pacman-g2 -S foo\n"
+"Csomag eltávolítása:                           apt-get remove foo       "
+"pacman-g2 -Rc foo\n"
+"Keresés a teljes csomag-adatbázisban:        apt-cache search foo     "
+"pacman-g2 -Ss foo\n"
+"Csomag telepítése fájlból:              dpkg -i foo.deb          pacman-g2 "
+"-A foo.fpm\n"
+"Átmeneti tároló kiürítése:                    apt-get clean            "
+"pacman-g2 -Sc\n"
+"----------------------------------------------------------------------------"
+"-----------\n"
 
 # type: Plain text
 #: user.txt:638
 msgid "== Networking"
-msgstr ""
+msgstr "== Hálózatkezelés"
 
 # type: Plain text
 #: user.txt:640
