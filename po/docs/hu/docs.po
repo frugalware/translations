@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hu\n"
 "POT-Creation-Date: 2007-10-23 04:51+0200\n"
-"PO-Revision-Date: 2007-10-23 08:44+0200\n"
+"PO-Revision-Date: 2007-10-23 22:13+0200\n"
 "Last-Translator: Konkoly Katalin <katalin.konkoly@gmail.com>\n"
 "Language-Team: <hu@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -2196,6 +2196,17 @@ msgid ""
 "when you set up wireless interfaces for example.  If you set up a wireless "
 "card netconfig will also ask your ESSID and encription key."
 msgstr ""
+". A következő párbeszédablakban ki kell választanod a hálózati kapcsolat "
+"módját.   Ha van belső hálókártyád, kiosztott IP-címed, átjáród és DNS-ed, a "
+"statikus részbe írd be a megfelelő értékeket. Ha az IP-címet egyDHCP "
+"szervertől kapod (általában a kábelmodemes szolgáltatók esetén van így, ez "
+"nem azonos a DSL szolgáltatóval), válaszd a dhcp-t. Ha DSL kapcsolatod van "
+"(pl. ADSL), akkor a dsl opciót válaszd. Végül ha nincs hálókártyád, a lo "
+"legyen bejelölve. A lo akkor is helyes választás, ha PCMCIA hálókártyát "
+"használsz.   + A hálózat beállításánál az első kérdés az lesz, melyik "
+"kártyát akarod beállítani.  Ez általában az eth0, de más is lehet, ha pl. "
+"vezetéknélküli csatlakozót használsz.   Ha vezetéknéküli kártyád van, a "
+"netconfig kérni fogja az ESSID és a titkosítási kulcsot. "
 
 # type: Plain text
 #: user.txt:673 network.txt:37
@@ -2205,6 +2216,10 @@ msgid ""
 "address of your primary name server (you can add more nameservers later by "
 "editing the '/etc/resolv.conf' file) and then the configuration is finished."
 msgstr ""
+"Ha a statikust választottad, meg kell adni az IP-címet, a helyi hálózat "
+"netmaskját, az átjáró címét (ezt üresen is hagyhatod) és az elsődleges "
+"névszerver IP-címét (később több névszervert is megadhatsz az "
+"'/etc/resolv.conf' fájl szerkesztésével), s ezzel kész is a beállítás."
 
 # type: Plain text
 #: user.txt:677 network.txt:41
@@ -2213,6 +2228,9 @@ msgid ""
 "netconfig will not ask more questions about your network, since all other "
 "data will be provided by the DHCP server."
 msgstr ""
+"Ha a DHCP-t választottad, megadhatod a dhcp hosztnevedet,  de a netconfig "
+"nem fog más adatot kérni a hálózatról, mivel minden adatot a DHCP szerver "
+"szolgáltat."
 
 # type: Plain text
 #: user.txt:682 network.txt:46
@@ -2222,11 +2240,15 @@ msgid ""
 "through which the ADSL connecting script will try to communicate with your "
 "ADSL modem. Then enter your password twice."
 msgstr ""
+".. A dsl részben meg kell adni a felhasználói nevet, mint pl. "
+"'valaki@szolgaltato.net'.   Ezután meg kell adni a hálózati csatlakozót "
+"(rendszerint eth0), amelyen át az ADSL-kapcsolati script megpróbál "
+"kommunikálni az ADSL modemmel. Végül kétszer add meg a jelszavadat."
 
 # type: Plain text
 #: user.txt:684 network.txt:48
 msgid ".. If you chose lo, you don't have to answer any questions."
-msgstr ""
+msgstr ".. Ha a lo-t választottad, nem kell több kérdésre válaszolnod."
 
 # type: Plain text
 #: user.txt:691 network.txt:55
@@ -2238,11 +2260,18 @@ msgid ""
 "It's very useful when you got a laptop so you can set up options for all "
 "networks you use."
 msgstr ""
+". Végül a netconfig létrehozza az összes hálózati beállító fájlt. Ha ezeket "
+"kézzel akarod szerkeszteni, a csatlakozókkal kapcsolatos információk az "
+"'/etc/sysconfig/network' könyvtárban vannak. Itt mindössze egy fájl "
+"található, aminek a neve többnyire default. Ez azért van így, mert több "
+"profilt is létre lehet hozni.  Ez nagyon hasznos pl. laptop használata "
+"esetén, így külön profilban tárolhatók a különféle hálózatokhoz kapcsolódó "
+"beállítások."
 
 # type: Plain text
 #: user.txt:693
 msgid "=== Basic firewall configuration"
-msgstr ""
+msgstr "=== Alapszintű tűzfalbeállítás"
 
 # type: Plain text
 #: user.txt:698 network.txt:62
@@ -2252,6 +2281,11 @@ msgid ""
 "connections. It does not allow normal incoming packages for any ports.  The "
 "firewall configuration is at '/etc/sysconfig/firewall'."
 msgstr ""
+"A Frugalware telepítésekor egy azonnal működő tűzfalbeállítás is létrejön.  "
+"Ez engedélyezi az összes kimenő kapcsolatot, illetve a létrejött "
+"kapcsolatokhoz  kapcsolódó bejövő csomagokat. Nem engedélyez semmilyen "
+"normál portra érkező bejövő csomagot.  A tűzfal beállításai az "
+"/etc/sysconfig/firewall' fájlban találhatók."
 
 # type: Plain text
 #: user.txt:701 network.txt:65
@@ -2259,6 +2293,8 @@ msgid ""
 "NOTE: You will not find this file if you have not installed iptables package "
 "as this is an iptables firewall."
 msgstr ""
+"NOTE: Ezt a fájlt nem fogod megtalálni, ha nem telepítetted az iptables "
+"csomagot, mivel ez egy iptables alapú tűzfal."
 
 # type: Plain text
 #: user.txt:706 network.txt:70
@@ -2267,6 +2303,9 @@ msgid ""
 "computer. Edit /etc/sysconfig/firewall, remove the hashmark (#) from the "
 "beginning of the line under the # ssh description, and restart the firewall:"
 msgstr ""
+"Lássunk egy példát: szeretnéd engedélyezni a bejövő ssh-kapcsolatokat a "
+"gépedre. Szerkeszd az /etc/sysconfig/firewall fájlt, vedd ki a jelölést (#) "
+"az # ssh leírása után következő sor elejéről, és indítsd újra a tűzfalat:"
 
 # type: Plain text
 #: user.txt:707 user.txt:1479 user.txt:1677 user.txt:2467 user.txt:3279
@@ -2290,7 +2329,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:712 network.txt:76
 msgid "The same applies for Apache or any other services."
-msgstr ""
+msgstr "Ugyanez érvényes az Apache-ra vagy bármilyen más szolgáltatásra."
 
 # type: Plain text
 #: user.txt:716 network.txt:80
@@ -2298,6 +2337,9 @@ msgid ""
 "If you would like to have any advanced firewall settings, configure your "
 "firewall as root with iptables then save your config as root with:"
 msgstr ""
+"Ha kifinomultabb tűzfalbeállításokat szeretnél, állítsd be a tűzfalat "
+"rootként az iptables segítségével, majd mentsd el (rootként) a beállításokat "
+"a következőképpen:"
 
 # type: Plain text
 #: user.txt:717 user.txt:2460 network.txt:81 packages.txt:996
@@ -2322,6 +2364,8 @@ msgid ""
 "recommended to make a backup of '/etc/sysconfig/firewall' before saving your "
 "settings."
 msgstr ""
+"WARNING: Ezzel felülírod a létező beállításokat! Nagyon fontos, hogy előbb "
+"készíts biztonsági másolatot az '/etc/sysconfig/firewall'-ról."
 
 # type: Plain text
 #: user.txt:726
