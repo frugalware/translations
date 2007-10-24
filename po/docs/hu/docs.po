@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hu\n"
-"POT-Creation-Date: 2007-10-23 04:51+0200\n"
-"PO-Revision-Date: 2007-10-23 22:13+0200\n"
+"POT-Creation-Date: 2007-10-24 04:53+0200\n"
+"PO-Revision-Date: 2007-10-24 20:30+0200\n"
 "Last-Translator: Konkoly Katalin <katalin.konkoly@gmail.com>\n"
 "Language-Team: <hu@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -2116,22 +2116,14 @@ msgid ""
 "Clean the package cache:                    apt-get clean            pacman-g2 -Sc\n"
 "---------------------------------------------------------------------------------------\n"
 msgstr ""
-"A csomagadatbázis frissítése:               apt-get update           "
-"pacman-g2 -Sy\n"
-"A telepített csomagok frissítése:            apt-get upgrade          "
-"pacman-g2 -Su\n"
-"Új csomag telepítése:                        apt-get install foo      "
-"pacman-g2 -S foo\n"
-"Csomag eltávolítása:                           apt-get remove foo       "
-"pacman-g2 -Rc foo\n"
-"Keresés a teljes csomag-adatbázisban:        apt-cache search foo     "
-"pacman-g2 -Ss foo\n"
-"Csomag telepítése fájlból:                     dpkg -i foo.deb          "
-"pacman-g2 -A foo.fpm\n"
-"Átmeneti tároló kiürítése:                    apt-get clean            "
-"pacman-g2 -Sc\n"
-"----------------------------------------------------------------------------"
-"-----------\n"
+"A csomagadatbázis frissítése:               apt-get update           pacman-g2 -Sy\n"
+"A telepített csomagok frissítése:            apt-get upgrade          pacman-g2 -Su\n"
+"Új csomag telepítése:                        apt-get install foo      pacman-g2 -S foo\n"
+"Csomag eltávolítása:                           apt-get remove foo       pacman-g2 -Rc foo\n"
+"Keresés a teljes csomag-adatbázisban:        apt-cache search foo     pacman-g2 -Ss foo\n"
+"Csomag telepítése fájlból:                     dpkg -i foo.deb          pacman-g2 -A foo.fpm\n"
+"Átmeneti tároló kiürítése:                    apt-get clean            pacman-g2 -Sc\n"
+"---------------------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: user.txt:638
@@ -2198,7 +2190,7 @@ msgid ""
 msgstr ""
 ". A következő párbeszédablakban ki kell választanod a hálózati kapcsolat "
 "módját.   Ha van belső hálókártyád, kiosztott IP-címed, átjáród és DNS-ed, a "
-"statikus részbe írd be a megfelelő értékeket. Ha az IP-címet egyDHCP "
+"statikus részbe írd be a megfelelő értékeket. Ha az IP-címet egy DHCP "
 "szervertől kapod (általában a kábelmodemes szolgáltatók esetén van így, ez "
 "nem azonos a DSL szolgáltatóval), válaszd a dhcp-t. Ha DSL kapcsolatod van "
 "(pl. ADSL), akkor a dsl opciót válaszd. Végül ha nincs hálókártyád, a lo "
@@ -2216,7 +2208,7 @@ msgid ""
 "address of your primary name server (you can add more nameservers later by "
 "editing the '/etc/resolv.conf' file) and then the configuration is finished."
 msgstr ""
-"Ha a statikust választottad, meg kell adni az IP-címet, a helyi hálózat "
+".. Ha a statikust választottad, meg kell adni az IP-címet, a helyi hálózat "
 "netmaskját, az átjáró címét (ezt üresen is hagyhatod) és az elsődleges "
 "névszerver IP-címét (később több névszervert is megadhatsz az "
 "'/etc/resolv.conf' fájl szerkesztésével), s ezzel kész is a beállítás."
@@ -2228,9 +2220,9 @@ msgid ""
 "netconfig will not ask more questions about your network, since all other "
 "data will be provided by the DHCP server."
 msgstr ""
-"Ha a DHCP-t választottad, megadhatod a dhcp hosztnevedet,  de a netconfig "
-"nem fog más adatot kérni a hálózatról, mivel minden adatot a DHCP szerver "
-"szolgáltat."
+".. Ha a DHCP-t választottad, megadhatod a dhcp hosztnevedet,  de a netconfig "
+"nem fog más adatot kérni a hálózattal kapcsolatban, mivel minden adatot a "
+"DHCP szerver szolgáltat."
 
 # type: Plain text
 #: user.txt:682 network.txt:46
@@ -2261,12 +2253,11 @@ msgid ""
 "networks you use."
 msgstr ""
 ". Végül a netconfig létrehozza az összes hálózati beállító fájlt. Ha ezeket "
-"kézzel akarod szerkeszteni, a csatlakozókkal kapcsolatos információk az "
-"'/etc/sysconfig/network' könyvtárban vannak. Itt mindössze egy fájl "
-"található, aminek a neve többnyire default. Ez azért van így, mert több "
-"profilt is létre lehet hozni.  Ez nagyon hasznos pl. laptop használata "
-"esetén, így külön profilban tárolhatók a különféle hálózatokhoz kapcsolódó "
-"beállítások."
+"kézzel akarod szerkeszteni, a csatlakozókkal kapcsolatos információk az '/"
+"etc/sysconfig/network' könyvtárban vannak. Itt mindössze egy fájl található, "
+"aminek a neve többnyire default. Ez azért van így, mert több profilt is "
+"létre lehet hozni.  Ez nagyon hasznos pl. laptop használata esetén, így "
+"külön profilban tárolhatók a különféle hálózatokhoz kapcsolódó beállítások."
 
 # type: Plain text
 #: user.txt:693
@@ -2284,8 +2275,8 @@ msgstr ""
 "A Frugalware telepítésekor egy azonnal működő tűzfalbeállítás is létrejön.  "
 "Ez engedélyezi az összes kimenő kapcsolatot, illetve a létrejött "
 "kapcsolatokhoz  kapcsolódó bejövő csomagokat. Nem engedélyez semmilyen "
-"normál portra érkező bejövő csomagot.  A tűzfal beállításai az "
-"/etc/sysconfig/firewall' fájlban találhatók."
+"normál portra érkező bejövő csomagot.  A tűzfal beállításai az /etc/"
+"sysconfig/firewall' fájlban találhatók."
 
 # type: Plain text
 #: user.txt:701 network.txt:65
@@ -2304,8 +2295,9 @@ msgid ""
 "beginning of the line under the # ssh description, and restart the firewall:"
 msgstr ""
 "Lássunk egy példát: szeretnéd engedélyezni a bejövő ssh-kapcsolatokat a "
-"gépedre. Szerkeszd az /etc/sysconfig/firewall fájlt, vedd ki a jelölést (#) "
-"az # ssh leírása után következő sor elejéről, és indítsd újra a tűzfalat:"
+"gépedre. Szerkeszd az /etc/sysconfig/firewall fájlt, vedd ki a hashmarkot "
+"(#) az # ssh leírása után következő sor elejéről, és indítsd újra a "
+"tűzfalat:"
 
 # type: Plain text
 #: user.txt:707 user.txt:1479 user.txt:1677 user.txt:2467 user.txt:3279
@@ -2386,6 +2378,11 @@ msgid ""
 "resolution and colour depth. Finally, it will create the real configuration "
 "file, with the following extras:"
 msgstr ""
+"Ha telepíted az X szervert, a telepítőprogram automatikusan lefuttatja az "
+"xconfigot, ami az X-beállító program. Az xconfig először is felderíti a "
+"konfigurációdat és létrehoz egy alapszintű beállítófájlt. Ezután meg kell "
+"adnod a monitor felbontását és a színmélységet. Végül létrehozza a végleges "
+"beállítófájlt, a következő extrákkal:"
 
 # type: Plain text
 #: user.txt:739 x.txt:15
@@ -2396,6 +2393,10 @@ msgid ""
 "* Enables DPMS\n"
 "* Enables users to use the DRI extension\n"
 msgstr ""
+"* Automatikusan beállítja az egér görgetőgombját (ha létezik)\n"
+"* Beállítja a billentyűzetkiosztást a kiválasztott nyelvnek megfelelően\n"
+"* Engedélyezi a DPMS-t\n"
+"* Engedélyezi a felhasználóknak a DRI kiterjesztés használatát\n"
 
 # type: Plain text
 #: user.txt:743 x.txt:19
@@ -2404,11 +2405,14 @@ msgid ""
 "click the OK button to confirm to xconfig that the configuration was "
 "successful."
 msgstr ""
+"A beállítófájl létrehozása után a telepítőprogram elindítja az X szervert. "
+"   Kattints az OK gombra annak megerősítésére, hogy az xconfig sikeresen "
+"állított be mindent."
 
 # type: Plain text
 #: user.txt:745
 msgid "=== 3D acceleration, binary drivers"
-msgstr ""
+msgstr "=== 3D gyorsítás, bináris meghajtók"
 
 # type: Plain text
 #: user.txt:749 x.txt:25
@@ -2417,6 +2421,9 @@ msgid ""
 "will add the necessary entries to '/etc/X11/xorg.conf' and X will load the "
 "module(s)."
 msgstr ""
+"Ha van az X-ben beépített 3D-gyorsítási támogatás a grafikus kártyádhoz, "
+"akkor az xconfig beírja a szükséges bejegyzéseket az '/etc/X11/xorg.conf' "
+"fájlba, és az X be fogja tölteni a modul(oka)t."
 
 # type: Plain text
 #: user.txt:752 x.txt:28
@@ -2424,6 +2431,8 @@ msgid ""
 "If you have an ATI or NVIDIA card, you probably need the manufacturer's "
 "binary drivers. Obtaining the NVIDIA binary driver is fairly simple:"
 msgstr ""
+"Ha ATI vagy NVIDIA kártyád van, szükség lehet a gyártó által kiadott bináris "
+"meghajtóprogramra. Az NVIDIA meghajtó beszerzése elég egyszerű:"
 
 # type: Plain text
 #: user.txt:753 user.txt:905 x.txt:29 printing.txt:83
@@ -2446,7 +2455,7 @@ msgstr ""
 msgid ""
 "If you have an ATI card, installation will not be more complicated than a "
 "simple"
-msgstr ""
+msgstr "Ha ATI kártyád van, akkor sem lesz bonyolultabb a dolog:"
 
 # type: Plain text
 #: user.txt:760 x.txt:36
@@ -2467,7 +2476,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:765
 msgid "=== Allow root login in KDM/GDM"
-msgstr ""
+msgstr "=== A root bejelentkezésének engedélyezése a KDM/GDM-ben"
 
 # type: Plain text
 #: user.txt:768 x.txt:44
@@ -2475,16 +2484,19 @@ msgid ""
 "By default, no root login is permitted on the GUI, the recommended way of "
 "running graphical programs as root is to use gksu or kdesu."
 msgstr ""
+"Alapértelmezésben a root belépése a grafikus felületre nem engedélyezett, a "
+"grafikus programok rootként való futtatásának ajánlott módja inkább a gksu "
+"vagy a kdesu használata."
 
 # type: Plain text
 #: user.txt:770 x.txt:46
 msgid "To enable it anyway, the following lines should be edited:"
-msgstr ""
+msgstr "Ha mégis engedélyezni akarod, akkor szerkeszd az alábbi sorokat:"
 
 # type: Plain text
 #: user.txt:772 x.txt:48
 msgid "For KDM ('/usr/share/config/kdm/kdmrc')"
-msgstr ""
+msgstr "KDM esetén ('/usr/share/config/kdm/kdmrc')"
 
 # type: Plain text
 #: user.txt:774 x.txt:50
@@ -2494,7 +2506,7 @@ msgstr "'AllowRootLogin=false'"
 # type: Plain text
 #: user.txt:776 user.txt:784 x.txt:52 x.txt:60
 msgid "modify to"
-msgstr ""
+msgstr "írd át a következőre:"
 
 # type: Plain text
 #: user.txt:778 x.txt:54
@@ -2504,7 +2516,7 @@ msgstr "'AllowRootLogin=true'"
 # type: Plain text
 #: user.txt:780 x.txt:56
 msgid "For GDM ('/etc/gdm/gdm.conf')"
-msgstr ""
+msgstr "GDM esetén ('/etc/gdm/gdm.conf')"
 
 # type: Plain text
 #: user.txt:782 x.txt:58
