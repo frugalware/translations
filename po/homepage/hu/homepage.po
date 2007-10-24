@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-09-21 05:27+0200\n"
-"PO-Revision-Date: 2007-08-30 18:07+0200\n"
+"POT-Creation-Date: 2007-10-24 05:21+0200\n"
+"PO-Revision-Date: 2007-10-24 23:38+0200\n"
 "Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
 "Language-Team: <hu@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -308,13 +308,44 @@ msgstr "Válasz"
 msgid "Long"
 msgstr "Bővebben"
 
-#: ../authors.php:61 ../config.inc.php:80
-msgid "Developers"
-msgstr "Fejlesztők"
+#: ../authors.php:68 ../config.inc.php:79
+msgid "Authors"
+msgstr "Szerzők"
 
-#: ../authors.php:84 ../config.inc.php:81
-msgid "Contributors"
-msgstr "Közreműködők"
+#: ../authors.php:69
+msgid ""
+"This page should list all people who contributed to Frugalware Linux in some "
+"way. However, we are aware that the contributor list is incomplete. Please "
+"contact us if your name is missing from here!<br />"
+msgstr ""
+"Ez az oldal azokat az embereket kell listázza, akik valamilyen módon "
+"hozzájárultak a Frugalware Linuxhoz. Tudjuk azonban, hogy sajnos ez a lista "
+"nem teljes. Kérjük lépj velünk kapcsolatba ha a te neved hiányzik innen!<br "
+"/>"
+
+#: ../authors.php:70
+#, php-format
+msgid "Available filters: <a href=\"%s\">No filter</a> &middot; "
+msgstr "Elérhető szűrők: <a href=\"%s\">Nincs szűrés</a> &middot; "
+
+#: ../authors.php:71
+#, php-format
+msgid "<a href=\"%s\">Active developers</a> &middot; "
+msgstr "<a href=\"%s\">Aktív fejlesztők</a> &middot; "
+
+#: ../authors.php:72
+#, php-format
+msgid "<a href=\"%s\">Former developers</a> &middot; "
+msgstr "<a href=\"%s\">Visszavonult fejlesztők</a> &middot; "
+
+#: ../authors.php:73
+#, php-format
+msgid "<a href=\"%s\">Contributors</a><br />"
+msgstr "<a href=\"%s\">Hozzájárulók</a><br />"
+
+#: ../authors.php:74
+msgid "Frugalware Linux Author list"
+msgstr "Frugalware Linux Szerző-lista"
 
 #. $menucontent = '<a class="menu" href="' . $fwng_root . '">' . gettext('News') . "</a> &middot; \n";
 #: ../config.inc.php:42 ../rss.php:175
@@ -410,31 +441,27 @@ msgid "Roadmap"
 msgstr "Útiterv"
 
 #: ../config.inc.php:74
-msgid "Darcs repository"
-msgstr "Darcs repó"
-
-#: ../config.inc.php:75
 msgid "Git repository"
 msgstr "Git repó"
 
-#: ../config.inc.php:76
+#: ../config.inc.php:75
 msgid "Bug Tracker"
 msgstr "Hibák"
 
-#: ../config.inc.php:77
+#: ../config.inc.php:76
 msgid "Translation portal"
 msgstr "Fordítási portál"
 
-#: ../config.inc.php:78
+#: ../config.inc.php:77
 msgid "Blogs"
 msgstr "Blogok"
 
-#: ../config.inc.php:79 ../donations.php:50 ../header.php:54
+#: ../config.inc.php:78 ../donations.php:50 ../header.php:54
 msgid "Donations"
 msgstr "Adományok"
 
-#: ../config.inc.php:92 ../config.inc.php:94 ../config.inc.php:96
-#: ../config.inc.php:98 ../config.inc.php:100
+#: ../config.inc.php:90 ../config.inc.php:92 ../config.inc.php:94
+#: ../config.inc.php:96 ../config.inc.php:98 ../config.inc.php:100
 msgid "Change language"
 msgstr "Váltson nyelvet"
 
@@ -657,12 +684,16 @@ msgstr "Keresés a leírásokban"
 msgid "Regular expression"
 msgstr "Reguláris kifejezés"
 
-#: ../packages.php:100 ../packages.php:319 ../packages.php:328
+#: ../packages.php:97
+msgid "(regular expression)"
+msgstr "(reguláris kifejezés)"
+
+#: ../packages.php:100 ../packages.php:331 ../packages.php:340
 msgid "Architecture:"
 msgstr "Architektúra:"
 
-#: ../packages.php:107 ../packages.php:319 ../packages.php:328
-#: ../packages.php:392
+#: ../packages.php:107 ../packages.php:331 ../packages.php:340
+#: ../packages.php:404
 msgid "Version:"
 msgstr "Verzió:"
 
@@ -692,184 +723,188 @@ msgstr ""
 "Kattintson <a href=\"javascript:addEngine()\">ide</a> a Firefox kereső "
 "plugin telepítéséhez."
 
-#: ../packages.php:185
+#: ../packages.php:191
+msgid "Error in the query, please change the searching conditions"
+msgstr "Hiba a lekérdezésben, kérlek változtasd meg a keresési feltételeket"
+
+#: ../packages.php:197
 msgid "No package found"
 msgstr "Nem található csomag"
 
-#: ../packages.php:222
+#: ../packages.php:234
 msgid "No such file or directory"
 msgstr "Nincs ilyen fájl vagy könyvtár"
 
-#: ../packages.php:261 ../packages.php:294
+#: ../packages.php:273 ../packages.php:306
 msgid "No such group"
 msgstr "Nincs ilyen csoport"
 
-#: ../packages.php:303
+#: ../packages.php:315
 msgid "Listing groups"
 msgstr "Csoportok listázása"
 
-#: ../packages.php:314
+#: ../packages.php:326
 msgid "Listing contents of group:"
 msgstr "Csoport tartalmának listázása:"
 
-#: ../packages.php:316 ../packages.php:325
+#: ../packages.php:328 ../packages.php:337
 msgid "Search result for:"
 msgstr "Keresési találatok: "
 
-#: ../packages.php:388
+#: ../packages.php:400
 msgid "Package information:"
 msgstr "Csomaginformáció:"
 
-#: ../packages.php:390
+#: ../packages.php:402
 msgid "Name:"
 msgstr "Név:"
 
-#: ../packages.php:391
+#: ../packages.php:403
 msgid "Parent:"
 msgstr "Szülő:"
 
-#: ../packages.php:394
+#: ../packages.php:406
 msgid "Documentation:"
 msgstr "Dokumentáció:"
 
-#: ../packages.php:396
+#: ../packages.php:408
 msgid "Buildlog:"
 msgstr "Fordítási napló:"
 
-#: ../packages.php:397
+#: ../packages.php:409
 msgid "Changelog:"
 msgstr "Changelog:"
 
-#: ../packages.php:404
+#: ../packages.php:413
 msgid "Groups:"
 msgstr "Csoportok:"
 
-#: ../packages.php:409
+#: ../packages.php:418
 msgid "URL:"
 msgstr "URL:"
 
-#: ../packages.php:412
+#: ../packages.php:421
 msgid "Depends:"
 msgstr "Függ:"
 
-#: ../packages.php:419
+#: ../packages.php:428
 msgid "Exact reverse depends:"
 msgstr "Pontosan ráépülő csomagok:"
 
-#: ../packages.php:426
+#: ../packages.php:435
 msgid "Other reverse depends:"
 msgstr "Egyéb ráépülő csomagok:"
 
-#: ../packages.php:433
+#: ../packages.php:442
 msgid "Conflicts:"
 msgstr "Ütközik:"
 
-#: ../packages.php:440
+#: ../packages.php:449
 msgid "Provides:"
 msgstr "Szolgáltatja:"
 
-#: ../packages.php:445
+#: ../packages.php:454
 msgid "Compressed size:"
 msgstr "Tömörített méret:"
 
-#: ../packages.php:446
+#: ../packages.php:455
 msgid "Uncompressed size:"
 msgstr "Tömörítetlen méret:"
 
-#: ../packages.php:447
+#: ../packages.php:456
 msgid "Arch:"
 msgstr "Architektúra:"
 
-#: ../packages.php:448
+#: ../packages.php:457
 msgid "Description:"
 msgstr "Leírás:"
 
 #. FIXME: latin -> utf8 conversion hardwired
-#: ../packages.php:450
+#: ../packages.php:459
 msgid "Maintainer:"
 msgstr "Karbantartó:"
 
-#: ../packages.php:451
+#: ../packages.php:460
 msgid "Uploaded by:"
 msgstr "Feltöltő:"
 
-#: ../packages.php:452
+#: ../packages.php:461
 msgid "Download:"
 msgstr "Letöltés:"
 
-#: ../packages.php:457
+#: ../packages.php:466
 msgid "Forums:"
 msgstr "Fórumok:"
 
-#: ../packages.php:457
+#: ../packages.php:466
 msgid "Related posts"
 msgstr "Kapcsolódó hozzászólások"
 
-#: ../packages.php:458
+#: ../packages.php:467
 msgid "Wiki:"
 msgstr "Wiki:"
 
-#: ../packages.php:458
+#: ../packages.php:467
 msgid "Related pages"
 msgstr "Kapcsolódó oldalak"
 
-#: ../packages.php:459
+#: ../packages.php:468
 msgid "Bug Tracking System:"
 msgstr "Hibakövető rendszer:"
 
-#: ../packages.php:459
+#: ../packages.php:468
 msgid "Related open bugs"
 msgstr "Kapcsolódó ismert hibák"
 
-#: ../packages.php:460
+#: ../packages.php:469
 msgid "Syndicate:"
 msgstr "Iratkozzon fel:"
 
-#: ../packages.php:460
+#: ../packages.php:469
 msgid "RSS"
 msgstr "RSS"
 
-#: ../packages.php:461
+#: ../packages.php:470
 msgid "SHA1 Sum:"
 msgstr "SHA1 Szumma:"
 
-#: ../packages.php:462
+#: ../packages.php:471
 msgid "Frugalware version:"
 msgstr "Frugalware verzió:"
 
-#: ../packages.php:463
+#: ../packages.php:472
 msgid "Updated:"
 msgstr "Frissítve:"
 
-#: ../packages.php:468 ../packages.php:519 ../packages.php:568
-#: ../packages.php:626 ../packages.php:656
+#: ../packages.php:477 ../packages.php:528 ../packages.php:577
+#: ../packages.php:635 ../packages.php:665
 msgid "No such package!"
 msgstr "Nincs ilyen csomag!"
 
-#: ../packages.php:504
+#: ../packages.php:513
 #, php-format
 msgid "Changelog for %s"
 msgstr "Changelog a %s számára"
 
-#: ../packages.php:515 ../packages.php:564
+#: ../packages.php:524 ../packages.php:573
 msgid "Sorry, currently no log available."
 msgstr "Sajnos jelenleg nem érhető el napló."
 
-#: ../packages.php:553
+#: ../packages.php:562
 #, php-format
 msgid "Build log for %s"
 msgstr "Fordítási napló: %s"
 
-#: ../packages.php:602
+#: ../packages.php:611
 #, php-format
 msgid "Documentation for %s"
 msgstr "Dokumentáció a(z) %s számára"
 
-#: ../packages.php:622
+#: ../packages.php:631
 msgid "Sorry, currently no documentation available."
 msgstr "Sajnos jelenleg nem érhető el dokumentáció."
 
-#: ../packages.php:641
+#: ../packages.php:650
 msgid "File list for"
 msgstr "Fájlok listája: "
 
@@ -1160,6 +1195,15 @@ msgstr "CVEk"
 #: ../security.php:87
 msgid "Description"
 msgstr "Leírás"
+
+#~ msgid "Developers"
+#~ msgstr "Fejlesztők"
+
+#~ msgid "Contributors"
+#~ msgstr "Közreműködők"
+
+#~ msgid "Darcs repository"
+#~ msgstr "Darcs repó"
 
 #~ msgid "Read full current changelog"
 #~ msgstr "A teljes current változási naplót elolvashatja"
