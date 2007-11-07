@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-09-23 05:02+0200\n"
+"POT-Creation-Date: 2007-11-06 05:05+0100\n"
 "PO-Revision-Date: 2007-09-23 21:13+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: Français\n"
@@ -39,8 +39,8 @@ msgstr "chargement des données du paquet... "
 msgid "failed to add target '%s' (%s)\n"
 msgstr "échec d'ajout de la cible '%s' (%s)\n"
 
-#: ../add.c:84 ../sync.c:267 ../trans.c:75 ../trans.c:82 ../trans.c:86
-#: ../trans.c:98 ../trans.c:112 ../trans.c:128 ../trans.c:140
+#: ../add.c:84 ../sync.c:267 ../trans.c:76 ../trans.c:83 ../trans.c:87
+#: ../trans.c:99 ../trans.c:113 ../trans.c:129 ../trans.c:141
 msgid "done.\n"
 msgstr "fait.\n"
 
@@ -454,7 +454,8 @@ msgstr ""
 #, c-format
 msgid ""
 "      --noarch        install the package, even if it is for an other arch\n"
-msgstr "      --noarch        installe le paquet, même si il est pour une autre "
+msgstr ""
+"      --noarch        installe le paquet, même si il est pour une autre "
 "architecture\n"
 
 #: ../pacman-g2.c:112
@@ -1082,65 +1083,65 @@ msgstr ""
 msgid "Proceed with upgrade? [Y/n] "
 msgstr "Procéder aux mises à jour? [O/n] "
 
-#: ../trans.c:58
+#: ../trans.c:59
 msgid "checking dependencies... "
 msgstr "vérification des dépendances..."
 
-#: ../trans.c:62
+#: ../trans.c:63
 msgid "checking for file conflicts... "
 msgstr "vérification des conflits de fichiers..."
 
-#: ../trans.c:66
+#: ../trans.c:67
 msgid "resolving dependencies... "
 msgstr "résolution des dépendances..."
 
-#: ../trans.c:70
+#: ../trans.c:71
 msgid "looking for inter-conflicts... "
 msgstr "recherche inter-conflits... "
 
-#: ../trans.c:93
+#: ../trans.c:94
 #, c-format
 msgid "installing %s... "
 msgstr "installation de %s..."
 
-#: ../trans.c:100
+#: ../trans.c:101
 #, c-format
 msgid "installed %s (%s)"
 msgstr "%s installé (%s)"
 
-#: ../trans.c:107
+#: ../trans.c:108
 #, c-format
 msgid "removing %s... "
 msgstr "désinstallation de %s... "
 
-#: ../trans.c:116
+#: ../trans.c:117
 #, c-format
 msgid "removed %s (%s)"
 msgstr "%s désinstallé (%s)"
 
-#: ../trans.c:123
+#: ../trans.c:124
 #, c-format
 msgid "upgrading %s... "
 msgstr "mise à jour de %s... "
 
-#: ../trans.c:130
+#: ../trans.c:131
 #, c-format
 msgid "upgraded %s (%s -> %s)"
 msgstr "%s mis à jour (%s -> %s)"
 
-#: ../trans.c:137
+#: ../trans.c:138
 msgid "checking package integrity... "
 msgstr "vérification de l'intégrité des paquets..."
 
-#: ../trans.c:151
+#: ../trans.c:152
 msgid " done.\n"
 msgstr " fait.\n"
 
-#: ../trans.c:153
+#: ../trans.c:154
 msgid " failed.\n"
 msgstr " echoué.\n"
 
-#: ../trans.c:160
+#: ../trans.c:161
 #, c-format
 msgid ""
 "\n"
@@ -1149,67 +1150,67 @@ msgstr ""
 "\n"
 ":: Récupération des paquets depuis %s...\n"
 
-#: ../trans.c:170
+#: ../trans.c:172
 msgid "] 100%    LOCAL "
 msgstr "] 100%    LOCAL "
 
-#: ../trans.c:188
+#: ../trans.c:190
 #, c-format
 msgid ":: %s requires %s, but it is in IgnorePkg. Install anyway? [Y/n] "
 msgstr ""
 ":: %s requiert %s, mais il est défini en IgnorePkg. Installer tout de même? "
 "[O/n] "
 
-#: ../trans.c:202
+#: ../trans.c:204
 #, c-format
 msgid ":: %s is designated as a HoldPkg.  Remove anyway? [Y/n] "
 msgstr ":: %s est indiqué comme \"HoldPkg\".  Supprimer tout de même? [O/n] "
 
-#: ../trans.c:215
+#: ../trans.c:217
 #, c-format
 msgid ":: Replace %s with %s/%s? [Y/n] "
 msgstr ":: Remplacer %s avec %s/%s? [O/n] "
 
-#: ../trans.c:230
+#: ../trans.c:232
 #, c-format
 msgid ":: %s conflicts with %s. Remove %s? [Y/n] "
 msgstr ":: %s est en conflit avec %s. Retirer %s? [O/n] "
 
-#: ../trans.c:246
+#: ../trans.c:248
 #, c-format
 msgid ":: %s-%s: local version is newer. Upgrade anyway? [Y/n] "
 msgstr ""
 ":: %s-%s: la version locale est plus récente. Mettre à jour tout de même? [O/"
 "n] "
 
-#: ../trans.c:264
+#: ../trans.c:266
 #, c-format
 msgid ":: %s-%s: local version is up to date. Upgrade anyway? [Y/n] "
 msgstr ""
 ":: %s-%s: la version locale est à jour. Mettre à jour tout de même? [O/n] "
 
-#: ../trans.c:282
+#: ../trans.c:284
 #, c-format
 msgid ":: Archive %s is corrupted. Do you want to delete it? [Y/n] "
 msgstr ":: L'archive %s est corrompue. Voulez vous l'effacer? [O/n] "
 
-#: ../trans.c:298
+#: ../trans.c:300
 msgid "installing"
 msgstr "installation"
 
-#: ../trans.c:299
+#: ../trans.c:301
 msgid "upgrading"
 msgstr "mise à jour"
 
-#: ../trans.c:300
+#: ../trans.c:302
 msgid "removing"
 msgstr "désinstallation"
 
-#: ../trans.c:301
+#: ../trans.c:303
 msgid "checking for file conflicts"
 msgstr "vérification des conflits de fichiers"
 
-#: ../trans.c:302
+#: ../trans.c:304
 msgid "looking for inter-conflicts"
 msgstr "recherche d'inter-conflits"
 

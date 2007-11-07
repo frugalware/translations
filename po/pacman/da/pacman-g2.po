@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-09-26 05:04+0200\n"
-"PO-Revision-Date: 2007-09-18 17:04+0200\n"
+"POT-Creation-Date: 2007-11-06 05:05+0100\n"
+"PO-Revision-Date: 2007-09-26 19:55+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -35,8 +35,8 @@ msgstr "indlæser pakke data... "
 msgid "failed to add target '%s' (%s)\n"
 msgstr "fejlede ved tilføjelse af mål '%s' (%s)\n"
 
-#: ../add.c:84 ../sync.c:267 ../trans.c:75 ../trans.c:82 ../trans.c:86
-#: ../trans.c:98 ../trans.c:112 ../trans.c:128 ../trans.c:140
+#: ../add.c:84 ../sync.c:267 ../trans.c:76 ../trans.c:83 ../trans.c:87
+#: ../trans.c:99 ../trans.c:113 ../trans.c:129 ../trans.c:141
 msgid "done.\n"
 msgstr "færdig.\n"
 
@@ -451,6 +451,8 @@ msgstr ""
 msgid ""
 "      --noarch        install the package, even if it is for an other arch\n"
 msgstr ""
+"      --noarch        installer pakken, selvom den er for en anden "
+"arkitektur\n"
 
 #: ../pacman-g2.c:112
 #, c-format
@@ -1062,65 +1064,65 @@ msgstr ""
 msgid "Proceed with upgrade? [Y/n] "
 msgstr "Forsætte med opgradering? [J/n] "
 
-#: ../trans.c:58
+#: ../trans.c:59
 msgid "checking dependencies... "
 msgstr "tjeker afhængigheder... "
 
-#: ../trans.c:62
+#: ../trans.c:63
 msgid "checking for file conflicts... "
 msgstr "tjeker for fil konflikter... "
 
-#: ../trans.c:66
+#: ../trans.c:67
 msgid "resolving dependencies... "
 msgstr "løser afhængigheder... "
 
-#: ../trans.c:70
+#: ../trans.c:71
 msgid "looking for inter-conflicts... "
 msgstr "ser efter for indre-konflikter... "
 
-#: ../trans.c:93
+#: ../trans.c:94
 #, c-format
 msgid "installing %s... "
 msgstr "installerer %s... "
 
-#: ../trans.c:100
+#: ../trans.c:101
 #, c-format
 msgid "installed %s (%s)"
 msgstr "installeret %s (%s)"
 
-#: ../trans.c:107
+#: ../trans.c:108
 #, c-format
 msgid "removing %s... "
 msgstr "fjerner %s... "
 
-#: ../trans.c:116
+#: ../trans.c:117
 #, c-format
 msgid "removed %s (%s)"
 msgstr "fjernet %s (%s)"
 
-#: ../trans.c:123
+#: ../trans.c:124
 #, c-format
 msgid "upgrading %s... "
 msgstr "opgraderer %s... "
 
-#: ../trans.c:130
+#: ../trans.c:131
 #, c-format
 msgid "upgraded %s (%s -> %s)"
 msgstr "opgraderet %s (%s -> %s)"
 
-#: ../trans.c:137
+#: ../trans.c:138
 msgid "checking package integrity... "
 msgstr "tjeker pakke integritet... "
 
-#: ../trans.c:151
+#: ../trans.c:152
 msgid " done.\n"
 msgstr " færdig.\n"
 
-#: ../trans.c:153
+#: ../trans.c:154
 msgid " failed.\n"
 msgstr " fejlede.\n"
 
-#: ../trans.c:160
+#: ../trans.c:161
 #, c-format
 msgid ""
 "\n"
@@ -1129,63 +1131,63 @@ msgstr ""
 "\n"
 ":: Henter pakker fra %s...\n"
 
-#: ../trans.c:170
+#: ../trans.c:172
 msgid "] 100%    LOCAL "
 msgstr "] 100%    LOKAL "
 
-#: ../trans.c:188
+#: ../trans.c:190
 #, c-format
 msgid ":: %s requires %s, but it is in IgnorePkg. Install anyway? [Y/n] "
 msgstr ":: %s kræves %s, men den er i IgnorePkg. Installer aligevel? [J/n] "
 
-#: ../trans.c:202
+#: ../trans.c:204
 #, c-format
 msgid ":: %s is designated as a HoldPkg.  Remove anyway? [Y/n] "
 msgstr ":: %s er benænvt som HoldPkg.  Fjern aligevel? [J/n] "
 
-#: ../trans.c:215
+#: ../trans.c:217
 #, c-format
 msgid ":: Replace %s with %s/%s? [Y/n] "
 msgstr ":: Erstat %s med %s/%s? [J/n] "
 
-#: ../trans.c:230
+#: ../trans.c:232
 #, c-format
 msgid ":: %s conflicts with %s. Remove %s? [Y/n] "
 msgstr ":: %s konflikter med %s. Fjern %s? [J/n] "
 
-#: ../trans.c:246
+#: ../trans.c:248
 #, c-format
 msgid ":: %s-%s: local version is newer. Upgrade anyway? [Y/n] "
 msgstr ":: %s-%s: lokal version er nyere. Opgrader aligevel? [J/n] "
 
-#: ../trans.c:264
+#: ../trans.c:266
 #, c-format
 msgid ":: %s-%s: local version is up to date. Upgrade anyway? [Y/n] "
 msgstr ""
 ":: %s-%s: lokal version er fuldstændig opdateret. Opgrader aligevel? [J/n] "
 
-#: ../trans.c:282
+#: ../trans.c:284
 #, c-format
 msgid ":: Archive %s is corrupted. Do you want to delete it? [Y/n] "
 msgstr ":: Arkiv %s er ødelagt. Ønsker du at slette det? [J/n] "
 
-#: ../trans.c:298
+#: ../trans.c:300
 msgid "installing"
 msgstr "installerer"
 
-#: ../trans.c:299
+#: ../trans.c:301
 msgid "upgrading"
 msgstr "opgraderer"
 
-#: ../trans.c:300
+#: ../trans.c:302
 msgid "removing"
 msgstr "fjerner"
 
-#: ../trans.c:301
+#: ../trans.c:303
 msgid "checking for file conflicts"
 msgstr "tjeker for fil konflikter"
 
-#: ../trans.c:302
+#: ../trans.c:304
 msgid "looking for inter-conflicts"
 msgstr "ser efter for indre-konflikter"
 

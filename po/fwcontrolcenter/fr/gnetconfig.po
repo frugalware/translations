@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-09-21 05:27+0200\n"
-"PO-Revision-Date: 2007-08-15 22:35+0200\n"
-"Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
+"POT-Creation-Date: 2007-11-06 05:05+0100\n"
+"PO-Revision-Date: 2007-10-07 20:04+0200\n"
+"Last-Translator: Daniel <devil505linux@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -52,95 +52,103 @@ msgstr "Connexion réseau / DHCP"
 msgid "Wired Connection / Static IP"
 msgstr "Connexion réseau / IP Statique"
 
-#: ../src/gnetconfig-interface.c:534
+#: ../src/gnetconfig-interface.c:535
 msgid "Couldn't read hostname."
 msgstr "Impossible de lire le vrai nom de l'hôte."
 
-#: ../src/gnetconfig-interface.c:563
+#: ../src/gnetconfig-interface.c:564
 msgid "New DNS"
 msgstr "Nouveau DNS"
 
-#: ../src/gnetconfig-interface.c:563
+#: ../src/gnetconfig-interface.c:564
 msgid "Enter the ip address of the nameserver:"
 msgstr "Entrez l'adresse IP du serveur de nom:"
 
-#: ../src/gnetconfig-interface.c:568
+#: ../src/gnetconfig-interface.c:570
 msgid "Required field cannot be left blank."
 msgstr "Un champ obligatoire ne peut être laissé vide."
 
-#: ../src/gnetconfig-interface.c:636
+#: ../src/gnetconfig-interface.c:577
+msgid ""
+"The IP address you entered already exists in the DNS list. Please enter a "
+"different IP address."
+msgstr ""
+"L'adresse IP que vous venez d'entrer existe déjà dans la liste DNS. Veuillez "
+"s'il vous plaît entrer une adresse IP différente."
+
+#: ../src/gnetconfig-interface.c:647
 msgid "Are you sure you want to activate this profile ?"
 msgstr "Êtes-vous sur de vouloir activer ce profil?"
 
-#: ../src/gnetconfig-interface.c:661
+#: ../src/gnetconfig-interface.c:672
 msgid "Profile activated successfully"
 msgstr "Profil activé avec succès"
 
-#: ../src/gnetconfig-interface.c:673
+#: ../src/gnetconfig-interface.c:684
 msgid "The profile is already activated."
 msgstr "Ce profil est déjà activé."
 
-#: ../src/gnetconfig-interface.c:692
+#: ../src/gnetconfig-interface.c:703
 msgid "Are you sure you want to delete this profile ?"
 msgstr "Êtes vous sur de vouloir effacer ce profil?"
 
-#: ../src/gnetconfig-interface.c:698
+#: ../src/gnetconfig-interface.c:709
 msgid "There was an error deleting the profile."
 msgstr "Une erreur est survenu en supprimant le profil."
 
-#: ../src/gnetconfig-interface.c:700
+#: ../src/gnetconfig-interface.c:711
 msgid "Profile deleted successfully"
 msgstr "Profil supprimer avec succès"
 
-#: ../src/gnetconfig-interface.c:712
+#: ../src/gnetconfig-interface.c:723
 msgid "You cannot delete an active network profile."
 msgstr "Vous ne pouvez pas supprimer un profil réseau actif."
 
-#: ../src/gnetconfig-interface.c:760
+#: ../src/gnetconfig-interface.c:771
 msgid "This interface cannot be activated. It belongs to an inactive profile."
 msgstr ""
 "Cette interface ne peut être activée. Elle appartient à un profil inactif."
 
-#: ../src/gnetconfig-interface.c:781 ../src/gnetconfig-interface.c:836
-#: ../src/gnetconfig-interface.c:1034
+#: ../src/gnetconfig-interface.c:792 ../src/gnetconfig-interface.c:847
+#: ../src/gnetconfig-interface.c:1045
 msgid "Unknown error."
 msgstr "Erreur inconnue."
 
-#: ../src/gnetconfig-interface.c:785
+#: ../src/gnetconfig-interface.c:796
 msgid "Interface is already started."
 msgstr "L'interface est déjà démarrée."
 
-#: ../src/gnetconfig-interface.c:815
+#: ../src/gnetconfig-interface.c:826
 msgid ""
 "This interface cannot be de-activated. It belongs to an inactive profile."
 msgstr ""
 "Cette interface ne peut être désactivée. Elle appartient a un profil inactif."
 
-#: ../src/gnetconfig-interface.c:840
+#: ../src/gnetconfig-interface.c:851
 msgid "Interface is not running."
 msgstr "Interface non démarrée."
 
-#: ../src/gnetconfig-interface.c:996
+#: ../src/gnetconfig-interface.c:1007
 msgid "No network interface found."
 msgstr "Aucune interface réseau trouvée."
 
-#: ../src/gnetconfig-interface.c:1014
+#: ../src/gnetconfig-interface.c:1025
 msgid "Are you sure you want to delete this interface ?"
 msgstr "Êtes vous sur de vouloir supprimer cette interface?"
 
-#: ../src/gnetconfig-interface.c:1042
+#: ../src/gnetconfig-interface.c:1053
 msgid "The selected interface is running. Please stop it first."
 msgstr "L'interface sélectionnée est démarrée. Vous devez d'abord l'arrêter."
 
-#: ../src/gnetconfig-interface.c:1048
+#: ../src/gnetconfig-interface.c:1059
 msgid "Interface deleted successfully"
 msgstr "Interface supprimée avec succès"
 
-#: ../src/gnetconfig-interface.c:1097
+#: ../src/gnetconfig-interface.c:1108
 msgid "Connection type: Static IP"
 msgstr "Type de connexion: IP Statique"
 
-#: ../src/gnetconfig-interface.c:1102
+#: ../src/gnetconfig-interface.c:1113
 msgid ""
 " (Wireless Connection)\n"
 "\n"
@@ -148,7 +156,7 @@ msgstr ""
 " (Connexion Sans Fils)\n"
 "\n"
 
-#: ../src/gnetconfig-interface.c:1128
+#: ../src/gnetconfig-interface.c:1139
 msgid ""
 "\n"
 "Wireless connection details:\n"
@@ -156,28 +164,28 @@ msgstr ""
 "\n"
 "Détails de la connexion sans fils:\n"
 
-#: ../src/gnetconfig-interface.c:1187 ../glade/gnetconfig.glade.h:60
+#: ../src/gnetconfig-interface.c:1198 ../glade/gnetconfig.glade.h:60
 msgid "Start"
 msgstr "Démarrer"
 
-#: ../src/gnetconfig-interface.c:1194 ../glade/gnetconfig.glade.h:61
+#: ../src/gnetconfig-interface.c:1205 ../glade/gnetconfig.glade.h:61
 msgid "Stop"
 msgstr "Arrêter"
 
-#: ../src/gnetconfig-interface.c:1201 ../glade/gnetconfig.glade.h:43
+#: ../src/gnetconfig-interface.c:1212 ../glade/gnetconfig.glade.h:43
 msgid "Configure"
 msgstr "Configurer"
 
-#: ../src/gnetconfig-interface.c:1208
+#: ../src/gnetconfig-interface.c:1219
 msgid "Delete"
 msgstr "Supprimer"
 
-#: ../src/gnetconfig-interface.c:1410 ../src/gnetconfig-new_interface.c:331
+#: ../src/gnetconfig-interface.c:1421 ../src/gnetconfig-new_interface.c:331
 msgid "Required fields for DSL connection cannot be left blank."
 msgstr ""
 "Les champs requis pour la connexion DSL ne peuvent pas être laissés vides."
 
-#: ../src/gnetconfig-interface.c:1415 ../src/gnetconfig-new_interface.c:337
+#: ../src/gnetconfig-interface.c:1426 ../src/gnetconfig-new_interface.c:337
 msgid "PPPoE passwords do not match. Please re-enter."
 msgstr ""
 "Les mots de passe PPPoE ne correspondent pas. Vous êtes priés de les entrer "

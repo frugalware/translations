@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-09-21 05:27+0200\n"
-"PO-Revision-Date: 2007-09-18 16:21+0200\n"
+"POT-Creation-Date: 2007-11-06 05:05+0100\n"
+"PO-Revision-Date: 2007-10-31 20:32+0100\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -42,7 +42,7 @@ msgid "looking for unsatisfied dependencies"
 msgstr "ser efter utilfredsstillet afhængigheder"
 
 #. no unsatisfied deps, so look for conflicts
-#: ../add.c:231 ../sync.c:501
+#: ../add.c:231 ../sync.c:520
 msgid "looking for conflicts"
 msgstr "ser efter konflikter"
 
@@ -64,7 +64,7 @@ msgstr "ser efter fil konflikter"
 msgid "upgrading package %s-%s"
 msgstr "opgraderer pakke %s-%s"
 
-#: ../add.c:350 ../conflict.c:292 ../conflict.c:322 ../package.c:550
+#: ../add.c:350 ../conflict.c:292 ../conflict.c:322 ../package.c:552
 #, c-format
 msgid "loading FILES info for '%s'"
 msgstr "indlæser FILER information for '%s'"
@@ -337,7 +337,7 @@ msgstr "kunne ikke fjerne database post %s/%s"
 msgid "could not get sha1 checksum for package %s-%s\n"
 msgstr "kunne ikke få sha1 checksum for pakke %s-%s\n"
 
-#: ../pacman.c:550 ../pacman.c:597 ../package.c:532
+#: ../pacman.c:550 ../pacman.c:597 ../package.c:534
 #, c-format
 msgid "loading DESC info for '%s'"
 msgstr "indlæser DESC information for '%s'"
@@ -362,79 +362,79 @@ msgstr "kunne ikke få md5 checksum for pakke %s-%s\n"
 msgid "md5sums do not match for package %s-%s\n"
 msgstr "md5sums matchede ikke for pakke %s-%s\n"
 
-#: ../pacman.c:903
+#: ../pacman.c:909
 #, c-format
 msgid "could not remove lock file %s"
 msgstr "kunne ikke fjerne spærre fil %s"
 
-#: ../pacman.c:904
+#: ../pacman.c:910
 #, c-format
 msgid "warning: could not remove lock file %s"
 msgstr "advarsel: kunne ikke fjerne spærre fil %s"
 
-#: ../pacman.c:1157
+#: ../pacman.c:1163
 #, c-format
 msgid "config: new section '%s'\n"
 msgstr "konfiguration: nyt afsnit '%s'\n"
 
-#: ../pacman.c:1188
+#: ../pacman.c:1194
 msgid "config: usesyslog\n"
 msgstr "konfiguration: brug syslog\n"
 
-#: ../pacman.c:1199
+#: ../pacman.c:1205
 #, c-format
 msgid "config: including %s\n"
 msgstr "konfiguration: inkluderer %s\n"
 
-#: ../pacman.c:1211 ../pacman.c:1219
+#: ../pacman.c:1217 ../pacman.c:1225
 #, c-format
 msgid "config: noupgrade: %s\n"
 msgstr "konfiguration: igen opgradering: %s\n"
 
-#: ../pacman.c:1229 ../pacman.c:1237
+#: ../pacman.c:1235 ../pacman.c:1243
 #, c-format
 msgid "config: noextract: %s\n"
 msgstr "konfiguration: ingen udpakning: %s\n"
 
-#: ../pacman.c:1247 ../pacman.c:1255
+#: ../pacman.c:1253 ../pacman.c:1261
 #, c-format
 msgid "config: ignorepkg: %s\n"
 msgstr "konfiguration: spring pakke over: %s\n"
 
-#: ../pacman.c:1265 ../pacman.c:1273
+#: ../pacman.c:1271 ../pacman.c:1279
 #, c-format
 msgid "config: holdpkg: %s\n"
 msgstr "konfiguration: hold på pakke: %s\n"
 
-#: ../pacman.c:1283
+#: ../pacman.c:1289
 #, c-format
 msgid "config: dbpath: %s\n"
 msgstr "konfiguration: database sti: %s\n"
 
-#: ../pacman.c:1293
+#: ../pacman.c:1299
 #, c-format
 msgid "config: cachedir: %s\n"
 msgstr "konfiguration:: cache katalog: %s\n"
 
-#: ../pacman.c:1299
+#: ../pacman.c:1305
 #, c-format
 msgid "config: log file: %s\n"
 msgstr "konfiguration: log fil: %s\n"
 
 #. The config value is in days, we use seconds
-#: ../pacman.c:1307
+#: ../pacman.c:1313
 #, c-format
 msgid "config: UpgradeDelay: %i\n"
 msgstr "konfiguration: Opgradering Udsættelse: %i\n"
 
 #. The config value is in days, we use seconds
-#: ../pacman.c:1314
+#: ../pacman.c:1320
 #, c-format
 msgid "config: OldDelay: %i\n"
 msgstr "konfiguration: Gammel Udsættelse: %i\n"
 
 #. add to the list
-#: ../pacman.c:1340
+#: ../pacman.c:1346
 #, c-format
 msgid "config: %s: server: %s\n"
 msgstr "konfiguration: %s: server: %s\n"
@@ -462,26 +462,26 @@ msgstr "%s: afhængigheds information mangler"
 msgid "%s: file list is missing"
 msgstr "%s: fil liste mangler"
 
-#: ../be_files.c:200
+#: ../be_files.c:203
 #, c-format
 msgid "invalid name for dabatase entry '%s'"
 msgstr "ugyldig navn for dabatase postering '%s'"
 
-#: ../be_files.c:224
+#: ../be_files.c:227
 msgid "invalid package entry provided to _pacman_db_read"
 msgstr "ugyldig pakke indlæsning tilvejebrunget af _pacman_db_read"
 
-#: ../be_files.c:482
+#: ../be_files.c:485
 #, c-format
 msgid "db_write: could not open file %s/desc"
 msgstr "db_write: kunne ikke åbne fil %s/decs beskrivelse"
 
-#: ../be_files.c:567
+#: ../be_files.c:570
 #, c-format
 msgid "db_write: could not open file %s/files"
 msgstr "db_write: kunne ikke åbne fil %s/files filer"
 
-#: ../be_files.c:593
+#: ../be_files.c:596
 #, c-format
 msgid "db_write: could not open file %s/depends"
 msgstr "db_write: kunne ikke åbne fil %s/depends afhænhigheder"
@@ -549,7 +549,7 @@ msgstr "db vs targs: fundet %s som en konflikt for %s"
 
 #: ../conflict.c:254 ../conflict.c:353 ../deps.c:55 ../deps.c:590
 #: ../deps.c:630 ../group.c:40 ../handle.c:52 ../package.c:103 ../sync.c:63
-#: ../sync.c:632 ../sync.c:648 ../sync.c:744 ../trans.c:47 ../util.c:587
+#: ../sync.c:651 ../sync.c:667 ../sync.c:763 ../trans.c:47 ../util.c:587
 #: ../util.c:594
 #, c-format
 msgid "malloc failure: could not allocate %d bytes"
@@ -1018,32 +1018,32 @@ msgstr "manglende pakke navn i %s"
 msgid "missing package version in %s"
 msgstr "manglende pakke udgave i %s"
 
-#: ../package.c:343
+#: ../package.c:344
 #, c-format
 msgid "missing package architecture in %s"
 msgstr "manglende pakke arkitektur i %s"
 
-#: ../package.c:353
+#: ../package.c:354
 #, c-format
 msgid "wrong package architecture in %s"
 msgstr "forkert pakke arkitektur i %s"
 
-#: ../package.c:392
+#: ../package.c:394
 #, c-format
 msgid "could not remove tempfile %s"
 msgstr "kunne ikke fjerne temp-fil %s"
 
-#: ../package.c:409
+#: ../package.c:411
 #, c-format
 msgid "bad package file in %s"
 msgstr "dårlig pakke fil i %s"
 
-#: ../package.c:417
+#: ../package.c:419
 #, c-format
 msgid "missing package info file in %s"
 msgstr "manglende pakke info fil i %s"
 
-#: ../package.c:557
+#: ../package.c:559
 #, c-format
 msgid "loading SCRIPLET info for '%s'"
 msgstr "indlæser SCRIPLET info for '%s'"
@@ -1169,7 +1169,7 @@ msgstr "tjeker for pakke opgradering"
 msgid "'%s' not found in sync db -- skipping"
 msgstr "'%s' ikke fundet i sync db -- springer over"
 
-#: ../sync.c:212 ../sync.c:527
+#: ../sync.c:212 ../sync.c:546
 #, c-format
 msgid "'%s' is already elected for removal -- skipping"
 msgstr "'%s' er allerede valgt for fjernelse -- springer over"
@@ -1233,25 +1233,35 @@ msgstr "tiføjer målet '%s' til overførsel"
 msgid "local copy of '%s' repo is too old"
 msgstr "lokal kopi af '%s' arkivet er for gammel"
 
-#: ../sync.c:430
+#: ../sync.c:413
+#, c-format
+msgid "cache for '%s' repo is too old"
+msgstr "cache for '%s' arkivet er for gammel"
+
+#: ../sync.c:416
+#, c-format
+msgid "cache for '%s' repo is up to date"
+msgstr "cache for '%s' arkivet er fuldt opdateret"
+
+#: ../sync.c:449
 msgid "resolving targets dependencies"
 msgstr "løser målets afhængigheder"
 
-#: ../sync.c:450
+#: ../sync.c:469
 #, c-format
 msgid "adding package %s-%s to the transaction targets"
 msgstr "tilføjer pakke %s-%s til overførsel målet"
 
-#: ../sync.c:482
+#: ../sync.c:501
 msgid "looking for unresolvable dependencies"
 msgstr "ser efter uløste afhængighedder"
 
-#: ../sync.c:512
+#: ../sync.c:531
 #, c-format
 msgid "package '%s' is conflicting with '%s'"
 msgstr "pakke '%s' konflikter med '%s'"
 
-#: ../sync.c:534
+#: ../sync.c:553
 #, c-format
 msgid "'%s' not found in transaction set -- skipping"
 msgstr "'%s' ikke fundet i overførsel mål -- springer over"
@@ -1259,65 +1269,65 @@ msgstr "'%s' ikke fundet i overførsel mål -- springer over"
 #. so just treat it like a "replaces" item so the REQUIREDBY
 #. * fields are inherited properly.
 #.
-#: ../sync.c:545
+#: ../sync.c:564
 #, c-format
 msgid "package '%s' provides its own conflict"
 msgstr "pakke '%s' er skyld i dens egen konflikt"
 
-#: ../sync.c:568 ../sync.c:573
+#: ../sync.c:587 ../sync.c:592
 #, c-format
 msgid "'%s' is in the target list -- keeping it"
 msgstr "'%s' er i mål liste -- beholder den"
 
-#: ../sync.c:585 ../sync.c:622
+#: ../sync.c:604 ../sync.c:641
 #, c-format
 msgid "removing '%s' from target list"
 msgstr "fjerner '%s' fra mål liste"
 
 #. It's a conflict -- see if they want to remove it
 #.
-#: ../sync.c:594
+#: ../sync.c:613
 #, c-format
 msgid "resolving package '%s' conflict"
 msgstr "løser pakke '%s' konflikt"
 
 #. append to the replaces list
-#: ../sync.c:617
+#: ../sync.c:636
 #, c-format
 msgid "electing '%s' for removal"
 msgstr "vælger '%s' for fjernelse"
 
 #. abort
-#: ../sync.c:628 ../sync.c:644
+#: ../sync.c:647 ../sync.c:663
 msgid "unresolvable package conflicts detected"
 msgstr "uløsbare pakke konflikter opdaget"
 
-#: ../sync.c:696
+#: ../sync.c:715
 msgid "checking dependencies of packages designated for removal"
 msgstr "tjeker afhængigheder for pakker specificeret for fjernelse"
 
-#: ../sync.c:710
+#: ../sync.c:729
 msgid "something has gone horribly wrong"
 msgstr "noget er gået fuldstændig galt"
 
 #. found matching provisio -- we're good to go
-#: ../sync.c:729
+#: ../sync.c:748
 #, c-format
 msgid "found '%s' as a provision for '%s' -- conflict aborted"
 msgstr "fundet'%s' som en regel for '%s' -- konflikt afbrydes"
 
-#: ../sync.c:833
+#: ../sync.c:852
 #, c-format
 msgid "%s-%s-%s%s is already in the cache\n"
 msgstr "%s-%s-%s%s er allerede i cachen\n"
 
 #. no cache directory.... try creating it
-#: ../sync.c:845
+#: ../sync.c:864
 #, c-format
 msgid "no %s cache exists.  creating...\n"
 msgstr "ingen %s cache eksisterer.  skaber...\n"
 
-#: ../sync.c:846
+#: ../sync.c:865
 #, c-format
 msgid "warning: no %s cache exists.  creating..."
 msgstr "advarsel: ingen %s cache eksisterer.  skaber...."
@@ -1325,90 +1335,90 @@ msgstr "advarsel: ingen %s cache eksisterer.  skaber...."
 #. couldn't mkdir the cache directory, so fall back to /tmp and unlink
 #. * the package afterwards.
 #.
-#: ../sync.c:851
+#: ../sync.c:870
 msgid "couldn't create package cache, using /tmp instead\n"
 msgstr "kunne ikke skabe pakke cache, bruger /tmp i stedet for\n"
 
-#: ../sync.c:852
+#: ../sync.c:871
 msgid "warning: couldn't create package cache, using /tmp instead"
 msgstr "advarsel: kunne ikke skabe pakke cache, bruger /tmp i stedet for"
 
-#: ../sync.c:855
+#: ../sync.c:874
 #, c-format
 msgid "failed to set option CACHEDIR (%s)\n"
 msgstr "fejlede ved angivelse af indstilling CACHEDIR (%s)\n"
 
-#: ../sync.c:862
+#: ../sync.c:881
 #, c-format
 msgid "failed to retrieve some files from %s\n"
 msgstr "fejlede ved hentning af nogle filer fra %s\n"
 
-#: ../sync.c:892 ../sync.c:904
+#: ../sync.c:911 ../sync.c:923
 #, c-format
 msgid "can't get md5 or sha1 checksum for package %s\n"
 msgstr "kan ikke få md5 eller sha1 checksum for pakke %s\n"
 
-#: ../sync.c:923
+#: ../sync.c:942
 #, c-format
 msgid "archive %s was corrupted (bad MD5 or SHA1 checksum)\n"
 msgstr "arkiv %s var beskadiget (dårlig MD5 eller SHA1 checksum)\n"
 
-#: ../sync.c:925
+#: ../sync.c:944
 #, c-format
 msgid "archive %s is corrupted (bad MD5 or SHA1 checksum)\n"
 msgstr "arkiv %s er beskadiget (dårlig MD5 eller SHA1 checksum)\n"
 
-#: ../sync.c:953
+#: ../sync.c:972
 msgid "could not create removal transaction"
 msgstr "kunne ikke lave fjernelse af postering"
 
-#: ../sync.c:959
+#: ../sync.c:978
 msgid "could not initialize the removal transaction"
 msgstr "kunne ikke initialisere fjernelse af postering"
 
-#: ../sync.c:979
+#: ../sync.c:998
 msgid "removing conflicting and to-be-replaced packages"
 msgstr "fjerner konflikter og at-blive-erstatet af pakker"
 
-#: ../sync.c:981
+#: ../sync.c:1000
 msgid "could not prepare removal transaction"
 msgstr "kunne ikke forberede fjernelse postering"
 
-#: ../sync.c:987
+#: ../sync.c:1006
 msgid "could not commit removal transaction"
 msgstr "kunne ikke gennemføre fjernelse postering"
 
 #. install targets
-#: ../sync.c:994
+#: ../sync.c:1013
 msgid "installing packages"
 msgstr "installerer pakker"
 
-#: ../sync.c:997
+#: ../sync.c:1016
 msgid "could not create transaction"
 msgstr "kunne ikke skabe postering"
 
-#: ../sync.c:1002
+#: ../sync.c:1021
 msgid "could not initialize transaction"
 msgstr "kunne ikke initialisere postering"
 
-#: ../sync.c:1023
+#: ../sync.c:1042
 msgid "could not prepare transaction"
 msgstr "kunne ikke forberede udførsel"
 
-#: ../sync.c:1028
+#: ../sync.c:1047
 msgid "could not commit transaction"
 msgstr "kunne ikke udføre postering"
 
-#: ../sync.c:1035
+#: ../sync.c:1054
 msgid "updating database for replaced packages' dependencies"
 msgstr "opdaterer database for erstattede pakker' afhængigheder"
 
-#: ../sync.c:1064
+#: ../sync.c:1083
 #, c-format
 msgid "could not update requiredby for database entry %s-%s"
 msgstr "kunne ikke opdatere krævede-af for database post %s-%s"
 
-#: ../sync.c:1073
+#: ../sync.c:1092
 #, c-format
 msgid "could not update new database entry %s-%s"
 msgstr "kunne ikke opdatere ny database post %s-%s"

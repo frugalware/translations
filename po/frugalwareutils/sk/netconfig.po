@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-09-21 05:27+0200\n"
+"POT-Creation-Date: 2007-11-06 05:05+0100\n"
 "PO-Revision-Date: 2007-04-23 23:09+0200\n"
 "Last-Translator: andrej prochazka <a.prochazka@gsi.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,62 +16,27 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Pootle 0.10.1\n"
 
-#: ../netconfig.c:48
-#, fuzzy, c-format
-msgid "usage: %s [options] start|stop|restart|status|list [interface]\n"
-msgstr "použitie: %s [options] start|stop|restart|status|list\n"
-
-#: ../netconfig.c:49
-#, fuzzy, c-format
-msgid "       %s [options] [profile] [interface]\n"
-msgstr "%s [options] [profile]\n"
-
-#: ../netconfig.c:50
-#, c-format
-msgid "-h | --help              This help.\n"
-msgstr "-h | --help              Tento help.\n"
-
-#: ../netconfig.c:51
-#, c-format
-msgid "-f | --fast              Fast mode, used by the setup.\n"
-msgstr "-f | --fast              Rýchly mód, používaný pri inštalácii.\n"
-
-#: ../netconfig.c:52
-#, c-format
-msgid "     --dry-run           Do not actually perform the operation.\n"
-msgstr "  --dry-run           V skutočnosti nevykonaj operáciu.\n"
-
-#: ../netconfig.c:53
-#, c-format
-msgid "     --loup              Bring up the loopback interface.\n"
-msgstr ""
-
-#: ../netconfig.c:54
-#, c-format
-msgid "     --lodown            Bring down the loopback interface.\n"
-msgstr ""
-
-#: ../netconfig.c:63
+#: ../netconfig.c:57
 msgid "Use a DHCP server"
 msgstr "Použi DHCP server"
 
-#: ../netconfig.c:64
+#: ../netconfig.c:58
 msgid "Use a static IP address"
 msgstr "Použi statickú IP adresu"
 
-#: ../netconfig.c:65
+#: ../netconfig.c:59
 msgid "DSL connection"
 msgstr "DSL pripojenie"
 
-#: ../netconfig.c:66
+#: ../netconfig.c:60
 msgid "No network - loopback connection only"
 msgstr "Žiadne pripojenie - použi iba loopback spojenie"
 
-#: ../netconfig.c:68
+#: ../netconfig.c:62
 msgid "Select network connection type"
 msgstr "Vyber typ pripojenia"
 
-#: ../netconfig.c:69
+#: ../netconfig.c:63
 msgid ""
 "Now we need to know how your machine connects to the network.\n"
 "If you have an internal network card and an assigned IP address, gateway, "
@@ -91,48 +56,48 @@ msgstr ""
 "Ak máte sieťovú kartu priamo pripojenú na DSL modem , vyberte \"dsl\". \n"
 "Ak nemáte sieťovú kartu, vyberte loopback. \n"
 
-#: ../netconfig.c:86
+#: ../netconfig.c:80
 msgid "DSL configuration"
 msgstr "konfigurácia DSL"
 
-#: ../netconfig.c:86
+#: ../netconfig.c:80
 #, fuzzy
 msgid "Do you want to configure a DSL connection now?"
 msgstr "Chcete nakonfigurovať DSL pripojenie teraz?"
 
-#: ../netconfig.c:88
+#: ../netconfig.c:82
 msgid "Enter user name"
 msgstr "Nápište užívateľské meno"
 
-#: ../netconfig.c:89
+#: ../netconfig.c:83
 msgid "Enter your PPPoE user name:"
 msgstr "Napíšte vaše PPPoE užívateľské meno:"
 
-#: ../netconfig.c:93 ../netconfig.c:95
+#: ../netconfig.c:87 ../netconfig.c:89
 msgid "Password"
 msgstr "heslo"
 
-#: ../netconfig.c:94
+#: ../netconfig.c:88
 msgid "Please enter your PPPoE password"
 msgstr "Napíšte prosím vaše PPPoE heslo"
 
-#: ../netconfig.c:96
+#: ../netconfig.c:90
 msgid "Please re-enter your PPPoE password"
 msgstr "Napíšte prosím vaše PPPoE heslo ešte raz"
 
-#: ../netconfig.c:102
+#: ../netconfig.c:96
 msgid "Passwords don't match"
 msgstr "Zadané heslá sa nezhodujú"
 
-#: ../netconfig.c:103
+#: ../netconfig.c:97
 msgid "Sorry, the passwords do not match. Try again?"
 msgstr "Prepáčte, ale zadané heslá sa nezhodujú, pokúsiť sa znova ?"
 
-#: ../netconfig.c:106 ../netconfig.c:156
+#: ../netconfig.c:100 ../netconfig.c:150
 msgid "Enter interface name"
 msgstr "Napíšte meno interfaceu :"
 
-#: ../netconfig.c:107
+#: ../netconfig.c:101
 msgid ""
 "Enter the Ethernet interface connected to the DSL modem. It will be ethn, "
 "where 'n' is a number.\n"
@@ -144,15 +109,15 @@ msgstr ""
 "Ak si nie ste istý, stačte enter.\n"
 "Napíšte meno interfaceu"
 
-#: ../netconfig.c:135
+#: ../netconfig.c:129
 msgid "Network configuration"
 msgstr "Konfigurácia siete"
 
-#: ../netconfig.c:138
+#: ../netconfig.c:132
 msgid "Enter hostname"
 msgstr "Zadaj názov hosta"
 
-#: ../netconfig.c:138
+#: ../netconfig.c:132
 msgid ""
 "We'll need the name you'd like to give your host.\n"
 "The full hostname is needed, such as:\n"
@@ -168,7 +133,7 @@ msgstr ""
 "\n"
 "Zadajte celé meno :"
 
-#: ../netconfig.c:157
+#: ../netconfig.c:151
 msgid ""
 "We'll need the name of the interface you'd like to use for your network "
 "connection.\n"
@@ -180,11 +145,11 @@ msgstr ""
 "Ak si nie ste istý, stačte enter.\n"
 "Zadajte meno interfaceu:"
 
-#: ../netconfig.c:166
+#: ../netconfig.c:160
 msgid "Extended network name"
 msgstr "Meno rozšírenej siete - ESSID"
 
-#: ../netconfig.c:166
+#: ../netconfig.c:160
 msgid ""
 "It seems that this network card has a wireless extension. In order to use "
 "it, you must set your extended netwok name (ESSID). Enter your ESSID:"
@@ -192,11 +157,11 @@ msgstr ""
 "Vyzerá, že táto karta podporuje bezdôtové pripojenie. Ak ho chcete využiť, "
 "musíte zadať meno rozšírenej siete - ESSID. Zadajte váš ESSID:"
 
-#: ../netconfig.c:171
+#: ../netconfig.c:165
 msgid "Encryption key"
 msgstr "šifrovací kľúč "
 
-#: ../netconfig.c:171
+#: ../netconfig.c:165
 msgid ""
 "If you have an encryption key, then please enter it below.\n"
 "Examples: 4567-89AB-CD or  s:password"
@@ -204,11 +169,11 @@ msgstr ""
 "Ak máte šifrovací kľúč, tak ho prosím zadajte.\n"
 " Príklad: 4567-89AB-CDalebo s:heslo"
 
-#: ../netconfig.c:178
+#: ../netconfig.c:172
 msgid "Set DHCP hostname"
 msgstr "Nastavenie DHCP host mena"
 
-#: ../netconfig.c:178
+#: ../netconfig.c:172
 msgid ""
 "Some network providers require that the DHCP hostname beset in order to "
 "connect. If so, they'll have assigned a hostname to your machine. If you "
@@ -221,19 +186,19 @@ msgstr ""
 "stačte enter "
 
 #. options = ip netmask netmask
-#: ../netconfig.c:193
+#: ../netconfig.c:187
 msgid "Enter ip address"
 msgstr "Zadanie IP adresy"
 
-#: ../netconfig.c:193
+#: ../netconfig.c:187
 msgid "Enter your IP address for the local machine."
 msgstr "Zadajte IP adresu počítača"
 
-#: ../netconfig.c:194
+#: ../netconfig.c:188
 msgid "Enter netmask for local network"
 msgstr "Zadanie masky siete - netmask"
 
-#: ../netconfig.c:195
+#: ../netconfig.c:189
 msgid ""
 "Enter your netmask. This will generally look something like this: "
 "255.255.255.0\n"
@@ -242,11 +207,11 @@ msgstr ""
 "Zadajte masku siete. Vo všeobecnosti vyzerá niečo ako 255.255.255.0\n"
 "Ak si nie ste istý stačte enter"
 
-#: ../netconfig.c:202
+#: ../netconfig.c:196
 msgid "Enter gateway address"
 msgstr "Nastavenie gateway - brány"
 
-#: ../netconfig.c:202
+#: ../netconfig.c:196
 msgid ""
 "Enter the address for the gateway on your network. If you don't have a "
 "gateway on your network just hit enter, without entering any ip address."
@@ -254,11 +219,11 @@ msgstr ""
 "Nastavte váš gateway pre vašu sieť. Ak nemáte žiadny, stlačte enter bez "
 "zadania ip adresy"
 
-#: ../netconfig.c:208
+#: ../netconfig.c:202
 msgid "Select nameserver"
 msgstr "Výber DNS servera"
 
-#: ../netconfig.c:208
+#: ../netconfig.c:202
 msgid ""
 "Please give the IP address of the name server to use. You canadd more Domain "
 "Name Servers later by editing /etc/sysconfig/network/default.\n"
@@ -269,23 +234,40 @@ msgstr ""
 "neskôr editovaním súboru /etc/sysconfig/network/default.\n"
 "Ak nemáte žiadny, stlačte enter bez zadania ip adresy"
 
-#: ../netconfig.c:219
+#: ../netconfig.c:213
 msgid "Adjust configuration files"
 msgstr "nastavenie konfiguračných súborov"
 
-#: ../netconfig.c:219
+#: ../netconfig.c:213
 msgid "Accept these settings and adjust configuration files?"
 msgstr "Akceptovať nastavenia a nastaviť konfiguračné súbory ?"
 
-#: ../netconfig.c:303
+#: ../netconfig.c:297
 #, c-format
 msgid "No profile loaded.\n"
 msgstr "Nie je načítaný žiadny profil\n"
 
-#: ../netconfig.c:308
+#: ../netconfig.c:302
 #, c-format
 msgid "Current profile: %s\n"
 msgstr "Aktuálny profil: %s\n"
+
+#, fuzzy
+#~ msgid "usage: %s [options] start|stop|restart|status|list [interface]\n"
+#~ msgstr "použitie: %s [options] start|stop|restart|status|list\n"
+
+#, fuzzy
+#~ msgid "       %s [options] [profile] [interface]\n"
+#~ msgstr "%s [options] [profile]\n"
+
+#~ msgid "-h | --help              This help.\n"
+#~ msgstr "-h | --help              Tento help.\n"
+
+#~ msgid "-f | --fast              Fast mode, used by the setup.\n"
+#~ msgstr "-f | --fast              Rýchly mód, používaný pri inštalácii.\n"
+
+#~ msgid "     --dry-run           Do not actually perform the operation.\n"
+#~ msgstr "  --dry-run           V skutočnosti nevykonaj operáciu.\n"
 
 #~ msgid ""
 #~ "                         SIGHUP will unload and reload the current "

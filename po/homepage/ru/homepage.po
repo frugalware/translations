@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-09-21 05:27+0200\n"
+"POT-Creation-Date: 2007-11-06 05:05+0100\n"
 "PO-Revision-Date: 2007-08-07 23:47+0200\n"
 "Last-Translator: Serge Vinogradov <boogie_byte@mail.ru>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -318,13 +318,50 @@ msgstr "Ответ"
 msgid "Long"
 msgstr "Подробно"
 
-#: ../authors.php:61 ../config.inc.php:80
-msgid "Developers"
-msgstr "Разработчики"
+#: ../authors.php:57
+#, fuzzy
+msgid "at"
+msgstr "Дата"
 
-#: ../authors.php:84 ../config.inc.php:81
-msgid "Contributors"
-msgstr "Участники"
+#: ../authors.php:58
+msgid "dot"
+msgstr ""
+
+#: ../authors.php:68 ../config.inc.php:79
+msgid "Authors"
+msgstr ""
+
+#: ../authors.php:69
+msgid ""
+"This page should list all people who contributed to Frugalware Linux in some "
+"way. However, we are aware that the contributor list is incomplete. Please "
+"contact us if your name is missing from here!<br />"
+msgstr ""
+
+#: ../authors.php:70
+#, php-format
+msgid "Available filters: <a href=\"%s\">No filter</a> &middot; "
+msgstr ""
+
+#: ../authors.php:71
+#, php-format
+msgid "<a href=\"%s\">Active developers</a> &middot; "
+msgstr ""
+
+#: ../authors.php:72
+#, php-format
+msgid "<a href=\"%s\">Former developers</a> &middot; "
+msgstr ""
+
+#: ../authors.php:73
+#, php-format
+msgid "<a href=\"%s\">Contributors</a><br />"
+msgstr ""
+
+#: ../authors.php:74
+#, fuzzy
+msgid "Frugalware Linux Author list"
+msgstr "Frugalware в СМИ"
 
 #. $menucontent = '<a class="menu" href="' . $fwng_root . '">' . gettext('News') . "</a> &middot; \n";
 #: ../config.inc.php:42 ../rss.php:175
@@ -420,31 +457,27 @@ msgid "Roadmap"
 msgstr "План разработки"
 
 #: ../config.inc.php:74
-msgid "Darcs repository"
-msgstr "Репозиторий Darcs"
-
-#: ../config.inc.php:75
 msgid "Git repository"
 msgstr "Репозиторий Git"
 
-#: ../config.inc.php:76
+#: ../config.inc.php:75
 msgid "Bug Tracker"
 msgstr "Трекер ошибок"
 
-#: ../config.inc.php:77
+#: ../config.inc.php:76
 msgid "Translation portal"
 msgstr "Портал переводов"
 
-#: ../config.inc.php:78
+#: ../config.inc.php:77
 msgid "Blogs"
 msgstr "Блоги"
 
-#: ../config.inc.php:79 ../donations.php:50 ../header.php:54
+#: ../config.inc.php:78 ../donations.php:50 ../header.php:54
 msgid "Donations"
 msgstr "Пожертвования"
 
-#: ../config.inc.php:92 ../config.inc.php:94 ../config.inc.php:96
-#: ../config.inc.php:98 ../config.inc.php:100
+#: ../config.inc.php:90 ../config.inc.php:92 ../config.inc.php:94
+#: ../config.inc.php:96 ../config.inc.php:98 ../config.inc.php:100
 msgid "Change language"
 msgstr "Сменить язык"
 
@@ -667,12 +700,17 @@ msgstr "Искать в описании"
 msgid "Regular expression"
 msgstr "Регулярное выражение"
 
-#: ../packages.php:100 ../packages.php:319 ../packages.php:328
+#: ../packages.php:97
+#, fuzzy
+msgid "(regular expression)"
+msgstr "Регулярное выражение"
+
+#: ../packages.php:100 ../packages.php:331 ../packages.php:340
 msgid "Architecture:"
 msgstr "Архитектура:"
 
-#: ../packages.php:107 ../packages.php:319 ../packages.php:328
-#: ../packages.php:392
+#: ../packages.php:107 ../packages.php:331 ../packages.php:340
+#: ../packages.php:404
 msgid "Version:"
 msgstr "Версия: "
 
@@ -702,184 +740,188 @@ msgstr ""
 "Кликните <a href=\"javascript:addEngine()\">здесь</a>, чтобы установить "
 "поисковый плагин для Firefox."
 
-#: ../packages.php:185
+#: ../packages.php:191
+msgid "Error in the query, please change the searching conditions"
+msgstr ""
+
+#: ../packages.php:197
 msgid "No package found"
 msgstr "Нет найденых пакетов"
 
-#: ../packages.php:222
+#: ../packages.php:234
 msgid "No such file or directory"
 msgstr "Нет такого файла или директории"
 
-#: ../packages.php:261 ../packages.php:294
+#: ../packages.php:273 ../packages.php:306
 msgid "No such group"
 msgstr "Нет такой группы"
 
-#: ../packages.php:303
+#: ../packages.php:315
 msgid "Listing groups"
 msgstr "Список групп"
 
-#: ../packages.php:314
+#: ../packages.php:326
 msgid "Listing contents of group:"
 msgstr "Список содержимого группы"
 
-#: ../packages.php:316 ../packages.php:325
+#: ../packages.php:328 ../packages.php:337
 msgid "Search result for:"
 msgstr "Результаты поиска"
 
-#: ../packages.php:388
+#: ../packages.php:400
 msgid "Package information:"
 msgstr "Информация о пакете"
 
-#: ../packages.php:390
+#: ../packages.php:402
 msgid "Name:"
 msgstr "Имя:"
 
-#: ../packages.php:391
+#: ../packages.php:403
 msgid "Parent:"
 msgstr "Родительский пакет:"
 
-#: ../packages.php:394
+#: ../packages.php:406
 msgid "Documentation:"
 msgstr "Документация:"
 
-#: ../packages.php:396
+#: ../packages.php:408
 msgid "Buildlog:"
 msgstr "Журнал сборки:"
 
-#: ../packages.php:397
+#: ../packages.php:409
 msgid "Changelog:"
 msgstr "Журнал изменений:"
 
-#: ../packages.php:404
+#: ../packages.php:413
 msgid "Groups:"
 msgstr "Группы:"
 
-#: ../packages.php:409
+#: ../packages.php:418
 msgid "URL:"
 msgstr "URL:"
 
-#: ../packages.php:412
+#: ../packages.php:421
 msgid "Depends:"
 msgstr "Зависимости:"
 
-#: ../packages.php:419
+#: ../packages.php:428
 msgid "Exact reverse depends:"
 msgstr "Четкие обратные зависимости:"
 
-#: ../packages.php:426
+#: ../packages.php:435
 msgid "Other reverse depends:"
 msgstr "Другие обратные зависимости:"
 
-#: ../packages.php:433
+#: ../packages.php:442
 msgid "Conflicts:"
 msgstr "Конфликты:"
 
-#: ../packages.php:440
+#: ../packages.php:449
 msgid "Provides:"
 msgstr "Обеспечивает:"
 
-#: ../packages.php:445
+#: ../packages.php:454
 msgid "Compressed size:"
 msgstr "Сжатый размер:"
 
-#: ../packages.php:446
+#: ../packages.php:455
 msgid "Uncompressed size:"
 msgstr "Несжатый размер:"
 
-#: ../packages.php:447
+#: ../packages.php:456
 msgid "Arch:"
 msgstr "Архитектура:"
 
-#: ../packages.php:448
+#: ../packages.php:457
 msgid "Description:"
 msgstr "Описание:"
 
 #. FIXME: latin -> utf8 conversion hardwired
-#: ../packages.php:450
+#: ../packages.php:459
 msgid "Maintainer:"
 msgstr "Сопровождающий:"
 
-#: ../packages.php:451
+#: ../packages.php:460
 msgid "Uploaded by:"
 msgstr "Загружен:"
 
-#: ../packages.php:452
+#: ../packages.php:461
 msgid "Download:"
 msgstr "Скачать:"
 
-#: ../packages.php:457
+#: ../packages.php:466
 msgid "Forums:"
 msgstr "Форум:"
 
-#: ../packages.php:457
+#: ../packages.php:466
 msgid "Related posts"
 msgstr "Связанные посты"
 
-#: ../packages.php:458
+#: ../packages.php:467
 msgid "Wiki:"
 msgstr "Вики:"
 
-#: ../packages.php:458
+#: ../packages.php:467
 msgid "Related pages"
 msgstr "Связанные страницы"
 
-#: ../packages.php:459
+#: ../packages.php:468
 msgid "Bug Tracking System:"
 msgstr "Трекер ошибок:"
 
-#: ../packages.php:459
+#: ../packages.php:468
 msgid "Related open bugs"
 msgstr "Связанные нерешенные ошибки"
 
-#: ../packages.php:460
+#: ../packages.php:469
 msgid "Syndicate:"
 msgstr "Анонсы:"
 
-#: ../packages.php:460
+#: ../packages.php:469
 msgid "RSS"
 msgstr "RSS"
 
-#: ../packages.php:461
+#: ../packages.php:470
 msgid "SHA1 Sum:"
 msgstr "Контрольная сумма SHA1:"
 
-#: ../packages.php:462
+#: ../packages.php:471
 msgid "Frugalware version:"
 msgstr "Версия Frugalware:"
 
-#: ../packages.php:463
+#: ../packages.php:472
 msgid "Updated:"
 msgstr "Обновлен:"
 
-#: ../packages.php:468 ../packages.php:519 ../packages.php:568
-#: ../packages.php:626 ../packages.php:656
+#: ../packages.php:477 ../packages.php:528 ../packages.php:577
+#: ../packages.php:635 ../packages.php:665
 msgid "No such package!"
 msgstr "Нет такого пакета!"
 
-#: ../packages.php:504
+#: ../packages.php:513
 #, php-format
 msgid "Changelog for %s"
 msgstr "Журнал изменений %s"
 
-#: ../packages.php:515 ../packages.php:564
+#: ../packages.php:524 ../packages.php:573
 msgid "Sorry, currently no log available."
 msgstr "Приносим извинения, на данный момент журнал не доступен."
 
-#: ../packages.php:553
+#: ../packages.php:562
 #, php-format
 msgid "Build log for %s"
 msgstr "Журнал сборки %s"
 
-#: ../packages.php:602
+#: ../packages.php:611
 #, php-format
 msgid "Documentation for %s"
 msgstr "Документация для %s"
 
-#: ../packages.php:622
+#: ../packages.php:631
 msgid "Sorry, currently no documentation available."
 msgstr "Приносим извинения, на данный момент документация не доступна."
 
-#: ../packages.php:641
+#: ../packages.php:650
 msgid "File list for"
 msgstr "Список файлов для"
 
@@ -1172,6 +1214,15 @@ msgstr "CVE"
 #: ../security.php:87
 msgid "Description"
 msgstr "Описание"
+
+#~ msgid "Developers"
+#~ msgstr "Разработчики"
+
+#~ msgid "Contributors"
+#~ msgstr "Участники"
+
+#~ msgid "Darcs repository"
+#~ msgstr "Репозиторий Darcs"
 
 #~ msgid "Read full current changelog"
 #~ msgstr "Просмотр полного журнала изменений"

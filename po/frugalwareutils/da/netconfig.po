@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-09-21 05:27+0200\n"
+"POT-Creation-Date: 2007-11-06 05:05+0100\n"
 "PO-Revision-Date: 2007-09-05 19:12+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,64 +16,27 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 1.0\n"
 
-#: ../netconfig.c:48
-#, c-format
-msgid "usage: %s [options] start|stop|restart|status|list [interface]\n"
-msgstr ""
-"brug: %s [valgmuligheder] start|stop|restart|status|list [grænseflade]\n"
-
-#: ../netconfig.c:49
-#, c-format
-msgid "       %s [options] [profile] [interface]\n"
-msgstr "       %s [valgmuligheder] [profil] [grænseflade]\n"
-
-#: ../netconfig.c:50
-#, c-format
-msgid "-h | --help              This help.\n"
-msgstr "-h | --help              Denne hjælp.\n"
-
-#: ../netconfig.c:51
-#, c-format
-msgid "-f | --fast              Fast mode, used by the setup.\n"
-msgstr "-f | --fast              Hurtig lager, anvendes af installationen.\n"
-
-#: ../netconfig.c:52
-#, c-format
-msgid "     --dry-run           Do not actually perform the operation.\n"
-msgstr ""
-"     --dry-run           Kør handling men den udfører ikke handlingen.\n"
-
-#: ../netconfig.c:53
-#, c-format
-msgid "     --loup              Bring up the loopback interface.\n"
-msgstr "     --loup              Start loopback grænsefladen op.\n"
-
-#: ../netconfig.c:54
-#, c-format
-msgid "     --lodown            Bring down the loopback interface.\n"
-msgstr "     --lodown            Stop loopback grænsefladen.\n"
-
-#: ../netconfig.c:63
+#: ../netconfig.c:57
 msgid "Use a DHCP server"
 msgstr "Brug en DHCP server"
 
-#: ../netconfig.c:64
+#: ../netconfig.c:58
 msgid "Use a static IP address"
 msgstr "Brug en statisk IP adresse"
 
-#: ../netconfig.c:65
+#: ../netconfig.c:59
 msgid "DSL connection"
 msgstr "DSL forbindelse"
 
-#: ../netconfig.c:66
+#: ../netconfig.c:60
 msgid "No network - loopback connection only"
 msgstr "Intet netværk - kun loopback forbindelse"
 
-#: ../netconfig.c:68
+#: ../netconfig.c:62
 msgid "Select network connection type"
 msgstr "Vælg netværks forbindelse type"
 
-#: ../netconfig.c:69
+#: ../netconfig.c:63
 msgid ""
 "Now we need to know how your machine connects to the network.\n"
 "If you have an internal network card and an assigned IP address, gateway, "
@@ -95,47 +58,47 @@ msgstr ""
 "'dsl'. \n"
 "Til sidst, hvis du ikke har et netværks kort, så væg 'lo' som valg. \n"
 
-#: ../netconfig.c:86
+#: ../netconfig.c:80
 msgid "DSL configuration"
 msgstr "DSL konfiguration"
 
-#: ../netconfig.c:86
+#: ../netconfig.c:80
 msgid "Do you want to configure a DSL connection now?"
 msgstr "Vil du konfigure en DSL forbindelse nu?"
 
-#: ../netconfig.c:88
+#: ../netconfig.c:82
 msgid "Enter user name"
 msgstr "Skriv bruger navn"
 
-#: ../netconfig.c:89
+#: ../netconfig.c:83
 msgid "Enter your PPPoE user name:"
 msgstr "Skriv dit PPPoE bruger navn:"
 
-#: ../netconfig.c:93 ../netconfig.c:95
+#: ../netconfig.c:87 ../netconfig.c:89
 msgid "Password"
 msgstr "Password"
 
-#: ../netconfig.c:94
+#: ../netconfig.c:88
 msgid "Please enter your PPPoE password"
 msgstr "Vær venlig at skrive dit PPPoE password"
 
-#: ../netconfig.c:96
+#: ../netconfig.c:90
 msgid "Please re-enter your PPPoE password"
 msgstr "Vær venlig at skrive dit PPPoE password igen"
 
-#: ../netconfig.c:102
+#: ../netconfig.c:96
 msgid "Passwords don't match"
 msgstr "Password stemte ikke overens"
 
-#: ../netconfig.c:103
+#: ../netconfig.c:97
 msgid "Sorry, the passwords do not match. Try again?"
 msgstr "Undskyld, dit passwords stemte ikke overens. Prøv igen?"
 
-#: ../netconfig.c:106 ../netconfig.c:156
+#: ../netconfig.c:100 ../netconfig.c:150
 msgid "Enter interface name"
 msgstr "Skriv grænseflade navn"
 
-#: ../netconfig.c:107
+#: ../netconfig.c:101
 msgid ""
 "Enter the Ethernet interface connected to the DSL modem. It will be ethn, "
 "where 'n' is a number.\n"
@@ -147,15 +110,15 @@ msgstr ""
 "Hvis du er usikker, så tryk på enter.\n"
 "Skriv grænseflade navn:"
 
-#: ../netconfig.c:135
+#: ../netconfig.c:129
 msgid "Network configuration"
 msgstr "Netværks Konfiguration"
 
-#: ../netconfig.c:138
+#: ../netconfig.c:132
 msgid "Enter hostname"
 msgstr "Skriv værtnavn"
 
-#: ../netconfig.c:138
+#: ../netconfig.c:132
 msgid ""
 "We'll need the name you'd like to give your host.\n"
 "The full hostname is needed, such as:\n"
@@ -171,7 +134,7 @@ msgstr ""
 "\n"
 "Skriv det fulde værtnavn:"
 
-#: ../netconfig.c:157
+#: ../netconfig.c:151
 msgid ""
 "We'll need the name of the interface you'd like to use for your network "
 "connection.\n"
@@ -182,11 +145,11 @@ msgstr ""
 "Hvis du er usikker, så tryk enter.\n"
 "Skriv grænseflade navn:"
 
-#: ../netconfig.c:166
+#: ../netconfig.c:160
 msgid "Extended network name"
 msgstr "Udvidet netværk navn"
 
-#: ../netconfig.c:166
+#: ../netconfig.c:160
 msgid ""
 "It seems that this network card has a wireless extension. In order to use "
 "it, you must set your extended netwok name (ESSID). Enter your ESSID:"
@@ -194,11 +157,11 @@ msgstr ""
 "Det ser ud til at dette netværks kort har en trådløs forbindelse. For at "
 "bruge dette, må du skrive dit udvidede netvæks navn (ESSID). Skriv dit ESSID:"
 
-#: ../netconfig.c:171
+#: ../netconfig.c:165
 msgid "Encryption key"
 msgstr "Kryptering nøgle"
 
-#: ../netconfig.c:171
+#: ../netconfig.c:165
 msgid ""
 "If you have an encryption key, then please enter it below.\n"
 "Examples: 4567-89AB-CD or  s:password"
@@ -206,11 +169,11 @@ msgstr ""
 "Hvis du har en kryptering nøgle, så vær venlig at skrin den herunder.\n"
 "Eksempler: 4567-89AB-CD eller  s:password"
 
-#: ../netconfig.c:178
+#: ../netconfig.c:172
 msgid "Set DHCP hostname"
 msgstr "Sæt DHCP værtnavn"
 
-#: ../netconfig.c:178
+#: ../netconfig.c:172
 msgid ""
 "Some network providers require that the DHCP hostname beset in order to "
 "connect. If so, they'll have assigned a hostname to your machine. If you "
@@ -223,19 +186,19 @@ msgstr ""
 "herunder. Hvis du ikke har et DHCP værtsnavn, så slå enter."
 
 #. options = ip netmask netmask
-#: ../netconfig.c:193
+#: ../netconfig.c:187
 msgid "Enter ip address"
 msgstr "Skriv ip adresse"
 
-#: ../netconfig.c:193
+#: ../netconfig.c:187
 msgid "Enter your IP address for the local machine."
 msgstr "Skriv din IP adresse for den lokale maskine"
 
-#: ../netconfig.c:194
+#: ../netconfig.c:188
 msgid "Enter netmask for local network"
 msgstr "Skriv netmask for det lokale netværk"
 
-#: ../netconfig.c:195
+#: ../netconfig.c:189
 msgid ""
 "Enter your netmask. This will generally look something like this: "
 "255.255.255.0\n"
@@ -244,11 +207,11 @@ msgstr ""
 "Skriv din netmask. Det vi generalt se sådan ud: 255.255.255.0\n"
 "Hvis du er usikker, så tryk enter."
 
-#: ../netconfig.c:202
+#: ../netconfig.c:196
 msgid "Enter gateway address"
 msgstr "Skriv gateway adresse"
 
-#: ../netconfig.c:202
+#: ../netconfig.c:196
 msgid ""
 "Enter the address for the gateway on your network. If you don't have a "
 "gateway on your network just hit enter, without entering any ip address."
@@ -256,11 +219,11 @@ msgstr ""
 "Skriv adressen for gateway på dit netværk. Hvis du ikke har en gateway på "
 "dit netværk så slå enter, uden at angive nogen ip adresse."
 
-#: ../netconfig.c:208
+#: ../netconfig.c:202
 msgid "Select nameserver"
 msgstr "Vælg navneserver"
 
-#: ../netconfig.c:208
+#: ../netconfig.c:202
 msgid ""
 "Please give the IP address of the name server to use. You canadd more Domain "
 "Name Servers later by editing /etc/sysconfig/network/default.\n"
@@ -273,20 +236,44 @@ msgstr ""
 "Hvis du ikke har nogen navne server på dit netværk så slå enter, Uden at "
 "angive nogen ip adresse."
 
-#: ../netconfig.c:219
+#: ../netconfig.c:213
 msgid "Adjust configuration files"
 msgstr "Tilpas konfiguration filer"
 
-#: ../netconfig.c:219
+#: ../netconfig.c:213
 msgid "Accept these settings and adjust configuration files?"
 msgstr "Acceptere disse opsætninger og tilpassede konfigurations filer?"
 
-#: ../netconfig.c:303
+#: ../netconfig.c:297
 #, c-format
 msgid "No profile loaded.\n"
 msgstr "Ingen profil indlæst.\n"
 
-#: ../netconfig.c:308
+#: ../netconfig.c:302
 #, c-format
 msgid "Current profile: %s\n"
 msgstr "Aktuel profil: %s\n"
+
+#~ msgid "usage: %s [options] start|stop|restart|status|list [interface]\n"
+#~ msgstr ""
+#~ "brug: %s [valgmuligheder] start|stop|restart|status|list [grænseflade]\n"
+
+#~ msgid "       %s [options] [profile] [interface]\n"
+#~ msgstr "       %s [valgmuligheder] [profil] [grænseflade]\n"
+
+#~ msgid "-h | --help              This help.\n"
+#~ msgstr "-h | --help              Denne hjælp.\n"
+
+#~ msgid "-f | --fast              Fast mode, used by the setup.\n"
+#~ msgstr ""
+#~ "-f | --fast              Hurtig lager, anvendes af installationen.\n"
+
+#~ msgid "     --dry-run           Do not actually perform the operation.\n"
+#~ msgstr ""
+#~ "     --dry-run           Kør handling men den udfører ikke handlingen.\n"
+
+#~ msgid "     --loup              Bring up the loopback interface.\n"
+#~ msgstr "     --loup              Start loopback grænsefladen op.\n"
+
+#~ msgid "     --lodown            Bring down the loopback interface.\n"
+#~ msgstr "     --lodown            Stop loopback grænsefladen.\n"

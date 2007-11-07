@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-09-21 05:27+0200\n"
-"PO-Revision-Date: 2007-09-21 10:59+0200\n"
+"POT-Creation-Date: 2007-11-06 05:05+0100\n"
+"PO-Revision-Date: 2007-10-25 16:35+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -41,7 +41,7 @@ msgstr ""
 
 #: ../about.php:40
 msgid "What is &quot;The Frugalware Philosophy&quot; about?"
-msgstr "Hvad er &quot;The Frugalware´s Philosofi&quot;?"
+msgstr "Hvad er &quot;Frugalware´s Philosofi&quot;?"
 
 #: ../about.php:41
 msgid ""
@@ -187,8 +187,8 @@ msgstr ""
 "er inkluderet i DVD udgaven. Så start med at arbejde med FrugalBuild skript, "
 "for et typisks eksempel, se på <a href=\"/packages/44\">cabextract</a> "
 "pakker. Prøv at forbedre dem, eller lav en ny for et nuværende ikke-"
-"supportet program. Så send dine patch til <a href=\"mailman/listinfo"
-"/frugalware-devel\">devel</a> mail liste. Fra nu af vil alle ting være "
+"supportet program. Så send dine patch til <a href=\"mailman/listinfo/"
+"frugalware-devel\">devel</a> mail liste. Fra nu af vil alle ting være "
 "naturligt for dig :)"
 
 #: ../about.php:56
@@ -290,8 +290,7 @@ msgstr ""
 "lige nu har vi ikke nogen resurser til at bygge og vedligeholde disse "
 "pakker. Udover x86, har vi ikke lige nu ingen ikke-x86 hardware, men vi "
 "modtager meget gerne sådane programrettelser eller andre midler til at skabe "
-"sådanne ikke-x86 optimerede pakker. Vi arbejder også på en PowerPC "
-"portering"
+"sådanne ikke-x86 optimerede pakker. Vi arbejder også på en PowerPC portering"
 
 #: ../about.php:76
 msgid "Short"
@@ -309,13 +308,52 @@ msgstr "Svar"
 msgid "Long"
 msgstr "Lang"
 
-#: ../authors.php:61 ../config.inc.php:80
-msgid "Developers"
-msgstr "Udviklere"
+#: ../authors.php:57
+msgid "at"
+msgstr "Tidsangivelse"
 
-#: ../authors.php:84 ../config.inc.php:81
-msgid "Contributors"
+#: ../authors.php:58
+msgid "dot"
+msgstr "dot"
+
+#: ../authors.php:68 ../config.inc.php:79
+msgid "Authors"
 msgstr "Bidragsydere"
+
+#: ../authors.php:69
+msgid ""
+"This page should list all people who contributed to Frugalware Linux in some "
+"way. However, we are aware that the contributor list is incomplete. Please "
+"contact us if your name is missing from here!<br />"
+msgstr ""
+"Denne side skulle vise en liste af alle folk som bidrager til Frugalware "
+"Linux på en eller anden måde. Ikke desto mindre, vi er opmærksom på at "
+"listen med bidragsydere ikke er komplet. Vær venlig at kontakte os hvis dit "
+"navn mangler her!<br />"
+
+#: ../authors.php:70
+#, php-format
+msgid "Available filters: <a href=\"%s\">No filter</a> &middot; "
+msgstr "Tilgængelige filtere: <a href=\"%s\">Ingen filter</a> &middot; "
+
+#: ../authors.php:71
+#, php-format
+msgid "<a href=\"%s\">Active developers</a> &middot; "
+msgstr "<a href=\"%s\">Aktive udviklere</a> &middot; "
+
+#: ../authors.php:72
+#, php-format
+msgid "<a href=\"%s\">Former developers</a> &middot; "
+msgstr "<a href=\"%s\">Tidligere udviklere</a> &middot; "
+
+#: ../authors.php:73
+#, php-format
+msgid "<a href=\"%s\">Contributors</a><br />"
+msgstr "<a href=\"%s\">Bidragsydere</a><br />"
+
+#: ../authors.php:74
+msgid "Frugalware Linux Author list"
+msgstr "Frugalware Linux Bidragsyder liste"
 
 #. $menucontent = '<a class="menu" href="' . $fwng_root . '">' . gettext('News') . "</a> &middot; \n";
 #: ../config.inc.php:42 ../rss.php:175
@@ -380,7 +418,7 @@ msgstr "Skærmbilleder"
 
 #: ../config.inc.php:62
 msgid "Map"
-msgstr "Oversigt"
+msgstr "Landkort over brugere"
 
 #: ../config.inc.php:63
 msgid "Last.fm group"
@@ -411,31 +449,27 @@ msgid "Roadmap"
 msgstr "Udgivelse oversigt"
 
 #: ../config.inc.php:74
-msgid "Darcs repository"
-msgstr "Darcs arkiv"
-
-#: ../config.inc.php:75
 msgid "Git repository"
 msgstr "Git arkiv"
 
-#: ../config.inc.php:76
+#: ../config.inc.php:75
 msgid "Bug Tracker"
 msgstr "Bug Registrering"
 
-#: ../config.inc.php:77
+#: ../config.inc.php:76
 msgid "Translation portal"
 msgstr "Oversættelse portal"
 
-#: ../config.inc.php:78
+#: ../config.inc.php:77
 msgid "Blogs"
 msgstr "Blogs"
 
-#: ../config.inc.php:79 ../donations.php:50 ../header.php:54
+#: ../config.inc.php:78 ../donations.php:50 ../header.php:54
 msgid "Donations"
 msgstr "Donationer"
 
-#: ../config.inc.php:92 ../config.inc.php:94 ../config.inc.php:96
-#: ../config.inc.php:98 ../config.inc.php:100
+#: ../config.inc.php:90 ../config.inc.php:92 ../config.inc.php:94
+#: ../config.inc.php:96 ../config.inc.php:98 ../config.inc.php:100
 msgid "Change language"
 msgstr "Ændre sprog"
 
@@ -661,12 +695,16 @@ msgstr "Søg i beskrivelse"
 msgid "Regular expression"
 msgstr "Regulært udtryk"
 
-#: ../packages.php:100 ../packages.php:319 ../packages.php:328
+#: ../packages.php:97
+msgid "(regular expression)"
+msgstr "(regulært udtryk)"
+
+#: ../packages.php:100 ../packages.php:331 ../packages.php:340
 msgid "Architecture:"
 msgstr "Arkitektur:"
 
-#: ../packages.php:107 ../packages.php:319 ../packages.php:328
-#: ../packages.php:392
+#: ../packages.php:107 ../packages.php:331 ../packages.php:340
+#: ../packages.php:404
 msgid "Version:"
 msgstr "Version:"
 
@@ -681,7 +719,7 @@ msgstr "Nulstille"
 #: ../packages.php:120
 #, php-format
 msgid "Searching in %d binary and %d source-only packages."
-msgstr "Søge i %d binær og %d kun-source pakker."
+msgstr "Søge i %d binære og %d source pakker."
 
 #: ../packages.php:134
 msgid "You will need a Mozilla based browser to install a search plugin."
@@ -696,184 +734,188 @@ msgstr ""
 "Tryk <a href=\"javascript:addEngine()\">her</a> for at installere Firefox "
 "søge plugin."
 
-#: ../packages.php:185
+#: ../packages.php:191
+msgid "Error in the query, please change the searching conditions"
+msgstr "Fejl i forespørgsel, vær venlig at ændre søge betingelserne"
+
+#: ../packages.php:197
 msgid "No package found"
 msgstr "Ingen pakke fundet"
 
-#: ../packages.php:222
+#: ../packages.php:234
 msgid "No such file or directory"
 msgstr "Ingen sådan fil eller katalog"
 
-#: ../packages.php:261 ../packages.php:294
+#: ../packages.php:273 ../packages.php:306
 msgid "No such group"
 msgstr "Ingen sådan gruppe"
 
-#: ../packages.php:303
+#: ../packages.php:315
 msgid "Listing groups"
 msgstr "Lister grupper"
 
-#: ../packages.php:314
+#: ../packages.php:326
 msgid "Listing contents of group:"
 msgstr "Lister indhold af grupper:"
 
-#: ../packages.php:316 ../packages.php:325
+#: ../packages.php:328 ../packages.php:337
 msgid "Search result for:"
 msgstr "Søge resultat for:"
 
-#: ../packages.php:388
+#: ../packages.php:400
 msgid "Package information:"
 msgstr "Pakke information:"
 
-#: ../packages.php:390
+#: ../packages.php:402
 msgid "Name:"
 msgstr "Navn:"
 
-#: ../packages.php:391
+#: ../packages.php:403
 msgid "Parent:"
 msgstr "Ophav:"
 
-#: ../packages.php:394
+#: ../packages.php:406
 msgid "Documentation:"
 msgstr "Dokumentation:"
 
-#: ../packages.php:396
+#: ../packages.php:408
 msgid "Buildlog:"
 msgstr "Byggelog:"
 
-#: ../packages.php:397
+#: ../packages.php:409
 msgid "Changelog:"
 msgstr "Ændringslog:"
 
-#: ../packages.php:404
+#: ../packages.php:413
 msgid "Groups:"
 msgstr "Gruppe:"
 
-#: ../packages.php:409
+#: ../packages.php:418
 msgid "URL:"
 msgstr "URL:"
 
-#: ../packages.php:412
+#: ../packages.php:421
 msgid "Depends:"
 msgstr "Afhænger af:"
 
-#: ../packages.php:419
+#: ../packages.php:428
 msgid "Exact reverse depends:"
 msgstr "Nøjagtig modsat afhængighed:"
 
-#: ../packages.php:426
+#: ../packages.php:435
 msgid "Other reverse depends:"
 msgstr "Andre modsat afhængigheder:"
 
-#: ../packages.php:433
+#: ../packages.php:442
 msgid "Conflicts:"
 msgstr "Konflikter:"
 
-#: ../packages.php:440
+#: ../packages.php:449
 msgid "Provides:"
 msgstr "Fremskaffer:"
 
-#: ../packages.php:445
+#: ../packages.php:454
 msgid "Compressed size:"
 msgstr "Komprimeret størelse:"
 
-#: ../packages.php:446
+#: ../packages.php:455
 msgid "Uncompressed size:"
 msgstr "Ukomprimeret størelse:"
 
-#: ../packages.php:447
+#: ../packages.php:456
 msgid "Arch:"
 msgstr "Arkitektur:"
 
-#: ../packages.php:448
+#: ../packages.php:457
 msgid "Description:"
 msgstr "Beskrivelse:"
 
 #. FIXME: latin -> utf8 conversion hardwired
-#: ../packages.php:450
+#: ../packages.php:459
 msgid "Maintainer:"
 msgstr "Vedligeholder:"
 
-#: ../packages.php:451
+#: ../packages.php:460
 msgid "Uploaded by:"
 msgstr "Uploaded af:"
 
-#: ../packages.php:452
+#: ../packages.php:461
 msgid "Download:"
 msgstr "Download:"
 
-#: ../packages.php:457
+#: ../packages.php:466
 msgid "Forums:"
 msgstr "Forum:"
 
-#: ../packages.php:457
+#: ../packages.php:466
 msgid "Related posts"
 msgstr "Beslægtede poster"
 
-#: ../packages.php:458
+#: ../packages.php:467
 msgid "Wiki:"
 msgstr "Wiki:"
 
-#: ../packages.php:458
+#: ../packages.php:467
 msgid "Related pages"
 msgstr "Beslægtede sider"
 
-#: ../packages.php:459
+#: ../packages.php:468
 msgid "Bug Tracking System:"
 msgstr "Bug Sporings System:"
 
-#: ../packages.php:459
+#: ../packages.php:468
 msgid "Related open bugs"
 msgstr "Beslægtede åbne bugs"
 
-#: ../packages.php:460
+#: ../packages.php:469
 msgid "Syndicate:"
 msgstr "Udsending:"
 
-#: ../packages.php:460
+#: ../packages.php:469
 msgid "RSS"
 msgstr "RSS"
 
-#: ../packages.php:461
+#: ../packages.php:470
 msgid "SHA1 Sum:"
 msgstr "SHA1 Sum:"
 
-#: ../packages.php:462
+#: ../packages.php:471
 msgid "Frugalware version:"
 msgstr "Frugalware version:"
 
-#: ../packages.php:463
+#: ../packages.php:472
 msgid "Updated:"
 msgstr "Opdateret:"
 
-#: ../packages.php:468 ../packages.php:519 ../packages.php:568
-#: ../packages.php:626 ../packages.php:656
+#: ../packages.php:477 ../packages.php:528 ../packages.php:577
+#: ../packages.php:635 ../packages.php:665
 msgid "No such package!"
 msgstr "Ingen sådan pakke!"
 
-#: ../packages.php:504
+#: ../packages.php:513
 #, php-format
 msgid "Changelog for %s"
 msgstr "Ændringslog for %s"
 
-#: ../packages.php:515 ../packages.php:564
+#: ../packages.php:524 ../packages.php:573
 msgid "Sorry, currently no log available."
 msgstr "Undskyld, for nuværende er der ingen log tilgængelig."
 
-#: ../packages.php:553
+#: ../packages.php:562
 #, php-format
 msgid "Build log for %s"
 msgstr "Bygge log for %s"
 
-#: ../packages.php:602
+#: ../packages.php:611
 #, php-format
 msgid "Documentation for %s"
 msgstr "Dokumentation for %s"
 
-#: ../packages.php:622
+#: ../packages.php:631
 msgid "Sorry, currently no documentation available."
 msgstr "Undskyld, for nuværende er der ingen dokumentation tilgængelig."
 
-#: ../packages.php:641
+#: ../packages.php:650
 msgid "File list for"
 msgstr "Fil liste for"
 
@@ -1164,3 +1206,12 @@ msgstr "CVEs"
 #: ../security.php:87
 msgid "Description"
 msgstr "Beskrivelse"
+
+#~ msgid "Developers"
+#~ msgstr "Udviklere"
+
+#~ msgid "Contributors"
+#~ msgstr "Bidragsydere"
+
+#~ msgid "Darcs repository"
+#~ msgstr "Darcs arkiv"

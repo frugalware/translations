@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-09-21 05:27+0200\n"
+"POT-Creation-Date: 2007-11-06 05:05+0100\n"
 "PO-Revision-Date: 2007-04-20 14:59+0200\n"
 "Last-Translator: andrej prochazka <a.prochazka@gsi.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -292,13 +292,50 @@ msgstr "Odpoveď"
 msgid "Long"
 msgstr "detailnejšie"
 
-#: ../authors.php:61 ../config.inc.php:80
-msgid "Developers"
-msgstr "vývojári"
+#: ../authors.php:57
+#, fuzzy
+msgid "at"
+msgstr "Dátum"
 
-#: ../authors.php:84 ../config.inc.php:81
-msgid "Contributors"
-msgstr "prispievatelia"
+#: ../authors.php:58
+msgid "dot"
+msgstr ""
+
+#: ../authors.php:68 ../config.inc.php:79
+msgid "Authors"
+msgstr ""
+
+#: ../authors.php:69
+msgid ""
+"This page should list all people who contributed to Frugalware Linux in some "
+"way. However, we are aware that the contributor list is incomplete. Please "
+"contact us if your name is missing from here!<br />"
+msgstr ""
+
+#: ../authors.php:70
+#, php-format
+msgid "Available filters: <a href=\"%s\">No filter</a> &middot; "
+msgstr ""
+
+#: ../authors.php:71
+#, php-format
+msgid "<a href=\"%s\">Active developers</a> &middot; "
+msgstr ""
+
+#: ../authors.php:72
+#, php-format
+msgid "<a href=\"%s\">Former developers</a> &middot; "
+msgstr ""
+
+#: ../authors.php:73
+#, php-format
+msgid "<a href=\"%s\">Contributors</a><br />"
+msgstr ""
+
+#: ../authors.php:74
+#, fuzzy
+msgid "Frugalware Linux Author list"
+msgstr "Frugalware v tlači"
 
 #. $menucontent = '<a class="menu" href="' . $fwng_root . '">' . gettext('News') . "</a> &middot; \n";
 #: ../config.inc.php:42 ../rss.php:175
@@ -394,32 +431,28 @@ msgid "Roadmap"
 msgstr "plán"
 
 #: ../config.inc.php:74
-msgid "Darcs repository"
-msgstr "Darcs repository"
-
-#: ../config.inc.php:75
 #, fuzzy
 msgid "Git repository"
 msgstr "Darcs repository"
 
-#: ../config.inc.php:76
+#: ../config.inc.php:75
 msgid "Bug Tracker"
 msgstr "Hlásenie chýb"
 
-#: ../config.inc.php:77
+#: ../config.inc.php:76
 msgid "Translation portal"
 msgstr "Portál prekladov"
 
-#: ../config.inc.php:78
+#: ../config.inc.php:77
 msgid "Blogs"
 msgstr "blogy"
 
-#: ../config.inc.php:79 ../donations.php:50 ../header.php:54
+#: ../config.inc.php:78 ../donations.php:50 ../header.php:54
 msgid "Donations"
 msgstr "dary"
 
-#: ../config.inc.php:92 ../config.inc.php:94 ../config.inc.php:96
-#: ../config.inc.php:98 ../config.inc.php:100
+#: ../config.inc.php:90 ../config.inc.php:92 ../config.inc.php:94
+#: ../config.inc.php:96 ../config.inc.php:98 ../config.inc.php:100
 msgid "Change language"
 msgstr "zmeniť jazyk"
 
@@ -633,12 +666,17 @@ msgstr "Hľadať v opise balíčka"
 msgid "Regular expression"
 msgstr "bežný výraz"
 
-#: ../packages.php:100 ../packages.php:319 ../packages.php:328
+#: ../packages.php:97
+#, fuzzy
+msgid "(regular expression)"
+msgstr "bežný výraz"
+
+#: ../packages.php:100 ../packages.php:331 ../packages.php:340
 msgid "Architecture:"
 msgstr "architektúra"
 
-#: ../packages.php:107 ../packages.php:319 ../packages.php:328
-#: ../packages.php:392
+#: ../packages.php:107 ../packages.php:331 ../packages.php:340
+#: ../packages.php:404
 msgid "Version:"
 msgstr "verzia:"
 
@@ -667,191 +705,195 @@ msgstr ""
 "Kliknite<a href=\"javascript:addEngine()\">sem</a> ak chcete nainštalovať "
 "vyhľadávací plugin pre Firefox"
 
-#: ../packages.php:185
+#: ../packages.php:191
+msgid "Error in the query, please change the searching conditions"
+msgstr ""
+
+#: ../packages.php:197
 msgid "No package found"
 msgstr "Žiadny balíček nenájdený"
 
-#: ../packages.php:222
+#: ../packages.php:234
 msgid "No such file or directory"
 msgstr "Žiadny taký súbor alebo adresár"
 
-#: ../packages.php:261 ../packages.php:294
+#: ../packages.php:273 ../packages.php:306
 msgid "No such group"
 msgstr "Taká skupina nie je "
 
-#: ../packages.php:303
+#: ../packages.php:315
 msgid "Listing groups"
 msgstr "zoznam skupín"
 
-#: ../packages.php:314
+#: ../packages.php:326
 msgid "Listing contents of group:"
 msgstr "Zoznam obsahu skupiny:"
 
-#: ../packages.php:316 ../packages.php:325
+#: ../packages.php:328 ../packages.php:337
 msgid "Search result for:"
 msgstr "Výsledok hľadania:"
 
-#: ../packages.php:388
+#: ../packages.php:400
 msgid "Package information:"
 msgstr "informácia o balíčku"
 
-#: ../packages.php:390
+#: ../packages.php:402
 msgid "Name:"
 msgstr "Meno:"
 
-#: ../packages.php:391
+#: ../packages.php:403
 msgid "Parent:"
 msgstr "rodič"
 
-#: ../packages.php:394
+#: ../packages.php:406
 #, fuzzy
 msgid "Documentation:"
 msgstr "Dokumentácia"
 
-#: ../packages.php:396
+#: ../packages.php:408
 msgid "Buildlog:"
 msgstr ""
 
-#: ../packages.php:397
+#: ../packages.php:409
 msgid "Changelog:"
 msgstr "zmeny:"
 
-#: ../packages.php:404
+#: ../packages.php:413
 msgid "Groups:"
 msgstr "skupina:"
 
-#: ../packages.php:409
+#: ../packages.php:418
 msgid "URL:"
 msgstr "URL:"
 
-#: ../packages.php:412
+#: ../packages.php:421
 msgid "Depends:"
 msgstr "Závislosti:"
 
-#: ../packages.php:419
+#: ../packages.php:428
 msgid "Exact reverse depends:"
 msgstr "Exact reverse depends:"
 
-#: ../packages.php:426
+#: ../packages.php:435
 msgid "Other reverse depends:"
 msgstr "Other reverse depends:"
 
-#: ../packages.php:433
+#: ../packages.php:442
 msgid "Conflicts:"
 msgstr "konflikty:"
 
-#: ../packages.php:440
+#: ../packages.php:449
 msgid "Provides:"
 msgstr "poskytuje:"
 
-#: ../packages.php:445
+#: ../packages.php:454
 msgid "Compressed size:"
 msgstr "veľkosť balíčka"
 
-#: ../packages.php:446
+#: ../packages.php:455
 msgid "Uncompressed size:"
 msgstr "veľkosť po rozbalení:"
 
-#: ../packages.php:447
+#: ../packages.php:456
 msgid "Arch:"
 msgstr "Arch:"
 
-#: ../packages.php:448
+#: ../packages.php:457
 msgid "Description:"
 msgstr "Opis:"
 
 #. FIXME: latin -> utf8 conversion hardwired
-#: ../packages.php:450
+#: ../packages.php:459
 msgid "Maintainer:"
 msgstr "autor:"
 
-#: ../packages.php:451
+#: ../packages.php:460
 msgid "Uploaded by:"
 msgstr "aktualizované:"
 
-#: ../packages.php:452
+#: ../packages.php:461
 msgid "Download:"
 msgstr "Download:"
 
-#: ../packages.php:457
+#: ../packages.php:466
 msgid "Forums:"
 msgstr "Fórum:"
 
-#: ../packages.php:457
+#: ../packages.php:466
 #, fuzzy
 msgid "Related posts"
 msgstr "blogy"
 
-#: ../packages.php:458
+#: ../packages.php:467
 msgid "Wiki:"
 msgstr "Wiki:"
 
-#: ../packages.php:458
+#: ../packages.php:467
 #, fuzzy
 msgid "Related pages"
 msgstr "Vydania"
 
-#: ../packages.php:459
+#: ../packages.php:468
 msgid "Bug Tracking System:"
 msgstr "Hlásenia chýb:"
 
-#: ../packages.php:459
+#: ../packages.php:468
 #, fuzzy
 msgid "Related open bugs"
 msgstr "chyby:"
 
-#: ../packages.php:460
+#: ../packages.php:469
 msgid "Syndicate:"
 msgstr ""
 
-#: ../packages.php:460
+#: ../packages.php:469
 msgid "RSS"
 msgstr ""
 
-#: ../packages.php:461
+#: ../packages.php:470
 msgid "SHA1 Sum:"
 msgstr "SHA1 Suma:"
 
-#: ../packages.php:462
+#: ../packages.php:471
 msgid "Frugalware version:"
 msgstr "Frugalware verzia:"
 
-#: ../packages.php:463
+#: ../packages.php:472
 msgid "Updated:"
 msgstr "Aktualizované:"
 
-#: ../packages.php:468 ../packages.php:519 ../packages.php:568
-#: ../packages.php:626 ../packages.php:656
+#: ../packages.php:477 ../packages.php:528 ../packages.php:577
+#: ../packages.php:635 ../packages.php:665
 #, fuzzy
 msgid "No such package!"
 msgstr "Žiadny balíček nenájdený"
 
-#: ../packages.php:504
+#: ../packages.php:513
 #, fuzzy, php-format
 msgid "Changelog for %s"
 msgstr "zmeny:"
 
-#: ../packages.php:515 ../packages.php:564
+#: ../packages.php:524 ../packages.php:573
 #, fuzzy
 msgid "Sorry, currently no log available."
 msgstr "Prepáčte, ale nie su k dispozícii žiadne logy"
 
-#: ../packages.php:553
+#: ../packages.php:562
 #, php-format
 msgid "Build log for %s"
 msgstr ""
 
-#: ../packages.php:602
+#: ../packages.php:611
 #, fuzzy, php-format
 msgid "Documentation for %s"
 msgstr "Dokumentácia"
 
-#: ../packages.php:622
+#: ../packages.php:631
 #, fuzzy
 msgid "Sorry, currently no documentation available."
 msgstr "Prepáčte, ale nie su k dispozícii žiadne logy"
 
-#: ../packages.php:641
+#: ../packages.php:650
 msgid "File list for"
 msgstr "Zoznam súborov pre:"
 
@@ -1144,6 +1186,15 @@ msgstr "CVEs"
 #: ../security.php:87
 msgid "Description"
 msgstr "opis"
+
+#~ msgid "Developers"
+#~ msgstr "vývojári"
+
+#~ msgid "Contributors"
+#~ msgstr "prispievatelia"
+
+#~ msgid "Darcs repository"
+#~ msgstr "Darcs repository"
 
 #~ msgid "Read full current changelog"
 #~ msgstr "Čítaj denník zmien"

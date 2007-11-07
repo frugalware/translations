@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-09-21 05:27+0200\n"
+"POT-Creation-Date: 2007-11-06 05:05+0100\n"
 "PO-Revision-Date: 2007-09-14 23:53+0200\n"
 "Last-Translator: Patric Werme <xenon-power@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,63 +16,28 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 1.0\n"
 
-#: ../netconfig.c:48
-#, c-format
-msgid "usage: %s [options] start|stop|restart|status|list [interface]\n"
-msgstr "användning: %s [val] start|stop|restart|status|list [gränssnitt]\n"
-
-#: ../netconfig.c:49
-#, c-format
-msgid "       %s [options] [profile] [interface]\n"
-msgstr "       %s [val] [profil] [gränssnitt]\n"
-
-#: ../netconfig.c:50
-#, c-format
-msgid "-h | --help              This help.\n"
-msgstr "-h | --help              Denna hjälp.\n"
-
-#: ../netconfig.c:51
-#, c-format
-msgid "-f | --fast              Fast mode, used by the setup.\n"
-msgstr "-f | --fast              Snabbt läge, används av installationen.\n"
-
-#: ../netconfig.c:52
-#, fuzzy, c-format
-msgid "     --dry-run           Do not actually perform the operation.\n"
-msgstr "--dry-run Kör operationen, men utför den egentligen inte. \n"
-
-#: ../netconfig.c:53
-#, c-format
-msgid "     --loup              Bring up the loopback interface.\n"
-msgstr "--loup Starta loopback-gränssnittet.\n"
-
-#: ../netconfig.c:54
-#, c-format
-msgid "     --lodown            Bring down the loopback interface.\n"
-msgstr "--lodown Stoppa loopback-gränssnittet.\n"
-
-#: ../netconfig.c:63
+#: ../netconfig.c:57
 msgid "Use a DHCP server"
 msgstr "Använd en DHCP server"
 
-#: ../netconfig.c:64
+#: ../netconfig.c:58
 msgid "Use a static IP address"
 msgstr "Använd en statisk IP-adress"
 
-#: ../netconfig.c:65
+#: ../netconfig.c:59
 msgid "DSL connection"
 msgstr "DSL-uppkoppling"
 
-#: ../netconfig.c:66
+#: ../netconfig.c:60
 msgid "No network - loopback connection only"
 msgstr "Inget nätverk - endast loopback-uppkoppling"
 
-#: ../netconfig.c:68
+#: ../netconfig.c:62
 msgid "Select network connection type"
 msgstr "Välj uppkopplingstyp"
 
 # Det är vissa problem med denna ovan: ordet 'static' har inte översatts tidigare i processen. Ska vi då använda "static" eller "statisk"? Jag ögr som dom gjort i den ungerska översättningen och sätter "static'
-#: ../netconfig.c:69
+#: ../netconfig.c:63
 msgid ""
 "Now we need to know how your machine connects to the network.\n"
 "If you have an internal network card and an assigned IP address, gateway, "
@@ -94,47 +59,47 @@ msgstr ""
 "välj 'dsl'. \n"
 "Slutligen, om du inte har ett nätverkskort, välj alternativet 'lo'.\n"
 
-#: ../netconfig.c:86
+#: ../netconfig.c:80
 msgid "DSL configuration"
 msgstr "DSL-konfiguration"
 
-#: ../netconfig.c:86
+#: ../netconfig.c:80
 msgid "Do you want to configure a DSL connection now?"
 msgstr "Vill du konfigurera en DSL-uppkoppling nu?"
 
-#: ../netconfig.c:88
+#: ../netconfig.c:82
 msgid "Enter user name"
 msgstr "Ange användarnamn"
 
-#: ../netconfig.c:89
+#: ../netconfig.c:83
 msgid "Enter your PPPoE user name:"
 msgstr "Ange ditt PPPoE-användarnamn:"
 
-#: ../netconfig.c:93 ../netconfig.c:95
+#: ../netconfig.c:87 ../netconfig.c:89
 msgid "Password"
 msgstr "Lösenord"
 
-#: ../netconfig.c:94
+#: ../netconfig.c:88
 msgid "Please enter your PPPoE password"
 msgstr "Ange ditt PPPoE-lösenord:"
 
-#: ../netconfig.c:96
+#: ../netconfig.c:90
 msgid "Please re-enter your PPPoE password"
 msgstr "Var god bekräfta PPPoE-lösenordet:"
 
-#: ../netconfig.c:102
+#: ../netconfig.c:96
 msgid "Passwords don't match"
 msgstr "Lösenorden stämmer inte överens"
 
-#: ../netconfig.c:103
+#: ../netconfig.c:97
 msgid "Sorry, the passwords do not match. Try again?"
 msgstr "Tyvärr, lösenorden stämmer inte överens. Vill du försöka igen?"
 
-#: ../netconfig.c:106 ../netconfig.c:156
+#: ../netconfig.c:100 ../netconfig.c:150
 msgid "Enter interface name"
 msgstr "Ange gränssnittets namn"
 
-#: ../netconfig.c:107
+#: ../netconfig.c:101
 msgid ""
 "Enter the Ethernet interface connected to the DSL modem. It will be ethn, "
 "where 'n' is a number.\n"
@@ -146,15 +111,15 @@ msgstr ""
 "Om du är osäker trycker du bara på enter.\n"
 "Ange gränssnittsnamn:"
 
-#: ../netconfig.c:135
+#: ../netconfig.c:129
 msgid "Network configuration"
 msgstr "Nätverkskonfiguration"
 
-#: ../netconfig.c:138
+#: ../netconfig.c:132
 msgid "Enter hostname"
 msgstr "Ange värdnamn"
 
-#: ../netconfig.c:138
+#: ../netconfig.c:132
 msgid ""
 "We'll need the name you'd like to give your host.\n"
 "The full hostname is needed, such as:\n"
@@ -169,7 +134,7 @@ msgstr ""
 "frugalware.example.net\n"
 "Ange hela värdnamnet:"
 
-#: ../netconfig.c:157
+#: ../netconfig.c:151
 msgid ""
 "We'll need the name of the interface you'd like to use for your network "
 "connection.\n"
@@ -181,12 +146,12 @@ msgstr ""
 " Om du är osäker, tryck bara enter.\n"
 "Ange gränssnittets namn:"
 
-#: ../netconfig.c:166
+#: ../netconfig.c:160
 msgid "Extended network name"
 msgstr "Utökat nätverksnamn"
 
 # Är ESSID ESSID på svenska? - Ja!
-#: ../netconfig.c:166
+#: ../netconfig.c:160
 msgid ""
 "It seems that this network card has a wireless extension. In order to use "
 "it, you must set your extended netwok name (ESSID). Enter your ESSID:"
@@ -195,11 +160,11 @@ msgstr ""
 "använda det måste du ställa in ditt utökade nätverksnamn (ESSID). Ange ditt "
 "ESSID:"
 
-#: ../netconfig.c:171
+#: ../netconfig.c:165
 msgid "Encryption key"
 msgstr "Krypteringsnyckel"
 
-#: ../netconfig.c:171
+#: ../netconfig.c:165
 msgid ""
 "If you have an encryption key, then please enter it below.\n"
 "Examples: 4567-89AB-CD or  s:password"
@@ -207,11 +172,11 @@ msgstr ""
 "Om du har en krypteringsnyckel, ange den nedan.\n"
 "Exempel: 4567-89AB-CD eller s:password"
 
-#: ../netconfig.c:178
+#: ../netconfig.c:172
 msgid "Set DHCP hostname"
 msgstr "Ställ in DHCP-värdnamn"
 
-#: ../netconfig.c:178
+#: ../netconfig.c:172
 msgid ""
 "Some network providers require that the DHCP hostname beset in order to "
 "connect. If so, they'll have assigned a hostname to your machine. If you "
@@ -224,19 +189,19 @@ msgstr ""
 "ange det nedan. Om du inte har ett DHCP-värdnamn, tryck bara på enter."
 
 #. options = ip netmask netmask
-#: ../netconfig.c:193
+#: ../netconfig.c:187
 msgid "Enter ip address"
 msgstr "Ange ip-adress"
 
-#: ../netconfig.c:193
+#: ../netconfig.c:187
 msgid "Enter your IP address for the local machine."
 msgstr "Ange din IP-adress för den lokala maskinen."
 
-#: ../netconfig.c:194
+#: ../netconfig.c:188
 msgid "Enter netmask for local network"
 msgstr "Ange nätmask för det lokala nätverket"
 
-#: ../netconfig.c:195
+#: ../netconfig.c:189
 msgid ""
 "Enter your netmask. This will generally look something like this: "
 "255.255.255.0\n"
@@ -245,11 +210,11 @@ msgstr ""
 "Ange din nätmask. Den ser oftast ut ungefär såhär:255.255.255.0\n"
 "Om du är osäker, tryck bara på retur."
 
-#: ../netconfig.c:202
+#: ../netconfig.c:196
 msgid "Enter gateway address"
 msgstr "Ange nätsluss(gateway)-adress"
 
-#: ../netconfig.c:202
+#: ../netconfig.c:196
 msgid ""
 "Enter the address for the gateway on your network. If you don't have a "
 "gateway on your network just hit enter, without entering any ip address."
@@ -257,12 +222,12 @@ msgstr ""
 "Ange adressen för nätslussen (gateway) för ditt nätverk. Om du inte har en "
 "nätsluss för ditt nätverk tryck bara på enter utan att ange någon IP-adress."
 
-#: ../netconfig.c:208
+#: ../netconfig.c:202
 msgid "Select nameserver"
 msgstr "Välj namnserver"
 
 # Kände mig tvungen att förtydliga, då DNS-server är betydligt mycket vanligare än mnamn-server
-#: ../netconfig.c:208
+#: ../netconfig.c:202
 msgid ""
 "Please give the IP address of the name server to use. You canadd more Domain "
 "Name Servers later by editing /etc/sysconfig/network/default.\n"
@@ -276,21 +241,43 @@ msgstr ""
 "skriva in någon IP-adress"
 
 # är justera rätt ord?
-#: ../netconfig.c:219
+#: ../netconfig.c:213
 msgid "Adjust configuration files"
 msgstr "Ändra konfigurationsfiler"
 
 # är justera rätt ord?
-#: ../netconfig.c:219
+#: ../netconfig.c:213
 msgid "Accept these settings and adjust configuration files?"
 msgstr "Acceptera dessa inställningar och ändra konfigurationsfilerna?"
 
-#: ../netconfig.c:303
+#: ../netconfig.c:297
 #, c-format
 msgid "No profile loaded.\n"
 msgstr "Ingen profil laddad.\n"
 
-#: ../netconfig.c:308
+#: ../netconfig.c:302
 #, c-format
 msgid "Current profile: %s\n"
 msgstr "Nuvarande profil: %s\n"
+
+#~ msgid "usage: %s [options] start|stop|restart|status|list [interface]\n"
+#~ msgstr "användning: %s [val] start|stop|restart|status|list [gränssnitt]\n"
+
+#~ msgid "       %s [options] [profile] [interface]\n"
+#~ msgstr "       %s [val] [profil] [gränssnitt]\n"
+
+#~ msgid "-h | --help              This help.\n"
+#~ msgstr "-h | --help              Denna hjälp.\n"
+
+#~ msgid "-f | --fast              Fast mode, used by the setup.\n"
+#~ msgstr "-f | --fast              Snabbt läge, används av installationen.\n"
+
+#, fuzzy
+#~ msgid "     --dry-run           Do not actually perform the operation.\n"
+#~ msgstr "--dry-run Kör operationen, men utför den egentligen inte. \n"
+
+#~ msgid "     --loup              Bring up the loopback interface.\n"
+#~ msgstr "--loup Starta loopback-gränssnittet.\n"
+
+#~ msgid "     --lodown            Bring down the loopback interface.\n"
+#~ msgstr "--lodown Stoppa loopback-gränssnittet.\n"
