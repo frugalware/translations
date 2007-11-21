@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-06 05:05+0100\n"
-"PO-Revision-Date: 2007-10-20 12:23+0200\n"
+"POT-Creation-Date: 2007-11-21 05:05+0100\n"
+"PO-Revision-Date: 2007-11-22 00:16+0100\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -86,7 +86,7 @@ msgstr ""
 #: ../src/gfpm-interface.c:1179 ../src/gfpm-interface.c:1815
 #, c-format
 msgid "Failed to init transaction (%s)\n"
-msgstr "Echec de l'initialisation de la transaction (%s)\n"
+msgstr "Échec de l'initialisation de la transaction (%s)\n"
 
 #: ../src/gfpm-interface.c:421
 msgid "Error getting transaction info"
@@ -209,7 +209,7 @@ msgstr "Le paquet n'est pas installé."
 #: ../src/gfpm-interface.c:1012
 #, c-format
 msgid "Failed to prepare transaction (%s)\n"
-msgstr "Echec de préparation de la transaction (%s)\n"
+msgstr "Échec de la préparation de la transaction (%s)\n"
 
 #: ../src/gfpm-interface.c:1028
 msgid "is required by"
@@ -247,7 +247,7 @@ msgstr "Ce paquet est en conflit avec les paquets suivants"
 #: ../src/gfpm-interface.c:1092 ../src/gfpm-interface.c:1834
 #, c-format
 msgid "Failed to commit transaction (%s)\n"
-msgstr "Echec de validation de la transaction (%s)\n"
+msgstr "Échec de validation de la transaction (%s)\n"
 
 #: ../src/gfpm-interface.c:1114
 msgid "Conflicting Files"
@@ -272,6 +272,7 @@ msgid "Synchronizing package databases"
 msgstr "Synchronisation des bases de données de paquets"
 
 #: ../src/gfpm-interface.c:1153
+#, c-format
 msgid ""
 "Gfpm has detected a newer version of the pacman-g2 package. It is "
 "recommended that you allow gfpm to update pacman-g2 first. Do you wish to "
@@ -286,6 +287,7 @@ msgid "Update pacman-g2"
 msgstr "Mise à jour de pacman-g2"
 
 #: ../src/gfpm-interface.c:1165
+#, c-format
 msgid ""
 "Gfpm has detected a newer version of the gfpm package. It is recommended "
 "that you allow gfpm to update itself first. Do you wish to continue "
@@ -522,25 +524,21 @@ msgstr "Vérification de l'intégrité des paquets..."
 msgid "Retrieving packages from %s"
 msgstr "Récupération des paquets depuis %s"
 
-#: ../src/gfpm.c:55
-msgid "Failed to initialize interface: "
+#: ../src/gfpm.c:54
+msgid "Interface initialization Failed"
+msgstr "L'initialisation de l'interface échouée"
+
+#: ../src/gfpm.c:54
+msgid "Failed to initialize interface"
 msgstr "Échec de l'initialisation de l'interface."
 
-#: ../src/gfpm.c:56
-msgid "Interface initialization failed"
-msgstr "Initialisation de l'interface échouée"
-
-#: ../src/gfpm.c:65
+#: ../src/gfpm.c:62
 msgid "Error initializing libpacman"
-msgstr "Échec de l'initialisation de libpacman"
+msgstr "Échec à l'initialisation de libpacman"
 
-#: ../src/gfpm.c:65
+#: ../src/gfpm.c:62
 msgid "Failed to initialize libpacman"
-msgstr "Echec de l'initialisation avec libpacman"
-
-#: ../src/gfpm-optimizedb.c:89
-msgid "Ready"
-msgstr "Prêt"
+msgstr "Échec de l'initialisation de libpacman"
 
 #: ../src/gfpm-optimizedb.c:117
 msgid ""
@@ -587,7 +585,7 @@ msgstr "Contrôle d'intégrité échoué"
 
 #: ../src/gfpm-optimizedb.c:170
 msgid "Failed."
-msgstr "Echec."
+msgstr "Échec."
 
 #. remove old database
 #: ../src/gfpm-optimizedb.c:182
@@ -865,6 +863,9 @@ msgstr "gtk-close"
 msgid "optimize your package database to improve performance"
 msgstr ""
 "Optimiser votre base de données de paquet pour améliorer les performances"
+
+#~ msgid "Ready"
+#~ msgstr "Prêt"
 
 #~ msgid "sdsadsdad"
 #~ msgstr "sdsadsdad"
