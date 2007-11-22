@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-21 05:05+0100\n"
-"PO-Revision-Date: 2007-11-21 23:50+0100\n"
+"POT-Creation-Date: 2007-11-22 05:05+0100\n"
+"PO-Revision-Date: 2007-11-22 14:08+0100\n"
 "Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,11 +16,11 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 1.0\n"
 
-#: ../src/fun-ui.c:264
+#: ../src/fun-ui.c:311
 msgid "Restart Fun"
 msgstr "A Fun ujraindítása"
 
-#: ../src/fun-ui.c:265
+#: ../src/fun-ui.c:312
 msgid ""
 "Fun needs to be restarted in order for the changes to take effect. Do you "
 "want to restart Fun now ?"
@@ -28,52 +28,75 @@ msgstr ""
 "A Fun-nak újra kell indulnia, hogy a beállítások érvénybe lépjenek. "
 "Újrainduljon most a Fun?"
 
-#: ../src/fun-ui.c:350
-msgid "<b>Configure Frugalware Update Nofitier</b>"
-msgstr "<b>A Frugalware Update Nofitier beállítása</b>"
-
-#: ../src/fun-ui.c:360
-msgid "<b>Update Interval (minutes) :</b>"
-msgstr "<b>Frissitési időköz (percek) :</b>"
-
-#: ../src/fun-ui.c:401
+#: ../src/fun-ui.c:411
 msgid "S"
 msgstr "mp"
 
-#: ../src/fun-ui.c:409
+#: ../src/fun-ui.c:419
 msgid "Package Name"
 msgstr "Csomagnév"
 
-#: ../src/fun-ui.c:419
+#: ../src/fun-ui.c:429
 msgid "Latest Version"
 msgstr "Legfrissebb verzió"
 
-#: ../src/fun-ui.c:427
+#: ../src/fun-ui.c:437
 msgid "Description"
 msgstr "Leírás"
 
-#: ../src/fun-ui.c:467
+#: ../src/fun-ui.c:494
 #, c-format
 msgid "Failed to connect to the fun daemon\n"
 msgstr "Nem sikerült csatlakozni a fun démonhoz\n"
 
-#: ../src/fun-ui.c:468
+#: ../src/fun-ui.c:495
 msgid "Not connected to fun daemon"
 msgstr "Nincs kapcsolat a fun démonhoz"
 
+#. set the status
+#: ../src/fun-ui.c:498
+msgid ""
+"The frugalware update notifier daemon is not running. Update checking is "
+"disabled"
+msgstr ""
+"A frugalware frissító daemon nem fut. A frissítések vizsgálatának tiltása"
+
+#. display an error
+#: ../src/fun-ui.c:500
+msgid "Update checking disabled"
+msgstr "A frissítések vizsgálata tiltva van"
+
+#. set the status
+#. set the status to Idle
+#. and the status back to Idle
+#: ../src/fun-ui.c:511 ../src/fun-ui.c:531 ../src/fun-ui.c:576
+msgid "Idle"
+msgstr "Tétlen"
+
+#. set the status to let the user know that fun is checking for an update
+#: ../src/fun-ui.c:548
+msgid "Checking for new updates..."
+msgstr "Frissítések vizsgálata..."
+
 #. g_print ("\nlist is\n %s", plist);
-#: ../src/fun-ui.c:520
+#: ../src/fun-ui.c:561
 msgid "Updates are available"
 msgstr "Frissítések érhetők el"
 
-#: ../src/fun-ui.c:521
+#: ../src/fun-ui.c:562
 msgid "Click here to know more.."
 msgstr "Kattintson ide, ha többet szeretne tudni.."
 
-#: ../src/fun-ui.c:550
+#: ../src/fun-ui.c:603
 msgid "(C) 2007 Frugalware Developer Team (GPL)"
 msgstr "(C) 2007 Frugalware Developer Team (GPL)"
 
-#: ../src/fun-ui.c:551
+#: ../src/fun-ui.c:604
 msgid "Frugalware Update Notifier"
 msgstr "Frugalware Update Nofitier"
+
+#~ msgid "<b>Configure Frugalware Update Nofitier</b>"
+#~ msgstr "<b>A Frugalware Update Nofitier beállítása</b>"
+
+#~ msgid "<b>Update Interval (minutes) :</b>"
+#~ msgstr "<b>Frissitési időköz (percek) :</b>"
