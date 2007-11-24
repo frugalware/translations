@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-06 05:05+0100\n"
-"PO-Revision-Date: 2007-05-24 12:29+0200\n"
+"POT-Creation-Date: 2007-11-24 05:19+0100\n"
+"PO-Revision-Date: 2007-11-24 22:18+0100\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: French <traduc@traduc.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Pootle 0.10.1\n"
+"X-Generator: Pootle 1.0\n"
 
 #: ../netconfig.c:57
 msgid "Use a DHCP server"
@@ -163,22 +163,47 @@ msgstr ""
 "votre ESSID:"
 
 #: ../netconfig.c:165
-msgid "Encryption key"
-msgstr "Clef de cryptage"
+msgid "WEP encryption key"
+msgstr "Clef de cryptage WEP"
 
-#: ../netconfig.c:165
+#: ../netconfig.c:166
 msgid ""
-"If you have an encryption key, then please enter it below.\n"
+"If you have a WEP encryption key, then please enter it below.\n"
 "Examples: 4567-89AB-CD or  s:password"
 msgstr ""
-"Si vous disposez d'une clef de cryptage, merci de le saisir ci dessous.\n"
+"Si vous disposez d'une clef de cryptage WEP, merci de la saisir ci dessous.\n"
 "Exemples: 4567-89AB-CD ou  s:password"
 
-#: ../netconfig.c:172
+#: ../netconfig.c:170
+msgid "WPA encryption passphrase"
+msgstr "Mot de passe de cryptage WPA"
+
+#: ../netconfig.c:171
+msgid ""
+"If you have a WPA passphrase, then please enter it below.\n"
+"Example: secret"
+msgstr ""
+"Si vous disposez d'un mot de passe WPA, merci de le saisir ci dessous.\n"
+"Exemple: secret"
+
+#: ../netconfig.c:175
+msgid "WPA driver"
+msgstr "Pilote WPA"
+
+#: ../netconfig.c:176
+msgid ""
+"If you want to use a custom driver (not the generic one, called 'wext'), "
+"then please enter it below. If unsure, just hit enter."
+msgstr ""
+"Si vous voulez utilisez un pilote particulier (pas celui par défaut, appelé "
+"'wext'), veuillez alors entrer son nom ci-dessous. Si vous n'êtes pas sur, "
+"appuyez simplement sur Entrée."
+
+#: ../netconfig.c:183
 msgid "Set DHCP hostname"
 msgstr "Affecter le nom d'hôte DHCP"
 
-#: ../netconfig.c:172
+#: ../netconfig.c:183
 msgid ""
 "Some network providers require that the DHCP hostname beset in order to "
 "connect. If so, they'll have assigned a hostname to your machine. If you "
@@ -192,19 +217,19 @@ msgstr ""
 
 # options = ip netmask netmask
 #. options = ip netmask netmask
-#: ../netconfig.c:187
+#: ../netconfig.c:198
 msgid "Enter ip address"
 msgstr "Saisir l'adresse ip"
 
-#: ../netconfig.c:187
+#: ../netconfig.c:198
 msgid "Enter your IP address for the local machine."
 msgstr "Saisir l'adresse ip locale de la machine"
 
-#: ../netconfig.c:188
+#: ../netconfig.c:199
 msgid "Enter netmask for local network"
 msgstr "Saisir le masque pour le réseau local"
 
-#: ../netconfig.c:189
+#: ../netconfig.c:200
 msgid ""
 "Enter your netmask. This will generally look something like this: "
 "255.255.255.0\n"
@@ -214,11 +239,11 @@ msgstr ""
 "genre 255.255.255.0\n"
 "Si vous n'êtes pas sur, appuyez simplement sur entrée."
 
-#: ../netconfig.c:196
+#: ../netconfig.c:207
 msgid "Enter gateway address"
 msgstr "Saisir l'adresse de votre passerelle"
 
-#: ../netconfig.c:196
+#: ../netconfig.c:207
 msgid ""
 "Enter the address for the gateway on your network. If you don't have a "
 "gateway on your network just hit enter, without entering any ip address."
@@ -226,11 +251,11 @@ msgstr ""
 "Saisir l'adresse de la passerelle dans votre réseau. Si vous n'avez pas de "
 "passerelle, appuyer juste sur entrée sans saisir d'adresse ip."
 
-#: ../netconfig.c:202
+#: ../netconfig.c:213
 msgid "Select nameserver"
 msgstr "Choix des serveur de noms"
 
-#: ../netconfig.c:202
+#: ../netconfig.c:213
 msgid ""
 "Please give the IP address of the name server to use. You canadd more Domain "
 "Name Servers later by editing /etc/sysconfig/network/default.\n"
@@ -243,20 +268,20 @@ msgstr ""
 "Si vous n'avez pas de serveur de nom dans votre réseau appuyez simplement "
 "sur entrée, sans saisir d'adresse ip."
 
-#: ../netconfig.c:213
+#: ../netconfig.c:224
 msgid "Adjust configuration files"
 msgstr "Appliquer la configuration"
 
-#: ../netconfig.c:213
+#: ../netconfig.c:224
 msgid "Accept these settings and adjust configuration files?"
 msgstr "Accepter ces paramètres et appliquer la configuration?"
 
-#: ../netconfig.c:297
+#: ../netconfig.c:308
 #, c-format
 msgid "No profile loaded.\n"
 msgstr "Aucun profil chargé.\n"
 
-#: ../netconfig.c:302
+#: ../netconfig.c:313
 #, c-format
 msgid "Current profile: %s\n"
 msgstr "Profil courant: %s\n"
