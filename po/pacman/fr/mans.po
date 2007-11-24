@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-21 05:05+0100\n"
-"PO-Revision-Date: 2007-11-22 00:11+0100\n"
+"POT-Creation-Date: 2007-11-24 05:19+0100\n"
+"PO-Revision-Date: 2007-11-24 23:01+0100\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -32,7 +32,7 @@ msgstr "== NAME"
 # type: Plain text
 #: FrugalBuild.txt:6
 msgid "FrugalBuild - Frugalware package builder descriptor"
-msgstr "FrugalBuid - Descripteur dréateur de paquets pour Frugalware"
+msgstr "FrugalBuild - Descripteur de construction de paquets pour Frugalware"
 
 # !!! NE PAS TRADUIRE POUR LE MOMENT !!!
 # type: Plain text
@@ -64,7 +64,7 @@ msgstr "=== Un exemple simple"
 # type: Plain text
 #: FrugalBuild.txt:17 FrugalBuild.txt:44 FrugalBuild.txt:157
 #: FrugalBuild.txt:170 FrugalBuild.txt:202 FrugalBuild.txt:244
-#: FrugalBuild.txt:399 FrugalBuild.txt:423 FrugalBuild.txt:439
+#: FrugalBuild.txt:404 FrugalBuild.txt:428 FrugalBuild.txt:444
 #: pacman-g2.txt:297 pacman-g2.txt:398
 #, no-wrap
 msgid "----\n"
@@ -284,14 +284,13 @@ msgstr ""
 
 # type: Plain text
 #: FrugalBuild.txt:123
-#, fuzzy
 msgid ""
 "Once the package is successfully installed into the package root, makepkg "
 "will prepare some documentation. It will then strip debugging info from "
 "libraries and binaries and generate a meta-info file. Finally, it will "
 "compress everything into a `.fpm` file and leave it in the directory from "
 "which you ran `makepkg`."
-msgstr "une fois que le paquet est "
+msgstr ""
 
 # type: Plain text
 #: FrugalBuild.txt:126
@@ -759,11 +758,24 @@ msgstr ""
 
 # type: Plain text
 #: FrugalBuild.txt:331
-msgid "=== What is the process of chrooted build?"
+#, no-wrap
+msgid "\tnomirror: This means that the source should not be mirrored.\n"
+msgstr ""
+
+# type: Plain text
+#: FrugalBuild.txt:334
+msgid ""
+"NOTE: Feel free to use `nomirror` in a WIP repo but please try avoid it when "
+"pushing to a production repository."
 msgstr ""
 
 # type: Plain text
 #: FrugalBuild.txt:336
+msgid "=== What is the process of chrooted build?"
+msgstr ""
+
+# type: Plain text
+#: FrugalBuild.txt:341
 msgid ""
 "First, what is chroot? If you use `makepkg -H`, then you use fakeroot to "
 "prevent build() from modifying the host system, and you use a prefix or "
@@ -772,7 +784,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: FrugalBuild.txt:345
+#: FrugalBuild.txt:350
 msgid ""
 "This system lacks the ability to control the list of installed packages "
 "during the build on the system of a packager. Because of this, the given "
@@ -785,14 +797,14 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: FrugalBuild.txt:348
+#: FrugalBuild.txt:353
 msgid ""
 "Of course there is a solution to avoid this, to use a real `chroot` instead "
 "of a simple `fakeroot`. What does this mean? The following:"
 msgstr ""
 
 # type: Plain text
-#: FrugalBuild.txt:356
+#: FrugalBuild.txt:361
 msgid ""
 "When starting the build, a core chroot system is installed under /var/"
 "chroot.  (Of course you can change this value under `/etc/makepkg.conf`.) "
@@ -804,7 +816,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: FrugalBuild.txt:362
+#: FrugalBuild.txt:367
 msgid ""
 "When you start building with `makepkg` (without `-H`), pacman-g2 will "
 "install these packages to /var/chroot if necessary. This will produce a "
@@ -815,7 +827,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: FrugalBuild.txt:367
+#: FrugalBuild.txt:372
 msgid ""
 "Here comes the fun part. The packages listed in depends() and makedepends() "
 "are installed to this clean (`/var/chroot`) system. From this point, this "
@@ -824,7 +836,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: FrugalBuild.txt:372
+#: FrugalBuild.txt:377
 msgid ""
 "After this, the chroot should be cleaned up which means the removal of the "
 "installed depends() and makedepends(). This ensures you do not have to build "
@@ -833,7 +845,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: FrugalBuild.txt:376
+#: FrugalBuild.txt:381
 msgid ""
 "This way we can prevent lots of dependency problems and it is even possible "
 "to build packages for a different Frugalware version. This is quite "
@@ -842,7 +854,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: FrugalBuild.txt:381
+#: FrugalBuild.txt:386
 msgid ""
 "If the build fails, the working directory will not be deleted, you can find "
 "it under `/var/chroot/$tree/var/tmp/fst`. Later if you want to clean your "
@@ -851,19 +863,19 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: FrugalBuild.txt:384
+#: FrugalBuild.txt:389
 msgid ""
 "To deactivate building in a `chroot` (for testing purposes), you should run "
 "`makepkg` with the `-H` option."
 msgstr ""
 
 # type: Plain text
-#: FrugalBuild.txt:386
+#: FrugalBuild.txt:391
 msgid "=== Package splitting"
 msgstr ""
 
 # type: Plain text
-#: FrugalBuild.txt:390
+#: FrugalBuild.txt:395
 msgid ""
 "Package splitting means moving out a list of specified files to "
 "'subpackages' (like `libmysql` out of `mysql`) and then defining the "
@@ -871,7 +883,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: FrugalBuild.txt:395
+#: FrugalBuild.txt:400
 msgid ""
 "NOTE: If you create several subpackages, maintaining those packages will "
 "require more and more time. Thus, unnecessary splits aren't welcome.  "
@@ -880,14 +892,14 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: FrugalBuild.txt:398
+#: FrugalBuild.txt:403
 msgid ""
 "The subpkgs() array is to define the pkgnames of the subpackages. From now "
 "all the directive have a subfoo equivalent:"
 msgstr ""
 
 # type: Plain text
-#: FrugalBuild.txt:415
+#: FrugalBuild.txt:420
 #, no-wrap
 msgid ""
 "pkgname -> subpkgs()\n"
@@ -909,7 +921,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: FrugalBuild.txt:420
+#: FrugalBuild.txt:425
 msgid ""
 "Also note that bash does not support two-dimensional arrays, so when "
 "defining the array of arrays, then quotes are the major separators and "
@@ -917,12 +929,12 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: FrugalBuild.txt:422
+#: FrugalBuild.txt:427
 msgid "Simple example:"
 msgstr ""
 
 # type: Plain text
-#: FrugalBuild.txt:429
+#: FrugalBuild.txt:434
 #, no-wrap
 msgid ""
 "subpkgs=('foo' 'bar')\n"
@@ -934,14 +946,14 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: FrugalBuild.txt:433
+#: FrugalBuild.txt:438
 msgid ""
 "You may define conflicts, replaces and other directives for your "
 "subpackages, but the requirement is only to define these 5 ones."
 msgstr ""
 
 # type: Plain text
-#: FrugalBuild.txt:438
+#: FrugalBuild.txt:443
 msgid ""
 "The second part is to move some files to the - just defined - subpackages. "
 "You should use the Fsplit command for this at the end of your build() "
@@ -950,7 +962,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: FrugalBuild.txt:441
+#: FrugalBuild.txt:446
 #, no-wrap
 msgid ""
 "Fsplit subpkgname usr/share/\n"
@@ -960,37 +972,37 @@ msgstr ""
 "----\n"
 
 # type: Plain text
-#: FrugalBuild.txt:445
+#: FrugalBuild.txt:450
 msgid ""
 "This will move the /usr/share dir of the package to the \"subpkgname\" "
 "subpackage."
 msgstr ""
 
 # type: Plain text
-#: FrugalBuild.txt:448
+#: FrugalBuild.txt:453
 msgid ""
 "NOTE: Don't use a trailing slash when defining file patterns with wildcards "
 "in it!"
 msgstr ""
 
 # type: Plain text
-#: FrugalBuild.txt:450 makepkg.txt:161 pacman-g2.txt:412
+#: FrugalBuild.txt:455 makepkg.txt:161 pacman-g2.txt:412
 msgid "== SEE ALSO"
 msgstr "== VOIR AUSSI"
 
 # type: Plain text
-#: FrugalBuild.txt:452
+#: FrugalBuild.txt:457
 #, no-wrap
 msgid "*makepkg*(8), *pacman-g2*(8)\n"
 msgstr "*makepkg*(8), *pacman-g2*(8)\n"
 
 # type: Plain text
-#: FrugalBuild.txt:454 makepkg.txt:165 pacman-g2.txt:416
+#: FrugalBuild.txt:459 makepkg.txt:165 pacman-g2.txt:416
 msgid "== AUTHORS"
 msgstr "== AUTEURS"
 
 # type: Plain text
-#: FrugalBuild.txt:455 makepkg.txt:166 pacman-g2.txt:417
+#: FrugalBuild.txt:460 makepkg.txt:166 pacman-g2.txt:417
 msgid "See /usr/share/doc/pacman-g2-*/AUTHORS."
 msgstr "Voir /usr/share/doc/pacman-g2-*/AUTHORS."
 
