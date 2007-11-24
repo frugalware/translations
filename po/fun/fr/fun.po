@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-21 05:05+0100\n"
-"PO-Revision-Date: 2007-11-21 23:48+0100\n"
+"POT-Creation-Date: 2007-11-24 05:19+0100\n"
+"PO-Revision-Date: 2007-11-24 21:55+0100\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,11 +16,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 1.0\n"
 
-#: ../src/fun-ui.c:264
+#: ../src/fun-ui.c:311
 msgid "Restart Fun"
 msgstr "Redémarrer Fun"
 
-#: ../src/fun-ui.c:265
+#: ../src/fun-ui.c:312
 msgid ""
 "Fun needs to be restarted in order for the changes to take effect. Do you "
 "want to restart Fun now ?"
@@ -28,52 +28,76 @@ msgstr ""
 "Fun doit être redémarré pour les changements prennent effet. Voulez vous "
 "redémarrer Fun maintenant ?"
 
-#: ../src/fun-ui.c:350
-msgid "<b>Configure Frugalware Update Nofitier</b>"
-msgstr "<b>Configurer le notificateur de mise à jour de Frugalware</b>"
-
-#: ../src/fun-ui.c:360
-msgid "<b>Update Interval (minutes) :</b>"
-msgstr "<b>Intervalle de Mises à jour (minutes) :</b>"
-
-#: ../src/fun-ui.c:401
+#: ../src/fun-ui.c:412
 msgid "S"
 msgstr "S"
 
-#: ../src/fun-ui.c:409
+#: ../src/fun-ui.c:420
 msgid "Package Name"
 msgstr "Nom du paquet"
 
-#: ../src/fun-ui.c:419
+#: ../src/fun-ui.c:430
 msgid "Latest Version"
 msgstr "Dernière version"
 
-#: ../src/fun-ui.c:427
+#: ../src/fun-ui.c:438
 msgid "Description"
 msgstr "Description"
 
-#: ../src/fun-ui.c:467
+#: ../src/fun-ui.c:496
 #, c-format
 msgid "Failed to connect to the fun daemon\n"
 msgstr "N'a pu se connecter au démon fun\r\n"
 
-#: ../src/fun-ui.c:468
+#: ../src/fun-ui.c:497
 msgid "Not connected to fun daemon"
 msgstr "Non connecté au démon fun"
 
+#. set the status
+#: ../src/fun-ui.c:500
+msgid ""
+"The frugalware update notifier daemon is not running. Update checking is "
+"disabled"
+msgstr ""
+"Le démon notificateur de mises à jour Frugalware n'est pas démarré. La "
+"vérification de mises à jour est désactivée."
+
+#. display an error
+#: ../src/fun-ui.c:502
+msgid "Update checking disabled"
+msgstr "Vérification de mises à jour désactivé"
+
+#. set the status
+#. set the status to Idle
+#. and the status back to Idle
+#: ../src/fun-ui.c:519 ../src/fun-ui.c:539 ../src/fun-ui.c:584
+msgid "Idle"
+msgstr "En attente"
+
+#. set the status to let the user know that fun is checking for an update
+#: ../src/fun-ui.c:556
+msgid "Checking for new updates..."
+msgstr "Vérification pour de nouvelles mises à jour..."
+
 #. g_print ("\nlist is\n %s", plist);
-#: ../src/fun-ui.c:520
+#: ../src/fun-ui.c:569
 msgid "Updates are available"
 msgstr "Mises à jour disponibles"
 
-#: ../src/fun-ui.c:521
+#: ../src/fun-ui.c:570
 msgid "Click here to know more.."
 msgstr "Cliquez ici pour en savoir plus.."
 
-#: ../src/fun-ui.c:550
+#: ../src/fun-ui.c:611
 msgid "(C) 2007 Frugalware Developer Team (GPL)"
 msgstr "(C) 2007 L'équipe de développeur Frugalware (GPL)"
 
-#: ../src/fun-ui.c:551
+#: ../src/fun-ui.c:612
 msgid "Frugalware Update Notifier"
-msgstr "Notificateur de mise à jour de Frugalware"
+msgstr "Notifieur de mises à jour de Frugalware"
+
+#~ msgid "<b>Configure Frugalware Update Nofitier</b>"
+#~ msgstr "<b>Configurer le notificateur de mise à jour de Frugalware</b>"
+
+#~ msgid "<b>Update Interval (minutes) :</b>"
+#~ msgstr "<b>Intervalle de Mises à jour (minutes) :</b>"
