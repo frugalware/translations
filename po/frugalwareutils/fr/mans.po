@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-11-24 05:19+0100\n"
-"PO-Revision-Date: 2007-11-24 22:11+0100\n"
+"PO-Revision-Date: 2007-11-27 15:59+0100\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -58,11 +58,16 @@ msgid ""
 "automatically for you. The later will contain the list of auto-detected "
 "other operating systems."
 msgstr ""
+"`grubconfig` est une interface pour `grub-install`. Il supporte des "
+"installations pour des partitions RAID, et supporte la génération du fichier "
+"de configuration (`menu.lst`) automatiquement pour vous. Ce dernier "
+"contiendra la liste des systèmes d'exploitation auto-détecté."
 
 # type: Plain text
 #: grubconfig.txt:19
 msgid "NOTE: The old `menu.lst` is saved as `menu.lst.old` for you."
 msgstr ""
+"Note : L'ancien `menu.lst` est sauvegardé comme `menu.lst.old` pour vous."
 
 # type: Plain text
 #: grubconfig.txt:21 mouseconfig.txt:16 netconfig.txt:14 raidconfig.txt:16
@@ -87,6 +92,8 @@ msgid ""
 "--version::\n"
 "\tDisplay the package version.\n"
 msgstr ""
+"--version::\n"
+"\tAfficher la version du paquet.\n"
 
 # type: Plain text
 #: mouseconfig.txt:2
@@ -96,7 +103,7 @@ msgstr "= mouseconfig(1)"
 # type: Plain text
 #: mouseconfig.txt:6
 msgid "mouseconfig - configures your mouse settings"
-msgstr ""
+msgstr "mouseconfig - Configure les paramètres de votre souris"
 
 # type: Plain text
 #: mouseconfig.txt:10
@@ -108,6 +115,8 @@ msgstr "mouseconfig [options]"
 msgid ""
 "mouseconfig sets up the `/etc/sysconfig/gpm` file to match your hardware."
 msgstr ""
+"mouseconfig configure le fichier `/etc/sysconfig/gpm` pour correspondre à "
+"votre matériel"
 
 # type: Plain text
 #: netconfig.txt:2
@@ -117,7 +126,7 @@ msgstr "= netconfig(1)"
 # type: Plain text
 #: netconfig.txt:6
 msgid "netconfig - manages network configuration profiles"
-msgstr ""
+msgstr "netconfig - gère les profils de configuration réseau"
 
 # type: Plain text
 #: netconfig.txt:10
@@ -136,6 +145,8 @@ msgid ""
 "-h, --help::\n"
 "\tDisplay this manpage.\n"
 msgstr ""
+"-h, --help::\n"
+"\tAffiche ce manuel.\n"
 
 # type: Plain text
 #: netconfig.txt:20
@@ -144,6 +155,8 @@ msgid ""
 "-f, --fast::\n"
 "\tFast mode, used by the installer.\n"
 msgstr ""
+"-f, --fast::\n"
+"\tMode rapide, utilisé par l'installateur.\n"
 
 # type: Plain text
 #: netconfig.txt:23
@@ -152,6 +165,8 @@ msgid ""
 "--dry-run::\n"
 "\tDo not actually perform the operation.\n"
 msgstr ""
+"--dry-run::\n"
+"\tN'accomplit pas vraiment l'opération.\n"
 
 # type: Plain text
 #: netconfig.txt:26
@@ -160,6 +175,8 @@ msgid ""
 "--loup::\n"
 "\tBring up the loopback interface.\n"
 msgstr ""
+"--loup::\n"
+"\tActive l'interface de la boucle locale.\n"
 
 # type: Plain text
 #: netconfig.txt:29
@@ -181,6 +198,9 @@ msgid ""
 "profile. When `netconfig` invoked with the start parameter, then the profile "
 "named `default` (`/etc/sysconfig/network/default`) will be read."
 msgstr ""
+"Chaque fichier du répertoire `/etc/sysconfig/network` représente un profil "
+"réseau. Quand `netconfig` est utilisé avec les paramètres de démarrage, le "
+"profil nommé `default` (`/etc/sysconfig/network/default`) sera lu."
 
 # type: Plain text
 #: netconfig.txt:39
@@ -189,6 +209,9 @@ msgid ""
 "parameter. In that case the given profile will be loaded instead of "
 "`default` on system startup."
 msgstr ""
+"Ce comportement peut être remplacé par le paramètre du noyau "
+"`network=<profilname>`. Dans ce cas, le profil donné va être chargé à la "
+"place de `default` lors du démarrage du système."
 
 # type: Plain text
 #: netconfig.txt:43
@@ -197,6 +220,9 @@ msgid ""
 "interface that netconfig should initialize. The exception to this is the "
 "options section, which defines global options."
 msgstr ""
+"Ce profil est divisé en sections ou en interfaces. Chaque section définie "
+"une interface que netconfig doit initialiser. L'exception à ça est la "
+"section des options qui définies les options globales."
 
 # type: Plain text
 #: netconfig.txt:45
@@ -450,6 +476,10 @@ msgid ""
 "gateway = default gw 192.168.1.1\n"
 "----\n"
 msgstr ""
+"[eth0]\n"
+"options = 192.168.1.102 netmask 255.255.255.0\n"
+"gateway = default gw 192.168.1.1\n"
+"----\n"
 
 # type: Plain text
 #: netconfig.txt:161
@@ -510,7 +540,7 @@ msgstr ""
 # type: Plain text
 #: netconfig.txt:186
 msgid "=== Initialize before `iwconfig`"
-msgstr ""
+msgstr "=== Initialisation avant 'iwconfig'"
 
 # type: Plain text
 #: netconfig.txt:189
@@ -518,6 +548,8 @@ msgid ""
 "If you have to to initialize the card with `ifconfig <interface> up` before "
 "using iwconfig:"
 msgstr ""
+"Si vous devez initialiser la carte avec `ifconfig <interface> up` avant "
+"d'utiliser iwconfig:"
 
 # type: Plain text
 #: netconfig.txt:194
@@ -528,6 +560,10 @@ msgid ""
 "post_down = ifconfig eth1 down\n"
 "----\n"
 msgstr ""
+"[eth1]\n"
+"pre_up = ifconfig eth1 up\n"
+"post_down = ifconfig eth1 down\n"
+"----\n"
 
 # type: Plain text
 #: netconfig.txt:198
@@ -547,6 +583,8 @@ msgid ""
 "If you want to use wpa_supplicant instead of the simple encryption (using "
 "key = secret), then use the following pre_up and post_down lines:"
 msgstr ""
+"Si vous voulez utiliser wpa_supplicant à la place du simple cryptage (en "
+"utilisant key = secret), suivez les prochaines lignes pre_up et post_down."
 
 # type: Plain text
 #: netconfig.txt:207
@@ -563,11 +601,13 @@ msgid ""
 "You also need to edit `/etc/wpa_supplicant.conf`. A possible correct setup "
 "is:"
 msgstr ""
+"Vous avez également besoin d'éditer le fichier `/etc/wpa_supplicant.conf`. "
+"Une configuration correcte possible est :"
 
 # type: Plain text
 #: netconfig.txt:213
 msgid "ctrl_interface=/var/run/wpa_supplicant"
-msgstr ""
+msgstr "ctrl_interface=/var/run/wpa_supplicant"
 
 # type: Plain text
 #: netconfig.txt:218
@@ -586,6 +626,9 @@ msgid ""
 "NOTE: See also the `wpa_psk` and `wpa_driver` options, most users can avoid "
 "the manual `pre_up` and `pre_down` directives."
 msgstr ""
+"NOTE: Voir aussi les options `wpa_psk` et `wpa_driver`. La plupart des "
+"utilisateurs peuvent se dispenser du manuels des directives `pre_up` et "
+"`pre_down`."
 
 # type: Plain text
 #: netconfig.txt:224
@@ -595,12 +638,12 @@ msgstr "== AUTHOR"
 # type: Plain text
 #: netconfig.txt:226
 msgid "Written by Miklos Vajna."
-msgstr ""
+msgstr "Écrit par Miklos Vajna."
 
 # type: Plain text
 #: netconfig.txt:228
 msgid "== REPORTING BUGS"
-msgstr ""
+msgstr "== RAPPORTER DES BUGS"
 
 # type: Plain text
 #: netconfig.txt:230
@@ -608,11 +651,13 @@ msgid ""
 "If you find any bug, then please file a bugreport at <http://bugs.frugalware."
 "org/>."
 msgstr ""
+"Si vous trouvez des bugs, veuillez envoyez un rapport de bugs à "
+"<http://bugs.frugalware.org/>"
 
 # type: Plain text
 #: netconfig.txt:232
 msgid "== SEE ALSO"
-msgstr ""
+msgstr "== VOIR AUSSI"
 
 # type: Plain text
 #: netconfig.txt:233
@@ -648,7 +693,7 @@ msgstr "= timeconfig(1)"
 # type: Plain text
 #: timeconfig.txt:6
 msgid "timeconfig - configures your time zone settings"
-msgstr ""
+msgstr "timeconfig - Configure votre configuration de fuseau horaire"
 
 # type: Plain text
 #: timeconfig.txt:10
@@ -661,6 +706,8 @@ msgid ""
 "`timeconfig` is a menu-driven tool to set up your `/etc/hardwareclock` file "
 "and a symbolic link, named `/etc/localtime`."
 msgstr ""
+"`timeconfig` est un outil graphique pour configurer votre fichier "
+"`/etc/hardwareclock` et un lien symbolique, nommé `/etc/localtime`."
 
 # type: Plain text
 #: xconfig.txt:2
@@ -670,7 +717,7 @@ msgstr "= xconfig(1)"
 # type: Plain text
 #: xconfig.txt:6
 msgid "xconfig - creates your XOrg configuration file"
-msgstr ""
+msgstr "xconfig - Créer votre fichier de configuration Xorg"
 
 # type: Plain text
 #: xconfig.txt:10
@@ -683,6 +730,9 @@ msgid ""
 "`xconfig` is a front-end to `X -configure`. It asks for a resolution and a "
 "colour depth and does the rest of the configuration automatically for you."
 msgstr ""
+"`xconfig` est une interface pour `X -configure`. Il vous demande une "
+"résolution et une profondeur des couleurs et fait automatiquement le reste "
+"de la configuration pour vous."
 
 # type: Plain text
 #: xconfig.txt:23
@@ -713,6 +763,9 @@ msgid ""
 "`xwmconfig` configures your default window manager for desktop managers like "
 "`XDM`, where you can't do so interactively."
 msgstr ""
+"`xwmconfig` configure votre gestionnaire de fenêtres par défaut pour les "
+"gestionnaire de bureau comme `XDM`, où vous ne pouvez pas le faire si "
+"interactivement."
 
 # type: Plain text
 #: xwmconfig.txt:20
@@ -729,3 +782,5 @@ msgid ""
 "--silent::\n"
 "\tDo not print any warning if GDM or KDM are installed.\n"
 msgstr ""
+"--silent::\n"
+"\tNe pas afficher de messages d'erreurs si GDM ou KDM sont installé.\n"
