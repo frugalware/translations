@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-11-24 05:19+0100\n"
-"PO-Revision-Date: 2007-11-27 15:59+0100\n"
+"PO-Revision-Date: 2007-11-30 09:59+0100\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -31,7 +31,7 @@ msgstr "== NAME"
 # type: Plain text
 #: grubconfig.txt:6
 msgid "grubconfig - configures the GRUB boot loader"
-msgstr ""
+msgstr "grubconfig - Configure le gestionnaire de boot Grub"
 
 # type: Plain text
 #: grubconfig.txt:8 mouseconfig.txt:8 netconfig.txt:8 raidconfig.txt:8
@@ -42,7 +42,7 @@ msgstr "== SYNOPSIS"
 # type: Plain text
 #: grubconfig.txt:10
 msgid "grubconfig [options]"
-msgstr ""
+msgstr "grubconfig [options]"
 
 # type: Plain text
 #: grubconfig.txt:12 mouseconfig.txt:12 raidconfig.txt:12 timeconfig.txt:12
@@ -83,6 +83,8 @@ msgid ""
 "--help::\n"
 "\tDisplay this manpage.\n"
 msgstr ""
+"--help::\n"
+"\tAfficher ce manuel.\n"
 
 # type: Plain text
 #: grubconfig.txt:26 mouseconfig.txt:21 raidconfig.txt:21 timeconfig.txt:22
@@ -185,6 +187,8 @@ msgid ""
 "--lodown::\n"
 "\tBring down the loopback interface.\n"
 msgstr ""
+"--lodown::\n"
+"\tDésactive l'interface de la boucle locale.\n"
 
 # type: Plain text
 #: netconfig.txt:31
@@ -237,6 +241,10 @@ msgid ""
 "\tExplicitly defines dns addresses (ie. when using a static ip). Multiple\n"
 "\tusage is ok.\n"
 msgstr ""
+"dns = <ip>::\n"
+"\tDéfinis explicitement les adresses DNS (c'est-à-dire lors de l'utilisation "
+"d'une adresse IP fixe).\n"
+"\tL'usage multiple de cet option est possible.\n"
 
 # type: Plain text
 #: netconfig.txt:53
@@ -246,6 +254,10 @@ msgid ""
 "\tDefines the local domain name. If defined more than once, the first\n"
 "\twill be used.\n"
 msgstr ""
+"domain = <domaine>::\n"
+"\tDéfinis le nom du domaine local. Si il est définie plus d'une fois, seul le "
+"premier\n"
+"\tsera utilisé.\n"
 
 # type: Plain text
 #: netconfig.txt:56
@@ -254,6 +266,8 @@ msgid ""
 "desc = <description>::\n"
 "\tA brief description of this network profile. Used by the graphical frontend.\n"
 msgstr ""
+"desc = <description>::\n"
+"\tUne description brève du profil réseau. Utilisée par l'interface graphique.\n"
 
 # type: Plain text
 #: netconfig.txt:59
@@ -262,6 +276,9 @@ msgid ""
 "adsl_username = <username>::\n"
 "\tIf you have an adsl (pppoe) connection, your adsl username.\n"
 msgstr ""
+"adsl_username = <nom d'utilisateur>::\n"
+"\tSi vous avez une connexion ADSL (PPOE), c'est votre nom d'utilisateur de "
+"connexion ADSL.\n"
 
 # type: Plain text
 #: netconfig.txt:62
@@ -270,6 +287,9 @@ msgid ""
 "adsl_password = <password>::\n"
 "\tIf you have an adsl connection, your adsl password.\n"
 msgstr ""
+"adsl_password = <mot de passe>::\n"
+"\tSi vous avez une connexion ADSL, c'est votre mot de passe de connexion "
+"ADSL.\n"
 
 # type: Plain text
 #: netconfig.txt:66
@@ -279,6 +299,10 @@ msgid ""
 "\tIf you have an adsl connection, the Ethernet interface connected to the\n"
 "\tDSL modem.\n"
 msgstr ""
+"adsl_interface = <interface>::\n"
+"\tSi vous avez une connexion ADSL, c'est votre interface Ethernet connecté à "
+"votre\n"
+"\tmodem DSL.\n"
 
 # type: Plain text
 #: netconfig.txt:68
@@ -651,8 +675,8 @@ msgid ""
 "If you find any bug, then please file a bugreport at <http://bugs.frugalware."
 "org/>."
 msgstr ""
-"Si vous trouvez des bugs, veuillez envoyez un rapport de bugs à "
-"<http://bugs.frugalware.org/>"
+"Si vous trouvez des bugs, veuillez envoyez un rapport de bugs à <http://bugs."
+"frugalware.org/>"
 
 # type: Plain text
 #: netconfig.txt:232
@@ -706,8 +730,8 @@ msgid ""
 "`timeconfig` is a menu-driven tool to set up your `/etc/hardwareclock` file "
 "and a symbolic link, named `/etc/localtime`."
 msgstr ""
-"`timeconfig` est un outil graphique pour configurer votre fichier "
-"`/etc/hardwareclock` et un lien symbolique, nommé `/etc/localtime`."
+"`timeconfig` est un outil graphique pour configurer votre fichier `/etc/"
+"hardwareclock` et un lien symbolique, nommé `/etc/localtime`."
 
 # type: Plain text
 #: xconfig.txt:2
