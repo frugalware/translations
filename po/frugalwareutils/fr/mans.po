@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-11-24 05:19+0100\n"
-"PO-Revision-Date: 2007-11-30 09:59+0100\n"
+"PO-Revision-Date: 2007-12-02 21:46+0100\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -242,8 +242,7 @@ msgid ""
 "\tusage is ok.\n"
 msgstr ""
 "dns = <ip>::\n"
-"\tDéfinis explicitement les adresses DNS (c'est-à-dire lors de l'utilisation "
-"d'une adresse IP fixe).\n"
+"\tDéfinis explicitement les adresses DNS (c'est-à-dire lors de l'utilisation d'une adresse IP fixe).\n"
 "\tL'usage multiple de cet option est possible.\n"
 
 # type: Plain text
@@ -255,8 +254,7 @@ msgid ""
 "\twill be used.\n"
 msgstr ""
 "domain = <domaine>::\n"
-"\tDéfinis le nom du domaine local. Si il est définie plus d'une fois, seul le "
-"premier\n"
+"\tDéfinis le nom du domaine local. Si il est définie plus d'une fois, seul le premier\n"
 "\tsera utilisé.\n"
 
 # type: Plain text
@@ -277,8 +275,7 @@ msgid ""
 "\tIf you have an adsl (pppoe) connection, your adsl username.\n"
 msgstr ""
 "adsl_username = <nom d'utilisateur>::\n"
-"\tSi vous avez une connexion ADSL (PPOE), c'est votre nom d'utilisateur de "
-"connexion ADSL.\n"
+"\tSi vous avez une connexion ADSL (PPOE), c'est votre nom d'utilisateur de connexion ADSL.\n"
 
 # type: Plain text
 #: netconfig.txt:62
@@ -288,8 +285,7 @@ msgid ""
 "\tIf you have an adsl connection, your adsl password.\n"
 msgstr ""
 "adsl_password = <mot de passe>::\n"
-"\tSi vous avez une connexion ADSL, c'est votre mot de passe de connexion "
-"ADSL.\n"
+"\tSi vous avez une connexion ADSL, c'est votre mot de passe de connexion ADSL.\n"
 
 # type: Plain text
 #: netconfig.txt:66
@@ -300,8 +296,7 @@ msgid ""
 "\tDSL modem.\n"
 msgstr ""
 "adsl_interface = <interface>::\n"
-"\tSi vous avez une connexion ADSL, c'est votre interface Ethernet connecté à "
-"votre\n"
+"\tSi vous avez une connexion ADSL, c'est votre interface Ethernet connecté à votre\n"
 "\tmodem DSL.\n"
 
 # type: Plain text
@@ -316,6 +311,9 @@ msgid ""
 "string within square brackets (ie. the two below are `eth0` and `eth1`). The "
 "available directives:"
 msgstr ""
+"Chaque section défini une interface. Le nom de l'interface est défini par la "
+"chaîne entre guillemet (c-à-d les deux ci-suit sont `eth0` et `eth1`). Les "
+"directives disponibles sont:"
 
 # type: Plain text
 #: netconfig.txt:77
@@ -326,6 +324,12 @@ msgid ""
 "\tMultiple usage is ok for eth0:1, eth0:2, etc. See the other format of\n"
 "\tthis directive for dhcp.\n"
 msgstr ""
+"options = <ip> [netmask <netmask> [broadcast <broadcast>]::\n"
+"\tDéfini adresse ip, l'adresse de masque réseau et de broadcast de "
+"l'interface.\n"
+"\tUne utilisation multiple est valide, pour eth0:1, eth0:2, etc. Voir les "
+"autres format de\n"
+"\tcette directive pour dhcp.\n"
 
 # type: Plain text
 #: netconfig.txt:80
@@ -334,21 +338,24 @@ msgid ""
 "options = dhcp::\n"
 "\tUse dhcp for this interface. When this format is used, the other \"options\" lines are ignored.\n"
 msgstr ""
+"options = dhcp::\n"
+"\tUtilise dhcp pour cette interface. Quand cette option est utilisée, les "
+"autres lignes d'\"options\" sont ignorées.\n"
 
 # type: Plain text
 #: netconfig.txt:82
 msgid "pre_up = <command>::"
-msgstr ""
+msgstr "pre_up = <command>::"
 
 # type: Plain text
 #: netconfig.txt:84
 msgid "post_up = <command>::"
-msgstr ""
+msgstr "post_up = <command>::"
 
 # type: Plain text
 #: netconfig.txt:86
 msgid "pre_down = <command>::"
-msgstr ""
+msgstr "pre_down = <command>::"
 
 # type: Plain text
 #: netconfig.txt:92
@@ -369,6 +376,9 @@ msgid ""
 "\tOverwrites the mac address of the card. If defined more than once, the\n"
 "\tfirst will be used.\n"
 msgstr ""
+"mac = <mac address>::\n"
+"\tForce l'adresse mac de la carte. Si elle définit plus d'une fois,\n"
+"\tla première sera utilisée.\n"
 
 # type: Plain text
 #: netconfig.txt:101
@@ -402,6 +412,8 @@ msgid ""
 "gateway = [default gw] <ip>::\n"
 "\tRoute packets via a gateway.\n"
 msgstr ""
+"gateway = [default gw] <ip>::\n"
+"\tRedirige les paquets via une gateway.\n"
 
 # type: Plain text
 #: netconfig.txt:118
