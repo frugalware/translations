@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-12-09 05:08+0100\n"
-"PO-Revision-Date: 2007-11-28 18:11+0100\n"
+"POT-Creation-Date: 2007-12-20 05:04+0100\n"
+"PO-Revision-Date: 2007-12-20 16:42+0100\n"
 "Last-Translator: mcklaren <mcklaren@gmil.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,11 +16,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 1.0\n"
 
-#: ../src/fun-ui.c:311
+#: ../src/fun-ui.c:207
 msgid "Restart Fun"
 msgstr "Reiniciar Fun"
 
-#: ../src/fun-ui.c:312
+#: ../src/fun-ui.c:208
 msgid ""
 "Fun needs to be restarted in order for the changes to take effect. Do you "
 "want to restart Fun now ?"
@@ -28,33 +28,29 @@ msgstr ""
 "Necesitas reiniciar FUN para que los cambios surtan efecto. ¿Quieres "
 "reiniciar FUN ahora?"
 
-#: ../src/fun-ui.c:412
+#: ../src/fun-ui.c:307
 msgid "S"
 msgstr "S"
 
-#: ../src/fun-ui.c:420
+#: ../src/fun-ui.c:315
 msgid "Package Name"
 msgstr "Nombre del Paquete"
 
-#: ../src/fun-ui.c:430
+#: ../src/fun-ui.c:325
 msgid "Latest Version"
 msgstr "Última versión"
 
-#: ../src/fun-ui.c:438
+#: ../src/fun-ui.c:333
 msgid "Description"
 msgstr "Descripción"
 
-#: ../src/fun-ui.c:496
+#: ../src/fun-ui.c:391
 #, c-format
 msgid "Failed to connect to the fun daemon\n"
 msgstr "Fallo al conectar al demonio fun\n"
 
-#: ../src/fun-ui.c:497
-msgid "Not connected to fun daemon"
-msgstr "No conectado al demonio fun"
-
 #. set the status
-#: ../src/fun-ui.c:500
+#: ../src/fun-ui.c:395
 msgid ""
 "The frugalware update notifier daemon is not running. Update checking is "
 "disabled"
@@ -63,35 +59,50 @@ msgstr ""
 "funcionando. La revisión de actualizaciones esta desactivado."
 
 #. display an error
-#: ../src/fun-ui.c:502
+#: ../src/fun-ui.c:397
 msgid "Update checking disabled"
 msgstr "Revisión de actualizaciones desactivado"
 
 #. set the status
+#. fun_tooltip_set_text2 (tooltip, "", FALSE);
 #. set the status to Idle
 #. and the status back to Idle
-#: ../src/fun-ui.c:519 ../src/fun-ui.c:539 ../src/fun-ui.c:584
+#: ../src/fun-ui.c:414 ../src/fun-ui.c:434 ../src/fun-ui.c:473
 msgid "Idle"
 msgstr "Inactivo"
 
 #. set the status to let the user know that fun is checking for an update
-#: ../src/fun-ui.c:556
+#: ../src/fun-ui.c:451
 msgid "Checking for new updates..."
 msgstr "Comprobando actualizaciones nueva..."
 
 #. g_print ("\nlist is\n %s", plist);
-#: ../src/fun-ui.c:569
+#: ../src/fun-ui.c:464
 msgid "Updates are available"
 msgstr "Actualizaciones disponibles"
 
-#: ../src/fun-ui.c:570
-msgid "Click here to know more.."
-msgstr "Click aquí para saber mas..."
+#: ../src/fun-ui.c:464
+msgid "Click the tray icon for details"
+msgstr "Pinche sobre el icono de la bandeja para mas detalles"
 
-#: ../src/fun-ui.c:611
+#: ../src/fun-ui.c:492
 msgid "(C) 2007 Frugalware Developer Team (GPL)"
 msgstr "(C) 2007 Frugalware Developer Team (GPL)"
 
-#: ../src/fun-ui.c:612
+#: ../src/fun-ui.c:493
 msgid "Frugalware Update Notifier"
 msgstr "Notificador de Actualizaciones Frugalware"
+
+#: ../src/fun-ui.c:545
+msgid "Error getting update information"
+msgstr "Error al obtener la información sobre las actualizaciones"
+
+#: ../src/fun-ui.c:545
+msgid "There was an error getting update information"
+msgstr "Ha ocurrido un error al obtener la información de la actualización"
+
+#~ msgid "Not connected to fun daemon"
+#~ msgstr "No conectado al demonio fun"
+
+#~ msgid "Click here to know more.."
+#~ msgstr "Click aquí para saber mas..."
