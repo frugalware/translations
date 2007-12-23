@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-24 05:19+0100\n"
-"PO-Revision-Date: 2007-11-24 21:55+0100\n"
+"POT-Creation-Date: 2007-12-23 05:05+0100\n"
+"PO-Revision-Date: 2007-12-23 14:40+0100\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,85 +16,114 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 1.0\n"
 
-#: ../src/fun-ui.c:311
+#: ../src/fun.c:63 ../src/fun.c:71
+msgid "Error"
+msgstr "erreur"
+
+#: ../src/fun.c:63
+msgid "Failed to initialize dbus subsystem"
+msgstr "erreur d'initialisation du système dbus"
+
+#: ../src/fun.c:71
+msgid "Failed to initialize interface"
+msgstr "l'interface ne peut demarer"
+
+#: ../src/fun-ui.c:217
 msgid "Restart Fun"
 msgstr "Redémarrer Fun"
 
-#: ../src/fun-ui.c:312
+#: ../src/fun-ui.c:218
 msgid ""
 "Fun needs to be restarted in order for the changes to take effect. Do you "
 "want to restart Fun now ?"
 msgstr ""
-"Fun doit être redémarré pour les changements prennent effet. Voulez vous "
+"Fun doit être redémarré pour appliquer les changements . Voulez vous "
 "redémarrer Fun maintenant ?"
 
-#: ../src/fun-ui.c:412
+#: ../src/fun-ui.c:317
 msgid "S"
 msgstr "S"
 
-#: ../src/fun-ui.c:420
+#: ../src/fun-ui.c:325
 msgid "Package Name"
 msgstr "Nom du paquet"
 
-#: ../src/fun-ui.c:430
+#: ../src/fun-ui.c:335
 msgid "Latest Version"
 msgstr "Dernière version"
 
-#: ../src/fun-ui.c:438
+#: ../src/fun-ui.c:343
 msgid "Description"
 msgstr "Description"
 
-#: ../src/fun-ui.c:496
-#, c-format
+#: ../src/fun-ui.c:400
 msgid "Failed to connect to the fun daemon\n"
 msgstr "N'a pu se connecter au démon fun\r\n"
 
-#: ../src/fun-ui.c:497
-msgid "Not connected to fun daemon"
-msgstr "Non connecté au démon fun"
-
 #. set the status
-#: ../src/fun-ui.c:500
+#: ../src/fun-ui.c:404
 msgid ""
 "The frugalware update notifier daemon is not running. Update checking is "
 "disabled"
 msgstr ""
-"Le démon notificateur de mises à jour Frugalware n'est pas démarré. La "
+"Le démon notifieur de mises à jour Frugalware n'est pas démarré. La "
 "vérification de mises à jour est désactivée."
 
 #. display an error
-#: ../src/fun-ui.c:502
+#: ../src/fun-ui.c:406
 msgid "Update checking disabled"
 msgstr "Vérification de mises à jour désactivé"
 
 #. set the status
+#. fun_tooltip_set_text2 (tooltip, "", FALSE);
 #. set the status to Idle
 #. and the status back to Idle
-#: ../src/fun-ui.c:519 ../src/fun-ui.c:539 ../src/fun-ui.c:584
+#: ../src/fun-ui.c:423 ../src/fun-ui.c:443 ../src/fun-ui.c:481
 msgid "Idle"
 msgstr "En attente"
 
 #. set the status to let the user know that fun is checking for an update
-#: ../src/fun-ui.c:556
+#: ../src/fun-ui.c:460
 msgid "Checking for new updates..."
 msgstr "Vérification pour de nouvelles mises à jour..."
 
-#. g_print ("\nlist is\n %s", plist);
-#: ../src/fun-ui.c:569
+#: ../src/fun-ui.c:474
 msgid "Updates are available"
 msgstr "Mises à jour disponibles"
 
-#: ../src/fun-ui.c:570
-msgid "Click here to know more.."
-msgstr "Cliquez ici pour en savoir plus.."
+#: ../src/fun-ui.c:474
+msgid ""
+"New package updates are available for your system. Click the tray icon for "
+"more details"
+msgstr ""
+"De nouveau packages sont disponible pour votre systeme. cliquer sur l'icone "
+"pour voir les détails"
 
-#: ../src/fun-ui.c:611
+#: ../src/fun-ui.c:500
 msgid "(C) 2007 Frugalware Developer Team (GPL)"
 msgstr "(C) 2007 L'équipe de développeur Frugalware (GPL)"
 
-#: ../src/fun-ui.c:612
+#: ../src/fun-ui.c:501
 msgid "Frugalware Update Notifier"
 msgstr "Notifieur de mises à jour de Frugalware"
+
+#: ../src/fun-ui.c:553
+msgid "Error getting update information"
+msgstr "erreur pour obtenir les informations de mises a jour"
+
+#: ../src/fun-ui.c:553
+msgid "There was an error getting update information"
+msgstr "il y a une erreur pour obtenir les informations de mise a jour"
+
+#: ../src/fun-tooltip.c:44
+msgid "View Updates"
+msgstr "voir les mises a jour"
+
+#~ msgid "Not connected to fun daemon"
+#~ msgstr "Non connecté au démon fun"
+
+#~ msgid "Click here to know more.."
+#~ msgstr "Cliquez ici pour en savoir plus.."
 
 #~ msgid "<b>Configure Frugalware Update Nofitier</b>"
 #~ msgstr "<b>Configurer le notificateur de mise à jour de Frugalware</b>"
