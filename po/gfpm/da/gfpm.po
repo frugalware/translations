@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-06 05:05+0100\n"
-"PO-Revision-Date: 2007-10-20 16:13+0200\n"
+"POT-Creation-Date: 2007-12-26 05:05+0100\n"
+"PO-Revision-Date: 2007-12-22 12:09+0100\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,13 +16,13 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 1.0\n"
 
-#: ../src/gfpm-about.c:85
+#: ../src/gfpm-about.c:86
 msgid "(C) 2006-2007 Frugalware Developer Team (GPL)"
 msgstr "(C) 2006-2007 Frugalware Developer Team (GPL)"
 
-#: ../src/gfpm-about.c:86
+#: ../src/gfpm-about.c:87
 msgid "A graphical package manager for Frugalware Linux"
-msgstr "Et grafisk pakke program for Frugalware Linux."
+msgstr "Et grafisk pakkeprogram for Frugalware Linux."
 
 #: ../src/gfpm-interface.c:124 ../src/gfpm-interface.c:1218
 msgid "Installed Packages"
@@ -60,7 +60,7 @@ msgstr "Fejl"
 
 #: ../src/gfpm-interface.c:280
 msgid "Failed to initialize local package database."
-msgstr "Fejlede at initialisere lokal pakke database."
+msgstr "Fejlede at initialisere lokal pakkedatabase."
 
 #: ../src/gfpm-interface.c:310 ../data/gfpm.glade.h:18
 msgid "Gfpm"
@@ -72,7 +72,7 @@ msgstr "Ingen ændringer at tilføje."
 
 #: ../src/gfpm-interface.c:315
 msgid "Cancel Operation"
-msgstr "Annullere Handling"
+msgstr "Annullerer Handling"
 
 #: ../src/gfpm-interface.c:315
 msgid ""
@@ -90,7 +90,7 @@ msgstr "Fejlede ved initialisering af udførelse (%s)\n"
 
 #: ../src/gfpm-interface.c:421
 msgid "Error getting transaction info"
-msgstr "Fejl ved postering info"
+msgstr "Fejl ved posteringsinfo"
 
 #: ../src/gfpm-interface.c:491
 #, c-format
@@ -103,11 +103,11 @@ msgstr "Indlæser grupper ... FÆRDIG"
 
 #: ../src/gfpm-interface.c:531
 msgid "Loading package list ..."
-msgstr "Indlæser pakke liste ..."
+msgstr "Indlæser pakkeliste ..."
 
 #: ../src/gfpm-interface.c:625
 msgid "Loading package list ...DONE"
-msgstr "Indlæser pakke liste ...FÆRDIG"
+msgstr "Indlæser pakkeliste ...FÆRDIG"
 
 #: ../src/gfpm-interface.c:676
 msgid "Name:"
@@ -155,7 +155,7 @@ msgstr "Pakker:"
 
 #: ../src/gfpm-interface.c:829
 msgid "Install Date:"
-msgstr "Installations Dato:"
+msgstr "Installationsdato:"
 
 #: ../src/gfpm-interface.c:838
 msgid "Size:"
@@ -183,7 +183,7 @@ msgstr "Årsag:"
 
 #: ../src/gfpm-interface.c:907
 msgid "Explicitly Installed"
-msgstr "Udtrykkelig Installeret"
+msgstr "Udtrykkelist Installeret"
 
 #: ../src/gfpm-interface.c:913
 msgid "Installed as a dependency for another package"
@@ -212,7 +212,7 @@ msgstr "Fejlede ved klargøring af udførelse (%s)\n"
 
 #: ../src/gfpm-interface.c:1028
 msgid "is required by"
-msgstr "er krævet af"
+msgstr "er påkrævet af"
 
 #: ../src/gfpm-interface.c:1058
 msgid "Missing dependencies"
@@ -222,7 +222,7 @@ msgstr "Manglende afhængigheder"
 msgid ""
 "Following dependencies were not met. Please install these packages first."
 msgstr ""
-"Følgende afhængigheder var ikke fundet. Vær venlig at installere disse "
+"Følgende afhængigheder blev ikke fundet. Vær venlig at installere disse "
 "pakker først."
 
 #: ../src/gfpm-interface.c:1060
@@ -232,24 +232,24 @@ msgstr "Kunne ikke opfylde afhængigheder"
 #: ../src/gfpm-interface.c:1060
 msgid ""
 "The packages you are trying to remove are required by the following packages:"
-msgstr "Pakken du prøver at fjerne er påkrævet af følgende pakker:"
+msgstr "Pakkerne du prøver at fjerne er påkrævet af følgende pakker:"
 
 #: ../src/gfpm-interface.c:1072
 msgid "Package conflict"
-msgstr "Pakke konflikt"
+msgstr "Pakkekonflikt"
 
 #: ../src/gfpm-interface.c:1072
 msgid "This package conflicts with the following packages"
-msgstr "Denne pakke konflikter med følgende pakke"
+msgstr "Denne pakke er i konflikt med følgende pakke"
 
 #: ../src/gfpm-interface.c:1092 ../src/gfpm-interface.c:1834
 #, c-format
 msgid "Failed to commit transaction (%s)\n"
-msgstr "Fejlede ved skrive postering (%s)\n"
+msgstr "Fejlede ved udførsel af komando (%s)\n"
 
 #: ../src/gfpm-interface.c:1114
 msgid "Conflicting Files"
-msgstr "Konfliktende Filer"
+msgstr "Filer i konflikt"
 
 #: ../src/gfpm-interface.c:1115
 msgid ""
@@ -266,76 +266,78 @@ msgstr "Pakke(r) som du prøver at installere er beskadiget "
 
 #: ../src/gfpm-interface.c:1146
 msgid "Synchronizing package databases"
-msgstr "Synkroniserer pakke databasen"
+msgstr "Synkroniserer pakkedatabasen"
 
 #: ../src/gfpm-interface.c:1153
+#, c-format
 msgid ""
 "Gfpm has detected a newer version of the pacman-g2 package. It is "
 "recommended that you allow gfpm to update pacman-g2 first. Do you wish to "
 "continue upgrading pacman-g2 ?"
 msgstr ""
 "Gfpm har opdaget en nyere version af pacman-g2 pakken. Det anbefales at du "
-"tillader gfpm at opdatere pacman-g2 først. Ønsker du at opgradering af "
+"tillader gfpm at opdatere pacman-g2 først. Ønsker du en opgradering af "
 "pacman-g2 udføres først ?"
 
 #: ../src/gfpm-interface.c:1154
 msgid "Update pacman-g2"
-msgstr "Opdatere pacman-g2"
+msgstr "Opdaterer pacman-g2"
 
 #: ../src/gfpm-interface.c:1165
+#, c-format
 msgid ""
 "Gfpm has detected a newer version of the gfpm package. It is recommended "
 "that you allow gfpm to update itself first. Do you wish to continue "
 "upgrading gfpm ?"
 msgstr ""
 "Gfpm har opdaget en nyere version af gfpm  pakken. Det anbefales at du "
-"tillader gfpm at opdatere sig selv først. Ønsker du at opgradering af gfpm  "
+"tillader gfpm at opdatere sig selv først. Ønsker du en opgradering af gfpm  "
 "udføres først ?"
 
 #: ../src/gfpm-interface.c:1166
 msgid "Update Gfpm"
-msgstr "Opdatere Gfmp"
+msgstr "Opdaterer Gfmp"
 
 #: ../src/gfpm-interface.c:1183 ../src/gfpm-interface.c:1819
 msgid ""
 "If you're sure a package manager is not already running, you can delete /tmp/"
 "pacman-g2.lck"
 msgstr ""
-"Hvis du er sikker på at en pakke håndterer ikke allerede kører, kan du "
+"Hvis du er sikker på at en pakkehåndterer ikke allerede kører, kan du "
 "slette /tmp/pacman-g2.lck"
 
 #: ../src/gfpm-interface.c:1195
 msgid "No new package updates are available. The system is up to date."
 msgstr ""
-"Ingen nye pakke opdateringer er tilgængelige. Systemet er fuld ud opdateret."
+"Ingen nye pakkeopdateringer er tilgængelige. Systemet er fuldt ud opdateret."
 
 #: ../src/gfpm-interface.c:1199
 msgid "Package upgrade"
-msgstr "Pakke opgradering"
+msgstr "Pakkeopgradering"
 
 #: ../src/gfpm-interface.c:1199
 msgid "Following packages will be upgraded. Do you want to continue ?"
-msgstr "Følgende pakker vil blive opgraderet. Ønsker du at forsætte ?"
+msgstr "Følgende pakker vil blive opgraderede. Ønsker du at forsætte ?"
 
 #: ../src/gfpm-interface.c:1381
 msgid "Mark for upgrade"
-msgstr "Markering for opgradering"
+msgstr "Markering af opgradering"
 
 #: ../src/gfpm-interface.c:1409
 msgid "Mark for installation"
-msgstr "Markering for installation"
+msgstr "Markering af installation"
 
 #: ../src/gfpm-interface.c:1418
 msgid "Reinstall package"
-msgstr "Gen-installer pakke"
+msgstr "Gen-installerer pakke"
 
 #: ../src/gfpm-interface.c:1425
 msgid "Mark for removal"
-msgstr "Markering for fjernelse"
+msgstr "Markering af fjernelse"
 
 #: ../src/gfpm-interface.c:1503
 msgid "There was an error while populating packages"
-msgstr "Der var en general fejl ved hentning af pakken"
+msgstr "Der var en generel fejl ved hentning af pakken"
 
 #: ../src/gfpm-interface.c:1516
 msgid "There are no installed pacakges in this group"
@@ -343,7 +345,7 @@ msgstr "Der er ikke nogen installerede pakker i denne gruppe"
 
 #: ../src/gfpm-interface.c:1519
 msgid "Remove Group"
-msgstr "Fjerne Gruppe"
+msgstr "Fjern Gruppe"
 
 #: ../src/gfpm-interface.c:1519
 msgid "Are you sure you want to remove the entire group ?"
@@ -359,7 +361,7 @@ msgstr "Pakke ikke fundet"
 
 #: ../src/gfpm-interface.c:1566
 msgid "No such package found"
-msgstr "Ingen sådan pakke fundet"
+msgstr "En sådan pakke blev ikke fundet"
 
 #: ../src/gfpm-interface.c:1573
 msgid "Searching for packages ..."
@@ -401,12 +403,12 @@ msgstr "Ingen pakker er valgt"
 #: ../src/gfpm-interface.c:1800
 msgid "No package selected for install. Please select a package to install."
 msgstr ""
-"Ingen pakker er valgt for installation. Vær venlig at vælge en pakke for "
+"Ingen pakker er valgt til installation. Vær venlig at vælge en pakke til "
 "installation."
 
 #: ../src/gfpm-interface.c:1803
 msgid "Install package"
-msgstr "Installer pakke"
+msgstr "Installerer pakke"
 
 #: ../src/gfpm-interface.c:1803
 msgid "Are you sure you want to install this package ?"
@@ -442,19 +444,19 @@ msgstr "Fjerner pakke..."
 
 #: ../src/gfpm-progress.c:255
 msgid "Checking packages for file conflicts..."
-msgstr "Tjeker pakker for fil konflikter..."
+msgstr "Tjekker pakker for filkonflikter..."
 
 #: ../src/gfpm-progress.c:257
 msgid "Checking package for file conflicts..."
-msgstr "Tjeker pakke for fil konflikter..."
+msgstr "Tjekker pakke for filkonflikter..."
 
 #: ../src/gfpm-progress.c:290
 msgid "Checking dependencies"
-msgstr "Tjeker afhængigheder"
+msgstr "Tjekker afhængigheder"
 
 #: ../src/gfpm-progress.c:294
 msgid "Checking for file conflicts"
-msgstr "Tjeker for fil konflikter"
+msgstr "Tjekker for filkonflikter"
 
 #: ../src/gfpm-progress.c:298
 msgid "Resolving dependencies"
@@ -476,7 +478,7 @@ msgstr "Installerer %s-%s"
 
 #: ../src/gfpm-progress.c:316
 msgid "Package installation finished"
-msgstr "Pakke installation færdig"
+msgstr "Pakkeinstallation færdig"
 
 #: ../src/gfpm-progress.c:317
 #, c-format
@@ -490,7 +492,7 @@ msgstr "opgraderet %s"
 
 #: ../src/gfpm-progress.c:327
 msgid "Package upgrade finished"
-msgstr "Pakke opgradering færdig"
+msgstr "Pakkeopgradering færdig"
 
 #: ../src/gfpm-progress.c:328
 #, c-format
@@ -504,7 +506,7 @@ msgstr "Fjerner %s"
 
 #: ../src/gfpm-progress.c:338
 msgid "Package removal finished"
-msgstr "Pakke fjernelse færdig"
+msgstr "Fjernelse af pakke er færdig"
 
 #: ../src/gfpm-progress.c:339
 #, c-format
@@ -513,32 +515,28 @@ msgstr "fjernet %s"
 
 #: ../src/gfpm-progress.c:344
 msgid "Checking package integrity"
-msgstr "Tjeker pakke integritet"
+msgstr "Tjekker pakkeintegritet"
 
 #: ../src/gfpm-progress.c:361
 #, c-format
 msgid "Retrieving packages from %s"
 msgstr "Henter pakker fra %s"
 
-#: ../src/gfpm.c:55
-msgid "Failed to initialize interface: "
-msgstr "Fejlede ved initialisering af brugerflade: "
+#: ../src/gfpm.c:54
+msgid "Interface initialization Failed"
+msgstr "Interface initialisering fejlede"
 
-#: ../src/gfpm.c:56
-msgid "Interface initialization failed"
-msgstr "Opstart initialisering fejlede"
+#: ../src/gfpm.c:54
+msgid "Failed to initialize interface"
+msgstr "Fejlede ved initialisering af grænseflade"
 
-#: ../src/gfpm.c:65
+#: ../src/gfpm.c:62
 msgid "Error initializing libpacman"
 msgstr "Fejl initialisering libpacman"
 
-#: ../src/gfpm.c:65
+#: ../src/gfpm.c:62
 msgid "Failed to initialize libpacman"
 msgstr "Fejlede ved initialisering af libpacman"
-
-#: ../src/gfpm-optimizedb.c:89
-msgid "Ready"
-msgstr "Klar"
 
 #: ../src/gfpm-optimizedb.c:117
 msgid ""
@@ -571,7 +569,7 @@ msgstr "genererer checksum for den nye database"
 #. check integrity
 #: ../src/gfpm-optimizedb.c:165
 msgid "performing integrity check"
-msgstr "udfører integritet check"
+msgstr "udfører integritetstjek"
 
 #: ../src/gfpm-optimizedb.c:169
 msgid "Optimization failed"
@@ -579,7 +577,7 @@ msgstr "Optimering fejlede"
 
 #: ../src/gfpm-optimizedb.c:169
 msgid "Integrity check failed"
-msgstr "Integritet tjek fejlede"
+msgstr "Integritetstjek fejlede"
 
 #: ../src/gfpm-optimizedb.c:170
 msgid "Failed."
@@ -605,7 +603,7 @@ msgstr "Database optimeret"
 
 #: ../src/gfpm-optimizedb.c:198
 msgid "Your package database is now optimized."
-msgstr "Din pakke database er nu optimeret."
+msgstr "Din pakkedatabase er nu optimeret."
 
 #: ../src/gfpm-messages.c:70 ../src/gfpm-messages.c:75
 #: ../src/gfpm-messages.c:317 ../src/gfpm-messages.c:427
@@ -615,12 +613,12 @@ msgstr "Pakke"
 #: ../src/gfpm-messages.c:71 ../src/gfpm-messages.c:76
 #: ../src/gfpm-messages.c:329
 msgid "Size"
-msgstr "Størelse"
+msgstr "Størrelse"
 
 #: ../src/gfpm-messages.c:129 ../src/gfpm-messages.c:161
 #, c-format
 msgid "Total package size: %0.2f MB"
-msgstr "Total pakke størelse: %0.2f MB"
+msgstr "Total pakke størrelse: %0.2f MB"
 
 #: ../src/gfpm-messages.c:311 ../data/gfpm.glade.h:34
 msgid "Upgrade"
@@ -642,12 +640,12 @@ msgstr "Erstatte pakke"
 #: ../src/gfpm-messages.c:502
 #, c-format
 msgid "%s requires %s, but it is IgnorePkg. Install anyway?"
-msgstr "%s kræves %s, men den er i IgnorePkg. Installer aligevel?"
+msgstr "%s kræves %s, men den er i IgnorePkg. Installer alligevel?"
 
 #: ../src/gfpm-messages.c:511
 #, c-format
 msgid "%s is designated as HoldPkg. Remove anyway?"
-msgstr "%s er benænvt som HoldPkg. Fjern aligevel?"
+msgstr "%s er benævnt som HoldPkg. Fjern alligevel?"
 
 #: ../src/gfpm-messages.c:519
 #, c-format
@@ -661,7 +659,7 @@ msgstr "Konflikt"
 #: ../src/gfpm-messages.c:529
 #, c-format
 msgid "%s-%s: local version is newer. Upgrade anyway?"
-msgstr "%s-%s: lokal version er nyere. Opgrader aligevel?"
+msgstr "%s-%s: lokal version er nyere. Opgrader alligevel?"
 
 #: ../src/gfpm-messages.c:532
 msgid "Local version newer"
@@ -670,11 +668,11 @@ msgstr "Lokal version er nyere"
 #: ../src/gfpm-messages.c:538
 #, c-format
 msgid "%s-%s: local version is up to date. Upgrade anyway?"
-msgstr "%s-%s: lokal version er fuldstændig opdateret. Opgrader aligevel?"
+msgstr "%s-%s: lokal version er fuldstændig opdateret. Opgrader alligevel?"
 
 #: ../src/gfpm-messages.c:541
 msgid "Local version up to date"
-msgstr "Lokal version er fuld ud opdateret"
+msgstr "Lokal version er fuldt ud opdateret"
 
 #: ../src/gfpm-messages.c:547
 #, c-format
@@ -691,7 +689,7 @@ msgstr "<b>Information</b>"
 
 #: ../data/gfpm.glade.h:2
 msgid "<b>Install packages:</b>"
-msgstr "<b>Installer pakker:</b>"
+msgstr "<b>Installerer pakker:</b>"
 
 #: ../data/gfpm.glade.h:3
 msgid "<b>Packages</b>"
@@ -759,7 +757,7 @@ msgstr "Installere"
 
 #: ../data/gfpm.glade.h:20
 msgid "Install package from file"
-msgstr "Installere pakke fra fil"
+msgstr "Installerer pakke fra fil"
 
 #: ../data/gfpm.glade.h:21
 msgid "Optimize"
@@ -779,7 +777,7 @@ msgstr "Afslut"
 
 #: ../data/gfpm.glade.h:25
 msgid "Refresh the package lists"
-msgstr "Genopfriske pakke listen"
+msgstr "Genopfrisk pakkelisten"
 
 #: ../data/gfpm.glade.h:26
 msgid "Remove"
@@ -799,7 +797,7 @@ msgstr "Søger efter pakker"
 
 #: ../data/gfpm.glade.h:30
 msgid "Skip dependency checks"
-msgstr "Udelade afhængigheds tjeks"
+msgstr "Udelade afhængighedstjeks"
 
 #: ../data/gfpm.glade.h:31
 msgid "The following operations will be performed"
@@ -807,7 +805,7 @@ msgstr "Følgende handlinger vil blive udført"
 
 #: ../data/gfpm.glade.h:32
 msgid "Total size:"
-msgstr "Total størelse:"
+msgstr "Total størrelse:"
 
 #: ../data/gfpm.glade.h:33
 msgid "Transfer Rate:  "
@@ -839,7 +837,7 @@ msgstr "_Hjælp"
 
 #: ../data/gfpm.glade.h:41
 msgid "_Optimize package database"
-msgstr "_Optimere pakke database"
+msgstr "_Optimere pakkedatabase"
 
 #: ../data/gfpm.glade.h:42
 msgid "clear package cache"
@@ -855,7 +853,10 @@ msgstr "gtk-lukke"
 
 #: ../data/gfpm.glade.h:45
 msgid "optimize your package database to improve performance"
-msgstr "optimere din pakke database for at forbedre ydelse"
+msgstr "optimerer din pakkedatabase for at forbedre ydelse"
+
+#~ msgid "Ready"
+#~ msgstr "Klar"
 
 #, fuzzy
 #~ msgid "translator-credits"
