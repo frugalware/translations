@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-06 05:05+0100\n"
+"POT-Creation-Date: 2007-12-26 05:05+0100\n"
 "PO-Revision-Date: 2007-07-20 11:15+0200\n"
 "Last-Translator: Mikko C. <mikko.cal@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -158,22 +158,47 @@ msgstr ""
 "devi inserire il nome del tuo network esteso (ESSID). Inserisci il tuo ESSID:"
 
 #: ../netconfig.c:165
-msgid "Encryption key"
+#, fuzzy
+msgid "WEP encryption key"
 msgstr "Chiave di criptazione"
 
-#: ../netconfig.c:165
+#: ../netconfig.c:166
+#, fuzzy
 msgid ""
-"If you have an encryption key, then please enter it below.\n"
+"If you have a WEP encryption key, then please enter it below.\n"
 "Examples: 4567-89AB-CD or  s:password"
 msgstr ""
 "Se hai una chiave di criptazione, inseriscila qua.\n"
 "Esempi: 4567-89AB-CD o  s:password"
 
-#: ../netconfig.c:172
+#: ../netconfig.c:170
+msgid "WPA encryption passphrase"
+msgstr ""
+
+#: ../netconfig.c:171
+#, fuzzy
+msgid ""
+"If you have a WPA passphrase, then please enter it below.\n"
+"Example: secret"
+msgstr ""
+"Se hai una chiave di criptazione, inseriscila qua.\n"
+"Esempi: 4567-89AB-CD o  s:password"
+
+#: ../netconfig.c:175
+msgid "WPA driver"
+msgstr ""
+
+#: ../netconfig.c:176
+msgid ""
+"If you want to use a custom driver (not the generic one, called 'wext'), "
+"then please enter it below. If unsure, just hit enter."
+msgstr ""
+
+#: ../netconfig.c:183
 msgid "Set DHCP hostname"
 msgstr "DHCP hostname"
 
-#: ../netconfig.c:172
+#: ../netconfig.c:183
 msgid ""
 "Some network providers require that the DHCP hostname beset in order to "
 "connect. If so, they'll have assigned a hostname to your machine. If you "
@@ -186,19 +211,19 @@ msgstr ""
 "premi Invio."
 
 #. options = ip netmask netmask
-#: ../netconfig.c:187
+#: ../netconfig.c:198
 msgid "Enter ip address"
 msgstr "Inserisci un indirizzo IP"
 
-#: ../netconfig.c:187
+#: ../netconfig.c:198
 msgid "Enter your IP address for the local machine."
 msgstr "Inserisci il tuo indirizzo IP per la macchina locale."
 
-#: ../netconfig.c:188
+#: ../netconfig.c:199
 msgid "Enter netmask for local network"
 msgstr "Inserisci la netmask per la rete locale"
 
-#: ../netconfig.c:189
+#: ../netconfig.c:200
 msgid ""
 "Enter your netmask. This will generally look something like this: "
 "255.255.255.0\n"
@@ -207,11 +232,11 @@ msgstr ""
 "Inserisci la tua netmask. Questa sarà del tipo:255.255.255.0\n"
 "Se non sei sicuro, premi solamente Invio."
 
-#: ../netconfig.c:196
+#: ../netconfig.c:207
 msgid "Enter gateway address"
 msgstr "Inserisci l'indirizzo del gateway"
 
-#: ../netconfig.c:196
+#: ../netconfig.c:207
 msgid ""
 "Enter the address for the gateway on your network. If you don't have a "
 "gateway on your network just hit enter, without entering any ip address."
@@ -219,11 +244,11 @@ msgstr ""
 "Inserisci l'indirizzo del gateway sulla tua rete. Se non hai un gateway "
 "sulla tua rete, premi Invio, senza immettere alcun indirizzo IP."
 
-#: ../netconfig.c:202
+#: ../netconfig.c:213
 msgid "Select nameserver"
 msgstr "Seleziona il nameserver"
 
-#: ../netconfig.c:202
+#: ../netconfig.c:213
 msgid ""
 "Please give the IP address of the name server to use. You canadd more Domain "
 "Name Servers later by editing /etc/sysconfig/network/default.\n"
@@ -236,20 +261,20 @@ msgstr ""
 "Se non hai un name server sulla tua rete premi Invio, senza inserire alcun "
 "indirizzo IP."
 
-#: ../netconfig.c:213
+#: ../netconfig.c:224
 msgid "Adjust configuration files"
 msgstr "Sistemazione dei file di configurazione"
 
-#: ../netconfig.c:213
+#: ../netconfig.c:224
 msgid "Accept these settings and adjust configuration files?"
 msgstr "Accettare questi settaggi e sistemare i file di configurazione?"
 
-#: ../netconfig.c:297
+#: ../netconfig.c:308
 #, c-format
 msgid "No profile loaded.\n"
 msgstr "Nessun profilo caricato.\n"
 
-#: ../netconfig.c:302
+#: ../netconfig.c:313
 #, c-format
 msgid "Current profile: %s\n"
 msgstr "Profilo corrente: %s\n"

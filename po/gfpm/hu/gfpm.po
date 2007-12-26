@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-06 05:05+0100\n"
+"POT-Creation-Date: 2007-12-26 05:05+0100\n"
 "PO-Revision-Date: 2007-10-24 23:44+0200\n"
 "Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,11 +16,11 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 1.0\n"
 
-#: ../src/gfpm-about.c:85
+#: ../src/gfpm-about.c:86
 msgid "(C) 2006-2007 Frugalware Developer Team (GPL)"
 msgstr "(C) 2006-2007 Frugalware Fejlesztõ Csapat (GPL)"
 
-#: ../src/gfpm-about.c:86
+#: ../src/gfpm-about.c:87
 msgid "A graphical package manager for Frugalware Linux"
 msgstr "Egy grafikus csomagkezelõ a Frugalware Linux számára."
 
@@ -270,6 +270,7 @@ msgid "Synchronizing package databases"
 msgstr "A csomagadatbázisok szinkronizálása"
 
 #: ../src/gfpm-interface.c:1153
+#, c-format
 msgid ""
 "Gfpm has detected a newer version of the pacman-g2 package. It is "
 "recommended that you allow gfpm to update pacman-g2 first. Do you wish to "
@@ -284,6 +285,7 @@ msgid "Update pacman-g2"
 msgstr "A pacman-g2 frissítése"
 
 #: ../src/gfpm-interface.c:1165
+#, c-format
 msgid ""
 "Gfpm has detected a newer version of the gfpm package. It is recommended "
 "that you allow gfpm to update itself first. Do you wish to continue "
@@ -519,25 +521,23 @@ msgstr "A csomagok integritásának ellenõrzése"
 msgid "Retrieving packages from %s"
 msgstr "Csomagok letöltése a(z) %s repóból"
 
-#: ../src/gfpm.c:55
-msgid "Failed to initialize interface: "
-msgstr "Nem sikerült inicializálni az interfészt:"
-
-#: ../src/gfpm.c:56
-msgid "Interface initialization failed"
+#: ../src/gfpm.c:54
+#, fuzzy
+msgid "Interface initialization Failed"
 msgstr "Az interfész inicializálása sikertelen"
 
-#: ../src/gfpm.c:65
+#: ../src/gfpm.c:54
+#, fuzzy
+msgid "Failed to initialize interface"
+msgstr "Nem sikerült inicializálni az interfészt:"
+
+#: ../src/gfpm.c:62
 msgid "Error initializing libpacman"
 msgstr "Nem sikerült inicializálni a libpacmant"
 
-#: ../src/gfpm.c:65
+#: ../src/gfpm.c:62
 msgid "Failed to initialize libpacman"
 msgstr "Nem sikerült inicializálni a libpacmant"
-
-#: ../src/gfpm-optimizedb.c:89
-msgid "Ready"
-msgstr "Kész"
 
 #: ../src/gfpm-optimizedb.c:117
 msgid ""
@@ -858,6 +858,9 @@ msgstr "gtk-close"
 #: ../data/gfpm.glade.h:45
 msgid "optimize your package database to improve performance"
 msgstr "csomagadatbázis optimalizálása a teljesítmény növelése érdekében"
+
+#~ msgid "Ready"
+#~ msgstr "Kész"
 
 #~ msgid "Detials"
 #~ msgstr "Részletek"

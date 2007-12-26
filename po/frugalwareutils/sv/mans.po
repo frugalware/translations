@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-22 14:15+0100\n"
+"POT-Creation-Date: 2007-11-24 05:19+0100\n"
 "PO-Revision-Date: 2007-11-22 14:22+0100\n"
 "Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,8 @@ msgid "= grubconfig(1)"
 msgstr "= grubconfig(1)"
 
 # type: Plain text
-#: grubconfig.txt:4 mouseconfig.txt:4 netconfig.txt:4 raidconfig.txt:4 timeconfig.txt:4 xconfig.txt:4 xwmconfig.txt:4
+#: grubconfig.txt:4 mouseconfig.txt:4 netconfig.txt:4 raidconfig.txt:4
+#: timeconfig.txt:4 xconfig.txt:4 xwmconfig.txt:4
 msgid "== NAME"
 msgstr ""
 
@@ -33,7 +34,8 @@ msgid "grubconfig - configures the GRUB boot loader"
 msgstr ""
 
 # type: Plain text
-#: grubconfig.txt:8 mouseconfig.txt:8 netconfig.txt:8 raidconfig.txt:8 timeconfig.txt:8 xconfig.txt:8 xwmconfig.txt:8
+#: grubconfig.txt:8 mouseconfig.txt:8 netconfig.txt:8 raidconfig.txt:8
+#: timeconfig.txt:8 xconfig.txt:8 xwmconfig.txt:8
 msgid "== SYNOPSIS"
 msgstr ""
 
@@ -43,7 +45,8 @@ msgid "grubconfig [options]"
 msgstr ""
 
 # type: Plain text
-#: grubconfig.txt:12 mouseconfig.txt:12 raidconfig.txt:12 timeconfig.txt:12 xconfig.txt:12 xwmconfig.txt:12
+#: grubconfig.txt:12 mouseconfig.txt:12 raidconfig.txt:12 timeconfig.txt:12
+#: xconfig.txt:12 xwmconfig.txt:12
 msgid "== DESCRIPTION"
 msgstr ""
 
@@ -62,12 +65,14 @@ msgid "NOTE: The old `menu.lst` is saved as `menu.lst.old` for you."
 msgstr ""
 
 # type: Plain text
-#: grubconfig.txt:21 mouseconfig.txt:16 netconfig.txt:14 raidconfig.txt:16 timeconfig.txt:17 xconfig.txt:17 xwmconfig.txt:17
+#: grubconfig.txt:21 mouseconfig.txt:16 netconfig.txt:14 raidconfig.txt:16
+#: timeconfig.txt:17 xconfig.txt:17 xwmconfig.txt:17
 msgid "== OPTIONS"
 msgstr ""
 
 # type: Plain text
-#: grubconfig.txt:24 mouseconfig.txt:19 raidconfig.txt:19 timeconfig.txt:20 xconfig.txt:20 xwmconfig.txt:23
+#: grubconfig.txt:24 mouseconfig.txt:19 raidconfig.txt:19 timeconfig.txt:20
+#: xconfig.txt:20 xwmconfig.txt:23
 #, no-wrap
 msgid ""
 "--help::\n"
@@ -75,7 +80,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: grubconfig.txt:26 mouseconfig.txt:21 raidconfig.txt:21 timeconfig.txt:22 xconfig.txt:25 xwmconfig.txt:28
+#: grubconfig.txt:26 mouseconfig.txt:21 raidconfig.txt:21 timeconfig.txt:22
+#: xconfig.txt:25 xwmconfig.txt:28
 #, no-wrap
 msgid ""
 "--version::\n"
@@ -99,7 +105,8 @@ msgstr ""
 
 # type: Plain text
 #: mouseconfig.txt:14
-msgid "mouseconfig sets up the `/etc/sysconfig/gfpm` file to match your hardware."
+msgid ""
+"mouseconfig sets up the `/etc/sysconfig/gpm` file to match your hardware."
 msgstr ""
 
 # type: Plain text
@@ -219,8 +226,7 @@ msgstr ""
 #, no-wrap
 msgid ""
 "desc = <description>::\n"
-"\tA brief description of this network profile. Used by the graphical "
-"frontend.\n"
+"\tA brief description of this network profile. Used by the graphical frontend.\n"
 msgstr ""
 
 # type: Plain text
@@ -276,8 +282,7 @@ msgstr ""
 #, no-wrap
 msgid ""
 "options = dhcp::\n"
-"\tUse dhcp for this interface. When this format is used, the other "
-"\"options\" lines are ignored.\n"
+"\tUse dhcp for this interface. When this format is used, the other \"options\" lines are ignored.\n"
 msgstr ""
 
 # type: Plain text
@@ -330,20 +335,13 @@ msgstr ""
 #, no-wrap
 msgid ""
 "mode = <mode>::\n"
-"\tSet the operating mode of the device, for wireless network adapters. The "
-"mode\n"
-"\tcan be Ad- Hoc (network composed of only one cell and without Access "
-"Point),\n"
-"\tManaged (node connects to a net- work composed of many Access Points, "
-"with\n"
-"\troaming), Master (the node is the synchronisation master or acts as an "
-"Access\n"
-"\tPoint), Repeater (the node forwards packets between other wireless "
-"nodes),\n"
-"\tSecondary (the node acts as a backup master/repeater), Monitor (the node "
-"is not\n"
-"\tassociated with any cell and passively monitor all packets on the "
-"frequency) or\n"
+"\tSet the operating mode of the device, for wireless network adapters. The mode\n"
+"\tcan be Ad- Hoc (network composed of only one cell and without Access Point),\n"
+"\tManaged (node connects to a net- work composed of many Access Points, with\n"
+"\troaming), Master (the node is the synchronisation master or acts as an Access\n"
+"\tPoint), Repeater (the node forwards packets between other wireless nodes),\n"
+"\tSecondary (the node acts as a backup master/repeater), Monitor (the node is not\n"
+"\tassociated with any cell and passively monitor all packets on the frequency) or\n"
 "\tAuto. If defined more than once, the first will be used.\n"
 msgstr ""
 
@@ -378,8 +376,7 @@ msgstr ""
 msgid ""
 "wpa_psk = <passphrase>::\n"
 "\tIf this directive is specified, then wpa_supplicant will be invoked to\n"
-"\tinitialize WPA encryption before setting any other parameter (like "
-"ESSID).\n"
+"\tinitialize WPA encryption before setting any other parameter (like ESSID).\n"
 msgstr ""
 
 # type: Plain text
@@ -387,8 +384,7 @@ msgstr ""
 #, no-wrap
 msgid ""
 "wpa_driver = <driver>::\n"
-"\tThe driver to be used by wpa_supplicant. The default is `wext`. Possible "
-"drivers\n"
+"\tThe driver to be used by wpa_supplicant. The default is `wext`. Possible drivers\n"
 "\tare:\n"
 msgstr ""
 
@@ -410,8 +406,7 @@ msgstr ""
 msgid ""
 "dhcp_opts = <options>::\n"
 "\tThese options are passed to the dhcp client daemon. The default is `-t\n"
-"\t10`. You may want to specify here the dhcp hostname, then you'll need `-t "
-"10 -h\n"
+"\t10`. You may want to specify here the dhcp hostname, then you'll need `-t 10 -h\n"
 "\t<hostname>`.\n"
 msgstr ""
 
@@ -435,7 +430,8 @@ msgid "=== Static Address"
 msgstr ""
 
 # type: Plain text
-#: netconfig.txt:151 netconfig.txt:162 netconfig.txt:174 netconfig.txt:190 netconfig.txt:204 netconfig.txt:211
+#: netconfig.txt:151 netconfig.txt:162 netconfig.txt:174 netconfig.txt:190
+#: netconfig.txt:204 netconfig.txt:211
 #, no-wrap
 msgid "----\n"
 msgstr ""
@@ -568,34 +564,41 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: netconfig.txt:221
+#: netconfig.txt:222
+msgid ""
+"NOTE: See also the `wpa_psk` and `wpa_driver` options, most users can avoid "
+"the manual `pre_up` and `pre_down` directives."
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:224
 msgid "== AUTHOR"
 msgstr ""
 
 # type: Plain text
-#: netconfig.txt:223
+#: netconfig.txt:226
 msgid "Written by Miklos Vajna."
 msgstr ""
 
 # type: Plain text
-#: netconfig.txt:225
+#: netconfig.txt:228
 msgid "== REPORTING BUGS"
 msgstr ""
 
 # type: Plain text
-#: netconfig.txt:227
+#: netconfig.txt:230
 msgid ""
-"If you find any bug, then please file a bugreport at "
-"<http://bugs.frugalware.org/>."
+"If you find any bug, then please file a bugreport at <http://bugs.frugalware."
+"org/>."
 msgstr ""
 
 # type: Plain text
-#: netconfig.txt:229
+#: netconfig.txt:232
 msgid "== SEE ALSO"
 msgstr ""
 
 # type: Plain text
-#: netconfig.txt:230
+#: netconfig.txt:233
 #, no-wrap
 msgid "*ifconfig*(8), *route*(8), *iwconfig*(8), *dhcpcd*(8)\n"
 msgstr ""

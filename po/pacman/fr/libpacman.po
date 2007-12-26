@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-15 05:10+0100\n"
+"POT-Creation-Date: 2007-12-26 05:05+0100\n"
 "PO-Revision-Date: 2007-11-16 00:46+0100\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: Français\n"
@@ -90,7 +90,7 @@ msgstr "ajout du nouveau paquet %s-%s"
 msgid "extracting files"
 msgstr "extraction des fichiers"
 
-#: ../add.c:426 ../util.c:458
+#: ../add.c:426 ../util.c:458 ../util.c:556
 msgid "could not get current working directory"
 msgstr "impossible de déterminer le répertoire courant"
 
@@ -378,69 +378,69 @@ msgstr "n'a pas pu effacer le fichier de verrou %s"
 msgid "warning: could not remove lock file %s"
 msgstr "avertissement: n'a pas pu effacer le fichier de verrou %s"
 
-#: ../pacman.c:1163
+#: ../pacman.c:1175
 #, c-format
 msgid "config: new section '%s'\n"
 msgstr "config: new section '%s'\n"
 
-#: ../pacman.c:1194
+#: ../pacman.c:1206
 msgid "config: usesyslog\n"
 msgstr "config: usesyslog\n"
 
-#: ../pacman.c:1205
+#: ../pacman.c:1217
 #, c-format
 msgid "config: including %s\n"
 msgstr "config: including %s\n"
 
-#: ../pacman.c:1217 ../pacman.c:1225
+#: ../pacman.c:1229 ../pacman.c:1237
 #, c-format
 msgid "config: noupgrade: %s\n"
 msgstr "config: noupgrade: %s\n"
 
-#: ../pacman.c:1235 ../pacman.c:1243
+#: ../pacman.c:1247 ../pacman.c:1255
 #, c-format
 msgid "config: noextract: %s\n"
 msgstr "config: noextract: %s\n"
 
-#: ../pacman.c:1253 ../pacman.c:1261
+#: ../pacman.c:1265 ../pacman.c:1273
 #, c-format
 msgid "config: ignorepkg: %s\n"
 msgstr "config: ignorepkg: %s\n"
 
-#: ../pacman.c:1271 ../pacman.c:1279
+#: ../pacman.c:1283 ../pacman.c:1291
 #, c-format
 msgid "config: holdpkg: %s\n"
 msgstr "config: holdpkg: %s\n"
 
-#: ../pacman.c:1289
+#: ../pacman.c:1301
 #, c-format
 msgid "config: dbpath: %s\n"
 msgstr "config: dbpath: %s\n"
 
-#: ../pacman.c:1299
+#: ../pacman.c:1311
 #, c-format
 msgid "config: cachedir: %s\n"
 msgstr "config: cachedir: %s\n"
 
-#: ../pacman.c:1305
+#: ../pacman.c:1317
 #, c-format
 msgid "config: log file: %s\n"
 msgstr "config: log file: %s\n"
 
 #. The config value is in days, we use seconds
-#: ../pacman.c:1313
+#: ../pacman.c:1325
 #, c-format
 msgid "config: UpgradeDelay: %i\n"
 msgstr "config: UpgradeDelay: %i\n"
 
 #. The config value is in days, we use seconds
-#: ../pacman.c:1320
+#: ../pacman.c:1332
 #, c-format
 msgid "config: OldDelay: %i\n"
 msgstr "config: AncienDelay: %i\n"
 
 #. add to the list
-#: ../pacman.c:1346
+#: ../pacman.c:1358
 #, c-format
 msgid "config: %s: server: %s\n"
 msgstr "config: %s: server: %s\n"
@@ -555,8 +555,8 @@ msgstr "comparaison base de donnée / cibles: trouve %s en conflit avec %s"
 
 #: ../conflict.c:254 ../conflict.c:353 ../deps.c:70 ../deps.c:614
 #: ../deps.c:654 ../group.c:40 ../handle.c:52 ../package.c:103 ../sync.c:63
-#: ../sync.c:632 ../sync.c:648 ../sync.c:744 ../trans.c:65 ../util.c:587
-#: ../util.c:594
+#: ../sync.c:632 ../sync.c:648 ../sync.c:744 ../trans.c:65 ../util.c:693
+#: ../util.c:700
 #, c-format
 msgid "malloc failure: could not allocate %d bytes"
 msgstr "problème malloc: n'a pas pu allouer %d bytes"
@@ -898,107 +898,112 @@ msgstr "n'a pas pu créer le répertoire de cache"
 msgid "this package is not for this architecture"
 msgstr "ce paquet n'est pas pour cette architecture"
 
-#: ../handle.c:137
+#: ../handle.c:139
 #, c-format
 msgid "PM_OPT_DBPATH set to '%s'"
 msgstr "PM_OPT_DBPATH défini à '%s'"
 
-#: ../handle.c:144
+#: ../handle.c:146
 #, c-format
 msgid "PM_OPT_CACHEDIR set to '%s'"
 msgstr "PM_OPT_CACHEDIR défini à '%s'"
 
-#: ../handle.c:163
+#: ../handle.c:153
+#, fuzzy, c-format
+msgid "PM_OPT_HOOKSDIR set to '%s'"
+msgstr "PM_OPT_CACHEDIR défini à '%s'"
+
+#: ../handle.c:172
 #, c-format
 msgid "can't open log file %s"
 msgstr "ne peut ouvrir le fichier de log %s"
 
-#: ../handle.c:167
+#: ../handle.c:176
 #, c-format
 msgid "PM_OPT_LOGFILE set to '%s'"
 msgstr "PM_OPT_LOGFILE défini à '%s'"
 
-#: ../handle.c:172
+#: ../handle.c:181
 #, c-format
 msgid "'%s' added to PM_OPT_NOUPGRADE"
 msgstr "'%s' ajouté à PM_OPT_NOUPGRADE"
 
-#: ../handle.c:175
+#: ../handle.c:184
 msgid "PM_OPT_NOUPGRADE flushed"
 msgstr "PM_OPT_NOUPGRADE rechargé"
 
-#: ../handle.c:181
+#: ../handle.c:190
 #, c-format
 msgid "'%s' added to PM_OPT_NOEXTRACT"
 msgstr "'%s' ajouté à PM_OPT_NOEXTRACT"
 
-#: ../handle.c:184
+#: ../handle.c:193
 msgid "PM_OPT_NOEXTRACT flushed"
 msgstr "PM_OPT_NOEXTRACT rechargé"
 
-#: ../handle.c:190
+#: ../handle.c:199
 #, c-format
 msgid "'%s' added to PM_OPT_IGNOREPKG"
 msgstr "'%s' ajouté à PM_OPT_IGNOREPKG"
 
-#: ../handle.c:193
+#: ../handle.c:202
 msgid "PM_OPT_IGNOREPKG flushed"
 msgstr "PM_OPT_IGNOREPKG rechargé"
 
-#: ../handle.c:199
+#: ../handle.c:208
 #, c-format
 msgid "'%s' added to PM_OPT_HOLDPKG"
 msgstr "'%s' ajouté à PM_OPT_HOLDPKG"
 
-#: ../handle.c:202
+#: ../handle.c:211
 msgid "PM_OPT_HOLDPKG flushed"
 msgstr "PM_OPT_HOLDPKG rechargé"
 
-#: ../handle.c:208
+#: ../handle.c:217
 #, c-format
 msgid "'%s' added to PM_OPT_NEEDLES"
 msgstr "'%s' ajouté à PM_OPT_NEEDLES"
 
-#: ../handle.c:211
+#: ../handle.c:220
 msgid "PM_OPT_NEEDLES flushed"
 msgstr "PM_OPT_NEEDLES rechargé"
 
-#: ../handle.c:227
+#: ../handle.c:236
 #, c-format
 msgid "PM_OPT_USESYSLOG set to '%d'"
 msgstr "PM_OPT_USESYSLOG défini à '%d'"
 
-#: ../handle.c:276
+#: ../handle.c:285
 #, c-format
 msgid "PM_OPT_LOGMASK set to '%02x'"
 msgstr "PM_OPT_LOGMASK défini à '%02x'"
 
-#: ../handle.c:295
+#: ../handle.c:304
 #, c-format
 msgid "PM_OPT_PROXYHOST set to '%s'"
 msgstr "PM_OPT_PROXYHOST défini à '%s'"
 
-#: ../handle.c:299
+#: ../handle.c:308
 #, c-format
 msgid "PM_OPT_PROXYPORT set to '%d'"
 msgstr "PM_OPT_PROXYPORT défini à '%d'"
 
-#: ../handle.c:310
+#: ../handle.c:319
 #, c-format
 msgid "PM_OPT_XFERCOMMAND set to '%s'"
 msgstr "PM_OPT_XFERCOMMAND défini à '%s'"
 
-#: ../handle.c:314
+#: ../handle.c:323
 #, c-format
 msgid "PM_OPT_NOPASSIVEFTP set to '%d'"
 msgstr "PM_OPT_NOPASSIVEFTP défini à '%d'"
 
-#: ../handle.c:318
+#: ../handle.c:327
 #, c-format
 msgid "PM_OPT_CHOMP set to '%d'"
 msgstr "PM_OPT_CHOMP défini à '%d'"
 
-#: ../handle.c:322
+#: ../handle.c:331
 #, c-format
 msgid "PM_OPT_MAXTRIES set to '%d'"
 msgstr "PM_OPT_MAXTRIES défini à '%d'"
@@ -1452,7 +1457,7 @@ msgstr "n'a pas pu extraire %s: %s\n"
 msgid "could not create temp directory"
 msgstr "n'a pas pu créer le répertoire temporaire"
 
-#: ../util.c:465
+#: ../util.c:465 ../util.c:563
 #, c-format
 msgid "could not change directory to %s (%s)"
 msgstr "n'a pas pu changer de répertoire pour %s (%s)"
@@ -1462,37 +1467,37 @@ msgstr "n'a pas pu changer de répertoire pour %s (%s)"
 msgid "executing %s script..."
 msgstr "exécute le script %s ..."
 
-#: ../util.c:481
+#: ../util.c:481 ../util.c:589
 #, c-format
 msgid "could not fork a new process (%s)"
 msgstr "n'a pas pu générer un nouveau processus (%s)"
 
-#: ../util.c:488
+#: ../util.c:488 ../util.c:596
 #, c-format
 msgid "chrooting in %s"
 msgstr "chroot dans %s"
 
-#: ../util.c:490
+#: ../util.c:490 ../util.c:598
 #, c-format
 msgid "could not change the root directory (%s)"
 msgstr "n'a pas pu changer le répertoire racine (%s)"
 
-#: ../util.c:494
+#: ../util.c:494 ../util.c:602
 #, c-format
 msgid "could not change directory to / (%s)"
 msgstr "n'a pas pu changer de répertoire vers / (%s)"
 
-#: ../util.c:498
+#: ../util.c:498 ../util.c:606
 #, c-format
 msgid "executing \"%s\""
 msgstr "exécute \"%s\""
 
-#: ../util.c:501
+#: ../util.c:501 ../util.c:609
 #, c-format
 msgid "call to popen failed (%s)"
 msgstr "l'appel de popen à echoué (%s)"
 
-#: ../util.c:523
+#: ../util.c:523 ../util.c:631
 #, c-format
 msgid "call to waitpid failed (%s)"
 msgstr "la demande de mise en attente du pid a échouée (%s)"
@@ -1502,7 +1507,17 @@ msgstr "la demande de mise en attente du pid a échouée (%s)"
 msgid "could not remove tmpdir %s"
 msgstr "n'a pas pu effacer tmpdir %s"
 
-#: ../util.c:582
+#: ../util.c:552
+#, fuzzy, c-format
+msgid "executing %s hooks..."
+msgstr "exécute le script %s ..."
+
+#: ../util.c:570
+#, fuzzy, c-format
+msgid "opening hooks directory failed (%s)"
+msgstr "conserve le répertoire %s"
+
+#: ../util.c:688
 #, c-format
 msgid "check_freespace: total pkg size: %lld, disk space: %lld"
 msgstr "check_freespace: taille totale du paquet: %lld, espace disque: %lld"

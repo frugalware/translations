@@ -2,436 +2,443 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-24 05:19+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2007-12-26 05:05+0100\n"
+"PO-Revision-Date: 2007-12-11 22:37+0100\n"
+"Last-Translator: Pedro Osorio G. <pedroosorio777@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 1.0.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 1.0\n"
 
 #: ../add.c:93
 #, c-format
 msgid "could not parse token %s"
-msgstr ""
+msgstr "No es posible analizar el token %s"
 
 #: ../add.c:129
 #, c-format
 msgid "loading target '%s'"
-msgstr ""
+msgstr "Cargando el objeto '%s'"
 
 #: ../add.c:167
 #, c-format
 msgid "replacing older version %s-%s by %s in target list"
-msgstr ""
+msgstr "remplazando la antigua versión %s-%s por %s en la lista de objetos"
 
+# skipping (saltando, siguiendo)
 #: ../add.c:176
 #, c-format
 msgid "newer version %s-%s is in the target list -- skipping"
-msgstr ""
+msgstr "Versión más nueva %s-%s esta en la lista de objetos -- siguiendo"
 
 #. look for unsatisfied dependencies
 #: ../add.c:219 ../remove.c:103
 msgid "looking for unsatisfied dependencies"
-msgstr ""
+msgstr "buscando dependiencias insatisfechas"
 
 #. no unsatisfied deps, so look for conflicts
 #: ../add.c:231 ../sync.c:501
 msgid "looking for conflicts"
-msgstr ""
+msgstr "buscando conflictos"
 
 #. re-order w.r.t. dependencies
 #: ../add.c:243 ../remove.c:139
 msgid "sorting by dependencies"
-msgstr ""
+msgstr "Ordenado de acuerdo a las dependencias"
 
 #: ../add.c:255
 msgid "cleaning up"
-msgstr ""
+msgstr "Limpiando"
 
 #: ../add.c:272
 msgid "looking for file conflicts"
-msgstr ""
+msgstr "Revisando conflictos entre archivos"
 
 #: ../add.c:340
 #, c-format
 msgid "upgrading package %s-%s"
-msgstr ""
+msgstr "actualizando el paquete %s-%s"
 
 #: ../add.c:350 ../conflict.c:292 ../conflict.c:322 ../package.c:552
 #, c-format
 msgid "loading FILES info for '%s'"
-msgstr ""
+msgstr "cargando archivos info para '%s'"
 
 #: ../add.c:366
 #, c-format
 msgid "removing old package first (%s-%s)"
-msgstr ""
+msgstr "removiendo primero los archivos más antiguos (%s-%s)"
 
 #: ../add.c:396
 #, c-format
 msgid "adding package %s-%s"
-msgstr ""
+msgstr "Añadiendo el paquete %s-%s"
 
 #: ../add.c:407
 #, c-format
 msgid "adding new package %s-%s"
-msgstr ""
+msgstr "añadiendo el nuevo paquete %s-%s"
 
 #: ../add.c:411
 msgid "extracting files"
-msgstr ""
+msgstr "extrayendo archivos"
 
-#: ../add.c:426 ../util.c:458
+#: ../add.c:426 ../util.c:458 ../util.c:556
 msgid "could not get current working directory"
-msgstr ""
+msgstr "No es posible encontrar el directorio de trabajo actual"
 
 #: ../add.c:481
 #, c-format
 msgid "notice: %s is in NoExtract -- skipping extraction"
-msgstr ""
+msgstr "Aviso: %s no se descomprimido -- saltando la extracción"
 
 #: ../add.c:517 ../add.c:518 ../add.c:671
 #, c-format
 msgid "could not extract %s (%s)"
-msgstr ""
+msgstr "no es posible extraer %s (%s)"
 
 #: ../add.c:561
 #, c-format
 msgid "checking md5 hashes for %s"
-msgstr ""
+msgstr "chequeando el md5 para %s"
 
 #: ../add.c:562 ../add.c:569
 #, c-format
 msgid "current:  %s"
-msgstr ""
+msgstr "actual:__%s"
 
 #: ../add.c:563 ../add.c:570
 #, c-format
 msgid "new:      %s"
-msgstr ""
+msgstr "nuevo:______%s"
 
 #: ../add.c:565 ../add.c:572
 #, c-format
 msgid "original: %s"
-msgstr ""
+msgstr "original: %s"
 
 #: ../add.c:568
 #, c-format
 msgid "checking sha1 hashes for %s"
-msgstr ""
+msgstr "chequeando sha1 para %s"
 
 #: ../add.c:586
 #, c-format
 msgid "could not rename %s (%s)"
-msgstr ""
+msgstr "no se puede renombrar % (%s)"
 
 #: ../add.c:587
 #, c-format
 msgid "error: could not rename %s (%s)"
-msgstr ""
+msgstr "error: no se ha podido renombrar %s (%s)"
 
 #: ../add.c:591 ../add.c:635
 #, c-format
 msgid "could not copy %s to %s (%s)"
-msgstr ""
+msgstr "no se puede copiar %s a %s (%s)"
 
 #: ../add.c:592
 #, c-format
 msgid "error: could not copy %s to %s (%s)"
-msgstr ""
+msgstr "error: no es posible copiar %s a %s (%s)"
 
 #: ../add.c:596
 #, c-format
 msgid "%s saved as %s.pacorig"
-msgstr ""
+msgstr "%s se ha guardado como %s.pacoring"
 
 #: ../add.c:597
 #, c-format
 msgid "warning: %s saved as %s"
-msgstr ""
+msgstr "cuidado: %s se ha guardado como %s"
 
 #: ../add.c:607 ../add.c:610 ../add.c:616
 msgid "action: installing new file"
-msgstr ""
+msgstr "tarea: instalando un nuevo archivo"
 
 #: ../add.c:614
 msgid "action: leaving existing file in place"
-msgstr ""
+msgstr "tarea: dejando el archivo exsitente en un lugar"
 
 #: ../add.c:620
 msgid "action: keeping current file and installing new one with .pacnew ending"
 msgstr ""
+"tarea: dejando el archivo actual e instalando un nuevo con extensión .pacnew"
 
 #: ../add.c:624
 #, c-format
 msgid "could not install %s as %s: %s"
-msgstr ""
+msgstr "no puede instalar %s como %s: %s"
 
 #: ../add.c:625
 #, c-format
 msgid "error: could not install %s as %s: %s"
-msgstr ""
+msgstr "error: no es posible instalar %s como %s: %s"
 
 #: ../add.c:627
 #, c-format
 msgid "%s installed as %s"
-msgstr ""
+msgstr "%s instalado como %s"
 
 #: ../add.c:628
 #, c-format
 msgid "warning: %s installed as %s"
-msgstr ""
+msgstr "cuidado: %s se ha instalado como %s"
 
 #: ../add.c:633 ../add.c:653
 #, c-format
 msgid "extracting %s"
-msgstr ""
+msgstr "extrayendo %s"
 
 #: ../add.c:655
 #, c-format
 msgid "%s is in NoUpgrade -- skipping"
-msgstr ""
+msgstr "%s no esta actualizado -- saltando"
 
 #: ../add.c:657
 #, c-format
 msgid "extracting %s as %s.pacnew"
-msgstr ""
+msgstr "extrayendo %s como %s.pacnew"
 
 #: ../add.c:658
 #, c-format
 msgid "warning: extracting %s%s as %s"
-msgstr ""
+msgstr "cuidado: extrayendo %s%s como %s"
 
 #: ../add.c:672
 #, c-format
 msgid "error: could not extract %s (%s)"
-msgstr ""
+msgstr "error: no es posible extraer %s (%s)"
 
 #: ../add.c:683
 msgid "appending backup entry"
-msgstr ""
+msgstr "añadiendo una entrada de respaldo"
 
 #: ../add.c:718 ../add.c:720
 #, c-format
 msgid "errors occurred while %s %s"
-msgstr ""
+msgstr "errores ha ocurrido mientras %s %s"
 
 #: ../add.c:719 ../add.c:721
 msgid "upgrading"
-msgstr ""
+msgstr "actualizando"
 
 #: ../add.c:719 ../add.c:721
 msgid "installing"
-msgstr ""
+msgstr "instalando"
 
 #: ../add.c:744 ../add.c:795
 #, c-format
 msgid "adding '%s' in requiredby field for '%s'"
-msgstr ""
+msgstr "añadiendo '%s' en el campo requerido por '%s'"
 
 #. remove the package from the database
 #: ../add.c:755 ../remove.c:289
 msgid "updating database"
-msgstr ""
+msgstr "actulizando la base de datos"
 
 #: ../add.c:756
 #, c-format
 msgid "adding database entry '%s'"
-msgstr ""
+msgstr "añadiendo a la base de datos la entrada '%s'"
 
 #: ../add.c:758
 #, c-format
 msgid "could not update database entry %s-%s"
-msgstr ""
+msgstr "no es posible actualizar la base de datos para la entrada %s-%s"
 
 #: ../add.c:760
 #, c-format
 msgid "error updating database for %s-%s!"
-msgstr ""
+msgstr "error al actualizar la base de datos para %s-%s!"
 
 #: ../add.c:764
 #, c-format
 msgid "could not add entry '%s' in cache"
-msgstr ""
+msgstr "no es posible añadir la entrada '%s' en el cache"
 
 #. update dependency packages' REQUIREDBY fields
 #: ../add.c:769 ../remove.c:299
 msgid "updating dependency packages 'requiredby' fields"
-msgstr ""
+msgstr "actualizando la dependencia de paquetes que son 'requeridos por'"
 
 #: ../add.c:790 ../remove.c:327
 #, c-format
 msgid "could not find dependency '%s'"
-msgstr ""
+msgstr "no es posible encontrar dependencias '%s'"
 
+# esta traducción debe mejorarse
 #: ../add.c:798 ../remove.c:337
 #, c-format
 msgid "could not update 'requiredby' database entry %s-%s"
-msgstr ""
+msgstr "no es posible actualizar la base de datos en 'requeridos por'"
 
 #: ../add.c:824 ../remove.c:349
 #, c-format
 msgid "running \"ldconfig -r %s\""
-msgstr ""
+msgstr "ejecutando \"ldconfig -r %s\""
 
 #: ../pacman.c:210
 #, c-format
 msgid "unregistering database '%s'"
-msgstr ""
+msgstr "base de datos sin registrar '%s'"
 
 #: ../pacman.c:215
 #, c-format
 msgid "closing database '%s'"
-msgstr ""
+msgstr "cerrando la base de datos '%s'"
 
 #: ../pacman.c:293
 #, c-format
 msgid ""
 "adding new server to database '%s': protocol '%s', server '%s', path '%s'"
 msgstr ""
+"añadiendo un nuevo servidor a la base de datos '%s', servidor '%s', ruta '%s'"
 
 #: ../pacman.c:297
 #, c-format
 msgid "serverlist flushed for '%s'"
-msgstr ""
+msgstr "lista de servidores se ha actualizado para"
 
+# traducción mala
 #: ../pacman.c:333
 #, c-format
 msgid "failed to get lastupdate time for %s (no big deal)\n"
 msgstr ""
+"expiró el tiempo para encontrar la ultima actulización para %s (transacción "
+"no grande)\n"
 
 #: ../pacman.c:347
 #, c-format
 msgid "failed to sync db: %s [%d]\n"
-msgstr ""
+msgstr "falló en sincronizar la bd: %[%d]\n"
 
+# que es mtime?
 #: ../pacman.c:353
 #, c-format
 msgid "sync: new mtime for %s: %s\n"
-msgstr ""
+msgstr "sincronizando: nuevo tiempo para %s: %s\n"
 
 #. remove the old dir
 #: ../pacman.c:359
 #, c-format
 msgid "flushing database %s/%s"
-msgstr ""
+msgstr "acualizando la base de datos %s/%s"
 
 #: ../pacman.c:363
 #, c-format
 msgid "could not remove database entry %s/%s"
-msgstr ""
+msgstr "no es posible remover la base de datos para %s/%s"
 
 #: ../pacman.c:544
 #, c-format
 msgid "could not get sha1 checksum for package %s-%s\n"
-msgstr ""
+msgstr "no es posible encontrar sha1 checksum para el paquete %s-%s\n"
 
 #: ../pacman.c:550 ../pacman.c:597 ../package.c:534
 #, c-format
 msgid "loading DESC info for '%s'"
-msgstr ""
+msgstr "cargando DESC información para '%s'"
 
 #: ../pacman.c:555 ../pacman.c:602
 #, c-format
 msgid "checksums for package %s-%s are matching"
-msgstr ""
+msgstr "checksums para los paquetes %s-%s son iguales"
 
 #: ../pacman.c:558
 #, c-format
 msgid "sha1sums do not match for package %s-%s\n"
-msgstr ""
+msgstr "sha1sums no coincide para el paquete %s-%s\n"
 
 #: ../pacman.c:591
 #, c-format
 msgid "could not get md5 checksum for package %s-%s\n"
-msgstr ""
+msgstr "no es posible encontrar para el paquete %s-%s\n"
 
 #: ../pacman.c:605
 #, c-format
 msgid "md5sums do not match for package %s-%s\n"
-msgstr ""
+msgstr "md5sums no coinciden para el paquete %s-%s\n"
 
 #: ../pacman.c:909
 #, c-format
 msgid "could not remove lock file %s"
-msgstr ""
+msgstr "no es posible remover el archivo bloqueado %s"
 
 #: ../pacman.c:910
 #, c-format
 msgid "warning: could not remove lock file %s"
-msgstr ""
+msgstr "cuidado: no se puede remover el archivo bloqueado %s"
 
-#: ../pacman.c:1163
+#: ../pacman.c:1175
 #, c-format
 msgid "config: new section '%s'\n"
-msgstr ""
+msgstr "configurando: nueva sección '%s'\n"
 
-#: ../pacman.c:1194
+#: ../pacman.c:1206
 msgid "config: usesyslog\n"
-msgstr ""
+msgstr "configurando: usesyslog\n"
 
-#: ../pacman.c:1205
+#: ../pacman.c:1217
 #, c-format
 msgid "config: including %s\n"
-msgstr ""
+msgstr "configurando: incluyendo %s\n"
 
-#: ../pacman.c:1217 ../pacman.c:1225
+#: ../pacman.c:1229 ../pacman.c:1237
 #, c-format
 msgid "config: noupgrade: %s\n"
-msgstr ""
+msgstr "configurando: no actualizando: %s\n"
 
-#: ../pacman.c:1235 ../pacman.c:1243
+#: ../pacman.c:1247 ../pacman.c:1255
 #, c-format
 msgid "config: noextract: %s\n"
-msgstr ""
+msgstr "configurando: no extrayendo: %s\n"
 
-#: ../pacman.c:1253 ../pacman.c:1261
+#: ../pacman.c:1265 ../pacman.c:1273
 #, c-format
 msgid "config: ignorepkg: %s\n"
-msgstr ""
+msgstr "configurando: ignorando pkg: %s\n"
 
-#: ../pacman.c:1271 ../pacman.c:1279
+#: ../pacman.c:1283 ../pacman.c:1291
 #, c-format
 msgid "config: holdpkg: %s\n"
 msgstr ""
 
-#: ../pacman.c:1289
+#: ../pacman.c:1301
 #, c-format
 msgid "config: dbpath: %s\n"
 msgstr ""
 
-#: ../pacman.c:1299
+#: ../pacman.c:1311
 #, c-format
 msgid "config: cachedir: %s\n"
 msgstr ""
 
-#: ../pacman.c:1305
+#: ../pacman.c:1317
 #, c-format
 msgid "config: log file: %s\n"
 msgstr ""
 
 #. The config value is in days, we use seconds
-#: ../pacman.c:1313
+#: ../pacman.c:1325
 #, c-format
 msgid "config: UpgradeDelay: %i\n"
 msgstr ""
 
 #. The config value is in days, we use seconds
-#: ../pacman.c:1320
+#: ../pacman.c:1332
 #, c-format
 msgid "config: OldDelay: %i\n"
 msgstr ""
 
 #. add to the list
-#: ../pacman.c:1346
+#: ../pacman.c:1358
 #, c-format
 msgid "config: %s: server: %s\n"
 msgstr ""
@@ -546,8 +553,8 @@ msgstr ""
 
 #: ../conflict.c:254 ../conflict.c:353 ../deps.c:70 ../deps.c:614
 #: ../deps.c:654 ../group.c:40 ../handle.c:52 ../package.c:103 ../sync.c:63
-#: ../sync.c:632 ../sync.c:648 ../sync.c:744 ../trans.c:65 ../util.c:587
-#: ../util.c:594
+#: ../sync.c:632 ../sync.c:648 ../sync.c:744 ../trans.c:65 ../util.c:693
+#: ../util.c:700
 #, c-format
 msgid "malloc failure: could not allocate %d bytes"
 msgstr ""
@@ -880,107 +887,112 @@ msgstr ""
 msgid "this package is not for this architecture"
 msgstr ""
 
-#: ../handle.c:137
+#: ../handle.c:139
 #, c-format
 msgid "PM_OPT_DBPATH set to '%s'"
 msgstr ""
 
-#: ../handle.c:144
+#: ../handle.c:146
 #, c-format
 msgid "PM_OPT_CACHEDIR set to '%s'"
 msgstr ""
 
-#: ../handle.c:163
+#: ../handle.c:153
 #, c-format
-msgid "can't open log file %s"
-msgstr ""
-
-#: ../handle.c:167
-#, c-format
-msgid "PM_OPT_LOGFILE set to '%s'"
+msgid "PM_OPT_HOOKSDIR set to '%s'"
 msgstr ""
 
 #: ../handle.c:172
 #, c-format
-msgid "'%s' added to PM_OPT_NOUPGRADE"
+msgid "can't open log file %s"
 msgstr ""
 
-#: ../handle.c:175
-msgid "PM_OPT_NOUPGRADE flushed"
+#: ../handle.c:176
+#, c-format
+msgid "PM_OPT_LOGFILE set to '%s'"
 msgstr ""
 
 #: ../handle.c:181
 #, c-format
-msgid "'%s' added to PM_OPT_NOEXTRACT"
+msgid "'%s' added to PM_OPT_NOUPGRADE"
 msgstr ""
 
 #: ../handle.c:184
-msgid "PM_OPT_NOEXTRACT flushed"
+msgid "PM_OPT_NOUPGRADE flushed"
 msgstr ""
 
 #: ../handle.c:190
 #, c-format
-msgid "'%s' added to PM_OPT_IGNOREPKG"
+msgid "'%s' added to PM_OPT_NOEXTRACT"
 msgstr ""
 
 #: ../handle.c:193
-msgid "PM_OPT_IGNOREPKG flushed"
+msgid "PM_OPT_NOEXTRACT flushed"
 msgstr ""
 
 #: ../handle.c:199
 #, c-format
-msgid "'%s' added to PM_OPT_HOLDPKG"
+msgid "'%s' added to PM_OPT_IGNOREPKG"
 msgstr ""
 
 #: ../handle.c:202
-msgid "PM_OPT_HOLDPKG flushed"
+msgid "PM_OPT_IGNOREPKG flushed"
 msgstr ""
 
 #: ../handle.c:208
 #, c-format
-msgid "'%s' added to PM_OPT_NEEDLES"
+msgid "'%s' added to PM_OPT_HOLDPKG"
 msgstr ""
 
 #: ../handle.c:211
+msgid "PM_OPT_HOLDPKG flushed"
+msgstr ""
+
+#: ../handle.c:217
+#, c-format
+msgid "'%s' added to PM_OPT_NEEDLES"
+msgstr ""
+
+#: ../handle.c:220
 msgid "PM_OPT_NEEDLES flushed"
 msgstr ""
 
-#: ../handle.c:227
+#: ../handle.c:236
 #, c-format
 msgid "PM_OPT_USESYSLOG set to '%d'"
 msgstr ""
 
-#: ../handle.c:276
+#: ../handle.c:285
 #, c-format
 msgid "PM_OPT_LOGMASK set to '%02x'"
 msgstr ""
 
-#: ../handle.c:295
+#: ../handle.c:304
 #, c-format
 msgid "PM_OPT_PROXYHOST set to '%s'"
 msgstr ""
 
-#: ../handle.c:299
+#: ../handle.c:308
 #, c-format
 msgid "PM_OPT_PROXYPORT set to '%d'"
 msgstr ""
 
-#: ../handle.c:310
+#: ../handle.c:319
 #, c-format
 msgid "PM_OPT_XFERCOMMAND set to '%s'"
 msgstr ""
 
-#: ../handle.c:314
+#: ../handle.c:323
 #, c-format
 msgid "PM_OPT_NOPASSIVEFTP set to '%d'"
 msgstr ""
 
-#: ../handle.c:318
+#: ../handle.c:327
 #, c-format
 msgid "PM_OPT_CHOMP set to '%d'"
 msgstr ""
 
-#: ../handle.c:322
+#: ../handle.c:331
 #, c-format
 msgid "PM_OPT_MAXTRIES set to '%d'"
 msgstr ""
@@ -1426,7 +1438,7 @@ msgstr ""
 msgid "could not create temp directory"
 msgstr ""
 
-#: ../util.c:465
+#: ../util.c:465 ../util.c:563
 #, c-format
 msgid "could not change directory to %s (%s)"
 msgstr ""
@@ -1436,37 +1448,37 @@ msgstr ""
 msgid "executing %s script..."
 msgstr ""
 
-#: ../util.c:481
+#: ../util.c:481 ../util.c:589
 #, c-format
 msgid "could not fork a new process (%s)"
 msgstr ""
 
-#: ../util.c:488
+#: ../util.c:488 ../util.c:596
 #, c-format
 msgid "chrooting in %s"
 msgstr ""
 
-#: ../util.c:490
+#: ../util.c:490 ../util.c:598
 #, c-format
 msgid "could not change the root directory (%s)"
 msgstr ""
 
-#: ../util.c:494
+#: ../util.c:494 ../util.c:602
 #, c-format
 msgid "could not change directory to / (%s)"
 msgstr ""
 
-#: ../util.c:498
+#: ../util.c:498 ../util.c:606
 #, c-format
 msgid "executing \"%s\""
 msgstr ""
 
-#: ../util.c:501
+#: ../util.c:501 ../util.c:609
 #, c-format
 msgid "call to popen failed (%s)"
 msgstr ""
 
-#: ../util.c:523
+#: ../util.c:523 ../util.c:631
 #, c-format
 msgid "call to waitpid failed (%s)"
 msgstr ""
@@ -1476,7 +1488,17 @@ msgstr ""
 msgid "could not remove tmpdir %s"
 msgstr ""
 
-#: ../util.c:582
+#: ../util.c:552
+#, c-format
+msgid "executing %s hooks..."
+msgstr ""
+
+#: ../util.c:570
+#, c-format
+msgid "opening hooks directory failed (%s)"
+msgstr ""
+
+#: ../util.c:688
 #, c-format
 msgid "check_freespace: total pkg size: %lld, disk space: %lld"
 msgstr ""

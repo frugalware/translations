@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-06 05:05+0100\n"
+"POT-Creation-Date: 2007-12-26 05:05+0100\n"
 "PO-Revision-Date: 2007-09-14 23:53+0200\n"
 "Last-Translator: Patric Werme <xenon-power@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -161,22 +161,47 @@ msgstr ""
 "ESSID:"
 
 #: ../netconfig.c:165
-msgid "Encryption key"
+#, fuzzy
+msgid "WEP encryption key"
 msgstr "Krypteringsnyckel"
 
-#: ../netconfig.c:165
+#: ../netconfig.c:166
+#, fuzzy
 msgid ""
-"If you have an encryption key, then please enter it below.\n"
+"If you have a WEP encryption key, then please enter it below.\n"
 "Examples: 4567-89AB-CD or  s:password"
 msgstr ""
 "Om du har en krypteringsnyckel, ange den nedan.\n"
 "Exempel: 4567-89AB-CD eller s:password"
 
-#: ../netconfig.c:172
+#: ../netconfig.c:170
+msgid "WPA encryption passphrase"
+msgstr ""
+
+#: ../netconfig.c:171
+#, fuzzy
+msgid ""
+"If you have a WPA passphrase, then please enter it below.\n"
+"Example: secret"
+msgstr ""
+"Om du har en krypteringsnyckel, ange den nedan.\n"
+"Exempel: 4567-89AB-CD eller s:password"
+
+#: ../netconfig.c:175
+msgid "WPA driver"
+msgstr ""
+
+#: ../netconfig.c:176
+msgid ""
+"If you want to use a custom driver (not the generic one, called 'wext'), "
+"then please enter it below. If unsure, just hit enter."
+msgstr ""
+
+#: ../netconfig.c:183
 msgid "Set DHCP hostname"
 msgstr "Ställ in DHCP-värdnamn"
 
-#: ../netconfig.c:172
+#: ../netconfig.c:183
 msgid ""
 "Some network providers require that the DHCP hostname beset in order to "
 "connect. If so, they'll have assigned a hostname to your machine. If you "
@@ -189,19 +214,19 @@ msgstr ""
 "ange det nedan. Om du inte har ett DHCP-värdnamn, tryck bara på enter."
 
 #. options = ip netmask netmask
-#: ../netconfig.c:187
+#: ../netconfig.c:198
 msgid "Enter ip address"
 msgstr "Ange ip-adress"
 
-#: ../netconfig.c:187
+#: ../netconfig.c:198
 msgid "Enter your IP address for the local machine."
 msgstr "Ange din IP-adress för den lokala maskinen."
 
-#: ../netconfig.c:188
+#: ../netconfig.c:199
 msgid "Enter netmask for local network"
 msgstr "Ange nätmask för det lokala nätverket"
 
-#: ../netconfig.c:189
+#: ../netconfig.c:200
 msgid ""
 "Enter your netmask. This will generally look something like this: "
 "255.255.255.0\n"
@@ -210,11 +235,11 @@ msgstr ""
 "Ange din nätmask. Den ser oftast ut ungefär såhär:255.255.255.0\n"
 "Om du är osäker, tryck bara på retur."
 
-#: ../netconfig.c:196
+#: ../netconfig.c:207
 msgid "Enter gateway address"
 msgstr "Ange nätsluss(gateway)-adress"
 
-#: ../netconfig.c:196
+#: ../netconfig.c:207
 msgid ""
 "Enter the address for the gateway on your network. If you don't have a "
 "gateway on your network just hit enter, without entering any ip address."
@@ -222,12 +247,12 @@ msgstr ""
 "Ange adressen för nätslussen (gateway) för ditt nätverk. Om du inte har en "
 "nätsluss för ditt nätverk tryck bara på enter utan att ange någon IP-adress."
 
-#: ../netconfig.c:202
+#: ../netconfig.c:213
 msgid "Select nameserver"
 msgstr "Välj namnserver"
 
 # Kände mig tvungen att förtydliga, då DNS-server är betydligt mycket vanligare än mnamn-server
-#: ../netconfig.c:202
+#: ../netconfig.c:213
 msgid ""
 "Please give the IP address of the name server to use. You canadd more Domain "
 "Name Servers later by editing /etc/sysconfig/network/default.\n"
@@ -241,21 +266,21 @@ msgstr ""
 "skriva in någon IP-adress"
 
 # är justera rätt ord?
-#: ../netconfig.c:213
+#: ../netconfig.c:224
 msgid "Adjust configuration files"
 msgstr "Ändra konfigurationsfiler"
 
 # är justera rätt ord?
-#: ../netconfig.c:213
+#: ../netconfig.c:224
 msgid "Accept these settings and adjust configuration files?"
 msgstr "Acceptera dessa inställningar och ändra konfigurationsfilerna?"
 
-#: ../netconfig.c:297
+#: ../netconfig.c:308
 #, c-format
 msgid "No profile loaded.\n"
 msgstr "Ingen profil laddad.\n"
 
-#: ../netconfig.c:302
+#: ../netconfig.c:313
 #, c-format
 msgid "Current profile: %s\n"
 msgstr "Nuvarande profil: %s\n"

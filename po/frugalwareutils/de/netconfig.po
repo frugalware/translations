@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-06 05:05+0100\n"
+"POT-Creation-Date: 2007-12-26 05:05+0100\n"
 "PO-Revision-Date: 2007-04-28 18:10+0200\n"
 "Last-Translator: Daniel Exner <dex@dragonslave.de>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
@@ -146,20 +146,40 @@ msgid ""
 msgstr ""
 
 #: ../netconfig.c:165
-msgid "Encryption key"
+msgid "WEP encryption key"
 msgstr ""
 
-#: ../netconfig.c:165
+#: ../netconfig.c:166
 msgid ""
-"If you have an encryption key, then please enter it below.\n"
+"If you have a WEP encryption key, then please enter it below.\n"
 "Examples: 4567-89AB-CD or  s:password"
 msgstr ""
 
-#: ../netconfig.c:172
+#: ../netconfig.c:170
+msgid "WPA encryption passphrase"
+msgstr ""
+
+#: ../netconfig.c:171
+msgid ""
+"If you have a WPA passphrase, then please enter it below.\n"
+"Example: secret"
+msgstr ""
+
+#: ../netconfig.c:175
+msgid "WPA driver"
+msgstr ""
+
+#: ../netconfig.c:176
+msgid ""
+"If you want to use a custom driver (not the generic one, called 'wext'), "
+"then please enter it below. If unsure, just hit enter."
+msgstr ""
+
+#: ../netconfig.c:183
 msgid "Set DHCP hostname"
 msgstr ""
 
-#: ../netconfig.c:172
+#: ../netconfig.c:183
 msgid ""
 "Some network providers require that the DHCP hostname beset in order to "
 "connect. If so, they'll have assigned a hostname to your machine. If you "
@@ -168,40 +188,40 @@ msgid ""
 msgstr ""
 
 #. options = ip netmask netmask
-#: ../netconfig.c:187
+#: ../netconfig.c:198
 msgid "Enter ip address"
 msgstr ""
 
-#: ../netconfig.c:187
+#: ../netconfig.c:198
 msgid "Enter your IP address for the local machine."
 msgstr ""
 
-#: ../netconfig.c:188
+#: ../netconfig.c:199
 msgid "Enter netmask for local network"
 msgstr ""
 
-#: ../netconfig.c:189
+#: ../netconfig.c:200
 msgid ""
 "Enter your netmask. This will generally look something like this: "
 "255.255.255.0\n"
 "If unsure, just hit enter."
 msgstr ""
 
-#: ../netconfig.c:196
+#: ../netconfig.c:207
 msgid "Enter gateway address"
 msgstr ""
 
-#: ../netconfig.c:196
+#: ../netconfig.c:207
 msgid ""
 "Enter the address for the gateway on your network. If you don't have a "
 "gateway on your network just hit enter, without entering any ip address."
 msgstr ""
 
-#: ../netconfig.c:202
+#: ../netconfig.c:213
 msgid "Select nameserver"
 msgstr ""
 
-#: ../netconfig.c:202
+#: ../netconfig.c:213
 msgid ""
 "Please give the IP address of the name server to use. You canadd more Domain "
 "Name Servers later by editing /etc/sysconfig/network/default.\n"
@@ -209,20 +229,20 @@ msgid ""
 "entering any ip address."
 msgstr ""
 
-#: ../netconfig.c:213
+#: ../netconfig.c:224
 msgid "Adjust configuration files"
 msgstr ""
 
-#: ../netconfig.c:213
+#: ../netconfig.c:224
 msgid "Accept these settings and adjust configuration files?"
 msgstr ""
 
-#: ../netconfig.c:297
+#: ../netconfig.c:308
 #, c-format
 msgid "No profile loaded.\n"
 msgstr ""
 
-#: ../netconfig.c:302
+#: ../netconfig.c:313
 #, c-format
 msgid "Current profile: %s\n"
 msgstr ""

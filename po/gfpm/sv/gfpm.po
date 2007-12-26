@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-06 05:05+0100\n"
+"POT-Creation-Date: 2007-12-26 05:05+0100\n"
 "PO-Revision-Date: 2007-09-22 22:06+0200\n"
 "Last-Translator: Patric Werme <xenonpower@clovermail.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,11 +16,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 1.0\n"
 
-#: ../src/gfpm-about.c:85
+#: ../src/gfpm-about.c:86
 msgid "(C) 2006-2007 Frugalware Developer Team (GPL)"
 msgstr "(C) 2006-2007 Frugalware Developer Team (GPL)"
 
-#: ../src/gfpm-about.c:86
+#: ../src/gfpm-about.c:87
 msgid "A graphical package manager for Frugalware Linux"
 msgstr "En grafisk paket hanterare för Frugalware Linux."
 
@@ -269,6 +269,7 @@ msgid "Synchronizing package databases"
 msgstr "Synkroniserar paket databas"
 
 #: ../src/gfpm-interface.c:1153
+#, c-format
 msgid ""
 "Gfpm has detected a newer version of the pacman-g2 package. It is "
 "recommended that you allow gfpm to update pacman-g2 first. Do you wish to "
@@ -282,6 +283,7 @@ msgid "Update pacman-g2"
 msgstr "Updatera pacman-g2"
 
 #: ../src/gfpm-interface.c:1165
+#, c-format
 msgid ""
 "Gfpm has detected a newer version of the gfpm package. It is recommended "
 "that you allow gfpm to update itself first. Do you wish to continue "
@@ -521,26 +523,23 @@ msgstr "Kontrollerar paket integritet"
 msgid "Retrieving packages from %s"
 msgstr "Mottar paket från %s"
 
-#: ../src/gfpm.c:55
+#: ../src/gfpm.c:54
 #, fuzzy
-msgid "Failed to initialize interface: "
+msgid "Interface initialization Failed"
+msgstr "Paket installation avslutad"
+
+#: ../src/gfpm.c:54
+#, fuzzy
+msgid "Failed to initialize interface"
 msgstr "Fel uppstod när den lokala paketdatabasen skulle initieras."
 
-#: ../src/gfpm.c:56
-msgid "Interface initialization failed"
-msgstr ""
-
-#: ../src/gfpm.c:65
+#: ../src/gfpm.c:62
 msgid "Error initializing libpacman"
 msgstr ""
 
-#: ../src/gfpm.c:65
+#: ../src/gfpm.c:62
 msgid "Failed to initialize libpacman"
 msgstr ""
-
-#: ../src/gfpm-optimizedb.c:89
-msgid "Ready"
-msgstr "Klar"
 
 #: ../src/gfpm-optimizedb.c:117
 msgid ""
@@ -859,6 +858,9 @@ msgstr ""
 #: ../data/gfpm.glade.h:45
 msgid "optimize your package database to improve performance"
 msgstr "Optimera din paket databas för att öka prestanda"
+
+#~ msgid "Ready"
+#~ msgstr "Klar"
 
 #~ msgid "Detials"
 #~ msgstr "Detaljer"

@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-21 05:05+0100\n"
-"PO-Revision-Date: 2007-11-22 00:16+0100\n"
-"Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
+"POT-Creation-Date: 2007-12-26 05:05+0100\n"
+"PO-Revision-Date: 2007-12-23 23:29+0100\n"
+"Last-Translator: Thomas Legrand <j3d1f0x@free.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,11 +16,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 1.0\n"
 
-#: ../src/gfpm-about.c:85
+#: ../src/gfpm-about.c:86
 msgid "(C) 2006-2007 Frugalware Developer Team (GPL)"
 msgstr "(C) 2006-2007 Frugalware Developer Team (GPL)"
 
-#: ../src/gfpm-about.c:86
+#: ../src/gfpm-about.c:87
 msgid "A graphical package manager for Frugalware Linux"
 msgstr "Un gestionnaire de paquets graphique pour Frugalware Linux."
 
@@ -60,7 +60,7 @@ msgstr "Erreur"
 
 #: ../src/gfpm-interface.c:280
 msgid "Failed to initialize local package database."
-msgstr "Échec de l'initialisation de la base de données de paquets locale."
+msgstr "Echec de l'initialisation de la base de données de paquets locale."
 
 #: ../src/gfpm-interface.c:310 ../data/gfpm.glade.h:18
 msgid "Gfpm"
@@ -251,7 +251,7 @@ msgstr "Échec de validation de la transaction (%s)\n"
 
 #: ../src/gfpm-interface.c:1114
 msgid "Conflicting Files"
-msgstr "Fichiers en conflit:"
+msgstr "Fichiers en conflit :"
 
 #: ../src/gfpm-interface.c:1115
 msgid ""
@@ -265,7 +265,7 @@ msgstr "Paquets corrompus"
 
 #: ../src/gfpm-interface.c:1124
 msgid "The package(s) you're trying to install are corrupted"
-msgstr "Les paquets que vous essayez d'installer sont corrompus"
+msgstr "Le(s) paquet(s) que vous essayez d'installer est (sont) corrompu(s)"
 
 #: ../src/gfpm-interface.c:1146
 msgid "Synchronizing package databases"
@@ -307,7 +307,7 @@ msgid ""
 "pacman-g2.lck"
 msgstr ""
 "Si vous êtes sûr qu'un gestionnaire de paquet n'est pas en cours de "
-"fonctionnement, vous pouvez effacer /tmp/pacman-g2.lck"
+"fonctionnement, vous pouvez effacer le fichier '/tmp/pacman-g2.lck'"
 
 #: ../src/gfpm-interface.c:1195
 msgid "No new package updates are available. The system is up to date."
@@ -355,7 +355,7 @@ msgstr "Êtes-vous sûr(e) de vouloir retirer entierement le groupe ?"
 
 #: ../src/gfpm-interface.c:1565
 msgid "Search Complete"
-msgstr "Recherche Terminée"
+msgstr "Recherche terminée"
 
 #: ../src/gfpm-interface.c:1566
 msgid "Package not found"
@@ -388,7 +388,7 @@ msgstr "Nettoyage du cache terminé"
 #: ../src/gfpm-interface.c:1759 ../src/gfpm-interface.c:1777
 #, c-format
 msgid "Failed to clean the cache (%s)"
-msgstr "Le nettoyage du cache à échoué (%s)"
+msgstr "Le nettoyage du cache a échoué (%s)"
 
 #: ../src/gfpm-interface.c:1760 ../src/gfpm-interface.c:1778
 msgid "Error clearing cache"
@@ -396,7 +396,7 @@ msgstr "Erreur lors du nettoyage du cache"
 
 #: ../src/gfpm-interface.c:1768
 msgid "Are you sure you want to remove all packages from cache ?"
-msgstr "Êtes-vous sûr de vouloir retirer tout les paquets du cache ?"
+msgstr "Êtes-vous sûr de vouloir retirer tous les paquets du cache ?"
 
 #: ../src/gfpm-interface.c:1800
 msgid "No packages selected"
@@ -414,7 +414,7 @@ msgstr "Installer le paquet"
 
 #: ../src/gfpm-interface.c:1803
 msgid "Are you sure you want to install this package ?"
-msgstr "Êtes-vous sûr(e) de vouloir installer ce paquet ?"
+msgstr "Etes-vous sûr(e) de vouloir installer ce paquet ?"
 
 #: ../src/gfpm-interface.c:1841
 msgid "Package successfully installed"
@@ -458,7 +458,7 @@ msgstr "Vérification des dépendances"
 
 #: ../src/gfpm-progress.c:294
 msgid "Checking for file conflicts"
-msgstr "Vérification de conflits entre fichiers"
+msgstr "Vérification si conflit(s) entre fichiers"
 
 #: ../src/gfpm-progress.c:298
 msgid "Resolving dependencies"
@@ -466,7 +466,7 @@ msgstr "Résolution des dépendances"
 
 #: ../src/gfpm-progress.c:301
 msgid "Looking for inter-conflicts"
-msgstr "Recherche inter-conflits"
+msgstr "Recherche si inter-conflit(s)"
 
 #: ../src/gfpm-progress.c:307 ../src/gfpm-progress.c:347
 #: ../src/gfpm-progress.c:357
@@ -517,7 +517,7 @@ msgstr "Désinstallation de %s"
 
 #: ../src/gfpm-progress.c:344
 msgid "Checking package integrity"
-msgstr "Vérification de l'intégrité des paquets..."
+msgstr "Vérification de l'intégrité du paquet..."
 
 #: ../src/gfpm-progress.c:361
 #, c-format
@@ -526,19 +526,19 @@ msgstr "Récupération des paquets depuis %s"
 
 #: ../src/gfpm.c:54
 msgid "Interface initialization Failed"
-msgstr "L'initialisation de l'interface échouée"
+msgstr "L'initialisation de l'interface a échouée"
 
 #: ../src/gfpm.c:54
 msgid "Failed to initialize interface"
-msgstr "Échec de l'initialisation de l'interface."
+msgstr "Echec de l'initialisation de l'interface"
 
 #: ../src/gfpm.c:62
 msgid "Error initializing libpacman"
-msgstr "Échec à l'initialisation de libpacman"
+msgstr "Echec à l'initialisation de libpacman"
 
 #: ../src/gfpm.c:62
 msgid "Failed to initialize libpacman"
-msgstr "Échec de l'initialisation de libpacman"
+msgstr "Echec de l'initialisation de libpacman"
 
 #: ../src/gfpm-optimizedb.c:117
 msgid ""
@@ -551,13 +551,13 @@ msgstr ""
 #: ../src/gfpm-optimizedb.c:124
 msgid "Error creating lockfile. Failed to optimize package database"
 msgstr ""
-"Erreur lors de la création du fichier verrou. Échec de l'optimisation de la "
-"base de donnée."
+"Erreur lors de la création du fichier verrou. Echec de l'optimisation de la "
+"base de données."
 
 #. generate checksums for the old database
 #: ../src/gfpm-optimizedb.c:129
 msgid "generating checksums for the old database"
-msgstr "Création des sommes de contrôles pour l'ancienne base de donnée"
+msgstr "Création des sommes de contrôles pour l'ancienne base de données"
 
 #. copy the old database to a new directory
 #: ../src/gfpm-optimizedb.c:138
@@ -568,7 +568,7 @@ msgstr "Copie de %s"
 #. generate checksums for the new database
 #: ../src/gfpm-optimizedb.c:148
 msgid "generating checksums for the new database"
-msgstr "Création des sommes de contrôles pour la nouvelle base de donnée"
+msgstr "Création des sommes de contrôles pour la nouvelle base de données"
 
 #. check integrity
 #: ../src/gfpm-optimizedb.c:165
@@ -585,7 +585,7 @@ msgstr "Contrôle d'intégrité échoué"
 
 #: ../src/gfpm-optimizedb.c:170
 msgid "Failed."
-msgstr "Échec."
+msgstr "Echec."
 
 #. remove old database
 #: ../src/gfpm-optimizedb.c:182
@@ -607,7 +607,7 @@ msgstr "Base de données optimisée"
 
 #: ../src/gfpm-optimizedb.c:198
 msgid "Your package database is now optimized."
-msgstr "Votre base de donnée de paquet est maintenant optimisé."
+msgstr "Votre base de données de paquets est maintenant optimisée."
 
 #: ../src/gfpm-messages.c:70 ../src/gfpm-messages.c:75
 #: ../src/gfpm-messages.c:317 ../src/gfpm-messages.c:427
@@ -635,7 +635,7 @@ msgstr "Version"
 #: ../src/gfpm-messages.c:492
 #, c-format
 msgid "Do you want to replace %s with %s/%s ?"
-msgstr "Voulez-vous replacer %s par %s/%s ?"
+msgstr "Voulez-vous remplacer %s par %s/%s ?"
 
 #: ../src/gfpm-messages.c:496
 msgid "Replace package"
@@ -644,12 +644,12 @@ msgstr "Remplace le paquet"
 #: ../src/gfpm-messages.c:502
 #, c-format
 msgid "%s requires %s, but it is IgnorePkg. Install anyway?"
-msgstr "%s requiert %s, mais il est IgnorePkg. L'installer malgré tout?"
+msgstr "%s requiert %s, mais il est IgnorePkg. L'installer malgré tout ?"
 
 #: ../src/gfpm-messages.c:511
 #, c-format
 msgid "%s is designated as HoldPkg. Remove anyway?"
-msgstr "%s est désigné comme HoldPkg. Le retirer malgré tout?"
+msgstr "%s est désigné comme HoldPkg. Le retirer malgré tout ?"
 
 #: ../src/gfpm-messages.c:519
 #, c-format
@@ -706,12 +706,12 @@ msgstr "<b>Retrait des paquets</b>"
 
 #: ../data/gfpm.glade.h:5
 msgid "<b>Status : </b>"
-msgstr "<b>Status : </b>"
+msgstr "<b>Statut : </b>"
 
 #: ../data/gfpm.glade.h:6
 msgid "<span size=\"larger\"><b>Optimize package database</b></span>"
 msgstr ""
-"<span size=\"larger\"><b>Optimisation de la base de données de paquet</b></"
+"<span size=\"larger\"><b>Optimisation de la base de données de paquets</b></"
 "span>"
 
 #: ../data/gfpm.glade.h:7
@@ -789,7 +789,7 @@ msgstr "Rafraîchir la liste de paquets"
 
 #: ../data/gfpm.glade.h:26
 msgid "Remove"
-msgstr "Désinstaller le groupe"
+msgstr "Désinstaller"
 
 #: ../data/gfpm.glade.h:27
 msgid "Remove all packages from cache"
@@ -825,7 +825,7 @@ msgstr "Mise à jour existante"
 
 #: ../data/gfpm.glade.h:36
 msgid "View Readme"
-msgstr "Voire le Readme"
+msgstr "Voir le Readme"
 
 #: ../data/gfpm.glade.h:37
 msgid "_About Gfpm"
@@ -862,7 +862,7 @@ msgstr "gtk-close"
 #: ../data/gfpm.glade.h:45
 msgid "optimize your package database to improve performance"
 msgstr ""
-"Optimiser votre base de données de paquet pour améliorer les performances"
+"Optimise votre base de données de paquet pour améliorer les performances"
 
 #~ msgid "Ready"
 #~ msgstr "Prêt"

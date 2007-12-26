@@ -2,20 +2,20 @@
 # Hungarian translations for netconfig package.
 # Copyright (C) 2006 THE netconfig'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the netconfig package.
-#
 #  <vmiklos@frugalware.org>, 2006.
 # VMiklos <vmiklos@frugalware.org>, 2006.
 msgid ""
 msgstr ""
 "Project-Id-Version: hu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-06 05:05+0100\n"
+"POT-Creation-Date: 2007-12-26 05:05+0100\n"
 "PO-Revision-Date: 2007-05-27 23:53+0200\n"
 "Last-Translator: Artur Grunau <link25@o2.pl>\n"
 "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-2\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "X-Generator: Pootle 0.10.1\n"
 
 #: ../netconfig.c:57
@@ -160,20 +160,43 @@ msgstr ""
 "podaæ ESSID - rozszerzon± nazwê sieci:"
 
 #: ../netconfig.c:165
-msgid "Encryption key"
+#, fuzzy
+msgid "WEP encryption key"
 msgstr "Klucz"
 
-#: ../netconfig.c:165
+#: ../netconfig.c:166
+#, fuzzy
 msgid ""
-"If you have an encryption key, then please enter it below.\n"
+"If you have a WEP encryption key, then please enter it below.\n"
 "Examples: 4567-89AB-CD or  s:password"
 msgstr "Je¿eli sieæ jest kodowana podaj klucz poni¿ej."
 
-#: ../netconfig.c:172
+#: ../netconfig.c:170
+msgid "WPA encryption passphrase"
+msgstr ""
+
+#: ../netconfig.c:171
+#, fuzzy
+msgid ""
+"If you have a WPA passphrase, then please enter it below.\n"
+"Example: secret"
+msgstr "Je¿eli sieæ jest kodowana podaj klucz poni¿ej."
+
+#: ../netconfig.c:175
+msgid "WPA driver"
+msgstr ""
+
+#: ../netconfig.c:176
+msgid ""
+"If you want to use a custom driver (not the generic one, called 'wext'), "
+"then please enter it below. If unsure, just hit enter."
+msgstr ""
+
+#: ../netconfig.c:183
 msgid "Set DHCP hostname"
 msgstr "Nazwa hosta serwera DHCP"
 
-#: ../netconfig.c:172
+#: ../netconfig.c:183
 msgid ""
 "Some network providers require that the DHCP hostname beset in order to "
 "connect. If so, they'll have assigned a hostname to your machine. If you "
@@ -185,19 +208,19 @@ msgstr ""
 "poni¿ej, je¿eli nie to wci¶nij enter."
 
 #. options = ip netmask netmask
-#: ../netconfig.c:187
+#: ../netconfig.c:198
 msgid "Enter ip address"
 msgstr "Podaj adres IP"
 
-#: ../netconfig.c:187
+#: ../netconfig.c:198
 msgid "Enter your IP address for the local machine."
 msgstr "Podaj adres IP dla lokalnej maszyny."
 
-#: ../netconfig.c:188
+#: ../netconfig.c:199
 msgid "Enter netmask for local network"
 msgstr "Podaj maskê sieci dla maszymy"
 
-#: ../netconfig.c:189
+#: ../netconfig.c:200
 msgid ""
 "Enter your netmask. This will generally look something like this: "
 "255.255.255.0\n"
@@ -206,21 +229,21 @@ msgstr ""
 "Podaj masê sieci. Zazwyczaj bêdzie to: 255.255.255.0\n"
 "Je¿eli nie jeste¶ pewien wci¶nij enter."
 
-#: ../netconfig.c:196
+#: ../netconfig.c:207
 msgid "Enter gateway address"
 msgstr "Podaj adres bramki"
 
-#: ../netconfig.c:196
+#: ../netconfig.c:207
 msgid ""
 "Enter the address for the gateway on your network. If you don't have a "
 "gateway on your network just hit enter, without entering any ip address."
 msgstr "Podaj adres bramki je¿eli posiadasz taki."
 
-#: ../netconfig.c:202
+#: ../netconfig.c:213
 msgid "Select nameserver"
 msgstr "Serwery DNS"
 
-#: ../netconfig.c:202
+#: ../netconfig.c:213
 msgid ""
 "Please give the IP address of the name server to use. You canadd more Domain "
 "Name Servers later by editing /etc/sysconfig/network/default.\n"
@@ -231,20 +254,20 @@ msgstr ""
 "sysconfig/network/default.\n"
 "Je¿eli DNSy nie funkcjonuj± w twojej sieci wci¶nij enter."
 
-#: ../netconfig.c:213
+#: ../netconfig.c:224
 msgid "Adjust configuration files"
 msgstr "Edycja plików konfiguracyjnych"
 
-#: ../netconfig.c:213
+#: ../netconfig.c:224
 msgid "Accept these settings and adjust configuration files?"
 msgstr "Zaakceptowaæ ustawienia i zmodyfikowaæ pliki konfiguracyjne?"
 
-#: ../netconfig.c:297
+#: ../netconfig.c:308
 #, c-format
 msgid "No profile loaded.\n"
 msgstr "Nie za³adowano profilu.\n"
 
-#: ../netconfig.c:302
+#: ../netconfig.c:313
 #, c-format
 msgid "Current profile: %s\n"
 msgstr "Obecny profil: %s\n"
