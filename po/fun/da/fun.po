@@ -2,93 +2,128 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-12-19 05:04+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2007-12-26 05:05+0100\n"
+"PO-Revision-Date: 2007-12-23 19:18+0100\n"
+"Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 1.0.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 1.0\n"
 
-#: ../src/fun-ui.c:311
+#: ../src/fun.c:63 ../src/fun.c:71
+msgid "Error"
+msgstr "Fejl"
+
+#: ../src/fun.c:63
+msgid "Failed to initialize dbus subsystem"
+msgstr "Fejledede ved initialisering af dbus undersystem"
+
+#: ../src/fun.c:71
+msgid "Failed to initialize interface"
+msgstr "Fejledede ved initialisering af grænseflade"
+
+#: ../src/fun-ui.c:217
 msgid "Restart Fun"
-msgstr ""
+msgstr "Genstart Fun"
 
-#: ../src/fun-ui.c:312
+#: ../src/fun-ui.c:218
 msgid ""
 "Fun needs to be restarted in order for the changes to take effect. Do you "
 "want to restart Fun now ?"
 msgstr ""
+"Fun behøver at blive genstartet for at ændringerne kan tages i brug. Ønsker "
+"du at genstarte Fun nu ?"
 
-#: ../src/fun-ui.c:412
+#: ../src/fun-ui.c:317
 msgid "S"
-msgstr ""
+msgstr "S"
 
-#: ../src/fun-ui.c:420
+#: ../src/fun-ui.c:325
 msgid "Package Name"
-msgstr ""
+msgstr "Pakkenavn"
 
-#: ../src/fun-ui.c:430
+#: ../src/fun-ui.c:335
 msgid "Latest Version"
-msgstr ""
+msgstr "Seneste Version"
 
-#: ../src/fun-ui.c:438
+#: ../src/fun-ui.c:343
 msgid "Description"
-msgstr ""
+msgstr "Beskrivelse"
 
-#: ../src/fun-ui.c:496
-#, c-format
+#: ../src/fun-ui.c:400
 msgid "Failed to connect to the fun daemon\n"
-msgstr ""
-
-#: ../src/fun-ui.c:497
-msgid "Not connected to fun daemon"
-msgstr ""
+msgstr "Fejlede at forbinde til fun dæmon\n"
 
 #. set the status
-#: ../src/fun-ui.c:500
+#: ../src/fun-ui.c:404
 msgid ""
 "The frugalware update notifier daemon is not running. Update checking is "
 "disabled"
 msgstr ""
+"Frugalware opdateringsinformerer dæmon kører ikke. Opdateringstjek er slået "
+"fra"
 
 #. display an error
-#: ../src/fun-ui.c:502
+#: ../src/fun-ui.c:406
 msgid "Update checking disabled"
-msgstr ""
+msgstr "Opdateringstjek slået fra"
 
 #. set the status
+#. fun_tooltip_set_text2 (tooltip, "", FALSE);
 #. set the status to Idle
 #. and the status back to Idle
-#: ../src/fun-ui.c:519 ../src/fun-ui.c:539 ../src/fun-ui.c:584
+#: ../src/fun-ui.c:423 ../src/fun-ui.c:443 ../src/fun-ui.c:481
 msgid "Idle"
-msgstr ""
+msgstr "Parat"
 
 #. set the status to let the user know that fun is checking for an update
-#: ../src/fun-ui.c:556
+#: ../src/fun-ui.c:460
 msgid "Checking for new updates..."
-msgstr ""
+msgstr "Tjekker for nye opdateringer..."
 
-#. g_print ("\nlist is\n %s", plist);
-#: ../src/fun-ui.c:569
+#: ../src/fun-ui.c:474
 msgid "Updates are available"
-msgstr ""
+msgstr "Opdateringer er tilgængelige"
 
-#: ../src/fun-ui.c:570
-msgid "Click here to know more.."
+#: ../src/fun-ui.c:474
+msgid ""
+"New package updates are available for your system. Click the tray icon for "
+"more details"
 msgstr ""
+"Nye pakkeopdateringer er tilgængelige til dit system. Klik på bakkeikonet "
+"for flere detaljer"
 
-#: ../src/fun-ui.c:611
+#: ../src/fun-ui.c:500
 msgid "(C) 2007 Frugalware Developer Team (GPL)"
-msgstr ""
+msgstr "(C) 2007 Frugalware Developer Team (GPL)"
 
-#: ../src/fun-ui.c:612
+#: ../src/fun-ui.c:501
 msgid "Frugalware Update Notifier"
-msgstr ""
+msgstr "Frugalware Opdateringsmeddeler"
+
+#: ../src/fun-ui.c:553
+msgid "Error getting update information"
+msgstr "Fejl ved hentning af opdateringsinformation"
+
+#: ../src/fun-ui.c:553
+msgid "There was an error getting update information"
+msgstr "Der var en fejl ved hentning af opdateringsinformation"
+
+#: ../src/fun-tooltip.c:44
+msgid "View Updates"
+msgstr "Se Opdateringer"
+
+#~ msgid "Click the tray icon for details"
+#~ msgstr "Klik på bakke ikonet for detaljer"
+
+#~ msgid "Not connected to fun daemon"
+#~ msgstr "Ikke forbundet til fun dæmon"
+
+#~ msgid "Click here to know more.."
+#~ msgstr "Klik her for at vide mere.."
