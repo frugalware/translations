@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-06 05:05+0100\n"
-"PO-Revision-Date: 2007-09-05 19:12+0200\n"
+"POT-Creation-Date: 2007-12-26 05:05+0100\n"
+"PO-Revision-Date: 2007-12-21 12:50+0100\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -34,7 +34,7 @@ msgstr "Intet netværk - kun loopback forbindelse"
 
 #: ../netconfig.c:62
 msgid "Select network connection type"
-msgstr "Vælg netværks forbindelse type"
+msgstr "Vælg netværks forbindelsestype"
 
 #: ../netconfig.c:63
 msgid ""
@@ -49,14 +49,14 @@ msgid ""
 "Finally, if you do not have a network card, select the 'lo' choice. \n"
 msgstr ""
 "Nu er vi nødt til at vide hvordan din maskine er forbundet til netværket.\n"
-"Hvis du har et intern netværks kort og en tildelt IP adresse, gateway, og "
-"DNS, brug 'static' for at angive værdierne. Du kan også bruge denne mulighed "
-"hvis du har en DSL forbindelse.\n"
+"Hvis du har et internt netværkskort og en tildelt IP adresse, gateway, og "
+"DNS, brug 'statisk' for at angive værdierne. Du kan også bruge denne "
+"mulighed hvis du har en DSL forbindelse.\n"
 "Hvis din IP adresse bliver tildelt af en DHCP server (nårmalt brugt med "
-"kabel modem forbindelse), vælg 'dhcp'. \n"
-"Hvis du kun har et netværks kort forbundet direkte til et DSL modem, så vælg "
+"kabel modemforbindelse), vælg 'dhcp'. \n"
+"Hvis du kun har et netværkskort forbundet direkte til et DSL modem, så vælg "
 "'dsl'. \n"
-"Til sidst, hvis du ikke har et netværks kort, så væg 'lo' som valg. \n"
+"Til sidst, hvis du ikke har et netværkskort, så vælg 'lo' som valg. \n"
 
 #: ../netconfig.c:80
 msgid "DSL configuration"
@@ -64,15 +64,15 @@ msgstr "DSL konfiguration"
 
 #: ../netconfig.c:80
 msgid "Do you want to configure a DSL connection now?"
-msgstr "Vil du konfigure en DSL forbindelse nu?"
+msgstr "Vil du konfigurere en DSL forbindelse nu?"
 
 #: ../netconfig.c:82
 msgid "Enter user name"
-msgstr "Skriv bruger navn"
+msgstr "Skriv brugernavn"
 
 #: ../netconfig.c:83
 msgid "Enter your PPPoE user name:"
-msgstr "Skriv dit PPPoE bruger navn:"
+msgstr "Skriv dit PPPoE brugernavn:"
 
 #: ../netconfig.c:87 ../netconfig.c:89
 msgid "Password"
@@ -92,11 +92,11 @@ msgstr "Password stemte ikke overens"
 
 #: ../netconfig.c:97
 msgid "Sorry, the passwords do not match. Try again?"
-msgstr "Undskyld, dit passwords stemte ikke overens. Prøv igen?"
+msgstr "Undskyld, dit password stemte ikke overens. Prøv igen?"
 
 #: ../netconfig.c:100 ../netconfig.c:150
 msgid "Enter interface name"
-msgstr "Skriv grænseflade navn"
+msgstr "Skriv grænsefladenavn"
 
 #: ../netconfig.c:101
 msgid ""
@@ -108,15 +108,15 @@ msgstr ""
 "Skriv Ethernet grænseflade forbundet til DSL modemet. Det vil være ethn, "
 "hvor 'n' er et nummer.\n"
 "Hvis du er usikker, så tryk på enter.\n"
-"Skriv grænseflade navn:"
+"Skriv grænsefladenavn:"
 
 #: ../netconfig.c:129
 msgid "Network configuration"
-msgstr "Netværks Konfiguration"
+msgstr "Netværkskonfiguration"
 
 #: ../netconfig.c:132
 msgid "Enter hostname"
-msgstr "Skriv værtnavn"
+msgstr "Skriv værtsnavn"
 
 #: ../netconfig.c:132
 msgid ""
@@ -127,12 +127,12 @@ msgid ""
 "\n"
 "Enter full hostname:"
 msgstr ""
-"Vi bøhøver et navn som du vil give din vært (maskine).\n"
+"Vi behøver det navn som du vil give din vært (maskine).\n"
 "Det fulde værtnavn behøves, som f.eks:\n"
 "\n"
 "frugalware.example.net\n"
 "\n"
-"Skriv det fulde værtnavn:"
+"Skriv det fulde værtsnavn:"
 
 #: ../netconfig.c:151
 msgid ""
@@ -141,39 +141,65 @@ msgid ""
 "If unsure, just hit enter.\n"
 "Enter interface name:"
 msgstr ""
-"Vi behøver navnet på grænsefladen for brug af netværk forbindelsen.\n"
+"Vi behøver navnet på den grænseflade du ønsker at bruge i din "
+"netværksforbindelse.\n"
 "Hvis du er usikker, så tryk enter.\n"
-"Skriv grænseflade navn:"
+"Skriv grænsefladenavn:"
 
 #: ../netconfig.c:160
 msgid "Extended network name"
-msgstr "Udvidet netværk navn"
+msgstr "Udvidet netværksnavn"
 
 #: ../netconfig.c:160
 msgid ""
 "It seems that this network card has a wireless extension. In order to use "
 "it, you must set your extended netwok name (ESSID). Enter your ESSID:"
 msgstr ""
-"Det ser ud til at dette netværks kort har en trådløs forbindelse. For at "
-"bruge dette, må du skrive dit udvidede netvæks navn (ESSID). Skriv dit ESSID:"
+"Det ser ud til at dette netværkskort har en trådløs forbindelse. For at "
+"bruge dette, må du skrive dit udvidede netvæksnavn (ESSID). Skriv dit ESSID:"
 
 #: ../netconfig.c:165
-msgid "Encryption key"
-msgstr "Kryptering nøgle"
+msgid "WEP encryption key"
+msgstr "WEP Krypteringsnøgle"
 
-#: ../netconfig.c:165
+#: ../netconfig.c:166
 msgid ""
-"If you have an encryption key, then please enter it below.\n"
+"If you have a WEP encryption key, then please enter it below.\n"
 "Examples: 4567-89AB-CD or  s:password"
 msgstr ""
-"Hvis du har en kryptering nøgle, så vær venlig at skrin den herunder.\n"
+"Hvis du har en WEP krypteringsnøgle, så vær venlig at skriv den herunder.\n"
 "Eksempler: 4567-89AB-CD eller  s:password"
 
-#: ../netconfig.c:172
-msgid "Set DHCP hostname"
-msgstr "Sæt DHCP værtnavn"
+#: ../netconfig.c:170
+msgid "WPA encryption passphrase"
+msgstr "WPA krypteringsadgangskode"
 
-#: ../netconfig.c:172
+#: ../netconfig.c:171
+msgid ""
+"If you have a WPA passphrase, then please enter it below.\n"
+"Example: secret"
+msgstr ""
+"Hvis du har en WPA adgangskode, så vær venlig at skriv den herunder.\n"
+"Eksempel: hemlig"
+
+#: ../netconfig.c:175
+msgid "WPA driver"
+msgstr "WPA driver"
+
+#: ../netconfig.c:176
+msgid ""
+"If you want to use a custom driver (not the generic one, called 'wext'), "
+"then please enter it below. If unsure, just hit enter."
+msgstr ""
+"Hvis du ønsker at bruge en brugerdefineret driver (ikke den almindelige, "
+"kaldet 'wext'), så vær venlig at skrive den herunder. Hvis du er usikker, så "
+"slå enter."
+
+#: ../netconfig.c:183
+msgid "Set DHCP hostname"
+msgstr "Sæt DHCP værtsnavn"
+
+#: ../netconfig.c:183
 msgid ""
 "Some network providers require that the DHCP hostname beset in order to "
 "connect. If so, they'll have assigned a hostname to your machine. If you "
@@ -181,37 +207,37 @@ msgid ""
 "DHCP hostname, justhit enter."
 msgstr ""
 "Nogle netværk udbydere kræver at et DHCP værtsnavn bliver sat for at opnå "
-"forbindelse. Hvis det er tilfældet, vil de have speciferet et værtsnavn til "
-"din maskine. Hvis du har et DHCP værtsnavn, vær venlig at skrive det "
-"herunder. Hvis du ikke har et DHCP værtsnavn, så slå enter."
+"forbindelse. Hvis det er tilfældet, vil de have specificeret et værtsnavn "
+"til din maskine. Hvis du har et DHCP værtsnavn, vær venlig at skrive det "
+"herunder. Hvis du ikke har et DHCP værtsnavn, slå da enter."
 
 #. options = ip netmask netmask
-#: ../netconfig.c:187
+#: ../netconfig.c:198
 msgid "Enter ip address"
 msgstr "Skriv ip adresse"
 
-#: ../netconfig.c:187
+#: ../netconfig.c:198
 msgid "Enter your IP address for the local machine."
-msgstr "Skriv din IP adresse for den lokale maskine"
+msgstr "Skriv din IP adresse til den lokale maskine"
 
-#: ../netconfig.c:188
+#: ../netconfig.c:199
 msgid "Enter netmask for local network"
-msgstr "Skriv netmask for det lokale netværk"
+msgstr "Skriv netmask til det lokale netværk"
 
-#: ../netconfig.c:189
+#: ../netconfig.c:200
 msgid ""
 "Enter your netmask. This will generally look something like this: "
 "255.255.255.0\n"
 "If unsure, just hit enter."
 msgstr ""
-"Skriv din netmask. Det vi generalt se sådan ud: 255.255.255.0\n"
+"Skriv din netmask. Det vil generalt se sådan ud: 255.255.255.0\n"
 "Hvis du er usikker, så tryk enter."
 
-#: ../netconfig.c:196
+#: ../netconfig.c:207
 msgid "Enter gateway address"
 msgstr "Skriv gateway adresse"
 
-#: ../netconfig.c:196
+#: ../netconfig.c:207
 msgid ""
 "Enter the address for the gateway on your network. If you don't have a "
 "gateway on your network just hit enter, without entering any ip address."
@@ -219,37 +245,37 @@ msgstr ""
 "Skriv adressen for gateway på dit netværk. Hvis du ikke har en gateway på "
 "dit netværk så slå enter, uden at angive nogen ip adresse."
 
-#: ../netconfig.c:202
+#: ../netconfig.c:213
 msgid "Select nameserver"
 msgstr "Vælg navneserver"
 
-#: ../netconfig.c:202
+#: ../netconfig.c:213
 msgid ""
 "Please give the IP address of the name server to use. You canadd more Domain "
 "Name Servers later by editing /etc/sysconfig/network/default.\n"
 "If you don't have a name server on your network just hit enter, without "
 "entering any ip address."
 msgstr ""
-"Vær venlig at opgive IP addressen på navne  serveren du vil bruge. Du kan "
-"tilføje flere Domain Name Servere senere ved at ændre i /etc/sysconfig/"
+"Vær venlig at opgive IP addressen på navneserveren du vil bruge. Du kan "
+"tilføje flere Domain Navneservere senere ved at ændre i /etc/sysconfig/"
 "network/default.\n"
-"Hvis du ikke har nogen navne server på dit netværk så slå enter, Uden at "
+"Hvis du ikke har nogen navneserver på dit netværk så slå enter, Uden at "
 "angive nogen ip adresse."
 
-#: ../netconfig.c:213
+#: ../netconfig.c:224
 msgid "Adjust configuration files"
-msgstr "Tilpas konfiguration filer"
+msgstr "Tilpas konfigurationsfiler"
 
-#: ../netconfig.c:213
+#: ../netconfig.c:224
 msgid "Accept these settings and adjust configuration files?"
-msgstr "Acceptere disse opsætninger og tilpassede konfigurations filer?"
+msgstr "Accepter disse opsætninger og tilpassede konfigurationsfiler?"
 
-#: ../netconfig.c:297
+#: ../netconfig.c:308
 #, c-format
 msgid "No profile loaded.\n"
 msgstr "Ingen profil indlæst.\n"
 
-#: ../netconfig.c:302
+#: ../netconfig.c:313
 #, c-format
 msgid "Current profile: %s\n"
 msgstr "Aktuel profil: %s\n"
