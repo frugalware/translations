@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-06 05:05+0100\n"
-"PO-Revision-Date: 2007-09-26 19:55+0200\n"
+"POT-Creation-Date: 2007-12-26 05:05+0100\n"
+"PO-Revision-Date: 2007-12-24 10:47+0100\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -22,13 +22,13 @@ msgid ""
 "       if you're sure a package manager is not already running,\n"
 "       you can remove %s%s\n"
 msgstr ""
-"       hvis du er sikker på at en pakke håndterer ikke allerede kører,\n"
+"       hvis du er sikker på at en pakkehåndterer ikke allerede kører,\n"
 "       kan du fjerne %s%s\n"
 
 #. and add targets to it
 #: ../add.c:76
 msgid "loading package data... "
-msgstr "indlæser pakke data... "
+msgstr "indlæser pakkedata... "
 
 #: ../add.c:79 ../remove.c:92
 #, c-format
@@ -40,7 +40,7 @@ msgstr "fejlede ved tilføjelse af mål '%s' (%s)\n"
 msgid "done.\n"
 msgstr "færdig.\n"
 
-#: ../add.c:92 ../remove.c:102 ../sync.c:431
+#: ../add.c:92 ../remove.c:102 ../sync.c:451
 #, c-format
 msgid "failed to prepare transaction (%s)\n"
 msgstr "fejlede ved forberedelse af udførelse (%s)\n"
@@ -50,47 +50,47 @@ msgstr "fejlede ved forberedelse af udførelse (%s)\n"
 msgid ":: %s: requires %s"
 msgstr ":: %s: kræves %s"
 
-#: ../add.c:111 ../sync.c:452
+#: ../add.c:111 ../sync.c:472
 #, c-format
 msgid ":: %s: conflicts with %s"
-msgstr ":: %s: konflikter med %s"
+msgstr ":: %s: er i konflikt med %s"
 
-#: ../add.c:121 ../sync.c:577
+#: ../add.c:121 ../sync.c:597
 #, c-format
 msgid "%s%s exists in \"%s\" (target) and \"%s\" (target)"
 msgstr "%s%s eksisterer i \"%s\" (mål) og \"%s\" (mål)"
 
-#: ../add.c:128 ../sync.c:584
+#: ../add.c:128 ../sync.c:604
 #, c-format
 msgid "%s: %s%s exists in filesystem"
 msgstr "%s: %s%s eksisterer i filsystem"
 
-#: ../add.c:136 ../sync.c:592 ../sync.c:599
+#: ../add.c:136 ../sync.c:612 ../sync.c:619
 msgid ""
 "\n"
 "errors occurred, no packages were upgraded.\n"
 msgstr ""
 "\n"
-"fejl forekom, ingen pakker blev opgraderet.\n"
+"fejl forekom, ingen pakker blev opgraderede.\n"
 
-#: ../add.c:143 ../sync.c:462
+#: ../add.c:143 ../sync.c:482
 #, c-format
 msgid ":: %.1f MB required, have %.1f MB"
 msgstr ":: %.1f MB kræves, har %.1f MB"
 
-#: ../add.c:157 ../remove.c:142 ../sync.c:570
+#: ../add.c:157 ../remove.c:142 ../sync.c:590
 #, c-format
 msgid "failed to commit transaction (%s)\n"
 msgstr "fejlede ved udførelse af postering (%s)\n"
 
-#: ../add.c:164 ../remove.c:152 ../sync.c:336 ../sync.c:612
+#: ../add.c:164 ../remove.c:152 ../sync.c:336 ../sync.c:632
 #, c-format
 msgid "failed to release transaction (%s)\n"
 msgstr "fejlede ved frigivelse af postering (%s)\n"
 
 #: ../deptest.c:77
 msgid "memory allocation failure\n"
-msgstr "hukommelse tildeling fejlede\n"
+msgstr "hukommelsestildeling fejlede\n"
 
 #: ../deptest.c:87
 #, c-format
@@ -194,22 +194,22 @@ msgstr "Licens        :"
 #: ../package.c:54
 #, c-format
 msgid "Architecture   : %s\n"
-msgstr "Artitektur   : %s\n"
+msgstr "Arkitektur   : %s\n"
 
 #: ../package.c:55
 #, c-format
 msgid "Size           : %ld\n"
-msgstr "Størelse           : %ld\n"
+msgstr "Størrelse           : %ld\n"
 
 #: ../package.c:58
 #, c-format
 msgid "Build Date     : %s %s\n"
-msgstr "Bygge Dato     : %s %s\n"
+msgstr "Byggedato     : %s %s\n"
 
 #: ../package.c:60
 #, c-format
 msgid "Build Type     : %s\n"
-msgstr "Bygge Type     : %s\n"
+msgstr "Byggetype     : %s\n"
 
 #: ../package.c:60
 msgid "Unknown"
@@ -218,12 +218,12 @@ msgstr "Ukendt"
 #: ../package.c:62
 #, c-format
 msgid "Install Date   : %s %s\n"
-msgstr "Installations Dato   : %s %s\n"
+msgstr "Installationsdato   : %s %s\n"
 
 #: ../package.c:64
 #, c-format
 msgid "Install Script : %s\n"
-msgstr "Installations Script : %s\n"
+msgstr "Installationsscript : %s\n"
 
 #: ../package.c:64
 msgid "Yes"
@@ -241,7 +241,7 @@ msgstr "Årsag         : "
 #: ../package.c:69
 #, c-format
 msgid "Explicitly installed\n"
-msgstr "Absolut installeret\n"
+msgstr "Komplet installeret\n"
 
 #: ../package.c:72
 #, c-format
@@ -271,7 +271,7 @@ msgstr "Kræves Af    :"
 
 #: ../package.c:83
 msgid "Conflicts With :"
-msgstr "Konflikter Med :"
+msgstr "Er i konflikt Med :"
 
 #: ../package.c:85
 #, c-format
@@ -281,7 +281,7 @@ msgstr "Beskrivelse    : "
 #: ../package.c:110
 #, c-format
 msgid "error calculating md5sum or sha1sum for %s\n"
-msgstr "fejl beregning md5sum eller sha1sum for %s\n"
+msgstr "fejlberegning md5sum eller sha1sum for %s\n"
 
 #: ../package.c:115 ../package.c:117
 #, c-format
@@ -330,7 +330,7 @@ msgstr "Fjerner           :"
 
 #: ../package.c:147
 msgid "Conflicts With    :"
-msgstr "Konflikter Med    :"
+msgstr "Er i konflikt Med    :"
 
 #: ../package.c:148
 msgid "Replaces          :"
@@ -339,12 +339,12 @@ msgstr "Erstatter          :"
 #: ../package.c:150
 #, c-format
 msgid "Size (compressed) : %ld\n"
-msgstr "Størelse (komprimeret) : %ld\n"
+msgstr "Størrelse (komprimeret) : %ld\n"
 
 #: ../package.c:151
 #, c-format
 msgid "Size (installed)  : %ld\n"
-msgstr "Størelse (installeret)  : %ld\n"
+msgstr "Størrelse (installeret)  : %ld\n"
 
 #: ../package.c:152
 #, c-format
@@ -372,7 +372,7 @@ msgstr ""
 #: ../package.c:189
 #, c-format
 msgid "No changelog available for '%s'.\n"
-msgstr "Ingen ændrings log tilgængelig for '%s'.\n"
+msgstr "Ingen ændringslog tilgængelig for '%s'.\n"
 
 #: ../pacman-g2.c:95
 #, c-format
@@ -437,7 +437,7 @@ msgstr "valgmuligheder:\n"
 #: ../pacman-g2.c:108 ../pacman-g2.c:115 ../pacman-g2.c:126 ../pacman-g2.c:147
 #, c-format
 msgid "  -d, --nodeps        skip dependency checks\n"
-msgstr "  -d, --nodeps        spring afhængigheds tjeks over\n"
+msgstr "  -d, --nodeps        spring afhængighedstjeks over\n"
 
 #: ../pacman-g2.c:109 ../pacman-g2.c:127 ../pacman-g2.c:149
 #, c-format
@@ -474,7 +474,7 @@ msgstr "  -k, --dbonly        fjern kun database post, fjern ikke filer\n"
 #: ../pacman-g2.c:117
 #, c-format
 msgid "  -n, --nosave        remove configuration files as well\n"
-msgstr "  -n, --nosave        fjern også konfigurations filerne\n"
+msgstr "  -n, --nosave        fjern også konfigurationsfilerne\n"
 
 #: ../pacman-g2.c:118
 #, c-format
@@ -509,8 +509,8 @@ msgstr "  -c, --changelog     se ændrings log på en pakke\n"
 msgid ""
 "  -e, --orphans       list all packages that were installed as a dependency\n"
 msgstr ""
-"  -e, --orphans       liste alle pakker der er installeret som en "
-"afhængighed\n"
+"  -e, --orphans       lav en liste over alle pakker der er installeret som "
+"en afhængighed\n"
 
 #: ../pacman-g2.c:133
 #, c-format
@@ -520,17 +520,17 @@ msgstr "                      og er ikke krævet af nogen andre pakker\n"
 #: ../pacman-g2.c:134 ../pacman-g2.c:150
 #, c-format
 msgid "  -g, --groups        view all members of a package group\n"
-msgstr "  -g, --groups        se alle medlemmer af en pakke gruppe\n"
+msgstr "  -g, --groups        se alle medlemmer af en pakkegruppe\n"
 
 #: ../pacman-g2.c:135
 #, c-format
 msgid "  -i, --info          view package information\n"
-msgstr "  -i, --info          se pakke information\n"
+msgstr "  -i, --info          se pakkeinformation\n"
 
 #: ../pacman-g2.c:136
 #, c-format
 msgid "  -l, --list          list the contents of the queried package\n"
-msgstr "  -l, --list          liste indholdet af den forespurgte pakke\n"
+msgstr "  -l, --list          lav en liste over den forespurgte pakke\n"
 
 #: ../pacman-g2.c:137
 #, c-format
@@ -538,13 +538,13 @@ msgid ""
 "  -m, --foreign       list all packages that were not found in the sync db"
 "(s)\n"
 msgstr ""
-"  -m, --foreign       liste alle pakker der ikke var fundet i synkron "
+"  -m, --foreign       lav en liste over pakker der ikke var fundet i synkron "
 "databasse(r)\n"
 
 #: ../pacman-g2.c:138
 #, c-format
 msgid "  -o, --owns <file>   query the package that owns <file>\n"
-msgstr "  -o, --owns <fil>   forespørge pakken der ejer <fil>\n"
+msgstr "  -o, --owns <fil>   forespørge pakken der ejes <fil>\n"
 
 #: ../pacman-g2.c:139
 #, c-format
@@ -552,13 +552,13 @@ msgid ""
 "  -p, --file          pacman-g2 will query the package file [package] "
 "instead of\n"
 msgstr ""
-"  -p, --file          pacman-g2 vil forespørge pakke filen [pakke] i stedet "
+"  -p, --file          pacman-g2 vil forespørge pakkefilen [pakke] i stedet "
 "for\n"
 
 #: ../pacman-g2.c:140
 #, c-format
 msgid "                      looking in the database\n"
-msgstr "                      ser efter i databassen\n"
+msgstr "                      ser efter i databasen\n"
 
 #: ../pacman-g2.c:141
 #, c-format
@@ -623,14 +623,14 @@ msgstr ""
 #, c-format
 msgid ""
 "  -y, --refresh       download fresh package databases from the server\n"
-msgstr "  -y, --refresh       download ny pakke database fra serveren\n"
+msgstr "  -y, --refresh       download ny pakkedatabase fra serveren\n"
 
 #: ../pacman-g2.c:156
 #, c-format
 msgid ""
 "      --ignore <pkg>  ignore a package upgrade (can be used more than once)\n"
 msgstr ""
-"      --ignore <pkg>  ignorere en pakke opgradering (kan bruges mere ind en "
+"      --ignore <pkg>  ignorer en pakkeopgradering (kan bruges mere end en "
 "gang)\n"
 
 #: ../pacman-g2.c:157
@@ -644,7 +644,7 @@ msgstr ""
 #: ../pacman-g2.c:159
 #, c-format
 msgid "      --config <path> set an alternate configuration file\n"
-msgstr "      --config <sti> vælg en alternativ konfigurations fil\n"
+msgstr "      --config <sti> vælg en alternativ konfigurationsfil\n"
 
 #: ../pacman-g2.c:160
 #, c-format
@@ -669,7 +669,7 @@ msgstr ""
 msgid ""
 "      --noscriptlet   do not execute the install scriptlet if there is any\n"
 msgstr ""
-"      --noscriptlet   udfør ikke installations skriptet hvis der er nogen\n"
+"      --noscriptlet   udfør ikke installationsskriptet hvis der er nogen\n"
 
 #: ../pacman-g2.c:164
 #, c-format
@@ -684,7 +684,7 @@ msgstr "  -r, --root <sti>   vælg en alternativ installations root\n"
 #: ../pacman-g2.c:166
 #, c-format
 msgid "  -b, --dbpath <path> set an alternate database location\n"
-msgstr "  -b, --dbpath <sti> vælg en alternativ database placering\n"
+msgstr "  -b, --dbpath <sti> vælg en alternativ databaseplacering\n"
 
 #: ../pacman-g2.c:179
 #, c-format
@@ -694,7 +694,7 @@ msgstr "                       Dette program må frit gen-distribueres under\n"
 #: ../pacman-g2.c:180
 #, c-format
 msgid "                       the terms of the GNU General Public License\n"
-msgstr "                       reglerne af GNU General Public Licens\n"
+msgstr "                       reglerne for GNU General Public Licens\n"
 
 #: ../pacman-g2.c:361
 msgid "bad root path"
@@ -702,11 +702,11 @@ msgstr "dårlig root sti"
 
 #: ../pacman-g2.c:389
 msgid "only one operation may be used at a time\n"
-msgstr "kun en handling må blive udført en af gangen\n"
+msgstr "kun en handling må blive udført af gangen\n"
 
 #: ../pacman-g2.c:489
 msgid "you cannot perform this operation unless you are root.\n"
-msgstr "du kan ikke udføre denne handling med-mindre du er root.\n"
+msgstr "du kan ikke udføre denne handling med mindre du er root.\n"
 
 #: ../pacman-g2.c:513
 #, c-format
@@ -805,7 +805,7 @@ msgstr "Målene:"
 #: ../pacman-g2.c:607
 #, c-format
 msgid "could not register 'local' database (%s)\n"
-msgstr "kunne ikke registre 'local' database (%s)\n"
+msgstr "kunne ikke registre 'lokal' database (%s)\n"
 
 #: ../pacman-g2.c:614
 msgid "no targets specified (use -h for help)\n"
@@ -818,20 +818,20 @@ msgstr "ingen handling specificeret (brug -h for hjælp)\n"
 #: ../query.c:77
 #, c-format
 msgid ":: the database seems to be consistent\n"
-msgstr ":: databasen ser ud til være ensartet\n"
+msgstr ":: databasen ser ud til at være ensartet\n"
 
 #: ../query.c:89 ../sync.c:248
 msgid "no usable package repositories configured.\n"
-msgstr "ingen brugbare pakke arkiver konfigureret.\n"
+msgstr "ingen brugbare pakkearkiver konfigureret.\n"
 
 #: ../query.c:128
 #, c-format
 msgid "group \"%s\" was not found\n"
-msgstr "gruppe \"%s\" var ikke fundet\n"
+msgstr "gruppe \"%s\" blev ikke fundet\n"
 
 #: ../query.c:138
 msgid "no package file was specified for --file\n"
-msgstr "ingen pakke fil var speciferet for --file\n"
+msgstr "ingen pakkefil var speciferet for --file\n"
 
 #: ../query.c:142
 #, c-format
@@ -884,7 +884,7 @@ msgid ""
 "Targets:"
 msgstr ""
 "\n"
-"Målene:"
+"Mål:"
 
 #. get confirmation
 #: ../remove.c:132
@@ -913,12 +913,12 @@ msgstr " %s er fuldt opdateret\n"
 #: ../sync.c:171
 #, c-format
 msgid "package \"%s\" was not found.\n"
-msgstr "pakke \"%s\" var ikke fundet.\n"
+msgstr "pakke \"%s\" blev ikke fundet.\n"
 
 #: ../sync.c:209
 #, c-format
 msgid "repository \"%s\" was not found.\n"
-msgstr "arkiv \"%s\" var ikke fundet.\n"
+msgstr "arkiv \"%s\" blev ikke fundet.\n"
 
 #: ../sync.c:256
 msgid "Do you want to remove old packages from cache? [Y/n] "
@@ -948,15 +948,15 @@ msgstr ":: Sykroniserer pakke databaser...\n"
 
 #: ../sync.c:277
 msgid "synchronizing package lists"
-msgstr "sykroniserer pakke lister"
+msgstr "sykroniserer pakkelister"
 
 #: ../sync.c:311
 msgid ":: Starting local database upgrade...\n"
-msgstr ":: Starter lokal database opgradering...\n"
+msgstr ":: Starter lokal databaseopgradering...\n"
 
 #: ../sync.c:312
 msgid "starting full system upgrade"
-msgstr "starter fuld system opgradering"
+msgstr "starter fuld systemopgradering"
 
 #: ../sync.c:330
 msgid ""
@@ -973,40 +973,40 @@ msgstr ":: Det anbefales at du tillader pacman-g2 at opgradere sig selv\n"
 #: ../sync.c:332
 msgid ":: first, then you can re-run the operation with the newer version.\n"
 msgstr ""
-":: først, så kan du gennem-føre handlingen igen med den nyere version.\n"
+":: først, så kan du gennemføre handlingen igen med den nyere version.\n"
 
 #: ../sync.c:334
 msgid ":: Upgrade pacman-g2 first? [Y/n] "
-msgstr ":: Opgradere pacman-g2 først? [J/n] "
+msgstr ":: Opgrader pacman-g2 først? [J/n] "
 
-#: ../sync.c:349 ../sync.c:370
+#: ../sync.c:349 ../sync.c:370 ../sync.c:413
 #, c-format
 msgid "could not add target '%s': %s\n"
 msgstr "kunne ikke tilføje mål '%s': %s\n"
 
 #: ../sync.c:388
 msgid ":: Install whole content? [Y/n] "
-msgstr ":: Installere hele indholdet? [J/n] "
+msgstr ":: Installer hele indholdet? [J/n] "
 
 #: ../sync.c:395
 #, c-format
 msgid ":: Install %s from group %s? [Y/n] "
-msgstr ":: Installere %s fra gruppe %s? [J/n] "
+msgstr ":: Installer %s fra gruppe %s? [J/n] "
 
-#: ../sync.c:418
+#: ../sync.c:438
 #, c-format
 msgid "could not add target '%s': not found in sync db\n"
 msgstr "kunne ikke tilføje mål '%s': ikke fundet i sync db\n"
 
-#: ../sync.c:437
+#: ../sync.c:457
 msgid "requires"
 msgstr "kræves"
 
-#: ../sync.c:437
+#: ../sync.c:457
 msgid "is required by"
 msgstr "er krævet af"
 
-#: ../sync.c:514
+#: ../sync.c:534
 msgid ""
 "\n"
 "Remove:  "
@@ -1014,33 +1014,33 @@ msgstr ""
 "\n"
 "Fjern:  "
 
-#: ../sync.c:530
+#: ../sync.c:550
 msgid ""
 "\n"
 "Targets: "
 msgstr ""
 "\n"
-"Målene: "
+"Mål: "
 
-#: ../sync.c:533
+#: ../sync.c:553
 #, c-format
 msgid ""
 "\n"
 "Total Package Size:   %.1f MB\n"
 msgstr ""
 "\n"
-"Total Pakke Størelse:   %.1f MB\n"
+"Total Pakkestørrelse:   %.1f MB\n"
 
-#: ../sync.c:535
+#: ../sync.c:555
 #, c-format
 msgid ""
 "\n"
 "Total Uncompressed Package Size:   %.1f MB\n"
 msgstr ""
 "\n"
-"Total Ukomprimeret Pakke Størelse:   %.1f MB\n"
+"Total Ukomprimeret Pakkestørrelse:   %.1f MB\n"
 
-#: ../sync.c:542
+#: ../sync.c:562
 msgid ""
 "\n"
 "Beginning download...\n"
@@ -1048,29 +1048,29 @@ msgstr ""
 "\n"
 "Begynder at downloade...\n"
 
-#: ../sync.c:546
+#: ../sync.c:566
 msgid "Proceed with download? [Y/n] "
-msgstr "Forsætte med download? [J/n] "
+msgstr "Fortsæt med at downloade? [J/n] "
 
-#: ../sync.c:554
+#: ../sync.c:574
 msgid ""
 "\n"
 "Beginning upgrade process...\n"
 msgstr ""
 "\n"
-"Begynder opgraderings proces...\n"
+"Begynder opgraderingsproces...\n"
 
-#: ../sync.c:558
+#: ../sync.c:578
 msgid "Proceed with upgrade? [Y/n] "
-msgstr "Forsætte med opgradering? [J/n] "
+msgstr "Fortsæt med at opgradere? [J/n] "
 
 #: ../trans.c:59
 msgid "checking dependencies... "
-msgstr "tjeker afhængigheder... "
+msgstr "tjekker afhængigheder... "
 
 #: ../trans.c:63
 msgid "checking for file conflicts... "
-msgstr "tjeker for fil konflikter... "
+msgstr "tjekker for filkonflikter... "
 
 #: ../trans.c:67
 msgid "resolving dependencies... "
@@ -1112,7 +1112,7 @@ msgstr "opgraderet %s (%s -> %s)"
 
 #: ../trans.c:138
 msgid "checking package integrity... "
-msgstr "tjeker pakke integritet... "
+msgstr "tjeker pakkeintegritet... "
 
 #: ../trans.c:152
 msgid " done.\n"
@@ -1138,12 +1138,12 @@ msgstr "] 100%    LOKAL "
 #: ../trans.c:190
 #, c-format
 msgid ":: %s requires %s, but it is in IgnorePkg. Install anyway? [Y/n] "
-msgstr ":: %s kræves %s, men den er i IgnorePkg. Installer aligevel? [J/n] "
+msgstr ":: %s kræves %s, men den er i IgnorePkg. Installer alligevel? [J/n] "
 
 #: ../trans.c:204
 #, c-format
 msgid ":: %s is designated as a HoldPkg.  Remove anyway? [Y/n] "
-msgstr ":: %s er benænvt som HoldPkg.  Fjern aligevel? [J/n] "
+msgstr ":: %s er benænvt som HoldPkg.  Fjern alligevel? [J/n] "
 
 #: ../trans.c:217
 #, c-format
@@ -1158,13 +1158,13 @@ msgstr ":: %s konflikter med %s. Fjern %s? [J/n] "
 #: ../trans.c:248
 #, c-format
 msgid ":: %s-%s: local version is newer. Upgrade anyway? [Y/n] "
-msgstr ":: %s-%s: lokal version er nyere. Opgrader aligevel? [J/n] "
+msgstr ":: %s-%s: lokal version er nyere. Opgrader alligevel? [J/n] "
 
 #: ../trans.c:266
 #, c-format
 msgid ":: %s-%s: local version is up to date. Upgrade anyway? [Y/n] "
 msgstr ""
-":: %s-%s: lokal version er fuldstændig opdateret. Opgrader aligevel? [J/n] "
+":: %s-%s: lokal version er fuldstændig opdateret. Opgrader alligevel? [J/n] "
 
 #: ../trans.c:284
 #, c-format
@@ -1185,7 +1185,7 @@ msgstr "fjerner"
 
 #: ../trans.c:303
 msgid "checking for file conflicts"
-msgstr "tjeker for fil konflikter"
+msgstr "tjekker for filkonflikter"
 
 #: ../trans.c:304
 msgid "looking for inter-conflicts"
