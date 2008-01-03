@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-11-24 05:19+0100\n"
-"PO-Revision-Date: 2007-12-02 21:46+0100\n"
+"PO-Revision-Date: 2008-01-03 15:10+0100\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -364,6 +364,13 @@ msgid ""
 "\tis up, before it is down, and after, respectively. Multiple usage is\n"
 "\tOK, the commands are executed in the specified order.\n"
 msgstr ""
+"post_down = <commande>::\n"
+"\tLa syntaxe de ces directives est la même : Vous pouvez définir ces\n"
+"\tcommandes pour qu'elles soient exécutée, respectivement, avant que "
+"l'interface\n"
+"\tn'apparaisse, après que l'interface apparaisse, avant qu'il disparaisse, et "
+"après. L'utilisation de multiple entrées est\n"
+" \tautorisée et les commandes sont exécutées dans l'ordre spécifié.\n"
 
 # type: Plain text
 #: netconfig.txt:96
@@ -374,7 +381,7 @@ msgid ""
 "\tfirst will be used.\n"
 msgstr ""
 "mac = <mac address>::\n"
-"\tForce l'adresse mac de la carte. Si elle définit plus d'une fois,\n"
+"\tFroce l'adresse mac de la carte. Si elle est définie plus d'une fois,\n"
 "\tla première sera utilisée.\n"
 
 # type: Plain text
@@ -386,6 +393,12 @@ msgid ""
 "\tDomain ID) for wireless network adapters. If defined more than once,\n"
 "\tthe first will be used.\n"
 msgstr ""
+"essid = <essid>::\n"
+"\tDéfini l'ESSID (ou le nom du réseau - dans certain produit, il peut être "
+"aussi appelé\n"
+" \tl'ID du Domaine) pour les adaptateurs de réseaux sans fil. S'il est "
+"définit plus d'une fois,\n"
+" \tle premier sera utilisé.\n"
 
 # type: Plain text
 #: netconfig.txt:111
@@ -401,6 +414,22 @@ msgid ""
 "\tassociated with any cell and passively monitor all packets on the frequency) or\n"
 "\tAuto. If defined more than once, the first will be used.\n"
 msgstr ""
+"mode = <mode>::\n"
+"\tDéfini le mode de fonctionnement du matériel pour les adaptateurs de "
+"réseaux sans fil. Le mode\n"
+"\tpeut être Ad- Hoc (réseau composé de seulement une cellule et sans point "
+"d'accès),\n"
+"\tManaged (noeud connecté à un réseau composé de plusieurs points d'accès "
+"avec\n"
+"\tparcours), Master (le noeud est en synchronisation maître ou est comme un "
+"point\n"
+"\td'accès), Repeater (le noeud envoie les paquets entre les autres noeuds "
+"radio),\n"
+"\tSecondary (le noeud est comme un soutien maître/redoublant), Monitor (le "
+"noeud n'est\n"
+"\tassocié avec aucune cellule et contrôle passivement tous les paquets de la "
+"fréquence) ou\n"
+"\tAuto. S'il est définit plus d'une fois, le premier sera utilisé.\n"
 
 # type: Plain text
 #: netconfig.txt:114
@@ -409,8 +438,8 @@ msgid ""
 "gateway = [default gw] <ip>::\n"
 "\tRoute packets via a gateway.\n"
 msgstr ""
-"gateway = [default gw] <ip>::\n"
-"\tRedirige les paquets via une gateway.\n"
+"gateway = [passerelle par défaut <ip>::\n"
+"\tRedirige les paquets via une passerelle\n"
 
 # type: Plain text
 #: netconfig.txt:118
@@ -419,6 +448,10 @@ msgid ""
 "prefix is used, then adds a default route. If defined more than once, the "
 "first will be used. If using DHCP, then this directive is ignored."
 msgstr ""
+"NOTE : Premièrement, la passerelle spécifiée doit être joignable. Si le "
+"préfixe 'passerelle par défaut' est utilisé, il ajoute ensuite un trajet par "
+"défaut. S'il est défini plus d'une fois, le premier sera utilisé. Si DHCP "
+"est utilisé, cette directive est ignorée."
 
 # type: Plain text
 #: netconfig.txt:122
@@ -428,6 +461,9 @@ msgid ""
 "\tUsed to manipulate encryption or scrambling keys and security mode for\n"
 "\twireless networks. Use this for WEP only, use `wpa_psk` for WPA.\n"
 msgstr ""
+"key = <clé>::\n"
+"\tUtilisé pour manipuler le cryptage des différentes clés et le mode de sécurité pour\n"
+" \tles réseaux sans-fil. Utilisez cette option seulement pour les clés WEP, sinon, utilisez 'wpa_psk' pour les clés WPA.\n"
 
 # type: Plain text
 #: netconfig.txt:126
@@ -437,6 +473,9 @@ msgid ""
 "\tIf this directive is specified, then wpa_supplicant will be invoked to\n"
 "\tinitialize WPA encryption before setting any other parameter (like ESSID).\n"
 msgstr ""
+"wpa_psk = <phrase secrète>::\n"
+"\tSi cette directive est spécifiée, wpa_supplicant va être utilisé pour\n"
+"\tutiliser le cryptage WPA avant de régler d'autres paramètres (tel que le ESSID).\n"
 
 # type: Plain text
 #: netconfig.txt:130
@@ -446,6 +485,9 @@ msgid ""
 "\tThe driver to be used by wpa_supplicant. The default is `wext`. Possible drivers\n"
 "\tare:\n"
 msgstr ""
+"wpa_driver = <pilote>::\n"
+"\tLe pilote qui va être utilisé par wpa_supplicant. Le pilote par défaut est 'wext'. Les pilotes possibles\n"
+"\tsont:\n"
 
 # type: Plain text
 #: netconfig.txt:137
@@ -458,6 +500,12 @@ msgid ""
 "\t*  atmel: ATMEL AT76C5XXx (USB, PCMCIA)\n"
 "\t*  ndiswrapper: Linux ndiswrapper\n"
 msgstr ""
+"\t*  wext: Linux wireless extensions (generic)\n"
+"\t*  hostap: Host AP driver (Intersil Prism2/2.5/3)\n"
+"\t*  prism54: Prism54.org driver (Intersil Prism GT/Duette/Indigo)\n"
+"\t*  madwifi: MADWIFI 802.11 support (Atheros, etc.)\n"
+"\t*  atmel: ATMEL AT76C5XXx (USB, PCMCIA)\n"
+"\t*  ndiswrapper: Linux ndiswrapper\n"
 
 # type: Plain text
 #: netconfig.txt:142
@@ -468,6 +516,11 @@ msgid ""
 "\t10`. You may want to specify here the dhcp hostname, then you'll need `-t 10 -h\n"
 "\t<hostname>`.\n"
 msgstr ""
+"dhcp_opts = <options>::\n"
+"\tCes options sont passé démon-client DHCP. Par défaut, c'est '-t\n"
+"\t10'. Vous devrez sûrement spécifier ici le nom de l'hôte DHCP, ensuite, "
+"vous aurez besoin '-t 10 -h\n"
+"\t<nom de l'hôte>'.\n"
 
 # type: Plain text
 #: netconfig.txt:146
@@ -477,6 +530,9 @@ msgid ""
 "\tThis specifies the dhcp client to use. It can be either dhcpcd\n"
 "\t(default) or dhclient.\n"
 msgstr ""
+"dhcpclient = <client dhcp>::\n"
+"\tCeci spécifie le client DHCP à utiliser. Il peut être soit dhcpcd\n"
+"\t(par défaut) ou dhclient.\n"
 
 # type: Plain text
 #: netconfig.txt:148
@@ -604,6 +660,8 @@ msgid ""
 "NOTE: If you use several pre_up and/or post_down lines, this pre_up should "
 "be the first, and this post_down should be the last one."
 msgstr ""
+"NOTE : Si vous utilisez plusieurs lignes pre_up et/ou post_down, ce pre_up "
+"devrait être le premier et ce post_down devrait être le dernier."
 
 # type: Plain text
 #: netconfig.txt:200
@@ -627,6 +685,9 @@ msgid ""
 "post_down = killall wpa_supplicant\n"
 "----\n"
 msgstr ""
+"pre_up = wpa_supplicant -Dwext -iwlan0 -c /etc/wpa_supplicant.conf -w -B\n"
+"post_down = killall wpa_supplicant\n"
+"----\n"
 
 # type: Plain text
 #: netconfig.txt:210
@@ -652,6 +713,11 @@ msgid ""
 "}\n"
 "----\n"
 msgstr ""
+"network={\n"
+"        ssid=\"youressid\"\n"
+"        psk=\"secret\"\n"
+"}\n"
+"----\n"
 
 # type: Plain text
 #: netconfig.txt:222
@@ -671,7 +737,7 @@ msgstr "== AUTHOR"
 # type: Plain text
 #: netconfig.txt:226
 msgid "Written by Miklos Vajna."
-msgstr "Écrit par Miklos Vajna."
+msgstr "Ecrit par Miklos Vajna."
 
 # type: Plain text
 #: netconfig.txt:228
@@ -696,7 +762,7 @@ msgstr "== VOIR AUSSI"
 #: netconfig.txt:233
 #, no-wrap
 msgid "*ifconfig*(8), *route*(8), *iwconfig*(8), *dhcpcd*(8)\n"
-msgstr ""
+msgstr "*ifconfig*(8), *route*(8), *iwconfig*(8), *dhcpcd*(8)\n"
 
 # type: Plain text
 #: raidconfig.txt:2
@@ -706,7 +772,7 @@ msgstr "= raidconfig(1)"
 # type: Plain text
 #: raidconfig.txt:6
 msgid "raidconfig - a menu-driven tool to create raid arrays"
-msgstr ""
+msgstr "raidconfig - un outil pour créer des baies RAID"
 
 # type: Plain text
 #: raidconfig.txt:10
@@ -716,7 +782,7 @@ msgstr "raidconfig [options]"
 # type: Plain text
 #: raidconfig.txt:14
 msgid "`raidconfig` is a menu-driven curses front-end to `mdadm`."
-msgstr ""
+msgstr "'raidconfig' est une interface curses pour 'mdadm'"
 
 # type: Plain text
 #: timeconfig.txt:2
@@ -774,6 +840,8 @@ msgid ""
 "--live <resolution> <depth>::\n"
 "\tNon-interactive mode, used by ie. FWLive.\n"
 msgstr ""
+"--live <résolution> <profondeur>::\n"
+"\tMode non-intéractif utilisé par FWLive par exemple.\n"
 
 # type: Plain text
 #: xwmconfig.txt:2
@@ -783,7 +851,7 @@ msgstr "= xwmconfig(1)"
 # type: Plain text
 #: xwmconfig.txt:6
 msgid "xwmconfig - configures your system-wide default window manager"
-msgstr ""
+msgstr "xwmconfig - configure le gestionnaire de fenêtre de votre système"
 
 # type: Plain text
 #: xwmconfig.txt:10
@@ -807,6 +875,8 @@ msgid ""
 "--force::\n"
 "\tRun this tool even if GDM or KDM are installed.\n"
 msgstr ""
+"--force::\n"
+"\tLance cet outil même si GDM ou KDM sont installé.\n"
 
 # type: Plain text
 #: xwmconfig.txt:26
@@ -816,4 +886,4 @@ msgid ""
 "\tDo not print any warning if GDM or KDM are installed.\n"
 msgstr ""
 "--silent::\n"
-"\tNe pas afficher de messages d'erreurs si GDM ou KDM sont installé.\n"
+"\tNe pas afficher de messages d'erreurs même si GDM ou KDM sont installé.\n"
