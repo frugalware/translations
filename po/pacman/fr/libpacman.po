@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-12-26 05:05+0100\n"
-"PO-Revision-Date: 2007-11-16 00:46+0100\n"
+"POT-Creation-Date: 2008-01-03 05:04+0100\n"
+"PO-Revision-Date: 2008-01-03 15:13+0100\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: Français\n"
 "MIME-Version: 1.0\n"
@@ -553,8 +553,8 @@ msgstr "analyse des conflits: base de donnes comparée a la cible '%s'"
 msgid "db vs targs: found %s as a conflict for %s"
 msgstr "comparaison base de donnée / cibles: trouve %s en conflit avec %s"
 
-#: ../conflict.c:254 ../conflict.c:353 ../deps.c:70 ../deps.c:614
-#: ../deps.c:654 ../group.c:40 ../handle.c:52 ../package.c:103 ../sync.c:63
+#: ../conflict.c:254 ../conflict.c:353 ../deps.c:70 ../deps.c:624
+#: ../deps.c:664 ../group.c:40 ../handle.c:52 ../package.c:103 ../sync.c:63
 #: ../sync.c:632 ../sync.c:648 ../sync.c:744 ../trans.c:65 ../util.c:693
 #: ../util.c:700
 #, c-format
@@ -612,47 +612,47 @@ msgstr ""
 "analyse des dépendances: la mise à jour de '%s' ne satisfera pas une "
 "dépendance de '%s'"
 
-#: ../deps.c:383
+#: ../deps.c:389
 #, c-format
 msgid "checkdeps: found %s as a dependency for %s"
 msgstr "analyse des dépendances: trouve %s comme dépendance pour %s"
 
-#: ../deps.c:419
+#: ../deps.c:425
 #, c-format
 msgid "checkdeps: found %s which requires %s"
 msgstr "vérification des dépendances: %s nécessite %s"
 
-#: ../deps.c:507
+#: ../deps.c:517
 #, c-format
 msgid "cannot find package \"%s\" or anything that provides it!"
 msgstr "ne peut trouver le paquet \"%s\" ou quoique ce soit qui le fournisse!"
 
-#: ../deps.c:512
+#: ../deps.c:522
 msgid "dep is NULL!"
 msgstr "dep est NULL!"
 
-#: ../deps.c:524
+#: ../deps.c:534
 #, c-format
 msgid "excluding %s -- explicitly installed"
 msgstr "exclue %s -- explicitement installe"
 
 #. add it to the target list
-#: ../deps.c:541
+#: ../deps.c:551
 #, c-format
 msgid "loading ALL info for '%s'"
 msgstr "chargement de TOUTES les infos pour '%s'"
 
-#: ../deps.c:544
+#: ../deps.c:554
 #, c-format
 msgid "adding '%s' to the targets"
 msgstr "ajoute '%s' aux cibles"
 
-#: ../deps.c:586
+#: ../deps.c:596
 #, c-format
 msgid "%s provides dependency %s -- skipping"
 msgstr "%s fourni la dépendance %s -- ignore"
 
-#: ../deps.c:610
+#: ../deps.c:620
 #, c-format
 msgid ""
 "cannot resolve dependencies for \"%s\" (\"%s\" is not in the package set)"
@@ -661,33 +661,33 @@ msgstr ""
 "de paquet)"
 
 #. this dep is already in the target list
-#: ../deps.c:627
+#: ../deps.c:637
 #, c-format
 msgid "dependency %s is already in the target list -- skipping"
 msgstr "la dépendance %s est déjà dans la liste de cible -- ignorée"
 
-#: ../deps.c:647
+#: ../deps.c:657
 #, c-format
 msgid "pulling dependency %s (needed by %s)"
 msgstr "récupère la dépendance %s (requise par %s)"
 
-#: ../deps.c:651
+#: ../deps.c:661
 #, c-format
 msgid "cannot resolve dependencies for \"%s\""
 msgstr "ne peut résoudre les dépendances pour \"%s\""
 
 #. cycle detected -- skip it
-#: ../deps.c:667
+#: ../deps.c:677
 #, c-format
 msgid "dependency cycle detected: %s"
 msgstr "cycle de dépendances détecte: %s"
 
-#: ../deps.c:707
+#: ../deps.c:721
 #, c-format
 msgid "depcmp: %s-%s %s %s-%s => %s"
 msgstr "depcmp: %s-%s %s %s-%s => %s"
 
-#: ../deps.c:712
+#: ../deps.c:726
 #, c-format
 msgid "depcmp: %s-%s %s %s => %s"
 msgstr "depcmp: %s-%s %s %s => %s"
@@ -909,9 +909,9 @@ msgid "PM_OPT_CACHEDIR set to '%s'"
 msgstr "PM_OPT_CACHEDIR défini à '%s'"
 
 #: ../handle.c:153
-#, fuzzy, c-format
+#, c-format
 msgid "PM_OPT_HOOKSDIR set to '%s'"
-msgstr "PM_OPT_CACHEDIR défini à '%s'"
+msgstr "PM_OPT_HOOKSDIR défini à '%s'"
 
 #: ../handle.c:172
 #, c-format
@@ -1508,14 +1508,14 @@ msgid "could not remove tmpdir %s"
 msgstr "n'a pas pu effacer tmpdir %s"
 
 #: ../util.c:552
-#, fuzzy, c-format
+#, c-format
 msgid "executing %s hooks..."
-msgstr "exécute le script %s ..."
+msgstr "exécute le crochet %s ..."
 
 #: ../util.c:570
-#, fuzzy, c-format
+#, c-format
 msgid "opening hooks directory failed (%s)"
-msgstr "conserve le répertoire %s"
+msgstr "l'ouverture du répertoire des crochets à échoué (%s)"
 
 #: ../util.c:688
 #, c-format
