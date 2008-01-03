@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-01-03 05:04+0100\n"
-"PO-Revision-Date: 2008-01-03 15:34+0100\n"
+"PO-Revision-Date: 2008-01-03 15:48+0100\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -524,53 +524,54 @@ msgstr "=== Directives du FrugalBuild"
 
 # type: Plain text
 #: FrugalBuild.txt:186
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "pkgname::\n"
 "\tThe name of the package. It can contain hyphens and should be lowercase. It is\n"
 "\tusually the name part of the source tarball.\n"
 msgstr ""
 "pkgname::\n"
-"\tLe nom du paquet. Il peut contenir des traits d'union et peut être en minuscule. C'est\n"
-"\td'habitude le nom donné au tarball des sources."
+"\tLe nom du paquet. Il peut contenir des traits d'union et peut être en "
+"minuscule. C'est\n"
+"\td'habitude le nom donné au tarball des sources.\n"
 
 # type: Plain text
 #: FrugalBuild.txt:190
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "pkgver::\n"
 "\tThis is the version of the software as released from the author (eg,\n"
 "\t2.7.1).\n"
 msgstr ""
 "pkgver::\n"
-"\tCeci est la version du logiciel étant en release par l'auteur (comme,\n"
+"\tCeci est la version du logiciel étant publié par l'auteur (comme,\n"
 "\t2.7.1).\n"
 
 # type: Plain text
 #: FrugalBuild.txt:193
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "pkgrel::\n"
 "\tThis is the release number specific to Frugalware Linux packages.\n"
 msgstr ""
 "pkgrel::\n"
-"\tCela est la numéro spécifique de release du paquet pour Frugalware Linux.\n"
+"\tCela est le numéro de version spécifique du paquet pour Frugalware Linux.\n"
 
 # type: Plain text
 #: FrugalBuild.txt:197
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "pkgdesc::\n"
 "\tThis should be a brief description of the package and its\n"
 "\tfunctionality.\n"
 msgstr ""
 "pkgdesc::\n"
-"\tCa peut être une description brève du paquet et de ses\n"
+"\tCela peut être une description brève du paquet et de ses\n"
 "\tfonctionnalités.\n"
 
 # type: Plain text
 #: FrugalBuild.txt:201
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "pkgdesc_localized::\n"
 "\tArray of the localized package descriptions. The format is the\n"
@@ -582,7 +583,7 @@ msgstr ""
 
 # type: Plain text
 #: FrugalBuild.txt:204
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "pkgdesc_localized=('xx_YY foo' 'xx_YY bar')\n"
 "----\n"
@@ -592,7 +593,7 @@ msgstr ""
 
 # type: Plain text
 #: FrugalBuild.txt:209
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "url::\n"
 "\tThis field contains an optional URL that is associated with the piece\n"
@@ -600,32 +601,31 @@ msgid ""
 msgstr ""
 "url::\n"
 "\tCe champ contient une adresse URL optionnelle qui est associée avec\n"
-"\tle logiciel qui va être paquagé. D'habitude, c'est le site web du projet.\n"
+"\tle logiciel qui va être empaqueté. D'habitude, c'est le site web du projet.\n"
 
 # type: Plain text
 #: FrugalBuild.txt:212
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "license::\n"
 "\tSets the license type (eg, \"GPL\", \"BSD\", \"NON-FREE\").\n"
 msgstr ""
 "liscense::\n"
-"\tSpécifiez le type de licence (comme, \"GPL\", \"BSD\", \"NON-FREE\").\n"
+"\tSpécifie le type de licence (comme, \"GPL\", \"BSD\", \"NON-FREE\").\n"
 
 # type: Plain text
 #: FrugalBuild.txt:215
-#, fuzzy
 msgid ""
 "NOTE: This option is currently optional and there are no rules what exact "
 "formats you should use (if you should use `GPL` or `GPL2` and so on)."
 msgstr ""
 "NOTE : Cette option est actuellement optionnelle et il n'y a pas de règles "
-"pour le format que vous devriez utiliser (Si vous deviez, utilisez 'GPL' ou "
-"'GPL2', etc...)."
+"pour le format que vous devriez utiliser (Si vous deviez, utilisez `GPL` ou "
+"`GPL2`, etc...)."
 
 # type: Plain text
 #: FrugalBuild.txt:221
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "install::\n"
 "\tSpecifies a special install script that is to be included in the package. This\n"
@@ -634,14 +634,15 @@ msgid ""
 "\tarray. (eg, `install=modutils.install`)\n"
 msgstr ""
 "install::\n"
-"\tSpécifie un script d'installation spécial qui est inclu dans le paquet. Ce\n"
-"\tfichier doit résider dans le même répertoire que le FrugalBuild, et devra être copié\n"
+"\tSpécifie un script d'installation spécial qui est inclus dans le paquet. Ce\n"
+"\tfichier doit résider dans le même répertoire que le FrugalBuild, et devra "
+"être copié\n"
 "\tdans le paquet par makepkg. Il n'a pas besoin d'être inclu dans le tableau\n"
 "\tdes sources. (exemple : 'install=modutils.install')\n"
 
 # type: Plain text
 #: FrugalBuild.txt:226
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "up2date::\n"
 "\tThis directive should contain a command that prints the current upstream stable\n"
@@ -655,7 +656,7 @@ msgstr ""
 
 # type: Plain text
 #: FrugalBuild.txt:232
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "source (array)::\n"
 "\tThe source line is an array of source files required to build the package.\n"
@@ -663,15 +664,18 @@ msgid ""
 "\tthey have a fully-qualified URL. Then if the source file does not already exist\n"
 "\tin `/var/cache/pacman-g2/src`, the file is downloaded by wget.\n"
 msgstr ""
-"source (array)::\n"
-"\tLa ligne source est un tableau des fichiers sources requis pour construire le paquet.\n"
-"\tLe ficher source doit être dans le même répertoire que je le fichier FrugalBuild, ) moins qu'il\n"
-"\tai une adresse URL entièrement qualifiée. Alors, si le fichier source n'existe pas encore\n"
-"\tdans '/var/cache/pacman-g2/src', le fichier est téléchargé par wget.\n"
+"source (tableau)::\n"
+"\tLa ligne source est un tableau des fichiers sources requis pour construire "
+"le paquet.\n"
+"\tLe ficher source doit être dans le même répertoire que je le fichier "
+"FrugalBuild, ) moins qu'il\n"
+"\tai une adresse URL entièrement qualifiée. Alors, si le fichier source "
+"n'existe pas encore\n"
+"\tdans `/var/cache/pacman-g2/src`, le fichier est téléchargé par wget.\n"
 
 # type: Plain text
 #: FrugalBuild.txt:238
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "sha1sums (array)::\n"
 "\tIf this field is present, it should contain an SHA1 hash for every source file\n"
@@ -679,24 +683,29 @@ msgid ""
 "\tverify source file integrity during subsequent builds. To easily update\n"
 "\tsha1sums in the FrugalBuild, run `makepkg -G`.\n"
 msgstr ""
-"sha1sums (arrays)::\n"
-"\\Si le champ est présent, il doit contenir un calcul SHA1 pour chaque fichier source\n"
-"\tspécifié dans le tableau des sources (dans le même ordre). 'makepkg' va l'utiliser pour\n"
-"\tvérifier l'intégrité des fichiers source pendant les constructions suivantes. Pour mettre à jour facilement\n"
-"\t le sha1sums, dans le FrugalBuild, lancez 'makepkg -G'.\n"
+"sha1sums (tableau)::\n"
+"\\Si le champ est présent, il doit contenir un calcul SHA1 pour chaque "
+"fichier source\n"
+"\tspécifié dans le tableau des sources (dans le même ordre). `makepkg` va "
+"l'utiliser pour\n"
+"\tvérifier l'intégrité des fichiers source pendant les constructions "
+"suivantes. Pour mettre à jour facilement\n"
+"\t le sha1sums, dans le FrugalBuild, lancez `makepkg -G`.\n"
 
 # type: Plain text
 #: FrugalBuild.txt:243
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "signatures (array)::\n"
 "\tIf this field is present, it should contain an array of gpg signatures required\n"
 "\tto validate the source files. Where there is no signature available just leave\n"
 "\tit empty, like:\n"
 msgstr ""
-"signatures (array)::\n"
-"\tSi ce champ est présent, il doit contenir un tableau des signatures gpg requises\n"
-"\tpour valiser les fichiers source. Quand il n'y a pas de signatures de disponibles, laissez-la\n"
+"signatures (tableau)::\n"
+"\tSi ce champ est présent, il doit contenir un tableau des signatures gpg "
+"requises\n"
+"\tpour valider les fichiers sources. Quand il n'y a pas de signatures de "
+"disponibles, laissez-la\n"
 "\tvide, comme :\n"
 
 # type: Plain text
@@ -711,21 +720,23 @@ msgstr ""
 
 # type: Plain text
 #: FrugalBuild.txt:252
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "groups (array)::\n"
 "\tThis is an array of symbolic names that represent groups of packages, allowing you to\n"
 "\tinstall multiple packages by requesting a single target. For example, one could install\n"
 "\tall KDE packages by installing the 'kde' group.\n"
 msgstr ""
-"groupes (array)::\n"
-"\tC'est un tableau de noms symboliques représentant les groupes des paquets, vous permettant d'installer\n"
-"\tplusieurs paquets en demandant une seule cible. Par exemple, quelqu'un pourrait installer\n"
+"groupes (tableau)::\n"
+"\tC'est un tableau de noms symboliques représentant les groupes des paquets, "
+"vous permettant d'installer\n"
+"\tplusieurs paquets en demandant une seule cible. Par exemple, quelqu'un "
+"pourrait installer\n"
 "\ttous les paquets KDE en installant le groupe 'kde'.\n"
 
 # type: Plain text
 #: FrugalBuild.txt:257
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "archs (array)::\n"
 "\tThis array defines on which architectures the given package is available. If\n"
@@ -733,8 +744,10 @@ msgid ""
 "\tthe package database.\n"
 msgstr ""
 "archs (array)::\n"
-"\tCe tableau défini sur quelle architecture le paquet donné est disponible. S'il\n"
-"\tn'est pas disponible, cela signifiera que 'gensync' va l'ignorer quand il va générer\n"
+"\tCe tableau défini sur quelle architecture le paquet donné est disponible. "
+"S'il\n"
+"\tn'est pas disponible, cela signifiera que `gensync` va l'ignorer quand il "
+"va générer\n"
 "\tla base de données de paquets.\n"
 
 # type: Plain text
@@ -2339,9 +2352,8 @@ msgstr ""
 
 # type: Plain text
 #: pacman-g2.txt:414
-#, fuzzy
 msgid "== HOOKS"
-msgstr "== AUTEURS"
+msgstr "== CROCHETS"
 
 # type: Plain text
 #: pacman-g2.txt:418
