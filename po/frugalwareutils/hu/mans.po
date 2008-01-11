@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-11-24 05:19+0100\n"
-"PO-Revision-Date: 2007-11-23 21:48+0100\n"
+"PO-Revision-Date: 2008-01-11 23:24+0100\n"
 "Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -113,7 +113,6 @@ msgstr "mouseconfig [opciók]"
 
 # type: Plain text
 #: mouseconfig.txt:14
-#, fuzzy
 msgid ""
 "mouseconfig sets up the `/etc/sysconfig/gpm` file to match your hardware."
 msgstr ""
@@ -202,6 +201,9 @@ msgid ""
 "profile. When `netconfig` invoked with the start parameter, then the profile "
 "named `default` (`/etc/sysconfig/network/default`) will be read."
 msgstr ""
+"Minden fájl a `/etc/sysconfig/network` könyvtárban egy hálózati profilnak "
+"felel meg. Mikor a `netconfig` a start paraméterrel indul, a `default` nevű "
+"profil (`/etc/sysconfig/network/default`) lesz beolvasva."
 
 # type: Plain text
 #: netconfig.txt:39
@@ -210,6 +212,9 @@ msgid ""
 "parameter. In that case the given profile will be loaded instead of "
 "`default` on system startup."
 msgstr ""
+"Ez a viselkedés a `network=<profilnév>` kernel paraméterrel írható felül. "
+"Ebben az esetben az adott profil lesz betöltve a `default` helyett a "
+"rendszer indításakor."
 
 # type: Plain text
 #: netconfig.txt:43
@@ -218,11 +223,14 @@ msgid ""
 "interface that netconfig should initialize. The exception to this is the "
 "options section, which defines global options."
 msgstr ""
+"A profil szekciókra, vagyis interfészekre van bontva. Minden szekció egy "
+"interfész definiál amit a netconfignak inicializálnia kell. Egy kivétel az "
+"options szekció, ami globális opciókat definiál."
 
 # type: Plain text
 #: netconfig.txt:45
 msgid "== CONFIG: OPTIONS"
-msgstr ""
+msgstr "== BEÁLLÍTÁS: OPTIONS"
 
 # type: Plain text
 #: netconfig.txt:49
@@ -232,6 +240,10 @@ msgid ""
 "\tExplicitly defines dns addresses (ie. when using a static ip). Multiple\n"
 "\tusage is ok.\n"
 msgstr ""
+"dns = <ip>::\n"
+"\tExplicit módon definiálja a dns címeket (pl. statikus ip esetén hasznos). A "
+"többszörös\n"
+"\thasználat megengedett.\n"
 
 # type: Plain text
 #: netconfig.txt:53
@@ -241,6 +253,9 @@ msgid ""
 "\tDefines the local domain name. If defined more than once, the first\n"
 "\twill be used.\n"
 msgstr ""
+"domain = <domain>::\n"
+"\tDefiniálja a helyi domain nevét. Ha többször van megadva, az első\n"
+"\tlesz használva.\n"
 
 # type: Plain text
 #: netconfig.txt:56
@@ -249,6 +264,8 @@ msgid ""
 "desc = <description>::\n"
 "\tA brief description of this network profile. Used by the graphical frontend.\n"
 msgstr ""
+"desc = <leírás>::\n"
+"\tEgy rövid leírás erről a hálózati profilról. A gnetconfig hasznlálja.\n"
 
 # type: Plain text
 #: netconfig.txt:59
@@ -257,6 +274,8 @@ msgid ""
 "adsl_username = <username>::\n"
 "\tIf you have an adsl (pppoe) connection, your adsl username.\n"
 msgstr ""
+"adsl_username = <felhasználónév>::\n"
+"\tHa adsl (pppoe) kapcsolata van, az adsl felhasználóneve.\n"
 
 # type: Plain text
 #: netconfig.txt:62
@@ -265,6 +284,8 @@ msgid ""
 "adsl_password = <password>::\n"
 "\tIf you have an adsl connection, your adsl password.\n"
 msgstr ""
+"adsl_password = <jelszó>::\n"
+"\tHa adsl kapcsolata van, az adsl jelszava.\n"
 
 # type: Plain text
 #: netconfig.txt:66
@@ -274,11 +295,14 @@ msgid ""
 "\tIf you have an adsl connection, the Ethernet interface connected to the\n"
 "\tDSL modem.\n"
 msgstr ""
+"adsl_interface = <interfész>::\n"
+"\tHa adsl kapcsolata van, a hálózati interfész neve, ami a DSL modemhez van\n"
+"\tcsatlakoztatva.\n"
 
 # type: Plain text
 #: netconfig.txt:68
 msgid "== CONFIG: INTERFACES"
-msgstr ""
+msgstr "== BEÁLLÍTÁS: INTERFÉSZEK"
 
 # type: Plain text
 #: netconfig.txt:72
@@ -287,6 +311,9 @@ msgid ""
 "string within square brackets (ie. the two below are `eth0` and `eth1`). The "
 "available directives:"
 msgstr ""
+"Minden szekció egy interfészt definiál. Az interfész neve egy szögletes "
+"zárójelek közötti sztring (tehát pl `eth0` és `eth1`). Az elérhető "
+"direktívák:"
 
 # type: Plain text
 #: netconfig.txt:77
@@ -297,6 +324,11 @@ msgid ""
 "\tMultiple usage is ok for eth0:1, eth0:2, etc. See the other format of\n"
 "\tthis directive for dhcp.\n"
 msgstr ""
+"options = <ip> [netmask <netmaszk> [broadcast <broadcast>]::\n"
+"\tMegadja az ip címét, netmaszkját és broadcast-ját az interfésznek.\n"
+"\tA többszörös használat megengedett az eth0:1, eth0:2, stb. számára. Lásd "
+"még a másik formátumát ennek a direktívának dhcp\n"
+"\tesetén.\n"
 
 # type: Plain text
 #: netconfig.txt:80
@@ -305,21 +337,24 @@ msgid ""
 "options = dhcp::\n"
 "\tUse dhcp for this interface. When this format is used, the other \"options\" lines are ignored.\n"
 msgstr ""
+"options = dhcp::\n"
+"\tdhcp használata erre az interfészre. Ha ez a formátum használt, a többi "
+"\"options\" sor figyelmen kívül lesz hagyva.\n"
 
 # type: Plain text
 #: netconfig.txt:82
 msgid "pre_up = <command>::"
-msgstr ""
+msgstr "pre_up = <parancs>::"
 
 # type: Plain text
 #: netconfig.txt:84
 msgid "post_up = <command>::"
-msgstr ""
+msgstr "post_up = <parancs>::"
 
 # type: Plain text
 #: netconfig.txt:86
 msgid "pre_down = <command>::"
-msgstr ""
+msgstr "pre_down = <parancs>::"
 
 # type: Plain text
 #: netconfig.txt:92
