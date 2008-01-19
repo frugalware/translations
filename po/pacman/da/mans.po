@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-01-03 05:04+0100\n"
-"PO-Revision-Date: 2008-01-18 21:00+0100\n"
+"PO-Revision-Date: 2008-01-19 10:58+0100\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -755,10 +755,8 @@ msgstr ""
 "\tEn array af pakker som denne afhænger af for at bygge og køre. Pakker i\n"
 "\tDenne liste bør blive omgivet med apostroffer og indeholde som det mindste\n"
 "\tpakke navne. De kan også inkludere et versionsform krav\n"
-"\tnavn<>version, hvor <> bruges en af disse tre sammenligninger: >= (større "
-"end\n"
-"\ter lige med, <= (mindre end eller lige med), eller = (er lige med). Se "
-"FrugalBuild\n"
+"\tnavn<>version, hvor <> bruges en af disse tre sammenligninger: >= (større end\n"
+"\ter lige med, <= (mindre end eller lige med), eller = (er lige med). Se FrugalBuild\n"
 "\teksemplerne foroven for eksempel at det afhænger af direktiv.\n"
 
 # type: Plain text
@@ -1408,10 +1406,8 @@ msgid ""
 "\tprocess if all of the dependencies aren't installed.\n"
 msgstr ""
 "-d, --nodeps::\n"
-"\tUdfør ikke nogen afhængighedstjek. Dette vil lade dig overskrive/ignorer "
-"eventuel\n"
-"\tkrævede afhængigheder. Der er en god chance for at denne valgmulighed vil "
-"ødelægge bygningens\n"
+"\tUdfør ikke nogen afhængighedstjek. Dette vil lade dig overskrive/ignorer eventuel\n"
+"\tkrævede afhængigheder. Der er en god chance for at denne valgmulighed vil ødelægge bygningens\n"
 "\tprocesen hvis alle af afhænigheder ikke bliver installeret.\n"
 
 # type: Plain text
@@ -1435,8 +1431,7 @@ msgid ""
 msgstr ""
 "-e, --noextract::\n"
 "\tUdpak ikke  kildefil. Brug istedet for, hvad der allerede findes i src/\n"
-"\tmappen. Dette er praktisk hvis du ønsker at gå i src og manuelt lave en "
-"patch/trimme\n"
+"\tmappen. Dette er praktisk hvis du ønsker at gå i src og manuelt lave en patch/trimme\n"
 "\tkoden, og derefter lave en pakke ud af resultatet.\n"
 
 # type: Plain text
@@ -1450,8 +1445,7 @@ msgid ""
 msgstr ""
 "-f, --force::\n"
 "\tmakepkg vil ikke bygge en pakke hvis en pkgname-pkgver-pkgrel-arch.fpm fil\n"
-"\tallerede eksisterer i bygningsmappen. Du kan overskrive denne adfærd ved at "
-"skrive\n"
+"\tallerede eksisterer i bygningsmappen. Du kan overskrive denne adfærd ved at skrive\n"
 "\t--force komandoen.\n"
 
 # type: Plain text
@@ -1463,8 +1457,7 @@ msgid ""
 "\tfor each of them.\n"
 msgstr ""
 "-g, --gensha1::\n"
-"\tDownload alle kildefiler (hvis det kræves) og brug sha1sum for at generere "
-"sha1 hashes\n"
+"\tDownload alle kildefiler (hvis det kræves) og brug sha1sum for at generere sha1 hashes\n"
 "\tfor hver af dem.\n"
 
 # type: Plain text
@@ -1476,8 +1469,7 @@ msgid ""
 "\twith the result.\n"
 msgstr ""
 "-G, --wrtsha1::\n"
-"\tDet samme som `-g`, men erstatter sha1sumsens () indhold i array af "
-"FrugalBuild\n"
+"\tDet samme som `-g`, men erstatter sha1sumsens () indhold i array af FrugalBuild\n"
 "\tmed resultatet.\n"
 
 # type: Plain text
@@ -1523,8 +1515,7 @@ msgid ""
 msgstr ""
 "-l <pkgname>::\n"
 "\tDownload pakkens byggescript før start af bygningen. Dette er nyttig hvis\n"
-"\tdu ikke ønsker at lave en fuld 'repoman upd' og lige så lidt vil downloade "
-"bygningscriptet\n"
+"\tdu ikke ønsker at lave en fuld 'repoman upd' og lige så lidt vil downloade bygningscriptet\n"
 "\tmanuelt.\n"
 
 # type: Plain text
@@ -1564,6 +1555,8 @@ msgid ""
 "-p <buildscript>::\n"
 "\tRead the package script <buildscript> instead of the default (FrugalBuild).\n"
 msgstr ""
+"-p <buildscript>::\n"
+"\tLæs pakkescriptet <buildscript> i stedet for standard (FrugalBuild).\n"
 
 # type: Plain text
 #: makepkg.txt:107
@@ -1573,6 +1566,10 @@ msgid ""
 "\tUpon successful build, remove any dependencies installed by makepkg/pacman-g2\n"
 "\tduring dependency auto-resolution (using -b or -s).\n"
 msgstr ""
+"-r, --rmdeps::\n"
+"\tEfter en vellykket bygning, fjern alle afhængigheder installeret af "
+"makepkg/pacman-g2\n"
+"\tunder afhængigheds auto-resolution (brug -b eller -s).\n"
 
 # type: Plain text
 #: makepkg.txt:111
@@ -1582,6 +1579,9 @@ msgid ""
 "\tBuild the package in a chroot environment. This is the default unless -g or -o\n"
 "\tis used.\n"
 msgstr ""
+"-R, --chroot::\n"
+"\tByg pakken i et chroot miljø. Dette er standard medmindre -g eller -o\n"
+"\tbliver brugt.\n"
 
 # type: Plain text
 #: makepkg.txt:114
@@ -1590,6 +1590,8 @@ msgid ""
 "-H, --host::\n"
 "\tBuild the package on the host system. The opposite of the -R option.\n"
 msgstr ""
+"-H, --host::\n"
+"\tByg pakken på værtssystemet. Den modsatte af -r valgmuligheden.\n"
 
 # type: Plain text
 #: makepkg.txt:120
@@ -1601,6 +1603,14 @@ msgid ""
 "\tthem. If successful, pacman-g2 will download the missing packages from a\n"
 "\tpackage repository and install them for you.\n"
 msgstr ""
+"-s, --syncdeps::\n"
+"\tInstaller manglende afhængigheder ved brug af pacman-g2. Når makepkg finder "
+"manglende\n"
+"\tbygningstid eller køretids afhængigheder, det vil køre pacman-g2 for at "
+"prøve at løse\n"
+"\tdet vil køre pacman-g2 for at prøve at løse\n"
+"\tdem. Hvis det lykkes, vil pacman-g2 downloade de manglende pakker fra et\n"
+"\tpakke arkiv og installere dem for dig.\n"
 
 # type: Plain text
 #: makepkg.txt:125
@@ -1611,6 +1621,12 @@ msgid ""
 "\tversion other than the host one. Using this option, it's possible to build\n"
 "\tpackages for \"stable\" while the host system is \"current\" and vica versa.\n"
 msgstr ""
+"-t <tree>::\n"
+"\tNår der bygges i et chroot (ved brug af -R) ønsker du måske at bygge pakker "
+"for en anden\n"
+"\tversion end værten har. Ved brug af denne valgmulighed, er det muligt at "
+"bygge\n"
+"\tpakker for \"stabil\" mens værtssystemet er \"aktuelt\" og vica versa.\n"
 
 # type: Plain text
 #: makepkg.txt:133
@@ -1624,6 +1640,16 @@ msgid ""
 "\tthat makepkg will call pacman-g2 with sudo. This means you don't have to build\n"
 "\tas root to use dependency auto-resolution.\n"
 msgstr ""
+"-u, --noup2date::\n"
+"\tTjek ikke for en nyere version før start af bygning. Normalt vil makepkg\n"
+"\tforhindre dig i at bygge en forældet kilde ved en fejl. Hvis du ved hvad du\n"
+"\tgør, kan du inaktivere denne funktion med denne switch. -S, --sudosync "
+"Installere\n"
+"\tmanglende afhængiheder med pacman-g2 og sudo. Det er det samme som -s "
+"undtagen\n"
+"\tat makepkg vil kalde pacman-g2 med sudo. Dette betyder at du behøver at "
+"bygge\n"
+"\tsom root for at benytte afhængigheds auto-resolution.\n"
 
 # type: Plain text
 #: makepkg.txt:137
@@ -1633,6 +1659,9 @@ msgid ""
 "\tWrite the resulting package file to the directory <destdir> instead of the\n"
 "\tcurrent working directory.\n"
 msgstr ""
+"-w <destdir>::\n"
+"\tSkriver den resulterende pakkefil til filkataloget <destdir> i stedet\n"
+"\taktuel arbejds mappe.\n"
 
 # type: Plain text
 #: makepkg.txt:140
@@ -1641,6 +1670,8 @@ msgid ""
 "--gzip::\n"
 "\tUse gzip compression for a package instead of bzip2.\n"
 msgstr ""
+"--gzip::\n"
+"\tBruger gzip kompression for en pakke i stedet for bzip2.\n"
 
 # type: Plain text
 #: makepkg.txt:145
@@ -1651,6 +1682,12 @@ msgid ""
 "\tthe --noconfirm option to it so it does not wait for any user input before\n"
 "\tproceeding with operations.\n"
 msgstr ""
+"--noconfirm::\n"
+"\tNår man kalder pacman-g2 for at løse afhænigheder eller konflikter, kan "
+"makepkg passere\n"
+"\t--noconfirm valgmuligheden til det så det ikke venter på noget brugerinput "
+"før\n"
+"\tfortsættelse med handlinger.\n"
 
 # type: Plain text
 #: makepkg.txt:149
@@ -1660,6 +1697,11 @@ msgid ""
 "\tWhen calling pacman-g2, makepkg can pass the --noprogressbar option to it. This\n"
 "\tis useful if one is directing makepkg's output to a non-terminal (ie, a file).\n"
 msgstr ""
+"--noprogressbar::\n"
+"\tNår man kalder pacman-g2, kan makepkg passere --noprogressbar valgmulighed "
+"til det. Dette\n"
+"\ter nyttig hvis man dirigerer makepkg´s output til en ikke-terminal (f.eks, "
+"en fil).\n"
 
 # type: Plain text
 #: makepkg.txt:151 pacman-g2.txt:290
