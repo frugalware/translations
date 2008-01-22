@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-01-03 05:04+0100\n"
-"PO-Revision-Date: 2008-01-22 09:36+0100\n"
+"PO-Revision-Date: 2008-01-22 14:21+0100\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -1939,7 +1939,7 @@ msgid ""
 "\tonly specify where the software should be installed, but you also specify which\n"
 "\tpackage database to use.\n"
 msgstr ""
-"-r, --root <path>::\n"
+"-r, --root <sti>::\n"
 "\tPræciser alternativ installations root (standard er \"/\"). Dette bør ikke "
 "bruges\n"
 "\tsom en måde på at installere software i f.eks. /usr/local istedet for /usr. "
@@ -1979,6 +1979,8 @@ msgid ""
 "--config <path>::\n"
 "\tSpecify an alternate configuration file.\n"
 msgstr ""
+"--config <path>::\n"
+"\tPræciser en alternativ konfigurationsfil.\n"
 
 # type: Plain text
 #: pacman-g2.txt:98
@@ -1988,6 +1990,10 @@ msgid ""
 "\tBypass any and all \"Are you sure?\" messages. It's not a good idea to do this\n"
 "\tunless you want to run pacman-g2 from a script.\n"
 msgstr ""
+"--noconfirm::\n"
+"\tOmgå alt og alle \"Er du sikker? beskeder. Det er ikke en god idé at gøre "
+"dette\n"
+"\tmedmindre at du ønsker at køre pacman-g2 fra et script.\n"
 
 # type: Plain text
 #: pacman-g2.txt:103
@@ -1998,6 +2004,11 @@ msgid ""
 "\tquestions, but you are able to specify yes/no for all type of them. The types\n"
 "\tare the followings:\n"
 msgstr ""
+"--ask <nummer>::\n"
+"\tFinindstille  --noconfirm switch ved ikke at svare \"Ja\" til alle libpacman\n"
+"\tspørgsmål, men du er i stand til at præcisere ja/nej for alle slags af dem. "
+"Mulighederne\n"
+"\ter følgende:\n"
 
 # type: Plain text
 #: pacman-g2.txt:110
@@ -2010,6 +2021,12 @@ msgid ""
 "\t* Local version is newer. (16)\n"
 "\t* Local version is up to date. (32)\n"
 msgstr ""
+"\t* Den givede pakke er i IgnorePkg. (1)\n"
+"\t* Erstat pakke foo med bar? (2)\n"
+"\t* foo konflikter med bar. Fjern bar? (4)\n"
+"\t* Vil du slette den ødelagte pakke? (8)\n"
+"\t* Lokal version er nyere. (16)\n"
+"\t* Lokal version er fuld opdateret. (32)\n"
 
 # type: Plain text
 #: pacman-g2.txt:113
@@ -2018,6 +2035,8 @@ msgid ""
 "\tSelect for what types do you want to answer yes, sum up the values and use the\n"
 "\tresult as a parameter to this option.\n"
 msgstr ""
+"\tVælg for hvad du ønsker at svare ja til, sammenlæg tallene og brug\n"
+"\tresultatet som en parameter til denne valgmulighed. \n"
 
 # type: Plain text
 #: pacman-g2.txt:117
@@ -2027,6 +2046,10 @@ msgid ""
 "\tDo not show a progress bar when downloading files. This can be useful for\n"
 "\tscripts that call pacman-g2 and capture the output.\n"
 msgstr ""
+"--noprogressbar::\n"
+"\tVis ikke en fremgangsbar når der downloades filer. Dette kan være nyttig "
+"for\n"
+"\tscripts der kalder pacman-g2 og fanger output.\n"
 
 # type: Plain text
 #: pacman-g2.txt:120
@@ -2035,6 +2058,8 @@ msgid ""
 "--noscriptlet::\n"
 "\tDo not execute install scriptlets, if any.\n"
 msgstr ""
+"--noscriptlet::\n"
+"\tUdfør ikke install scriptlets, hvis der er nogen.\n"
 
 # type: Plain text
 #: pacman-g2.txt:123
@@ -2043,11 +2068,13 @@ msgid ""
 "--nointegrity::\n"
 "\tSkip the SHA1 integrity check for the downloaded packages.\n"
 msgstr ""
+"--nointegrity::\n"
+"\tSkip SHA1 integritetstjekket for de downloadede pakker\n"
 
 # type: Plain text
 #: pacman-g2.txt:125
 msgid "== SYNC OPTIONS"
-msgstr ""
+msgstr "== SYNC VALGMULIGHEDER"
 
 # type: Plain text
 #: pacman-g2.txt:132
@@ -2060,6 +2087,15 @@ msgid ""
 "\twill only remove old packages. Use it twice to remove all packages from the\n"
 "\tcache.\n"
 msgstr ""
+"-c, --clean::\n"
+"\tFjern gamle pakker fra cachen. Når pacman-g2 downloader pakker, den gemmer\n"
+"\tdem i /var/cache/pacman-g2/pkg. Hvis du har brug for harddiskplads, kan du "
+"fjerne\n"
+"\t disse pakker ved at bruge --clean valgmuligheden. Ved brug af en gang "
+"--clean (eller -c) switch\n"
+"\tvil kun fjerne gamle pakker. Brug det to gange efter hinanden for at fjerne "
+"alle pakker fra\n"
+"\tcache.\n"
 
 # type: Plain text
 #: pacman-g2.txt:137
@@ -2070,6 +2106,10 @@ msgid ""
 "\tif you want to install the packages themselves with different options or from\n"
 "\tsource.\n"
 msgstr ""
+"-e, --dependsonly::\n"
+"\tInstaller ikke pakken selv, kun dens afhængigheder. Dette kan være praktisk\n"
+"\thvis du vil installere pakken selv med forskellige valgmuligheder eller fra\n"
+"\tsource.\n"
 
 # type: Plain text
 #: pacman-g2.txt:141
@@ -2079,6 +2119,10 @@ msgid ""
 "\tDisplay all the members for each package group specified. If no group names are\n"
 "\tprovided, all groups will be listed.\n"
 msgstr ""
+"-g, --groups::\n"
+"\tVis alle medlemmerne for hver pakkegruppe specifiseret. Hvis ingen "
+"gruppenavne er\n"
+"\tgivet, vil alle grupper blive oplistet.\n"
 
 # type: Plain text
 #: pacman-g2.txt:146
@@ -2089,6 +2133,10 @@ msgid ""
 "\tall repositories for a matching package and display the dependencies,\n"
 "\tconflicts, etc.\n"
 msgstr ""
+"-i, --info::\n"
+"\tVis afhængighedsinformation for en givet pakke. Dette vil gennemsøge\n"
+"\talle arkiver for en pakke der matcher og vise afhægighederne,\n"
+"\tkonflikter, etc.\n"
 
 # type: Plain text
 #: pacman-g2.txt:150
@@ -2098,6 +2146,9 @@ msgid ""
 "\tList all files in the specified repositories. Multiple repositories can be\n"
 "\tspecified on the command line.\n"
 msgstr ""
+"-l, --list::\n"
+"\tOpliste alle filer i det specifiede arkiv. Multipel arkiver kan blive\n"
+"\tpræciserede på kommandolinien.\n"
 
 # type: Plain text
 #: pacman-g2.txt:155
@@ -2108,6 +2159,11 @@ msgid ""
 "\tdependencies that have yet to be installed. These can be piped to a file and\n"
 "\tdownloaded at a later time, using a program like wget.\n"
 msgstr ""
+"-p, --print-uris::\n"
+"\tUdprinter URIs for hver pakke der vil blive installeret, inkluderende "
+"eventuelle\n"
+"\tafhængigheder der endnu skal installeres. Disse kan pipes til en fil og\n"
+"\tdownloades på et senere tidspunkt, ved brug af et program som wget.\n"
 
 # type: Plain text
 #: pacman-g2.txt:159
@@ -2117,6 +2173,9 @@ msgid ""
 "\tThis will search each package in the package list for names or descriptions\n"
 "\tthat contains <regexp>.\n"
 msgstr ""
+"-s, --search <regulære udtryk>::\n"
+"\tDette vil søge hver pakke i pakkelisten efter navne eller beskrivelser\n"
+"\tder indeholder <regulære udtryk>.\n"
 
 # type: Plain text
 #: pacman-g2.txt:167
@@ -2130,6 +2189,14 @@ msgid ""
 "\tautomatically resolved at this level and will be installed/upgraded if\n"
 "\tnecessary.\n"
 msgstr ""
+"-u, --sysupgrade::\n"
+"\tOpgraderer alle pakker der er ude af dato. pacman-g2 vil undersøge hver\n"
+"\tpackage installeret på systemet, og hvis en nyere pakke er på serveren vil\n"
+"\tvil den blive opgraderet. pacman-g2 vil præsentere en rapport af alle "
+"pakker den ønsker at\n"
+"\topgradere og vil ikke fortsætte uden brugerbekræftelse. Afhængigheder er\n"
+"\tautomatisk løst på dette niveau og vil blive installerer/opgraderet om\n"
+"\tnødvendigt.\n"
 
 # type: Plain text
 #: pacman-g2.txt:170
@@ -2138,6 +2205,8 @@ msgid ""
 "-w, --downloadonly::\n"
 "\tRetrieve all packages from the server, but do not install/upgrade anything.\n"
 msgstr ""
+"-w, --downloadonly::\n"
+"\tHent alle pakker fra serveren, men installer/opgrader ikke noget.\n"
 
 # type: Plain text
 #: pacman-g2.txt:175
@@ -2148,6 +2217,10 @@ msgid ""
 "\t/etc/pacman-g2.conf. This should typically be used each time you use\n"
 "\t--sysupgrade.\n"
 msgstr ""
+"-y, --refresh::\n"
+"\tDownload en frisk kopi af hoved pakkelisten fra ftpserveren defineret i\n"
+"\t/etc/pacman-g2.conf. Dette burde typisk blive brugt hver gang du bruger\n"
+"\t--sysupgrade.\n"
 
 # type: Plain text
 #: pacman-g2.txt:180
@@ -2158,11 +2231,17 @@ msgid ""
 "\tdirective. Sometimes it can be handy to skip some package updates without\n"
 "\thaving to edit pacman-g2.conf each time.\n"
 msgstr ""
+"--ignore <pkg>::\n"
+"\tDenne valgmulighedsfunktion er præcist den samme som IgnorePkg "
+"konfigurations\n"
+"\tdirektiv. Sommetider det kan være praktisk at skippe nogle "
+"pakkeopdateringer uden\n"
+"\tat redigere pacman-g2.conf hver gang.\n"
 
 # type: Plain text
 #: pacman-g2.txt:182
 msgid "== REMOVE OPTIONS"
-msgstr ""
+msgstr "== FJERNELSE VALGMULIGHEDER"
 
 # type: Plain text
 #: pacman-g2.txt:186
@@ -2172,6 +2251,9 @@ msgid ""
 "\tRemove all target packages, as well as all packages that depend on one or more\n"
 "\ttarget packages. This operation is recursive.\n"
 msgstr ""
+"-c, --cascade::\n"
+"\tFjern alle målpakker, såvel som alle pakker der afhænger af en eller flere\n"
+"\tmålpakker. Denne operation er rekursiv.\n"
 
 # type: Plain text
 #: pacman-g2.txt:189
