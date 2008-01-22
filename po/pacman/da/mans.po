@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-01-03 05:04+0100\n"
-"PO-Revision-Date: 2008-01-19 10:58+0100\n"
+"PO-Revision-Date: 2008-01-22 09:36+0100\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -1567,8 +1567,7 @@ msgid ""
 "\tduring dependency auto-resolution (using -b or -s).\n"
 msgstr ""
 "-r, --rmdeps::\n"
-"\tEfter en vellykket bygning, fjern alle afhængigheder installeret af "
-"makepkg/pacman-g2\n"
+"\tEfter en vellykket bygning, fjern alle afhængigheder installeret af makepkg/pacman-g2\n"
 "\tunder afhængigheds auto-resolution (brug -b eller -s).\n"
 
 # type: Plain text
@@ -1604,10 +1603,8 @@ msgid ""
 "\tpackage repository and install them for you.\n"
 msgstr ""
 "-s, --syncdeps::\n"
-"\tInstaller manglende afhængigheder ved brug af pacman-g2. Når makepkg finder "
-"manglende\n"
-"\tbygningstid eller køretids afhængigheder, det vil køre pacman-g2 for at "
-"prøve at løse\n"
+"\tInstaller manglende afhængigheder ved brug af pacman-g2. Når makepkg finder manglende\n"
+"\tbygningstid eller køretids afhængigheder, det vil køre pacman-g2 for at prøve at løse\n"
 "\tdet vil køre pacman-g2 for at prøve at løse\n"
 "\tdem. Hvis det lykkes, vil pacman-g2 downloade de manglende pakker fra et\n"
 "\tpakke arkiv og installere dem for dig.\n"
@@ -1622,10 +1619,8 @@ msgid ""
 "\tpackages for \"stable\" while the host system is \"current\" and vica versa.\n"
 msgstr ""
 "-t <tree>::\n"
-"\tNår der bygges i et chroot (ved brug af -R) ønsker du måske at bygge pakker "
-"for en anden\n"
-"\tversion end værten har. Ved brug af denne valgmulighed, er det muligt at "
-"bygge\n"
+"\tNår der bygges i et chroot (ved brug af -R) ønsker du måske at bygge pakker for en anden\n"
+"\tversion end værten har. Ved brug af denne valgmulighed, er det muligt at bygge\n"
 "\tpakker for \"stabil\" mens værtssystemet er \"aktuelt\" og vica versa.\n"
 
 # type: Plain text
@@ -1643,12 +1638,9 @@ msgstr ""
 "-u, --noup2date::\n"
 "\tTjek ikke for en nyere version før start af bygning. Normalt vil makepkg\n"
 "\tforhindre dig i at bygge en forældet kilde ved en fejl. Hvis du ved hvad du\n"
-"\tgør, kan du inaktivere denne funktion med denne switch. -S, --sudosync "
-"Installere\n"
-"\tmanglende afhængiheder med pacman-g2 og sudo. Det er det samme som -s "
-"undtagen\n"
-"\tat makepkg vil kalde pacman-g2 med sudo. Dette betyder at du behøver at "
-"bygge\n"
+"\tgør, kan du inaktivere denne funktion med denne switch. -S, --sudosync Installere\n"
+"\tmanglende afhængiheder med pacman-g2 og sudo. Det er det samme som -s undtagen\n"
+"\tat makepkg vil kalde pacman-g2 med sudo. Dette betyder at du behøver at bygge\n"
 "\tsom root for at benytte afhængigheds auto-resolution.\n"
 
 # type: Plain text
@@ -1683,10 +1675,8 @@ msgid ""
 "\tproceeding with operations.\n"
 msgstr ""
 "--noconfirm::\n"
-"\tNår man kalder pacman-g2 for at løse afhænigheder eller konflikter, kan "
-"makepkg passere\n"
-"\t--noconfirm valgmuligheden til det så det ikke venter på noget brugerinput "
-"før\n"
+"\tNår man kalder pacman-g2 for at løse afhænigheder eller konflikter, kan makepkg passere\n"
+"\t--noconfirm valgmuligheden til det så det ikke venter på noget brugerinput før\n"
 "\tfortsættelse med handlinger.\n"
 
 # type: Plain text
@@ -1698,15 +1688,13 @@ msgid ""
 "\tis useful if one is directing makepkg's output to a non-terminal (ie, a file).\n"
 msgstr ""
 "--noprogressbar::\n"
-"\tNår man kalder pacman-g2, kan makepkg passere --noprogressbar valgmulighed "
-"til det. Dette\n"
-"\ter nyttig hvis man dirigerer makepkg´s output til en ikke-terminal (f.eks, "
-"en fil).\n"
+"\tNår man kalder pacman-g2, kan makepkg passere --noprogressbar valgmulighed til det. Dette\n"
+"\ter nyttig hvis man dirigerer makepkg´s output til en ikke-terminal (f.eks, en fil).\n"
 
 # type: Plain text
 #: makepkg.txt:151 pacman-g2.txt:290
 msgid "== CONFIGURATION"
-msgstr ""
+msgstr "== KONFIGURATION"
 
 # type: Plain text
 #: makepkg.txt:156
@@ -1716,6 +1704,10 @@ msgid ""
 "use. This is helpful for building for different architectures, or with "
 "different optimizations."
 msgstr ""
+"Konfigurationsvalgmuligheder er gemt i /etc/makepkg.conf. Denne fil bliver "
+"fortolket som et bash script, så du kan eksportere alle særlige compilerflag "
+"du ønsker at bruge. Dette er en hjælp for at bygge for forskellige "
+"arkitekturer, eller med forskellige optimeringer."
 
 # type: Plain text
 #: makepkg.txt:159
@@ -1723,27 +1715,29 @@ msgid ""
 "NOTE: This does not guarantee that all package Makefiles will use your "
 "exported variables. Some of them are flaky..."
 msgstr ""
+"NOTE: Dette garanterer ikke at alle pakke Makefiles vil bruge dine "
+"eksporterede variabler. Nogle af dem er flaky ..."
 
 # type: Plain text
 #: makepkg.txt:163
 #, no-wrap
 msgid "*FrugalBuild*(5), *pacman-g2*(8)\n"
-msgstr ""
+msgstr "*FrugalBuild*(5), *pacman-g2*(8)\n"
 
 # type: Plain text
 #: pacman-g2.txt:2
 msgid "= pacman-g2(8)"
-msgstr ""
+msgstr "= pacman-g2(8)"
 
 # type: Plain text
 #: pacman-g2.txt:6
 msgid "pacman-g2 - package manager utility"
-msgstr ""
+msgstr "pacman-g2 - pakke håndterer program"
 
 # type: Plain text
 #: pacman-g2.txt:10
 msgid "pacman-g2 <operation> [options] <package> [package] ..."
-msgstr ""
+msgstr "pacman-g2 <operation> [options] <package> [package] ..."
 
 # type: Plain text
 #: pacman-g2.txt:17
@@ -1753,11 +1747,15 @@ msgid ""
 "to a remote ftp server and automatically upgrade packages on the local "
 "system.  pacman-g2 packages are in a bzipped tar format."
 msgstr ""
+"pacman-g2 er et pakkehåndterprogram der sporer installerede pakker på et "
+"linux-system. Det har enkel afhængighedsstøtte og evnen at forbinde til en "
+"afsides ftpserver og automatisk opgradere pakker på det lokale system. "
+"pacman-g2 pakker er i et komprimeret tar format."
 
 # type: Plain text
 #: pacman-g2.txt:19
 msgid "== OPERATIONS"
-msgstr ""
+msgstr "== OPERATIONER"
 
 # type: Plain text
 #: pacman-g2.txt:23
@@ -1767,6 +1765,9 @@ msgid ""
 "\tAdd a package to the system. Package will be uncompressed into the installation\n"
 "\troot and the database will be updated.\n"
 msgstr ""
+"-A, --add::\n"
+"\tTilføj en pakke til systemet. Pakken vil blive udpakket i installations\n"
+"\troot og databassen vil blive opdateret.\n"
 
 # type: Plain text
 #: pacman-g2.txt:27
@@ -1776,6 +1777,9 @@ msgid ""
 "\tThis is like --upgrade except that, unlike --upgrade, this will only upgrade\n"
 "\tpackages that are already installed on your system.\n"
 msgstr ""
+"-F, --freshen::\n"
+"\tDette er som --upgrade undtagen at, ulig --upgrade, vil dette kun opgradere\n"
+"\tpakker der allerede er installeret på dit system.\n"
 
 # type: Plain text
 #: pacman-g2.txt:34
@@ -1788,6 +1792,13 @@ msgid ""
 "\tagainst the local package database or can be used on individual .fpm packages.\n"
 "\tSee QUERY OPTIONS below.\n"
 msgstr ""
+"-Q, --query::\n"
+"\tSpørge, pakkedatabasen. Denne handling tillader dig at se installerede\n"
+"\tpakker og deres filer, såvel som meta-info om individuelle pakker\n"
+"\t(afhængigheder, konflikter, installations dato, bygge dato, størrelse). "
+"Dette kan køres\n"
+"\timod den lokale pakkedatabase eller kan bruges på indviduelle .fpm pakker. \n"
+"\tSe QUERY VALGMULIGHEDER neden under.\n"
 
 # type: Plain text
 #: pacman-g2.txt:39
@@ -1798,6 +1809,12 @@ msgid ""
 "\tbe deleted, and the database will be updated. Most configuration files will be\n"
 "\tsaved with a .pacsave extension unless the --nosave option was used.\n"
 msgstr ""
+"-R, --remove::\n"
+"\tFjern en pakke fra systemet. Filer tilhørende den specifiede pakke vil\n"
+"\tblive slettet, og databassen vil blive opdateret. De fleste "
+"konfigurationsfiler vil blive\n"
+"\tgemt med en .pacsave udvidelse medmindre --nosave valgmulighed blev "
+"benyttet.\n"
 
 # type: Plain text
 #: pacman-g2.txt:46
@@ -1810,12 +1827,20 @@ msgid ""
 "\ton and install them. You could also use pacman-g2 -Su to upgrade all packages\n"
 "\tthat are out of date (see below). Target can be a regex, like:\n"
 msgstr ""
+"-S, --sync::\n"
+"\tSynkroniser pakker. Med denne funktion kan du installere pakker direkte fra\n"
+"\tftp servere, fuldstændig med alle påkrævede afhængigheder for at køre "
+"pakkerne.\n"
+"\tF.eks, pacman-g2 -S qt vil downloade qt og alle pakkerne den afhænger\n"
+"\taf og installere dem. Du kunne også bruge pacman-g2 -Su til at opgradere "
+"alle pakker\n"
+"\tder er ude af dato (se nedenfor). Mål kan være en regex, som:\n"
 
 # type: Plain text
 #: pacman-g2.txt:48
 #, no-wrap
 msgid "\t# pacman-g2 -S gst-.*\n"
-msgstr ""
+msgstr "\t# pacman-g2 -S gst-.*\n"
 
 # type: Plain text
 #: pacman-g2.txt:53
@@ -1826,6 +1851,11 @@ msgid ""
 "\tHANDLING CONFIG FILES for an explanation on how pacman-g2 takes care of config\n"
 "\tfiles.\n"
 msgstr ""
+"-U, --upgrade::\n"
+"\tOpgraderer en pakke. Dette er en afgørende  \"fjern-og så-tilføj\" proces. Se\n"
+"\tHANDLING CONFIG FILES for en forklaring på hvordan pacman-g2 tager hånd om "
+"konfigurations\n"
+"\tfiler.\n"
 
 # type: Plain text
 #: pacman-g2.txt:56
@@ -1834,6 +1864,8 @@ msgid ""
 "-V, --version::\n"
 "\tDisplay version and exit.\n"
 msgstr ""
+"-V, --version::\n"
+"\tViser version og forlader programmet.\n"
 
 # type: Plain text
 #: pacman-g2.txt:60
@@ -1843,6 +1875,10 @@ msgid ""
 "\tDisplay syntax for the given operation. If no operation was supplied then the\n"
 "\tgeneral syntax is shown.\n"
 msgstr ""
+"-h, --help::\n"
+"\tVis syntaks for den givede operation. Hvis ingen operation blev tilføjet så "
+"vil den\n"
+"\tgenerale syntaks bliver vist.\n"
 
 # type: Plain text
 #: pacman-g2.txt:67
@@ -1853,6 +1889,13 @@ msgid ""
 "\tdependency fields to ensure that all dependencies are installed and there are\n"
 "\tno package conflicts in the system. This switch disables these checks.\n"
 msgstr ""
+"-d, --nodeps::\n"
+"\tHop alle afhængighedstjek over. Normalt vil pacman-g2 altid tjekke en "
+"pakkes\\\n"
+"\tafhængighedsforhold for at sikre at alle afhængigheder er installerede og "
+"der\n"
+"\ter ingen pakke konflikter på systemet. Dette tilvalg inaktiverer disse "
+"checks.\n"
 
 # type: Plain text
 #: pacman-g2.txt:73
@@ -1864,6 +1907,13 @@ msgid ""
 "\twill cause all those files to be overwritten. This option should be used with\n"
 "\tcare, ideally not at all.\n"
 msgstr ""
+"-f, --force::\n"
+"\tOmgå fil konflikttjek, overskriv konfliktende filer. Hvis pakken der\n"
+"\tder er ved at blive installeret indeholder filer der allerede er "
+"installeret, vil dette\n"
+"\ttilvalg forårsage at alle disse filer vil blive overskrevet. Denne "
+"valgmulighed bør bruges med\n"
+"\tforsigtighed, overhovedet ikke ideel.\n"
 
 # type: Plain text
 #: pacman-g2.txt:77
@@ -1873,6 +1923,9 @@ msgid ""
 "\tBypass the architecture check, so that you can for example install an `i686`\n"
 "\tpackage on `x86_64` if you know what you're doing.\n"
 msgstr ""
+"--noarch::\n"
+"\tOmgå arkitekturtjekket, således at du f.eks kan installere en `i686`\n"
+"\tpakke på `x86_64` hvis du ved hvad du er ved at gøre.\n"
 
 # type: Plain text
 #: pacman-g2.txt:85
@@ -1886,6 +1939,18 @@ msgid ""
 "\tonly specify where the software should be installed, but you also specify which\n"
 "\tpackage database to use.\n"
 msgstr ""
+"-r, --root <path>::\n"
+"\tPræciser alternativ installations root (standard er \"/\"). Dette bør ikke "
+"bruges\n"
+"\tsom en måde på at installere software i f.eks. /usr/local istedet for /usr. "
+"Istedet for this\n"
+"\tbør det blive brugt til hvis du ønsker at installere en pakke på en "
+"midlertidig mounted\n"
+"\tpartition, hvilket er \"ejet\" af et andet system. Ved at benytte denne "
+"valgmulighed skal du\n"
+"\tikke kun præciserere hvor softwaren burde blive installeret, men du også "
+"præciserer hvilken\n"
+"\tpakke databasse der skal bruges.\n"
 
 # type: Plain text
 #: pacman-g2.txt:88
@@ -1894,6 +1959,8 @@ msgid ""
 "-b, --dbpath:\n"
 "\tSpecify an alternative database path (default is `var/lib/pacman`).\n"
 msgstr ""
+"-b, --dbpath:\n"
+"\tPræciser en alternativ databassesti (standard er `var/lib/pacman`).\n"
 
 # type: Plain text
 #: pacman-g2.txt:91
@@ -1902,6 +1969,8 @@ msgid ""
 "-v, --verbose::\n"
 "\tOutput more status and error messages.\n"
 msgstr ""
+"-v, --verbose::\n"
+"\tVis mere output og fejlbeskeder.\n"
 
 # type: Plain text
 #: pacman-g2.txt:94
