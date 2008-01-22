@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-01-03 05:04+0100\n"
-"PO-Revision-Date: 2008-01-22 14:21+0100\n"
+"PO-Revision-Date: 2008-01-22 16:08+0100\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -2262,6 +2262,8 @@ msgid ""
 "-k, --keep::\n"
 "\tRemoves the database entry only. Leaves all files in place.\n"
 msgstr ""
+"-k, --keep::\n"
+"\tFjerner kun databaseposteringen. Efterlader alle filer på plads.\n"
 
 # type: Plain text
 #: pacman-g2.txt:195
@@ -2273,6 +2275,14 @@ msgid ""
 "\tthe file should be renamed to a .pacsave extension. If --nosave is used, these\n"
 "\tdesignations are ignored and the files are removed.\n"
 msgstr ""
+"-n, --nosave::\n"
+"\tInstruerer pacman-g2 i at ignorere fil backup benævnelser. Normalt, når en "
+"fil\n"
+"\ter ved at blive fjernet fra system databassen bliver det først tjekket for "
+"at se hvis\n"
+"\tfilen burde blive omdøbt til en .pacsave udvidelse. Hvis --nosave bliver "
+"brugt, vil disse\n"
+"\tbenævnelser blive ignoreret og filene bliver fjernet.\n"
 
 # type: Plain text
 #: pacman-g2.txt:201
@@ -2284,11 +2294,18 @@ msgid ""
 "\tinstalled by the user. This option is analagous to a backwards --sync\n"
 "\toperation.\n"
 msgstr ""
+"-s, --recursive::\n"
+"\tFor hvert mål der præciseres, fjernes det og alle dets afhængigheder, "
+"forudsat\n"
+"\t(A) de ikke bliver påkrævet af andre pakker; og (B) de ikke var eksplicit\n"
+"\tinstallereret af brugeren. Denne valgmulighed er   parallel til en baglængs "
+"--sync\n"
+"\thandling.\n"
 
 # type: Plain text
 #: pacman-g2.txt:203
 msgid "== QUERY OPTIONS"
-msgstr ""
+msgstr "== SPØRGSMÅL VALGMULIGHEDER"
 
 # type: Plain text
 #: pacman-g2.txt:206
