@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-01-03 05:04+0100\n"
-"PO-Revision-Date: 2008-01-23 10:13+0100\n"
+"PO-Revision-Date: 2008-01-23 15:11+0100\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -2475,7 +2475,7 @@ msgid ""
 "original=X, current=X, new=X::\n"
 "\tAll three files are the same, so we win either way. Install the new file.\n"
 msgstr ""
-"original=X, aktuel=X, ny=X::\n"
+"original=X, current=X, new=X::\n"
 "\tAlle tre filer er de samme, så på enhver måde vinder vi. Installer den nye "
 "fil..\n"
 
@@ -2488,6 +2488,10 @@ msgid ""
 "\tSince the user did not ever modify the file, and the new one may contain\n"
 "\timprovements/bugfixes, we install the new file.\n"
 msgstr ""
+"original=X, current=X, new=Y::\n"
+"\tDen aktuelle fil er uændret fra originalen men den nye er anderledes.\n"
+"\tSiden brugeren ikke nogensinde modificerede filen, og den nye kan indeholde\n"
+"\tforbedringer/bugfixes, installerer vi den nye fil.\n"
 
 # type: Plain text
 #: pacman-g2.txt:280
@@ -2498,6 +2502,11 @@ msgid ""
 "\tfilesystem has been modified since. In this case, we leave the current file in\n"
 "\tplace.\n"
 msgstr ""
+"original=X, current=Y, new=X::\n"
+"\tBegge pakker versioner indeholder præcis den samme fil, men den på\n"
+"\tfilesystemet er blevet modificeret siden. I dette tilfælde lader vi den "
+"aktuelle fil være\n"
+"\tsom den er.\n"
 
 # type: Plain text
 #: pacman-g2.txt:283
@@ -2506,6 +2515,8 @@ msgid ""
 "original=X, current=Y, new=Y::\n"
 "\tThe new one is identical to the current one. Win win. Install the new file.\n"
 msgstr ""
+"original=X, current=Y, new=Y::\n"
+"\tDen nye er identisk med den aktuelle. Win win. Installer den nye fil.\n"
 
 # type: Plain text
 #: pacman-g2.txt:288
@@ -2516,6 +2527,12 @@ msgid ""
 "\textension and warn the user, so she can manually move the file into place after\n"
 "\tmaking any necessary customizations.\n"
 msgstr ""
+"original=X, current=Y, new=Z::\n"
+"\tAlle tre filer er forskellige, så at vi installerer den nye fil med en "
+".pacnew\n"
+"\tudvidelse og advarer brugeren, så at hun/han manuelt kan flytte filen på "
+"plads efter\n"
+"\tder er lavet alle nødvendige tilpasninger\n"
 
 # type: Plain text
 #: pacman-g2.txt:296
@@ -2526,21 +2543,26 @@ msgid ""
 "for packages in --sync mode. The exception to this is the options section, "
 "which defines global options."
 msgstr ""
+"pacman-g2 vil forsøge at læse /etc/pacman-g2.conf hver gang den bliver "
+"kaldt. Denne konfigurationsfil er delt i afsnit eller arkiver. Hvert afsnit "
+"definerer et pakkearkiv som pacman-g2 kan bruge når der søges efter pakker i "
+"--sync mode. Undtagelsen til dette er valgmuligheds sektionen, som "
+"definerer globale valgmuligheder."
 
 # type: Plain text
 #: pacman-g2.txt:298
 msgid "Example:"
-msgstr ""
+msgstr "Eksempel:"
 
 # type: Plain text
 #: pacman-g2.txt:303
 msgid "[options] HoldPkg = pacman-g2 glibc bash coreutils HoldPkg = chkconfig"
-msgstr ""
+msgstr "[options] HoldPkg = pacman-g2 glibc bash coreutils HoldPkg = chkconfig"
 
 # type: Plain text
 #: pacman-g2.txt:305
 msgid "Include = /etc/pacman-g2/repos/frugalware-current"
-msgstr ""
+msgstr "Include = /etc/pacman-g2/repos/frugalware-current"
 
 # type: Plain text
 #: pacman-g2.txt:308
@@ -2550,11 +2572,14 @@ msgid ""
 "Server = file:///home/pkgs\n"
 "----\n"
 msgstr ""
+"[custom]\n"
+"Server = file:///home/pkgs\n"
+"----\n"
 
 # type: Plain text
 #: pacman-g2.txt:311
 msgid "== CONFIG: OPTIONS"
-msgstr ""
+msgstr "== KONFIG: VALGMULIGHEDER"
 
 # type: Plain text
 #: pacman-g2.txt:315
@@ -2564,6 +2589,9 @@ msgid ""
 "\tOverrides the default location of the toplevel database directory. The default\n"
 "\tis var/lib/pacman-g2.\n"
 msgstr ""
+"DBPath = path/to/db/dir::\n"
+"\tOverskriver standard beliggenhed af topniveu af databasefolderen. Standard\n"
+"\ter var/lib/pacman-g2.\n"
 
 # type: Plain text
 #: pacman-g2.txt:319
@@ -2573,6 +2601,9 @@ msgid ""
 "\tOverrides the default location of the package cache directory. The default is\n"
 "\tvar/cache/pacman-g2.\n"
 msgstr ""
+"CacheDir = path/to/cache/dir::\n"
+"\tOverskriver standard beliggenhed af pakke cache folderen. Standard er\n"
+"\tvar/cache/pacman-g2.\n"
 
 # type: Plain text
 #: pacman-g2.txt:323
@@ -2582,6 +2613,10 @@ msgid ""
 "\tIf a user tries to --remove a package that's listed in HoldPkg, pacman-g2 will\n"
 "\task for confirmation before proceeding.\n"
 msgstr ""
+"HoldPkg = <package> [package] ...::\n"
+"\tHvis en bruger prøver at --remove en pakke der er listet i HoldPkg, "
+"pacman-g2 vil den\n"
+"\tspørge om bekræftelse før der fortsættes.\n"
 
 # type: Plain text
 #: pacman-g2.txt:327
@@ -2591,6 +2626,10 @@ msgid ""
 "\tInstructs pacman-g2 to ignore any upgrades for this package when performing a\n"
 "\t--sysupgrade.\n"
 msgstr ""
+"IgnorePkg = <package> [package] ...::\n"
+"\tInstruerer pacman-g2 at ignorere alle opgraderinger for denne pakke når der "
+"foretages en\n"
+"\t--sysupgrade.\n"
 
 # type: Plain text
 #: pacman-g2.txt:331
@@ -2600,6 +2639,9 @@ msgid ""
 "\tUpgrade only the packages that are at least <number> days old when performing a\n"
 "\t--sysupgrade.\n"
 msgstr ""
+"UpgradeDelay = <number>::\n"
+"\tOpgrader kun pakker der mindst er <number> dage gamle når der foretages en\n"
+"\t--sysupgrade.\n"
 
 # type: Plain text
 #: pacman-g2.txt:335
@@ -2609,6 +2651,10 @@ msgid ""
 "\tIssue a warning when you install a package, but the local sync database (which\n"
 "\tcan be upgraded using -Sy) haven't been updated for <number> days.\n"
 msgstr ""
+"OldDelay = <number>::\n"
+"\tUdsted en advarsel når du installerer en pakke, men den lokale sync "
+"database (som\n"
+"\tkan blive opgraderet med -Sy) ikke er blevet opdateret for <number> dage.\n"
 
 # type: Plain text
 #: pacman-g2.txt:339
@@ -2618,6 +2664,10 @@ msgid ""
 "\tTry to download packages <number> times. This is useful in case you have a bad\n"
 "\tinternet connection and your packages often get corrupted during the download.\n"
 msgstr ""
+"MaxTries = <number>::\n"
+"\tForsøger at downloade <number> pakkertider. Dette er nyttig i tilfælde at "
+"du har en dårlig\n"
+"\tinternetforbindelse og dine pakker ofte bliver ødelagte under download.\n"
 
 # type: Plain text
 #: pacman-g2.txt:343
@@ -2627,6 +2677,10 @@ msgid ""
 "\tInclude another config file. This config file can include repositories or\n"
 "\tgeneral configuration options.\n"
 msgstr ""
+"Include = <path>::\n"
+"\tInkluder en anden konfigurationsfil. Denne konfigurationsfil kan inkludere "
+"arkiver eller\n"
+"\tgenerelle konfigurationsvalgmuligheder.\n"
 
 # type: Plain text
 #: pacman-g2.txt:346
@@ -2635,6 +2689,9 @@ msgid ""
 "ProxyServer = <host|ip>::\n"
 "\tIf set, pacman-g2 will use this proxy server for all ftp/http transfers.\n"
 msgstr ""
+"ProxyServer = <host|ip>::\n"
+"\tHvis det sættes, vil pacman-g2 bruge denne proxyserver for alle ftp/http "
+"overførsler.\n"
 
 # type: Plain text
 #: pacman-g2.txt:350
@@ -2644,6 +2701,10 @@ msgid ""
 "\tIf set, pacman-g2 will use this proxy port for all ftp/http transfers.\n"
 "\t(Default: 80).\n"
 msgstr ""
+"ProxyPort = port::\n"
+"\tHvis det sættes, vil pacman-g2 bruge denne proxy port for alle ftp/http "
+"overførsler.\n"
+"\t(Standard: 80).\n"
 
 # type: Plain text
 #: pacman-g2.txt:356
@@ -2655,6 +2716,15 @@ msgid ""
 "\tinstances of %o will be replaced with the local filename, plus a \".part\"\n"
 "\textension, which allows programs like wget to do file resumes properly.\n"
 msgstr ""
+"XferCommand = /path/to/command %u::\n"
+"\tHvis der sættes, vil pacman-g2 benytte dette eksterne program for at "
+"downloade alle fjern filer\n"
+"\tAlt der indeholder %u vil blive erstattet med URL for at blive downloadet. "
+"Hvis det er til stede,\n"
+"\tvil altsammen af %o vil det blive erstattet med et lokal filenavn, plus en "
+"\".part\"\n"
+"\tudvidelse, hvilken tillader programmer som wget at lave fil resume "
+"ordentligt.\n"
 
 # type: Plain text
 #: pacman-g2.txt:360
@@ -2664,6 +2734,11 @@ msgid ""
 "\tbuilt-in http/ftp support, or need the more advanced proxy support that comes\n"
 "\twith utilities like curl.\n"
 msgstr ""
+"\tDenne valgmulighed er nyttig for brugere som oplever problemer med "
+"pacman-g2's\n"
+"\tindbyggede http/ftp understøttelse, eller har brug for den mere avancerede "
+" proxy understøttelse  der kommer\n"
+"\tmed programmer som curl.\n"
 
 # type: Plain text
 #: pacman-g2.txt:363
@@ -2672,6 +2747,9 @@ msgid ""
 "NoPassiveFtp::\n"
 "\tDisables passive ftp connections when downloading packages. (aka Active Mode)\n"
 msgstr ""
+"NoPassiveFtp::\n"
+"\tInaktiverer passive ftpforbindelser når man downloader pakker. (alias "
+"Active Mode)\n"
 
 # type: Plain text
 #: pacman-g2.txt:367
@@ -2681,12 +2759,15 @@ msgid ""
 "\tAll files listed with a NoUpgrade directive will never be touched during a\n"
 "\tpackage install/upgrade.\n"
 msgstr ""
+"NoUpgrade = <file> [file] ...::\n"
+"\tAlle file oplistet med et NoUpgrade-direktiv vil aldrig blive rørt under en\n"
+"\tpakke installation/opgradering.\n"
 
 # type: Plain text
 #: pacman-g2.txt:369
 #, no-wrap
 msgid "\tNOTE: Do not include the leading slash when specifying files.\n"
-msgstr ""
+msgstr "\tNOTE: Inkluder ikke den ledende slash når man specificerer filer.\n"
 
 # type: Plain text
 #: pacman-g2.txt:376
@@ -2699,6 +2780,15 @@ msgid ""
 "\tthen you would not want the index.html file to be extracted from the apache\n"
 "\tpackage.\n"
 msgstr ""
+"NoExtract = <file> [file] ...::\n"
+"\tAlle filer oplistet med et NoExtract-direktiv vil aldrig blive udpakket fra "
+"en\n"
+"\tpakke i filsystemet. Dette kan være nyttig når du ikke ønsker at en del af "
+"en\n"
+"\tpakke bliver installeret. For example, f.eks, hvis din httpd root benytter "
+"en index.pHp,\n"
+"\tså ønsker du ikke index. html filen at blive udpakket fra apache\n"
+"\tpakken.\n"
 
 # type: Plain text
 #: pacman-g2.txt:380
@@ -2708,6 +2798,10 @@ msgid ""
 "\tLog action messages through *syslog*(2). This will insert pacman-g2 log entries\n"
 "\tinto your /var/log/messages or equivalent.\n"
 msgstr ""
+"UseSyslog::\n"
+"\tLog handlingsbeskeder igennem *syslog*(2). Dette vil indsætte pacman-g2 log "
+"enheder\n"
+"\tind i dine dine /var/log/beskeder eller ækvivalent.\n"
 
 # type: Plain text
 #: pacman-g2.txt:383
@@ -2716,11 +2810,13 @@ msgid ""
 "LogFile = /path/to/file::\n"
 "\tLog actions directly to a file, usually /var/log/pacman-g2.log.\n"
 msgstr ""
+"LogFile = /path/to/file::\n"
+"\tLog handlinger direkte til en fil, sædvanligvis /var/log/pacman-g2.log.\n"
 
 # type: Plain text
 #: pacman-g2.txt:385
 msgid "== CONFIG: REPOSITORIES"
-msgstr ""
+msgstr "== KONFIG: ARKIVER"
 
 # type: Plain text
 #: pacman-g2.txt:392
@@ -2733,11 +2829,18 @@ msgid ""
 "to use a local directory, you can specify the full path with a 'file://' "
 "prefix, as shown above."
 msgstr ""
+"Hvert arkivafsnit definerer et afsnit navn og som det mindste en beliggenhed "
+"hvor pakkerne kan findes. Afsnit navnet bliver defineret af strengen inden "
+"for firkantede parenteser (f.eks, disse to er for 'current' og 'custom'). "
+"Beliggenheder bliver defineret med Serverdirektivet og følger en URL "
+"benævnende struktur. P.t. bliver kun ftp understøttet for fjern servere. "
+"Hvis du vil benytte en lokal folder, kan du præcisere den fulde sti med en "
+"'file://' prefix, som vist foroven."
 
 # type: Plain text
 #: pacman-g2.txt:394
 msgid "== USING YOUR OWN REPOSITORY"
-msgstr ""
+msgstr "== BRUG DIT EGET ARKIV"
 
 # type: Plain text
 #: pacman-g2.txt:399
@@ -2747,6 +2850,10 @@ msgid ""
 "is generate a compressed package database in the /home/pkgs directory so "
 "pacman-g2 can find it when run with --refresh."
 msgstr ""
+"Lad os sige du har en bunke af custom pakker i /home/pkgs og deres "
+"respektive FrugalBuild filer er i/var/fst/local. Alt hvad du behøver at gøre "
+"er at generere en komprimeret pakkedatabase i dit /home/pkgs folderen så "
+"pacman-g2 kan finde det når der køres med --refresh."
 
 # type: Plain text
 #: pacman-g2.txt:402
@@ -2755,6 +2862,8 @@ msgid ""
 "# gensync /var/fst/local /home/pkgs/custom.fdb\n"
 "----\n"
 msgstr ""
+"# gensync /var/fst/local /home/pkgs/custom.fdb\n"
+"----\n"
 
 # type: Plain text
 #: pacman-g2.txt:412
@@ -2768,11 +2877,18 @@ msgid ""
 "to the repository, remember to re-generate the database and use pacman-g2's "
 "--refresh option."
 msgstr ""
+"Ovenstående kommando vil læse alle FrugalBuild filer i /var/fst/local og "
+"genererer en komprimeret database kaldede /home/pkgs/custom.fdb. Noter at "
+"databasen skal være af formen {treename}.fdb, hvor {treename} er navnet på "
+"afsnitet i konfigurationsfilen. Det var det! Konfigurer nu dit custom afsnit "
+"i konfigurationsfilen som vist i konfigurations eksempelet foroven. Pacman "
+"vil nu bruge dit pakkearkiv. Hvis du tilføjer nye pakker til arkivet, husk "
+"så at gen-generere databasen og brug pacman-g2s --refresh valgmulighed."
 
 # type: Plain text
 #: pacman-g2.txt:414
 msgid "== HOOKS"
-msgstr ""
+msgstr "== HOOKS"
 
 # type: Plain text
 #: pacman-g2.txt:418
@@ -2781,6 +2897,9 @@ msgid ""
 "directory.  The hooks are like package scriptlets: each file can provide "
 "functions for a given hook. At the moment the following hooks are supported:"
 msgstr ""
+"pacman-g2 vil forsøge at udføre hooks i /etc/pacman-g2/hooks folderen. Hooks "
+"er som pakke scriptlets: hver fil kan stille funktioner til rådighed for et "
+"givet hook. I øjeblikket er følgende hooks understøttet:"
 
 # type: Plain text
 #: pacman-g2.txt:421
@@ -2789,9 +2908,11 @@ msgid ""
 "post_sysupgrade::\n"
 "\tExecuted after a successful `pacman-g2 -S --sysupgrade`.\n"
 msgstr ""
+"post_sysupgrade::\n"
+"\tUdført efter en vellykket `pacman-g2 -S --sysupgrade`.\n"
 
 # type: Plain text
 #: pacman-g2.txt:425
 #, no-wrap
 msgid "*makepkg*(8)\n"
-msgstr ""
+msgstr "*makepkg*(8)\n"
