@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-01-03 05:04+0100\n"
-"PO-Revision-Date: 2008-01-28 18:25+0100\n"
+"PO-Revision-Date: 2008-01-29 14:04+0100\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -51,12 +51,12 @@ msgstr ""
 # type: Plain text
 #: FrugalBuild.txt:14 makepkg.txt:12 pacman-g2.txt:12
 msgid "== DESCRIPTION"
-msgstr "== DESCRIPTION"
+msgstr "== BESKRIVELSE"
 
 # type: Plain text
 #: FrugalBuild.txt:16
 msgid "=== Simple Example"
-msgstr "=== Simple Example"
+msgstr "=== ENKEL EKSEMPEL"
 
 # type: Plain text
 #: FrugalBuild.txt:17 FrugalBuild.txt:44 FrugalBuild.txt:157
@@ -351,7 +351,7 @@ msgstr ""
 # type: Plain text
 #: FrugalBuild.txt:128
 msgid "=== Install/Upgrade/Remove Scripting"
-msgstr "=== Install/Upgrade/Remove Scripting"
+msgstr "=== Install/Opgrader/Fjern Scripting"
 
 # type: Plain text
 #: FrugalBuild.txt:133
@@ -504,7 +504,7 @@ msgstr ""
 # type: Plain text
 #: FrugalBuild.txt:182
 msgid "=== FrugalBuild Directives"
-msgstr "=== FrugalBuild Directives"
+msgstr "=== FrugalBuild Direktiver"
 
 # type: Plain text
 #: FrugalBuild.txt:186
@@ -952,7 +952,7 @@ msgstr ""
 # type: Plain text
 #: FrugalBuild.txt:340
 msgid "=== What is the process of chrooted build?"
-msgstr "=== What is the process of chrooted build?"
+msgstr "=== Hvad er processen i chrooted bygning?"
 
 # type: Plain text
 #: FrugalBuild.txt:345
@@ -1098,7 +1098,7 @@ msgstr ""
 # type: Plain text
 #: FrugalBuild.txt:395
 msgid "=== Package splitting"
-msgstr "=== Package splitting"
+msgstr "=== Pakke opsplitning"
 
 # type: Plain text
 #: FrugalBuild.txt:399
@@ -1257,7 +1257,7 @@ msgstr ""
 # type: Plain text
 #: FrugalBuild.txt:459 makepkg.txt:161 pacman-g2.txt:423
 msgid "== SEE ALSO"
-msgstr "== SEE ALSO"
+msgstr "== SE OGSÅ"
 
 # type: Plain text
 #: FrugalBuild.txt:461
@@ -1268,7 +1268,7 @@ msgstr "*makepkg*(8), *pacman-g2*(8)\n"
 # type: Plain text
 #: FrugalBuild.txt:463 makepkg.txt:165 pacman-g2.txt:427
 msgid "== AUTHORS"
-msgstr "== AUTHORS"
+msgstr "== UDVIKLERE"
 
 # type: Plain text
 #: FrugalBuild.txt:464 makepkg.txt:166 pacman-g2.txt:428
@@ -1323,7 +1323,7 @@ msgstr ""
 # type: Plain text
 #: makepkg.txt:26 pacman-g2.txt:62
 msgid "== OPTIONS"
-msgstr "== OPTIONS"
+msgstr "== INDSTILLINGER"
 
 # type: Plain text
 #: makepkg.txt:29
@@ -1694,7 +1694,7 @@ msgstr ""
 # type: Plain text
 #: makepkg.txt:151 pacman-g2.txt:290
 msgid "== CONFIGURATION"
-msgstr "== CONFIGURATION"
+msgstr "== KONFIGURATION"
 
 # type: Plain text
 #: makepkg.txt:156
@@ -1755,7 +1755,7 @@ msgstr ""
 # type: Plain text
 #: pacman-g2.txt:19
 msgid "== OPERATIONS"
-msgstr "== OPERATIONS"
+msgstr "== OPERATIONER"
 
 # type: Plain text
 #: pacman-g2.txt:23
@@ -2054,7 +2054,7 @@ msgstr ""
 # type: Plain text
 #: pacman-g2.txt:125
 msgid "== SYNC OPTIONS"
-msgstr "== SYNC OPTIONS"
+msgstr "== SYNC VALGMULIGHEDER"
 
 # type: Plain text
 #: pacman-g2.txt:132
@@ -2069,12 +2069,9 @@ msgid ""
 msgstr ""
 "-c, --clean::\n"
 "\tFjern gamle pakker fra cachen. Når pacman-g2 downloader pakker, gemmer den\n"
-"\tdem i /var/cache/pacman-g2/pkg. Hvis du har brug for harddiskplads, kan du "
-"fjerne\n"
-"\t disse pakker ved at bruge --clean valgmuligheden. Ved brug af en gang "
-"--clean (eller -c) switch\n"
-"\tvil kun fjerne gamle pakker. Brug det to gange efter hinanden for at fjerne "
-"alle pakker fra\n"
+"\tdem i /var/cache/pacman-g2/pkg. Hvis du har brug for harddiskplads, kan du fjerne\n"
+"\t disse pakker ved at bruge --clean valgmuligheden. Ved brug af en gang --clean (eller -c) switch\n"
+"\tvil kun fjerne gamle pakker. Brug det to gange efter hinanden for at fjerne alle pakker fra\n"
 "\tcache.\n"
 
 # type: Plain text
@@ -2139,8 +2136,7 @@ msgid ""
 "\tdownloaded at a later time, using a program like wget.\n"
 msgstr ""
 "-p, --print-uris::\n"
-"\tUdprinter URIs for hver pakke der vil blive installeret, inklusiv "
-"eventuelle\n"
+"\tUdprinter URIs for hver pakke der vil blive installeret, inklusiv eventuelle\n"
 "\tafhængigheder der endnu skal installeres. Disse kan pipes til en fil og\n"
 "\tdownloades på et senere tidspunkt, ved brug af et program som wget.\n"
 
@@ -2171,8 +2167,7 @@ msgstr ""
 "-u, --sysupgrade::\n"
 "\tOpgraderer alle pakker der er ude af dato. pacman-g2 vil undersøge hver\n"
 "\tpackage installeret på systemet, og hvis en nyere pakke er på serveren vil\n"
-"\tvil den blive opgraderet. pacman-g2 vil præsentere en rapport af alle "
-"pakker den ønsker at\n"
+"\tvil den blive opgraderet. pacman-g2 vil præsentere en rapport af alle pakker den ønsker at\n"
 "\topgradere og vil ikke fortsætte uden brugerbekræftelse. Afhængigheder er\n"
 "\tautomatisk løst på dette niveau og vil blive installeret/opgraderet om\n"
 "\tnødvendigt.\n"
@@ -2211,16 +2206,14 @@ msgid ""
 "\thaving to edit pacman-g2.conf each time.\n"
 msgstr ""
 "--ignore <pkg>::\n"
-"\tDenne valgmulighedsfunktion er præcist den samme som IgnorePkg "
-"konfigurations\n"
-"\tdirektiv. Sommetider kan det være praktisk at skippe nogle "
-"pakkeopdateringer uden\n"
+"\tDenne valgmulighedsfunktion er præcist den samme som IgnorePkg konfigurations\n"
+"\tdirektiv. Sommetider kan det være praktisk at skippe nogle pakkeopdateringer uden\n"
 "\tat redigere pacman-g2.conf hver gang.\n"
 
 # type: Plain text
 #: pacman-g2.txt:182
 msgid "== REMOVE OPTIONS"
-msgstr "== REMOVE OPTIONS"
+msgstr "== FJERN VALGMULIGHEDER"
 
 # type: Plain text
 #: pacman-g2.txt:186
@@ -2255,12 +2248,9 @@ msgid ""
 "\tdesignations are ignored and the files are removed.\n"
 msgstr ""
 "-n, --nosave::\n"
-"\tInstruerer pacman-g2 i at ignorere fil backup benævnelser. Normalt, når en "
-"fil\n"
-"\ter ved at blive fjernet fra system databasen bliver det først tjekket for "
-"at se om\n"
-"\tfilen skal omdøbes til en .pacsave udvidelse. Hvis --nosave bliver brugt, "
-"vil disse\n"
+"\tInstruerer pacman-g2 i at ignorere fil backup benævnelser. Normalt, når en fil\n"
+"\ter ved at blive fjernet fra system databasen bliver det først tjekket for at se om\n"
+"\tfilen skal omdøbes til en .pacsave udvidelse. Hvis --nosave bliver brugt, vil disse\n"
 "\tbenævnelser blive ignoreret og filerne bliver fjernet.\n"
 
 # type: Plain text
@@ -2282,7 +2272,7 @@ msgstr ""
 # type: Plain text
 #: pacman-g2.txt:203
 msgid "== QUERY OPTIONS"
-msgstr "== QUERY OPTIONS"
+msgstr "== QUERY VALGMULIGHEDER"
 
 # type: Plain text
 #: pacman-g2.txt:206
@@ -2387,8 +2377,7 @@ msgid ""
 "\tcontains <regexp>.\n"
 msgstr ""
 "-s, --search <regulært udtryk>::\n"
-"\tDette vil søge hver lokalt-installeret pakke efter navne eller beskrivelser "
-"der\n"
+"\tDette vil søge hver lokalt-installeret pakke efter navne eller beskrivelser der\n"
 "\tindeholder <regulært udtryk>.\n"
 
 # type: Plain text
@@ -2454,7 +2443,7 @@ msgstr ""
 # type: Plain text
 #: pacman-g2.txt:260
 msgid "== HANDLING CONFIG FILES"
-msgstr "== HANDLING CONFIG FILES"
+msgstr "== HÅNDTERING KONFIG FILER"
 
 # type: Plain text
 #: pacman-g2.txt:267
@@ -2481,8 +2470,7 @@ msgid ""
 "\tAll three files are the same, so we win either way. Install the new file.\n"
 msgstr ""
 "original=X, current=X, new=X::\n"
-"\tAlle tre filer er den samme, så det gør ingen forskel. Installer den nye "
-"fil..\n"
+"\tAlle tre filer er den samme, så det gør ingen forskel. Installer den nye fil..\n"
 
 # type: Plain text
 #: pacman-g2.txt:275
@@ -2509,8 +2497,7 @@ msgid ""
 msgstr ""
 "original=X, current=Y, new=X::\n"
 "\tBegge pakkerversioner indeholder præcis den samme fil, men den på\n"
-"\tfilesystemet er siden blevet modificeret. I dette tilfælde lader vi den "
-"aktuelle fil være\n"
+"\tfilesystemet er siden blevet modificeret. I dette tilfælde lader vi den aktuelle fil være\n"
 "\tsom den er.\n"
 
 # type: Plain text
@@ -2534,8 +2521,7 @@ msgid ""
 msgstr ""
 "original=X, current=Y, new=Z::\n"
 "\tAlle tre filer er forskellige, så vi installerer den nye fil med en .pacnew\n"
-"\tudvidelse og advarer brugeren, så at hun/han manuelt kan flytte filen på "
-"plads efter\n"
+"\tudvidelse og advarer brugeren, så at hun/han manuelt kan flytte filen på plads efter\n"
 "\tat alle nødvendige tilpasninger er lavet.\n"
 
 # type: Plain text
@@ -2583,7 +2569,7 @@ msgstr ""
 # type: Plain text
 #: pacman-g2.txt:311
 msgid "== CONFIG: OPTIONS"
-msgstr "== CONFIG: OPTIONS"
+msgstr "== KONFIG: VALGMULIGHEDER"
 
 # type: Plain text
 #: pacman-g2.txt:315
@@ -2666,8 +2652,7 @@ msgid ""
 "\tinternet connection and your packages often get corrupted during the download.\n"
 msgstr ""
 "MaxTries = <number>::\n"
-"\tForsøger at downloade <number> pakkertider. Dette er nyttigt i det tilfælde "
-"af du har en dårlig\n"
+"\tForsøger at downloade <number> pakkertider. Dette er nyttigt i det tilfælde af du har en dårlig\n"
 "\tinternetforbindelse og dine pakker ofte bliver ødelagte under download.\n"
 
 # type: Plain text
@@ -2715,14 +2700,10 @@ msgid ""
 "\textension, which allows programs like wget to do file resumes properly.\n"
 msgstr ""
 "XferCommand = /path/to/command %u::\n"
-"\tHvis der sættes, vil pacman-g2 benytte dette eksterne program for at "
-"downloade alle fjern filer\n"
-"\tAlt der indeholder %u vil blive erstattet med URL for at blive downloadet. "
-"Hvis det er til stede,\n"
-"\tvil altsammen af %o vil det blive erstattet med et lokal filnavn, plus en "
-"\".part\"\n"
-"\tudvidelse, hvilken tillader programmer som wget at lave fil resume "
-"ordentligt.\n"
+"\tHvis der sættes, vil pacman-g2 benytte dette eksterne program for at downloade alle fjern filer\n"
+"\tAlt der indeholder %u vil blive erstattet med URL for at blive downloadet. Hvis det er til stede,\n"
+"\tvil altsammen af %o vil det blive erstattet med et lokal filnavn, plus en \".part\"\n"
+"\tudvidelse, hvilken tillader programmer som wget at lave fil resume ordentligt.\n"
 
 # type: Plain text
 #: pacman-g2.txt:360
@@ -2776,12 +2757,9 @@ msgid ""
 "\tpackage.\n"
 msgstr ""
 "NoExtract = <file> [file] ...::\n"
-"\tAlle filer oplistet med et NoExtract-direktiv vil aldrig blive udpakket fra "
-"en\n"
-"\tpakke i filsystemet. Dette kan være nyttig når du ikke ønsker at en del af "
-"en\n"
-"\tpakke bliver installeret. For eksempel, f.eks, hvis din httpd root benytter "
-"en index.pHp,\n"
+"\tAlle filer oplistet med et NoExtract-direktiv vil aldrig blive udpakket fra en\n"
+"\tpakke i filsystemet. Dette kan være nyttig når du ikke ønsker at en del af en\n"
+"\tpakke bliver installeret. For eksempel, f.eks, hvis din httpd root benytter en index.pHp,\n"
 "\tså ønsker du ikke index. html filen bliver udpakket fra apache\n"
 "\tpakken.\n"
 
@@ -2794,8 +2772,7 @@ msgid ""
 "\tinto your /var/log/messages or equivalent.\n"
 msgstr ""
 "UseSyslog::\n"
-"\tLog handlingsbeskeder igennem *syslog*(2). Dette vil indsætte pacman-g2 log "
-"enheder\n"
+"\tLog handlingsbeskeder igennem *syslog*(2). Dette vil indsætte pacman-g2 log enheder\n"
 "\tind i dine /var/log/beskeder eller ækvivalent.\n"
 
 # type: Plain text
@@ -2811,7 +2788,7 @@ msgstr ""
 # type: Plain text
 #: pacman-g2.txt:385
 msgid "== CONFIG: REPOSITORIES"
-msgstr "== CONFIG: REPOSITORIES"
+msgstr "== KONFIG: ARKIVER"
 
 # type: Plain text
 #: pacman-g2.txt:392
@@ -2835,7 +2812,7 @@ msgstr ""
 # type: Plain text
 #: pacman-g2.txt:394
 msgid "== USING YOUR OWN REPOSITORY"
-msgstr "== USING YOUR OWN REPOSITORY"
+msgstr "== BRUG AF DIT EGET ARKIV"
 
 # type: Plain text
 #: pacman-g2.txt:399
@@ -2878,8 +2855,7 @@ msgstr ""
 "afsnittet i konfigurationsfilen. Det var det! Konfigurer nu dit custom "
 "afsnit i konfigurationsfilen som vist i konfigurationseksemplet foroven. "
 "Pacman vil nu bruge dit pakkearkiv. Hvis du tilføjer nye pakker til arkivet, "
-"husk så at gen-generere databasen og brug pacman-g2s --refresh "
-"valgmulighed."
+"husk så at gen-generere databasen og brug pacman-g2s --refresh valgmulighed."
 
 # type: Plain text
 #: pacman-g2.txt:414
