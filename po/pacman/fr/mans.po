@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-01-03 05:04+0100\n"
-"PO-Revision-Date: 2008-01-03 15:48+0100\n"
+"PO-Revision-Date: 2008-02-14 09:27+0100\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -73,7 +73,7 @@ msgstr "----\n"
 # type: Plain text
 #: FrugalBuild.txt:20
 msgid "# Compiling Time: 0.17 SBU # Maintainer: Name <email@addr.ess>"
-msgstr "# Compiling Time: 0.17 SBU # Maintainer: Nom <email@addr.esse>"
+msgstr "# Temps de compilation: 0.17 SBU # Mainteneur: Nom <email@addr.esse>"
 
 # type: Plain text
 #: FrugalBuild.txt:31
@@ -170,10 +170,10 @@ msgid ""
 "you wish."
 msgstr ""
 "Si vous souhaitez maintenir le paquet, écrivez votre nom ou pseudo et votre "
-"adresse émail sur la troisième ligne du FrugalBuild. Si vous ne projetez pas "
+"adresse email sur la troisième ligne du FrugalBuild. Si vous ne projetez pas "
 "de maintenir le paquet, écrivez `Contributor` à la place de `Maintainer`, "
 "plus tard quelqu'un le prendra en charge et rajoutera sa ligne à ce moment "
-"là. Les autres ligne du style `Modified by` ne sont pas permises. Utilisez "
+"là. Les autres lignes du style `Modified by` ne sont pas permises. Utilisez "
 "le message commit pour mentionner ces autres lignes si vous le souhaitez."
 
 # type: Plain text
@@ -188,16 +188,16 @@ msgid ""
 "`5wanda1`, `5wanda2` and so on. This way the user can easily upgrade to "
 "`pkgrel=5` which is in `-current`."
 msgstr ""
-"'pkgname' défini le nom du paquet. Il ne doit contenir aucune lettre "
+"'pkgname' définit le nom du paquet. Il ne doit contenir aucune lettre "
 "majuscule.\n"
-"La version du paquet défini la dernière version en amont, tandis que la "
-"ligne release définie les changements spécifiques à Frugalware. 'pkgrel'  "
-"doit être un nombre entier car les version comme '5wanda1' ne sont réservé "
-"qu'aux mises à jour de sécurité. Dans le cas postérieur, la règle est la "
-"suivant : Si le \"pkgrel' du paquet original est 4, alors incrémentez-le une "
-"fois que vous ajoutez un patch de sécurité, mais, utilisez '5wanda1', "
-"'5wanda2' etc.... De cette façon, l'utilisateur peut facilement mettre à "
-"jour 'pkgrel=5' qui est dans la branche '-current'."
+"La version du paquet définit la dernière version en amont, tandis que la "
+"ligne release définit les changements spécifiques à Frugalware. 'pkgrel'  "
+"doit être un nombre entier car les versions comme '5wanda1' ne sont "
+"réservées qu'aux mises à jour de sécurité. Dans le cas postérieur, la règle "
+"est la suivante : Si le \"pkgrel' du paquet original est 4, alors "
+"incrémentez-le une fois que vous ajoutez un patch de sécurité, mais, "
+"utilisez '5wanda1', '5wanda2' etc.... De cette façon, l'utilisateur peut "
+"facilement mettre à jour 'pkgrel=5' qui est dans la branche '-current'."
 
 # type: Plain text
 #: FrugalBuild.txt:69
@@ -218,7 +218,7 @@ msgid ""
 "one.  If the dependency is runtime-only, then use `rodepends()`, if "
 "buildtime-only then use `makedepends()`."
 msgstr ""
-"'depends()' est un tableau bash qui définie les dépendances du paquet.\n"
+"'depends()' est un tableau bash qui définit les dépendances du paquet.\n"
 "'depends()' liste ces paquets qui sont requis pour la construction et "
 "l'utilisation de ce dernier.\n"
 "Si la dépendance est en runtime-only, utilisez 'rodepends()', si  elle est "
@@ -238,13 +238,13 @@ msgid ""
 msgstr ""
 "La prochaine ligne, 'Finclude', est une commande spéciale qui vous permet "
 "d'hériter de n'importe quelle directive d'un arrangement d'un FrugalBuild. "
-"Ils peuvent être trouvé dans le 'FST', dans '/source/include'. L'arrangement "
-"'util' est toujours inclus, puisque ses fonctions fournies sont utilisées "
-"par presque tous les FrugalBuild. Regardez dans le fichier "
-"'/source/include/sourceforge.sh', il fourni les directives 'url', 'up2date' "
-"et 'source()', donc, nous n'avons pas de les spécifier ici. Après "
+"Ils peuvent être trouvés dans le 'FST', dans '/source/include'. "
+"L'arrangement 'util' est toujours inclus, puisque ses fonctions fournies "
+"sont utilisées par presque tous les FrugalBuild. Regardez dans le fichier '/"
+"source/include/sourceforge.sh', il fournit les directives 'url', 'up2date' "
+"et 'source()', donc, nous n'avons pas besoin de les spécifier ici. Après "
 "'Finclude', vous pouvez recopier les directives héritées, par exemple, pour "
-"définir un 'up2date' personnalisé si l'hérité ne vous est pas appropriée."
+"définir un 'up2date' personnalisé si l'hérité ne vous convient pas."
 
 # type: Plain text
 #: FrugalBuild.txt:87
@@ -254,7 +254,7 @@ msgid ""
 "where `foo` or `foo-extra` is a directory under `/source` in the `FST`."
 msgstr ""
 "Le premier élément de tableau 'groups()'  est obligatoire, et il devrait "
-"être un \"premier groupe\" valide. Celà signifie qu'il devrait être sous la "
+"être un \"premier groupe\" valide. Cela signifie qu'il devrait être sous la "
 "forme 'foo' ou 'foo-extra', où 'foo' ou 'foo-extra' donc des répertoires "
 "dans '/source' dans le 'FST'."
 
@@ -306,7 +306,7 @@ msgid ""
 "any architecture-dependent file, then you can add this line manually as "
 "`makepkg` will not detect this."
 msgstr ""
-"La dernière ligne va être automatiquement ajouté à la fin du FrugalBuild si "
+"La dernière ligne va être automatiquement ajoutée à la fin du FrugalBuild si "
 "la fonction `build()` a utilisé votre `$CFLAGS` ou `$CXXFLAGS`. C'est "
 "pratique si vous voulez cross-compiler sur une machine rapide pour une "
 "architecture lente. Si le paquet n'utilise pas notre `$CFLAGS`, nous ne "
@@ -348,9 +348,9 @@ msgid ""
 msgstr ""
 "Une fois que le paquet est installé avec succès dans la racine du paquet, "
 "makepkg va préparer quelques documentations. Il analysera ensuite les "
-"renseignements de mise au point des librairies et des fichiers binaires et "
-"générera un fichier de méta-renseignements. Enfin, il compressera tout dans "
-"un fichier `.fpm` dans le répertoire dans lequel vous aviez lancez "
+"renseignements de mise au point des bibliothèques et des fichiers binaires "
+"et générera un fichier de méta-renseignements. Enfin, il compressera tout "
+"dans un fichier `.fpm` dans le répertoire dans lequel vous aviez lancez "
 "`makepkg`."
 
 # type: Plain text
@@ -393,7 +393,7 @@ msgid ""
 "\tscript is run right before files are extracted.\n"
 msgstr ""
 "pre_install::\n"
-"\tscript est lancé avant que les fichiers soit décompressés.\n"
+"\tscript est lancé avant que les fichiers soient décompressés.\n"
 
 # type: Plain text
 #: FrugalBuild.txt:141
@@ -403,7 +403,7 @@ msgid ""
 "\tscript is run right after files are extracted.\n"
 msgstr ""
 "post_install::\n"
-"\tscript est lancé après que les fichiers soit décompressés.\n"
+"\tscript est lancé après que les fichiers soient décompressés.\n"
 
 # type: Plain text
 #: FrugalBuild.txt:144
@@ -413,7 +413,7 @@ msgid ""
 "\tscript is run right before files are extracted.\n"
 msgstr ""
 "pre_upgrade::\n"
-"\tscript est lancé avant que les fichiers soit décompressés.\n"
+"\tscript est lancé avant que les fichiers soient décompressés.\n"
 
 # type: Plain text
 #: FrugalBuild.txt:147
@@ -423,7 +423,7 @@ msgid ""
 "\tscript is run after files are extracted.\n"
 msgstr ""
 "post_upgrade::\n"
-"\tscript est lancé après que les fichiers soit décompressés.\n"
+"\tscript est lancé après que les fichiers soient décompressés.\n"
 
 # type: Plain text
 #: FrugalBuild.txt:150
@@ -433,7 +433,7 @@ msgid ""
 "\tscript is run right before files are removed.\n"
 msgstr ""
 "pre_remove::\n"
-"\tscript est lancé avant que les fichiers soit retirés.\n"
+"\tscript est lancé avant que les fichiers soient retirés.\n"
 
 # type: Plain text
 #: FrugalBuild.txt:153
@@ -443,7 +443,7 @@ msgid ""
 "\tscript is run right after files are removed.\n"
 msgstr ""
 "post_remove::\n"
-"\tLe script est lancé après que les fichiers soit retirés.\n"
+"\tLe script est lancé après que les fichiers soient retirés.\n"
 
 # type: Plain text
 #: FrugalBuild.txt:156
@@ -482,8 +482,8 @@ msgid ""
 "You can find a scriptlet skeleton in the `/docs/skel/` directory, use it "
 "when creating new packages."
 msgstr ""
-"Vous pouvez trouver un squelette de scriptlet dans le répertoire "
-"`/docs/skel/`. Utilisez-le lorsque vous créer des nouveaux paquets."
+"Vous pouvez trouver un squelette de scriptlet dans le répertoire `/docs/skel/"
+"`. Utilisez-le lorsque vous créez des nouveaux paquets."
 
 # type: Plain text
 #: FrugalBuild.txt:169
@@ -531,8 +531,7 @@ msgid ""
 "\tusually the name part of the source tarball.\n"
 msgstr ""
 "pkgname::\n"
-"\tLe nom du paquet. Il peut contenir des traits d'union et peut être en "
-"minuscule. C'est\n"
+"\tLe nom du paquet. Il peut contenir des traits d'union et peut être en minuscule. C'est\n"
 "\td'habitude le nom donné au tarball des sources.\n"
 
 # type: Plain text
@@ -635,9 +634,8 @@ msgid ""
 msgstr ""
 "install::\n"
 "\tSpécifie un script d'installation spécial qui est inclus dans le paquet. Ce\n"
-"\tfichier doit résider dans le même répertoire que le FrugalBuild, et devra "
-"être copié\n"
-"\tdans le paquet par makepkg. Il n'a pas besoin d'être inclu dans le tableau\n"
+"\tfichier doit résider dans le même répertoire que le FrugalBuild, et devra être copié\n"
+"\tdans le paquet par makepkg. Il n'a pas besoin d'être inclus dans le tableau\n"
 "\tdes sources. (exemple : 'install=modutils.install')\n"
 
 # type: Plain text
@@ -665,12 +663,9 @@ msgid ""
 "\tin `/var/cache/pacman-g2/src`, the file is downloaded by wget.\n"
 msgstr ""
 "source (tableau)::\n"
-"\tLa ligne source est un tableau des fichiers sources requis pour construire "
-"le paquet.\n"
-"\tLe ficher source doit être dans le même répertoire que je le fichier "
-"FrugalBuild, ) moins qu'il\n"
-"\tai une adresse URL entièrement qualifiée. Alors, si le fichier source "
-"n'existe pas encore\n"
+"\tLa ligne source est un tableau des fichiers sources requis pour construire le paquet.\n"
+"\tLe ficher source doit être dans le même répertoire que je le fichier FrugalBuild, ) moins qu'il\n"
+"\tai une adresse URL entièrement qualifiée. Alors, si le fichier source n'existe pas encore\n"
 "\tdans `/var/cache/pacman-g2/src`, le fichier est téléchargé par wget.\n"
 
 # type: Plain text
@@ -684,12 +679,9 @@ msgid ""
 "\tsha1sums in the FrugalBuild, run `makepkg -G`.\n"
 msgstr ""
 "sha1sums (tableau)::\n"
-"\\Si le champ est présent, il doit contenir un calcul SHA1 pour chaque "
-"fichier source\n"
-"\tspécifié dans le tableau des sources (dans le même ordre). `makepkg` va "
-"l'utiliser pour\n"
-"\tvérifier l'intégrité des fichiers source pendant les constructions "
-"suivantes. Pour mettre à jour facilement\n"
+"\\Si le champ est présent, il doit contenir un calcul SHA1 pour chaque fichier source\n"
+"\tspécifié dans le tableau des sources (dans le même ordre). `makepkg` va l'utiliser pour\n"
+"\tvérifier l'intégrité des fichiers source pendant les constructions suivantes. Pour mettre à jour facilement\n"
 "\t le sha1sums, dans le FrugalBuild, lancez `makepkg -G`.\n"
 
 # type: Plain text
@@ -702,10 +694,8 @@ msgid ""
 "\tit empty, like:\n"
 msgstr ""
 "signatures (tableau)::\n"
-"\tSi ce champ est présent, il doit contenir un tableau des signatures gpg "
-"requises\n"
-"\tpour valider les fichiers sources. Quand il n'y a pas de signatures de "
-"disponibles, laissez-la\n"
+"\tSi ce champ est présent, il doit contenir un tableau des signatures gpg requises\n"
+"\tpour valider les fichiers sources. Quand il n'y a pas de signatures disponibles, laissez-la\n"
 "\tvide, comme :\n"
 
 # type: Plain text
@@ -728,10 +718,8 @@ msgid ""
 "\tall KDE packages by installing the 'kde' group.\n"
 msgstr ""
 "groupes (tableau)::\n"
-"\tC'est un tableau de noms symboliques représentant les groupes des paquets, "
-"vous permettant d'installer\n"
-"\tplusieurs paquets en demandant une seule cible. Par exemple, quelqu'un "
-"pourrait installer\n"
+"\tC'est un tableau de noms symboliques représentant les groupes des paquets, vous permettant d'installer\n"
+"\tplusieurs paquets en demandant une seule cible. Par exemple, quelqu'un pourrait installer\n"
 "\ttous les paquets KDE en installant le groupe 'kde'.\n"
 
 # type: Plain text
@@ -743,11 +731,9 @@ msgid ""
 "\tit's not available, that will mean that `gensync` will skip it when generating\n"
 "\tthe package database.\n"
 msgstr ""
-"archs (array)::\n"
-"\tCe tableau défini sur quelle architecture le paquet donné est disponible. "
-"S'il\n"
-"\tn'est pas disponible, cela signifiera que `gensync` va l'ignorer quand il "
-"va générer\n"
+"archs (tableau)::\n"
+"\tCe tableau défini sur quelle architecture le paquet donné est disponible. S'il\n"
+"\tn'est pas disponible, cela signifiera que `gensync` va l'ignorer quand il va générer\n"
 "\tla base de données de paquets.\n"
 
 # type: Plain text
@@ -761,6 +747,14 @@ msgid ""
 "\tremoved from a system. See 'HANDLING CONFIG FILES' in the `pacman-g2` manual\n"
 "\tpage for more information.\n"
 msgstr ""
+"backup (tableau)::\n"
+"\tUn tableau de noms de fichiers (sans slash les précédant). La ligne\n"
+"\tbackup va être ajoutée au fichier méta-info du paquet pour pacman-g2. Cela "
+"va\n"
+"\tdésigner tous les fichiers qui vont être sauvegardé si jamais ce paquet est\n"
+"\tdésinstallé d'un système. Allez voir la page 'HANDLING CONFIG FILE' dans le "
+"manuel de 'pacman-g2'\n"
+"\\pour plus d'informations."
 
 # type: Plain text
 #: FrugalBuild.txt:273
@@ -775,6 +769,18 @@ msgid ""
 "\tthan). See the FrugalBuild example above for an example of the depends\n"
 "\tdirective.\n"
 msgstr ""
+"depends (tableau)::\n"
+"\tCe tableau est une liste des paquets, que le paquet en création requiert, "
+"pour être construit et lancé.\n"
+"\tLes paquets de cette liste doivent avoir, au moins, leur nom encadré par "
+"des guillemets simples.\n"
+"\tIls peuvent  également inclure une version requise de la forme\n"
+"\t'name<>version', où '<>' est l'un des cinq comparatifs : '>=' (supérieur ou "
+"égal à),\n"
+"\t'<=' (inférieur ou égal à), = (égal à), '>' (supérieur à), ou '<' "
+"(inférieur à)\n"
+"\tAllez voir l'exemple de FrugalBuild, plus haut, pour un exemple de la "
+"directive \"depends\".\n"
 
 # type: Plain text
 #: FrugalBuild.txt:277
@@ -784,6 +790,12 @@ msgid ""
 "\tAn array of packages that this package depends on to build (ie, not required to\n"
 "\trun). Packages in this list should follow the same format as depends.\n"
 msgstr ""
+"makedepends (tableau)::\n"
+"\tCe tableau est une liste des paquets que le paquet en création requiert "
+"pour être construit .\n"
+"\t(c'est-à-dire, les paquets qui ne sont pas requis pour pouvoir le lancer).\n"
+"\tLes paquets de cette liste doivent suivre le même format que la directive "
+"'depends'.\n"
 
 # type: Plain text
 #: FrugalBuild.txt:284
@@ -796,20 +808,34 @@ msgid ""
 "\tdoesn't require that dcron be installed.) Packages in this list should follow\n"
 "\tthe same format as depends.\n"
 msgstr ""
+"rodepends (tableau)::\n"
+"\tCe tableau est une liste des paquets que le paquet requiert pour être lancé "
+"(c'est-à-dire, les paquets qui ne sont pas requis pour le construire).\n"
+"\tGénéralement, 'rodepends' doit être éviter en vue étant utilisé comme "
+"'depends', excepté où\n"
+"\tcelà va créer une chaîne circulaire des dépendances (par exemple, "
+"construire 'logrotare'\n"
+"\tne requiert pas que 'dcron' soit installé.). Les paquets de cette liste "
+"doivent suivre\n"
+"\tle même format que ceux de la directive 'depends'.\n"
 
 # type: Plain text
 #: FrugalBuild.txt:289
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "conflicts (array)::\n"
 "\tAn array of packages that will conflict with this package (ie, they cannot both\n"
 "\tbe installed at the same time). This directive follows the same format as\n"
 "\tdepends except you cannot specify versions here, only package names.\n"
 msgstr ""
+"conflicts (directive)::\n"
+"\tCette directive est une liste des paquets qui sont en conflits avec le paquet en création (c'est-à-dire, qu'il ne peuvent pas cohabiter ensemble, être installer sur le même système.)\n"
+"\tCette directive suit le même format que 'depends'. Cependant, vous ne pouvez pas\n"
+"\tspécifier la version des paquets, ici, mais seulement leur nom."
 
 # type: Plain text
 #: FrugalBuild.txt:296
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "provides (array)::\n"
 "\tAn array of \"virtual provisions\" that this package provides. This allows a\n"
@@ -818,20 +844,29 @@ msgid ""
 "\twhich allows packages to simply depend on 'kernel' rather than \"kernel-scsi OR\n"
 "\tkernel-ide OR ...\"\n"
 msgstr ""
+"provides (directive)::\n"
+"\tCette directive est une directive de \"dispositions virtuelles\" que le paquet en création fournit. Ceci autorise un\n"
+"\tpaquet de fournir d'autres noms de dépendance que son propre nom de paquet. Par\n"
+"\texemple, les paquets 'kernel-scsi' et et 'kernel-ide' peuvent chacun fournir 'kernel'\n"
+"\tqui autorise les paquets de simplement dépendre de 'kernel' à la place de 'kernel-scsi' OU\n"
+"\tde 'kernel-ide' OU...\n"
 
 # type: Plain text
 #: FrugalBuild.txt:301
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "removes (array)::\n"
 "\tThis is an array of files to be removed before the filecontlict check. Ideally\n"
 "\tyou should never use it, but in some cases it's handy to remove conflicting\n"
 "\tfiles generated by a scriptlet if you are sure about really nobody needs it.\n"
 msgstr ""
+"removes (directive)::\n"
+"\tCette directive est une liste des fichiers qui vont être supprimés avant la vérification des conflits entre fichiers. Normalement,\n"
+"\tvous ne devrez jamais l'utiliser. Mais dans certain cas, il est plus pratique de retirer les fichiers conflictuels générés par un scriptlet si vous êtes vraiment sûr(e) que personne n'en a besoin.\n"
 
 # type: Plain text
 #: FrugalBuild.txt:307
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "replaces (array)::\n"
 "\tThis is an array of packages that this package should replace, and can be used\n"
@@ -839,22 +874,30 @@ msgid ""
 "\trenamed to kernel-ide, then subsequent 'pacman-g2 -Syu' calls will not pick up\n"
 "\tthe upgrade, due to the differing package names. replaces handles this.\n"
 msgstr ""
+"replaces (directive)::\n"
+"\tCette directive est une liste des paquets, que le paquet en construction devrais remplacer, et qui peut être utilisé\n"
+"\tpour manipuler les paquets renommés/combinés. Par exemple, si le paquet 'kernel' est\n"
+"\trenommé en 'kernel-ide', alors l'appel de 'pacman-g2 -Syu' ne va pas reprendre la mise à niveau, due à la différence des noms des paquets. 'replaces' corrige ça.\n"
 
 # type: Plain text
 #: FrugalBuild.txt:310
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "options (array)::\n"
 "\tThis is an array of various boolean options. The possible values are:\n"
 msgstr ""
+"options (directive)::\n"
+"\tCette directive est une liste de diverses options booléennes. Les valeurs possibles sont :\n"
 
 # type: Plain text
 #: FrugalBuild.txt:313
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "\tnodocs: Don't add any documentation automatically (ie. when there'll be a\n"
 "\tseparate documentation subpackage).\n"
 msgstr ""
+"\tnodocs : N'ajoute aucune documentation automatiquement (c'est-à-dire, quand il y a\n"
+"\tune documentation des sous-paquets séparée).\n"
 
 # type: Plain text
 #: FrugalBuild.txt:315
@@ -864,77 +907,99 @@ msgstr ""
 
 # type: Plain text
 #: FrugalBuild.txt:318
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "\tforce: This is used to force the package to be upgraded by --sysupgrade, even\n"
 "\tif its an older version.\n"
 msgstr ""
+"\tforce : Cela force le paquet à être mis à niveau par '--sysupgrade' même\n"
+"\ts'il est d'une ancienne version.\n"
 
 # type: Plain text
 #: FrugalBuild.txt:321
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "\tstick: This is used to skip a package upgrade, even a newer version is\n"
 "\tavailable (eg. for web applications where a manual upgrade is better).\n"
 msgstr ""
+"\tstick : Ceci est utilisé pour sauter une mise à niveau d'un paquet, même si une nouvelle version est\n"
+"\tdisponible (par exemple, les applications web où une mise à niveau manuelle est meilleure).\n"
 
 # type: Plain text
 #: FrugalBuild.txt:325
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "\tnobuild: If this directive set, gensync will ignore this package, so users must\n"
 "\tbuild these packages on their machines, they will not be able to install them\n"
 "\twith pacman-g2 -S. Useful for closed-source, but freeware programs.\n"
 msgstr ""
+"\tnobuild : Si cette directive est présente, 'gensync' va ignorer ce paquet, donc les utilisateurs doivent\n"
+"\tconstruire ces paquets sur leur(s) machine(s). Ils ne leur sera pas possible de les installer\n"
+"\tavec 'pacman-g2 -S'. C'est très utile pour les logiciels, dont le code-source est fermé mais gratuits.\n"
 
 # type: Plain text
 #: FrugalBuild.txt:328
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "\tnofakeroot: Don't drop privileges after chrooting. Required by some broken\n"
 "\tpackages.\n"
 msgstr ""
+"\tnofakeroot : N'abandonne pas les privilèges super-utilisateur après le chrooting. Cette directive est requise par certain\n"
+"\tpaquet cassé.\n"
 
 # type: Plain text
 #: FrugalBuild.txt:330
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "\tscriptlet: Don't skip executing scriptlets even if we're in chroot.\n"
-msgstr ""
+msgstr "\tscriptlet : Ne saute pas l'exécution des 'scriptlets' même si l'on est dans le chroot.\n"
 
 # type: Plain text
 #: FrugalBuild.txt:332
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "\tnomirror: This means that the source should not be mirrored.\n"
-msgstr ""
+msgstr "\tnomirror : Ceci signifie que les sources doivent être mirroirées (Ca veut dire, hébergé sur un miroir).\n"
 
 # type: Plain text
 #: FrugalBuild.txt:335
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "\tgenscriptlet: Informs makepkg about not having a scriptlet is intentional. You\n"
 "\twant to use this when the scriptlet is generated during build().\n"
 msgstr ""
+"\tgenscriptlet : Ceci informe makepkg si l'absence d'un 'scriptlet' est intentionnel. Vous\n"
+"\tdevez l'utiliser quand le 'scriptlet' est généré durant le 'build()'.\n"
 
 # type: Plain text
 #: FrugalBuild.txt:338
+#, fuzzy
 msgid ""
 "NOTE: Feel free to use `nomirror` in a WIP repo but please try avoid it when "
 "pushing to a production repository."
 msgstr ""
+"Note : Vous êtes libre d'utiliser 'nomirror' dans un dépôt WIP, mais s'il "
+"vous plait, essayez de l'éviter quand il est pousser dans un dépôt de "
+"production."
 
 # type: Plain text
 #: FrugalBuild.txt:340
+#, fuzzy
 msgid "=== What is the process of chrooted build?"
-msgstr ""
+msgstr "=== Quel est le processus de la construction chrootée ?"
 
 # type: Plain text
 #: FrugalBuild.txt:345
+#, fuzzy
 msgid ""
 "First, what is chroot? If you use `makepkg -H`, then you use fakeroot to "
 "prevent build() from modifying the host system, and you use a prefix or "
 "DESTDIR directive to install everything to a directory and not under to the "
 "host system. This is good, but not enough."
 msgstr ""
+"Premièrement, qu'est-ce que le chroot ? Si vous utilisez 'makepkg -H', vous "
+"utilisez un fakeroot pour éviter que 'build()' ne modifie le système hôte, "
+"et vous utilisez une directive 'prefix' ou 'DESTDIR' pour tout installer "
+"dans un répertoire qui n'est pas dans le système hôte. C'est bon, mais ce "
+"n'est pas assez. "
 
 # type: Plain text
 #: FrugalBuild.txt:354
