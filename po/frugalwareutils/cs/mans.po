@@ -1,0 +1,719 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-11-24 05:19+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Translate Toolkit 1.0.1\n"
+
+# type: Plain text
+#: grubconfig.txt:2
+msgid "= grubconfig(1)"
+msgstr ""
+
+# type: Plain text
+#: grubconfig.txt:4 mouseconfig.txt:4 netconfig.txt:4 raidconfig.txt:4 timeconfig.txt:4 xconfig.txt:4 xwmconfig.txt:4
+msgid "== NAME"
+msgstr ""
+
+# type: Plain text
+#: grubconfig.txt:6
+msgid "grubconfig - configures the GRUB boot loader"
+msgstr ""
+
+# type: Plain text
+#: grubconfig.txt:8 mouseconfig.txt:8 netconfig.txt:8 raidconfig.txt:8 timeconfig.txt:8 xconfig.txt:8 xwmconfig.txt:8
+msgid "== SYNOPSIS"
+msgstr ""
+
+# type: Plain text
+#: grubconfig.txt:10
+msgid "grubconfig [options]"
+msgstr ""
+
+# type: Plain text
+#: grubconfig.txt:12 mouseconfig.txt:12 raidconfig.txt:12 timeconfig.txt:12 xconfig.txt:12 xwmconfig.txt:12
+msgid "== DESCRIPTION"
+msgstr ""
+
+# type: Plain text
+#: grubconfig.txt:17
+msgid ""
+"grubconfig is a front-end to grub-install. It supports installing to RAID "
+"partitions, and it supports generating a configuration file (`menu.lst`)  "
+"automatically for you. The later will contain the list of auto-detected "
+"other operating systems."
+msgstr ""
+
+# type: Plain text
+#: grubconfig.txt:19
+msgid "NOTE: The old `menu.lst` is saved as `menu.lst.old` for you."
+msgstr ""
+
+# type: Plain text
+#: grubconfig.txt:21 mouseconfig.txt:16 netconfig.txt:14 raidconfig.txt:16 timeconfig.txt:17 xconfig.txt:17 xwmconfig.txt:17
+msgid "== OPTIONS"
+msgstr ""
+
+# type: Plain text
+#: grubconfig.txt:24 mouseconfig.txt:19 raidconfig.txt:19 timeconfig.txt:20 xconfig.txt:20 xwmconfig.txt:23
+#, no-wrap
+msgid ""
+"--help::\n"
+"\tDisplay this manpage.\n"
+msgstr ""
+
+# type: Plain text
+#: grubconfig.txt:26 mouseconfig.txt:21 raidconfig.txt:21 timeconfig.txt:22 xconfig.txt:25 xwmconfig.txt:28
+#, no-wrap
+msgid ""
+"--version::\n"
+"\tDisplay the package version.\n"
+msgstr ""
+
+# type: Plain text
+#: mouseconfig.txt:2
+msgid "= mouseconfig(1)"
+msgstr ""
+
+# type: Plain text
+#: mouseconfig.txt:6
+msgid "mouseconfig - configures your mouse settings"
+msgstr ""
+
+# type: Plain text
+#: mouseconfig.txt:10
+msgid "mouseconfig [options]"
+msgstr ""
+
+# type: Plain text
+#: mouseconfig.txt:14
+msgid "mouseconfig sets up the `/etc/sysconfig/gpm` file to match your hardware."
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:2
+msgid "= netconfig(1)"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:6
+msgid "netconfig - manages network configuration profiles"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:10
+msgid "netconfig [options] start|stop|restart|status|list [interface]"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:12
+msgid "netconfig [options] [profile] [interface]"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:17
+#, no-wrap
+msgid ""
+"-h, --help::\n"
+"\tDisplay this manpage.\n"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:20
+#, no-wrap
+msgid ""
+"-f, --fast::\n"
+"\tFast mode, used by the installer.\n"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:23
+#, no-wrap
+msgid ""
+"--dry-run::\n"
+"\tDo not actually perform the operation.\n"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:26
+#, no-wrap
+msgid ""
+"--loup::\n"
+"\tBring up the loopback interface.\n"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:29
+#, no-wrap
+msgid ""
+"--lodown::\n"
+"\tBring down the loopback interface.\n"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:31
+msgid "== CONFIGURATION"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:35
+msgid ""
+"Every file in the `/etc/sysconfig/network` directory represents a network "
+"profile. When `netconfig` invoked with the start parameter, then the profile "
+"named `default` (`/etc/sysconfig/network/default`) will be read."
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:39
+msgid ""
+"This behaviour can be overwritten by the `network=<profilename>` kernel "
+"parameter. In that case the given profile will be loaded instead of "
+"`default` on system startup."
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:43
+msgid ""
+"This profile is divided into sections or interfaces. Each section defines an "
+"interface that netconfig should initialize. The exception to this is the "
+"options section, which defines global options."
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:45
+msgid "== CONFIG: OPTIONS"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:49
+#, no-wrap
+msgid ""
+"dns = <ip>::\n"
+"\tExplicitly defines dns addresses (ie. when using a static ip). Multiple\n"
+"\tusage is ok.\n"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:53
+#, no-wrap
+msgid ""
+"domain = <domain>::\n"
+"\tDefines the local domain name. If defined more than once, the first\n"
+"\twill be used.\n"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:56
+#, no-wrap
+msgid ""
+"desc = <description>::\n"
+"\tA brief description of this network profile. Used by the graphical "
+"frontend.\n"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:59
+#, no-wrap
+msgid ""
+"adsl_username = <username>::\n"
+"\tIf you have an adsl (pppoe) connection, your adsl username.\n"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:62
+#, no-wrap
+msgid ""
+"adsl_password = <password>::\n"
+"\tIf you have an adsl connection, your adsl password.\n"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:66
+#, no-wrap
+msgid ""
+"adsl_interface = <interface>::\n"
+"\tIf you have an adsl connection, the Ethernet interface connected to the\n"
+"\tDSL modem.\n"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:68
+msgid "== CONFIG: INTERFACES"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:72
+msgid ""
+"Each section defines an interface. The interface name is defined by the "
+"string within square brackets (ie. the two below are `eth0` and `eth1`). The "
+"available directives:"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:77
+#, no-wrap
+msgid ""
+"options = <ip> [netmask <netmask> [broadcast <broadcast>]::\n"
+"\tDefines the ip address, netmask and broadcast address of the interface.\n"
+"\tMultiple usage is ok for eth0:1, eth0:2, etc. See the other format of\n"
+"\tthis directive for dhcp.\n"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:80
+#, no-wrap
+msgid ""
+"options = dhcp::\n"
+"\tUse dhcp for this interface. When this format is used, the other "
+"\"options\" lines are ignored.\n"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:82
+msgid "pre_up = <command>::"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:84
+msgid "post_up = <command>::"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:86
+msgid "pre_down = <command>::"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:92
+#, no-wrap
+msgid ""
+"post_down = <command>::\n"
+"\tThe syntax of these directives are the same: you can define there\n"
+"\tcommands to be executed before the interface is up, after the interface\n"
+"\tis up, before it is down, and after, respectively. Multiple usage is\n"
+"\tOK, the commands are executed in the specified order.\n"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:96
+#, no-wrap
+msgid ""
+"mac = <mac address>::\n"
+"\tOverwrites the mac address of the card. If defined more than once, the\n"
+"\tfirst will be used.\n"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:101
+#, no-wrap
+msgid ""
+"essid = <essid>::\n"
+"\tSet the ESSID (or Network Name - in some products it may also be called\n"
+"\tDomain ID) for wireless network adapters. If defined more than once,\n"
+"\tthe first will be used.\n"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:111
+#, no-wrap
+msgid ""
+"mode = <mode>::\n"
+"\tSet the operating mode of the device, for wireless network adapters. The "
+"mode\n"
+"\tcan be Ad- Hoc (network composed of only one cell and without Access "
+"Point),\n"
+"\tManaged (node connects to a net- work composed of many Access Points, "
+"with\n"
+"\troaming), Master (the node is the synchronisation master or acts as an "
+"Access\n"
+"\tPoint), Repeater (the node forwards packets between other wireless "
+"nodes),\n"
+"\tSecondary (the node acts as a backup master/repeater), Monitor (the node "
+"is not\n"
+"\tassociated with any cell and passively monitor all packets on the "
+"frequency) or\n"
+"\tAuto. If defined more than once, the first will be used.\n"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:114
+#, no-wrap
+msgid ""
+"gateway = [default gw] <ip>::\n"
+"\tRoute packets via a gateway.\n"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:118
+msgid ""
+"NOTE: The specified gateway must be reachable first. If the `default gw` "
+"prefix is used, then adds a default route. If defined more than once, the "
+"first will be used. If using DHCP, then this directive is ignored."
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:122
+#, no-wrap
+msgid ""
+"key = <key>::\n"
+"\tUsed to manipulate encryption or scrambling keys and security mode for\n"
+"\twireless networks. Use this for WEP only, use `wpa_psk` for WPA.\n"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:126
+#, no-wrap
+msgid ""
+"wpa_psk = <passphrase>::\n"
+"\tIf this directive is specified, then wpa_supplicant will be invoked to\n"
+"\tinitialize WPA encryption before setting any other parameter (like "
+"ESSID).\n"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:130
+#, no-wrap
+msgid ""
+"wpa_driver = <driver>::\n"
+"\tThe driver to be used by wpa_supplicant. The default is `wext`. Possible "
+"drivers\n"
+"\tare:\n"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:137
+#, no-wrap
+msgid ""
+"\t*  wext: Linux wireless extensions (generic)\n"
+"\t*  hostap: Host AP driver (Intersil Prism2/2.5/3)\n"
+"\t*  prism54: Prism54.org driver (Intersil Prism GT/Duette/Indigo)\n"
+"\t*  madwifi: MADWIFI 802.11 support (Atheros, etc.)\n"
+"\t*  atmel: ATMEL AT76C5XXx (USB, PCMCIA)\n"
+"\t*  ndiswrapper: Linux ndiswrapper\n"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:142
+#, no-wrap
+msgid ""
+"dhcp_opts = <options>::\n"
+"\tThese options are passed to the dhcp client daemon. The default is `-t\n"
+"\t10`. You may want to specify here the dhcp hostname, then you'll need `-t "
+"10 -h\n"
+"\t<hostname>`.\n"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:146
+#, no-wrap
+msgid ""
+"dhcpclient = <dhcp client>::\n"
+"\tThis specifies the dhcp client to use. It can be either dhcpcd\n"
+"\t(default) or dhclient.\n"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:148
+msgid "== EXAMPLES"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:150
+msgid "=== Static Address"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:151 netconfig.txt:162 netconfig.txt:174 netconfig.txt:190 netconfig.txt:204 netconfig.txt:211
+#, no-wrap
+msgid "----\n"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:154
+msgid "[options] dns = 192.168.1.1"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:158
+#, no-wrap
+msgid ""
+"[eth0]\n"
+"options = 192.168.1.102 netmask 255.255.255.0\n"
+"gateway = default gw 192.168.1.1\n"
+"----\n"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:161
+msgid "=== ADSL with NAT"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:170
+#, no-wrap
+msgid ""
+"[options]\n"
+"adsl_username = user@provider.com\n"
+"adsl_password = secret\n"
+"adsl_interface = eth1\n"
+"[eth1]\n"
+"options = 192.168.1.102 netmask 255.255.255.0\n"
+"post_up = iptables -t nat -A POSTROUTING -j MASQUERADE\n"
+"----\n"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:173
+msgid "=== The `key=` directive"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:183
+#, no-wrap
+msgid ""
+"key = 0123-4567-89\n"
+"key = [3] 0123-4567-89\n"
+"key = s:password [2]\n"
+"key = [2]\n"
+"key = open\n"
+"key = off\n"
+"key = restricted [3] 0123456789\n"
+"key = 01-23 key 45-67 [4] key [4]\n"
+"----\n"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:186
+msgid "=== Initialize before `iwconfig`"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:189
+msgid ""
+"If you have to to initialize the card with `ifconfig <interface> up` before "
+"using iwconfig:"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:194
+#, no-wrap
+msgid ""
+"[eth1]\n"
+"pre_up = ifconfig eth1 up\n"
+"post_down = ifconfig eth1 down\n"
+"----\n"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:198
+msgid ""
+"NOTE: If you use several pre_up and/or post_down lines, this pre_up should "
+"be the first, and this post_down should be the last one."
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:200
+msgid "=== Using wpa_supplicant"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:203
+msgid ""
+"If you want to use wpa_supplicant instead of the simple encryption (using "
+"key = secret), then use the following pre_up and post_down lines:"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:207
+#, no-wrap
+msgid ""
+"pre_up = wpa_supplicant -Dwext -iwlan0 -c /etc/wpa_supplicant.conf -w -B\n"
+"post_down = killall wpa_supplicant\n"
+"----\n"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:210
+msgid ""
+"You also need to edit `/etc/wpa_supplicant.conf`. A possible correct setup "
+"is:"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:213
+msgid "ctrl_interface=/var/run/wpa_supplicant"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:218
+#, no-wrap
+msgid ""
+"network={\n"
+"        ssid=\"youressid\"\n"
+"        psk=\"secret\"\n"
+"}\n"
+"----\n"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:222
+msgid ""
+"NOTE: See also the `wpa_psk` and `wpa_driver` options, most users can avoid "
+"the manual `pre_up` and `pre_down` directives."
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:224
+msgid "== AUTHOR"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:226
+msgid "Written by Miklos Vajna."
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:228
+msgid "== REPORTING BUGS"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:230
+msgid ""
+"If you find any bug, then please file a bugreport at "
+"<http://bugs.frugalware.org/>."
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:232
+msgid "== SEE ALSO"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:233
+#, no-wrap
+msgid "*ifconfig*(8), *route*(8), *iwconfig*(8), *dhcpcd*(8)\n"
+msgstr ""
+
+# type: Plain text
+#: raidconfig.txt:2
+msgid "= raidconfig(1)"
+msgstr ""
+
+# type: Plain text
+#: raidconfig.txt:6
+msgid "raidconfig - a menu-driven tool to create raid arrays"
+msgstr ""
+
+# type: Plain text
+#: raidconfig.txt:10
+msgid "raidconfig [options]"
+msgstr ""
+
+# type: Plain text
+#: raidconfig.txt:14
+msgid "`raidconfig` is a menu-driven curses front-end to `mdadm`."
+msgstr ""
+
+# type: Plain text
+#: timeconfig.txt:2
+msgid "= timeconfig(1)"
+msgstr ""
+
+# type: Plain text
+#: timeconfig.txt:6
+msgid "timeconfig - configures your time zone settings"
+msgstr ""
+
+# type: Plain text
+#: timeconfig.txt:10
+msgid "timeconfig [options]"
+msgstr ""
+
+# type: Plain text
+#: timeconfig.txt:15
+msgid ""
+"`timeconfig` is a menu-driven tool to set up your `/etc/hardwareclock` file "
+"and a symbolic link, named `/etc/localtime`."
+msgstr ""
+
+# type: Plain text
+#: xconfig.txt:2
+msgid "= xconfig(1)"
+msgstr ""
+
+# type: Plain text
+#: xconfig.txt:6
+msgid "xconfig - creates your XOrg configuration file"
+msgstr ""
+
+# type: Plain text
+#: xconfig.txt:10
+msgid "xconfig [options]"
+msgstr ""
+
+# type: Plain text
+#: xconfig.txt:15
+msgid ""
+"`xconfig` is a front-end to `X -configure`. It asks for a resolution and a "
+"colour depth and does the rest of the configuration automatically for you."
+msgstr ""
+
+# type: Plain text
+#: xconfig.txt:23
+#, no-wrap
+msgid ""
+"--live <resolution> <depth>::\n"
+"\tNon-interactive mode, used by ie. FWLive.\n"
+msgstr ""
+
+# type: Plain text
+#: xwmconfig.txt:2
+msgid "= xwmconfig(1)"
+msgstr ""
+
+# type: Plain text
+#: xwmconfig.txt:6
+msgid "xwmconfig - configures your system-wide default window manager"
+msgstr ""
+
+# type: Plain text
+#: xwmconfig.txt:10
+msgid "xwmconfig [options]"
+msgstr ""
+
+# type: Plain text
+#: xwmconfig.txt:15
+msgid ""
+"`xwmconfig` configures your default window manager for desktop managers like "
+"`XDM`, where you can't do so interactively."
+msgstr ""
+
+# type: Plain text
+#: xwmconfig.txt:20
+#, no-wrap
+msgid ""
+"--force::\n"
+"\tRun this tool even if GDM or KDM are installed.\n"
+msgstr ""
+
+# type: Plain text
+#: xwmconfig.txt:26
+#, no-wrap
+msgid ""
+"--silent::\n"
+"\tDo not print any warning if GDM or KDM are installed.\n"
+msgstr ""
