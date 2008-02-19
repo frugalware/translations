@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-01-03 05:04+0100\n"
-"PO-Revision-Date: 2008-02-14 09:27+0100\n"
+"PO-Revision-Date: 2008-02-19 18:41+0100\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -717,9 +717,11 @@ msgid ""
 "\tinstall multiple packages by requesting a single target. For example, one could install\n"
 "\tall KDE packages by installing the 'kde' group.\n"
 msgstr ""
-"groupes (tableau)::\n"
-"\tC'est un tableau de noms symboliques représentant les groupes des paquets, vous permettant d'installer\n"
-"\tplusieurs paquets en demandant une seule cible. Par exemple, quelqu'un pourrait installer\n"
+"groups (liste)::\n"
+"\tUne liste de noms symboliques représentant les groupes des paquets, vous "
+"permettant d'installer\n"
+"\tplusieurs paquets en demandant une seule cible. Par exemple, quelqu'un "
+"pourrait installer\n"
 "\ttous les paquets KDE en installant le groupe 'kde'.\n"
 
 # type: Plain text
@@ -731,9 +733,10 @@ msgid ""
 "\tit's not available, that will mean that `gensync` will skip it when generating\n"
 "\tthe package database.\n"
 msgstr ""
-"archs (tableau)::\n"
-"\tCe tableau défini sur quelle architecture le paquet donné est disponible. S'il\n"
-"\tn'est pas disponible, cela signifiera que `gensync` va l'ignorer quand il va générer\n"
+"archs (liste)::\n"
+"\tUne liste qui défini sur quelle architecture ce paquet est disponible. S'il\n"
+"\tn'est pas disponible, cela signifiera que `gensync` va l'ignorer quand il "
+"va générer\n"
 "\tla base de données de paquets.\n"
 
 # type: Plain text
@@ -747,8 +750,9 @@ msgid ""
 "\tremoved from a system. See 'HANDLING CONFIG FILES' in the `pacman-g2` manual\n"
 "\tpage for more information.\n"
 msgstr ""
-"backup (tableau)::\n"
-"\tUn tableau de noms de fichiers (sans slash les précédant). La ligne\n"
+"backup (liste)::\n"
+"\tUne liste noms de fichiers délimité par le caractère espace (sans slash les "
+"précédant). La ligne\n"
 "\tbackup va être ajoutée au fichier méta-info du paquet pour pacman-g2. Cela "
 "va\n"
 "\tdésigner tous les fichiers qui vont être sauvegardé si jamais ce paquet est\n"
@@ -769,9 +773,8 @@ msgid ""
 "\tthan). See the FrugalBuild example above for an example of the depends\n"
 "\tdirective.\n"
 msgstr ""
-"depends (tableau)::\n"
-"\tCe tableau est une liste des paquets, que le paquet en création requiert, "
-"pour être construit et lancé.\n"
+"depends (liste)::\n"
+"\tUne liste des paquets que le paquet requiert, pour être construit et lancé.\n"
 "\tLes paquets de cette liste doivent avoir, au moins, leur nom encadré par "
 "des guillemets simples.\n"
 "\tIls peuvent  également inclure une version requise de la forme\n"
@@ -790,9 +793,8 @@ msgid ""
 "\tAn array of packages that this package depends on to build (ie, not required to\n"
 "\trun). Packages in this list should follow the same format as depends.\n"
 msgstr ""
-"makedepends (tableau)::\n"
-"\tCe tableau est une liste des paquets que le paquet en création requiert "
-"pour être construit .\n"
+"makedepends (liste)::\n"
+"\tUne liste de paquets que ce paquet  requiert pour être construit .\n"
 "\t(c'est-à-dire, les paquets qui ne sont pas requis pour pouvoir le lancer).\n"
 "\tLes paquets de cette liste doivent suivre le même format que la directive "
 "'depends'.\n"
@@ -808,9 +810,9 @@ msgid ""
 "\tdoesn't require that dcron be installed.) Packages in this list should follow\n"
 "\tthe same format as depends.\n"
 msgstr ""
-"rodepends (tableau)::\n"
-"\tCe tableau est une liste des paquets que le paquet requiert pour être lancé "
-"(c'est-à-dire, les paquets qui ne sont pas requis pour le construire).\n"
+"rodepends (liste)::\n"
+"\tUne liste des paquets que le paquet requiert pour être lancé (c'est-à-dire, "
+"les paquets qui ne sont pas requis pour le construire).\n"
 "\tGénéralement, 'rodepends' doit être éviter en vue étant utilisé comme "
 "'depends', excepté où\n"
 "\tcelà va créer une chaîne circulaire des dépendances (par exemple, "
@@ -821,21 +823,23 @@ msgstr ""
 
 # type: Plain text
 #: FrugalBuild.txt:289
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "conflicts (array)::\n"
 "\tAn array of packages that will conflict with this package (ie, they cannot both\n"
 "\tbe installed at the same time). This directive follows the same format as\n"
 "\tdepends except you cannot specify versions here, only package names.\n"
 msgstr ""
-"conflicts (directive)::\n"
-"\tCette directive est une liste des paquets qui sont en conflits avec le paquet en création (c'est-à-dire, qu'il ne peuvent pas cohabiter ensemble, être installer sur le même système.)\n"
-"\tCette directive suit le même format que 'depends'. Cependant, vous ne pouvez pas\n"
+"conflicts (liste)::\n"
+"\tUne liste de paquets qui sont en conflits avec ce paquet (c'est-à-dire, "
+"qu'il ne peuvent être installer simultanément)\n"
+"\tCette directive suit le même format que 'depends'. Cependant, vous ne "
+"pouvez pas\n"
 "\tspécifier la version des paquets, ici, mais seulement leur nom."
 
 # type: Plain text
 #: FrugalBuild.txt:296
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "provides (array)::\n"
 "\tAn array of \"virtual provisions\" that this package provides. This allows a\n"
@@ -844,29 +848,36 @@ msgid ""
 "\twhich allows packages to simply depend on 'kernel' rather than \"kernel-scsi OR\n"
 "\tkernel-ide OR ...\"\n"
 msgstr ""
-"provides (directive)::\n"
-"\tCette directive est une directive de \"dispositions virtuelles\" que le paquet en création fournit. Ceci autorise un\n"
-"\tpaquet de fournir d'autres noms de dépendance que son propre nom de paquet. Par\n"
-"\texemple, les paquets 'kernel-scsi' et et 'kernel-ide' peuvent chacun fournir 'kernel'\n"
-"\tqui autorise les paquets de simplement dépendre de 'kernel' à la place de 'kernel-scsi' OU\n"
+"provides (liste)::\n"
+"\tUne liste de \"dispositions virtuelles\" que le paquet en création fournit. "
+"Ceci autorise un\n"
+"\tpaquet de fournir d'autres noms de dépendance que son propre nom de paquet. "
+"Par\n"
+"\texemple, les paquets 'kernel-scsi' et et 'kernel-ide' peuvent chacun "
+"fournir 'kernel'\n"
+"\tqui autorise les paquets de simplement dépendre de 'kernel' à la place de "
+"'kernel-scsi' OU\n"
 "\tde 'kernel-ide' OU...\n"
 
 # type: Plain text
 #: FrugalBuild.txt:301
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "removes (array)::\n"
 "\tThis is an array of files to be removed before the filecontlict check. Ideally\n"
 "\tyou should never use it, but in some cases it's handy to remove conflicting\n"
 "\tfiles generated by a scriptlet if you are sure about really nobody needs it.\n"
 msgstr ""
-"removes (directive)::\n"
-"\tCette directive est une liste des fichiers qui vont être supprimés avant la vérification des conflits entre fichiers. Normalement,\n"
-"\tvous ne devrez jamais l'utiliser. Mais dans certain cas, il est plus pratique de retirer les fichiers conflictuels générés par un scriptlet si vous êtes vraiment sûr(e) que personne n'en a besoin.\n"
+"removes (liste)::\n"
+"\tUne liste des fichiers qui vont être supprimés avant la vérification des "
+"conflits entre fichiers. Idéalement,\n"
+"\tvous ne devrez jamais l'utiliser. Mais dans certain cas, il est plus "
+"pratique de retirer les fichiers conflictuels générés par un scriptlet si "
+"vous êtes vraiment sûr(e) que personne n'en a besoin.\n"
 
 # type: Plain text
 #: FrugalBuild.txt:307
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "replaces (array)::\n"
 "\tThis is an array of packages that this package should replace, and can be used\n"
@@ -874,24 +885,28 @@ msgid ""
 "\trenamed to kernel-ide, then subsequent 'pacman-g2 -Syu' calls will not pick up\n"
 "\tthe upgrade, due to the differing package names. replaces handles this.\n"
 msgstr ""
-"replaces (directive)::\n"
-"\tCette directive est une liste des paquets, que le paquet en construction devrais remplacer, et qui peut être utilisé\n"
-"\tpour manipuler les paquets renommés/combinés. Par exemple, si le paquet 'kernel' est\n"
-"\trenommé en 'kernel-ide', alors l'appel de 'pacman-g2 -Syu' ne va pas reprendre la mise à niveau, due à la différence des noms des paquets. 'replaces' corrige ça.\n"
+"replaces (liste)::\n"
+"\tUne liste des paquets que le paquet devrais remplacer, et qui peut être "
+"utilisé\n"
+"\tpour manipuler les paquets renommés/combinés. Par exemple, si le paquet "
+"'kernel' est\n"
+"\trenommé en 'kernel-ide', alors l'appel de 'pacman-g2 -Syu' ne va pas "
+"reprendre la mise à niveau, due à la différence des noms des paquets. "
+"'replaces' corrige ça.\n"
 
 # type: Plain text
 #: FrugalBuild.txt:310
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "options (array)::\n"
 "\tThis is an array of various boolean options. The possible values are:\n"
 msgstr ""
-"options (directive)::\n"
-"\tCette directive est une liste de diverses options booléennes. Les valeurs possibles sont :\n"
+"options (liste)::\n"
+"\tUne liste de diverses options booléennes. Les valeurs possibles sont :\n"
 
 # type: Plain text
 #: FrugalBuild.txt:313
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "\tnodocs: Don't add any documentation automatically (ie. when there'll be a\n"
 "\tseparate documentation subpackage).\n"
@@ -903,16 +918,16 @@ msgstr ""
 #: FrugalBuild.txt:315
 #, no-wrap
 msgid "\tnostrip: Don't strip binaries/libraries.\n"
-msgstr ""
+msgstr "\tnostrip: Ne pas alléger/nettoyer les binaires/librairies.\n"
 
 # type: Plain text
 #: FrugalBuild.txt:318
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "\tforce: This is used to force the package to be upgraded by --sysupgrade, even\n"
 "\tif its an older version.\n"
 msgstr ""
-"\tforce : Cela force le paquet à être mis à niveau par '--sysupgrade' même\n"
+"\tforce : Force le paquet à être mis à niveau par '--sysupgrade' même\n"
 "\ts'il est d'une ancienne version.\n"
 
 # type: Plain text
@@ -1003,6 +1018,7 @@ msgstr ""
 
 # type: Plain text
 #: FrugalBuild.txt:354
+#, fuzzy
 msgid ""
 "This system lacks the ability to control the list of installed packages "
 "during the build on the system of a packager. Because of this, the given "
@@ -1013,16 +1029,31 @@ msgid ""
 "incorrect. Or if you have the closed source binary NVidia drivers installed, "
 "some programs will link to NVidia's libraries."
 msgstr ""
+"Ce système ne possède pas la possibilité de contrôler la liste des paquets "
+"installés durant la construction dans le système d'un empaqueteur. A cause "
+"de ça, un paquet compilé donné peut se lier, lui-même, à une autre librairie "
+"installée. C'est pour ça que nous ne pouvons pas vraiement contrôler la "
+"liste des vraies dépendances. Par exemple, si 'libquicktime' est installé "
+"par les sources, sur votre système, alors 'mplayer', ou tout autre "
+"programme, peut se lier lui-même à 'libquicktime', ce qui va mener que "
+"'depends()' va être incorrecte. Ou, si vous avez les pilotes binaires "
+"propriétaires NVidia d'installés, certains programme vont se lier aux "
+"libairies NVidia."
 
 # type: Plain text
 #: FrugalBuild.txt:357
+#, fuzzy
 msgid ""
 "Of course there is a solution to avoid this, to use a real `chroot` instead "
 "of a simple `fakeroot`. What does this mean? The following:"
 msgstr ""
+"Bien sûr, il existe une solution pour éviter ça : utiliser un vrai 'chroot' "
+"à la place d'un simple 'fakeroot'. Qu'est-ce que celà signifie ? Les "
+"suivants :"
 
 # type: Plain text
 #: FrugalBuild.txt:365
+#, fuzzy
 msgid ""
 "When starting the build, a core chroot system is installed under /var/"
 "chroot.  (Of course you can change this value under `/etc/makepkg.conf`.) "
@@ -1032,9 +1063,18 @@ msgid ""
 "core chroot-core devel-core` should show you the actual list. (We try to "
 "change this list rarely and try to keep it short, of course.)"
 msgstr ""
+"Quand la construction commence, un coeur du système de 'chroot' est installé "
+"sous '/var/chroot'._ _ (Bien sûr, vous pouvez changer ce répertoire dans '/"
+"etc/makepkg.conf'.) Le coeur du système contient environ 60 paquets qui "
+"doivent être installé pour construire n'importe quel paquet dans un "
+"environnement 'chroot'. Ces paquets, (par exemple gcc, kernel-headers, make)"
+"_ _ ne doivent pas être mentionné dans 'makedepends()'. 'pacman-g2 -Sg core "
+"chroot-core devel-core' devrait vous montrer la liste actuelle. (Nous "
+"évitons de modifier cette liste et essayons de la garder courte, évidemment.)"
 
 # type: Plain text
 #: FrugalBuild.txt:371
+#, fuzzy
 msgid ""
 "When you start building with `makepkg` (without `-H`), pacman-g2 will "
 "install these packages to /var/chroot if necessary. This will produce a "
@@ -1043,49 +1083,81 @@ msgid ""
 "the problems mentioned above. (Linking to a library installed from source, "
 "etc.)"
 msgstr ""
+"Quand vous commencez la construction avec 'makepkg' (sans '-H'), pacman-g2 "
+"va installer ces paquets dans le répertoire '/var/chroot', si nécessaire. "
+"Cela va produire un système Frugalware complètement 'propre', qui est "
+"seulement composé de paquets de base. Cet environnement, dans '/var/chroot', "
+"est complètement séparé du système hôte, ce qui va résoudre les problèmes "
+"mentionnés plus haut. (Liaison à une librairie installé à partir des "
+"sources, etc....)"
 
-# type: Plain text
+# Cette traduction est à revoir. Je bloque pour la dernière phrase :-s
 #: FrugalBuild.txt:376
+#, fuzzy
 msgid ""
 "Here comes the fun part. The packages listed in depends() and makedepends() "
 "are installed to this clean (`/var/chroot`) system. From this point, this "
 "chroot is capable to build the specified package in it without unnecessary "
 "packages being installed, fully separated from the host system."
 msgstr ""
+"Voilà la partie la plus agréable. Les paquets listés dans 'depends()' et "
+"'makedepends()' sont installés dans ce système propre ('/var/chroot'). A "
+"partir de là, ce 'chroot' est capable de construire le paquet spécifié, sans "
+"les paquets inutiles déjà installé puisque complètement séparé du système "
+"hôte"
 
 # type: Plain text
 #: FrugalBuild.txt:381
+#, fuzzy
 msgid ""
 "After this, the chroot should be cleaned up which means the removal of the "
 "installed depends() and makedepends(). This ensures you do not have to build "
 "the core chroot from scratch. This action is performed by `makepkg` after a "
 "successful build."
 msgstr ""
+"Ensuite, le 'chroot' devrait être nettoyé ce qui veut dire la suppression "
+"des 'depends()' et 'makedepends()' installés. Ceci assure que vous n'avez "
+"pas a construire le coeur du 'chroot' à partir de 0. Cette action est "
+"assurée par 'makepkg' après une construction réussie."
 
 # type: Plain text
 #: FrugalBuild.txt:385
+#, fuzzy
 msgid ""
 "This way we can prevent lots of dependency problems and it is even possible "
 "to build packages for a different Frugalware version. This is quite "
 "efficient when building security updates or fixing critical bugs in the `-"
 "stable` tree."
 msgstr ""
+"De cette façon, nous pourrons éviter plein de problèmes de dépendances, et "
+"il seramême possible de construire des paquets d'une autre version de "
+"Frugalware. Cela est très efficace quand on construit des mises à jour de "
+"sécurité ou lorsque l'on corrige des bogues dans la branche '-stable'."
 
 # type: Plain text
 #: FrugalBuild.txt:390
+#, fuzzy
 msgid ""
 "If the build fails, the working directory will not be deleted, you can find "
 "it under `/var/chroot/$tree/var/tmp/fst`. Later if you want to clean your "
 "chroot (delete the working directory and remove unnecessary packages) you "
 "can use `makepkg -C`."
 msgstr ""
+"Si la construction échoue, la répertoire de travail ne sera pas supprimé. "
+"Vous pouvez le trouver dans '/var/chroot/$tree/var/tmp/fst' (où '$tree' est "
+"la branche utilisée). Plus tard, si vous voulez nettoyer votre "
+"'chroot' (supprimer le répertoire de travail et désinstaller les paquets "
+"inutiles), vous pouvez utilise 'makepkg -C'."
 
 # type: Plain text
 #: FrugalBuild.txt:393
+#, fuzzy
 msgid ""
 "To deactivate building in a `chroot` (for testing purposes), you should run "
 "`makepkg` with the `-H` option."
 msgstr ""
+"Pour désactiver la construction dans un 'chroot' (pour des tests), vous "
+"pouvez lancer 'makepkg -H'."
 
 # type: Plain text
 #: FrugalBuild.txt:395
@@ -1148,8 +1220,9 @@ msgstr ""
 
 # type: Plain text
 #: FrugalBuild.txt:431
+#, fuzzy
 msgid "Simple example:"
-msgstr ""
+msgstr "Un exemple simple :"
 
 # type: Plain text
 #: FrugalBuild.txt:438
@@ -1236,8 +1309,9 @@ msgstr ""
 
 # type: Plain text
 #: makepkg.txt:10
+#, fuzzy
 msgid "makepkg [options]"
-msgstr ""
+msgstr "makepkg [options]"
 
 # type: Plain text
 #: makepkg.txt:21
