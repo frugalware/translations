@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-01-03 05:04+0100\n"
-"PO-Revision-Date: 2008-02-19 18:41+0100\n"
+"PO-Revision-Date: 2008-02-19 21:12+0100\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -110,8 +110,8 @@ msgid ""
 "of the last update, this is automatically updated after a successful build."
 msgstr ""
 "Comme vous pouvez le voir, la configuration est assez simple. La première "
-"ligne nous renseigne de la date de la dernière mise à jour, cette dernière "
-"est automatiquement modifié après une compilation terminée avec succès."
+"ligne nous renseigne sur la date de la dernière mise à jour, cette dernière "
+"est automatiquement modifiée après une compilation réussie."
 
 # type: Plain text
 #: FrugalBuild.txt:38
@@ -131,9 +131,9 @@ msgid ""
 "many seconds the build took. After you have built `binutils`, you should "
 "update your `/etc/makepkg.conf`:"
 msgstr ""
-"`SBU` est le Static Binutils Unit, qui signifie le temps que prend `repoman "
-"merge binutils` sur votre machine. Par défaut makepkg vous indiqueras "
-"combien de secondes prend la compilation. Après que vous ayez construit "
+"`SBU` est le Static Binutils Unit, cela signifie le temps que prend `repoman "
+"merge binutils` sur votre machine. Par défaut, 'makepkg' vous indiquera le "
+"nombre de secondes que dure la compilation. Après que vous ayez construit "
 "binutils, vous devriez mettre à jour votre fichier `/etc/makepkg.conf`:"
 
 # type: Plain text
@@ -154,10 +154,10 @@ msgid ""
 "after successful builds, and this SBU value will be equal on everyone's "
 "machine."
 msgstr ""
-"La ligne précédente veut dire que la compilation de binutils sur votre "
-"machine vous a pris 257 secondes. À partir de cette référence, makepkg "
-"affichera des SBU à la place des secondes après les compilations réussies, "
-"et cette valeur SBU sera égale pour toutes les machines."
+"La ligne précédente signifie que la compilation de binutils a pris 257 "
+"secondes sur votre machine. Partant de cette référence, makepkg affichera "
+"désormais une valeur SBU à la place des secondes après des compilations "
+"réussies, et cette valeur SBU sera égale pour toutes les machines."
 
 # type: Plain text
 #: FrugalBuild.txt:57
@@ -169,12 +169,13 @@ msgid ""
 "`Modified by` are not allowed. Use the commit message to mention others if "
 "you wish."
 msgstr ""
-"Si vous souhaitez maintenir le paquet, écrivez votre nom ou pseudo et votre "
-"adresse email sur la troisième ligne du FrugalBuild. Si vous ne projetez pas "
-"de maintenir le paquet, écrivez `Contributor` à la place de `Maintainer`, "
-"plus tard quelqu'un le prendra en charge et rajoutera sa ligne à ce moment "
-"là. Les autres lignes du style `Modified by` ne sont pas permises. Utilisez "
-"le message commit pour mentionner ces autres lignes si vous le souhaitez."
+"Si vous souhaitez maintenir le paquet, écrivez votre nom ou pseudo, ainsi "
+"que votre adresse email sur la troisième ligne du FrugalBuild. Si vous ne "
+"projetez pas de maintenir le paquet, écrivez `Contributor` à la place de "
+"`Maintainer`, ainsi quelqu'un pourra le prendre à sa charge, et ajouter sa "
+"ligne ultérieurement. Les autres lignes du style `Modified by` sont "
+"interdites. Utilisez le message commit si vous souhaitez mentionner d'autres "
+"personnes."
 
 # type: Plain text
 #: FrugalBuild.txt:66
@@ -189,28 +190,29 @@ msgid ""
 "`pkgrel=5` which is in `-current`."
 msgstr ""
 "'pkgname' définit le nom du paquet. Il ne doit contenir aucune lettre "
-"majuscule.\n"
-"La version du paquet définit la dernière version en amont, tandis que la "
-"ligne release définit les changements spécifiques à Frugalware. 'pkgrel'  "
-"doit être un nombre entier car les versions comme '5wanda1' ne sont "
-"réservées qu'aux mises à jour de sécurité. Dans le cas postérieur, la règle "
-"est la suivante : Si le \"pkgrel' du paquet original est 4, alors "
-"incrémentez-le une fois que vous ajoutez un patch de sécurité, mais, "
-"utilisez '5wanda1', '5wanda2' etc.... De cette façon, l'utilisateur peut "
-"facilement mettre à jour 'pkgrel=5' qui est dans la branche '-current'."
+"majuscule. La version du paquet définit la dernière version en amont, tandis "
+"que la ligne release définit les changements spécifiques à Frugalware. "
+"'pkgrel'  doit être un nombre entier car les versions comme '5wanda1' ne "
+"sont réservées qu'aux mises à jour de sécurité. Dans ce dernier cas, la "
+"règle est la suivante : Si le \"pkgrel' du paquet original est 4, alors incr"
+"émentez-le une fois que vous ajoutez un patch de sécurité, mais, utilisez "
+"'5wanda1', '5wanda2' etc.... De cette façon, l'utilisateur peut facilement "
+"mettre à jour 'pkgrel=5' qui est dans la branche '-current'."
 
-# type: Plain text
+# `pkgdesc` est une courte description du paquet. Elle est habituellement extraite du site ou de la page man du projet. Essayez de garder sa longueur inférieure à 80 caractères.
 #: FrugalBuild.txt:69
 msgid ""
 "`pkgdesc` is a short one-line description for the package. Usually taken "
 "from the project's homepage or manpage. Try to keep the length under 80 "
 "chars."
 msgstr ""
-"`pkgdesc` est une description uni-ligne du paquet. Elle est habituellement "
-"prise depuis le site ou le manpage du projet. Essayez de garder sa longueur "
+"`pkgdesc` est une courte description du paquet. Elle est habituellement "
+"extraite du site ou de la page man du projet. Essayez de garder sa longueur "
 "inférieure à 80 caractères."
 
-# type: Plain text
+# 'depends()' est un tableau bash qui définit les dépendances du paquet.\n
+# 'depends()' liste les paquets requis pour la construction et l'utilisation du paquet en question.\n
+# Si la dépendance est en runtime-only, utilisez 'rodepends()', si  elle est en buildtime-only, utilisez 'makedepends()'.
 #: FrugalBuild.txt:74
 msgid ""
 "`depends()` is a bash array which defines the dependencies of the package.  "
@@ -218,11 +220,10 @@ msgid ""
 "one.  If the dependency is runtime-only, then use `rodepends()`, if "
 "buildtime-only then use `makedepends()`."
 msgstr ""
-"'depends()' est un tableau bash qui définit les dépendances du paquet.\n"
-"'depends()' liste ces paquets qui sont requis pour la construction et "
-"l'utilisation de ce dernier.\n"
-"Si la dépendance est en runtime-only, utilisez 'rodepends()', si  elle est "
-"en buildtime-only, utilisez 'makedepends()'."
+"'depends()' est un tableau bash qui définit les dépendances du paquet. "
+"'depends()' liste les paquets requis pour la construction et l'utilisation "
+"du paquet en question. Si la dépendance est en runtime-only, utilisez "
+"'rodepends()', si elle est en buildtime-only, utilisez 'makedepends()'."
 
 # type: Plain text
 #: FrugalBuild.txt:83
@@ -236,15 +237,15 @@ msgid ""
 "you can overwrite the inherited directives, for example define a custom "
 "`up2date` if the inherited one is not suitable for you."
 msgstr ""
-"La prochaine ligne, 'Finclude', est une commande spéciale qui vous permet "
-"d'hériter de n'importe quelle directive d'un arrangement d'un FrugalBuild. "
-"Ils peuvent être trouvés dans le 'FST', dans '/source/include'. "
-"L'arrangement 'util' est toujours inclus, puisque ses fonctions fournies "
-"sont utilisées par presque tous les FrugalBuild. Regardez dans le fichier '/"
-"source/include/sourceforge.sh', il fournit les directives 'url', 'up2date' "
-"et 'source()', donc, nous n'avons pas besoin de les spécifier ici. Après "
-"'Finclude', vous pouvez recopier les directives héritées, par exemple, pour "
-"définir un 'up2date' personnalisé si l'hérité ne vous convient pas."
+"La ligne suivante 'Finclude' est une commande spéciale qui vous permet "
+"d'hériter n'importe quelle directive d'un projet FrugalBuild. Ils peuvent "
+"être trouvés dans le 'FST', dans '/source/include'. L'arrangement 'util' est "
+"toujours inclu, puisque les fonctions qu'il fournit sont utilisées par la "
+"plupart des FrugalBuilds. Regardez dans le fichier "
+"'/source/include/sourceforge.sh' qui fournit les directives sur les 'url', "
+"'up2date' et 'source()', nous n'avons donc pas besoin de les spécifier ici. "
+"Après 'Finclude', vous pouvez modifier les directives héritées,  et, définir "
+"par exemple un 'up2date' personnalisé si l'hérité ne vous convient pas."
 
 # type: Plain text
 #: FrugalBuild.txt:87
@@ -255,8 +256,8 @@ msgid ""
 msgstr ""
 "Le premier élément de tableau 'groups()'  est obligatoire, et il devrait "
 "être un \"premier groupe\" valide. Cela signifie qu'il devrait être sous la "
-"forme 'foo' ou 'foo-extra', où 'foo' ou 'foo-extra' donc des répertoires "
-"dans '/source' dans le 'FST'."
+"forme 'foo' ou 'foo-extra', où 'foo' ou 'foo-extra' est un répertoire situé "
+"dans le '/source' du 'FST'."
 
 # type: Plain text
 #: FrugalBuild.txt:96
@@ -271,14 +272,14 @@ msgid ""
 "example `!x86_64`."
 msgstr ""
 "La tableau `archs()` définit pour quelle architecture le paquet est "
-"disponible. S'il n'est pas disponible, cela signifie que 'gensync' va "
-"l'ignorer lors de la génération de la base de données de paquets. Si vous "
-"n'être pas capable de fournir un paquet binaire pour une l'architecture "
-"donnée, ne l'incluez pas dans `archs()` ! Par exemple, pas de problèmes si "
-"le paquet peut être compilé sous `x86_64`. Si ce n'est pas vous qui l'avez "
-"compilé, ne l'incluez pas. Si vous êtes sur qu'il ne sera pas disponible "
-"pour une architecture donnée (par exemple, il est écrit en assembleur), "
-"utilisez `!arch`, comme par exemple `!x86_64`."
+"disponible. S'il est indisponible, cela signifie que 'gensync' va l'ignorer "
+"quand il génèrera la base de données de paquets. Si vous ne savez pas "
+"fournir un paquet binaire pour une architecture donnée, ne l'incluez pas "
+"dans `archs()` ! Par exemple, qu'il soit possible ou non de compiler le "
+"paquet sous `x86_64`, s'il n'a pas été compilé par vos propres soins, ne "
+"l'incluez pas. Si vous êtes sur qu'il ne sera pas disponible pour une "
+"architecture donnée (par exemple, il est écrit en assembleur), utilisez "
+"`!arch`, comme par exemple `!x86_64`."
 
 # type: Plain text
 #: FrugalBuild.txt:101
@@ -289,11 +290,11 @@ msgid ""
 "provided by upstream, its goal is that you don't have to update it manually "
 "every time."
 msgstr ""
-"Le `sha1sums()` peut être généré avec la commande `makepkg -g`. Ceci a pour "
-"but d'éviter de compiler depuis des sources corrompues, surtout quand la "
-"construction est automatique. Quand cela est possible vous pouvez utiliser "
-"`signatures()`, son but est que vous n'avez pas à le mettre à jour "
-"manuellement à chaque fois."
+"Le `sha1sums()` peut être généré avec la commande `makepkg -g`. Son but est "
+"d'éviter une compilation depuis des sources corrompues, surtout quand la "
+"construction est automatique. Vous pouvez utiliser `signatures()`quand "
+"upstream fournit une signature numérique, la mise à jour est alors "
+"automatique, et vous n'avez plus à le faire manuellement chaque fois."
 
 # type: Plain text
 #: FrugalBuild.txt:109
@@ -309,10 +310,10 @@ msgstr ""
 "La dernière ligne va être automatiquement ajoutée à la fin du FrugalBuild si "
 "la fonction `build()` a utilisé votre `$CFLAGS` ou `$CXXFLAGS`. C'est "
 "pratique si vous voulez cross-compiler sur une machine rapide pour une "
-"architecture lente. Si le paquet n'utilise pas notre `$CFLAGS`, nous ne "
-"pouvons pas le cross-compiler, donc essayez d'éviter de créer des paquets "
-"'non optimisés'. Si le paquet ne contient aucun fichier dépendant de "
-"l'architecture, alors vous pouvez ajouter cette ligne manuellement comme "
+"architecture plus lente. Si le paquet n'utilise pas notre `$CFLAGS`, nous ne "
+"pouvons pas le cross-compiler, veillez à éviter de créer des paquets 'non "
+"optimisés'. Si le paquet ne contient aucun fichier dépendant de "
+"l'architecture, vous pouvez alors ajouter cette ligne manuellement comme "
 "`makepkg` ne le détectera pas."
 
 # type: Plain text
@@ -347,11 +348,10 @@ msgid ""
 "which you ran `makepkg`."
 msgstr ""
 "Une fois que le paquet est installé avec succès dans la racine du paquet, "
-"makepkg va préparer quelques documentations. Il analysera ensuite les "
-"renseignements de mise au point des bibliothèques et des fichiers binaires "
-"et générera un fichier de méta-renseignements. Enfin, il compressera tout "
-"dans un fichier `.fpm` dans le répertoire dans lequel vous aviez lancez "
-"`makepkg`."
+"makepkg va préparer une documentation. Il extraira ensuite les informations "
+"de débogage des bibliothèques et des fichiers binaires, et générera un "
+"fichier de méta-renseignements. Enfin, il compressera tout dans un fichier "
+"`.fpm`situé dans le répertoire où vous aviez lancé le`makepkg`."
 
 # type: Plain text
 #: FrugalBuild.txt:126
@@ -375,15 +375,15 @@ msgid ""
 "allows a package to 'configure itself' after installation and do the "
 "opposite right before it is removed."
 msgstr ""
-"`pacman-g2` a la capacité de stocker et d'exécuter un script d'un paquet "
-"spécifique et non interactif quand il installe, supprime, ou met à jour un "
-"paquet. Ceci permet a un paquet de se configurer 'tout seul' après "
-"l'installation, et faire l'opposé avant qu'il soit supprimé."
+"`pacman-g2` offre la possibilité de stocker et d'exécuter un script d'un "
+"paquet spécifique et non interactif quand il installe, supprime, ou met à "
+"jour un paquet. Ceci permet a un paquet de se configurer 'tout seul' après "
+"l'installation, et de faire l'opération inverse avant sa suppression."
 
 # type: Plain text
 #: FrugalBuild.txt:135
 msgid "The exact time the script is run varies with each operation:"
-msgstr "Le temps exact que le script met varie avec chaque opération:"
+msgstr "Le temps exact que met le script varie à chaque opération:"
 
 # type: Plain text
 #: FrugalBuild.txt:138
@@ -393,7 +393,7 @@ msgid ""
 "\tscript is run right before files are extracted.\n"
 msgstr ""
 "pre_install::\n"
-"\tscript est lancé avant que les fichiers soient décompressés.\n"
+"\tscript est lancé juste avant que les fichiers soient décompressés.\n"
 
 # type: Plain text
 #: FrugalBuild.txt:141
@@ -403,7 +403,7 @@ msgid ""
 "\tscript is run right after files are extracted.\n"
 msgstr ""
 "post_install::\n"
-"\tscript est lancé après que les fichiers soient décompressés.\n"
+"\tscript est lancé juste après que les fichiers soient décompressés.\n"
 
 # type: Plain text
 #: FrugalBuild.txt:144
@@ -413,7 +413,7 @@ msgid ""
 "\tscript is run right before files are extracted.\n"
 msgstr ""
 "pre_upgrade::\n"
-"\tscript est lancé avant que les fichiers soient décompressés.\n"
+"\tscript est lancé juste avant que les fichiers soient décompressés.\n"
 
 # type: Plain text
 #: FrugalBuild.txt:147
@@ -433,7 +433,7 @@ msgid ""
 "\tscript is run right before files are removed.\n"
 msgstr ""
 "pre_remove::\n"
-"\tscript est lancé avant que les fichiers soient retirés.\n"
+"\tscript est lancé juste avant que les fichiers soient retirés.\n"
 
 # type: Plain text
 #: FrugalBuild.txt:153
@@ -443,7 +443,7 @@ msgid ""
 "\tscript is run right after files are removed.\n"
 msgstr ""
 "post_remove::\n"
-"\tLe script est lancé après que les fichiers soient retirés.\n"
+"\tLe script est lancé juste après que les fichiers soient retirés.\n"
 
 # type: Plain text
 #: FrugalBuild.txt:156
@@ -932,7 +932,7 @@ msgstr ""
 
 # type: Plain text
 #: FrugalBuild.txt:321
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "\tstick: This is used to skip a package upgrade, even a newer version is\n"
 "\tavailable (eg. for web applications where a manual upgrade is better).\n"
@@ -942,7 +942,7 @@ msgstr ""
 
 # type: Plain text
 #: FrugalBuild.txt:325
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "\tnobuild: If this directive set, gensync will ignore this package, so users must\n"
 "\tbuild these packages on their machines, they will not be able to install them\n"
@@ -954,7 +954,7 @@ msgstr ""
 
 # type: Plain text
 #: FrugalBuild.txt:328
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "\tnofakeroot: Don't drop privileges after chrooting. Required by some broken\n"
 "\tpackages.\n"
@@ -964,19 +964,20 @@ msgstr ""
 
 # type: Plain text
 #: FrugalBuild.txt:330
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\tscriptlet: Don't skip executing scriptlets even if we're in chroot.\n"
 msgstr "\tscriptlet : Ne saute pas l'exécution des 'scriptlets' même si l'on est dans le chroot.\n"
 
 # type: Plain text
 #: FrugalBuild.txt:332
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\tnomirror: This means that the source should not be mirrored.\n"
-msgstr "\tnomirror : Ceci signifie que les sources doivent être mirroirées (Ca veut dire, hébergé sur un miroir).\n"
+msgstr "\tnomirror : Ceci signifie que les sources ne doivent pas être mirroirées (Ca "
+"veut dire, hébergé sur un miroir).\n"
 
 # type: Plain text
 #: FrugalBuild.txt:335
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "\tgenscriptlet: Informs makepkg about not having a scriptlet is intentional. You\n"
 "\twant to use this when the scriptlet is generated during build().\n"
@@ -986,31 +987,27 @@ msgstr ""
 
 # type: Plain text
 #: FrugalBuild.txt:338
-#, fuzzy
 msgid ""
 "NOTE: Feel free to use `nomirror` in a WIP repo but please try avoid it when "
 "pushing to a production repository."
 msgstr ""
-"Note : Vous êtes libre d'utiliser 'nomirror' dans un dépôt WIP, mais s'il "
-"vous plait, essayez de l'éviter quand il est pousser dans un dépôt de "
-"production."
+"NOTE: Vous êtes libre d'utiliser 'nomirror' dans un dépôt WIP, mais vous "
+"êtes prié de l'éviter quand il est pousser dans un dépôt de production."
 
 # type: Plain text
 #: FrugalBuild.txt:340
-#, fuzzy
 msgid "=== What is the process of chrooted build?"
 msgstr "=== Quel est le processus de la construction chrootée ?"
 
 # type: Plain text
 #: FrugalBuild.txt:345
-#, fuzzy
 msgid ""
 "First, what is chroot? If you use `makepkg -H`, then you use fakeroot to "
 "prevent build() from modifying the host system, and you use a prefix or "
 "DESTDIR directive to install everything to a directory and not under to the "
 "host system. This is good, but not enough."
 msgstr ""
-"Premièrement, qu'est-ce que le chroot ? Si vous utilisez 'makepkg -H', vous "
+"Premièrement, qu'est-ce que le chroot? Si vous utilisez 'makepkg -H', vous "
 "utilisez un fakeroot pour éviter que 'build()' ne modifie le système hôte, "
 "et vous utilisez une directive 'prefix' ou 'DESTDIR' pour tout installer "
 "dans un répertoire qui n'est pas dans le système hôte. C'est bon, mais ce "
@@ -1018,7 +1015,6 @@ msgstr ""
 
 # type: Plain text
 #: FrugalBuild.txt:354
-#, fuzzy
 msgid ""
 "This system lacks the ability to control the list of installed packages "
 "during the build on the system of a packager. Because of this, the given "
@@ -1032,17 +1028,16 @@ msgstr ""
 "Ce système ne possède pas la possibilité de contrôler la liste des paquets "
 "installés durant la construction dans le système d'un empaqueteur. A cause "
 "de ça, un paquet compilé donné peut se lier, lui-même, à une autre librairie "
-"installée. C'est pour ça que nous ne pouvons pas vraiement contrôler la "
+"installée. C'est pour ça que nous ne pouvons pas vraiment contrôler la "
 "liste des vraies dépendances. Par exemple, si 'libquicktime' est installé "
 "par les sources, sur votre système, alors 'mplayer', ou tout autre "
 "programme, peut se lier lui-même à 'libquicktime', ce qui va mener que "
 "'depends()' va être incorrecte. Ou, si vous avez les pilotes binaires "
-"propriétaires NVidia d'installés, certains programme vont se lier aux "
-"libairies NVidia."
+"propriétaires NVidia installés, certains programme vont se lier aux "
+"librairies NVidia."
 
 # type: Plain text
 #: FrugalBuild.txt:357
-#, fuzzy
 msgid ""
 "Of course there is a solution to avoid this, to use a real `chroot` instead "
 "of a simple `fakeroot`. What does this mean? The following:"
@@ -1053,7 +1048,6 @@ msgstr ""
 
 # type: Plain text
 #: FrugalBuild.txt:365
-#, fuzzy
 msgid ""
 "When starting the build, a core chroot system is installed under /var/"
 "chroot.  (Of course you can change this value under `/etc/makepkg.conf`.) "
@@ -1063,18 +1057,18 @@ msgid ""
 "core chroot-core devel-core` should show you the actual list. (We try to "
 "change this list rarely and try to keep it short, of course.)"
 msgstr ""
-"Quand la construction commence, un coeur du système de 'chroot' est installé "
-"sous '/var/chroot'._ _ (Bien sûr, vous pouvez changer ce répertoire dans '/"
-"etc/makepkg.conf'.) Le coeur du système contient environ 60 paquets qui "
+"Quand la construction commence, un cœur du système de 'chroot' est installé "
+"sous '/var/chroot'. (Bien sûr, vous pouvez changer ce répertoire dans "
+"'/etc/makepkg.conf'.) Le cœur du système contient environ 60 paquets qui "
 "doivent être installé pour construire n'importe quel paquet dans un "
-"environnement 'chroot'. Ces paquets, (par exemple gcc, kernel-headers, make)"
-"_ _ ne doivent pas être mentionné dans 'makedepends()'. 'pacman-g2 -Sg core "
+"environnement 'chroot'. Ces paquets, (par exemple gcc, kernel-headers, make) "
+"ne doivent pas être mentionné dans 'makedepends()'. 'pacman-g2 -Sg core "
 "chroot-core devel-core' devrait vous montrer la liste actuelle. (Nous "
-"évitons de modifier cette liste et essayons de la garder courte, évidemment.)"
+"évitons de modifier cette liste et essayons de la garder courte, "
+"évidemment.)"
 
 # type: Plain text
 #: FrugalBuild.txt:371
-#, fuzzy
 msgid ""
 "When you start building with `makepkg` (without `-H`), pacman-g2 will "
 "install these packages to /var/chroot if necessary. This will produce a "
@@ -1089,11 +1083,10 @@ msgstr ""
 "seulement composé de paquets de base. Cet environnement, dans '/var/chroot', "
 "est complètement séparé du système hôte, ce qui va résoudre les problèmes "
 "mentionnés plus haut. (Liaison à une librairie installé à partir des "
-"sources, etc....)"
+"sources, etc.)"
 
 # Cette traduction est à revoir. Je bloque pour la dernière phrase :-s
 #: FrugalBuild.txt:376
-#, fuzzy
 msgid ""
 "Here comes the fun part. The packages listed in depends() and makedepends() "
 "are installed to this clean (`/var/chroot`) system. From this point, this "
@@ -1108,7 +1101,6 @@ msgstr ""
 
 # type: Plain text
 #: FrugalBuild.txt:381
-#, fuzzy
 msgid ""
 "After this, the chroot should be cleaned up which means the removal of the "
 "installed depends() and makedepends(). This ensures you do not have to build "
@@ -1122,7 +1114,6 @@ msgstr ""
 
 # type: Plain text
 #: FrugalBuild.txt:385
-#, fuzzy
 msgid ""
 "This way we can prevent lots of dependency problems and it is even possible "
 "to build packages for a different Frugalware version. This is quite "
@@ -1130,13 +1121,12 @@ msgid ""
 "stable` tree."
 msgstr ""
 "De cette façon, nous pourrons éviter plein de problèmes de dépendances, et "
-"il seramême possible de construire des paquets d'une autre version de "
+"il sera même possible de construire des paquets d'une autre version de "
 "Frugalware. Cela est très efficace quand on construit des mises à jour de "
 "sécurité ou lorsque l'on corrige des bogues dans la branche '-stable'."
 
 # type: Plain text
 #: FrugalBuild.txt:390
-#, fuzzy
 msgid ""
 "If the build fails, the working directory will not be deleted, you can find "
 "it under `/var/chroot/$tree/var/tmp/fst`. Later if you want to clean your "
@@ -1151,13 +1141,12 @@ msgstr ""
 
 # type: Plain text
 #: FrugalBuild.txt:393
-#, fuzzy
 msgid ""
 "To deactivate building in a `chroot` (for testing purposes), you should run "
 "`makepkg` with the `-H` option."
 msgstr ""
 "Pour désactiver la construction dans un 'chroot' (pour des tests), vous "
-"pouvez lancer 'makepkg -H'."
+"pouvez lancer 'makepkg' avec l'option '-H'."
 
 # type: Plain text
 #: FrugalBuild.txt:395
@@ -1220,9 +1209,8 @@ msgstr ""
 
 # type: Plain text
 #: FrugalBuild.txt:431
-#, fuzzy
 msgid "Simple example:"
-msgstr "Un exemple simple :"
+msgstr "Un exemple simple:"
 
 # type: Plain text
 #: FrugalBuild.txt:438
@@ -1309,7 +1297,6 @@ msgstr ""
 
 # type: Plain text
 #: makepkg.txt:10
-#, fuzzy
 msgid "makepkg [options]"
 msgstr "makepkg [options]"
 
