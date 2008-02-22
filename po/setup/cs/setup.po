@@ -2,116 +2,118 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-15 05:06+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2008-02-21 05:00+0100\n"
+"PO-Revision-Date: 2008-02-19 23:04+0100\n"
+"Last-Translator: Martin Burda <brdam@email.cz>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Translate Toolkit 1.0.1\n"
+"X-Generator: Pootle 1.0\n"
 
 #: ../src/plugins/asklang.c:71
 msgid "Selecting language"
-msgstr ""
+msgstr "Výběr jazyka"
 
 #: ../src/plugins/configsource.c:52
 msgid "Configuring the source of the installation"
-msgstr ""
+msgstr "Výběr instalačního zdroje"
 
 #. this string should be the best mirror for the given language from
 #. * /etc/pacman-g2/repos
 #: ../src/plugins/configsource.c:68
 msgid "ftp://ftp5."
-msgstr ""
+msgstr "ftp://ftp5."
 
 #: ../src/plugins/configsource.c:102 ../src/plugins/dolangsh.c:58
 #: ../src/plugins/formatdisk.c:250 ../src/plugins/formatdisk.c:403
 #: ../src/plugins/layout.c:141 ../src/plugins/loadsource.c:82
 #: ../src/plugins/select.c:333 ../src/util.c:305
 msgid "Could not open output file for writing"
-msgstr ""
+msgstr "Nelze zapisovat do výstupního souboru"
 
 #: ../src/plugins/configsource.c:125
 msgid "Selecting a mirror"
-msgstr ""
+msgstr "Výběr zrcadla (URL) pro instalaci"
 
 #: ../src/plugins/configsource.c:132
 msgid "Please select mirrors"
-msgstr ""
+msgstr "Zvolte prosím umístění zrcadla"
 
 #: ../src/plugins/configsource.c:133
 msgid ""
 "Here you can chose one or more nearby mirror to speed up package dowloading."
-msgstr ""
+msgstr "Zde můžete vybrat nejbližší zrcadlo pro rychlejší stahování balíčků"
 
 #: ../src/plugins/configsource.c:165 ../src/plugins/formatdisk.c:596
 #: ../src/plugins/partdisk.c:188
 msgid "Continue"
-msgstr ""
+msgstr "Pokračovat"
 
 #: ../src/plugins/configsource.c:166
 msgid "Custom mirror"
-msgstr ""
+msgstr "Výběr alternativního zrcadla"
 
 #: ../src/plugins/configsource.c:166
 msgid ""
 "You may now specify a custom mirror (eg. LAN) so you can download packages "
 "faster. In most cases a Continue enough here."
 msgstr ""
+"Zde můžete zadat alternativní zrcadlo pro stahování (např. pro rychlejší "
+"stahování z lokální sítě). Pokud jej nechcete zadat, stačí ve většině "
+"případů pouze zvolit Continue."
 
 #: ../src/plugins/configsource.c:195 ../src/plugins/select.c:406
 #: ../src/plugins/select.c:416 ../src/plugins/select.c:448
 msgid "Please wait"
-msgstr ""
+msgstr "Prosím čekejte..."
 
 #: ../src/plugins/configsource.c:195
 msgid "Configuring the network interface..."
-msgstr ""
+msgstr "Probíhá nastavení sítě..."
 
 #: ../src/plugins/dolangsh.c:46
 msgid "Writing the language configuration file"
-msgstr ""
+msgstr "Zápis zvoleného jazyka do konfiguračního souboru"
 
 #: ../src/plugins/formatdisk.c:50
 msgid "Formatting the selected partitions"
-msgstr ""
+msgstr "Formátování zvolených oddílů"
 
 #: ../src/plugins/formatdisk.c:158
 msgid "Setting up swap space"
-msgstr ""
+msgstr "Nastavení odkládacího oddílu (swap)"
 
 #: ../src/plugins/formatdisk.c:161
 msgid "Setting up swap partitions"
-msgstr ""
+msgstr "Nastavení odkládacích oddílů pro swap"
 
 #: ../src/plugins/formatdisk.c:162
 msgid "Please select which swap partitions you want Frugalware to use:"
-msgstr ""
+msgstr "Prosím vyberte oddíl, který bude použit jako odkládací (swap):"
 
 #: ../src/plugins/formatdisk.c:173 ../src/plugins/formatdisk.c:196
 msgid "Quick format with no bad block checking"
-msgstr ""
+msgstr "Rychlé formátování bez kontroly disku"
 
 #: ../src/plugins/formatdisk.c:174 ../src/plugins/formatdisk.c:197
 msgid "Slow format that checks for bad blocks"
-msgstr ""
+msgstr "Formátování s kontrolou disku (pomalejší)"
 
 #: ../src/plugins/formatdisk.c:177 ../src/plugins/formatdisk.c:201
 #: ../src/plugins/formatdisk.c:226
 msgid "Formatting partitions"
-msgstr ""
+msgstr "Formátování oddílů"
 
 #: ../src/plugins/formatdisk.c:180 ../src/plugins/formatdisk.c:204
 #, c-format
 msgid "Format %s"
-msgstr ""
+msgstr "Formátování %s"
 
 #: ../src/plugins/formatdisk.c:181 ../src/plugins/formatdisk.c:205
 #, c-format
@@ -120,101 +122,109 @@ msgid ""
 "NOTE: This will erase all data on %s. Would you like to format this "
 "partition?"
 msgstr ""
+"Pokud není %s naformátován, můžete jej nyní naformátovat.\n"
+"UPOZORNĚNÍ: Tato operace smaže všechna data na %s. Opravdu chcete formátovat "
+"tento oddíl?"
 
 #: ../src/plugins/formatdisk.c:198
 msgid "Do not format, just mount the partition"
-msgstr ""
+msgstr "Připojení oddílu bez jeho formátování"
 
 #: ../src/plugins/formatdisk.c:220
 msgid "Standard Linux ext2fs filesystem"
-msgstr ""
+msgstr "Nativní linuxový souborový systém (ext2fs)"
 
 #: ../src/plugins/formatdisk.c:221
 msgid "Journalising version of the ext2fs filesystem"
-msgstr ""
+msgstr "Souborový systém s podporou žurnálování (ext3fs)"
 
 #: ../src/plugins/formatdisk.c:222
 msgid "Hans Reiser's journalising filesystem"
-msgstr ""
+msgstr "Žurnálovací souborový systém Hanse Reisera (reiserfs)"
 
 #: ../src/plugins/formatdisk.c:223
 msgid "SGI's journalising filesystem"
-msgstr ""
+msgstr "Žurnálovací systém SGI"
 
 #: ../src/plugins/formatdisk.c:230
 #, c-format
 msgid "Selecting filesystem for %s"
-msgstr ""
+msgstr "Výběr souborového systému pro %s"
 
 #: ../src/plugins/formatdisk.c:231
 #, c-format
 msgid "Please select the type of filesystem to use for %s."
-msgstr ""
+msgstr "Vyberte prosím souborový systém, kterým bude naformátován %s."
 
 #: ../src/plugins/formatdisk.c:274 ../src/plugins/formatdisk.c:281
 msgid "Formatting swap partition"
-msgstr ""
+msgstr "Formátování odkládacího oddílu (swap)"
 
 #: ../src/plugins/formatdisk.c:275
 #, c-format
 msgid "Formatting %s as a swap partition"
-msgstr ""
+msgstr "Formátování %s jako odkládacího oddílu (swap)"
 
 #: ../src/plugins/formatdisk.c:282
 #, c-format
 msgid "Formatting %s as a swap partition and checking for bad blocks"
 msgstr ""
+"Formátování %s jako odkládacího oddílu (swap) s kontrolou vadných sektorů na "
+"disku"
 
 #: ../src/plugins/formatdisk.c:306
 msgid "Setting up the root partition"
-msgstr ""
+msgstr "Nastavení kořenového oddílu (root)"
 
 #: ../src/plugins/formatdisk.c:308
 msgid "Select the Linux installation partition"
-msgstr ""
+msgstr "Výběr oddílu pro instalaci Linuxu"
 
 #: ../src/plugins/formatdisk.c:309
 msgid ""
 "Please select a partition from the following list to use for your root (/) "
 "partition. The following ones are available:"
 msgstr ""
+"Vyberte prosím ze seznamu oddíl, který bude použit jako kořenový (/). Můžete "
+"zvolit z následujících oddílů:"
 
 #: ../src/plugins/formatdisk.c:322
 msgid "Formatting"
-msgstr ""
+msgstr "Formátování"
 
 #: ../src/plugins/formatdisk.c:323
 #, c-format
 msgid "Creating %s filesystem on %s and checking for bad blocks"
 msgstr ""
+"Vytvoření %s souborového systému na %s s kontrolou vadných sektorů na disku"
 
 #: ../src/plugins/formatdisk.c:324
 #, c-format
 msgid "Creating %s filesystem on %s"
-msgstr ""
+msgstr "Vytvoření %s souborového systému na %s"
 
 #: ../src/plugins/formatdisk.c:427
 #, c-format
 msgid "Select mount point for %s"
-msgstr ""
+msgstr "Vyberte přípojný bod pro %s"
 
 #: ../src/plugins/formatdisk.c:451 ../src/plugins/formatdisk.c:616
 msgid "(in use)"
-msgstr ""
+msgstr "(je k dispozici)"
 
 #: ../src/plugins/formatdisk.c:459
 #, c-format
 msgid "%s on %s/\t%s"
-msgstr ""
+msgstr "%s na %s/\t%s"
 
 #. non-root partitions
 #: ../src/plugins/formatdisk.c:589
 msgid "Selecting other partitions"
-msgstr ""
+msgstr "Výběr jiného oddílu"
 
 #: ../src/plugins/formatdisk.c:600
 msgid "Select other Linux partitions for /etc/fstab"
-msgstr ""
+msgstr "Výběr oddílů, které budou zapsány do /etc/fstab"
 
 #: ../src/plugins/formatdisk.c:601
 msgid ""
@@ -227,19 +237,29 @@ msgid ""
 "already entered before. Please select one of the partitions listed below, or "
 "if you're done, hit Continue."
 msgstr ""
+"V nově nainstalovaném Linuxu můžete připojit jednotlivé adresáře do "
+"samostatných oddílů. Ve výchozím nastavení, které máte nyní, máte připojen "
+"pouze kořenový adresář /. Můžete ale připojit i adresáře jako /boot, /home "
+"nebo /usr/local do Vámi vybraných jednotlivých oddílů. Nedoporučuje se "
+"připojení adresářů jako /usr, /etc, /sbin nebo /bin do samostatných oddílů. "
+"Tyto adresáře doporučujeme ponechat ve výchozím nastavení a vyhnout se tak "
+"možným problémům. Vyvarujte se také opakovaného připojení adresáře, který "
+"jste již jednou někam připojili, může to znemožnit správné fungování "
+"systému. Pokračujte výběrem oddílu ze seznamu anebo stiskněte Continue pro "
+"pokračování, pokud nechcete připojovat další oddíly."
 
 #: ../src/plugins/greet.c:46
 msgid "Welcome splash"
-msgstr ""
+msgstr "Vítejte v přihlašovacím dialogu"
 
 #: ../src/plugins/greet.c:59
 #, c-format
 msgid "Welcome to %s"
-msgstr ""
+msgstr "Vítejte v %s"
 
 #: ../src/plugins/greet.c:61
 msgid "Welcome"
-msgstr ""
+msgstr "Vítejte"
 
 #: ../src/plugins/greet.c:64
 msgid ""
@@ -250,24 +270,30 @@ msgid ""
 "\n"
 "The Frugalware Developer Team"
 msgstr ""
+"Vítáme Vás mezi uživateli Frugalware!\n"
+"\n"
+"Podnětem pro vznik Frugalware bylo umožnit co největší jednoduchost a "
+"rychlost při práci se systémem. Věříme, že si náš produkt oblíbíte.\n"
+"\n"
+"Tým vývojářů Frugalware"
 
 #: ../src/plugins/layout.c:57
 msgid "Selecting the keyboard map"
-msgstr ""
+msgstr "Volba klávesnicové mapy"
 
 #: ../src/plugins/layout.c:108
 msgid "Configuring the keyboard"
-msgstr ""
+msgstr "Nastavení klávesnice"
 
 #. this string should be the best keyboard layout for the given
 #. * language from /usr/share/kbd/keymaps/i386
 #: ../src/plugins/layout.c:113
 msgid "qwerty/us.map.gz"
-msgstr ""
+msgstr "qwerty/us.map.gz"
 
 #: ../src/plugins/layout.c:114
 msgid "Keyboard map selection"
-msgstr ""
+msgstr "Výběr klávesnicové mapy"
 
 #: ../src/plugins/layout.c:115
 msgid ""
@@ -276,98 +302,108 @@ msgid ""
 "the UP/DOWN arrow keys and PageUp/PageDown to scroll through the whole list "
 "of choices."
 msgstr ""
+"Zde můžete zvolit jednu z následujících klávesnicových map. Pokud žádnou "
+"nezvolíte, jako výchozí bude použita 'qwerty/us.map.gz' (US klávesnicová "
+"mapa). Pro pohyb v menu použijte kurzorové klávesy UP/DOWN a klávesy PageUp/"
+"PageDown pro rychlejší procházení."
 
 #: ../src/plugins/loadsource.c:56
 msgid "Loading the installation source"
-msgstr ""
+msgstr "Načtení instalačního zdroje"
 
 #: ../src/plugins/loadsource.c:123
 msgid "Selecting source media"
-msgstr ""
+msgstr "Výběr zdrojového média"
 
 #: ../src/plugins/loadsource.c:126
 msgid "Scanning"
-msgstr ""
+msgstr "Vyhledávání"
 
 #: ../src/plugins/loadsource.c:126
 msgid "Scanning for a CD/DVD drive containing a Frugalware install disc..."
 msgstr ""
+"Prohledávám CD/DVD mechaniky obsahující instalační médium Frugalware..."
 
 #: ../src/plugins/loadsource.c:137
 msgid "CD/DVD drive found"
-msgstr ""
+msgstr "Mechanika CD/DVD byla nalezena"
 
 #: ../src/plugins/loadsource.c:137
 #, c-format
 msgid "A Frugalware install disc was found in device /dev/%s."
-msgstr ""
+msgstr "Instalační médium Frugalware bylo nalezeno na /dev/%s."
 
 #: ../src/plugins/partdisk.c:53
 msgid "Partitioning the disk drives"
-msgstr ""
+msgstr "Rozdělování disku na oddíly"
 
 #: ../src/plugins/partdisk.c:117
 msgid "User friendly (curses based) version of fdisk"
 msgstr ""
+"Verze programu fdisk, založená na knihovně curses (uživatelsky přívětivější)."
 
 #: ../src/plugins/partdisk.c:118
 msgid "The traditional partitioning program for Linux"
-msgstr ""
+msgstr "Tradiční linuxový program fdisk pro dělení oddílů"
 
 #: ../src/plugins/partdisk.c:119
 msgid "A partition manipulation program"
-msgstr ""
+msgstr "Program pro dělení oddílů"
 
 #: ../src/plugins/partdisk.c:122 ../src/plugins/partdisk.c:174
 msgid "Creating partitions"
-msgstr ""
+msgstr "Vytvoření oddílů"
 
 #: ../src/plugins/partdisk.c:125
 msgid "Select partitioning program"
-msgstr ""
+msgstr "Volba programu k rozdělování disku"
 
 #: ../src/plugins/partdisk.c:126
 msgid "Select the program you want to use for partitioning:"
-msgstr ""
+msgstr "Vyberte prosím program k rozdělování disku:"
 
 #: ../src/plugins/partdisk.c:138
 msgid "Want to create RAID?"
-msgstr ""
+msgstr "Chcete vytvořit RAID?"
 
 #: ../src/plugins/partdisk.c:139
 msgid "Do you want to create software raid partitions during partitioning?"
-msgstr ""
+msgstr "Chcete použít během instalace softwarový RAID?"
 
 #: ../src/plugins/partdisk.c:168
 msgid "Disk drive not found"
-msgstr ""
+msgstr "Nebyl nalezen žádný disk"
 
 #: ../src/plugins/partdisk.c:168
 msgid ""
 "Sorry, no hard disk drives were found in this computer. Press ENTER to "
 "reboot."
 msgstr ""
+"Bohužel nebyl na Vašem počítači nalezen žádný disk.Stiskněte ENTER pro "
+"pokračování a restart počítače."
 
 #: ../src/plugins/partdisk.c:183
 msgid "Create RAID"
-msgstr ""
+msgstr "Vytvoření diskového pole RAID"
 
 #: ../src/plugins/partdisk.c:191
 msgid "Select a hard disk to partition"
-msgstr ""
+msgstr "Výběr disku pro rozdělování oddílů"
 
 #: ../src/plugins/partdisk.c:192
 msgid ""
 "Please select a hard disk to partition. The following ones are available:"
 msgstr ""
+"Zde můžete vybrat disk, který použijete pro vytvoření oddílů. Jsou dostupné "
+"tyto disky:"
 
 #: ../src/plugins/restart.c:51
 msgid "Restarting your computer"
-msgstr ""
+msgstr "Restartování počítače"
 
 #: ../src/plugins/restart.c:88 ../src/util.c:126
 msgid "Setup complete"
-msgstr ""
+msgstr "Instalace je dokončena"
 
 #: ../src/plugins/restart.c:88
 #, c-format
@@ -376,23 +412,27 @@ msgid ""
 "that you will enjoy %s. Please remove the media from your drive and press "
 "ENTER to reboot."
 msgstr ""
+"Instalace a konfigurace systému je úspěšně dokončena. Pevně doufáme, že si "
+"nově nainstalovaný systém %s patřičně užijete. Vyjměte instalační médium z "
+"mechaniky a stiskněte ENTER pro pokračování a restart počítače. LET'S MAKE "
+"THINGS FRUGAL!"
 
 #: ../src/plugins/select.c:53 ../src/plugins/select.c:278
 #: ../src/plugins/select.c:403
 msgid "Selecting packages"
-msgstr ""
+msgstr "Výběr balíčků"
 
 #: ../src/plugins/select.c:260
 msgid "Selecting categories"
-msgstr ""
+msgstr "Výběr kategorií software"
 
 #: ../src/plugins/select.c:261
 msgid "Please select which categories to install:"
-msgstr ""
+msgstr "Zvolte prosím kategorie software k instalaci:"
 
 #: ../src/plugins/select.c:291
 msgid "Use expert menus?"
-msgstr ""
+msgstr "Chcete použít menu pro experty?"
 
 #: ../src/plugins/select.c:292
 msgid ""
@@ -405,47 +445,59 @@ msgid ""
 "groups of packages, or choose 'yes' for using expert menus with a switch for "
 "each package."
 msgstr ""
+"Pokud budete chtít, můžete zvolit individuální výběr balíčků z menu pro "
+"experty. Při výběru balíčků z normálního menu můžete vidět, že pro instalaci "
+"je obvykle vyžadována volba 'C compiler system'. Jestli však zvolíte "
+"expertní menu, budou vyžadovány volby jako 'C libs', 'C compiler', 'C "
+"include files' pro každý balíček zvlášť. Proto dobře zvažte jednotlivý výběr "
+"balíčků z menu pro experty a zvolte jej pouze v případě, kdy jste si "
+"naprosto jisti tím, co děláte. Expertní menu umožńuje přeskočit jednotlivé "
+"balíčky a dokonce i celé kategorie. Výsledkem mohou být nevyřešené "
+"závislosti balíčků a nefunkční systém. Proto Vás ještě jednou žádáme, aby "
+"jste dobře uvážili volbu expertního menu. Zvolte 'no' pokud chcete použít "
+"normální menu, anebo zvolte 'yes' pro jednotlivý výběr balíčků z menu pro "
+"experty."
 
 #: ../src/plugins/select.c:345 ../src/plugins/select.c:353
 #: ../src/plugins/select.c:367 ../src/plugins/select.c:371
 msgid "Error"
-msgstr ""
+msgstr "Chyba"
 
 #: ../src/plugins/select.c:345
 #, c-format
 msgid "Failed to parse pacman-g2 configuration file (%s)"
-msgstr ""
+msgstr "Nebyl rozeznán konfigurační soubor pacman-g2 (%s)"
 
 #: ../src/plugins/select.c:353
 #, c-format
 msgid "Could not register '%s' database (%s)"
-msgstr ""
+msgstr "Nelze registrovat '%s' databázi (%s)"
 
 #: ../src/plugins/select.c:367
 #, c-format
 msgid "Failed to synchronize %s"
-msgstr ""
+msgstr "Nelze synchronizovat %s"
 
 #: ../src/plugins/select.c:371
 #, c-format
 msgid "Failed to update %s (%s)"
-msgstr ""
+msgstr "Nelze aktualizovat %s (%s)"
 
 #: ../src/plugins/select.c:406
 msgid "Searching for categories..."
-msgstr ""
+msgstr "Vyhledávám kategorie software..."
 
 #: ../src/plugins/select.c:416
 msgid "Searching for packages..."
-msgstr ""
+msgstr "Vyhledávám balíčky..."
 
 #: ../src/plugins/select.c:448
 msgid "Searching for missing dependencies..."
-msgstr ""
+msgstr "Vyhledávám nevyřešené závislosti balíčků..."
 
 #: ../src/plugins/install.c:52
 msgid "Installing the selected packages"
-msgstr ""
+msgstr "Instalace zvolených balíčků"
 
 #: ../src/plugins/install.c:69
 #, c-format
@@ -453,10 +505,12 @@ msgid ""
 "Errors occured while installing selected packages.\n"
 "Press ENTER to continue..."
 msgstr ""
+"Při instalaci software došlo k neočekávané chybě.\n"
+"Stiskněte ENTER pro pokračování..."
 
 #: ../src/plugins/install.c:90
 msgid "Insert next disc"
-msgstr ""
+msgstr "Vložte další disk"
 
 #: ../src/plugins/install.c:91
 msgid ""
@@ -464,14 +518,17 @@ msgid ""
 "installing packages. If you don't have more disk, choose NO, and then you "
 "can finish up the installation. Have you inserted the next disk?"
 msgstr ""
+"Vložte prosím další instalační médium Frugalware a stiskněte ENTER pro "
+"pokračování v instalaci balíčků. Pokud nemáte další instalační média, zvolte "
+"NO a instalace bude ukončena. Vložili jste do mechaniky další disk?"
 
 #: ../src/plugins/postconf.c:46
 msgid "Configuring the installed system"
-msgstr ""
+msgstr "Konfigurace nainstalovaného systému"
 
 #: ../src/plugins/postconf.c:80
 msgid "No root password detected"
-msgstr ""
+msgstr "Nebylo nalezeno heslo uživatele root"
 
 #: ../src/plugins/postconf.c:81
 msgid ""
@@ -481,57 +538,64 @@ msgid ""
 "machine is on an internet connected LAN. Would you like to set a root "
 "password?"
 msgstr ""
+"Zatím jste nezadali heslo systémového administrátora (root). Doporučujeme "
+"jej zadat nyní, a heslo bude aktivováno při příštím rebootu počítače. Je to "
+"důležité zvláště v případě, kdy se připojujete k internetu z místní sítě "
+"LAN. Chcete zadat heslo uživatele root?"
 
 #: ../src/plugins/postconf.c:100
 #, c-format
 msgid "Please enter a password for %s"
-msgstr ""
+msgstr "Zadejte prosím heslo pro %s"
 
 #: ../src/plugins/postconf.c:101 ../src/plugins/postconf.c:107
 msgid "Password"
-msgstr ""
+msgstr "Heslo"
 
 #: ../src/plugins/postconf.c:106
 #, c-format
 msgid "Please re-enter your password for %s"
-msgstr ""
+msgstr "Zopakujte prosím zadání svého hesla pro %s"
 
 #: ../src/plugins/postconf.c:114
 msgid "Passwords don't match"
-msgstr ""
+msgstr "Zadaná hesla nesouhlasí"
 
 #: ../src/plugins/postconf.c:115
 msgid "Sorry, the passwords do not match. Try again?"
 msgstr ""
+"Vámi zadaná hesla nesouhlasí.Zadejte je prosím znovu.Opakovat zadání hesla?"
 
 #: ../src/plugins/postconf.c:140
 #, c-format
 msgid "Are you sure you want to skip setting the password for %s?"
-msgstr ""
+msgstr "Jste si jisti, že nechcete zadat heslo uživatele %s?"
 
 #: ../src/plugins/postconf.c:141
 msgid "Ignore setting password"
-msgstr ""
+msgstr "Ignorovat zadání hesla"
 
 #: ../src/plugins/postconf.c:153
 msgid "Enter login"
-msgstr ""
+msgstr "Nastavení uživatelského účtu"
 
 #: ../src/plugins/postconf.c:153
 msgid "Please enter the login name you should like to create:"
-msgstr ""
+msgstr "Zadejte prosím Vámi zvolené uživatelské jméno:"
 
 #: ../src/plugins/postconf.c:156
 msgid "Enter full name"
-msgstr ""
+msgstr "Zde můžete zadat svoje celé jméno"
 
 #: ../src/plugins/postconf.c:156
 msgid "Please enter the full name of the user you would like to create:"
 msgstr ""
+"Zadejte prosím celé své jméno, které bude přiřazeno uživateli, kterého jste "
+"vytvořili:"
 
 #: ../src/plugins/postconf.c:201
 msgid "No normal user account detected"
-msgstr ""
+msgstr "Není vytvořen běžný uživatelský účet"
 
 #: ../src/plugins/postconf.c:202
 msgid ""
@@ -539,34 +603,36 @@ msgid ""
 "recommended to create one. Would you like to create a normal user account "
 "now?"
 msgstr ""
+"Zatím nebyl nastaven běžný uživatelský účet. Důrazně doporučujeme vytvořit "
+"alespoň jeden. Chcete nyní vytvořit běžný uživatelský účet?"
 
 #: ../src/plugins/postconf.c:230
 msgid "Post-install configuration"
-msgstr ""
+msgstr "Poinstalační nastavení"
 
 #: ../src/plugins/postconf.c:256
 msgid "Configuring kernel modules"
-msgstr ""
+msgstr "Nastavení modulů jádra"
 
 #: ../src/plugins/postconf.c:257
 msgid "Updating module dependencies..."
-msgstr ""
+msgstr "Nastavuji závislosti mezi moduly jádra..."
 
 #: ../src/util.c:53
 msgid "Setup"
-msgstr ""
+msgstr "Nastavení"
 
 #: ../src/util.c:66
 msgid "Could not open file for reading"
-msgstr ""
+msgstr "Nelze zapisovat do souboru"
 
 #: ../src/util.c:126
 msgid "Ejecting installation media..."
-msgstr ""
+msgstr "Odpojuji instalační médium..."
 
 #: ../src/util.c:166
 msgid "Installation error"
-msgstr ""
+msgstr "Chyba instalace"
 
 #: ../src/util.c:167
 msgid ""
@@ -574,39 +640,45 @@ msgid ""
 "abort the installation, however you may want to ignore this problem. Do you "
 "want to leave the installer?"
 msgstr ""
+"Při instalaci zvolených balíčků došlo k chybě. Doporučujeme ukončit "
+"instalátor, můžete ale vzniklou situaci ignorovat. Chcete ukončit instalaci?"
 
 #: ../src/util.c:183
 msgid "Exit from the installer"
-msgstr ""
+msgstr "Ukončit instalaci"
 
 #: ../src/util.c:184
 msgid "Are you sure you want to exit from the installer?"
-msgstr ""
+msgstr "Jste si jist(a), že chcete ukončit instalaci?"
 
 #: ../src/util.c:628
 msgid "Oops"
-msgstr ""
+msgstr "Oops"
 
 #: ../src/util.c:630
 msgid "A problem has occurred"
-msgstr ""
+msgstr "Během instalace se vyskytla chyba"
 
 #: ../src/util.c:630
 msgid ""
 "Internal error: Segmentation fault. Please report this issue to http://bugs."
 "frugalware.org"
 msgstr ""
+"Internal error: Segmentation fault. Zašlete prosím výpis na http://bugs."
+"frugalware.org"
 
 #: ../src/util.c:656
 msgid "Selecting a task"
-msgstr ""
+msgstr "Výběr položky"
 
 #: ../src/util.c:664
 msgid "Select task to continue with"
-msgstr ""
+msgstr "Výběr položky pro pokračování"
 
 #: ../src/util.c:665
 msgid ""
 "You selected to change the way normally Frugalware is installed. Here are "
 "the list of tasks you can continue with:"
 msgstr ""
+"Vybral(a) jste si alternativní instalaci Frugalware. Můžete zvolit jednu z "
+"následujících položek:"
