@@ -2,40 +2,40 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-17 05:08+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2008-02-24 05:01+0100\n"
+"PO-Revision-Date: 2008-02-24 02:41+0100\n"
+"Last-Translator: Martin Burda <brdam@email.cz>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 1.0.1\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Pootle 1.0\n"
 
 #: ../netconfig.c:57
 msgid "Use a DHCP server"
-msgstr ""
+msgstr "Použít server DHCP"
 
 #: ../netconfig.c:58
 msgid "Use a static IP address"
-msgstr ""
+msgstr "Použít statické IP adresy"
 
 #: ../netconfig.c:59
 msgid "DSL connection"
-msgstr ""
+msgstr "Připojení k DSL"
 
 #: ../netconfig.c:60
 msgid "No network - loopback connection only"
 msgstr ""
+"Žádné připojení k síti - je aktivní pouze testovací rozhraní sítě (loopback)"
 
 #: ../netconfig.c:62
 msgid "Select network connection type"
-msgstr ""
+msgstr "Vybrat typ připojení k síti"
 
 #: ../netconfig.c:63
 msgid ""
@@ -49,46 +49,55 @@ msgid ""
 "select 'dsl'. \n"
 "Finally, if you do not have a network card, select the 'lo' choice. \n"
 msgstr ""
+"Nyní potřebujeme vědět, jak je Váš počítač připojen k síti.\n"
+"Pokud máte v počítači síťovou kartu, které je již přiřazena adresa IP, "
+"výchozí brána (gateway) a DNS, použijte 'static' k vložení těchto údajů. "
+"Můžete tak postupovat i v případě, kdy se připojujete k síti pomocí DSL.\n"
+"Pokud je Vašemu počítači přiřazena IP adresa serverem DHCP ( toto nastavení "
+"obvykle využívá kabelový modem), zvolte 'dhcp'. \n"
+"Pokud máte síťovou kartu a chcete se připojit přímo k modemu DSL, zvolte "
+"'dsl'.\n"
+"Pokud nedisponujete žádným síťovým zařízením, zvolte 'lo'. \n"
 
 #: ../netconfig.c:80
 msgid "DSL configuration"
-msgstr ""
+msgstr "Nastavení DSL"
 
 #: ../netconfig.c:80
 msgid "Do you want to configure a DSL connection now?"
-msgstr ""
+msgstr "Chcete nyní nastavit připojení k DSL?"
 
 #: ../netconfig.c:82
 msgid "Enter user name"
-msgstr ""
+msgstr "Zadejte uživatelské jméno"
 
 #: ../netconfig.c:83
 msgid "Enter your PPPoE user name:"
-msgstr ""
+msgstr "Zadejte uživatelské jméno pro PPPoE:"
 
 #: ../netconfig.c:87 ../netconfig.c:89
 msgid "Password"
-msgstr ""
+msgstr "Heslo"
 
 #: ../netconfig.c:88
 msgid "Please enter your PPPoE password"
-msgstr ""
+msgstr "Zadejte prosím heslo pro PPPoE"
 
 #: ../netconfig.c:90
 msgid "Please re-enter your PPPoE password"
-msgstr ""
+msgstr "Zopakujte prosím zadání hesla pro PPPoE"
 
 #: ../netconfig.c:96
 msgid "Passwords don't match"
-msgstr ""
+msgstr "Zadaná hesla nesouhlasí"
 
 #: ../netconfig.c:97
 msgid "Sorry, the passwords do not match. Try again?"
-msgstr ""
+msgstr "Vámi zadaná hesla nesouhlasí. Opakovat zadání hesla?"
 
 #: ../netconfig.c:100 ../netconfig.c:150
 msgid "Enter interface name"
-msgstr ""
+msgstr "Zadat název rozhraní"
 
 #: ../netconfig.c:101
 msgid ""
@@ -97,14 +106,18 @@ msgid ""
 "If unsure, just hit enter.\n"
 "Enter interface name:"
 msgstr ""
+"Zadejte název rozhraní sítě Ethernet, který se použije k připojení k DSL "
+"modemu. Název rozhraní bude eth(n), kde 'n' zastupuje číslo rozhraní.\n"
+"Pokud si nejste jisti, stiskněte pouze ENTER.\n"
+"Zadejte název rozhraní:"
 
 #: ../netconfig.c:129
 msgid "Network configuration"
-msgstr ""
+msgstr "Nastavení sítě"
 
 #: ../netconfig.c:132
 msgid "Enter hostname"
-msgstr ""
+msgstr "Zadat název počítače"
 
 #: ../netconfig.c:132
 msgid ""
@@ -115,6 +128,12 @@ msgid ""
 "\n"
 "Enter full hostname:"
 msgstr ""
+"Zde můžete zadat libovolný název počítače.\n"
+"Lze zadat názvy jako:\n"
+"\n"
+"frugalware.example.net\n"
+"\n"
+"Zadejte název počítače:"
 
 #: ../netconfig.c:151
 msgid ""
@@ -123,50 +142,62 @@ msgid ""
 "If unsure, just hit enter.\n"
 "Enter interface name:"
 msgstr ""
+"Je potřeba zadat název rozhraní, které použijete k připojení k síti.\n"
+"Pokud si nejste jisti, stiskněte pouze enter.\n"
+"Zadejte název rozhraní:"
 
 #: ../netconfig.c:160
 msgid "Extended network name"
-msgstr ""
+msgstr "Rozšířený síťový název"
 
 #: ../netconfig.c:160
 msgid ""
 "It seems that this network card has a wireless extension. In order to use "
 "it, you must set your extended netwok name (ESSID). Enter your ESSID:"
 msgstr ""
+"Vypadá to, že se připojujete k síti pomocí Wi-Fi. Abyste mohli pokračovat, "
+"musíte zadat rozšířený síťový název (ESSID). Zadejte ESSID:"
 
 #: ../netconfig.c:165
 msgid "WEP encryption key"
-msgstr ""
+msgstr "Šifrovací klíč WEP"
 
 #: ../netconfig.c:166
 msgid ""
 "If you have a WEP encryption key, then please enter it below.\n"
 "Examples: 4567-89AB-CD or  s:password"
 msgstr ""
+"Pokud máte šifrovací klíč WEP, zadejte jej prosím níže.\n"
+"Příklady: 4567-89AB-CD nebo  s:heslo"
 
 #: ../netconfig.c:170
 msgid "WPA encryption passphrase"
-msgstr ""
+msgstr "Zadání klíčového slova (passphrase) pro WPA"
 
 #: ../netconfig.c:171
 msgid ""
 "If you have a WPA passphrase, then please enter it below.\n"
 "Example: secret"
 msgstr ""
+"Pokud máte klíčové slovo pro WPA, zadejte je prosím níže\n"
+"Příklady klíčových slov: secret :-)"
 
 #: ../netconfig.c:175
 msgid "WPA driver"
-msgstr ""
+msgstr "Ovladač zabezpečeného připojení WPA"
 
 #: ../netconfig.c:176
 msgid ""
 "If you want to use a custom driver (not the generic one, called 'wext'), "
 "then please enter it below. If unsure, just hit enter."
 msgstr ""
+"Pokud chcete použít svůj vlastní ovladač zařízení (nebude použit výchozí "
+"ovladač 'wext'), stiskněte níže enter. Pokud si nejste jisti, stiskněte "
+"pouze enter."
 
 #: ../netconfig.c:183
 msgid "Set DHCP hostname"
-msgstr ""
+msgstr "Zadat název serveru DHCP"
 
 #: ../netconfig.c:183
 msgid ""
@@ -175,19 +206,24 @@ msgid ""
 "wereassigned a DHCP hostname, please enter it below. If you do not have a "
 "DHCP hostname, justhit enter."
 msgstr ""
+"Někteří poskytovatelé internetu (ISP) požadují, aby byl název Vašeho "
+"počítače zařazen do pořadí k připojení DHCP. Jestliže je tomu tak, název "
+"počítače pro připojení k DHCP Vám již byl přidělen Vaším poskytovatelem "
+"internetu. Pokud jste nezadali název počítače, stiskněte níže enter. Pokud "
+"nemáte název počítače k připojení k DHCP, stiskněte pouze enter."
 
 #. options = ip netmask netmask
 #: ../netconfig.c:198
 msgid "Enter ip address"
-msgstr ""
+msgstr "Zadat IP adresy"
 
 #: ../netconfig.c:198
 msgid "Enter your IP address for the local machine."
-msgstr ""
+msgstr "Zadejte IP adresy počítače pro připojení k místní síti."
 
 #: ../netconfig.c:199
 msgid "Enter netmask for local network"
-msgstr ""
+msgstr "Zadat síťovou masku lokální sítě (masku podsítě)"
 
 #: ../netconfig.c:200
 msgid ""
@@ -195,20 +231,26 @@ msgid ""
 "255.255.255.0\n"
 "If unsure, just hit enter."
 msgstr ""
+"Zadejte síťovou masku. Ve většině případů bývá použita síťová maska "
+"255.255.255.0\n"
+"Pokud si nejste jisti, stiskněte pouze enter."
 
 #: ../netconfig.c:207
 msgid "Enter gateway address"
-msgstr ""
+msgstr "Zadat IP adresu výchozí brány (gateway)"
 
 #: ../netconfig.c:207
 msgid ""
 "Enter the address for the gateway on your network. If you don't have a "
 "gateway on your network just hit enter, without entering any ip address."
 msgstr ""
+"Zadejte IP adresu výchozí brány ve Vaší síti. Pokud se nenachází ve Vaší "
+"síti výchozí brána, stiskněte pouze enter a adresy výchozí brány nebudou "
+"zapsány."
 
 #: ../netconfig.c:213
 msgid "Select nameserver"
-msgstr ""
+msgstr "Vybrat server pro překlad jmen (nameserver)"
 
 #: ../netconfig.c:213
 msgid ""
@@ -217,21 +259,25 @@ msgid ""
 "If you don't have a name server on your network just hit enter, without "
 "entering any ip address."
 msgstr ""
+"Zadejte prosím IP adresu nameserveru. Později můžete změnit výběr "
+"nameserverů editací konfiguračního souboru /etc/sysconfig/network/default.\n"
+"Pokud se nenachází ve Vaší síti nameserver, stiskněte pouze enter k "
+"pokračování bez zadání adresy."
 
 #: ../netconfig.c:224
 msgid "Adjust configuration files"
-msgstr ""
+msgstr "Zapsat do konfiguračních souborů"
 
 #: ../netconfig.c:224
 msgid "Accept these settings and adjust configuration files?"
-msgstr ""
+msgstr "Akceptovat tato nastavení a zapsat je do konfiguračních souborů?"
 
 #: ../netconfig.c:308
 #, c-format
 msgid "No profile loaded.\n"
-msgstr ""
+msgstr "Nebyl načten žádný profil.\n"
 
 #: ../netconfig.c:313
 #, c-format
 msgid "Current profile: %s\n"
-msgstr ""
+msgstr "Aktuální profil: %s\n"

@@ -2,57 +2,56 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-17 05:08+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2008-02-24 05:01+0100\n"
+"PO-Revision-Date: 2008-02-19 01:10+0100\n"
+"Last-Translator: Martin Burda <brdam@email.cz>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 1.0.1\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Pootle 1.0\n"
 
 #: ../grubconfig.c:39 ../grubconfig.c:56
 msgid "MBR"
-msgstr ""
+msgstr "MBR"
 
 #: ../grubconfig.c:39
 msgid "Install to Master Boot Record"
-msgstr ""
+msgstr "Instalovat na první sektor disku (MBR)"
 
 #: ../grubconfig.c:40 ../grubconfig.c:58
 msgid "Floppy"
-msgstr ""
+msgstr "Disketa"
 
 #: ../grubconfig.c:40
 msgid "Install to a formatted floppy in /dev/fd0"
-msgstr ""
+msgstr "Instalovat na naformátovanou disketu na zařízení /dev/fd0"
 
 #. see see http://lists.gnu.org/archive/html/bug-grub/2003-11/msg00085.html
 #: ../grubconfig.c:42 ../grubconfig.c:60
 msgid "Root"
-msgstr ""
+msgstr "Root"
 
 #: ../grubconfig.c:42
 msgid "Install to superblock (do NOT use with XFS)"
-msgstr ""
+msgstr "Instalovat do superbloku (nepoužívejte společně s XFS)"
 
 #: ../grubconfig.c:43 ../grubconfig.c:62
 msgid "Skip"
-msgstr ""
+msgstr "Přeskočit"
 
 #: ../grubconfig.c:43
 msgid "Skip the installation of GRUB."
-msgstr ""
+msgstr "Přeskočit instalaci GRUBu"
 
 #: ../grubconfig.c:48
 msgid "Installing GRUB bootloader"
-msgstr ""
+msgstr "Instalace zaváděcího programu GRUB"
 
 #: ../grubconfig.c:49
 msgid ""
@@ -66,15 +65,24 @@ msgid ""
 "Hint: Choose option 3 if you already have a boot manager installed.\n"
 "Which option would you like?"
 msgstr ""
+"GRUB může být nainstalován do těchto umístění:\n"
+"\n"
+"\t1. První sektor prvního disku (MBR).\n"
+"\t2. Naformátovaná disketa.\n"
+"\t3. Superblok oddílu, na kterém máte naistalován Linux.\n"
+"\n"
+"Volba 3 vyžaduje, aby požadovaný oddíl bylo možno zavést programem (c)fdisk\n"
+"Doporučení: Zvolte možnost 3 pokud máte již zavaděč nainstalován.\n"
+"Kterou možnost zvolíte?"
 
 #: ../grubconfig.c:91
 msgid "GRUB bootloader"
-msgstr ""
+msgstr "Zavaděč GRUB"
 
 #: ../grubconfig.c:96
 msgid "Please wait"
-msgstr ""
+msgstr "Prosím čekejte"
 
 #: ../grubconfig.c:96
 msgid "Attempting to install the GRUB bootloader..."
-msgstr ""
+msgstr "Pokouším se zavést GRUB..."
