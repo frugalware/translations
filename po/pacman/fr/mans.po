@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-01-03 05:04+0100\n"
-"PO-Revision-Date: 2008-02-22 22:02+0100\n"
-"Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
+"PO-Revision-Date: 2008-02-25 09:50+0100\n"
+"Last-Translator: Daniel <devil505linux@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -769,17 +769,12 @@ msgid ""
 "\tdirective.\n"
 msgstr ""
 "depends (liste)::\n"
-"\tUne liste des dépendances requise par ce paquet pour être construit et "
-"lancé.\n"
-"\tLes paquets de cette liste devront avoir leur nom encadré par des "
-"guillemets simples, et contenir au minimum le nom du paquet.\n"
+"\tUne liste des dépendances requise par ce paquet pour être construit et lancé.\n"
+"\tLes paquets de cette liste devront avoir leur nom encadré par des guillemets simples, et contenir au minimum le nom du paquet.\n"
 "\tIls peuvent également inclure une version requise de la forme\n"
-"\t'name<>version', où '<>' est l'un des cinq comparatifs : '>=' (supérieur ou "
-"égal à),\n"
-"\t'<=' (inférieur ou égal à), = (égal à), '>' (supérieur à), ou '<' "
-"(inférieur à)\n"
-"\tAllez voir l'exemple de FrugalBuild, plus haut, pour un exemple de la "
-"directive \"depends\".\n"
+"\t'name<>version', où '<>' est l'un des cinq comparatifs : '>=' (supérieur ou égal à),\n"
+"\t'<=' (inférieur ou égal à), = (égal à), '>' (supérieur à), ou '<' (inférieur à)\n"
+"\tAllez voir l'exemple de FrugalBuild, plus haut, pour un exemple de la directive \"depends\".\n"
 
 # type: Plain text
 #: FrugalBuild.txt:277
@@ -806,14 +801,10 @@ msgid ""
 "\tthe same format as depends.\n"
 msgstr ""
 "rodepends (liste)::\n"
-"\tUne liste des dépendances requise par ce paquet pour être lancé "
-"(c'est-à-dire, facultatifs à sa construction).\n"
-"\tGénéralement, 'rodepends' doit être évité au profit de 'depends', excepté "
-"dans les cas où\n"
-"\tcela crée une chaîne circulaire des dépendances (Par exemple, construire "
-"'logrotare'\n"
-"\tne requiert pas que 'dcron' soit installé.). Les paquets de cette liste "
-"devront suivre\n"
+"\tUne liste des dépendances requise par ce paquet pour être lancé (c'est-à-dire, facultatifs à sa construction).\n"
+"\tGénéralement, 'rodepends' doit être évité au profit de 'depends', excepté dans les cas où\n"
+"\tcela crée une chaîne circulaire des dépendances (Par exemple, construire 'logrotare'\n"
+"\tne requiert pas que 'dcron' soit installé.). Les paquets de cette liste devront suivre\n"
 "\tun format identique à ceux de la directive 'depends'.\n"
 
 # type: Plain text
@@ -1012,10 +1003,9 @@ msgstr ""
 "librairie installée. C'est ainsi que nous ne pouvons pas vraiment contrôler "
 "la liste des vraies dépendances. Par exemple, si 'libquicktime' est installé "
 "sur votre système depuis les sources, alors 'mplayer' ou tout autre "
-"programme peut se lier de lui-même à 'libquicktime', en conséquence, "
-"'depends()' sera incorrecte. Ou si vous avez les pilotes propriétaires "
-"NVidia installés, certains autres programmes se relieront aux librairies "
-"NVidia."
+"programme peut se lier de lui-même à 'libquicktime', en conséquence, 'depends"
+"()' sera incorrecte. Ou si vous avez les pilotes propriétaires NVidia "
+"installés, certains autres programmes se relieront aux librairies NVidia."
 
 # type: Plain text
 #: FrugalBuild.txt:357
@@ -1039,14 +1029,14 @@ msgid ""
 "change this list rarely and try to keep it short, of course.)"
 msgstr ""
 "Quand la construction commence, un cœur du système 'chroot' est installé "
-"dans '/var/chroot'. (Bien sûr, vous pouvez changer le répertoire dans "
-"'/etc/makepkg.conf'.) Le cœur du système contient environ 60 paquets qui "
-"doivent être installés pour construire n'importe quel paquet dans un "
-"environnement 'chroot'. Ces paquets, (par exemple gcc, kernel-headers, make) "
-"ne doivent pas être mentionnés dans 'makedepends()'. 'pacman-g2 -Sg core "
-"chroot-core devel-core' devrait afficher la liste actuelle. (Nous évitons de "
-"modifier cette liste trop souvent, et, nous essayons de la garder aussi "
-"courte que possible.)"
+"dans '/var/chroot'. (Bien sûr, vous pouvez changer le répertoire dans '/etc/"
+"makepkg.conf'.) Le cœur du système contient environ 60 paquets qui doivent "
+"être installés pour construire n'importe quel paquet dans un environnement "
+"'chroot'. Ces paquets, (par exemple gcc, kernel-headers, make) ne doivent "
+"pas être mentionnés dans 'makedepends()'. 'pacman-g2 -Sg core chroot-core "
+"devel-core' devrait afficher la liste actuelle. (Nous évitons de modifier "
+"cette liste trop souvent, et, nous essayons de la garder aussi courte que "
+"possible.)"
 
 # type: Plain text
 #: FrugalBuild.txt:371
@@ -2125,8 +2115,7 @@ msgid ""
 "\tprovided, all groups will be listed.\n"
 msgstr ""
 "-g, --groups::\n"
-"\tAffiche tous les paquets membres de chaque groupes de paquet spécifié. Si "
-"aucun nom de groupe n'est fourni,\n"
+"\tAffiche tous les paquets membres de chaque groupes de paquet spécifié. Si aucun nom de groupe n'est fourni,\n"
 "\ttous les groupes seront affiché.\n"
 
 # type: Plain text
@@ -2148,8 +2137,7 @@ msgid ""
 "\tspecified on the command line.\n"
 msgstr ""
 "-l, --list::\n"
-"\tAffiche tous les fichiers dans le répertoire spécifié. Plusieurs "
-"répertoires peuvent être\n"
+"\tAffiche tous les fichiers dans le répertoire spécifié. Plusieurs répertoires peuvent être\n"
 "\tspécifiés dans la ligne de commande.\n"
 
 # type: Plain text
@@ -2170,6 +2158,10 @@ msgid ""
 "\tThis will search each package in the package list for names or descriptions\n"
 "\tthat contains <regexp>.\n"
 msgstr ""
+"-s, --search <regexp>::\n"
+"\tCela va rechercher chaque paquet dans la liste de paquets dont les noms ou "
+"descriptions\n"
+"\tcontiennent <regexp>.\n"
 
 # type: Plain text
 #: pacman-g2.txt:167
@@ -2183,6 +2175,16 @@ msgid ""
 "\tautomatically resolved at this level and will be installed/upgraded if\n"
 "\tnecessary.\n"
 msgstr ""
+"-u, --sysupgrade::\n"
+"\tMet à jour tout les paquets obsolètes. pacman-g2 va examiner chaque\n"
+"\tpaquets installés sur le système, et si un nouveau paquet existe sur le "
+"serveur il\n"
+"\tva le mettre à jour. pacman-g2 va présenter un rapport de tout les paquets "
+"qu'il veut\n"
+"\tmettre à jour et procèdera sans confirmation de l'utilisateur. Les "
+"dépendances sont\n"
+"\tautomatiquement résolues à ce niveau et seront installées/mi à jour si\n"
+"\tnécessaire.\n"
 
 # type: Plain text
 #: pacman-g2.txt:170
@@ -2192,8 +2194,7 @@ msgid ""
 "\tRetrieve all packages from the server, but do not install/upgrade anything.\n"
 msgstr ""
 "-w, --downloadonly::\n"
-"\t Télécharge tous les paquets depuis le serveur, mais n'installe/ne met à "
-"jour aucun paquet.\n"
+"\t Télécharge tous les paquets depuis le serveur, mais n'installe/ne met à jour aucun paquet.\n"
 
 # type: Plain text
 #: pacman-g2.txt:175
@@ -2228,6 +2229,10 @@ msgid ""
 "\tRemove all target packages, as well as all packages that depend on one or more\n"
 "\ttarget packages. This operation is recursive.\n"
 msgstr ""
+"-c, --cascade::\n"
+"\tRetire tout les paquets ciblés, aussi bien que tout les paquets dépendants "
+"d'un ou plusieurs de ces\n"
+"\tpaquets ciblés. Cette opération est récursive.\n"
 
 # type: Plain text
 #: pacman-g2.txt:189
@@ -2271,6 +2276,8 @@ msgid ""
 "-c, --changelog::\n"
 "\tView the changelog of a package.\n"
 msgstr ""
+"-c, --changelog::\n"
+"\tVoir la liste des changements d'un paquet.\n"
 
 # type: Plain text
 #: pacman-g2.txt:210
@@ -2280,6 +2287,10 @@ msgid ""
 "\tList all packages that were installed as a dependency (ie, not installed\n"
 "\texplicitly) and are not required by any other packages.\n"
 msgstr ""
+"-e, --orphans::\n"
+"\tListe tout les paquets qui furent installés en tant que dépendances (càd, "
+"pas installés\n"
+"\texplicitement) et qui ne sont pas requis par d'autres paquets.\n"
 
 # type: Plain text
 #: pacman-g2.txt:214
@@ -2298,6 +2309,10 @@ msgid ""
 "\tDisplay information on a given package. If it is used with the -p option then\n"
 "\tthe .PKGINFO file will be printed.\n"
 msgstr ""
+"-i, --info::\n"
+"\tAffiche les informations pour un paquet donné. Si utilisé avec l'option -p "
+"alors\n"
+"\tle fichier .PKGINFO sera imprimé.\n"
 
 # type: Plain text
 #: pacman-g2.txt:222
@@ -2324,6 +2339,8 @@ msgid ""
 "-o, --owns <path>::\n"
 "\tSearch for the package that owns a given file or directory.\n"
 msgstr ""
+"-o, --owns <repertoire>::\n"
+"\tRecherche les paquets possédant un fichier ou répertoire donné.\n"
 
 # type: Plain text
 #: pacman-g2.txt:234
@@ -2351,6 +2368,9 @@ msgid ""
 "-t, --test::\n"
 "\tTests the local database, by searching for missing informations. Example:\n"
 msgstr ""
+"-t, --test::\n"
+"\tTeste la base donnée locale, en recherchant des informations manquantes. "
+"Exemple:\n"
 
 # type: Plain text
 #: pacman-g2.txt:246
@@ -2361,6 +2381,10 @@ msgid ""
 "\t:: zip-2.32-1: file list is missing\n"
 "\t----\n"
 msgstr ""
+"\t----\n"
+"\t$ pacman-g2 -Qt\n"
+"\t:: zip-2.32-1: la liste de fichier est manquante\n"
+"\t----\n"
 
 # type: Plain text
 #: pacman-g2.txt:248
@@ -2376,12 +2400,15 @@ msgid ""
 "\t# rm -rf /var/lib/pacman-g2/local/zip-2.32-1\n"
 "\t----\n"
 msgstr ""
+"\t----\n"
+"\t# rm -rf /var/lib/pacman-g2/local/zip-2.32-1\n"
+"\t----\n"
 
 # type: Plain text
 #: pacman-g2.txt:254
 #, no-wrap
 msgid "\tand forcing the reinstall of the package:\n"
-msgstr ""
+msgstr "\tet forcer la réinstallation du paquet:\n"
 
 # type: Plain text
 #: pacman-g2.txt:258
@@ -2391,6 +2418,9 @@ msgid ""
 "\t# pacman-g2 -Sf zip --noconfirm\n"
 "\t----\n"
 msgstr ""
+"\t----\n"
+"\t# pacman-g2 -Sf zip --noconfirm\n"
+"\t----\n"
 
 # type: Plain text
 #: pacman-g2.txt:260
@@ -2567,6 +2597,9 @@ msgid ""
 "\tInclude another config file. This config file can include repositories or\n"
 "\tgeneral configuration options.\n"
 msgstr ""
+"Include = <path>::\n"
+"\tInclue un autre fichier de config. Ce fichier de config peut inclure des dépôts ou\n"
+"\tdes options de configuration générale.\n"
 
 # type: Plain text
 #: pacman-g2.txt:346
@@ -2575,6 +2608,8 @@ msgid ""
 "ProxyServer = <host|ip>::\n"
 "\tIf set, pacman-g2 will use this proxy server for all ftp/http transfers.\n"
 msgstr ""
+"ProxyServer = <host|ip>::\n"
+"\tS'il est paramétré, pacman-g2 utilisera ce server du proxy pour tous les transferts ftp/http.\n"
 
 # type: Plain text
 #: pacman-g2.txt:350
@@ -2584,6 +2619,9 @@ msgid ""
 "\tIf set, pacman-g2 will use this proxy port for all ftp/http transfers.\n"
 "\t(Default: 80).\n"
 msgstr ""
+"ProxyPort = port::\n"
+"\tS'il est paramétré, pacman-g2 utilisera ce port du proxy pour tous les transferts ftp/http.\n"
+"\t(par Défaut: 80).\n"
 
 # type: Plain text
 #: pacman-g2.txt:356
@@ -2595,6 +2633,11 @@ msgid ""
 "\tinstances of %o will be replaced with the local filename, plus a \".part\"\n"
 "\textension, which allows programs like wget to do file resumes properly.\n"
 msgstr ""
+"XferCommand = /path/to/command %u::\n"
+"\tS'il est paramétré, pacman-g2 utilisera ce programme externe pour télécharger tous les fichiers distants.\n"
+"\tToutes les instances %u seront remplacées par l'URL qui va être téléchargée. Si présentes,\n"
+"\ttoutes les instances %o seront remplacées par le nom du fichier local, plus une extension \".part\",\n"
+"\tce qui permet à des programmes comme wget le téléchargement correct d'un fichier."
 
 # type: Plain text
 #: pacman-g2.txt:360
@@ -2604,6 +2647,9 @@ msgid ""
 "\tbuilt-in http/ftp support, or need the more advanced proxy support that comes\n"
 "\twith utilities like curl.\n"
 msgstr ""
+"\tCette option est utile pour les utilisateurs qui rencontrent des problèmes avec pacman-g2's\n"
+" \t, support http/ftp intégré, ou ont besoin d'un support proxy plus avancé qui vient\n"
+" \tavec des outils comme curl.\n"
 
 # type: Plain text
 #: pacman-g2.txt:363
@@ -2612,6 +2658,8 @@ msgid ""
 "NoPassiveFtp::\n"
 "\tDisables passive ftp connections when downloading packages. (aka Active Mode)\n"
 msgstr ""
+"NoPassiveFtp::\n"
+"\tDésactive les connexions à un ftp passif durant le téléchargement des paquets. (aka Active Mode)\n"
 
 # type: Plain text
 #: pacman-g2.txt:367
@@ -2621,12 +2669,15 @@ msgid ""
 "\tAll files listed with a NoUpgrade directive will never be touched during a\n"
 "\tpackage install/upgrade.\n"
 msgstr ""
+"NoUpgrade = <file> [file] ...::\n"
+"\tTous les fichiers inscrits avec une directive NoUpgrade ne seront jamais altérés pendant\n"
+"\tune installation/mise à jour de paquet.\n"
 
 # type: Plain text
 #: pacman-g2.txt:369
 #, no-wrap
 msgid "\tNOTE: Do not include the leading slash when specifying files.\n"
-msgstr ""
+msgstr "\tNOTE: N'incluez pas le slash principal en spécifiant des fichiers.\n"
 
 # type: Plain text
 #: pacman-g2.txt:376
@@ -2639,6 +2690,12 @@ msgid ""
 "\tthen you would not want the index.html file to be extracted from the apache\n"
 "\tpackage.\n"
 msgstr ""
+"NoExtract = <file> [file] ...::\n"
+"\tTous les fichiers inscrits avec une directive NoExtract ne seront jamais extraits d'un\n"
+" \tpaquet dans le système de fichiers. Cela peut être utile quand vous ne voulez pas qu'une partie d'un\n"
+" \tpaquet soit installée. Par exemple, si votre racine (root) httpd utilise un index.php, \n"
+" \talors, vous ne voudriez pas que le fichier index.html soit extrait du paquet\n"
+" \tapache.\n"
 
 # type: Plain text
 #: pacman-g2.txt:380
@@ -2648,6 +2705,9 @@ msgid ""
 "\tLog action messages through *syslog*(2). This will insert pacman-g2 log entries\n"
 "\tinto your /var/log/messages or equivalent.\n"
 msgstr ""
+"UseSyslog::\n"
+"\tMessages action log par *syslog*(2). Cela insérera des entrées de log pacman-g2\n"
+"\tdans votre /var/log/messages ou équivalent.\n"
 
 # type: Plain text
 #: pacman-g2.txt:383
@@ -2656,6 +2716,8 @@ msgid ""
 "LogFile = /path/to/file::\n"
 "\tLog actions directly to a file, usually /var/log/pacman-g2.log.\n"
 msgstr ""
+"FichierLog = /path/to/file::\n"
+"\tActions log directement à un fichier, habituellement /var/log/pacman-g2.log.\n"
 
 # type: Plain text
 #: pacman-g2.txt:385
@@ -2673,12 +2735,12 @@ msgid ""
 "to use a local directory, you can specify the full path with a 'file://' "
 "prefix, as shown above."
 msgstr ""
-"Chaque section de dépôt définit un nom de section et au moins un emplacement "
-"où les paquets peuvent être trouvés. Le nom de la section est défini par la "
-"ligne entre parenthèses (cad, les deux ci-dessus sont 'actuel' et "
-"'personnalisé'). Les emplacements sont définis avec la directive du Serveur "
-"et suivent un URL nommant la structure. Actuellement seulement le ftp est "
-"supporté pour des serveurs distants. Si vous voulez utiliser une liste "
+"Chaque section de dépôt définit un nom de section, et au moins un "
+"emplacement où les paquets peuvent être trouvés. Le nom de la section est "
+"défini par la ligne entre parenthèses (cad, les deux ci-dessus sont 'actuel' "
+"et 'personnalisé'). Les emplacements sont définis avec la directive du "
+"Serveur et suivent un URL nommant la structure. Actuellement, seul le ftp "
+"est supporté pour les serveurs distants. Si vous voulez utiliser une liste "
 "d'adresses locale, vous pouvez spécifier le chemin complet avec le préfixe ' "
 "file: // ' , comme indiqué ci-dessus."
 
@@ -2695,6 +2757,11 @@ msgid ""
 "is generate a compressed package database in the /home/pkgs directory so "
 "pacman-g2 can find it when run with --refresh."
 msgstr ""
+"Disons que vous avez un bouquet de paquets personnalisés dans/home/pkgs, et "
+"leurs dossiers FrugalBuild respectifs sont tous dans/var/fst/local. Tout ce "
+"que vous devez faire est générer une base de données de paquet compressée "
+"dans le répertoire /home/pkgs, ainsi pacman-g2 peut la trouver quand il est "
+"exécuté avec --refresh.."
 
 # type: Plain text
 #: pacman-g2.txt:402
@@ -2703,6 +2770,8 @@ msgid ""
 "# gensync /var/fst/local /home/pkgs/custom.fdb\n"
 "----\n"
 msgstr ""
+"# gensync /var/fst/local /home/pkgs/custom.fdb\n"
+"----\n"
 
 # type: Plain text
 #: pacman-g2.txt:412
@@ -2716,6 +2785,15 @@ msgid ""
 "to the repository, remember to re-generate the database and use pacman-g2's "
 "--refresh option."
 msgstr ""
+"Le commande précédente lira tous les dossiers FrugalBuild dans/var/fst/"
+"local, et produira une base de données compressée  appelé /home/pkgs/custom."
+"fdb. Notez que la base de données doit être sous la forme {treename} .fdb, "
+"où {treename} est le nom de la section définie dans le dossier de "
+"configuration. C'est tout! Configurez maintenant votre section personnalisée "
+"dans le dossier de configuration comme montré dans l'exemple config plus "
+"haut. Pacman utilisera maintenant votre dépôt de paquet. Si vous ajoutez de "
+"nouveaux paquets au dépôt, souvenez-vous de re-générer la base de données, "
+"et utiliser l'option pacman-g2's --refresh."
 
 # type: Plain text
 #: pacman-g2.txt:414
@@ -2729,6 +2807,10 @@ msgid ""
 "directory.  The hooks are like package scriptlets: each file can provide "
 "functions for a given hook. At the moment the following hooks are supported:"
 msgstr ""
+"pacman-g2 essaiera d'exécuter des fonctions hooks dans le répertoire /etc/"
+"pacman-g2/hooks. Les fonctions hooks ressemblent au paquet scriptlets : "
+"chaque fichier peut fournir des fonctionnalités à un hook donné. À l'heure "
+"actuelle, les hooks suivants sont supportés :"
 
 # type: Plain text
 #: pacman-g2.txt:421
@@ -2737,12 +2819,14 @@ msgid ""
 "post_sysupgrade::\n"
 "\tExecuted after a successful `pacman-g2 -S --sysupgrade`.\n"
 msgstr ""
+"post_sysupgrade::\n"
+"\tExecuté après un `pacman-g2 -S --sysupgrade` réussi.\n"
 
 # type: Plain text
 #: pacman-g2.txt:425
 #, no-wrap
 msgid "*makepkg*(8)\n"
-msgstr ""
+msgstr "*makepkg*(8)\n"
 
 # type: Plain text
 #~ msgid ""
