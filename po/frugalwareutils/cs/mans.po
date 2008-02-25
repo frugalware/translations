@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-11-24 05:19+0100\n"
-"PO-Revision-Date: 2008-02-25 01:14+0100\n"
+"PO-Revision-Date: 2008-02-25 09:18+0100\n"
 "Last-Translator: Martin Burda <brdam@email.cz>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -26,7 +26,7 @@ msgstr "= grubconfig(1)"
 #: grubconfig.txt:4 mouseconfig.txt:4 netconfig.txt:4 raidconfig.txt:4
 #: timeconfig.txt:4 xconfig.txt:4 xwmconfig.txt:4
 msgid "== NAME"
-msgstr "== NAME"
+msgstr "== NÁZEV"
 
 # type: Plain text
 #: grubconfig.txt:6
@@ -37,7 +37,7 @@ msgstr "grubconfig - nastaví zavaděč GRUB"
 #: grubconfig.txt:8 mouseconfig.txt:8 netconfig.txt:8 raidconfig.txt:8
 #: timeconfig.txt:8 xconfig.txt:8 xwmconfig.txt:8
 msgid "== SYNOPSIS"
-msgstr "== SYNOPSIS"
+msgstr "== PŘEHLED"
 
 # type: Plain text
 #: grubconfig.txt:10
@@ -225,7 +225,7 @@ msgid ""
 "interface that netconfig should initialize. The exception to this is the "
 "options section, which defines global options."
 msgstr ""
-"Tento profil je rozdělen mezi více sekcí nebo rozhraní. V každé jednotlivé "
+"Tento profil je rozdělen do více sekcí nebo rozhraní. V každé jednotlivé "
 "sekci je definováno rozhraní, které může netconfig inicializovat. Výjimkou "
 "je sekce, která definuje globální nastavení."
 
@@ -243,8 +243,9 @@ msgid ""
 "\tusage is ok.\n"
 msgstr ""
 "dns = <ip>::\n"
-"\tExplicitně definuje dns adresy (když používáte statickou IP). Multiple\n"
-"\tusage is ok.\n"
+"\tExplicitně definuje dns adresy (např. když používáte statickou IP). "
+"Vícenásobné\n"
+"\tpoužití je povoleno.\n"
 
 # type: Plain text
 #: netconfig.txt:53
@@ -255,9 +256,9 @@ msgid ""
 "\twill be used.\n"
 msgstr ""
 "domain = <doména>::\n"
-"\tDefinuje lokální název domény. Jestliže je definován více než jeden název, "
-"bude\n"
-"\tpoužita první doména.\n"
+"\tDefinuje lokální název domény. Jestliže je definován více než jeden název "
+"domény\n"
+"\tbude použita první doména.\n"
 
 # type: Plain text
 #: netconfig.txt:56
@@ -267,8 +268,8 @@ msgid ""
 "\tA brief description of this network profile. Used by the graphical frontend.\n"
 msgstr ""
 "desc = <popis>::\n"
-"\tZadejte popis tohoto síťového profilu. Toto nastavení používají různé "
-"grafické nástroje.\n"
+"\tZadejte popis tohoto síťového profilu. Tento popis používají různé grafické "
+"nástroje.\n"
 
 # type: Plain text
 #: netconfig.txt:59
@@ -315,7 +316,8 @@ msgid ""
 "available directives:"
 msgstr ""
 "Každá jednotlivá sekce definuje rozhraní. Rozhraní je definováno řetězcem "
-"mezi hranatými závorkami (např. eth0 nebo eth1). Možné jsou tyto direktívy:"
+"mezi hranatými závorkami (např.` eth0`nebo `eth1`). Možné jsou tyto "
+"direktívy:"
 
 # type: Plain text
 #: netconfig.txt:77
@@ -327,9 +329,9 @@ msgid ""
 "\tthis directive for dhcp.\n"
 msgstr ""
 "options = <ip> [netmask <netmask> [broadcast <broadcast>]::\n"
-"\tDefines the ip address, netmask and broadcast address of the interface.\n"
-"\tMultiple usage is ok for eth0:1, eth0:2, etc. See the other format of\n"
-"\tthis directive for dhcp.\n"
+"\tDefinuje ip adresy, masku sítě a broadcast adresy rozhraní.\n"
+"\tVícenásobné zadání eth0:1, eth0:2, atp. je povoleno. Prohlédněte si jiný způsob zadání\n"
+"\ttéto directivy pro dhcp.\n"
 
 # type: Plain text
 #: netconfig.txt:80
@@ -339,8 +341,7 @@ msgid ""
 "\tUse dhcp for this interface. When this format is used, the other \"options\" lines are ignored.\n"
 msgstr ""
 "options = dhcp::\n"
-"\tUse dhcp for this interface. When this format is used, the other \"options\" "
-"lines are ignored.\n"
+"\tPoužije dhcp pro toto rozhraní. Pokud použijete tento formát, řádky s \" options\" budou ignorovány.\n"
 
 # type: Plain text
 #: netconfig.txt:82
@@ -367,11 +368,12 @@ msgid ""
 "\tis up, before it is down, and after, respectively. Multiple usage is\n"
 "\tOK, the commands are executed in the specified order.\n"
 msgstr ""
-"post_down = <command>::\n"
-"\tThe syntax of these directives are the same: you can define there\n"
-"\tcommands to be executed before the interface is up, after the interface\n"
-"\tis up, before it is down, and after, respectively. Multiple usage is\n"
-"\tOK, the commands are executed in the specified order.\n"
+"post_down = <příkaz>::\n"
+"\tSprávná syntaxe těchto direktiv je ta samá: můžete definovat\n"
+"\tpříkazy, které budou vykonány\n"
+"\tpři aktivaci rozhraní a po jeho aktivaci. Lze zadat každý příkaz zvlášť. "
+"Vícenásobné zadání je povoleno\n"
+"\tpříkazy budou provedeny v zadaném pořadí.\n"
 
 # type: Plain text
 #: netconfig.txt:96
@@ -381,9 +383,9 @@ msgid ""
 "\tOverwrites the mac address of the card. If defined more than once, the\n"
 "\tfirst will be used.\n"
 msgstr ""
-"mac = <mac address>::\n"
-"\tOverwrites the mac address of the card. If defined more than once, the\n"
-"\tfirst will be used.\n"
+"mac = <adresy mac>::\n"
+"\tPřepíše hardwarovou adresu mac. Pokud je definována více než jedna adresa\n"
+"\tbude použita první adresa\n"
 
 # type: Plain text
 #: netconfig.txt:101
@@ -395,9 +397,10 @@ msgid ""
 "\tthe first will be used.\n"
 msgstr ""
 "essid = <essid>::\n"
-"\tSet the ESSID (or Network Name - in some products it may also be called\n"
-"\tDomain ID) for wireless network adapters. If defined more than once,\n"
-"\tthe first will be used.\n"
+"\tNastaví ESSID(nebo síťový název - některá zařízení mohou být inicializována "
+"\tID domény) při přítomnosti bezdrátových síťových adaptérů. Pokud je "
+"definován více než jeden essid\n"
+"\tbude použit první z nich.\n"
 
 # type: Plain text
 #: netconfig.txt:111
@@ -414,18 +417,13 @@ msgid ""
 "\tAuto. If defined more than once, the first will be used.\n"
 msgstr ""
 "mode = <mode>::\n"
-"\tSet the operating mode of the device, for wireless network adapters. The "
-"mode\n"
-"\tcan be Ad- Hoc (network composed of only one cell and without Access "
-"Point),\n"
+"\tSet the operating mode of the device, for wireless network adapters. The mode\n"
+"\tcan be Ad- Hoc (network composed of only one cell and without Access Point),\n"
 "\tManaged (node connects to a net- work composed of many Access Points, with\n"
-"\troaming), Master (the node is the synchronisation master or acts as an "
-"Access\n"
+"\troaming), Master (the node is the synchronisation master or acts as an Access\n"
 "\tPoint), Repeater (the node forwards packets between other wireless nodes),\n"
-"\tSecondary (the node acts as a backup master/repeater), Monitor (the node is "
-"not\n"
-"\tassociated with any cell and passively monitor all packets on the "
-"frequency) or\n"
+"\tSecondary (the node acts as a backup master/repeater), Monitor (the node is not\n"
+"\tassociated with any cell and passively monitor all packets on the frequency) or\n"
 "\tAuto. If defined more than once, the first will be used.\n"
 
 # type: Plain text
@@ -436,7 +434,7 @@ msgid ""
 "\tRoute packets via a gateway.\n"
 msgstr ""
 "gateway = [default gw] <ip>::\n"
-"\tRoute packets via a gateway.\n"
+"\tSměruje pakety přes výchozí bránu.\n"
 
 # type: Plain text
 #: netconfig.txt:118
@@ -445,9 +443,10 @@ msgid ""
 "prefix is used, then adds a default route. If defined more than once, the "
 "first will be used. If using DHCP, then this directive is ignored."
 msgstr ""
-"NOTE: The specified gateway must be reachable first. If the `default gw` "
-"prefix is used, then adds a default route. If defined more than once, the "
-"first will be used. If using DHCP, then this directive is ignored."
+"UPOZORNĚNÍ: Zadaná výchozí brána musí být v síti dostupná. Pokud je "
+"prefix`výchozí brány` používán, bude aktivní výchozí směrování. Pokud je "
+"definována více než jedna výchozí brána, bude použita první z nich. V "
+"případě že se připojujete pomocí DHCP, bude tato direktíva ignorována."
 
 # type: Plain text
 #: netconfig.txt:122
@@ -457,9 +456,11 @@ msgid ""
 "\tUsed to manipulate encryption or scrambling keys and security mode for\n"
 "\twireless networks. Use this for WEP only, use `wpa_psk` for WPA.\n"
 msgstr ""
-"key = <key>::\n"
-"\tUsed to manipulate encryption or scrambling keys and security mode for\n"
-"\twireless networks. Use this for WEP only, use `wpa_psk` for WPA.\n"
+"key = <šifrovací klíč>::\n"
+"\tBude použit pro zakódování šifrovacích klíčů nebo manipulaci s nimi a pro "
+"bezpečnostní režim pro\n"
+"\tbezdrátové sítě. Použijte šifrovací klíč pro WEP pouze společně s ovladačem "
+"WPA `wpa_psk`.\n"
 
 # type: Plain text
 #: netconfig.txt:126
@@ -469,9 +470,10 @@ msgid ""
 "\tIf this directive is specified, then wpa_supplicant will be invoked to\n"
 "\tinitialize WPA encryption before setting any other parameter (like ESSID).\n"
 msgstr ""
-"wpa_psk = <passphrase>::\n"
-"\tIf this directive is specified, then wpa_supplicant will be invoked to\n"
-"\tinitialize WPA encryption before setting any other parameter (like ESSID).\n"
+"wpa_psk = <klíčové slovo passphrase>::\n"
+"\tPokud není direktíva specifikována, bude wpa_supplicant volán k\n"
+"\tinicializaci šifrování WPA před nastavením jiných parametrů (jako jsou "
+"např. parametry pro ESSID).\n"
 
 # type: Plain text
 #: netconfig.txt:130
@@ -481,10 +483,10 @@ msgid ""
 "\tThe driver to be used by wpa_supplicant. The default is `wext`. Possible drivers\n"
 "\tare:\n"
 msgstr ""
-"wpa_driver = <driver>::\n"
-"\tThe driver to be used by wpa_supplicant. The default is `wext`. Possible "
-"drivers\n"
-"\tare:\n"
+"wpa_driver = <ovladač>::\n"
+"\tOvladač bude použit wpa_supplicantem. Výchozí ovladač je `wext`. Dostupné "
+"ovladače\n"
+"\tjsou:\n"
 
 # type: Plain text
 #: netconfig.txt:137
@@ -513,10 +515,10 @@ msgid ""
 "\t10`. You may want to specify here the dhcp hostname, then you'll need `-t 10 -h\n"
 "\t<hostname>`.\n"
 msgstr ""
-"dhcp_opts = <options>::\n"
-"\tThese options are passed to the dhcp client daemon. The default is `-t\n"
-"\t10`. You may want to specify here the dhcp hostname, then you'll need `-t "
-"10 -h\n"
+"dhcp_opts = <volby>::\n"
+"\tTyto volby jsou používány démonem klienta dhcp. Výchozím klientem je `-t\n"
+"\t10`. Možná budete chtít specifikovat dhcp hostname, v tom případě budete "
+"potřebovat`-t 10 -h\n"
 "\t<hostname>`.\n"
 
 # type: Plain text
@@ -527,9 +529,10 @@ msgid ""
 "\tThis specifies the dhcp client to use. It can be either dhcpcd\n"
 "\t(default) or dhclient.\n"
 msgstr ""
-"dhcpclient = <dhcp client>::\n"
-"\tThis specifies the dhcp client to use. It can be either dhcpcd\n"
-"\t(default) or dhclient.\n"
+"dhcpclient = <dhcp klient>::\n"
+"\tToto nastavení specifikuje výchozího dhcp klienta. Mohou být použiti tyto "
+"klienti dhcpcd\n"
+"\t(výchozí) nebo dhclient.\n"
 
 # type: Plain text
 #: netconfig.txt:148
@@ -539,7 +542,7 @@ msgstr "== PŘÍKLADY POUŽITÍ"
 # type: Plain text
 #: netconfig.txt:150
 msgid "=== Static Address"
-msgstr "=== Statické adresy"
+msgstr "=== Statické IP adresy"
 
 # type: Plain text
 #: netconfig.txt:151 netconfig.txt:162 netconfig.txt:174 netconfig.txt:190
@@ -551,7 +554,7 @@ msgstr "----\n"
 # type: Plain text
 #: netconfig.txt:154
 msgid "[options] dns = 192.168.1.1"
-msgstr "[volby] dns = 192.168.1.1"
+msgstr "[options] dns = 192.168.1.1"
 
 # type: Plain text
 #: netconfig.txt:158
@@ -570,7 +573,7 @@ msgstr ""
 # type: Plain text
 #: netconfig.txt:161
 msgid "=== ADSL with NAT"
-msgstr "=== ADSL with NAT"
+msgstr "=== ADSL s NAT"
 
 # type: Plain text
 #: netconfig.txt:170
@@ -597,7 +600,7 @@ msgstr ""
 # type: Plain text
 #: netconfig.txt:173
 msgid "=== The `key=` directive"
-msgstr "=== The `key=` directive"
+msgstr "=== Direktivy pro `šifrovací klíč=`"
 
 # type: Plain text
 #: netconfig.txt:183
@@ -626,7 +629,7 @@ msgstr ""
 # type: Plain text
 #: netconfig.txt:186
 msgid "=== Initialize before `iwconfig`"
-msgstr "=== Initialize before `iwconfig`"
+msgstr "=== Inicializovat před `iwconfig`"
 
 # type: Plain text
 #: netconfig.txt:189
@@ -634,8 +637,8 @@ msgid ""
 "If you have to to initialize the card with `ifconfig <interface> up` before "
 "using iwconfig:"
 msgstr ""
-"If you have to to initialize the card with `ifconfig <interface> up` before "
-"using iwconfig:"
+"Pokud máte inicializovánu síťovou kartu pomocí `ifconfig <interface> up` tak "
+"před použitím iwconfig zadejte:"
 
 # type: Plain text
 #: netconfig.txt:194
@@ -657,8 +660,8 @@ msgid ""
 "NOTE: If you use several pre_up and/or post_down lines, this pre_up should "
 "be the first, and this post_down should be the last one."
 msgstr ""
-"NOTE: If you use several pre_up and/or post_down lines, this pre_up should "
-"be the first, and this post_down should be the last one."
+"UPOZORNĚNÍ: Pokud vkládáte řádky pre_up a post_down, jako první bude "
+"inicializován řádek pre_up a až poté řádek post_down."
 
 # type: Plain text
 #: netconfig.txt:200
@@ -671,8 +674,8 @@ msgid ""
 "If you want to use wpa_supplicant instead of the simple encryption (using "
 "key = secret), then use the following pre_up and post_down lines:"
 msgstr ""
-"Pokud chcete použít wpa_supplicant namísto jednoduchého šifrování, použijte "
-"následující řádky pre_up a post_down."
+"Pokud chcete použít wpa_supplicant namísto jednoduchého šifrování šifrovacím "
+"klíčem = secret, vložte následující řádky pre_up a post_down:"
 
 # type: Plain text
 #: netconfig.txt:207
@@ -722,8 +725,8 @@ msgid ""
 "NOTE: See also the `wpa_psk` and `wpa_driver` options, most users can avoid "
 "the manual `pre_up` and `pre_down` directives."
 msgstr ""
-"POZNÁMKA: Prohlédněte si také nastavení `wpa_psk` a `wpa_driver`. "
-"Prostudujte také příkazy `pre_up` a `pre_down`."
+"UPOZORNĚNÍ: Prohlédněte si také nastavení ovladačů`wpa_psk` a `wpa_driver`. "
+"Prostudujte v manuálu použití příkazů `pre_up` a `pre_down`."
 
 # type: Plain text
 #: netconfig.txt:224
@@ -886,5 +889,4 @@ msgid ""
 "\tDo not print any warning if GDM or KDM are installed.\n"
 msgstr ""
 "--silent::\n"
-"\\Nebude vypisovat žádná chybová hlášení ani varování, pokud je naistalován "
-"GDM nebo KDM.\n"
+"\\Nebude vypisovat žádná chybová hlášení ani varování, pokud je naistalován GDM nebo KDM.\n"
