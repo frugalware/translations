@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-01-03 05:04+0100\n"
-"PO-Revision-Date: 2008-02-25 09:50+0100\n"
+"PO-Revision-Date: 2008-02-25 10:04+0100\n"
 "Last-Translator: Daniel <devil505linux@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -2445,6 +2445,9 @@ msgid ""
 "original=X, current=X, new=X::\n"
 "\tAll three files are the same, so we win either way. Install the new file.\n"
 msgstr ""
+"original=X, current=X, new=X::\n"
+"\tTout les trois fichiers sont identiques, donc nous gagnons de toute "
+"manière. Installer le nouveau fichier.\n"
 
 # type: Plain text
 #: pacman-g2.txt:275
@@ -2493,11 +2496,16 @@ msgid ""
 "for packages in --sync mode. The exception to this is the options section, "
 "which defines global options."
 msgstr ""
+"pacman-g2 va tenter de lire /etc/pacman-g2.conf à chaque fois qu'il est "
+"invoqué. Ce fichier de configuration est divisé en sections ou dépôts. "
+"Chaque section définie un dépôt de paquets que pacman-g2 peut utiliser quand "
+"il recherche des paquets en mode --sync. L'exception à cette règle est la "
+"section options, qui définie les options globales."
 
 # type: Plain text
 #: pacman-g2.txt:298
 msgid "Example:"
-msgstr ""
+msgstr "Exemple:"
 
 # type: Plain text
 #: pacman-g2.txt:303
@@ -2561,6 +2569,10 @@ msgid ""
 "\tInstructs pacman-g2 to ignore any upgrades for this package when performing a\n"
 "\t--sysupgrade.\n"
 msgstr ""
+"IgnorePkg = <paquet> [paquet] ...::\n"
+"\tOrdonne à pacman-g2 d'ignorer les mises à jour pour ce paquet lors de "
+"l'éxécution d'un\n"
+"\t--sysupgrade.\n"
 
 # type: Plain text
 #: pacman-g2.txt:331
@@ -2570,6 +2582,10 @@ msgid ""
 "\tUpgrade only the packages that are at least <number> days old when performing a\n"
 "\t--sysupgrade.\n"
 msgstr ""
+"UpgradeDelay = <nombre>::\n"
+"\tMet à jour seulement les paquets vieux d'au moins <nombre> jours lors de "
+"l'exécution d'un\n"
+"\t--sysupgrade.\n"
 
 # type: Plain text
 #: pacman-g2.txt:335
@@ -2588,6 +2604,11 @@ msgid ""
 "\tTry to download packages <number> times. This is useful in case you have a bad\n"
 "\tinternet connection and your packages often get corrupted during the download.\n"
 msgstr ""
+"MaxTries = <nombre>::\n"
+"\tTente de télécharger les paquets pendant <nombre> fois. Ceci est utile dans "
+"le cas où vous avez une mauvaise\n"
+"\tconnection internet et que vos paquets sont souvent corrompus pendant le "
+"téléchargement.\n"
 
 # type: Plain text
 #: pacman-g2.txt:343
