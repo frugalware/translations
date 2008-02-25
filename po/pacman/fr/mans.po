@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-01-03 05:04+0100\n"
-"PO-Revision-Date: 2008-02-25 10:04+0100\n"
+"PO-Revision-Date: 2008-02-25 11:18+0100\n"
 "Last-Translator: Daniel <devil505linux@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -2095,6 +2095,16 @@ msgid ""
 "\twill only remove old packages. Use it twice to remove all packages from the\n"
 "\tcache.\n"
 msgstr ""
+"-c, --clean::\n"
+"\tRetire les paquets obsolètes du cache. Quand pacman-g2 télécharge des "
+"paquets, il l'est sauvegarde\n"
+"\tdans /var/cache/pacman-g2/pkg. Si vous avez besoin de libérer de l'espace "
+"sur votre disque, vous pouvez retirer\n"
+"\tces paquets en utilisant l'option --clean. Utiliser une fois --clean (ou "
+"-c) \n"
+"\tva retirer les paquets obsolètes. L'utiliser une seconde fois retirera tout "
+"les paquets du\n"
+"\tcache.\n"
 
 # type: Plain text
 #: pacman-g2.txt:137
@@ -2105,6 +2115,12 @@ msgid ""
 "\tif you want to install the packages themselves with different options or from\n"
 "\tsource.\n"
 msgstr ""
+"-e, --dependsonly::\n"
+"\tN'installe pas les paquets eux-même, seulement leurs dépendances. Ceci peut "
+"être utile\n"
+"\tsi vous voulez installer les paquets eux-même avec des options différentes "
+"ou depuis\n"
+"\tla source.\n"
 
 # type: Plain text
 #: pacman-g2.txt:141
@@ -2127,6 +2143,12 @@ msgid ""
 "\tall repositories for a matching package and display the dependencies,\n"
 "\tconflicts, etc.\n"
 msgstr ""
+"-i, --info::\n"
+"\tAffiche les informations de dépendance pour un paquet donné. Ceci va "
+"rechercher à travers\n"
+"\tde tout les dépôts pour un paquet correspondant et afficher les "
+"dépendances,\n"
+"\tconflits, etc.\n"
 
 # type: Plain text
 #: pacman-g2.txt:150
@@ -2143,12 +2165,17 @@ msgstr ""
 # type: Plain text
 #: pacman-g2.txt:155
 #, no-wrap
+#, fuzzy
 msgid ""
 "-p, --print-uris::\n"
 "\tPrint out URIs for each package that will be installed, including any\n"
 "\tdependencies that have yet to be installed. These can be piped to a file and\n"
 "\tdownloaded at a later time, using a program like wget.\n"
 msgstr ""
+"-p, --print-uris::\n"
+"\tImprime les URIs pour chaque paquets qui sont installés, incluant toutes\n"
+"\tdépendances qui sont déjà installées. Cela peut être mis dans un fichier et\n"
+"\ttélécharger plus tard, en utilisant un programme comme wget.\n"
 
 # type: Plain text
 #: pacman-g2.txt:159
@@ -2205,6 +2232,12 @@ msgid ""
 "\t/etc/pacman-g2.conf. This should typically be used each time you use\n"
 "\t--sysupgrade.\n"
 msgstr ""
+"-y, --refresh::\n"
+"\tTélécharge une copie récente de la liste maitresse de paquets depuis un "
+"serveur ftp défini dans\n"
+"\t/etc/pacman-g2.conf. Ceci sera habituellement utilisé à chaque fois que "
+"vous utilisez\n"
+"\t--sysupgrade.\n"
 
 # type: Plain text
 #: pacman-g2.txt:180
@@ -2215,6 +2248,11 @@ msgid ""
 "\tdirective. Sometimes it can be handy to skip some package updates without\n"
 "\thaving to edit pacman-g2.conf each time.\n"
 msgstr ""
+"--ignore <pkg>::\n"
+"\tCette option fonctionne exactement comme la directive de configuration\n"
+"\tIgnorePkg. Parfois il peut être utile d'omettre la mise à jour de quelques "
+"paquets sans\n"
+"\tavoir à éditer pacman-g2.conf à chaque fois.\n"
 
 # type: Plain text
 #: pacman-g2.txt:182
@@ -2241,6 +2279,9 @@ msgid ""
 "-k, --keep::\n"
 "\tRemoves the database entry only. Leaves all files in place.\n"
 msgstr ""
+"-k, --keep::\n"
+"\tRetire l'entrée de la base données uniquement. Laisse tout les fichiers en "
+"place.\n"
 
 # type: Plain text
 #: pacman-g2.txt:195
