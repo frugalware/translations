@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-12-26 05:05+0100\n"
-"PO-Revision-Date: 2007-04-12 11:17+0200\n"
+"POT-Creation-Date: 2008-02-25 05:00+0100\n"
+"PO-Revision-Date: 2008-02-25 17:29+0100\n"
 "Last-Translator: andrej prochazka <a.prochazka@gsi.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Pootle 0.10.1\n"
+"X-Generator: Pootle 1.0\n"
 
 #: ../src/plugins/asklang.c:71
 msgid "Selecting language"
@@ -25,14 +25,14 @@ msgid "Configuring the source of the installation"
 msgstr "Nastavenie zdroja inštalácie"
 
 #. this string should be the best mirror for the given language from
-#. * /etc/pacman.d
+#. * /etc/pacman-g2/repos
 #: ../src/plugins/configsource.c:68
 msgid "ftp://ftp5."
-msgstr ""
+msgstr "ftp://ftp5."
 
 #: ../src/plugins/configsource.c:102 ../src/plugins/dolangsh.c:58
-#: ../src/plugins/formatdisk.c:248 ../src/plugins/formatdisk.c:401
-#: ../src/plugins/layout.c:141 ../src/plugins/loadsource.c:82
+#: ../src/plugins/formatdisk.c:250 ../src/plugins/formatdisk.c:403
+#: ../src/plugins/layout.c:141 ../src/plugins/loadsource.c:88
 #: ../src/plugins/select.c:333 ../src/util.c:305
 msgid "Could not open output file for writing"
 msgstr "Nemožem otvoriť súbor na zápis"
@@ -42,35 +42,37 @@ msgid "Selecting a mirror"
 msgstr "Vyber link"
 
 #: ../src/plugins/configsource.c:132
-#, fuzzy
 msgid "Please select mirrors"
-msgstr "Výber linku"
+msgstr "Vyberte prosím linku"
 
 #: ../src/plugins/configsource.c:133
 msgid ""
 "Here you can chose one or more nearby mirror to speed up package dowloading."
-msgstr ""
+msgstr "Tu si môžete vybrať jednu alebo viac liniek pre rýchlejšie sťahovanie"
 
-#: ../src/plugins/configsource.c:165
+#: ../src/plugins/configsource.c:165 ../src/plugins/formatdisk.c:596
+#: ../src/plugins/partdisk.c:188
+msgid "Continue"
+msgstr "pokračovať"
+
+#: ../src/plugins/configsource.c:166
 msgid "Custom mirror"
-msgstr ""
+msgstr "Výber alternatívnej linky"
 
-#: ../src/plugins/configsource.c:165
-#, fuzzy
+#: ../src/plugins/configsource.c:166
 msgid ""
 "You may now specify a custom mirror (eg. LAN) so you can download packages "
-"faster. In most cases a Cancel enough here."
+"faster. In most cases a Continue enough here."
 msgstr ""
 "Môžeš vybrať najbližší server, aby bolo sťahovanie čo najrýchlejšie. "
 "Väčšinou je to jedno"
 
-#: ../src/plugins/configsource.c:193 ../src/plugins/hotplug.c:59
-#: ../src/plugins/select.c:406 ../src/plugins/select.c:416
-#: ../src/plugins/select.c:448
+#: ../src/plugins/configsource.c:195 ../src/plugins/select.c:406
+#: ../src/plugins/select.c:416 ../src/plugins/select.c:448
 msgid "Please wait"
 msgstr "Prosím čakaj"
 
-#: ../src/plugins/configsource.c:193
+#: ../src/plugins/configsource.c:195
 msgid "Configuring the network interface..."
 msgstr "Nastavenie siete"
 
@@ -82,146 +84,144 @@ msgstr "Ukladám konfiguračný súbor jazyka"
 msgid "Formatting the selected partitions"
 msgstr "Formátovanie vybranej partície"
 
-#: ../src/plugins/formatdisk.c:156
+#: ../src/plugins/formatdisk.c:158
 msgid "Setting up swap space"
 msgstr "Príprava swap miesta"
 
-#: ../src/plugins/formatdisk.c:159
+#: ../src/plugins/formatdisk.c:161
 msgid "Setting up swap partitions"
 msgstr "Príprava swap partície"
 
-#: ../src/plugins/formatdisk.c:160
+#: ../src/plugins/formatdisk.c:162
 msgid "Please select which swap partitions you want Frugalware to use:"
 msgstr "Vyber partíciu, ktorú chceš použiť"
 
-#: ../src/plugins/formatdisk.c:171 ../src/plugins/formatdisk.c:194
+#: ../src/plugins/formatdisk.c:173 ../src/plugins/formatdisk.c:196
 msgid "Quick format with no bad block checking"
 msgstr "Rýchly formát bez kontroly chýb"
 
-#: ../src/plugins/formatdisk.c:172 ../src/plugins/formatdisk.c:195
+#: ../src/plugins/formatdisk.c:174 ../src/plugins/formatdisk.c:197
 msgid "Slow format that checks for bad blocks"
 msgstr "Pomalý formát s kontrolou chýb na disku"
 
-#: ../src/plugins/formatdisk.c:175 ../src/plugins/formatdisk.c:199
-#: ../src/plugins/formatdisk.c:224
+#: ../src/plugins/formatdisk.c:177 ../src/plugins/formatdisk.c:201
+#: ../src/plugins/formatdisk.c:226
 msgid "Formatting partitions"
 msgstr "Formátovanie partície"
 
-#: ../src/plugins/formatdisk.c:178 ../src/plugins/formatdisk.c:202
+#: ../src/plugins/formatdisk.c:180 ../src/plugins/formatdisk.c:204
 #, c-format
 msgid "Format %s"
 msgstr "Formát %s"
 
-#: ../src/plugins/formatdisk.c:179 ../src/plugins/formatdisk.c:203
+#: ../src/plugins/formatdisk.c:181 ../src/plugins/formatdisk.c:205
 #, c-format
 msgid ""
 "If %s has not been formatted, you should format it.\n"
 "NOTE: This will erase all data on %s. Would you like to format this "
 "partition?"
 msgstr ""
+"Ak %s nie je naformátovaný, môžete ho naformátovať. \n"
+"UPOZORNENIE: Táto operácia zmaže všetky dáta na %s. Chcete naformátovať túto "
+"partíciu_"
 
-#: ../src/plugins/formatdisk.c:196
+#: ../src/plugins/formatdisk.c:198
 msgid "Do not format, just mount the partition"
 msgstr "Neformátovať, iba namontovať"
 
-#: ../src/plugins/formatdisk.c:218
+#: ../src/plugins/formatdisk.c:220
 msgid "Standard Linux ext2fs filesystem"
 msgstr "Štandardný linuxový ext2fs filesystem"
 
-#: ../src/plugins/formatdisk.c:219
+#: ../src/plugins/formatdisk.c:221
 msgid "Journalising version of the ext2fs filesystem"
 msgstr "journal verzia ext2fs"
 
-#: ../src/plugins/formatdisk.c:220
+#: ../src/plugins/formatdisk.c:222
 msgid "Hans Reiser's journalising filesystem"
 msgstr "Reiser filesystem"
 
-#: ../src/plugins/formatdisk.c:221
+#: ../src/plugins/formatdisk.c:223
 msgid "SGI's journalising filesystem"
 msgstr "SGI filesystem"
 
-#: ../src/plugins/formatdisk.c:228
+#: ../src/plugins/formatdisk.c:230
 #, c-format
 msgid "Selecting filesystem for %s"
 msgstr "Výber filesystému pre %s"
 
-#: ../src/plugins/formatdisk.c:229
+#: ../src/plugins/formatdisk.c:231
 #, c-format
 msgid "Please select the type of filesystem to use for %s."
 msgstr "Prosím vyber typ filesystému pre %s"
 
-#: ../src/plugins/formatdisk.c:272 ../src/plugins/formatdisk.c:279
+#: ../src/plugins/formatdisk.c:274 ../src/plugins/formatdisk.c:281
 msgid "Formatting swap partition"
 msgstr "Formátujem swap partíciu"
 
-#: ../src/plugins/formatdisk.c:273
+#: ../src/plugins/formatdisk.c:275
 #, c-format
 msgid "Formatting %s as a swap partition"
 msgstr "Formátujem %s ako swap partíciu"
 
-#: ../src/plugins/formatdisk.c:280
+#: ../src/plugins/formatdisk.c:282
 #, c-format
 msgid "Formatting %s as a swap partition and checking for bad blocks"
 msgstr "Formátujem %s ako swap partíciu a kontrolujem chyby na partícii"
 
-#: ../src/plugins/formatdisk.c:304
+#: ../src/plugins/formatdisk.c:306
 msgid "Setting up the root partition"
 msgstr "Nastavenie root partície"
 
-#: ../src/plugins/formatdisk.c:306
+#: ../src/plugins/formatdisk.c:308
 msgid "Select the Linux installation partition"
 msgstr "Vyber partíciu pre Linux instaláciu"
 
-#: ../src/plugins/formatdisk.c:307
+#: ../src/plugins/formatdisk.c:309
 msgid ""
 "Please select a partition from the following list to use for your root (/) "
 "partition. The following ones are available:"
 msgstr ""
 "Vyber partíciu, ktorú chceš použiť ako root partíciu (/). K dispozicii sú :"
 
-#: ../src/plugins/formatdisk.c:320
+#: ../src/plugins/formatdisk.c:322
 msgid "Formatting"
 msgstr "Formátovanie"
 
-#: ../src/plugins/formatdisk.c:321
+#: ../src/plugins/formatdisk.c:323
 #, c-format
 msgid "Creating %s filesystem on %s and checking for bad blocks"
 msgstr "Vytváram %s filesystem na %s a kontrolujem chyby na disku"
 
-#: ../src/plugins/formatdisk.c:322
+#: ../src/plugins/formatdisk.c:324
 #, c-format
 msgid "Creating %s filesystem on %s"
 msgstr "Vytváranie %s filesystemu na %s"
 
-#: ../src/plugins/formatdisk.c:425
+#: ../src/plugins/formatdisk.c:427
 #, c-format
 msgid "Select mount point for %s"
 msgstr "Vyber mount cestu pre %s"
 
-#: ../src/plugins/formatdisk.c:449 ../src/plugins/formatdisk.c:614
+#: ../src/plugins/formatdisk.c:451 ../src/plugins/formatdisk.c:616
 msgid "(in use)"
 msgstr "(používaný)"
 
-#: ../src/plugins/formatdisk.c:457
+#: ../src/plugins/formatdisk.c:459
 #, c-format
 msgid "%s on %s/\t%s"
 msgstr "%s na %s/\t%s"
 
 #. non-root partitions
-#: ../src/plugins/formatdisk.c:587
+#: ../src/plugins/formatdisk.c:589
 msgid "Selecting other partitions"
 msgstr "Výber ďalších partícii"
 
-#: ../src/plugins/formatdisk.c:594 ../src/plugins/partdisk.c:185
-msgid "Continue"
-msgstr "pokračovať"
-
-#: ../src/plugins/formatdisk.c:598
+#: ../src/plugins/formatdisk.c:600
 msgid "Select other Linux partitions for /etc/fstab"
 msgstr "Výber ďalších Linuxových partícii"
 
-#: ../src/plugins/formatdisk.c:599
-#, fuzzy
+#: ../src/plugins/formatdisk.c:601
 msgid ""
 "You may use your other partitions to distribute your Linux system across "
 "more than one partition. Currently, you have only mounted your / partition. "
@@ -265,14 +265,6 @@ msgstr ""
 "\n"
 "Tvorcovia Frugalware"
 
-#: ../src/plugins/hotplug.c:51 ../src/plugins/hotplug.c:56
-msgid "Detecting hardware"
-msgstr "Detekovanie hardwareu"
-
-#: ../src/plugins/hotplug.c:59
-msgid "Scanning for SCSI and PCI cards"
-msgstr "Hľadám SCSI a PCI karty"
-
 #: ../src/plugins/layout.c:57
 msgid "Selecting the keyboard map"
 msgstr "Výber klávesnice"
@@ -285,7 +277,7 @@ msgstr "Nastavenie klávesnice"
 #. * language from /usr/share/kbd/keymaps/i386
 #: ../src/plugins/layout.c:113
 msgid "qwerty/us.map.gz"
-msgstr ""
+msgstr "qwerty/us.map.gz"
 
 #: ../src/plugins/layout.c:114
 msgid "Keyboard map selection"
@@ -302,73 +294,72 @@ msgstr ""
 "(štandardné americké rozloženie). Použi šípky hore/dole a PageUp/PageDown na "
 "prezretie výberu"
 
-#: ../src/plugins/loadsource.c:56
+#: ../src/plugins/loadsource.c:62
 msgid "Loading the installation source"
 msgstr "Načítanie inštalačného zdroja"
 
-#: ../src/plugins/loadsource.c:123
+#: ../src/plugins/loadsource.c:152
 msgid "Selecting source media"
 msgstr "Inštalačného média"
 
-#: ../src/plugins/loadsource.c:126
+#: ../src/plugins/loadsource.c:155
 msgid "Scanning"
 msgstr "hľadám"
 
-#: ../src/plugins/loadsource.c:126
+#: ../src/plugins/loadsource.c:155
 msgid "Scanning for a CD/DVD drive containing a Frugalware install disc..."
 msgstr "Hľadám CD/DVD mechaniku s Frugalware instalačným diskom"
 
-#: ../src/plugins/loadsource.c:137
+#: ../src/plugins/loadsource.c:171
 msgid "CD/DVD drive found"
 msgstr "Nájdená CD/DVD mechanika"
 
-#: ../src/plugins/loadsource.c:137
+#: ../src/plugins/loadsource.c:171
 #, c-format
 msgid "A Frugalware install disc was found in device /dev/%s."
 msgstr "Frugalware inštalačný disk nájdený na /dev/%s"
 
 #: ../src/plugins/partdisk.c:53
-#, fuzzy
 msgid "Partitioning the disk drives"
 msgstr "Rozdelenie disku na partície"
 
-#: ../src/plugins/partdisk.c:114
+#: ../src/plugins/partdisk.c:117
 msgid "User friendly (curses based) version of fdisk"
 msgstr "\"User friendly \" verzia fdisku"
 
-#: ../src/plugins/partdisk.c:115
+#: ../src/plugins/partdisk.c:118
 msgid "The traditional partitioning program for Linux"
 msgstr "tradičný Linuxový program na výtváranie partícii"
 
-#: ../src/plugins/partdisk.c:116
+#: ../src/plugins/partdisk.c:119
 msgid "A partition manipulation program"
 msgstr "program na manipulovanie s partíciami"
 
-#: ../src/plugins/partdisk.c:119 ../src/plugins/partdisk.c:171
+#: ../src/plugins/partdisk.c:122 ../src/plugins/partdisk.c:174
 msgid "Creating partitions"
 msgstr "Vytváranie partícii"
 
-#: ../src/plugins/partdisk.c:122
+#: ../src/plugins/partdisk.c:125
 msgid "Select partitioning program"
 msgstr "Výber programu na vytváranie a menenie parícii"
 
-#: ../src/plugins/partdisk.c:123
+#: ../src/plugins/partdisk.c:126
 msgid "Select the program you want to use for partitioning:"
 msgstr "Vyber program, ktorý chceš použiť na vytváranie alebo úpravu partícii"
 
-#: ../src/plugins/partdisk.c:135
+#: ../src/plugins/partdisk.c:138
 msgid "Want to create RAID?"
 msgstr "Chceš vytvoriť RAID ?"
 
-#: ../src/plugins/partdisk.c:136
+#: ../src/plugins/partdisk.c:139
 msgid "Do you want to create software raid partitions during partitioning?"
 msgstr "Chceš vytvoriť softwareové raid partície ?"
 
-#: ../src/plugins/partdisk.c:165
+#: ../src/plugins/partdisk.c:168
 msgid "Disk drive not found"
 msgstr "Disk nenájdený"
 
-#: ../src/plugins/partdisk.c:165
+#: ../src/plugins/partdisk.c:168
 msgid ""
 "Sorry, no hard disk drives were found in this computer. Press ENTER to "
 "reboot."
@@ -376,15 +367,15 @@ msgstr ""
 "Prepáč, ale nenašiel som žiadny harddisk na tomto počítači. Stlač ENTER a "
 "počítač bude reštartovaný"
 
-#: ../src/plugins/partdisk.c:180
+#: ../src/plugins/partdisk.c:183
 msgid "Create RAID"
 msgstr "Vytvorenie RAID"
 
-#: ../src/plugins/partdisk.c:188
+#: ../src/plugins/partdisk.c:191
 msgid "Select a hard disk to partition"
 msgstr "Výber harddisk partície"
 
-#: ../src/plugins/partdisk.c:189
+#: ../src/plugins/partdisk.c:192
 msgid ""
 "Please select a hard disk to partition. The following ones are available:"
 msgstr ""
@@ -531,49 +522,49 @@ msgstr ""
 #: ../src/plugins/postconf.c:100
 #, c-format
 msgid "Please enter a password for %s"
-msgstr ""
+msgstr "Zadajte heslo užívateľa %s"
 
 #: ../src/plugins/postconf.c:101 ../src/plugins/postconf.c:107
 msgid "Password"
-msgstr ""
+msgstr "heslo"
 
 #: ../src/plugins/postconf.c:106
 #, c-format
 msgid "Please re-enter your password for %s"
-msgstr ""
+msgstr "Zopakujte zadané heslo pre %s"
 
 #: ../src/plugins/postconf.c:114
 msgid "Passwords don't match"
-msgstr ""
+msgstr "Zadané heslá nie sú rovnaké"
 
 #: ../src/plugins/postconf.c:115
 msgid "Sorry, the passwords do not match. Try again?"
-msgstr ""
+msgstr "Zadané heslá nie sú rovnaké. Zadať heslo znova?"
 
 #: ../src/plugins/postconf.c:140
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you want to skip setting the password for %s?"
-msgstr "Ste si istí, že chcete skončiť inštaláciu ?"
+msgstr "Ste si istí, že nechcete zadať heslo pre užívateľa %s?"
 
 #: ../src/plugins/postconf.c:141
 msgid "Ignore setting password"
-msgstr ""
+msgstr "Ignorovať zadanie hesla"
 
 #: ../src/plugins/postconf.c:153
 msgid "Enter login"
-msgstr ""
+msgstr "Nastavenie užívatelského konta"
 
 #: ../src/plugins/postconf.c:153
 msgid "Please enter the login name you should like to create:"
-msgstr ""
+msgstr "Zadajte meno konta, ktoré chcete vytvoriť"
 
 #: ../src/plugins/postconf.c:156
 msgid "Enter full name"
-msgstr ""
+msgstr "Zadajte celé meno"
 
 #: ../src/plugins/postconf.c:156
 msgid "Please enter the full name of the user you would like to create:"
-msgstr ""
+msgstr "Zadajte prosím celé meno užívateľa, ktorého chcete vytvoriť"
 
 #: ../src/plugins/postconf.c:201
 msgid "No normal user account detected"
@@ -592,11 +583,11 @@ msgstr ""
 msgid "Post-install configuration"
 msgstr "Poinštalačná konfigurácia"
 
-#: ../src/plugins/postconf.c:244
+#: ../src/plugins/postconf.c:256
 msgid "Configuring kernel modules"
 msgstr "Nastavovanie kernel modulov"
 
-#: ../src/plugins/postconf.c:245
+#: ../src/plugins/postconf.c:257
 msgid "Updating module dependencies..."
 msgstr "aktualizácia modulových závislostí"
 
@@ -633,15 +624,15 @@ msgstr "Koniec inštaláciu"
 msgid "Are you sure you want to exit from the installer?"
 msgstr "Ste si istí, že chcete skončiť inštaláciu ?"
 
-#: ../src/util.c:624
+#: ../src/util.c:628
 msgid "Oops"
 msgstr "Oops"
 
-#: ../src/util.c:626
+#: ../src/util.c:630
 msgid "A problem has occurred"
 msgstr "nastal problém"
 
-#: ../src/util.c:626
+#: ../src/util.c:630
 msgid ""
 "Internal error: Segmentation fault. Please report this issue to http://bugs."
 "frugalware.org"
@@ -649,21 +640,27 @@ msgstr ""
 "Chyba: Segmentation fault. Prosíme hláste túto chybu na http://bugs."
 "frugalware.org"
 
-#: ../src/util.c:652
+#: ../src/util.c:656
 msgid "Selecting a task"
 msgstr "Vyber čo ďalej"
 
-#: ../src/util.c:660
+#: ../src/util.c:664
 msgid "Select task to continue with"
 msgstr "Vyber čo urobiť ďalej"
 
-#: ../src/util.c:661
+#: ../src/util.c:665
 msgid ""
 "You selected to change the way normally Frugalware is installed. Here are "
 "the list of tasks you can continue with:"
 msgstr ""
 "Vybral si zmeniť spôsob, ktorým sa Frugalware bežne inštaluje. Tu je zoznam "
 "úloh, ktorými môžeš pokračovať"
+
+#~ msgid "Detecting hardware"
+#~ msgstr "Detekovanie hardwareu"
+
+#~ msgid "Scanning for SCSI and PCI cards"
+#~ msgstr "Hľadám SCSI a PCI karty"
 
 #~ msgid "Could not open output file for reading"
 #~ msgstr "Nemožem otvoriť súbor na čítanie"
