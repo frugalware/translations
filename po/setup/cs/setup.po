@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-21 05:00+0100\n"
-"PO-Revision-Date: 2008-02-19 23:04+0100\n"
+"POT-Creation-Date: 2008-02-25 05:00+0100\n"
+"PO-Revision-Date: 2008-02-25 09:29+0100\n"
 "Last-Translator: Martin Burda <brdam@email.cz>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -32,7 +32,7 @@ msgstr "ftp://ftp5."
 
 #: ../src/plugins/configsource.c:102 ../src/plugins/dolangsh.c:58
 #: ../src/plugins/formatdisk.c:250 ../src/plugins/formatdisk.c:403
-#: ../src/plugins/layout.c:141 ../src/plugins/loadsource.c:82
+#: ../src/plugins/layout.c:141 ../src/plugins/loadsource.c:88
 #: ../src/plugins/select.c:333 ../src/util.c:305
 msgid "Could not open output file for writing"
 msgstr "Nelze zapisovat do výstupního souboru"
@@ -48,7 +48,7 @@ msgstr "Zvolte prosím umístění zrcadla"
 #: ../src/plugins/configsource.c:133
 msgid ""
 "Here you can chose one or more nearby mirror to speed up package dowloading."
-msgstr "Zde můžete vybrat nejbližší zrcadlo pro rychlejší stahování balíčků"
+msgstr "Zde můžete vybrat nejbližší zrcadla pro rychlejší stahování balíčků"
 
 #: ../src/plugins/configsource.c:165 ../src/plugins/formatdisk.c:596
 #: ../src/plugins/partdisk.c:188
@@ -66,7 +66,7 @@ msgid ""
 msgstr ""
 "Zde můžete zadat alternativní zrcadlo pro stahování (např. pro rychlejší "
 "stahování z lokální sítě). Pokud jej nechcete zadat, stačí ve většině "
-"případů pouze zvolit Continue."
+"případů pouze zvolit Pokračovat."
 
 #: ../src/plugins/configsource.c:195 ../src/plugins/select.c:406
 #: ../src/plugins/select.c:416 ../src/plugins/select.c:448
@@ -113,7 +113,7 @@ msgstr "Formátování oddílů"
 #: ../src/plugins/formatdisk.c:180 ../src/plugins/formatdisk.c:204
 #, c-format
 msgid "Format %s"
-msgstr "Formátování %s"
+msgstr "Formátovat %s"
 
 #: ../src/plugins/formatdisk.c:181 ../src/plugins/formatdisk.c:205
 #, c-format
@@ -128,7 +128,7 @@ msgstr ""
 
 #: ../src/plugins/formatdisk.c:198
 msgid "Do not format, just mount the partition"
-msgstr "Připojení oddílu bez jeho formátování"
+msgstr "Připojit oddíl bez jeho formátování"
 
 #: ../src/plugins/formatdisk.c:220
 msgid "Standard Linux ext2fs filesystem"
@@ -144,7 +144,7 @@ msgstr "Žurnálovací souborový systém Hanse Reisera (reiserfs)"
 
 #: ../src/plugins/formatdisk.c:223
 msgid "SGI's journalising filesystem"
-msgstr "Žurnálovací systém SGI"
+msgstr "Žurnálovací souborový systém SGI"
 
 #: ../src/plugins/formatdisk.c:230
 #, c-format
@@ -178,7 +178,7 @@ msgstr "Nastavení kořenového oddílu (root)"
 
 #: ../src/plugins/formatdisk.c:308
 msgid "Select the Linux installation partition"
-msgstr "Výběr oddílu pro instalaci Linuxu"
+msgstr "Vybrat oddíl pro instalaci Linuxu"
 
 #: ../src/plugins/formatdisk.c:309
 msgid ""
@@ -210,7 +210,7 @@ msgstr "Vyberte přípojný bod pro %s"
 
 #: ../src/plugins/formatdisk.c:451 ../src/plugins/formatdisk.c:616
 msgid "(in use)"
-msgstr "(je k dispozici)"
+msgstr "(je používán)"
 
 #: ../src/plugins/formatdisk.c:459
 #, c-format
@@ -245,12 +245,12 @@ msgstr ""
 "Tyto adresáře doporučujeme ponechat ve výchozím nastavení a vyhnout se tak "
 "možným problémům. Vyvarujte se také opakovaného připojení adresáře, který "
 "jste již jednou někam připojili, může to znemožnit správné fungování "
-"systému. Pokračujte výběrem oddílu ze seznamu anebo stiskněte Continue pro "
-"pokračování, pokud nechcete připojovat další oddíly."
+"systému. Pokračujte výběrem oddílu ze seznamu anebo stiskněte Pokračovat, "
+"pokud nechcete připojovat další oddíly."
 
 #: ../src/plugins/greet.c:46
 msgid "Welcome splash"
-msgstr "Vítejte v přihlašovacím dialogu"
+msgstr "Vítejte v grafickém zavádění systému"
 
 #: ../src/plugins/greet.c:59
 #, c-format
@@ -273,7 +273,9 @@ msgstr ""
 "Vítáme Vás mezi uživateli Frugalware!\n"
 "\n"
 "Podnětem pro vznik Frugalware bylo umožnit co největší jednoduchost a "
-"rychlost při práci se systémem. Věříme, že si náš produkt oblíbíte.\n"
+"rychlost při práci se systémem. Věříme, že si náš produkt oblíbíte. "
+"Frugalware Linux je určen především pro středně pokročilé uživatele Linuxu. "
+"Mějte to prosím na paměti.\n"
 "\n"
 "Tým vývojářů Frugalware"
 
@@ -307,28 +309,28 @@ msgstr ""
 "mapa). Pro pohyb v menu použijte kurzorové klávesy UP/DOWN a klávesy PageUp/"
 "PageDown pro rychlejší procházení."
 
-#: ../src/plugins/loadsource.c:56
+#: ../src/plugins/loadsource.c:62
 msgid "Loading the installation source"
 msgstr "Načtení instalačního zdroje"
 
-#: ../src/plugins/loadsource.c:123
+#: ../src/plugins/loadsource.c:152
 msgid "Selecting source media"
 msgstr "Výběr zdrojového média"
 
-#: ../src/plugins/loadsource.c:126
+#: ../src/plugins/loadsource.c:155
 msgid "Scanning"
 msgstr "Vyhledávání"
 
-#: ../src/plugins/loadsource.c:126
+#: ../src/plugins/loadsource.c:155
 msgid "Scanning for a CD/DVD drive containing a Frugalware install disc..."
 msgstr ""
 "Prohledávám CD/DVD mechaniky obsahující instalační médium Frugalware..."
 
-#: ../src/plugins/loadsource.c:137
+#: ../src/plugins/loadsource.c:171
 msgid "CD/DVD drive found"
 msgstr "Mechanika CD/DVD byla nalezena"
 
-#: ../src/plugins/loadsource.c:137
+#: ../src/plugins/loadsource.c:171
 #, c-format
 msgid "A Frugalware install disc was found in device /dev/%s."
 msgstr "Instalační médium Frugalware bylo nalezeno na /dev/%s."
@@ -368,7 +370,7 @@ msgstr "Chcete vytvořit RAID?"
 
 #: ../src/plugins/partdisk.c:139
 msgid "Do you want to create software raid partitions during partitioning?"
-msgstr "Chcete použít během instalace softwarový RAID?"
+msgstr "Chcete použít během rozdělování disku softwarový RAID?"
 
 #: ../src/plugins/partdisk.c:168
 msgid "Disk drive not found"
@@ -466,7 +468,7 @@ msgstr "Chyba"
 #: ../src/plugins/select.c:345
 #, c-format
 msgid "Failed to parse pacman-g2 configuration file (%s)"
-msgstr "Nebyl rozeznán konfigurační soubor pacman-g2 (%s)"
+msgstr "Nelze aktualizovat konfigurační soubor pacman-g2 (%s)"
 
 #: ../src/plugins/select.c:353
 #, c-format
@@ -539,14 +541,14 @@ msgid ""
 "password?"
 msgstr ""
 "Zatím jste nezadali heslo systémového administrátora (root). Doporučujeme "
-"jej zadat nyní, a heslo bude aktivováno při příštím rebootu počítače. Je to "
+"jej zadat nyní, a heslo bude aktivováno při příštím restartu počítače. Je to "
 "důležité zvláště v případě, kdy se připojujete k internetu z místní sítě "
 "LAN. Chcete zadat heslo uživatele root?"
 
 #: ../src/plugins/postconf.c:100
 #, c-format
 msgid "Please enter a password for %s"
-msgstr "Zadejte prosím heslo pro %s"
+msgstr "Zadejte prosím heslo uživatele %s"
 
 #: ../src/plugins/postconf.c:101 ../src/plugins/postconf.c:107
 msgid "Password"
@@ -569,7 +571,7 @@ msgstr ""
 #: ../src/plugins/postconf.c:140
 #, c-format
 msgid "Are you sure you want to skip setting the password for %s?"
-msgstr "Jste si jisti, že nechcete zadat heslo uživatele %s?"
+msgstr "Jste si jist(a), že nechcete zadat heslo uživatele %s?"
 
 #: ../src/plugins/postconf.c:141
 msgid "Ignore setting password"
