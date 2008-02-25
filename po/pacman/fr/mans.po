@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-01-03 05:04+0100\n"
-"PO-Revision-Date: 2008-02-25 11:18+0100\n"
+"PO-Revision-Date: 2008-02-25 11:41+0100\n"
 "Last-Translator: Daniel <devil505linux@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -2293,6 +2293,14 @@ msgid ""
 "\tthe file should be renamed to a .pacsave extension. If --nosave is used, these\n"
 "\tdesignations are ignored and the files are removed.\n"
 msgstr ""
+"-n, --nosave::\n"
+"\tOrdonne à pacman-g2 d'ignorer les désignations des fichiers de sauvegarde. "
+"Normalement, quand un fichier\n"
+"\test sur le point d'être retiré du système la base de donnée est vérifiée en "
+"premier pour voir si\n"
+"\tle fichier doit être renommé avec .pacsave comme extension. Si --nosave est "
+"utilisé, ces\n"
+"\tdésignations sont ignorées et les fichiers sont retirés.\n"
 
 # type: Plain text
 #: pacman-g2.txt:201
@@ -2341,6 +2349,10 @@ msgid ""
 "\tDisplay all groups that a specified package is part of. If no package names are\n"
 "\tprovided, all groups and members will be listed.\n"
 msgstr ""
+"-g, --groups::\n"
+"\tAffiche tout les groupes dont le paquet spécifié en fait parti. Si aucun "
+"nom de paquet n'est\n"
+"\tfournis, tout les groupes et membres seront listés.\n"
 
 # type: Plain text
 #: pacman-g2.txt:218
@@ -2363,6 +2375,10 @@ msgid ""
 "\tList all files owned by <package>. Multiple packages can be specified on the\n"
 "\tcommand line.\n"
 msgstr ""
+"-l, --list::\n"
+"\tListe tout les fichiers possédés par le <paquet>. Des paquets multiples "
+"peuvent être spécifiés dans la\n"
+"\tligne de commande.\n"
 
 # type: Plain text
 #: pacman-g2.txt:226
@@ -2372,6 +2388,11 @@ msgid ""
 "\tList all packages that were not found in the sync database(s). Typically these\n"
 "\tare packages that were downloaded manually and installed with --add.\n"
 msgstr ""
+"-m, --foreign::\n"
+"\tListe tout les paquets qui ne furent pas trouvés dans le sync de la base(s) "
+"de données. Habituellement, ce\n"
+"\tsont des paquet qui furent téléchargés manuellement et installés avec "
+"--add.\n"
 
 # type: Plain text
 #: pacman-g2.txt:229
@@ -2386,12 +2407,19 @@ msgstr ""
 # type: Plain text
 #: pacman-g2.txt:234
 #, no-wrap
+#, fuzzy
 msgid ""
 "-p, --file::\n"
 "\tTells pacman-g2 that the package supplied on the command line is a file, not an\n"
 "\tentry in the database. Pacman will decompress the file and query it. This is\n"
 "\tuseful with --info and --list.\n"
 msgstr ""
+"-p, --file::\n"
+"\tDis à pacman-g2 que le paquet indiqué dans la ligne de commande est un "
+"fichier, pas une\n"
+"\tentrée dans la base de données. Pacman va décompressé le fichier et query "
+"it. Ceci est\n"
+"\tutile avec --info et --list.\n"
 
 # type: Plain text
 #: pacman-g2.txt:238
@@ -2401,6 +2429,10 @@ msgid ""
 "\tThis will search each locally-installed package for names or descriptions that\n"
 "\tcontains <regexp>.\n"
 msgstr ""
+"-s, --search <regexp>::\n"
+"\tCeci va rechercher chaque paquet installés localement avec noms et "
+"descriptions qui\n"
+"\tcontiennent<regexp>.\n"
 
 # type: Plain text
 #: pacman-g2.txt:241
@@ -2431,7 +2463,8 @@ msgstr ""
 #: pacman-g2.txt:248
 #, no-wrap
 msgid "\tThe recommended method in this case is to remove the database entry:\n"
-msgstr ""
+msgstr "\tLa méthode recommandée dans ce cas là est de retirer l'entrée de la base de "
+"données:\n"
 
 # type: Plain text
 #: pacman-g2.txt:252
@@ -2478,6 +2511,12 @@ msgid ""
 "the actual file existing on the filesystem. After comparing these 3 hashes, "
 "the follow scenarios can result:"
 msgstr ""
+"pacman-g2 utilise la même logique que rpm pour determiner l'action à suivre "
+"face à des fichiers désignés pour être sauvegardés. Durant la mise à jour, "
+"il utilise 3 hachage md5 pour chaque fichiers de sauvegarde pour déterminer "
+"l'action requise: une pour le fichier original, une pour le nouveau fichier "
+"et une pour le fichier actuel existant sur votre système de fichiers. Après "
+"avoir comparer ces 3 hachages, les scénarios suivant peuvent être envisagés:"
 
 # type: Plain text
 #: pacman-g2.txt:270
@@ -2486,7 +2525,7 @@ msgid ""
 "original=X, current=X, new=X::\n"
 "\tAll three files are the same, so we win either way. Install the new file.\n"
 msgstr ""
-"original=X, current=X, new=X::\n"
+"original=X, actuel=X, nouveau=X::\n"
 "\tTout les trois fichiers sont identiques, donc nous gagnons de toute "
 "manière. Installer le nouveau fichier.\n"
 
