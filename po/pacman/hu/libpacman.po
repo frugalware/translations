@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-12-26 05:05+0100\n"
-"PO-Revision-Date: 2007-11-03 01:49+0100\n"
+"POT-Creation-Date: 2008-01-03 05:04+0100\n"
+"PO-Revision-Date: 2008-02-25 15:58+0100\n"
 "Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
 "Language-Team: <hu@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -551,8 +551,8 @@ msgstr "checkconflicts: db vs cél '%s'"
 msgid "db vs targs: found %s as a conflict for %s"
 msgstr "db vs targs: a %s ütközik a következõvel: %s"
 
-#: ../conflict.c:254 ../conflict.c:353 ../deps.c:70 ../deps.c:614
-#: ../deps.c:654 ../group.c:40 ../handle.c:52 ../package.c:103 ../sync.c:63
+#: ../conflict.c:254 ../conflict.c:353 ../deps.c:70 ../deps.c:624
+#: ../deps.c:664 ../group.c:40 ../handle.c:52 ../package.c:103 ../sync.c:63
 #: ../sync.c:632 ../sync.c:648 ../sync.c:744 ../trans.c:65 ../util.c:693
 #: ../util.c:700
 #, c-format
@@ -593,9 +593,8 @@ msgid "started sorting dependencies"
 msgstr "a függõségek rendezése elkezdõdött"
 
 #: ../deps.c:173
-#, fuzzy
 msgid "dependency cycle detected"
-msgstr "körkörös függõség észlelve: %s"
+msgstr "körkörös függõség észlelve"
 
 #: ../deps.c:191
 msgid "sorting dependencies finished"
@@ -606,47 +605,47 @@ msgstr "a függõségek rendezése befejezõdött"
 msgid "checkdeps: updated '%s' won't satisfy a dependency of '%s'"
 msgstr "checkdeps: az új '%s' egy elégíti ki a '%s' függõségeit"
 
-#: ../deps.c:383
+#: ../deps.c:389
 #, c-format
 msgid "checkdeps: found %s as a dependency for %s"
 msgstr "checkdeps: a %s egy függõség a %s számára"
 
-#: ../deps.c:419
+#: ../deps.c:425
 #, c-format
 msgid "checkdeps: found %s which requires %s"
 msgstr "checkdeps: %s megtalálva, ami igényli ezt: %s"
 
-#: ../deps.c:507
+#: ../deps.c:517
 #, c-format
 msgid "cannot find package \"%s\" or anything that provides it!"
 msgstr "nem található a \"%s\" csomag és nem is szolgáltatja semmi!"
 
-#: ../deps.c:512
+#: ../deps.c:522
 msgid "dep is NULL!"
 msgstr "a dep NULL!"
 
-#: ../deps.c:524
+#: ../deps.c:534
 #, c-format
 msgid "excluding %s -- explicitly installed"
 msgstr "a %s kihagyása -- explicit módon lett telepítve"
 
 #. add it to the target list
-#: ../deps.c:541
+#: ../deps.c:551
 #, c-format
 msgid "loading ALL info for '%s'"
 msgstr "minden infó betöltése a '%s' számára"
 
-#: ../deps.c:544
+#: ../deps.c:554
 #, c-format
 msgid "adding '%s' to the targets"
 msgstr "a '%s' hozzáadása a célcsomagokhoz"
 
-#: ../deps.c:586
+#: ../deps.c:596
 #, c-format
 msgid "%s provides dependency %s -- skipping"
 msgstr "a %s szolgáltatja a %s függõséget -- kihagyás"
 
-#: ../deps.c:610
+#: ../deps.c:620
 #, c-format
 msgid ""
 "cannot resolve dependencies for \"%s\" (\"%s\" is not in the package set)"
@@ -655,33 +654,33 @@ msgstr ""
 "a csomagok között)"
 
 #. this dep is already in the target list
-#: ../deps.c:627
+#: ../deps.c:637
 #, c-format
 msgid "dependency %s is already in the target list -- skipping"
 msgstr "a %s függõség már a célcsomagok között szerepel -- kihagyás"
 
-#: ../deps.c:647
+#: ../deps.c:657
 #, c-format
 msgid "pulling dependency %s (needed by %s)"
 msgstr "a %s függõség behozása (a %s igényli)"
 
-#: ../deps.c:651
+#: ../deps.c:661
 #, c-format
 msgid "cannot resolve dependencies for \"%s\""
 msgstr "nem sikerült feloldani a függõségeket a \"%s\" számára"
 
 #. cycle detected -- skip it
-#: ../deps.c:667
+#: ../deps.c:677
 #, c-format
 msgid "dependency cycle detected: %s"
 msgstr "körkörös függõség észlelve: %s"
 
-#: ../deps.c:707
+#: ../deps.c:721
 #, c-format
 msgid "depcmp: %s-%s %s %s-%s => %s"
 msgstr "depcmp: %s-%s %s %s-%s => %s"
 
-#: ../deps.c:712
+#: ../deps.c:726
 #, c-format
 msgid "depcmp: %s-%s %s %s => %s"
 msgstr "depcmp: %s-%s %s %s => %s"
@@ -901,9 +900,9 @@ msgid "PM_OPT_CACHEDIR set to '%s'"
 msgstr "PM_OPT_CACHEDIR beállítva a '%s' értékre"
 
 #: ../handle.c:153
-#, fuzzy, c-format
+#, c-format
 msgid "PM_OPT_HOOKSDIR set to '%s'"
-msgstr "PM_OPT_CACHEDIR beállítva a '%s' értékre"
+msgstr "PM_OPT_HOOKSDIR beállítva a '%s' értékre"
 
 #: ../handle.c:172
 #, c-format
@@ -1495,14 +1494,14 @@ msgid "could not remove tmpdir %s"
 msgstr "nem sikerült eltávolítani a %s ideiglenes könyvtárat"
 
 #: ../util.c:552
-#, fuzzy, c-format
+#, c-format
 msgid "executing %s hooks..."
-msgstr "a(z) %s script végrehajtása..."
+msgstr "a(z) %s hurok végrehajtása..."
 
 #: ../util.c:570
-#, fuzzy, c-format
+#, c-format
 msgid "opening hooks directory failed (%s)"
-msgstr "a %s könyvtár megtartása"
+msgstr "a hurok-könyvtár megtartása sikertelen (%s)"
 
 #: ../util.c:688
 #, c-format
