@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-12-26 05:05+0100\n"
-"PO-Revision-Date: 2007-04-20 14:59+0200\n"
+"POT-Creation-Date: 2008-02-25 05:00+0100\n"
+"PO-Revision-Date: 2008-02-25 18:01+0100\n"
 "Last-Translator: andrej prochazka <a.prochazka@gsi.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Pootle 0.10.1\n"
+"X-Generator: Pootle 1.0\n"
 
 #. FIXME: use docs/about.txt as a source instead of this one
 #: ../about.php:36
@@ -293,17 +293,16 @@ msgid "Long"
 msgstr "detailnejšie"
 
 #: ../authors.php:57
-#, fuzzy
 msgid "at"
-msgstr "Dátum"
+msgstr "at"
 
 #: ../authors.php:58
 msgid "dot"
-msgstr ""
+msgstr "bodka"
 
 #: ../authors.php:68 ../config.inc.php:81
 msgid "Authors"
-msgstr ""
+msgstr "Autori"
 
 #: ../authors.php:69
 msgid ""
@@ -311,31 +310,33 @@ msgid ""
 "way. However, we are aware that the contributor list is incomplete. Please "
 "contact us if your name is missing from here!<br />"
 msgstr ""
+"Na tejto stránke sú mená ludí, ktorí nejako prispeli k rozvoju Frugalware "
+"linuxu. Ak list nie je kompletný a vaše meno tam chýba, kontaktujte nás! <br "
+"/>"
 
 #: ../authors.php:70
 #, php-format
 msgid "Available filters: <a href=\"%s\">No filter</a> &middot; "
-msgstr ""
+msgstr "Dostupné filtre: <a href=\"%s\">Žiadny filter</a> &middot;"
 
 #: ../authors.php:71
 #, php-format
 msgid "<a href=\"%s\">Active developers</a> &middot; "
-msgstr ""
+msgstr "<a href=\"%s\">Aktívny vývojári</a> &middot;"
 
 #: ../authors.php:72
 #, php-format
 msgid "<a href=\"%s\">Former developers</a> &middot; "
-msgstr ""
+msgstr "<a href=\"%s\">Pôvodný vývojári</a> &middot;"
 
 #: ../authors.php:73
 #, php-format
 msgid "<a href=\"%s\">Contributors</a><br />"
-msgstr ""
+msgstr "<a href=\"%s\">Prispievatelia</a><br />"
 
 #: ../authors.php:74
-#, fuzzy
 msgid "Frugalware Linux Author list"
-msgstr "Frugalware v tlači"
+msgstr "List autorov Frugalware linuxu"
 
 #. $menucontent = '<a class="menu" href="' . $fwng_root . '">' . gettext('News') . "</a> &middot; \n";
 #: ../config.inc.php:44 ../rss.php:184
@@ -408,7 +409,7 @@ msgstr "Last.fm group"
 
 #: ../config.inc.php:66
 msgid "National sites"
-msgstr ""
+msgstr "Národné stránky"
 
 #: ../config.inc.php:68
 msgid "Download"
@@ -431,9 +432,8 @@ msgid "Roadmap"
 msgstr "plán"
 
 #: ../config.inc.php:76
-#, fuzzy
 msgid "Git repository"
-msgstr "Darcs repository"
+msgstr "Git repository"
 
 #: ../config.inc.php:77
 msgid "Bug Tracker"
@@ -481,7 +481,6 @@ msgid "View online documentation (development version)"
 msgstr "Online dokumentácia(vývojarska verzia)"
 
 #: ../donations.php:38
-#, fuzzy
 msgid ""
 "<div align=\"left\">Donations are a great way to show your appreciation\n"
 "and support for Frugalware Linux. On this page we list the donations we "
@@ -503,18 +502,39 @@ msgid ""
 "on the side of the page\n"
 "if you wish to donate money.</div>"
 msgstr ""
-"<div align=\"left\">Sponzorské dary sú dobrým spôsobom ako oceniť našu prácu "
-"a podporiť Frugalware linux. Na tejto stránke sú uverejnené dary, ktoré sme "
+"<div align=\"left\">Sponzorské dary sú dobrým spôsobom ako oceniť našu prácu a "
+"podporiť Frugalware linux. Na tejto stránke sú uverejnené dary, ktoré sme "
 "zatiaľ dostali ale aj tie ktoré by nám pomohli v ďalšom vývoji. Ak máte "
 "nejaký nepotrebný hardware alebo niečo, čo by mohlo pomôcť pri vývoji "
 "Frugalware linuxu darujte ho vývojárom Frugalware. Ak chcete darovať aj "
-"niečo iné npíšte na mailling list <a href=\"http://frugalware.org/mailman/"
-"listinfo/frugalware-devel\"> flist, alebo pošlite email na "
-"vmiklos_at_frugalware_dot_org.\n"
+"niečo iné napíšte na mailing list <a "
+"href=\"http://frugalware.org/mailman/listinfo/frugalware-devel\">frugalware-"
+"devel</a>\n"
+", alebo email na vmiklos_at_frugalware_dot_org.\n"
+"Ak chcete darovať niečo určitým vývojárom pozrite si <a "
+"href=\"authors.php\">autori</a>\n"
+" a napíšte email. Ak chcete darovať peniaze, môžete použiť aj PayPal, linku "
+"nájdete boku stránky.</div>"
 
 #: ../donations.php:77
 msgid "The Frugalware Team"
 msgstr "Frugalware tým"
+
+#: ../download.php:86
+msgid "Archive"
+msgstr "Archív"
+
+#: ../download.php:86
+msgid ""
+"Unfortunately due our limited resources we cannot store our old stable "
+"versions, they are being removed shortly after a new official stable "
+"release. But if you are interested in our old stable versions, ask IroNiQ on "
+"#frugalware @freenode or ask in email on one of our lists."
+msgstr ""
+"Bohužiaľ si momentálne nemôžeme dovoliť ukladať staršie stabilné verzie, "
+"preto sú mazané krátko po vidaní novej stabilnej verzii. Ak chcete staršie "
+"verzie, kontaktujte IroNiQ na frugalware @freenode  alebo poslite email na "
+"jeden z našich maillistov."
 
 #: ../header.php:52
 msgid "Releases"
@@ -539,11 +559,11 @@ msgstr "Informácia o serveri"
 #: ../header.inc.php:135
 #, php-format
 msgid "Uptime:<br /> %d day(s) %d h %d m %d s"
-msgstr ""
+msgstr "v prevádzke: <br /> %d day(s) %d h %d m %d s"
 
 #: ../header.inc.php:142
 msgid "Donate to support our development efforts."
-msgstr ""
+msgstr "Prispejte na vývoj."
 
 #: ../index.php:97 ../index.php:116
 msgid "Sorry, no news on your language, using English instead."
@@ -566,14 +586,16 @@ msgid "General information"
 msgstr "základná informácia"
 
 #: ../irc.php:59
-#, fuzzy
 msgid ""
 "Our irc channel is on the freenode network (server: irc.freenode.net), at "
 "#frugalware. This is the official Frugalware Linux irc help station. See the "
 "<a href=\"/docs/irc-rules#_irc_channels\">documentation</a> about non-"
 "English channels."
 msgstr ""
-"Náš IRC kanál je na sieti Freenode (server:irc.freenode.net) na #frugalware."
+"Náš IRC kanál je na sieti Freenode (server:irc.freenode.net) na #frugalware. "
+"Toto je oficiálna miestnosť kde vám poradia. Ak chcete poradiť vo iných "
+"jazykoch ako angličtina pozrite <a href=\"/docs/irc-"
+"rules#_irc_channels\">dokumentáciu</a>"
 
 #: ../irc.php:105
 msgid "Please enter a valid nickname"
@@ -670,9 +692,8 @@ msgid "Regular expression"
 msgstr "bežný výraz"
 
 #: ../packages.php:97
-#, fuzzy
 msgid "(regular expression)"
-msgstr "bežný výraz"
+msgstr "(výraz)"
 
 #: ../packages.php:100 ../packages.php:331 ../packages.php:340
 msgid "Architecture:"
@@ -694,7 +715,7 @@ msgstr "Reset"
 #: ../packages.php:120
 #, php-format
 msgid "Searching in %d binary and %d source-only packages."
-msgstr ""
+msgstr "Hľadanie v %d binárnych balíčkoch a %d zdrojových kódoch."
 
 #: ../packages.php:134
 msgid "You will need a Mozilla based browser to install a search plugin."
@@ -710,7 +731,7 @@ msgstr ""
 
 #: ../packages.php:191
 msgid "Error in the query, please change the searching conditions"
-msgstr ""
+msgstr "Chyba vo vyhľadávaní, zmente prosím podmienky vyhľadávania"
 
 #: ../packages.php:197
 msgid "No package found"
@@ -749,13 +770,12 @@ msgid "Parent:"
 msgstr "rodič"
 
 #: ../packages.php:406
-#, fuzzy
 msgid "Documentation:"
 msgstr "Dokumentácia"
 
 #: ../packages.php:408
 msgid "Buildlog:"
-msgstr ""
+msgstr "informácie i vytvorení"
 
 #: ../packages.php:409
 msgid "Changelog:"
@@ -823,35 +843,32 @@ msgid "Forums:"
 msgstr "Fórum:"
 
 #: ../packages.php:466
-#, fuzzy
 msgid "Related posts"
-msgstr "blogy"
+msgstr "príbuzné"
 
 #: ../packages.php:467
 msgid "Wiki:"
 msgstr "Wiki:"
 
 #: ../packages.php:467
-#, fuzzy
 msgid "Related pages"
-msgstr "Vydania"
+msgstr "Súvisiace stránky"
 
 #: ../packages.php:468
 msgid "Bug Tracking System:"
 msgstr "Hlásenia chýb:"
 
 #: ../packages.php:468
-#, fuzzy
 msgid "Related open bugs"
 msgstr "chyby:"
 
 #: ../packages.php:469
 msgid "Syndicate:"
-msgstr ""
+msgstr "syndikát"
 
 #: ../packages.php:469
 msgid "RSS"
-msgstr ""
+msgstr "RSS"
 
 #: ../packages.php:470
 msgid "SHA1 Sum:"
@@ -867,34 +884,31 @@ msgstr "Aktualizované:"
 
 #: ../packages.php:477 ../packages.php:528 ../packages.php:577
 #: ../packages.php:635 ../packages.php:665
-#, fuzzy
 msgid "No such package!"
 msgstr "Žiadny balíček nenájdený"
 
 #: ../packages.php:513
-#, fuzzy, php-format
+#, php-format
 msgid "Changelog for %s"
 msgstr "zmeny:"
 
 #: ../packages.php:524 ../packages.php:573
-#, fuzzy
 msgid "Sorry, currently no log available."
 msgstr "Prepáčte, ale nie su k dispozícii žiadne logy"
 
 #: ../packages.php:562
 #, php-format
 msgid "Build log for %s"
-msgstr ""
+msgstr "informácie o vytvorení pre %s"
 
 #: ../packages.php:611
-#, fuzzy, php-format
+#, php-format
 msgid "Documentation for %s"
-msgstr "Dokumentácia"
+msgstr "Dokumentácia pre %s"
 
 #: ../packages.php:631
-#, fuzzy
 msgid "Sorry, currently no documentation available."
-msgstr "Prepáčte, ale nie su k dispozícii žiadne logy"
+msgstr "Prepáčte, ale nie je k dispozícii žiadna dokumentácia"
 
 #: ../packages.php:650
 msgid "File list for"
@@ -917,14 +931,12 @@ msgid "Stable releases"
 msgstr "stable verzie :"
 
 #: ../rss.php:186
-#, fuzzy
 msgid "-current commits"
-msgstr "Darcs commits"
+msgstr "súčasné commits"
 
 #: ../rss.php:187
-#, fuzzy
 msgid "-stable patches"
-msgstr "stable verzie :"
+msgstr "stabilné záplaty"
 
 #: ../rss.php:188
 msgid "BTS entries"
