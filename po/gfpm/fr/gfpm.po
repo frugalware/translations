@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-26 05:00+0100\n"
-"PO-Revision-Date: 2008-02-26 19:40+0100\n"
+"POT-Creation-Date: 2008-02-29 05:04+0100\n"
+"PO-Revision-Date: 2008-02-29 15:44+0100\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,11 +16,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 1.0\n"
 
-#: ../src/gfpm-about.c:87
+#: ../src/gfpm-about.c:88
 msgid "(C) 2006-2008 Frugalware Developer Team (GPL)"
 msgstr "(C) 2006-2008 Frugalware Developer Team (GPL)"
 
-#: ../src/gfpm-about.c:88
+#: ../src/gfpm-about.c:89
 msgid "A graphical package manager for Frugalware Linux"
 msgstr "Un gestionnaire de paquets graphique pour Frugalware Linux."
 
@@ -29,7 +29,8 @@ msgstr "Un gestionnaire de paquets graphique pour Frugalware Linux."
 msgid "Installed Packages"
 msgstr "Paquets installés"
 
-#: ../src/gfpm-interface.c:205
+#: ../src/gfpm-interface.c:205 ../src/gfpm-repomanager.c:112
+#: ../src/gfpm-repomanager.c:142
 msgid "S"
 msgstr "S"
 
@@ -54,9 +55,12 @@ msgstr "Dernière Version"
 #: ../src/gfpm-interface.c:1051 ../src/gfpm-interface.c:1131
 #: ../src/gfpm-interface.c:1222 ../src/gfpm-interface.c:1541
 #: ../src/gfpm-interface.c:1554 ../src/gfpm-interface.c:1893
-#: ../src/gfpm-interface.c:1908 ../src/gfpm-optimizedb.c:115
-#: ../src/gfpm-optimizedb.c:122 ../src/gfpm-logviewer.c:109
-#: ../src/gfpm-logviewer.c:168 ../src/gfpm-logviewer.c:221
+#: ../src/gfpm-interface.c:1908 ../src/gfpm-optimizedb.c:116
+#: ../src/gfpm-optimizedb.c:123 ../src/gfpm-logviewer.c:115
+#: ../src/gfpm-logviewer.c:184 ../src/gfpm-logviewer.c:235
+#: ../src/gfpm-repomanager.c:327 ../src/gfpm-repomanager.c:396
+#: ../src/gfpm-repomanager.c:402 ../src/gfpm-repomanager.c:869
+#: ../src/gfpm-repomanager.c:974
 msgid "Error"
 msgstr "Erreur"
 
@@ -64,7 +68,7 @@ msgstr "Erreur"
 msgid "Failed to initialize local package database."
 msgstr "Echec de l'initialisation de la base de données de paquets locale."
 
-#: ../src/gfpm-interface.c:348 ../data/gfpm.glade.h:28
+#: ../src/gfpm-interface.c:348 ../data/gfpm.glade.h:30
 msgid "Gfpm"
 msgstr "Gfpm"
 
@@ -542,7 +546,7 @@ msgstr "Echec à l'initialisation de libpacman"
 msgid "Failed to initialize libpacman"
 msgstr "Echec de l'initialisation de libpacman"
 
-#: ../src/gfpm-optimizedb.c:115
+#: ../src/gfpm-optimizedb.c:116
 msgid ""
 "Cannot optimize database. Another instance of pacman-g2 or gfpm is already "
 "running."
@@ -550,64 +554,64 @@ msgstr ""
 "Impossible d'optimiser la base de données. Une autre instance de pacman-g2 "
 "ou de gfpm est déjà en train de fonctionner."
 
-#: ../src/gfpm-optimizedb.c:122
+#: ../src/gfpm-optimizedb.c:123
 msgid "Error creating lockfile. Failed to optimize package database"
 msgstr ""
 "Erreur lors de la création du fichier verrou. Echec de l'optimisation de la "
 "base de données."
 
 #. generate checksums for the old database
-#: ../src/gfpm-optimizedb.c:127
+#: ../src/gfpm-optimizedb.c:128
 msgid "generating checksums for the old database"
 msgstr "Création des sommes de contrôles pour l'ancienne base de données"
 
 #. copy the old database to a new directory
-#: ../src/gfpm-optimizedb.c:136
+#: ../src/gfpm-optimizedb.c:137
 #, c-format
 msgid "copying %s"
 msgstr "Copie de %s"
 
 #. generate checksums for the new database
-#: ../src/gfpm-optimizedb.c:146
+#: ../src/gfpm-optimizedb.c:147
 msgid "generating checksums for the new database"
 msgstr "Création des sommes de contrôles pour la nouvelle base de données"
 
 #. check integrity
-#: ../src/gfpm-optimizedb.c:163
+#: ../src/gfpm-optimizedb.c:164
 msgid "performing integrity check"
 msgstr "Exécution du contrôle d'intégrité"
 
-#: ../src/gfpm-optimizedb.c:167
+#: ../src/gfpm-optimizedb.c:168
 msgid "Optimization failed"
 msgstr "Optimisation échouée"
 
-#: ../src/gfpm-optimizedb.c:167
+#: ../src/gfpm-optimizedb.c:168
 msgid "Integrity check failed"
 msgstr "Contrôle d'intégrité échoué"
 
-#: ../src/gfpm-optimizedb.c:168
+#: ../src/gfpm-optimizedb.c:169
 msgid "Failed."
 msgstr "Echec."
 
 #. remove old database
-#: ../src/gfpm-optimizedb.c:180
+#: ../src/gfpm-optimizedb.c:181
 msgid "removing old database"
 msgstr "Suppression de l'ancienne base de données"
 
 #. remove temp files
-#: ../src/gfpm-optimizedb.c:188
+#: ../src/gfpm-optimizedb.c:189
 msgid "removing temporary files"
 msgstr "Suppression des fichiers temporaires"
 
-#: ../src/gfpm-optimizedb.c:195
+#: ../src/gfpm-optimizedb.c:196
 msgid "Database optimized."
 msgstr "Base de données optimisée."
 
-#: ../src/gfpm-optimizedb.c:196
+#: ../src/gfpm-optimizedb.c:197
 msgid "Database optimized"
 msgstr "Base de données optimisée"
 
-#: ../src/gfpm-optimizedb.c:196
+#: ../src/gfpm-optimizedb.c:197
 msgid "Your package database is now optimized."
 msgstr "Votre base de données de paquets est maintenant optimisée."
 
@@ -626,7 +630,7 @@ msgstr "Taille"
 msgid "Total package size: %0.2f MB"
 msgstr "Taille totale du paquet: %0.2f MB"
 
-#: ../src/gfpm-messages.c:312 ../data/gfpm.glade.h:48
+#: ../src/gfpm-messages.c:312 ../data/gfpm.glade.h:54
 msgid "Upgrade"
 msgstr "Mise à jour"
 
@@ -690,27 +694,106 @@ msgstr "L'archive %s est corrompue. Voulez-vous l'effacer?"
 msgid "Package corrupted"
 msgstr "Paquet corrompu"
 
-#: ../src/gfpm-logviewer.c:109
+#: ../src/gfpm-logviewer.c:115
 msgid "Error opening log file."
 msgstr "Erreur à l'ouverture du fichier d'historique."
 
-#: ../src/gfpm-logviewer.c:168
+#: ../src/gfpm-logviewer.c:184
 msgid "Missing datemsk file. Make sure that the file exists on your system"
 msgstr ""
 "Fichier datemsk manquant. Veuillez vérifier que le fichier existe sur votre "
 "système"
 
-#: ../src/gfpm-logviewer.c:170
+#: ../src/gfpm-logviewer.c:186
 msgid "Unknown Error"
 msgstr "Erreur Inconnue"
 
-#: ../src/gfpm-logviewer.c:170
+#: ../src/gfpm-logviewer.c:186
 msgid "Unknown Error."
 msgstr "Erreur Inconnue."
 
-#: ../src/gfpm-logviewer.c:221
+#: ../src/gfpm-logviewer.c:235
 msgid "Error opening log file"
 msgstr "Erreur à l'ouverture du fichier de l'historique"
+
+#. g_signal_connect (renderer, "toggled", G_CALLBACK(_selection_toggled), store);
+#: ../src/gfpm-repomanager.c:122
+msgid "Enabled"
+msgstr "Activé"
+
+#: ../src/gfpm-repomanager.c:130
+msgid "Repository"
+msgstr "Répertoires"
+
+#: ../src/gfpm-repomanager.c:150
+msgid "Server"
+msgstr "Serveur"
+
+#: ../src/gfpm-repomanager.c:265
+msgid "Error saving configuration"
+msgstr "Erreur pendant la sauvegarde de la configuration"
+
+#: ../src/gfpm-repomanager.c:265
+msgid ""
+"Gfpm could not open the pacman-g2.conf file for saving. Make sure no other "
+"program is using it"
+msgstr ""
+"Gfpm n'a pas put ouvrir le fichier pacman-g2.conf en écriture. Vérifiez "
+"qu'aucun autre programme ne l'utilise"
+
+#: ../src/gfpm-repomanager.c:327 ../src/gfpm-repomanager.c:402
+#: ../src/gfpm-repomanager.c:869
+msgid "The Repository URL field cannot be left blank"
+msgstr "Le champ Répertoire URL ne peut être laissé vide"
+
+#: ../src/gfpm-repomanager.c:396
+msgid "The Repository Name field cannot be left blank"
+msgstr "Le champ Nom de Répertoire ne peut être laissé vide"
+
+#: ../src/gfpm-repomanager.c:414
+msgid "Repository exists"
+msgstr "Le répertoire existe"
+
+#: ../src/gfpm-repomanager.c:414
+msgid ""
+"A repository with the specified name already exists. Please provide a "
+"different name for the repository."
+msgstr ""
+"Un répertoire avec le nom spécifié existe déjà. Veuillez fournier un nom "
+"différant pour le répertoire."
+
+#: ../src/gfpm-repomanager.c:523
+msgid "Error opening repository servers file"
+msgstr "Erreur à l'ouverture du fichier de répertoires serveurs"
+
+#: ../src/gfpm-repomanager.c:523
+msgid "repository"
+msgstr "répertoire"
+
+#: ../src/gfpm-repomanager.c:524 ../src/gfpm-repomanager.c:974
+msgid "Error opening repository file"
+msgstr "Erreur à l'ouverture du répertoire"
+
+#: ../src/gfpm-repomanager.c:658
+msgid "Warning"
+msgstr "Attention"
+
+#: ../src/gfpm-repomanager.c:854
+msgid "Edit Server"
+msgstr "Éditer un serveur"
+
+#. set the original title back
+#: ../src/gfpm-repomanager.c:910 ../data/gfpm.glade.h:35
+msgid "New Server"
+msgstr "Nouveau Serveur"
+
+#: ../src/gfpm-repomanager.c:1048
+msgid "Server already exists"
+msgstr "Le serveur existe déjà"
+
+#: ../src/gfpm-repomanager.c:1048
+msgid "The server you're trying to add already exists"
+msgstr "Le serveur que vous essayez d'ajouter existe déjà."
 
 #: ../data/gfpm.glade.h:1
 msgid "<b><span size=\"larger\">Package Search</span></b>"
@@ -733,254 +816,274 @@ msgid "<b>Install packages:</b>"
 msgstr "<b>Installation des paquets :</b>"
 
 #: ../data/gfpm.glade.h:6
+msgid "<b>Log file size:</b>"
+msgstr "<b>Taille du fichier historique:</b>"
+
+#: ../data/gfpm.glade.h:7
 msgid "<b>Packages</b>"
 msgstr "<b>Paquets</b>"
 
-#: ../data/gfpm.glade.h:7
+#: ../data/gfpm.glade.h:8
 msgid "<b>Remove packages:</b>"
 msgstr "<b>Retrait des paquets</b>"
 
-#: ../data/gfpm.glade.h:8
+#: ../data/gfpm.glade.h:9
 msgid "<b>Search in :</b>"
 msgstr "<b>Recherche dans : </b>"
 
-#: ../data/gfpm.glade.h:9
+#: ../data/gfpm.glade.h:10
 msgid "<b>Status : </b>"
 msgstr "<b>Statut : </b>"
 
-#: ../data/gfpm.glade.h:10
+#: ../data/gfpm.glade.h:11
+msgid "<span size=\"larger\"><b>Add a new Repository</b></span>"
+msgstr "<span size=\"larger\"><b>Ajouter un nouveau répertoire</b></span>"
+
+#: ../data/gfpm.glade.h:12
 msgid "<span size=\"larger\"><b>Add a new server</b></span>"
 msgstr "<span size=\"larger\"><b>Ajouter un nouveau serveur</b></span>"
 
-#: ../data/gfpm.glade.h:11
+#: ../data/gfpm.glade.h:13
 msgid "<span size=\"larger\"><b>Install Package from File</b></span>"
 msgstr ""
 "<span size=\"larger\"><b>Installation du paquet depuis un fichier</b></span>"
 
-#: ../data/gfpm.glade.h:12
+#: ../data/gfpm.glade.h:14
 msgid "<span size=\"larger\"><b>Manage Package Repositories</b></span>"
 msgstr "<span size=\"larger\"><b>Gérer les répertoires de paquets</b></span>"
 
-#: ../data/gfpm.glade.h:13
+#: ../data/gfpm.glade.h:15
 msgid "<span size=\"larger\"><b>Manage Servers</b></span>"
 msgstr "<span size=\"larger\"><b>Gérer les serveurs</b></span>"
 
-#: ../data/gfpm.glade.h:14
+#: ../data/gfpm.glade.h:16
 msgid "<span size=\"larger\"><b>Optimize package database</b></span>"
 msgstr ""
 "<span size=\"larger\"><b>Optimisation de la base de données de paquets</b></"
 "span>"
 
-#: ../data/gfpm.glade.h:15
+#: ../data/gfpm.glade.h:17
 msgid "<span size=\"larger\"><b>System Log</b></span>"
 msgstr "<span size=\"larger\"><b>Historique Système</b></span>"
 
-#: ../data/gfpm.glade.h:16
+#: ../data/gfpm.glade.h:18
 msgid "About Gfpm"
 msgstr "À propos de Gfpm"
 
-#: ../data/gfpm.glade.h:17
+#: ../data/gfpm.glade.h:19
 msgid "Apply"
 msgstr "Appliquer"
 
-#: ../data/gfpm.glade.h:18
+#: ../data/gfpm.glade.h:20
 msgid "Apply Changes"
 msgstr "Appliquer les changements"
 
-#: ../data/gfpm.glade.h:19
+#: ../data/gfpm.glade.h:21
 msgid "Changelog"
 msgstr "Journal des modifications"
 
-#: ../data/gfpm.glade.h:20
+#: ../data/gfpm.glade.h:22
 msgid "Close"
 msgstr "Fermer"
 
-#: ../data/gfpm.glade.h:21
+#: ../data/gfpm.glade.h:23
 msgid "Close this dialog when the operation is finished"
 msgstr "Fermer cette boîte de dialogue une fois l'opération terminée"
 
-#: ../data/gfpm.glade.h:22
+#: ../data/gfpm.glade.h:24
 msgid "Comment (Optional)"
 msgstr "Commentaire (Optionnel)"
 
 # la version anglaise a une faute de frappe
-#: ../data/gfpm.glade.h:23
+#: ../data/gfpm.glade.h:25
 msgid "Details"
 msgstr "Détails"
 
-#: ../data/gfpm.glade.h:24
+#: ../data/gfpm.glade.h:26
 msgid "Download only (do not install/upgrade)"
 msgstr "Télécharger uniquement (ne pas installer/mettre à jour)"
 
-#: ../data/gfpm.glade.h:25
+#: ../data/gfpm.glade.h:27
 msgid "E_xit"
 msgstr "Quitter"
 
-#: ../data/gfpm.glade.h:26
+#: ../data/gfpm.glade.h:28
 msgid "Files"
 msgstr "Fichiers"
 
-#: ../data/gfpm.glade.h:27
+#: ../data/gfpm.glade.h:29
 msgid "Force install"
 msgstr "Forcer l'installation"
 
-#: ../data/gfpm.glade.h:29
+#: ../data/gfpm.glade.h:31
 msgid "Install"
 msgstr "Installer"
 
-#: ../data/gfpm.glade.h:30
+#: ../data/gfpm.glade.h:32
+msgid "Install a package from file"
+msgstr "Installer un paquet depuis un fichier"
+
+#: ../data/gfpm.glade.h:33
 msgid "Install package from file"
 msgstr "Installer un paquet depuis un fichier"
 
-#: ../data/gfpm.glade.h:31
-msgid "New Server"
-msgstr "Nouveau Serveur"
+#: ../data/gfpm.glade.h:34
+msgid "New Repository"
+msgstr "Nouveau Répertoires"
 
-#: ../data/gfpm.glade.h:32
+#: ../data/gfpm.glade.h:36
 msgid "Optimize"
 msgstr "Optimiser"
 
-#: ../data/gfpm.glade.h:33
+#: ../data/gfpm.glade.h:37
 msgid "Options"
 msgstr "Options"
 
-#: ../data/gfpm.glade.h:34
+#: ../data/gfpm.glade.h:38
 msgid "Please wait..."
 msgstr "Veuillez patienter..."
 
-#: ../data/gfpm.glade.h:35
+#: ../data/gfpm.glade.h:39
 msgid "Quit"
 msgstr "Quitter"
 
-#: ../data/gfpm.glade.h:36
+#: ../data/gfpm.glade.h:40
 msgid "Refresh the package lists"
 msgstr "Rafraîchir la liste de paquets"
 
-#: ../data/gfpm.glade.h:37
+#: ../data/gfpm.glade.h:41
 msgid "Remove"
 msgstr "Désinstaller"
 
-#: ../data/gfpm.glade.h:38
+#: ../data/gfpm.glade.h:42
 msgid "Remove all packages from cache"
 msgstr "Retirer tous les paquets du cache"
 
-#: ../data/gfpm.glade.h:39
+#: ../data/gfpm.glade.h:43
 msgid "Remove old packages from cache"
 msgstr "Retirer les paquets obsolètes du cache"
 
-#: ../data/gfpm.glade.h:40
+#: ../data/gfpm.glade.h:44
 msgid "Repositories"
 msgstr "Répertoires"
 
-#: ../data/gfpm.glade.h:41
+#: ../data/gfpm.glade.h:45
 msgid "Repository Manager"
 msgstr "Gestionnaire de répertoire"
 
-#: ../data/gfpm.glade.h:42
+#: ../data/gfpm.glade.h:46
+msgid "Repository Name"
+msgstr "Nom du Répertoire"
+
+#: ../data/gfpm.glade.h:47
 msgid "Search"
 msgstr "Chercher"
 
-#: ../data/gfpm.glade.h:43
+#: ../data/gfpm.glade.h:48
 msgid "Server URL"
 msgstr "URL du Serveur"
 
-#: ../data/gfpm.glade.h:44
+#: ../data/gfpm.glade.h:49
+msgid "Servers Manager"
+msgstr "Gestionnaire de Serveur"
+
+#: ../data/gfpm.glade.h:50
 msgid "Skip dependency checks"
 msgstr "Ignorer les vérifications de dépendances"
 
-#: ../data/gfpm.glade.h:45
+#: ../data/gfpm.glade.h:51
 msgid "The following operations will be performed"
 msgstr "Les opérations suivantes seront effectuées"
 
-#: ../data/gfpm.glade.h:46
+#: ../data/gfpm.glade.h:52
 msgid "Total size:"
 msgstr "Taille totale :"
 
-#: ../data/gfpm.glade.h:47
+#: ../data/gfpm.glade.h:53
 msgid "Transfer Rate:  "
 msgstr "Taux de transfert :  "
 
-#: ../data/gfpm.glade.h:49
+#: ../data/gfpm.glade.h:55
 msgid "Upgrade existing"
 msgstr "Mise à jour existante"
 
-#: ../data/gfpm.glade.h:50
+#: ../data/gfpm.glade.h:56
 msgid "View Readme"
 msgstr "Voir le Readme"
 
-#: ../data/gfpm.glade.h:51
+#: ../data/gfpm.glade.h:57
 msgid "View System _Log"
 msgstr "Voir l'historique système"
 
-#: ../data/gfpm.glade.h:52
+#: ../data/gfpm.glade.h:58
 msgid "_About Gfpm"
 msgstr "_A propos de Gfpm"
 
-#: ../data/gfpm.glade.h:53
+#: ../data/gfpm.glade.h:59
 msgid "_Clear Package Cache"
 msgstr "Nettoyer le _Cache des paquets"
 
-#: ../data/gfpm.glade.h:54
+#: ../data/gfpm.glade.h:60
 msgid "_Gfpm"
 msgstr "_Gfpm"
 
-#: ../data/gfpm.glade.h:55
+#: ../data/gfpm.glade.h:61
 msgid "_Help"
 msgstr "_Aide"
 
-#: ../data/gfpm.glade.h:56
+#: ../data/gfpm.glade.h:62
 msgid "_Optimize Package Database"
 msgstr "_Optimise la base de donnée de paquet"
 
-#: ../data/gfpm.glade.h:57
+#: ../data/gfpm.glade.h:63
 msgid "_Packages"
 msgstr "_Paquets"
 
-#: ../data/gfpm.glade.h:58
+#: ../data/gfpm.glade.h:64
 msgid "_Tools"
 msgstr "Ou_Tils"
 
-#: ../data/gfpm.glade.h:59
+#: ../data/gfpm.glade.h:65
 msgid "clear package cache"
 msgstr "Nettoyer le cache des paquets"
 
-#: ../data/gfpm.glade.h:60
+#: ../data/gfpm.glade.h:66
 msgid "gtk-add"
 msgstr "gtk-add"
 
-#: ../data/gfpm.glade.h:61
+#: ../data/gfpm.glade.h:67
 msgid "gtk-apply"
 msgstr "gtk-apply"
 
-#: ../data/gfpm.glade.h:62
+#: ../data/gfpm.glade.h:68
 msgid "gtk-cancel"
 msgstr "gtk-cancel"
 
-#: ../data/gfpm.glade.h:63
+#: ../data/gfpm.glade.h:69
 msgid "gtk-close"
 msgstr "gtk-close"
 
-#: ../data/gfpm.glade.h:64
+#: ../data/gfpm.glade.h:70
 msgid "gtk-delete"
 msgstr "gtk-delete"
 
-#: ../data/gfpm.glade.h:65
+#: ../data/gfpm.glade.h:71
 msgid "gtk-edit"
 msgstr "gtk-edit"
 
-#: ../data/gfpm.glade.h:66
+#: ../data/gfpm.glade.h:72
 msgid "gtk-go-down"
 msgstr "gtk-go-down"
 
-#: ../data/gfpm.glade.h:67
+#: ../data/gfpm.glade.h:73
 msgid "gtk-go-up"
 msgstr "gtk-go-up"
 
-#: ../data/gfpm.glade.h:68
+#: ../data/gfpm.glade.h:74
 msgid "gtk-ok"
 msgstr "gtk-ok"
 
-#: ../data/gfpm.glade.h:69
+#: ../data/gfpm.glade.h:75
 msgid "optimize your package database to improve performance"
 msgstr ""
 "Optimise votre base de données de paquet pour améliorer les performances"
