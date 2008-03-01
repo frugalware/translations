@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-29 05:04+0100\n"
-"PO-Revision-Date: 2008-02-29 07:31+0100\n"
+"POT-Creation-Date: 2008-03-01 05:00+0100\n"
+"PO-Revision-Date: 2008-03-01 06:40+0100\n"
 "Last-Translator: Martin Burda <brdam@email.cz>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -29,8 +29,8 @@ msgstr "Grafický nástroj Frugalware pro správu software"
 msgid "Installed Packages"
 msgstr "Nainstalované balíčky"
 
-#: ../src/gfpm-interface.c:205 ../src/gfpm-repomanager.c:112
-#: ../src/gfpm-repomanager.c:142
+#: ../src/gfpm-interface.c:205 ../src/gfpm-repomanager.c:113
+#: ../src/gfpm-repomanager.c:143
 msgid "S"
 msgstr "S"
 
@@ -58,9 +58,9 @@ msgstr "Nejnovější verze"
 #: ../src/gfpm-interface.c:1908 ../src/gfpm-optimizedb.c:116
 #: ../src/gfpm-optimizedb.c:123 ../src/gfpm-logviewer.c:115
 #: ../src/gfpm-logviewer.c:184 ../src/gfpm-logviewer.c:235
-#: ../src/gfpm-repomanager.c:327 ../src/gfpm-repomanager.c:396
-#: ../src/gfpm-repomanager.c:402 ../src/gfpm-repomanager.c:869
-#: ../src/gfpm-repomanager.c:974
+#: ../src/gfpm-repomanager.c:331 ../src/gfpm-repomanager.c:400
+#: ../src/gfpm-repomanager.c:406 ../src/gfpm-repomanager.c:873
+#: ../src/gfpm-repomanager.c:978
 msgid "Error"
 msgstr "Chyba"
 
@@ -141,7 +141,7 @@ msgstr "Skupina:"
 
 #: ../src/gfpm-interface.c:801
 msgid "Provides:"
-msgstr "Je součástí:"
+msgstr "Je součástí balíčku:"
 
 #: ../src/gfpm-interface.c:821
 msgid "Conflicts:"
@@ -714,24 +714,23 @@ msgstr "Neznámá chyba."
 msgid "Error opening log file"
 msgstr "Chyba při otevření log souboru"
 
-#. g_signal_connect (renderer, "toggled", G_CALLBACK(_selection_toggled), store);
-#: ../src/gfpm-repomanager.c:122
+#: ../src/gfpm-repomanager.c:123
 msgid "Enabled"
 msgstr "Je dostupný"
 
-#: ../src/gfpm-repomanager.c:130
+#: ../src/gfpm-repomanager.c:131
 msgid "Repository"
 msgstr "Repozitář"
 
-#: ../src/gfpm-repomanager.c:150
+#: ../src/gfpm-repomanager.c:151
 msgid "Server"
 msgstr "Server"
 
-#: ../src/gfpm-repomanager.c:265
+#: ../src/gfpm-repomanager.c:266
 msgid "Error saving configuration"
 msgstr "Chyba při ukládání nastavení"
 
-#: ../src/gfpm-repomanager.c:265
+#: ../src/gfpm-repomanager.c:266
 msgid ""
 "Gfpm could not open the pacman-g2.conf file for saving. Make sure no other "
 "program is using it"
@@ -739,55 +738,55 @@ msgstr ""
 "Programu Gfpm se nepodařilo otevřít konfigurační soubor pacman-g2.conf. "
 "Ověřte, zda tento soubor právě nepoužívá jiný program"
 
-#: ../src/gfpm-repomanager.c:327 ../src/gfpm-repomanager.c:402
-#: ../src/gfpm-repomanager.c:869
+#: ../src/gfpm-repomanager.c:331 ../src/gfpm-repomanager.c:406
+#: ../src/gfpm-repomanager.c:873
 msgid "The Repository URL field cannot be left blank"
 msgstr "Položka s umístěním URL repozitáře nemůže zůstat prázdná"
 
-#: ../src/gfpm-repomanager.c:396
+#: ../src/gfpm-repomanager.c:400
 msgid "The Repository Name field cannot be left blank"
 msgstr "Položka s názvem repozitáře nemůže zůstat prázdná"
 
-#: ../src/gfpm-repomanager.c:414
+#: ../src/gfpm-repomanager.c:418
 msgid "Repository exists"
 msgstr "Repozitář již existuje"
 
-#: ../src/gfpm-repomanager.c:414
+#: ../src/gfpm-repomanager.c:418
 msgid ""
 "A repository with the specified name already exists. Please provide a "
 "different name for the repository."
 msgstr "Zadaný repozitář již existuje. Zvolte prosím jiný repozitář."
 
-#: ../src/gfpm-repomanager.c:523
+#: ../src/gfpm-repomanager.c:527
 msgid "Error opening repository servers file"
 msgstr "Chyba otevření souboru s repozitářem na serveru"
 
-#: ../src/gfpm-repomanager.c:523
+#: ../src/gfpm-repomanager.c:527
 msgid "repository"
 msgstr "repozitář"
 
-#: ../src/gfpm-repomanager.c:524 ../src/gfpm-repomanager.c:974
+#: ../src/gfpm-repomanager.c:528 ../src/gfpm-repomanager.c:978
 msgid "Error opening repository file"
 msgstr "Chyba otevření souboru s repozitářem"
 
-#: ../src/gfpm-repomanager.c:658
+#: ../src/gfpm-repomanager.c:662
 msgid "Warning"
 msgstr "Upozornění"
 
-#: ../src/gfpm-repomanager.c:854
+#: ../src/gfpm-repomanager.c:858
 msgid "Edit Server"
 msgstr "Editovat server"
 
 #. set the original title back
-#: ../src/gfpm-repomanager.c:910 ../data/gfpm.glade.h:35
+#: ../src/gfpm-repomanager.c:914 ../data/gfpm.glade.h:35
 msgid "New Server"
 msgstr "Nový server"
 
-#: ../src/gfpm-repomanager.c:1048
+#: ../src/gfpm-repomanager.c:1094
 msgid "Server already exists"
 msgstr "Server již existuje"
 
-#: ../src/gfpm-repomanager.c:1048
+#: ../src/gfpm-repomanager.c:1094
 msgid "The server you're trying to add already exists"
 msgstr "Server, který se pokušíte zadat již existuje"
 
