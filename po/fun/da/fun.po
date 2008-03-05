@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-26 05:00+0100\n"
-"PO-Revision-Date: 2008-02-26 10:51+0100\n"
+"POT-Creation-Date: 2008-03-05 05:05+0100\n"
+"PO-Revision-Date: 2008-03-05 17:35+0100\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -28,11 +28,11 @@ msgstr "Fejledede ved initialisering af dbus undersystem"
 msgid "Failed to initialize interface"
 msgstr "Fejledede ved initialisering af grænseflade"
 
-#: ../src/fun-ui.c:217
+#: ../src/fun-ui.c:218
 msgid "Restart Fun"
 msgstr "Genstart Fun"
 
-#: ../src/fun-ui.c:218
+#: ../src/fun-ui.c:219
 msgid ""
 "Fun needs to be restarted in order for the changes to take effect. Do you "
 "want to restart Fun now ?"
@@ -40,28 +40,28 @@ msgstr ""
 "Fun behøver at blive genstartet for at ændringerne kan tages i brug. Ønsker "
 "du at genstarte Fun nu ?"
 
-#: ../src/fun-ui.c:317
+#: ../src/fun-ui.c:318
 msgid "S"
 msgstr "S"
 
-#: ../src/fun-ui.c:325
+#: ../src/fun-ui.c:326
 msgid "Package Name"
 msgstr "Pakkenavn"
 
-#: ../src/fun-ui.c:335
+#: ../src/fun-ui.c:336
 msgid "Latest Version"
 msgstr "Seneste Version"
 
-#: ../src/fun-ui.c:343
+#: ../src/fun-ui.c:344
 msgid "Description"
 msgstr "Beskrivelse"
 
-#: ../src/fun-ui.c:400
+#: ../src/fun-ui.c:401
 msgid "Failed to connect to the fun daemon\n"
 msgstr "Fejlede at forbinde til fun dæmon\n"
 
 #. set the status
-#: ../src/fun-ui.c:404
+#: ../src/fun-ui.c:405
 msgid ""
 "The frugalware update notifier daemon is not running. Update checking is "
 "disabled"
@@ -70,7 +70,7 @@ msgstr ""
 "fra"
 
 #. display an error
-#: ../src/fun-ui.c:406
+#: ../src/fun-ui.c:407
 msgid "Update checking disabled"
 msgstr "Opdateringstjek slået fra"
 
@@ -78,20 +78,20 @@ msgstr "Opdateringstjek slået fra"
 #. fun_tooltip_set_text2 (tooltip, "", FALSE);
 #. set the status to Idle
 #. and the status back to Idle
-#: ../src/fun-ui.c:423 ../src/fun-ui.c:443 ../src/fun-ui.c:481
+#: ../src/fun-ui.c:424 ../src/fun-ui.c:444 ../src/fun-ui.c:482
 msgid "Idle"
 msgstr "Parat"
 
 #. set the status to let the user know that fun is checking for an update
-#: ../src/fun-ui.c:460
+#: ../src/fun-ui.c:461
 msgid "Checking for new updates..."
 msgstr "Tjekker for nye opdateringer..."
 
-#: ../src/fun-ui.c:474
+#: ../src/fun-ui.c:475
 msgid "Updates are available"
 msgstr "Opdateringer er tilgængelige"
 
-#: ../src/fun-ui.c:474
+#: ../src/fun-ui.c:475
 msgid ""
 "New package updates are available for your system. Click the tray icon for "
 "more details"
@@ -99,25 +99,84 @@ msgstr ""
 "Nye pakkeopdateringer er tilgængelige til dit system. Klik på bakkeikonet "
 "for flere detaljer"
 
-#: ../src/fun-ui.c:500
+#: ../src/fun-ui.c:501
 msgid "(C) 2007-2008 Frugalware Developer Team (GPL)"
 msgstr "(C) 2007-2008 Frugalware Developer Team (GPL)"
 
-#: ../src/fun-ui.c:501
+#: ../src/fun-ui.c:502 ../data/fun.glade.h:9
 msgid "Frugalware Update Notifier"
 msgstr "Frugalware Opdateringsmeddeler"
 
-#: ../src/fun-ui.c:553
+#: ../src/fun-ui.c:554
 msgid "Error getting update information"
 msgstr "Fejl ved hentning af opdateringsinformation"
 
-#: ../src/fun-ui.c:553
+#: ../src/fun-ui.c:554
 msgid "There was an error getting update information"
 msgstr "Der var en fejl ved hentning af opdateringsinformation"
 
 #: ../src/fun-tooltip.c:44
 msgid "View Updates"
 msgstr "Se Opdateringer"
+
+#: ../data/fun.glade.h:1
+msgid "<b>Launch Gfpm using :</b>"
+msgstr "<b>Start altid Gfpm :</b>"
+
+#: ../data/fun.glade.h:2
+msgid ""
+"<b>Notification timeout (seconds) :</b>\n"
+"The time in seconds for which the notification popup is displayed."
+msgstr ""
+"<b>Meddelse timeout (sekunder) :</b>\n"
+"Tiden i sekunder hvor meddelse popup skal blive vist."
+
+#: ../data/fun.glade.h:4
+msgid "<b>Update Interval (minutes) :</b>"
+msgstr "<b>Opdatering Interval (minutter) :</b>"
+
+#: ../data/fun.glade.h:5
+msgid "<span size=\"large\"><b>Configure Frugalware Update Notifier</b></span>"
+msgstr ""
+"<span size=\"large\"><b>Konfigurer Frugalware Opdaterings Meddeler</b></span>"
+
+#: ../data/fun.glade.h:6
+msgid "About"
+msgstr "Om"
+
+#: ../data/fun.glade.h:7
+msgid "Close"
+msgstr "Luk"
+
+#: ../data/fun.glade.h:8
+msgid "FUN Preferences"
+msgstr "FUN Præferencer"
+
+#: ../data/fun.glade.h:10
+msgid "Launch Gfpm"
+msgstr "Start Gfpm"
+
+#: ../data/fun.glade.h:11
+msgid "Preferences"
+msgstr "Præferencer"
+
+#: ../data/fun.glade.h:12
+msgid "_Check"
+msgstr "_Tjek"
+
+#: ../data/fun.glade.h:13
+msgid ""
+"gksu\n"
+"kdesu\n"
+"sudo"
+msgstr ""
+"gksu\n"
+"kdesu\n"
+"sudo"
+
+#: ../data/fun.glade.h:16
+msgid "gtk-close"
+msgstr "gtk-luk"
 
 #~ msgid "Click the tray icon for details"
 #~ msgstr "Klik på bakke ikonet for detaljer"
