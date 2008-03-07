@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-01 05:00+0100\n"
-"PO-Revision-Date: 2008-03-01 06:40+0100\n"
+"POT-Creation-Date: 2008-03-07 05:04+0100\n"
+"PO-Revision-Date: 2008-03-07 23:35+0100\n"
 "Last-Translator: Martin Burda <brdam@email.cz>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -24,63 +24,67 @@ msgstr "(C) 2006-2008 Tým vývojářů Frugalware (GPL)"
 msgid "A graphical package manager for Frugalware Linux"
 msgstr "Grafický nástroj Frugalware pro správu software"
 
-#: ../src/gfpm-interface.c:138 ../src/gfpm-interface.c:1256
-#: ../src/gfpm-interface.c:1603
+#: ../src/gfpm-interface.c:154 ../src/gfpm-interface.c:1293
+#: ../src/gfpm-interface.c:1643
 msgid "Installed Packages"
 msgstr "Nainstalované balíčky"
 
-#: ../src/gfpm-interface.c:205 ../src/gfpm-repomanager.c:113
-#: ../src/gfpm-repomanager.c:143
-msgid "S"
-msgstr "S"
-
-#: ../src/gfpm-interface.c:213
-msgid "Status"
-msgstr "Status"
-
-#: ../src/gfpm-interface.c:221
-msgid "Package Name"
-msgstr "Název balíčku"
-
-#: ../src/gfpm-interface.c:231
-msgid "Installed Version"
-msgstr "Nainstalovaná verze"
-
-#: ../src/gfpm-interface.c:239
-msgid "Latest Version"
-msgstr "Nejnovější verze"
-
-#: ../src/gfpm-interface.c:316 ../src/gfpm-interface.c:380
-#: ../src/gfpm-interface.c:436 ../src/gfpm-interface.c:459
-#: ../src/gfpm-interface.c:1051 ../src/gfpm-interface.c:1131
-#: ../src/gfpm-interface.c:1222 ../src/gfpm-interface.c:1541
-#: ../src/gfpm-interface.c:1554 ../src/gfpm-interface.c:1893
-#: ../src/gfpm-interface.c:1908 ../src/gfpm-optimizedb.c:116
-#: ../src/gfpm-optimizedb.c:123 ../src/gfpm-logviewer.c:115
-#: ../src/gfpm-logviewer.c:184 ../src/gfpm-logviewer.c:235
-#: ../src/gfpm-repomanager.c:331 ../src/gfpm-repomanager.c:400
-#: ../src/gfpm-repomanager.c:406 ../src/gfpm-repomanager.c:873
-#: ../src/gfpm-repomanager.c:978
+#: ../src/gfpm-interface.c:173 ../src/gfpm-interface.c:354
+#: ../src/gfpm-interface.c:417 ../src/gfpm-interface.c:473
+#: ../src/gfpm-interface.c:496 ../src/gfpm-interface.c:1088
+#: ../src/gfpm-interface.c:1168 ../src/gfpm-interface.c:1259
+#: ../src/gfpm-interface.c:1581 ../src/gfpm-interface.c:1594
+#: ../src/gfpm-interface.c:1933 ../src/gfpm-interface.c:1948
+#: ../src/gfpm-optimizedb.c:116 ../src/gfpm-optimizedb.c:123
+#: ../src/gfpm-logviewer.c:115 ../src/gfpm-logviewer.c:184
+#: ../src/gfpm-logviewer.c:235 ../src/gfpm-repomanager.c:352
+#: ../src/gfpm-repomanager.c:421 ../src/gfpm-repomanager.c:427
+#: ../src/gfpm-repomanager.c:931 ../src/gfpm-repomanager.c:1036
 msgid "Error"
 msgstr "Chyba"
 
-#: ../src/gfpm-interface.c:316
+#: ../src/gfpm-interface.c:173
+msgid "Error parsing repository information from configuration file."
+msgstr "Chyba při získávání informací o konfiguračním souboru."
+
+#: ../src/gfpm-interface.c:241 ../src/gfpm-repomanager.c:118
+#: ../src/gfpm-repomanager.c:148
+msgid "S"
+msgstr "S"
+
+#: ../src/gfpm-interface.c:249
+msgid "Status"
+msgstr "Status"
+
+#: ../src/gfpm-interface.c:257
+msgid "Package Name"
+msgstr "Název balíčku"
+
+#: ../src/gfpm-interface.c:267
+msgid "Installed Version"
+msgstr "Nainstalovaná verze"
+
+#: ../src/gfpm-interface.c:275
+msgid "Latest Version"
+msgstr "Nejnovější verze"
+
+#: ../src/gfpm-interface.c:354
 msgid "Failed to initialize local package database."
 msgstr "Nelze načíst lokální databázi balíčků."
 
-#: ../src/gfpm-interface.c:348 ../data/gfpm.glade.h:30
+#: ../src/gfpm-interface.c:385 ../data/gfpm.glade.h:30
 msgid "Gfpm"
 msgstr "Gfpm"
 
-#: ../src/gfpm-interface.c:348
+#: ../src/gfpm-interface.c:385
 msgid "No changes to apply."
 msgstr "Žádné změny k provedení."
 
-#: ../src/gfpm-interface.c:353
+#: ../src/gfpm-interface.c:390
 msgid "Cancel Operation"
 msgstr "Zrušit operaci"
 
-#: ../src/gfpm-interface.c:353
+#: ../src/gfpm-interface.c:390
 msgid ""
 "Are you sure you want to cancel this operation ? \n"
 "Note: All changes made till now will be reverted."
@@ -88,195 +92,195 @@ msgstr ""
 "Opravdu chcete zrušit tuto operaci? \n"
 "Upozornění: Všechny změny budou ztraceny."
 
-#: ../src/gfpm-interface.c:376 ../src/gfpm-interface.c:432
-#: ../src/gfpm-interface.c:1217 ../src/gfpm-interface.c:1888
+#: ../src/gfpm-interface.c:413 ../src/gfpm-interface.c:469
+#: ../src/gfpm-interface.c:1254 ../src/gfpm-interface.c:1928
 #, c-format
 msgid "Failed to init transaction (%s)\n"
 msgstr "Nelze provést transakci (%s)\n"
 
-#: ../src/gfpm-interface.c:459
+#: ../src/gfpm-interface.c:496
 msgid "Error getting transaction info"
 msgstr "Chyba při získávání informací o transakci"
 
-#: ../src/gfpm-interface.c:529
+#: ../src/gfpm-interface.c:566
 #, c-format
 msgid "Loading groups ... [%s]"
 msgstr "Načítám skupiny balíčků ... [%s]"
 
-#: ../src/gfpm-interface.c:540
+#: ../src/gfpm-interface.c:577
 msgid "Loading groups ... DONE"
 msgstr "Načítám skupiny balíčků ... HOTOVO"
 
-#: ../src/gfpm-interface.c:569
+#: ../src/gfpm-interface.c:606
 msgid "Loading package list ..."
 msgstr "Načítám seznam balíčků ..."
 
-#: ../src/gfpm-interface.c:663
+#: ../src/gfpm-interface.c:700
 msgid "Loading package list ...DONE"
 msgstr "Načítám seznam balíčků ... HOTOVO"
 
-#: ../src/gfpm-interface.c:714
+#: ../src/gfpm-interface.c:751
 msgid "Name:"
 msgstr "Název:"
 
-#: ../src/gfpm-interface.c:721
+#: ../src/gfpm-interface.c:758
 msgid "Version:"
 msgstr "Verze:"
 
-#: ../src/gfpm-interface.c:728
+#: ../src/gfpm-interface.c:765
 msgid "Description:"
 msgstr "Charakteristika:"
 
-#: ../src/gfpm-interface.c:746
+#: ../src/gfpm-interface.c:783
 msgid "License:"
 msgstr "Licence:"
 
-#: ../src/gfpm-interface.c:765
+#: ../src/gfpm-interface.c:802
 msgid "Depends:"
 msgstr "Závisí na:"
 
-#: ../src/gfpm-interface.c:782
+#: ../src/gfpm-interface.c:819
 msgid "Group(s):"
 msgstr "Skupina:"
 
-#: ../src/gfpm-interface.c:801
+#: ../src/gfpm-interface.c:838
 msgid "Provides:"
 msgstr "Je součástí balíčku:"
 
-#: ../src/gfpm-interface.c:821
+#: ../src/gfpm-interface.c:858
 msgid "Conflicts:"
 msgstr "Je v konfliktu s:"
 
-#: ../src/gfpm-interface.c:841
+#: ../src/gfpm-interface.c:878
 msgid "Replaces:"
 msgstr "Balíček nahradí:"
 
-#: ../src/gfpm-interface.c:853
+#: ../src/gfpm-interface.c:890
 msgid "URL:"
 msgstr "URL:"
 
-#: ../src/gfpm-interface.c:860
+#: ../src/gfpm-interface.c:897
 msgid "Packager:"
 msgstr "Balíček vytvořil:"
 
-#: ../src/gfpm-interface.c:867
+#: ../src/gfpm-interface.c:904
 msgid "Install Date:"
 msgstr "Datum instalace:"
 
-#: ../src/gfpm-interface.c:876
+#: ../src/gfpm-interface.c:913
 msgid "Size:"
 msgstr "Velikost:"
 
-#: ../src/gfpm-interface.c:889
+#: ../src/gfpm-interface.c:926
 msgid "Size (Compressed):"
 msgstr "Velikost (zkomprimovaná):"
 
-#: ../src/gfpm-interface.c:899
+#: ../src/gfpm-interface.c:936
 msgid "Size (Uncompressed):"
 msgstr "Velikost (nezkomprimovaná):"
 
-#: ../src/gfpm-interface.c:910
+#: ../src/gfpm-interface.c:947
 msgid "SHA1SUM:"
 msgstr "SHA1SUM hash:"
 
-#: ../src/gfpm-interface.c:929
+#: ../src/gfpm-interface.c:966
 msgid "Required By:"
 msgstr "Požadován balíčkem:"
 
-#: ../src/gfpm-interface.c:938
+#: ../src/gfpm-interface.c:975
 msgid "Reason:"
 msgstr "Proč byl instalován:"
 
-#: ../src/gfpm-interface.c:945
+#: ../src/gfpm-interface.c:982
 msgid "Explicitly Installed"
 msgstr "Instalován Vámi (explicitně)"
 
-#: ../src/gfpm-interface.c:951
+#: ../src/gfpm-interface.c:988
 msgid "Installed as a dependency for another package"
 msgstr "Instalován jako závislost jiného balíčku"
 
-#: ../src/gfpm-interface.c:977
+#: ../src/gfpm-interface.c:1014
 msgid "Files in package:\n"
 msgstr "Soubory balíčku:\n"
 
-#: ../src/gfpm-interface.c:987
+#: ../src/gfpm-interface.c:1024
 msgid "Package is not installed.\n"
 msgstr "Balíček není nainstalován.\n"
 
-#: ../src/gfpm-interface.c:1021
+#: ../src/gfpm-interface.c:1058
 msgid "No changelog available for this package"
 msgstr "Seznam změn tohoto balíčku není dostupný"
 
-#: ../src/gfpm-interface.c:1036
+#: ../src/gfpm-interface.c:1073
 msgid "Package is not installed"
 msgstr "Balíček není nainstalován"
 
-#: ../src/gfpm-interface.c:1050
+#: ../src/gfpm-interface.c:1087
 #, c-format
 msgid "Failed to prepare transaction (%s)\n"
 msgstr "Nelze připravit transakci balíčku (%s)\n"
 
-#: ../src/gfpm-interface.c:1066
+#: ../src/gfpm-interface.c:1103
 msgid "is required by"
 msgstr "je požadován balíčkem"
 
-#: ../src/gfpm-interface.c:1096
+#: ../src/gfpm-interface.c:1133
 msgid "Missing dependencies"
 msgstr "Chybějící závislosti"
 
-#: ../src/gfpm-interface.c:1096
+#: ../src/gfpm-interface.c:1133
 msgid ""
 "Following dependencies were not met. Please install these packages first."
 msgstr ""
 "Následující závislosti nejsou splněny. Nainstalujte prosím nejdříve tyto "
 "balíčky."
 
-#: ../src/gfpm-interface.c:1098
+#: ../src/gfpm-interface.c:1135
 msgid "Could not satisfy dependencies"
 msgstr "Nelze splnit závislosti"
 
-#: ../src/gfpm-interface.c:1098
+#: ../src/gfpm-interface.c:1135
 msgid ""
 "The packages you are trying to remove are required by the following packages:"
 msgstr "Balíčky které chcete odstranit, jsou požadovány následujícími balíčky:"
 
-#: ../src/gfpm-interface.c:1110
+#: ../src/gfpm-interface.c:1147
 msgid "Package conflict"
 msgstr "Konflikt balíčku"
 
-#: ../src/gfpm-interface.c:1110
+#: ../src/gfpm-interface.c:1147
 msgid "This package conflicts with the following packages"
 msgstr "Balíček koliduje s následujícími balíčky"
 
-#: ../src/gfpm-interface.c:1130 ../src/gfpm-interface.c:1907
+#: ../src/gfpm-interface.c:1167 ../src/gfpm-interface.c:1947
 #, c-format
 msgid "Failed to commit transaction (%s)\n"
 msgstr "Nelze provést transakci (%s)\n"
 
-#: ../src/gfpm-interface.c:1152
+#: ../src/gfpm-interface.c:1189
 msgid "Conflicting Files"
 msgstr "Konfliktní soubory"
 
-#: ../src/gfpm-interface.c:1153
+#: ../src/gfpm-interface.c:1190
 msgid ""
 "The file(s) provided by the following package(s) already exist on the system"
 msgstr ""
 "Soubor/Soubory obsažené v následujícím balíčku/balíčcích jsou již v systému "
 "přítomny"
 
-#: ../src/gfpm-interface.c:1161
+#: ../src/gfpm-interface.c:1198
 msgid "Corrupted package(s)"
 msgstr "Porušený balíček/balíčky"
 
-#: ../src/gfpm-interface.c:1162
+#: ../src/gfpm-interface.c:1199
 msgid "The package(s) you're trying to install are corrupted"
 msgstr "Balíček (nebo balíčky) který se pokoušíte nainstalovat, je porušen"
 
-#: ../src/gfpm-interface.c:1184
+#: ../src/gfpm-interface.c:1221
 msgid "Synchronizing package databases"
 msgstr "Synchronizace databáze software"
 
-#: ../src/gfpm-interface.c:1191
+#: ../src/gfpm-interface.c:1228
 #, c-format
 msgid ""
 "Gfpm has detected a newer version of the pacman-g2 package. It is "
@@ -286,11 +290,11 @@ msgstr ""
 "Gfpm detekoval novější verzi programu pacman-g2. Tento program je doporučeno "
 "nejdříve aktualizovat. Chcete pokračovat aktualizací pacman-g2 ?"
 
-#: ../src/gfpm-interface.c:1192
+#: ../src/gfpm-interface.c:1229
 msgid "Update pacman-g2"
 msgstr "Aktualizovat pacman-g2"
 
-#: ../src/gfpm-interface.c:1203
+#: ../src/gfpm-interface.c:1240
 #, c-format
 msgid ""
 "Gfpm has detected a newer version of the gfpm package. It is recommended "
@@ -300,11 +304,11 @@ msgstr ""
 "Byla zjištěna nová verze programu gfpm. Tento program je doporučeno nejdříve "
 "aktualizovat. Chcete pokračovat v aktualizaci gfpm ?"
 
-#: ../src/gfpm-interface.c:1204
+#: ../src/gfpm-interface.c:1241
 msgid "Update Gfpm"
 msgstr "Aktualizovat Gfpm"
 
-#: ../src/gfpm-interface.c:1221 ../src/gfpm-interface.c:1892
+#: ../src/gfpm-interface.c:1258 ../src/gfpm-interface.c:1932
 msgid ""
 "If you're sure a package manager is not already running, you can delete /tmp/"
 "pacman-g2.lck"
@@ -312,116 +316,116 @@ msgstr ""
 "Pokud jste si jist(a), že neběží jiný program pro instalaci software, můžete "
 "smazat soubor /tmp/pacman-g2.lck"
 
-#: ../src/gfpm-interface.c:1233
+#: ../src/gfpm-interface.c:1270
 msgid "No new package updates are available. The system is up to date."
 msgstr ""
 "Nebyly nalezeny žádné balíčky k aktualizaci. Systém je v aktuálním stavu."
 
-#: ../src/gfpm-interface.c:1237
+#: ../src/gfpm-interface.c:1274
 msgid "Package upgrade"
 msgstr "Aktualizace balíčku"
 
-#: ../src/gfpm-interface.c:1237
+#: ../src/gfpm-interface.c:1274
 msgid "Following packages will be upgraded. Do you want to continue ?"
 msgstr "Následující balíčky mohou být aktualizovány. Chcete pokračovat?"
 
-#: ../src/gfpm-interface.c:1419
+#: ../src/gfpm-interface.c:1459
 msgid "Mark for upgrade"
 msgstr "Označit k aktualizaci"
 
-#: ../src/gfpm-interface.c:1447
+#: ../src/gfpm-interface.c:1487
 msgid "Mark for installation"
 msgstr "Označit k instalaci"
 
-#: ../src/gfpm-interface.c:1456
+#: ../src/gfpm-interface.c:1496
 msgid "Reinstall package"
 msgstr "Znovu nainstalovat balíček"
 
-#: ../src/gfpm-interface.c:1463
+#: ../src/gfpm-interface.c:1503
 msgid "Mark for removal"
 msgstr "Označit k odstranění"
 
-#: ../src/gfpm-interface.c:1541
+#: ../src/gfpm-interface.c:1581
 msgid "There was an error while populating packages"
 msgstr "Nastala chyba při získávání balíčků"
 
 # chyba v pacakges
-#: ../src/gfpm-interface.c:1554
+#: ../src/gfpm-interface.c:1594
 msgid "There are no installed packages in this group"
 msgstr "Z této skupiny nejsou naintalovány žádné balíčky"
 
-#: ../src/gfpm-interface.c:1557
+#: ../src/gfpm-interface.c:1597
 msgid "Remove Group"
 msgstr "Odstranit skupinu"
 
-#: ../src/gfpm-interface.c:1557
+#: ../src/gfpm-interface.c:1597
 msgid "Are you sure you want to remove the entire group ?"
 msgstr "Opravdu chcete odstranit celou skupinu balíčků?"
 
-#: ../src/gfpm-interface.c:1634
+#: ../src/gfpm-interface.c:1674
 msgid "Search Complete"
 msgstr "Vyhledávání dokončeno"
 
-#: ../src/gfpm-interface.c:1635
+#: ../src/gfpm-interface.c:1675
 msgid "Package not found"
 msgstr "Balíček nebyl nalezen"
 
-#: ../src/gfpm-interface.c:1635
+#: ../src/gfpm-interface.c:1675
 msgid "No such package found"
 msgstr "Takový balíček se nepodařilo najít"
 
-#: ../src/gfpm-interface.c:1642
+#: ../src/gfpm-interface.c:1682
 msgid "Searching for packages ..."
 msgstr "Vyhledávám balíčky ..."
 
-#: ../src/gfpm-interface.c:1751
+#: ../src/gfpm-interface.c:1791
 msgid "Searching for packages ...DONE"
 msgstr "Vyhledávám balíčky ... Databáze je načtena"
 
-#: ../src/gfpm-interface.c:1823 ../src/gfpm-interface.c:1841
+#: ../src/gfpm-interface.c:1863 ../src/gfpm-interface.c:1881
 msgid "Clear package cache"
 msgstr "Vyčistit vyrovnávací paměť (cache)"
 
-#: ../src/gfpm-interface.c:1823
+#: ../src/gfpm-interface.c:1863
 msgid "Are you sure you want to remove old packages from cache ?"
 msgstr "Opravdu chcete odstranit starou databázi balíčků z vyrovnávací paměti?"
 
-#: ../src/gfpm-interface.c:1829 ../src/gfpm-interface.c:1847
+#: ../src/gfpm-interface.c:1869 ../src/gfpm-interface.c:1887
 msgid "Finished clearing the cache"
 msgstr "Čištění vyrovnávací paměti bylo ukončeno"
 
-#: ../src/gfpm-interface.c:1832 ../src/gfpm-interface.c:1850
+#: ../src/gfpm-interface.c:1872 ../src/gfpm-interface.c:1890
 #, c-format
 msgid "Failed to clean the cache (%s)"
 msgstr "Nelze vyčistit vyrovnávací paměť (%s)"
 
-#: ../src/gfpm-interface.c:1833 ../src/gfpm-interface.c:1851
+#: ../src/gfpm-interface.c:1873 ../src/gfpm-interface.c:1891
 msgid "Error clearing cache"
 msgstr "Chyba při čištění vyrovnávací paměti"
 
-#: ../src/gfpm-interface.c:1841
+#: ../src/gfpm-interface.c:1881
 msgid "Are you sure you want to remove all packages from cache ?"
 msgstr "Opravdu chcete odstranit všechny balíčky z vyrovnávací paměti?"
 
-#: ../src/gfpm-interface.c:1873
+#: ../src/gfpm-interface.c:1913
 msgid "No packages selected"
 msgstr "Nebyly vybrány žádné balíčky"
 
-#: ../src/gfpm-interface.c:1873
+#: ../src/gfpm-interface.c:1913
 msgid "No package selected for install. Please select a package to install."
 msgstr ""
 "Nejsou vybrány žádné balíčky k instalaci. Balíčky k instalaci vyberete "
 "jejich označením."
 
-#: ../src/gfpm-interface.c:1876
+#: ../src/gfpm-interface.c:1916
 msgid "Install package"
 msgstr "Instalovat balíček"
 
-#: ../src/gfpm-interface.c:1876
+#: ../src/gfpm-interface.c:1916
 msgid "Are you sure you want to install this package ?"
 msgstr "Opravdu chcete nainstalovat tento balíček?"
 
-#: ../src/gfpm-interface.c:1914
+#: ../src/gfpm-interface.c:1954
 msgid "Package successfully installed"
 msgstr "Balíček byl úspěšně nainstalován"
 
@@ -630,7 +634,7 @@ msgstr "Velikost"
 msgid "Total package size: %0.2f MB"
 msgstr "Celková velikost k instalaci: %0.2f MB"
 
-#: ../src/gfpm-messages.c:312 ../data/gfpm.glade.h:54
+#: ../src/gfpm-messages.c:312
 msgid "Upgrade"
 msgstr "Aktualizovat"
 
@@ -714,23 +718,23 @@ msgstr "Neznámá chyba."
 msgid "Error opening log file"
 msgstr "Chyba při otevření log souboru"
 
-#: ../src/gfpm-repomanager.c:123
+#: ../src/gfpm-repomanager.c:128
 msgid "Enabled"
 msgstr "Je dostupný"
 
-#: ../src/gfpm-repomanager.c:131
+#: ../src/gfpm-repomanager.c:136
 msgid "Repository"
 msgstr "Repozitář"
 
-#: ../src/gfpm-repomanager.c:151
+#: ../src/gfpm-repomanager.c:156
 msgid "Server"
 msgstr "Server"
 
-#: ../src/gfpm-repomanager.c:266
+#: ../src/gfpm-repomanager.c:273
 msgid "Error saving configuration"
 msgstr "Chyba při ukládání nastavení"
 
-#: ../src/gfpm-repomanager.c:266
+#: ../src/gfpm-repomanager.c:273
 msgid ""
 "Gfpm could not open the pacman-g2.conf file for saving. Make sure no other "
 "program is using it"
@@ -738,57 +742,65 @@ msgstr ""
 "Programu Gfpm se nepodařilo otevřít konfigurační soubor pacman-g2.conf. "
 "Ověřte, zda tento soubor právě nepoužívá jiný program"
 
-#: ../src/gfpm-repomanager.c:331 ../src/gfpm-repomanager.c:406
-#: ../src/gfpm-repomanager.c:873
+#: ../src/gfpm-repomanager.c:352 ../src/gfpm-repomanager.c:427
+#: ../src/gfpm-repomanager.c:931
 msgid "The Repository URL field cannot be left blank"
 msgstr "Položka s umístěním URL repozitáře nemůže zůstat prázdná"
 
-#: ../src/gfpm-repomanager.c:400
+#: ../src/gfpm-repomanager.c:421
 msgid "The Repository Name field cannot be left blank"
 msgstr "Položka s názvem repozitáře nemůže zůstat prázdná"
 
-#: ../src/gfpm-repomanager.c:418
+#: ../src/gfpm-repomanager.c:439
 msgid "Repository exists"
 msgstr "Repozitář již existuje"
 
-#: ../src/gfpm-repomanager.c:418
+#: ../src/gfpm-repomanager.c:439
 msgid ""
 "A repository with the specified name already exists. Please provide a "
 "different name for the repository."
 msgstr "Zadaný repozitář již existuje. Zvolte prosím jiný repozitář."
 
-#: ../src/gfpm-repomanager.c:527
-msgid "Error opening repository servers file"
-msgstr "Chyba otevření souboru s repozitářem na serveru"
+#: ../src/gfpm-repomanager.c:571
+msgid "Error opening"
+msgstr "Chyba při otevření"
 
-#: ../src/gfpm-repomanager.c:527
-msgid "repository"
-msgstr "repozitář"
+#: ../src/gfpm-repomanager.c:571
+msgid "This repository will be disabled"
+msgstr "Tento repozitář je zakázán"
 
-#: ../src/gfpm-repomanager.c:528 ../src/gfpm-repomanager.c:978
+#: ../src/gfpm-repomanager.c:572 ../src/gfpm-repomanager.c:1036
 msgid "Error opening repository file"
 msgstr "Chyba otevření souboru s repozitářem"
 
-#: ../src/gfpm-repomanager.c:662
+#: ../src/gfpm-repomanager.c:720
 msgid "Warning"
 msgstr "Upozornění"
 
-#: ../src/gfpm-repomanager.c:858
+#: ../src/gfpm-repomanager.c:916
 msgid "Edit Server"
 msgstr "Editovat server"
 
 #. set the original title back
-#: ../src/gfpm-repomanager.c:914 ../data/gfpm.glade.h:35
+#: ../src/gfpm-repomanager.c:972 ../data/gfpm.glade.h:36
 msgid "New Server"
 msgstr "Nový server"
 
-#: ../src/gfpm-repomanager.c:1094
+#: ../src/gfpm-repomanager.c:1142
+msgid "Confirmation"
+msgstr "Potvrdit"
+
+#: ../src/gfpm-repomanager.c:1142
+msgid "Are you sure you want to delete this repository ?"
+msgstr "Opravdu chcete odstranit tento repozitář?"
+
+#: ../src/gfpm-repomanager.c:1177
 msgid "Server already exists"
 msgstr "Server již existuje"
 
-#: ../src/gfpm-repomanager.c:1094
+#: ../src/gfpm-repomanager.c:1177
 msgid "The server you're trying to add already exists"
-msgstr "Server, který se pokušíte zadat již existuje"
+msgstr "Server, který se pokoušíte zadat již existuje"
 
 #: ../data/gfpm.glade.h:1
 msgid "<b><span size=\"larger\">Package Search</span></b>"
@@ -921,32 +933,32 @@ msgid "Install package from file"
 msgstr "Instalovat balíček ze souboru"
 
 #: ../data/gfpm.glade.h:34
+msgid "Install this Package"
+msgstr "Nainstalovat tento balíček"
+
+#: ../data/gfpm.glade.h:35
 msgid "New Repository"
 msgstr "Nový repozitář"
 
-#: ../data/gfpm.glade.h:36
+#: ../data/gfpm.glade.h:37
 msgid "Optimize"
 msgstr "Optimalizovat"
 
-#: ../data/gfpm.glade.h:37
+#: ../data/gfpm.glade.h:38
 msgid "Options"
 msgstr "Volby"
 
-#: ../data/gfpm.glade.h:38
+#: ../data/gfpm.glade.h:39
 msgid "Please wait..."
 msgstr "Prosím čekejte..."
 
-#: ../data/gfpm.glade.h:39
+#: ../data/gfpm.glade.h:40
 msgid "Quit"
 msgstr "Ukončit"
 
-#: ../data/gfpm.glade.h:40
+#: ../data/gfpm.glade.h:41
 msgid "Refresh the package lists"
 msgstr "Obnovit seznam balíčků"
-
-#: ../data/gfpm.glade.h:41
-msgid "Remove"
-msgstr "Odstranit"
 
 #: ../data/gfpm.glade.h:42
 msgid "Remove all packages from cache"
@@ -957,42 +969,46 @@ msgid "Remove old packages from cache"
 msgstr "Odstranit staré balíčky z cache"
 
 #: ../data/gfpm.glade.h:44
+msgid "Remove this Package"
+msgstr "Odstranit tento balíček"
+
+#: ../data/gfpm.glade.h:45
 msgid "Repositories"
 msgstr "Repozitáře"
 
-#: ../data/gfpm.glade.h:45
+#: ../data/gfpm.glade.h:46
 msgid "Repository Manager"
 msgstr "Správce repozitářů"
 
-#: ../data/gfpm.glade.h:46
+#: ../data/gfpm.glade.h:47
 msgid "Repository Name"
 msgstr "Název repozitáře"
 
-#: ../data/gfpm.glade.h:47
+#: ../data/gfpm.glade.h:48
 msgid "Search"
 msgstr "Vyhledávat"
 
-#: ../data/gfpm.glade.h:48
+#: ../data/gfpm.glade.h:49
 msgid "Server URL"
 msgstr "URL serveru"
 
-#: ../data/gfpm.glade.h:49
+#: ../data/gfpm.glade.h:50
 msgid "Servers Manager"
 msgstr "Správce serverů"
 
-#: ../data/gfpm.glade.h:50
+#: ../data/gfpm.glade.h:51
 msgid "Skip dependency checks"
 msgstr "Přeskočit ověřování závislostí"
 
-#: ../data/gfpm.glade.h:51
+#: ../data/gfpm.glade.h:52
 msgid "The following operations will be performed"
 msgstr "Budou provedeny následující operace"
 
-#: ../data/gfpm.glade.h:52
+#: ../data/gfpm.glade.h:53
 msgid "Total size:"
 msgstr "Celková velikost:"
 
-#: ../data/gfpm.glade.h:53
+#: ../data/gfpm.glade.h:54
 msgid "Transfer Rate:  "
 msgstr "Přenosová rychlost:"
 
@@ -1001,83 +1017,96 @@ msgid "Upgrade existing"
 msgstr "Aktualizovat stávající"
 
 #: ../data/gfpm.glade.h:56
+msgid "Upgrade this Package"
+msgstr "Aktualizovat tento balíček"
+
+#: ../data/gfpm.glade.h:57
 msgid "View Readme"
 msgstr "Zobrazit Readme"
 
-#: ../data/gfpm.glade.h:57
+#: ../data/gfpm.glade.h:58
 msgid "View System _Log"
 msgstr "Zobrazit systémový log"
 
-#: ../data/gfpm.glade.h:58
+#: ../data/gfpm.glade.h:59
 msgid "_About Gfpm"
 msgstr "_O programu Gfpm"
 
-#: ../data/gfpm.glade.h:59
+#: ../data/gfpm.glade.h:60
 msgid "_Clear Package Cache"
 msgstr "_Vyčistit vyrovnávací paměť (cache)"
 
-#: ../data/gfpm.glade.h:60
+#: ../data/gfpm.glade.h:61
 msgid "_Gfpm"
 msgstr "_Gfpm"
 
-#: ../data/gfpm.glade.h:61
+#: ../data/gfpm.glade.h:62
 msgid "_Help"
 msgstr "_Nápověda"
 
-#: ../data/gfpm.glade.h:62
+#: ../data/gfpm.glade.h:63
 msgid "_Optimize Package Database"
 msgstr "_Optimalizovat databázi balíčků"
 
-#: ../data/gfpm.glade.h:63
+#: ../data/gfpm.glade.h:64
 msgid "_Packages"
 msgstr "_Balíčky"
 
-#: ../data/gfpm.glade.h:64
+#: ../data/gfpm.glade.h:65
 msgid "_Tools"
 msgstr "_Nástroje"
 
 # Funguje jako nápověda k menu, proto "vyčistí"
-#: ../data/gfpm.glade.h:65
+#: ../data/gfpm.glade.h:66
 msgid "clear package cache"
 msgstr "vyčistí vyrovnávací paměť"
 
-#: ../data/gfpm.glade.h:66
+#: ../data/gfpm.glade.h:67
 msgid "gtk-add"
 msgstr "gtk-add"
 
-#: ../data/gfpm.glade.h:67
+#: ../data/gfpm.glade.h:68
 msgid "gtk-apply"
 msgstr "gtk-apply"
 
-#: ../data/gfpm.glade.h:68
+#: ../data/gfpm.glade.h:69
 msgid "gtk-cancel"
 msgstr "gtk-cancel"
 
-#: ../data/gfpm.glade.h:69
+#: ../data/gfpm.glade.h:70
 msgid "gtk-close"
 msgstr "gtk-close"
 
-#: ../data/gfpm.glade.h:70
+#: ../data/gfpm.glade.h:71
 msgid "gtk-delete"
 msgstr "gtk-delete"
 
-#: ../data/gfpm.glade.h:71
+#: ../data/gfpm.glade.h:72
 msgid "gtk-edit"
 msgstr "gtk-edit"
 
-#: ../data/gfpm.glade.h:72
+#: ../data/gfpm.glade.h:73
 msgid "gtk-go-down"
 msgstr "gtk-go-down"
 
-#: ../data/gfpm.glade.h:73
+#: ../data/gfpm.glade.h:74
 msgid "gtk-go-up"
 msgstr "gtk-go-up"
 
-#: ../data/gfpm.glade.h:74
+#: ../data/gfpm.glade.h:75
 msgid "gtk-ok"
 msgstr "gtk-ok"
 
 # Funguje jako nápověda k menu proto "Optimalizuje"
-#: ../data/gfpm.glade.h:75
+#: ../data/gfpm.glade.h:76
 msgid "optimize your package database to improve performance"
 msgstr "optimalizuje Vaši softwarovou databázi pro lepší výkon"
+
+#~ msgid "Error opening repository servers file"
+#~ msgstr "Chyba otevření souboru s repozitářem na serveru"
+
+#~ msgid "repository"
+#~ msgstr "repozitář"
+
+#~ msgid "Remove"
+#~ msgstr "Odstranit"
