@@ -2,20 +2,19 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-29 05:02+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2008-03-08 05:07+0100\n"
+"PO-Revision-Date: 2008-03-08 14:32+0100\n"
+"Last-Translator: Martin Burda <brdam@email.cz>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 1.0.1\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Pootle 1.0\n"
 
 #. FIXME: use docs/about.txt as a source instead of this one
 #: ../about.php:36
@@ -23,10 +22,12 @@ msgid ""
 "Frugalware is a general purpose linux distribution, designed for "
 "intermediate users (who are not afraid of text mode)."
 msgstr ""
+"Frugalware je plnohodnotná distribuce Linuxu, která je určena především pro "
+"středně pokročilé uživatele, kteří se nebojí příkazové řádky."
 
 #: ../about.php:38
 msgid "What branches does Frugalware have?"
-msgstr ""
+msgstr "Jaké větve software má Frugalware?"
 
 #: ../about.php:39
 msgid ""
@@ -34,10 +35,12 @@ msgid ""
 "branch is updated daily, and we update our <i>stable</i> branch around every "
 "6 months."
 msgstr ""
+"K dispozici jsou <i>current</i> a <i>stable</i> větve. Větev <i>current</i> "
+"je aktualizována každý den, a <i>stable</i> přibližně každých šest měsíců."
 
 #: ../about.php:40
 msgid "What is &quot;The Frugalware Philosophy&quot; about?"
-msgstr ""
+msgstr "V čem spočívá &quot;filozofie Frugalware &quot;?"
 
 #: ../about.php:41
 msgid ""
@@ -47,10 +50,15 @@ msgid ""
 "possible, because in our opinion most software is the best as is, and "
 "doesn't need patching."
 msgstr ""
+"Ve stručnosti to je jednoduchost, multimedia a design. Chceme umožnit "
+"uživateli co největší jednoduchost při práci se systémem, ale nezapomínáme "
+"ani na uživatelský komfort. Naším cílem je poskytovat nejnovější a stabilní "
+"software, pokud možno v originálních verzích. Podle našeho názoru je "
+"software nejlepší v originále a nepotřebuje ve většině případů záplatování."
 
 #: ../about.php:42
 msgid "What is the license of Frugalware?"
-msgstr ""
+msgstr "Pod jakou licencí je šířen Frugalware?"
 
 #: ../about.php:43
 msgid ""
@@ -64,10 +72,21 @@ msgid ""
 "code is still under the BSD license. For more information, refer to the "
 "COPYRIGHT file in the root directory of the FST (Frugalware Source Tree)."
 msgstr ""
+"Na tuto otázku nelze jednoznačně odpovědět. Většina software obsažená ve "
+"Frugalware je šířena pod licencí kompatibilní s GPL nebo BSD. Pro více "
+"informací o jednotlivých balíčcích si prohlédněte soubor LICENCE a COPYRIGHT "
+"každého jednotlivého balíčku. Části systému jako jsou skripty FrugalBuild "
+"nebo instalační program byly vytvořeny naším týmem a jsou šířeny pod licencí "
+"GPL. A aby to bylo ještě složitější, jsou některé části instalačního "
+"programu a inicializačních skriptů napsány Patrickem Volkerdingem. Naše část "
+"programu je pod licencí GPL, ale část napsaná Patrickem Volkerdingem je "
+"stále pod licencí BSD. Pro více informací o autorských právech si "
+"prohlédněte soubor COPYRIGHT v kořenovém adresáři FST (Frugalware Source "
+"Tree)."
 
 #: ../about.php:44
 msgid "What package manager does Frugalware use?"
-msgstr ""
+msgstr "Jaký program používá Frugalware k instalaci software?"
 
 #: ../about.php:45
 msgid ""
@@ -77,10 +96,17 @@ msgid ""
 "extension is .fpm to differentiate them from regular tarballs. Unlike "
 "Slackware's scripts, pacman is written in C, so it's much faster."
 msgstr ""
+"Frugalware nemá svůj vlastní nástroj pro správu software. Při výběru správce "
+"balíčků jsme čerpali hlavně ze skvělé práce Judda Vineta a jeho správce "
+"balíčků <a href=\"http://www.archlinux.org/pacman\">pacman</a>. Náš upravený "
+"pacman-g2 je založen na balíčcích s příponou tar.bz2 a je podobný správci ."
+"tgz ze Slackware. Na rozdíl od skriptů ze Slackware je pacman-g2 napsán v "
+"jazyce C, a je proto o poznání rychlejší. Pro lepší rozlišení od klasických "
+"formátů balíčků používá Frugalware příponu .fpm."
 
 #: ../about.php:46
 msgid "How does Frugalware manage updating obsolete packages?"
-msgstr ""
+msgstr "Lze aktualizovat ve Frugalware zastaralé balíčky?"
 
 #: ../about.php:47
 msgid ""
@@ -92,10 +118,17 @@ msgid ""
 "<tt>pacman&nbsp;-S&nbsp;foo</tt>. For more information, refer to the pacman "
 "man page."
 msgstr ""
+"K aktualizaci software není potřeba žádný samostatný nástroj, pacman-g2 "
+"dobře zvládne i tuto operaci. Pro aktualizaci databáze balíčků zadejte "
+"příkaz <tt>pacman&nbsp;-Sy</tt>, k instalaci a synchronizaci databáze "
+"zadejte <tt>pacman&nbsp;-Su</tt>. Pro přímou instalaci balíčku i z jeho "
+"závislostmi ze serveru ftp zadejte příkaz <tt>pacman&nbsp;-S&nbsp;foo</tt>. "
+"Pro více informací si samozřejmě můžete prohlédnout manuálovou stránku "
+"programu pacman."
 
 #: ../about.php:48
 msgid "Is there any community support available for Frugalware?"
-msgstr ""
+msgstr "Existuje nějaká komunita Frugalware?"
 
 #: ../about.php:49
 msgid ""
@@ -105,18 +138,24 @@ msgid ""
 "about our mailing lists, please refer to the <a href=\"mailman/listinfo"
 "\">list section</a> of our web site."
 msgstr ""
+"V současné době máme tři mailové konference, IRC kanál a fórum, kde si mohou "
+"uživatelé vyměňovat zkušenosti. IRC kanál se má název #frugalware a je "
+"umístěn na serveru Freenode (irc.freenode.net). Pro více informací si "
+"prohlédněte sekci Komunita naší webové stránky."
 
 #: ../about.php:50
 msgid "Is there any commercial support available for Frugalware?"
-msgstr ""
+msgstr "Je dostupná komerční podpora pro Frugalware?"
 
 #: ../about.php:51
 msgid "No, there isn't for now, and <i>currently</i> it isn't planned, either."
 msgstr ""
+"V současné době není dostupná komerční podpora a v <i>nejbližší</i> době se "
+"ani neplánuje."
 
 #: ../about.php:52
 msgid "For whom is Frugalware recommended to use?"
-msgstr ""
+msgstr "Pro jaké uživatele je Frugalware nejvhodnější?"
 
 #: ../about.php:53
 msgid ""
@@ -124,10 +163,13 @@ msgid ""
 "a magic, of course, but you should know what a partition, an MBR (Master "
 "Boot Record), etc. is."
 msgstr ""
+"Frugalware je navržen pro středně pokročilé uživatele. Instalační program "
+"není žádný zázrak a uživatel by měl mít určité povědomí o rozdělování disku, "
+"o tom co je MBR atd."
 
 #: ../about.php:54
 msgid "How to become a developer?"
-msgstr ""
+msgstr "Můžu se stát vývojářem Frugalware?"
 
 #: ../about.php:55
 msgid ""
@@ -140,10 +182,18 @@ msgid ""
 "\">devel</a> mailing list. From this point everything will come naturally to "
 "you :)"
 msgstr ""
+"Pokud se tak rozhodnete, jste vítáni! Pokud máte nainstalován Frugalware z "
+"disku CD, budete potřebovat utilitu repoman, která je součástí balíčku "
+"pacman-tools. Zdrojové balíčky jsou i součástí disku DVD. Pro prohlížení "
+"skriptů FrugalBuild se vám bude ve většině případů nejlépe hodit nástroj <a "
+"href=\"/packages/44\">cabextract</a>. Můžete se pokusit vylepšit stávající "
+"skripty nebo napsat svoje vlastní. Své návrhy pošlete do mailové konference "
+"<a href=\"mailman/listinfo/frugalware-devel\">. Pokud se nám budou vaše "
+"záplaty líbit, můžeme se dohodnout na spolupráci :-)"
 
 #: ../about.php:56
 msgid "What do developers do?"
-msgstr ""
+msgstr "Co dělají vývojáři ve volném čase?"
 
 #: ../about.php:57
 msgid ""
@@ -156,26 +206,37 @@ msgid ""
 "hack, you may help in translating Frugalware to your or other language. And, "
 "of course, we happily accept <a href=\"donations.php\">donations</a> :)"
 msgstr ""
+"Většinou si hrají se zdrojovými kódy. Připravují nové verze balíčků, "
+"aktualizují skripty FrugalBuild pro lepší funkčnost v nových verzích. Anebo "
+"připravují skripty pro nové, ještě nezačleněné balíčky. Prostě připravují "
+"stále něco nového a věnují se i komunitě okolo Frugalware. Pokud bude chtít "
+"někdo pomoci a není vývojář, může třeba začít s překlady do svého rodného "
+"jazyka. Samozřejmě budeme také rádi za jakýkoli <a href=\"donations.php"
+"\">příspěvek</a>."
 
 #: ../about.php:58
 msgid "Who develops Frugalware?"
-msgstr ""
+msgstr "Kdo se podílí na vývoji Frugalware?"
 
 #: ../about.php:59
 msgid "A young group, but your age is not conditional to become a developer"
 msgstr ""
+"Jsme většinou mladí lidé, ale pro zapojení nových vývojářů věk nehraje "
+"žádnou roli."
 
 #: ../about.php:60
 msgid "Is Frugalware specialized in a certain purpose?"
-msgstr ""
+msgstr "Je Frugalware na něco specializován?"
 
 #: ../about.php:61
 msgid "No, it's a general purpose distribution, for desktops and servers."
 msgstr ""
+"Není. Frugalware lze použít stejně dobře jak na pracovní stanice, tak i na "
+"servery."
 
 #: ../about.php:62
 msgid "Do you plan to release a live cd?"
-msgstr ""
+msgstr "Připravuje se i live CD?"
 
 #: ../about.php:63
 msgid ""
@@ -183,10 +244,13 @@ msgid ""
 "i686, but an x86_64 version is also under development. You can find it <a "
 "href=\"http://fwlive.frugalware.hu\">here</a>."
 msgstr ""
+"Live CD je již k dispozici, nese název FwLive. Zatím jej lze provozovat "
+"pouze na architektuře i686. Verze pro architekturu x86_64 se připravuje. "
+"Informace můžete najít <a href=\"http://fwlive.frugalware.hu\">zde</a>."
 
 #: ../about.php:64
 msgid "Does Frugalware support languages other than English?"
-msgstr ""
+msgstr "Podporuje Frugalware kromě angličtiny i jiné jazyky?"
 
 #: ../about.php:65
 msgid ""
@@ -194,18 +258,21 @@ msgid ""
 "scripts or the setup is not available in your language, then it simply means "
 "it haven't yet translated."
 msgstr ""
+"Ano, Frugalware podporuje jazyky nainstalovaných balíčků. Pokud není "
+"instalační program nebo inicializační skripty ve vašem rodném jazyce, "
+"znamená to, že zkrátka ještě nebyl přeložen."
 
 #: ../about.php:66
 msgid "What about Asian languages?"
-msgstr ""
+msgstr "Podporuje Frugalware asijské jazyky?"
 
 #: ../about.php:67
 msgid "Frugalware does not support Asian languages currently."
-msgstr ""
+msgstr "V současnosti Frugalware asijské jazyky nepodporuje."
 
 #: ../about.php:68
 msgid "What architectures does Frugalware support?"
-msgstr ""
+msgstr "Na jaké architektury procesoru lze Frugalware nainstalovat?"
 
 #: ../about.php:69
 msgid ""
@@ -217,34 +284,43 @@ msgid ""
 "patches or any effort to create non-x86 optimized packages. We are also "
 "working on a PowerPC port"
 msgstr ""
+"V současnosti lze Frugalware nainstalovat na architektury x86 a x86_64. Co "
+"se týče architektury x86, tak jsou podporovány instrukční sady procesoru "
+"Pentium Pro a vyšší. V případě architektury x86_64 jsou podporovány "
+"procesory řady k8 (amd64). Pokud bude zájem ze strany uživatelů, můžeme "
+"vytvořit verzi pro architekturu i386. V současnosti k tomu ale zatím nemáme "
+"materiální ani lidské zdroje. Co se týče jiných architektur než jsou x86, "
+"nemáme zatím potřebný hardware pro testování, ale rádi přijmeme záplaty nebo "
+"jiná vylepšení balíčků pro tyto architektury. V přípravě je i verze pro "
+"architekturu PowerPC."
 
 #: ../about.php:76
 msgid "Short"
-msgstr ""
+msgstr "Krátké shrnutí"
 
 #: ../about.php:80
 msgid "Question"
-msgstr ""
+msgstr "Otázka"
 
 #: ../about.php:81
 msgid "Answer"
-msgstr ""
+msgstr "Odpověď"
 
 #: ../about.php:83
 msgid "Long"
-msgstr ""
+msgstr "Často kladené dotazy"
 
 #: ../authors.php:57
 msgid "at"
-msgstr ""
+msgstr "@"
 
 #: ../authors.php:58
 msgid "dot"
-msgstr ""
+msgstr "."
 
 #: ../authors.php:68 ../config.inc.php:81
 msgid "Authors"
-msgstr ""
+msgstr "Autoři"
 
 #: ../authors.php:69
 msgid ""
@@ -252,172 +328,175 @@ msgid ""
 "way. However, we are aware that the contributor list is incomplete. Please "
 "contact us if your name is missing from here!<br />"
 msgstr ""
+"V tomto seznamu jsou uvedeni lidé, kteří nějakým způsobem přispěli k vývoji "
+"Frugalware linuxu. Seznam nemusí obsahovat všechna jména a v případě, že "
+"vaše jméno na seznamu chybí, prosím kontaktujte nás!<br />"
 
 #: ../authors.php:70
 #, php-format
 msgid "Available filters: <a href=\"%s\">No filter</a> &middot; "
-msgstr ""
+msgstr "Dostupné filtry: <a href=\"%s\">Bez filtru</a> &middot;"
 
 #: ../authors.php:71
 #, php-format
 msgid "<a href=\"%s\">Active developers</a> &middot; "
-msgstr ""
+msgstr "<a href=\"%s\">Aktivní vývojáři</a> &middot; "
 
 #: ../authors.php:72
 #, php-format
 msgid "<a href=\"%s\">Former developers</a> &middot; "
-msgstr ""
+msgstr "<a href=\"%s\">Bývalí vývojáři</a> &middot; "
 
 #: ../authors.php:73
 #, php-format
 msgid "<a href=\"%s\">Contributors</a><br />"
-msgstr ""
+msgstr "<a href=\"%s\">Přispěvatelé</a><br />"
 
 #: ../authors.php:74
 msgid "Frugalware Linux Author list"
-msgstr ""
+msgstr "Seznam autorů Frugalware linuxu"
 
 #. $menucontent = '<a class="menu" href="' . $fwng_root . '">' . gettext('News') . "</a> &middot; \n";
 #: ../config.inc.php:44 ../rss.php:184
 msgid "News"
-msgstr ""
+msgstr "Aktuality"
 
 #: ../config.inc.php:46
 msgid "Announcements"
-msgstr ""
+msgstr "Oznámení"
 
 #: ../config.inc.php:47 ../rss.php:191
 msgid "Security announcements"
-msgstr ""
+msgstr "Bezpečnostní oznámení"
 
 #: ../config.inc.php:48
 msgid "News feeds"
-msgstr ""
+msgstr "Čtečka zpráv RSS"
 
 #: ../config.inc.php:50
 msgid "About"
-msgstr ""
+msgstr "O Frugalware"
 
 #: ../config.inc.php:52
 msgid "Summary"
-msgstr ""
+msgstr "Přehled"
 
 #: ../config.inc.php:53
 msgid "Frugalware in the Press"
-msgstr ""
+msgstr "Napsali o nás"
 
 #: ../config.inc.php:54
 msgid "Documentation"
-msgstr ""
+msgstr "Dokumentace"
 
 #: ../config.inc.php:56
 msgid "Community"
-msgstr ""
+msgstr "Komunita"
 
 #: ../config.inc.php:58
 msgid "Mailing Lists"
-msgstr ""
+msgstr "Mailing listy"
 
 #: ../config.inc.php:59
 msgid "Discussion Forums"
-msgstr ""
+msgstr "Diskuzní fóra"
 
 #: ../config.inc.php:60
 msgid "Wiki"
-msgstr ""
+msgstr "Wiki"
 
 #: ../config.inc.php:61
 msgid "IRC"
-msgstr ""
+msgstr "IRC"
 
 #: ../config.inc.php:62
 msgid "Pastebin"
-msgstr ""
+msgstr "Pastebin"
 
 #: ../config.inc.php:63
 msgid "Screenshots"
-msgstr ""
+msgstr "Ukázky"
 
 #: ../config.inc.php:64
 msgid "Map"
-msgstr ""
+msgstr "Mapa"
 
 #: ../config.inc.php:65
 msgid "Last.fm group"
-msgstr ""
+msgstr "Rádio last.fm"
 
 #: ../config.inc.php:66
 msgid "National sites"
-msgstr ""
+msgstr "Národní stránky"
 
 #: ../config.inc.php:68
 msgid "Download"
-msgstr ""
+msgstr "Stáhnout"
 
 #: ../config.inc.php:70
 msgid "ISO images"
-msgstr ""
+msgstr "Obrazy ISO"
 
 #: ../config.inc.php:71
 msgid "Packages"
-msgstr ""
+msgstr "Balíčky"
 
 #: ../config.inc.php:73
 msgid "Development"
-msgstr ""
+msgstr "Vývojářský koutek"
 
 #: ../config.inc.php:75
 msgid "Roadmap"
-msgstr ""
+msgstr "Historie verzí"
 
 #: ../config.inc.php:76
 msgid "Git repository"
-msgstr ""
+msgstr "Repozitář git"
 
 #: ../config.inc.php:77
 msgid "Bug Tracker"
-msgstr ""
+msgstr "Hlášení chyb"
 
 #: ../config.inc.php:78
 msgid "Translation portal"
-msgstr ""
+msgstr "Překladatelský portál"
 
 #: ../config.inc.php:79
 msgid "Blogs"
-msgstr ""
+msgstr "Blogy"
 
 #: ../config.inc.php:80 ../donations.php:50 ../header.php:54
 msgid "Donations"
-msgstr ""
+msgstr "Přispějte na vývoj"
 
 #: ../config.inc.php:92 ../config.inc.php:94 ../config.inc.php:96
 #: ../config.inc.php:98 ../config.inc.php:100 ../config.inc.php:102
 msgid "Change language"
-msgstr ""
+msgstr "Změnit jazyk"
 
 #: ../docs.php:60 ../docs.php:67
 msgid "The following categories are available:"
-msgstr ""
+msgstr "K dispozici jsou následující kategorie:"
 
 #: ../docs.php:62 ../docs.php:69
 msgid "Full manual"
-msgstr ""
+msgstr "Kompletní manuál"
 
 #: ../docs.php:63 ../docs.php:70
 msgid "User documentation"
-msgstr ""
+msgstr "Uživatelská dokumentace"
 
 #: ../docs.php:64 ../docs.php:71
 msgid "Developer documentation"
-msgstr ""
+msgstr "Dokumentace pro vývojáře"
 
 #: ../docs.php:74
 msgid "View online documentation (stable release)"
-msgstr ""
+msgstr "Online dokumentace (stabilní verze)"
 
 #: ../docs.php:75
 msgid "View online documentation (development version)"
-msgstr ""
+msgstr "Online dokumentace (vývojová verze)"
 
 #: ../donations.php:38
 msgid ""
@@ -441,14 +520,28 @@ msgid ""
 "on the side of the page\n"
 "if you wish to donate money.</div>"
 msgstr ""
+"<div align=\"left\">Sponzorské dary jsou dobrým prostředkem, jak ocenit naší "
+"práci a podpořit Frugalware linux. Na této stránce si můžete prohlédnout "
+"dary, které jsme zatím obdrželi, ale i dary, které by nám pomohly v dalším "
+"vývoji. Pokud máte nějaký nepotřebný hardware anebo cokoli, co by mohlo "
+"pomoci při vývoji Frugalware linuxu, darujte ho prosím vývojářům Frugalware. "
+"<br /><br />\n"
+"Jestli budete chtít přispět jinými prostředky, kontaktujte nás v mailing "
+"listu <a href=\"http://frugalware.org/mailman/listinfo/frugalware-devel"
+"\">frugalware-devel</a>\n"
+" , anebo zašlete email na vmiklos@frugalware.org.\n"
+"Pokud se rozhodnete nějak přispět konkrétnímu vývojáři, prohlédněte si <a "
+"href=\"authors.php\">seznam autorů</a>\n"
+"a kontaktujte autora. Lze darovat i finanční obnos, můžete použít PayPal, "
+"odkaz najdete v levé části webové stránky.</div>"
 
-#: ../donations.php:77
+#: ../donations.php:72
 msgid "The Frugalware Team"
-msgstr ""
+msgstr "Tým Frugalware"
 
 #: ../download.php:86
 msgid "Archive"
-msgstr ""
+msgstr "Archiv"
 
 #: ../download.php:86
 msgid ""
@@ -457,55 +550,62 @@ msgid ""
 "release. But if you are interested in our old stable versions, ask IroNiQ on "
 "#frugalware @freenode or ask in email on one of our lists."
 msgstr ""
+"Kvůli omezeným zdrojům bohužel nemůžeme uchovávat všechny starší stabilní "
+"verze Frugalware, bývají většinou odstraněny po vydání nejnovější stabilní "
+"verze. Jestli máte zájem o starší verze, kontaktujte v IRC na kanále  "
+"#frugalware (server irc.freenode.net) našeho vývojáře jménem IroNiQ a nebo "
+"nás kontaktujte mailem."
 
 #: ../header.php:52
 msgid "Releases"
-msgstr ""
+msgstr "Stabilní verze"
 
 #: ../header.php:55
 msgid "Recent updates"
-msgstr ""
+msgstr "Nejnovější aktualizace"
 
 #: ../header.php:56
 msgid "Languages"
-msgstr ""
+msgstr "Vybrat jazyk"
 
 #: ../header.php:57
 msgid "Information"
-msgstr ""
+msgstr "Informace"
 
 #: ../header.php:58
 msgid "Server information"
-msgstr ""
+msgstr "Informace o serveru"
 
 #: ../header.inc.php:135
 #, php-format
 msgid "Uptime:<br /> %d day(s) %d h %d m %d s"
-msgstr ""
+msgstr "V provozu:<br /> %d dní %d h %d m %d s"
 
 #: ../header.inc.php:142
 msgid "Donate to support our development efforts."
-msgstr ""
+msgstr "Můžete ocenit naše úsilí jakýmkoli příspěvkem."
 
 #: ../index.php:97 ../index.php:116
 msgid "Sorry, no news on your language, using English instead."
 msgstr ""
+"Ve vašem jazyce nejsou dostupné žádné novinky. Novinky si můžete prohlédnout "
+"v anglickém jazyce."
 
 #: ../index.php:105
 msgid " edited this news on "
-msgstr ""
+msgstr " zpráva byla pozměněna "
 
 #: ../index.php:107 ../index.php:120 ../security.php:82
 msgid "Posted by"
-msgstr ""
+msgstr "Příspěvek zaslal"
 
 #: ../index.php:108
 msgid "News history"
-msgstr ""
+msgstr "Historie zpráv"
 
 #: ../irc.php:59
 msgid "General information"
-msgstr ""
+msgstr "Souhrnné informace"
 
 #: ../irc.php:59
 msgid ""
@@ -514,54 +614,58 @@ msgid ""
 "<a href=\"/docs/irc-rules#_irc_channels\">documentation</a> about non-"
 "English channels."
 msgstr ""
+"Náš IRC kanál se nachází na serveru irc.freenode.net a název kanálu je "
+"#frugalware. Na tomto kanále poskytujeme oficiální podporu pro uživatele "
+"Frugalware. Pro více informací o jiných kanálech (vyjma anglického) si "
+"prohlédněte <a href=\"/docs/irc-rules#_irc_channels\">dokumentaci</a>."
 
 #: ../irc.php:105
 msgid "Please enter a valid nickname"
-msgstr ""
+msgstr "Zadejte prosím platnou předzdívku"
 
 #: ../irc.php:121
 msgid "Nickname:"
-msgstr ""
+msgstr "Předzdívka:"
 
 #: ../irc.php:125
 msgid "Server:"
-msgstr ""
+msgstr "Server:"
 
 #: ../irc.php:129
 msgid "Channel:"
-msgstr ""
+msgstr "Kanál IRC:"
 
 #: ../irc.php:133
 msgid "Advanced..."
-msgstr ""
+msgstr "Pokročilé"
 
 #: ../irc.php:134
 msgid "Login"
-msgstr ""
+msgstr "Přihlášení"
 
 #: ../irc.php:140
 msgid "Login via web"
-msgstr ""
+msgstr "Přihlášení přes webové rozhraní"
 
 #: ../irc.php:141
 msgid "Social diagram"
-msgstr ""
+msgstr "Diagram"
 
 #: ../irc.php:173 ../irc.php:175
 msgid "Log of the channel: #frugalware"
-msgstr ""
+msgstr "Záznamy kanálu IRC: #frugalware"
 
 #: ../irc.php:173
 msgid "Sorry, currently no log available"
-msgstr ""
+msgstr "Záznam není k dispozici"
 
 #: ../media.php:46
 msgid "Sorry, a media file has not been written yet."
-msgstr ""
+msgstr "Mediální soubor není zatím k dispozici."
 
 #: ../media.php:52
 msgid "Frugalware in the press"
-msgstr ""
+msgstr "Napsali o nás"
 
 #: ../media.php:53
 msgid ""
@@ -569,546 +673,555 @@ msgid ""
 "on the Internet about Frugalware. If you find an article not listed here, "
 "please tell us about it!"
 msgstr ""
+"V tomto přehledu si můžete prohlédnout články nebo jiné záznamy, které byly "
+"zveřejněny o Frugalware na internetu. Pokud narazíte na nějaký článek, o "
+"kterém nevíme, prosím kontaktujte nás!"
 
 #: ../media.php:76
 msgid "Title"
-msgstr ""
+msgstr "Téma článku"
 
 #: ../media.php:77
 msgid "Where"
-msgstr ""
+msgstr "Kde byl článek zveřejněn"
 
 #: ../media.php:78 ../security.php:81
 msgid "Date"
-msgstr ""
+msgstr "Datum"
 
 #: ../media.php:79
 msgid "Language"
-msgstr ""
+msgstr "Jazyk"
 
 #: ../media.php:80
 msgid "Link"
-msgstr ""
+msgstr "Odkaz"
 
 #: ../packages.php:91
 msgid "Package search"
-msgstr ""
+msgstr "Vyhledat balíčky"
 
 #: ../packages.php:92
 msgid "Search for:"
-msgstr ""
+msgstr "Vyhledat:"
 
 #: ../packages.php:94
 msgid "Search in description"
-msgstr ""
+msgstr "Vyhledat v popisech balíčků"
 
 #: ../packages.php:97
 msgid "Regular expression"
-msgstr ""
+msgstr "Vyhledat existující názvy"
 
 #: ../packages.php:97
 msgid "(regular expression)"
-msgstr ""
+msgstr "vyhledat existující názvy"
 
 #: ../packages.php:100 ../packages.php:331 ../packages.php:340
 msgid "Architecture:"
-msgstr ""
+msgstr "Architektura:"
 
 #: ../packages.php:107 ../packages.php:331 ../packages.php:340
 #: ../packages.php:404
 msgid "Version:"
-msgstr ""
+msgstr "Verze:"
 
 #: ../packages.php:119
 msgid "Search"
-msgstr ""
+msgstr "Vyhledat"
 
 #: ../packages.php:119
 msgid "Reset"
-msgstr ""
+msgstr "Storno"
 
 #: ../packages.php:120
 #, php-format
 msgid "Searching in %d binary and %d source-only packages."
-msgstr ""
+msgstr "Vyhledávání bude zahájeno v %d binárních v %d zdrojových balíčcích."
 
 #: ../packages.php:134
 msgid "You will need a Mozilla based browser to install a search plugin."
 msgstr ""
+"K instalaci vyhledávacího pluginu musíte mít v systému prohlížeč založený na "
+"projektu Mozilla nebo Firefox."
 
 #: ../packages.php:138
 msgid ""
 "Click <a href=\"javascript:addEngine()\">here</a> to install the Firefox "
 "search plugin."
 msgstr ""
+"Klikněte <a href=\"javascript:addEngine()\">zde</a> k instalaci "
+"vyhledávacího pluginu Firefoxu."
 
 #: ../packages.php:191
 msgid "Error in the query, please change the searching conditions"
-msgstr ""
+msgstr "Nastala chyba ve vyhledávání, zadejte prosím podmínky pro vyhledávání"
 
 #: ../packages.php:197
 msgid "No package found"
-msgstr ""
+msgstr "Balíček nebyl nalezen"
 
 #: ../packages.php:234
 msgid "No such file or directory"
-msgstr ""
+msgstr "Adresář ani soubor nebyl nalezen"
 
 #: ../packages.php:273 ../packages.php:306
 msgid "No such group"
-msgstr ""
+msgstr "Tato skupina balíčků není k dispozici"
 
 #: ../packages.php:315
 msgid "Listing groups"
-msgstr ""
+msgstr "Prohlížet skupiny balíčků"
 
 #: ../packages.php:326
 msgid "Listing contents of group:"
-msgstr ""
+msgstr "Prohlížet skupinu:"
 
 #: ../packages.php:328 ../packages.php:337
 msgid "Search result for:"
-msgstr ""
+msgstr "Výsledek vyhledávání balíčku:"
 
 #: ../packages.php:400
 msgid "Package information:"
-msgstr ""
+msgstr "Podrobnosti o balíčku"
 
 #: ../packages.php:402
 msgid "Name:"
-msgstr ""
+msgstr "Název:"
 
 #: ../packages.php:403
 msgid "Parent:"
-msgstr ""
+msgstr "Původ balíčku:"
 
 #: ../packages.php:406
 msgid "Documentation:"
-msgstr ""
+msgstr "Dokumentace:"
 
 #: ../packages.php:408
 msgid "Buildlog:"
-msgstr ""
+msgstr "Záznam vytvoření balíčku:"
 
 #: ../packages.php:409
 msgid "Changelog:"
-msgstr ""
+msgstr "Seznam změn:"
 
 #: ../packages.php:413
 msgid "Groups:"
-msgstr ""
+msgstr "Skupiny:"
 
 #: ../packages.php:418
 msgid "URL:"
-msgstr ""
+msgstr "URL:"
 
 #: ../packages.php:421
 msgid "Depends:"
-msgstr ""
+msgstr "Závisí na:"
 
 #: ../packages.php:428
 msgid "Exact reverse depends:"
-msgstr ""
+msgstr "Přímé zpětné závislosti:"
 
 #: ../packages.php:435
 msgid "Other reverse depends:"
-msgstr ""
+msgstr "Ostatní zpětné závislosti:"
 
 #: ../packages.php:442
 msgid "Conflicts:"
-msgstr ""
+msgstr "Je v konfliktu s:"
 
 #: ../packages.php:449
 msgid "Provides:"
-msgstr ""
+msgstr "Je součástí:"
 
 #: ../packages.php:454
 msgid "Compressed size:"
-msgstr ""
+msgstr "Zkomprimovaná velikost:"
 
 #: ../packages.php:455
 msgid "Uncompressed size:"
-msgstr ""
+msgstr "Nezkomprimovaná velikost:"
 
 #: ../packages.php:456
 msgid "Arch:"
-msgstr ""
+msgstr "Architektura:"
 
 #: ../packages.php:457
 msgid "Description:"
-msgstr ""
+msgstr "Charakteristika:"
 
 #. FIXME: latin -> utf8 conversion hardwired
 #: ../packages.php:459
 msgid "Maintainer:"
-msgstr ""
+msgstr "Balíček vytvořil:"
 
 #: ../packages.php:460
 msgid "Uploaded by:"
-msgstr ""
+msgstr "Balíček uploadoval:"
 
 #: ../packages.php:461
 msgid "Download:"
-msgstr ""
+msgstr "Odkaz ke stažení:"
 
 #: ../packages.php:466
 msgid "Forums:"
-msgstr ""
+msgstr "Diskuzní fóra:"
 
 #: ../packages.php:466
 msgid "Related posts"
-msgstr ""
+msgstr "Odpovídající záznamy na fórech"
 
 #: ../packages.php:467
 msgid "Wiki:"
-msgstr ""
+msgstr "Wiki:"
 
 #: ../packages.php:467
 msgid "Related pages"
-msgstr ""
+msgstr "Odpovídající záznamy na Wiki"
 
 #: ../packages.php:468
 msgid "Bug Tracking System:"
-msgstr ""
+msgstr "Hlášení chyb:"
 
 #: ../packages.php:468
 msgid "Related open bugs"
-msgstr ""
+msgstr "Nahlášené chyby"
 
 #: ../packages.php:469
 msgid "Syndicate:"
-msgstr ""
+msgstr "Čtečka zpráv:"
 
 #: ../packages.php:469
 msgid "RSS"
-msgstr ""
+msgstr "RSS"
 
 #: ../packages.php:470
 msgid "SHA1 Sum:"
-msgstr ""
+msgstr "Součet SHA1 Sum:"
 
 #: ../packages.php:471
 msgid "Frugalware version:"
-msgstr ""
+msgstr "Verze Frugalware:"
 
 #: ../packages.php:472
 msgid "Updated:"
-msgstr ""
+msgstr "Datum aktualizace:"
 
 #: ../packages.php:477 ../packages.php:528 ../packages.php:577
 #: ../packages.php:635 ../packages.php:665
 msgid "No such package!"
-msgstr ""
+msgstr "Tento balíček nebyl nalezen!"
 
 #: ../packages.php:513
 #, php-format
 msgid "Changelog for %s"
-msgstr ""
+msgstr "Seznam změn balíčku %s"
 
 #: ../packages.php:524 ../packages.php:573
 msgid "Sorry, currently no log available."
-msgstr ""
+msgstr "Seznam změn není zatím k dispozici."
 
 #: ../packages.php:562
 #, php-format
 msgid "Build log for %s"
-msgstr ""
+msgstr "Záznam vytvoření balíčku %s"
 
 #: ../packages.php:611
 #, php-format
 msgid "Documentation for %s"
-msgstr ""
+msgstr "Dokumentace pro %s"
 
 #: ../packages.php:631
 msgid "Sorry, currently no documentation available."
-msgstr ""
+msgstr "Dokumentace není zatím k dispozici."
 
 #: ../packages.php:650
 msgid "File list for"
-msgstr ""
+msgstr "Seznam pro"
 
 #: ../roadmap.php:51
 msgid "Sorry, a roadmap has not been written yet."
-msgstr ""
+msgstr "Seznam verzí není zatím k dispozici."
 
 #: ../roadmap.php:70 ../roadmap.php:79
 msgid "done"
-msgstr ""
+msgstr "dokončeno"
 
 #: ../roadmap.php:72 ../roadmap.php:81
 msgid "pending"
-msgstr ""
+msgstr "ve vývoji"
 
 #: ../rss.php:185
 msgid "Stable releases"
-msgstr ""
+msgstr "Stabilní verze"
 
 #: ../rss.php:186
 msgid "-current commits"
-msgstr ""
+msgstr "-záplaty pro aktuální verzi"
 
 #: ../rss.php:187
 msgid "-stable patches"
-msgstr ""
+msgstr "-záplaty pro stabilní verzi"
 
 #: ../rss.php:188
 msgid "BTS entries"
-msgstr ""
+msgstr "Záznamy BTS"
 
 #: ../rss.php:189
 msgid "Package updates"
-msgstr ""
+msgstr "Dostupné aktualizace"
 
 #: ../rss.php:190
 msgid "Blog posts"
-msgstr ""
+msgstr "Záznamy z blogů"
 
 #: ../screenshots.php:32
 msgid "01_splash.png"
-msgstr ""
+msgstr "01_splash.png"
 
 #: ../screenshots.php:34
 msgid "02_lang.png"
-msgstr ""
+msgstr "02_lang.png"
 
 #: ../screenshots.php:36
 msgid "03_welcome.png"
-msgstr ""
+msgstr "03_welcome.png"
 
 #: ../screenshots.php:38
 msgid "04_key.png"
-msgstr ""
+msgstr "04_key.png"
 
 #: ../screenshots.php:40
 msgid "05_raid.png"
-msgstr ""
+msgstr "05_raid.png"
 
 #: ../screenshots.php:42
 msgid "06_part.png"
-msgstr ""
+msgstr "06_part.png"
 
 #: ../screenshots.php:44
 msgid "07_part.png"
-msgstr ""
+msgstr "07_part.png"
 
 #: ../screenshots.php:46
 msgid "08_part.png"
-msgstr ""
+msgstr "08_part.png"
 
 #: ../screenshots.php:48
 msgid "09_part.png"
-msgstr ""
+msgstr "09_part.png"
 
 #: ../screenshots.php:50
 msgid "10_part.png"
-msgstr ""
+msgstr "10_part.png"
 
 #: ../screenshots.php:52
 msgid "11_part.png"
-msgstr ""
+msgstr "11_part.png"
 
 #: ../screenshots.php:54
 msgid "12_part.png"
-msgstr ""
+msgstr "12_part.png"
 
 #: ../screenshots.php:56
 msgid "13_part.png"
-msgstr ""
+msgstr "13_part.png"
 
 #: ../screenshots.php:58
 msgid "14_part.png"
-msgstr ""
+msgstr "14_part.png"
 
 #: ../screenshots.php:60
 msgid "15_pack.png"
-msgstr ""
+msgstr "15_pack.png"
 
 #: ../screenshots.php:62
 msgid "16_pack.png"
-msgstr ""
+msgstr "16_pack.png"
 
 #: ../screenshots.php:64
 msgid "17_pack.png"
-msgstr ""
+msgstr "17_pack.png"
 
 #: ../screenshots.php:66
 msgid "18_pack.png"
-msgstr ""
+msgstr "18_pack.png"
 
 #: ../screenshots.php:68
 msgid "19_pack.png"
-msgstr ""
+msgstr "19_pack.png"
 
 #: ../screenshots.php:70
 msgid "20_grub.png"
-msgstr ""
+msgstr "20_grub.png"
 
 #: ../screenshots.php:72
 msgid "21_grub.png"
-msgstr ""
+msgstr "21_grub.png"
 
 #: ../screenshots.php:74
 msgid "22_modules.png"
-msgstr ""
+msgstr "22_modules.png"
 
 #: ../screenshots.php:76
 msgid "23_root.png"
-msgstr ""
+msgstr "23_root.png"
 
 #: ../screenshots.php:78
 msgid "24_root.png"
-msgstr ""
+msgstr "24_root.png"
 
 #: ../screenshots.php:80
 msgid "25_user.png"
-msgstr ""
+msgstr "25_user.png"
 
 #: ../screenshots.php:82
 msgid "26_user.png"
-msgstr ""
+msgstr "26_user.png"
 
 #: ../screenshots.php:84
 msgid "27_user.png"
-msgstr ""
+msgstr "27_user.png"
 
 #: ../screenshots.php:86
 msgid "28_hostname.png"
-msgstr ""
+msgstr "28_hostname.png"
 
 #: ../screenshots.php:88
 msgid "29_network.png"
-msgstr ""
+msgstr "29_network.png"
 
 #: ../screenshots.php:90
 msgid "30_network.png"
-msgstr ""
+msgstr "30_network.png"
 
 #: ../screenshots.php:92
 msgid "31_config.png"
-msgstr ""
+msgstr "31_config.png"
 
 #: ../screenshots.php:94
 msgid "32_localtime.png"
-msgstr ""
+msgstr "32_localtime.png"
 
 #: ../screenshots.php:96
 msgid "33_timezone.png"
-msgstr ""
+msgstr "33_timezone.png"
 
 #: ../screenshots.php:98
 msgid "34_mouse.png"
-msgstr ""
+msgstr "34_mouse.png"
 
 #: ../screenshots.php:100
 msgid "35_success.png"
-msgstr ""
+msgstr "35_success.png"
 
 #: ../screenshots.php:102
 msgid "01_grub.png"
-msgstr ""
+msgstr "01_grub.png"
 
 #: ../screenshots.php:104
 msgid "02_boot.png"
-msgstr ""
+msgstr "02_boot.png"
 
 #: ../screenshots.php:106
 msgid "03_boot.png"
-msgstr ""
+msgstr "03_boot.png"
 
 #: ../screenshots.php:108
 msgid "04_boot.png"
-msgstr ""
+msgstr "04_boot.png"
 
 #: ../screenshots.php:110
 msgid "05_console.png"
-msgstr ""
+msgstr "05_console.png"
 
 #: ../screenshots.php:112
 msgid "06_console.png"
-msgstr ""
+msgstr "06_console.png"
 
 #: ../screenshots.php:114
 msgid "08_kde_login.png"
-msgstr ""
+msgstr "08_kde_login.png"
 
 #: ../screenshots.php:116
 msgid "09_kde.png"
-msgstr ""
+msgstr "09_kde.png"
 
 #: ../screenshots.php:118
 msgid "10_kde_menu.png"
-msgstr ""
+msgstr "10_kde_menu.png"
 
 #: ../screenshots.php:120
 msgid "11_gdm.png"
-msgstr ""
+msgstr "11_gdm.png"
 
 #: ../screenshots.php:122
 msgid "13_gnome.png"
-msgstr ""
+msgstr "13_gnome.png"
 
 #: ../screenshots.php:124
 msgid "14_gnome_menu.png"
-msgstr ""
+msgstr "14_gnome_menu.png"
 
 #: ../screenshots.php:126
 msgid "15_gnome_menu.png"
-msgstr ""
+msgstr "15_gnome_menu.png"
 
 #: ../screenshots.php:128
 msgid "16_gnome_menu.png"
-msgstr ""
+msgstr "16_gnome_menu.png"
 
 #: ../screenshots.php:130
 msgid "17_package_manager.png"
-msgstr ""
+msgstr "17_package_manager.png"
 
 #: ../screenshots.php:132
 msgid "18_runlevel_editor.png"
-msgstr ""
+msgstr "18_runlevel_editor.png"
 
 #: ../screenshots.php:139
 msgid "Installer"
-msgstr ""
+msgstr "Instalační program"
 
 #: ../screenshots.php:147
 msgid "Default Desktop"
-msgstr ""
+msgstr "Výchozí vzhled Frugalware"
 
 #: ../security.php:46
 msgid "Sorry, a security file has not been written yet."
-msgstr ""
+msgstr "Bezpečnostní oprava balíčku zatím není k dispozici."
 
 #: ../security.php:52
 msgid "Frugalware Security Announcements (FSAs)"
-msgstr ""
+msgstr "Bezpečnostní oznámení Frugalware (FSA)"
 
 #: ../security.php:53
 msgid ""
 "This is a list of security announcments that have been released for the "
 "current stable version of Frugalware"
 msgstr ""
+"V tomto přehledu si můžete prohlédnout různá bezpečnostní oznámení nahlášená "
+"do stable a current verze Frugalware"
 
 #: ../security.php:80
 msgid "Package"
-msgstr ""
+msgstr "Balíček"
 
 #: ../security.php:83
 msgid "Vulnerable version"
-msgstr ""
+msgstr "Zranitelná verze"
 
 #: ../security.php:84
 msgid "Unaffected version"
-msgstr ""
+msgstr "Opravená verze"
 
 #: ../security.php:85
 msgid "Bug tracker entry"
-msgstr ""
+msgstr "Server pro hlášení chyb"
 
 #: ../security.php:86
 msgid "CVEs"
-msgstr ""
+msgstr "CVE"
 
 #: ../security.php:87
 msgid "Description"
-msgstr ""
+msgstr "Popis chyby"
