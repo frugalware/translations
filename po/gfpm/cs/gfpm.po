@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-09 05:15+0100\n"
-"PO-Revision-Date: 2008-03-09 14:03+0100\n"
+"POT-Creation-Date: 2008-03-10 05:12+0100\n"
+"PO-Revision-Date: 2008-03-10 14:01+0100\n"
 "Last-Translator: Martin Burda <brdam@email.cz>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -72,7 +72,7 @@ msgstr "Nejnovější verze"
 msgid "Failed to initialize local package database."
 msgstr "Nelze načíst lokální databázi balíčků."
 
-#: ../src/gfpm-interface.c:385 ../data/gfpm.glade.h:32
+#: ../src/gfpm-interface.c:385 ../data/gfpm.glade.h:38
 msgid "Gfpm"
 msgstr "Gfpm"
 
@@ -782,7 +782,7 @@ msgid "Edit Server"
 msgstr "Editovat server"
 
 #. set the original title back
-#: ../src/gfpm-repomanager.c:972 ../data/gfpm.glade.h:38
+#: ../src/gfpm-repomanager.c:972 ../data/gfpm.glade.h:45
 msgid "New Server"
 msgstr "Nový server"
 
@@ -815,306 +815,338 @@ msgid "<b>Browse : </b>"
 msgstr "<b> Vyhledávat : </b>"
 
 #: ../data/gfpm.glade.h:4
+msgid "<b>Hold Packages</b>"
+msgstr "<b>Ponechat balíčky</b>"
+
+#: ../data/gfpm.glade.h:5
+msgid "<b>Ignore Packages</b>"
+msgstr "<b>Ignorovat balíčky</b>"
+
+#: ../data/gfpm.glade.h:6
 msgid "<b>Information</b>"
 msgstr "<b>Informace</b>"
 
 # Neměnit! Je v kontextu
-#: ../data/gfpm.glade.h:5
+#: ../data/gfpm.glade.h:7
 msgid "<b>Install packages:</b>"
 msgstr "<b>Instalace balíčků:</b>"
 
-#: ../data/gfpm.glade.h:6
+#: ../data/gfpm.glade.h:8
 msgid "<b>Log file size:</b>"
 msgstr "<b>Velikost log souboru:</b>"
 
-#: ../data/gfpm.glade.h:7
+#: ../data/gfpm.glade.h:9
+msgid "<b>Logging</b>"
+msgstr "<b>Záznamy</b>"
+
+#: ../data/gfpm.glade.h:10
 msgid "<b>Packages</b>"
 msgstr "<b>Balíčky</b>"
 
 # Neměnit! Je v kontextu
-#: ../data/gfpm.glade.h:8
+#: ../data/gfpm.glade.h:11
 msgid "<b>Remove packages:</b>"
 msgstr "<b>Odstranění balíčků:</b>"
 
-#: ../data/gfpm.glade.h:9
+#: ../data/gfpm.glade.h:12
 msgid "<b>Search in :</b>"
 msgstr "<b>Vyhledávat v :</b>"
 
-#: ../data/gfpm.glade.h:10
+#: ../data/gfpm.glade.h:13
 msgid "<b>Status : </b>"
 msgstr "<b>Status : </b>"
 
-#: ../data/gfpm.glade.h:11
+#: ../data/gfpm.glade.h:14
 msgid "<span size=\"larger\"><b>Add a new Repository</b></span>"
 msgstr "<span size=\"larger\"><b>Zadat nový repozitář</b></span>"
 
-#: ../data/gfpm.glade.h:12
+#: ../data/gfpm.glade.h:15
 msgid "<span size=\"larger\"><b>Add a new server</b></span>"
 msgstr "<span size=\"larger\"><b>Zadat nový server</b></span>"
 
-#: ../data/gfpm.glade.h:13
+#: ../data/gfpm.glade.h:16
 msgid "<span size=\"larger\"><b>Install Package from File</b></span>"
 msgstr "<span size=\"larger\"><b>Instalovat balíček ze souboru</b></span>"
 
-#: ../data/gfpm.glade.h:14
+#: ../data/gfpm.glade.h:17
 msgid "<span size=\"larger\"><b>Manage Package Repositories</b></span>"
 msgstr "<span size=\"larger\"><b>Spravovat softwarové repozitáře</b></span>"
 
-#: ../data/gfpm.glade.h:15
+#: ../data/gfpm.glade.h:18
 msgid "<span size=\"larger\"><b>Manage Servers</b></span>"
 msgstr "<span size=\"larger\"><b>Vybrat servery</b></span>"
 
-#: ../data/gfpm.glade.h:16
+#: ../data/gfpm.glade.h:19
 msgid "<span size=\"larger\"><b>Optimize package database</b></span>"
 msgstr "<span size=\"larger\"><b>Optimalizovat softwarovou databázi</b></span>"
 
-#: ../data/gfpm.glade.h:17
+#: ../data/gfpm.glade.h:20
 msgid "<span size=\"larger\"><b>Preferences</b></span>"
 msgstr "<span size=\"larger\"><b>Nastavení</b></span>"
 
-#: ../data/gfpm.glade.h:18
+#: ../data/gfpm.glade.h:21
 msgid "<span size=\"larger\"><b>System Log</b></span>"
 msgstr "<span size=\"larger\"><b>Systémový log</b></span>"
 
-#: ../data/gfpm.glade.h:19
+#: ../data/gfpm.glade.h:22
 msgid "About Gfpm"
 msgstr "O programu Gfpm"
 
-#: ../data/gfpm.glade.h:20
+#: ../data/gfpm.glade.h:23
 msgid "Apply"
 msgstr "Aplikovat"
 
-#: ../data/gfpm.glade.h:21
+#: ../data/gfpm.glade.h:24
 msgid "Apply Changes"
 msgstr "Aplikovat změny"
 
-#: ../data/gfpm.glade.h:22
+#: ../data/gfpm.glade.h:25
 msgid "Changelog"
 msgstr "Seznam změn (Changelog)"
 
-#: ../data/gfpm.glade.h:23
+#: ../data/gfpm.glade.h:26
 msgid "Close"
 msgstr "Zavřít"
 
-#: ../data/gfpm.glade.h:24
+#: ../data/gfpm.glade.h:27
 msgid "Close this dialog when the operation is finished"
 msgstr "Zavřít tento dialog po ukončení operace"
 
-#: ../data/gfpm.glade.h:25
+#: ../data/gfpm.glade.h:28
 msgid "Comment (Optional)"
 msgstr "Vložit komentář (Volitelné)"
 
-#: ../data/gfpm.glade.h:26
+#: ../data/gfpm.glade.h:29
+msgid "Description of Hold Packages"
+msgstr "Popis ponechaných balíčků"
+
+#: ../data/gfpm.glade.h:30
+msgid "Description of Ignore Packages"
+msgstr "Popis ignorovaných balíčků"
+
+#: ../data/gfpm.glade.h:31
 msgid "Details"
 msgstr "Detaily"
 
-#: ../data/gfpm.glade.h:27
+#: ../data/gfpm.glade.h:32
 msgid "Download only (do not install/upgrade)"
 msgstr "Pouze stáhnout (neinstalovat/neaktualizovat)"
 
-#: ../data/gfpm.glade.h:28
+#: ../data/gfpm.glade.h:33
 msgid "E_xit"
 msgstr "Ukončit"
 
-#: ../data/gfpm.glade.h:29
+#: ../data/gfpm.glade.h:34
+msgid "Enable Logging"
+msgstr "Povolit záznamy"
+
+#: ../data/gfpm.glade.h:35
 msgid "Files"
 msgstr "Soubory balíčku"
 
-#: ../data/gfpm.glade.h:30
+#: ../data/gfpm.glade.h:36
 msgid "Force install"
 msgstr "Instalovat přímo"
 
-#: ../data/gfpm.glade.h:31
+#: ../data/gfpm.glade.h:37
 msgid "General"
 msgstr "Souhrn"
 
-#: ../data/gfpm.glade.h:33
+#: ../data/gfpm.glade.h:39
 msgid "Install"
 msgstr "Instalovat"
 
-#: ../data/gfpm.glade.h:34
+#: ../data/gfpm.glade.h:40
 msgid "Install a package from file"
 msgstr "Instalovat balíček ze souboru"
 
-#: ../data/gfpm.glade.h:35
+#: ../data/gfpm.glade.h:41
 msgid "Install package from file"
 msgstr "Instalovat balíček ze souboru"
 
-#: ../data/gfpm.glade.h:36
+#: ../data/gfpm.glade.h:42
 msgid "Install this Package"
 msgstr "Nainstalovat tento balíček"
 
-#: ../data/gfpm.glade.h:37
+#: ../data/gfpm.glade.h:43
+msgid "Log File Path"
+msgstr "Cesta k log souboru"
+
+#: ../data/gfpm.glade.h:44
 msgid "New Repository"
 msgstr "Nový repozitář"
 
-#: ../data/gfpm.glade.h:39
+#: ../data/gfpm.glade.h:46
 msgid "Optimize"
 msgstr "Optimalizovat"
 
-#: ../data/gfpm.glade.h:40
+#: ../data/gfpm.glade.h:47
 msgid "Options"
 msgstr "Volby"
 
-#: ../data/gfpm.glade.h:41
+#: ../data/gfpm.glade.h:48
 msgid "Packages"
 msgstr "Balíčky"
 
-#: ../data/gfpm.glade.h:42
+#: ../data/gfpm.glade.h:49
 msgid "Please wait..."
 msgstr "Prosím čekejte..."
 
-#: ../data/gfpm.glade.h:43
+#: ../data/gfpm.glade.h:50
 msgid "Preferences"
 msgstr "Nastavení"
 
-#: ../data/gfpm.glade.h:44
+#: ../data/gfpm.glade.h:51
 msgid "Quit"
 msgstr "Ukončit"
 
-#: ../data/gfpm.glade.h:45
+#: ../data/gfpm.glade.h:52
 msgid "Refresh the package lists"
 msgstr "Obnovit seznam balíčků"
 
-#: ../data/gfpm.glade.h:46
+#: ../data/gfpm.glade.h:53
 msgid "Remove all packages from cache"
 msgstr "Odstranit všechny balíčky z cache"
 
-#: ../data/gfpm.glade.h:47
+#: ../data/gfpm.glade.h:54
 msgid "Remove old packages from cache"
 msgstr "Odstranit staré balíčky z cache"
 
-#: ../data/gfpm.glade.h:48
+#: ../data/gfpm.glade.h:55
 msgid "Remove this Package"
 msgstr "Odstranit tento balíček"
 
-#: ../data/gfpm.glade.h:49
+#: ../data/gfpm.glade.h:56
 msgid "Repositories"
 msgstr "Repozitáře"
 
-#: ../data/gfpm.glade.h:50
+#: ../data/gfpm.glade.h:57
 msgid "Repository Manager"
 msgstr "Správce repozitářů"
 
-#: ../data/gfpm.glade.h:51
+#: ../data/gfpm.glade.h:58
 msgid "Repository Name"
 msgstr "Název repozitáře"
 
-#: ../data/gfpm.glade.h:52
+#: ../data/gfpm.glade.h:59
 msgid "Search"
 msgstr "Vyhledávat"
 
-#: ../data/gfpm.glade.h:53
+#: ../data/gfpm.glade.h:60
 msgid "Server URL"
 msgstr "URL serveru"
 
-#: ../data/gfpm.glade.h:54
+#: ../data/gfpm.glade.h:61
 msgid "Servers Manager"
 msgstr "Správce serverů"
 
-#: ../data/gfpm.glade.h:55
+#: ../data/gfpm.glade.h:62
 msgid "Skip dependency checks"
 msgstr "Přeskočit ověřování závislostí"
 
-#: ../data/gfpm.glade.h:56
+#: ../data/gfpm.glade.h:63
 msgid "The following operations will be performed"
 msgstr "Budou provedeny následující operace"
 
-#: ../data/gfpm.glade.h:57
+#: ../data/gfpm.glade.h:64
 msgid "Total size:"
 msgstr "Celková velikost:"
 
-#: ../data/gfpm.glade.h:58
+#: ../data/gfpm.glade.h:65
 msgid "Transfer Rate:  "
 msgstr "Přenosová rychlost:"
 
-#: ../data/gfpm.glade.h:59
+#: ../data/gfpm.glade.h:66
 msgid "Upgrade existing"
 msgstr "Aktualizovat stávající"
 
-#: ../data/gfpm.glade.h:60
+#: ../data/gfpm.glade.h:67
 msgid "Upgrade this Package"
 msgstr "Aktualizovat tento balíček"
 
-#: ../data/gfpm.glade.h:61
+#: ../data/gfpm.glade.h:68
 msgid "View Readme"
 msgstr "Zobrazit Readme"
 
-#: ../data/gfpm.glade.h:62
+#: ../data/gfpm.glade.h:69
 msgid "View System _Log"
 msgstr "Zobrazit systémový log"
 
-#: ../data/gfpm.glade.h:63
+#: ../data/gfpm.glade.h:70
 msgid "_About Gfpm"
 msgstr "_O programu Gfpm"
 
-#: ../data/gfpm.glade.h:64
+#: ../data/gfpm.glade.h:71
 msgid "_Clear Package Cache"
 msgstr "_Vyčistit vyrovnávací paměť (cache)"
 
-#: ../data/gfpm.glade.h:65
+#: ../data/gfpm.glade.h:72
 msgid "_Gfpm"
 msgstr "_Gfpm"
 
-#: ../data/gfpm.glade.h:66
+#: ../data/gfpm.glade.h:73
 msgid "_Help"
 msgstr "_Nápověda"
 
-#: ../data/gfpm.glade.h:67
+#: ../data/gfpm.glade.h:74
 msgid "_Optimize Package Database"
 msgstr "_Optimalizovat databázi balíčků"
 
-#: ../data/gfpm.glade.h:68
+#: ../data/gfpm.glade.h:75
 msgid "_Options"
 msgstr "_Volby"
 
-#: ../data/gfpm.glade.h:69
+#: ../data/gfpm.glade.h:76
 msgid "_Tools"
 msgstr "_Nástroje"
 
 # Funguje jako nápověda k menu, proto "vyčistí"
-#: ../data/gfpm.glade.h:70
+#: ../data/gfpm.glade.h:77
 msgid "clear package cache"
 msgstr "vyčistí vyrovnávací paměť"
 
-#: ../data/gfpm.glade.h:71
+#: ../data/gfpm.glade.h:78
 msgid "gtk-add"
 msgstr "gtk-add"
 
-#: ../data/gfpm.glade.h:72
+#: ../data/gfpm.glade.h:79
 msgid "gtk-apply"
 msgstr "gtk-apply"
 
-#: ../data/gfpm.glade.h:73
+#: ../data/gfpm.glade.h:80
 msgid "gtk-cancel"
 msgstr "gtk-cancel"
 
-#: ../data/gfpm.glade.h:74
+#: ../data/gfpm.glade.h:81
 msgid "gtk-close"
 msgstr "gtk-close"
 
-#: ../data/gfpm.glade.h:75
+#: ../data/gfpm.glade.h:82
 msgid "gtk-delete"
 msgstr "gtk-delete"
 
-#: ../data/gfpm.glade.h:76
+#: ../data/gfpm.glade.h:83
 msgid "gtk-edit"
 msgstr "gtk-edit"
 
-#: ../data/gfpm.glade.h:77
+#: ../data/gfpm.glade.h:84
 msgid "gtk-go-down"
 msgstr "gtk-go-down"
 
-#: ../data/gfpm.glade.h:78
+#: ../data/gfpm.glade.h:85
 msgid "gtk-go-up"
 msgstr "gtk-go-up"
 
-#: ../data/gfpm.glade.h:79
+#: ../data/gfpm.glade.h:86
 msgid "gtk-ok"
 msgstr "gtk-ok"
 
+#: ../data/gfpm.glade.h:87
+msgid "gtk-remove"
+msgstr "gtk-remove"
+
 # Funguje jako nápověda k menu proto "Optimalizuje"
-#: ../data/gfpm.glade.h:80
+#: ../data/gfpm.glade.h:88
 msgid "optimize your package database to improve performance"
 msgstr "optimalizuje Vaši softwarovou databázi pro lepší výkon"
 
