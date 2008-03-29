@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-03-23 04:51+0100\n"
-"PO-Revision-Date: 2008-03-29 14:24+0100\n"
+"PO-Revision-Date: 2008-03-29 16:48+0100\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -662,11 +662,20 @@ msgid ""
 "packages included in Frugalware, refer to the /usr/share/doc/*/COPYING "
 "files.''"
 msgstr ""
+"``Frugalware licens selv står for buildscripts der er brugt for at bygge "
+"Frugalware. Source er tilgængelig under GPL licensen "
+"http://git.frugalware.org[her].Frugalware init scripts blev oprindeligt "
+"skrevet af Patrick J. Volkerding, skaberen af Slackware Linux "
+"distributionen. Vi GPL vores tilføjelser, men Patrick J. Volkerding's code "
+"er stadig under BSD licens.  Frugalware har også nogle sideprojekter, som "
+"vores pacman-g2 pakke håndterer, Frugalware installer O.S.V. De er også "
+"tilgængelige under GPL licensen. For mere information om licens på pakker "
+"der er nkluderet i Frugalware, se på /usr/share/doc/*/COPYING filer.''"
 
 # type: Plain text
 #: user.txt:116 about.txt:54
 msgid "'What package manager does Frugalware use?'"
-msgstr ""
+msgstr "'Hvilken pakke håndterer bruger Frugalware?'"
 
 # type: Plain text
 #: user.txt:122 about.txt:60
@@ -677,11 +686,16 @@ msgid ""
 "pacman-g2 is written in C, unlike Slackware's shellscript-based package "
 "manager (which may be rather slow sometimes).''"
 msgstr ""
+"``Vi har vores egen pakke håndterer kaldet pacman-g2. Det står for den anden "
+"generation af pacman-g1 pakke håndterer, eftersom det blev oprindeligt "
+"baseret på Judd Vinet's storslåede arbejde. Pakkerne er simple .tar.bz2 "
+"filer, pacman-g2 er skrevet i C, ulig Slackware’s shellscript baserede pakke "
+"håndterer hvilken kan være ret langsom sommetider).''"
 
 # type: Plain text
 #: user.txt:124 about.txt:62
 msgid "'How does Frugalware manage updating obsolete packages?'"
-msgstr ""
+msgstr "'Hvordan håndterer Frugalware opdatering af forældede pakker?'"
 
 # type: Plain text
 #: user.txt:131 about.txt:69
@@ -694,11 +708,18 @@ msgid ""
 "issue `pacman-g2 -S foo`. For more information, refer to the pacman-g2 man "
 "page.''"
 msgstr ""
+"``Vi har ikke noget enkeltstående program for opdatering af pakker da "
+"pacman-g2 også håndterer denne opgave. For at opdatere din pakke database, "
+"brug `pacman-g2 -Sy`, og for at opdatere dine pakker ifølge den lige nye "
+"synkroniserede pakke database, bruger du  `pacman-g2 -Su`. For at installere "
+"pakken`foo` med de nødvendige afhængigheder direkte fra en mirror ftp "
+"server, skriver du `pacman-g2 -S foo`. For mere information, se på pacman-g2 "
+"man side.''"
 
 # type: Plain text
 #: user.txt:133 about.txt:71
 msgid "'Is there any community support available for Frugalware?'"
-msgstr ""
+msgstr "'Er der nogen bruger support tilgængelig for Frugalware?'"
 
 # type: Plain text
 #: user.txt:139 about.txt:77
@@ -710,21 +731,28 @@ msgid ""
 "net`), the discussion forums are available http://forums.frugalware.org"
 "[here].''"
 msgstr ""
+"``Vi har mail lister, irc kanal og forum der kan bruges til at kommunikere "
+"med os eller med andre brugere for at få hjælp. Du kan se listen af mail "
+"lister der tilgægelige  http://frugalware.org/mailman/listinfo[her]. irc "
+"kanalen er på Freenode network (server: `irc.freenode.net`), debatforummerne "
+"er tilgængelig http://forums.frugalware.org[her].''"
 
 # type: Plain text
 #: user.txt:141 about.txt:79
 msgid "'Is there any commercial support available for Frugalware?'"
-msgstr ""
+msgstr "'Er der nogen erhvervsmæssig support tilgængelig for Frugalware?'"
 
 # type: Plain text
 #: user.txt:143 about.txt:81
 msgid "``No, there isn't for now, and currently it isn't planned, either.''"
 msgstr ""
+"``Nej, det er der ikke, og for nuværende er det heller ikke noget vi har "
+"påtænkt at gøre.''"
 
 # type: Plain text
 #: user.txt:145 about.txt:83
 msgid "'For whom is Frugalware recommended to use?'"
-msgstr ""
+msgstr "'For hvem er Frugalware anbefalet at bruge?'"
 
 # type: Plain text
 #: user.txt:149 about.txt:87
@@ -733,11 +761,14 @@ msgid ""
 "not a magic, of course, but you should read some documentation if you don't "
 "know what a partition, an MBR (Master Boot Record), etc. is.''"
 msgstr ""
+"``Frugalware er designet for mellem brugeren. Installation af Frugalware er "
+"ikke svært , naturligvis, men du bør læse nogen dokumentation hvis du ikke "
+"ved hvad en partion er, og hvad MBR (Master Boot Record), etc. er.''"
 
 # type: Plain text
 #: user.txt:151 about.txt:89
 msgid "'How to become a developer?'"
-msgstr ""
+msgstr "'Hvordan man bliver en udvikler??'"
 
 # type: Plain text
 #: user.txt:159 about.txt:97
@@ -750,11 +781,18 @@ msgid ""
 "frugalware.org[Bug Tracking System] and attach your patches. From this point "
 "everything will come naturally to you :)''"
 msgstr ""
+"``Bliv involveret! :) Download FST (Frugalware Source Tree) ved brug af "
+"`repoman upd` komando, som er tilgængelig i pacman-tool pakken. Derefter "
+"begynd at lege med FrugalBuild scripts, for et skelet, se på `/docs/skel` "
+"folder. Prøv at forbedre dem, eller lav en ny for et nuværende ikke-"
+"supportet program. Derefter start en anmodning på "
+"http://bugs.frugalware.org[Bug Tracking System] og vedhæft dine patches. Fra "
+"nu af vil alle ting være naturligt for dig :)''"
 
 # type: Plain text
 #: user.txt:161 about.txt:99
 msgid "'What do developers do?'"
-msgstr ""
+msgstr "'Hvad laver udviklerne?'"
 
 # type: Plain text
 #: user.txt:170 about.txt:108
@@ -768,11 +806,20 @@ msgid ""
 "you don't want to hack, you may help in translating Frugalware to your or "
 "other language. And, of course, we happily accept donations :)''"
 msgstr ""
+"``Ganske kort, hvad de ønsker at lave, hvis de spiller et eller andet spil. "
+"Vedligeholder de måske pakken: bygger dem en nyere version hvis den er "
+"ftilgængelig og opdaterer FrugalBuild skript så det arbejder rigtigt imod en "
+"nyere version. De kan bidrage med et nyt bygge skript fra en før ikke-"
+"eksisterende-pakke. De kan skrive dokumentation, fixe bugs, tilbyde hjælp "
+"eller alt andet i forbindelse med Frugalware fællesskabet. Hvis du kun "
+"ønsker at hjælpe os, men ikke kan lave rettelse til programmer, kan du "
+"hjælpe os med oversættelse af Frugalware til dit eller andre sprog. Og, "
+"selvfølgelig modtager vi gerne donationer :)''"
 
 # type: Plain text
 #: user.txt:172 about.txt:110
 msgid "'Who develops Frugalware?'"
-msgstr ""
+msgstr "'Hvem udvikler Frugalware?'"
 
 # type: Plain text
 #: user.txt:176 about.txt:114
@@ -781,11 +828,14 @@ msgid ""
 "They also do it as a hobby, and they are always working on having up to date "
 "knowledge to make Frugalware even better for you.''"
 msgstr ""
+"``En fantastisk gruppe af frivillige, som bliver motivet af brugerne til at "
+"gøre det. De gør det også som en hobby, og de arbejder altid på at opdatere "
+"deres viden for at lave Frugalware endnu bedre for dig.''"
 
 # type: Plain text
 #: user.txt:178 about.txt:116
 msgid "'Is Frugalware specialized in a certain purpose?'"
-msgstr ""
+msgstr "'Er Frugalware specialiseret til et bestemt formål?'"
 
 # type: Plain text
 #: user.txt:181 about.txt:119
@@ -793,11 +843,13 @@ msgid ""
 "``No, it's a general purpose distribution, for desktops, mobile computers "
 "and servers.''"
 msgstr ""
+"``Nej, den er en general Linux distribution, for desktops, laptops og "
+"servere.''"
 
 # type: Plain text
 #: user.txt:183 about.txt:121
 msgid "'Do you plan to release a live cd?'"
-msgstr ""
+msgstr "'Er der planlagt en frigivelse af en live cd?'"
 
 # type: Plain text
 #: user.txt:186 about.txt:124
@@ -805,11 +857,13 @@ msgid ""
 "``Yes, you can reach test iso images in our http://frugalware.org/download/"
 "frugalware-testing-iso[testing-iso] directory.''"
 msgstr ""
+"``Ja, du kan hente test iso i vores http://frugalware.org/download"
+"/frugalware-testing-iso[testing-iso] folder.''"
 
 # type: Plain text
 #: user.txt:188 about.txt:126
 msgid "'Does Frugalware support languages other than English?'"
-msgstr ""
+msgstr "'Understøtter Frugalware andre sprog udover Engelsk?'"
 
 # type: Plain text
 #: user.txt:192 about.txt:130
@@ -818,11 +872,14 @@ msgid ""
 "scripts, the setup or the documentation is not available in your language, "
 "then it simply means it haven't translated yet.''"
 msgstr ""
+"``Ja, det understøtter alle sprog igennem oversatte pakker. Hvis init skript "
+"setup eller dokumentation ikke er tilgængelig i dit sprog, så betyder det "
+"ganske simpelt at det ikke er blevet ovesat endnu.''"
 
 # type: Plain text
 #: user.txt:194 about.txt:132
 msgid "'What about Asian languages?'"
-msgstr ""
+msgstr "'Hvad med Asiatiske sprog?'"
 
 # type: Plain text
 #: user.txt:197 about.txt:135
@@ -830,11 +887,13 @@ msgid ""
 "``Frugalware roughly supports Asian languages, but don't expect too much - "
 "using UTF8 is not the default where it is possible.''"
 msgstr ""
+"``Frugalware understøtter Asiatiske sprog lidt, men forvent ikke så meget - "
+"brug af UTF8 er ikke standard hvor det er muligt.''"
 
 # type: Plain text
 #: user.txt:199 about.txt:137
 msgid "'What architectures does Frugalware support?'"
-msgstr ""
+msgstr "'Hvilke arkitekturer understøtter Frugalware?'"
 
 # type: Plain text
 #: user.txt:202 about.txt:139
@@ -842,16 +901,18 @@ msgid ""
 "``Currently we support x86 (Pentium Pro or higher) and x86_64 (k8, aka. "
 "amd64)  platforms.''"
 msgstr ""
+"``For nuværende understøtter vi  x86 (Pentium Pro eller højere) og x86_64 "
+"(k8, aka. amd64)  platforme.''"
 
 # type: Plain text
 #: user.txt:204
 msgid "== Quick reference"
-msgstr ""
+msgstr "== Hurtig reference"
 
 # type: Plain text
 #: user.txt:206
 msgid "=== Informations"
-msgstr ""
+msgstr "=== Informationer"
 
 # type: Plain text
 #: user.txt:212 quickref.txt:10
