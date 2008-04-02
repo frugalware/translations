@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-03-23 04:51+0100\n"
-"PO-Revision-Date: 2008-04-02 17:06+0200\n"
+"PO-Revision-Date: 2008-04-02 20:20+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -1530,6 +1530,9 @@ msgid ""
 "formats your swap partitions. If you have no swap partition just press "
 "<Cancel>!"
 msgstr ""
+"- Følgende liste viser dine swap partitioner, her kan du vælge hvilken swap "
+"partition der tilladt at bruge med Frugalware. Så vil setup formatere din "
+"swap partition. Hvis du ikke har nogen swap partition så tryk <Annuller>!"
 
 # type: Plain text
 #: user.txt:431 install.txt:207
@@ -1540,6 +1543,12 @@ msgid ""
 "optionally format them, and set their mount points. Using a separate "
 "partition is supported for /boot, /home, /var, but not yet for /usr."
 msgstr ""
+"- I det næste vindue, skal du først vælge din root partition, så kan du "
+"vælge om den skal formateres eller om du vil beholde det eksisterede "
+"filsystem på den. Efter at have valgt root partition, kan du opsætte andre "
+"Linux partitioner, formater dem, og sæt deres mount punkter. Brug af "
+"seperate partitioner er understøttet for /boot, /home, /var, men endnu ikke "
+"for /usr."
 
 # type: Plain text
 #: user.txt:435 install.txt:211
@@ -1548,6 +1557,9 @@ msgid ""
 "your DOS/Windows ones. Setup will display a list of them, if any exists.  "
 "You should simply choose a mount point for them here."
 msgstr ""
+"- Efter at have mounted dine Linux partitioner, bør du gøre det samme med "
+"dine DOS/Windows partitioner. Setup vil vise dem, hvis de eksisterer.  Du "
+"bør ganske enkelt vælge et mount punkt for dem her."
 
 # type: Plain text
 #: user.txt:445 install.txt:221
@@ -1561,6 +1573,15 @@ msgid ""
 "the default) then you will only see the groups, but not the individual "
 "packages. So after picking the groups installation starts."
 msgstr ""
+"- Nu det er tiden at vælge om du vil bruge expert menuer eller ej. Hvis du "
+"vælger expert menu efter at have valgt kategorierne vil du være i stand til "
+"at vælge pakker en-efter-en frade udvalgte kategorier. Så hvis du vælger "
+"apps og base vil installeringsprogrammet give dig en liste af pakker i apps, "
+"efter du er færdig med at udvælge pakkerne vil du se pakkerne i base. Efter "
+"at du har udvalgt dem begynder installationen.  + Hvis du vælger den "
+"normale menu (dette er standard) så vil du kun se grupperne, men ikke de "
+"individuelle pakker. Så efter at have udvalgt grupperne begynder "
+"installationen."
 
 # type: Plain text
 #: user.txt:454 install.txt:230
@@ -1573,6 +1594,13 @@ msgid ""
 "try to fix it. You can also test your connection if you press Alt+F2 and try "
 "to ping some servers."
 msgstr ""
+"- Det næste skridt er at vælge pakke kategorier. Hvis du ikke vil bruge KDE "
+"eller GNOME, vil du sandsynligvis fravælge dem. I de fleste tilfælde, er det "
+"ikke en god idé at fravælge andre kategorier. Hvis du har valgt expert menu "
+"vil du se pakkelisten efter denne dialog.  + NOTE: Hvis gruppelisten er tom "
+"betyder det sandsynligvis at du miskonfigurede dit netværk. Venligst gå "
+"tilbage og forsøg at rette det. Du kan også teste din forbindelse hvis du "
+"trykker Alt+F2 og forsøger at pinge nogle servere."
 
 # type: Plain text
 #: user.txt:459 install.txt:234
@@ -1582,17 +1610,21 @@ msgid ""
 "have only one disc, feel free to abort installing packages, you can install "
 "anything else from the net later."
 msgstr ""
+"- Setup vil installere pakkerne du valgte fra den første CD. Når det er "
+"gjort, vil du blive bedt om at indsætte den næste Frugalware CD.  Hvis du "
+"kun har en CD, kan du afbryde installering af pakker, du kan installere alt "
+"det andet senere fra nettet."
 
 # type: Plain text
 #: user.txt:461
 msgid "== Basic configuration"
-msgstr ""
+msgstr "== Grundlæggende konfiguration"
 
 # type: Plain text
 #: user.txt:463 user.txt:1232 user.txt:4674 user.txt:4753 user.txt:4907
 #: packages.txt:1998
 msgid "=== Introduction"
-msgstr ""
+msgstr "=== Introduktion"
 
 # type: Plain text
 #: user.txt:467 postinst.txt:8
@@ -1601,6 +1633,9 @@ msgid ""
 "new Frugalware system. If you installed the packages manually, then you'll "
 "have to perform those configuration steps manually."
 msgstr ""
+"Efter installation af pakkerne, vil Frugalware setup konfigurere dit nye "
+"Frugalware system. Hvis du installerede pakkerne manuelt, vil du derefter "
+"være nødt til udføre disse konfigurationstrin manuelt."
 
 # type: Plain text
 #: user.txt:470 postinst.txt:11
@@ -1608,11 +1643,13 @@ msgid ""
 "NOTE: If any problem occurs, there is a debug console on `tty4`, you can see "
 "that by pressing `Alt-F4`. You can switch back by hitting `Alt-F1`."
 msgstr ""
+"NOTE: Hvis der opstår problemer, er der en debug konsol på `tty4`, du kan se "
+"det ved at trykke `Alt-F4`. Du kan skifte tilbage med `Alt-F1`."
 
 # type: Plain text
 #: user.txt:472
 msgid "=== GRUB"
-msgstr ""
+msgstr "=== GRUB"
 
 # type: Plain text
 #: user.txt:480 postinst.txt:21
@@ -1625,11 +1662,19 @@ msgid ""
 "your existing boot manager. Floppy is a good idea for example if you don't "
 "have any boot manager installed, but you want to leave your MBR unmodified."
 msgstr ""
+"Det først trin er at installere grub til din harddisk. Der er fire "
+"valgmuligheder her: installere på MBR, root partition, en floppy disk eller "
+"springe over.  At installere til MBR er et godt valg hvis du ønsker at "
+"Frugalware skal håndtere din computers opstart.  root er en god ide hvis du "
+"ønsker installere grub på din root partition.  I dette tilfælde, vil grub "
+"ikke modificere din eksisterende boot manager. Floppy er en god ide f.eks "
+"hvis du ikke har nogen boot manager installeret, og du vil have din MBR "
+"uændret."
 
 # type: Plain text
 #: user.txt:482 user.txt:5472
 msgid "=== Kernel modules"
-msgstr ""
+msgstr "=== Kernemoduller"
 
 # type: Plain text
 #: user.txt:485 postinst.txt:26
@@ -1637,6 +1682,9 @@ msgid ""
 "After the installation of grub, the installer will configure your kernel "
 "modules. This means that an information dialog appears, but nothing more."
 msgstr ""
+"Efter installationen af grub, vil installeringsprogrammet konfigurere dine "
+"kernemoduller. Dette betyder at en informationsdialog fremkommer på skærmen, "
+"men intet der udover."
 
 # type: Plain text
 #: user.txt:487
