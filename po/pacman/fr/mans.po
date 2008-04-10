@@ -2,20 +2,20 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-03 05:04+0100\n"
-"PO-Revision-Date: 2008-02-25 12:50+0100\n"
-"Last-Translator: Daniel <devil505linux@gmail.com>\n"
+"POT-Creation-Date: 2008-04-10 05:09+0200\n"
+"PO-Revision-Date: 2008-04-10 22:26+0200\n"
+"Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Pootle 1.0\n"
+"X-Generator: Pootle 1.1.0\n"
 
 # type: Plain text
 #: FrugalBuild.txt:2
@@ -24,7 +24,7 @@ msgstr "= FrugalBuild(5)"
 
 # !!! NE PAS TRADUIRE POUR LE MOMENT !!!
 # type: Plain text
-# 
+#
 #: FrugalBuild.txt:4 makepkg.txt:4 pacman-g2.txt:4
 msgid "== NAME"
 msgstr "== NAME"
@@ -65,7 +65,7 @@ msgstr "=== Un exemple simple"
 #: FrugalBuild.txt:17 FrugalBuild.txt:44 FrugalBuild.txt:157
 #: FrugalBuild.txt:170 FrugalBuild.txt:202 FrugalBuild.txt:244
 #: FrugalBuild.txt:408 FrugalBuild.txt:432 FrugalBuild.txt:448
-#: pacman-g2.txt:299 pacman-g2.txt:400
+#: pacman-g2.txt:306 pacman-g2.txt:407
 #, no-wrap
 msgid "----\n"
 msgstr "----\n"
@@ -193,12 +193,12 @@ msgstr ""
 "'pkgname' définit le nom du paquet. Il ne doit contenir aucune lettre "
 "majuscule. La version du paquet définit la dernière version en amont, tandis "
 "que la ligne release définit les changements spécifiques à Frugalware. "
-"'pkgrel'  doit être un nombre entier car les versions comme '5wanda1' ne "
-"sont réservées qu'aux mises à jour de sécurité. Dans ce dernier cas, la "
-"règle est la suivante : Si le \"pkgrel' du paquet original est 4, alors "
-"incrémentez-le une fois que vous ajoutez un patch de sécurité, mais, "
-"utilisez '5wanda1', '5wanda2' etc.... De cette façon, l'utilisateur peut "
-"facilement mettre à jour 'pkgrel=5' qui est dans la branche '-current'."
+"'pkgrel' doit être un nombre entier car les versions comme '5wanda1' ne sont "
+"réservées qu'aux mises à jour de sécurité. Dans ce dernier cas, la règle est "
+"la suivante : Si le \"pkgrel' du paquet original est 4, alors incrémentez-le "
+"une fois que vous ajoutez un patch de sécurité, mais, utilisez '5wanda1', "
+"'5wanda2' etc.... De cette façon, l'utilisateur peut facilement mettre à "
+"jour 'pkgrel=5' qui est dans la branche '-current'."
 
 # `pkgdesc` est une courte description du paquet. Elle est habituellement extraite du site ou de la page man du projet. Essayez de garder sa longueur inférieure à 80 caractères.
 #: FrugalBuild.txt:69
@@ -1280,7 +1280,7 @@ msgstr ""
 "modèles de fichier avec des caractères de remplacement!"
 
 # type: Plain text
-#: FrugalBuild.txt:459 makepkg.txt:161 pacman-g2.txt:423
+#: FrugalBuild.txt:459 makepkg.txt:161 pacman-g2.txt:433
 msgid "== SEE ALSO"
 msgstr "== VOIR AUSSI"
 
@@ -1291,12 +1291,12 @@ msgid "*makepkg*(8), *pacman-g2*(8)\n"
 msgstr "*makepkg*(8), *pacman-g2*(8)\n"
 
 # type: Plain text
-#: FrugalBuild.txt:463 makepkg.txt:165 pacman-g2.txt:427
+#: FrugalBuild.txt:463 makepkg.txt:165 pacman-g2.txt:437
 msgid "== AUTHORS"
 msgstr "== AUTEURS"
 
 # type: Plain text
-#: FrugalBuild.txt:464 makepkg.txt:166 pacman-g2.txt:428
+#: FrugalBuild.txt:464 makepkg.txt:166 pacman-g2.txt:438
 msgid "See /usr/share/doc/pacman-g2-*/AUTHORS."
 msgstr "Voir /usr/share/doc/pacman-g2-*/AUTHORS."
 
@@ -1347,7 +1347,7 @@ msgstr ""
 "ou son entière arborescence. Voir `makeworld --help` pour la syntaxe."
 
 # type: Plain text
-#: makepkg.txt:26 pacman-g2.txt:62
+#: makepkg.txt:26 pacman-g2.txt:60
 msgid "== OPTIONS"
 msgstr "== OPTIONS"
 
@@ -1718,7 +1718,7 @@ msgstr ""
 "\tutile s'il dirige makepkg's vers un non-terminal (c'est à dire un fichier).\n"
 
 # type: Plain text
-#: makepkg.txt:151 pacman-g2.txt:290
+#: makepkg.txt:151 pacman-g2.txt:297
 msgid "== CONFIGURATION"
 msgstr "== CONFIGURATION"
 
@@ -1850,23 +1850,21 @@ msgid ""
 "\tthe ftp servers, complete with all dependencies required to run the packages.\n"
 "\tFor example, pacman-g2 -S qt will download qt and all the packages it depends\n"
 "\ton and install them. You could also use pacman-g2 -Su to upgrade all packages\n"
-"\tthat are out of date (see below). Target can be a regex, like:\n"
+"\tthat are out of date (see below).\n"
 msgstr ""
 "-S, --sync::\n"
-"\tSynchronise les paquets. Cette fonction permet d'installer directement les paquets depuis\n"
-"\tles serveurs ftp, complet avec toutes les dépendances exigées pour exécuter les paquets.\n"
-"\tPar exemple, pacman-g2 -S qt téléchargera qt, tous les paquets dont il dépend\n"
-"\tet les installera. Vous pourriez utiliser pacman-g2 -Su pour mettre à niveau tous les paquets\n"
-"\tqui sont obsolètes (voir ci-dessous). La cible peut être un regex, comme:\n"
+"\tSynchronise les paquets. Cette fonction permet d'installer directement les "
+"paquets depuis\n"
+"\tles serveurs ftp, entièrement avec toutes les dépendances exigées pour "
+"exécuter les paquets.\n"
+"\tPar exemple, pacman-g2 -S qt téléchargera qt et tous les paquets dont il "
+"dépend\n"
+"\tet les installera. Vous pourriez utiliser pacman-g2 -Su pour mettre à "
+"niveau tous les paquets\n"
+"\tqui sont obsolètes (voir ci-dessous).\n"
 
 # type: Plain text
-#: pacman-g2.txt:48
-#, no-wrap
-msgid "\t# pacman-g2 -S gst-.*\n"
-msgstr "\t# pacman-g2 -S gst-.*\n"
-
-# type: Plain text
-#: pacman-g2.txt:53
+#: pacman-g2.txt:51
 #, no-wrap
 msgid ""
 "-U, --upgrade::\n"
@@ -1880,7 +1878,7 @@ msgstr ""
 "\tdes fichiers.\n"
 
 # type: Plain text
-#: pacman-g2.txt:56
+#: pacman-g2.txt:54
 #, no-wrap
 msgid ""
 "-V, --version::\n"
@@ -1890,7 +1888,7 @@ msgstr ""
 "\tAffiche la version et se ferme.\n"
 
 # type: Plain text
-#: pacman-g2.txt:60
+#: pacman-g2.txt:58
 #, no-wrap
 msgid ""
 "-h, --help::\n"
@@ -1902,7 +1900,7 @@ msgstr ""
 "\tla syntaxe générale est affichée.\n"
 
 # type: Plain text
-#: pacman-g2.txt:67
+#: pacman-g2.txt:65
 #, no-wrap
 msgid ""
 "-d, --nodeps::\n"
@@ -1916,7 +1914,7 @@ msgstr ""
 "\tqu'il n'y a aucun conflit de paquet dans le système. Cette commande annule ces vérifications.\n"
 
 # type: Plain text
-#: pacman-g2.txt:73
+#: pacman-g2.txt:71
 #, no-wrap
 msgid ""
 "-f, --force::\n"
@@ -1926,13 +1924,13 @@ msgid ""
 "\tcare, ideally not at all.\n"
 msgstr ""
 "-f, --force::\n"
-"\tContourne les vérifications de fichier en conflit en remplaçant lesdits fichiers. Si le paquet qui\n"
+"\tContourne les vérifications de fichiers conflictuels en les remplaçant. Si le paquet qui\n"
 "\test sur le point d'être installé contient des fichiers qui sont déjà installés, cette option\n"
-"\tremplacera tous ces fichiers. L'option devra être utilisée avec\n"
+"\tremplacera tous ces fichiers. L'option devrait être utilisée avec\n"
 "\tsoin, idéalement pas du tout.\n"
 
 # type: Plain text
-#: pacman-g2.txt:77
+#: pacman-g2.txt:75
 #, no-wrap
 msgid ""
 "--noarch::\n"
@@ -1940,11 +1938,11 @@ msgid ""
 "\tpackage on `x86_64` if you know what you're doing.\n"
 msgstr ""
 "--noarch::\n"
-"\tContourne la vérification de l'architecture, ainsi vous pouvez installer par exemple un paquet `i686`\n"
-"\tsur un `x86_64` si vous maîtrisez la question.\n"
+"\tContourne la vérification de l'architecture, ainsi, vous pouvez installer par exemple un paquet `i686`\n"
+"\tsur un système `x86_64` si vous maîtrisez bien évidemment la question.\n"
 
 # type: Plain text
-#: pacman-g2.txt:85
+#: pacman-g2.txt:83
 #, no-wrap
 msgid ""
 "-r, --root <path>::\n"
@@ -1964,7 +1962,7 @@ msgstr ""
 "\tbase de données de paquet utiliser.\n"
 
 # type: Plain text
-#: pacman-g2.txt:88
+#: pacman-g2.txt:86
 #, no-wrap
 msgid ""
 "-b, --dbpath:\n"
@@ -1974,7 +1972,7 @@ msgstr ""
 "\tSpecifie un chemin d'accès alternatif vers la base de données (par défaut, c'est `var/lib/pacman`).\n"
 
 # type: Plain text
-#: pacman-g2.txt:91
+#: pacman-g2.txt:89
 #, no-wrap
 msgid ""
 "-v, --verbose::\n"
@@ -1984,7 +1982,7 @@ msgstr ""
 "\tSortir plus d'états et de messages d'erreur.\n"
 
 # type: Plain text
-#: pacman-g2.txt:94
+#: pacman-g2.txt:92
 #, no-wrap
 msgid ""
 "--config <path>::\n"
@@ -1994,7 +1992,7 @@ msgstr ""
 "\tSpécifie une configuration de fichier alternative.\n"
 
 # type: Plain text
-#: pacman-g2.txt:98
+#: pacman-g2.txt:96
 #, no-wrap
 msgid ""
 "--noconfirm::\n"
@@ -2006,7 +2004,7 @@ msgstr ""
 "\tà moins que vous souhaitiez exécuter pacman-g2 depuis un script.\n"
 
 # type: Plain text
-#: pacman-g2.txt:103
+#: pacman-g2.txt:101
 #, no-wrap
 msgid ""
 "--ask <number>::\n"
@@ -2020,7 +2018,7 @@ msgstr ""
 "\tsont les suivants:\n"
 
 # type: Plain text
-#: pacman-g2.txt:110
+#: pacman-g2.txt:108
 #, no-wrap
 msgid ""
 "\t* The given package is in IgnorePkg. (1)\n"
@@ -2038,17 +2036,17 @@ msgstr ""
 "\t* La version locale est à jours. (32)\n"
 
 # type: Plain text
-#: pacman-g2.txt:113
+#: pacman-g2.txt:111
 #, no-wrap
 msgid ""
 "\tSelect for what types do you want to answer yes, sum up the values and use the\n"
 "\tresult as a parameter to this option.\n"
 msgstr ""
-"\tChoisissez pour quels types vous répondrez oui, résumer les valeurs et utiliser le\n"
+"\tChoisissez pour quels types vous répondrez oui, résume les valeurs, et utilise le\n"
 "\trésultat comme un paramètre définitif à cette option.\n"
 
 # type: Plain text
-#: pacman-g2.txt:117
+#: pacman-g2.txt:115
 #, no-wrap
 msgid ""
 "--noprogressbar::\n"
@@ -2060,7 +2058,7 @@ msgstr ""
 "\tles scripts appellent pacman-g2 et traitent les flux de données sortantes.\n"
 
 # type: Plain text
-#: pacman-g2.txt:120
+#: pacman-g2.txt:118
 #, no-wrap
 msgid ""
 "--noscriptlet::\n"
@@ -2070,7 +2068,7 @@ msgstr ""
 "\tNe pas exécuter les install scriptlets , s'il y en a.\n"
 
 # type: Plain text
-#: pacman-g2.txt:123
+#: pacman-g2.txt:121
 #, no-wrap
 msgid ""
 "--nointegrity::\n"
@@ -2080,12 +2078,37 @@ msgstr ""
 "\tIgnorer la vérification de l'intégrité SHA1 pour les paquets téléchargés.\n"
 
 # type: Plain text
-#: pacman-g2.txt:125
+#: pacman-g2.txt:124
+#, no-wrap
+msgid ""
+"--regex::\n"
+"\tThreat the target names as regular expressions if no target found.\n"
+msgstr ""
+"--regex::\n"
+"\tConsidère les noms cible comme des expressions régulières si aucune cible "
+"n'est trouvée.\n"
+
+# type: Plain text
+#: pacman-g2.txt:129
+#, no-wrap
+msgid ""
+"\tExample:\n"
+"\t----\n"
+"\t# pacman-g2 -S --regex perl-.*\n"
+"\t----\n"
+msgstr ""
+"\tExemple:\n"
+"\t----\n"
+"\t# pacman-g2 -S --regex perl-.*\n"
+"\t----\n"
+
+# type: Plain text
+#: pacman-g2.txt:131
 msgid "== SYNC OPTIONS"
 msgstr "== OPTIONS DE SYNCHRONISATION"
 
 # type: Plain text
-#: pacman-g2.txt:132
+#: pacman-g2.txt:138
 #, no-wrap
 msgid ""
 "-c, --clean::\n"
@@ -2096,18 +2119,13 @@ msgid ""
 "\tcache.\n"
 msgstr ""
 "-c, --clean::\n"
-"\tRetire les paquets obsolètes du cache. Quand pacman-g2 télécharge des "
-"paquets, il l'est sauvegarde\n"
-"\tdans /var/cache/pacman-g2/pkg. Si vous avez besoin de libérer de l'espace "
-"sur votre disque, vous pouvez retirer\n"
-"\tces paquets en utilisant l'option --clean. Utiliser une fois --clean (ou "
-"-c) \n"
-"\tva retirer les paquets obsolètes. L'utiliser une seconde fois retirera tout "
-"les paquets du\n"
+"\tRetire les paquets obsolètes du cache. Quand pacman-g2 télécharge des paquets, il les sauvegarde\n"
+"\tdans /var/cache/pacman-g2/pkg. Si vous avez besoin de libérer de l'espace sur votre disque, vous pouvez retirer\n"
+"\tces paquets en utilisant l'option --clean. Utilisé une fois --clean (ou -c) \t retirera les paquets obsolètes. Utilisée une seconde fois, la commande supprimera tous les paquets du\n"
 "\tcache.\n"
 
 # type: Plain text
-#: pacman-g2.txt:137
+#: pacman-g2.txt:143
 #, no-wrap
 msgid ""
 "-e, --dependsonly::\n"
@@ -2116,14 +2134,12 @@ msgid ""
 "\tsource.\n"
 msgstr ""
 "-e, --dependsonly::\n"
-"\tN'installe pas les paquets eux-même, seulement leurs dépendances. Ceci peut "
-"être utile\n"
-"\tsi vous voulez installer les paquets eux-même avec des options différentes "
-"ou depuis\n"
+"\tN'installe pas les paquets eux-même, seulement leurs dépendances. Ceci peut être utile\n"
+"\tsi vous voulez installer les paquets eux-même avec des options différentes ou depuis\n"
 "\tla source.\n"
 
 # type: Plain text
-#: pacman-g2.txt:141
+#: pacman-g2.txt:147
 #, no-wrap
 msgid ""
 "-g, --groups::\n"
@@ -2135,7 +2151,7 @@ msgstr ""
 "\ttous les groupes seront affiché.\n"
 
 # type: Plain text
-#: pacman-g2.txt:146
+#: pacman-g2.txt:152
 #, no-wrap
 msgid ""
 "-i, --info::\n"
@@ -2144,14 +2160,12 @@ msgid ""
 "\tconflicts, etc.\n"
 msgstr ""
 "-i, --info::\n"
-"\tAffiche les informations de dépendance pour un paquet donné. Ceci va "
-"rechercher à travers\n"
-"\tde tout les dépôts pour un paquet correspondant et afficher les "
-"dépendances,\n"
+"\tAffiche les informations de dépendance pour un paquet donné. Ceci va rechercher à travers\n"
+"\tde tout les dépôts pour un paquet correspondant et afficher les dépendances,\n"
 "\tconflits, etc.\n"
 
 # type: Plain text
-#: pacman-g2.txt:150
+#: pacman-g2.txt:156
 #, no-wrap
 msgid ""
 "-l, --list::\n"
@@ -2163,7 +2177,7 @@ msgstr ""
 "\tspécifiés dans la ligne de commande.\n"
 
 # type: Plain text
-#: pacman-g2.txt:155
+#: pacman-g2.txt:161
 #, no-wrap
 msgid ""
 "-p, --print-uris::\n"
@@ -2173,12 +2187,11 @@ msgid ""
 msgstr ""
 "-p, --print-uris::\n"
 "\tImprime les URIs pour chaque paquets qui sont installés, incluant toutes\n"
-"\tdépendances qui sont déjà installées. Elles peuvent être mises dans un "
-"fichier et\n"
+"\tdépendances qui sont déjà installées. Elles peuvent être mises dans un fichier et\n"
 "\ttélécharger plus tard, en utilisant un programme comme wget.\n"
 
 # type: Plain text
-#: pacman-g2.txt:159
+#: pacman-g2.txt:165
 #, no-wrap
 msgid ""
 "-s, --search <regexp>::\n"
@@ -2186,12 +2199,11 @@ msgid ""
 "\tthat contains <regexp>.\n"
 msgstr ""
 "-s, --search <regexp>::\n"
-"\tCela va rechercher chaque paquet dans la liste de paquets dont les noms ou "
-"descriptions\n"
+"\tRecherche chaque paquet dans la liste de paquets dont les noms ou descriptions\n"
 "\tcontiennent <regexp>.\n"
 
 # type: Plain text
-#: pacman-g2.txt:167
+#: pacman-g2.txt:173
 #, no-wrap
 msgid ""
 "-u, --sysupgrade::\n"
@@ -2203,18 +2215,15 @@ msgid ""
 "\tnecessary.\n"
 msgstr ""
 "-u, --sysupgrade::\n"
-"\tMet à jour tout les paquets obsolètes. pacman-g2 va examiner chaque\n"
-"\tpaquets installés sur le système, et si un nouveau paquet existe sur le "
-"serveur il\n"
-"\tva le mettre à jour. pacman-g2 va présenter un rapport de tout les paquets "
-"qu'il veut\n"
-"\tmettre à jour et procèdera sans confirmation de l'utilisateur. Les "
-"dépendances sont\n"
-"\tautomatiquement résolues à ce niveau et seront installées/mi à jour si\n"
+"\tMet à jour tous les paquets obsolètes. pacman-g2 va examiner chaque\n"
+"\tpaquet installé sur le système, et si un paquet plus récent existe sur le serveur, il\n"
+"\tproposera de le mettre à jour. pacman-g2 présentera ensuite un rapport de tous les paquets nécessitant une\n"
+"\tmise à jour, mais ne procédera pas sans confirmation de l'utilisateur. Les dépendances sont\n"
+"\tautomatiquement résolues à ce niveau, et seront installées/mises à jour si\n"
 "\tnécessaire.\n"
 
 # type: Plain text
-#: pacman-g2.txt:170
+#: pacman-g2.txt:176
 #, no-wrap
 msgid ""
 "-w, --downloadonly::\n"
@@ -2224,23 +2233,26 @@ msgstr ""
 "\t Télécharge tous les paquets depuis le serveur, mais n'installe/ne met à jour aucun paquet.\n"
 
 # type: Plain text
-#: pacman-g2.txt:175
+#: pacman-g2.txt:182
 #, no-wrap
 msgid ""
 "-y, --refresh::\n"
 "\tDownload a fresh copy of the master package list from the ftp server defined in\n"
 "\t/etc/pacman-g2.conf. This should typically be used each time you use\n"
-"\t--sysupgrade.\n"
+"\t--sysupgrade. If used more than once, then it forces the re-download of the\n"
+"\tpackage database, even in case it's up to date.\n"
 msgstr ""
 "-y, --refresh::\n"
-"\tTélécharge une copie récente de la liste maitresse de paquets depuis un "
+"\tTélécharge une copie récente de la liste maîtresse de paquets depuis un "
 "serveur ftp défini dans\n"
-"\t/etc/pacman-g2.conf. Ceci sera habituellement utilisé à chaque fois que "
+"\t/etc/pacman-g2.conf. Cette commande devrait être utilisé chaque fois que "
 "vous utilisez\n"
-"\t--sysupgrade.\n"
+"\t--sysupgrade. Si l'option est utilisée plus d'une fois, cela force alors le "
+"re-téléchargement de\n"
+"\tla base de donnée des paquets, même si elle est à jour.\n"
 
 # type: Plain text
-#: pacman-g2.txt:180
+#: pacman-g2.txt:187
 #, no-wrap
 msgid ""
 "--ignore <pkg>::\n"
@@ -2250,17 +2262,16 @@ msgid ""
 msgstr ""
 "--ignore <pkg>::\n"
 "\tCette option fonctionne exactement comme la directive de configuration\n"
-"\tIgnorePkg. Parfois il peut être utile d'omettre la mise à jour de quelques "
-"paquets sans\n"
-"\tavoir à éditer pacman-g2.conf à chaque fois.\n"
+"\tIgnorePkg. Parfois il est utile d'omettre la mise à jour de certains paquets, ce qui évite\n"
+"\td'avoir à éditer pacman-g2.conf à chaque fois.\n"
 
 # type: Plain text
-#: pacman-g2.txt:182
+#: pacman-g2.txt:189
 msgid "== REMOVE OPTIONS"
 msgstr "== OPTIONS DE RETRAIT"
 
 # type: Plain text
-#: pacman-g2.txt:186
+#: pacman-g2.txt:193
 #, no-wrap
 msgid ""
 "-c, --cascade::\n"
@@ -2268,23 +2279,21 @@ msgid ""
 "\ttarget packages. This operation is recursive.\n"
 msgstr ""
 "-c, --cascade::\n"
-"\tRetire tout les paquets ciblés, aussi bien que tout les paquets dépendants "
-"d'un ou plusieurs de ces\n"
+"\tRetire tout les paquets ciblés, aussi bien que tous les paquets dépendants d'un ou plusieurs de ces\n"
 "\tpaquets ciblés. Cette opération est récursive.\n"
 
 # type: Plain text
-#: pacman-g2.txt:189
+#: pacman-g2.txt:196
 #, no-wrap
 msgid ""
 "-k, --keep::\n"
 "\tRemoves the database entry only. Leaves all files in place.\n"
 msgstr ""
 "-k, --keep::\n"
-"\tRetire l'entrée de la base données uniquement. Laisse tout les fichiers en "
-"place.\n"
+"\tRetire uniquement l'entrée de la base données. Laisse tous les fichiers en place.\n"
 
 # type: Plain text
-#: pacman-g2.txt:195
+#: pacman-g2.txt:202
 #, no-wrap
 msgid ""
 "-n, --nosave::\n"
@@ -2294,16 +2303,13 @@ msgid ""
 "\tdesignations are ignored and the files are removed.\n"
 msgstr ""
 "-n, --nosave::\n"
-"\tOrdonne à pacman-g2 d'ignorer les désignations des fichiers de sauvegarde. "
-"Normalement, quand un fichier\n"
-"\test sur le point d'être retiré du système la base de donnée est vérifiée en "
-"premier pour voir si\n"
-"\tle fichier doit être renommé avec .pacsave comme extension. Si --nosave est "
-"utilisé, ces\n"
-"\tdésignations sont ignorées et les fichiers sont retirés.\n"
+"\tOrdonne à pacman-g2 d'ignorer les désignations des fichiers de sauvegarde. Normalement, quand un fichier\n"
+"\test sur le point d'être retiré du système, la base de donnée est vérifiée en premier pour voir si\n"
+"\tle fichier doit être renommé avec .pacsave comme extension. Si --nosave est utilisé, ces\n"
+"\tdésignations sont ignorées, et les fichiers sont retirés.\n"
 
 # type: Plain text
-#: pacman-g2.txt:201
+#: pacman-g2.txt:208
 #, no-wrap
 msgid ""
 "-s, --recursive::\n"
@@ -2313,20 +2319,17 @@ msgid ""
 "\toperation.\n"
 msgstr ""
 "-s, --recursive::\n"
-"\tPour chaque cibles spécifiées, les retirent ainsi que toutes ses "
-"dépendances, avec\n"
-"\t(A) qu'elles ne sont pas requis par un autre paquet; et (B) qu'elles n'ont "
-"pas été installées explicitement\n"
-"\tpar l'utilisateur. Cette option est équivalente à une annulation d'une "
-"opération --sync.\n"
+"\tPour chaque cibles spécifiées, les retire ainsi que toutes ses dépendances, à condition\n"
+"\t(A) qu'elles ne soient pas requises par un autre paquet; et (B) qu'elles n'aient pas été installées explicitement\n"
+"\tpar l'utilisateur. Cette option est équivalente à une annulation d'opération --sync.\n"
 
 # type: Plain text
-#: pacman-g2.txt:203
+#: pacman-g2.txt:210
 msgid "== QUERY OPTIONS"
 msgstr "== OPTIONS DE REQUÊTES"
 
 # type: Plain text
-#: pacman-g2.txt:206
+#: pacman-g2.txt:213
 #, no-wrap
 msgid ""
 "-c, --changelog::\n"
@@ -2336,7 +2339,7 @@ msgstr ""
 "\tVoir la liste des changements d'un paquet.\n"
 
 # type: Plain text
-#: pacman-g2.txt:210
+#: pacman-g2.txt:217
 #, no-wrap
 msgid ""
 "-e, --orphans::\n"
@@ -2344,12 +2347,11 @@ msgid ""
 "\texplicitly) and are not required by any other packages.\n"
 msgstr ""
 "-e, --orphans::\n"
-"\tListe tout les paquets qui furent installés en tant que dépendances (càd, "
-"pas installés\n"
-"\texplicitement) et qui ne sont pas requis par d'autres paquets.\n"
+"\tListe tous les paquets qui ont été installés en tant que dépendances (càd, pas installés\n"
+"\texplicitement), et qui ne sont pas requis par d'autres paquets.\n"
 
 # type: Plain text
-#: pacman-g2.txt:214
+#: pacman-g2.txt:221
 #, no-wrap
 msgid ""
 "-g, --groups::\n"
@@ -2357,12 +2359,11 @@ msgid ""
 "\tprovided, all groups and members will be listed.\n"
 msgstr ""
 "-g, --groups::\n"
-"\tAffiche tout les groupes dont le paquet spécifié en fait parti. Si aucun "
-"nom de paquet n'est\n"
-"\tfournis, tout les groupes et membres seront listés.\n"
+"\tAffiche tous les groupes dont le paquet spécifié fait parti. Si aucun nom de paquet n'est\n"
+"\tfourni, tous les groupes et membres seront alors listés.\n"
 
 # type: Plain text
-#: pacman-g2.txt:218
+#: pacman-g2.txt:225
 #, no-wrap
 msgid ""
 "-i, --info::\n"
@@ -2370,12 +2371,11 @@ msgid ""
 "\tthe .PKGINFO file will be printed.\n"
 msgstr ""
 "-i, --info::\n"
-"\tAffiche les informations pour un paquet donné. Si utilisé avec l'option -p "
-"alors\n"
+"\tAffiche les informations pour un paquet donné. Si utilisé avec l'option -p alors\n"
 "\tle fichier .PKGINFO sera imprimé.\n"
 
 # type: Plain text
-#: pacman-g2.txt:222
+#: pacman-g2.txt:229
 #, no-wrap
 msgid ""
 "-l, --list::\n"
@@ -2383,12 +2383,11 @@ msgid ""
 "\tcommand line.\n"
 msgstr ""
 "-l, --list::\n"
-"\tListe tout les fichiers possédés par le <paquet>. Des paquets multiples "
-"peuvent être spécifiés dans la\n"
+"\tListe tous les fichiers qui appartiennent au <paquet>. Des paquets multiples peuvent être spécifiés dans la\n"
 "\tligne de commande.\n"
 
 # type: Plain text
-#: pacman-g2.txt:226
+#: pacman-g2.txt:233
 #, no-wrap
 msgid ""
 "-m, --foreign::\n"
@@ -2396,23 +2395,21 @@ msgid ""
 "\tare packages that were downloaded manually and installed with --add.\n"
 msgstr ""
 "-m, --foreign::\n"
-"\tListe tout les paquets qui ne furent pas trouvés dans le sync de la base(s) "
-"de données. Habituellement, ce\n"
-"\tsont des paquet qui furent téléchargés manuellement et installés avec "
-"--add.\n"
+"\tListe tous les paquets qui n'ont pas été trouvés dans le sync de la base(s) de données. Typiquement, ce\n"
+"\tsont des paquets qui ont été téléchargés manuellement, et installés avec --add.\n"
 
 # type: Plain text
-#: pacman-g2.txt:229
+#: pacman-g2.txt:236
 #, no-wrap
 msgid ""
 "-o, --owns <path>::\n"
 "\tSearch for the package that owns a given file or directory.\n"
 msgstr ""
 "-o, --owns <repertoire>::\n"
-"\tRecherche les paquets possédant un fichier ou répertoire donné.\n"
+"\tRecherche le paquet possédant un fichier ou répertoire donné.\n"
 
 # type: Plain text
-#: pacman-g2.txt:234
+#: pacman-g2.txt:241
 #, no-wrap
 msgid ""
 "-p, --file::\n"
@@ -2421,14 +2418,12 @@ msgid ""
 "\tuseful with --info and --list.\n"
 msgstr ""
 "-p, --file::\n"
-"\tDis à 'pacman-g2' que le paquet indiqué dans la ligne de commande est un "
-"fichier, pas une\n"
-"\tentrée dans la base de données. 'pacman-g2' va décompressé le fichier et "
-"l'interrogera. Ceci est\n"
+"\tIndique à 'pacman-g2' que le paquet fourni dans la ligne de commande est un fichier, pas une\n"
+"\tentrée dans la base de données. 'pacman-g2' va décompressé le fichier et l'interrogera. Ceci est\n"
 "\tutile avec --info et --list.\n"
 
 # type: Plain text
-#: pacman-g2.txt:238
+#: pacman-g2.txt:245
 #, no-wrap
 msgid ""
 "-s, --search <regexp>::\n"
@@ -2436,23 +2431,21 @@ msgid ""
 "\tcontains <regexp>.\n"
 msgstr ""
 "-s, --search <regexp>::\n"
-"\tCeci va rechercher chaque paquet installés localement avec noms et "
-"descriptions qui\n"
+"\tCeci va rechercher chaque paquet installés localement avec noms et descriptions qui\n"
 "\tcontiennent<regexp>.\n"
 
 # type: Plain text
-#: pacman-g2.txt:241
+#: pacman-g2.txt:248
 #, no-wrap
 msgid ""
 "-t, --test::\n"
 "\tTests the local database, by searching for missing informations. Example:\n"
 msgstr ""
 "-t, --test::\n"
-"\tTeste la base donnée locale, en recherchant des informations manquantes. "
-"Exemple:\n"
+"\tTeste la base donnée locale, en recherchant des informations manquantes. Exemple:\n"
 
 # type: Plain text
-#: pacman-g2.txt:246
+#: pacman-g2.txt:253
 #, no-wrap
 msgid ""
 "\t----\n"
@@ -2466,14 +2459,13 @@ msgstr ""
 "\t----\n"
 
 # type: Plain text
-#: pacman-g2.txt:248
+#: pacman-g2.txt:255
 #, no-wrap
 msgid "\tThe recommended method in this case is to remove the database entry:\n"
-msgstr "\tLa méthode recommandée dans ce cas là est de retirer l'entrée de la base de "
-"données:\n"
+msgstr "\tLa méthode recommandée dans ce cas là est de retirer l'entrée de la base de données:\n"
 
 # type: Plain text
-#: pacman-g2.txt:252
+#: pacman-g2.txt:259
 #, no-wrap
 msgid ""
 "\t----\n"
@@ -2485,13 +2477,13 @@ msgstr ""
 "\t----\n"
 
 # type: Plain text
-#: pacman-g2.txt:254
+#: pacman-g2.txt:261
 #, no-wrap
 msgid "\tand forcing the reinstall of the package:\n"
 msgstr "\tet forcer la réinstallation du paquet:\n"
 
 # type: Plain text
-#: pacman-g2.txt:258
+#: pacman-g2.txt:265
 #, no-wrap
 msgid ""
 "\t----\n"
@@ -2503,12 +2495,12 @@ msgstr ""
 "\t----\n"
 
 # type: Plain text
-#: pacman-g2.txt:260
+#: pacman-g2.txt:267
 msgid "== HANDLING CONFIG FILES"
 msgstr "== GESTION DES FICHIERS DE CONFIGURATION"
 
 # type: Plain text
-#: pacman-g2.txt:267
+#: pacman-g2.txt:274
 msgid ""
 "pacman-g2 uses the same logic as rpm to determine action against files that "
 "are designated to be backed up. During an upgrade, it uses 3 md5 hashes for "
@@ -2517,26 +2509,26 @@ msgid ""
 "the actual file existing on the filesystem. After comparing these 3 hashes, "
 "the follow scenarios can result:"
 msgstr ""
-"pacman-g2 utilise la même logique que rpm pour determiner l'action à suivre "
-"face à des fichiers désignés pour être sauvegardés. Durant la mise à jour, "
-"il utilise 3 hachage md5 pour chaque fichiers de sauvegarde pour déterminer "
-"l'action requise: une pour le fichier original, une pour le nouveau fichier "
-"et une pour le fichier actuel existant sur votre système de fichiers. Après "
-"avoir comparer ces 3 hachages, les scénarios suivant peuvent être envisagés:"
+"pacman-g2 utilise la même logique que les rpm afin de déterminer l'action à "
+"suivre pour les fichiers destinés à être sauvegardés. Pendant la mise à "
+"jour, il utilise 3 hachage md5 pour chaque fichiers de sauvegarde afin de "
+"déterminer l'action requise: une pour le fichier original, une pour le "
+"nouveau fichier et une pour le fichier actuel existant sur le système de "
+"fichiers. Après avoir comparé ces 3 hachages, les scénarios suivants peuvent "
+"être envisagés:"
 
 # type: Plain text
-#: pacman-g2.txt:270
+#: pacman-g2.txt:277
 #, no-wrap
 msgid ""
 "original=X, current=X, new=X::\n"
 "\tAll three files are the same, so we win either way. Install the new file.\n"
 msgstr ""
 "original=X, actuel=X, nouveau=X::\n"
-"\tTout les trois fichiers sont identiques, donc nous gagnons de toute "
-"manière. Installer le nouveau fichier.\n"
+"\tTous les trois fichiers sont identiques, donc nous y gagnons de toute façon. Installer le nouveau fichier.\n"
 
 # type: Plain text
-#: pacman-g2.txt:275
+#: pacman-g2.txt:282
 #, no-wrap
 msgid ""
 "original=X, current=X, new=Y::\n"
@@ -2545,14 +2537,12 @@ msgid ""
 "\timprovements/bugfixes, we install the new file.\n"
 msgstr ""
 "original=X, actuel=X, nouveau=Y::\n"
-"\tLe fichier actuel est non-altéré par rapport à l'original mais le nouveau "
-"est différent.\n"
-"\tA ce moment là l'utilisateur n'a jamais modifié le fichier, et le nouveau "
-"doit contenir\n"
+"\tLe fichier actuel est non-altéré par rapport à l'original mais le nouveau est différent.\n"
+"\tA ce moment là, l'utilisateur n'a jamais modifié le fichier, et le nouveau doit contenir\n"
 "\tdes améliorations/corrections, nous installons le nouveau fichier.\n"
 
 # type: Plain text
-#: pacman-g2.txt:280
+#: pacman-g2.txt:287
 #, no-wrap
 msgid ""
 "original=X, current=Y, new=X::\n"
@@ -2562,23 +2552,21 @@ msgid ""
 msgstr ""
 "original=X, actuel=Y, nouveau=X::\n"
 "\tLes deux versions du paquet contiennent le même fichier, mais celui sur le\n"
-"\tfsystème de fichiers a été modifié depuis. Dans ce cas, nous laissons le "
-"fichier actuel à sa\n"
+"\tfsystème de fichiers a été modifié depuis. Dans ce cas, nous laissons le fichier actuel à sa\n"
 "\tplace.\n"
 
 # type: Plain text
-#: pacman-g2.txt:283
+#: pacman-g2.txt:290
 #, no-wrap
 msgid ""
 "original=X, current=Y, new=Y::\n"
 "\tThe new one is identical to the current one. Win win. Install the new file.\n"
 msgstr ""
 "original=X, actuel=Y, nouveau=Y::\n"
-"\tLe nouveau est identique à l'actuel. Gagné gagné. Installez le nouveau "
-"fichier.\n"
+"\tLe nouveau est identique à l'actuel. Gagné gagné. Installez le nouveau fichier.\n"
 
 # type: Plain text
-#: pacman-g2.txt:288
+#: pacman-g2.txt:295
 #, no-wrap
 msgid ""
 "original=X, current=Y, new=Z::\n"
@@ -2587,14 +2575,12 @@ msgid ""
 "\tmaking any necessary customizations.\n"
 msgstr ""
 "original=X, actuel=Y, nouveau=Z::\n"
-"\tTout les trois fichiers sont différents, donc nous installons le nouveau "
-"fochier avec un .pacnew\n"
-"\tcomme extension et avertissons l'utilisateur, donc il peut manuellement "
-"déplacer le fichier à la bonne place après\n"
-"\tavoir fait les modifications nécéssaires.\n"
+"\tTous les trois fichiers sont différents, nous installons alors le nouveau fochier avec un .pacnew\n"
+"\tcomme extension, et avertissons l'utilisateur, il peut donc manuellement déplacer le fichier à la bonne place après\n"
+"\tavoir apporté les modifications nécessaires.\n"
 
 # type: Plain text
-#: pacman-g2.txt:296
+#: pacman-g2.txt:303
 msgid ""
 "pacman-g2 will attempt to read /etc/pacman-g2.conf each time it is invoked. "
 "This configuration file is divided into sections or repositories. Each "
@@ -2602,29 +2588,29 @@ msgid ""
 "for packages in --sync mode. The exception to this is the options section, "
 "which defines global options."
 msgstr ""
-"pacman-g2 va tenter de lire /etc/pacman-g2.conf à chaque fois qu'il est "
+"pacman-g2 va tenter de lire /etc/pacman-g2.conf chaque fois qu'il est "
 "invoqué. Ce fichier de configuration est divisé en sections ou dépôts. "
-"Chaque section définie un dépôt de paquets que pacman-g2 peut utiliser quand "
+"Chaque section définit un dépôt de paquets que pacman-g2 peut utiliser quand "
 "il recherche des paquets en mode --sync. L'exception à cette règle est la "
-"section options, qui définie les options globales."
+"section options, qui définit les options globales."
 
 # type: Plain text
-#: pacman-g2.txt:298
+#: pacman-g2.txt:305
 msgid "Example:"
 msgstr "Exemple:"
 
 # type: Plain text
-#: pacman-g2.txt:303
+#: pacman-g2.txt:310
 msgid "[options] HoldPkg = pacman-g2 glibc bash coreutils HoldPkg = chkconfig"
 msgstr "[options] HoldPkg = pacman-g2 glibc bash coreutils HoldPkg = chkconfig"
 
 # type: Plain text
-#: pacman-g2.txt:305
+#: pacman-g2.txt:312
 msgid "Include = /etc/pacman-g2/repos/frugalware-current"
 msgstr "Include = /etc/pacman-g2/repos/frugalware-current"
 
 # type: Plain text
-#: pacman-g2.txt:308
+#: pacman-g2.txt:315
 #, no-wrap
 msgid ""
 "[custom]\n"
@@ -2636,12 +2622,12 @@ msgstr ""
 "----\n"
 
 # type: Plain text
-#: pacman-g2.txt:311
+#: pacman-g2.txt:318
 msgid "== CONFIG: OPTIONS"
 msgstr "== CONFIGURATION: OPTIONS"
 
 # type: Plain text
-#: pacman-g2.txt:315
+#: pacman-g2.txt:322
 #, no-wrap
 msgid ""
 "DBPath = path/to/db/dir::\n"
@@ -2649,12 +2635,11 @@ msgid ""
 "\tis var/lib/pacman-g2.\n"
 msgstr ""
 "DBPath = chemin/vers/la/base/de/données::\n"
-"\tÉcrase l'emplacement par défaut du répertoire de la base de données racine. "
-"La valeur par défaut\n"
+"\tÉcrase l'emplacement par défaut du répertoire de la base de données racine. La valeur par défaut\n"
 "\test var/lib/pacman-g2.\n"
 
 # type: Plain text
-#: pacman-g2.txt:319
+#: pacman-g2.txt:326
 #, no-wrap
 msgid ""
 "CacheDir = path/to/cache/dir::\n"
@@ -2662,12 +2647,11 @@ msgid ""
 "\tvar/cache/pacman-g2.\n"
 msgstr ""
 "CacheDir = path/to/cache/dir::\n"
-"\tSupplante la localisation par défaut du répertoire du cache de paquets. "
-"Celui par défaut est\n"
+"\tSupplante la localisation par défaut du répertoire du cache de paquets. Celui par défaut est\n"
 "\tvar/cache/pacman-g2.\n"
 
 # type: Plain text
-#: pacman-g2.txt:323
+#: pacman-g2.txt:330
 #, no-wrap
 msgid ""
 "HoldPkg = <package> [package] ...::\n"
@@ -2675,12 +2659,11 @@ msgid ""
 "\task for confirmation before proceeding.\n"
 msgstr ""
 "HoldPkg = <paquet> [paquet] ...::\n"
-"\tSi un utilisateur essaye --remove avec un paquet listé dans HoldPkg, "
-"pacman-g2 va\n"
-"\tdemander la confirmation avant de procéder.\n"
+"\tSi un utilisateur essaie --remove avec un paquet listé dans HoldPkg, pacman-g2\n"
+"\tdemandera confirmation avant de procéder.\n"
 
 # type: Plain text
-#: pacman-g2.txt:327
+#: pacman-g2.txt:334
 #, no-wrap
 msgid ""
 "IgnorePkg = <package> [package] ...::\n"
@@ -2688,12 +2671,11 @@ msgid ""
 "\t--sysupgrade.\n"
 msgstr ""
 "IgnorePkg = <paquet> [paquet] ...::\n"
-"\tOrdonne à pacman-g2 d'ignorer les mises à jour pour ce paquet lors de "
-"l'éxécution d'un\n"
+"\tOrdonne à pacman-g2 d'ignorer les mises à jour pour ce paquet lors de l'exécution d'un\n"
 "\t--sysupgrade.\n"
 
 # type: Plain text
-#: pacman-g2.txt:331
+#: pacman-g2.txt:338
 #, no-wrap
 msgid ""
 "UpgradeDelay = <number>::\n"
@@ -2701,12 +2683,11 @@ msgid ""
 "\t--sysupgrade.\n"
 msgstr ""
 "UpgradeDelay = <nombre>::\n"
-"\tMet à jour seulement les paquets vieux d'au moins <nombre> jours lors de "
-"l'exécution d'un\n"
+"\tMet à jour seulement les paquets qui ont plus de <nombre> jours lors de l'exécution d'un\n"
 "\t--sysupgrade.\n"
 
 # type: Plain text
-#: pacman-g2.txt:335
+#: pacman-g2.txt:342
 #, no-wrap
 msgid ""
 "OldDelay = <number>::\n"
@@ -2714,13 +2695,11 @@ msgid ""
 "\tcan be upgraded using -Sy) haven't been updated for <number> days.\n"
 msgstr ""
 "OldDelay = <nombre>::\n"
-"\tEmet un avertissement quand vous installez un paquet, mais quand la base "
-"locale de données de synchronisation (qui\n"
-"\tpeut être mis à jour en utilisant -Sy) n'a pas été mise à jour depuis "
-"<nombre> jours.\n"
+"\tEmet un avertissement quand vous installez un paquet, mais la base locale de données de synchronisation (qui\n"
+"\tpeut être mis à jour en utilisant -Sy) quand elle ne l'a pas été depuis <nombre> jours.\n"
 
 # type: Plain text
-#: pacman-g2.txt:339
+#: pacman-g2.txt:346
 #, no-wrap
 msgid ""
 "MaxTries = <number>::\n"
@@ -2728,13 +2707,11 @@ msgid ""
 "\tinternet connection and your packages often get corrupted during the download.\n"
 msgstr ""
 "MaxTries = <nombre>::\n"
-"\tTente de télécharger les paquets pendant <nombre> fois. Ceci est utile dans "
-"le cas où vous avez une mauvaise\n"
-"\tconnection internet et que vos paquets sont souvent corrompus pendant le "
-"téléchargement.\n"
+"\tTente de télécharger les paquets pendant <x> fois. Ceci est utile dans le cas où vous avez une mauvaise\n"
+"\tconnection internet et que vos paquets sont souvent corrompus pendant le téléchargement.\n"
 
 # type: Plain text
-#: pacman-g2.txt:343
+#: pacman-g2.txt:350
 #, no-wrap
 msgid ""
 "Include = <path>::\n"
@@ -2746,7 +2723,7 @@ msgstr ""
 "\tdes options de configuration générale.\n"
 
 # type: Plain text
-#: pacman-g2.txt:346
+#: pacman-g2.txt:353
 #, no-wrap
 msgid ""
 "ProxyServer = <host|ip>::\n"
@@ -2756,7 +2733,7 @@ msgstr ""
 "\tS'il est paramétré, pacman-g2 utilisera ce server du proxy pour tous les transferts ftp/http.\n"
 
 # type: Plain text
-#: pacman-g2.txt:350
+#: pacman-g2.txt:357
 #, no-wrap
 msgid ""
 "ProxyPort = port::\n"
@@ -2768,7 +2745,7 @@ msgstr ""
 "\t(par Défaut: 80).\n"
 
 # type: Plain text
-#: pacman-g2.txt:356
+#: pacman-g2.txt:363
 #, no-wrap
 msgid ""
 "XferCommand = /path/to/command %u::\n"
@@ -2784,7 +2761,7 @@ msgstr ""
 "\tce qui permet à des programmes comme wget le téléchargement correct d'un fichier."
 
 # type: Plain text
-#: pacman-g2.txt:360
+#: pacman-g2.txt:367
 #, no-wrap
 msgid ""
 "\tThis option is useful for users who experience problems with pacman-g2's\n"
@@ -2796,7 +2773,7 @@ msgstr ""
 " \tavec des outils comme curl.\n"
 
 # type: Plain text
-#: pacman-g2.txt:363
+#: pacman-g2.txt:370
 #, no-wrap
 msgid ""
 "NoPassiveFtp::\n"
@@ -2806,7 +2783,7 @@ msgstr ""
 "\tDésactive les connexions à un ftp passif durant le téléchargement des paquets. (aka Active Mode)\n"
 
 # type: Plain text
-#: pacman-g2.txt:367
+#: pacman-g2.txt:374
 #, no-wrap
 msgid ""
 "NoUpgrade = <file> [file] ...::\n"
@@ -2818,13 +2795,13 @@ msgstr ""
 "\tune installation/mise à jour de paquet.\n"
 
 # type: Plain text
-#: pacman-g2.txt:369
+#: pacman-g2.txt:376
 #, no-wrap
 msgid "\tNOTE: Do not include the leading slash when specifying files.\n"
 msgstr "\tNOTE: N'incluez pas le slash principal en spécifiant des fichiers.\n"
 
 # type: Plain text
-#: pacman-g2.txt:376
+#: pacman-g2.txt:383
 #, no-wrap
 msgid ""
 "NoExtract = <file> [file] ...::\n"
@@ -2836,13 +2813,13 @@ msgid ""
 msgstr ""
 "NoExtract = <file> [file] ...::\n"
 "\tTous les fichiers inscrits avec une directive NoExtract ne seront jamais extraits d'un\n"
-" \tpaquet dans le système de fichiers. Cela peut être utile quand vous ne voulez pas qu'une partie d'un\n"
-" \tpaquet soit installée. Par exemple, si votre racine (root) httpd utilise un index.php, \n"
-" \talors, vous ne voudriez pas que le fichier index.html soit extrait du paquet\n"
-" \tapache.\n"
+"\tpaquet dans le système de fichiers. Cela peut être utile quand vous ne voulez pas qu'une partie d'un\n"
+"\tpaquet soit installée. Par exemple, si votre racine (root) httpd utilise un index.php, \n"
+"\talors, vous ne voudriez pas que le fichier index.html soit extrait du paquet\n"
+"\tapache.\n"
 
 # type: Plain text
-#: pacman-g2.txt:380
+#: pacman-g2.txt:387
 #, no-wrap
 msgid ""
 "UseSyslog::\n"
@@ -2854,7 +2831,7 @@ msgstr ""
 "\tdans votre /var/log/messages ou équivalent.\n"
 
 # type: Plain text
-#: pacman-g2.txt:383
+#: pacman-g2.txt:390
 #, no-wrap
 msgid ""
 "LogFile = /path/to/file::\n"
@@ -2864,12 +2841,12 @@ msgstr ""
 "\tActions log directement à un fichier, habituellement /var/log/pacman-g2.log.\n"
 
 # type: Plain text
-#: pacman-g2.txt:385
+#: pacman-g2.txt:392
 msgid "== CONFIG: REPOSITORIES"
 msgstr "== CONFIGURATION: RÉPERTOIRES"
 
 # type: Plain text
-#: pacman-g2.txt:392
+#: pacman-g2.txt:399
 msgid ""
 "Each repository section defines a section name and at least one location "
 "where the packages can be found. The section name is defined by the string "
@@ -2889,12 +2866,12 @@ msgstr ""
 "file: // ' , comme indiqué ci-dessus."
 
 # type: Plain text
-#: pacman-g2.txt:394
+#: pacman-g2.txt:401
 msgid "== USING YOUR OWN REPOSITORY"
 msgstr "== UTILISATION DE VOTRE PROPRE DÉPÔT"
 
 # type: Plain text
-#: pacman-g2.txt:399
+#: pacman-g2.txt:406
 msgid ""
 "Let's say you have a bunch of custom packages in /home/pkgs and their "
 "respective FrugalBuild files are all in /var/fst/local. All you need to do "
@@ -2908,7 +2885,7 @@ msgstr ""
 "exécuté avec --refresh.."
 
 # type: Plain text
-#: pacman-g2.txt:402
+#: pacman-g2.txt:409
 #, no-wrap
 msgid ""
 "# gensync /var/fst/local /home/pkgs/custom.fdb\n"
@@ -2918,7 +2895,7 @@ msgstr ""
 "----\n"
 
 # type: Plain text
-#: pacman-g2.txt:412
+#: pacman-g2.txt:419
 msgid ""
 "The above command will read all FrugalBuild files in /var/fst/local and "
 "generate a compressed database called /home/pkgs/custom.fdb. Note that the "
@@ -2930,7 +2907,7 @@ msgid ""
 "--refresh option."
 msgstr ""
 "Le commande précédente lira tous les dossiers FrugalBuild dans/var/fst/"
-"local, et produira une base de données compressée  appelé /home/pkgs/custom."
+"local, et produira une base de données compressée nommée /home/pkgs/custom."
 "fdb. Notez que la base de données doit être sous la forme {treename} .fdb, "
 "où {treename} est le nom de la section définie dans le dossier de "
 "configuration. C'est tout! Configurez maintenant votre section personnalisée "
@@ -2940,12 +2917,12 @@ msgstr ""
 "et utiliser l'option pacman-g2's --refresh."
 
 # type: Plain text
-#: pacman-g2.txt:414
+#: pacman-g2.txt:421
 msgid "== HOOKS"
 msgstr "== CROCHETS"
 
 # type: Plain text
-#: pacman-g2.txt:418
+#: pacman-g2.txt:425
 msgid ""
 "pacman-g2 will attempt to execute hooks in the /etc/pacman-g2/hooks "
 "directory.  The hooks are like package scriptlets: each file can provide "
@@ -2957,20 +2934,39 @@ msgstr ""
 "actuelle, les hooks suivants sont supportés :"
 
 # type: Plain text
-#: pacman-g2.txt:421
+#: pacman-g2.txt:431
 #, no-wrap
 msgid ""
+"pre_sysupgrade::\n"
+"\tExecuted before upgrading packages (and after the integrity check) during a\n"
+"\t`pacman-g2 -S --sysupgrade`.\n"
 "post_sysupgrade::\n"
 "\tExecuted after a successful `pacman-g2 -S --sysupgrade`.\n"
 msgstr ""
+"pre_sysupgrade::\n"
+"\tEst exécuté avant la mise à jour des paquets (et après la vérification de "
+"l'intégrité) pendant un\n"
+"\t`pacman-g2 -S --sysupgrade`.\n"
 "post_sysupgrade::\n"
-"\tExecuté après un `pacman-g2 -S --sysupgrade` réussi.\n"
+"\tEst exécuté après un appel à `pacman-g2 -S --sysupgrade` fructueux.\n"
 
 # type: Plain text
-#: pacman-g2.txt:425
+#: pacman-g2.txt:435
 #, no-wrap
 msgid "*makepkg*(8)\n"
 msgstr "*makepkg*(8)\n"
+
+# type: Plain text
+#~ msgid "\t# pacman-g2 -S gst-.*\n"
+#~ msgstr "\t# pacman-g2 -S gst-.*\n"
+
+# type: Plain text
+#~ msgid ""
+#~ "post_sysupgrade::\n"
+#~ "\tExecuted after a successful `pacman-g2 -S --sysupgrade`.\n"
+#~ msgstr ""
+#~ "post_sysupgrade::\n"
+#~ "\tExecuté après un `pacman-g2 -S --sysupgrade` réussi.\n"
 
 # type: Plain text
 #~ msgid ""
