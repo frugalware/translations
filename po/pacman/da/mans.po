@@ -2,20 +2,20 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-03 05:04+0100\n"
-"PO-Revision-Date: 2008-01-29 14:04+0100\n"
+"POT-Creation-Date: 2008-04-17 05:09+0200\n"
+"PO-Revision-Date: 2008-04-17 19:28+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 1.0\n"
+"X-Generator: Pootle 1.1.0\n"
 
 # type: Plain text
 #: FrugalBuild.txt:2
@@ -62,7 +62,7 @@ msgstr "=== ENKEL EKSEMPEL"
 #: FrugalBuild.txt:17 FrugalBuild.txt:44 FrugalBuild.txt:157
 #: FrugalBuild.txt:170 FrugalBuild.txt:202 FrugalBuild.txt:244
 #: FrugalBuild.txt:408 FrugalBuild.txt:432 FrugalBuild.txt:448
-#: pacman-g2.txt:299 pacman-g2.txt:400
+#: pacman-g2.txt:306 pacman-g2.txt:407
 #, no-wrap
 msgid "----\n"
 msgstr "----\n"
@@ -1255,7 +1255,7 @@ msgstr ""
 "med tilhørende wildcards!"
 
 # type: Plain text
-#: FrugalBuild.txt:459 makepkg.txt:161 pacman-g2.txt:423
+#: FrugalBuild.txt:459 makepkg.txt:161 pacman-g2.txt:433
 msgid "== SEE ALSO"
 msgstr "== SE OGSÅ"
 
@@ -1266,12 +1266,12 @@ msgid "*makepkg*(8), *pacman-g2*(8)\n"
 msgstr "*makepkg*(8), *pacman-g2*(8)\n"
 
 # type: Plain text
-#: FrugalBuild.txt:463 makepkg.txt:165 pacman-g2.txt:427
+#: FrugalBuild.txt:463 makepkg.txt:165 pacman-g2.txt:437
 msgid "== AUTHORS"
 msgstr "== UDVIKLERE"
 
 # type: Plain text
-#: FrugalBuild.txt:464 makepkg.txt:166 pacman-g2.txt:428
+#: FrugalBuild.txt:464 makepkg.txt:166 pacman-g2.txt:438
 msgid "See /usr/share/doc/pacman-g2-*/AUTHORS."
 msgstr "Se /usr/share/doc/pacman-g2-*/AUTHORS."
 
@@ -1321,7 +1321,7 @@ msgstr ""
 "bygge-træet. Se `makeworld --help` for syntax."
 
 # type: Plain text
-#: makepkg.txt:26 pacman-g2.txt:62
+#: makepkg.txt:26 pacman-g2.txt:60
 msgid "== OPTIONS"
 msgstr "== INDSTILLINGER"
 
@@ -1692,7 +1692,7 @@ msgstr ""
 "\ter nyttigt hvis man dirigerer makepkg´s output til en ikke-terminal (f.eks, en fil).\n"
 
 # type: Plain text
-#: makepkg.txt:151 pacman-g2.txt:290
+#: makepkg.txt:151 pacman-g2.txt:297
 msgid "== CONFIGURATION"
 msgstr "== KONFIGURATION"
 
@@ -1822,23 +1822,19 @@ msgid ""
 "\tthe ftp servers, complete with all dependencies required to run the packages.\n"
 "\tFor example, pacman-g2 -S qt will download qt and all the packages it depends\n"
 "\ton and install them. You could also use pacman-g2 -Su to upgrade all packages\n"
-"\tthat are out of date (see below). Target can be a regex, like:\n"
+"\tthat are out of date (see below).\n"
 msgstr ""
 "-S, --sync::\n"
 "\tSynkroniser pakker. Med denne funktion kan du installere pakker direkte fra\n"
-"\tftp servere, fuldstændigt med alle påkrævede afhængigheder for at køre pakkerne.\n"
+"\tftp servere, fuldstændigt med alle påkrævede afhængigheder for at køre "
+"pakkerne.\n"
 "\tF.eks, pacman-g2 -S qt vil downloade qt og alle pakkerne den afhænger\n"
-"\taf og installere dem. Du kunne også bruge pacman-g2 -Su til at opgradere alle pakker\n"
-"\tder er ude af dato (se nedenfor). Mål kan være en regex, som:\n"
+"\taf og installere dem. Du kan også bruge pacman-g2 -Su til at opgradere alle "
+"pakker\n"
+"\tder er ude af dato (se nedenfor).\n"
 
 # type: Plain text
-#: pacman-g2.txt:48
-#, no-wrap
-msgid "\t# pacman-g2 -S gst-.*\n"
-msgstr "\t# pacman-g2 -S gst-.*\n"
-
-# type: Plain text
-#: pacman-g2.txt:53
+#: pacman-g2.txt:51
 #, no-wrap
 msgid ""
 "-U, --upgrade::\n"
@@ -1852,7 +1848,7 @@ msgstr ""
 "\tfiler.\n"
 
 # type: Plain text
-#: pacman-g2.txt:56
+#: pacman-g2.txt:54
 #, no-wrap
 msgid ""
 "-V, --version::\n"
@@ -1862,7 +1858,7 @@ msgstr ""
 "\tViser version og forlader programmet.\n"
 
 # type: Plain text
-#: pacman-g2.txt:60
+#: pacman-g2.txt:58
 #, no-wrap
 msgid ""
 "-h, --help::\n"
@@ -1874,7 +1870,7 @@ msgstr ""
 "\tgenerale syntaks bliver vist.\n"
 
 # type: Plain text
-#: pacman-g2.txt:67
+#: pacman-g2.txt:65
 #, no-wrap
 msgid ""
 "-d, --nodeps::\n"
@@ -1888,7 +1884,7 @@ msgstr ""
 "\tikke er nogen pakkekonflikter på systemet. Dette tilvalg inaktiverer disse checks.\n"
 
 # type: Plain text
-#: pacman-g2.txt:73
+#: pacman-g2.txt:71
 #, no-wrap
 msgid ""
 "-f, --force::\n"
@@ -1904,7 +1900,7 @@ msgstr ""
 "\tforsigtighed, overhovedet ikke ideel.\n"
 
 # type: Plain text
-#: pacman-g2.txt:77
+#: pacman-g2.txt:75
 #, no-wrap
 msgid ""
 "--noarch::\n"
@@ -1916,7 +1912,7 @@ msgstr ""
 "\tpakke på `x86_64` hvis du ved hvad du er ved at gøre.\n"
 
 # type: Plain text
-#: pacman-g2.txt:85
+#: pacman-g2.txt:83
 #, no-wrap
 msgid ""
 "-r, --root <path>::\n"
@@ -1936,7 +1932,7 @@ msgstr ""
 "\tpakke databasse der skal bruges.\n"
 
 # type: Plain text
-#: pacman-g2.txt:88
+#: pacman-g2.txt:86
 #, no-wrap
 msgid ""
 "-b, --dbpath:\n"
@@ -1946,7 +1942,7 @@ msgstr ""
 "\tPræciser en alternativ databasesti (standard er `var/lib/pacman`).\n"
 
 # type: Plain text
-#: pacman-g2.txt:91
+#: pacman-g2.txt:89
 #, no-wrap
 msgid ""
 "-v, --verbose::\n"
@@ -1956,7 +1952,7 @@ msgstr ""
 "\tVis mere output og fejlbeskeder.\n"
 
 # type: Plain text
-#: pacman-g2.txt:94
+#: pacman-g2.txt:92
 #, no-wrap
 msgid ""
 "--config <path>::\n"
@@ -1966,7 +1962,7 @@ msgstr ""
 "\tPræciser en alternativ konfigurationsfil.\n"
 
 # type: Plain text
-#: pacman-g2.txt:98
+#: pacman-g2.txt:96
 #, no-wrap
 msgid ""
 "--noconfirm::\n"
@@ -1978,7 +1974,7 @@ msgstr ""
 "\tmedmindre at du ønsker at køre pacman-g2 fra et script.\n"
 
 # type: Plain text
-#: pacman-g2.txt:103
+#: pacman-g2.txt:101
 #, no-wrap
 msgid ""
 "--ask <number>::\n"
@@ -1992,7 +1988,7 @@ msgstr ""
 "\ter følgende:\n"
 
 # type: Plain text
-#: pacman-g2.txt:110
+#: pacman-g2.txt:108
 #, no-wrap
 msgid ""
 "\t* The given package is in IgnorePkg. (1)\n"
@@ -2010,7 +2006,7 @@ msgstr ""
 "\t* Lokal version er fuld opdateret. (32)\n"
 
 # type: Plain text
-#: pacman-g2.txt:113
+#: pacman-g2.txt:111
 #, no-wrap
 msgid ""
 "\tSelect for what types do you want to answer yes, sum up the values and use the\n"
@@ -2020,7 +2016,7 @@ msgstr ""
 "\tresultatet som en parameter til denne valgmulighed. \n"
 
 # type: Plain text
-#: pacman-g2.txt:117
+#: pacman-g2.txt:115
 #, no-wrap
 msgid ""
 "--noprogressbar::\n"
@@ -2032,7 +2028,7 @@ msgstr ""
 "\tscripts der kalder pacman-g2 og fanger output.\n"
 
 # type: Plain text
-#: pacman-g2.txt:120
+#: pacman-g2.txt:118
 #, no-wrap
 msgid ""
 "--noscriptlet::\n"
@@ -2042,7 +2038,7 @@ msgstr ""
 "\tUdfør ikke install scriptlets, hvis der er nogen.\n"
 
 # type: Plain text
-#: pacman-g2.txt:123
+#: pacman-g2.txt:121
 #, no-wrap
 msgid ""
 "--nointegrity::\n"
@@ -2052,12 +2048,36 @@ msgstr ""
 "\tSkip SHA1 integritetstjekket for de downloadede pakker\n"
 
 # type: Plain text
-#: pacman-g2.txt:125
+#: pacman-g2.txt:124
+#, no-wrap
+msgid ""
+"--regex::\n"
+"\tThreat the target names as regular expressions if no target found.\n"
+msgstr ""
+"--regex::\n"
+"\tBrug målnavn som regulært udtryk hvis intet mål blev fundet.\n"
+
+# type: Plain text
+#: pacman-g2.txt:129
+#, no-wrap
+msgid ""
+"\tExample:\n"
+"\t----\n"
+"\t# pacman-g2 -S --regex perl-.*\n"
+"\t----\n"
+msgstr ""
+"\tEksempel:\n"
+"\t----\n"
+"\t# pacman-g2 -S --regex perl-.*\n"
+"\t----\n"
+
+# type: Plain text
+#: pacman-g2.txt:131
 msgid "== SYNC OPTIONS"
 msgstr "== SYNC VALGMULIGHEDER"
 
 # type: Plain text
-#: pacman-g2.txt:132
+#: pacman-g2.txt:138
 #, no-wrap
 msgid ""
 "-c, --clean::\n"
@@ -2075,7 +2095,7 @@ msgstr ""
 "\tcache.\n"
 
 # type: Plain text
-#: pacman-g2.txt:137
+#: pacman-g2.txt:143
 #, no-wrap
 msgid ""
 "-e, --dependsonly::\n"
@@ -2089,7 +2109,7 @@ msgstr ""
 "\tsource.\n"
 
 # type: Plain text
-#: pacman-g2.txt:141
+#: pacman-g2.txt:147
 #, no-wrap
 msgid ""
 "-g, --groups::\n"
@@ -2101,7 +2121,7 @@ msgstr ""
 "\tgivet, vil alle grupper blive oplistet.\n"
 
 # type: Plain text
-#: pacman-g2.txt:146
+#: pacman-g2.txt:152
 #, no-wrap
 msgid ""
 "-i, --info::\n"
@@ -2115,7 +2135,7 @@ msgstr ""
 "\tkonflikter, etc.\n"
 
 # type: Plain text
-#: pacman-g2.txt:150
+#: pacman-g2.txt:156
 #, no-wrap
 msgid ""
 "-l, --list::\n"
@@ -2127,7 +2147,7 @@ msgstr ""
 "\tpræciserede på kommandolinien.\n"
 
 # type: Plain text
-#: pacman-g2.txt:155
+#: pacman-g2.txt:161
 #, no-wrap
 msgid ""
 "-p, --print-uris::\n"
@@ -2141,7 +2161,7 @@ msgstr ""
 "\tdownloades på et senere tidspunkt, ved brug af et program som wget.\n"
 
 # type: Plain text
-#: pacman-g2.txt:159
+#: pacman-g2.txt:165
 #, no-wrap
 msgid ""
 "-s, --search <regexp>::\n"
@@ -2153,7 +2173,7 @@ msgstr ""
 "\tder indeholder <regulære udtryk>.\n"
 
 # type: Plain text
-#: pacman-g2.txt:167
+#: pacman-g2.txt:173
 #, no-wrap
 msgid ""
 "-u, --sysupgrade::\n"
@@ -2173,7 +2193,7 @@ msgstr ""
 "\tnødvendigt.\n"
 
 # type: Plain text
-#: pacman-g2.txt:170
+#: pacman-g2.txt:176
 #, no-wrap
 msgid ""
 "-w, --downloadonly::\n"
@@ -2183,21 +2203,24 @@ msgstr ""
 "\tHent alle pakker fra serveren, men installer/opgrader ikke noget.\n"
 
 # type: Plain text
-#: pacman-g2.txt:175
+#: pacman-g2.txt:182
 #, no-wrap
 msgid ""
 "-y, --refresh::\n"
 "\tDownload a fresh copy of the master package list from the ftp server defined in\n"
 "\t/etc/pacman-g2.conf. This should typically be used each time you use\n"
-"\t--sysupgrade.\n"
+"\t--sysupgrade. If used more than once, then it forces the re-download of the\n"
+"\tpackage database, even in case it's up to date.\n"
 msgstr ""
 "-y, --refresh::\n"
 "\tDownload en frisk kopi af hoved pakkelisten fra ftpserveren defineret i\n"
 "\t/etc/pacman-g2.conf. Dette burde typisk blive brugt hver gang du bruger\n"
-"\t--sysupgrade.\n"
+"\t--sysupgrade. Hvis det bruges mere end en gang, vil det gennemtvinge en "
+"gen-download af\n"
+"\tpakke databasen, selv i det tilfælde hvor den er up to date.\n"
 
 # type: Plain text
-#: pacman-g2.txt:180
+#: pacman-g2.txt:187
 #, no-wrap
 msgid ""
 "--ignore <pkg>::\n"
@@ -2211,12 +2234,12 @@ msgstr ""
 "\tat redigere pacman-g2.conf hver gang.\n"
 
 # type: Plain text
-#: pacman-g2.txt:182
+#: pacman-g2.txt:189
 msgid "== REMOVE OPTIONS"
 msgstr "== FJERN VALGMULIGHEDER"
 
 # type: Plain text
-#: pacman-g2.txt:186
+#: pacman-g2.txt:193
 #, no-wrap
 msgid ""
 "-c, --cascade::\n"
@@ -2228,7 +2251,7 @@ msgstr ""
 "\tmålpakker. Denne operation er rekursiv.\n"
 
 # type: Plain text
-#: pacman-g2.txt:189
+#: pacman-g2.txt:196
 #, no-wrap
 msgid ""
 "-k, --keep::\n"
@@ -2238,7 +2261,7 @@ msgstr ""
 "\tFjerner kun databaseposteringen. Efterlader alle filer på deres plads.\n"
 
 # type: Plain text
-#: pacman-g2.txt:195
+#: pacman-g2.txt:202
 #, no-wrap
 msgid ""
 "-n, --nosave::\n"
@@ -2254,7 +2277,7 @@ msgstr ""
 "\tbenævnelser blive ignoreret og filerne bliver fjernet.\n"
 
 # type: Plain text
-#: pacman-g2.txt:201
+#: pacman-g2.txt:208
 #, no-wrap
 msgid ""
 "-s, --recursive::\n"
@@ -2270,12 +2293,12 @@ msgstr ""
 "\thandling.\n"
 
 # type: Plain text
-#: pacman-g2.txt:203
+#: pacman-g2.txt:210
 msgid "== QUERY OPTIONS"
 msgstr "== QUERY VALGMULIGHEDER"
 
 # type: Plain text
-#: pacman-g2.txt:206
+#: pacman-g2.txt:213
 #, no-wrap
 msgid ""
 "-c, --changelog::\n"
@@ -2285,7 +2308,7 @@ msgstr ""
 "\tSe ændringsloggen af en pakke.\n"
 
 # type: Plain text
-#: pacman-g2.txt:210
+#: pacman-g2.txt:217
 #, no-wrap
 msgid ""
 "-e, --orphans::\n"
@@ -2297,7 +2320,7 @@ msgstr ""
 "\teksplicit) og som ikke er påkrævet af nogen andre pakker.\n"
 
 # type: Plain text
-#: pacman-g2.txt:214
+#: pacman-g2.txt:221
 #, no-wrap
 msgid ""
 "-g, --groups::\n"
@@ -2309,7 +2332,7 @@ msgstr ""
 "\tgivet, vil alle grupper og medlemmer blive oplistet.\n"
 
 # type: Plain text
-#: pacman-g2.txt:218
+#: pacman-g2.txt:225
 #, no-wrap
 msgid ""
 "-i, --info::\n"
@@ -2321,7 +2344,7 @@ msgstr ""
 "\tvil .PKGINFO filen blive udskrevet.\n"
 
 # type: Plain text
-#: pacman-g2.txt:222
+#: pacman-g2.txt:229
 #, no-wrap
 msgid ""
 "-l, --list::\n"
@@ -2333,7 +2356,7 @@ msgstr ""
 "\tkommandolinjen.\n"
 
 # type: Plain text
-#: pacman-g2.txt:226
+#: pacman-g2.txt:233
 #, no-wrap
 msgid ""
 "-m, --foreign::\n"
@@ -2345,7 +2368,7 @@ msgstr ""
 "\tpakkerne blevet downloadet manuelt og installeret med --add.\n"
 
 # type: Plain text
-#: pacman-g2.txt:229
+#: pacman-g2.txt:236
 #, no-wrap
 msgid ""
 "-o, --owns <path>::\n"
@@ -2355,7 +2378,7 @@ msgstr ""
 "\tSøg efter pakken der ejer en givet fil eller folder.\n"
 
 # type: Plain text
-#: pacman-g2.txt:234
+#: pacman-g2.txt:241
 #, no-wrap
 msgid ""
 "-p, --file::\n"
@@ -2369,7 +2392,7 @@ msgstr ""
 "\tnyttig med --info og --list.\n"
 
 # type: Plain text
-#: pacman-g2.txt:238
+#: pacman-g2.txt:245
 #, no-wrap
 msgid ""
 "-s, --search <regexp>::\n"
@@ -2381,7 +2404,7 @@ msgstr ""
 "\tindeholder <regulært udtryk>.\n"
 
 # type: Plain text
-#: pacman-g2.txt:241
+#: pacman-g2.txt:248
 #, no-wrap
 msgid ""
 "-t, --test::\n"
@@ -2391,7 +2414,7 @@ msgstr ""
 "\tTester den lokale database, ved at søge efter savnede informationer. Eksempel:\n"
 
 # type: Plain text
-#: pacman-g2.txt:246
+#: pacman-g2.txt:253
 #, no-wrap
 msgid ""
 "\t----\n"
@@ -2405,13 +2428,13 @@ msgstr ""
 "\t----\n"
 
 # type: Plain text
-#: pacman-g2.txt:248
+#: pacman-g2.txt:255
 #, no-wrap
 msgid "\tThe recommended method in this case is to remove the database entry:\n"
 msgstr "\tDen anbefalede metode i dette tilfælde vil være at fjerne databaseposteringen:\n"
 
 # type: Plain text
-#: pacman-g2.txt:252
+#: pacman-g2.txt:259
 #, no-wrap
 msgid ""
 "\t----\n"
@@ -2423,13 +2446,13 @@ msgstr ""
 "\t----\n"
 
 # type: Plain text
-#: pacman-g2.txt:254
+#: pacman-g2.txt:261
 #, no-wrap
 msgid "\tand forcing the reinstall of the package:\n"
 msgstr "\tog gennemtvinge geninstallering af pakken:\n"
 
 # type: Plain text
-#: pacman-g2.txt:258
+#: pacman-g2.txt:265
 #, no-wrap
 msgid ""
 "\t----\n"
@@ -2441,12 +2464,12 @@ msgstr ""
 "\t----\n"
 
 # type: Plain text
-#: pacman-g2.txt:260
+#: pacman-g2.txt:267
 msgid "== HANDLING CONFIG FILES"
 msgstr "== HÅNDTERING KONFIG FILER"
 
 # type: Plain text
-#: pacman-g2.txt:267
+#: pacman-g2.txt:274
 msgid ""
 "pacman-g2 uses the same logic as rpm to determine action against files that "
 "are designated to be backed up. During an upgrade, it uses 3 md5 hashes for "
@@ -2463,7 +2486,7 @@ msgstr ""
 "Efter sammenligning af disse 3 hashes, kan følgende scenarioer resultere i:"
 
 # type: Plain text
-#: pacman-g2.txt:270
+#: pacman-g2.txt:277
 #, no-wrap
 msgid ""
 "original=X, current=X, new=X::\n"
@@ -2473,7 +2496,7 @@ msgstr ""
 "\tAlle tre filer er den samme, så det gør ingen forskel. Installer den nye fil..\n"
 
 # type: Plain text
-#: pacman-g2.txt:275
+#: pacman-g2.txt:282
 #, no-wrap
 msgid ""
 "original=X, current=X, new=Y::\n"
@@ -2487,7 +2510,7 @@ msgstr ""
 "\tforbedringer/bugfixes, installerer vi den nye fil.\n"
 
 # type: Plain text
-#: pacman-g2.txt:280
+#: pacman-g2.txt:287
 #, no-wrap
 msgid ""
 "original=X, current=Y, new=X::\n"
@@ -2501,7 +2524,7 @@ msgstr ""
 "\tsom den er.\n"
 
 # type: Plain text
-#: pacman-g2.txt:283
+#: pacman-g2.txt:290
 #, no-wrap
 msgid ""
 "original=X, current=Y, new=Y::\n"
@@ -2511,7 +2534,7 @@ msgstr ""
 "\tDen nye er identisk med den aktuelle. Win win. Installer den nye fil.\n"
 
 # type: Plain text
-#: pacman-g2.txt:288
+#: pacman-g2.txt:295
 #, no-wrap
 msgid ""
 "original=X, current=Y, new=Z::\n"
@@ -2525,7 +2548,7 @@ msgstr ""
 "\tat alle nødvendige tilpasninger er lavet.\n"
 
 # type: Plain text
-#: pacman-g2.txt:296
+#: pacman-g2.txt:303
 msgid ""
 "pacman-g2 will attempt to read /etc/pacman-g2.conf each time it is invoked. "
 "This configuration file is divided into sections or repositories. Each "
@@ -2540,22 +2563,22 @@ msgstr ""
 "globale valgmuligheder."
 
 # type: Plain text
-#: pacman-g2.txt:298
+#: pacman-g2.txt:305
 msgid "Example:"
 msgstr "Eksempel:"
 
 # type: Plain text
-#: pacman-g2.txt:303
+#: pacman-g2.txt:310
 msgid "[options] HoldPkg = pacman-g2 glibc bash coreutils HoldPkg = chkconfig"
 msgstr "[options] HoldPkg = pacman-g2 glibc bash coreutils HoldPkg = chkconfig"
 
 # type: Plain text
-#: pacman-g2.txt:305
+#: pacman-g2.txt:312
 msgid "Include = /etc/pacman-g2/repos/frugalware-current"
 msgstr "Include = /etc/pacman-g2/repos/frugalware-current"
 
 # type: Plain text
-#: pacman-g2.txt:308
+#: pacman-g2.txt:315
 #, no-wrap
 msgid ""
 "[custom]\n"
@@ -2567,12 +2590,12 @@ msgstr ""
 "----\n"
 
 # type: Plain text
-#: pacman-g2.txt:311
+#: pacman-g2.txt:318
 msgid "== CONFIG: OPTIONS"
 msgstr "== KONFIG: VALGMULIGHEDER"
 
 # type: Plain text
-#: pacman-g2.txt:315
+#: pacman-g2.txt:322
 #, no-wrap
 msgid ""
 "DBPath = path/to/db/dir::\n"
@@ -2584,7 +2607,7 @@ msgstr ""
 "\ter var/lib/pacman-g2.\n"
 
 # type: Plain text
-#: pacman-g2.txt:319
+#: pacman-g2.txt:326
 #, no-wrap
 msgid ""
 "CacheDir = path/to/cache/dir::\n"
@@ -2596,7 +2619,7 @@ msgstr ""
 "\tvar/cache/pacman-g2.\n"
 
 # type: Plain text
-#: pacman-g2.txt:323
+#: pacman-g2.txt:330
 #, no-wrap
 msgid ""
 "HoldPkg = <package> [package] ...::\n"
@@ -2608,7 +2631,7 @@ msgstr ""
 "\tspørge om bekræftelse før der fortsættes.\n"
 
 # type: Plain text
-#: pacman-g2.txt:327
+#: pacman-g2.txt:334
 #, no-wrap
 msgid ""
 "IgnorePkg = <package> [package] ...::\n"
@@ -2620,7 +2643,7 @@ msgstr ""
 "\t--sysupgrade.\n"
 
 # type: Plain text
-#: pacman-g2.txt:331
+#: pacman-g2.txt:338
 #, no-wrap
 msgid ""
 "UpgradeDelay = <number>::\n"
@@ -2632,7 +2655,7 @@ msgstr ""
 "\t--sysupgrade.\n"
 
 # type: Plain text
-#: pacman-g2.txt:335
+#: pacman-g2.txt:342
 #, no-wrap
 msgid ""
 "OldDelay = <number>::\n"
@@ -2644,7 +2667,7 @@ msgstr ""
 "\tkan blive opgraderet med -Sy) ikke er blevet opdateret for <number> dage.\n"
 
 # type: Plain text
-#: pacman-g2.txt:339
+#: pacman-g2.txt:346
 #, no-wrap
 msgid ""
 "MaxTries = <number>::\n"
@@ -2656,7 +2679,7 @@ msgstr ""
 "\tinternetforbindelse og dine pakker ofte bliver ødelagte under download.\n"
 
 # type: Plain text
-#: pacman-g2.txt:343
+#: pacman-g2.txt:350
 #, no-wrap
 msgid ""
 "Include = <path>::\n"
@@ -2668,7 +2691,7 @@ msgstr ""
 "\tgenerelle konfigurationsvalgmuligheder.\n"
 
 # type: Plain text
-#: pacman-g2.txt:346
+#: pacman-g2.txt:353
 #, no-wrap
 msgid ""
 "ProxyServer = <host|ip>::\n"
@@ -2678,7 +2701,7 @@ msgstr ""
 "\tHvis det sættes, vil pacman-g2 bruge denne proxyserver for alle ftp/http overførsler.\n"
 
 # type: Plain text
-#: pacman-g2.txt:350
+#: pacman-g2.txt:357
 #, no-wrap
 msgid ""
 "ProxyPort = port::\n"
@@ -2690,7 +2713,7 @@ msgstr ""
 "\t(Standard: 80).\n"
 
 # type: Plain text
-#: pacman-g2.txt:356
+#: pacman-g2.txt:363
 #, no-wrap
 msgid ""
 "XferCommand = /path/to/command %u::\n"
@@ -2706,7 +2729,7 @@ msgstr ""
 "\tudvidelse, hvilken tillader programmer som wget at lave fil resume ordentligt.\n"
 
 # type: Plain text
-#: pacman-g2.txt:360
+#: pacman-g2.txt:367
 #, no-wrap
 msgid ""
 "\tThis option is useful for users who experience problems with pacman-g2's\n"
@@ -2718,7 +2741,7 @@ msgstr ""
 "\tmed programmer som curl.\n"
 
 # type: Plain text
-#: pacman-g2.txt:363
+#: pacman-g2.txt:370
 #, no-wrap
 msgid ""
 "NoPassiveFtp::\n"
@@ -2728,7 +2751,7 @@ msgstr ""
 "\tInaktiverer passive ftpforbindelser når man downloader pakker. (alias Active Mode)\n"
 
 # type: Plain text
-#: pacman-g2.txt:367
+#: pacman-g2.txt:374
 #, no-wrap
 msgid ""
 "NoUpgrade = <file> [file] ...::\n"
@@ -2740,13 +2763,13 @@ msgstr ""
 "\tpakke installation/opgradering.\n"
 
 # type: Plain text
-#: pacman-g2.txt:369
+#: pacman-g2.txt:376
 #, no-wrap
 msgid "\tNOTE: Do not include the leading slash when specifying files.\n"
 msgstr "\tNOTE: Inkluder ikke den ledende slash når man specificerer filer.\n"
 
 # type: Plain text
-#: pacman-g2.txt:376
+#: pacman-g2.txt:383
 #, no-wrap
 msgid ""
 "NoExtract = <file> [file] ...::\n"
@@ -2764,7 +2787,7 @@ msgstr ""
 "\tpakken.\n"
 
 # type: Plain text
-#: pacman-g2.txt:380
+#: pacman-g2.txt:387
 #, no-wrap
 msgid ""
 "UseSyslog::\n"
@@ -2776,7 +2799,7 @@ msgstr ""
 "\tind i dine /var/log/beskeder eller ækvivalent.\n"
 
 # type: Plain text
-#: pacman-g2.txt:383
+#: pacman-g2.txt:390
 #, no-wrap
 msgid ""
 "LogFile = /path/to/file::\n"
@@ -2786,12 +2809,12 @@ msgstr ""
 "\tLog handlinger direkte til en fil, sædvanligvis /var/log/pacman-g2.log.\n"
 
 # type: Plain text
-#: pacman-g2.txt:385
+#: pacman-g2.txt:392
 msgid "== CONFIG: REPOSITORIES"
 msgstr "== KONFIG: ARKIVER"
 
 # type: Plain text
-#: pacman-g2.txt:392
+#: pacman-g2.txt:399
 msgid ""
 "Each repository section defines a section name and at least one location "
 "where the packages can be found. The section name is defined by the string "
@@ -2810,12 +2833,12 @@ msgstr ""
 "'file://' prefix, som vist foroven."
 
 # type: Plain text
-#: pacman-g2.txt:394
+#: pacman-g2.txt:401
 msgid "== USING YOUR OWN REPOSITORY"
 msgstr "== BRUG AF DIT EGET ARKIV"
 
 # type: Plain text
-#: pacman-g2.txt:399
+#: pacman-g2.txt:406
 msgid ""
 "Let's say you have a bunch of custom packages in /home/pkgs and their "
 "respective FrugalBuild files are all in /var/fst/local. All you need to do "
@@ -2828,7 +2851,7 @@ msgstr ""
 "pacman-g2 kan finde det når der køres med --refresh."
 
 # type: Plain text
-#: pacman-g2.txt:402
+#: pacman-g2.txt:409
 #, no-wrap
 msgid ""
 "# gensync /var/fst/local /home/pkgs/custom.fdb\n"
@@ -2838,7 +2861,7 @@ msgstr ""
 "----\n"
 
 # type: Plain text
-#: pacman-g2.txt:412
+#: pacman-g2.txt:419
 msgid ""
 "The above command will read all FrugalBuild files in /var/fst/local and "
 "generate a compressed database called /home/pkgs/custom.fdb. Note that the "
@@ -2858,12 +2881,12 @@ msgstr ""
 "husk så at gen-generere databasen og brug pacman-g2s --refresh valgmulighed."
 
 # type: Plain text
-#: pacman-g2.txt:414
+#: pacman-g2.txt:421
 msgid "== HOOKS"
 msgstr "== HOOKS"
 
 # type: Plain text
-#: pacman-g2.txt:418
+#: pacman-g2.txt:425
 msgid ""
 "pacman-g2 will attempt to execute hooks in the /etc/pacman-g2/hooks "
 "directory.  The hooks are like package scriptlets: each file can provide "
@@ -2874,17 +2897,35 @@ msgstr ""
 "givet hook. I øjeblikket er følgende hooks understøttet:"
 
 # type: Plain text
-#: pacman-g2.txt:421
+#: pacman-g2.txt:431
 #, no-wrap
 msgid ""
+"pre_sysupgrade::\n"
+"\tExecuted before upgrading packages (and after the integrity check) during a\n"
+"\t`pacman-g2 -S --sysupgrade`.\n"
 "post_sysupgrade::\n"
 "\tExecuted after a successful `pacman-g2 -S --sysupgrade`.\n"
 msgstr ""
+"pre_sysupgrade::\n"
+"\tUdføres før opgradering af pakker (og efter integritetstjekket) under en\n"
+"\t`pacman-g2 -S --sysupgrade`.\n"
 "post_sysupgrade::\n"
-"\tUdført efter en vellykket `pacman-g2 -S --sysupgrade`.\n"
+"\tUdføres efter en vellykket `pacman-g2 -S --sysupgrade`.\n"
 
 # type: Plain text
-#: pacman-g2.txt:425
+#: pacman-g2.txt:435
 #, no-wrap
 msgid "*makepkg*(8)\n"
 msgstr "*makepkg*(8)\n"
+
+# type: Plain text
+#~ msgid "\t# pacman-g2 -S gst-.*\n"
+#~ msgstr "\t# pacman-g2 -S gst-.*\n"
+
+# type: Plain text
+#~ msgid ""
+#~ "post_sysupgrade::\n"
+#~ "\tExecuted after a successful `pacman-g2 -S --sysupgrade`.\n"
+#~ msgstr ""
+#~ "post_sysupgrade::\n"
+#~ "\tUdført efter en vellykket `pacman-g2 -S --sysupgrade`.\n"
