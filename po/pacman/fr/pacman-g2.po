@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-10 05:09+0200\n"
-"PO-Revision-Date: 2008-04-10 22:28+0200\n"
-"Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
+"POT-Creation-Date: 2008-04-19 05:12+0200\n"
+"PO-Revision-Date: 2008-04-12 01:59+0200\n"
+"Last-Translator: Thomas Legrand <j3d1f0x@free.fr>\n"
 "Language-Team: Français\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -24,7 +24,7 @@ msgid ""
 "       if you're sure a package manager is not already running,\n"
 "       you can remove %s%s\n"
 msgstr ""
-"       Si vous êtes sur que le gestionnaire de paquet ne fonctionne pas "
+"       Si vous êtes sûr(e) que le gestionnaire de paquet ne fonctionne pas "
 "déjà,\n"
 "       vous pouvez retirer %s%s\n"
 
@@ -41,7 +41,7 @@ msgstr "échec d'ajout de la cible '%s' (%s)\n"
 #: ../add.c:84 ../sync.c:267 ../trans.c:76 ../trans.c:83 ../trans.c:87
 #: ../trans.c:99 ../trans.c:113 ../trans.c:129 ../trans.c:141
 msgid "done.\n"
-msgstr "fait.\n"
+msgstr "terminé.\n"
 
 #: ../add.c:92 ../remove.c:102 ../sync.c:451
 #, c-format
@@ -432,17 +432,17 @@ msgid "usage:  %s {-A --add} [options] <file>\n"
 msgstr "usage:  %s {-A --add} [options] <fichier>\n"
 
 #: ../pacman-g2.c:108 ../pacman-g2.c:114 ../pacman-g2.c:126 ../pacman-g2.c:131
-#: ../pacman-g2.c:146
+#: ../pacman-g2.c:148
 #, c-format
 msgid "options:\n"
 msgstr "options:\n"
 
-#: ../pacman-g2.c:109 ../pacman-g2.c:116 ../pacman-g2.c:127 ../pacman-g2.c:148
+#: ../pacman-g2.c:109 ../pacman-g2.c:116 ../pacman-g2.c:127 ../pacman-g2.c:150
 #, c-format
 msgid "  -d, --nodeps        skip dependency checks\n"
 msgstr "  -d, --nodeps        ignore le contrôle des dépendances\n"
 
-#: ../pacman-g2.c:110 ../pacman-g2.c:128 ../pacman-g2.c:150
+#: ../pacman-g2.c:110 ../pacman-g2.c:128 ../pacman-g2.c:152
 #, c-format
 msgid "  -f, --force         force install, overwrite conflicting files\n"
 msgstr ""
@@ -510,6 +510,20 @@ msgid "  -c, --changelog     view the changelog of a package\n"
 msgstr "  -c, --changelog     afficher le changelog du paquet\n"
 
 #: ../pacman-g2.c:133
+#, fuzzy, c-format
+msgid ""
+"  -d, --nodeps        if used with -e, list packages that were not "
+"installed\n"
+msgstr ""
+"  -e, --orphans       lister tous les paquets qui ont été installés comme "
+"des dépendances\n"
+
+#: ../pacman-g2.c:134
+#, fuzzy, c-format
+msgid "                      as a dependency\n"
+msgstr "                      rechercher dans la base de données\n"
+
+#: ../pacman-g2.c:135
 #, c-format
 msgid ""
 "  -e, --orphans       list all packages that were installed as a dependency\n"
@@ -517,28 +531,28 @@ msgstr ""
 "  -e, --orphans       lister tous les paquets qui ont été installés comme "
 "des dépendances\n"
 
-#: ../pacman-g2.c:134
+#: ../pacman-g2.c:136
 #, c-format
 msgid "                      and are not required by any other packages\n"
 msgstr "                      et ne sont plus requis par aucun autre paquet\n"
 
-#: ../pacman-g2.c:135 ../pacman-g2.c:151
+#: ../pacman-g2.c:137 ../pacman-g2.c:153
 #, c-format
 msgid "  -g, --groups        view all members of a package group\n"
 msgstr ""
 "  -g, --groups        afficher tous les éléments d'un group de paquet\n"
 
-#: ../pacman-g2.c:136
+#: ../pacman-g2.c:138
 #, c-format
 msgid "  -i, --info          view package information\n"
 msgstr "  -i, --info          afficher les informations du paquet\n"
 
-#: ../pacman-g2.c:137
+#: ../pacman-g2.c:139
 #, c-format
 msgid "  -l, --list          list the contents of the queried package\n"
 msgstr "  -l, --list          lister le contenu du paquet interrogé\n"
 
-#: ../pacman-g2.c:138
+#: ../pacman-g2.c:140
 #, c-format
 msgid ""
 "  -m, --foreign       list all packages that were not found in the sync db"
@@ -547,13 +561,13 @@ msgstr ""
 "  -m, --foreign       liste les paquets non trouvés dans la/les base(s) de "
 "données de synchronisation\n"
 
-#: ../pacman-g2.c:139
+#: ../pacman-g2.c:141
 #, c-format
 msgid "  -o, --owns <file>   query the package that owns <file>\n"
 msgstr ""
 "  -o, --owns <fichier> recherche les paquets contenant le fichier <fichier>\n"
 
-#: ../pacman-g2.c:140
+#: ../pacman-g2.c:142
 #, c-format
 msgid ""
 "  -p, --file          pacman-g2 will query the package file [package] "
@@ -562,12 +576,12 @@ msgstr ""
 "  -p, --file          pacman-g2 va interroger le fichier [paquet] au lieu "
 "de\n"
 
-#: ../pacman-g2.c:141
+#: ../pacman-g2.c:143
 #, c-format
 msgid "                      looking in the database\n"
 msgstr "                      rechercher dans la base de données\n"
 
-#: ../pacman-g2.c:142
+#: ../pacman-g2.c:144
 #, c-format
 msgid ""
 "  -s, --search        search locally-installed packages for matching "
@@ -576,19 +590,19 @@ msgstr ""
 "  -s, --search        recherche dans les paquets installés localement ceux "
 "qui contiennent la chaine\n"
 
-#: ../pacman-g2.c:143
+#: ../pacman-g2.c:145
 #, c-format
 msgid "  -t, --test          search problems in the local database\n"
 msgstr ""
 "  -t, --test          rechercher des problèmes dans la base de données "
 "locale\n"
 
-#: ../pacman-g2.c:145
+#: ../pacman-g2.c:147
 #, c-format
 msgid "usage:  %s {-S --sync} [options] [package]\n"
 msgstr "usage:  %s {-S --sync} [options] [paquet]\n"
 
-#: ../pacman-g2.c:147
+#: ../pacman-g2.c:149
 #, c-format
 msgid ""
 "  -c, --clean         remove old packages from cache directory (use -cc for "
@@ -597,12 +611,12 @@ msgstr ""
 "  -c, --clean         retire les vieux paquets du répertoire cache (utiliser "
 "-cc pour tous)\n"
 
-#: ../pacman-g2.c:149
+#: ../pacman-g2.c:151
 #, c-format
 msgid "  -e, --dependsonly   install dependencies only\n"
 msgstr "  -e, --dependsonly   installe les dépendances uniquement\n"
 
-#: ../pacman-g2.c:152
+#: ../pacman-g2.c:154
 #, c-format
 msgid ""
 "  -p, --print-uris    print out URIs for given packages and their "
@@ -611,17 +625,17 @@ msgstr ""
 "  -p, --print-uris    affiche les URIs pour des paquets donnés et leurs "
 "dépendances\n"
 
-#: ../pacman-g2.c:153
+#: ../pacman-g2.c:155
 #, c-format
 msgid "  -s, --search        search remote repositories for matching strings\n"
 msgstr "  -s, --search        recherche la chaîne dans les dépots distants\n"
 
-#: ../pacman-g2.c:154
+#: ../pacman-g2.c:156
 #, c-format
 msgid "  -u, --sysupgrade    upgrade all packages that are out of date\n"
 msgstr "  -u, --sysupgrade    met à jour tous les paquets obsolètes\n"
 
-#: ../pacman-g2.c:155
+#: ../pacman-g2.c:157
 #, c-format
 msgid ""
 "  -w, --downloadonly  download packages but do not install/upgrade anything\n"
@@ -629,7 +643,7 @@ msgstr ""
 "  -w, --downloadonly  télécharge les paquets mais n'installe rien et ne met "
 "rien à jour\n"
 
-#: ../pacman-g2.c:156
+#: ../pacman-g2.c:158
 #, c-format
 msgid ""
 "  -y, --refresh       download fresh package databases from the server\n"
@@ -637,7 +651,7 @@ msgstr ""
 "  -y, --refresh       télécharge les dernières bases de données depuis les "
 "serveurs\n"
 
-#: ../pacman-g2.c:157
+#: ../pacman-g2.c:159
 #, c-format
 msgid ""
 "      --ignore <pkg>  ignore a package upgrade (can be used more than once)\n"
@@ -645,36 +659,37 @@ msgstr ""
 "      --ignore <pkg>  ignore la mise à jour d'un paquet (peut être utilisé "
 "plus d'une fois)\n"
 
-#: ../pacman-g2.c:158
+#: ../pacman-g2.c:160
 #, c-format
 msgid ""
 "      --nointegrity   don't check the integrity of the packages using sha1\n"
 msgstr ""
 "      --nointegrity   ne vérifie pas l'intégritée des paquets avec sha1\n"
 
-#: ../pacman-g2.c:159
+#: ../pacman-g2.c:161
 #, c-format
 msgid "      --regex         threat targets as regexs if no package found\n"
-msgstr "      --regex         considère les cibles comme des expressions régulières "
+msgstr ""
+"      --regex         considère les cibles comme des expressions régulières "
 "si aucun paquet n'a été trouvé\n"
 
-#: ../pacman-g2.c:161
+#: ../pacman-g2.c:163
 #, c-format
 msgid "      --config <path> set an alternate configuration file\n"
 msgstr "      --config <path> défini un fichier de configuration alternatif\n"
 
-#: ../pacman-g2.c:162
+#: ../pacman-g2.c:164
 #, c-format
 msgid "      --noconfirm     do not ask for anything confirmation\n"
 msgstr "      --noconfirm     ne demande aucune confirmation\n"
 
-#: ../pacman-g2.c:163
+#: ../pacman-g2.c:165
 #, c-format
 msgid "      --ask  <number> pre-specify answers for questions (see manpage)\n"
 msgstr ""
 "      --ask  <nombre> anticipe les réponses aux questions (voir le manuel)\n"
 
-#: ../pacman-g2.c:164
+#: ../pacman-g2.c:166
 #, c-format
 msgid ""
 "      --noprogressbar do not show a progress bar when downloading files\n"
@@ -682,157 +697,157 @@ msgstr ""
 "      --noprogressbar n'affiche pas la barre de progression pendant le "
 "téléchargement\n"
 
-#: ../pacman-g2.c:165
+#: ../pacman-g2.c:167
 #, c-format
 msgid ""
 "      --noscriptlet   do not execute the install scriptlet if there is any\n"
 msgstr ""
 "      --noscriptlet   n'exécute pas les scripts d'installation s'il y'en a\n"
 
-#: ../pacman-g2.c:166
+#: ../pacman-g2.c:168
 #, c-format
 msgid "  -v, --verbose       be verbose\n"
 msgstr "  -v, --verbose       mode verbeux (affichage prolixe)\n"
 
-#: ../pacman-g2.c:167
+#: ../pacman-g2.c:169
 #, c-format
 msgid "  -r, --root <path>   set an alternate installation root\n"
 msgstr "  -r, --root <path>   défini un répertoire d'installation alternatif\n"
 
-#: ../pacman-g2.c:168
+#: ../pacman-g2.c:170
 #, c-format
 msgid "  -b, --dbpath <path> set an alternate database location\n"
 msgstr ""
 "  -b, --dbpath <path> défini un emplacement alternatif pour les bases de "
 "données\n"
 
-#: ../pacman-g2.c:181
+#: ../pacman-g2.c:183
 #, c-format
 msgid "                       This program may be freely redistributed under\n"
 msgstr ""
 "                       Ce programme peut être librement redistribué sous\n"
 
-#: ../pacman-g2.c:182
+#: ../pacman-g2.c:184
 #, c-format
 msgid "                       the terms of the GNU General Public License\n"
 msgstr "                       les termes de la GNU General Public License\n"
 
-#: ../pacman-g2.c:368
+#: ../pacman-g2.c:370
 msgid "bad root path"
 msgstr "mauvais répertoire racine"
 
-#: ../pacman-g2.c:396
+#: ../pacman-g2.c:398
 msgid "only one operation may be used at a time\n"
 msgstr "une seule opération peut être effectuée à la fois\n"
 
-#: ../pacman-g2.c:496
+#: ../pacman-g2.c:498
 msgid "you cannot perform this operation unless you are root.\n"
 msgstr "vous ne pouvez effectuer cette opération à moins d'être root.\n"
 
-#: ../pacman-g2.c:520
+#: ../pacman-g2.c:522
 #, c-format
 msgid "failed to initialize pacman library (%s)\n"
 msgstr "échec de l'initialisation de la librairie pacman (%s)\n"
 
-#: ../pacman-g2.c:526
+#: ../pacman-g2.c:528
 #, c-format
 msgid "failed to set option LOGMASK (%s)\n"
 msgstr "échec d'affectation de l'option LOGMASK (%s)\n"
 
-#: ../pacman-g2.c:530
+#: ../pacman-g2.c:532
 #, c-format
 msgid "failed to set option DBPATH (%s)\n"
 msgstr "échec d'affectation de l'option DBPATH (%s)\n"
 
-#: ../pacman-g2.c:534
+#: ../pacman-g2.c:536
 #, c-format
 msgid "failed to set option LOGCB (%s)\n"
 msgstr "échec d'affectation de l'option LOGCB (%s)\n"
 
-#: ../pacman-g2.c:542
+#: ../pacman-g2.c:544
 #, c-format
 msgid "failed to parse config (%s)\n"
 msgstr "échec d'analyse du fichier de configuration (%s)\n"
 
-#: ../pacman-g2.c:548
+#: ../pacman-g2.c:550
 #, c-format
 msgid "failed to set option DLCB (%s)\n"
 msgstr "échec d'affectation de l'option DLCB (%s)\n"
 
-#: ../pacman-g2.c:552
+#: ../pacman-g2.c:554
 #, c-format
 msgid "failed to set option DLFNM (%s)\n"
 msgstr "échec d'affectation de l'option DLFNM (%s)\n"
 
-#: ../pacman-g2.c:556
+#: ../pacman-g2.c:558
 #, c-format
 msgid "failed to set option DLOFFSET (%s)\n"
 msgstr "échec d'affectation de l'option DLOFFSET (%s)\n"
 
-#: ../pacman-g2.c:560
+#: ../pacman-g2.c:562
 #, c-format
 msgid "failed to set option DLT0 (%s)\n"
 msgstr "échec d'affectation de l'option DLT0 (%s)\n"
 
-#: ../pacman-g2.c:564
+#: ../pacman-g2.c:566
 #, c-format
 msgid "failed to set option DLT (%s)\n"
 msgstr "échec d'affectation de l'option DLT (%s)\n"
 
-#: ../pacman-g2.c:568
+#: ../pacman-g2.c:570
 #, c-format
 msgid "failed to set option DLRATE (%s)\n"
 msgstr "échec d'affectation de l'option DLRATE (%s)\n"
 
-#: ../pacman-g2.c:572
+#: ../pacman-g2.c:574
 #, c-format
 msgid "failed to set option DLXFERED1 (%s)\n"
 msgstr "échec d'affectation de l'option DLXFERED1 (%s)\n"
 
-#: ../pacman-g2.c:576
+#: ../pacman-g2.c:578
 #, c-format
 msgid "failed to set option DLETA_H (%s)\n"
 msgstr "échec d'affectation de l'option DLETA_H (%s)\n"
 
-#: ../pacman-g2.c:580
+#: ../pacman-g2.c:582
 #, c-format
 msgid "failed to set option DLETA_M (%s)\n"
 msgstr "échec d'affectation de l'option DLETA_M (%s)\n"
 
-#: ../pacman-g2.c:584
+#: ../pacman-g2.c:586
 #, c-format
 msgid "failed to set option DLETA_S (%s)\n"
 msgstr "échec d'affectation de l'option DLETA_S (%s)\n"
 
-#: ../pacman-g2.c:588
+#: ../pacman-g2.c:590
 #, c-format
 msgid "failed to set option DLREMAIN (%s)\n"
 msgstr "échec d'affectation de l'option DLREMAIN (%s)\n"
 
-#: ../pacman-g2.c:592
+#: ../pacman-g2.c:594
 #, c-format
 msgid "failed to set option DLHOWMANY (%s)\n"
 msgstr "échec d'affectation de l'option DLHOWMANY (%s)\n"
 
-#: ../pacman-g2.c:600
+#: ../pacman-g2.c:602
 #, c-format
 msgid "failed to set option IGNOREPKG (%s)\n"
 msgstr "échec d'affectation de l'option IGNOREPKG (%s)\n"
 
-#: ../pacman-g2.c:608
+#: ../pacman-g2.c:610
 msgid "Targets:"
 msgstr "Cibles:"
 
-#: ../pacman-g2.c:614
+#: ../pacman-g2.c:616
 #, c-format
 msgid "could not register 'local' database (%s)\n"
 msgstr "n'a pas pu enregistrer la base de données 'locale' (%s)\n"
 
-#: ../pacman-g2.c:621
+#: ../pacman-g2.c:623
 msgid "no targets specified (use -h for help)\n"
 msgstr "aucune cible spécifiée (utiliser -h pour de l'aide)\n"
 
-#: ../pacman-g2.c:634
+#: ../pacman-g2.c:636
 msgid "no operation specified (use -h for help)\n"
 msgstr "aucune opération spécifiée (utiliser -h pour de l'aide)\n"
 
@@ -870,7 +885,7 @@ msgid "%s %s is an owner of %s\n"
 msgstr "%s %s est un des propriétaires de %s\n"
 
 #. something weird happened
-#: ../query.c:192 ../query.c:234
+#: ../query.c:192 ../query.c:240
 #, c-format
 msgid "package \"%s\" not found\n"
 msgstr "paquet \"%s\" non trouvé\n"
