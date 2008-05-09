@@ -9,15 +9,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-25 05:00+0100\n"
-"PO-Revision-Date: 2008-02-25 15:56+0100\n"
+"POT-Creation-Date: 2008-05-08 05:12+0200\n"
+"PO-Revision-Date: 2008-05-09 03:30+0200\n"
 "Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
 "Language-Team: <hu@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 1.0\n"
+"X-Generator: Pootle 1.1.0\n"
 
 #. FIXME: use docs/about.txt as a source instead of this one
 #: ../about.php:36
@@ -464,12 +464,13 @@ msgstr "Fordítási portál"
 msgid "Blogs"
 msgstr "Blogok"
 
-#: ../config.inc.php:80 ../donations.php:50 ../header.php:54
+#: ../config.inc.php:80 ../donations.php:50 ../header.php:55
 msgid "Donations"
 msgstr "Adományok"
 
 #: ../config.inc.php:92 ../config.inc.php:94 ../config.inc.php:96
 #: ../config.inc.php:98 ../config.inc.php:100 ../config.inc.php:102
+#: ../config.inc.php:104
 msgid "Change language"
 msgstr "Váltson nyelvet"
 
@@ -536,7 +537,7 @@ msgstr ""
 "PayPal adományozás linket az oldal szélén ha pénzt szeretne adományozni.</"
 "div>"
 
-#: ../donations.php:77
+#: ../donations.php:72
 msgid "The Frugalware Team"
 msgstr "A Frugalware Csapat"
 
@@ -557,23 +558,23 @@ msgstr ""
 "#frugalware csatornán (freenode hálózat), vagy e-mailben valamelyik "
 "levelezési listánkon."
 
-#: ../header.php:52
+#: ../header.php:53
 msgid "Releases"
 msgstr "Kiadások"
 
-#: ../header.php:55
+#: ../header.php:56
 msgid "Recent updates"
 msgstr "Legfrissebb csomagok"
 
-#: ../header.php:56
+#: ../header.php:57
 msgid "Languages"
 msgstr "Nyelvek"
 
-#: ../header.php:57
+#: ../header.php:58
 msgid "Information"
 msgstr "Információ"
 
-#: ../header.php:58
+#: ../header.php:59
 msgid "Server information"
 msgstr "Szerver információk"
 
@@ -595,7 +596,7 @@ msgstr ""
 msgid " edited this news on "
 msgstr " frissítette ekkor: "
 
-#: ../index.php:107 ../index.php:120 ../security.php:82
+#: ../index.php:107 ../index.php:120 ../security.php:89
 msgid "Posted by"
 msgstr "Beküldte"
 
@@ -647,17 +648,18 @@ msgstr "Belépés"
 msgid "Login via web"
 msgstr "Belépés weben keresztül"
 
-#: ../irc.php:141
-msgid "Social diagram"
-msgstr "Szociális hálózati diagram"
+#: ../irc.php:142
+msgid "Support channel logs"
+msgstr "Támogatási csatornák naplói"
 
-#: ../irc.php:173 ../irc.php:175
-msgid "Log of the channel: #frugalware"
-msgstr "A #frugalware csatorna naplója"
-
-#: ../irc.php:173
-msgid "Sorry, currently no log available"
-msgstr "Sajnos jelenleg nem érhető el napló"
+#: ../irc.php:142
+#, php-format
+msgid ""
+"Our support channels are logged and the logs are available <a href=\"%s"
+"\">here</a>."
+msgstr ""
+"A csatornák, melyeken közösségi támogatás vehető igénybe naplózottak, és a "
+"naplók elérhetők <a href=\"%s\">itt</a>."
 
 #: ../media.php:46
 msgid "Sorry, a media file has not been written yet."
@@ -685,7 +687,7 @@ msgstr "Cím"
 msgid "Where"
 msgstr "Hol"
 
-#: ../media.php:78 ../security.php:81
+#: ../media.php:78 ../security.php:88
 msgid "Date"
 msgstr "Dátum"
 
@@ -705,9 +707,21 @@ msgstr "Csomag keresés"
 msgid "Search for:"
 msgstr "Keressen:"
 
+#: ../packages.php:93
+msgid "packages"
+msgstr "csomagok"
+
 #: ../packages.php:94
 msgid "Search in description"
 msgstr "Keresés a leírásokban"
+
+#: ../packages.php:95
+msgid "files"
+msgstr "file-ok"
+
+#: ../packages.php:96
+msgid "groups"
+msgstr "csoportok"
 
 #: ../packages.php:97
 msgid "Regular expression"
@@ -1113,87 +1127,159 @@ msgstr "egér"
 msgid "35_success.png"
 msgstr "siker"
 
-#: ../screenshots.php:102
+#: ../screenshots.php:103
 msgid "01_grub.png"
 msgstr "grub"
 
-#: ../screenshots.php:104
+#: ../screenshots.php:105
 msgid "02_boot.png"
 msgstr "betöltés"
 
-#: ../screenshots.php:106
+#: ../screenshots.php:107
 msgid "03_boot.png"
 msgstr "betöltés"
 
-#: ../screenshots.php:108
+#: ../screenshots.php:109
 msgid "04_boot.png"
 msgstr "betöltés"
 
-#: ../screenshots.php:110
+#: ../screenshots.php:111
 msgid "05_console.png"
 msgstr "konzol"
 
-#: ../screenshots.php:112
+#: ../screenshots.php:113
 msgid "06_console.png"
 msgstr "konzol"
 
-#: ../screenshots.php:114
+#: ../screenshots.php:116
 msgid "08_kde_login.png"
 msgstr "kde belépés"
 
-#: ../screenshots.php:116
+#: ../screenshots.php:118
 msgid "09_kde.png"
 msgstr "kde"
 
-#: ../screenshots.php:118
+#: ../screenshots.php:120
 msgid "10_kde_menu.png"
 msgstr "kde menü"
 
-#: ../screenshots.php:120
-msgid "11_gdm.png"
-msgstr "gdm"
+#: ../screenshots.php:123
+msgid "GDM Login Screen"
+msgstr "GDM bejelentkező képernyő"
 
-#: ../screenshots.php:122
-msgid "13_gnome.png"
-msgstr "gnome"
+#: ../screenshots.php:125
+msgid "Default Gnome Desktop"
+msgstr "Alapértelmezett GNOME asztal"
 
-#: ../screenshots.php:124
-msgid "14_gnome_menu.png"
-msgstr "gnome menü"
+#: ../screenshots.php:127
+msgid "Gnome Menu"
+msgstr "GNOME menü"
 
-#: ../screenshots.php:126
-msgid "15_gnome_menu.png"
-msgstr "gnome menü"
+#: ../screenshots.php:129
+msgid "Web Browser"
+msgstr "Webböngésző"
 
-#: ../screenshots.php:128
-msgid "16_gnome_menu.png"
-msgstr "gnome menü"
+#: ../screenshots.php:131
+msgid "File Manager"
+msgstr "Fájlkezelő"
 
-#: ../screenshots.php:130
-msgid "17_package_manager.png"
-msgstr "csomagkezelő"
+#: ../screenshots.php:134
+msgid "Default XFCE Desktop"
+msgstr "Alapértelmezett XFCE Asztal"
 
-#: ../screenshots.php:132
+#: ../screenshots.php:136
+msgid "XFCE in Action"
+msgstr "XFCE bevetés közben"
+
+#: ../screenshots.php:138
+msgid "XFCE Menu"
+msgstr "XFCE menü"
+
+#: ../screenshots.php:140
+msgid "XFCE Settings Manager"
+msgstr "XFCE beállítás-kezelő"
+
+#: ../screenshots.php:142
+msgid "XFCE Terminal"
+msgstr "XFCE terminál"
+
+#: ../screenshots.php:145
+msgid "Gfpm"
+msgstr "Gfpm"
+
+#: ../screenshots.php:147
+msgid "Gfpm Synchronizing"
+msgstr "Gfpm szinkronizál"
+
+#: ../screenshots.php:149
+msgid "Repository Manager"
+msgstr "Repó-kezelő"
+
+#: ../screenshots.php:151
+msgid "Servers Manager"
+msgstr "Kiszolgáló-kezelő"
+
+#: ../screenshots.php:153
+msgid "Optimizing Package Database"
+msgstr "Csomagadatbázis optimalizálása"
+
+#: ../screenshots.php:155
+msgid "Log Viewer"
+msgstr "Napló nézegető"
+
+#: ../screenshots.php:158
+msgid "Update Notification"
+msgstr "Frissítési értesítés"
+
+#: ../screenshots.php:160
+msgid "FUN Main Window"
+msgstr "FUN főablak"
+
+#: ../screenshots.php:162
+msgid "Preferences Window"
+msgstr "Beállítások ablak"
+
+#: ../screenshots.php:165
 msgid "18_runlevel_editor.png"
 msgstr "futási szint szerkesztő"
 
-#: ../screenshots.php:139
+#: ../screenshots.php:172
 msgid "Installer"
 msgstr "Telepítő"
 
-#: ../screenshots.php:147
-msgid "Default Desktop"
-msgstr "Alapértelmezett Asztal"
+#: ../screenshots.php:180
+msgid "Startup"
+msgstr "Indítás"
+
+#: ../screenshots.php:188
+msgid "KDE Desktop"
+msgstr "KDE Asztal"
+
+#: ../screenshots.php:196
+msgid "GNOME Desktop"
+msgstr "GNOME Asztal"
+
+#: ../screenshots.php:204
+msgid "XFCE Desktop"
+msgstr "XFCE Asztal"
+
+#: ../screenshots.php:212
+msgid "GFpm (Package Manager)"
+msgstr "GFpm (csomagkezelő)"
+
+#: ../screenshots.php:220
+msgid "FUN (Update Notifier)"
+msgstr "FUN (frissítés-kezelő)"
 
 #: ../security.php:46
 msgid "Sorry, a security file has not been written yet."
 msgstr "Sajnos még nem lett megírva a biztonsági fájl."
 
-#: ../security.php:52
+#: ../security.php:58
 msgid "Frugalware Security Announcements (FSAs)"
 msgstr "Frugalware Biztonsági Bejelentések (FSAk)"
 
-#: ../security.php:53
+#: ../security.php:59
 msgid ""
 "This is a list of security announcments that have been released for the "
 "current stable version of Frugalware"
@@ -1201,29 +1287,56 @@ msgstr ""
 "Ez a biztonsági bejelentések egy listája a Frugalware jelenlegi stabil "
 "verziójához"
 
-#: ../security.php:80
+#: ../security.php:87
 msgid "Package"
 msgstr "Csomag"
 
-#: ../security.php:83
+#: ../security.php:90
 msgid "Vulnerable version"
 msgstr "Sebezhető verzió"
 
-#: ../security.php:84
+#: ../security.php:91
 msgid "Unaffected version"
 msgstr "Nem érintett verzió"
 
-#: ../security.php:85
+#: ../security.php:92
 msgid "Bug tracker entry"
 msgstr "Hibákövető rendszer bejegyzés"
 
-#: ../security.php:86
+#: ../security.php:93
 msgid "CVEs"
 msgstr "CVEk"
 
-#: ../security.php:87
+#: ../security.php:94
 msgid "Description"
 msgstr "Leírás"
+
+#~ msgid "Social diagram"
+#~ msgstr "Szociális hálózati diagram"
+
+#~ msgid "Log of the channel: #frugalware"
+#~ msgstr "A #frugalware csatorna naplója"
+
+#~ msgid "Sorry, currently no log available"
+#~ msgstr "Sajnos jelenleg nem érhető el napló"
+
+#~ msgid "11_gdm.png"
+#~ msgstr "gdm"
+
+#~ msgid "13_gnome.png"
+#~ msgstr "gnome"
+
+#~ msgid "14_gnome_menu.png"
+#~ msgstr "gnome menü"
+
+#~ msgid "15_gnome_menu.png"
+#~ msgstr "gnome menü"
+
+#~ msgid "16_gnome_menu.png"
+#~ msgstr "gnome menü"
+
+#~ msgid "17_package_manager.png"
+#~ msgstr "csomagkezelő"
 
 #~ msgid "Developers"
 #~ msgstr "Fejlesztők"
@@ -1306,12 +1419,6 @@ msgstr "Leírás"
 
 #~ msgid "Search for substring"
 #~ msgstr "Keresés részszóra"
-
-#~ msgid "Repository:"
-#~ msgstr "Repó:"
-
-#~ msgid "File search"
-#~ msgstr "Fájlkeresés"
 
 #~ msgid "Replaces:"
 #~ msgstr "Lecseréli:"
