@@ -6,33 +6,38 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-25 05:00+0100\n"
-"PO-Revision-Date: 2008-02-25 15:57+0100\n"
+"POT-Creation-Date: 2008-05-08 05:12+0200\n"
+"PO-Revision-Date: 2008-05-09 03:24+0200\n"
 "Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 1.0\n"
+"X-Generator: Pootle 1.1.0\n"
 
-#: ../src/fun.c:63 ../src/fun.c:71
+#: ../src/fun.c:67 ../src/fun.c:75
 msgid "Error"
 msgstr "Hiba"
 
-#: ../src/fun.c:63
+#: ../src/fun.c:67
 msgid "Failed to initialize dbus subsystem"
 msgstr "Nem sikerült inicializálni a dbus alrendszert"
 
-#: ../src/fun.c:71
+#: ../src/fun.c:75
 msgid "Failed to initialize interface"
 msgstr "Nem sikerült inicializálni az interfészt"
 
-#: ../src/fun-ui.c:217
+#. About
+#: ../src/fun-ui.c:144
+msgid "About FUN"
+msgstr "A FUN-ról"
+
+#: ../src/fun-ui.c:269
 msgid "Restart Fun"
 msgstr "A Fun ujraindítása"
 
-#: ../src/fun-ui.c:218
+#: ../src/fun-ui.c:270
 msgid ""
 "Fun needs to be restarted in order for the changes to take effect. Do you "
 "want to restart Fun now ?"
@@ -40,28 +45,32 @@ msgstr ""
 "A Fun-nak újra kell indulnia, hogy a beállítások érvénybe lépjenek. "
 "Újrainduljon most a Fun?"
 
-#: ../src/fun-ui.c:317
+#: ../src/fun-ui.c:418
 msgid "S"
 msgstr "mp"
 
-#: ../src/fun-ui.c:325
+#: ../src/fun-ui.c:426
 msgid "Package Name"
 msgstr "Csomagnév"
 
-#: ../src/fun-ui.c:335
+#: ../src/fun-ui.c:436
 msgid "Latest Version"
 msgstr "Legfrissebb verzió"
 
-#: ../src/fun-ui.c:343
+#: ../src/fun-ui.c:444
 msgid "Description"
 msgstr "Leírás"
 
-#: ../src/fun-ui.c:400
+#: ../src/fun-ui.c:498
+msgid "Connection Failed"
+msgstr "Csatlakozás sikertelen"
+
+#: ../src/fun-ui.c:498
 msgid "Failed to connect to the fun daemon\n"
 msgstr "Nem sikerült csatlakozni a fun démonhoz\n"
 
 #. set the status
-#: ../src/fun-ui.c:404
+#: ../src/fun-ui.c:502
 msgid ""
 "The frugalware update notifier daemon is not running. Update checking is "
 "disabled"
@@ -69,7 +78,7 @@ msgstr ""
 "A frugalware frissító daemon nem fut. A frissítések vizsgálatának tiltása"
 
 #. display an error
-#: ../src/fun-ui.c:406
+#: ../src/fun-ui.c:504
 msgid "Update checking disabled"
 msgstr "A frissítések vizsgálata tiltva van"
 
@@ -77,20 +86,20 @@ msgstr "A frissítések vizsgálata tiltva van"
 #. fun_tooltip_set_text2 (tooltip, "", FALSE);
 #. set the status to Idle
 #. and the status back to Idle
-#: ../src/fun-ui.c:423 ../src/fun-ui.c:443 ../src/fun-ui.c:481
+#: ../src/fun-ui.c:521 ../src/fun-ui.c:553 ../src/fun-ui.c:591
 msgid "Idle"
 msgstr "Tétlen"
 
 #. set the status to let the user know that fun is checking for an update
-#: ../src/fun-ui.c:460
+#: ../src/fun-ui.c:570
 msgid "Checking for new updates..."
 msgstr "Frissítések vizsgálata..."
 
-#: ../src/fun-ui.c:474
+#: ../src/fun-ui.c:584
 msgid "Updates are available"
 msgstr "Frissítések érhetők el"
 
-#: ../src/fun-ui.c:474
+#: ../src/fun-ui.c:584
 msgid ""
 "New package updates are available for your system. Click the tray icon for "
 "more details"
@@ -98,19 +107,19 @@ msgstr ""
 "Új csomagok érhetők el a rendszer számára. Kattintson a tálcán lévő ikonra a "
 "részletekért."
 
-#: ../src/fun-ui.c:500
+#: ../src/fun-ui.c:610
 msgid "(C) 2007-2008 Frugalware Developer Team (GPL)"
 msgstr "(C) 2007-2008 Frugalware Developer Team (GPL)"
 
-#: ../src/fun-ui.c:501
+#: ../src/fun-ui.c:611 ../data/fun.glade.h:9
 msgid "Frugalware Update Notifier"
 msgstr "Frugalware Update Notifier"
 
-#: ../src/fun-ui.c:553
+#: ../src/fun-ui.c:663
 msgid "Error getting update information"
 msgstr "Hiba a frissitési információk lekérdezése közben"
 
-#: ../src/fun-ui.c:553
+#: ../src/fun-ui.c:663
 msgid "There was an error getting update information"
 msgstr "Hiba történt a frissitési információk lekérdezése közben"
 
@@ -118,14 +127,95 @@ msgstr "Hiba történt a frissitési információk lekérdezése közben"
 msgid "View Updates"
 msgstr "Frissítések megtekintése"
 
+#: ../data/fun.glade.h:1
+msgid "<b>News Notification</b>"
+msgstr "<b>Hír értesítő</b>"
+
+#: ../data/fun.glade.h:2
+msgid "<b>Options</b>"
+msgstr "<b>Opciók</b>"
+
+#: ../data/fun.glade.h:3
+msgid "<b>Package Notification</b>"
+msgstr "<b>Csomag értesítő</b>"
+
+#: ../data/fun.glade.h:4
+msgid "<span size=\"large\"><b>Configure Frugalware Update Notifier</b></span>"
+msgstr ""
+"<span size=\"large\"><b>A Frugalware Update Nofitier beállítása</b></span>"
+
+#: ../data/fun.glade.h:5
+msgid "About"
+msgstr "Névjegy"
+
+#: ../data/fun.glade.h:6
+msgid "Close"
+msgstr "Bezárás"
+
+#: ../data/fun.glade.h:7
+msgid "Enabled"
+msgstr "Engedélyezve"
+
+#: ../data/fun.glade.h:8
+msgid "FUN Preferences"
+msgstr "FUN beállítások"
+
+#: ../data/fun.glade.h:10
+msgid "Launch Gfpm"
+msgstr "Gfpm indítása"
+
+#: ../data/fun.glade.h:11
+msgid "Launch Gfpm using"
+msgstr "Gfpm indítása a következővel:"
+
+#: ../data/fun.glade.h:12
+msgid "News"
+msgstr "Hírek"
+
+#: ../data/fun.glade.h:13
+msgid ""
+"Notification timeout (seconds)\n"
+"The time in seconds for which the notification popup is displayed"
+msgstr ""
+"Értesítési időkorlát (másodpercekben)\n"
+"Az az idő másodpercekben, aminek eltelése után az értesítési ablak eltűnik."
+
+#: ../data/fun.glade.h:15
+msgid "Open links in Browser"
+msgstr "Hivatkozások megnyitása böngészőben"
+
+#: ../data/fun.glade.h:16
+msgid "Packages"
+msgstr "Csomagok"
+
+#: ../data/fun.glade.h:17
+msgid "Preferences"
+msgstr "Beállítások"
+
+#: ../data/fun.glade.h:18
+msgid "Update Interval (minutes)"
+msgstr "Frissitési időköz (percek)"
+
+#: ../data/fun.glade.h:19
+msgid "Visit Link"
+msgstr "Ugrás hivatkozásra"
+
+#: ../data/fun.glade.h:20
+msgid "_Check"
+msgstr "_Ellenőrzés"
+
+#: ../data/fun.glade.h:21
+msgid ""
+"gksu\n"
+"kdesu\n"
+"sudo"
+msgstr ""
+"gksu\n"
+"kdesu\n"
+"sudo"
+
 #~ msgid "Not connected to fun daemon"
 #~ msgstr "Nincs kapcsolat a fun démonhoz"
 
 #~ msgid "Click here to know more.."
 #~ msgstr "Kattintson ide, ha többet szeretne tudni.."
-
-#~ msgid "<b>Configure Frugalware Update Nofitier</b>"
-#~ msgstr "<b>A Frugalware Update Nofitier beállítása</b>"
-
-#~ msgid "<b>Update Interval (minutes) :</b>"
-#~ msgstr "<b>Frissitési időköz (percek) :</b>"
