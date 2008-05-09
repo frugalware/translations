@@ -6,21 +6,21 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-12 05:08+0100\n"
-"PO-Revision-Date: 2008-02-12 13:15+0100\n"
+"POT-Creation-Date: 2008-05-08 05:12+0200\n"
+"PO-Revision-Date: 2008-05-09 03:43+0200\n"
 "Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 1.0\n"
-
-#: ../src/gnetconfig-about.c:67
-msgid "(C) 2007 Frugalware Developer Team (GPL)"
-msgstr "(C) 2007 Frugalware Fejlesztő Csapat (GPL)"
+"X-Generator: Pootle 1.1.0\n"
 
 #: ../src/gnetconfig-about.c:68
+msgid "(C) 2007-2008 Frugalware Developer Team (GPL)"
+msgstr "(C) 2007-2008 Frugalware Fejlesztő Csapat (GPL)"
+
+#: ../src/gnetconfig-about.c:69
 msgid "A graphical network configuration tool for Frugalware Linux."
 msgstr "Egy grafikus beállítóeszköz a Frugalware Linux számára."
 
@@ -164,19 +164,19 @@ msgstr ""
 "\n"
 "A vezetéknélküli kapcsolat részletei:\n"
 
-#: ../src/gnetconfig-interface.c:1205 ../glade/gnetconfig.glade.h:60
+#: ../src/gnetconfig-interface.c:1205 ../glade/gnetconfig.glade.h:62
 msgid "Start"
 msgstr "Indítás"
 
-#: ../src/gnetconfig-interface.c:1212 ../glade/gnetconfig.glade.h:61
+#: ../src/gnetconfig-interface.c:1212 ../glade/gnetconfig.glade.h:63
 msgid "Stop"
 msgstr "Leállítás"
 
-#: ../src/gnetconfig-interface.c:1219 ../glade/gnetconfig.glade.h:43
+#: ../src/gnetconfig-interface.c:1219 ../glade/gnetconfig.glade.h:44
 msgid "Configure"
 msgstr "Beállítás"
 
-#: ../src/gnetconfig-interface.c:1226
+#: ../src/gnetconfig-interface.c:1226 ../glade/gnetconfig.glade.h:52
 msgid "Delete"
 msgstr "Törlés"
 
@@ -188,33 +188,33 @@ msgstr "A DSL kapcsolat kötelező mezői nem lehetnek üresek."
 msgid "PPPoE passwords do not match. Please re-enter."
 msgstr "A PPPoE jelszavak nem egyeznek meg. Adjuk meg újra."
 
-#: ../src/gnetconfig-interface_detect.c:53
-msgid "Detected interfaces:"
-msgstr "Érzékelt interfészek:"
+#: ../src/gnetconfig-interface_detect.c:58
+msgid "Detected Interfaces"
+msgstr "Érzékelt interfészek"
 
-#: ../src/gnetconfig-interface_detect.c:59
+#: ../src/gnetconfig-interface_detect.c:62
 msgid "The following interfaces were detected"
 msgstr "A következő interfészek lettek érzékelve:"
 
-#: ../src/gnetconfig-interface_detect.c:135
-msgid "Error opening /proc/net/dev"
-msgstr "Hiba a /proc/net/dev megnyitása során"
+#: ../src/gnetconfig-interface_detect.c:159
+msgid "Cannot populate interface list"
+msgstr "Nem sikerült felépíteni az interfészek listáját"
 
-#: ../src/gnetconfig-interface_detect.c:175
+#: ../src/gnetconfig-interface_detect.c:190
 msgid "Configured"
 msgstr "Beállított"
 
-#: ../src/gnetconfig-interface_detect.c:183
+#: ../src/gnetconfig-interface_detect.c:199
 msgid "Not Configured"
 msgstr "Nem-beállított"
 
-#: ../src/gnetconfig-interface_detect.c:210
+#: ../src/gnetconfig-interface_detect.c:226
 msgid ""
 "The selected interface is already configured. Please select another interface"
 msgstr ""
 "A kiválasztott interfész be van állítva. Válasszunk egy másik interfészt."
 
-#: ../src/gnetconfig-interface_detect.c:218
+#: ../src/gnetconfig-interface_detect.c:234
 msgid ""
 "Gnetconfig has detected that the selected interface is a wireless device."
 msgstr ""
@@ -445,6 +445,10 @@ msgid "About gnetconfig"
 msgstr "A gnetconfigról"
 
 #: ../glade/gnetconfig.glade.h:33
+msgid "Activate"
+msgstr "Aktiválás"
+
+#: ../glade/gnetconfig.glade.h:34
 msgid ""
 "Ad-Hoc\n"
 "Managed\n"
@@ -462,23 +466,23 @@ msgstr ""
 "Secondary\n"
 "Auto\n"
 
-#: ../glade/gnetconfig.glade.h:41
+#: ../glade/gnetconfig.glade.h:42
 msgid "Add"
 msgstr "Hozzáadás"
 
-#: ../glade/gnetconfig.glade.h:42
+#: ../glade/gnetconfig.glade.h:43
 msgid "Autodetect"
 msgstr "Automatikus érzékelés"
 
-#: ../glade/gnetconfig.glade.h:44
+#: ../glade/gnetconfig.glade.h:45
 msgid "Configure this interface for DSL connection"
 msgstr "Az interfész használata DNS kapcsolathoz"
 
-#: ../glade/gnetconfig.glade.h:45
+#: ../glade/gnetconfig.glade.h:46
 msgid "Connection"
 msgstr "Kapcsolat"
 
-#: ../glade/gnetconfig.glade.h:46
+#: ../glade/gnetconfig.glade.h:47
 msgid ""
 "DHCP\n"
 "Static IP\n"
@@ -488,11 +492,11 @@ msgstr ""
 "Statikus IP\n"
 "Visszacsatolt\n"
 
-#: ../glade/gnetconfig.glade.h:50
+#: ../glade/gnetconfig.glade.h:51
 msgid "DNS"
 msgstr "DNS"
 
-#: ../glade/gnetconfig.glade.h:51
+#: ../glade/gnetconfig.glade.h:53
 msgid ""
 "Enter the name you would like to give to your host.\n"
 "The full hostname is needed, such as:\n"
@@ -504,23 +508,23 @@ msgstr ""
 "\n"
 "<b>frugalware.example.net</b>\n"
 
-#: ../glade/gnetconfig.glade.h:56
+#: ../glade/gnetconfig.glade.h:58
 msgid "Host"
 msgstr "Gépnév"
 
-#: ../glade/gnetconfig.glade.h:57
+#: ../glade/gnetconfig.glade.h:59
 msgid "New profile"
 msgstr "Új profil"
 
-#: ../glade/gnetconfig.glade.h:58
+#: ../glade/gnetconfig.glade.h:60
 msgid "Options"
 msgstr "Opciók"
 
-#: ../glade/gnetconfig.glade.h:59
+#: ../glade/gnetconfig.glade.h:61
 msgid "Settings"
 msgstr "Beállítások"
 
-#: ../glade/gnetconfig.glade.h:62
+#: ../glade/gnetconfig.glade.h:64
 msgid ""
 "You can add commands that you want to be executed before or after an "
 "interface is brought up or down respectively.\n"
@@ -528,19 +532,19 @@ msgstr ""
 "Parancsokat definiálhatunk, melyek akkor hajtódnak végre mikor egy interfész "
 "elindul vagy leáll.\n"
 
-#: ../glade/gnetconfig.glade.h:64
+#: ../glade/gnetconfig.glade.h:66
 msgid "_File"
 msgstr "_Fájl"
 
-#: ../glade/gnetconfig.glade.h:65
+#: ../glade/gnetconfig.glade.h:67
 msgid "_Help"
 msgstr "_Segítség"
 
-#: ../glade/gnetconfig.glade.h:66
+#: ../glade/gnetconfig.glade.h:68
 msgid "_Profile"
 msgstr "_Profil"
 
-#: ../glade/gnetconfig.glade.h:67
+#: ../glade/gnetconfig.glade.h:69
 msgid ""
 "dhcpcd (default)\n"
 "dhclient"
@@ -548,34 +552,37 @@ msgstr ""
 "dhcpcd (alapértelmezés)\n"
 "dhclient"
 
-#: ../glade/gnetconfig.glade.h:69
+#: ../glade/gnetconfig.glade.h:71
 msgid "gtk-about"
 msgstr "gtk-about"
 
-#: ../glade/gnetconfig.glade.h:70
+#: ../glade/gnetconfig.glade.h:72
 msgid "gtk-add"
 msgstr "gtk-add"
 
-#: ../glade/gnetconfig.glade.h:71
+#: ../glade/gnetconfig.glade.h:73
 msgid "gtk-close"
 msgstr "gtk-close"
 
-#: ../glade/gnetconfig.glade.h:72
+#: ../glade/gnetconfig.glade.h:74
 msgid "gtk-delete"
 msgstr "gtk-delete"
 
-#: ../glade/gnetconfig.glade.h:73
+#: ../glade/gnetconfig.glade.h:75
 msgid "gtk-new"
 msgstr "gtk-new"
 
-#: ../glade/gnetconfig.glade.h:74
+#: ../glade/gnetconfig.glade.h:76
 msgid "gtk-quit"
 msgstr "gtk-quit"
 
-#: ../glade/gnetconfig.glade.h:75
+#: ../glade/gnetconfig.glade.h:77
 msgid "gtk-remove"
 msgstr "gtk-remove"
 
-#: ../glade/gnetconfig.glade.h:76
+#: ../glade/gnetconfig.glade.h:78
 msgid "gtk-save"
 msgstr "gtk-save"
+
+#~ msgid "Error opening /proc/net/dev"
+#~ msgstr "Hiba a /proc/net/dev megnyitása során"
