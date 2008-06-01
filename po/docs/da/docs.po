@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-03-23 04:51+0100\n"
-"PO-Revision-Date: 2008-04-02 20:20+0200\n"
+"PO-Revision-Date: 2008-06-01 18:05+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -1578,8 +1578,8 @@ msgstr ""
 "at vælge pakker en-efter-en frade udvalgte kategorier. Så hvis du vælger "
 "apps og base vil installeringsprogrammet give dig en liste af pakker i apps, "
 "efter du er færdig med at udvælge pakkerne vil du se pakkerne i base. Efter "
-"at du har udvalgt dem begynder installationen.  + Hvis du vælger den "
-"normale menu (dette er standard) så vil du kun se grupperne, men ikke de "
+"at du har udvalgt dem begynder installationen.  + Hvis du vælger den normale "
+"menu (dette er standard) så vil du kun se grupperne, men ikke de "
 "individuelle pakker. Så efter at have udvalgt grupperne begynder "
 "installationen."
 
@@ -1689,7 +1689,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:487
 msgid "=== Accounts and passwords"
-msgstr ""
+msgstr "=== Kontoer og passwords"
 
 # type: Plain text
 #: user.txt:491 postinst.txt:32
@@ -1698,6 +1698,9 @@ msgid ""
 "very important as there is no default password. If you skip this step, "
 "anybody will be able to login as root."
 msgstr ""
+"Efter modulkonfiguration  bør du  ændre root password. Dette er meget "
+"vigtigt, da der ikke er noget standard password. Hvis du springer dette "
+"skridt over, kan alle logge ind som root."
 
 # type: Plain text
 #: user.txt:496 postinst.txt:37
@@ -1707,11 +1710,15 @@ msgid ""
 "command should be run as root, you should use su or sudo under console, and "
 "`gksu` or `kdesu` under X."
 msgstr ""
+"Efter dette trin, kan du oprette en regulær(også kendt som ikke-root) "
+"bruger.  Det anbefalets på det kraftigeste at oprette en, og logge ind som "
+"regulær bruger.  Hvis en komando skal køres som root, skal du bruge su eller "
+"sudo i konsol, og `gksu` eller `kdesu` under X."
 
 # type: Plain text
 #: user.txt:498
 msgid "=== Network"
-msgstr ""
+msgstr "=== Netværk"
 
 # type: Plain text
 #: user.txt:501 postinst.txt:42
@@ -1719,11 +1726,14 @@ msgid ""
 "After this, setup will configure your network settings. Setup simply runs "
 "the netconfig utility, which is described in the Networking section."
 msgstr ""
+"Efter dette vil setup konfigurere dine netværksindstillinger. Setup kører "
+"ganske enkelt netkonfigværktøjet igen, som det er beskrevet i "
+"netværksafsnitet."
 
 # type: Plain text
 #: user.txt:503
 msgid "=== Timezone"
-msgstr ""
+msgstr "=== Tidszone"
 
 # type: Plain text
 #: user.txt:509 postinst.txt:50
@@ -1735,11 +1745,17 @@ msgid ""
 "are set up), say no here. If you are not sure what is this, you should "
 "answer no here."
 msgstr ""
+"Hvis netværksinstallation er færdiggjort, skal vi konfigurere systemets tid. "
+" Dette skridt kræver to handlinger. Først bør du beslutte dig om hardware "
+"(BIOS) uret skal indstilles til Coourdinated Universal Time (UTC). Hvis ja, "
+"vælg ja her.  Hvis hardwareuret skal indstilles til den aktuelle lokale tid "
+"(dette er de fleste Pc'ere sat op til), sig nej her. Hvis du er ikke sikker "
+"på hvad det er, bør du svare nej her."
 
 # type: Plain text
 #: user.txt:511
 msgid "=== Mouse"
-msgstr ""
+msgstr "=== Mus"
 
 # type: Plain text
 #: user.txt:515 postinst.txt:56
@@ -1748,11 +1764,14 @@ msgid ""
 "on the console mouse services (gpm) and on the X server.  The setting is "
 "done by xconfig later."
 msgstr ""
+"Det næste trin er at konfigurere din mus. Konfigurationen har indflydelse på "
+"console mouse services (gpm) og på X serveren. Indstillingerne bliver lavet "
+"senere af xconfig."
 
 # type: Plain text
 #: user.txt:517
 msgid "=== Graphical interface"
-msgstr ""
+msgstr "=== Grafisk interface"
 
 # type: Plain text
 #: user.txt:521 postinst.txt:61
@@ -1761,6 +1780,9 @@ msgid ""
 "xconfig. For more information on xconfig, see the section Graphical "
 "interface (X11)."
 msgstr ""
+"Hvis du har installeret en X server (standard er xorg), vil setup herefter "
+"køre xconfig. For mere information om xconfig, se afsnittet Grafisk "
+"interface (X11)."
 
 # type: Plain text
 #: user.txt:523
