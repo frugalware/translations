@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-03-23 04:51+0100\n"
-"PO-Revision-Date: 2008-06-01 18:05+0200\n"
+"PO-Revision-Date: 2008-06-02 16:18+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -1745,12 +1745,12 @@ msgid ""
 "are set up), say no here. If you are not sure what is this, you should "
 "answer no here."
 msgstr ""
-"Hvis netværksinstallation er færdiggjort, skal vi konfigurere systemets tid. "
-" Dette skridt kræver to handlinger. Først bør du beslutte dig om hardware "
-"(BIOS) uret skal indstilles til Coourdinated Universal Time (UTC). Hvis ja, "
-"vælg ja her.  Hvis hardwareuret skal indstilles til den aktuelle lokale tid "
-"(dette er de fleste Pc'ere sat op til), sig nej her. Hvis du er ikke sikker "
-"på hvad det er, bør du svare nej her."
+"Hvis netværksinstallation er færdiggjort, skal vi konfigurere systemets "
+"tid.  Dette skridt kræver to handlinger. Først bør du beslutte dig om "
+"hardware (BIOS) uret skal indstilles til Coourdinated Universal Time (UTC). "
+"Hvis ja, vælg ja her.  Hvis hardwareuret skal indstilles til den aktuelle "
+"lokale tid (dette er de fleste Pc'ere sat op til), sig nej her. Hvis du er "
+"ikke sikker på hvad det er, bør du svare nej her."
 
 # type: Plain text
 #: user.txt:511
@@ -1787,12 +1787,12 @@ msgstr ""
 # type: Plain text
 #: user.txt:523
 msgid "== Pacman-G2"
-msgstr ""
+msgstr "== Pacman-G2"
 
 # type: Plain text
 #: user.txt:525
 msgid "=== Basics"
-msgstr ""
+msgstr "=== Grundlæggende"
 
 # type: Plain text
 #: user.txt:532 pacman-g2.txt:11
@@ -1804,18 +1804,26 @@ msgid ""
 "for details.  If you want to do anything with packages, you'll always have "
 "to use the `pacman-g2` command. Here are some basic actions with `pacman-g2`:"
 msgstr ""
+"Frugalware kommer med Pacman-G2 pakkehåndterer. Pacman-G2 er en fork af den "
+"ikke-endnu-frigivet cvs version af den fuldstændige omskrevne pacman-g1 af "
+"Aurelien Foret (den gamle monolitisk pacman-g1 er skrevet af Judd Vinet).  "
+"Se http://ftp.frugalware.org/pub/other/pacman-g2/pacman-g2/README[README] "
+"for detaljer.  Hvis du vil gøre noget med pakker, er du nødt til at bruge "
+"`pacman-g2` kommandoer. Her er nogle grundlæggende handlinger med "
+"`pacman-g2`:"
 
 # type: Plain text
 #: user.txt:534 pacman-g2.txt:13
 msgid "Actions usually used with remote installation from an FTP server:"
 msgstr ""
+"Kommandoerne bruges sædvanligvis ved fjerninstallation fra en FTPserver:"
 
 # type: Plain text
 #: user.txt:535 user.txt:542 user.txt:2637 pacman-g2.txt:14 pacman-g2.txt:21
 #: packages.txt:1167
 #, no-wrap
 msgid "---------------\n"
-msgstr ""
+msgstr "---------------\n"
 
 # type: Plain text
 #: user.txt:537 pacman-g2.txt:16
@@ -1824,6 +1832,8 @@ msgid ""
 "# pacman-g2 -Sy\n"
 "---------------\n"
 msgstr ""
+"# pacman-g2 -Sy\n"
+"---------------\n"
 
 # type: Plain text
 #: user.txt:541 pacman-g2.txt:20
@@ -1831,6 +1841,8 @@ msgid ""
 "Updates the package database. Before searching for packages or installing "
 "them from an FTP server, you will have to use this command."
 msgstr ""
+"Opdaterer pakkedatabasen. Før søgning efter pakker eller installation fra en "
+"FTP server, er du nødt til benytte denne kommando."
 
 # type: Plain text
 #: user.txt:544 pacman-g2.txt:23
@@ -1839,6 +1851,8 @@ msgid ""
 "# pacman-g2 -Su\n"
 "---------------\n"
 msgstr ""
+"# pacman-g2 -Su\n"
+"---------------\n"
 
 # type: Plain text
 #: user.txt:548 pacman-g2.txt:27
@@ -1846,13 +1860,15 @@ msgid ""
 "Upgrades all packages that are currently installed but a newer version of "
 "the package is available on the FTP server."
 msgstr ""
+"Opgraderer alle pakker der indtil videre er installeret dog er en nyere "
+"version af pakken tilgængelig på FTP serveren."
 
 # type: Plain text
 #: user.txt:549 user.txt:555 user.txt:3033 user.txt:4481 pacman-g2.txt:28
 #: pacman-g2.txt:34 packages.txt:1563 packages.txt:3011
 #, no-wrap
 msgid "----------------\n"
-msgstr ""
+msgstr "----------------\n"
 
 # type: Plain text
 #: user.txt:551 pacman-g2.txt:30
@@ -1861,12 +1877,16 @@ msgid ""
 "# pacman-g2 -Syu\n"
 "----------------\n"
 msgstr ""
+"# pacman-g2 -Syu\n"
+"----------------\n"
 
 # type: Plain text
 #: user.txt:554 pacman-g2.txt:33
 msgid ""
 "The combination of the above two, that is the command most users use daily."
 msgstr ""
+"Kombinationen af ovenstående to, dette er normalt brugt i det daglige, til "
+"at sykronisere pakkedatabasen og opgradere alle pakker på systemmet."
 
 # type: Plain text
 #: user.txt:557 pacman-g2.txt:36
@@ -1875,6 +1895,8 @@ msgid ""
 "$ pacman-g2 -Sup\n"
 "----------------\n"
 msgstr ""
+"$ pacman-g2 -Sup\n"
+"----------------\n"
 
 # type: Plain text
 #: user.txt:563 pacman-g2.txt:42
@@ -1884,13 +1906,18 @@ msgid ""
 "pacman/pkg. This is very useful if you have limited bandwidth at your "
 "computer, but you can access high bandwidth elsewhere."
 msgstr ""
+"Udskriver URL af alle pakker som pacman-g2 burde downloade. På den måde kan "
+"du downloade pakkerne til hvorsomhelst og så kopierere dem til "
+"/var/cache/pacman/pkg. Dette er meget nyttig hvis du har begrænset "
+"båndbredde ved din computer, men du kan gå ind på høj båndbredde andetsteds "
+"henne."
 
 # type: Plain text
 #: user.txt:564 user.txt:1660 user.txt:2658 pacman-g2.txt:43 packages.txt:190
 #: packages.txt:1188
 #, no-wrap
 msgid "-----------------------\n"
-msgstr ""
+msgstr "-----------------------\n"
 
 # type: Plain text
 #: user.txt:566 pacman-g2.txt:45
@@ -1899,6 +1926,8 @@ msgid ""
 "# pacman-g2 -S sendmail\n"
 "-----------------------\n"
 msgstr ""
+"# pacman-g2 -S sendmail\n"
+"-----------------------\n"
 
 # type: Plain text
 #: user.txt:571 pacman-g2.txt:50
@@ -1907,6 +1936,9 @@ msgid ""
 "conflicts with any package, you will be asked if pacman-g2 is allowed to "
 "remove them."
 msgstr ""
+"Installerer sendmail med allle dens afhængigheder fra FTP serveren.  Hvis "
+"det konflikter med nogen pakke, vil du blive spurgt om pacman-g2 har "
+"tilladelse til at fjerne dem."
 
 # type: Plain text
 #: user.txt:572 user.txt:596 user.txt:1385 user.txt:1711 user.txt:1791
@@ -1914,7 +1946,7 @@ msgstr ""
 #: packages.txt:321
 #, no-wrap
 msgid "--------------------\n"
-msgstr ""
+msgstr "--------------------\n"
 
 # type: Plain text
 #: user.txt:574 pacman-g2.txt:53
@@ -1923,6 +1955,8 @@ msgid ""
 "$ pacman-g2 -Ss perl\n"
 "--------------------\n"
 msgstr ""
+"$ pacman-g2 -Ss perl\n"
+"--------------------\n"
 
 # type: Plain text
 #: user.txt:579 pacman-g2.txt:58
@@ -1931,6 +1965,9 @@ msgid ""
 "probably display the perl package and all perl modules.  Regular expression "
 "based search is also supported."
 msgstr ""
+"Søgninger i pakkedatabasen (på FTP serveren). Dette eksempel vil "
+"sandsynligvis udskrive perlpakken og alle perlmoduller. Regulært udtryk "
+"baserede søgninger er også understøttet."
 
 # type: Plain text
 #: user.txt:582 pacman-g2.txt:61
@@ -1938,13 +1975,15 @@ msgid ""
 "Of course, you can treat packages as normal files, and you can manually add/"
 "remove/etc them. Here are some examples:"
 msgstr ""
+"Naturligvis kan du behandle pakker som normale filer, og du kan manuelt "
+"tilføje/fjerne/etc dem. Her er nogle eksempler:"
 
 # type: Plain text
 #: user.txt:583 user.txt:1094 user.txt:3324 pacman-g2.txt:62 init.txt:72
 #: packages.txt:1854
 #, no-wrap
 msgid "------------------------------\n"
-msgstr ""
+msgstr "------------------------------\n"
 
 # type: Plain text
 #: user.txt:585 pacman-g2.txt:64
@@ -1953,6 +1992,8 @@ msgid ""
 "# pacman-g2 -U zsh-4.2.1-1.fpm\n"
 "------------------------------\n"
 msgstr ""
+"# pacman-g2 -U zsh-4.2.1-1.fpm\n"
+"------------------------------\n"
 
 # type: Plain text
 #: user.txt:589 pacman-g2.txt:68
@@ -1960,13 +2001,15 @@ msgid ""
 "Adds (or if it's already installed, upgrades) the zsh package, which is "
 "located in the current directory."
 msgstr ""
+"Tilføjer (eller hvis den allerede er installeret, opgraderer) zsh pakken, "
+"som er lokaliseret i den aktuelle folder."
 
 # type: Plain text
 #: user.txt:590 user.txt:4567 user.txt:5346 pacman-g2.txt:69 packages.txt:3097
 #: makepkg.txt:443
 #, no-wrap
 msgid "-----------------\n"
-msgstr ""
+msgstr "-----------------\n"
 
 # type: Plain text
 #: user.txt:592 pacman-g2.txt:71
@@ -1975,11 +2018,13 @@ msgid ""
 "# pacman-g2 -R qt\n"
 "-----------------\n"
 msgstr ""
+"# pacman-g2 -R qt\n"
+"-----------------\n"
 
 # type: Plain text
 #: user.txt:595 pacman-g2.txt:74
 msgid "Removes the qt package."
-msgstr ""
+msgstr "Fjerner qt pakken."
 
 # type: Plain text
 #: user.txt:598 pacman-g2.txt:77
@@ -1988,11 +2033,13 @@ msgid ""
 "$ pacman-g2 -Qs perl\n"
 "--------------------\n"
 msgstr ""
+"$ pacman-g2 -Qs perl\n"
+"--------------------\n"
 
 # type: Plain text
 #: user.txt:601 pacman-g2.txt:80
 msgid "Shows every installed packages whose name contains the string perl."
-msgstr ""
+msgstr "Viser hver installerede pakke hvis navn indeholder tekststrengen perl."
 
 # type: Plain text
 #: user.txt:605 pacman-g2.txt:84
@@ -2246,7 +2293,7 @@ msgstr ""
 # type: Plain text
 #: user.txt:724
 msgid "=== Configuring your graphics card"
-msgstr ""
+msgstr "=== Konfigurering af dit grafikkort"
 
 # type: Plain text
 #: user.txt:730 x.txt:10
@@ -13279,7 +13326,7 @@ msgstr ""
 # type: Plain text
 #: x.txt:4
 msgid "== Configuring your graphics card"
-msgstr ""
+msgstr "== Konfigurere dit grafikkort"
 
 # type: Plain text
 #: x.txt:21
