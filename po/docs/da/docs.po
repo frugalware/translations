@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-03-23 04:51+0100\n"
-"PO-Revision-Date: 2008-06-02 16:18+0200\n"
+"PO-Revision-Date: 2008-06-04 14:17+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -1809,8 +1809,8 @@ msgstr ""
 "Aurelien Foret (den gamle monolitisk pacman-g1 er skrevet af Judd Vinet).  "
 "Se http://ftp.frugalware.org/pub/other/pacman-g2/pacman-g2/README[README] "
 "for detaljer.  Hvis du vil gøre noget med pakker, er du nødt til at bruge "
-"`pacman-g2` kommandoer. Her er nogle grundlæggende handlinger med "
-"`pacman-g2`:"
+"`pacman-g2` kommandoer. Her er nogle grundlæggende handlinger med `pacman-"
+"g2`:"
 
 # type: Plain text
 #: user.txt:534 pacman-g2.txt:13
@@ -1907,10 +1907,9 @@ msgid ""
 "computer, but you can access high bandwidth elsewhere."
 msgstr ""
 "Udskriver URL af alle pakker som pacman-g2 burde downloade. På den måde kan "
-"du downloade pakkerne til hvorsomhelst og så kopierere dem til "
-"/var/cache/pacman/pkg. Dette er meget nyttig hvis du har begrænset "
-"båndbredde ved din computer, men du kan gå ind på høj båndbredde andetsteds "
-"henne."
+"du downloade pakkerne til hvorsomhelst og så kopierere dem til /var/cache/"
+"pacman/pkg. Dette er meget nyttig hvis du har begrænset båndbredde ved din "
+"computer, men du kan gå ind på høj båndbredde andetsteds henne."
 
 # type: Plain text
 #: user.txt:564 user.txt:1660 user.txt:2658 pacman-g2.txt:43 packages.txt:190
@@ -2048,6 +2047,9 @@ msgid ""
 "should use the -f parameter, and if you want to turn off all dependency "
 "checking, you should use the -d switch."
 msgstr ""
+"Generelt, hvis du fravælger tjek for konfliktende filer, skal du bruge  -f "
+"parameter, og hvis du vil fravælge al afhængigheds tjek, skal du bruge  -d "
+"switch."
 
 # type: Plain text
 #: user.txt:608 pacman-g2.txt:87
@@ -2056,6 +2058,8 @@ msgid ""
 "$ pacman-g2 -h\n"
 "--------------\n"
 msgstr ""
+"$ pacman-g2 -h\n"
+"--------------\n"
 
 # type: Plain text
 #: user.txt:613 pacman-g2.txt:92
@@ -2064,6 +2068,9 @@ msgid ""
 "again, these are only the basics.  You can also use pacman-g2 -Sh or similar "
 "to get help on a particular task."
 msgstr ""
+"Dette viser alle de muligheder der blev vist ovenfor og meget mere. Igen, "
+"disse er kun de grundlæggende. Du kan også bruge pacman-g2 -sh eller "
+"lignende til at få hjælp på en specifik opgave."
 
 # type: Plain text
 #: user.txt:615 pacman-g2.txt:94
@@ -2071,11 +2078,12 @@ msgid ""
 "NOTE: Full documentation for pacman-g2 can be reached by issuing `man pacman-"
 "g2`."
 msgstr ""
+"NOTE: Fuld dokumentation for pacman-g2 kan ses ved at læse `man pacman-g2`."
 
 # type: Plain text
 #: user.txt:617
 msgid "=== Apt - pacman-g2 cross reference"
-msgstr ""
+msgstr "=== Apt - pacman-g2 krydsreference"
 
 # type: Plain text
 #: user.txt:620 pacman-g2.txt:99
@@ -2083,6 +2091,8 @@ msgid ""
 "For those who are familiar with the apt package management tool, here is a "
 "quick cross-reference."
 msgstr ""
+"For hvem der er velkendt med apt pakkehåndteringsredskab, er her en hurtig "
+"krydshenvisning."
 
 # type: Plain text
 #: user.txt:623 pacman-g2.txt:102
@@ -2092,6 +2102,12 @@ msgid ""
 "Action                                      Apt command              Pacman command\n"
 "---------------------------------------------------------------------------------------\n"
 msgstr ""
+"`-------------------------------------------`------------------------`------"
+"-----------\n"
+"Handling                                      Apt kommando             "
+"Pacman kommando\n"
+"----------------------------------------------------------------------------"
+"-----------\n"
 
 # type: Plain text
 #: user.txt:631 pacman-g2.txt:110
@@ -2106,16 +2122,31 @@ msgid ""
 "Clean the package cache:                    apt-get clean            pacman-g2 -Sc\n"
 "---------------------------------------------------------------------------------------\n"
 msgstr ""
+"Opdaterer pakkedatabasen:               apt-get update           pacman-g2 "
+"-Sy\n"
+"Opgraderer installerede pakker:       apt-get upgrade          pacman-g2 -Su\n"
+"Instalerer en ny pakke:                      apt-get install foo      "
+"pacman-g2 -S foo\n"
+"Fjerner en pakke:                           apt-get remove foo       "
+"pacman-g2 -Rc foo\n"
+"Søg i den fulde pakkedatabase:        apt-cache search foo     pacman-g2 -Ss "
+"foo\n"
+"Installer en pakke fra en fil:              dpkg -i foo.deb          "
+"pacman-g2 -A foo.fpm\n"
+"Ryder package cache:                    apt-get clean            pacman-g2 "
+"-Sc\n"
+"----------------------------------------------------------------------------"
+"-----------\n"
 
 # type: Plain text
 #: user.txt:634
 msgid "== Networking"
-msgstr ""
+msgstr "== Netværksarbejde"
 
 # type: Plain text
 #: user.txt:636
 msgid "=== Initializing the network card"
-msgstr ""
+msgstr "=== Initialisering af netværkskortet"
 
 # type: Plain text
 #: user.txt:644 network.txt:12
@@ -2128,16 +2159,26 @@ msgid ""
 "blacklist`.  Configuring any interface on your card will be the task of the "
 "netconfig utility. Initializing your card ends here."
 msgstr ""
+"I de fleste tilfælde, vil konfigurering at dit netværkskort blive gjort "
+"automatisk af udev. Dette betyder at der under hvert system boot så vil dit "
+"netværkskort blive detekteret, og de nødvendige moduller vil blive indlæst. "
+"Hvis du ønsker det, kan du loade dit netværkskorts modul manuelt ved at "
+"redigere `/etc/sysconfig/modules` filen og indskrive module i blacklist ved "
+"at redigere `/etc/sysconfig/blacklist`.  Konfigurering af interface på dit "
+"kort vil blive klaret af netconfig værktøjet. Initialisering af dine kort "
+"slutter her."
 
 # type: Plain text
 #: user.txt:646
 msgid "=== The netconfig utility"
-msgstr ""
+msgstr "=== Netconfig program "
 
 # type: Plain text
 #: user.txt:648 network.txt:16
 msgid "Configuring your network settings is done by the netconfig utility."
 msgstr ""
+"Konfigurering af dine netværksindstillinger bliver gjort af netconfig "
+"værktøjet."
 
 # type: Plain text
 #: user.txt:651 network.txt:19
