@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-25 05:00+0100\n"
-"PO-Revision-Date: 2008-02-25 18:39+0100\n"
+"POT-Creation-Date: 2008-07-27 05:12+0200\n"
+"PO-Revision-Date: 2008-07-30 18:16+0200\n"
 "Last-Translator: andrej prochazka <a.prochazka@gsi.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Pootle 1.0\n"
+"X-Generator: Pootle 1.1.0\n"
 
 #: ../netconfig.c:57
 msgid "Use a DHCP server"
@@ -56,47 +56,47 @@ msgstr ""
 "Ak máte sieťovú kartu priamo pripojenú na DSL modem , vyberte \"dsl\". \n"
 "Ak nemáte sieťovú kartu, vyberte loopback. \n"
 
-#: ../netconfig.c:80
+#: ../netconfig.c:77
+msgid "Select interface"
+msgstr "výber rozhrania"
+
+#: ../netconfig.c:92
 msgid "DSL configuration"
 msgstr "konfigurácia DSL"
 
-#: ../netconfig.c:80
+#: ../netconfig.c:92
 msgid "Do you want to configure a DSL connection now?"
 msgstr "Chcete nakonfigurovať DSL pripojenie?"
 
-#: ../netconfig.c:82
+#: ../netconfig.c:94
 msgid "Enter user name"
 msgstr "Nápište užívateľské meno"
 
-#: ../netconfig.c:83
+#: ../netconfig.c:95
 msgid "Enter your PPPoE user name:"
 msgstr "Napíšte vaše PPPoE užívateľské meno:"
 
-#: ../netconfig.c:87 ../netconfig.c:89
+#: ../netconfig.c:99 ../netconfig.c:101
 msgid "Password"
 msgstr "heslo"
 
-#: ../netconfig.c:88
+#: ../netconfig.c:100
 msgid "Please enter your PPPoE password"
 msgstr "Napíšte prosím vaše PPPoE heslo"
 
-#: ../netconfig.c:90
+#: ../netconfig.c:102
 msgid "Please re-enter your PPPoE password"
 msgstr "Napíšte prosím vaše PPPoE heslo ešte raz"
 
-#: ../netconfig.c:96
+#: ../netconfig.c:108
 msgid "Passwords don't match"
 msgstr "Zadané heslá sa nezhodujú"
 
-#: ../netconfig.c:97
+#: ../netconfig.c:109
 msgid "Sorry, the passwords do not match. Try again?"
 msgstr "Prepáčte, ale zadané heslá sa nezhodujú, pokúsiť sa znova ?"
 
-#: ../netconfig.c:100 ../netconfig.c:150
-msgid "Enter interface name"
-msgstr "Napíšte meno interfaceu :"
-
-#: ../netconfig.c:101
+#: ../netconfig.c:112
 msgid ""
 "Enter the Ethernet interface connected to the DSL modem. It will be ethn, "
 "where 'n' is a number.\n"
@@ -108,15 +108,15 @@ msgstr ""
 "Ak si nie ste istý, stačte enter.\n"
 "Napíšte meno interfaceu"
 
-#: ../netconfig.c:129
+#: ../netconfig.c:140
 msgid "Network configuration"
 msgstr "Konfigurácia siete"
 
-#: ../netconfig.c:132
+#: ../netconfig.c:143
 msgid "Enter hostname"
 msgstr "Zadaj názov hosta"
 
-#: ../netconfig.c:132
+#: ../netconfig.c:143
 msgid ""
 "We'll need the name you'd like to give your host.\n"
 "The full hostname is needed, such as:\n"
@@ -132,23 +132,23 @@ msgstr ""
 "\n"
 "Zadajte celé meno :"
 
-#: ../netconfig.c:151
+#: ../netconfig.c:161
 msgid ""
 "We'll need the name of the interface you'd like to use for your network "
 "connection.\n"
 "If unsure, just hit enter.\n"
-"Enter interface name:"
+"Select interface:"
 msgstr ""
 "Potrebujeme meno sieťového interfaceu, s ktorým sa chcete pripájať do "
 "siete. \n"
 "Ak si nie ste istý, stačte enter.\n"
 "Zadajte meno interfaceu:"
 
-#: ../netconfig.c:160
+#: ../netconfig.c:170
 msgid "Extended network name"
 msgstr "Meno rozšírenej siete - ESSID"
 
-#: ../netconfig.c:160
+#: ../netconfig.c:170
 msgid ""
 "It seems that this network card has a wireless extension. In order to use "
 "it, you must set your extended netwok name (ESSID). Enter your ESSID:"
@@ -156,11 +156,11 @@ msgstr ""
 "Vyzerá, že táto karta podporuje bezdôtové pripojenie. Ak ho chcete využiť, "
 "musíte zadať meno rozšírenej siete - ESSID. Zadajte váš ESSID:"
 
-#: ../netconfig.c:165
+#: ../netconfig.c:175
 msgid "WEP encryption key"
 msgstr "WEP šifrovací kľúč "
 
-#: ../netconfig.c:166
+#: ../netconfig.c:176
 msgid ""
 "If you have a WEP encryption key, then please enter it below.\n"
 "Examples: 4567-89AB-CD or  s:password"
@@ -168,11 +168,11 @@ msgstr ""
 "Ak máte WEP šifrovací kľúč, tak ho prosím zadajte.\n"
 " Príklad: 4567-89AB-CD alebo s:heslo"
 
-#: ../netconfig.c:170
+#: ../netconfig.c:180
 msgid "WPA encryption passphrase"
 msgstr "WPA šifrovacia fráza (passphrase)"
 
-#: ../netconfig.c:171
+#: ../netconfig.c:181
 msgid ""
 "If you have a WPA passphrase, then please enter it below.\n"
 "Example: secret"
@@ -180,11 +180,11 @@ msgstr ""
 "Ak máte WPA šifrovací kľúč, tak ho prosím zadajte.\n"
 " Príklad: 4567-89AB-CD alebo s:heslo"
 
-#: ../netconfig.c:175
+#: ../netconfig.c:185
 msgid "WPA driver"
 msgstr "WPA ovládač"
 
-#: ../netconfig.c:176
+#: ../netconfig.c:186
 msgid ""
 "If you want to use a custom driver (not the generic one, called 'wext'), "
 "then please enter it below. If unsure, just hit enter."
@@ -192,11 +192,11 @@ msgstr ""
 "Ak chcete použiť vlastný ovládač (nie predvolený ovládač 'wext'), tak ho "
 "zadajte nižšie. Ak si nie ste  istý, stlačte ENTER."
 
-#: ../netconfig.c:183
+#: ../netconfig.c:193
 msgid "Set DHCP hostname"
 msgstr "Nastavenie DHCP host mena"
 
-#: ../netconfig.c:183
+#: ../netconfig.c:193
 msgid ""
 "Some network providers require that the DHCP hostname beset in order to "
 "connect. If so, they'll have assigned a hostname to your machine. If you "
@@ -209,19 +209,19 @@ msgstr ""
 "stačte enter "
 
 #. options = ip netmask netmask
-#: ../netconfig.c:198
+#: ../netconfig.c:208
 msgid "Enter ip address"
 msgstr "Zadanie IP adresy"
 
-#: ../netconfig.c:198
+#: ../netconfig.c:208
 msgid "Enter your IP address for the local machine."
 msgstr "Zadajte IP adresu počítača"
 
-#: ../netconfig.c:199
+#: ../netconfig.c:209
 msgid "Enter netmask for local network"
 msgstr "Zadanie masky siete - netmask"
 
-#: ../netconfig.c:200
+#: ../netconfig.c:210
 msgid ""
 "Enter your netmask. This will generally look something like this: "
 "255.255.255.0\n"
@@ -230,11 +230,11 @@ msgstr ""
 "Zadajte masku siete. Vo všeobecnosti vyzerá niečo ako 255.255.255.0\n"
 "Ak si nie ste istý stačte enter"
 
-#: ../netconfig.c:207
+#: ../netconfig.c:217
 msgid "Enter gateway address"
 msgstr "Nastavenie gateway - brány"
 
-#: ../netconfig.c:207
+#: ../netconfig.c:217
 msgid ""
 "Enter the address for the gateway on your network. If you don't have a "
 "gateway on your network just hit enter, without entering any ip address."
@@ -242,11 +242,11 @@ msgstr ""
 "Nastavte váš gateway pre vašu sieť. Ak nemáte žiadny, stlačte enter bez "
 "zadania ip adresy"
 
-#: ../netconfig.c:213
+#: ../netconfig.c:223
 msgid "Select nameserver"
 msgstr "Výber DNS servera"
 
-#: ../netconfig.c:213
+#: ../netconfig.c:223
 msgid ""
 "Please give the IP address of the name server to use. You can add more "
 "Domain Name Servers later by editing /etc/sysconfig/network/default.\n"
@@ -257,23 +257,26 @@ msgstr ""
 "neskôr editovaním súboru /etc/sysconfig/network/default.\n"
 "Ak nemáte žiadny, stlačte enter bez zadania ip adresy"
 
-#: ../netconfig.c:224
+#: ../netconfig.c:234
 msgid "Adjust configuration files"
 msgstr "nastavenie konfiguračných súborov"
 
-#: ../netconfig.c:224
+#: ../netconfig.c:234
 msgid "Accept these settings and adjust configuration files?"
 msgstr "Akceptovať nastavenia a nastaviť konfiguračné súbory ?"
 
-#: ../netconfig.c:308
+#: ../netconfig.c:318
 #, c-format
 msgid "No profile loaded.\n"
 msgstr "Nie je načítaný žiadny profil\n"
 
-#: ../netconfig.c:313
+#: ../netconfig.c:323
 #, c-format
 msgid "Current profile: %s\n"
 msgstr "Aktuálny profil: %s\n"
+
+#~ msgid "Enter interface name"
+#~ msgstr "Napíšte meno interfaceu :"
 
 #, fuzzy
 #~ msgid "usage: %s [options] start|stop|restart|status|list [interface]\n"
