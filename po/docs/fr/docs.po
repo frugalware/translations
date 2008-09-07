@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-27 00:06+0200\n"
-"PO-Revision-Date: 2008-08-19 20:57+0200\n"
+"PO-Revision-Date: 2008-09-07 13:08+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -5420,6 +5420,10 @@ msgid ""
 "to create your own local changes. You can find its location with pacman-g2 \n"
 "-Ql barpanel.\n"
 msgstr ""
+"* Copiez le fichier config.xml.in depuis le paquet dans "
+"~/.barpanel/config.xml afin de pouvoir \n"
+"créer vos propres changements. Vous pouvez trouver son emplacement avec "
+"'pacman-g2 -Ql barpanel'.\n"
 
 # type: Plain text
 #: user.txt:1758 packages.txt:241
@@ -5430,17 +5434,24 @@ msgid ""
 "cd ~/.barpanel/themes\n"
 "ln -s (path to your gtk theme)/gtk-2.0 (name of theme)\n"
 msgstr ""
+"* Les thèmes de barpanel sont de simples thèmes gtk2, donc, si vous voulez "
+"qu'il utilise le votre,\n"
+"une façon simple que vous pouvez essayer est: \n"
+"$ cd ~/./barpanel/themes\n"
+"$ ln -s (chemin vers votre thème gtk)/gtk-2.0 (nom du thème)\n"
 
 # type: Plain text
 #: user.txt:1760 packages.txt:243
 msgid ""
 "Then, change the theme in your ~/.barpanel/config.xml configuration file."
 msgstr ""
+"Ensuite, changez le thème dans votre fichier de configuration "
+"~/.barpanel/config.xml."
 
 # type: Plain text
 #: user.txt:1762 packages.txt:245
 msgid "Enjoy."
-msgstr ""
+msgstr "Amusez-vous bien."
 
 # type: Plain text
 #: user.txt:1764
@@ -5637,6 +5648,10 @@ msgid ""
 "each user to the `ccache` group. If you want to allow using `ccache` from "
 "chrooted builds, then you need to add the `fst` user:"
 msgstr ""
+"Premièrement, vous avez besoin de déterminer qui est autoriser à utiliser "
+"`ccache`. Vous devez ajouter chaque utilisateur dans le groupe `ccache`. Si "
+"vous voulez autoriser l'utilisation `ccache` depuis des constructions "
+"chrootées, vous avez besoin d'ajouter l'utilisateur `fst`:"
 
 # type: Plain text
 #: user.txt:1836 packages.txt:319
@@ -5656,6 +5671,11 @@ msgid ""
 "can disable it with the `-B` option). If you build manually, then you are on "
 "your own, though usually there are two ways to do so:"
 msgstr ""
+"Ensuite, vous avez besoin, d'une façon ou d'une autre, de laisser le système "
+"de construction utiliser `ccache`, et non le compilateur directement. Si "
+"vous utilisez `makepkg`, c'est activé par défaut (vous pouvez le désactivé "
+"avec l'option `-B`). Si vous construisez manuellement, alors vous devez vous "
+"débrouiller tous seul, il y a normalement donc deux façons de la faire:"
 
 # type: Plain text
 #: user.txt:1845 packages.txt:328
@@ -6680,12 +6700,14 @@ msgstr "=== drupal6"
 #: user.txt:2233 packages.txt:716
 msgid "To be able to use this package as intended, you will have to:"
 msgstr ""
+"Pour être capable d'utiliser ce paquet intentionnellement, vous aurez à :"
 
 # type: Plain text
 #: user.txt:2235 packages.txt:718
 #, no-wrap
 msgid "* set up apache to access +/var/www/drupal6+ from the web the way you like;\n"
-msgstr ""
+msgstr "* configurer apache pour qu'il accède à +/var/www/drupal6+ depuis le web où "
+"vous voulez;\n"
 
 # type: Plain text
 #: user.txt:2238 packages.txt:721
@@ -6694,6 +6716,9 @@ msgid ""
 "* install and set up your favourite SQL database (mysql or postgresql; this\n"
 "package DOES NOT depend on any of them);\n"
 msgstr ""
+"* installer et configurer votre base de données favorite SQL (mysql ou "
+"postgresql; ce\n"
+"paquet NE DOIT pas dépendre d'AUCUN d'eux);\n"
 
 # type: Plain text
 #: user.txt:2240 packages.txt:723
@@ -6708,6 +6733,10 @@ msgid ""
 "* set up your drupal installation itself by entering the correct credentials\n"
 "at the install screen to be able to reach the above-mentioned database.\n"
 msgstr ""
+"* configurer votre installation de drupal lui-même en entrant les titres "
+"corrects\n"
+"lors de l'écran d'installation pour être capable de joindre la base de "
+"données mentionnée ci-dessus.\n"
 
 # type: Plain text
 #: user.txt:2245
@@ -7310,11 +7339,16 @@ msgid ""
 "you need more specific instructions, please use these commands below to "
 "accomplish this task."
 msgstr ""
+"Soyez sûr(e) de copier le contenu de /usr/share/echinus dans $HOME/.echinus "
+"ou ~/.echinus afin d'installer propement les défauts pour ce gestionnaire de "
+"fenêtres. Si vous avez besoin de plus d'instructions, utilisez les "
+"commandes ci-dessous pour accomplir cette tâche."
 
 # type: Plain text
 #: user.txt:2470 packages.txt:953
 msgid "(Run these as the user your wanting to run echinus as.)"
 msgstr ""
+"(Lancez ça en tant que l'utilisateur que vous voulez pour lancer echinus.)"
 
 # type: Plain text
 #: user.txt:2473 packages.txt:956
@@ -8642,6 +8676,7 @@ msgstr "=== hylafax"
 #: user.txt:2953 packages.txt:1436
 msgid "Welcome to the README! Thanks for taking the time to find it ;-)"
 msgstr ""
+"Bienvenue dans le README ! Merci d'avoir pris le temps de le chercher ;-)"
 
 # type: Plain text
 #: user.txt:2956 packages.txt:1439
@@ -8649,6 +8684,9 @@ msgid ""
 "For an introduction to the wonderful world of HylaFAX(tm), please see http://"
 "www.hylafax.org/. Beginners should head directly to the docs:"
 msgstr ""
+"Pour une introduction dans le merveilleux monde d'HylaFAX(tm), allez voir "
+"http://www.hylafax.org/. Les débutants devraient directement aller voir les "
+"docs :"
 
 # type: Plain text
 #: user.txt:2958 packages.txt:1441
@@ -8662,6 +8700,9 @@ msgid ""
 "If you have a question which you think relates only to the FPM version of "
 "HylaFAX post a bug to the Frugalware BTS:"
 msgstr ""
+"Si vous avez une question dont vous pensez qu'elle a un rapport seulement "
+"avec la version FPM de HylaFAX, signalez un bogue dans le BTS de Frugalware "
+":"
 
 # type: Plain text
 #: user.txt:2963 packages.txt:1446
@@ -8675,6 +8716,9 @@ msgid ""
 "You should also be aware of the following system modification: 'FaxMaster' "
 "is added to `/etc/postfix/aliases` after installation automatically."
 msgstr ""
+"Vous devriez aussi être conscient des modifications systèmes suivantes: "
+"'FaxMaster' est ajouté à `/etc/postfix/aliases` automatiquement après "
+"l'installation."
 
 # type: Plain text
 #: user.txt:2970 packages.txt:1453
@@ -8683,11 +8727,14 @@ msgid ""
 "config/defaults/`.  You can copy these files to the `/var/spool/hylafax/etc/"
 "` directory and modify them there."
 msgstr ""
+"Les fichiers de configuration originaux peuvent être trouvés sous "
+"`/var/spool/hylafax/config/deaults/`.  Vous pouvez les copier dans le "
+"répertoire `/var/spool/hylafax/etc/` et les modifier."
 
 # type: Plain text
 #: user.txt:2972 packages.txt:1455
 msgid "Enjoy!"
-msgstr ""
+msgstr "Amusez-vous bien !"
 
 # type: Plain text
 #: user.txt:2974
@@ -8706,6 +8753,16 @@ msgid ""
 "switch to use)  If setup correctly, you'll wind up with menus generated by "
 "the output of the shell script. Have fun configuring icewm."
 msgstr ""
+"J'ai ajouté un script shell personnalisé appelé icewm-menus pour l'utiliser "
+"avec le fichier de menu de icewm. Un fichier de menu d'exemple est aussi "
+"présent dans /usr/share/icewm/menus. Il utilise une syntaxe shell standard, "
+"donc vous pouvez facilement utiliser les variables shell, etc, pour créer "
+"des menus dynamiques dans icewm à travers mon script et l'usage de votre "
+"fichier local $HOME/.icewm/menus. Pour l'utiliser, utilisez la syntaxe "
+"suivante dans votre fichier menu: menuprog \"(nom du dossier)\" (nom de "
+"l'icône) icewm-menus (switch du menu à utiliser)  S'il est configuré "
+"correctement, vous obtiendrez des menus générés par la sortie du script "
+"shell. Amusez-vous bien en configurant icewm."
 
 # type: Plain text
 #: user.txt:2985
@@ -9067,6 +9124,9 @@ msgid ""
 "instructions for configuring `lilo` to work with Frugalware. Some things to "
 "keep in mind:"
 msgstr ""
+"Donc, vous vous sentez prêt à utiliser `lilo` ? Bien, ici vous allez trouver "
+"des instructions pour configurer `lilo` pour l'utiliser avec Frugalware. "
+"Quelques choses à ne pas oublier :"
 
 # type: Plain text
 #: user.txt:3112 packages.txt:1595
@@ -9088,6 +9148,10 @@ msgid ""
 ". only `lilo` or grub can be installed to your boot sector at the same\n"
 "  time, however they do not conflict while simply residing on your system\n"
 msgstr ""
+". seulement `lilo` ou `grub` peuvent être installé sur votre secteur de boot "
+"en même\n"
+"  temps, néanmoins, ils ne sont seront pas en conflit lorsqu'ils résideront "
+"simplement sur votre système\n"
 
 # type: Plain text
 #: user.txt:3123 packages.txt:1606
@@ -9098,6 +9162,12 @@ msgid ""
 "but may still require a lot of modifications. For more information on "
 "`lilo`, please refer to `man lilo` and `man lilo.conf`."
 msgstr ""
+"Vous trouverez déjà un exemple `lilo.conf` dans `/etc/lilo.conf`. Vous en "
+"aurez besoin pour l'améliorer afin qu'il soit assorti avec votre "
+"configuration de démarrage de votre système. La structure par défaut est "
+"faite pour refléter l'installation la plus commune que je connaisse, mais "
+"peu toujours requiert plein de modifications. Pour plus d'informations sur "
+"`lilo`, référez-vous à `man lilo` et `man lilo.conf`."
 
 # type: Plain text
 #: user.txt:3127
@@ -10287,6 +10357,11 @@ msgid ""
 "with \"app\" and append an alphanumerical phrase of your choice to it. Then, "
 "write the file structure as follows:"
 msgstr ""
+"Copiez /etc/pawm.conf dans $HOME/.pawm pour vos propres changements locaux. "
+"Si vous voulez des icônes sur votre bureau, ajoutez un fichier dans votre "
+"répertoire $HOME/.pawm qui commence avec \"app\" et ajoutez-y une phrase "
+"alphanumérique de votre choix. Ensuite, écrivez la structure du fichier "
+"comme cela:"
 
 # type: Plain text
 #: user.txt:3590 packages.txt:2073
@@ -10311,6 +10386,10 @@ msgid ""
 "takes the files from /usr/share/pixmaps. If I knew how to change this path "
 "to a directory the user has, I would."
 msgstr ""
+"Autres choses à retenir, vous pouvez seulement utiliser des fichiers xpm "
+"avec cette méthode, et il prend les fichiers depuis /usr/share/pixmaps. Si "
+"je savais comment changer ce chemin vers un répertoire que l'utilisateur a, "
+"je le ferais."
 
 # type: Plain text
 #: user.txt:3603
@@ -10326,6 +10405,12 @@ msgid ""
 "session, while the method pekwm uses starts everytime you restart/start "
 "pekwm. Use it well. You can find an example below:"
 msgstr ""
+"Soyez sûr de créer votre propre fichier dans $HOME/.pekwm/autostart si vous "
+"utilisez pekwm-session afin de lancer automatiquement des commandes lorsque "
+"vous démarrer. Je sais que pekwm a un fichier de démarrage pour ça, mais ma "
+"méthode le lance *seulement* au démarrage de votre session, alors que la "
+"méthode que pekwm utilise démarre à chaque fois que vous redémarrer/démarrer "
+"pekwm. Utilisez-le bien. Vous pouvez trouver un exemple ci-dessous:"
 
 # type: Plain text
 #: user.txt:3612 packages.txt:2095
@@ -10350,6 +10435,12 @@ msgid ""
 "and what they do. If you find errors in this documentation, then please "
 "report it and I will look into it."
 msgstr ""
+"J'ai délibérément retirer quelque modules perl du tableau des dépendances, "
+"parce qu'ils ne sont pas indispensable pour lancer perlpanel et installent "
+"beaucoup de Gnome ou d'autres choses que vous ne voudriez pas forcément "
+"avoir.  Ci-dessous, vous trouverez une liste de ces modules et ce qu'ils "
+"font. Si vous trouvez des erreurs dans cette documentation, reportez-les et "
+"je jetterai un œil dessus."
 
 # type: Plain text
 #: user.txt:3624 packages.txt:2107
@@ -10358,6 +10449,9 @@ msgid ""
 "gnome plugin interfaces for perlpanel libgnomeui - for full libglade support "
 "in perlpanel"
 msgstr ""
+"perl-xmms - plugin d'interface xmms pour perlpanel\n"
+"perl-gnome2-vfs - plusieurs plugins d'interface gnome pour perlpanel\n"
+"libgnomeui - pour le support entier de libglade dans perlpanel\n"
 
 # type: Plain text
 #: user.txt:3626
@@ -10367,7 +10461,7 @@ msgstr "=== php"
 # type: Plain text
 #: user.txt:3628 packages.txt:2111
 msgid "You should set"
-msgstr "Vous devriez définir:"
+msgstr "Vous devriez définir"
 
 # type: Plain text
 #: user.txt:3631 packages.txt:2114
@@ -10887,6 +10981,14 @@ msgid ""
 "+\n"
 "------------------------------------\n"
 msgstr ""
+"+\n"
+"Si vous voulez autoriser un client d'accéder à internet via ce serveur pptp, "
+"ajoutez la\n"
+"ligne suivant dans la section nat du même fichier(remplacer ethX par la "
+"correcte\n"
+"interface réseau):\n"
+"+\n"
+"------------------------------------\n"
 
 # type: Plain text
 #: user.txt:3828 packages.txt:2311
@@ -11366,6 +11468,9 @@ msgid ""
 "The config files have to be in the /etc/quagga dir and have to be writeable "
 "by the 'quagga' user (to be able to save config from the daemon's shell)."
 msgstr ""
+"Les fichiers de configuration doivent être dans le répertoire /etc/quagga et "
+"doivent être modifiable par l'utilisateur 'quagga' (afin d'autoriser la "
+"sauvegarde de la configuration depuis le shell du démon)."
 
 # type: Plain text
 #: user.txt:3984 packages.txt:2467
@@ -11373,6 +11478,9 @@ msgid ""
 "Neither of the daemons will start till you edit the config files and rename/"
 "move them from *.conf.sample to *.conf (be careful to the uid/gid)."
 msgstr ""
+"Aucun des démons ne va démarrer jusqu'à ce que je vous éditiez les fichiers "
+"de configurations et que vous les renommiez/déplaciez depuis *.conf.sample à "
+"*.conf (soyez prudent aux uid/gid)."
 
 # type: Plain text
 #: user.txt:3987 packages.txt:2470
@@ -11380,6 +11488,9 @@ msgid ""
 "You have to enable explicitly the routing daemons to get started from the "
 "init script. The config file is '/etc/sysconfig/quagga'"
 msgstr ""
+"Vous devez activer explicitement les démons routés pour qu'ils soient lancés "
+"depuis le script init. Le fichier de configuration est "
+"'/etc/sysconfig/quagga'"
 
 # type: Plain text
 #: user.txt:3992 packages.txt:2475
@@ -11389,6 +11500,10 @@ msgid ""
 "daemons also have to be enabled, if you use it, but i could not find "
 "anything about that):"
 msgstr ""
+"Si vous avez un pare-feu fonctionnel, le démon OSPF ne fonctionnera pas, "
+"vous devez l'activer dans le pare-feu avec cette règle (peut-être d'autres "
+"démons routés doivent aussi être activés, si vous les utiliser, mais je n'ai "
+"rien trouver à ce propos):"
 
 # type: Plain text
 #: user.txt:3994 packages.txt:2477
@@ -11700,6 +11815,32 @@ msgid ""
 "restart sawfish. Use sawfish-client if you want to test it, and remember to "
 "put it in your rc file if you wish to retain it.  Happy hacking!"
 msgstr ""
+"J'ai inclus un script simple appelé sawfish-session avec comme sources "
+"$HOME/.sawfish/startup, s'il existe. C'est une installation donc vous pouvez "
+"facilement lancer vos propres commandes avant que sawfish soit lancé. Vous "
+"pouvez trouver un fichier d'exemple à /usr/share/sawfish/startup. De plus, "
+"il y a un script sawfish-aplay qui est un lien vers aplay avec l'argument -q "
+"donc vos logs ne seront pas spammés par un bouquet de messages inutiles si "
+"vous choisissez d'utiliser les sons d'évènements. Pour utiliser les sons "
+"d'évènements dans sawfish, lancez sawfish-gui, allez dans l'onglet Son, et "
+"activez les sons.\n"
+"Ensuite, fermez le programme, relancez-le, et il devrait avoir y avoir une "
+"petite fenêtre grise au bas pour entrer une commande afin de jouer des sons. "
+"J'ai désactiver le support ESD au profit de ça. Vérifiez la fenêtre pour "
+"l'activer, et entrez soit dans sawfish-aplay ou un autre programme de votre "
+"choix. Cependant, gardez en tête que cette fenêtre n'accepte aucun "
+"arguements, elle peut seulement accepter le chemin d'un exécutable de "
+"n'importe quelle sorte, qui est toute la raison que j'ai inclue un lien vers "
+"aplay. Aussi, soyez sûr(e) d'avoir visiter http://sawfish.wikia.com si vous "
+"voulez trouver des choses pour sawfish, comme des scripts, des thèmes, etc. "
+"Et enfin, si vous avez un morceau d'exemple de code lisp, vous pouvez le "
+"mettre dans votre $HOME/.sawfishrc et l'éditer pour le contenu de votre "
+"coeur afin d'avoir les bons menus root pour vous. C'est aussi où vous mettez "
+"du code lisp que vous voulez pour qu'il devienne actif n'importe quand "
+"quand vous redémarrez sawfish. Utilisez sawfish-client si vous voulez le "
+"tester, et souvenez-vous de le mettre dans votre fichier rc si vous voulez "
+"le conserver.\n"
+"Bon hacking !"
 
 # type: Plain text
 #: user.txt:4140 packages.txt:2623
@@ -13212,6 +13353,9 @@ msgid ""
 "To use this theme, please add -config /etc/X11/xdm/frugalware/xdm-config to "
 "your xdm environmental variable in /etc/sysconfig/desktop and restart xdm."
 msgstr ""
+"Pour utiliser ce thème, s'il vous plait rajouter -config "
+"/etc/X11/xdm/frugalware/xdm-config à la variable xdm dans "
+"/etc/sysconfig/desktop et redémarrer xdm."
 
 # type: Plain text
 #: user.txt:4703
@@ -18348,7 +18492,7 @@ msgstr "=== Allez de l'avant et posez votre question"
 # type: Plain text
 #: irc-rules.txt:85
 msgid "== Paste"
-msgstr "== Collé"
+msgstr "== Coller"
 
 # type: Plain text
 #: irc-rules.txt:93
@@ -18358,7 +18502,7 @@ msgstr "== mxw_ est-il un robot?"
 # type: Plain text
 #: irc-rules.txt:100
 msgid "== Bouncers, leaving your client online when you're away"
-msgstr "== [Bouncers], laissez votre client en ligne quand vous etes absent"
+msgstr "== Modérateurs, laissez votre client en ligne quand vous êtes absent"
 
 # type: Plain text
 #: irc-rules.txt:113
@@ -18368,7 +18512,7 @@ msgstr "== Messages en privé"
 # type: Plain text
 #: irc-rules.txt:123
 msgid "== Logging"
-msgstr "== Enregistrement"
+msgstr "== Connexion"
 
 # type: Plain text
 #: gpg.txt:2
@@ -18429,12 +18573,12 @@ msgstr "== Repoman"
 # type: Plain text
 #: license.txt:2
 msgid "= GNU Free Documentation License"
-msgstr "= GNU Free Documentation License"
+msgstr "= License de Documentation Libre GNU"
 
 # type: Plain text
 #: license.txt:14
 msgid "== PREAMBLE"
-msgstr "== PREAMBLE"
+msgstr "== PREAMBULE"
 
 # type: Plain text
 #: license.txt:35
