@@ -7,19 +7,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-12-26 05:05+0100\n"
-"PO-Revision-Date: 2007-04-28 18:10+0200\n"
-"Last-Translator: Daniel Exner <dex@dragonslave.de>\n"
+"POT-Creation-Date: 2008-07-27 05:12+0200\n"
+"PO-Revision-Date: 2008-09-19 18:54+0200\n"
+"Last-Translator: Balint Krizsan <balint@krizsan.de>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 0.10.1\n"
+"X-Generator: Pootle 1.1.0\n"
 
 #: ../netconfig.c:57
 msgid "Use a DHCP server"
-msgstr "Benutze DHCP Server"
+msgstr "Benutze DHCP-Server"
 
 #: ../netconfig.c:58
 msgid "Use a static IP address"
@@ -27,7 +27,7 @@ msgstr "Benutze eine statische IP"
 
 #: ../netconfig.c:59
 msgid "DSL connection"
-msgstr "DSL Verbindung"
+msgstr "DSL-Verbindung"
 
 #: ../netconfig.c:60
 msgid "No network - loopback connection only"
@@ -35,7 +35,7 @@ msgstr "Kein Netzwerk - Nur Loopback Verbindung"
 
 #: ../netconfig.c:62
 msgid "Select network connection type"
-msgstr "W�hle Netzwerk Verbindungstyp"
+msgstr "Wähle Netzwerk-Verbindungstyp"
 
 #: ../netconfig.c:63
 msgid ""
@@ -49,75 +49,79 @@ msgid ""
 "select 'dsl'. \n"
 "Finally, if you do not have a network card, select the 'lo' choice. \n"
 msgstr ""
-"Jetzt m�ssen wir wisse, wie die Maschine an das Netzwerk angeschlossen ist.\n"
-"Wenn eine interne Netzwerkkarte vorhanden ist, und IP Adresse sowie Gateay "
-"und DNS Server statisch vergeben sind, dann benutze 'static' und trage die "
-"Werte ein. Ebenso k�nnen die Werte bei einer DSL Verbindung eingetragen "
+"Es muss nun festgelegt werden, wie die Maschine an das Netzwerk "
+"angeschlossen ist.\n"
+"Wenn eine interne Netzwerkkarte vorhanden ist und eine IP-Adresse sowie "
+"Gateway und DNS-Server statisch vergeben weden, dann benutze 'static' um die "
+"Werte einzutragen. Dies kann auch bei einer DSL-Verbindung verwendet "
 "werden.\n"
-"Wenn deine IP Addresse von einem DHCP Server vergeben wird (h�ufig bei "
-"Kabelmodem-Anbietern), w�hle 'dhcp'.\n"
-"Wenn du deine Netzwerkkarte direkt an das DSL Modem angeschlossen hast, "
-"w�hle 'dsl'.\n"
-"Wenn du keine Netzwerkkarte besitzt, w�hle 'lo'.\n"
+"Wenn die IP-Addresse von einem DHCP Server vergeben wird (häufig bei "
+"Kabelmodem-Anbietern), 'dhcp' wählen.\n"
+"Wenn die Netzwerkkarte direkt an das DSL-Modem angeschlossen ist, 'dsl' "
+"wählen.\n"
+"Wenn keine Netzwerkkarte vorhanden ist, 'lo' wählen.\n"
 
-#: ../netconfig.c:80
+#: ../netconfig.c:77
+msgid "Select interface"
+msgstr "Bitte den Namen der Schnittstelle eingeben"
+
+#: ../netconfig.c:92
 msgid "DSL configuration"
-msgstr "DSL Konfiguration"
+msgstr "DSL-Konfiguration"
 
-#: ../netconfig.c:80
-#, fuzzy
+#: ../netconfig.c:92
 msgid "Do you want to configure a DSL connection now?"
-msgstr "Willst du jetzt eine DSL Verbindung konfigurieren?"
+msgstr "Soll jetzt eine DSL-Verbindung konfiguriert werden?"
 
-#: ../netconfig.c:82
+#: ../netconfig.c:94
 msgid "Enter user name"
 msgstr "Bitte Benutzernamen eingeben"
 
-#: ../netconfig.c:83
+#: ../netconfig.c:95
 msgid "Enter your PPPoE user name:"
-msgstr "Bitte PPPoE Benutzernamen eingeben"
+msgstr "Bitte PPPoE-Benutzernamen eingeben:"
 
-#: ../netconfig.c:87 ../netconfig.c:89
+#: ../netconfig.c:99 ../netconfig.c:101
 msgid "Password"
 msgstr "Passwort"
 
-#: ../netconfig.c:88
+#: ../netconfig.c:100
 msgid "Please enter your PPPoE password"
-msgstr "Bitte gib dein PPPoE Passwort ein"
+msgstr "Bitte PPPoE-Passwort eingeben"
 
-#: ../netconfig.c:90
+#: ../netconfig.c:102
 msgid "Please re-enter your PPPoE password"
-msgstr "Bitte gib dein PPPoE Passwort nochmals ein"
+msgstr "Bitte PPPoE-Passwort nochmals eingeben"
 
-#: ../netconfig.c:96
+#: ../netconfig.c:108
 msgid "Passwords don't match"
-msgstr "Nicht das gleiche Passwort eingegeben!"
+msgstr "Passwörter stimmen nicht überein"
 
-#: ../netconfig.c:97
+#: ../netconfig.c:109
 msgid "Sorry, the passwords do not match. Try again?"
-msgstr "Sorry, die Passw�rter stimmen nicht �berein. Nochmal?"
+msgstr "Sorry, die Passwörter stimmen nicht überein. Nochmal versuchen?"
 
-#: ../netconfig.c:100 ../netconfig.c:150
-msgid "Enter interface name"
-msgstr "Bitte gib den Namen des Interfaces ein"
-
-#: ../netconfig.c:101
+#: ../netconfig.c:112
 msgid ""
 "Enter the Ethernet interface connected to the DSL modem. It will be ethn, "
 "where 'n' is a number.\n"
 "If unsure, just hit enter.\n"
 "Enter interface name:"
 msgstr ""
+"Die Ethernet-Schnittstelle angeben, die an das DSL-Modem angeschlossen ist. "
+"Es wird ethn sein, wobei 'n' eine Nummer ist.\n"
+"Bei Unsicherheit einfach ENTER drücken.\n"
+"Schnittstellen-Namen eingeben:"
 
-#: ../netconfig.c:129
+#: ../netconfig.c:140
 msgid "Network configuration"
-msgstr ""
+msgstr "Netzwerk-Konfiguration"
 
-#: ../netconfig.c:132
+#: ../netconfig.c:143
 msgid "Enter hostname"
-msgstr ""
+msgstr "Hostnamen eingeben"
 
-#: ../netconfig.c:132
+#: ../netconfig.c:143
 msgid ""
 "We'll need the name you'd like to give your host.\n"
 "The full hostname is needed, such as:\n"
@@ -126,126 +130,161 @@ msgid ""
 "\n"
 "Enter full hostname:"
 msgstr ""
+"Es wird ein Hostname benötigt.\n"
+"Der komplette Hostname wird benötigt, z.B.:\n"
+"\n"
+"frugalware.beispiel.de\n"
+"\n"
+"Kompletten Hostnamen angeben:"
 
-#: ../netconfig.c:151
+#: ../netconfig.c:161
 msgid ""
 "We'll need the name of the interface you'd like to use for your network "
 "connection.\n"
 "If unsure, just hit enter.\n"
-"Enter interface name:"
+"Select interface:"
 msgstr ""
+"Den Name der Schnittstelle eingeben, der für die Netzwerkverbindung benutzt "
+"wird.\n"
+"Bei Unsicherheit einfach ENTER drücken.\n"
+"Schnittstelle wählen:"
 
-#: ../netconfig.c:160
+#: ../netconfig.c:170
 msgid "Extended network name"
-msgstr ""
+msgstr "Erweiterter Netzwerkname"
 
-#: ../netconfig.c:160
+#: ../netconfig.c:170
 msgid ""
 "It seems that this network card has a wireless extension. In order to use "
 "it, you must set your extended netwok name (ESSID). Enter your ESSID:"
 msgstr ""
+"Diese Netzwerkkarte scheint eine Drahtlos-Erweiterung zu haben. Um sie zu "
+"benutzen, muss der erweiterte Netzwerkname (ESSID) eingegeben werden. Bitte "
+"die ESSID eingeben:"
 
-#: ../netconfig.c:165
+#: ../netconfig.c:175
 msgid "WEP encryption key"
-msgstr ""
+msgstr "WEP Verschlüsselungs-Schlüssel"
 
-#: ../netconfig.c:166
+#: ../netconfig.c:176
 msgid ""
 "If you have a WEP encryption key, then please enter it below.\n"
 "Examples: 4567-89AB-CD or  s:password"
 msgstr ""
+"Wenn ein WEP Verschlüsselungs-Schlüssel vorhanden ist, bitte untenstehend "
+"eingeben.\n"
+"Beispiele: 4567-89AB-CD oder  s:passwort"
 
-#: ../netconfig.c:170
+#: ../netconfig.c:180
 msgid "WPA encryption passphrase"
-msgstr ""
+msgstr "WPA Verschlüsselungs-Passphrase"
 
-#: ../netconfig.c:171
+#: ../netconfig.c:181
 msgid ""
 "If you have a WPA passphrase, then please enter it below.\n"
 "Example: secret"
 msgstr ""
+"Wenn eine WEP Verschlüsselungs-Passphrase vorhanden ist, bitte untenstehend "
+"eingeben.\n"
+"Beispiel: geheim"
 
-#: ../netconfig.c:175
+#: ../netconfig.c:185
 msgid "WPA driver"
-msgstr ""
+msgstr "WPA-Treiber"
 
-#: ../netconfig.c:176
+#: ../netconfig.c:186
 msgid ""
 "If you want to use a custom driver (not the generic one, called 'wext'), "
 "then please enter it below. If unsure, just hit enter."
 msgstr ""
+"Wenn ein benutzerdefinierter Treiber (und nicht der generische Namens "
+"'wext') benutzt werden soll, bitte untenstehend eingeben. Bei Unsicherheit "
+"einfach ENTER drücken."
 
-#: ../netconfig.c:183
+#: ../netconfig.c:193
 msgid "Set DHCP hostname"
-msgstr ""
+msgstr "DHCP-Hostnamen setzen"
 
-#: ../netconfig.c:183
+#: ../netconfig.c:193
 msgid ""
 "Some network providers require that the DHCP hostname beset in order to "
 "connect. If so, they'll have assigned a hostname to your machine. If you "
 "wereassigned a DHCP hostname, please enter it below. If you do not have a "
 "DHCP hostname, justhit enter."
 msgstr ""
+"Einige Netzwerk-Provider verlangen für eine Verbindung das Setzen des DHCP-"
+"Hostnamens. In dem Fall wurde diesem Computer ein Hostname zugewiesen. Wurde "
+"ein DHCP-Hostname zugewiesen, bitte untenstehend eingeben. Wenn kein DHCP-"
+"Hostname vorhanden ist, einfach ENTER drücken."
 
 #. options = ip netmask netmask
-#: ../netconfig.c:198
+#: ../netconfig.c:208
 msgid "Enter ip address"
-msgstr ""
+msgstr "IP-Adresse eingeben"
 
-#: ../netconfig.c:198
+#: ../netconfig.c:208
 msgid "Enter your IP address for the local machine."
-msgstr ""
+msgstr "Bitte die IP-Adresse der lokalen Maschine eingeben."
 
-#: ../netconfig.c:199
+#: ../netconfig.c:209
 msgid "Enter netmask for local network"
-msgstr ""
+msgstr "Netzmaske für das lokale Netzwerk eingeben"
 
-#: ../netconfig.c:200
+#: ../netconfig.c:210
 msgid ""
 "Enter your netmask. This will generally look something like this: "
 "255.255.255.0\n"
 "If unsure, just hit enter."
 msgstr ""
+"Netzmaske eingeben. Diese sieht in der Regel aus wie 255.255.255.0\n"
+"Bei Unsicherheit einfach ENTER drücken."
 
-#: ../netconfig.c:207
+#: ../netconfig.c:217
 msgid "Enter gateway address"
-msgstr ""
+msgstr "Gateway-Adresse eingeben"
 
-#: ../netconfig.c:207
+#: ../netconfig.c:217
 msgid ""
 "Enter the address for the gateway on your network. If you don't have a "
 "gateway on your network just hit enter, without entering any ip address."
 msgstr ""
+"Adresse des Gateways im Netzwerk eingeben. Wenn kein Gateway im Netzwerk "
+"vorhanden ist, ENTER drücken, ohne eine IP-Adresse einzutragen."
 
-#: ../netconfig.c:213
+#: ../netconfig.c:223
 msgid "Select nameserver"
-msgstr ""
+msgstr "Nameserver wählen"
 
-#: ../netconfig.c:213
+#: ../netconfig.c:223
 msgid ""
-"Please give the IP address of the name server to use. You canadd more Domain "
-"Name Servers later by editing /etc/sysconfig/network/default.\n"
+"Please give the IP address of the name server to use. You can add more "
+"Domain Name Servers later by editing /etc/sysconfig/network/default.\n"
 "If you don't have a name server on your network just hit enter, without "
 "entering any ip address."
 msgstr ""
+"Bitte die IP-Adresse des zu benutzenden Nameservers eingeben. Es können "
+"später durch das Editieren der Datei /etc/sysconfig/network/default mehrere "
+"Domain Name Server hinzugefügt werden.\n"
+"Wenn im Netzwerk kein Nameserver vorhanden ist, einfach ENTER drücken, ohne "
+"eine IP-Adresse einzutragen."
 
-#: ../netconfig.c:224
+#: ../netconfig.c:234
 msgid "Adjust configuration files"
-msgstr ""
+msgstr "Konfigurationsdateien anpassen"
 
-#: ../netconfig.c:224
+#: ../netconfig.c:234
 msgid "Accept these settings and adjust configuration files?"
-msgstr ""
+msgstr "Diese Einstellungen übernehmen und Konfigurationsdateien anpassen?"
 
-#: ../netconfig.c:308
+#: ../netconfig.c:318
 #, c-format
 msgid "No profile loaded.\n"
-msgstr ""
+msgstr "Kein Profil geladen.\n"
 
-#: ../netconfig.c:313
+#: ../netconfig.c:323
 #, c-format
 msgid "Current profile: %s\n"
-msgstr ""
+msgstr "Derzeitiges Profil: %s\n"
 
 #, fuzzy
 #~ msgid "usage: %s [options] start|stop|restart|status|list [interface]\n"
@@ -267,4 +306,4 @@ msgstr ""
 #~ msgid ""
 #~ "                         SIGHUP will unload and reload the current "
 #~ "profile.\n"
-#~ msgstr "SIGHUP l�d das aktuelle Profil neu.\n"
+#~ msgstr "SIGHUP lÃ¤d das aktuelle Profil neu.\n"
