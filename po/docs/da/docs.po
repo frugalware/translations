@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-27 00:06+0200\n"
-"PO-Revision-Date: 2008-10-04 18:20+0200\n"
+"PO-Revision-Date: 2008-10-04 20:40+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -2351,8 +2351,8 @@ msgid ""
 ". First, we have to give a name to your computer. The name must consist of "
 "at least two parts, separated by a dot (.)."
 msgstr ""
-". Først, vi er nødt til at give din have to give din computer et navn. "
-"Navnet skal bestå af mindst to dele, adskilt med et punktum (.)."
+". Først, vi er nødt til at give din computer et navn. Navnet skal bestå af "
+"mindst to dele, adskilt med et punktum (.)."
 
 # type: Plain text
 #: user.txt:708 network.txt:32
@@ -2369,6 +2369,18 @@ msgid ""
 "when you set up wireless interfaces for example.  If you set up a wireless "
 "card netconfig will also ask your ESSID and encription key."
 msgstr ""
+". I den næste dialog skal du vælge hvordan din maskine forbinder til "
+"netværket. Hvis du har et internt netværkskort og en tildelt IP adresse, "
+"gateway, og DNS, brug statisk og skriv disse værdier. Hvis du har IP "
+"adresser tildelt af en DHCP server (almindeligt brugt af kabel "
+"modemtjenester, ikke lige dsl services), vælg dhcp. I tilfælde hvor du har "
+"en DSL-forbindelse (f.eks. ADSL) vælg dsl indstillingen! Til sidst, hvis du "
+"ikke har et netværkskort, vælg lo muligheden. lo er også det korrekte valg "
+"hvis du bruger et PCMCIA netværkskort.  + Når du opsætter netværket vil det "
+"første spørgsmål være interfacet du vil sætte op. Det er normalt eth0, en "
+"det kan difrancere når du opsætter trådløse interfaces f.eks. Hvis du "
+"opsætter et trådløst kort vil netconfig også spørge om din ESSID og "
+"krypteringsnøgle."
 
 # type: Plain text
 #: user.txt:713 network.txt:37
@@ -2378,6 +2390,11 @@ msgid ""
 "address of your primary name server (you can add more nameservers later by "
 "editing the '/etc/resolv.conf' file) and then the configuration is finished."
 msgstr ""
+".. Hvis du vælger statisk, skal du skrive din IP adresse, netmask på dit "
+"lokale netværk, din gateway adresse (du kan forlade det blankt) og IP "
+"adressen på din primære navneserver (du kan tilføje flere navneservere "
+"senere ved at at ændre i '/etc/resolv.conf' filen) og derefter er "
+"konfigurationen færdiggjort."
 
 # type: Plain text
 #: user.txt:717 network.txt:41
@@ -2386,6 +2403,9 @@ msgid ""
 "netconfig will not ask more questions about your network, since all other "
 "data will be provided by the DHCP server."
 msgstr ""
+".. Hvis du vælger dhcp, kan du valgfrit give dit dhcp hostname, hvor om alt "
+"er, så vil netconfig ikke spørge mere om dit netværk, fordi alle andre data "
+"vil blive stillet til rådighed af DHCP-serveren."
 
 # type: Plain text
 #: user.txt:722 network.txt:46
@@ -2395,11 +2415,16 @@ msgid ""
 "through which the ADSL connecting script will try to communicate with your "
 "ADSL modem. Then enter your password twice."
 msgstr ""
+".. I dsl delen skal du opgive dit brugernavn, noget som f.eks "
+"'someone@provider.net'.  Derefter du vil være nødt til præcisere "
+"netværksinterfacet (normalt eth0) som gennem ADSL tilknyttende script vil "
+"forsøge med kommunikere med dit ADSL-modem. Derefter skriv dit kodeord to "
+"gange."
 
 # type: Plain text
 #: user.txt:724 network.txt:48
 msgid ".. If you chose lo, you don't have to answer any questions."
-msgstr ""
+msgstr ".. Hvis du vælger lo, skal du ikke besvare nogen spørgsmål."
 
 # type: Plain text
 #: user.txt:731 network.txt:55
@@ -2411,6 +2436,12 @@ msgid ""
 "It's very useful when you got a laptop so you can set up options for all "
 "networks you use."
 msgstr ""
+". Sluttelig, vil netconfig skrive alle dine netværks konfigurations filer. "
+"Hvis du senere ønsker at ændre indstillingerne er interface informationen "
+"gemt i '/etc/sysconfig/network' mappen. Der er kun en fil der bliver kaldt "
+"default i de fleste tilfælde. Det er fordi du kan opsætte mere end en profi. "
+" Det er meget nyttigt når du har en bærbar så kan du opstille "
+"valgmuligheder for alle netværk du bruger."
 
 # type: Plain text
 #: user.txt:733
