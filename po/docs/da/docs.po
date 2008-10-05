@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-27 00:06+0200\n"
-"PO-Revision-Date: 2008-10-05 18:00+0200\n"
+"PO-Revision-Date: 2008-10-05 19:42+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -2871,6 +2871,8 @@ msgid ""
 "Most likely you need one of the bjfilter packages. The following list tell "
 "you which package you should use."
 msgstr ""
+"Du har garanteret brug for en af bjfilter pakkerne.Den følgende liste "
+"fortæller dig hvilken pakke du bør bruge."
 
 # type: Plain text
 #: user.txt:888 printing.txt:26
@@ -2881,6 +2883,12 @@ msgid ""
 "* bjfilter-2.5: Canon Pixus iP3100 / iP4100 / iP8600 (and Pixma iP1000 / iP1500) Driver\n"
 "* bjfilter: Canon Pixus iP2200 / iP4200 / iP6600D / iP7500 / MP500 Driver\n"
 msgstr ""
+"* bjfilter-2.2: Canon Pixus 550i / 850i / 950i (i550 / i850 / i950) and iP90 "
+"Driver\n"
+"* bjfilter-2.4: Canon Pixus 560i / 860i / 960i (i560 / i860 / i960) Driver\n"
+"* bjfilter-2.5: Canon Pixus iP3100 / iP4100 / iP8600 (and Pixma iP1000 / "
+"iP1500) Driver\n"
+"* bjfilter: Canon Pixus iP2200 / iP4200 / iP6600D / iP7500 / MP500 Driver\n"
 
 # type: Plain text
 #: user.txt:890 printing.txt:28
@@ -2888,11 +2896,13 @@ msgid ""
 "Please report us if your printer does not listed or listed, but in the wrong "
 "line!"
 msgstr ""
+"Vær venlig at rapportere til os hvis din printer ikke er oplistet, eller "
+"oplistet i den forkerte linie!"
 
 # type: Plain text
 #: user.txt:892
 msgid "==== Epson"
-msgstr ""
+msgstr "==== Epson"
 
 # type: Plain text
 #: user.txt:895 printing.txt:33
@@ -2901,6 +2911,9 @@ msgid ""
 "After installing the package do not forget to restart 'cups' and start the "
 "'ekp' daemon!"
 msgstr ""
+"Hvis du ejer en Epson Color InkJet Printer skal du bruge 'pipslite' pakken. "
+"Efter installation af pakken så husk at genstarte 'cups' og start 'ekp' "
+"dæmon!"
 
 # type: Plain text
 #: user.txt:896 user.txt:1796 user.txt:3181 user.txt:3482 user.txt:3500
@@ -2909,7 +2922,7 @@ msgstr ""
 #: makepkg.txt:413 makepkg.txt:453
 #, no-wrap
 msgid "-------------------------\n"
-msgstr ""
+msgstr "-------------------------\n"
 
 # type: Plain text
 #: user.txt:900 printing.txt:38
@@ -2920,16 +2933,20 @@ msgid ""
 "sudo service ekpd add\n"
 "-------------------------\n"
 msgstr ""
+"sudo service cups restart\n"
+"sudo service ekpd start\n"
+"sudo service ekpd add\n"
+"-------------------------\n"
 
 # type: Plain text
 #: user.txt:903 printing.txt:41
 msgid "NOTE: Till now nobody confirmed that this package actually works."
-msgstr ""
+msgstr "NOTE: Indtil nu har ingen bekræftet at denne pakke faktisk fungerer."
 
 # type: Plain text
 #: user.txt:905
 msgid "==== Samsung"
-msgstr ""
+msgstr "==== Samsung"
 
 # type: Plain text
 #: user.txt:908 printing.txt:46
@@ -2937,11 +2954,14 @@ msgid ""
 "The Samsung printer driver for cups is called 'splix'. After installing it "
 "and restarting 'cups' you will find your printer when you add it in 'cups'."
 msgstr ""
+"Samsung printer driveren for cups heder 'splix'. Efter den den er "
+"installeret og du har genstartet \"cups\" vil du finde din printer når du "
+"tilføjer den i 'cups'."
 
 # type: Plain text
 #: user.txt:910
 msgid "=== Configuring the printer"
-msgstr ""
+msgstr "=== Konfiguration af printeren"
 
 # type: Plain text
 #: user.txt:913 printing.txt:51
@@ -2950,6 +2970,9 @@ msgid ""
 "1. Open your favorite Internet browser and go to http://localhost:631[http://localhost:631].\n"
 "This is the Web interface of CUPS.\n"
 msgstr ""
+"1. Åbn din favorit Internet browser og skriv "
+"http://localhost:631[http://localhost:631].\n"
+"Dette er Web interface for CUPS.\n"
 
 # type: Plain text
 #: user.txt:916 printing.txt:54
@@ -2958,6 +2981,8 @@ msgid ""
 "2. Select Administration from the top menu. If a username is required,\n"
 "type root, and give your root password.\n"
 msgstr ""
+"2. Vælg Administration fra top menuen. Hvis et brugernavn er påkrævet,\n"
+"skriv root, og skriv dit root password.\n"
 
 # type: Plain text
 #: user.txt:919 printing.txt:57
@@ -2966,6 +2991,8 @@ msgid ""
 "3. You can do almost everything here in connection with printing.\n"
 "In our example, we will add a new local printer.\n"
 msgstr ""
+"3. Du kan næsten gøre alt her i forbindelse med udskrivning.\n"
+"I vores eksempel, vil vi tilføje en ny lokal printer.\n"
 
 # type: Plain text
 #: user.txt:922 printing.txt:60
@@ -2974,6 +3001,8 @@ msgid ""
 "4. Click Add Printer, type in a name and optionally fill the\n"
 "Location and Description lines, then click on continue.\n"
 msgstr ""
+"4. Klik Add Printer, skriv et navn ind og valgfrit oplysning\n"
+"Lokalation og Beskrivelse linjerne, klik herefter på fortsæt.\n"
 
 # type: Plain text
 #: user.txt:926 printing.txt:64
@@ -2983,12 +3012,16 @@ msgid ""
 "and one of the USB ports for newer ones. I you have got a USB printer cups\n"
 "will write the printer name next to the proper port.\n"
 msgstr ""
+"5. Vælg Device, i de fleste tilfælde er det Parallel Port #1 for ældre "
+"modeller\n"
+"og en USB port for nyere modeller. Hvis du har en USB printer vil cups\n"
+"skrive printernavnet nærmest den behørige port.\n"
 
 # type: Plain text
 #: user.txt:928 printing.txt:66
 #, no-wrap
 msgid "6. On the next page, select your vendor and your printer type (the driver/filter).\n"
-msgstr ""
+msgstr "6. På den næste side, vælg dit frabrikat og din printertype (driver/filter).\n"
 
 # type: Plain text
 #: user.txt:933 printing.txt:71
@@ -2997,6 +3030,9 @@ msgid ""
 "location (the share name is the printer's assigned name on the remote "
 "system): 'smb://user:passwd@Netbios_Name_or_ip_address/Share_name'"
 msgstr ""
+"Opsætning af et fjern Vindows share med kodeord, giver en streng som dette "
+"for beliggenhed (share navn er printerens tildelte navn på fjernsystemet): "
+"'smb://bruger:passwd@Netbios_Navn_eller_ip_adresse/Share_navn'"
 
 # type: Plain text
 #: user.txt:936 printing.txt:74
@@ -3004,11 +3040,13 @@ msgid ""
 "Notice that, when you view the printer configuration, the credentials will "
 "not be shown but will be used."
 msgstr ""
+"Bemærk at, når du ser på printerkonfigurationen, vil akkreditiverne ikke "
+"blive vist men vil blive brugt."
 
 # type: Plain text
 #: user.txt:938
 msgid "=== My printer is not listed"
-msgstr ""
+msgstr "=== Min printer er ikke oplistet"
 
 # type: Plain text
 #: user.txt:944 printing.txt:82
@@ -3019,6 +3057,11 @@ msgid ""
 "enough to install the proper printer driver (see above) or 'gutenprint'. "
 "After installing do not forget to restart cups:"
 msgstr ""
+"Hvis dit printer fabrikat ikke er oplistet i guiden, er du nødt til at "
+"tjekke http://openprinting.org/printer_list.cgi[http://openprinting.org/prin"
+"ter_list.cgi] om den er understøttet under Linux eller ej.  Sædvanligvis er "
+"det nok at installere den rigtige printer driver (se ovenanført) eller "
+"'gutenprint'. Efter installation så glem ikke at genstarte cups:"
 
 # type: Plain text
 #: user.txt:947 printing.txt:85
@@ -3027,6 +3070,8 @@ msgid ""
 "# service cups restart\n"
 "----------------------\n"
 msgstr ""
+"# service cups restart\n"
+"----------------------\n"
 
 # type: Plain text
 #: user.txt:954 printing.txt:92
