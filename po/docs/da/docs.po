@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-27 00:06+0200\n"
-"PO-Revision-Date: 2008-10-04 20:40+0200\n"
+"PO-Revision-Date: 2008-10-05 18:00+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -1184,8 +1184,7 @@ msgid ""
 "\tbs=1M --size --progress\n"
 "----\n"
 msgstr ""
-"dd if=frugalware-<version>-<arch>-usb.img of=\\\\?\\Device\\Harddisk1\\Partition0 "
-"\\\n"
+"dd if=frugalware-<version>-<arch>-usb.img of=\\\\?\\Device\\Harddisk1\\Partition0 \\\n"
 "\tbs=1M --size --progress\n"
 "----\n"
 
@@ -2439,14 +2438,14 @@ msgstr ""
 ". Sluttelig, vil netconfig skrive alle dine netværks konfigurations filer. "
 "Hvis du senere ønsker at ændre indstillingerne er interface informationen "
 "gemt i '/etc/sysconfig/network' mappen. Der er kun en fil der bliver kaldt "
-"default i de fleste tilfælde. Det er fordi du kan opsætte mere end en profi. "
-" Det er meget nyttigt når du har en bærbar så kan du opstille "
+"default i de fleste tilfælde. Det er fordi du kan opsætte mere end en "
+"profi.  Det er meget nyttigt når du har en bærbar så kan du opstille "
 "valgmuligheder for alle netværk du bruger."
 
 # type: Plain text
 #: user.txt:733
 msgid "=== Basic firewall configuration"
-msgstr ""
+msgstr "=== Grundlæggende firewall konfiguration"
 
 # type: Plain text
 #: user.txt:738 network.txt:62
@@ -2456,6 +2455,10 @@ msgid ""
 "connections. It does not allow normal incoming packages for any ports.  The "
 "firewall configuration is at '/etc/sysconfig/firewall'."
 msgstr ""
+"Frugalware kommer med en firewall konfiguration der virker out of the box. "
+"Dette tillader alle udgående forbindelser,og indgående forbindelse for "
+"etablerede forbindelser. Det tillader ikke normale indgående pakker for alle "
+"porte. Firewall konfigurationen kan ses i '/etc/sysconfig/firewall'."
 
 # type: Plain text
 #: user.txt:741 network.txt:65
@@ -2463,6 +2466,8 @@ msgid ""
 "NOTE: You will not find this file if you have not installed iptables package "
 "as this is an iptables firewall."
 msgstr ""
+"NOTE: Du vil ikke finde denne fil hvis du har ikke installeret iptables "
+"pakken, da den er en iptables firewall."
 
 # type: Plain text
 #: user.txt:746 network.txt:70
@@ -2471,6 +2476,9 @@ msgid ""
 "computer. Edit /etc/sysconfig/firewall, remove the hashmark (#) from the "
 "beginning of the line under the # ssh description, and restart the firewall:"
 msgstr ""
+"Lad os se på et eksempel: du vil tillade at andre kan ssh til din computer. "
+"Rediger /etc/sysconfig/firewall, fjern hashmark (#) fra begyndelsen af "
+"linien under # ssh beskrivelsen, og genstart firewall:"
 
 # type: Plain text
 #: user.txt:747 user.txt:1532 user.txt:1732 user.txt:2610 user.txt:3490
@@ -2479,7 +2487,7 @@ msgstr ""
 #: packages.txt:2644 packages.txt:3335
 #, no-wrap
 msgid "--------------------------\n"
-msgstr ""
+msgstr "--------------------------\n"
 
 # type: Plain text
 #: user.txt:749 user.txt:1734 user.txt:2697 network.txt:73 packages.txt:217
@@ -2489,11 +2497,13 @@ msgid ""
 "# service firewall restart\n"
 "--------------------------\n"
 msgstr ""
+"# service firewall restart\n"
+"--------------------------\n"
 
 # type: Plain text
 #: user.txt:752 network.txt:76
 msgid "The same applies for Apache or any other services."
-msgstr ""
+msgstr "Det samme gælder for Apache eller hvilken som helst services."
 
 # type: Plain text
 #: user.txt:756 network.txt:80
@@ -2501,12 +2511,15 @@ msgid ""
 "If you would like to have any advanced firewall settings, configure your "
 "firewall as root with iptables then save your config as root with:"
 msgstr ""
+"Hvis du gerne vil lave noget mere avanceret med firewall indstillinger, "
+"konfigurer din firewall som root med iptables og gem så din konfiguration "
+"som root med:"
 
 # type: Plain text
 #: user.txt:757 user.txt:2603 network.txt:81 packages.txt:1086
 #, no-wrap
 msgid "-----------------------------------------\n"
-msgstr ""
+msgstr "-----------------------------------------\n"
 
 # type: Plain text
 #: user.txt:759 network.txt:83
@@ -2515,6 +2528,8 @@ msgid ""
 "# iptables-save > /etc/sysconfig/firewall\n"
 "-----------------------------------------\n"
 msgstr ""
+"# iptables-save > /etc/sysconfig/firewall\n"
+"-----------------------------------------\n"
 
 # type: Plain text
 #: user.txt:764 network.txt:87
@@ -2523,11 +2538,14 @@ msgid ""
 "recommended to make a backup of '/etc/sysconfig/firewall' before saving your "
 "settings."
 msgstr ""
+"ADVARSEL: Det vil overskrive din eksisterende konfiguration!Det anbefales på "
+"det kraftigste at du laver en backup af '/etc/sysconfig/firewall' før du "
+"gemmer dine nye indstillinger."
 
 # type: Plain text
 #: user.txt:766
 msgid "== Graphical interface (X11)"
-msgstr ""
+msgstr "== Grafisk interface (X11)"
 
 # type: Plain text
 #: user.txt:768
@@ -2543,6 +2561,11 @@ msgid ""
 "resolution and colour depth. Finally, it will create the real configuration "
 "file, with the following extras:"
 msgstr ""
+"Hvis du installerer X, setup vil køre xconfig, vores X konfiguration program "
+"automatisk. Først, vil xconfig detektere din konfiguration og vil skabe en "
+"grundlæggende konfigurationsfil. Derefter vil det bede dig om at præcisere "
+"skærmopløsning og farvedybde. Endeligt vil det skabe den faktiske "
+"konfigurationsfil, med følgende ekstra ting:"
 
 # type: Plain text
 #: user.txt:779 x.txt:15
@@ -2553,6 +2576,10 @@ msgid ""
 "* Enables DPMS\n"
 "* Enables users to use the DRI extension\n"
 msgstr ""
+"* Automatisk konfigurerer mussen, hvis den bliver fundet\n"
+"* Sætter keyboard layout ifølge det valgte sprog\n"
+"* Aktiverer DPMS\n"
+"* Aktiverer brugere så de kan bruge DRI udvidelsen\n"
 
 # type: Plain text
 #: user.txt:783 x.txt:19
@@ -2561,11 +2588,14 @@ msgid ""
 "click the OK button to confirm to xconfig that the configuration was "
 "successful."
 msgstr ""
+"Efter generering af konfigurationsfilen, vil setup starte X serveren. Du "
+"skal klikke på OK-knappen for at bekræfte til xconfig at konfigurationen var "
+"vellykket."
 
 # type: Plain text
 #: user.txt:785
 msgid "=== 3D acceleration, binary drivers"
-msgstr ""
+msgstr "=== 3D acceleration, binære drivere"
 
 # type: Plain text
 #: user.txt:789 x.txt:25
@@ -2574,6 +2604,9 @@ msgid ""
 "will add the necessary entries to '/etc/X11/xorg.conf' and X will load the "
 "module(s)."
 msgstr ""
+"Hvis der er indbygget 3d acceleration understøttelse for dit kort i X, vil "
+"xconfig tilføje de nødvendige posteringer til '/etc/X11/xorg.conf' og X vil "
+"loade module(r)."
 
 # type: Plain text
 #: user.txt:792 x.txt:28
@@ -2581,12 +2614,15 @@ msgid ""
 "If you have an ATI or NVIDIA card, you probably need the manufacturer's "
 "binary drivers. Obtaining the NVIDIA binary driver is fairly simple:"
 msgstr ""
+"Hvis du har et ATI eller NVIDIA kort, vil du sandsynligvis få brug for "
+"producentens binære drivere. Tilføjelse af NVIDIA binær driver er ganske "
+"ligefrem:"
 
 # type: Plain text
 #: user.txt:793 user.txt:945 x.txt:29 printing.txt:83
 #, no-wrap
 msgid "----------------------\n"
-msgstr ""
+msgstr "----------------------\n"
 
 # type: Plain text
 #: user.txt:795 x.txt:31
@@ -2595,6 +2631,8 @@ msgid ""
 "# pacman-g2 -Sy nvidia\n"
 "----------------------\n"
 msgstr ""
+"# pacman-g2 -Sy nvidia\n"
+"----------------------\n"
 
 # type: Plain text
 #: user.txt:799 x.txt:35
@@ -2602,12 +2640,14 @@ msgid ""
 "If you have an ATI card, installation will not be more complicated than a "
 "simple"
 msgstr ""
+"Hvis du har et ATI kort, vil installation ikke være mere indviklet, men også "
+"ligefrem"
 
 # type: Plain text
 #: user.txt:800 user.txt:4781 x.txt:36 packages.txt:3264
 #, no-wrap
 msgid "---------------------\n"
-msgstr ""
+msgstr "---------------------\n"
 
 # type: Plain text
 #: user.txt:802 x.txt:38
@@ -2616,11 +2656,13 @@ msgid ""
 "# pacman-g2 -Sy fglrx\n"
 "---------------------\n"
 msgstr ""
+"# pacman-g2 -Sy fglrx\n"
+"---------------------\n"
 
 # type: Plain text
 #: user.txt:805
 msgid "=== Allow root login in KDM/GDM"
-msgstr ""
+msgstr "=== Tillade root login i KDM/GDM"
 
 # type: Plain text
 #: user.txt:808 x.txt:44
@@ -2628,56 +2670,58 @@ msgid ""
 "By default, no root login is permitted on the GUI, the recommended way of "
 "running graphical programs as root is to use gksu or kdesu."
 msgstr ""
+"Som standard, er ingen root login tilladt ved GUI, den anbefalede måde at "
+"køre grafiske programmer som root er at bruge gksu eller kdesu."
 
 # type: Plain text
 #: user.txt:810 x.txt:46
 msgid "To enable it anyway, the following lines should be edited:"
-msgstr ""
+msgstr "For at aktivere det alligevel, skal følgende linier ændres:"
 
 # type: Plain text
 #: user.txt:812 x.txt:48
 msgid "For KDM ('/usr/share/config/kdm/kdmrc')"
-msgstr ""
+msgstr "For KDM ('/usr/share/config/kdm/kdmrc')"
 
 # type: Plain text
 #: user.txt:814 x.txt:50
 msgid "'AllowRootLogin=false'"
-msgstr ""
+msgstr "'AllowRootLogin=false'"
 
 # type: Plain text
 #: user.txt:816 user.txt:824 x.txt:52 x.txt:60
 msgid "modify to"
-msgstr ""
+msgstr "ændres til"
 
 # type: Plain text
 #: user.txt:818 x.txt:54
 msgid "'AllowRootLogin=true'"
-msgstr ""
+msgstr "'AllowRootLogin=true'"
 
 # type: Plain text
 #: user.txt:820 x.txt:56
 msgid "For GDM ('/etc/gdm/gdm.conf')"
-msgstr ""
+msgstr "For GDM ('/etc/gdm/gdm.conf')"
 
 # type: Plain text
 #: user.txt:822 x.txt:58
 msgid "'AllowRoot=false'"
-msgstr ""
+msgstr "'AllowRoot=false'"
 
 # type: Plain text
 #: user.txt:826 x.txt:61
 msgid "'AllowRoot=true'"
-msgstr ""
+msgstr "'AllowRoot=true'"
 
 # type: Plain text
 #: user.txt:828
 msgid "== Sound"
-msgstr ""
+msgstr "== Lyd"
 
 # type: Plain text
 #: user.txt:830
 msgid "=== Configuring the sound card"
-msgstr ""
+msgstr "=== Konfiguration af lydkort"
 
 # type: Plain text
 #: user.txt:834 sound.txt:8
@@ -2687,6 +2731,10 @@ msgid ""
 "compatibility modules are loaded, but Frugalware does not contain native OSS "
 "support."
 msgstr ""
+"Frugalware bruger Advanced Linux Sound Architecture (ALSA) subsystem for "
+"lydkort. For ældre lydkort, bliver Open Sound System (OSS) kompatibilitet "
+"moduller indlæst, men Frugalware har ikke naturligt forekommende OSS "
+"understøttelse."
 
 # type: Plain text
 #: user.txt:840 sound.txt:14
@@ -2697,11 +2745,16 @@ msgid ""
 "course, you can take the automatically loaded module to blacklist, and load "
 "it manually by editing '/etc/sysconfig/modules'."
 msgstr ""
+"At finde og indlæse det nødvendige modul for dit lydkort er ganske enkel. "
+"Processen er for det meste den samme som ved indstilling af dit "
+"netværkskort. Under hver boot, vil hotplug scripts detektere dit lydkort, "
+"men, selvfølgelig, kan du ændre den automatisk indlæste modul til blacklist, "
+"og loade det manuelt ved at redigere '/etc/sysconfig/modules'."
 
 # type: Plain text
 #: user.txt:842
 msgid "=== Volume configuration with alsamixer"
-msgstr ""
+msgstr "=== Lydstyrke konfiguration med alsamixer"
 
 # type: Plain text
 #: user.txt:847 sound.txt:21
@@ -2711,6 +2764,11 @@ msgid ""
 "keys to set the volume and left or right keys to switch to another channel. "
 "You can quit alsamixer by hitting the Esc key."
 msgstr ""
+"Som standard, kan dit lydkort være meget højlydt. Du kan bruge `alsamixer` "
+"til at sætte lydstyrken på dit kort. Brug < and > tasterne til at dæmpe en "
+"kanal, og op og ned tasterne til sætte lydstyrken og venstre eller højre "
+"taster til skift til et andet kanal. Du kan gå ud af alsamixer ved at bruge "
+"Esc tasten."
 
 # type: Plain text
 #: user.txt:850 sound.txt:24
@@ -2718,6 +2776,8 @@ msgid ""
 "From now, during shutdown, Frugalware saves your settings, but you can store "
 "or load them any time with the"
 msgstr ""
+"Fra nu af, under shutdown, vil Frugalware gemme dine indstillinger, men du "
+"kan gemme eller indlæse dem til enhver tid med"
 
 # type: Plain text
 #: user.txt:851 user.txt:857 user.txt:1426 user.txt:2175 user.txt:2735
@@ -2725,7 +2785,7 @@ msgstr ""
 #: packages.txt:1218 packages.txt:2551
 #, no-wrap
 msgid "-------------------\n"
-msgstr ""
+msgstr "-------------------\n"
 
 # type: Plain text
 #: user.txt:853 sound.txt:27
@@ -2734,11 +2794,13 @@ msgid ""
 "# service alsa save\n"
 "-------------------\n"
 msgstr ""
+"# service alsa save\n"
+"-------------------\n"
 
 # type: Plain text
 #: user.txt:856 sound.txt:30
 msgid "and the"
-msgstr ""
+msgstr "og"
 
 # type: Plain text
 #: user.txt:859 sound.txt:33
@@ -2747,16 +2809,18 @@ msgid ""
 "# service alsa load\n"
 "-------------------\n"
 msgstr ""
+"# service alsa load\n"
+"-------------------\n"
 
 # type: Plain text
 #: user.txt:862 user.txt:5167 sound.txt:35 gpg.txt:12
 msgid "command."
-msgstr ""
+msgstr "kommando."
 
 # type: Plain text
 #: user.txt:864
 msgid "== Printing"
-msgstr ""
+msgstr "== Udskrivning"
 
 # type: Plain text
 #: user.txt:867 printing.txt:5
@@ -2764,22 +2828,26 @@ msgid ""
 "Frugalware uses the Common Unix Printing System (CUPS) for handling printers "
 "and to manage printing."
 msgstr ""
+"Frugalware bruger Common Unix Printing System (CUPS) for håndtering af "
+"printere og for håndtering at udskrivning."
 
 # type: Plain text
 #: user.txt:869
 msgid "=== Before you start"
-msgstr ""
+msgstr "=== Før du starter"
 
 # type: Plain text
 #: user.txt:871 printing.txt:9
 msgid ""
 "Here comes a few advice depending on what manufacturer made your printer."
 msgstr ""
+"Her kommer nogle råd afhængig af hvilken producent der har lavet din "
+"printer."
 
 # type: Plain text
 #: user.txt:873
 msgid "==== Hewlett-Packard"
-msgstr ""
+msgstr "==== Hewlett-Packard"
 
 # type: Plain text
 #: user.txt:877 printing.txt:15
@@ -2788,11 +2856,14 @@ msgid ""
 "support. Also if you have got some priter&scanner machine it's a good idea "
 "to use 'hplip'."
 msgstr ""
+"Du behøver 'hpijs' som det mindste, men du kan også installere 'hplip' for "
+"avanceret HP understøttelse. Også hvis du har en kombineret priter&scanner "
+"maskine er det en god ide at bruge 'hplip'."
 
 # type: Plain text
 #: user.txt:879
 msgid "==== Canon"
-msgstr ""
+msgstr "==== Canon"
 
 # type: Plain text
 #: user.txt:882 printing.txt:20
