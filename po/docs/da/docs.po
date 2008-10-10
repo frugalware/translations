@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-08 01:42+0200\n"
-"PO-Revision-Date: 2008-10-08 21:14+0200\n"
+"POT-Creation-Date: 2008-10-10 01:42+0200\n"
+"PO-Revision-Date: 2008-10-10 21:19+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -1116,12 +1116,9 @@ msgstr ""
 "new size of 'device' is 1014784 blocks\n"
 "Command (? for help): p\n"
 "/dev/sda\n"
-"        #                    type name                length   base    ( "
-"size )  system\n"
-"/dev/sda1     Apple_partition_map Apple                   63 @ 1       ( "
-"31.5k)  Partition map\n"
-"/dev/sda2              Apple_Free Extra              1014720 @ 64      "
-"(495.5M)  Free space\n"
+"        #                    type name                length   base    ( size )  system\n"
+"/dev/sda1     Apple_partition_map Apple                   63 @ 1       ( 31.5k)  Partition map\n"
+"/dev/sda2              Apple_Free Extra              1014720 @ 64      (495.5M)  Free space\n"
 
 # type: Plain text
 #: install.txt:115
@@ -3088,10 +3085,10 @@ msgid ""
 "(the ppd) by yourself."
 msgstr ""
 "Hvis det er ikke på websiden forannævnt, så prøv at google efter det. Hvis "
-"oplistet men du får at vide at det er \"paperweight\", så er der ikke noget at "
-"gøre. Hvis det er understøttet og siges at fungere på siden,  vær så venlig "
-"at lave bug report med dine printerdetaljer. Når vi har ordnet bug, kan du "
-"installere driveren (ppd filen) helt af dig selv."
+"oplistet men du får at vide at det er \"paperweight\", så er der ikke noget "
+"at gøre. Hvis det er understøttet og siges at fungere på siden,  vær så "
+"venlig at lave bug report med dine printerdetaljer. Når vi har ordnet bug, "
+"kan du installere driveren (ppd filen) helt af dig selv."
 
 # type: Plain text
 #: printing.txt:96
@@ -3135,9 +3132,9 @@ msgid ""
 msgstr ""
 "Så genstart CUPS service: `su -c \\'service cups restart\\'`. Driver "
 "installationen er nu fuldført, nu kan du tilføje din printer via web "
-"interface. En god howto kan findes på http://www.linux-"
-"foundation.org/en/OpenPrinting/Database/CUPSDocumentation[http://www.linux-"
-"foundation.org/en/OpenPrinting/Database/CUPSDocumentation]."
+"interface. En god howto kan findes på http://www.linux-foundation.org/en/"
+"OpenPrinting/Database/CUPSDocumentation[http://www.linux-foundation.org/en/"
+"OpenPrinting/Database/CUPSDocumentation]."
 
 # type: Plain text
 #: printing.txt:110
@@ -3199,7 +3196,7 @@ msgstr "eller åbne det i din foretrukne PS fremviser."
 # type: Plain text
 #: printing.txt:129
 msgid "== Troubleshooting"
-msgstr ""
+msgstr "== Fejlfinding"
 
 # type: Plain text
 #: printing.txt:131
@@ -3207,16 +3204,18 @@ msgid ""
 "If something goes wrong, check out CUPS log at '/var/log/cups'. There is a "
 "verbose error log and an access log, too."
 msgstr ""
+"Hvis noget går galt, så tjek CUPS log, som findes her '/var/log/cups'. Der "
+"er en både en fejllog og en adgangslog."
 
 # type: Plain text
 #: hotplug.txt:2
 msgid "= The hotplug subsystem"
-msgstr ""
+msgstr "= Hotplug subsystem"
 
 # type: Plain text
 #: hotplug.txt:4 packages.txt:2826
 msgid "== udev"
-msgstr ""
+msgstr "== udev"
 
 # type: Plain text
 #: hotplug.txt:10
@@ -3227,6 +3226,11 @@ msgid ""
 "dev, but it also means, if you create a device node manually, it will exist "
 "only until the next shutdown/reboot."
 msgstr ""
+"/dev mappen under Frugalware er en ramdisk. Hver device node bliver skabt "
+"automatisk under system boot af hotplug subsystem, nærmere bestemt, af udev. "
+"Det betyder, at der ikke vil være unødvendige device nodes i /dev, men det "
+"betyder også, hvis du har skabt et device node manuelt, vil det kun "
+"eksistere indtil næste shutdown/reboot."
 
 # type: Plain text
 #: hotplug.txt:14
@@ -3235,6 +3239,9 @@ msgid ""
 "each boot, you must create a device file under `/lib/udev/devices`: it will "
 "be copied on each boot automatically."
 msgstr ""
+"Hvis du vil tvinge Frugalware at skabe et device node \"manuelt\" under hver "
+"boot, skal du skabe en device fil under `/lib/udev/devices`: det vil blive "
+"kopieret til hver boot automatisk."
 
 # type: Plain text
 #: hotplug.txt:17
@@ -3242,11 +3249,13 @@ msgid ""
 "The udev needs sysfs, so it will only work with the 2.6.x kernel series.  Do "
 "not try to run udev on Frugalware with kernel series 2.4.x."
 msgstr ""
+"udev behøver sysfs, så det vil kun virke med 2.6.x kernel serie. Prøv ikke "
+"at køre udev på Frugalware med kernel serie 2.4.x."
 
 # type: Plain text
 #: hotplug.txt:19
 msgid "== Pen/Thumbdrives"
-msgstr ""
+msgstr "== Usb-Pen/ USB-flash-drev"
 
 # type: Plain text
 #: hotplug.txt:27
@@ -3259,11 +3268,17 @@ msgid ""
 "and its first partition under /dev/sda1.  Adding the following line to /etc/"
 "fstab:"
 msgstr ""
+"Usb-Pen (også kendt som USB-flash-drev) er godt-understøttet gennem hotplug "
+"scripts og udev. Hvis du isætter en Usb-Pen i dit USB stik, vil udev skabe "
+"et device node for det i /dev. De fleste Usb-penne indeholder kun partition "
+"og deres filsystem er vfat. I de fleste tilfælde, vil Usb-pennen opføre sig "
+"som en SCSI disk. Det betyder, at du kan finde pennen under /dev/sda og dens "
+"første partition under /dev/sda1. Tilføj følgende linie til /etc/fstab:"
 
 # type: Plain text
 #: hotplug.txt:29
 msgid "`/dev/sda1 /media/pendrive auto defaults,noauto,user 0 0`"
-msgstr ""
+msgstr "`/dev/sda1 /media/pendrive auto defaults,noauto,user 0 0`"
 
 # type: Plain text
 #: hotplug.txt:32
@@ -3271,6 +3286,8 @@ msgid ""
 "will allow users mount their pendrive if the device node exists (if the "
 "device is inserted into the slot)."
 msgstr ""
+"det vil tillade brugere at mounte deres Usb-pen hvis device node eksisterer "
+"(hvis enheden er isat usb-stikket)."
 
 # type: Plain text
 #: hotplug.txt:40
@@ -3282,11 +3299,17 @@ msgid ""
 "work as in KDE, Gnome, XFCE4.  See also the automounting part of the "
 "documentation."
 msgstr ""
+"Hvis du bruger KDE, Gnome eller XFCE4 vil de automatisk klare at mounte "
+"sådanne enheder. Du skal ikke redigere /etc/fstab for så vil automounting "
+"ikke virke for dig.  For blackbox, fluxbox, englightenment, e17 og andre "
+"mindre window managers bruges `ivman` for automount, men forvent ikke at det "
+"arbejder så fint som i KDE, Gnome, XFCE4.  Se også automount delen af "
+"dokumentationen."
 
 # type: Plain text
 #: hotplug.txt:42
 msgid "== Digital cameras"
-msgstr ""
+msgstr "== Digitalkameraer"
 
 # type: Plain text
 #: hotplug.txt:47
@@ -3296,6 +3319,10 @@ msgid ""
 "be treated as a pendrive (USB Mass Storage device), you can mount them and "
 "copy the pictures from them easily."
 msgstr ""
+"Typisk, er der to typer af Digitalkameraer. Nogle af dem understøtter begge "
+"adgangsmetoder, mens andre kun bruger en af dem. Først, de fleste kameraer "
+"kan behandles som et USB-pen (USB Mass Storage device), du kan mounte dem og "
+"kopierere billederne fra dem nemt."
 
 # type: Plain text
 #: hotplug.txt:52
@@ -3305,11 +3332,15 @@ msgid ""
 "model is supported. (If it's not available on your system, a simple `su -c "
 "\\'pacman-g2 -S gphoto2\\'` will install it onto your system.)"
 msgstr ""
+"Andre kameraer understøtter Picture Transfer Protocol (PTP). Du kan hente "
+"billederne fra dem (og gøre en masse andre ting) med `gphoto2`, hvis din "
+"model er understøttet. (Hvis det ikke er tilstede på dit system så vil `su "
+"-c \\'pacman-g2 -S gphoto2\\'` installere det på dit system.)"
 
 # type: Plain text
 #: hotplug.txt:54
 msgid "== Automounting: D-BUS, HAL and Ivman; Gnome and KDE"
-msgstr ""
+msgstr "== Automounting: D-BUS, HAL og Ivman; Gnome og KDE"
 
 # type: Plain text
 #: hotplug.txt:60
@@ -3320,6 +3351,11 @@ msgid ""
 "the standard mount program which permits normal users to mount removable "
 "devices without an existing '/etc/fstab' entry."
 msgstr ""
+"D-BUS er et simpel IPC (inter-process communication) bibliotek baseret på "
+"beskeder.  HAL er et hardware abstraktionslag som bruger D-BUS. Ivman er "
+"baseret på HAL og bruger pmount (\"policy mount\"), som er en wrapper omkring "
+"standard mount programet hvilket tillader normale brugere at mounte "
+"aftagelige enheder uden et foreliggende '/etc/fstab' emne."
 
 # type: Plain text
 #: hotplug.txt:64
@@ -3328,6 +3364,9 @@ msgid ""
 "play audio CDs or video DVDs automatically. It is 100% userspace, so it is a "
 "safe replacement for submount."
 msgstr ""
+"Ivman er en dæmon til at automounte CD-ROMs og DVDs når de bliver sat i "
+"drevet , eller til at spille musik CDs eller video DVDs automatisk. Det er "
+"100% userspace, så er det en sikker erstatning for submount."
 
 # type: Plain text
 #: hotplug.txt:68
@@ -3336,6 +3375,9 @@ msgid ""
 "etc/ivman. They are plain XML files, just read them, everything is quite "
 "self-explanatory."
 msgstr ""
+"Hvis du ønsker at ændre standard instillingerne, alle konfig filer kan "
+"findes i /etc/ivman. Det er ligefremme XML-filer, bare læs dem, alt er helt "
+"selv-forklarende."
 
 # type: Plain text
 #: hotplug.txt:71
@@ -3344,16 +3386,19 @@ msgid ""
 "implementation do that, not ivman. Ivman is useful for other windowing "
 "systems where is no support for such a feature."
 msgstr ""
+"Automounting sker også med KDE og Gnome, men deres respektive VFS-"
+"implementering gør det, ikke ivman. Ivman er nyttig for andre grænseflader "
+"systemer hvor der er ikke understøttelse for sådane faciliteter."
 
 # type: Plain text
 #: init.txt:2
 msgid "= The init scripts, bootup"
-msgstr ""
+msgstr "= Init scripts, bootup"
 
 # type: Plain text
 #: init.txt:4
 msgid "== About the kernel"
-msgstr ""
+msgstr "== Om kernen"
 
 # type: Plain text
 #: init.txt:12
@@ -3366,6 +3411,14 @@ msgid ""
 "Frugalware's kernel doesn't contain built-in support for your controller, "
 "you can compile your own kernel. Don't worry, it's fairly simple."
 msgstr ""
+"Linux kernel er i kernepakken. Vi forsøger at bruge som få patches som "
+"muligt for at forblive tæt ved den oprindelige vanilla kerne. Vi bruger også "
+"http://alioth.debian.org/projects/splashy[splashy] i stedet for den "
+"velkendte bootsplash. Kernen indeholder direkte-compiled understøttelse for "
+"de fleste IDE-kontrollere, men alle low-level SCSI-drivere bliver kompileret "
+"som et modul. Hvis Frugalwares kerne ikke indeholder indbygget støtte for "
+"din kontroller, kan du kompilere din egen kerne. Hav ikke bekymringer, det "
+"er ganske enkelt."
 
 # type: Plain text
 #: init.txt:15
@@ -3373,6 +3426,8 @@ msgid ""
 ". After setup is finished, before hitting ENTER to reboot, switch to `tty2` "
 "by pressing `Alt-F2` and press ENTER to get a shell."
 msgstr ""
+". Efter at setup er færdig, og før du slår ENTER for at reboote, skift til "
+"`tty2` ved at trykke på `Alt+F2` og herefter slå ENTER for at få en shell."
 
 # type: Plain text
 #: init.txt:18
@@ -3382,6 +3437,9 @@ msgid ""
 "+\n"
 "--------------------\n"
 msgstr ""
+". Ændr din root mappe til /mnt/target:\n"
+"+\n"
+"--------------------\n"
 
 # type: Plain text
 #: init.txt:20
@@ -3390,6 +3448,8 @@ msgid ""
 "# chroot /mnt/target\n"
 "--------------------\n"
 msgstr ""
+"# chroot /mnt/target\n"
+"--------------------\n"
 
 # type: Plain text
 #: init.txt:27
