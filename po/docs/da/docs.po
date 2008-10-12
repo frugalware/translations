@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-10 01:42+0200\n"
-"PO-Revision-Date: 2008-10-10 21:21+0200\n"
+"POT-Creation-Date: 2008-10-12 01:42+0200\n"
+"PO-Revision-Date: 2008-10-12 17:35+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -3334,8 +3334,8 @@ msgid ""
 msgstr ""
 "Andre kameraer understøtter Picture Transfer Protocol (PTP). Du kan hente "
 "billederne fra dem (og gøre en masse andre ting) med `gphoto2`, hvis din "
-"model er understøttet. (Hvis det ikke er tilstede på dit system så vil `su "
-"-c \\'pacman-g2 -S gphoto2\\'` installere det på dit system.)"
+"model er understøttet. (Hvis det ikke er tilstede på dit system så vil `su -"
+"c \\'pacman-g2 -S gphoto2\\'` installere det på dit system.)"
 
 # type: Plain text
 #: hotplug.txt:54
@@ -3353,8 +3353,8 @@ msgid ""
 msgstr ""
 "D-BUS er et simpel IPC (inter-process communication) bibliotek baseret på "
 "beskeder.  HAL er et hardware abstraktionslag som bruger D-BUS. Ivman er "
-"baseret på HAL og bruger pmount (\"policy mount\"), som er en wrapper omkring "
-"standard mount programet hvilket tillader normale brugere at mounte "
+"baseret på HAL og bruger pmount (\"policy mount\"), som er en wrapper "
+"omkring standard mount programet hvilket tillader normale brugere at mounte "
 "aftagelige enheder uden et foreliggende '/etc/fstab' emne."
 
 # type: Plain text
@@ -3460,12 +3460,19 @@ msgid ""
 "you don't want to compile as a module anymore, and exit from the menu with "
 "saving changes."
 msgstr ""
+". Source af din kerne (med ekstra patches tilføjet) kan findes i "
+"`/usr/src/linux`. Så gå til `/usr/src/linux` mappen og få "
+"konfigurationsmenuen frem ved at skrive `make menuconfig`. i mappen, vælg "
+"driveren som du ikke mere ønsker at have kompileret som et modul længere, og "
+"gå ud af menuen med de gemte ændringer."
 
 # type: Plain text
 #: init.txt:29
 msgid ""
 ". Compile your kernel with the `make` command. This may take several minutes."
 msgstr ""
+". Kompiler din kerne med `make` kommandoen. Dette kan tage adskillige "
+"minuter."
 
 # type: Plain text
 #: init.txt:32
@@ -3475,6 +3482,9 @@ msgid ""
 "+\n"
 "------------------------------------------------------------\n"
 msgstr ""
+". Kopier din nye kerne til `/boot` ved at skrive følgende kommando:\n"
+"+\n"
+"------------------------------------------------------------\n"
 
 # type: Plain text
 #: init.txt:34
@@ -3483,16 +3493,18 @@ msgid ""
 "# cp /usr/src/linux/arch/$yourarch$/boot/bzImage /boot/vmlinuz\n"
 "------------------------------------------------------------\n"
 msgstr ""
+"# cp /usr/src/linux/arch/$yourarch$/boot/bzImage /boot/vmlinuz\n"
+"------------------------------------------------------------\n"
 
 # type: Plain text
 #: init.txt:37
 msgid "+ On x86, `$yourarch$` has to be replaced by i386."
-msgstr ""
+msgstr "+ På x86, `$yourarch$` skal udskiftets med i386."
 
 # type: Plain text
 #: init.txt:39
 msgid "== Init scripts and services"
-msgstr ""
+msgstr "== Init scripts og services"
 
 # type: Plain text
 #: init.txt:43
@@ -3501,6 +3513,9 @@ msgid ""
 "located in /etc/rc.d. They are used to setup the environement and also allow "
 "to manage system services."
 msgstr ""
+"I Frugalware, er init scripts altid kaldt rc.noget og de bliver lokaliseret "
+"i /etc/rc.d. De bliver brugt til setup miljøet og tillader også at "
+"administrere systemtjenester."
 
 # type: Plain text
 #: init.txt:47
@@ -3510,6 +3525,10 @@ msgid ""
 "running your webserver, running the virus scanner, all of these are services "
 "and they offer much much more."
 msgstr ""
+"Services er UNIX dæmoner dette stiller diverse slags tjenester til rådighed. "
+"Spektrummet af deres handlinger er meget stort. Synkronisererer dit "
+"systemur, kører din webserver, kører virusscanneren, alle disse tjenester "
+"tilbyder de og meget meget mere."
 
 # type: Plain text
 #: init.txt:51
@@ -3518,6 +3537,9 @@ msgid ""
 "you will prefer to use our utility `service`. This tool allows you to "
 "control the running state of the services."
 msgstr ""
+"Filerne der tillader at håndtere dem kan findes i /etc/rc.d, men "
+"sædvanligvis vil du foretrække at benytte vores program `service`. Dette "
+"redskab tillader dig at styre den løbende tilstand af tjenesterne."
 
 # type: Plain text
 #: init.txt:56
@@ -3527,12 +3549,17 @@ msgid ""
 "service name.  As you will see the syntax is simple, and you may get more "
 "help looking and the `service` manual doing:"
 msgstr ""
+"I det følgende eksempel vil vi forklare hvordan man forandrer den løbende "
+"tilstand af en givet tjeneste. Du vil være nødt til erstatte "
+"`$service_navn$` med det ønskede tjenestenavn. Som du vil se er syntaksen "
+"enkel, og du kan få meget mere hjælp ved at se på `service` manualen ved at "
+"skrive følgende i en terminal:"
 
 # type: Plain text
 #: init.txt:57
 #, no-wrap
 msgid "-------------\n"
-msgstr ""
+msgstr "-------------\n"
 
 # type: Plain text
 #: init.txt:59
@@ -3541,6 +3568,8 @@ msgid ""
 "$ man service\n"
 "-------------\n"
 msgstr ""
+"$ man service\n"
+"-------------\n"
 
 # type: Plain text
 #: init.txt:64
@@ -3550,11 +3579,15 @@ msgid ""
 "better learn how to control them, but don't be afraid, the syntax is really "
 "simple, and you will learn it in less then a minute."
 msgstr ""
+"VIGTIGT: Senere i dette dokument vil du se hvordan man forandrer "
+"konfigurationen af disse tjenester således at de passer til dine behov. Du "
+"bør lære hvordan du styrer dem, men vær ikke bange, syntaksen er virkeligt "
+"enkel, og du vil lære det på mindre på end et minut."
 
 # type: Plain text
 #: init.txt:66
 msgid "=== Controlling a service execution"
-msgstr ""
+msgstr "=== Styre en service-udførelse"
 
 # type: Plain text
 #: init.txt:69
@@ -3562,11 +3595,13 @@ msgid ""
 "Services can be started, restarted and stopped, so that you can control what "
 "your system has to offer."
 msgstr ""
+"Services kan startes, genstates og stoppes, således at du kan styre hvad dit "
+"system skal tilbyde."
 
 # type: Plain text
 #: init.txt:71
 msgid "To start a service, simply do:"
-msgstr ""
+msgstr "For at starte en service, skriv ganske enkelt dette:"
 
 # type: Plain text
 #: init.txt:74
@@ -3575,18 +3610,20 @@ msgid ""
 "# service $service_name$ start\n"
 "------------------------------\n"
 msgstr ""
+"# service $service_navn$ start\n"
+"------------------------------\n"
 
 # type: Plain text
 #: init.txt:77
 msgid "To restart a service, simply do:"
-msgstr ""
+msgstr "For at genstarte en service, skriv ganske enkelt dette:"
 
 # type: Plain text
 #: init.txt:78 packages.txt:369 packages.txt:1159 packages.txt:1166
 #: packages.txt:3315
 #, no-wrap
 msgid "--------------------------------\n"
-msgstr ""
+msgstr "--------------------------------\n"
 
 # type: Plain text
 #: init.txt:80
@@ -3595,18 +3632,20 @@ msgid ""
 "# service $service_name$ restart\n"
 "--------------------------------\n"
 msgstr ""
+"# service $service_navn$ restart\n"
+"--------------------------------\n"
 
 # type: Plain text
 #: init.txt:83
 msgid "To stop a service, simply do:"
-msgstr ""
+msgstr "For at stoppe en service, skriv ganske enkelt dette:"
 
 # type: Plain text
 #: init.txt:84 init.txt:108 packages.txt:343 packages.txt:1645
 #: packages.txt:3104 packages.txt:3298
 #, no-wrap
 msgid "-----------------------------\n"
-msgstr ""
+msgstr "-----------------------------\n"
 
 # type: Plain text
 #: init.txt:86
@@ -3615,16 +3654,18 @@ msgid ""
 "# service $service_name$ stop\n"
 "-----------------------------\n"
 msgstr ""
+"# service $service_navn$ stop\n"
+"-----------------------------\n"
 
 # type: Plain text
 #: init.txt:89
 msgid "As you can see, controlling a service execution is pretty simple."
-msgstr ""
+msgstr "Som du kan se, at styre en service-udførelse er ganske simpelt."
 
 # type: Plain text
 #: init.txt:91
 msgid "=== Controlling a service execution on system boot"
-msgstr ""
+msgstr "=== Kontrolere en service-udførelse ved system boot"
 
 # type: Plain text
 #: init.txt:93
@@ -3632,18 +3673,22 @@ msgid ""
 "Controlling the automatic execution of services on system startup is not "
 "much more difficult."
 msgstr ""
+"Kontrolere automatisk udførelse af services ved system start er ikke meget "
+"mere vanskelig."
 
 # type: Plain text
 #: init.txt:95
 msgid "To add a service for automatic execution on system startup, simply do:"
 msgstr ""
+"For at tilføje en service for automatisk udførelse ved system start, skriv "
+"ganske enkelt dette:"
 
 # type: Plain text
 #: init.txt:96 init.txt:102 packages.txt:844 packages.txt:1293
 #: packages.txt:2574
 #, no-wrap
 msgid "----------------------------\n"
-msgstr ""
+msgstr "----------------------------\n"
 
 # type: Plain text
 #: init.txt:98
@@ -3652,12 +3697,16 @@ msgid ""
 "# service $service_name$ add\n"
 "----------------------------\n"
 msgstr ""
+"# service $service_navn$ add\n"
+"----------------------------\n"
 
 # type: Plain text
 #: init.txt:101
 msgid ""
 "To delete a service for automatic execution on system startup, simply do:"
 msgstr ""
+"For at slette en service for automatisk udførelse ved system start, skriv "
+"ganske enkelt dette:"
 
 # type: Plain text
 #: init.txt:104
@@ -3666,11 +3715,15 @@ msgid ""
 "# service $service_name$ del\n"
 "----------------------------\n"
 msgstr ""
+"# service $service_navn$ del\n"
+"----------------------------\n"
 
 # type: Plain text
 #: init.txt:107
 msgid "To list the runlevels in which the service will be running, simply do:"
 msgstr ""
+"For at opliste runlevels som givne service vil køre, skriv ganske enkelt "
+"dette:"
 
 # type: Plain text
 #: init.txt:110
@@ -3679,11 +3732,13 @@ msgid ""
 "# service $service_name$ list\n"
 "-----------------------------\n"
 msgstr ""
+"# service $service_navn$ list\n"
+"-----------------------------\n"
 
 # type: Plain text
 #: init.txt:113
 msgid "== System boot, runlevels"
-msgstr ""
+msgstr "== System boot, runlevels"
 
 # type: Plain text
 #: init.txt:117
@@ -3692,12 +3747,15 @@ msgid ""
 "kernel will start /sbin/init as the final step of the kernel boot sequence.  "
 "According to the content of /etc/inittab, init will run:"
 msgstr ""
+"Hvis du ikke tilføjer nogen ekstra  'init=/path/to/init' parametere til den, "
+"vil kernen starte /sbin/init som det endelige trin af kernesesekvensen. "
+"Ifølge indholdet af /etc/inittab, vil init køre:"
 
 # type: Plain text
 #: init.txt:119
 #, no-wrap
 msgid "1. each S* script at /etc/rc.d/rcS.d\n"
-msgstr ""
+msgstr "1. hver S* script ved /etc/rc.d/rcS.d\n"
 
 # type: Plain text
 #: init.txt:122
@@ -3706,6 +3764,8 @@ msgid ""
 "2. each S* script at /etc/rc.d/rcn.d, where n is the default runlevel.\n"
 "This is set to 4 by default. Here is the list of available runlevels:\n"
 msgstr ""
+"2. hver S* script ved /etc/rc.d/rcn.d, hvor n er standard runlevel.\n"
+"Dette er sat til 4 som standard. Her er en liste af runlevels:\n"
 
 # type: Plain text
 #: init.txt:131
@@ -3720,6 +3780,14 @@ msgid ""
 "6 = reboot\n"
 "--------------------------------------------------------------------------\n"
 msgstr ""
+"0 = nedlukning\n"
+"1 = enkelt brugermode\n"
+"2 = ubenyttet (men konfigureret som det samme som runlevel 3)\n"
+"3 = flerbrugermode (tekst mode)\n"
+"4 = flerbrugermode, X11 wmed KDM/GDM/XDM (standard Frugalware runlevel)\n"
+"5 = ubenyttet (men konfigureret som det samme som runlevel 3)\n"
+"6 = reboot\n"
+"--------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: init.txt:135
@@ -3727,11 +3795,13 @@ msgid ""
 "If X11 is configured, /etc/rc.d/rc.4 will start one of the desktop managers, "
 "as configured in '/etc/sysconfig/desktop'."
 msgstr ""
+"Hvis X11 er konfigureret vil, /etc/rc.d/rc.4 starte en af desktop manager, "
+"som konfigureret i '/etc/sysconfig/desktop'."
 
 # type: Plain text
 #: init.txt:137
 msgid "== GRUB gfxmenu"
-msgstr ""
+msgstr "== GRUB gfxmenu"
 
 # type: Plain text
 #: init.txt:142
@@ -3740,6 +3810,9 @@ msgid ""
 "developers). If you don't like it, you can disable it by commenting out the "
 "gfxmenu initialization line in /boot/grub/menu.lst.  So for example:"
 msgstr ""
+"Frugalware kommer med en pæn grafisk grub menu (tak til SuSE's gfxmenu "
+"udviklere). Hvis du ikke kan lide den, kan du inaktivere ved at udkommentere "
+"den i gfxmenu initialeringslinien i /boot/grub/menu.lst. Så for eksempel:"
 
 # type: Plain text
 #: init.txt:145
@@ -3747,11 +3820,13 @@ msgid ""
 "Before: `gfxmenu (hd0,5)/boot/grub/message` + After: `#gfxmenu (hd0,5)/boot/"
 "grub/message`"
 msgstr ""
+"Før: `gfxmenu (hd0,5)/boot/grub/message` + Efter: `#gfxmenu "
+"(hd0,5)/boot/grub/message`"
 
 # type: Plain text
 #: init.txt:147
 msgid "== Splashy"
-msgstr ""
+msgstr "== Splashy"
 
 # type: Plain text
 #: init.txt:153
@@ -3762,12 +3837,17 @@ msgid ""
 "or want to switch it off for whatever reason add nosplashy for your kernel "
 "parameters in '/boot/grub/menu.lst'. For example:"
 msgstr ""
+"Frugalware bruger splashy for at vise en pæn splash skærm og en fremgangsbar "
+"i stedet for tekstbeskeder under boot proceduren. Splashy er totalt "
+"uafhængig, så der er intet behov for at patche kernen. Hvis du afskyr den "
+"eller vil fjerne den af en grund tilføjer du nosplashy for dine "
+"kerneparametre i '/boot/grub/menu.lst'. For eksempel:"
 
 # type: Plain text
 #: init.txt:154 packages.txt:825
 #, no-wrap
 msgid "----------------------------------------------------------------\n"
-msgstr ""
+msgstr "----------------------------------------------------------------\n"
 
 # type: Plain text
 #: init.txt:156
@@ -3776,11 +3856,13 @@ msgid ""
 "kernel (hd0,2)/vmlinuz root=/dev/hda5 ro quiet vga=791 nosplashy\n"
 "----------------------------------------------------------------\n"
 msgstr ""
+"kernel (hd0,2)/vmlinuz root=/dev/hda5 ro quiet vga=791 nosplashy\n"
+"----------------------------------------------------------------\n"
 
 # type: Plain text
 #: contribute.txt:2
 msgid "= How to contribute"
-msgstr ""
+msgstr "= Hvordan du bidrager"
 
 # type: Plain text
 #: contribute.txt:7
@@ -3791,11 +3873,16 @@ msgid ""
 " limited valuable resource (including your time, knowledge) is appreciated.\n"
 " Depending on your resources, there are many ways to help us.\n"
 msgstr ""
+"Hvis du finder vores arbejde og indsats værdi, så overvej venligst at "
+"donere.\n"
+" Dette er ikke begrænset til monetære bidrag, hver donation er\n"
+" en værdifuld ressource (inklusive din tid, viden) som bliver værdsat.\n"
+" Afhængende af dine ressourcer, er der mange måder at hjælpe os på.\n"
 
 # type: Plain text
 #: contribute.txt:9
 msgid "== Translation"
-msgstr ""
+msgstr "== Oversættelse"
 
 # type: Plain text
 #: contribute.txt:13
@@ -3805,11 +3892,14 @@ msgid ""
 " With linguistic and no programming knowledge and some time, you can\n"
 " help us create (by asking) and maintain different translations.\n"
 msgstr ""
+"En omfattende og multi-sprog dokumentation er altafgørende.\n"
+" Med sproglig og ingen programeringsviden og noget tid, kan du\n"
+" hjælpe os og skabe (ved at spørge) og fastholde forskellige oversættelser.\n"
 
 # type: Plain text
 #: contribute.txt:15
 msgid "== Application packaging"
-msgstr ""
+msgstr "== Program pakning"
 
 # type: Plain text
 #: contribute.txt:21
@@ -3820,11 +3910,16 @@ msgid ""
 "takes time, so submitting well-packaged software is a great way to help us "
 "and save our time."
 msgstr ""
+"I http://bugs.frugalware.org[Bug Tracking System], er der anmodninger for "
+"nogle pakker. Processen med at lave pakker er godt dokumenteret, og med "
+"noget GNU/Linux erfaring, er det ikke vanskeligt. Men det tager tid, så at "
+"at indsende vel-pakket software er en fin vej at hjælpe os på og spare vores "
+"tid."
 
 # type: Plain text
 #: contribute.txt:23
 msgid "== Developing"
-msgstr ""
+msgstr "== Udviklning"
 
 # type: Plain text
 #: contribute.txt:26
@@ -3832,11 +3927,13 @@ msgid ""
 "Of course, any skilled help is appreciated in developing core systems, like "
 "contributing code to pacman-g2 or the setup."
 msgstr ""
+"Selvfølgelig bliver enhver dygtig hjælp værdsat i det at udvikle "
+"kernesystemet, som det at bidrage med kode til pacman-g2 eller setup."
 
 # type: Plain text
 #: contribute.txt:28
 msgid "== Donating hardware"
-msgstr ""
+msgstr "== Donere hardware"
 
 # type: Plain text
 #: contribute.txt:32
@@ -3845,11 +3942,15 @@ msgid ""
 "[donations]), you can make testing packages easier, or speed up the package "
 "creation process within a specific architecture."
 msgstr ""
+"Ved at sende os en eller anden ønsket hardware (se "
+"http://frugalware.org/donations[donationer]), kan vi lave test på pakker "
+"nemmere, eller fremskynde pakkeskabelsesprocessen inden for en specifik "
+"arkitektur."
 
 # type: Plain text
 #: contribute.txt:34
 msgid "== Artwork"
-msgstr ""
+msgstr "== Billedmateriale"
 
 # type: Plain text
 #: contribute.txt:38
@@ -3858,11 +3959,14 @@ msgid ""
 "manager themes, window manager splashes and so on) for each release. If you "
 "are skilled to help, you're welcome. :)"
 msgstr ""
+"Vi opdaterer sædvanligvis vores kunst (baggrundsbilleder, grub splash, "
+"desktop manager temaer, window manager splashes og så vidre) for hver "
+"frigivelse. Hvis du kan hjælpe os med det er du velkommen til dette. :)"
 
 # type: Plain text
 #: contribute.txt:40
 msgid "== Support"
-msgstr ""
+msgstr "== Hjælp"
 
 # type: Plain text
 #: contribute.txt:44
@@ -3871,11 +3975,13 @@ msgid ""
 "posts, hang around on IRC and try to answer the questions, solve the occured "
 "problems."
 msgstr ""
+"Hvis du har tid og viden, overvåg forummerne, læs mail listerne, hæng på IRC "
+"og forsøg at besvare spørgsmålene, og løs problemer for andre."
 
 # type: Plain text
 #: contribute.txt:46
 msgid "== Find bugs"
-msgstr ""
+msgstr "== Find bugs"
 
 # type: Plain text
 #: contribute.txt:48
@@ -3883,11 +3989,13 @@ msgid ""
 "If you find bugs, you can help with submitting well-written bugreports, see "
 "the Reporting Bugs section for more info."
 msgstr ""
+"Hvis du finder bugs, kan du hjælpe med det at indsende velskrevede bug "
+"rapporter, se Reporting Bugs-afsnittet for mere info."
 
 # type: Plain text
 #: bugs.txt:2
 msgid "= The Frugalware Bugreporting HOWTO"
-msgstr ""
+msgstr "= Frugalware Bugreportering HOWTO"
 
 # type: Plain text
 #: bugs.txt:8
@@ -3896,22 +4004,26 @@ msgid ""
 "include in a feature request/bugreport to help Frugalware developers speed "
 "up the process of fixing a bug or fulfilling a feature request."
 msgstr ""
+"Målet med denne HOWTO er at forklare hvordan du vælger et opgavenavn og hvad "
+"der skal inkluderes i en anmodning/bugrapport for at hjælpe Frugalware-"
+"udviklere i at fremskynde processen for at ordne en bug eller at opfylde en "
+"anmodning."
 
 # type: Plain text
 #: bugs.txt:10
 msgid "== Where"
-msgstr ""
+msgstr "== Hvor"
 
 # type: Plain text
 #: bugs.txt:12
 msgid "The URL of our Bug tracking system is:"
-msgstr ""
+msgstr "URL til vores Bug tracking system er:"
 
 # type: Plain text
 #: bugs.txt:13 packages.txt:2696 packages.txt:3271 packages.txt:3381
 #, no-wrap
 msgid "---------------------------\n"
-msgstr ""
+msgstr "---------------------------\n"
 
 # type: Plain text
 #: bugs.txt:15
@@ -3920,11 +4032,13 @@ msgid ""
 "http://bugs.frugalware.org/\n"
 "---------------------------\n"
 msgstr ""
+"http://bugs.frugalware.org/\n"
+"---------------------------\n"
 
 # type: Plain text
 #: bugs.txt:18
 msgid "== General"
-msgstr ""
+msgstr "== Generelt"
 
 # type: Plain text
 #: bugs.txt:22
@@ -3933,6 +4047,9 @@ msgid ""
 "your bug/feature. In that case just add a comment about \"I can reproduce "
 "this, too.\" or \"I would enjoy this feature, too.\""
 msgstr ""
+"Før du ånber en opgave, benyt søgningsfunktionen, måske er der en opgave for "
+"din bug/anmodning. I dette tilfælde tilføj lige en kommentar om \"Jeg kan "
+"også reproducere dette.\" eller \"Jeg vil også gerne hve den facilitet.\""
 
 # type: Plain text
 #: bugs.txt:26
@@ -3941,6 +4058,9 @@ msgid ""
 "good reason not fixing / implementing them. You can see a list of such "
 "topics in the http://wiki.frugalware.org/Bugs_FAQ[wiki]."
 msgstr ""
+"Der er nogle emner som ofte bliver anmodet/rapporteret om men vi har en god "
+"grund til ikke at ordne/implementere dem. Du kan se en liste over sådane "
+"emner i http://wiki.frugalware.org/Bugs_FAQ[wiki]."
 
 # type: Plain text
 #: bugs.txt:31
@@ -3950,6 +4070,11 @@ msgid ""
 "package is listed please do *not* report it as we know there is a new "
 "version and we will update it as soon as possible."
 msgstr ""
+"Hvis kunne tænke dig at rapportere om forældede pakker, så sikrer dig at det "
+"ikke er oplistet på "
+"http://frugalware.org/~vmiklos/stats/chkworld.html[dette site].  Når din "
+"pakke bliver oplistet vær venlig *ikke* at raportere det da vi ved der er en "
+"ny version og vi vil opdatere det så snart som muligt."
 
 # type: Plain text
 #: bugs.txt:34
@@ -3957,17 +4082,21 @@ msgid ""
 "Write bugreports in English, please. This is the only language all "
 "developers speak."
 msgstr ""
+"Venligst, Skriv bug rapporter på engelsk. Dette er det eneste sprog alle "
+"udviklere taler."
 
 # type: Plain text
 #: bugs.txt:36
 msgid "== Bugreport"
-msgstr ""
+msgstr "== Bugreport"
 
 # type: Plain text
 #: bugs.txt:38
 msgid ""
 "Please include the following things, unless you know what you are doing:"
 msgstr ""
+"Vær venlig at inkludere ølgende ting, medmindre du ved hvad du er ved at "
+"gøre:"
 
 # type: Plain text
 #: bugs.txt:45
@@ -3976,6 +4105,9 @@ msgid ""
 "message . Steps to reproduce the problem . Actual Results . Expected "
 "Results . How often does this happen? . Additional Information"
 msgstr ""
+". Beskrivelse af problem - sig aldrig \"virker ikke\", quote fejlbeskeden . "
+"Trin for at reproducere problemet . Faktiske resultater . Forventede "
+"resulterer . Hvor ofte sker dette? . Ekstra information"
 
 # type: Plain text
 #: bugs.txt:48
@@ -3983,6 +4115,8 @@ msgid ""
 "The default arch is i686 and the default version is -current. If these are "
 "not true, don't forget to change them!"
 msgstr ""
+"Standard arch er i686 og standard versionen er -current. Hvis dette er "
+"rigtigt, så glem ikke at ændre dem!"
 
 # type: Plain text
 #: bugs.txt:51
