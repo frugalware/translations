@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-10-12 01:42+0200\n"
-"PO-Revision-Date: 2008-10-12 17:35+0200\n"
+"PO-Revision-Date: 2008-10-12 20:09+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -4124,17 +4124,20 @@ msgid ""
 "If you report a -current installer bug, then maybe -current is not enough, "
 "please specify the snapshot date."
 msgstr ""
+"Hvis du rapporterer en -current installations bug, så er -current måske ikke "
+"nok, vær venlig at præcisere snapshot dato."
 
 # type: Plain text
 #: bugs.txt:53
 msgid ""
 "If you found a security bug, then use the [SEC] prefix in the task name."
 msgstr ""
+"Hvis du har fundet en sikkerheds-bug, så brug [SEC] prefix i opgavenavnet."
 
 # type: Plain text
 #: bugs.txt:55
 msgid "== Feature Requests"
-msgstr ""
+msgstr "== Funktions Anmodninger"
 
 # type: Plain text
 #: bugs.txt:59
@@ -4143,6 +4146,9 @@ msgid ""
 "for every package. (Of course you don't have to open task for dependencies "
 "if they are also missing from out packages.)"
 msgstr ""
+"Vær venlig, bed ikke mere om end en pakke i en anmodning. Åben en opgave for "
+"hver pakke. (Selvfølgelig behøver du ikke åbne opgaver for afhængigheder "
+"hvis de også  mangler i andre pakker.)"
 
 # type: Plain text
 #: bugs.txt:65
@@ -4154,6 +4160,11 @@ msgid ""
 ". Optionally a short note about why do you think this package would be\n"
 "  interesting for others, too\n"
 msgstr ""
+"Hvis du anmoder om en pakke, venligst inkluder:\n"
+". navnet på programmet (ja, \"flere spil\" er ikke nok!)\n"
+". URL til programmet\n"
+". Valgfrit et kort notat om hvorfor du mener denne pakke ville være\n"
+"  interessant for andre, også\n"
 
 # type: Plain text
 #: bugs.txt:69
@@ -4162,6 +4173,9 @@ msgid ""
 "task, upload it as an attachment. In this case, please prefix your task name "
 "with `[FB]`, because this way it'll be reviewed sooner."
 msgstr ""
+"Hvis du allerede har en FrugalBuild for pakken, efter åbning af opgaven, "
+"upload det som et vedhæftning. I dette tilfælde, vær venlig at præfiks dit "
+"opgavenavn med'[FB]', fordi på denne måde vil det blive gennemset hurtigere."
 
 # type: Plain text
 #: bugs.txt:75
@@ -4172,6 +4186,11 @@ msgid ""
 "for your FrugalBuild is still fine if you want us to maintain it after the "
 "initial version is accepted."
 msgstr ""
+"Alternativt kan du skrive din FrugalBuild til `frugalware-devel` mail listen "
+"for gennemsyn, dette kan være praktisk hvis du vil indsende flere og flere "
+"buildscript - for endeligt at blive en udvikler er muligt. Åbn en opgave for "
+"din FrugalBuild er stadigvæk fint hvis du vil have os til at vedligeholde "
+"det efter at den initiale version bliver accepteret."
 
 # type: Plain text
 #: bugs.txt:79
@@ -4180,11 +4199,15 @@ msgid ""
 "package. That information is useless for us in most cases and if you don't "
 "include such links, you make our life easier."
 msgstr ""
+"Vær venlig ikke at linke til andre distributioners buildscripts når du "
+"anmoder om en pakke. Den information er ubrugelig for os i de fleste "
+"tilfælde og hvis du ikke inkluderer sådan et links, gør du vores liv "
+"nemmere."
 
 # type: Plain text
 #: bugs.txt:81
 msgid "=== Don't request"
-msgstr ""
+msgstr "=== Anmod ikke om"
 
 # type: Plain text
 #: bugs.txt:88
@@ -4195,11 +4218,17 @@ msgid ""
 "How_to_build_a_custom_kernel[tutorial] is available. Really, building such a "
 "kernel usually requires a buildscript of only 5 lines!"
 msgstr ""
+"Vær venlig, ikke at anmode om tilpassede kerner. Vi forsøger at benytte så "
+"få patches som mulig.  Se `man kernel.sh` som en reference på det at bygge "
+"dine egne pakker med brug af diverse patch. Også en "
+"link:http://wiki.frugalware.org/How_to_build_a_custom_kernel[tutorial] er "
+"tilgængelig. at bygge sådan en kerne kræver sædvanligvis et buildscript på "
+"kun 5 linier!"
 
 # type: Plain text
 #: bugs.txt:90
 msgid "== Pacman-g2 problems"
-msgstr ""
+msgstr "== Pacman-g2 problemer"
 
 # type: Plain text
 #: bugs.txt:93
@@ -4207,6 +4236,8 @@ msgid ""
 "If you get a crash from our package manager then we need a backtrace from "
 "gdb.  Here are the instructions to get a backtrace:"
 msgstr ""
+"Hvis du får et crash fra vores pakke manager har vi derefter brug for en "
+"backtrace fra gdb. Her er instrukser for at få en backtrace:"
 
 # type: Plain text
 #: bugs.txt:96
@@ -4215,6 +4246,8 @@ msgid ""
 "- Find the command line that triggers the crash. For example:\n"
 "  pacman-g2 -Sy\n"
 msgstr ""
+"- Find kommandolinien der udløser crash. For eksempel:\n"
+"  pacman-g2 -Sy\n"
 
 # type: Plain text
 #: bugs.txt:99
@@ -4224,6 +4257,9 @@ msgid ""
 "+\n"
 "--------------------------------------------------------------\n"
 msgstr ""
+"- hent pacman-g2 git repo og kompilerer det med debug symboler aktiverede:\n"
+"+\n"
+"--------------------------------------------------------------\n"
 
 # type: Plain text
 #: bugs.txt:105
@@ -4236,6 +4272,12 @@ msgid ""
 "$ make\n"
 "--------------------------------------------------------------\n"
 msgstr ""
+"$ git clone git://git.frugalware.org/pub/other/pacman-g2/pacman-g2\n"
+"$ cd pacman-g2\n"
+"$ sh autogen.sh\n"
+"$ ./configure --enable-debug\n"
+"$ make\n"
+"--------------------------------------------------------------\n"
 
 # type: Plain text
 #: bugs.txt:109
@@ -4245,6 +4287,9 @@ msgid ""
 "+\n"
 "----------------------------\n"
 msgstr ""
+"- Kør så pacman-g2 i gdb og spor det:\n"
+"+\n"
+"----------------------------\n"
 
 # type: Plain text
 #: bugs.txt:113
@@ -4255,6 +4300,10 @@ msgid ""
 "> run -Sy\n"
 "----------------------------\n"
 msgstr ""
+"$ cd src/pacman-g2\n"
+"$ sudo libtool gdb ./pacman-g2\n"
+"> run -Sy\n"
+"----------------------------\n"
 
 # type: Plain text
 #: bugs.txt:117
@@ -4264,6 +4313,10 @@ msgid ""
 "+\n"
 "----------------------------------------------------------------\n"
 msgstr ""
+"- Når pacman-g2 så crasher, få sporet ved at skrive 'bt'. Her er et "
+"eksempel:\n"
+"+\n"
+"----------------------------------------------------------------\n"
 
 # type: Plain text
 #: bugs.txt:124
@@ -4277,16 +4330,23 @@ msgid ""
 "#1  0x08054594 in main (argc=2, argv=0xbfee1844) at pacman.c:609\n"
 "----------------------------------------------------------------\n"
 msgstr ""
+"Program received signal SIGSEGV, Segmentation fault.\n"
+"0x0805035e in pacman_sync (targets=0x0) at sync.c:354\n"
+"354             *p = 1;\n"
+"(gdb) bt\n"
+"#0  0x0805035e in pacman_sync (targets=0x0) at sync.c:354\n"
+"#1  0x08054594 in main (argc=2, argv=0xbfee1844) at pacman.c:609\n"
+"----------------------------------------------------------------\n"
 
 # type: Plain text
 #: bugs.txt:127
 msgid "- Attach the output of 'bt' to your bugreport."
-msgstr ""
+msgstr "- Vedhæft output af 'bt' til din bugreport."
 
 # type: Plain text
 #: bugs.txt:129
 msgid "== Fixed in git"
-msgstr ""
+msgstr "== Fixed i git"
 
 # type: Plain text
 #: bugs.txt:134
@@ -4297,6 +4357,11 @@ msgid ""
 "implemented only in git, without increasing the package release. This means "
 "that it will be automatically included in the next release."
 msgstr ""
+"Din anmodning / bugreport vil måske blive lukket med en \"Fixed i git ...\" "
+"besked. Git er vores source control management software (lige som CVS). hvis "
+"din opgave ikke bliver overvejet som være vigtig, vil det kun blive "
+"fixed/implementeret i git, uden at indvoldvere pakkeudgivelsen. Dette "
+"betyder at det utomatisk vil blive inkluderet i den næste frigivelse."
 
 # type: Plain text
 #: mobile.txt:2
