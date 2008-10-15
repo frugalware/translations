@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-14 01:42+0200\n"
-"PO-Revision-Date: 2008-10-14 20:11+0200\n"
+"POT-Creation-Date: 2008-10-15 01:42+0200\n"
+"PO-Revision-Date: 2008-10-15 17:30+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -4659,10 +4659,9 @@ msgid ""
 "documentation, which can be installed issuing the `pacman-g2 -S kernel-docs` "
 "command as root."
 msgstr ""
-"og næste gang du booter din kerne bør det virke. For mere info, se på "
-"'/usr/src/linux/Documentation/power/swsusp.txt'.  Det kræver "
-"kernedokumentationen, som kan installeres med `pacman-g2 -S kernel-docs` som "
-"root."
+"og næste gang du booter din kerne bør det virke. For mere info, se på '/usr/"
+"src/linux/Documentation/power/swsusp.txt'.  Det kræver kernedokumentationen, "
+"som kan installeres med `pacman-g2 -S kernel-docs` som root."
 
 # type: Plain text
 #: packages.txt:6
@@ -4709,8 +4708,8 @@ msgstr "== amavisd-new"
 msgid ""
 "For the first initial setup you may want to use our +amavisconf+ utility."
 msgstr ""
-"For det første initiale setup kan eller vil du måske bruge vores "
-"+amavisconf+ utility."
+"For det første initiale setup kan eller vil du måske bruge vores +amavisconf"
+"+ utility."
 
 # type: Plain text
 #: packages.txt:26
@@ -4774,8 +4773,7 @@ msgid ""
 "+\n"
 "-------------------\n"
 msgstr ""
-"1. Disse trin kræver root privilegier, så brug su - for at få en root "
-"shelll.\n"
+"1. Disse trin kræver root privilegier, så brug su - for at få en root shelll.\n"
 "2. Apache serveren er ikke staetet som standard. Du kan ændre det med\n"
 "+\n"
 "-------------------\n"
@@ -4805,8 +4803,7 @@ msgid ""
 msgstr ""
 "3. Vi ønsker ikke at genstarte, så start det manuelt:\n"
 "+\n"
-"----------------------------------------------------------------------------"
-"---\n"
+"-------------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:56
@@ -4817,10 +4814,8 @@ msgid ""
 "-------------------------------------------------------------------------------\n"
 msgstr ""
 "# service httpd start\n"
-"Starting Apache web server (no SSL)                                      [ "
-"OK ]\n"
-"----------------------------------------------------------------------------"
-"---\n"
+"Starting Apache web server (no SSL)                                      [ OK ]\n"
+"-------------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:59
@@ -4843,8 +4838,7 @@ msgid ""
 msgstr ""
 "1. Skabe certificeringerne:\n"
 "+\n"
-"----------------------------------------------------------------------------"
-"---\n"
+"-------------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:68
@@ -4868,8 +4862,7 @@ msgid ""
 msgstr ""
 "     Her kan vi acceptere standard RSA-underskriftsalgoritme først. Så\n"
 "     skal vi have udfyldt nogle felter. Der er temmelig mange felter men\n"
-"     du kan efterlade de fleste af dem blanke. Hvis du slår enter '.', vil "
-"felterne\n"
+"     du kan efterlade de fleste af dem blanke. Hvis du slår enter '.', vil felterne\n"
 "     blive efterladt blanke.\n"
 "       1) Country Name (2 letter code) [XY]:\n"
 
@@ -5007,11 +5000,9 @@ msgid ""
 "          step out.\n"
 "-------------------------------------------------------------------------------\n"
 msgstr ""
-"          Nøglerne vil ikke være læselige af brugere, så at vi kan undlade "
-"dette\n"
+"          Nøglerne vil ikke være læselige af brugere, så at vi kan undlade dette\n"
 "          skridt.\n"
-"----------------------------------------------------------------------------"
-"---\n"
+"-------------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:124
@@ -5217,22 +5208,20 @@ msgid ""
 "# vi /etc/httpd/conf/httpd.conf\n"
 "--------------------------------------------------------------------------------\n"
 msgstr ""
-"# openssl x509 -req -days 365 -in server.csr -signkey server.key -out "
-"server.crt\n"
+"# openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt\n"
 "# cp server.crt /etc/httpd/conf/ssl.crt/\n"
 "# cp server.key /etc/httpd/conf/ssl.key/\n"
 "# service httpd stop\n"
 "# vi /etc/httpd/conf/httpd.conf\n"
-"----------------------------------------------------------------------------"
-"----\n"
+"--------------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:191
 msgid ""
 "Uncomment the marked three lines around line 1044 (look for \"SSL support\")."
 msgstr ""
-"Udkommenter de 3 markerede linjer omkring linje 1044 (se efter \"SSL "
-"support\")."
+"Udkommenter de 3 markerede linjer omkring linje 1044 (se efter \"SSL support"
+"\")."
 
 # type: Plain text
 #: packages.txt:199
@@ -5243,8 +5232,7 @@ msgid ""
 msgstr ""
 "Glem ikke at åbne for port 443 din firewall, hvis der er nogen. (Baseretr på "
 "link:http://www.akadia.com/services/ssh_test_certificate.html[How to create "
-"a self-signed SSL Certificate...], testet på frugalware-current "
-"14-02-2007.)"
+"a self-signed SSL Certificate...], testet på frugalware-current 14-02-2007.)"
 
 # type: Plain text
 #: packages.txt:201
@@ -5257,11 +5245,14 @@ msgid ""
 "Asciidoc has a number of configuration files under `/etc/asciidoc` and it's "
 "easy to get lost in that directory."
 msgstr ""
+"Asciidoc har et antal konfigurationsfiler under `/etc/asciidoc` og det er "
+"nemt at blive tabt i denne folder."
 
 # type: Plain text
 #: packages.txt:206
 msgid "Regarding pdf (dblatex) generation, here are some options you can set:"
 msgstr ""
+"Ifølge pdf (dblatex) generation, er her nogle indstillinger du kan sætte:"
 
 # type: Plain text
 #: packages.txt:209
@@ -5270,6 +5261,8 @@ msgid ""
 "- If you want to avoid the \"PDF by dblatex\" picture on the front page,\n"
 "  edit `/etc/asciidoc/dblatex/asciidoc-dblatex.xsl`:\n"
 msgstr ""
+"- Hvis du vil undgå \"PDF af dblatex\" billede på forsiden,\n"
+"  rediger `/etc/asciidoc/dblatex/asciidoc-dblatex.xsl`:\n"
 
 # type: Plain text
 #: packages.txt:212
@@ -5278,11 +5271,13 @@ msgid ""
 "<xsl:param name=\"doc.publisher.show\">0</xsl:param>\n"
 "----\n"
 msgstr ""
+"<xsl:param name=\"doc.publisher.show\">0</xsl:param>\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:215
 msgid "- If you want to avoid the \"Revision History\" page, add:"
-msgstr ""
+msgstr "- Hvis du vil undgå \"Revision History\" side, tilføj:"
 
 # type: Plain text
 #: packages.txt:218
@@ -5291,11 +5286,13 @@ msgid ""
 "<xsl:param name=\"latex.output.revhistory\">0</xsl:param>\n"
 "----\n"
 msgstr ""
+"<xsl:param name=\"latex.output.revhistory\">0</xsl:param>\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:221
 msgid "- If you want to avoid the \"Contents\" page, add:"
-msgstr ""
+msgstr "- Hvis du vil undgå  \"Contents\" side, tilføj:"
 
 # type: Plain text
 #: packages.txt:224
@@ -5304,6 +5301,8 @@ msgid ""
 "<xsl:param name=\"doc.toc.show\">0</xsl:param>\n"
 "----\n"
 msgstr ""
+"<xsl:param name=\"doc.toc.show\">0</xsl:param>\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:230
@@ -5314,6 +5313,10 @@ msgid ""
 "  `/usr/share/dblatex/latex/style/docbook.sty`. Change the `\\maketitle`\n"
 "  macro to:\n"
 msgstr ""
+"- Hvis du vil undgå forsiden, bedrøvligt kan du ikke gøre det fra en\n"
+"  konfigurationsfil, men du kan redigere\n"
+"  `/usr/share/dblatex/latex/style/docbook.sty`. Ændre `\\maketitle`\n"
+"  macro til:\n"
 
 # type: Plain text
 #: packages.txt:236
@@ -5325,6 +5328,11 @@ msgid ""
 "}\n"
 "----\n"
 msgstr ""
+"\\def\\maketitle{\n"
+"  \\def\\edhead{}\n"
+"  \\DBKdomitete\n"
+"}\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:239 packages.txt:689 packages.txt:1086 packages.txt:1185
@@ -5332,12 +5340,12 @@ msgstr ""
 #: packages.txt:2493 packages.txt:2726 packages.txt:2790 packages.txt:3010
 #: packages.txt:3028 packages.txt:3097 packages.txt:3129
 msgid "// vim: ft=asciidoc"
-msgstr ""
+msgstr "// vim: ft=asciidoc"
 
 # type: Plain text
 #: packages.txt:241
 msgid "== avahi"
-msgstr ""
+msgstr "== avahi"
 
 # type: Plain text
 #: packages.txt:245
@@ -5346,6 +5354,10 @@ msgid ""
 "and therefore Zeroconf functionality in programs will be disabled. If you "
 "want this functionality, then please uninstall rlocate."
 msgstr ""
+"ADVARSEL: Hvis du har rlocate installeret på dit system, vil Avahi ikke "
+"kunne køre og derfor vil Zeroconf funktionalitet i programmer blive "
+"inaktiveret. Hvis du ønsker denne funktionalitet, så fjern rlocate fra dit "
+"system."
 
 # type: Plain text
 #: packages.txt:248
@@ -5353,12 +5365,14 @@ msgid ""
 "Also, If you are using iptables, please uncomment this line in '/etc/"
 "sysconfig/firewall':"
 msgstr ""
+"Hvis du også bruger iptables, så udkommenter denne linie i "
+"'/etc/sysconfig/firewall':"
 
 # type: Plain text
 #: packages.txt:249 packages.txt:2674
 #, no-wrap
 msgid "----------------------------------------------\n"
-msgstr ""
+msgstr "----------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:251
@@ -5367,21 +5381,23 @@ msgid ""
 "#-A INPUT -p udp -m udp --dport 5353 -j ACCEPT\n"
 "----------------------------------------------\n"
 msgstr ""
+"#-A INPUT -p udp -m udp --dport 5353 -j ACCEPT\n"
+"----------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:254
 msgid "After that do not forget to restart iptables with:"
-msgstr ""
+msgstr "Efter dette glem så ikke at genstarte iptables med:"
 
 # type: Plain text
 #: packages.txt:260
 msgid "== b2evolution"
-msgstr ""
+msgstr "== b2evolution"
 
 # type: Plain text
 #: packages.txt:262
 msgid "After installing this package, please run"
-msgstr ""
+msgstr "Efter installation af denne pakke, kør så"
 
 # type: Plain text
 #: packages.txt:265
@@ -5390,16 +5406,18 @@ msgid ""
 "# /usr/bin/b2evosetup\n"
 "----\n"
 msgstr ""
+"# /usr/bin/b2evosetup\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:268
 msgid "to setup B2evolution."
-msgstr ""
+msgstr "for at opsætte B2evolution."
 
 # type: Plain text
 #: packages.txt:270
 msgid "== b43-fwcutter"
-msgstr ""
+msgstr "== b43-fwcutter"
 
 # type: Plain text
 #: packages.txt:273
@@ -5407,6 +5425,8 @@ msgid ""
 "Since version 2.6.24, the bcm43xx driver is deprecated, replaced by the b43 "
 "and b43legacy modules."
 msgstr ""
+"Siden version 2.6.24, er bcm43xx driveren forældet, den er erstattet af b43 "
+"og b43legacy modullerne."
 
 # type: Plain text
 #: packages.txt:276
@@ -5414,13 +5434,15 @@ msgid ""
 "The module should be loaded automatically, in case it isn't, you can load it "
 "manually:"
 msgstr ""
+"Modullet burde blive indlæst automatisk, for det tilfælde at det ikke sker, "
+"kan du indlæsse det manuelt:"
 
 # type: Plain text
 #: packages.txt:277 packages.txt:290 packages.txt:296 packages.txt:1275
 #: packages.txt:2174 packages.txt:3328 makepkg.txt:430 makepkg.txt:464
 #, no-wrap
 msgid "------------------\n"
-msgstr ""
+msgstr "------------------\n"
 
 # type: Plain text
 #: packages.txt:279
@@ -5429,11 +5451,13 @@ msgid ""
 "# modprobe b43\n"
 "------------------\n"
 msgstr ""
+"# modprobe b43\n"
+"------------------\n"
 
 # type: Plain text
 #: packages.txt:282
 msgid "or:"
-msgstr ""
+msgstr "eller:"
 
 # type: Plain text
 #: packages.txt:285
@@ -5442,6 +5466,8 @@ msgid ""
 "# modprobe b43legacy\n"
 "--------------------\n"
 msgstr ""
+"# modprobe b43legacy\n"
+"--------------------\n"
 
 # type: Plain text
 #: packages.txt:289
@@ -5449,6 +5475,8 @@ msgid ""
 "You must bring the device up with ifconfig before doing any other "
 "configuration steps."
 msgstr ""
+"Du skal bringe enheden op med ifconfig før du laver nogle andre "
+"konfigurationstrin."
 
 # type: Plain text
 #: packages.txt:292
@@ -5457,11 +5485,13 @@ msgid ""
 "# ifconfig ethX up\n"
 "------------------\n"
 msgstr ""
+"# ifconfig ethX up\n"
+"------------------\n"
 
 # type: Plain text
 #: packages.txt:295
 msgid "Since the channel must be set manually, first do a scan:"
-msgstr ""
+msgstr "Siden kanalen skal sættes manuelt, lav først en skanning:"
 
 # type: Plain text
 #: packages.txt:298
@@ -5470,11 +5500,13 @@ msgid ""
 "# iwlist ethX scan\n"
 "------------------\n"
 msgstr ""
+"# iwlist ethX scan\n"
+"------------------\n"
 
 # type: Plain text
 #: packages.txt:301
 msgid "Then you can set it:"
-msgstr ""
+msgstr "Derefter kan du sætte den:"
 
 # type: Plain text
 #: packages.txt:304
@@ -5483,17 +5515,19 @@ msgid ""
 "# iwconfig ethX channel Y\n"
 "-------------------------\n"
 msgstr ""
+"# iwconfig ethX channel Y\n"
+"-------------------------\n"
 
 # type: Plain text
 #: packages.txt:307
 msgid "Finally set your essid:"
-msgstr ""
+msgstr "Til sidst sæt dit essid:"
 
 # type: Plain text
 #: packages.txt:308
 #, no-wrap
 msgid "-------------------------------\n"
-msgstr ""
+msgstr "-------------------------------\n"
 
 # type: Plain text
 #: packages.txt:310
@@ -5502,21 +5536,23 @@ msgid ""
 "# iwconfig ethX essid \"myessid\"\n"
 "-------------------------------\n"
 msgstr ""
+"# iwconfig ethX essid \"minessid\"\n"
+"-------------------------------\n"
 
 # type: Plain text
 #: packages.txt:313
 msgid "Ready!"
-msgstr ""
+msgstr "Færdig!"
 
 # type: Plain text
 #: packages.txt:315
 msgid "== barpanel"
-msgstr ""
+msgstr "== barpanel"
 
 # type: Plain text
 #: packages.txt:317
 msgid "Some tips and trick for use with barpanel:"
-msgstr ""
+msgstr "Nogle tips og kneb for brug med barpanel:"
 
 # type: Plain text
 #: packages.txt:321
@@ -5526,6 +5562,10 @@ msgid ""
 "to create your own local changes. You can find its location with pacman-g2 \n"
 "-Ql barpanel.\n"
 msgstr ""
+"* Kopier config.xml.in i pakken til ~/.barpanel/config.xml for at kunne \n"
+"skabe dine egne lokale ændringer. Du kan finde dets beliggenhed med "
+"pacman-g2 \n"
+"-Ql barpanel.\n"
 
 # type: Plain text
 #: packages.txt:326
@@ -5536,22 +5576,27 @@ msgid ""
 "cd ~/.barpanel/themes\n"
 "ln -s (path to your gtk theme)/gtk-2.0 (name of theme)\n"
 msgstr ""
+"* Barpanel temaer er ganske enkelt gtk2 temaer, så hvis du ønsker at det "
+"matcher dit eget\n"
+"gtk tema, er en enkel måde du kan prøve dette på: \n"
+"cd ~/.barpanel/themes\n"
+"ln -s (sti til dit gtk tema)/gtk-2.0 (navn på tema)\n"
 
 # type: Plain text
 #: packages.txt:328
 msgid ""
 "Then, change the theme in your ~/.barpanel/config.xml configuration file."
-msgstr ""
+msgstr "Derefter, ændr temaet i din ~/.barpanel/config.xml konfigurationsfil."
 
 # type: Plain text
 #: packages.txt:330
 msgid "Enjoy."
-msgstr ""
+msgstr "Nyd det."
 
 # type: Plain text
 #: packages.txt:332
 msgid "== bitlbee-skype"
-msgstr ""
+msgstr "== bitlbee-skype"
 
 # type: Plain text
 #: packages.txt:336
@@ -5560,11 +5605,14 @@ msgid ""
 "on how to fine-tune the configuration file of `skyped` and on how to "
 "generate the SSL certificates for it."
 msgstr ""
+"Vær venlig at læse `README` filen i dokumentationsmappen til pakken om "
+"hvordan du finindstiller konfigurationsfilen af `skyped` og hvordan du "
+"generer SSL-certifikaterne for det."
 
 # type: Plain text
 #: packages.txt:338
 msgid "== cairo-clock"
-msgstr ""
+msgstr "== cairo-clock"
 
 # type: Plain text
 #: packages.txt:342
@@ -5572,6 +5620,9 @@ msgid ""
 "Cairo-Clock requires the Composite option to be enabled in your Xorg "
 "configuration. To enable it, add the following lines to '/etc/X11/xorg.conf':"
 msgstr ""
+"Cairo-Clock kræver Composite indstilling bliver aktiveret i din Xorg "
+"configuration. For at aktivere det, tilføjes følgende linier til "
+"'/etc/X11/xorg.conf':"
 
 # type: Plain text
 #: packages.txt:347
@@ -5582,16 +5633,22 @@ msgid ""
 "EndSection\n"
 "-----------------------------\n"
 msgstr ""
+"Section \"Extensions\"\n"
+"  Option \"Composite\" \"Enable\"\n"
+"EndSection\n"
+"-----------------------------\n"
 
 # type: Plain text
 #: packages.txt:350
 msgid "== ccache"
-msgstr ""
+msgstr "== ccache"
 
 # type: Plain text
 #: packages.txt:352
 msgid "After you installed `ccache`, it won't be enabled by default."
 msgstr ""
+"Efter at du har installeret `ccache`, Vil det ikke være aktiveret som "
+"standard."
 
 # type: Plain text
 #: packages.txt:356
@@ -5600,6 +5657,9 @@ msgid ""
 "each user to the `ccache` group. If you want to allow using `ccache` from "
 "chrooted builds, then you need to add the `fst` user:"
 msgstr ""
+"Først, har du brug for at afgøre hvem det er tilladt at bruge `ccache`. Du "
+"skal tilføje hver bruger til `ccache` gruppen. Hvis du vil tillade brug af "
+"`ccache` fra chrooted builds, Så er du nødt til at tilføje `fst` brugeren:"
 
 # type: Plain text
 #: packages.txt:359
@@ -5608,6 +5668,8 @@ msgid ""
 "# usermod -a -G ccache fst\n"
 "----\n"
 msgstr ""
+"# usermod -a -G ccache fst\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:366
@@ -5617,11 +5679,16 @@ msgid ""
 "can disable it with the `-B` option). If you build manually, then you are on "
 "your own, though usually there are two ways to do so:"
 msgstr ""
+"For det andet, har du brug for på en eller anden måde at lade build system "
+"bruge `ccache`, og ikke compileren direkte. Hvis du bruger `makepkg`, dette "
+"er aktiveret som standard (du kan slå det fra med `-B` option). Hvis du "
+"bygger manuelt, er du er på din egen mark, dog er der sædvanligvis to måder "
+"at gøre det på:"
 
 # type: Plain text
 #: packages.txt:368
 msgid "- Tell the configure script to use a different compiler:"
-msgstr ""
+msgstr "- Fortæl konfigurations script at benytte en anden compiler:"
 
 # type: Plain text
 #: packages.txt:371
@@ -5630,11 +5697,15 @@ msgid ""
 "$ CC=/usr/bin/ccache ./configure\n"
 "--------------------------------\n"
 msgstr ""
+"$ CC=/usr/bin/ccache ./configure\n"
+"--------------------------------\n"
 
 # type: Plain text
 #: packages.txt:374
 msgid "- Modify path to use the fake compiler provided by `ccache`:"
 msgstr ""
+"- Modificer stien for at benytte fake compiler stillet til rådighed af "
+"`ccache`:"
 
 # type: Plain text
 #: packages.txt:377
@@ -5643,11 +5714,13 @@ msgid ""
 "export PATH=/usr/lib/ccache/bin:$PATH\n"
 "-------------------------------------\n"
 msgstr ""
+"export PATH=/usr/lib/ccache/bin:$PATH\n"
+"-------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:380
 msgid "== cpuspeed"
-msgstr ""
+msgstr "== cpuspeed"
 
 # type: Plain text
 #: packages.txt:383
@@ -5655,6 +5728,8 @@ msgid ""
 "After installing cpuspeed, make sure you edit the configuration file before "
 "starting it. The configuration file is located in '/etc/cpuspeed.conf'."
 msgstr ""
+"Efter installation af cpuspeed, husk at redigere konfigurationsfilen før "
+"start af det. Konfigurationsfilen kan findes i '/etc/cpuspeed.conf'."
 
 # type: Plain text
 #: packages.txt:387
@@ -5663,6 +5738,9 @@ msgid ""
 "DRIVER value.  for eg: if you want to use the p4-clockmod driver, your "
 "cpuspeed configuration file should contain:"
 msgstr ""
+"Sat det rigtige CPUFreq driver navn i konfiurationsfilen ved at sætte DRIVER "
+"value.  f.eks: Hvis du ønsker at bruge p4-clockmod driveren, skal din "
+"cpuspeed konfigurationsfil indeholde:"
 
 # type: Plain text
 #: packages.txt:390
@@ -5671,6 +5749,8 @@ msgid ""
 "DRIVER=\"p4-clockmod\"\n"
 "--------------------\n"
 msgstr ""
+"DRIVER=\"p4-clockmod\"\n"
+"--------------------\n"
 
 # type: Plain text
 #: packages.txt:394
@@ -5678,21 +5758,23 @@ msgid ""
 "For a list of drivers, check this directory '/lib/modules/"
 "_your_kernel_version_/kernel/arch/i386/kernel/cpu/cpufreq'"
 msgstr ""
+"For at få en liste af drivere, tjek denne mappe "
+"'/lib/modules/_your_kernel_version_/kernel/arch/i386/kernel/cpu/cpufreq'"
 
 # type: Plain text
 #: packages.txt:396
 msgid "== cryptsetup-luks"
-msgstr ""
+msgstr "== cryptsetup-luks"
 
 # type: Plain text
 #: packages.txt:398
 msgid "Follow these steps to when using `cryptsetup-luks`:"
-msgstr ""
+msgstr "Følg disse trin når man vil bruge `cryptsetup-luks`:"
 
 # type: Plain text
 #: packages.txt:400 packages.txt:1733
 msgid "=== Creating"
-msgstr ""
+msgstr "=== Skabe"
 
 # type: Plain text
 #: packages.txt:406
@@ -5704,16 +5786,21 @@ msgid ""
 "# mount /dev/mapper/label /mnt/label\n"
 "----\n"
 msgstr ""
+"# cryptsetup luksFormat /dev/partition\n"
+"# cryptsetup luksOpen /dev/partition label\n"
+"# mke2fs -j /dev/mapper/label\n"
+"# mount /dev/mapper/label /mnt/label\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:409
 msgid "=== Mounting"
-msgstr ""
+msgstr "=== Mounte"
 
 # type: Plain text
 #: packages.txt:411
 msgid "Of course later you don't have to use `luksFormat` and `mke2fs`:"
-msgstr ""
+msgstr "elvfølgelig senere behøver du ikke at bruge`luksFormat` og `mke2fs`:"
 
 # type: Plain text
 #: packages.txt:415
@@ -5723,11 +5810,14 @@ msgid ""
 "# mount /dev/mapper/label /mnt/label\n"
 "----\n"
 msgstr ""
+"# cryptsetup luksOpen /dev/partition label\n"
+"# mount /dev/mapper/label /mnt/label\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:418
 msgid "=== Umounting"
-msgstr ""
+msgstr "=== Afmontering"
 
 # type: Plain text
 #: packages.txt:422
@@ -5737,23 +5827,27 @@ msgid ""
 "# cryptsetup luksClose label\n"
 "----\n"
 msgstr ""
+"# umount /mnt/label\n"
+"# cryptsetup luksClose label\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:425
 msgid "=== Encrypting your home partition"
-msgstr ""
+msgstr "=== Krypterer din home partition"
 
 # type: Plain text
 #: packages.txt:427
 msgid ""
 "NOTE: You have need to install the `sharutils` package to do the followings!"
 msgstr ""
+"NOTE: Du har behov at installere  `sharutils` pakken for at gøre følgende!"
 
 # type: Plain text
 #: packages.txt:429
 #, no-wrap
 msgid "* List these modules in `/etc/sysconfig/modules`:\n"
-msgstr ""
+msgstr "* Liste disse moduller i `/etc/sysconfig/modules`:\n"
 
 # type: Plain text
 #: packages.txt:435
@@ -5765,6 +5859,11 @@ msgid ""
 "dm-crypt\n"
 "----\n"
 msgstr ""
+"aes\n"
+"aes-i586\n"
+"sha256\n"
+"dm-crypt\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:439
@@ -5773,6 +5872,8 @@ msgid ""
 "* Move all data from `/home` to a secure place (in this example\n"
 "`/media/sda1/home`)\n"
 msgstr ""
+"* Flytte alle data fra `/home` til et sikker sted (i dette eksempel\n"
+"`/media/sda1/home`)\n"
 
 # type: Plain text
 #: packages.txt:442
@@ -5781,6 +5882,8 @@ msgid ""
 "# cp -arvx /home /media/sda1/\n"
 "----\n"
 msgstr ""
+"# cp -arvx /home /media/sda1/\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:446
