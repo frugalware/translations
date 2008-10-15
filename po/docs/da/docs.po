@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-10-15 01:42+0200\n"
-"PO-Revision-Date: 2008-10-15 17:30+0200\n"
+"PO-Revision-Date: 2008-10-15 19:13+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -5817,7 +5817,7 @@ msgstr ""
 # type: Plain text
 #: packages.txt:418
 msgid "=== Umounting"
-msgstr "=== Afmontering"
+msgstr "=== Umounte"
 
 # type: Plain text
 #: packages.txt:422
@@ -5841,7 +5841,8 @@ msgstr "=== Krypterer din home partition"
 msgid ""
 "NOTE: You have need to install the `sharutils` package to do the followings!"
 msgstr ""
-"NOTE: Du har behov at installere  `sharutils` pakken for at gøre følgende!"
+"NOTE: Du har behov for at installere  `sharutils` pakken for at gøre "
+"følgende!"
 
 # type: Plain text
 #: packages.txt:429
@@ -5892,6 +5893,9 @@ msgid ""
 "* Umount `/home` (in this example `/dev/hda6`) and fill it with random\n"
 "numbers:\n"
 msgstr ""
+"* Umount `/home` (i dette eksempel `/dev/hda6`) og det er udfyldt med "
+"tilfældige\n"
+"numre:\n"
 
 # type: Plain text
 #: packages.txt:450
@@ -5901,12 +5905,15 @@ msgid ""
 "# dd if=/dev/urandom of=/dev/hda6\n"
 "----\n"
 msgstr ""
+"# umount /home\n"
+"# dd if=/dev/urandom of=/dev/hda6\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:453
 #, no-wrap
 msgid "* Create the encrypted partition:\n"
-msgstr ""
+msgstr "* Skab den krypterede partion:\n"
 
 # type: Plain text
 #: packages.txt:456
@@ -5915,6 +5922,8 @@ msgid ""
 "# cryptsetup -y luksFormat /dev/hda6\n"
 "----\n"
 msgstr ""
+"# cryptsetup -y luksFormat /dev/hda6\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:460
@@ -5922,6 +5931,8 @@ msgid ""
 "Here we will be asked for a password which will be necessary to access `/"
 "home` at boot time."
 msgstr ""
+"Her vil vi blive bedt om et kodeord som vil være nødvendigt for at få adgang "
+"`/home` ved opstart."
 
 # type: Plain text
 #: packages.txt:463
@@ -5930,6 +5941,8 @@ msgid ""
 "* Open the encrypted partition and create its file system (`ext3` in this\n"
 "example):\n"
 msgstr ""
+"* Åben den krypterede partition og skab dets fil system (`ext3` i dette\n"
+"eksempel):\n"
 
 # type: Plain text
 #: packages.txt:467
@@ -5939,12 +5952,15 @@ msgid ""
 "# mkfs.ext3 /dev/mapper/home\n"
 "----\n"
 msgstr ""
+"# cryptsetup luksOpen /dev/hda6 home\n"
+"# mkfs.ext3 /dev/mapper/home\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:470
 #, no-wrap
 msgid "* Mount the home partition and copy the contents of original home:\n"
-msgstr ""
+msgstr "* Mount home partitionen og kopierer indholdet af oprindeligt home:\n"
 
 # type: Plain text
 #: packages.txt:474
@@ -5954,12 +5970,15 @@ msgid ""
 "# cp -arvx /media/sda1/home /home\n"
 "----\n"
 msgstr ""
+"# mount /dev/mapper/home /home\n"
+"# cp -arvx /media/sda1/home /home\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:477
 #, no-wrap
 msgid "* Edit the home related line in `/etc/fstab`:\n"
-msgstr ""
+msgstr "* Rediger home beslægtet linie i `/etc/fstab`:\n"
 
 # type: Plain text
 #: packages.txt:480
@@ -5968,17 +5987,19 @@ msgid ""
 "/dev/mapper/home\t/home\text3\tnoatime\t0\t0\n"
 "----\n"
 msgstr ""
+"/dev/mapper/home\t/home\text3\tnoatime\t0\t0\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:483
 #, no-wrap
 msgid "* Create `/etc/rc.d/rc.crypt` script with the following content:\n"
-msgstr ""
+msgstr "* Skab `/etc/rc.d/rc.crypt` script med følgende indhold:\n"
 
 # type: Plain text
 #: packages.txt:486
 msgid "#!/bin/sh"
-msgstr ""
+msgstr "#!/bin/sh"
 
 # type: Plain text
 #: packages.txt:489
@@ -5988,12 +6009,15 @@ msgid ""
 "/bin/mount /dev/mapper/home /home\n"
 "----\n"
 msgstr ""
+"/usr/sbin/cryptsetup luksOpen /dev/hda6 home\n"
+"/bin/mount /dev/mapper/home /home\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:492
 #, no-wrap
 msgid "* Enable it:\n"
-msgstr ""
+msgstr "* Aktiver det:\n"
 
 # type: Plain text
 #: packages.txt:495
@@ -6002,6 +6026,8 @@ msgid ""
 "# ln -s /etc/rc.d/rc.crypt /etc/rc.d/rcS.d/S15rc.crypt\n"
 "----\n"
 msgstr ""
+"# ln -s /etc/rc.d/rc.crypt /etc/rc.d/rcS.d/S15rc.crypt\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:499
@@ -6009,6 +6035,8 @@ msgid ""
 "You have to delay the splash screen, so that you can type your password "
 "before the splash appears:"
 msgstr ""
+"Du må forsinke splash screen, således at du kan skrive dit kodeord før "
+"splash dukker op:"
 
 # type: Plain text
 #: packages.txt:502
@@ -6017,11 +6045,13 @@ msgid ""
 "# mv /etc/rc.d/rcS.d/S03rc.splash /etc/rc.d/rcS.d/S15rc.splash\n"
 "----\n"
 msgstr ""
+"# mv /etc/rc.d/rcS.d/S03rc.splash /etc/rc.d/rcS.d/S15rc.splash\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:505
 msgid "(It will ask the password between the lvm and the splash service.)"
-msgstr ""
+msgstr "(Det vil spørge om kodeordet mellem lvm og splash service.)"
 
 # type: Plain text
 #: packages.txt:508
@@ -6029,6 +6059,8 @@ msgid ""
 "Now the system can be restarted and the password will be asked to access "
 "home partition boot-time."
 msgstr ""
+"Nu kan systemet blive genstartet og der vil blive bedt om kodeordet ved "
+"tilgang af home partition ved opstart."
 
 # type: Plain text
 #: packages.txt:510
@@ -6036,21 +6068,23 @@ msgid ""
 "NOTE: The English keyboard map will be used at that point of the boot "
 "process."
 msgstr ""
+"NOTE: Det engelske keyboard map vil blive brugt ved dette punkt af boot "
+"processen."
 
 # type: Plain text
 #: packages.txt:512
 msgid "== cwiid"
-msgstr ""
+msgstr "== cwiid"
 
 # type: Plain text
 #: packages.txt:514
 msgid "=== Module loading"
-msgstr ""
+msgstr "=== Modul loading"
 
 # type: Plain text
 #: packages.txt:516
 msgid "To use your wiimote you have to load module *uninput* with:"
-msgstr ""
+msgstr "For at bruge wiimote er du nødt til at loade module *uninput* med:"
 
 # type: Plain text
 #: packages.txt:519
@@ -6059,6 +6093,8 @@ msgid ""
 "# modprobe uninput\n"
 "------------\n"
 msgstr ""
+"# modprobe uninput\n"
+"------------\n"
 
 # type: Plain text
 #: packages.txt:522
@@ -6066,16 +6102,18 @@ msgid ""
 "To load this module at every start-up, just add *uninput* in _/etc/sysconfig/"
 "modules_ file."
 msgstr ""
+"For at loade dette modul ved hver opstart, bare tilføj *uninput* i "
+"_/etc/sysconfig/modules_ filen."
 
 # type: Plain text
 #: packages.txt:524
 msgid "== cyrus-sasl"
-msgstr ""
+msgstr "== cyrus-sasl"
 
 # type: Plain text
 #: packages.txt:526 packages.txt:1312
 msgid "=== Configuring"
-msgstr ""
+msgstr "=== Konfigurering"
 
 # type: Plain text
 #: packages.txt:529
@@ -6084,11 +6122,14 @@ msgid ""
 "which will authenticate using users and passwords from `/etc/{passwd,shadow}"
 "`."
 msgstr ""
+"Denne mini-howto hjælper dig at installere saslauthd serveren ved brug af "
+"postfix hvilket vil autentisere dem ved brug af brugere og kodeord fra "
+"`/etc/{passwd,shadow}`."
 
 # type: Plain text
 #: packages.txt:531
 msgid "First install the necessary packages:"
-msgstr ""
+msgstr "Installer først de nødvendige pakker:"
 
 # type: Plain text
 #: packages.txt:534
@@ -6097,6 +6138,8 @@ msgid ""
 "# pacman-g2 -S postfix saslauthd\n"
 "--------------\n"
 msgstr ""
+"# pacman-g2 -S postfix saslauthd\n"
+"--------------\n"
 
 # type: Plain text
 #: packages.txt:538
@@ -6104,6 +6147,8 @@ msgid ""
 "Enable sasl in postfix's config by appending the following lines to `/etc/"
 "postfix/main.cf`:"
 msgstr ""
+"Aktiver sasl i postfix's config ved at tilføje følgende linier til "
+"`/etc/postfix/main.cf`:"
 
 # type: Plain text
 #: packages.txt:543
@@ -6114,11 +6159,15 @@ msgid ""
 "smtpd_sasl_security_options = noanonymous\n"
 "--------------\n"
 msgstr ""
+"smtpd_sasl_auth_enable = yes\n"
+"smtpd_sasl_local_domain = $mithostname\n"
+"smtpd_sasl_security_options = noanonymous\n"
+"--------------\n"
 
 # type: Plain text
 #: packages.txt:546
 msgid "You may want to append"
-msgstr ""
+msgstr "Du ønsker måske at tilføje"
 
 # type: Plain text
 #: packages.txt:549
@@ -6127,16 +6176,18 @@ msgid ""
 "broken_sasl_auth_clients = yes\n"
 "--------------\n"
 msgstr ""
+"broken_sasl_auth_clients = yes\n"
+"--------------\n"
 
 # type: Plain text
 #: packages.txt:552
 msgid "as well."
-msgstr ""
+msgstr "også."
 
 # type: Plain text
 #: packages.txt:554
 msgid "Put the following lines to `/usr/lib/sasl2/smtpd.conf`:"
-msgstr ""
+msgstr "Indsæt følgende linier til `/usr/lib/sasl2/smtpd.conf`:"
 
 # type: Plain text
 #: packages.txt:558
@@ -6146,11 +6197,14 @@ msgid ""
 "mech_list: PLAIN LOGIN\n"
 "--------------\n"
 msgstr ""
+"pwcheck_method: saslauthd\n"
+"mech_list: PLAIN LOGIN\n"
+"--------------\n"
 
 # type: Plain text
 #: packages.txt:561
 msgid "Edit `/etc/sysconfig/saslauthd` by changing the following lines:"
-msgstr ""
+msgstr "Rediger `/etc/sysconfig/saslauthd` og ændr følgende linjer:"
 
 # type: Plain text
 #: packages.txt:564
@@ -6159,11 +6213,13 @@ msgid ""
 "SASL_DIE=1\n"
 "--------------\n"
 msgstr ""
+"SASL_DIE=1\n"
+"--------------\n"
 
 # type: Plain text
 #: packages.txt:567 packages.txt:579 packages.txt:2943 makepkg.txt:141
 msgid "to"
-msgstr ""
+msgstr "til"
 
 # type: Plain text
 #: packages.txt:570
@@ -6172,11 +6228,13 @@ msgid ""
 "SASL_DIE=0\n"
 "--------------\n"
 msgstr ""
+"SASL_DIE=0\n"
+"--------------\n"
 
 # type: Plain text
 #: packages.txt:573 packages.txt:1744
 msgid "and"
-msgstr ""
+msgstr "og"
 
 # type: Plain text
 #: packages.txt:576
@@ -6185,6 +6243,8 @@ msgid ""
 "auth_mechanism=\"\"\n"
 "--------------\n"
 msgstr ""
+"auth_mechanism=\"\"\n"
+"--------------\n"
 
 # type: Plain text
 #: packages.txt:582
@@ -6193,11 +6253,13 @@ msgid ""
 "auth_mechanism=\"shadow\"\n"
 "--------------\n"
 msgstr ""
+"auth_mechanism=\"shadow\"\n"
+"--------------\n"
 
 # type: Plain text
 #: packages.txt:585
 msgid "Now you can start saslauthd by"
-msgstr ""
+msgstr "Nu kan du starte saslauthd med"
 
 # type: Plain text
 #: packages.txt:588
@@ -6206,11 +6268,13 @@ msgid ""
 "service saslauthd start\n"
 "--------------\n"
 msgstr ""
+"service saslauthd start\n"
+"--------------\n"
 
 # type: Plain text
 #: packages.txt:591
 msgid "as well as enabled in by default on startup:"
-msgstr ""
+msgstr "så vel som at aktivere det som stadard ved opstart:"
 
 # type: Plain text
 #: packages.txt:594
@@ -6219,6 +6283,8 @@ msgid ""
 "service saslauthd add\n"
 "--------------\n"
 msgstr ""
+"service saslauthd add\n"
+"--------------\n"
 
 # type: Plain text
 #: packages.txt:598
@@ -6226,6 +6292,8 @@ msgid ""
 "Issue `id postfix` and see if the `daemon` group is listed. If not, then add "
 "`postfix` to the `daemon` group:"
 msgstr ""
+"Skriv `id postfix` i en teminal og se om `daemon` group bliver oplistet. "
+"Hvis ikke, så tilføj `postfix` til `daemon` group:"
 
 # type: Plain text
 #: packages.txt:601
@@ -6234,11 +6302,13 @@ msgid ""
 "usermod -G daemon postfix\n"
 "--------------\n"
 msgstr ""
+"usermod -G daemon postfix\n"
+"--------------\n"
 
 # type: Plain text
 #: packages.txt:604
 msgid "Finally restart postfix:"
-msgstr ""
+msgstr "Til slut genstart postfix:"
 
 # type: Plain text
 #: packages.txt:607
@@ -6247,16 +6317,18 @@ msgid ""
 "service postfix restart\n"
 "--------------\n"
 msgstr ""
+"service postfix restart\n"
+"--------------\n"
 
 # type: Plain text
 #: packages.txt:610
 msgid "Compeleted!"
-msgstr ""
+msgstr "Fuldført!"
 
 # type: Plain text
 #: packages.txt:612
 msgid "=== Verifying"
-msgstr ""
+msgstr "=== Verificerning"
 
 # type: Plain text
 #: packages.txt:615
@@ -6264,6 +6336,8 @@ msgid ""
 "We test it using telnet. We need perl to generate the string for the SASL "
 "authentication:"
 msgstr ""
+"Vi tester det ved brug af telnet. Vi behøver perl for at generere strengen "
+"for SASL-verifikationen:"
 
 # type: Plain text
 #: packages.txt:619
@@ -6273,11 +6347,14 @@ msgid ""
 "dm1pa2xvcwB2bWlrbG9zAHNlY3JldA==\n"
 "--------------\n"
 msgstr ""
+"$ perl -MMIME::Base64 -e 'print encode_base64(\"vmiklos\\0vmiklos\\0secret\");'\n"
+"dm1pa2xvcwB2bWlrbG9zAHNlY3JldA==\n"
+"--------------\n"
 
 # type: Plain text
 #: packages.txt:622
 msgid "Then use telnet:"
-msgstr ""
+msgstr "Brug så telnet:"
 
 # type: Plain text
 #: packages.txt:644
@@ -6305,16 +6382,37 @@ msgid ""
 "Connection closed by foreign host.\n"
 "--------------\n"
 msgstr ""
+"$ telnet host.com 25\n"
+"Trying ip...\n"
+"Connected to host.com.\n"
+"Escape character is '^]'.\n"
+"220 host.com ESMTP Postfix\n"
+"ehlo my.dhcp\n"
+"250-host.com\n"
+"250-PIPELINING\n"
+"250-SIZE 10240000\n"
+"250-VRFY\n"
+"250-ETRN\n"
+"250-AUTH LOGIN PLAIN\n"
+"250-ENHANCEDSTATUSCODES\n"
+"250-8BITMIME\n"
+"250 DSN\n"
+"AUTH PLAIN dm1pa2xvcwB2bWlrbG9zAHNlY3JldA==\n"
+"235 2.0.0 Authentication successful\n"
+"quit\n"
+"221 2.0.0 Bye\n"
+"Connection closed by foreign host.\n"
+"--------------\n"
 
 # type: Plain text
 #: packages.txt:647
 msgid "== dante"
-msgstr ""
+msgstr "== dante"
 
 # type: Plain text
 #: packages.txt:649
 msgid "=== Configuration"
-msgstr ""
+msgstr "=== Konfiguration"
 
 # type: Plain text
 #: packages.txt:653
@@ -6323,6 +6421,9 @@ msgid ""
 "see the documentation of the openssh package), and you want to route all "
 "traffic through it. Here is the config you need:"
 msgstr ""
+"I de fleste tilfælde har du en socks server (du kan skabe en meget nemt ved "
+"brug af ssh, se dokumentationen for openssh pakken), og du ønsker at route "
+"al trafik igennem den. Her er config som du har brug for:"
 
 # type: Plain text
 #: packages.txt:659
@@ -6334,16 +6435,21 @@ msgid ""
 "}\n"
 "----\n"
 msgstr ""
+"route {\n"
+"        from: 0.0.0.0/0 to: 0.0.0.0/0 via: 127.0.0.1 port = 8080\n"
+"        proxyprotocol: socks_v4\n"
+"}\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:662
 msgid "=== Testing it"
-msgstr ""
+msgstr "=== Teste den"
 
 # type: Plain text
 #: packages.txt:664
 msgid "Try for example:"
-msgstr ""
+msgstr "Prøv for eksempel:"
 
 # type: Plain text
 #: packages.txt:667
@@ -6352,6 +6458,8 @@ msgid ""
 "$ socksify irssi\n"
 "----\n"
 msgstr ""
+"$ socksify irssi\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:671
@@ -6359,6 +6467,8 @@ msgid ""
 "When you connect to a server, others will see that you're connecting from "
 "the server, not from your own host."
 msgstr ""
+"Når du forbinder til en server, vil andre se at du forbinder fra serveren, "
+"ikke fra din egen host."
 
 # type: Plain text
 #: packages.txt:673
