@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-10-16 01:42+0200\n"
-"PO-Revision-Date: 2008-10-16 17:47+0200\n"
+"PO-Revision-Date: 2008-10-16 19:53+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -6979,6 +6979,9 @@ msgid ""
 "    The amount of shared memory (in megabytes) that eAccelerator will use.\n"
 "    \"0\" means OS default. Default value is \"0\".\n"
 msgstr ""
+"eaccelerator.shm_size\n"
+"    Mængden af fælles hukommelse (i megabytes) som eAccelerator vil bruge.\n"
+"    \"0\" betyder OS default. Default value er \"0\".\n"
 
 # type: Plain text
 #: packages.txt:862
@@ -6990,6 +6993,12 @@ msgid ""
 "    stored in shared memory also (for more quick access). Default value is\n"
 "    \"/tmp/eaccelerator\".\n"
 msgstr ""
+"eaccelerator.cache_dir\n"
+"    folderen der bruges for disk cache. eAccelerator opbevarer precompiled\n"
+"    code, session data, indhold og brugeremner her. de samme data kan\n"
+"    oplagres i fælles hukommelse også (for hurtigere adgang). Default value "
+"er\n"
+"    \"/tmp/eaccelerator\".\n"
 
 # type: Plain text
 #: packages.txt:866
@@ -6999,6 +7008,10 @@ msgid ""
 "    Enables or disables eAccelerator. Should be \"1\" for enabling  or  \"0\"  for\n"
 "    disabling. Default value is \"1\".\n"
 msgstr ""
+"eaccelerator.enable\n"
+"    Aktiverer eller inaktiverer eAccelerator. Bør være \"1\" for aktivering  "
+"eller  \"0\"  for\n"
+"    inaktivering. Default value er \"1\".\n"
 
 # type: Plain text
 #: packages.txt:871
@@ -7009,6 +7022,12 @@ msgid ""
 "    execution. Should be \"1\" for enabling or \"0\" for disabling. Default  value\n"
 "    is \"1\".\n"
 msgstr ""
+"eaccelerator.optimizer\n"
+"    Aktiverer eller inaktiverer intern kighuloptimizer som kan fremskynde "
+"kode\n"
+"    udførelse. Bør være \"1\" for aktivering eller \"0\" for inaktivering. "
+"Default  value\n"
+"    er \"1\".\n"
 
 # type: Plain text
 #: packages.txt:875
@@ -7018,6 +7037,10 @@ msgid ""
 "    Enables or disables debug logging. Should be \"1\" for enabling or  \"0\"  for\n"
 "    disabling. Default value is \"0\".\n"
 msgstr ""
+"eaccelerator.debug\n"
+"    Aktiverer eller inaktiverer debug logging. Bør være \"1\" for aktivering "
+"eller  \"0\"  for\n"
+"    inaktivering. Default value er \"0\".\n"
 
 # type: Plain text
 #: packages.txt:880
@@ -7028,6 +7051,12 @@ msgid ""
 "    enabling or \"0\" for disabling. You should set it to \"1\"  if  you  want  to\n"
 "    recompile PHP files after modification. Default value is \"1\".\n"
 msgstr ""
+"eaccelerator.check_mtime\n"
+"    Aktiverer eller inaktiverer PHP fil modifikations tjek .  Bør være  \"1\" "
+" for\n"
+"    aktivering eller \"0\" for inaktivering. Du bør sætte det til \"1\"  hvis du "
+"ønsker at\n"
+"    rekompile PHP filer efter modifikation. Default value er \"1\".\n"
 
 # type: Plain text
 #: packages.txt:887
@@ -7040,6 +7069,14 @@ msgid ""
 "    which are matched by the following pattern. Default value is \"\" that means \n"
 "    all PHP scripts will be cached.\n"
 msgstr ""
+"eaccelerator.filter\n"
+"    Afgør hvilke PHP filer som må blive cached. Du kan præcisere antallet af\n"
+"    mønstre (for eksempel \"*.php *.phtml\") hvilket præciserer at cache eller "
+"ikke\n"
+"    cache. hvis mønster starter med et \"!\", betyder det at ignorere filer\n"
+"    hvilket bliver matchet af det følgende mønster. Default value er \"\" det "
+"betyder \n"
+"    at alle PHP scripts vil blive cached.\n"
 
 # type: Plain text
 #: packages.txt:892
@@ -7050,6 +7087,12 @@ msgid ""
 "    function. It indicates the largest allowed size in bytes (10240, 10K, 1M). \n"
 "    The \"0\" disables the limit. Default value is \"0\".\n"
 msgstr ""
+"eaccelerator.shm_max\n"
+"    Inaktiverer at stille store værdier i fælles hukommelse af \" "
+"eaccelerator_put() \"\n"
+"    funktion. Det indikerer den allerstørste tilladte størrelse i bytes "
+"(10240, 10K, 1M). \n"
+"    \"0\" inaktiverer grænsen. Default value er \"0\".\n"
 
 # type: Plain text
 #: packages.txt:898
