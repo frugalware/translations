@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-10-18 01:42+0200\n"
-"PO-Revision-Date: 2008-10-18 17:40+0200\n"
+"PO-Revision-Date: 2008-10-18 20:29+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -7382,7 +7382,7 @@ msgstr ""
 # type: Plain text
 #: packages.txt:996
 msgid "== echinus"
-msgstr ""
+msgstr "== echinus"
 
 # type: Plain text
 #: packages.txt:1001
@@ -7392,31 +7392,35 @@ msgid ""
 "you need more specific instructions, please use these commands below to "
 "accomplish this task."
 msgstr ""
+"Du skal kopiere indholdet af /usr/share/echinus til $HOME/.echinus eller "
+"~/.echinus for at få standardene for denne window manager opsat ordentligt. "
+"Hvis du har brug for mere specifikke instrukser, vær venlig at benytte disse "
+"kommandoer neden under for at fuldbringe denne opgave."
 
 # type: Plain text
 #: packages.txt:1003
 msgid "(Run these as the user your wanting to run echinus as.)"
-msgstr ""
+msgstr "(kør denne komando som brugeren du ønsker skal køre echinus.)"
 
 # type: Plain text
 #: packages.txt:1006
 msgid "mkdir -p ~/.echinus cp -r /usr/share/echinus/* ~/.echinus"
-msgstr ""
+msgstr "mkdir -p ~/.echinus cp -r /usr/share/echinus/* ~/.echinus"
 
 # type: Plain text
 #: packages.txt:1008
 msgid "== ejabberd"
-msgstr ""
+msgstr "== ejabberd"
 
 # type: Plain text
 #: packages.txt:1010
 msgid "=== Creating your SSL keys"
-msgstr ""
+msgstr "=== Skabe dine SSL-nøgler"
 
 # type: Plain text
 #: packages.txt:1012
 msgid "Generate Key Pair:"
-msgstr ""
+msgstr "Generere Key Pair:"
 
 # type: Plain text
 #: packages.txt:1016
@@ -7426,6 +7430,10 @@ msgid ""
 "# openssl req -new -x509 -newkey rsa:1024 -days 3650 -keyout privkey.pem -out server.pem\n"
 "----\n"
 msgstr ""
+"# cd /etc/jabberd\n"
+"# openssl req -new -x509 -newkey rsa:1024 -days 3650 -keyout privkey.pem "
+"-out server.pem\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:1020
@@ -7433,11 +7441,13 @@ msgid ""
 "NOTE: You should enter your domain name as the Common Name for your "
 "certificate."
 msgstr ""
+"NOTE: Du bør skrive din internetdomæne navn som almindligt navn for dit "
+"certifikat."
 
 # type: Plain text
 #: packages.txt:1022
 msgid "Remove pass parse:"
-msgstr ""
+msgstr "Fjerne pass parse:"
 
 # type: Plain text
 #: packages.txt:1025
@@ -7446,11 +7456,13 @@ msgid ""
 "# openssl rsa -in privkey.pem -out privkey.pem\n"
 "----\n"
 msgstr ""
+"# openssl rsa -in privkey.pem -out privkey.pem\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:1028
 msgid "Combine the Private and Public Key:"
-msgstr ""
+msgstr "Kombiner Privat og Public Key:"
 
 # type: Plain text
 #: packages.txt:1031
@@ -7459,11 +7471,13 @@ msgid ""
 "# cat privkey.pem >> server.pem\n"
 "----\n"
 msgstr ""
+"# cat privkey.pem >> server.pem\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:1034
 msgid "Delete Private Key:"
-msgstr ""
+msgstr "Slette Privat Key:"
 
 # type: Plain text
 #: packages.txt:1037
@@ -7472,11 +7486,13 @@ msgid ""
 "# rm privkey.pem\n"
 "----\n"
 msgstr ""
+"# rm privkey.pem\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:1040
 msgid "Set permissions:"
-msgstr ""
+msgstr "Sætte tilladelser:"
 
 # type: Plain text
 #: packages.txt:1044
@@ -7486,17 +7502,20 @@ msgid ""
 "# chmod 640 server.pem\n"
 "----\n"
 msgstr ""
+"# chown root:ejabberd server.pem    \n"
+"# chmod 640 server.pem\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:1047
 msgid "Finally update the config file:"
-msgstr ""
+msgstr "Endeligt opdatering af konfigurationsfilen:"
 
 # type: Plain text
 #: packages.txt:1049
 #, no-wrap
 msgid "* Change the `./ssl.pem` string to `/etc/ejabberd/server.pam`.\n"
-msgstr ""
+msgstr "* Ændre `./ssl.pem` streng til `/etc/ejabberd/server.pam`.\n"
 
 # type: Plain text
 #: packages.txt:1052
@@ -7505,11 +7524,13 @@ msgid ""
 "* Change `starttls` to `tls` in the `listen` section if you want to force users\n"
 "  to use SSL.\n"
 msgstr ""
+"* Ændre `starttls` til `tls` i `listen` afsnit hvis du vil tvinge brugere\n"
+"  til at bruge SSL.\n"
 
 # type: Plain text
 #: packages.txt:1054
 msgid "=== Creating an administrator"
-msgstr ""
+msgstr "=== Skabe en administrato"
 
 # type: Plain text
 #: packages.txt:1057
@@ -7517,11 +7538,13 @@ msgid ""
 "Register an account on your `ejabberd` deployment. An account can be created "
 "using a jabber client like `pidgin`."
 msgstr ""
+"Registrer en konto på din `ejabberd`  gruppe. En konto kan skabes ved brug "
+"af en jabber client som `pidgin`."
 
 # type: Plain text
 #: packages.txt:1059
 msgid "Add the following lines to you config:"
-msgstr ""
+msgstr "Tilføj følgende linier til din config:"
 
 # type: Plain text
 #: packages.txt:1063
@@ -7531,6 +7554,9 @@ msgid ""
 "{access, configure, [{allow, admins}]}.\n"
 "----\n"
 msgstr ""
+"{acl, admins, {user, \"admin\", \"example.org\"}}.\n"
+"{access, configure, [{allow, admins}]}.\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:1067
@@ -7538,11 +7564,13 @@ msgid ""
 "This will promote the account created in the previous step to an account "
 "with administrator rights."
 msgstr ""
+"Dette vil promovere kontoen skabt i det forrige trin til en konto med "
+"administratorrettigheder."
 
 # type: Plain text
 #: packages.txt:1069
 msgid "=== Testing"
-msgstr ""
+msgstr "=== Afprøvning"
 
 # type: Plain text
 #: packages.txt:1072
@@ -7550,6 +7578,8 @@ msgid ""
 "Add the following line to your `/etc/sysconfig/firewall`, for example after "
 "`mysql`:"
 msgstr ""
+"Tilføj følgende linie til din `/etc/sysconfig/firewall`, for eksempel efter "
+"`mysql`:"
 
 # type: Plain text
 #: packages.txt:1076
@@ -7559,6 +7589,9 @@ msgid ""
 "-A INPUT -p tcp -m tcp --dport 5222 -j ACCEPT\n"
 "----\n"
 msgstr ""
+"# ejabberd\n"
+"-A INPUT -p tcp -m tcp --dport 5222 -j ACCEPT\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:1081
@@ -7567,6 +7600,9 @@ msgid ""
 "favourite jabber client on a remote machine (ie. pidgin) and register "
 "another account.  You should be able to talk to the admin now and vica versa."
 msgstr ""
+"Nu bør du kunne forbinde til `ejabberd` fra fjernafstand. Start din favorit "
+"jabber client på en fjern maskine (f.eks. pidgin) og register et anden "
+"konto. Du bør nu kunne tale til admin og vica versa."
 
 # type: Plain text
 #: packages.txt:1084
@@ -7574,11 +7610,13 @@ msgid ""
 "For more info, please read the Installation and Operation Guide, which can "
 "be found at `/usr/share/doc/ejabberd-*/guide.html`."
 msgstr ""
+"For mere info, læs venligst Installationen og Operation Guide, som kan "
+"findes her `/usr/share/doc/ejabberd-*/guide.html`."
 
 # type: Plain text
 #: packages.txt:1088
 msgid "== enemy-territory"
-msgstr ""
+msgstr "== enemy-territory"
 
 # type: Plain text
 #: packages.txt:1091
@@ -7586,16 +7624,18 @@ msgid ""
 "If you got disconnected from servers and getting some #20004 errors, then "
 "run as pbweb AS ROOT!!!"
 msgstr ""
+"Hvis du bliver smidt af nogle servere og får nogle #20004 errors, så kør som "
+"pbweb SOM ROOT!!!"
 
 # type: Plain text
 #: packages.txt:1093
 msgid "Then try again :)"
-msgstr ""
+msgstr "Derefter prøv igen :)"
 
 # type: Plain text
 #: packages.txt:1095
 msgid "Regards"
-msgstr ""
+msgstr "Venligst"
 
 # type: Plain text
 #: packages.txt:1097
