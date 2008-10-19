@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-10-19 01:42+0200\n"
-"PO-Revision-Date: 2008-10-19 10:46+0200\n"
+"PO-Revision-Date: 2008-10-19 12:11+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -7882,7 +7882,7 @@ msgstr ""
 # type: Plain text
 #: packages.txt:1194
 msgid "== freenx"
-msgstr ""
+msgstr "== freenx"
 
 # type: Plain text
 #: packages.txt:1199
@@ -7894,6 +7894,11 @@ msgid ""
 "+\n"
 "---------------------\n"
 msgstr ""
+"1. Installation\n"
+"+\n"
+"På serveren:\n"
+"+\n"
+"---------------------\n"
 
 # type: Plain text
 #: packages.txt:1201
@@ -7902,6 +7907,8 @@ msgid ""
 "# pacman-g2 -S freenx\n"
 "---------------------\n"
 msgstr ""
+"# pacman-g2 -S freenx\n"
+"---------------------\n"
 
 # type: Plain text
 #: packages.txt:1205
@@ -7912,6 +7919,10 @@ msgid ""
 "+\n"
 "------------------\n"
 msgstr ""
+"+\n"
+"På klienten:\n"
+"+\n"
+"------------------\n"
 
 # type: Plain text
 #: packages.txt:1207
@@ -7920,6 +7931,8 @@ msgid ""
 "# pacman-g2 -S knx\n"
 "------------------\n"
 msgstr ""
+"# pacman-g2 -S knx\n"
+"------------------\n"
 
 # type: Plain text
 #: packages.txt:1213
@@ -7931,6 +7944,11 @@ msgid ""
 "+\n"
 "-----------\n"
 msgstr ""
+"2. Konfiguration\n"
+"+\n"
+"Opsæt et falskt kodeord på severen for nx brugeren:\n"
+"+\n"
+"-----------\n"
 
 # type: Plain text
 #: packages.txt:1215
@@ -7939,6 +7957,8 @@ msgid ""
 "# passwd nx\n"
 "-----------\n"
 msgstr ""
+"# passwd nx\n"
+"-----------\n"
 
 # type: Plain text
 #: packages.txt:1221
@@ -7951,6 +7971,12 @@ msgid ""
 "+\n"
 "--------------------------------------------\n"
 msgstr ""
+"+\n"
+"Tillad nu klienten at forbinde til serveren ved at kopiere filen\n"
+"'/usr/NX/home/nx/id_dsa' fra serveren til '/usr/share/knx/client.id_dsa.key'\n"
+"på klienten. Sikr dig også at den er læsbar for brugere:\n"
+"+\n"
+"--------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:1223
@@ -7959,6 +7985,8 @@ msgid ""
 "# chmod 644 /usr/share/knx/client.id_dsa.key\n"
 "--------------------------------------------\n"
 msgstr ""
+"# chmod 644 /usr/share/knx/client.id_dsa.key\n"
+"--------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:1228
@@ -7970,6 +7998,12 @@ msgid ""
 "+\n"
 "--------------------------\n"
 msgstr ""
+"+\n"
+"Og glem ikke at tillade indgående ssh forbindelser (normalt standard port "
+"22) i\n"
+"'/etc/sysconfig/firwall', derefter load config med\n"
+"+\n"
+"--------------------------\n"
 
 # type: Plain text
 #: packages.txt:1239
@@ -7982,6 +8016,12 @@ msgid ""
 "+\n"
 "-------------------------------\n"
 msgstr ""
+"3. Brugere\n"
+"+\n"
+"har shell kontoer ikke tilladelse at forbinde til nx serveren, du kan\n"
+"tillade en bruger at gøre det med\n"
+"+\n"
+"-------------------------------\n"
 
 # type: Plain text
 #: packages.txt:1241
@@ -7990,6 +8030,8 @@ msgid ""
 "# nxserver --adduser <username>\n"
 "-------------------------------\n"
 msgstr ""
+"# nxserver --adduser <brugernavn>\n"
+"-------------------------------\n"
 
 # type: Plain text
 #: packages.txt:1245
@@ -8000,6 +8042,10 @@ msgid ""
 "+\n"
 "------------------------------\n"
 msgstr ""
+"+\n"
+"derefter sæt et særskilt kodeord (for nx) brugeren:\n"
+"+\n"
+"------------------------------\n"
 
 # type: Plain text
 #: packages.txt:1247
@@ -8008,6 +8054,8 @@ msgid ""
 "# nxserver --passwd <username>\n"
 "------------------------------\n"
 msgstr ""
+"# nxserver --passwd <brugernavn>\n"
+"------------------------------\n"
 
 # type: Plain text
 #: packages.txt:1252
@@ -8017,11 +8065,14 @@ msgid ""
 "+\n"
 "Now start knx, the usage of that application is self-explaining.\n"
 msgstr ""
+"4. Klienten\n"
+"+\n"
+"Start nu knx, brugen af denne applikation er selvforklarende.\n"
 
 # type: Plain text
 #: packages.txt:1254
 msgid "== fudforum"
-msgstr ""
+msgstr "== fudforum"
 
 # type: Plain text
 #: packages.txt:1257
@@ -8029,11 +8080,13 @@ msgid ""
 "After installing this package, please run '/usr/bin/fudforumsetup' as root "
 "to setup FUDforum"
 msgstr ""
+"Efter installering af denne pakke, kør veligst '/usr/bin/fudforumsetup' som "
+"root for at opsætte FUDforum"
 
 # type: Plain text
 #: packages.txt:1259
 msgid "== fuse"
-msgstr ""
+msgstr "== fuse"
 
 # type: Plain text
 #: packages.txt:1267
@@ -8046,6 +8099,14 @@ msgid ""
 "Frugalware, regular users of a given box can mount filesystems by fuse.  "
 "First as root, let's install the tools needed:"
 msgstr ""
+"Fuse er en virtuel filsystem \"hjælper\" som gør det muligt at mounte "
+"ualmindelige ting som et filsystem. Det bliver opnået ved at benytte et "
+"enkelt program, som kører i brugerum, for at stille data til rådighed der "
+"kan præsenteres af fuse kernemondul som et filsystem. Tolkeprogrammet er "
+"mindre kompleks end et kerne-rum mondul, som er meget mere vanskeligt at "
+"skrive. I Frugalware, kan regulære brugere af en givet box montere "
+"filsystemer med fuse. Som root, lad os installere redskaberne vi har brug "
+"for:"
 
 # type: Plain text
 #: packages.txt:1270
@@ -8054,6 +8115,8 @@ msgid ""
 "# pacman-g2 -S fuse\n"
 "-------------------\n"
 msgstr ""
+"# pacman-g2 -S fuse\n"
+"-------------------\n"
 
 # type: Plain text
 #: packages.txt:1274
@@ -8061,6 +8124,8 @@ msgid ""
 "Then you have to add the fuse service to the startup list and start it "
 "manually for now:"
 msgstr ""
+"Derefter skal du tilføje fuse service til opstartslisten og starte det "
+"manuelt nu:"
 
 # type: Plain text
 #: packages.txt:1278
@@ -8070,6 +8135,9 @@ msgid ""
 "# service fuse start\n"
 "------------------\n"
 msgstr ""
+"# service fuse add\n"
+"# service fuse start\n"
+"------------------\n"
 
 # type: Plain text
 #: packages.txt:1283
@@ -8078,6 +8146,9 @@ msgid ""
 "specific filesystem type. To get a hint on what is available, you can issue "
 "the following command:"
 msgstr ""
+"Nu hvor vi har fundamentet for fuse, har vi brug for at installere "
+"programmerne for hver specifik filsystemtype. For at få en antydning af hvad "
+"der er tilgængeligt, kan du udstede følgende kommando:"
 
 # type: Plain text
 #: packages.txt:1286
@@ -8086,6 +8157,8 @@ msgid ""
 "$ pacman-g2 -Ss fuse\n"
 "---------------\n"
 msgstr ""
+"$ pacman-g2 -Ss fuse\n"
+"---------------\n"
 
 # type: Plain text
 #: packages.txt:1292
@@ -8095,6 +8168,10 @@ msgid ""
 "memory hungry / buggy / slow so therefore it might be replaced by CurlFtpFS "
 "in the future."
 msgstr ""
+"De mest 2 brugte(ftp, ssh) plugins kan installeres ved at køre følgende "
+"kommando. Pas på, ftp fs er et perl mondul, og det virker lidt hukommelse "
+"sultent / buggy / langsom så derfor bliver det måske udskiftet med CurlFtpFS "
+"i fremtiden."
 
 # type: Plain text
 #: packages.txt:1295
@@ -8103,6 +8180,8 @@ msgid ""
 "# pacman-g2 -S fuseftp sshfs-fuse\n"
 "----------------------------\n"
 msgstr ""
+"# pacman-g2 -S fuseftp sshfs-fuse\n"
+"----------------------------\n"
 
 # type: Plain text
 #: packages.txt:1298
