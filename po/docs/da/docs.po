@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-10-19 01:42+0200\n"
-"PO-Revision-Date: 2008-10-19 12:11+0200\n"
+"PO-Revision-Date: 2008-10-19 13:47+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -8188,12 +8188,15 @@ msgstr ""
 msgid ""
 "Then, you can mount a remote dir with sftp access as a regular user doing:"
 msgstr ""
+"Derefter kan du montere et afsides dir med sftp adgang som regulær bruger "
+"med:"
 
 # type: Plain text
 #: packages.txt:1299
 #, no-wrap
 msgid "-----------------------------------------------------------------------------------\n"
-msgstr ""
+msgstr "----------------------------------------------------------------------------"
+"-------\n"
 
 # type: Plain text
 #: packages.txt:1301
@@ -8202,11 +8205,15 @@ msgid ""
 "$ /sbin/mount.fuse  sshfs#YOURUSERNAME@SERVER:/REMOTEDIR /LOCALDIR -o rw,OTHEROPTIONS\n"
 "-----------------------------------------------------------------------------------\n"
 msgstr ""
+"$ /sbin/mount.fuse  sshfs#DIRBRUGERNAVN@SERVER:/REMOTEDIR /LOCALDIR -o "
+"rw,ANDREINDSTILLINGER\n"
+"----------------------------------------------------------------------------"
+"-------\n"
 
 # type: Plain text
 #: packages.txt:1304
 msgid "You can also unmount it as a regular user doing:"
-msgstr ""
+msgstr "Du kan også unmounte det som regulær bruger med :"
 
 # type: Plain text
 #: packages.txt:1307
@@ -8215,16 +8222,18 @@ msgid ""
 "$ fusermount -u /LOCALDIR \n"
 "-----------------------\n"
 msgstr ""
+"$ fusermount -u /LOCALDIR \n"
+"-----------------------\n"
 
 # type: Plain text
 #: packages.txt:1310
 msgid "== gammu"
-msgstr ""
+msgstr "== gammu"
 
 # type: Plain text
 #: packages.txt:1314
 msgid "You need to create your ~/.gammurc:"
-msgstr ""
+msgstr "Du er nødt til at skabe din ~/.gammurc:"
 
 # type: Plain text
 #: packages.txt:1319
@@ -8235,6 +8244,10 @@ msgid ""
 "connection = fbus\n"
 "----\n"
 msgstr ""
+"[gammu]\n"
+"port = /dev/ttyUSB0\n"
+"connection = fbus\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:1324
@@ -8243,11 +8256,14 @@ msgid ""
 "appropriate protocol name if you are not a Nokia user. Check if you have "
 "write access to the device, you need to be a member of the `uucp` group."
 msgstr ""
+"Erstat `/dev/ttyUSB0` med din serial port device og `fbus` med det passende "
+"protokolnavn hvis du ikke er en Nokia-bruger. Tjek om du har skrive adgang "
+"til device, du er nødt til at være et medlem af `uucp` gruppen."
 
 # type: Plain text
 #: packages.txt:1326
 msgid "Once you think you're done, check your setup:"
-msgstr ""
+msgstr "Når du tror du er færdig, tjek så dit setup:"
 
 # type: Plain text
 #: packages.txt:1329
@@ -8256,6 +8272,8 @@ msgid ""
 "$ gnokii --identify\n"
 "----\n"
 msgstr ""
+"$ gnokii --identify\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:1333
@@ -8263,21 +8281,25 @@ msgid ""
 "It should print your `IMEI` number so that you'll be able to check if "
 "`gammu` really found your phone or there is a problem."
 msgstr ""
+"Det burde udskrive dit `IMEI` nummer således at du kan tjekke om `gammu` "
+"virkeligt fandt din telefon eller der er et problem."
 
 # type: Plain text
 #: packages.txt:1335
 msgid "=== Creating a backup"
-msgstr ""
+msgstr "=== Skabe en backup"
 
 # type: Plain text
 #: packages.txt:1337
 msgid "You probably use `gammu` to make a backup of your phone."
 msgstr ""
+"Du bruger sandsynligvis `gammu` for at lave en sikkerhedskopi af din "
+"telefon."
 
 # type: Plain text
 #: packages.txt:1339
 msgid "This involves two steps:"
-msgstr ""
+msgstr "Dette involverer to trin:"
 
 # type: Plain text
 #: packages.txt:1342
@@ -8287,6 +8309,9 @@ msgid ""
 "+\n"
 "----\n"
 msgstr ""
+"* Backup af dine SMSes\n"
+"+\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:1344
@@ -8295,6 +8320,8 @@ msgid ""
 "$ gammu --backupsms backupsms.txt\n"
 "----\n"
 msgstr ""
+"$ gammu --backupsms backupsms.txt\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:1348
@@ -8304,6 +8331,9 @@ msgid ""
 "+\n"
 "----\n"
 msgstr ""
+"* Resten af din telefon.\n"
+"+\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:1350
@@ -8312,11 +8342,13 @@ msgid ""
 "$ gammu --backup backup.txt\n"
 "----\n"
 msgstr ""
+"$ gammu --backup backup.txt\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:1353
 msgid "You may find an alternative format more human-readable for SMSes:"
-msgstr ""
+msgstr "Du kan finde et alternativt format mere menneske-læseligt for SMSes:"
 
 # type: Plain text
 #: packages.txt:1356
@@ -8325,27 +8357,31 @@ msgid ""
 "$ gammu --geteachsms > eachsms.txt\n"
 "----\n"
 msgstr ""
+"$ gammu --geteachsms > eachsms.txt\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:1359
 msgid "See the manual page for more tricks!"
-msgstr ""
+msgstr "Se den manuel siden for flere kneb!"
 
 # type: Plain text
 #: packages.txt:1363
 msgid "== gcc"
-msgstr ""
+msgstr "== gcc"
 
 # type: Plain text
 #: packages.txt:1365
 msgid "=== libstdc++"
-msgstr ""
+msgstr "=== libstdc++"
 
 # type: Plain text
 #: packages.txt:1367
 msgid ""
 "'I have heard I should never remove the gcc package. Is this still true?'"
 msgstr ""
+"'Jeg har hørt at jeg aldrig bør fjerne gcc pakken. Er dette stadigvæk "
+"rigtigt?'"
 
 # type: Plain text
 #: packages.txt:1370
@@ -8353,11 +8389,14 @@ msgid ""
 "``No, since we split the gcc package, the standard C++ library is a separate "
 "package, you have to install gcc only in case you really need a C compiler.''"
 msgstr ""
+"``Nej, siden vi splittede gcc pakken, er standard C++ bibliotek en særskilt "
+"pakke, du er kun nødt til at installere gcc i det tilfælde hvor du virkeligt "
+"har brug for en C compiler.''"
 
 # type: Plain text
 #: packages.txt:1372
 msgid "=== gcjwebplugin"
-msgstr ""
+msgstr "=== gcjwebplugin"
 
 # type: Plain text
 #: packages.txt:1376
@@ -8365,6 +8404,9 @@ msgid ""
 "gcjwebplugin is a Firefox plugin for running Java applets.  It is now "
 "included in the libgcj sub-package, though it is not enabled by default."
 msgstr ""
+"gcjwebplugin er et Firefox plugin for at køre Java applets.  Det er nu "
+"inkluderet i libgcj under-pakke, skønt det ikke bliver aktiveret som "
+"standard."
 
 # type: Plain text
 #: packages.txt:1380
@@ -8373,6 +8415,9 @@ msgid ""
 "development, but it is not ready to be declared secure.  Specifically, it "
 "cannot run untrusted applets safely."
 msgstr ""
+"GNU Classpath og libgcj's sikkerhedsimplementering er under aktiv udvikling, "
+"men det er ikke parat til at blive deklareret som sikkert.  Nærmere bestemt "
+"kan det ikke køre ikke-betroet applets sikkert."
 
 # type: Plain text
 #: packages.txt:1386
@@ -8382,6 +8427,10 @@ msgid ""
 "applet, and asks if you trust the applet.  Be aware though that this dialog "
 "is mostly informative and doesn't provide much protection:"
 msgstr ""
+"Når gcjwebplugin is enabled, det animerer dig med en dialog før loading af "
+"en applet.  Dialogen fortæller dig at en vis URL gerne vil loade en applet, "
+"og spørger om du stoler på applet.  Vær klar over at denne dialog er mest "
+"oplysende og ikke stiller meget beskyttelse til rådighed:"
 
 # type: Plain text
 #: packages.txt:1389
@@ -8390,6 +8439,8 @@ msgid ""
 "- http and DNS can be spoofed meaning that the URL named in the\n"
 "  warning dialog cannot be trusted\n"
 msgstr ""
+"- http og DNS kan blive spoofed det betyder at URL navnet i\n"
+"  advarselsdialog kan man ikke stole på\n"
 
 # type: Plain text
 #: packages.txt:1394
