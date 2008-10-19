@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-10-19 01:42+0200\n"
-"PO-Revision-Date: 2008-10-19 13:47+0200\n"
+"PO-Revision-Date: 2008-10-19 20:46+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -8451,6 +8451,11 @@ msgid ""
 "  warning dialog after warning dialog.  The browser would have to be\n"
 "  closed to eliminate the latest dialog\n"
 msgstr ""
+"- nogen kunne skabe en browser denial-of-service attack ved at skabe en\n"
+"  side med hundreder af applet tags, som gør at gcjwebplugin skaber\n"
+"  advarer dialog efter advare dialog.  Browseren ville være nødt til at "
+"blive\n"
+"  lukket for at eliminere den sidste dialog\n"
 
 # type: Plain text
 #: packages.txt:1399
@@ -8461,6 +8466,11 @@ msgid ""
 "  If that domain is in the whitelist then the warning dialog will not\n"
 "  appear when loading the new malicious applet.\n"
 msgstr ""
+"- hvid-listen bliver stillet til rådighed som en bekvemmelighed, men det er "
+"usikkert fordi et\n"
+"  domæne kan ændre hænder fra en betroet ejer til en ubetroet ejer.\n"
+"  Hvis domænet er på hvid-listen så vil ingen advarsel dialog\n"
+"  dukke op når man loader den nye ondsindede applet.\n"
 
 # type: Plain text
 #: packages.txt:1405
@@ -8471,6 +8481,11 @@ msgid ""
 "YOUR SYSTEM IF YOUR SYSTEM STORES IMPORTANT DATA.  THIS DATA CAN BE "
 "DESTROYED OR STOLEN."
 msgstr ""
+"P.T. SÅ KØRER GCJWEBPLUGIN MED INGEN SIKKERHEDSMANAGER.  DETTE BETYDER AT "
+"APPLETS KAN GØRE ALT MED EN JAVA-APPLICATION  SOM DU DOWNLOADER OG KØRER.  "
+"VÆR *MEGET* FORSIGTIG MED HVILKE APPLETS DU KØRER.  BRUG IKKE GCJWEBPLUGIN "
+"PÅ DIT SYSTEM HVIS DIT SYSTEM GEMMER VIGTIGE DATA.  DISSE DATA KAN BLIVE "
+"ØDELAGT ELLER STJÅLET."
 
 # type: Plain text
 #: packages.txt:1410
@@ -8480,6 +8495,10 @@ msgid ""
 "loading).  When run on the command line, gappletviewer issues a warning on "
 "startup and asks you if you want to continue."
 msgstr ""
+"Den samme advarsel gælder også gappletviewer, hvilket også kører unden "
+"sikkerhedsmanager (faktisk frembringer gcjwebplugin til gappletviewerfor for "
+"loading af applet).  Når det køres på kommandolinien, udsteder "
+"gappletviewer en advarsel ved opstart og spørger dig om du vil fortsætte."
 
 # type: Plain text
 #: packages.txt:1416
@@ -8490,12 +8509,17 @@ msgid ""
 "web.  If you're interested in trying gcjwebplugin, you can do so by creating "
 "a symbolic link in ~/.mozilla/plugins like so:"
 msgstr ""
+"Selv om du kender risikoen, ønsker du måske stadigvæk at prøve gcjwebplugin. "
+" GNU Classpath's AWT og Swing implementeringer er nu tilstrækkeligt modne "
+"til at de kan køre mange applets udviklet på nettet.  Hvis du er "
+"interesseret i at prøve gcjwebplugin, kan du gøre dette ved at skabe et "
+"symbolsk link i ~/.mozilla/plugins så som:"
 
 # type: Plain text
 #: packages.txt:1417 packages.txt:2580
 #, no-wrap
 msgid "-----------------------------------------------------------\n"
-msgstr ""
+msgstr "-----------------------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:1419
@@ -8504,6 +8528,8 @@ msgid ""
 "ln -s /usr/lib/gcj-*/libgcjwebplugin.so ~/.mozilla/plugins/\n"
 "-----------------------------------------------------------\n"
 msgstr ""
+"ln -s /usr/lib/gcj-*/libgcjwebplugin.so ~/.mozilla/plugins/\n"
+"-----------------------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:1423
@@ -8511,6 +8537,8 @@ msgid ""
 "Type about:plugins in Firefox's URL bar to confirm that the plugin has been "
 "loaded.  To see gcjwebplugin debugging output, run:"
 msgstr ""
+"Skriv about:plugins i Firefox's URL bar for at se at plugin er blevet "
+"indlæst.  For at se gcjwebplugin debugging output, kør:"
 
 # type: Plain text
 #: packages.txt:1426
@@ -8519,11 +8547,13 @@ msgid ""
 "$ firefox -g\n"
 "------------\n"
 msgstr ""
+"$ firefox -g\n"
+"------------\n"
 
 # type: Plain text
 #: packages.txt:1429
 msgid "then at the GDB prompt, type"
-msgstr ""
+msgstr "derefter ved GDB-prompten, tast"
 
 # type: Plain text
 #: packages.txt:1432
@@ -8532,16 +8562,18 @@ msgid ""
 "(gdb) run\n"
 "------------\n"
 msgstr ""
+"(gdb) run\n"
+"------------\n"
 
 # type: Plain text
 #: packages.txt:1435
 msgid "== git"
-msgstr ""
+msgstr "== git"
 
 # type: Plain text
 #: packages.txt:1437
 msgid "=== gitweb"
-msgstr ""
+msgstr "=== gitweb"
 
 # type: Plain text
 #: packages.txt:1439
