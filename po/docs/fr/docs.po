@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-19 01:42+0200\n"
-"PO-Revision-Date: 2008-10-19 21:57+0200\n"
+"POT-Creation-Date: 2008-10-20 01:42+0200\n"
+"PO-Revision-Date: 2008-10-20 12:32+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fr\n"
@@ -853,6 +853,10 @@ msgid ""
 "devices by default. To get to the prompt, hold down Command+Option+o+f all "
 "together while booting."
 msgstr ""
+"Sur PPC, pour booter sur un lecteur de CD externe, vous aurez besoin "
+"d'utiliser la console d'Open Firmware, puisque il ne cherche pas par défaut "
+"sur les disques optiques externe. Pour obtenir la console, maintenez "
+"Command+Option+o+f appuyé simultanément pendant le démarrage."
 
 # type: Plain text
 #: install.txt:24
@@ -978,6 +982,9 @@ msgid ""
 "An alternate way of doing this is to just copy the contents of the ISO image "
 "to your hard drive and use your existing boot manager to boot it."
 msgstr ""
+"Une solution alternative pour faire cela est de copier simplement le contenu "
+"de l'image ISO sur votre disque dur et d'utiliser votre gestionnaire de "
+"boot pour démarrer dessus."
 
 # type: Plain text
 #: install.txt:63
@@ -1089,6 +1096,8 @@ msgid ""
 "On PPC, create a partition of type \"Apple_Bootstrap\" on your USB stick "
 "using `mac-fdisk` and extract the image there. For example:"
 msgstr ""
+"Sur PPC, créer une partition du type \"Apple_Bootstrap\" sur votre clef USB en "
+"utilisant `mac-fdisk` et y extraire l'image dedans. Par exemple:"
 
 # type: Plain text
 #: install.txt:112
@@ -1114,12 +1123,9 @@ msgstr ""
 "new size of 'device' is 1014784 blocks\n"
 "Command (? for help): p\n"
 "/dev/sda\n"
-"        #                    type name                length   base    ( "
-"size )  system\n"
-"/dev/sda1     Apple_partition_map Apple                   63 @ 1       ( "
-"31.5k)  Partition map\n"
-"/dev/sda2              Apple_Free Extra              1014720 @ 64      "
-"(495.5M)  Free space\n"
+"        #                    type name                length   base    ( size )  system\n"
+"/dev/sda1     Apple_partition_map Apple                   63 @ 1       ( 31.5k)  Partition map\n"
+"/dev/sda2              Apple_Free Extra              1014720 @ 64      (495.5M)  Free space\n"
 
 # type: Plain text
 #: install.txt:115
@@ -1601,6 +1607,10 @@ msgid ""
 "forget to use an IDE disk for the root partition, otherwise you will not be "
 "able to boot the system after the installation!"
 msgstr ""
+"NOTE: Si vous installer Frugalware dans une machine virtuelle VMware, "
+"n'oubliez pas d'utiliser un disque IDE pour la partition principale, "
+"autrement vous ne serez pas dans la possibilité de démarrer le système après "
+"l'installation!"
 
 # type: Plain text
 #: install.txt:291
@@ -5310,11 +5320,15 @@ msgid ""
 "Asciidoc has a number of configuration files under `/etc/asciidoc` and it's "
 "easy to get lost in that directory."
 msgstr ""
+"Asciidoc a un certain nombre de fichiers de configuration dans "
+"`/etc/asciidoc` et il est facile de se perdre dans se répertoire."
 
 # type: Plain text
 #: packages.txt:206
 msgid "Regarding pdf (dblatex) generation, here are some options you can set:"
 msgstr ""
+"Pour se qui concerne la génération de pdf (dblatex), voici quelques unes des "
+"options que vous pouvez définir:"
 
 # type: Plain text
 #: packages.txt:209
@@ -11663,6 +11677,9 @@ msgid ""
 "of converting system installed desktop files in /usr/share/applications to a "
 "ROX appdir."
 msgstr ""
+"Utilisez le script shell desktop2appfile inclus, si vous voulez une "
+"conversion automatique pour des fichiers desktop installés sur le système "
+"depuis /usr/share/applications vers le répertoire de ROX."
 
 # type: Plain text
 #: packages.txt:2568
