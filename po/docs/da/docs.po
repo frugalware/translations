@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-10-20 01:42+0200\n"
-"PO-Revision-Date: 2008-10-20 15:40+0200\n"
+"PO-Revision-Date: 2008-10-20 16:33+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -8568,6 +8568,8 @@ msgstr "=== gitweb"
 #: packages.txt:1439
 msgid "If you want to set up a web interface for your git repositories, then:"
 msgstr ""
+"Hvis du ønsker at opsætte et internetinterface for dine git-arkiver, gør "
+"således:"
 
 # type: Plain text
 #: packages.txt:1444
@@ -8578,11 +8580,15 @@ msgid ""
 "  repository directory\n"
 "* restart `apache` so that the `gitweb` configuration will be included.\n"
 msgstr ""
+"* installer `gitweb` pakken\n"
+"* rediger `/etc/gitweb.conf` således at `$projectroot` vil pege på\n"
+"  arkiv directory\n"
+"* genstart `apache` således at `gitweb` konfiguration vil blive inkluderet.\n"
 
 # type: Plain text
 #: packages.txt:1446
 msgid "== gnome-applets"
-msgstr ""
+msgstr "== gnome-applets"
 
 # type: Plain text
 #: packages.txt:1450
@@ -8591,16 +8597,19 @@ msgid ""
 "functionality provided by the Mini Commander applet, please install the "
 "deskbar-applet package with pacman"
 msgstr ""
+"Mini Commander applet er blevet udskiftet med Deskbar. Hvis du ønsker "
+"funktionaliteten stillet til rådighed af Mini Commander applet, så installer "
+"deskbar-applet pakken med pacman"
 
 # type: Plain text
 #: packages.txt:1452
 msgid "== help2man"
-msgstr ""
+msgstr "== help2man"
 
 # type: Plain text
 #: packages.txt:1454
 msgid "The most common usage of this applications is something like this:"
-msgstr ""
+msgstr "Den mest almene brug af denne applikation er sådan noget som dette:"
 
 # type: Plain text
 #: packages.txt:1457
@@ -8609,11 +8618,14 @@ msgid ""
 "$ help2man -n \"<oneliner description>\" -S Frugalware -N ./<binary> |sed 's/\\\\(co/(c)/' ><binary>.1\n"
 "----\n"
 msgstr ""
+"$ help2man -n \"<oneliner description>\" -S Frugalware -N ./<binary> |sed "
+"'s/\\\\(co/(c)/' ><binary>.1\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:1460
 msgid "== horde-webmail"
-msgstr ""
+msgstr "== horde-webmail"
 
 # type: Plain text
 #: packages.txt:1465
@@ -8623,6 +8635,10 @@ msgid ""
 "up a webserver and an IMAP server. The SQL server is optional, but it's the "
 "most easiest-to-use preferences container."
 msgstr ""
+"Denne applikation har ikke nogen webserver, SQL server eller IMAP server som "
+"afhænger af det, dette er tilsigtet. Okay, hvis du planlægger at bruge det, "
+"bør du opsætte en webserver og en IMAP server. SQL serveren er valgfri, men "
+"det er den mest nemmeste-til-at-bruge som præference-indeholder."
 
 # type: Plain text
 #: packages.txt:1469
@@ -8631,28 +8647,34 @@ msgid ""
 "customizable settings, so the packager cannot know how to set them for your "
 "particular needs. Installation instructions can be found in the INSTALL file."
 msgstr ""
+"Yderligere bliver denne applikation ikke konfigureret på nogen måde: der er "
+"alt for mange konfigurebare indstillinger, så pakkeren kan ikke vide hvordan "
+"de skal sættes for dine særlige behov. Installationsinstrukser kan findes i "
+"INSTALL filen."
 
 # type: Plain text
 #: packages.txt:1471
 msgid "== httpircproxy"
-msgstr ""
+msgstr "== httpircproxy"
 
 # type: Plain text
 #: packages.txt:1473
 msgid "Don't forget to open port 8080 on your firewall!"
-msgstr ""
+msgstr "Glem ikke at åbne port 8080 på din firewall!"
 
 # type: Plain text
 #: packages.txt:1475 packages.txt:1898
 msgid ""
 "To do this, add the following two lines to your '/etc/sysconfig/firewall':"
 msgstr ""
+"For at gøre dettte, tilføj følgende 2 linjer til din "
+"'/etc/sysconfig/firewall':"
 
 # type: Plain text
 #: packages.txt:1476 packages.txt:1899 packages.txt:3291
 #, no-wrap
 msgid "---------------------------------------------\n"
-msgstr ""
+msgstr "---------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:1479
@@ -8662,11 +8684,14 @@ msgid ""
 "-A INPUT -p tcp -m tcp --dport 8080 -j ACCEPT\n"
 "---------------------------------------------\n"
 msgstr ""
+"# httpircproxy\n"
+"-A INPUT -p tcp -m tcp --dport 8080 -j ACCEPT\n"
+"---------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:1482 packages.txt:1905
 msgid "for example after MySQL's entry."
-msgstr ""
+msgstr "for eksempel efter MySQLs postering."
 
 # type: Plain text
 #: packages.txt:1484
