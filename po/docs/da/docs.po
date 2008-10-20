@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-10-20 01:42+0200\n"
-"PO-Revision-Date: 2008-10-20 17:31+0200\n"
+"PO-Revision-Date: 2008-10-20 20:01+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -8827,11 +8827,21 @@ msgid ""
 "defined to their proper keycodes. If you need any further help, please email "
 "the maintainer of this package."
 msgstr ""
+"Hvis du ikke ved hvad keycodes er for nøglerne du ønsker at remape joystick-"
+"begivenhederne til, så installer xev programmet. Det vil hjælpe dig til at "
+"identificere dem. Kom videre,  /etc/kbstick.conf er "
+"systemniveaukonfigurationsfilen shell-scriptet læser fra hvis brugeren ikke "
+"har en .kbstickrc i deres home directory. Syntaks er den samme i begge "
+"tilfælde, og konfigurationsfilen har nogle kommentarer som giver dig en idé "
+"af hvad hver variabel gør. Jeg har sat standard up/down/left/right key "
+"mappings til hvad min bærbar bruger for dem og knapperne vil være nødt til "
+"at blive manuelt defineret til deres ordentlige nøglekoder. Hvis du har brug "
+"for yderligere hjælp, så send en email til vedligeholderen af denne pakke."
 
 # type: Plain text
 #: packages.txt:1539
 msgid "== kexec-tools"
-msgstr ""
+msgstr "== kexec-tools"
 
 # type: Plain text
 #: packages.txt:1541
@@ -8839,17 +8849,20 @@ msgid ""
 "WARNING: kexec works just like 'reboot', so please save your data before "
 "using it!"
 msgstr ""
+"ADVARSEL: kexec virker lige som 'reboot', så venligst, gem dine data før du "
+"bruger det!"
 
 # type: Plain text
 #: packages.txt:1543
 msgid "Loading the new kernel:"
-msgstr ""
+msgstr "Loading af den nye kerne:"
 
 # type: Plain text
 #: packages.txt:1544
 #, no-wrap
 msgid "-----------------------------------------------------------------------------------------------\n"
-msgstr ""
+msgstr "----------------------------------------------------------------------------"
+"-------------------\n"
 
 # type: Plain text
 #: packages.txt:1546
@@ -8858,17 +8871,21 @@ msgid ""
 "# kexec -l /boot/vmlinuz-2.6.18-fw1 --append=\"ro root=/dev/hda3 quiet vga=792 resume=/dev/hda2\"\n"
 "-----------------------------------------------------------------------------------------------\n"
 msgstr ""
+"# kexec -l /boot/vmlinuz-2.6.18-fw1 --append=\"ro root=/dev/hda3 quiet "
+"vga=792 resume=/dev/hda2\"\n"
+"----------------------------------------------------------------------------"
+"-------------------\n"
 
 # type: Plain text
 #: packages.txt:1549
 msgid "Booting it:"
-msgstr ""
+msgstr "Boote den:"
 
 # type: Plain text
 #: packages.txt:1550 packages.txt:1683 packages.txt:2108
 #, no-wrap
 msgid "----------\n"
-msgstr ""
+msgstr "----------\n"
 
 # type: Plain text
 #: packages.txt:1552
@@ -8877,11 +8894,13 @@ msgid ""
 "# kexec -e\n"
 "----------\n"
 msgstr ""
+"# kexec -e\n"
+"----------\n"
 
 # type: Plain text
 #: packages.txt:1555
 msgid "== kiax"
-msgstr ""
+msgstr "== kiax"
 
 # type: Plain text
 #: packages.txt:1558
@@ -8889,6 +8908,8 @@ msgid ""
 "If you want to test this package, you can use for example the server of "
 "http://www.voipbuster.com/en/index.html[VoipBuster]."
 msgstr ""
+"Hvis du vil teste denne pakke, kan du bruge for eksempel serveren på "
+"http://www.voipbuster.com/en/index.html[VoipBuster]."
 
 # type: Plain text
 #: packages.txt:1562
@@ -8897,21 +8918,25 @@ msgid ""
 "(Windows-only) client. After that give 'iax.voipbuster.com' as the server "
 "and your just registered username and password."
 msgstr ""
+"Første, bør du tilmelde et brugernavn og password med deres egen (kun-"
+"Windows) klient. Efter det giver 'iax.voipbuster.com' serveren som dit lige "
+"registrerede brugernavn og kodeord."
 
 # type: Plain text
 #: packages.txt:1564
 msgid "Now you should able to dial (currently the first minute is for free)."
 msgstr ""
+"Nu skulle du være i stand til at ringe (p.t. så er det første minut gratis)."
 
 # type: Plain text
 #: packages.txt:1566
 msgid "== knb"
-msgstr ""
+msgstr "== knb"
 
 # type: Plain text
 #: packages.txt:1568
 msgid "To use knb, you need a config file like this:"
-msgstr ""
+msgstr "For at kunne bruge knb, behøver du en config fil som dette:"
 
 # type: Plain text
 #: packages.txt:1575
@@ -8924,6 +8949,12 @@ msgid ""
 "channel #channel\n"
 "----\n"
 msgstr ""
+"nick idlenick\n"
+"realname Knb\n"
+"nicks keepnick\n"
+"server irc.server.com 6667\n"
+"channel #channel\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:1579
@@ -8931,6 +8962,8 @@ msgid ""
 "where `idlenick` is used till `keepnick` is used by someone else. The bot "
 "will join to `#channel` on `irc.server.com`."
 msgstr ""
+"hvor `idlenick` bliver brugt til `keepnick` er brugt af nogen andre. The bot "
+"vil forbinde `#channel` på `irc.server.com`."
 
 # type: Plain text
 #: packages.txt:1582
@@ -8938,6 +8971,8 @@ msgid ""
 "You need to register that you're the owner for the first time. To do this, "
 "join `#channel` and"
 msgstr ""
+"Du har brug for at registreres at du er ejeren for den første gang. For at "
+"gøre dette, forbind til `#channel` og"
 
 # type: Plain text
 #: packages.txt:1585
@@ -8946,17 +8981,21 @@ msgid ""
 "!new nick!ident@host\n"
 "----\n"
 msgstr ""
+"!new nick!ident@host\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:1588
 msgid "to give access someone to the bot."
-msgstr ""
+msgstr "for at give adgang til bot."
 
 # type: Plain text
 #: packages.txt:1590
 msgid ""
 "Once `keepnick` is no longer used and knb switched to that nick, you can use"
 msgstr ""
+"Straks `keepnick` kke længere er brugt og knb skifter til det nick, kan du "
+"bruge"
 
 # type: Plain text
 #: packages.txt:1593
@@ -8965,6 +9004,8 @@ msgid ""
 "!n -yes idlenick\n"
 "----\n"
 msgstr ""
+"!n -yes idlenick\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:1597
@@ -8972,6 +9013,8 @@ msgid ""
 "to change knb's nick back to `idlenick`, so that you can change your nick "
 "back to `keepnick`."
 msgstr ""
+"for at skifte knb's nick tilbage til `idlenick`, således at du kan ændre din "
+"nick tilbage til `keepnick`."
 
 # type: Plain text
 #: packages.txt:1600
@@ -8979,11 +9022,12 @@ msgid ""
 "See the `scripts` directory on how to re-start your knb from cron "
 "automatically."
 msgstr ""
+"Se `scripts` directory om hvordan du genstarter din knb fra cron automatisk."
 
 # type: Plain text
 #: packages.txt:1602
 msgid "== kqemu"
-msgstr ""
+msgstr "== kqemu"
 
 # type: Plain text
 #: packages.txt:1607
@@ -8993,6 +9037,11 @@ msgid ""
 "problem is that you have to do this again and again after each reboot. If "
 "you hate this, then just add the following line to your `/etc/fstab`:"
 msgstr ""
+"Hvis du ønsker at bruge kqemu, har du  brug for at mounte `tmpfs` på "
+"`/dev/shm`. Dette er ikke problematisk, `qemu` udskriver en brugbar "
+"fejlbesked hvis du glemmer det. Problemet er at du må gøre dette den ene "
+"gang efter den anden efter hver genstart. Hvis du hader dette, så tilføj "
+"følgende linie til din `/etc/fstab`:"
 
 # type: Plain text
 #: packages.txt:1610
@@ -9001,22 +9050,25 @@ msgid ""
 "tmpfs            /dev/shm         tmpfs       defaults,size=144m         0   0\n"
 "----\n"
 msgstr ""
+"tmpfs            /dev/shm         tmpfs       defaults,size=144m         0 "
+"  0\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:1615
 msgid "== kvpnc"
-msgstr ""
+msgstr "== kvpnc"
 
 # type: Plain text
 #: packages.txt:1617
 msgid "Howto setup KVpnc for use without root password - sudo"
-msgstr ""
+msgstr "Howto opsætning for KVpnc for brug uden root password - sudo"
 
 # type: Plain text
 #: packages.txt:1619
 #, no-wrap
 msgid "1. Install sudo\n"
-msgstr ""
+msgstr "1. Installer sudo\n"
 
 # type: Plain text
 #: packages.txt:1622
@@ -9026,11 +9078,14 @@ msgid ""
 "+\n"
 "---------------------------------\n"
 msgstr ""
+"2. Rediger '/etc/sudoers': tilføj en komando alias\n"
+"+\n"
+"---------------------------------\n"
 
 # type: Plain text
 #: packages.txt:1625
 msgid "# Cmnd alias specification Cmnd_Alias KVPNC = /usr/bin/kvpnc"
-msgstr ""
+msgstr "# Cmnd alias specification Cmnd_Alias KVPNC = /usr/bin/kvpnc"
 
 # type: Plain text
 #: packages.txt:1628
@@ -9040,21 +9095,24 @@ msgid ""
 "ALL ALL=NOPASSWD:KVPNC\n"
 "---------------------------------\n"
 msgstr ""
+"# User privilege specification\n"
+"ALL ALL=NOPASSWD:KVPNC\n"
+"---------------------------------\n"
 
 # type: Plain text
 #: packages.txt:1631
 msgid "WARNING: Do it gently! (As always, when you edit '/etc/sudoers'.)"
-msgstr ""
+msgstr "ADVARSEL: Gør det blidt! (Som altid, når du redigerer '/etc/sudoers'.)"
 
 # type: Plain text
 #: packages.txt:1633
 msgid "== lastfmsubmitd"
-msgstr ""
+msgstr "== lastfmsubmitd"
 
 # type: Plain text
 #: packages.txt:1635
 msgid "=== Configuring Lastfmsubmitd"
-msgstr ""
+msgstr "=== Konfigurering af Lastfmsubmitd"
 
 # type: Plain text
 #: packages.txt:1639
@@ -9063,11 +9121,14 @@ msgid ""
 "the MPD server settings in `/etc/lastmp.conf` before starting the LastFM "
 "submit daemon."
 msgstr ""
+"Ændr dit LastFM brugernavn og password i `/etc/lastfmsubmitd.conf` og MPD "
+"server indstillinger i `/etc/lastmp.conf` før start af  LastFM submit "
+"daemon."
 
 # type: Plain text
 #: packages.txt:1641
 msgid "=== Starting the daemon(s)"
-msgstr ""
+msgstr "=== Start af daemon(s)"
 
 # type: Plain text
 #: packages.txt:1644
@@ -9075,6 +9136,8 @@ msgid ""
 "After configuring `lastfmsubmitd`, you should run the following commands to "
 "start the daemons:"
 msgstr ""
+"Efter konfiguration af `lastfmsubmitd`, Bør du køre følgende kommandoer for "
+"at starte daemons:"
 
 # type: Plain text
 #: packages.txt:1648
@@ -9084,6 +9147,9 @@ msgid ""
 "# service lastmp start\n"
 "-----------------------------\n"
 msgstr ""
+"# service lastfmsubmitd start\n"
+"# service lastmp start\n"
+"-----------------------------\n"
 
 # type: Plain text
 #: packages.txt:1651
