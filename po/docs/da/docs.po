@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-10-21 01:43+0200\n"
-"PO-Revision-Date: 2008-10-21 17:33+0200\n"
+"PO-Revision-Date: 2008-10-21 20:26+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -9682,7 +9682,7 @@ msgstr ""
 # type: Plain text
 #: packages.txt:1860
 msgid "== mantis"
-msgstr ""
+msgstr "== mantis"
 
 # type: Plain text
 #: packages.txt:1867
@@ -9695,6 +9695,13 @@ msgid ""
 "this can be carried out if you provide the (MySQL) superuser's credentials "
 "to the installer."
 msgstr ""
+"Du er nødt til at GIVE privilegier (i det mindste for den drifts-brugeren) "
+"for at kunne bruge denne pakke, eftersom installeringsprogrammet ikke ikke "
+"GIVER dem. Drifts-bruger kræver ALTER, SELECT, INSERT, UPDATE  og endda "
+"DELETE privilegier, omtankeløst da det ikke er omtalt af upstream. For "
+"installation, INDEX, CREATE, DELETE, og DROP privilegier er også påkrævet - "
+"dette kan udføres hvis du stiller (MYSQL) superbrugerens akkreditiver til "
+"rådighed til installeringsprogrammet."
 
 # type: Plain text
 #: packages.txt:1871
@@ -9703,28 +9710,33 @@ msgid ""
 "to prevent hijacking your bugtracker, and chage the default administrator's "
 "password."
 msgstr ""
+"Glem ikke at +rm -rf /var/www/mantis/admin+ efter en vellykket installation "
+"for at forhindre hijacking af din bugtracker, og ændre standard "
+"administrator's password."
 
 # type: Plain text
 #: packages.txt:1873
 msgid "== mb2md"
-msgstr ""
+msgstr "== mb2md"
 
 # type: Plain text
 #: packages.txt:1875
 msgid ""
 "How to convert each users mbox from /var/mail to Maildir (under /home/$user)?"
 msgstr ""
+"Hvordan konveteres hver brugeres mbox fra /var/mail til Maildir (under "
+"/home/$user)?"
 
 # type: Plain text
 #: packages.txt:1877
 msgid "If you are too lazy to read the complete documentation:"
-msgstr ""
+msgstr "Hvis du er for doven til at læse den fuldstændige dokumentation:"
 
 # type: Plain text
 #: packages.txt:1878 makepkg.txt:53
 #, no-wrap
 msgid "-----------------------------------------------\n"
-msgstr ""
+msgstr "-----------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:1886
@@ -9739,11 +9751,19 @@ msgid ""
 "done\n"
 "-----------------------------------------------\n"
 msgstr ""
+"cd /var/mail\n"
+"for i in *\n"
+"do\n"
+"\techo $i\n"
+"\tsu - $i -c \"mb2md -m\"\n"
+"\trm -v $i\n"
+"done\n"
+"-----------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:1889
 msgid "== mediawiki"
-msgstr ""
+msgstr "== mediawiki"
 
 # type: Plain text
 #: packages.txt:1892
@@ -9751,16 +9771,18 @@ msgid ""
 "After installing this package, please run '/usr/bin/mediawikisetup' as root "
 "to setup MediaWiki"
 msgstr ""
+"Efter installation af denne pakke, kør så '/usr/bin/mediawikisetup' som root "
+"for at opsætte MediaWiki"
 
 # type: Plain text
 #: packages.txt:1894
 msgid "== midpssh-http-server"
-msgstr ""
+msgstr "== midpssh-http-server"
 
 # type: Plain text
 #: packages.txt:1896
 msgid "Do not forget to open port 8080 on your firewall!"
-msgstr ""
+msgstr "Glem ikke at åbne port 8080 på din firewall!"
 
 # type: Plain text
 #: packages.txt:1902
@@ -9770,22 +9792,25 @@ msgid ""
 "-A INPUT -p tcp -m tcp --dport 8080 -j ACCEPT\n"
 "---------------------------------------------\n"
 msgstr ""
+"# midpssh-http-server\n"
+"-A INPUT -p tcp -m tcp --dport 8080 -j ACCEPT\n"
+"---------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:1907
 msgid "== monit"
-msgstr ""
+msgstr "== monit"
 
 # type: Plain text
 #: packages.txt:1909
 msgid "You can set up Monit by adding these lines to '/etc/inittab':"
-msgstr ""
+msgstr "Du kan opsætte Monit ved at tilføje disse linjer til '/etc/inittab':"
 
 # type: Plain text
 #: packages.txt:1910
 #, no-wrap
 msgid "------------------------------------------------------\n"
-msgstr ""
+msgstr "------------------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:1913
@@ -9795,11 +9820,14 @@ msgid ""
 "mo:2345:respawn:/usr/sbin/monit -Ic /etc/monit/monitrc\n"
 "------------------------------------------------------\n"
 msgstr ""
+"# Run monit in standard run-levels\n"
+"mo:2345:respawn:/usr/sbin/monit -Ic /etc/monit/monitrc\n"
+"------------------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:1916
 msgid "== motion"
-msgstr ""
+msgstr "== motion"
 
 # type: Plain text
 #: packages.txt:1919
@@ -9807,6 +9835,8 @@ msgid ""
 "You should edit the settings: videodevice, input, norm, frequency, width, "
 "height and target_dir in '/etc/motion.conf'"
 msgstr ""
+"Du bør redigere indstillingerne: videodevice, input, norm, frequency, width, "
+"height og target_dir i '/etc/motion.conf'"
 
 # type: Plain text
 #: packages.txt:1922
@@ -9814,11 +9844,14 @@ msgid ""
 "If the file already exists, it wont be overwritten by the package while "
 "upgrading. You can refer '/etc/motion-dist.conf' for configuring motion."
 msgstr ""
+"Hvis filen allerede eksisterer, vil den ikke blive overskrevet af pakken "
+"under opgradering. Du kan se på '/etc/motion-dist.conf' for konfiguration af "
+"motion."
 
 # type: Plain text
 #: packages.txt:1924
 msgid "== munin"
-msgstr ""
+msgstr "== munin"
 
 # type: Plain text
 #: packages.txt:1928
@@ -9827,6 +9860,9 @@ msgid ""
 "Because of this munin service will not start if you have it installed "
 "before, so you have to correct this by issuing these commands:"
 msgstr ""
+"Fra munin-1.2.5-2 bruger vi ikke længere en tilfældig uid/gid, men tilegner "
+"en. På grund af det vil munin service ikke starte hvis du har haft det "
+"installeret før, så det må rette dette ved at udstede disse kommandoer:"
 
 # type: Plain text
 #: packages.txt:1936
@@ -9840,6 +9876,13 @@ msgid ""
 "chown -R munin:munin /var/run/munin\n"
 "------------\n"
 msgstr ""
+"groupmod -g 47 munin\n"
+"usermod -u 47 -g 47 munin\n"
+"chown -R munin:munin /var/lib/munin\n"
+"chown -R munin:munin /var/www/html/munin\n"
+"chown -R munin:munin /var/log/munin\n"
+"chown -R munin:munin /var/run/munin\n"
+"------------\n"
 
 # type: Plain text
 #: packages.txt:1940
@@ -9847,16 +9890,18 @@ msgid ""
 "You should chown any other munin-owned stuff you may have lying around, "
 "these are only the default ones."
 msgstr ""
+"Du bør chown ethvert andet munin-ejet materiale du må have liggende omkring, "
+"disse er kun standard ting."
 
 # type: Plain text
 #: packages.txt:1942
 msgid "== mythtv"
-msgstr ""
+msgstr "== mythtv"
 
 # type: Plain text
 #: packages.txt:1944
 msgid "You can configure MythTV this way:"
-msgstr ""
+msgstr "Du kan konfigure MythTV på denne måde:"
 
 # type: Plain text
 #: packages.txt:1951
@@ -9869,6 +9914,14 @@ msgid ""
 "5. Use `mythfilldatabase` to fill in your database.\n"
 "6. Finally run `mythfrontend` and have fun!\n"
 msgstr ""
+"1. Start mysql service og opsæt mysql database password med `mysqladmin -u "
+"root password mysqlpassword`.\n"
+"2. Opsæt initialet database med `mysql -u root -p < "
+"/usr/share/mythtv/mc.sql` og skriv mysqlpassword.\n"
+"3. Kør `sudo mythtv-setup` for at tune dit tvkort.\n"
+"4. Start mythtv backend med `sudo service mythtv start`.\n"
+"5. Brug `mythfilldatabase` til at fylde det ind i din database.\n"
+"6. Til slut kør `mythfrontend` og hav sjov!\n"
 
 # type: Plain text
 #: packages.txt:1954
@@ -9876,11 +9929,13 @@ msgid ""
 "For more information see MythTV http://www.mythtv.org/modules.php?"
 "name=MythInstall[documentation]."
 msgstr ""
+"For mere information se MythTV "
+"http://www.mythtv.org/modules.php?name=MythInstall[dokumentation]."
 
 # type: Plain text
 #: packages.txt:1956
 msgid "== nautilus-share"
-msgstr ""
+msgstr "== nautilus-deling"
 
 # type: Plain text
 #: packages.txt:1959
@@ -9888,17 +9943,20 @@ msgid ""
 "Here is an excerpt from the Samba documentation explaining what you need to "
 "do to make this work:"
 msgstr ""
+"Her er et uddrag fra Samba-dokumentationen der forklarer hvad du har brug "
+"for at få det til at virke:"
 
 # type: Plain text
 #: packages.txt:1960
 #, no-wrap
 msgid "------------------------------------------------------------------------------------------------------------\n"
-msgstr ""
+msgstr "----------------------------------------------------------------------------"
+"--------------------------------\n"
 
 # type: Plain text
 #: packages.txt:1962
 msgid "USERSHARE"
-msgstr ""
+msgstr "USERSHARE"
 
 # type: Plain text
 #: packages.txt:1966
@@ -9907,17 +9965,22 @@ msgid ""
 "non-root users to add user define shares to be exported using the \"net "
 "usershare\" commands."
 msgstr ""
+"Startende med version 3.0.23, så understøtter en Sambaserver nu evnen for "
+"ikke-root brugere at kunne tilføje bruger definerbare shares for "
+"eksportering af \"net usershare\" kommandoerne."
 
 # type: Plain text
 #: packages.txt:1969
 msgid ""
 "To set this up, first set up your smb.conf by adding to the [global] section:"
 msgstr ""
+"For at sætte det op, sæt først op din smb.conf by ved at tilføje dette til "
+"[global] afsnit:"
 
 # type: Plain text
 #: packages.txt:1971
 msgid "usershare path = /home/usershares"
-msgstr ""
+msgstr "usershare path = /home/usershares"
 
 # type: Plain text
 #: packages.txt:1980
@@ -9931,11 +9994,19 @@ msgid ""
 "usershares you will allow by adding to the [global] section of smb.conf a "
 "line such as:"
 msgstr ""
+"Som det næste skab folderen /home/usershares, ændr ejeren til root og sæt "
+"group owner til UNIX gruppen som skal have lov til at skabe usershares, for "
+"eksempel \"users\" group. Sæt tilladelserne på /home/usershares til 01770. "
+"(Ejer og gruppe har alle tilladelser, ingen adgang for andre, plus sticky "
+"bit, hvilket betyder at en fil i denne folder kun kan omdøbes eller blive "
+"slettet af ejeren af filen).  Til slut, fortæl smbd hvor mange usershares du "
+"vil tillade at der tilføjes til [global] afsnit af smb.conf en linje som "
+"f.eks:"
 
 # type: Plain text
 #: packages.txt:1982
 msgid "usershare max shares = 100"
-msgstr ""
+msgstr "usershare max shares = 100"
 
 # type: Plain text
 #: packages.txt:1985
@@ -9943,11 +10014,14 @@ msgid ""
 "to allow 100 usershare definitions. Now, members of the UNIX group \"users\" "
 "can create user defined shares on demand using the commands below."
 msgstr ""
+"For at tillade 100 usershare definitioner. Nu, kan medlemmer af UNIX gruppen "
+"\"users\" skabe bruger definerede shares til enhver tid ved at benytte "
+"kommandoerne neden under."
 
 # type: Plain text
 #: packages.txt:1987
 msgid "The usershare commands are:"
-msgstr ""
+msgstr "Usershare kommandoerne er:"
 
 # type: Plain text
 #: packages.txt:1992
@@ -9959,6 +10033,15 @@ msgid ""
 "net usershare list [-l|--long] [wildcard sharename] - to list user defined shares.\n"
 "------------------------------------------------------------------------------------------------------------\n"
 msgstr ""
+"net usershare add sharename path [comment] [acl] [guest_ok=[y|n]] - til at "
+"tilføje eller ændre en bruger defineret share.\n"
+"net usershare delete sharename - til at slette en bruger defineret share.\n"
+"net usershare info [-l|--long] [wildcard sharename] - til at udskrive info "
+"om en bruger defineret share.\n"
+"net usershare list [-l|--long] [wildcard sharename] - til at opliste bruger "
+"defineret shares.\n"
+"----------------------------------------------------------------------------"
+"--------------------------------\n"
 
 # type: Plain text
 #: packages.txt:1996
