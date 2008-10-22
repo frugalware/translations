@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-10-22 01:42+0200\n"
-"PO-Revision-Date: 2008-10-22 17:45+0200\n"
+"PO-Revision-Date: 2008-10-22 19:53+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -10258,6 +10258,12 @@ msgid ""
 "unencrypted in a wired network. This is much more secure. Set up the socks "
 "proxy on localhost:8080:"
 msgstr ""
+"Mange bærbare brugere har følgende problem: de må bruge et ukrypteret "
+"trådløst lan og de ønsker at gå ind på webservere som ikke understøtter "
+"https.  Der er en nem løsning for dette: du vidregiver data til en server i "
+"en ssh tunnel, derefter kan data blive vidregivet til den ukryterede server "
+"i et trådet netværk. Dette er meget mere sikkert. Opsæt socks proxy på "
+"localhost:8080:"
 
 # type: Plain text
 #: packages.txt:2094
@@ -10266,6 +10272,8 @@ msgid ""
 "$ ssh -D 8080 server.com\n"
 "--------------------------------------\n"
 msgstr ""
+"$ ssh -D 8080 server.com\n"
+"--------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2099
@@ -10274,16 +10282,19 @@ msgid ""
 "select `Manual proxy configuration` and then set `SOCKS Host` to localhost, "
 "`Port` to 8080."
 msgstr ""
+"Derefter konfigurer din webbrowser til at benytte proxy, for eksempel i "
+"firefox, vælg `Manual proxy konfiguration` og sæt så `SOCKS Host` til "
+"localhost, `Port` til 8080."
 
 # type: Plain text
 #: packages.txt:2101
 msgid "NOTE: Don't forget to clear other proxy fields! (HTTP, SSL, FTP, etc.)"
-msgstr ""
+msgstr "NOTE: Glem ikke at fjerne andre proxy felter! (HTTP, SSL, FTP, etc.)"
 
 # type: Plain text
 #: packages.txt:2103
 msgid "== openttd"
-msgstr ""
+msgstr "== openttd"
 
 # type: Plain text
 #: packages.txt:2107
@@ -10292,6 +10303,9 @@ msgid ""
 "Windows to play the game. You have to manually copy the following files to '/"
 "usr/share/openttd/data/'"
 msgstr ""
+"Det kræver datafilerne af originalen Transport Tycoon Deluxe for Windows for "
+"at spille spillet. Du er nødt til at manuelt at kopiere følgende filer til "
+"'/usr/share/openttd/data/'"
 
 # type: Plain text
 #: packages.txt:2115
@@ -10305,6 +10319,13 @@ msgid ""
 "trgtr.grf\n"
 "----------\n"
 msgstr ""
+"sample.cat\n"
+"trg1r.grf\n"
+"trgcr.grf\n"
+"trghr.grf\n"
+"trgir.grf\n"
+"trgtr.grf\n"
+"----------\n"
 
 # type: Plain text
 #: packages.txt:2119
@@ -10312,12 +10333,14 @@ msgid ""
 "If you want to use the included scenarios, run openttd with the following "
 "command:"
 msgstr ""
+"Hvis du vil gerne at benytte de iberegnede scenarioer, kør openttd med "
+"følgende kommando:"
 
 # type: Plain text
 #: packages.txt:2120
 #, no-wrap
 msgid "-------------------------------------------------------------------\n"
-msgstr ""
+msgstr "-------------------------------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2122
@@ -10326,11 +10349,13 @@ msgid ""
 "$ openttd -g openttd -g /usr/share/openttd/scenario/<scenario_name>\n"
 "-------------------------------------------------------------------\n"
 msgstr ""
+"$ openttd -g openttd -g /usr/share/openttd/scenario/<scenario_navn>\n"
+"-------------------------------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2125
 msgid "== pawm"
-msgstr ""
+msgstr "== pawm"
 
 # type: Plain text
 #: packages.txt:2130
@@ -10340,21 +10365,25 @@ msgid ""
 "with \"app\" and append an alphanumerical phrase of your choice to it. Then, "
 "write the file structure as follows:"
 msgstr ""
+"Kopier /etc/pawm.conf til $HOME/.pawm for dine egne lokale ændringer. Hvis "
+"du ønsker ikoner på din desktop, tilføj en fil til din $HOME/.pawm folderen "
+"der starter med \"app\" og tilføj en alfanumerical frase af dit eget valg til "
+"det. Derefter, skriv filstrukturen som følger:"
 
 # type: Plain text
 #: packages.txt:2135
 msgid "<icon name> <x position> <y position> <name to display> <command>"
-msgstr ""
+msgstr "<ikon navn> <x position> <y position> <navn der skal vises> <komando>"
 
 # type: Plain text
 #: packages.txt:2137 makepkg.txt:280
 msgid "Example:"
-msgstr ""
+msgstr "Eksempel:"
 
 # type: Plain text
 #: packages.txt:2142
 msgid "firefox.xpm 40 40 firefox firefox"
-msgstr ""
+msgstr "firefox.xpm 40 40 firefox firefox"
 
 # type: Plain text
 #: packages.txt:2146
@@ -10363,11 +10392,14 @@ msgid ""
 "takes the files from /usr/share/pixmaps. If I knew how to change this path "
 "to a directory the user has, I would."
 msgstr ""
+"Andre ting at huske, du kan kun bruge xpm filer for denne metode, og det "
+"tager filene fra /usr/share/pixmaps. Hvis jeg vidste hvordan man ændrer "
+"stien til en folder brugeren har, ville jeg gøre det."
 
 # type: Plain text
 #: packages.txt:2148
 msgid "== pekwm"
-msgstr ""
+msgstr "== pekwm"
 
 # type: Plain text
 #: packages.txt:2154
