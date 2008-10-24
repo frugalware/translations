@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-22 01:42+0200\n"
-"PO-Revision-Date: 2008-10-22 19:53+0200\n"
+"POT-Creation-Date: 2008-10-24 01:42+0200\n"
+"PO-Revision-Date: 2008-10-24 17:16+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -10304,8 +10304,8 @@ msgid ""
 "usr/share/openttd/data/'"
 msgstr ""
 "Det kræver datafilerne af originalen Transport Tycoon Deluxe for Windows for "
-"at spille spillet. Du er nødt til at manuelt at kopiere følgende filer til "
-"'/usr/share/openttd/data/'"
+"at spille spillet. Du er nødt til at manuelt at kopiere følgende filer til '/"
+"usr/share/openttd/data/'"
 
 # type: Plain text
 #: packages.txt:2115
@@ -10367,8 +10367,8 @@ msgid ""
 msgstr ""
 "Kopier /etc/pawm.conf til $HOME/.pawm for dine egne lokale ændringer. Hvis "
 "du ønsker ikoner på din desktop, tilføj en fil til din $HOME/.pawm folderen "
-"der starter med \"app\" og tilføj en alfanumerical frase af dit eget valg til "
-"det. Derefter, skriv filstrukturen som følger:"
+"der starter med \"app\" og tilføj en alfanumerical frase af dit eget valg "
+"til det. Derefter, skriv filstrukturen som følger:"
 
 # type: Plain text
 #: packages.txt:2135
@@ -10410,6 +10410,12 @@ msgid ""
 "session, while the method pekwm uses starts everytime you restart/start "
 "pekwm. Use it well. You can find an example below:"
 msgstr ""
+"Vær sikker på at få lavet din egen fil i $HOME/.pekwm/autostart hvis du "
+"bruger pekwm-session til at auto-lancere kommandoer når du starter op. Jeg "
+"ved at pekwm har en startfil for dette, men min metode lancerer det *Først* "
+"ved starten af din session, mens metoden pekwm bruger er at den starter "
+"hvergang du genstarter/starter pekwm. Brug det bare. Du kan finde et "
+"eksempel nedenfor:"
 
 # type: Plain text
 #: packages.txt:2157
@@ -10417,11 +10423,13 @@ msgid ""
 "dbus-session --exit-with-session --sh-syntax & feh --bg-scale \"$HOME/.foo/"
 "bar\" &"
 msgstr ""
+"dbus-session --exit-with-session --sh-syntax & feh --bg-scale "
+"\"$HOME/.foo/bar\" &"
 
 # type: Plain text
 #: packages.txt:2159
 msgid "== perlpanel"
-msgstr ""
+msgstr "== perlpanel"
 
 # type: Plain text
 #: packages.txt:2165
@@ -10432,6 +10440,11 @@ msgid ""
 "and what they do. If you find errors in this documentation, then please "
 "report it and I will look into it."
 msgstr ""
+"Jeg har med vilje udeladt nogle perlmoduller fra afhængighedstabel, fordi de "
+"ikke behøves for at køre perlpanel og slæbe en masse ind i GNOME eller "
+"andet materiale du måske ikke ønsker. Nedenfor vil du finde en liste af "
+"disse moduller og hvad de gør. Hvis du finder fejl i denne dokumentation, så "
+"rapporter det venligst og jeg vil se på det."
 
 # type: Plain text
 #: packages.txt:2169
@@ -10440,16 +10453,19 @@ msgid ""
 "gnome plugin interfaces for perlpanel libgnomeui - for full libglade support "
 "in perlpanel"
 msgstr ""
+"perl-xmms - perlpanel plugin interface til xmms perl-gnome2-vfs - diverse "
+"gnome plugin interfaces for perlpanel libgnomeui - for full libglade "
+"understøttelse i perlpanel"
 
 # type: Plain text
 #: packages.txt:2171
 msgid "== php"
-msgstr ""
+msgstr "== php"
 
 # type: Plain text
 #: packages.txt:2173
 msgid "You should set"
-msgstr ""
+msgstr "Du bør sætte"
 
 # type: Plain text
 #: packages.txt:2176
@@ -10458,16 +10474,18 @@ msgid ""
 "cgi.fix_pathinfo=1\n"
 "------------------\n"
 msgstr ""
+"cgi.fix_pathinfo=1\n"
+"------------------\n"
 
 # type: Plain text
 #: packages.txt:2179
 msgid "in '/etc/php.ini' in order to use php-cgi."
-msgstr ""
+msgstr "i '/etc/php.ini' for at kunne bruge php-cgi."
 
 # type: Plain text
 #: packages.txt:2181
 msgid "== phpbb"
-msgstr ""
+msgstr "== phpbb"
 
 # type: Plain text
 #: packages.txt:2184
@@ -10475,16 +10493,18 @@ msgid ""
 "After installing this package, please run '/usr/bin/phpbbsetup' as root to "
 "setup phpBB"
 msgstr ""
+"Efter installarion af denne pakke, kør så '/usr/bin/phpbbsetup' som root for "
+"at opsætte phpBB"
 
 # type: Plain text
 #: packages.txt:2186
 msgid "After upgrading, make sure to run the database update script"
-msgstr ""
+msgstr "Efter opgradering, så husk at køre databaseopdateringsscriptet"
 
 # type: Plain text
 #: packages.txt:2188
 msgid "== pootle"
-msgstr ""
+msgstr "== pootle"
 
 # type: Plain text
 #: packages.txt:2190
@@ -10497,11 +10517,13 @@ msgid ""
 "Pootle provides a separate webserver, after starting it, you should be able "
 "to reach it at http://127.0.0.1:8080/."
 msgstr ""
+"Pootle stiller en særskilt webserver til rådighed, efter det er startet, bør "
+"du kunne tilgå det ved http://127.0.0.1:8080/."
 
 # type: Plain text
 #: packages.txt:2195
 msgid "=== Creating users"
-msgstr ""
+msgstr "=== Skabe brugere"
 
 # type: Plain text
 #: packages.txt:2201
@@ -10512,16 +10534,21 @@ msgid ""
 "account. Finally edit the configuration file again and comment the 'startup' "
 "user."
 msgstr ""
+"Ingen kan logge ind i Pootle som standard. Du skal redigere "
+"`/usr/lib/python2.5/site-packages/Pootle/users.prefs`, og udkommentere "
+"'startup' bruger. Dets password er også 'startup', . Derefterlog ind via "
+"internetinterfacet, skab en konto. Til slut, rediger konfigurationsfilen "
+"igen og kommenter 'startup' brugeren."
 
 # type: Plain text
 #: packages.txt:2203
 msgid "== postfix"
-msgstr ""
+msgstr "== postfix"
 
 # type: Plain text
 #: packages.txt:2205
 msgid "=== Using a relay host"
-msgstr ""
+msgstr "=== Bruge en relay host"
 
 # type: Plain text
 #: packages.txt:2208
@@ -10529,17 +10556,19 @@ msgid ""
 "These are the basic steps to set up Postfix to use SMTP Authentication to "
 "send mail through a relay host."
 msgstr ""
+"Disse er de grundlæggende trin for at opsætte Postfix til at bruge SMTP "
+"Authentication for at sende mail gennem en relay host."
 
 # type: Plain text
 #: packages.txt:2210
 msgid "Set up a password maps file (`/etc/postfix/sasl_passwd`) as follows:"
-msgstr ""
+msgstr "Opsætte en password maps fil (`/etc/postfix/sasl_passwd`) som følger:"
 
 # type: Plain text
 #: packages.txt:2211 packages.txt:2215 packages.txt:2223 packages.txt:2232
 #, no-wrap
 msgid "------\n"
-msgstr ""
+msgstr "------\n"
 
 # type: Plain text
 #: packages.txt:2213
@@ -10548,6 +10577,8 @@ msgid ""
 "mail.ispserver.com    username:password\n"
 "------\n"
 msgstr ""
+"mail.ispserver.com    brugernavn:password\n"
+"------\n"
 
 # type: Plain text
 #: packages.txt:2219
@@ -10558,11 +10589,15 @@ msgid ""
 "# postmap /etc/postfix/sasl_passwd\n"
 "------\n"
 msgstr ""
+"# chown root:root /etc/postfix/sasl_passwd\n"
+"# chmod 600 /etc/postfix/sasl_passwd\n"
+"# postmap /etc/postfix/sasl_passwd\n"
+"------\n"
 
 # type: Plain text
 #: packages.txt:2222
 msgid "Append the following lines to `/etc/postfix/main.cf`:"
-msgstr ""
+msgstr "Tilføj følgende linjer til `/etc/postfix/main.cf`:"
 
 # type: Plain text
 #: packages.txt:2228
@@ -10574,11 +10609,16 @@ msgid ""
 "smtp_sasl_security_options =\n"
 "------\n"
 msgstr ""
+"relayhost = mail.ispserver.com\n"
+"smtp_sasl_auth_enable = yes\n"
+"smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd\n"
+"smtp_sasl_security_options =\n"
+"------\n"
 
 # type: Plain text
 #: packages.txt:2231
 msgid "Finally reload postfix:"
-msgstr ""
+msgstr "Til slut reload postfix:"
 
 # type: Plain text
 #: packages.txt:2234
@@ -10587,16 +10627,18 @@ msgid ""
 "# postfix reload\n"
 "------\n"
 msgstr ""
+"# postfix reload\n"
+"------\n"
 
 # type: Plain text
 #: packages.txt:2237
 msgid "That should do it!"
-msgstr ""
+msgstr "Dette burde gøre det!"
 
 # type: Plain text
 #: packages.txt:2239
 msgid "== postfixadmin"
-msgstr ""
+msgstr "== postfixadmin"
 
 # type: Plain text
 #: packages.txt:2245
@@ -10607,22 +10649,27 @@ msgid ""
 "should also take care of configuring apache to be able to use the web-based "
 "interface."
 msgstr ""
+"Denne pakke afhænger af en rigtig installation af postfix's virtual tables "
+"og det skal konfigureres før brug. Husk også at læse "
+"+/var/www/postfixadmin/INSTALL.TXT+ for at færdiggøre opsætningen eller "
+"opgraderingen. Du bør også tage hånd om at konfiguration af apache for at "
+"kunne benytte det net-baserede interface."
 
 # type: Plain text
 #: packages.txt:2247
 msgid "== postgrey"
-msgstr ""
+msgstr "== postgrey"
 
 # type: Plain text
 #: packages.txt:2249
 msgid "To use postgrey, put something along the lines of"
-msgstr ""
+msgstr "For at bruge postgrey, indsæt noget ligende langs linierne af"
 
 # type: Plain text
 #: packages.txt:2250 packages.txt:2616
 #, no-wrap
 msgid "-------------------------------------------------\n"
-msgstr ""
+msgstr "-------------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2255
@@ -10634,16 +10681,21 @@ msgid ""
 "        check_policy_service inet:127.0.0.1:60000\n"
 "-------------------------------------------------\n"
 msgstr ""
+"    smtpd_recipient_restrictions =\n"
+"        ...\n"
+"        reject_unauth_destination\n"
+"        check_policy_service inet:127.0.0.1:60000\n"
+"-------------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2258
 msgid "in your /etc/postfix/main.cf (postfix 2.1 or newer is required.)"
-msgstr ""
+msgstr "i din /etc/postfix/main.cf (postfix 2.1 eller nyere er påkrævet.)"
 
 # type: Plain text
 #: packages.txt:2260
 msgid "== pptpd"
-msgstr ""
+msgstr "== pptpd"
 
 # type: Plain text
 #: packages.txt:2268
@@ -10657,6 +10709,15 @@ msgid ""
 "Also you could use ssh+pppd, but that's rather problematic on platforms\n"
 "other than Unix.\n"
 msgstr ""
+"1. Forord\n"
+"+\n"
+"Jeg blev spurgt om at opsætte VPN ved brug af PPTP. En meget sikker måde at "
+"opsætte det på er at bruge\n"
+"IPSec, flere detaljer\n"
+"http://www.schneier.com/paper-pptpv2.html[her].\n"
+"Du kunne også bruge ssh+pppd, men det er mere problematisk på andre "
+"platforme\n"
+"end Unix\n"
 
 # type: Plain text
 #: packages.txt:2280
@@ -10675,6 +10736,20 @@ msgid ""
 "+\n"
 "--------------------\n"
 msgstr ""
+"2. Opsætning af server\n"
+"+\n"
+"Det store problem her er at mest en forældet HOWTO startende med at patche "
+"din\n"
+"kerne og ppp. Dette er ikke længere nødvendigt!\n"
+"+\n"
+"Minimumskrav: du behøver kerne>=2.6.15 eller nyere (Frugalware 0.4 eller "
+"højere er OK).\n"
+"Du behøver også ppp>=2.4.2.\n"
+"+\n"
+"Sandsynligvis er disse allerede installeret på dit system, lad os se den nye\n"
+"pakke: pptpd. Installer det med den sædvanlige\n"
+"+\n"
+"--------------------\n"
 
 # type: Plain text
 #: packages.txt:2282
@@ -10683,6 +10758,8 @@ msgid ""
 "# pacman-g2 -S pptpd\n"
 "--------------------\n"
 msgstr ""
+"# pacman-g2 -S pptpd\n"
+"--------------------\n"
 
 # type: Plain text
 #: packages.txt:2288
@@ -10695,6 +10772,12 @@ msgid ""
 "+\n"
 "-------------------------------------\n"
 msgstr ""
+"+\n"
+"Sandsynligvis bliver dette gjort hvis du er ved at læse denne HOWTO :-)\n"
+"+\n"
+"Her kommer min '/etc/pptp.conf':\n"
+"+\n"
+"-------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2294
@@ -10707,6 +10790,12 @@ msgid ""
 "remoteip 10.0.0.89-127\n"
 "-------------------------------------\n"
 msgstr ""
+"$ grep -v '^\\(#\\|$\\)' /etc/pptpd.conf\n"
+"option /etc/ppp/options.pptpd\n"
+"logwtmp\n"
+"localip 10.0.0.88\n"
+"remoteip 10.0.0.89-127\n"
+"-------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2301
@@ -10720,6 +10809,13 @@ msgid ""
 "+\n"
 "--------------------------------------------\n"
 msgstr ""
+"+\n"
+"10.0.0.88 er serverens interne adresse, 10.0.0.89-127 er område\n"
+"der kan bruges af pptp klienterne.\n"
+"+\n"
+"Derefter lad os se på den henviste '/etc/ppp/options.pptpd':\n"
+"+\n"
+"--------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2316
@@ -10741,10 +10837,25 @@ msgid ""
 "nologfd\n"
 "---------------------------------------------\n"
 msgstr ""
+"$ grep -v '^\\(#\\|$\\)' /etc/ppp/options.pptpd\n"
+"name pptpd\n"
+"refuse-pap\n"
+"refuse-chap\n"
+"refuse-mschap\n"
+"require-mschap-v2\n"
+"require-mppe-128\n"
+"proxyarp\n"
+"debug\n"
+"lock\n"
+"nobsdcomp\n"
+"novj\n"
+"novjccomp\n"
+"nologfd\n"
+"---------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2322
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "+\n"
 "After everything works fine, you can remove the \"debug\" line from the config.\n"
@@ -10752,7 +10863,13 @@ msgid ""
 "Then add at least one user:\n"
 "+\n"
 "-------------------------------------------------------------\n"
-msgstr "--------------------------------------------------------------------------\n"
+msgstr ""
+"+\n"
+"Efter at alt virker fint, kan du fjerne \"debug\" linjen fra config.\n"
+"+\n"
+"Derefter tilføj i det mindste en bruger:\n"
+"+\n"
+"-------------------------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2326
@@ -10763,6 +10880,10 @@ msgid ""
 "mylogin           *      stupidpassword          *\n"
 "-------------------------------------------------------------\n"
 msgstr ""
+"# cat /etc/ppp/chap-secrets\n"
+"## client        server  secret                  IP addresses\n"
+"mylogin           *      stupidpassword          *\n"
+"-------------------------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2334
@@ -10777,6 +10898,15 @@ msgid ""
 "+\n"
 "---------------------------------------------\n"
 msgstr ""
+"+\n"
+"Resten er om at tillade pptp på firewall (Jeg går ud fra at du bruger\n"
+"standard Frugalware konfiguration: INPUT er på DROP som standard, men "
+"FORWARD er\n"
+"tilladt, OUTPUT også.)\n"
+"+\n"
+"Tilføj følgende 2 linier til filter section af '/etc/sysconfig/firewall':\n"
+"+\n"
+"---------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2337
@@ -10786,6 +10916,9 @@ msgid ""
 "-A INPUT -p tcp -m tcp --dport 1723 -j ACCEPT\n"
 "---------------------------------------------\n"
 msgstr ""
+"-A INPUT -p gre -j ACCEPT\n"
+"-A INPUT -p tcp -m tcp --dport 1723 -j ACCEPT\n"
+"---------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2343
@@ -10798,14 +10931,23 @@ msgid ""
 "+\n"
 "------------------------------------\n"
 msgstr ""
+"+\n"
+"Hvis du vil tillade en klient at tilgå Internet via denne pptp server, "
+"tilføj\n"
+"følgende til nat section af den samme fil (ændr ethX til det korrekte\n"
+"network interface):\n"
+"+\n"
+"------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2345
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "-A POSTROUTING -o ethX -j MASQUERADE\n"
 "------------------------------------\n"
-msgstr "--------------------------------------------------------------------------\n"
+msgstr ""
+"-A POSTROUTING -o ethX -j MASQUERADE\n"
+"------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2349
@@ -10816,40 +10958,46 @@ msgid ""
 "+\n"
 "--------------------------\n"
 msgstr ""
+"+\n"
+"Derefter tjek om du har PPP understøttelse i kernen aktiveret:\n"
+"+\n"
+"--------------------------\n"
 
 # type: Plain text
 #: packages.txt:2351
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "# lsmod | grep ppp_generic\n"
 "--------------------------\n"
 msgstr ""
-"# pacman-g2 -S sendmail\n"
-"-----------------------\n"
+"# lsmod | grep ppp_generic\n"
+"--------------------------\n"
 
 # type: Plain text
 #: packages.txt:2355
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "+\n"
 "If there is no output, enable it:\n"
 "+\n"
 "----------------------------------------------\n"
 msgstr ""
-"2. Udpak det\n"
 "+\n"
-"--------------------------------------------\n"
+"Hvis der ikke er noget output, aktiver det:\n"
+"+\n"
+"----------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2358
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "# modprobe ppp_generic\n"
 "# echo \"ppp_generic\" >> /etc/sysconfig/modules\n"
 "----------------------------------------------\n"
 msgstr ""
-"# pacman-g2 -Sy compiz-emerald compiz-emerald-themes\n"
-"--------------------------------------------------\n"
+"# modprobe ppp_generic\n"
+"# echo \"ppp_generic\" >> /etc/sysconfig/modules\n"
+"----------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2362
@@ -10860,6 +11008,10 @@ msgid ""
 "+\n"
 "------------------------------------\n"
 msgstr ""
+"+\n"
+"Nu er vi parate til at starte:\n"
+"+\n"
+"------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2364
@@ -10868,6 +11020,8 @@ msgid ""
 "# pptpd -f -o /etc/ppp/options.pptpd\n"
 "------------------------------------\n"
 msgstr ""
+"# pptpd -f -o /etc/ppp/options.pptpd\n"
+"------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2370
@@ -10876,6 +11030,10 @@ msgid ""
 "background.  + Later you can put this to your '/etc/rc.d/rc.local'. Debug "
 "messages will appear in '/var/log/messages' if you're interested in them."
 msgstr ""
+"+ Hvis ingen fejlbeskeder bliver rapporteret, udelad -f valgmulighed så vil "
+"det gå i baggrunden.  + Senere kan du indsætte dette i din "
+"'/etc/rc.d/rc.local'. Fejl beskeder vil dukke op i '/var/log/messages' hvis "
+"du er interesseret i dem."
 
 # type: Plain text
 #: packages.txt:2375
@@ -10887,6 +11045,11 @@ msgid ""
 "+\n"
 "-------------------\n"
 msgstr ""
+"3. Klientside\n"
+"+\n"
+"Installer den nødvendige \"pptp\" pakke:\n"
+"+\n"
+"-------------------\n"
 
 # type: Plain text
 #: packages.txt:2377
@@ -10895,6 +11058,8 @@ msgid ""
 "# pacman-g2 -S pptp\n"
 "-------------------\n"
 msgstr ""
+"# pacman-g2 -S pptp\n"
+"-------------------\n"
 
 # type: Plain text
 #: packages.txt:2390
@@ -10914,6 +11079,21 @@ msgid ""
 "+\n"
 "---------------------------------------------\n"
 msgstr ""
+"+\n"
+"De fleste howto foreslår pptpconfig (http://pptpclient.sourceforge.net/) "
+"værktøj,\n"
+"Det er skrevet i PHP og bruger GTK+2. Du vil ikke bruge grafiske redskaber\n"
+"lokalt (og installere XOrg) for at administrere din maskine, gør du?\n"
+"+\n"
+"Vi kan gøre det ved håndkraft, det er ikke så vanskeligt.\n"
+"+\n"
+"Du kan give hver tunnel et navn som du skaber, jeg vil her bruge \"mytunnel\" "
+"navn.\n"
+"+\n"
+"Fyr op under din favorit editor og skab /etc/ppp/peers/mytunnel fil med\n"
+"følgende indhold:\n"
+"+\n"
+"---------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2397
@@ -10927,6 +11107,13 @@ msgid ""
 "require-mppe\n"
 "---------------------------------------------\n"
 msgstr ""
+"$ grep -v '^\\(#\\|$\\)' /etc/ppp/peers/mytunnel\n"
+"name mylogin\n"
+"remotename PPTP\n"
+"file /etc/ppp/options.pptp\n"
+"pty \"pptp IP_OF_THE_SERVER --nolaunchpppd \"\n"
+"require-mppe\n"
+"---------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2401
@@ -10937,16 +11124,20 @@ msgid ""
 "+\n"
 "--------------------------\n"
 msgstr ""
+"+\n"
+"Din /etc/ppp/chap-secrets bør indeholde følgende linje:\n"
+"+\n"
+"--------------------------\n"
 
 # type: Plain text
 #: packages.txt:2403
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "mylogin  PPTP    secret  *\n"
 "--------------------------\n"
 msgstr ""
-"fst_root=~/git\n"
-"-----------------------------\n"
+"mylogin  PPTP    secret  *\n"
+"--------------------------\n"
 
 # type: Plain text
 #: packages.txt:2407
@@ -10957,6 +11148,11 @@ msgid ""
 "+\n"
 "---------------------------------------------------------------------------------\n"
 msgstr ""
+"+\n"
+"Vi er parate til at starte klienten:\n"
+"+\n"
+"----------------------------------------------------------------------------"
+"-----\n"
 
 # type: Plain text
 #: packages.txt:2409
@@ -10965,6 +11161,10 @@ msgid ""
 "# pppd pty 'pptp server --nolaunchpppd' call mytunnel debug dump logfd 2 nodetach\n"
 "---------------------------------------------------------------------------------\n"
 msgstr ""
+"# pppd pty 'pptp server --nolaunchpppd' call mytunnel debug dump logfd 2 "
+"nodetach\n"
+"----------------------------------------------------------------------------"
+"-----\n"
 
 # type: Plain text
 #: packages.txt:2413
@@ -10975,6 +11175,11 @@ msgid ""
 "+\n"
 "------------------------------------------------------------------\n"
 msgstr ""
+"+\n"
+"En masse fejlbeskeder vil blive udskrevet, Tjek efter på en anden konsol om "
+"du fik et nyt pppx interface eller ej:\n"
+"+\n"
+"------------------------------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2422
@@ -10990,6 +11195,15 @@ msgid ""
 "        RX bytes:70 (70.0 b)  TX bytes:76 (76.0 b)\n"
 "------------------------------------------------------------------\n"
 msgstr ""
+"# ifconfig ppp0\n"
+"ppp0    Link encap:Point-to-Point Protocol\n"
+"        inet addr:10.0.0.89  P-t-P:10.0.0.88  Mask:255.255.255.255\n"
+"        UP POINTOPOINT RUNNING NOARP MULTICAST  MTU:996  Metric:1\n"
+"        RX packets:7 errors:0 dropped:0 overruns:0 frame:0\n"
+"        TX packets:7 errors:0 dropped:0 overruns:0 carrier:0\n"
+"        collisions:0 txqueuelen:3\n"
+"        RX bytes:70 (70.0 b)  TX bytes:76 (76.0 b)\n"
+"------------------------------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2427
@@ -11001,6 +11215,12 @@ msgid ""
 "+\n"
 "-----------------------------------------------------\n"
 msgstr ""
+"+\n"
+"Hvis det ser ud til at være iorden, du har ikke længere brug for "
+"fejlbeskeder og pppd kan køre\n"
+"i baggrunden:\n"
+"+\n"
+"-----------------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2429
@@ -11009,11 +11229,13 @@ msgid ""
 "# pppd pty 'pptp server --nolaunchpppd' call mytunnel\n"
 "-----------------------------------------------------\n"
 msgstr ""
+"# pppd pty 'pptp server --nolaunchpppd' call mytunnel\n"
+"-----------------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2432
 msgid "+ That was all. Not so simple but anyone can do it :-)"
-msgstr ""
+msgstr "+ Dette var alt. Ikke så enkelt men alle kan gøre det :-)"
 
 # type: Plain text
 #: packages.txt:2437
@@ -11024,38 +11246,45 @@ msgid ""
 "* http://czeh.hu/linuxdoc/vpn-pptp.html - VPN connection using PPTP and Linux by Istvan Czeh (Hungarian)\n"
 "* http://webb.gotdns.com:2080/kernel-mppe/pptp-command.html - 'pptp-command' HOWTO\n"
 msgstr ""
+"4. Ressourcer\n"
+"+\n"
+"* http://czeh.hu/linuxdoc/vpn-pptp.html - VPN forbindelse ved brug af PPTP "
+"og Linux af Istvan Czeh (Ungarsk)\n"
+"* http://webb.gotdns.com:2080/kernel-mppe/pptp-command.html - 'pptp-command' "
+"HOWTO\n"
 
 # type: Plain text
 #: packages.txt:2439
 msgid "== psx"
-msgstr ""
+msgstr "== psx"
 
 # type: Plain text
 #: packages.txt:2441
 msgid ""
 "Note: You must find a PSX bios on your own, and place it in ~/.pSX/bios."
 msgstr ""
+"Note: Du skal finde en PSX bios på egen hånd, og placere det i ~/.pSX/bios."
 
 # type: Plain text
 #: packages.txt:2443
 msgid "== pyro"
-msgstr ""
+msgstr "== pyro"
 
 # type: Plain text
 #: packages.txt:2445
 msgid ""
 "You'll find pyro's scripts in '/usr/lib/python2.5/site-packages/Pyro/bin'"
-msgstr ""
+msgstr "Du finder pyro's scripts i '/usr/lib/python2.5/site-packages/Pyro/bin'"
 
 # type: Plain text
 #: packages.txt:2447
 msgid "== qemu"
-msgstr ""
+msgstr "== qemu"
 
 # type: Plain text
 #: packages.txt:2449
 msgid "=== QuickStart"
-msgstr ""
+msgstr "=== HurtigStart"
 
 # type: Plain text
 #: packages.txt:2453
