@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-10-24 01:42+0200\n"
-"PO-Revision-Date: 2008-10-24 17:16+0200\n"
+"PO-Revision-Date: 2008-10-24 20:51+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -11293,12 +11293,16 @@ msgid ""
 "bit confusing. Most users want to install an operating system from a cdrom "
 "image to a virtual harddisk. Here is what you need:"
 msgstr ""
+"Hvis du er totalt ny til `qemu`, vil du måske finde den store liste af "
+"indstillinger lidt forvirrende. De fleste brugere vil installere et "
+"styresystem fra et cdrom aftryk til en virtuel harddisk. Her er hvad du har "
+"brug for:"
 
 # type: Plain text
 #: packages.txt:2454
 #, no-wrap
 msgid "----------------------------------\n"
-msgstr ""
+msgstr "----------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2458
@@ -11309,11 +11313,15 @@ msgid ""
 "$ qemu -hda foo.img -cdrom bar.iso\n"
 "----------------------------------\n"
 msgstr ""
+"$ qemu-img create foo.img 8G\n"
+"$ wget http://server.com/bar.iso\n"
+"$ qemu -hda foo.img -cdrom bar.iso\n"
+"----------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2461
 msgid "=== Tricks"
-msgstr ""
+msgstr "=== Tricks"
 
 # type: Plain text
 #: packages.txt:2464
@@ -11321,11 +11329,13 @@ msgid ""
 "It worth to read the full documentation at `/usr/share/doc/qemu-*/qemu-doc."
 "html`, it really worth to do so."
 msgstr ""
+"Det er værd at læse den fulde dokumentation i `/usr/share/doc/qemu-*/qemu-"
+"doc.html`, det er virkeligt en god ide."
 
 # type: Plain text
 #: packages.txt:2466
 msgid "To demonstrate how powerfull `qemu` is, here are a few cheap tricks:"
-msgstr ""
+msgstr "For at vise hvor kraftfuld `qemu` er, her er nogle billige kneb:"
 
 # type: Plain text
 #: packages.txt:2470
@@ -11334,11 +11344,14 @@ msgid ""
 "For example using the `-redir tcp:1022::22` option, `qemu:22` will be "
 "available at `localhost:1022`."
 msgstr ""
+"Hvis du vil være istand til at ssh til maskinen, kan du bruge port "
+"derirection. For eksempel ved brug af `-redir tcp:1022::22` tilvalg, "
+"`qemu:22` vil være tilgængelig på `localhost:1022`."
 
 # type: Plain text
 #: packages.txt:2472
 msgid "NOTE: This requires `root` privileges."
-msgstr ""
+msgstr "NOTE: Dette kræver `root` privilegier."
 
 # type: Plain text
 #: packages.txt:2475
@@ -11346,6 +11359,9 @@ msgid ""
 "You can create a unix socket to control your virtual machine. For example if "
 "you are not able to ssh to the machine, you can still properly shut it down:"
 msgstr ""
+"Du kan skabe en unix socket for at styre din virtuelle maskine. For eksempel "
+"hvis du ikke kan ssh til maskinen, kan du stadigvæk lukke den ned "
+"forsvarligt:"
 
 # type: Plain text
 #: packages.txt:2478
@@ -11353,6 +11369,9 @@ msgid ""
 "Use the `-monitor unix:/tmp/qemu,server,nowait` option, then send the "
 "`sendkey ctrl-alt-delete` string to the socket, for example using python:"
 msgstr ""
+"Brug `-monitor unix:/tmp/qemu,server,nowait` indstilling, send derefter "
+"`sendkey ctrl-alt-delete` streng til socket, for eksempel ved brug af "
+"python:"
 
 # type: Plain text
 #: packages.txt:2483
@@ -11363,6 +11382,12 @@ msgid ""
 "sock.send('sendkey ctrl-alt-delete\\n')\"\n"
 "----\n"
 msgstr ""
+"python -c \"import socket; sock = socket.socket(socket.AF_UNIX, "
+"socket.SOCK_STREAM); \\\n"
+"sock.connect('/tmp/qemu'); \\\n"
+"sock.send('sendkey ctrl-alt-delete\n"
+"')\"\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:2489
@@ -11372,16 +11397,20 @@ msgid ""
 "qemu on a server (for example in screen), then you can freely attach to and "
 "detach from it whenever you want to do so."
 msgstr ""
+"Til slut et kneb om vnc: for eksempel ved brug af `-vnc 0` indstilling, er "
+"det muligt at tilgå qemu's skærm via vnc. Dette er faktisk praktisk hvis du "
+"kører qemu på en server (for eksempel i screen), så kan du frit tilkoble og "
+"frakoble fra den hvornår du ønsker at gøre dette."
 
 # type: Plain text
 #: packages.txt:2491
 msgid "Really, read the full documentation! :)"
-msgstr ""
+msgstr "Virkeligt, læs den fulde dokumentation! :)"
 
 # type: Plain text
 #: packages.txt:2495
 msgid "== quagga"
-msgstr ""
+msgstr "== quagga"
 
 # type: Plain text
 #: packages.txt:2498
@@ -11389,6 +11418,8 @@ msgid ""
 "The config files have to be in the /etc/quagga dir and have to be writeable "
 "by the 'quagga' user (to be able to save config from the daemon's shell)."
 msgstr ""
+"Konfigenfilene skal være i /etc/quagga folder and have og skal være "
+"skrivbare af 'quagga' brugeren (for at kunne gemme config fra daemon shell)."
 
 # type: Plain text
 #: packages.txt:2501
@@ -11396,6 +11427,9 @@ msgid ""
 "Neither of the daemons will start till you edit the config files and rename/"
 "move them from *.conf.sample to *.conf (be careful to the uid/gid)."
 msgstr ""
+"Ingen af daemons vil starte før du redigerer config filene og "
+"omdøber/fjerner dem fra *.conf.sample til *.conf (vær forsigtig med "
+"uid/gid)."
 
 # type: Plain text
 #: packages.txt:2504
@@ -11403,6 +11437,8 @@ msgid ""
 "You have to enable explicitly the routing daemons to get started from the "
 "init script. The config file is '/etc/sysconfig/quagga'"
 msgstr ""
+"Du må aktivere eksplicit routing daemons for at blive startet fra init "
+"script. config-filen er '/etc/sysconfig/quagga'"
 
 # type: Plain text
 #: packages.txt:2509
@@ -11412,16 +11448,20 @@ msgid ""
 "daemons also have to be enabled, if you use it, but i could not find "
 "anything about that):"
 msgstr ""
+"Hvis du har en virkende firewall, så vil OSPF daemon ikke virke, du er nødt "
+"til at aktivere det i firewall med denne regel (måske skal andre routing "
+"daemons også aktiveres, hvis du bruger det, men jeg kunne ikke finde noget "
+"om det):"
 
 # type: Plain text
 #: packages.txt:2511
 msgid "'iptables -A INPUT -p 89 -m state --state NEW -j ACCEPT'"
-msgstr ""
+msgstr "'iptables -A INPUT -p 89 -m state --state NEW -j ACCEPT'"
 
 # type: Plain text
 #: packages.txt:2515
 msgid "== quota-tools"
-msgstr ""
+msgstr "== quota-værktøjer"
 
 # type: Plain text
 #: packages.txt:2518
@@ -11429,6 +11469,9 @@ msgid ""
 "To really activate quotas, you'll need to add `usrquota` to the appropriate "
 "partitions as listed in `/etc/fstab`.  Here's an example:"
 msgstr ""
+"For at virkeligt at aktivere quotas, er du nødt til at tilføje `usrquota` "
+"til de passende partitioner som oplistet i `/etc/fstab`.  Her er et "
+"eksempel:"
 
 # type: Plain text
 #: packages.txt:2521
@@ -11437,6 +11480,8 @@ msgid ""
 "/dev/hda2   /home   ext2   defaults,usrquota    1   1\n"
 "----\n"
 msgstr ""
+"/dev/hda2   /home   ext2   defaults,usrquota    1   1\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:2525
@@ -11444,6 +11489,9 @@ msgid ""
 "When you want quota support for a given partition, some special files have "
 "to be created boot-time. This is not done by default. To do so, you need to"
 msgstr ""
+"Når du ønsker quota understøttelse for en given partition, så skal nogle "
+"særlige filer skabes under boot. Dette bliver ikke gjort som standard. For "
+"at gøre dette, er du nødt til at gøre dette"
 
 # type: Plain text
 #: packages.txt:2528
@@ -11452,26 +11500,28 @@ msgid ""
 "# touch /var/lib/quota/new\n"
 "----\n"
 msgstr ""
+"# touch /var/lib/quota/new\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:2531
 msgid "then, reboot to create those files."
-msgstr ""
+msgstr "så, reboot for at skabe disse filer."
 
 # type: Plain text
 #: packages.txt:2533
 msgid "To edit user quotas, use `edquota`.  See `man edquota`."
-msgstr ""
+msgstr "For at redigere user quotas, brug `edquota`.  Se `man edquota`."
 
 # type: Plain text
 #: packages.txt:2535
 msgid "== r8169"
-msgstr ""
+msgstr "== r8169"
 
 # type: Plain text
 #: packages.txt:2537
 msgid "=== About the driver"
-msgstr ""
+msgstr "=== Om driveren"
 
 # type: Plain text
 #: packages.txt:2540
@@ -11479,21 +11529,25 @@ msgid ""
 "This is the r8169 driver from Realtek. This in _not_ the same r8169 "
 "presented in Linux kernel."
 msgstr ""
+"Dette er r8169 driveren fra Realtek. Dette er _ikke_ den samme r8169 som "
+"findes i Linux-kernen."
 
 # type: Plain text
 #: packages.txt:2542
 msgid "This driver supports: RTL8169S/8110S, RTL8169SB/8110SB, RTL8110SC"
-msgstr ""
+msgstr "Denne driver understøtter: RTL8169S/8110S, RTL8169SB/8110SB, RTL8110SC"
 
 # type: Plain text
 #: packages.txt:2544
 msgid "=== Using the driver"
-msgstr ""
+msgstr "=== Brug af driver"
 
 # type: Plain text
 #: packages.txt:2546
 msgid "To use this driver you have to remove the official r8169 if loaded."
 msgstr ""
+"For at bruge denne driver er du nødt til at fjerne den officielle r8169 hvis "
+"den er loaded."
 
 # type: Plain text
 #: packages.txt:2549
@@ -11502,11 +11556,13 @@ msgid ""
 "# rmmod r8169\n"
 "----\n"
 msgstr ""
+"# rmmod r8169\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:2552
 msgid "You can load this module with"
-msgstr ""
+msgstr "Du kan loade dette mondul med"
 
 # type: Plain text
 #: packages.txt:2555
@@ -11515,6 +11571,8 @@ msgid ""
 "# modprobe realtek-r8169\n"
 "----\n"
 msgstr ""
+"# modprobe realtek-r8169\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:2560
@@ -11523,11 +11581,14 @@ msgid ""
 "etc/sysconfig/modules`, so you do not have to play this game after every "
 "reboot."
 msgstr ""
+"Det er måske en god ide at blacklist `r8169` og tilføje `realtek-r8169` til "
+"`/etc/sysconfig/modules`, så du ikke er nødt til at gentage dette efter hver "
+"reboot."
 
 # type: Plain text
 #: packages.txt:2562
 msgid "== rox-filer"
-msgstr ""
+msgstr "== rox-filer"
 
 # type: Plain text
 #: packages.txt:2566
@@ -11536,21 +11597,24 @@ msgid ""
 "of converting system installed desktop files in /usr/share/applications to a "
 "ROX appdir."
 msgstr ""
+"Brug de inkluderede desktop2appfile shell script, hvis du ønsker en "
+"automatisk måde at konvertere systemes installerede desktopfiler i "
+"/usr/share/applications til en ROX applikation-folder."
 
 # type: Plain text
 #: packages.txt:2568
 msgid "== rss2email"
-msgstr ""
+msgstr "== rss2email"
 
 # type: Plain text
 #: packages.txt:2571
 msgid "Configure: ~~~~~~~~~~"
-msgstr ""
+msgstr "Konfigurere: ~~~~~~~~~~"
 
 # type: Plain text
 #: packages.txt:2573
 msgid "Create a new feed database:"
-msgstr ""
+msgstr "Skab en ny feed database:"
 
 # type: Plain text
 #: packages.txt:2576
@@ -11559,11 +11623,13 @@ msgid ""
 "$ r2e new you@yourdomain.com\n"
 "----------------------------\n"
 msgstr ""
+"$ r2e new dig@ditdomæne.com\n"
+"----------------------------\n"
 
 # type: Plain text
 #: packages.txt:2579
 msgid "Subscribe to some feeds:"
-msgstr ""
+msgstr "Abonner på nogle feeds:"
 
 # type: Plain text
 #: packages.txt:2582
@@ -11572,6 +11638,8 @@ msgid ""
 "$ r2e add http://www.aaronsw.com/2002/rss2email/updates.rss\n"
 "-----------------------------------------------------------\n"
 msgstr ""
+"$ r2e add http://www.aaronsw.com/2002/rss2email/updates.rss\n"
+"-----------------------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2586
