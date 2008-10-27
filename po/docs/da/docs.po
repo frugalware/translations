@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-24 01:42+0200\n"
-"PO-Revision-Date: 2008-10-24 20:51+0200\n"
+"POT-Creation-Date: 2008-10-27 01:42+0100\n"
+"PO-Revision-Date: 2008-10-27 19:53+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -10423,8 +10423,8 @@ msgid ""
 "dbus-session --exit-with-session --sh-syntax & feh --bg-scale \"$HOME/.foo/"
 "bar\" &"
 msgstr ""
-"dbus-session --exit-with-session --sh-syntax & feh --bg-scale "
-"\"$HOME/.foo/bar\" &"
+"dbus-session --exit-with-session --sh-syntax & feh --bg-scale \"$HOME/.foo/"
+"bar\" &"
 
 # type: Plain text
 #: packages.txt:2159
@@ -10441,9 +10441,9 @@ msgid ""
 "report it and I will look into it."
 msgstr ""
 "Jeg har med vilje udeladt nogle perlmoduller fra afhængighedstabel, fordi de "
-"ikke behøves for at køre perlpanel og slæbe en masse ind i GNOME eller "
-"andet materiale du måske ikke ønsker. Nedenfor vil du finde en liste af "
-"disse moduller og hvad de gør. Hvis du finder fejl i denne dokumentation, så "
+"ikke behøves for at køre perlpanel og slæbe en masse ind i GNOME eller andet "
+"materiale du måske ikke ønsker. Nedenfor vil du finde en liste af disse "
+"moduller og hvad de gør. Hvis du finder fejl i denne dokumentation, så "
 "rapporter det venligst og jeg vil se på det."
 
 # type: Plain text
@@ -10534,9 +10534,9 @@ msgid ""
 "account. Finally edit the configuration file again and comment the 'startup' "
 "user."
 msgstr ""
-"Ingen kan logge ind i Pootle som standard. Du skal redigere "
-"`/usr/lib/python2.5/site-packages/Pootle/users.prefs`, og udkommentere "
-"'startup' bruger. Dets password er også 'startup', . Derefterlog ind via "
+"Ingen kan logge ind i Pootle som standard. Du skal redigere `/usr/lib/"
+"python2.5/site-packages/Pootle/users.prefs`, og udkommentere 'startup' "
+"bruger. Dets password er også 'startup', . Derefterlog ind via "
 "internetinterfacet, skab en konto. Til slut, rediger konfigurationsfilen "
 "igen og kommenter 'startup' brugeren."
 
@@ -10650,10 +10650,10 @@ msgid ""
 "interface."
 msgstr ""
 "Denne pakke afhænger af en rigtig installation af postfix's virtual tables "
-"og det skal konfigureres før brug. Husk også at læse "
-"+/var/www/postfixadmin/INSTALL.TXT+ for at færdiggøre opsætningen eller "
-"opgraderingen. Du bør også tage hånd om at konfiguration af apache for at "
-"kunne benytte det net-baserede interface."
+"og det skal konfigureres før brug. Husk også at læse +/var/www/postfixadmin/"
+"INSTALL.TXT+ for at færdiggøre opsætningen eller opgraderingen. Du bør også "
+"tage hånd om at konfiguration af apache for at kunne benytte det net-"
+"baserede interface."
 
 # type: Plain text
 #: packages.txt:2247
@@ -10711,12 +10711,10 @@ msgid ""
 msgstr ""
 "1. Forord\n"
 "+\n"
-"Jeg blev spurgt om at opsætte VPN ved brug af PPTP. En meget sikker måde at "
-"opsætte det på er at bruge\n"
+"Jeg blev spurgt om at opsætte VPN ved brug af PPTP. En meget sikker måde at opsætte det på er at bruge\n"
 "IPSec, flere detaljer\n"
 "http://www.schneier.com/paper-pptpv2.html[her].\n"
-"Du kunne også bruge ssh+pppd, men det er mere problematisk på andre "
-"platforme\n"
+"Du kunne også bruge ssh+pppd, men det er mere problematisk på andre platforme\n"
 "end Unix\n"
 
 # type: Plain text
@@ -10738,12 +10736,10 @@ msgid ""
 msgstr ""
 "2. Opsætning af server\n"
 "+\n"
-"Det store problem her er at mest en forældet HOWTO startende med at patche "
-"din\n"
+"Det store problem her er at mest en forældet HOWTO startende med at patche din\n"
 "kerne og ppp. Dette er ikke længere nødvendigt!\n"
 "+\n"
-"Minimumskrav: du behøver kerne>=2.6.15 eller nyere (Frugalware 0.4 eller "
-"højere er OK).\n"
+"Minimumskrav: du behøver kerne>=2.6.15 eller nyere (Frugalware 0.4 eller højere er OK).\n"
 "Du behøver også ppp>=2.4.2.\n"
 "+\n"
 "Sandsynligvis er disse allerede installeret på dit system, lad os se den nye\n"
@@ -10900,8 +10896,7 @@ msgid ""
 msgstr ""
 "+\n"
 "Resten er om at tillade pptp på firewall (Jeg går ud fra at du bruger\n"
-"standard Frugalware konfiguration: INPUT er på DROP som standard, men "
-"FORWARD er\n"
+"standard Frugalware konfiguration: INPUT er på DROP som standard, men FORWARD er\n"
 "tilladt, OUTPUT også.)\n"
 "+\n"
 "Tilføj følgende 2 linier til filter section af '/etc/sysconfig/firewall':\n"
@@ -10932,8 +10927,7 @@ msgid ""
 "------------------------------------\n"
 msgstr ""
 "+\n"
-"Hvis du vil tillade en klient at tilgå Internet via denne pptp server, "
-"tilføj\n"
+"Hvis du vil tillade en klient at tilgå Internet via denne pptp server, tilføj\n"
 "følgende til nat section af den samme fil (ændr ethX til det korrekte\n"
 "network interface):\n"
 "+\n"
@@ -11031,9 +11025,9 @@ msgid ""
 "messages will appear in '/var/log/messages' if you're interested in them."
 msgstr ""
 "+ Hvis ingen fejlbeskeder bliver rapporteret, udelad -f valgmulighed så vil "
-"det gå i baggrunden.  + Senere kan du indsætte dette i din "
-"'/etc/rc.d/rc.local'. Fejl beskeder vil dukke op i '/var/log/messages' hvis "
-"du er interesseret i dem."
+"det gå i baggrunden.  + Senere kan du indsætte dette i din '/etc/rc.d/rc."
+"local'. Fejl beskeder vil dukke op i '/var/log/messages' hvis du er "
+"interesseret i dem."
 
 # type: Plain text
 #: packages.txt:2375
@@ -11080,15 +11074,13 @@ msgid ""
 "---------------------------------------------\n"
 msgstr ""
 "+\n"
-"De fleste howto foreslår pptpconfig (http://pptpclient.sourceforge.net/) "
-"værktøj,\n"
+"De fleste howto foreslår pptpconfig (http://pptpclient.sourceforge.net/) værktøj,\n"
 "Det er skrevet i PHP og bruger GTK+2. Du vil ikke bruge grafiske redskaber\n"
 "lokalt (og installere XOrg) for at administrere din maskine, gør du?\n"
 "+\n"
 "Vi kan gøre det ved håndkraft, det er ikke så vanskeligt.\n"
 "+\n"
-"Du kan give hver tunnel et navn som du skaber, jeg vil her bruge \"mytunnel\" "
-"navn.\n"
+"Du kan give hver tunnel et navn som du skaber, jeg vil her bruge \"mytunnel\" navn.\n"
 "+\n"
 "Fyr op under din favorit editor og skab /etc/ppp/peers/mytunnel fil med\n"
 "følgende indhold:\n"
@@ -11151,8 +11143,7 @@ msgstr ""
 "+\n"
 "Vi er parate til at starte klienten:\n"
 "+\n"
-"----------------------------------------------------------------------------"
-"-----\n"
+"---------------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2409
@@ -11161,10 +11152,8 @@ msgid ""
 "# pppd pty 'pptp server --nolaunchpppd' call mytunnel debug dump logfd 2 nodetach\n"
 "---------------------------------------------------------------------------------\n"
 msgstr ""
-"# pppd pty 'pptp server --nolaunchpppd' call mytunnel debug dump logfd 2 "
-"nodetach\n"
-"----------------------------------------------------------------------------"
-"-----\n"
+"# pppd pty 'pptp server --nolaunchpppd' call mytunnel debug dump logfd 2 nodetach\n"
+"---------------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2413
@@ -11176,8 +11165,7 @@ msgid ""
 "------------------------------------------------------------------\n"
 msgstr ""
 "+\n"
-"En masse fejlbeskeder vil blive udskrevet, Tjek efter på en anden konsol om "
-"du fik et nyt pppx interface eller ej:\n"
+"En masse fejlbeskeder vil blive udskrevet, Tjek efter på en anden konsol om du fik et nyt pppx interface eller ej:\n"
 "+\n"
 "------------------------------------------------------------------\n"
 
@@ -11216,8 +11204,7 @@ msgid ""
 "-----------------------------------------------------\n"
 msgstr ""
 "+\n"
-"Hvis det ser ud til at være iorden, du har ikke længere brug for "
-"fejlbeskeder og pppd kan køre\n"
+"Hvis det ser ud til at være iorden, du har ikke længere brug for fejlbeskeder og pppd kan køre\n"
 "i baggrunden:\n"
 "+\n"
 "-----------------------------------------------------\n"
@@ -11248,10 +11235,8 @@ msgid ""
 msgstr ""
 "4. Ressourcer\n"
 "+\n"
-"* http://czeh.hu/linuxdoc/vpn-pptp.html - VPN forbindelse ved brug af PPTP "
-"og Linux af Istvan Czeh (Ungarsk)\n"
-"* http://webb.gotdns.com:2080/kernel-mppe/pptp-command.html - 'pptp-command' "
-"HOWTO\n"
+"* http://czeh.hu/linuxdoc/vpn-pptp.html - VPN forbindelse ved brug af PPTP og Linux af Istvan Czeh (Ungarsk)\n"
+"* http://webb.gotdns.com:2080/kernel-mppe/pptp-command.html - 'pptp-command' HOWTO\n"
 
 # type: Plain text
 #: packages.txt:2439
@@ -11370,8 +11355,7 @@ msgid ""
 "`sendkey ctrl-alt-delete` string to the socket, for example using python:"
 msgstr ""
 "Brug `-monitor unix:/tmp/qemu,server,nowait` indstilling, send derefter "
-"`sendkey ctrl-alt-delete` streng til socket, for eksempel ved brug af "
-"python:"
+"`sendkey ctrl-alt-delete` streng til socket, for eksempel ved brug af python:"
 
 # type: Plain text
 #: packages.txt:2483
@@ -11382,8 +11366,7 @@ msgid ""
 "sock.send('sendkey ctrl-alt-delete\\n')\"\n"
 "----\n"
 msgstr ""
-"python -c \"import socket; sock = socket.socket(socket.AF_UNIX, "
-"socket.SOCK_STREAM); \\\n"
+"python -c \"import socket; sock = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM); \\\n"
 "sock.connect('/tmp/qemu'); \\\n"
 "sock.send('sendkey ctrl-alt-delete\n"
 "')\"\n"
@@ -11427,9 +11410,8 @@ msgid ""
 "Neither of the daemons will start till you edit the config files and rename/"
 "move them from *.conf.sample to *.conf (be careful to the uid/gid)."
 msgstr ""
-"Ingen af daemons vil starte før du redigerer config filene og "
-"omdøber/fjerner dem fra *.conf.sample til *.conf (vær forsigtig med "
-"uid/gid)."
+"Ingen af daemons vil starte før du redigerer config filene og omdøber/"
+"fjerner dem fra *.conf.sample til *.conf (vær forsigtig med uid/gid)."
 
 # type: Plain text
 #: packages.txt:2504
@@ -11470,8 +11452,7 @@ msgid ""
 "partitions as listed in `/etc/fstab`.  Here's an example:"
 msgstr ""
 "For at virkeligt at aktivere quotas, er du nødt til at tilføje `usrquota` "
-"til de passende partitioner som oplistet i `/etc/fstab`.  Her er et "
-"eksempel:"
+"til de passende partitioner som oplistet i `/etc/fstab`.  Her er et eksempel:"
 
 # type: Plain text
 #: packages.txt:2521
@@ -11598,8 +11579,8 @@ msgid ""
 "ROX appdir."
 msgstr ""
 "Brug de inkluderede desktop2appfile shell script, hvis du ønsker en "
-"automatisk måde at konvertere systemes installerede desktopfiler i "
-"/usr/share/applications til en ROX applikation-folder."
+"automatisk måde at konvertere systemes installerede desktopfiler i /usr/"
+"share/applications til en ROX applikation-folder."
 
 # type: Plain text
 #: packages.txt:2568
@@ -11647,6 +11628,8 @@ msgid ""
 "(That's the feed to be notified when there's a new version of rss2email.)  "
 "Repeat this for each feed you want to subscribe to."
 msgstr ""
+"(Det er feed der bliver notificeret når der er en ny version af rss2email.) "
+" Gentag dette for hvert feed du ønsker at abonnere på."
 
 # type: Plain text
 #: packages.txt:2590
@@ -11656,6 +11639,10 @@ msgid ""
 "this, you can ask rss2email not to send you any stories the first time you "
 "run it:"
 msgstr ""
+"Når du kører rss2email, sender det dig en email om hver historie det ikke "
+"har set før.  Men første gang du kører det, vil det være hver historie . For "
+"at undgå dette, kan du spørge rss2email till ikke at sende nogen hestorier "
+"første gang du kører den:"
 
 # type: Plain text
 #: packages.txt:2593
@@ -11664,17 +11651,19 @@ msgid ""
 "$ r2e run --no-send\n"
 "-------------------\n"
 msgstr ""
+"$ r2e run --no-send\n"
+"-------------------\n"
 
 # type: Plain text
 #: packages.txt:2596
 msgid "Then later, you can ask it to email you new stories:"
-msgstr ""
+msgstr "Senere kan du spørge det om at emaile dig nye fhistorier:"
 
 # type: Plain text
 #: packages.txt:2597
 #, no-wrap
 msgid "---------\n"
-msgstr ""
+msgstr "---------\n"
 
 # type: Plain text
 #: packages.txt:2599
@@ -11683,16 +11672,19 @@ msgid ""
 "$ r2e run\n"
 "---------\n"
 msgstr ""
+"$ r2e run\n"
+"---------\n"
 
 # type: Plain text
 #: packages.txt:2602
 msgid "You probably want to set this up as a cron job or something."
 msgstr ""
+"Du vil sandsynligvis gerne opsætte det til et cron job eller noget andet."
 
 # type: Plain text
 #: packages.txt:2605
 msgid "Customize: ~~~~~~~~~~"
-msgstr ""
+msgstr "Tilpasse: ~~~~~~~~~~"
 
 # type: Plain text
 #: packages.txt:2609
@@ -11701,6 +11693,10 @@ msgid ""
 "to change something, add it to config.py. For example, to be notified every "
 "time a post changes, instead of just once per post:"
 msgstr ""
+"Der er nogle få indstillinger, beskrevet på toppen af rss2email.py. Hvis du "
+"ønsker at ændre noget, tilføj det til config.py. For eksempel, at blive "
+"bekendtgjort hver gang der en indlægsændring, i stedet for hver gang der er "
+"indlæg:"
 
 # type: Plain text
 #: packages.txt:2612
@@ -11709,6 +11705,8 @@ msgid ""
 "$ echo \"TRUST_GUID = 0\" >>~/.rss2email/config.py\n"
 "------------------------------------------------\n"
 msgstr ""
+"$ echo \"TRUST_GUID = 0\" >>~/.rss2email/config.py\n"
+"------------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2615
@@ -11716,6 +11714,8 @@ msgid ""
 "And you can ask rss2email to make the emails look as if they were sent when "
 "the item was actually posted:"
 msgstr ""
+"Og du kan spørge rss2email at få emails til at se ud som om de blev sendt "
+"når de faktisk blev skrevet:"
 
 # type: Plain text
 #: packages.txt:2618
@@ -11724,12 +11724,13 @@ msgid ""
 "$ echo \"DATE_HEADER = 1\" >>~/.rss2email/config.py\n"
 "-------------------------------------------------\n"
 msgstr ""
+"$ echo \"DATE_HEADER = 1\" >>~/.rss2email/config.py\n"
+"-------------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2621
-#, fuzzy
 msgid "== sawfish"
-msgstr "=== Grundlæggende"
+msgstr "== sawfish"
 
 # type: Plain text
 #: packages.txt:2642
@@ -11755,6 +11756,28 @@ msgid ""
 "restart sawfish. Use sawfish-client if you want to test it, and remember to "
 "put it in your rc file if you wish to retain it.  Happy hacking!"
 msgstr ""
+"Jeg har inkluderet et enkelt script kaldet sawfish-session hvilket henter "
+"$HOME/.sawfish/startup, hvis det eksisterer. Det er et setup så du nemt kan "
+"køre dine egne kommandoer før sawfish bliver startet. Du kan finde en "
+"eksempelfil i /usr/share/sawfish/startup. Der er også et sawfish-aplay "
+"script til stede, som er en wrapper som tilføjes med -q argument så er din "
+"log ikke bliver spammet med et bundt af ubrugelige beskeder hvis du vælger "
+"at bruge lyd begivenheder. For at bruge lydbegivenheder i sawfish, kør "
+"sawfish-ui og gå til Sound tab, og aktiver lyd.  Luk så programmet, og kør "
+"det igen, og der bør nu være en grå kasse ved bunden som man kan skrive en "
+"kommando for at afspille lyde. Jeg har inaktiveret ESD-undersstøttelse i "
+"favør af dette. Afkryds kassen for at aktivere det, og skriv sawfish-aplay "
+"eller et andet program efter dit valg. Imidlertid, husk at denne kasse ikke "
+"kan acceptere argumenter, den kan blot acceptere stien til en ekseverbar af "
+"en eller anden slags, som er hele grunden for at jeg inkluderet aplay "
+"wrapper. Husk også at besøge http://sawfish.wikia.com hvis du vil finde "
+"materiale for at supplere sawfish, som scripts, temaer, etc. Og her til "
+"sidst, et eksempel stykke lisp code du kan indsætte i din $HOME/.sawfishrc "
+"og redigere det til din tilfredshed for at få den rigtige root-menu for dig. "
+"Det er også der hvor du indsætter lisp code som du ønsker der skal blive "
+"aktiv hver gang du genstarter sawfish.. Brug sawfish-klient hvis du ønsker "
+"at teste det, og husk at indsætte det i din rc fil hvis du ønsker at "
+"bibeholde det.  Happy hacking!"
 
 # type: Plain text
 #: packages.txt:2663
@@ -11781,16 +11804,36 @@ msgid ""
 "\t(\"Quit\" quit)\n"
 "))\n"
 msgstr ""
+"(setq root-menu '(\n"
+"\t(\"Editors\"\n"
+"\t\t(\"Abiword\" (system \"abiword &\"))\n"
+"\t\t(\"Leafpad\" (system \"leafpad &\"))\n"
+"\t\t)\n"
+"\t(\"Terminals\"\n"
+"\t\t(\"Sakura\" (system \"sakura &\"))\n"
+"\t\t(\"xterm\"  (system \"xterm &\"))\n"
+"\t\t)\n"
+"\t(\"Multimedia\"\n"
+"\t\t(\"Audacious\" (system \"audacious &\"))\n"
+"\t\t(\"VLC\" (system \"vlc &\"))\n"
+"\t\t)\n"
+"\t(\"Network\"\n"
+"\t\t(\"Firefox\" (system \"firefox &\"))\n"
+"\t\t(\"Pidgin\" (system \"pidgin &\"))\n"
+"\t\t)\n"
+"\t(\"Restart\" restart)\n"
+"\t(\"Quit\" quit)\n"
+"))\n"
 
 # type: Plain text
 #: packages.txt:2665
 msgid "== scratchbox"
-msgstr ""
+msgstr "== scratchbox"
 
 # type: Plain text
 #: packages.txt:2667
 msgid "You need to complete the install, running:"
-msgstr ""
+msgstr "For at gøre installationen færdig, skal du køre:"
 
 # type: Plain text
 #: packages.txt:2670
@@ -11799,11 +11842,13 @@ msgid ""
 "# /usr/lib/scratchbox/run_me_first.sh\n"
 "-------------------------------------\n"
 msgstr ""
+"# /usr/lib/scratchbox/run_me_first.sh\n"
+"-------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2673
 msgid "Do not forget to create a scratchbox user:"
-msgstr ""
+msgstr "Glem ikke at skabe scratchbox brugeren:"
 
 # type: Plain text
 #: packages.txt:2676
@@ -11812,6 +11857,8 @@ msgid ""
 "# /usr/lib/scratchbox/sbin/sbox_adduser <user>\n"
 "----------------------------------------------\n"
 msgstr ""
+"# /usr/lib/scratchbox/sbin/sbox_adduser <bruger>\n"
+"----------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2681
@@ -11820,6 +11867,9 @@ msgid ""
 "needs have a look at http://www.scratchbox.org/documentation/user[scratchbox "
 "documentation]."
 msgstr ""
+"For yderligere dokumentation om hvordan du opsætter scratchbox for dit "
+"udvikling behov så tag et blik på "
+"http://www.scratchbox.org/documentation/user[scratchbox dokumentation]."
 
 # type: Plain text
 #: packages.txt:2683
@@ -11827,6 +11877,8 @@ msgid ""
 "Also note that when you reboot and before trying to run scratchbox, you "
 "should run:"
 msgstr ""
+"Noter også når du genstarter og før at du forsøger at køre scratchbox, skal "
+"du køre:"
 
 # type: Plain text
 #: packages.txt:2686
@@ -11835,11 +11887,13 @@ msgid ""
 "# service scratchbox start\n"
 "--------------------------\n"
 msgstr ""
+"# service scratchbox start\n"
+"--------------------------\n"
 
 # type: Plain text
 #: packages.txt:2689
 msgid "You can also add it to the default runlevel:"
-msgstr ""
+msgstr "Du kan også tilføje det til standard runlevel:"
 
 # type: Plain text
 #: packages.txt:2692
@@ -11848,11 +11902,13 @@ msgid ""
 "# service scratchbox add\n"
 "------------------------\n"
 msgstr ""
+"# service scratchbox add\n"
+"------------------------\n"
 
 # type: Plain text
 #: packages.txt:2695
 msgid "Then to start scratchbox, run:"
-msgstr ""
+msgstr "Derefter for at starte scratchbox, kør:"
 
 # type: Plain text
 #: packages.txt:2698
@@ -11861,21 +11917,23 @@ msgid ""
 "$ /usr/lib/scratchbox/login\n"
 "---------------------------\n"
 msgstr ""
+"$ /usr/lib/scratchbox/login\n"
+"---------------------------\n"
 
 # type: Plain text
 #: packages.txt:2701
 msgid "NOTE: In order to run scratchbox, you have to be in the 'sbox' group."
-msgstr ""
+msgstr "NOTE: For at kunne køre scratchbox, skal du være i 'sbox' gruppen."
 
 # type: Plain text
 #: packages.txt:2703
 msgid "== screen"
-msgstr ""
+msgstr "== screen"
 
 # type: Plain text
 #: packages.txt:2705
 msgid "=== Keeping your screen running across reboots"
-msgstr ""
+msgstr "=== At bibeholde din screen kørende ved genstart"
 
 # type: Plain text
 #: packages.txt:2709
