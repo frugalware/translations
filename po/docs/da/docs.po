@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-11-03 01:43+0100\n"
-"PO-Revision-Date: 2008-11-03 19:18+0200\n"
+"PO-Revision-Date: 2008-11-03 20:28+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -12203,6 +12203,8 @@ msgid ""
 "To create a new trac project, just use the command:\n"
 "---------------------------------------\n"
 msgstr ""
+"For at skabe et nyt trac projekt, brug bare denne komando:\n"
+"---------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2812
@@ -12211,6 +12213,8 @@ msgid ""
 "$ trac-admin /path/to/myproject initenv\n"
 "---------------------------------------\n"
 msgstr ""
+"$ trac-admin /path/til/mitprojekt initenv\n"
+"---------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2815
@@ -12219,6 +12223,8 @@ msgid ""
 "You can check the result with:\n"
 "------------------------------------\n"
 msgstr ""
+"Du kan tjekke resultatet med:\n"
+"------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2817
@@ -12227,11 +12233,13 @@ msgid ""
 "tracd --port 8000 /path/to/myproject\n"
 "------------------------------------\n"
 msgstr ""
+"tracd --port 8000 /path/til/mitprojekt\n"
+"------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:2820
 msgid "Then, fire up a browser and visit http://localhost:8000"
-msgstr ""
+msgstr "Derefter, fyr op under en browser og besøg http://localhost:8000"
 
 # type: Plain text
 #: packages.txt:2824
@@ -12239,6 +12247,8 @@ msgid ""
 "For further documentation on trac, how to set up with different HTTP daemons "
 "see http://trac.edgewall.org/wiki/TracGuide[TracGuide]"
 msgstr ""
+"For vidre dokumentation om trac, hvordan man opsætter med forskellige HTTP "
+"daemons se http://trac.edgewall.org/wiki/TracGuide[TracGuide]"
 
 # type: Plain text
 #: packages.txt:2831
@@ -12248,11 +12258,15 @@ msgid ""
 "previous /etc/sysconfig/udev solution. (The change was recommended by "
 "upstream.)"
 msgstr ""
+"/lib/udev/devices er folderen hvor pakker eller du kan placere rigtige "
+"device nodes, som bliver kopieret over til /dev ved hver boot. dette "
+"erstatter vores forrige /etc/sysconfig/udev løsning. (Ændringen blev "
+"anbefalet af upstream.)"
 
 # type: Plain text
 #: packages.txt:2833
 msgid "== unp"
-msgstr ""
+msgstr "== unp"
 
 # type: Plain text
 #: packages.txt:2838
@@ -12262,6 +12276,10 @@ msgid ""
 "right one(s) automatically and extracts one or more files in one go. It "
 "detects the right type from the file extensions or the \"file\" output."
 msgstr ""
+"unp er et lille perl script hvilket gør ekstraktion af nogen arkivfiler "
+"nemmere. Det understøtter flere kompressorer og arkiverprogrammer, vælger "
+"den rigtig(e) automatisk og udpakker en eller filer i et hug. Det detekterer "
+"den rigtige type fra fil-udvidelserne eller \"fil\" output."
 
 # type: Plain text
 #: packages.txt:2842
@@ -12270,21 +12288,24 @@ msgid ""
 "(Eduard Bloch <blade@debian.org>) found it later and improved it to fill my "
 "needs. Have fun!"
 msgstr ""
+"unp var oprindelig skrevet af Andre Karwath (http://www.aka-online.de) i "
+"1997, Jeg (Eduard Bloch <blade@debian.org>) fandt det senere og forbedrede "
+"det for at opfylde mine behov. . Hav sjov!"
 
 # type: Plain text
 #: packages.txt:2844
 msgid "== user-mode-linux"
-msgstr ""
+msgstr "== user-mode-linux"
 
 # type: Plain text
 #: packages.txt:2846
 msgid "=== Creating a root image"
-msgstr ""
+msgstr "=== Skabe et root image"
 
 # type: Plain text
 #: packages.txt:2848
 msgid "Create a big empty file:"
-msgstr ""
+msgstr "Skab en stor tom fil:"
 
 # type: Plain text
 #: packages.txt:2851
@@ -12293,11 +12314,13 @@ msgid ""
 "# dd if=/dev/zero of=root_fs bs=1M count=1000\n"
 "----\n"
 msgstr ""
+"# dd if=/dev/zero of=root_fs bs=1M count=1000\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:2854
 msgid "Format it:"
-msgstr ""
+msgstr "Formater det:"
 
 # type: Plain text
 #: packages.txt:2857
@@ -12306,11 +12329,13 @@ msgid ""
 "# mke2fs -F -j root_fs\n"
 "----\n"
 msgstr ""
+"# mke2fs -F -j root_fs\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:2860
 msgid "Mount it:"
-msgstr ""
+msgstr "Mount det:"
 
 # type: Plain text
 #: packages.txt:2865
@@ -12321,11 +12346,15 @@ msgid ""
 "# cd uml\n"
 "----\n"
 msgstr ""
+"# mkdir uml\n"
+"# mount root_fs -o loop uml\n"
+"# cd uml\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:2868
 msgid "Install `base` and `openssh`:"
-msgstr ""
+msgstr "Installer `base` og `openssh`:"
 
 # type: Plain text
 #: packages.txt:2872
@@ -12335,11 +12364,14 @@ msgid ""
 "# pacman-g2 -Sy base openssh -r ./\n"
 "----\n"
 msgstr ""
+"# mkdir -p var/log tmp\n"
+"# pacman-g2 -Sy base openssh -r ./\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:2875
 msgid "Create `etc/fstab` with the following contents:"
-msgstr ""
+msgstr "Skab `etc/fstab` med følgende indhold:"
 
 # type: Plain text
 #: packages.txt:2881
@@ -12351,11 +12383,16 @@ msgid ""
 "/dev/ubda        /                ext3        defaults         1   1\n"
 "----\n"
 msgstr ""
+"none             /proc            proc        defaults         0   0\n"
+"none             /sys             sysfs       defaults         0   0\n"
+"devpts           /dev/pts         devpts      gid=5,mode=620   0   0\n"
+"/dev/ubda        /                ext3        defaults         1   1\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:2884
 msgid "Create `etc/sysconfig/keymap` with the following contents:"
-msgstr ""
+msgstr "Skab `etc/sysconfig/keymap` med følgende indhold:"
 
 # type: Plain text
 #: packages.txt:2887
@@ -12364,11 +12401,13 @@ msgid ""
 "keymap=us\n"
 "----\n"
 msgstr ""
+"keymap=dk\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:2890
 msgid "Create `etc/profile.d/lang.sh` with the following contents:"
-msgstr ""
+msgstr "Skab `etc/profile.d/lang.sh` med følgende indhold:"
 
 # type: Plain text
 #: packages.txt:2894
@@ -12378,12 +12417,15 @@ msgid ""
 "export LC_ALL=$LANG\n"
 "----\n"
 msgstr ""
+"export LANG=da_DK\n"
+"export LC_ALL=$LANG\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:2897
 msgid ""
 "We want networking, put the followings to `etc/sysconfig/network/default`:"
-msgstr ""
+msgstr "Vi ønsker netværk, indsæt følgende i `etc/sysconfig/network/default`:"
 
 # type: Plain text
 #: packages.txt:2902
@@ -12394,6 +12436,10 @@ msgid ""
 "gateway = default gw 192.168.0.254\n"
 "----\n"
 msgstr ""
+"[eth0]\n"
+"options = 192.168.0.1\n"
+"gateway = default gw 192.168.0.254\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:2906
@@ -12401,11 +12447,13 @@ msgid ""
 "If you want to use multiple virtual machines, use `192.168.0.2`, "
 "`192.168.0.3` and so on instead."
 msgstr ""
+"Hvis du vil bruge multiple virtuelle maskiner, brug `192.168.0.2`, "
+"`192.168.0.3` og så videre i stedet for."
 
 # type: Plain text
 #: packages.txt:2908
 msgid "Let's copy in the terminal device and change our root:"
-msgstr ""
+msgstr "Lad os kopiere det i terminal device og ændre vores root:"
 
 # type: Plain text
 #: packages.txt:2912
@@ -12415,11 +12463,14 @@ msgid ""
 "# chroot ./\n"
 "----\n"
 msgstr ""
+"# cp -a /dev/tty dev/\n"
+"# chroot ./\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:2915
 msgid "Create a regular user:"
-msgstr ""
+msgstr "Skab en regulær bruger:"
 
 # type: Plain text
 #: packages.txt:2918
@@ -12428,11 +12479,13 @@ msgid ""
 "# adduser\n"
 "----\n"
 msgstr ""
+"# adduser\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:2921
 msgid "Remove unnecessary services and enable ssh:"
-msgstr ""
+msgstr "Fjern unødvendige services og aktiver ssh:"
 
 # type: Plain text
 #: packages.txt:2927
@@ -12444,6 +12497,11 @@ msgid ""
 "# service sshd add\n"
 "----\n"
 msgstr ""
+"# service keymap del\n"
+"# service time del\n"
+"# rm /etc/rc.d/rcS.d/S18rc.time\n"
+"# service sshd add\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:2930
