@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-11-03 01:43+0100\n"
-"PO-Revision-Date: 2008-11-03 20:28+0200\n"
+"POT-Creation-Date: 2008-11-04 01:42+0100\n"
+"PO-Revision-Date: 2008-11-04 18:26+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -11943,8 +11943,8 @@ msgid ""
 "torrent client. Here is what you need:"
 msgstr ""
 "Hvis du ønsker at genstarte din screen session automatisk efter en genstart. "
-"Dette er tilfældet, for eksempel, når vi sætter Frugalware ISOs til at "
-"bruge en torrent client. Her er hvad du har brug for:"
+"Dette er tilfældet, for eksempel, når vi sætter Frugalware ISOs til at bruge "
+"en torrent client. Her er hvad du har brug for:"
 
 # type: Plain text
 #: packages.txt:2712
@@ -12007,8 +12007,8 @@ msgid ""
 "You will find the documentation and example script files in: `/usr/share/doc/"
 "speedtouch-pkgver`"
 msgstr ""
-"Du vil finde dokumentationen og eksempel script filer i: `/usr/share/doc"
-"/speedtouch-pkgver`"
+"Du vil finde dokumentationen og eksempel script filer i: `/usr/share/doc/"
+"speedtouch-pkgver`"
 
 # type: Plain text
 #: packages.txt:2736
@@ -12110,8 +12110,7 @@ msgid ""
 "/etc/stunnel/mail.pem -keyout /etc/stunnel/mail.pem\n"
 "----\n"
 msgstr ""
-"# openssl req -new -x509 -days 365 -nodes -config /etc/stunnel/stunnel.cnf "
-"-out \\\n"
+"# openssl req -new -x509 -days 365 -nodes -config /etc/stunnel/stunnel.cnf -out \\\n"
 "/etc/stunnel/mail.pem -keyout /etc/stunnel/mail.pem\n"
 "----\n"
 
@@ -12177,8 +12176,8 @@ msgid ""
 "After installing this package, please run in a browser http://localhost/"
 "sugarcrm/install.php to setup SugarSuite (sugarcrm)."
 msgstr ""
-"Efter installation af denne pakke, skriv så følgende i en browser "
-"http://localhost/sugarcrm/install.php for at opsætte SugarSuite (sugarcrm)."
+"Efter installation af denne pakke, skriv så følgende i en browser http://"
+"localhost/sugarcrm/install.php for at opsætte SugarSuite (sugarcrm)."
 
 # type: Plain text
 #: packages.txt:2804
@@ -12506,7 +12505,7 @@ msgstr ""
 # type: Plain text
 #: packages.txt:2930
 msgid "Remove unnecessary packages:"
-msgstr ""
+msgstr "Fjern unødvendige pakker:"
 
 # type: Plain text
 #: packages.txt:2933
@@ -12515,6 +12514,8 @@ msgid ""
 "# pacman-g2 -R gpm kernel\n"
 "----\n"
 msgstr ""
+"# pacman-g2 -R gpm kernel\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:2937
@@ -12522,6 +12523,8 @@ msgid ""
 "Change `/etc/inittab` so that ctrl-alt-del will halt (and not reboot the "
 "system).  Change the line"
 msgstr ""
+"Ændr `/etc/inittab` så at ctrl-alt-del vil nedlukke (og ikke rebooter "
+"systemet).  Ændr linjen"
 
 # type: Plain text
 #: packages.txt:2940
@@ -12530,6 +12533,8 @@ msgid ""
 "ca::ctrlaltdel:/sbin/shutdown -t5 -r now\n"
 "----\n"
 msgstr ""
+"ca::ctrlaltdel:/sbin/shutdown -t5 -r now\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:2946
@@ -12538,11 +12543,13 @@ msgid ""
 "ca::ctrlaltdel:/sbin/shutdown -t5 -h now\n"
 "----\n"
 msgstr ""
+"ca::ctrlaltdel:/sbin/shutdown -t5 -h now\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:2949
 msgid "Exit from the chroot and umount:"
-msgstr ""
+msgstr "Exit fra chroot og umount:"
 
 # type: Plain text
 #: packages.txt:2954
@@ -12553,16 +12560,20 @@ msgid ""
 "# umount uml\n"
 "----\n"
 msgstr ""
+"# exit\n"
+"# cd ..\n"
+"# umount uml\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:2957
 msgid "You're ready, let's register it!"
-msgstr ""
+msgstr "Du er parat, lad os register det!"
 
 # type: Plain text
 #: packages.txt:2959
 msgid "=== Configuration file"
-msgstr ""
+msgstr "=== Konfiguration fil"
 
 # type: Plain text
 #: packages.txt:2962
@@ -12570,6 +12581,8 @@ msgid ""
 "You should edit `/etc/sysconfig/uml`. Each item in the machines array "
 "defines a virtual machine. Here is an example:"
 msgstr ""
+"Du skal redigere `/etc/sysconfig/uml`. Hvert punkt i maskine array definerer "
+"en virtuel maskine. Her er et eksempel:"
 
 # type: Plain text
 #: packages.txt:2965
@@ -12578,51 +12591,55 @@ msgid ""
 "machines=('ubd0=/home/uml/root_fs_0 eth0=tuntap,,,192.168.0.254 mem=128MB con0=null,fd:1 con=null')\n"
 "----\n"
 msgstr ""
+"machines=('ubd0=/home/uml/root_fs_0 eth0=tuntap,,,192.168.0.254 mem=128MB "
+"con0=null,fd:1 con=null')\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:2968
 msgid "This does the following:"
-msgstr ""
+msgstr "Dette gør følgende:"
 
 # type: Plain text
 #: packages.txt:2970
 #, no-wrap
 msgid "* root fs will be /home/uml/root_fs_0\n"
-msgstr ""
+msgstr "* root fs vil være /home/uml/root_fs_0\n"
 
 # type: Plain text
 #: packages.txt:2972
 #, no-wrap
 msgid "* the IP of the host will be 192.168.0.254\n"
-msgstr ""
+msgstr "* IP på værten vil være 192.168.0.254\n"
 
 # type: Plain text
 #: packages.txt:2974
 #, no-wrap
 msgid "* allocate 128MB of memory\n"
-msgstr ""
+msgstr "* tildel 128MB hukommelse\n"
 
 # type: Plain text
 #: packages.txt:2976
 #, no-wrap
 msgid "* disable console input, console output will be stdout (that'll be logged to `/var/log`)\n"
-msgstr ""
+msgstr "* inaktiver konsol input, konsol output vil være stdout (det bliver logget "
+"til `/var/log`)\n"
 
 # type: Plain text
 #: packages.txt:2978
 #, no-wrap
 msgid "* disable other consoles (we don't need them, we can use ssh)\n"
-msgstr ""
+msgstr "* inaktiver andre konsoller (vi behøver dem ikke, vi kan bruge ssh)\n"
 
 # type: Plain text
 #: packages.txt:2980
 msgid "=== Configuring the host network"
-msgstr ""
+msgstr "=== Konfigurer værtsnetværket"
 
 # type: Plain text
 #: packages.txt:2982
 msgid "First you need the `tun` kernel module:"
-msgstr ""
+msgstr "Først har du brug for `tun` kerne modul:"
 
 # type: Plain text
 #: packages.txt:2986
@@ -12632,6 +12649,9 @@ msgid ""
 "# echo tun >> /etc/sysconfig/module\n"
 "----\n"
 msgstr ""
+"# modprobe tun\n"
+"# echo tun >> /etc/sysconfig/module\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:2991
@@ -12640,6 +12660,9 @@ msgid ""
 "`eth0` interface, then edit `/etc/sysconfig/network/default` and search the "
 "end of the `[eth0]` section. Just append"
 msgstr ""
+"For det andet, ybehøver du NAT. Lad os antage at du kommer ind i det ydre "
+"netværk via `eth0` interface, rediger så `/etc/sysconfig/network/default` og "
+"gå til enden af `[eth0]` afsnit. Bare tilføj"
 
 # type: Plain text
 #: packages.txt:2994
@@ -12648,11 +12671,13 @@ msgid ""
 "post_up = iptables -t nat -A POSTROUTING -j MASQUERADE\n"
 "----\n"
 msgstr ""
+"post_up = iptables -t nat -A POSTROUTING -j MASQUERADE\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:2997
 msgid "to the section. After a"
-msgstr ""
+msgstr "til afsnittet. Efter "
 
 # type: Plain text
 #: packages.txt:3000
@@ -12661,11 +12686,13 @@ msgid ""
 "# netconfig restart\n"
 "----\n"
 msgstr ""
+"# netconfig restart\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:3003
 msgid "NAT will be enabled."
-msgstr ""
+msgstr "NAT vil blive aktiveret."
 
 # type: Plain text
 #: packages.txt:3006
@@ -12673,21 +12700,23 @@ msgid ""
 "Now you can easily start/stop your machines using the usual `service uml "
 "start/stop` command."
 msgstr ""
+"Nu kan du nemt starte/stoppe dine maskine ved brug af den sædvanlige "
+"`service uml start/stop` komando."
 
 # type: Plain text
 #: packages.txt:3008
 msgid "// TODO: How to start X?"
-msgstr ""
+msgstr "// TODO: Hvordan startes X?"
 
 # type: Plain text
 #: packages.txt:3012
 msgid "== util-linux-ng"
-msgstr ""
+msgstr "== util-linux-ng"
 
 # type: Plain text
 #: packages.txt:3014
 msgid "=== Using `tmpfs` for `/tmp`"
-msgstr ""
+msgstr "=== Bruge `tmpfs` for `/tmp`"
 
 # type: Plain text
 #: packages.txt:3020
@@ -12698,6 +12727,11 @@ msgid ""
 "ramdisk so its content not preserved during a reboot. All you need is to add "
 "the following line to your `/etc/fstab`:"
 msgstr ""
+"Frugalware bruger ikke `tmpfs` for `/tmp` som standard. Men på servere kan "
+"dette forårsage problemer: hvis du ikke genstarter i månedsvis, så kan "
+"rensning af `/tmp` tage nogen tid. Ved brug af `tmpfs` kan det løse dit "
+"problem: Det er en ramdisk så dets indhold bliver ikke bevaret under en "
+"genstart. Alt du behøver er at tilføje følgende linie til din `/etc/fstab`:"
 
 # type: Plain text
 #: packages.txt:3023
@@ -12706,22 +12740,26 @@ msgid ""
 "tmpfs            /tmp             tmpfs       defaults         0   0\n"
 "----\n"
 msgstr ""
+"tmpfs            /tmp             tmpfs       defaults         0   0\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:3026
 msgid ""
 "NOTE: You need `util-linux >= 2.12-31` for this, otherwise X may not start."
 msgstr ""
+"NOTE: Du behøver `util-linux >= 2.12-31` for dette, ellers starter X måske "
+"ikke."
 
 # type: Plain text
 #: packages.txt:3030
 msgid "== vavoom"
-msgstr ""
+msgstr "== vavoom"
 
 # type: Plain text
 #: packages.txt:3032
 msgid "=== Before you play"
-msgstr ""
+msgstr "=== Før du spiller"
 
 # type: Plain text
 #: packages.txt:3037
@@ -12730,22 +12768,26 @@ msgid ""
 "copy it in ~/.vavoom or in /usr/share/vavoom. You can find this IWAD file on "
 "the original game CD or in the net. You can use shareware game's IWAD, too."
 msgstr ""
+"For at Kunne spille, må du have IWAD filer fra det oprindelige spil og "
+"kopiere det til ~/.vavoom eller til /usr/share/vavoom. Du kan finde disse "
+"IWAD-filer på det oprindelige CD spil eller på nettet. Du kan også bruge "
+"shareware IWAD spillet."
 
 # type: Plain text
 #: packages.txt:3039
 msgid "== vim"
-msgstr ""
+msgstr "== vim"
 
 # type: Plain text
 #: packages.txt:3041
 msgid "If you want to enable spell check support, you need to:"
-msgstr ""
+msgstr "Hvis du vil bruge stavekontrol understøttelse, har du brug for:"
 
 # type: Plain text
 #: packages.txt:3043
 #, no-wrap
 msgid "* install the spell files for your language:\n"
-msgstr ""
+msgstr "* installer stavefiler for dit sprog:\n"
 
 # type: Plain text
 #: packages.txt:3046
@@ -12754,17 +12796,19 @@ msgid ""
 "# pacman-g2 -S vim-spell-xx\n"
 "----\n"
 msgstr ""
+"# pacman-g2 -S vim-spell-xx\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:3049
 msgid "where `xx` is code of the requested language."
-msgstr ""
+msgstr "hvor `xx` er kode for det brugte sprog."
 
 # type: Plain text
 #: packages.txt:3051
 #, no-wrap
 msgid "* enable the spell check support for your language (type in `vim`):\n"
-msgstr ""
+msgstr "* aktiver stavekontrol understøttelse for dit sprog (skriv i `vim`):\n"
 
 # type: Plain text
 #: packages.txt:3054
@@ -12773,11 +12817,14 @@ msgid ""
 ":setlocal spell spelllang=xx_yy\n"
 "----\n"
 msgstr ""
+":setlocal spell spelllang=xx_yy\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:3057
 msgid "Some languages need correctly set encoding. If you get a message like:"
 msgstr ""
+"Nogle sprog behøver korrekt sprogkodesætning. Hvis du får en besked som:"
 
 # type: Plain text
 #: packages.txt:3060
@@ -12786,11 +12833,13 @@ msgid ""
 "Warning: Cannot find word list \"hu.latin1.spl\" or \"hu.ascii.spl\"\n"
 "----\n"
 msgstr ""
+"Advarsel: Kan ikke finde ordliste \"hu.latin1.spl\" eller \"hu.ascii.spl\"\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:3063
 msgid "then you need to set your encoding as well:"
-msgstr ""
+msgstr "så skal du også sætte sprokode:"
 
 # type: Plain text
 #: packages.txt:3066
@@ -12799,6 +12848,8 @@ msgid ""
 ":set encoding=latin2\n"
 "----\n"
 msgstr ""
+":set encoding=latin2\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:3070
@@ -12806,11 +12857,13 @@ msgid ""
 "The incorrect words are coloured red by default. You can reach a list of "
 "suggested words by pressing `z=` when the cursor is at the given word."
 msgstr ""
+"De ukorrekte ord bliver farvet røde som standard. Du kan nå en liste af "
+"foreslåede ord ved at presse `z=` når cursoren er ved det givne ord."
 
 # type: Plain text
 #: packages.txt:3072
 msgid "If you want to disable the spell check support, type:"
-msgstr ""
+msgstr "Hvis du vil inaktivere stavekontrolstøtten, skriv:"
 
 # type: Plain text
 #: packages.txt:3075
@@ -12819,6 +12872,8 @@ msgid ""
 ":setlocal nospell\n"
 "----\n"
 msgstr ""
+":setlocal nospell\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:3079
@@ -12826,6 +12881,8 @@ msgid ""
 "It may be handy to have map function keys in `~/.vimrc` to enable / disable "
 "the spell check support:"
 msgstr ""
+"Det kan være praktisk at have tastaturbindinger i `~/.vimrc` for at "
+"aktiver/inaktiver stavekontrolstøtten:"
 
 # type: Plain text
 #: packages.txt:3085
@@ -12837,6 +12894,11 @@ msgid ""
 "map <F7> <Esc>:setlocal nospell<CR>\n"
 "----\n"
 msgstr ""
+"set encoding=latin2\n"
+"map <F5> <Esc>:setlocal spell spelllang=en_gb<CR>\n"
+"map <F6> <Esc>:setlocal spell spelllang=hu<CR>\n"
+"map <F7> <Esc>:setlocal nospell<CR>\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:3089
@@ -12844,11 +12906,13 @@ msgid ""
 "NOTE: The language code is sometimes in an `xx` and sometimes is in an "
 "`xx_yy` form. This is something you need to figure out for your language."
 msgstr ""
+"NOTE: Sprogkoden er sommetider en `xx` og sommetider er det en `xx_yy` form. "
+"Det er noget som du må finde ud af du for dit sprog."
 
 # type: Plain text
 #: packages.txt:3091
 msgid "See the upstream documentation for more info about spell check support:"
-msgstr ""
+msgstr "Se upstream dokumentationen for mere info om stavekontrolstøtte:"
 
 # type: Plain text
 #: packages.txt:3094
@@ -12857,11 +12921,13 @@ msgid ""
 ":help spell\n"
 "----\n"
 msgstr ""
+":help spell\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:3099
 msgid "== virtualbox"
-msgstr ""
+msgstr "== virtualbox"
 
 # type: Plain text
 #: packages.txt:3103
@@ -12870,6 +12936,8 @@ msgid ""
 "command as root to get the Additions ISO (requires an active Internet "
 "connection):"
 msgstr ""
+"Hvis du vil kunne bruge VirtualBox-gæstetilføjelserne, kør denne komando som "
+"root for at få Additions ISO (kræver en aktiv Internetforbindelse):"
 
 # type: Plain text
 #: packages.txt:3106
@@ -12878,6 +12946,8 @@ msgid ""
 "# /usr/bin/get-vbox-additions\n"
 "-----------------------------\n"
 msgstr ""
+"# /usr/bin/get-vbox-additions\n"
+"-----------------------------\n"
 
 # type: Plain text
 #: packages.txt:3109
