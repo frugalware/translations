@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-11-04 01:42+0100\n"
-"PO-Revision-Date: 2008-11-04 18:26+0200\n"
+"PO-Revision-Date: 2008-11-04 20:22+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -12952,24 +12952,25 @@ msgstr ""
 # type: Plain text
 #: packages.txt:3109
 msgid "== wifi-radar"
-msgstr ""
+msgstr "== wifi-radar"
 
 # type: Plain text
 #: packages.txt:3111
 msgid ""
 "Don't forget to change the wifi interface name in '/etc/wifi-radar.conf'!"
-msgstr ""
+msgstr "Glem ikke at ændre wifi interface navn i '/etc/wifi-radar.conf'!"
 
 # type: Plain text
 #: packages.txt:3113
 msgid "== x11vnc"
-msgstr ""
+msgstr "== x11vnc"
 
 # type: Plain text
 #: packages.txt:3115
 msgid ""
 "Running `x11vnc` without a password is not recommended. To create one, type:"
 msgstr ""
+"At køre `x11vnc` uden et password anbefales ikke. For at skabe det, skriv:"
 
 # type: Plain text
 #: packages.txt:3118
@@ -12978,11 +12979,13 @@ msgid ""
 "vncpasswd ~/.vnc/passwd\n"
 "----\n"
 msgstr ""
+"vncpasswd ~/.vnc/passwd\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:3121
 msgid "Then you can start the VNC server using"
-msgstr ""
+msgstr "Så kan du starte VNC serveren ved brug af"
 
 # type: Plain text
 #: packages.txt:3124
@@ -12991,21 +12994,23 @@ msgid ""
 "x11vnc -display :0 -rfbauth ~/.vnc/passwd -forever\n"
 "----\n"
 msgstr ""
+"x11vnc -display :0 -rfbauth ~/.vnc/passwd -forever\n"
+"----\n"
 
 # type: Plain text
 #: packages.txt:3127
 msgid "if are logged in on `:0`."
-msgstr ""
+msgstr "hvis der bliver logget ind på `:0`."
 
 # type: Plain text
 #: packages.txt:3131
 msgid "== xcache"
-msgstr ""
+msgstr "== xcache"
 
 # type: Plain text
 #: packages.txt:3134
 msgid "Installing As PHP Extension? ~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-msgstr ""
+msgstr "Installer Som PHP Udvidelse? ~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 
 # type: Plain text
 #: packages.txt:3137
@@ -13015,6 +13020,9 @@ msgid ""
 "+\n"
 "--------------------------------------------------------------\n"
 msgstr ""
+"1. Tjek '/etc/php.ini'\n"
+"+\n"
+"--------------------------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:3139
@@ -13023,6 +13031,8 @@ msgid ""
 "# cat /usr/share/doc/xcache-$pkgver/xcache.ini >> /etc/php.ini\n"
 "--------------------------------------------------------------\n"
 msgstr ""
+"# cat /usr/share/doc/xcache-$pkgver/xcache.ini >> /etc/php.ini\n"
+"--------------------------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:3143
@@ -13032,6 +13042,9 @@ msgid ""
 "+\n"
 "----------------------\n"
 msgstr ""
+"2. Modificer php.ini for dine behov:\n"
+"+\n"
+"----------------------\n"
 
 # type: Plain text
 #: packages.txt:3145
@@ -13040,38 +13053,42 @@ msgid ""
 "# $EDITOR /etc/php.ini\n"
 "----------------------\n"
 msgstr ""
+"# $EDITOR /etc/php.ini\n"
+"----------------------\n"
 
 # type: Plain text
 #: packages.txt:3148
 #, no-wrap
 msgid "3. Restart php\n"
-msgstr ""
+msgstr "3. Genstart php\n"
 
 # type: Plain text
 #: packages.txt:3150
 msgid "WARNING: Use >> with cat, not simply >"
-msgstr ""
+msgstr "ADVARSEL: Brug >> med cat, ikke kun >"
 
 # type: Plain text
 #: packages.txt:3152
 msgid "Please take a look on http://xcache.lighttpd.net/[xcache wiki]."
-msgstr ""
+msgstr "Venligst tag og kik på http://xcache.lighttpd.net/[xcache wiki]."
 
 # type: Plain text
 #: packages.txt:3154
 msgid "== xchat"
-msgstr ""
+msgstr "== xchat"
 
 # type: Plain text
 #: packages.txt:3156
 msgid "How should I remote control xmms from xchat?"
-msgstr ""
+msgstr "Hvordan skal jeg fjernbetjene xmms fra xchat?"
 
 # type: Plain text
 #: packages.txt:3158
 msgid ""
 "First make sure you really need it - some people think it's a security hole."
 msgstr ""
+"Færst af alt, vær sikker på at du virkeligt har brug for det - nogle "
+"mennesker mener at det er et sikkerhedshul."
 
 # type: Plain text
 #: packages.txt:3170
@@ -13086,12 +13103,21 @@ msgid ""
 "to be the most useful one amongst the kind. The documentation is a German "
 "PDF, which is to be translated to English/Hungarian.)"
 msgstr ""
+"Du behøver http://inconnu.isu.edu/~ink/new/projects/xchat-xmms/xchat-"
+"xmms-0.8.1.tar.gz[XChat-XMMS plugin] fra http://scripts.xchat.org/cgi-"
+"bin/search?str=xmms&cat=0&Submit=Search[XChat's Scripts + Plugins] afsnit, "
+"og nogle andre pakker (for det meste Perl-moduller) hvilken jeg er for doven "
+"til at søge efter, men de er tilgængelige i fpm. Udpak pakken og kopier .pl "
+"script til din XChat folder, og (prøv at) loade den. Hvis det klager over "
+"savnede Perl-moduller, installer dem og prøv igen. (Dette script har nogle "
+"mindre bugs, men blev fundet at være den mest brugbare af slagsen. "
+"Dokumentationen er en tysk PDF, som er ved at blive oversat til "
+"engelsk/ungarsk.)"
 
 # type: Plain text
 #: packages.txt:3172
-#, fuzzy
 msgid "== xdm-frugalware"
-msgstr "== Om Frugalware"
+msgstr "== xdm-frugalware"
 
 # type: Plain text
 #: packages.txt:3176
@@ -13099,11 +13125,13 @@ msgid ""
 "To use this theme, please add -config /etc/X11/xdm/frugalware/xdm-config to "
 "your xdm environmental variable in /etc/sysconfig/desktop and restart xdm."
 msgstr ""
+"For at benytte dette tema, tilføj -config /etc/X11/xdm/frugalware/xdm-config "
+"til din xdm miljømæssig variabel i /etc/sysconfig/desktop og genstart xdm."
 
 # type: Plain text
 #: packages.txt:3178
 msgid "== xen"
-msgstr ""
+msgstr "== xen"
 
 # type: Plain text
 #: packages.txt:3182
@@ -13112,21 +13140,25 @@ msgid ""
 "your main PC, it may destroy your data. As an example, I destroyed my file "
 "system during testing."
 msgstr ""
+"ADVARSEL: Xen er ustabil software, hvilket betyder at det ikke skal bruges "
+"oå en produktions PC, det kan ødelægge dine data. Som et eksempel, så "
+"ødelagde jeg mit filsystem under afprøvning."
 
 # type: Plain text
 #: packages.txt:3184
 msgid "== xf86-input-synaptics"
-msgstr ""
+msgstr "== xf86-input-synaptics"
 
 # type: Plain text
 #: packages.txt:3186
 msgid "First of all, read the INSTALL file for the instructions."
-msgstr ""
+msgstr "Først af alt, læs INSTALL filen for instrukser."
 
 # type: Plain text
 #: packages.txt:3188
 msgid "For lazy users, here's what i had to do to get the driver working:"
 msgstr ""
+"For dovne brugere, her er hvad jeg måtte gøre at få driveren til at virke:"
 
 # type: Plain text
 #: packages.txt:3191
@@ -13135,6 +13167,8 @@ msgid ""
 "1. Make sure you have the 'evdev' kernel module loaded _before_ the x server\n"
 "started (or restart it after you loaded the module).\n"
 msgstr ""
+"1. Sikr dig at du har 'evdev' kerne modul loaded _før_ x serveren\n"
+"er startet (eller genstart det efter du har loaded modulet).\n"
 
 # type: Plain text
 #: packages.txt:3194
@@ -13144,6 +13178,9 @@ msgid ""
 "+\n"
 "----------------\n"
 msgstr ""
+"2. Åbn nu din '/etc/X11/xorg.conf' og tilføj følgende:\n"
+"+\n"
+"----------------\n"
 
 # type: Plain text
 #: packages.txt:3196
@@ -13152,11 +13189,13 @@ msgid ""
 "Load \"synaptics\"\n"
 "----------------\n"
 msgstr ""
+"Load \"synaptics\"\n"
+"----------------\n"
 
 # type: Plain text
 #: packages.txt:3199
 msgid "+ to the \"Module\" section."
-msgstr ""
+msgstr "+ til \"Module\" afsnit."
 
 # type: Plain text
 #: packages.txt:3202
@@ -13166,6 +13205,9 @@ msgid ""
 "+\n"
 "-----------------------------------------------\n"
 msgstr ""
+"3. Erstat indholdet af din \"InputDevice\" section til følgende:\n"
+"+\n"
+"-----------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:3223
@@ -13193,6 +13235,27 @@ msgid ""
 "EndSection\n"
 "-----------------------------------------------\n"
 msgstr ""
+"Section \"InputDevice\"\n"
+"  Identifier    \"Synaptics Mouse\"\n"
+"  Driver        \"synaptics\"\n"
+"  Option        \"Device\"        \"/dev/psaux\"\n"
+"  Option        \"Protocol\"      \"auto-dev\"\n"
+"  Option        \"LeftEdge\"      \"1700\"\n"
+"  Option        \"RightEdge\"     \"5300\"\n"
+"  Option        \"TopEdge\"       \"1700\"\n"
+"  Option        \"BottomEdge\"    \"4200\"\n"
+"  Option        \"FingerLow\"     \"25\"\n"
+"  Option        \"FingerHigh\"    \"30\"\n"
+"  Option        \"MaxTapTime\"    \"180\"\n"
+"  Option        \"MaxTapMove\"    \"220\"\n"
+"  Option        \"VertScrollDelta\" \"100\"\n"
+"  Option        \"MinSpeed\"      \"0.09\"\n"
+"  Option        \"MaxSpeed\"      \"0.18\"\n"
+"  Option        \"AccelFactor\"   \"0.0015\"\n"
+"  Option        \"SHMConfig\"     \"on\"\n"
+"#  Option       \"Repeater\"      \"/dev/ps2mouse\"\n"
+"EndSection\n"
+"-----------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:3227
@@ -13202,6 +13265,9 @@ msgid ""
 "+\n"
 "--------------------------------------------\n"
 msgstr ""
+"4. Tilføj denne linje til \"ServerLayout\" Section:\n"
+"+\n"
+"--------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:3229
@@ -13210,11 +13276,13 @@ msgid ""
 "InputDevice \"Synaptics Mouse\"  \"CorePointer\"\n"
 "--------------------------------------------\n"
 msgstr ""
+"InputDevice \"Synaptics Mouse\"  \"CorePointer\"\n"
+"--------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:3232
 msgid "== xgl"
-msgstr ""
+msgstr "== xgl"
 
 # type: Plain text
 #: packages.txt:3240
@@ -13228,6 +13296,14 @@ msgid ""
 "OpenGL will not work on it. Xgl is only recommended if you do not have a \n"
 "graphics card that supports GLX_EXT_texture_from_pixmap.\n"
 msgstr ""
+"1. *Xgl server*\n"
+"+\n"
+"Xgl er en hardware accelereret X server. Det gør alt der bliver overført \n"
+"til skærmen med OpenGL som tillader sjove efekter som vaklevorne vinduer, \n"
+"gennemskinnelighed, etc. Ulempen ved Xgl er det at programmer der allerede "
+"bruger \n"
+"OpenGL ikke vil virke med det. Xgl kan kun anbefales hvis du ikke har et \n"
+"grafikkort der understøtter GLX_EXT_texture_from_pixmap.\n"
 
 # type: Plain text
 #: packages.txt:3249
