@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-11-09 01:42+0100\n"
-"PO-Revision-Date: 2008-11-09 13:55+0200\n"
+"POT-Creation-Date: 2008-11-10 01:42+0100\n"
+"PO-Revision-Date: 2008-11-10 19:02+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -14389,8 +14389,7 @@ msgstr ""
 "Ja, der er det. Det informerer brugere om nye binære pakker, håndterer "
 "rettigheder på kanalen og så videre. Hvis du ønsker en ny facilitet skal "
 "blive implementeret, så står det dig frit for at anmode om det på Frugalware "
-"Bug Tracker System (BTS) som er tilgængelig "
-"http://bugs.frugalware.org[her]."
+"Bug Tracker System (BTS) som er tilgængelig http://bugs.frugalware.org[her]."
 
 # type: Plain text
 #: irc-rules.txt:100
@@ -14410,9 +14409,9 @@ msgstr ""
 "Det er ikke et problem, men husk venligst følgende: hvis du er borte på det "
 "tidspunkt, og vender tilbage bør du kunne læse linierne som bliver "
 "fremhævet.  Hvis dette ikke er muligt så er det bedre at forlade kanalerne, "
-"da vi tror at vi er ved at tale til dig men vi så istedet taler med "
-"/dev/null. Også hvis du er online og du er blevet fremhævet og spurgt, så "
-"prøv venligst at svare. Hvis du har ikke har tid, skriv følgende"
+"da vi tror at vi er ved at tale til dig men vi så istedet taler med /dev/"
+"null. Også hvis du er online og du er blevet fremhævet og spurgt, så prøv "
+"venligst at svare. Hvis du har ikke har tid, skriv følgende"
 
 # type: Plain text
 #: irc-rules.txt:109
@@ -14427,7 +14426,7 @@ msgstr "er nok. Således at han ikke vil vente på dit svar."
 # type: Plain text
 #: irc-rules.txt:113
 msgid "== Private messaging"
-msgstr ""
+msgstr "== Privat beskeder"
 
 # type: Plain text
 #: irc-rules.txt:117
@@ -14436,6 +14435,10 @@ msgid ""
 "This is a support channel: you ask in the channel and whoever has the time/"
 "knowledge to answer, he/she will. That the fastest way, believe us."
 msgstr ""
+"Venligst send _ikke_ /beskeder til brugere medmindre du først beder om "
+"tilladelse til at gøre det.  Dette er en support kanal: du spørger i kanalen "
+"og hvem der end må have tid/viden svarer, han/hun køn. Det er den hurtigste "
+"måde, tro os.."
 
 # type: Plain text
 #: irc-rules.txt:121
@@ -14444,11 +14447,14 @@ msgid ""
 "set up their clients to ignore msgs on freenode, so you talk to /dev/null "
 "when you /msg to us."
 msgstr ""
+"Du bør også vide at nogle af os (voroskoi, vmiklos, måske også andre) sætter "
+"deres klienter op til at ignorere beskeder på freenode, så din snak går til "
+"/dev/null når du/skriver til os."
 
 # type: Plain text
 #: irc-rules.txt:123
 msgid "== Logging"
-msgstr ""
+msgstr "== Logning"
 
 # type: Plain text
 #: irc-rules.txt:126
@@ -14457,21 +14463,24 @@ msgid ""
 "home page, and the main goal is to allow search engines to index them. If "
 "you don't like this then your only choice is to not join ;-)"
 msgstr ""
+"Alle Frugalware-kanaler er loggede og offentlige.  Logs er linket fra "
+"hjemmesiden, og hovedformålet er at tillade søgemaskiner at indeksere dem. "
+"Hvis du ikke kan lide dette, er dit eneste valg ikke at deltage ;-)"
 
 # type: Plain text
 #: gpg.txt:2
 msgid "= Checking if Frugalware tarballs are from trusted source"
-msgstr ""
+msgstr "= Tjekke om Frugalware tarballs er fra betroet source"
 
 # type: Plain text
 #: gpg.txt:4
 msgid "== How to verify"
-msgstr ""
+msgstr "== Hvordan man verificerer"
 
 # type: Plain text
 #: gpg.txt:6
 msgid "- Import our public keyring with the"
-msgstr ""
+msgstr "- Importer vores offentlige nøgle med"
 
 # type: Plain text
 #: gpg.txt:9
@@ -14480,17 +14489,20 @@ msgid ""
 "$ gpg --recv-keys 20F55619\n"
 "------------------------\n"
 msgstr ""
+"$ gpg --recv-keys 20F55619\n"
+"------------------------\n"
 
 # type: Plain text
 #: gpg.txt:14
 msgid "- Verify the tarball. Here is an example:"
-msgstr ""
+msgstr "- Verificer tarball. Her er et eksempel:"
 
 # type: Plain text
 #: gpg.txt:15
 #, no-wrap
 msgid "------------------------------------------------------------------------------\n"
-msgstr ""
+msgstr "----------------------------------------------------------------------------"
+"--\n"
 
 # type: Plain text
 #: gpg.txt:20
@@ -14502,11 +14514,18 @@ msgid ""
 "\t<frugalware-devel@frugalware.org>\"\n"
 "------------------------------------------------------------------------------\n"
 msgstr ""
+"$ gpg --verify pacman-tools-0.7.2.tar.gz.asc pacman-tools-0.7.2.tar.gz\n"
+"gpg: Signature made Sun 14 May 2006 02:35:34 AM CEST using DSA key ID "
+"20F55619\n"
+"gpg: Good signature from \"Frugalware Linux Archives Verification Key \\\n"
+"\t<frugalware-devel@frugalware.org>\"\n"
+"----------------------------------------------------------------------------"
+"--\n"
 
 # type: Plain text
 #: gpg.txt:23
 msgid "== The meaning of this signature"
-msgstr ""
+msgstr "== Betydningen af denne signatur"
 
 # type: Plain text
 #: gpg.txt:26
@@ -14515,11 +14534,14 @@ msgid ""
 "site itself has not been compromised. However, if we suffer an intrusion we "
 "will revoke the key and post information here as quickly as possible."
 msgstr ""
+"Denne signatur garanterer ikke i sig selv at Frugalware Linux Hovedarkiv-"
+"site ikke kan være været komprimeret. Men, hvis vi lider under et angreb vil "
+"vi ophæve nøglen og skrive information om det her så hurtigt som muligt."
 
 # type: Plain text
 #: makepkg.txt:2
 msgid "= Creating new packages"
-msgstr ""
+msgstr "= Skabe nye pakker"
 
 # type: Plain text
 #: makepkg.txt:9
@@ -14529,12 +14551,16 @@ msgid ""
 "specified file belong to. If you want to know which package contains '/etc/"
 "frugalware-release', you should use:"
 msgstr ""
+"Frugalware består af tusinder af pakker. Hver fil i distributionen tilhører "
+"en eller anden pakke. Du kan nemt lave en forspørgel, om hvilken pakke den "
+"specifike fil hører til. Hvis du vil vide hvilken pakke indeholder '/etc"
+"/frugalware-release', skriver du bare følgende:"
 
 # type: Plain text
 #: makepkg.txt:10
 #, no-wrap
 msgid "----------------------------------------------------\n"
-msgstr ""
+msgstr "----------------------------------------------------\n"
 
 # type: Plain text
 #: makepkg.txt:13
@@ -14544,6 +14570,9 @@ msgid ""
 "/etc/frugalware-release is owned by frugalware 0.6rc1-1\n"
 "----------------------------------------------------\n"
 msgstr ""
+"$ pacman-g2 -Qo /etc/frugalware-release\n"
+"/etc/frugalware-release is owned by frugalware 0.6rc1-1\n"
+"----------------------------------------------------\n"
 
 # type: Plain text
 #: makepkg.txt:24
@@ -14558,6 +14587,15 @@ msgid ""
 "package. For example postfix is our default MTA, so exim, sendmail, etc must "
 "be in some extra dir."
 msgstr ""
+"Hvis du browser igennem FST (Frugalware Source Tree), kan du se, at der i "
+"kildefolderen er der kategori og kategori-ekstra folder. Folderen uden "
+"-extra tag indeholder de grundlæggende pakker den givne kategori og "
+"afhængigheder af grundlæggende pakker. Så en pakke i disse foldere ikke kan "
+"afhænge af en pakke i ekstra foldere.  Det samme gælder for konsol/grafiske "
+"programmer: ihvis dit program/ bibliotek er grafisk, så brug xapps/xlib, "
+"hvis ikke så brug apps/lib.  For hver opgave er der en standard pakke. For "
+"eksempel er postfix vores standard MTA, så exim, sendmail, etc skal være i "
+"en eller anden ekstra folder."
 
 # type: Plain text
 #: makepkg.txt:30
