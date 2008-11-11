@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-11-11 01:43+0100\n"
-"PO-Revision-Date: 2008-11-11 15:32+0200\n"
+"PO-Revision-Date: 2008-11-11 16:55+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -14836,11 +14836,15 @@ msgid ""
 "then please check your '/etc/passwd.pacnew' file, that contains the relevant "
 "entry, just copy that line to '/etc/passwd'."
 msgstr ""
+"Før bygning af chroot miljø, bør du sikre dig at `fst` bruger findes på dit "
+"system. Tjek din '/etc/passwd' fil. Hvis ikke, tjek da venligst din "
+"'/etc/passwd.pacnew' fil, den indeholder relevante emner, bare kopier denne "
+"linie til '/etc/passwd'."
 
 # type: Plain text
 #: makepkg.txt:113
 msgid "Now that you have the fst user, continue with"
-msgstr ""
+msgstr "Nu da du har fst brugeren, fortsæt med"
 
 # type: Plain text
 #: makepkg.txt:117
@@ -14850,6 +14854,9 @@ msgid ""
 "$ sudo makepkg [<options>]\n"
 "-----------------------------------\n"
 msgstr ""
+"$ cd $fst_root/source/xapps/mplayer\n"
+"$ sudo makepkg [<options>]\n"
+"-----------------------------------\n"
 
 # type: Plain text
 #: makepkg.txt:122
@@ -14858,6 +14865,9 @@ msgid ""
 "defaults to current. this can be removed once sayshell is out NOTE: If you "
 "are using stable, you probably want to use the `-t stable` option!"
 msgstr ""
+"// i current, makepkg defaults til første aktiveret arkiv, i stable, det // "
+"defaults til current. Dette kan fjernes straks sayshell er ude NOTE: Hvis du "
+"bruger stable, vil du sandsynligvis bruge `-t stable` option!"
 
 # type: Plain text
 #: makepkg.txt:130
@@ -14870,11 +14880,18 @@ msgid ""
 "root privileges. To allow group (for example the devels group) to use sudo "
 "makepkg, start visudo as root, and add the following line:"
 msgstr ""
+"Først skifter vi til folderen hvor mplayer er, så (som make og Makefile)  "
+"kører vi makepkg dette vil bygge pakken ifølge parametrene beskrevet i "
+"FrugalBuild. Vi har brugt -R option til at bygge pakken i et chroot-ed "
+"miljø. Siden 0.5  er bygning i chroot standard metoden, du skal bruge -H "
+"hvis du vil bygge på værtssystemet.  Chroot kræver root privilegier. For at "
+"tillade grupper (for eksempel devels group) til at bruge sudo makepkg, start "
+"visudo som root, og tilføj følgende linje:"
 
 # type: Plain text
 #: makepkg.txt:132
 msgid "`%devels ALL=NOPASSWD:/usr/bin/makepkg`"
-msgstr ""
+msgstr "`%devels ALL=NOPASSWD:/usr/bin/makepkg`"
 
 # type: Plain text
 #: makepkg.txt:137
@@ -14884,17 +14901,21 @@ msgid ""
 "chroot for each user. In order to do this, set the $CHROOTDIR variable in "
 "your '/etc/makepkg.conf' from:"
 msgstr ""
+"Chroot vil blive placeret som standard i '/var/chroot'. Kun en pakke kan "
+"bygges i et chroot ad gangen, så måske ønsker du at specificere et særskilt "
+"chroot for hver bruger. For at gøre dette, sæt $CHROOTDIR variable in your "
+"'/etc/makepkg.conf' fra:"
 
 # type: Plain text
 #: makepkg.txt:139
 msgid "`export CHROOTDIR=\"/var/chroot\"`"
-msgstr ""
+msgstr "`export CHROOTDIR=\"/var/chroot\"`"
 
 # type: Plain text
 #: makepkg.txt:143
 msgid ""
 "`export CHROOTDIR=\"/var/chroot.`echo $HOME|sed \\'s|.\\*/\\(.*\\)$|\\1|'`\"`"
-msgstr ""
+msgstr "`export CHROOTDIR=\"/var/chroot.`echo $HOME|sed \\'s|.\\*/\\(.*\\)$|\\1|'`\"`"
 
 # type: Plain text
 #: makepkg.txt:146
@@ -14902,17 +14923,19 @@ msgid ""
 "This way the 'one parallel build / one system' limit is increased to 'one "
 "parallel build / one user'."
 msgstr ""
+"På denne måde vil 'en parallel bygning / et system' grænse blive forhøjet "
+"til 'en parallel bygning / en bruger'."
 
 # type: Plain text
 #: makepkg.txt:148
 msgid ""
 "(See man makepkg for more info about the benefits of building in a chroot)."
-msgstr ""
+msgstr "(Se man makepkg for mere info om bygningsfordele i et chroot)."
 
 # type: Plain text
 #: makepkg.txt:150
 msgid "== Use variables"
-msgstr ""
+msgstr "== Bruge variabler"
 
 # type: Plain text
 #: makepkg.txt:154
@@ -14921,6 +14944,9 @@ msgid ""
 "without touching the FrugalBuild itself. The `git` package is a good "
 "example.  Using"
 msgstr ""
+"Du kan forandre resultatet af bygningsprocessen ved brug af miljøvariabler "
+"uden at røre FrugalBuild i sig selv. `git` pakken er et godt eksempel.  Ved "
+"at bruge"
 
 # type: Plain text
 #: makepkg.txt:157
@@ -14929,6 +14955,8 @@ msgid ""
 "$ USE_DEVEL=y sudo makepkg [<options>]\n"
 "-----------------------------------\n"
 msgstr ""
+"$ USE_DEVEL=y sudo makepkg [<options>]\n"
+"-----------------------------------\n"
 
 # type: Plain text
 #: makepkg.txt:161
@@ -14936,16 +14964,18 @@ msgid ""
 "for that package results in a build of git's development version. Here is "
 "what you need if you want so for your package:"
 msgstr ""
+"for denne pakke resultater det i en bygning af gitś udviklingsversion. Her "
+"er hvad du har brug for hvis du ønsker det for din pakke"
 
 # type: Plain text
 #: makepkg.txt:165
 msgid "# set the variable to false by default USE_DEVEL=${USE_DEVEL:-\"n\"}"
-msgstr ""
+msgstr "# sæt variablen til falsk som standard USE_DEVEL=${USE_DEVEL:-\"n\"}"
 
 # type: Plain text
 #: makepkg.txt:167
 msgid "(...)"
-msgstr ""
+msgstr "(...)"
 
 # type: Plain text
 #: makepkg.txt:174
