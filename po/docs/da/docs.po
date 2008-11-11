@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-11-11 01:43+0100\n"
-"PO-Revision-Date: 2008-11-11 16:55+0200\n"
+"PO-Revision-Date: 2008-11-11 20:53+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -14989,29 +14989,41 @@ msgid ""
 "fi\n"
 "----\n"
 msgstr ""
+"# disse kommandoer vil blive evalueret kun for det tilfælde at USE_DEVEL er "
+"sat til true\n"
+"hvis Fuse $USE_DEVEL; så\n"
+"        _F_scm_type=\"git\"\n"
+"        _F_scm_url=\"git://git.kernel.org/pub/scm/git/git.git\"\n"
+"        Finclude scm\n"
+"fi\n"
+"----\n"
 
 # type: Plain text
 #: makepkg.txt:177
 msgid ""
 "In the next section we will see an example for a simple FrugalBuild script."
 msgstr ""
+"I det næste afsnit vil vi se på et eksempel for et simpelt FrugalBuild "
+"script."
 
 # type: Plain text
 #: makepkg.txt:179
 msgid "== A simple example"
-msgstr ""
+msgstr "== Et simplet eksempel"
 
 # type: Plain text
 #: makepkg.txt:181
 msgid ""
 "Let's see a simple example, the FrugalBuild script of the cabextract package."
 msgstr ""
+"Lad os se på et enkelt eksempel, FrugalBuild script på  cabextract pakken."
 
 # type: Plain text
 #: makepkg.txt:185
 msgid ""
 "# Compiling Time: 0.06 SBU # Maintainer: VMiklos <vmiklos@frugalware.org>"
 msgstr ""
+"# Compiling Time: 0.06 SBU # Maintainer: VMiklos <vmiklos@frugalware.org>"
 
 # type: Plain text
 #: makepkg.txt:198
@@ -15030,6 +15042,19 @@ msgid ""
 "source=(http://www.kyz.uklinux.net/downloads/$pkgname-$pkgver.tar.gz)\n"
 "sha1sums=('871b3db4bc2629eb5726659c147aecea1af6a6d0')\n"
 msgstr ""
+"pkgname=cabextract\n"
+"pkgver=1.2\n"
+"pkgrel=1\n"
+"pkgdesc=\"a program to extract Microsoft Cabinet files\"\n"
+"url=\"http://www.kyz.uklinux.net/cabextract.php\"\n"
+"depends=('glibc')\n"
+"groups=('apps')\n"
+"archs=('i686' 'x86_64')\n"
+"up2date=\"lynx -dump http://www.kyz.uklinux.net/cabextract.php |grep "
+"'cabextract \\\n"
+"\tsource code'|tr -s ' '|cut -d ' ' -f 6\"\n"
+"source=(http://www.kyz.uklinux.net/downloads/$pkgname-$pkgver.tar.gz)\n"
+"sha1sums=('871b3db4bc2629eb5726659c147aecea1af6a6d0')\n"
 
 # type: Plain text
 #: makepkg.txt:200
@@ -15038,16 +15063,19 @@ msgid ""
 "# optimization OK\n"
 "-------------------------------------------------------------------------------\n"
 msgstr ""
+"# optimization OK\n"
+"----------------------------------------------------------------------------"
+"---\n"
 
 # type: Plain text
 #: makepkg.txt:203
 msgid "And here comes the description for each line:"
-msgstr ""
+msgstr "Og her kommer beskrivelsen for hver linie:"
 
 # type: Plain text
 #: makepkg.txt:205
 msgid "`# Compiling Time: 0.06 SBU`"
-msgstr ""
+msgstr "`# Compiling Time: 0.06 SBU`"
 
 # type: Plain text
 #: makepkg.txt:209
@@ -15056,6 +15084,9 @@ msgid ""
 "course, it depends on your hardware, so we use SBUs instead of minutes as a "
 "unit."
 msgstr ""
+"Du bør skrive her hvor meget tid det tog at bygge pakken.  Selvfølgelig, "
+"afhænger det af din hardware, så at vi benytter SBUs i stedet for minutter "
+"som enhed."
 
 # type: Plain text
 #: makepkg.txt:214
@@ -15065,11 +15096,15 @@ msgid ""
 "the build took. After you built binutils, you should update your '/etc/"
 "makepkg.conf':"
 msgstr ""
+"SBU er Static Binutils Unit, hvilket betyder tiden repoman bruger sammen med "
+"binutils på at sammenflette det på din maskine. Som standard vil makepkg "
+"udskrive hvor mange sekunder bygningen tog. Efter at du har bygget binutils, "
+"bør du opdatere din '/etc/makepkg.conf':"
 
 # type: Plain text
 #: makepkg.txt:216
 msgid "`SBU=\"257\"`"
-msgstr ""
+msgstr "`SBU=\"257\"`"
 
 # type: Plain text
 #: makepkg.txt:220
@@ -15078,11 +15113,15 @@ msgid ""
 "From this point, makepkg will print out SBUs instead of seconds after "
 "successful builds, and this SBU value will be equal on anyone's machine."
 msgstr ""
+"Linien ovenfor betyder at kompilere binutils på din maskine tog 257 "
+"sekunder.  Fra dette punkt, vil makepkg udskrive SBUs i stedet for sekunder "
+"efter en vellykket bygning, og denne SBU-værdi vil være ens på alle "
+"maskiner."
 
 # type: Plain text
 #: makepkg.txt:222
 msgid "`# Maintainer: VMiklos <vmiklos@frugalware.org>`"
-msgstr ""
+msgstr "`# Maintainer: VMiklos <vmiklos@frugalware.org>`"
 
 # type: Plain text
 #: makepkg.txt:230
@@ -15095,11 +15134,18 @@ msgid ""
 "other names should not be included in the FrugalBuild, anyone can use the "
 "version control features to look for them."
 msgstr ""
+"Hvis du er vedligeholder af pakken, skriv dit navn eller kælenavn og e-mail "
+"adressen her. Hvis du sandsynligvis ikke vil vedligeholde pakken, skriv "
+"Contributor i stedet for Maintainer, og derefter vil vedligeholderen tilføje "
+"hans/hendes linie senere. En pakke kan have kun en bidragyder: den første "
+"person som skrev FrugalBuild for det. Vedligeholderen er den aktuelle "
+"vedligeholder.  De andre navne bør ikke blive inkluderet i FrugalBuild, "
+"enhver kan benytte versionskontrol faciliteten for at søge efter dem."
 
 # type: Plain text
 #: makepkg.txt:232
 msgid "`pkgname=cabextract`"
-msgstr ""
+msgstr "`pkgname=cabextract`"
 
 # type: Plain text
 #: makepkg.txt:235
@@ -15107,11 +15153,13 @@ msgid ""
 "This will be the name of the package. It's allowed to include numbers, "
 "hyphens (-), etc., and should be lowercase."
 msgstr ""
+"Dette vil være navnet på pakken. Det er tilladt at inkludere tal, "
+"bindestreger (-), etc., og bør være små bogstaver."
 
 # type: Plain text
 #: makepkg.txt:237
 msgid "`pkgver=1.2`"
-msgstr ""
+msgstr "`pkgver=1.2`"
 
 # type: Plain text
 #: makepkg.txt:240
@@ -15119,11 +15167,13 @@ msgid ""
 "The package's version. Hyphens are not allowed, so a 1.0-6111 will be "
 "usually converted to 1.0_6111."
 msgstr ""
+"Pakkens version nummer. Bindestreger er ikke tilladte, så en 1.0-6111 vil "
+"sædvanligvis blive konverteret til 1.0_6111."
 
 # type: Plain text
 #: makepkg.txt:242
 msgid "`pkgrel=1`"
-msgstr ""
+msgstr "`pkgrel=1`"
 
 # type: Plain text
 #: makepkg.txt:247
@@ -15133,11 +15183,15 @@ msgid ""
 "don't forget to reset this number back to 1. If you design a new package, "
 "set this to 1."
 msgstr ""
+"Frigivelsesnummer markerer Frugalware-specifikke ændringer. Hvis du "
+"rekompilerer en pakke, bør du forhøje dette tal. Hvis du opgraderer til en "
+"nyere version, glem ikke at nulstille dette tilbage til 1. Hvis du designer "
+"en ny pakke, sæt det så til 1."
 
 # type: Plain text
 #: makepkg.txt:249
 msgid "`pkgdesc=\"a program to extract Microsoft Cabinet files\"`"
-msgstr ""
+msgstr "`pkgdesc=\"a program to extract Microsoft Cabinet files\"`"
 
 # type: Plain text
 #: makepkg.txt:252
@@ -15146,21 +15200,23 @@ msgid ""
 "A short one-line description for the package. Usually taken from the project's\n"
 " homepage or manpage.\n"
 msgstr ""
+"En kort en-linie beskrivelse for pakken. Sædvanligvis taget fra projektets\n"
+" hjemmeside eller manside.\n"
 
 # type: Plain text
 #: makepkg.txt:254
 msgid "`url=\"http://www.kyz.uklinux.net/cabextract.php\"`"
-msgstr ""
+msgstr "`url=\"http://www.kyz.uklinux.net/cabextract.php\"`"
 
 # type: Plain text
 #: makepkg.txt:256
 msgid "The website of the project."
-msgstr ""
+msgstr "Webstedet for projektet."
 
 # type: Plain text
 #: makepkg.txt:258
 msgid "`depends=(\\'glibc\\')`"
-msgstr ""
+msgstr "`depends=(\\'glibc\\')`"
 
 # type: Plain text
 #: makepkg.txt:265
@@ -15171,11 +15227,16 @@ msgid ""
 "that information with caution! Reading the README, INSTALL and configure.ac "
 "files is also a good idea to find out dependencies."
 msgstr ""
+"Liste over afhængigheder af pakken, defineret i et bash array.  Sædvanligvis "
+"bør du kompilere en pakke i det mindste to gange: først med depends=(), så "
+"bør du køre chkdep -p foo.fpm der vil foreslå afhængigheder, men håndter "
+"denne information med forsigtighed! Husk at læse README, INSTALL og "
+"configure.ac filer er også en god idé for at finde ud af afhængigheder."
 
 # type: Plain text
 #: makepkg.txt:267
 msgid "`groups=(\\'apps\\')`"
-msgstr ""
+msgstr "`groups=(\\'apps\\')`"
 
 # type: Plain text
 #: makepkg.txt:273
@@ -15186,6 +15247,11 @@ msgid ""
 "course). Packages in the extra repository get the '-extra' suffix to the "
 "group name."
 msgstr ""
+"Det er nødvendigt at vide hvor, i hvilken kategori pakken hører til.  Den "
+"vigtigste ting: put ikke din pakke i apps, base, devel, lib, multimedia "
+"eller network, hvis det afhænger af X (eller en pakke der afhænger af  X, "
+"selvfølgelig). Pakker i det ekstra arkiv får '-extra' suffix til "
+"gruppenavnet."
 
 # type: Plain text
 #: makepkg.txt:278
@@ -15196,16 +15262,21 @@ msgid ""
 "like foo-suite or whatever your want, provided that the name is not an "
 "'existing group'."
 msgstr ""
+"Du bør bruge grupper for at skabe metapakker. Metoden er følgende: placer "
+"hver pakke til en eksisterende gruppe (gruppe uden en bindestreg eller med "
+"-extra suffix), derefter tilføj pakkerne til en ny gruppe, sådan noget som "
+"foo-suite eller noget efter dit ønske, forudsat navnet ikke er i en "
+"'eksisterende gruppe'."
 
 # type: Plain text
 #: makepkg.txt:282
 msgid "`groups=(\\'lib-extra\\' \\'foo-suite\\')`"
-msgstr ""
+msgstr "`groups=(\\'lib-extra\\' \\'foo-suite\\')`"
 
 # type: Plain text
 #: makepkg.txt:285
 msgid "`archs=(\\'i686\\' \\'x86_64\\')`"
-msgstr ""
+msgstr "`archs=(\\'i686\\' \\'x86_64\\')`"
 
 # type: Plain text
 #: makepkg.txt:292
@@ -15217,12 +15288,19 @@ msgid ""
 "package could be compiled in x86_64, if you haven't compiled it ourself, "
 "don't include it."
 msgstr ""
+"Dette array definerer for hvilke arkitekturer den givne pakke er "
+"tilgængelig.  Hvis det ikke er tilgængeligt, betyder det at gensync vil "
+"springe det over når man genererer pakkedatabaser. Hvis du ikke kan stille "
+"en binær pakke til rådighed for en given arch, så inkluder det ikke i  "
+"archs()! For eksempel, ligegyldigt hvis pakken kunne kompileres i x86_64, "
+"hvis du ikke selv har kompileret det, så inkluder det ikke."
 
 # type: Plain text
 #: makepkg.txt:293 makepkg.txt:308
 #, no-wrap
 msgid "---------------------------------------------------------------------------------\n"
-msgstr ""
+msgstr "----------------------------------------------------------------------------"
+"-----\n"
 
 # type: Plain text
 #: makepkg.txt:296
@@ -15232,6 +15310,11 @@ msgid ""
 "\tsource code' |sed 's/.*-\\(.*\\).t.*/\\1/'\"\n"
 "---------------------------------------------------------------------------------\n"
 msgstr ""
+"up2date=\"lynx -dump http://www.kyz.uklinux.net/cabextract.php |grep "
+"'cabextract \\\n"
+"\tsource code' |sed 's/.*-\\(.*\\).t.*/\\1/'\"\n"
+"----------------------------------------------------------------------------"
+"-----\n"
 
 # type: Plain text
 #: makepkg.txt:307
