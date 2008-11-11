@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-11-10 01:42+0100\n"
-"PO-Revision-Date: 2008-11-10 19:02+0200\n"
+"POT-Creation-Date: 2008-11-11 01:43+0100\n"
+"PO-Revision-Date: 2008-11-11 15:32+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -14448,8 +14448,8 @@ msgid ""
 "when you /msg to us."
 msgstr ""
 "Du bør også vide at nogle af os (voroskoi, vmiklos, måske også andre) sætter "
-"deres klienter op til at ignorere beskeder på freenode, så din snak går til "
-"/dev/null når du/skriver til os."
+"deres klienter op til at ignorere beskeder på freenode, så din snak går til /"
+"dev/null når du/skriver til os."
 
 # type: Plain text
 #: irc-rules.txt:123
@@ -14501,8 +14501,7 @@ msgstr "- Verificer tarball. Her er et eksempel:"
 #: gpg.txt:15
 #, no-wrap
 msgid "------------------------------------------------------------------------------\n"
-msgstr "----------------------------------------------------------------------------"
-"--\n"
+msgstr "------------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: gpg.txt:20
@@ -14515,12 +14514,10 @@ msgid ""
 "------------------------------------------------------------------------------\n"
 msgstr ""
 "$ gpg --verify pacman-tools-0.7.2.tar.gz.asc pacman-tools-0.7.2.tar.gz\n"
-"gpg: Signature made Sun 14 May 2006 02:35:34 AM CEST using DSA key ID "
-"20F55619\n"
+"gpg: Signature made Sun 14 May 2006 02:35:34 AM CEST using DSA key ID 20F55619\n"
 "gpg: Good signature from \"Frugalware Linux Archives Verification Key \\\n"
 "\t<frugalware-devel@frugalware.org>\"\n"
-"----------------------------------------------------------------------------"
-"--\n"
+"------------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: gpg.txt:23
@@ -14553,8 +14550,8 @@ msgid ""
 msgstr ""
 "Frugalware består af tusinder af pakker. Hver fil i distributionen tilhører "
 "en eller anden pakke. Du kan nemt lave en forspørgel, om hvilken pakke den "
-"specifike fil hører til. Hvis du vil vide hvilken pakke indeholder '/etc"
-"/frugalware-release', skriver du bare følgende:"
+"specifike fil hører til. Hvis du vil vide hvilken pakke indeholder '/etc/"
+"frugalware-release', skriver du bare følgende:"
 
 # type: Plain text
 #: makepkg.txt:10
@@ -14588,8 +14585,8 @@ msgid ""
 "be in some extra dir."
 msgstr ""
 "Hvis du browser igennem FST (Frugalware Source Tree), kan du se, at der i "
-"kildefolderen er der kategori og kategori-ekstra folder. Folderen uden "
-"-extra tag indeholder de grundlæggende pakker den givne kategori og "
+"kildefolderen er der kategori og kategori-ekstra folder. Folderen uden -"
+"extra tag indeholder de grundlæggende pakker den givne kategori og "
 "afhængigheder af grundlæggende pakker. Så en pakke i disse foldere ikke kan "
 "afhænge af en pakke i ekstra foldere.  Det samme gælder for konsol/grafiske "
 "programmer: ihvis dit program/ bibliotek er grafisk, så brug xapps/xlib, "
@@ -14606,6 +14603,10 @@ msgid ""
 "more complex. Each package has a category, and each category and package has "
 "its own directory in the source dir."
 msgstr ""
+"Arkivet har en kilde og en binær folder. frugalware arkivets foldere er "
+"kilde/ og frugalware-$arch/. De binære pakker er i den binære folder af "
+"arkivet. Kilderne til pakker er lidt mere komplekse. Hver pakke har en "
+"kategori, og hver kategori og pakke har dens egen folder i kildedir."
 
 # type: Plain text
 #: makepkg.txt:35
@@ -14616,6 +14617,10 @@ msgid ""
 "'frugalware-<arch>/cabextract-<version>-<release>-<arch>.fpm' and its\n"
 " source is placed in the source/apps/cabextract dir.\n"
 msgstr ""
+"Lad os se et eksempel. Du søger efter cabextract pakken.\n"
+" Den binære pakke er navngivet\n"
+"'frugalware-<arch>/cabextract-<version>-<release>-<arch>.fpm' og dets\n"
+" kilde er anbragt i source/apps/cabextract dir.\n"
 
 # type: Plain text
 #: makepkg.txt:43
@@ -14628,6 +14633,13 @@ msgid ""
 "the source (since then it may be possible that we are not able to send the "
 "source to you even if you ask us by mail)."
 msgstr ""
+"I pakkens egen folder, oplagrer vi alt der kræves for at kompilere pakken.  "
+"Du kan sige at vi kun bør oplagre patches og sådanne ting, men efter vores "
+"mening, er det meget trælst når du vil rekompile en pakke og den oprindelige "
+"server er langsom eller er uopnåelig, pga. en eller anden grund. Desuden "
+"kan det være iloyal at vi kun tilbyder binære pakker uden at oplagre kilden "
+"(sidenhen kan det være umuligt at vi kan sende kilden til dig selv om du "
+"spørger os pr. mail)."
 
 # type: Plain text
 #: makepkg.txt:48
@@ -14637,6 +14649,9 @@ msgid ""
 "the FrugalBuild script you can use everything that can be used in a shell "
 "script."
 msgstr ""
+"Ud over det, er der en FrugalBuild fil i hver pakke kilde folder.  Dette er "
+"et simpel  bash shell script, som vil blive inkluderet med makepkg.  Så i  "
+"FrugalBuild script kan du bruge alt der kan bruges i et shell script."
 
 # type: Plain text
 #: makepkg.txt:52
@@ -14645,6 +14660,9 @@ msgid ""
 "so it must be a very short time to do so for each FrugalBuild. Because of "
 "this, you should not use something like:"
 msgstr ""
+"NOTE: Under pakkedatabasen generation hentes hele FrugalBuilds, så det skal "
+"være meget kort tid for at gøre det ved hver  FrugalBuild. Grundet dette, "
+"bør du ikke bruge sådan noget som:"
 
 # type: Plain text
 #: makepkg.txt:55
@@ -14653,17 +14671,19 @@ msgid ""
 "sha1sums=(`lynx -dump http://foo.com/bar.sha1`)\n"
 "-----------------------------------------------\n"
 msgstr ""
+"sha1sums=(`lynx -dump http://foo.com/bar.sha1`)\n"
+"-----------------------------------------------\n"
 
 # type: Plain text
 #: makepkg.txt:58
 msgid "but you should use:"
-msgstr ""
+msgstr "men du bør bruge:"
 
 # type: Plain text
 #: makepkg.txt:59
 #, no-wrap
 msgid "-----------------------------------------------------\n"
-msgstr ""
+msgstr "-----------------------------------------------------\n"
 
 # type: Plain text
 #: makepkg.txt:62
@@ -14673,6 +14693,9 @@ msgid ""
 "sha1sums=('094e3afb2fe8dfe82f63731cdcd3b999f4856cff')\n"
 "-----------------------------------------------------\n"
 msgstr ""
+"# http://foo.com/bar.sha1\n"
+"sha1sums=('094e3afb2fe8dfe82f63731cdcd3b999f4856cff')\n"
+"-----------------------------------------------------\n"
 
 # type: Plain text
 #: makepkg.txt:66
@@ -14680,6 +14703,8 @@ msgid ""
 "This way gensync will be fast even if reaching foo.com takes a lot of time.  "
 "Also using the `-u` option an offline build is possible."
 msgstr ""
+"På den måde vil gensync vær hurtig selv hvis det at tilgå foo.com tager en "
+"masse tid.  Brug af `-u` option gør offline bygning mulig."
 
 # type: Plain text
 #: makepkg.txt:70
@@ -14688,11 +14713,14 @@ msgid ""
 "(for example init scripts or config files) and writing the FrugalBuild "
 "script."
 msgstr ""
+"Kortfattet, pakning betyder at samle kildefillerne, og tilføje ekstra filer "
+"(for eksempel init scripts eller konfig filer) og skrivning af FrugalBuild "
+"script."
 
 # type: Plain text
 #: makepkg.txt:72
 msgid "== Recompiling packages"
-msgstr ""
+msgstr "== Rekompilere pakker"
 
 # type: Plain text
 #: makepkg.txt:76
@@ -14701,11 +14729,14 @@ msgid ""
 "in this howto. It's very simple. In our example we will recompile the "
 "mplayer package."
 msgstr ""
+"Før det at skabe en ny pakke, vil vi først rekompilere en eksisterende pakke "
+"i denne howto. Det er meget enklet. I vores eksempel vil vi rekompilere  "
+"mplayer pakken."
 
 # type: Plain text
 #: makepkg.txt:78
 msgid "First, you have to download the current FST."
-msgstr ""
+msgstr "Først, skal du downloade current FST."
 
 # type: Plain text
 #: makepkg.txt:83
@@ -14717,6 +14748,11 @@ msgid ""
 "+\n"
 "-------------\n"
 msgstr ""
+"* Hente FST som root\n"
+"+\n"
+"Dette er det mest enkle, du kan bare udstede:\n"
+"+\n"
+"-------------\n"
 
 # type: Plain text
 #: makepkg.txt:85
@@ -14725,6 +14761,8 @@ msgid ""
 "# repoman upd\n"
 "-------------\n"
 msgstr ""
+"# repoman upd\n"
+"-------------\n"
 
 # type: Plain text
 #: makepkg.txt:95
@@ -14740,6 +14778,16 @@ msgid ""
 "+\n"
 "-----------------------------\n"
 msgstr ""
+"* Hente FST som almindelig bruger\n"
+"+\n"
+"Hvis du ønsker at gøre det som regulær bruger, skab '~/.repoman.conf' fil og "
+"rediger den, ændr fst_root folder i\n"
+"den (som standard, det ville downloade filene til /var/fst, og de er ikke\n"
+"skrivbare som bruger, selvfølgelig).\n"
+"+\n"
+" '~/.repoman.conf' filen bør se sådan ud:\n"
+"+\n"
+"-----------------------------\n"
 
 # type: Plain text
 #: makepkg.txt:97
@@ -14762,6 +14810,13 @@ msgid ""
 "+\n"
 "-------------\n"
 msgstr ""
+"+\n"
+"Tanke fst_root kan pege på hvilken somhelst folder der er skrivbar for "
+"brugeren.\n"
+"+\n"
+"Og til sidst skal vi hente FST, udsted:\n"
+"+\n"
+"-------------\n"
 
 # type: Plain text
 #: makepkg.txt:105
@@ -14770,6 +14825,8 @@ msgid ""
 "$ repoman upd\n"
 "-------------\n"
 msgstr ""
+"$ repoman upd\n"
+"-------------\n"
 
 # type: Plain text
 #: makepkg.txt:111
