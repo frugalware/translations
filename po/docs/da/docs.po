@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-11-11 01:43+0100\n"
-"PO-Revision-Date: 2008-11-11 20:54+0200\n"
+"POT-Creation-Date: 2008-11-12 01:42+0100\n"
+"PO-Revision-Date: 2008-11-12 17:49+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -14636,8 +14636,8 @@ msgstr ""
 "I pakkens egen folder, oplagrer vi alt der kræves for at kompilere pakken.  "
 "Du kan sige at vi kun bør oplagre patches og sådanne ting, men efter vores "
 "mening, er det meget trælst når du vil rekompile en pakke og den oprindelige "
-"server er langsom eller er uopnåelig, pga. en eller anden grund. Desuden "
-"kan det være iloyal at vi kun tilbyder binære pakker uden at oplagre kilden "
+"server er langsom eller er uopnåelig, pga. en eller anden grund. Desuden kan "
+"det være iloyal at vi kun tilbyder binære pakker uden at oplagre kilden "
 "(sidenhen kan det være umuligt at vi kan sende kilden til dig selv om du "
 "spørger os pr. mail)."
 
@@ -14780,8 +14780,7 @@ msgid ""
 msgstr ""
 "* Hente FST som almindelig bruger\n"
 "+\n"
-"Hvis du ønsker at gøre det som regulær bruger, skab '~/.repoman.conf' fil og "
-"rediger den, ændr fst_root folder i\n"
+"Hvis du ønsker at gøre det som regulær bruger, skab '~/.repoman.conf' fil og rediger den, ændr fst_root folder i\n"
 "den (som standard, det ville downloade filene til /var/fst, og de er ikke\n"
 "skrivbare som bruger, selvfølgelig).\n"
 "+\n"
@@ -14811,8 +14810,7 @@ msgid ""
 "-------------\n"
 msgstr ""
 "+\n"
-"Tanke fst_root kan pege på hvilken somhelst folder der er skrivbar for "
-"brugeren.\n"
+"Tanke fst_root kan pege på hvilken somhelst folder der er skrivbar for brugeren.\n"
 "+\n"
 "Og til sidst skal vi hente FST, udsted:\n"
 "+\n"
@@ -14837,9 +14835,9 @@ msgid ""
 "entry, just copy that line to '/etc/passwd'."
 msgstr ""
 "Før bygning af chroot miljø, bør du sikre dig at `fst` bruger findes på dit "
-"system. Tjek din '/etc/passwd' fil. Hvis ikke, tjek da venligst din "
-"'/etc/passwd.pacnew' fil, den indeholder relevante emner, bare kopier denne "
-"linie til '/etc/passwd'."
+"system. Tjek din '/etc/passwd' fil. Hvis ikke, tjek da venligst din '/etc/"
+"passwd.pacnew' fil, den indeholder relevante emner, bare kopier denne linie "
+"til '/etc/passwd'."
 
 # type: Plain text
 #: makepkg.txt:113
@@ -14903,8 +14901,8 @@ msgid ""
 msgstr ""
 "Chroot vil blive placeret som standard i '/var/chroot'. Kun en pakke kan "
 "bygges i et chroot ad gangen, så måske ønsker du at specificere et særskilt "
-"chroot for hver bruger. For at gøre dette, sæt $CHROOTDIR variable in your "
-"'/etc/makepkg.conf' fra:"
+"chroot for hver bruger. For at gøre dette, sæt $CHROOTDIR variable in your '/"
+"etc/makepkg.conf' fra:"
 
 # type: Plain text
 #: makepkg.txt:139
@@ -14915,7 +14913,8 @@ msgstr "`export CHROOTDIR=\"/var/chroot\"`"
 #: makepkg.txt:143
 msgid ""
 "`export CHROOTDIR=\"/var/chroot.`echo $HOME|sed \\'s|.\\*/\\(.*\\)$|\\1|'`\"`"
-msgstr "`export CHROOTDIR=\"/var/chroot.`echo $HOME|sed \\'s|.\\*/\\(.*\\)$|\\1|'`\"`"
+msgstr ""
+"`export CHROOTDIR=\"/var/chroot.`echo $HOME|sed \\'s|.\\*/\\(.*\\)$|\\1|'`\"`"
 
 # type: Plain text
 #: makepkg.txt:146
@@ -14989,8 +14988,7 @@ msgid ""
 "fi\n"
 "----\n"
 msgstr ""
-"# disse kommandoer vil blive evalueret kun for det tilfælde at USE_DEVEL er "
-"sat til true\n"
+"# disse kommandoer vil blive evalueret kun for det tilfælde at USE_DEVEL er sat til true\n"
 "hvis Fuse $USE_DEVEL; så\n"
 "        _F_scm_type=\"git\"\n"
 "        _F_scm_url=\"git://git.kernel.org/pub/scm/git/git.git\"\n"
@@ -15050,8 +15048,7 @@ msgstr ""
 "depends=('glibc')\n"
 "groups=('apps')\n"
 "archs=('i686' 'x86_64')\n"
-"up2date=\"lynx -dump http://www.kyz.uklinux.net/cabextract.php |grep "
-"'cabextract \\\n"
+"up2date=\"lynx -dump http://www.kyz.uklinux.net/cabextract.php |grep 'cabextract \\\n"
 "\tsource code'|tr -s ' '|cut -d ' ' -f 6\"\n"
 "source=(http://www.kyz.uklinux.net/downloads/$pkgname-$pkgver.tar.gz)\n"
 "sha1sums=('871b3db4bc2629eb5726659c147aecea1af6a6d0')\n"
@@ -15064,8 +15061,7 @@ msgid ""
 "-------------------------------------------------------------------------------\n"
 msgstr ""
 "# optimization OK\n"
-"----------------------------------------------------------------------------"
-"---\n"
+"-------------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: makepkg.txt:203
@@ -15115,8 +15111,7 @@ msgid ""
 msgstr ""
 "Linien ovenfor betyder at kompilere binutils på din maskine tog 257 "
 "sekunder.  Fra dette punkt, vil makepkg udskrive SBUs i stedet for sekunder "
-"efter en vellykket bygning, og denne SBU-værdi vil være ens på alle "
-"maskiner."
+"efter en vellykket bygning, og denne SBU-værdi vil være ens på alle maskiner."
 
 # type: Plain text
 #: makepkg.txt:222
@@ -15263,8 +15258,8 @@ msgid ""
 "'existing group'."
 msgstr ""
 "Du bør bruge grupper for at skabe metapakker. Metoden er følgende: placer "
-"hver pakke til en eksisterende gruppe (gruppe uden en bindestreg eller med "
-"-extra suffix), derefter tilføj pakkerne til en ny gruppe, sådan noget som "
+"hver pakke til en eksisterende gruppe (gruppe uden en bindestreg eller med -"
+"extra suffix), derefter tilføj pakkerne til en ny gruppe, sådan noget som "
 "foo-suite eller noget efter dit ønske, forudsat navnet ikke er i en "
 "'eksisterende gruppe'."
 
@@ -15291,16 +15286,15 @@ msgstr ""
 "Dette array definerer for hvilke arkitekturer den givne pakke er "
 "tilgængelig.  Hvis det ikke er tilgængeligt, betyder det at gensync vil "
 "springe det over når man genererer pakkedatabaser. Hvis du ikke kan stille "
-"en binær pakke til rådighed for en given arch, så inkluder det ikke i  "
-"archs()! For eksempel, ligegyldigt hvis pakken kunne kompileres i x86_64, "
-"hvis du ikke selv har kompileret det, så inkluder det ikke."
+"en binær pakke til rådighed for en given arch, så inkluder det ikke i  archs"
+"()! For eksempel, ligegyldigt hvis pakken kunne kompileres i x86_64, hvis du "
+"ikke selv har kompileret det, så inkluder det ikke."
 
 # type: Plain text
 #: makepkg.txt:293 makepkg.txt:308
 #, no-wrap
 msgid "---------------------------------------------------------------------------------\n"
-msgstr "----------------------------------------------------------------------------"
-"-----\n"
+msgstr "---------------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: makepkg.txt:296
@@ -15310,11 +15304,9 @@ msgid ""
 "\tsource code' |sed 's/.*-\\(.*\\).t.*/\\1/'\"\n"
 "---------------------------------------------------------------------------------\n"
 msgstr ""
-"up2date=\"lynx -dump http://www.kyz.uklinux.net/cabextract.php |grep "
-"'cabextract \\\n"
+"up2date=\"lynx -dump http://www.kyz.uklinux.net/cabextract.php |grep 'cabextract \\\n"
 "\tsource code' |sed 's/.*-\\(.*\\).t.*/\\1/'\"\n"
-"----------------------------------------------------------------------------"
-"-----\n"
+"---------------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: makepkg.txt:307
@@ -15330,6 +15322,16 @@ msgid ""
 "combination of tr and cut if you prefer them instead of sed.\n"
 "The example used above would be the following with cut and tr:\n"
 msgstr ""
+"En kort kommando der vil give os den senest stabile version af pakken.\n"
+" Dette hjælper vedligeholderene at holde FST up to date. Sædvanligvis vil "
+"denne streng\n"
+"bestå af tre dele: et lynx -dump noget-url, en grep foo, og em sed\n"
+"komando. Vi bruger http protokol om muligt, men sommetider er vi nødt til at\n"
+" bruge ftp. I dette tilfælde i stedet for `lynx -dump` skal du bruge\n"
+"`wget -O - -q`. Selvfølgelig, kan du bruge wget hele tiden,\n"
+"men lynx er mere enkel. Sed komandoen kan erstattes med en\n"
+"kombination af tr og cut hvis du foretrækker dem i stedet for sed.\n"
+"Eksempelet brugt ovenfor vil være følgende med cut og tr:\n"
 
 # type: Plain text
 #: makepkg.txt:311
@@ -15341,13 +15343,12 @@ msgid ""
 msgstr ""
 "up2date=\"lynx -dump http://www.kyz.uklinux.net/cabextract.php |grep \\\n"
 "\t'cabextractsource code'|tr -s ' '|cut -d ' ' -f 6\"\n"
-"----------------------------------------------------------------------------"
-"-----\n"
+"---------------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: makepkg.txt:314
 msgid "`source=(http://www.kyz.uklinux.net/downloads/$pkgname-$pkgver.tar.gz)`"
-msgstr ""
+msgstr "`source=(http://www.kyz.uklinux.net/downloads/$pkgname-$pkgver.tar.gz)`"
 
 # type: Plain text
 #: makepkg.txt:326
@@ -15365,6 +15366,19 @@ msgid ""
 "do the work yourself. You have been warned! Actually try to avoid patches\n"
 "unless they are really necessary (eg: secfix, bugfix).\n"
 msgstr ""
+"Her definerer du kilderne af pakken i en bash array.\n"
+"Du kan bruge enkle filnavne for patches, eller ekstra filer\n"
+"når du placerer dem i den samme folder hvor FrugalBuild\n"
+"script er. Du kan bruge URLs hvis du ønsker at makepkg skal downloade dem\n"
+"automatisk. Det er vigtigt at anbringe alle kilderne i pakkens\n"
+"folder inklusive kilde-filen som du kan downloade fra et site.\n"
+" Også når der dowloades fra sourceforge, brug venligst Finclude sourceforge!\n"
+"Hvis du benytter forskellige tilfældige patches fra ukendte kilder, forvent "
+"ikke at\n"
+"nogen anden vil portere disse patches til en nyere version. Du er selv nødt "
+"til\n"
+"at lave dette arbejde. Du er blevet advaret! Forsøg at undgå patches\n"
+"medmindre de er virkeligt nødvendige (f.eks: secfix, bugfix).\n"
 
 # type: Plain text
 #: makepkg.txt:335
@@ -15378,11 +15392,20 @@ msgid ""
 "After this one can use a `http://ftp.frugalware.org/pub/other/sources/"
 "pkgname/foo`-styled URL for those big sources."
 msgstr ""
+"Nogle ord om kildernes størrelse. Hvis du bruger en URL så er størrelsen "
+"næsten ubegrænset, men hvis kilden ikke er en url så vil kilden blive "
+"tilføjet til FST når pakken vil blive accepteret. Vi tillader ikke filer "
+"større end 100KB i FST. for at løse dette problem, vil kilderne for en given "
+"pakke blive placeret i /pub/other/sources/pkgname dir for hver pakke. Hvis "
+"kilden ikke er komprimeret, vi bruger gzip eller bzip2 til at komprimere det "
+"først. Efter det kan der bruges en "
+"`http://ftp.frugalware.org/pub/other/sources/pkgname/foo`-styled URL for "
+"disse store kilder."
 
 # type: Plain text
 #: makepkg.txt:337
 msgid "`sha1sums=(\\'094e3afb2fe8dfe82f63731cdcd3b999f4856cff\\')`"
-msgstr ""
+msgstr "`sha1sums=(\\'094e3afb2fe8dfe82f63731cdcd3b999f4856cff\\')`"
 
 # type: Plain text
 #: makepkg.txt:342
@@ -15393,6 +15416,13 @@ msgid ""
 " original sha1sums from the projects website, if possible. It's a good idea\n"
 " to leave a comment above this line about where to find these sha1sums.\n"
 msgstr ""
+"Endnu et bash array for at forhindre at kompilere fra forkerte kilder. "
+"Selvfølgelig er\n"
+" dette ubrugelig hvis du bare kører sha1sum foo.tar.gz efter download . "
+"Forsøg at finde\n"
+" original sha1sums fra projekts website, om muligt. Det er en god idé\n"
+" at efterlade en kommentar over denne linie om hvor disse sha1sums kan "
+"findes.\n"
 
 # type: Plain text
 #: makepkg.txt:347
@@ -15402,12 +15432,16 @@ msgid ""
 "can see in gentoo for example. These functions can be found in 'source/"
 "include/util.sh' file inside the FST. An empty build actually means:"
 msgstr ""
+"Som du kan se der ingen build() funktion i dette FB. Det er fordi vi har "
+"skrev nogle F* funktioner for at lave vores arbejde nemmere. Det er noget "
+"lignende du kan se i gentoo for eksempel. Disse funktioner kan findes i "
+"'source/include/util.sh' fil indvendig i FST. En tom build betyder faktisk :"
 
 # type: Plain text
 #: makepkg.txt:348 license.txt:5
 #, no-wrap
 msgid "------------------------------------------------------------\n"
-msgstr ""
+msgstr "------------------------------------------------------------\n"
 
 # type: Plain text
 #: makepkg.txt:357
@@ -15423,6 +15457,15 @@ msgid ""
 "}\n"
 "------------------------------------------------------------\n"
 msgstr ""
+"build() {\n"
+"\tFpatchall\n"
+"\tFmake \"$@\"\n"
+"\tFmakeinstall\n"
+"\tif echo ${source[@]}|grep -q README.Frugalware; then\n"
+"\t\tFdoc README.Frugalware\n"
+"\tfi\n"
+"}\n"
+"------------------------------------------------------------\n"
 
 # type: Plain text
 #: makepkg.txt:363
@@ -15432,6 +15475,11 @@ msgid ""
 "install, finally if a README.Frugalware file is given it will also add that "
 "to the package. For details see the utils.sh file, it's well documented."
 msgstr ""
+"Så Fpatchall vil anvende allle patches i source() array, derefter kalder "
+"Fmake configure script og make komando, derefter handler Fmakeinstall som "
+"make install, sluttelig hvis en README.Frugalware fil er til rådighed vil "
+"det også blive tilføjet til pakken. For detaljer se the utils.sh filen, det "
+"er godt dokumenteret."
 
 # type: Plain text
 #: makepkg.txt:367
@@ -15440,11 +15488,14 @@ msgid ""
 "it.  Also if you use simple commands do not forget to add || return 1 after "
 "each command, so the build will stop on error!"
 msgstr ""
+"NOTE: Det er ikke nødvendigt at bruge F* komandoen, men vi *anbefaler* det "
+"kraftigt.  Også hvis du benytter enkle kommandoer så glem ikke at tilføje || "
+"return 1 efter hver komando, så vil build stoppe ved fejl!"
 
 # type: Plain text
 #: makepkg.txt:369
 msgid "`# optimization OK`"
-msgstr ""
+msgstr "`# optimization OK`"
 
 # type: Plain text
 #: makepkg.txt:377
@@ -15457,6 +15508,13 @@ msgid ""
 "architecture-dependent file, then you can add this line manually as makepkg "
 "will not detect this."
 msgstr ""
+"Denne linie vil blive tilbygget automatisk til enden af FrugalBuild hvis "
+"build() funktion bruger din $CFLAGS eller $CXXFLAGS. Dette er praktisk hvis "
+"du vil kryds-kompilere på en hurtigere maskine for en mere langsom "
+"arkitektur.  Indtil pakken ikke bruger vores $CFLAGS kan vi ikke kryds-"
+"kompilere det, så undgåvenligst at skabe \"ikke-optimeret\" pakker. Hvis "
+"pakken ikke indeholder nogen arkitektur-afhængig fil, så kan kan du tilføje "
+"denne linie manuelt som makepkg så ikke vil detektere ."
 
 # type: Plain text
 #: makepkg.txt:379
