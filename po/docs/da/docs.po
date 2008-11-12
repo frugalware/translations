@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-11-12 01:42+0100\n"
-"PO-Revision-Date: 2008-11-12 17:49+0200\n"
+"PO-Revision-Date: 2008-11-12 20:08+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -15519,12 +15519,12 @@ msgstr ""
 # type: Plain text
 #: makepkg.txt:379
 msgid "== Full reference"
-msgstr ""
+msgstr "== Fuld reference"
 
 # type: Plain text
 #: makepkg.txt:381
 msgid "Now here is a full list of directives available."
-msgstr ""
+msgstr "Her er en fuld liste af direktiver der er tilgænglig."
 
 # type: Plain text
 #: makepkg.txt:388
@@ -15536,6 +15536,12 @@ msgid ""
 "installing/upgrading/removing the package. A skeleton of this file can be "
 "found under /docs/skel in FST."
 msgstr ""
+"Først, lad os starte med install direktiv. Her kan du henvise til en install "
+"fil (normalt $pkgname.install) der bruges. Hvis der er en $pkgname.install "
+"i FrugalBuild's folderen, vil det blive brugt automatisk. I install filen, "
+"kan du definere handlinger der skal udføres før/efter "
+"installering/opgradering/fjernelse af pakken. Et skelet af denne fil kan "
+"findes under /docs/skel i FST."
 
 # type: Plain text
 #: makepkg.txt:392
@@ -15545,6 +15551,10 @@ msgid ""
 "after installing, feel free to use post_install $1 in the post_upgrade() "
 "function."
 msgstr ""
+"Selvfølgelig, vil du sandsynligvis ikke behøve alle disse funktioner, bare "
+"fjern hvad du ikke behøver. Hvis du vil gøre præcist den det samme efter "
+"opgradering som efter installering, står det dig frit for at bruge "
+"post_install $1 i post_upgrade() funktion."
 
 # type: Plain text
 #: makepkg.txt:396
@@ -15553,6 +15563,9 @@ msgid ""
 "You should not specify the install script in the source array as it is not "
 "used in build()."
 msgstr ""
+"Gem filen som $pkgname.install, drefter vil makepkg automatisk bruge det.  "
+"Du bør ikke specificere install script i kilde array eftersom det ikke "
+"bliver brugt i build()."
 
 # type: Plain text
 #: makepkg.txt:399
@@ -15560,6 +15573,8 @@ msgid ""
 "The pkgname, pkgver, pkgrel, url, source and sha1sums directives were "
 "discussed in the previous section."
 msgstr ""
+"Pkgname, pkgver, pkgrel, url, source og sha1sums direktiver blev gennemgået "
+"i det forrige afsnit."
 
 # type: Plain text
 #: makepkg.txt:402
@@ -15567,16 +15582,19 @@ msgid ""
 "The backup array is used to make some files in the package as config files.  "
 "If possible, we don't modify config files during an upgrade. Example:"
 msgstr ""
+"Backup array bliver benyttet for at fremstille nogle filer i pakken som "
+"konfig filer.  Hvis det er muligt, så modificerer vi ikke konfigfilerne "
+"under en opgradering. Eksempel:"
 
 # type: Plain text
 #: makepkg.txt:404
 msgid "`backup=(\\'etc/pacman-g2.conf\\')`"
-msgstr ""
+msgstr "`backup=(\\'etc/pacman-g2.conf\\')`"
 
 # type: Plain text
 #: makepkg.txt:406
 msgid "Note that the leading slash is missing!"
-msgstr ""
+msgstr "Noter at det foranstillet slash mangler!"
 
 # type: Plain text
 #: makepkg.txt:409
@@ -15584,6 +15602,8 @@ msgid ""
 "For more information about this, see the handling config files section in "
 "the pacman-g2 manpage."
 msgstr ""
+"For mere information om dette, se håndterings-konfigenfileafsnittet i "
+"pacman-g2 manside."
 
 # type: Plain text
 #: makepkg.txt:412
@@ -15592,6 +15612,9 @@ msgid ""
 "The depends array has been discussed already, except I haven't mentioned\n"
 " before that the elements may include version information, for example:\n"
 msgstr ""
+"Afhængigheds array er allerede blevet diskuteret, undtaget jeg har ikke "
+"nævnt\n"
+" før at elementer kan inkludere versionsinformation, for eksempel:\n"
 
 # type: Plain text
 #: makepkg.txt:416
@@ -15601,11 +15624,14 @@ msgid ""
 "depends=('kdelibs=3.3.0')\n"
 "-------------------------\n"
 msgstr ""
+"pkgname=kdewebdev\n"
+"depends=('kdelibs=3.3.0')\n"
+"-------------------------\n"
 
 # type: Plain text
 #: makepkg.txt:419
 msgid "Here you can use <>, <=, >= or = operators."
-msgstr ""
+msgstr "Her kan du bruge <>, <=, >= eller = operatører."
 
 # type: Plain text
 #: makepkg.txt:422
@@ -15614,6 +15640,9 @@ msgid ""
 "example if the source is in SRPM format, probably alien is a build-time "
 "requirement."
 msgstr ""
+"Makedepends array definerer påkrævede pakker kun i bygnings tid. For "
+"eksempel hvis kilden er i SRPM format, så er alien sandsynligvis et krav for "
+"build-tid."
 
 # type: Plain text
 #: makepkg.txt:426
@@ -15622,6 +15651,9 @@ msgid ""
 "used in any case when putting the given package to depends() would "
 "causecircular dependency."
 msgstr ""
+"Rodepends array definerer pakker der kræves kun i kørselstid. Det skal buges "
+"under alle omstændigheder når man putter den givne pakke til depends() "
+"under causecirkulær afhængighed."
 
 # type: Plain text
 #: makepkg.txt:429
@@ -15629,6 +15661,8 @@ msgid ""
 "In the conflicts array, you can define a list of packages that shouldn't be "
 "installed if you want to install this package. Let's see an another example:"
 msgstr ""
+"I conflicts array, kan du definere en liste af pakker der ikke burde blive "
+"installeret hvis du vil installere denne pakke. Lad os se endnu et eksempel:"
 
 # type: Plain text
 #: makepkg.txt:433
@@ -15638,6 +15672,9 @@ msgid ""
 "conflicts=('mutt')\n"
 "------------------\n"
 msgstr ""
+"pkgname=mutt-devel\n"
+"conflicts=('mutt')\n"
+"------------------\n"
 
 # type: Plain text
 #: makepkg.txt:439
@@ -15647,6 +15684,10 @@ msgid ""
 "`conflicts=(\\'mutt-devel\\')`.  Of course, if two or more packages conflict "
 "each other, only one of them can be placed in a non-extra group."
 msgstr ""
+"Det er nødvendigt fordi de to pakker næsten er den samme, men de binære er "
+"forskellige.  I dette tilfælde skal mutt pakken også indeholde denne linie: "
+"`conflicts=(\\'mutt-devel\\')`.  Selvfølgelig, hvis to eller flere pakker "
+"konflikter med hinanden, så kan kun en dem placeres i en ikke-ekstra gruppe."
 
 # type: Plain text
 #: makepkg.txt:442
@@ -15654,6 +15695,8 @@ msgid ""
 "The provides array is used to create virtual dependencies. It means both "
 "postfix and sendmail provides mta, so we can do:"
 msgstr ""
+"Provides array bliver brugt for at skabe virtuelle afhængigheder. Det "
+"betyder at både postfix og sendmail tilbyder mta, så vi kan gøre følgende:"
 
 # type: Plain text
 #: makepkg.txt:446
@@ -15663,11 +15706,14 @@ msgid ""
 "rodepends=('mta')\n"
 "-----------------\n"
 msgstr ""
+"pkgname=mailman\n"
+"rodepends=('mta')\n"
+"-----------------\n"
 
 # type: Plain text
 #: makepkg.txt:449
 msgid "The user has a choice between postfix and sendmail."
-msgstr ""
+msgstr "Brugeren har et valg mellem postfix og sendmail."
 
 # type: Plain text
 #: makepkg.txt:452
@@ -15676,6 +15722,8 @@ msgid ""
 "The last one in this list is the replaces directive. The module-init-tools\n"
 " package is a good example:\n"
 msgstr ""
+"Den sidste i denne liste er erstatter direktiv. Module-init-tools\n"
+" pakke er et fint eksempel:\n"
 
 # type: Plain text
 #: makepkg.txt:457
@@ -15686,6 +15734,10 @@ msgid ""
 "conflicts=('modutils')\n"
 "-------------------------\n"
 msgstr ""
+"pkgname=module-init-tools\n"
+"replaces=('modutils')\n"
+"conflicts=('modutils')\n"
+"-------------------------\n"
 
 # type: Plain text
 #: makepkg.txt:463
@@ -15695,6 +15747,10 @@ msgid ""
 "time, if modutils is installed (probably :)), they will be asked to remove "
 "modutils and install module-init-tools."
 msgstr ""
+"Som du kan se, laver vi ofte sådanne nye pakker som også konflikter med "
+"hinanden. Ved brug af erstatter direktiv når brugere bruger pacman-g2 -Su "
+"næste gang, hvis modutils er installeret (sandsynligvis :)), vil de blive "
+"spurgt om at fjerne modutils og installere module-init-tools."
 
 # type: Plain text
 #: makepkg.txt:466
@@ -15703,6 +15759,8 @@ msgid ""
 "license=(\\'GPL2\\')\n"
 "------------------\n"
 msgstr ""
+"license=(\\'GPL2\\')\n"
+"------------------\n"
 
 # type: Plain text
 #: makepkg.txt:471
@@ -15711,6 +15769,9 @@ msgid ""
 "copy the LICENSE field from the source root to the packages's documentation "
 "dir, so this isn't really necessary."
 msgstr ""
+"Dette direktiv er valgfrit. For øjeblikket, kan du tilføje sådan et felt, "
+"men kopiere LICENSE felt fra kilde root til pakkens dokumentation folder, så "
+"dette er ikke virkeligt nødvendigt."
 
 # type: Plain text
 #: makepkg.txt:473
