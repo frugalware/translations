@@ -1,0 +1,1340 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-12-07 01:53+0100\n"
+"PO-Revision-Date: 2008-12-05 11:21+0200\n"
+"Last-Translator: Tutku Dalmaz <tutkudalmaz@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: tr\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 1.2.0\n"
+
+#. FIXME: use docs/about.txt as a source instead of this one
+#: ../about.php:36
+msgid ""
+"Frugalware is a general purpose linux distribution, designed for "
+"intermediate users (who are not afraid of text mode)."
+msgstr ""
+"Frugalware orta seviye kullanıcılar için (metin tabanlı sistemlerden "
+"korkmayan) tasarlanmış genel amaçlı bir Linux dağıtımıdır."
+
+#: ../about.php:38
+msgid "What branches does Frugalware have?"
+msgstr "Frugalware hangi dallara sahiptir?"
+
+#: ../about.php:39
+msgid ""
+"We have a <i>current</i> and a <i>stable</i> branch. The <i>current</i> "
+"branch is updated daily, and we update our <i>stable</i> branch around every "
+"6 months."
+msgstr ""
+"Frugalware <i>current</i> ve <i>stable</i> dallarına sahiptir. <i>current</"
+"i> dalı hergün güncellenirken, <i>stable</i> dalı her 6 ayda bir güncellenir."
+
+#: ../about.php:40
+msgid "What is &quot;The Frugalware Philosophy&quot; about?"
+msgstr "&quot;Frugalware Fesefesi&quot; ne hakkındadır?"
+
+#: ../about.php:41
+msgid ""
+"Briefly: simplicity, multimedia, design. We try to make Frugalware as simple "
+"as possible while not forgetting to keep it comfortable for the user. We try "
+"to ship fresh and stable software, as close to the original source as "
+"possible, because in our opinion most software is the best as is, and "
+"doesn't need patching."
+msgstr ""
+"Kısaca: basitlik, çokluortam, tasarım. Biz Frugalware'i kullanıcı "
+"rahatlığını unutmadan olabildiğince basit hale getirmeyi denedik. Taze ve "
+"kararlı yazılımları üzgün kaynağına sadık kalarak kullanıcıya sunmaya "
+"çalışıyoruz, bizim düşüncemize göre her yazılım olduğu gibi en iyisidir, ve "
+"yamaya ihtiyaç duymaz."
+
+#: ../about.php:42
+msgid "What is the license of Frugalware?"
+msgstr "Frugalware'in lisansı nedir?"
+
+#: ../about.php:43
+msgid ""
+"That's two questions. Most software included in Frugalware have a GPL or BSD "
+"compatible license, for more information about a license of a specific "
+"package, refer to the LICENSE or COPYRIGHT file in the source tarball of the "
+"package. On the other hand, the part written by our team (FrugalBuild "
+"scripts, setup, homepage, etc) is released under GPL license. To make it "
+"even more complicated, some parts of the setup and init scripts are written "
+"by Patrick J. Volkerding. We GPL our additions, but Patrick J. Volkerding's "
+"code is still under the BSD license. For more information, refer to the "
+"COPYRIGHT file in the root directory of the FST (Frugalware Source Tree)."
+msgstr ""
+"Bu iki sorudur. Frugalware bünyesindeki bir çok yazılım GPL ya da BSD uyumlu "
+"lisanslar içerir, belirli paketlerin lisans bilgileri için kaynak dosya "
+"içerisindeki LICENSE ya da COPYRIGHT dosyalarını inceleyebilirsiniz. Diğer "
+"taraftan, bizim takımımız tarafından yazılan kısımlar (FrugalBuild "
+"betikleri, kurulum, anasayfa vb.) GPL lisansı ile yayımlanmaktadır. Daha "
+"açıklamak gerekirse init betikleri ve bazı kurulum kısımları Patrick J. "
+"Volkerding tarafından geliştirilmiştir. GPL lisansı bizim eklentimizdir, "
+"fakat Patrick J. Volkerding'in kodları hala BSD lisansı altındadır.Daha "
+"fazla bilgi için Frugalware Kaynak Ağacı (FST) altındaki çekirdek dizini "
+"içerisinde bulunan COPYRIGHT dosyasını içeleyebilirsiniz."
+
+#: ../about.php:44
+msgid "What package manager does Frugalware use?"
+msgstr "Frugalware hangi paket yöneticisini kullanır?"
+
+#: ../about.php:45
+msgid ""
+"We don't have our own package manager, we use Judd Vinet's great work, the "
+"<a href=\"http://www.archlinux.org/pacman\">pacman</a> package manager. It's "
+"a tar.bz2 based package manager, similar to Slackware's .tgz. Our packages' "
+"extension is .fpm to differentiate them from regular tarballs. Unlike "
+"Slackware's scripts, pacman is written in C, so it's much faster."
+msgstr ""
+"Kendimize ait bir paket yöneticimiz yok, Judd Vinet'in harika bir çalışması "
+"olan <a href=\"http://www.archlinux.org/pacman\">pacman</a> paket "
+"yöneticisini kullanıyoruz. Pacman tar.bz2 tabanlı bir paket yöneticisi olup "
+"Slackware'ın .tgz'sine çok benzer. Bizim paket uzantımız .fpm'dir. "
+"Slackware'ın betiklerinin aksine pacman C ile yazıldığı için daha hızlıdır."
+
+#: ../about.php:46
+msgid "How does Frugalware manage updating obsolete packages?"
+msgstr "Frugalware kullanılmayan ya da eskimiş paketleri nasıl günceller?"
+
+#: ../about.php:47
+msgid ""
+"We don't have any standalone program for updating packages as pacman manages "
+"this task too. To update your package database, use <tt>pacman&nbsp;-Sy</"
+"tt>, and to update your packages according the just synchronized package "
+"database, you use <tt>pacman&nbsp;-Su</tt>. To install a package with the "
+"necessary dependencies directly from a mirror ftp server, you issue "
+"<tt>pacman&nbsp;-S&nbsp;foo</tt>. For more information, refer to the pacman "
+"man page."
+msgstr ""
+"Pacman'in yaptığı gibi paketleri  güncellemek için tekbaşına kullandığımız "
+"bir yazılımımız yok. Paket veritabanınızı güncellemek için <tt>pacman&nbsp;-"
+"Sy</tt> komutunu, güncellenmiş veritabanına göre paketlerinizi güncellemek "
+"için <tt>pacman&nbsp;-Su</tt> komutunu, gerekli bağımlılıkları ile ftp ya da "
+"herhangi bir yansı üzerinden paket kurmak için <tt>pacman&nbsp;-S&nbsp;foo</"
+"tt> komutunu kullanabilirsiniz. Daha fazla bilgi için pacman man sayfalarını "
+"kullanabilirsiniz."
+
+#: ../about.php:48
+msgid "Is there any community support available for Frugalware?"
+msgstr "Frugalware için herhangi bir topluluk desteği var mı?"
+
+#: ../about.php:49
+msgid ""
+"Currently we have three mailing lists, an irc channel and forums that can be "
+"used to communicate with us or other users and to get help. The irc channel "
+"is on the Freenode network (server: irc.freenode.net). For more information "
+"about our mailing lists, please refer to the <a href=\"mailman/listinfo"
+"\">list section</a> of our web site."
+msgstr ""
+"Şuan için 3 adete-posta listemiz bulunmaktadır. IRC kanalı ve forumlar da "
+"bizimle ya da diğer kullanıcılar ile iletişim kurmak için kullanılabilir. "
+"IRC kanalı Freenode ağı üzerindedir (sunucu: irc.freenode.net) E-posta "
+"listelerimiz hakkında daha fazla bilgi için web sitemizdeki <a href="
+"\"mailman/listinfo\">liste seçimi</a> bölümünü kullanabilirsiniz."
+
+#: ../about.php:50
+msgid "Is there any commercial support available for Frugalware?"
+msgstr "Frugalware için herhangi bir ticari destek var mı?"
+
+#: ../about.php:51
+msgid "No, there isn't for now, and <i>currently</i> it isn't planned, either."
+msgstr "Hayır şimdilik yok, ve aynı zamanda <i>şuan için</i> planlanmıyor."
+
+#: ../about.php:52
+msgid "For whom is Frugalware recommended to use?"
+msgstr "Frugalware kullanımı kimler için önerilir?"
+
+#: ../about.php:53
+msgid ""
+"Frugalware is designed for intermediate users. Installing Frugalware is not "
+"a magic, of course, but you should know what a partition, an MBR (Master "
+"Boot Record), etc. is."
+msgstr ""
+"Frugalware orta seviye kullanıcılar için tasarlanmıştır. Frugalware kurulumu "
+"elbetteki büyük değildir, fakat partisyon, MBR (Master Boot Record) vb. "
+"kavramları bilmeniz gerekir."
+
+#: ../about.php:54
+msgid "How to become a developer?"
+msgstr "Nasıl geliştirici olunur?"
+
+#: ../about.php:55
+msgid ""
+"Get involved! :) If you installed Frugalware from CDs, get the full FST via "
+"repoman, which is available in pacman-tools. The sources are included in the "
+"DVD edition. Then start to play with the FrugalBuild scripts, for a typical "
+"example, refer to the <a href=\"/packages/44\">cabextract</a> package. Try "
+"to improve them, or write a new one for a currently unsupported program. "
+"Then send your patches to the <a href=\"mailman/listinfo/frugalware-devel"
+"\">devel</a> mailing list. From this point everything will come naturally to "
+"you :)"
+msgstr ""
+"Sarmalanın :) Eğer CD üzerinden Frugalware kurduysanız, repoman ile pacman-"
+"tools grubu içinde yer alan FST'yi kurun. KAynaklar DVD sürümünde de "
+"bulunmaktadır. Ardından FrugalBuild betikleri ile oynamaya başlayın. Tipik "
+"örnek için <a href=\"/packages/44\">cabextract</a> paketine bakabilirsiniz. "
+"Bunları geliştirmeyi ya da şuan için desteklenmeyen yazılımlara yenisini "
+"yazmayı deneyin. Ardından yamalarınızı <a href=\"mailman/listinfo/frugalware-"
+"devel\">devel</a> e-posta listemize gönderin. Bu noktadan sonra herşey "
+"kendiliğinden gelişecektir."
+
+#: ../about.php:56
+msgid "What do developers do?"
+msgstr "Geliştiriciler ne yapar?"
+
+#: ../about.php:57
+msgid ""
+"In short, what they want to, if they play a square game. They may maintain "
+"packages: building them if a newer version is available and update the "
+"FrugalBuild scripts to work correctly against a newer version. They can "
+"contribute a new build script to a previously non-existent package. They can "
+"write articles about Frugalware, or anything else in connection with the "
+"Frugalware community. If you only want to help us, but you don't want to "
+"hack, you may help in translating Frugalware to your or other language. And, "
+"of course, we happily accept <a href=\"/donations\">donations</a>. :) More "
+"on this <a href=\"/docs/getting-"
+"involved#_further_options_for_those_who_have_developer_account_packagers_coders"
+"\">here</a>."
+msgstr ""
+"Kısaca, geliştiriciler eğer bir oyun oynuyorlarsa istediklerini yaparlar. "
+"Geliştiriciler paketlerin bakımını yapabilirler: onları yeni sürümüne "
+"yükseltirler, FrugalBuild betiklerini yeni sürüm ile düzgün çalışacak "
+"şekilde güncelleyebilirler, ayrıca daha önceleri desteklenmeyen paketler "
+"için inşa betiği hazırlayabilirler.Frugalware hakkında makaleler yazarlerken "
+"bir yanda da Frugalware topluluğu ile iletişimde kalıp istekleri "
+"dinleyebilirler. Eğer bize sadece yardım etmek istiyorsanız ve hack yapmak "
+"istemiyorsanız da Frugalware'ı başka dillere çevirmede bizlere yardımcı "
+"olabilirsiniz. Ayrıca  <a href=\"/donations\">bağışları da</a> büyük bir "
+"mutlulukla kabul etmekteyiz. Daha detaylı açıklama için <a href=\"/docs/"
+"getting-"
+"involved#_further_options_for_those_who_have_developer_account_packagers_coders"
+"\">burayı</a> kullanabilirsiniz."
+
+#: ../about.php:58
+msgid "Who develops Frugalware?"
+msgstr "Frugalware'ı kimler geliştirir?"
+
+#: ../about.php:59
+msgid "A young group, but your age is not conditional to become a developer"
+msgstr ""
+"Genç bir grup tarafından geliştirilir, fakat yaşınız geliştirici olmak için "
+"de koşul değildir."
+
+#: ../about.php:60
+msgid "Is Frugalware specialized in a certain purpose?"
+msgstr "Frugalware belirli bir amaç için özelleşmiş midir?"
+
+#: ../about.php:61
+msgid "No, it's a general purpose distribution, for desktops and servers."
+msgstr ""
+"Hayır, Frugalware masaüstü ve sunucu bilgisayarlarda kullanılabilen genel "
+"amaçlı bir Linux dağıtımıdır."
+
+#: ../about.php:62
+msgid "Do you plan to release a live cd?"
+msgstr "Canlı CD hazırlamayı düşünüyor musunuz?"
+
+#: ../about.php:63
+msgid ""
+"Well, we have already a live cd, called FwLive. Currently it supports only "
+"i686, but an x86_64 version is also under development. You can find it in "
+"the standard release directories."
+msgstr ""
+"Elbette, zaten FwLive isimli bir canlı CD'miz mevcuttur. Şuan için sadece "
+"i686 desteği olan bu canlı CD'nin x86_64 desteği ise hala geliştirme "
+"aşamasındadır. Bu canlı CD'ye standart dağıtım dizinlerinden ulaşabilirsiniz."
+
+#: ../about.php:64
+msgid "Does Frugalware support languages other than English?"
+msgstr "Frugalware İngilizce'den başka bir dil desteğine sahip mi?"
+
+#: ../about.php:65
+msgid ""
+"Yes, it supports all languages supported by the packages. If the init "
+"scripts or the setup is not available in your language, then it simply means "
+"it haven't yet translated."
+msgstr ""
+"Evet, paketlerin destekleridi tüm dilleri Frugalware da destekler. Eğer init "
+"betikleri ya da kurulum sizin diliniz de değilse, bunlar henüz çevrilmemiş "
+"demektir."
+
+#: ../about.php:66
+msgid "What about Asian languages?"
+msgstr "Asya dilleri hakkındaki durum nedir?"
+
+#: ../about.php:67
+msgid "Frugalware does not support Asian languages currently."
+msgstr "Frugalware şuan için Asya dil desteğine sahip değildir."
+
+#: ../about.php:68
+msgid "What architectures does Frugalware support?"
+msgstr "Frugalware hangi mimarileri destekler?"
+
+#: ../about.php:69
+msgid ""
+"Currently we support x86 and x86_64 platforms, and inside x86, only i686 "
+"(Pentium Pro or higher instruction set) and inside x86_64 only k8 (amd64). "
+"If there are any claims, an i386 port will be created, but currently we "
+"don't have resources to build and maintain those packages. Outside x86, "
+"currently we don't have any non-x86 hardware, but happily accept such "
+"patches or any effort to create non-x86 optimized packages. We are also "
+"working on a PowerPC port"
+msgstr ""
+"Şuan için x86 ve x86_86 platformlarını desteklemekteyiz.x86 mimarisi "
+"içerisinde i686(Pentium Pro ya da daha yüksek komut kümesi) ve x86_64 "
+"mimarisi içerisinde de sadece k8(amd64) desteği vardır. Eğer istek olursa "
+"i386 desteği de sağlanabilir, fakat şuan için bu paketleri inşa edip "
+"denetleyecek kaynaklara sahip değiliz. x86 mimarisi haricinde herhangi bir "
+"x86 olmayan donanım sahip değiliz, fahat bazı yamaların kullanılması ya da "
+"çabalarımız ile x86 olmayan paketler de yaratılmıştır. Ayrıca PowerPC "
+"desteği üzerinde de çalışmaktayız."
+
+#: ../about.php:76
+msgid "Short"
+msgstr "Kısa"
+
+#: ../about.php:80
+msgid "Question"
+msgstr "Soru"
+
+#: ../about.php:81
+msgid "Answer"
+msgstr "Cevap"
+
+#: ../about.php:83
+msgid "Long"
+msgstr "Uzun"
+
+#: ../authors.php:57
+msgid "at"
+msgstr "at"
+
+#: ../authors.php:58
+msgid "dot"
+msgstr "dot"
+
+#: ../authors.php:68 ../config.inc.php:82
+msgid "Authors"
+msgstr "Yazarlar"
+
+#: ../authors.php:69
+msgid ""
+"This page should list all people who contributed to Frugalware Linux in some "
+"way. However, we are aware that the contributor list is incomplete. Please "
+"contact us if your name is missing from here!<br />"
+msgstr ""
+"Bu sayfa birşekilde Frugalware'a destek vermiş olan kişileri listeler.Buna "
+"rağmen bazı katkıcıların isimlerini atlamış olabiliriz. Eğer sizin adınız da "
+"burada yoksa lütfen bizimle ileşitime geçin </br>"
+
+#: ../authors.php:70
+#, php-format
+msgid "Available filters: <a href=\"%s\">No filter</a> &middot; "
+msgstr "Uygun süzgeçler: <a href=\"%s\">Süzgeç yok</a> &middot;"
+
+#: ../authors.php:71
+#, php-format
+msgid "<a href=\"%s\">Active developers</a> &middot; "
+msgstr "<a href=\"%s\">Etkin geliştiriciler</a> &middot;"
+
+#: ../authors.php:72
+#, php-format
+msgid "<a href=\"%s\">Former developers</a> &middot; "
+msgstr "<a href=\"%s\">Önceki geliştiriciler</a> &middot;"
+
+#: ../authors.php:73
+#, php-format
+msgid "<a href=\"%s\">Contributors</a><br />"
+msgstr "<a href=\"%s\">Katkıda Bulunanlar</a><br />"
+
+#: ../authors.php:74
+msgid "Frugalware Linux Author list"
+msgstr "Frugalware Linux Yazar listesi"
+
+#. $menucontent = '<a class="menu" href="' . $fwng_root . '">' . gettext('News') . "</a> &middot; \n";
+#: ../config.inc.php:44 ../rss.php:185
+msgid "News"
+msgstr "Haberler"
+
+#: ../config.inc.php:46
+msgid "Announcements"
+msgstr "Duyurular"
+
+#: ../config.inc.php:47 ../rss.php:192
+msgid "Security announcements"
+msgstr "Güvenlik Duyuruları"
+
+#: ../config.inc.php:48
+msgid "News feeds"
+msgstr "Haber kaynakları"
+
+#: ../config.inc.php:50
+msgid "About"
+msgstr "Hakkında"
+
+#: ../config.inc.php:52
+msgid "Summary"
+msgstr "Özet"
+
+#: ../config.inc.php:53
+msgid "Frugalware in the Press"
+msgstr "Basında Frugalware"
+
+#: ../config.inc.php:54
+msgid "Documentation"
+msgstr "Belgelendirme"
+
+#: ../config.inc.php:56
+msgid "Community"
+msgstr "Topluluk"
+
+#: ../config.inc.php:58
+msgid "Mailing Lists"
+msgstr "E-posta Listeleri"
+
+#: ../config.inc.php:59
+msgid "Discussion Forums"
+msgstr "Tartışma Forumları"
+
+#: ../config.inc.php:60
+msgid "Wiki"
+msgstr "Wiki"
+
+#: ../config.inc.php:61
+msgid "IRC"
+msgstr "IRC"
+
+#: ../config.inc.php:62
+msgid "Pastebin"
+msgstr "Pastebin"
+
+#: ../config.inc.php:63
+msgid "Screenshots"
+msgstr "Ekran Görüntüleri"
+
+#: ../config.inc.php:64
+msgid "Map"
+msgstr "Harita"
+
+#: ../config.inc.php:65
+msgid "Last.fm group"
+msgstr "Last.fm grubu"
+
+#: ../config.inc.php:66
+msgid "National sites"
+msgstr "Ulusal siteler"
+
+#: ../config.inc.php:67
+msgid "Artwork"
+msgstr "Sanatsal"
+
+#: ../config.inc.php:69
+msgid "Download"
+msgstr "İndir"
+
+#: ../config.inc.php:71
+msgid "ISO images"
+msgstr "ISO imajları"
+
+#: ../config.inc.php:72
+msgid "Packages"
+msgstr "Paketler"
+
+#: ../config.inc.php:74
+msgid "Development"
+msgstr "Geliştirme"
+
+#: ../config.inc.php:76
+msgid "Roadmap"
+msgstr "Yol Haritası"
+
+#: ../config.inc.php:77
+msgid "Git repository"
+msgstr "Git deposu"
+
+#: ../config.inc.php:78
+msgid "Bug Tracker"
+msgstr "Hata İzleyici"
+
+#: ../config.inc.php:79
+msgid "Translation portal"
+msgstr "Çeviri portalı"
+
+#: ../config.inc.php:80
+msgid "Blogs"
+msgstr "Günlükler"
+
+#: ../config.inc.php:81 ../donations.php:50 ../header.php:55
+msgid "Donations"
+msgstr "Bağışlar"
+
+#: ../config.inc.php:93 ../config.inc.php:95 ../config.inc.php:97
+#: ../config.inc.php:99 ../config.inc.php:101 ../config.inc.php:103
+#: ../config.inc.php:105
+msgid "Change language"
+msgstr "Dili değiştir"
+
+#: ../docs.php:60 ../docs.php:67
+msgid "The following categories are available:"
+msgstr "Aşağıdaki kategoriler uygun durumdadır:"
+
+#: ../docs.php:62 ../docs.php:69
+msgid "Full manual"
+msgstr "Tam kullanım rehberi"
+
+#: ../docs.php:63 ../docs.php:70
+msgid "User documentation"
+msgstr "Kullanıcı belgesi"
+
+#: ../docs.php:64 ../docs.php:71
+msgid "Developer documentation"
+msgstr "Geliştirici belgesi"
+
+#: ../docs.php:74
+msgid "View online documentation (stable release)"
+msgstr "Belgeyi çevrimiçi görüntüle (kararlı sürüm)"
+
+#: ../docs.php:75
+msgid "View online documentation (development version)"
+msgstr "Belgeyi çevrimiçi görüntüle (geliştirme sürümü)"
+
+#: ../donations.php:38
+msgid ""
+"<div align=\"left\">Donations are a great way to show your appreciation\n"
+"and support for Frugalware Linux. On this page we list the donations we "
+"have\n"
+"received so far and those that would help us in our work on Frugalware "
+"Linux.;\n"
+"If you have a piece of hardware or something whose Frugalware support could "
+"be\n"
+"improved, a good way to achieve this is to donate it to a developer.<br /"
+"><br />\n"
+"If you would like to donate something to the whole project (i.e. a mirror),\n"
+"please send a mail to the <a href=\"http://frugalware.org/mailman/listinfo/"
+"frugalware-devel\">frugalware-devel</a>\n"
+"list, or if you do not wish to subscribe, send a mail directly to "
+"vmiklos_at_frugalware_dot_org.\n"
+"If you wish to donate something to an individual developer, see the <a href="
+"\"authors.php\">authors</a>\n"
+"page and send the developer a mail. You can also use the PayPal donate link "
+"on the side of the page\n"
+"if you wish to donate money.</div>"
+msgstr ""
+"<div align=\"left\">Bağışlar şükranlarınızı göstermenin ve\n"
+"ve Frugalware Linux'u desteklemenin en güzel yoludur.Bu sayfa üzerinde şuana "
+"kadar elde ettiğimiz bağışları listelemekteyiz.\n"
+"Eğer elinizde Frugalware'ın desteğini arttıracak  bir parça donanım ya da "
+"başka işe yarar nesneleriniz varsa, bunu bir geliştiriciye "
+"bağışlayabilirsniz.<br /><br />\n"
+"Eğer tüm bir projeye bağışta bulunmak isterseniz (i.e. bir yansı,\n"
+"lütfen <a href=\"http://frugalware.org/mailman/listinfo/frugalware-devel"
+"\">frugalware-devel</a>\n"
+"adresine e-posta gönderiniz. Eğer e-posta listesine üye olmak istemiyorsanız "
+"da doğrudan vmiklos_at_frugalware_dot_org.\n"
+" adresine e-posta gönderebilirsiniz.Eğer tek bir geliştiriciye bağışta "
+"bulunmak istersenizde <a href=\"authors.php\">yazarlar</a>\n"
+"sayfasını kullanarak ilgili geliştiriciye e-posta gönderebilirsiniz.Eğer "
+"para yardımında bulunmak isterseniz de sayfa üzerindeki PayPal bağış "
+"bağlantısını kullanabilirsiniz.\n"
+" </div>"
+
+#: ../donations.php:72
+msgid "The Frugalware Team"
+msgstr "Frugalware Takımı"
+
+#: ../download.php:88
+msgid "Archive"
+msgstr "Arşiv"
+
+#: ../download.php:88
+msgid ""
+"Unfortunately due our limited resources we cannot store our old stable "
+"versions, they are being removed shortly after a new official stable "
+"release. But if you are interested in our old stable versions, ask IroNiQ on "
+"#frugalware @freenode or ask in email on one of our lists."
+msgstr ""
+"Malesef sınırlı kaynaklarımız yüzünden eski kararlı sürümlerimizi "
+"saklayamıyoruz, resmi kararlı sürüm duyurusundan sonra eski sürümler "
+"kaldırılmaktadır. Eğer eski kararlı sürümlerimiz ile ilgilenmekteyseniz,"
+"@freenode üzerindeki #frugalware kanalında IroNİQ ile iletişime "
+"geçebilirsiniz, ya da herhangi bir e-posta listesine de sorabilirsiniz."
+
+#: ../header.php:53
+msgid "Releases"
+msgstr "Sürümler"
+
+#: ../header.php:56
+msgid "Recent updates"
+msgstr "Son güncellemeler"
+
+#: ../header.php:57
+msgid "Languages"
+msgstr "Diller"
+
+#: ../header.php:58
+msgid "Information"
+msgstr "Bilgilendirme"
+
+#: ../header.php:59
+msgid "Server information"
+msgstr "Sunucu bilgileri"
+
+#: ../header.inc.php:135
+#, php-format
+msgid "Uptime:<br /> %d day(s) %d h %d m %d s"
+msgstr "Uptime:<br /> %d gün %d s %d dk %d sn"
+
+#: ../header.inc.php:142
+msgid "Donate to support our development efforts."
+msgstr "Geliştirici çabalarına destek olmak için bağış yapın."
+
+#: ../index.php:97 ../index.php:116
+msgid "Sorry, no news on your language, using English instead."
+msgstr ""
+"Üzgünüz, dilinize uygun haber yok, diliniz yerine İngilizce kullanılıyor."
+
+#: ../index.php:105
+msgid " edited this news on "
+msgstr "_bu haberi düzenle_"
+
+#: ../index.php:107 ../index.php:120 ../security.php:89
+msgid "Posted by"
+msgstr "tarafından gönderilmiş"
+
+#: ../index.php:108
+msgid "News history"
+msgstr "Haber geçmişi"
+
+#: ../irc.php:59
+msgid "General information"
+msgstr "Genel bilgiler"
+
+#: ../irc.php:59
+msgid ""
+"Our irc channel is on the freenode network (server: irc.freenode.net), at "
+"#frugalware. This is the official Frugalware Linux irc help station. See the "
+"<a href=\"/docs/irc-rules#_irc_channels\">documentation</a> about non-"
+"English channels."
+msgstr ""
+"IRC kanalımız freenode ağı (sunucu: irc.freenode.net) üzerindeki #frugalware "
+"kanalıdır. Bu kanal resmi Frugalware Linux IRC yardım istasyonudur. "
+"İngilizce dışındaki kanallar için <a href=\"/docs/irc-rules#_irc_channels\"> "
+"belgesini inceleyiniz."
+
+#: ../irc.php:105
+msgid "Please enter a valid nickname"
+msgstr "Lütfen geçerli bir takma ad giriniz"
+
+#: ../irc.php:121
+msgid "Nickname:"
+msgstr "Takma Ad:"
+
+#: ../irc.php:125
+msgid "Server:"
+msgstr "Sunucu:"
+
+#: ../irc.php:129
+msgid "Channel:"
+msgstr "Kanal:"
+
+#: ../irc.php:133
+msgid "Advanced..."
+msgstr "Gelişmiş..."
+
+#: ../irc.php:134
+msgid "Login"
+msgstr "Giriş"
+
+#: ../irc.php:140
+msgid "Login via web"
+msgstr "İnternet üzerinden giriş"
+
+#: ../irc.php:142
+msgid "Support channel logs"
+msgstr "Destek  kanal kayıtları"
+
+#: ../irc.php:142
+#, php-format
+msgid ""
+"Our support channels are logged and the logs are available <a href=\"%s"
+"\">here</a>."
+msgstr ""
+"Destek kanallarımız kaydedilir ve kayıtlara <a href=\"%s\">buradan</a> "
+"ulaşabilirsiniz."
+
+#: ../media.php:46
+msgid "Sorry, a media file has not been written yet."
+msgstr "Üzgünüz, medya dosyası henüz yazılmadı."
+
+#: ../media.php:52
+msgid "Frugalware in the press"
+msgstr "Basında Frugalware"
+
+#: ../media.php:53
+msgid ""
+"This page contains details about some of the articles that have been posted "
+"on the Internet about Frugalware. If you find an article not listed here, "
+"please tell us about it!"
+msgstr ""
+"Bu sayfa Internet üzerinde Frugalware hakkında yayımlanmış olan haberlerin "
+"detaylarını içerir. Eğer burada listelenmeyen bir haber bulduysanız, lütfen "
+"bunu bize bildirin!"
+
+#: ../media.php:76
+msgid "Title"
+msgstr "Başlık"
+
+#: ../media.php:77
+msgid "Where"
+msgstr "Nerede"
+
+#: ../media.php:78 ../security.php:88
+msgid "Date"
+msgstr "Tarih"
+
+#: ../media.php:79
+msgid "Language"
+msgstr "Dil"
+
+#: ../media.php:80
+msgid "Link"
+msgstr "Bağlantı"
+
+#: ../packages.php:91
+msgid "Package search"
+msgstr "Paket arama"
+
+#: ../packages.php:92
+msgid "Search for:"
+msgstr "Arama:"
+
+#: ../packages.php:93
+msgid "packages"
+msgstr "paketler"
+
+#: ../packages.php:94
+msgid "Search in description"
+msgstr "Tanımda ara"
+
+#: ../packages.php:95
+msgid "files"
+msgstr "dosyalar"
+
+#: ../packages.php:96
+msgid "groups"
+msgstr "gruplar"
+
+#: ../packages.php:97
+msgid "Regular expression"
+msgstr "Düzenli ifadeler"
+
+#: ../packages.php:97
+msgid "(regular expression)"
+msgstr "(düzenli ifadeler)"
+
+#: ../packages.php:100 ../packages.php:339 ../packages.php:348
+msgid "Architecture:"
+msgstr "Mimari:"
+
+#: ../packages.php:107 ../packages.php:339 ../packages.php:348
+#: ../packages.php:412
+msgid "Version:"
+msgstr "Sürüm:"
+
+#: ../packages.php:119
+msgid "Search"
+msgstr "Ara"
+
+#: ../packages.php:119
+msgid "Reset"
+msgstr "Sıfırla"
+
+#: ../packages.php:120
+#, php-format
+msgid "Searching in %d binary and %d source-only packages."
+msgstr "%d ikili ve %d kaynak paketleri içerisinde aranıyor."
+
+#: ../packages.php:134
+msgid "You will need a Mozilla based browser to install a search plugin."
+msgstr ""
+"Arama eklentisini yüklemek için Mozilla tabanlı bir tarayıcıya ihtiyacınız "
+"var."
+
+#: ../packages.php:138
+msgid ""
+"Click <a href=\"javascript:addEngine()\">here</a> to install the Firefox "
+"search plugin."
+msgstr ""
+"Firefox arama eklentisini kurmak için <a href=\"javascript:addEngine()"
+"\">buraya</a> tıklayın."
+
+#: ../packages.php:191
+msgid "Error in the query, please change the searching conditions"
+msgstr "Sorguda hata, lütfen arama koşullarını değiştirin"
+
+#: ../packages.php:197
+msgid "No package found"
+msgstr "Paket bulunamadı"
+
+#: ../packages.php:234
+msgid "No such file or directory"
+msgstr "Böyle bir dosya ya da dizin yok"
+
+#: ../packages.php:275 ../packages.php:311
+msgid "No such group"
+msgstr "Böyle bir grup yok"
+
+#: ../packages.php:322
+msgid "Listing groups"
+msgstr "Gruplar listeleniyor"
+
+#: ../packages.php:334
+msgid "Listing contents of group:"
+msgstr "Grup içerikleri listeleniyor:"
+
+#: ../packages.php:336 ../packages.php:345
+msgid "Search result for:"
+msgstr "Sonuçlar için arama:"
+
+#: ../packages.php:408
+msgid "Package information:"
+msgstr "Paket bilgisi:"
+
+#: ../packages.php:410
+msgid "Name:"
+msgstr "İsim:"
+
+#: ../packages.php:411
+msgid "Parent:"
+msgstr "Kaynak:"
+
+#: ../packages.php:414
+msgid "Documentation:"
+msgstr "Belgelendirme:"
+
+#: ../packages.php:416
+msgid "Buildlog:"
+msgstr "İnşa Kaydı:"
+
+#: ../packages.php:417
+msgid "Changelog:"
+msgstr "Sürüm Notları:"
+
+#: ../packages.php:421
+msgid "Groups:"
+msgstr "Gruplar:"
+
+#: ../packages.php:426
+msgid "URL:"
+msgstr "URL:"
+
+#: ../packages.php:429
+msgid "Depends:"
+msgstr "Bağımlılıklar:"
+
+#: ../packages.php:436
+msgid "Exact reverse depends:"
+msgstr "Mecburi geri bağımlılıklar:"
+
+#: ../packages.php:443
+msgid "Other reverse depends:"
+msgstr "Diğer geri bağımlılıklar:"
+
+#: ../packages.php:450
+msgid "Conflicts:"
+msgstr "Çakışmalar:"
+
+#: ../packages.php:457
+msgid "Provides:"
+msgstr "Sağlayıcılar:"
+
+#: ../packages.php:462
+msgid "Compressed size:"
+msgstr "Sıkıştırılmış boyut:"
+
+#: ../packages.php:463
+msgid "Uncompressed size:"
+msgstr "Sıkıştırılmamış boyut:"
+
+#: ../packages.php:464
+msgid "Arch:"
+msgstr "Mimari:"
+
+#: ../packages.php:465
+msgid "Description:"
+msgstr "Tanım:"
+
+#. FIXME: latin -> utf8 conversion hardwired
+#: ../packages.php:467
+msgid "Maintainer:"
+msgstr "Bakımcı:"
+
+#: ../packages.php:468
+msgid "Uploaded by:"
+msgstr "Yükleyici:"
+
+#: ../packages.php:469
+msgid "Download:"
+msgstr "İndir:"
+
+#: ../packages.php:474
+msgid "Forums:"
+msgstr "Forumlar:"
+
+#: ../packages.php:474
+msgid "Related posts"
+msgstr "İlgili gönderiler"
+
+#: ../packages.php:475
+msgid "Wiki:"
+msgstr "Wiki:"
+
+#: ../packages.php:475
+msgid "Related pages"
+msgstr "İlgili sayfalar"
+
+#: ../packages.php:476
+msgid "Bug Tracking System:"
+msgstr "Hata Takip Sistemi:"
+
+#: ../packages.php:476
+msgid "Related open bugs"
+msgstr "İlgili açık hatalar"
+
+#: ../packages.php:477
+msgid "Syndicate:"
+msgstr "Birleştir:"
+
+#: ../packages.php:477
+msgid "RSS"
+msgstr "RSS"
+
+#: ../packages.php:478
+msgid "SHA1 Sum:"
+msgstr "SHA1 Sum:"
+
+#: ../packages.php:479
+msgid "Frugalware version:"
+msgstr "Frugalware sürümü:"
+
+#: ../packages.php:480
+msgid "Updated:"
+msgstr "Güncelleme:"
+
+#: ../packages.php:485 ../packages.php:536 ../packages.php:585
+#: ../packages.php:643 ../packages.php:673
+msgid "No such package!"
+msgstr "Böyle bir paket yok!"
+
+#: ../packages.php:521
+#, php-format
+msgid "Changelog for %s"
+msgstr "%s için sürüm notları"
+
+#: ../packages.php:532 ../packages.php:581
+msgid "Sorry, currently no log available."
+msgstr "Üzgünüz, şuan için uygun kayıt yok."
+
+#: ../packages.php:570
+#, php-format
+msgid "Build log for %s"
+msgstr "%s için inşa kaydı"
+
+#: ../packages.php:619
+#, php-format
+msgid "Documentation for %s"
+msgstr "%s için belgelendirme"
+
+#: ../packages.php:639
+msgid "Sorry, currently no documentation available."
+msgstr "Üzgünüz, şuan için uygun belgelendirme yok."
+
+#: ../packages.php:658
+msgid "File list for"
+msgstr "Dosya listesi"
+
+#: ../roadmap.php:51
+msgid "Sorry, a roadmap has not been written yet."
+msgstr "Üzgünüz, yol haritası henüz yazılmadı."
+
+#: ../roadmap.php:70 ../roadmap.php:79
+msgid "done"
+msgstr "tamam"
+
+#: ../roadmap.php:72 ../roadmap.php:81
+msgid "pending"
+msgstr "bekliyor"
+
+#: ../rss.php:186
+msgid "Stable releases"
+msgstr "Kararlı sürümler"
+
+#: ../rss.php:187
+msgid "-current commits"
+msgstr "-anlık girdiler"
+
+#: ../rss.php:188
+msgid "-stable patches"
+msgstr "-kararlı yamalar"
+
+#: ../rss.php:189
+msgid "BTS entries"
+msgstr "BTS girdileri"
+
+#: ../rss.php:190
+msgid "Package updates"
+msgstr "Paket güncellemeleri"
+
+#: ../rss.php:191
+msgid "Blog posts"
+msgstr "Blog gönderileri"
+
+#: ../screenshots.php:32
+msgid "01_splash.png"
+msgstr "01_splash.png"
+
+#: ../screenshots.php:34
+msgid "02_lang.png"
+msgstr "02_lang.png"
+
+#: ../screenshots.php:36
+msgid "03_welcome.png"
+msgstr "03_welcome.png"
+
+#: ../screenshots.php:38
+msgid "04_key.png"
+msgstr "04_key.png"
+
+#: ../screenshots.php:40
+msgid "05_raid.png"
+msgstr "05_raid.png"
+
+#: ../screenshots.php:42
+msgid "06_part.png"
+msgstr "06_part.png"
+
+#: ../screenshots.php:44
+msgid "07_part.png"
+msgstr "07_part.png"
+
+#: ../screenshots.php:46
+msgid "08_part.png"
+msgstr "08_part.png"
+
+#: ../screenshots.php:48
+msgid "09_part.png"
+msgstr "09_part.png"
+
+#: ../screenshots.php:50
+msgid "10_part.png"
+msgstr "10_part.png"
+
+#: ../screenshots.php:52
+msgid "11_part.png"
+msgstr "11_part.png"
+
+#: ../screenshots.php:54
+msgid "12_part.png"
+msgstr "12_part.png"
+
+#: ../screenshots.php:56
+msgid "13_part.png"
+msgstr "13_part.png"
+
+#: ../screenshots.php:58
+msgid "14_part.png"
+msgstr "14_part.png"
+
+#: ../screenshots.php:60
+msgid "15_pack.png"
+msgstr "15_pack.png"
+
+#: ../screenshots.php:62
+msgid "16_pack.png"
+msgstr "16_pack.png"
+
+#: ../screenshots.php:64
+msgid "17_pack.png"
+msgstr "17_pack.png"
+
+#: ../screenshots.php:66
+msgid "18_pack.png"
+msgstr "18_pack.png"
+
+#: ../screenshots.php:68
+msgid "19_pack.png"
+msgstr "19_pack.png"
+
+#: ../screenshots.php:70
+msgid "20_grub.png"
+msgstr "20_grub.png"
+
+#: ../screenshots.php:72
+msgid "21_grub.png"
+msgstr "21_grub.png"
+
+#: ../screenshots.php:74
+msgid "22_modules.png"
+msgstr "22_modules.png"
+
+#: ../screenshots.php:76
+msgid "23_root.png"
+msgstr "23_root.png"
+
+#: ../screenshots.php:78
+msgid "24_root.png"
+msgstr "24_root.png"
+
+#: ../screenshots.php:80
+msgid "25_user.png"
+msgstr "25_user.png"
+
+#: ../screenshots.php:82
+msgid "26_user.png"
+msgstr "26_user.png"
+
+#: ../screenshots.php:84
+msgid "27_user.png"
+msgstr "27_user.png"
+
+#: ../screenshots.php:86
+msgid "28_hostname.png"
+msgstr "28_hostname.png"
+
+#: ../screenshots.php:88
+msgid "29_network.png"
+msgstr "29_network.png"
+
+#: ../screenshots.php:90
+msgid "30_network.png"
+msgstr "30_network.png"
+
+#: ../screenshots.php:92
+msgid "31_config.png"
+msgstr "31_config.png"
+
+#: ../screenshots.php:94
+msgid "32_localtime.png"
+msgstr "32_localtime.png"
+
+#: ../screenshots.php:96
+msgid "33_timezone.png"
+msgstr "33_timezone.png"
+
+#: ../screenshots.php:98
+msgid "34_mouse.png"
+msgstr "34_mouse.png"
+
+#: ../screenshots.php:100
+msgid "35_success.png"
+msgstr "35_success.png"
+
+#: ../screenshots.php:103
+msgid "01_grub.png"
+msgstr "01_grub.png"
+
+#: ../screenshots.php:105
+msgid "02_boot.png"
+msgstr "02_boot.png"
+
+#: ../screenshots.php:107
+msgid "03_boot.png"
+msgstr "03_boot.png"
+
+#: ../screenshots.php:109
+msgid "04_boot.png"
+msgstr "04_boot.png"
+
+#: ../screenshots.php:111
+msgid "05_console.png"
+msgstr "05_console.png"
+
+#: ../screenshots.php:113
+msgid "06_console.png"
+msgstr "06_console.png"
+
+#: ../screenshots.php:116
+msgid "08_kde_login.png"
+msgstr "08_kde_login.png"
+
+#: ../screenshots.php:118
+msgid "09_kde.png"
+msgstr "09_kde.png"
+
+#: ../screenshots.php:120
+msgid "10_kde_menu.png"
+msgstr "10_kde_menu.png"
+
+#: ../screenshots.php:123
+msgid "GDM Login Screen"
+msgstr "GDM Giriş Ekranı"
+
+#: ../screenshots.php:125
+msgid "Default Gnome Desktop"
+msgstr "Ön Tanımlı Gnome Masaüstü"
+
+#: ../screenshots.php:127
+msgid "Gnome Menu"
+msgstr "Gnome Menu"
+
+#: ../screenshots.php:129
+msgid "Web Browser"
+msgstr "Web Tarayıcı"
+
+#: ../screenshots.php:131
+msgid "File Manager"
+msgstr "Dosya Yönetici"
+
+#: ../screenshots.php:134
+msgid "Default XFCE Desktop"
+msgstr "Ön Tanımlı XFCE Masaüstü"
+
+#: ../screenshots.php:136
+msgid "XFCE in Action"
+msgstr "Uygulamada XFCE"
+
+#: ../screenshots.php:138
+msgid "XFCE Menu"
+msgstr "XFCE Menu"
+
+#: ../screenshots.php:140
+msgid "XFCE Settings Manager"
+msgstr "XFCE Ayar Yöneticisi"
+
+#: ../screenshots.php:142
+msgid "XFCE Terminal"
+msgstr "XFCE Terminal"
+
+#: ../screenshots.php:145
+msgid "Gfpm"
+msgstr "Gfpm"
+
+#: ../screenshots.php:147
+msgid "Gfpm Synchronizing"
+msgstr "Gfpm Eş Zamanlanıyor"
+
+#: ../screenshots.php:149
+msgid "Repository Manager"
+msgstr "Depo Yöneticisi"
+
+#: ../screenshots.php:151
+msgid "Servers Manager"
+msgstr "Sunucu Yöneticisi"
+
+#: ../screenshots.php:153
+msgid "Optimizing Package Database"
+msgstr "Paket Veritabanı İyileştiriliyor"
+
+#: ../screenshots.php:155
+msgid "Log Viewer"
+msgstr "Kayıt Görüntüleyici"
+
+#: ../screenshots.php:158
+msgid "Update Notification"
+msgstr "Güncelleme Uyarıcı"
+
+#: ../screenshots.php:160
+msgid "FUN Main Window"
+msgstr "FUN Ana Penceresi"
+
+#: ../screenshots.php:162
+msgid "Preferences Window"
+msgstr "Seçenekler Penceresi"
+
+#: ../screenshots.php:165
+msgid "GNetconfig"
+msgstr "GNetconfig"
+
+#: ../screenshots.php:167
+msgid "GNetconfig - Interface Management"
+msgstr "GNetconfig - Arayüz Yöneticisi"
+
+#: ../screenshots.php:169
+msgid "GNetconfig - DNS Settings"
+msgstr "GNetconfig - DNS Ayarları"
+
+#: ../screenshots.php:172
+msgid "18_runlevel_editor.png"
+msgstr "18_runlevel_editor.png"
+
+#: ../screenshots.php:179
+msgid "Installer"
+msgstr "Kurulumcu"
+
+#: ../screenshots.php:187
+msgid "Startup"
+msgstr "Başlangıç"
+
+#: ../screenshots.php:195
+msgid "KDE Desktop"
+msgstr "KDE Masaüstü"
+
+#: ../screenshots.php:203
+msgid "GNOME Desktop"
+msgstr "GNOME Masaüstü"
+
+#: ../screenshots.php:211
+msgid "XFCE Desktop"
+msgstr "XFCE Masaüstü"
+
+#: ../screenshots.php:219
+msgid "GFpm (Package Manager)"
+msgstr "GFpm (Paket Yöneticisi)"
+
+#: ../screenshots.php:227
+msgid "FUN (Update Notifier)"
+msgstr "FUN (Güncelleme Bildirici)"
+
+#: ../screenshots.php:235
+msgid "GNetconfig (Network Configuration Tool)"
+msgstr "GNetconfig (Ağ Yapılandırma Tool)"
+
+#: ../security.php:46
+msgid "Sorry, a security file has not been written yet."
+msgstr "Üzgünüz, güvenlik dosyası henüz yazılmadı."
+
+#: ../security.php:58
+msgid "Frugalware Security Announcements (FSAs)"
+msgstr "Frugalware Güvenlik Duyuruları (FSAs)"
+
+#: ../security.php:59
+msgid ""
+"This is a list of security announcments that have been released for the "
+"current stable version of Frugalware"
+msgstr ""
+"Bu, şuanki karalı Frugalware sürümü için yapılmış güvenlik duyurularının "
+"listesidir."
+
+#: ../security.php:87
+msgid "Package"
+msgstr "Paket"
+
+#: ../security.php:90
+msgid "Vulnerable version"
+msgstr "Savunmasız sürüm"
+
+#: ../security.php:91
+msgid "Unaffected version"
+msgstr "Etkilenmeyen sürüm"
+
+#: ../security.php:92
+msgid "Bug tracker entry"
+msgstr "Hata izleyici girdisi"
+
+#: ../security.php:93
+msgid "CVEs"
+msgstr "CVEs"
+
+#: ../security.php:94
+msgid "Description"
+msgstr "Tanım"
