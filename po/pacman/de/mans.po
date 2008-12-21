@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-12-18 01:54+0100\n"
-"PO-Revision-Date: 2008-12-18 11:12+0200\n"
+"POT-Creation-Date: 2008-12-21 01:55+0100\n"
+"PO-Revision-Date: 2008-12-21 12:05+0200\n"
 "Last-Translator: Balint Krizsan <balint@krizsan.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -71,7 +71,7 @@ msgstr "----\n"
 # type: Plain text
 #: FrugalBuild.txt:20
 msgid "# Compiling Time: 0.17 SBU # Maintainer: Name <email@addr.ess>"
-msgstr ""
+msgstr "# Compiling Time: 0.17 SBU # Maintainer: Name <email@addr.ess>"
 
 # type: Plain text
 #: FrugalBuild.txt:31
@@ -129,6 +129,10 @@ msgid ""
 "many seconds the build took. After you have built `binutils`, you should "
 "update your `/etc/makepkg.conf`:"
 msgstr ""
+"`SBU`ist die Static Binutils Unit, also die Zeit, die `repoman merge "
+"binutils` auf der aktuellen Maschine benötigt. Standardmäßig gibt `makepkg` "
+"die Anzahl der Sekunden aus, die der Build benötigte. Nachdem `binutils` "
+"gebaut wurde, sollte die `/etc/makepkg.conf` upgedatet werden:"
 
 # type: Plain text
 #: FrugalBuild.txt:46
@@ -148,6 +152,10 @@ msgid ""
 "after successful builds, and this SBU value will be equal on everyone's "
 "machine."
 msgstr ""
+"Die obenstehende Zeile bedeutet, dass `binutils` auf Ihrer Maschine 257 "
+"Sekunden benötigte. Ab diesem Punkt wird `makepkg` SBUs statt Sekunden nach "
+"erfolgreichen Builds ausgeben und dieser SBU-Wert wird auf jeder Maschine "
+"gleich sein."
 
 # type: Plain text
 #: FrugalBuild.txt:57
@@ -159,9 +167,16 @@ msgid ""
 "`Modified by` are not allowed. Use the commit message to mention others if "
 "you wish."
 msgstr ""
+"Wenn Sie ein Paket pflegen wollen, schreiben Sie Ihren Namen oder Nicknamen "
+"und die e-Mail-Adresse in die zweite Zeile. Falls nur der FrugalBuild "
+"geschrieben wurde, aber eine Pflege nicht geplant ist, schreiben Sie "
+"`Contributor` statt `Maintainer`, und jemand wird später übernehmen und "
+"seine/ihre Zeile hinzufügen. Andere Einträge wie `Modified by` sind nicht "
+"erlaubt. Um andere zu erwähnen, sollte die Commit-Nachricht benutzt werden."
 
 # type: Plain text
 #: FrugalBuild.txt:66
+#, fuzzy
 msgid ""
 "`pkgname` defines the package name. It should not contain any uppercase "
 "letters.  The package version defines the upstream version, while the "
@@ -172,6 +187,7 @@ msgid ""
 "`5wanda1`, `5wanda2` and so on. This way the user can easily upgrade to "
 "`pkgrel=5` which is in `-current`."
 msgstr ""
+"`pkgname` gibt den Paketnamen an. Es sollte keine Großbuchstaben beinhalten."
 
 # type: Plain text
 #: FrugalBuild.txt:69
@@ -180,6 +196,9 @@ msgid ""
 "from the project's homepage or manpage. Try to keep the length under 80 "
 "chars."
 msgstr ""
+"`pkgdesc` ist eine kurze, einzeilige Beschreibung des Paketes. Normalerweise "
+"der Homepage oder manpage des Projekts entnommen. Die Länge des Textes "
+"sollte 80 Zeichen nicht übersteigen."
 
 # type: Plain text
 #: FrugalBuild.txt:74
@@ -189,6 +208,11 @@ msgid ""
 "one.  If the dependency is runtime-only, then use `rodepends()`, if "
 "buildtime-only then use `makedepends()`."
 msgstr ""
+"`depends()` ist ein Bash-Array, welches die Abhängigkeiten des Pakets "
+"angibt.`depends()` führt die für den Build dieses Pakets notwendigen Pakete "
+"auf. Wenn eine Abhängigkeit nur zur Laufzeit benötigt wird, sollte "
+"`rodepends()` benutzt werden, wenn es nur zum bauen benutzt wird, "
+"`makedepends()`."
 
 # type: Plain text
 #: FrugalBuild.txt:83
@@ -278,7 +302,7 @@ msgstr ""
 # type: Plain text
 #: FrugalBuild.txt:128
 msgid "=== Install/Upgrade/Remove Scripting"
-msgstr ""
+msgstr "=== Installation/Upgrade/Entfernen des Scriptings"
 
 # type: Plain text
 #: FrugalBuild.txt:133
@@ -288,11 +312,19 @@ msgid ""
 "allows a package to 'configure itself' after installation and do the "
 "opposite right before it is removed."
 msgstr ""
+"`pacman-g2` hat die Fähigkeit, ein spezielles paket-spezifisches nicht-"
+"interaktives Skript zu speichern und auszuführen, wenn es ein Paket "
+"installiert, entfernt oder upgradet. Dies erlaubt einem Paket, sich 'selbst "
+"zu konfigurieren', nachdem es installiert wurde und das Gegenteil, bevor es "
+"deinstalliert wird."
 
 # type: Plain text
 #: FrugalBuild.txt:135
+#, fuzzy
 msgid "The exact time the script is run varies with each operation:"
 msgstr ""
+"Die exakte Zeit, in der ein Skript läuft, ist bei jedem Ablauf "
+"unterschiedlich:"
 
 # type: Plain text
 #: FrugalBuild.txt:138
