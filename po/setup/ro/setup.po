@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-12-26 05:05+0100\n"
+"POT-Creation-Date: 2009-01-15 01:54+0100\n"
 "PO-Revision-Date: 2007-08-12 01:32+0200\n"
 "Last-Translator: Comanescu Florin <werewolfcom@yahoo.co.uk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "20)) ? 1 : 2);;\n"
 "X-Generator: Pootle 1.0\n"
 
-#: ../src/plugins/asklang.c:71
+#: ../src/plugins/asklang.c:72
 msgid "Selecting language"
 msgstr "Selectare limba"
 
@@ -26,15 +26,15 @@ msgid "Configuring the source of the installation"
 msgstr "Configurarea sursei instalarii"
 
 #. this string should be the best mirror for the given language from
-#. * /etc/pacman.d
+#. * /etc/pacman-g2/repos
 #: ../src/plugins/configsource.c:68
 msgid "ftp://ftp5."
 msgstr "ftp://ftp5."
 
 #: ../src/plugins/configsource.c:102 ../src/plugins/dolangsh.c:58
-#: ../src/plugins/formatdisk.c:248 ../src/plugins/formatdisk.c:401
-#: ../src/plugins/layout.c:141 ../src/plugins/loadsource.c:82
-#: ../src/plugins/select.c:333 ../src/util.c:305
+#: ../src/plugins/formatdisk.c:256 ../src/plugins/formatdisk.c:409
+#: ../src/plugins/layout.c:146 ../src/plugins/loadsource.c:88
+#: ../src/plugins/select.c:334 ../src/util.c:305
 msgid "Could not open output file for writing"
 msgstr "Nu am putut deschide fisierul de output pentru scris"
 
@@ -53,26 +53,31 @@ msgstr ""
 "Puteti alege unul sau mai multe locatii mirror apropiate pentru a creste "
 "viteza de download a pachetelor."
 
-#: ../src/plugins/configsource.c:165
+#: ../src/plugins/configsource.c:166 ../src/plugins/formatdisk.c:580
+#: ../src/plugins/partdisk.c:197
+msgid "Continue"
+msgstr "Continua"
+
+#: ../src/plugins/configsource.c:167
 msgid "Custom mirror"
 msgstr "Mirror specificat"
 
-#: ../src/plugins/configsource.c:165
+#: ../src/plugins/configsource.c:167
+#, fuzzy
 msgid ""
 "You may now specify a custom mirror (eg. LAN) so you can download packages "
-"faster. In most cases a Cancel enough here."
+"faster. In most cases a Continue enough here."
 msgstr ""
 "Puteti specifica acum mirror-ul cel mai apropriat de dvs pentru a descarca "
 "pachetele mai repede. In majoritatea cazurilor valoarea standard (Cancel) "
 "este buna."
 
-#: ../src/plugins/configsource.c:193 ../src/plugins/hotplug.c:59
-#: ../src/plugins/select.c:406 ../src/plugins/select.c:416
-#: ../src/plugins/select.c:448
+#: ../src/plugins/configsource.c:196 ../src/plugins/select.c:410
+#: ../src/plugins/select.c:420 ../src/plugins/select.c:450
 msgid "Please wait"
 msgstr "Va rugam asteptati"
 
-#: ../src/plugins/configsource.c:193
+#: ../src/plugins/configsource.c:196
 msgid "Configuring the network interface..."
 msgstr "Se configureaza interfata de retea..."
 
@@ -84,37 +89,37 @@ msgstr "Se scriu fisierele de configurare ale limbii"
 msgid "Formatting the selected partitions"
 msgstr "Partitiile selectate sunt formatate"
 
-#: ../src/plugins/formatdisk.c:156
+#: ../src/plugins/formatdisk.c:158
 msgid "Setting up swap space"
 msgstr "Se seteaza spatiul de swap"
 
-#: ../src/plugins/formatdisk.c:159
+#: ../src/plugins/formatdisk.c:161
 msgid "Setting up swap partitions"
 msgstr "Se seteaza partitiile de swap"
 
-#: ../src/plugins/formatdisk.c:160
+#: ../src/plugins/formatdisk.c:162
 msgid "Please select which swap partitions you want Frugalware to use:"
 msgstr "Va rugam selectati ce partitii de swap vreti sa foloseasca Frugalware"
 
-#: ../src/plugins/formatdisk.c:171 ../src/plugins/formatdisk.c:194
+#: ../src/plugins/formatdisk.c:173 ../src/plugins/formatdisk.c:196
 msgid "Quick format with no bad block checking"
 msgstr "Formatare rapida fara verificarea erorilor"
 
-#: ../src/plugins/formatdisk.c:172 ../src/plugins/formatdisk.c:195
+#: ../src/plugins/formatdisk.c:174 ../src/plugins/formatdisk.c:197
 msgid "Slow format that checks for bad blocks"
 msgstr "Formatare lenta cu verificarea erorilor"
 
-#: ../src/plugins/formatdisk.c:175 ../src/plugins/formatdisk.c:199
-#: ../src/plugins/formatdisk.c:224
+#: ../src/plugins/formatdisk.c:177 ../src/plugins/formatdisk.c:201
+#: ../src/plugins/formatdisk.c:232
 msgid "Formatting partitions"
 msgstr "Formatez partitiile"
 
-#: ../src/plugins/formatdisk.c:178 ../src/plugins/formatdisk.c:202
+#: ../src/plugins/formatdisk.c:180 ../src/plugins/formatdisk.c:204
 #, c-format
 msgid "Format %s"
 msgstr "%s se formateaza"
 
-#: ../src/plugins/formatdisk.c:179 ../src/plugins/formatdisk.c:203
+#: ../src/plugins/formatdisk.c:181 ../src/plugins/formatdisk.c:205
 #, c-format
 msgid ""
 "If %s has not been formatted, you should format it.\n"
@@ -125,59 +130,59 @@ msgstr ""
 " ATENTIE: Acest lucru o sa stearga toate datele de pe %s. Vreti sa formatati "
 "aceasta partitie?"
 
-#: ../src/plugins/formatdisk.c:196
+#: ../src/plugins/formatdisk.c:198
 msgid "Do not format, just mount the partition"
 msgstr "Nu formata, doar activeaza partitia."
 
-#: ../src/plugins/formatdisk.c:218
+#: ../src/plugins/formatdisk.c:224
 msgid "Standard Linux ext2fs filesystem"
 msgstr "Sistemul de fisiere ext2fs standard in Linux"
 
-#: ../src/plugins/formatdisk.c:219
+#: ../src/plugins/formatdisk.c:225
 msgid "Journalising version of the ext2fs filesystem"
 msgstr "Versiunea jurnalizata a ext2fs"
 
-#: ../src/plugins/formatdisk.c:220
+#: ../src/plugins/formatdisk.c:227
 msgid "Hans Reiser's journalising filesystem"
 msgstr "Sistemlul jurnalizat al lui Hans Reiser"
 
-#: ../src/plugins/formatdisk.c:221
+#: ../src/plugins/formatdisk.c:229
 msgid "SGI's journalising filesystem"
 msgstr "Sistemul jurnalizat SGI"
 
-#: ../src/plugins/formatdisk.c:228
+#: ../src/plugins/formatdisk.c:236
 #, c-format
 msgid "Selecting filesystem for %s"
 msgstr "Selectarea sistemului de fisiere pentru %s"
 
-#: ../src/plugins/formatdisk.c:229
+#: ../src/plugins/formatdisk.c:237
 #, c-format
 msgid "Please select the type of filesystem to use for %s."
 msgstr "Va rugam selectati tipul sistemului de fisiere pentru %s"
 
-#: ../src/plugins/formatdisk.c:272 ../src/plugins/formatdisk.c:279
+#: ../src/plugins/formatdisk.c:280 ../src/plugins/formatdisk.c:287
 msgid "Formatting swap partition"
 msgstr "Formatez partitia swap"
 
-#: ../src/plugins/formatdisk.c:273
+#: ../src/plugins/formatdisk.c:281
 #, c-format
 msgid "Formatting %s as a swap partition"
 msgstr "Formatez %s ca partitie swap"
 
-#: ../src/plugins/formatdisk.c:280
+#: ../src/plugins/formatdisk.c:288
 #, c-format
 msgid "Formatting %s as a swap partition and checking for bad blocks"
 msgstr "Formatez %s ca partitie swap si se verifica daca exista erori"
 
-#: ../src/plugins/formatdisk.c:304
+#: ../src/plugins/formatdisk.c:312
 msgid "Setting up the root partition"
 msgstr "Setare partitie root"
 
-#: ../src/plugins/formatdisk.c:306
+#: ../src/plugins/formatdisk.c:314
 msgid "Select the Linux installation partition"
 msgstr "Selectati partitia de instalare pentru Linux"
 
-#: ../src/plugins/formatdisk.c:307
+#: ../src/plugins/formatdisk.c:315
 msgid ""
 "Please select a partition from the following list to use for your root (/) "
 "partition. The following ones are available:"
@@ -185,48 +190,44 @@ msgstr ""
 "Va rugam selectati din lista urmatoare partitia pentru root (/). Urmatoarele "
 "partitii sunt disponibile:"
 
-#: ../src/plugins/formatdisk.c:320
+#: ../src/plugins/formatdisk.c:328
 msgid "Formatting"
 msgstr "Formatez"
 
-#: ../src/plugins/formatdisk.c:321
+#: ../src/plugins/formatdisk.c:329
 #, c-format
 msgid "Creating %s filesystem on %s and checking for bad blocks"
 msgstr "Se creaza sistemul de fisiere %s pe %s si se verifica de erori"
 
-#: ../src/plugins/formatdisk.c:322
+#: ../src/plugins/formatdisk.c:330
 #, c-format
 msgid "Creating %s filesystem on %s"
 msgstr "Se creaza sistemul de fisiere %s pe %s"
 
-#: ../src/plugins/formatdisk.c:425
+#: ../src/plugins/formatdisk.c:433
 #, c-format
 msgid "Select mount point for %s"
 msgstr "Selectati locatia de mount pentru %s"
 
-#: ../src/plugins/formatdisk.c:449 ../src/plugins/formatdisk.c:614
+#: ../src/plugins/formatdisk.c:457 ../src/plugins/formatdisk.c:600
 msgid "(in use)"
 msgstr "(in folosinta)"
 
-#: ../src/plugins/formatdisk.c:457
+#: ../src/plugins/formatdisk.c:465
 #, c-format
 msgid "%s on %s/\t%s"
 msgstr "%s pe %s/\t%s"
 
 #. non-root partitions
-#: ../src/plugins/formatdisk.c:587
+#: ../src/plugins/formatdisk.c:573
 msgid "Selecting other partitions"
 msgstr "Selecteaza alte partitii"
 
-#: ../src/plugins/formatdisk.c:594 ../src/plugins/partdisk.c:185
-msgid "Continue"
-msgstr "Continua"
-
-#: ../src/plugins/formatdisk.c:598
+#: ../src/plugins/formatdisk.c:584
 msgid "Select other Linux partitions for /etc/fstab"
 msgstr "Selecteaza alte partitii Linux pentru /etc/fstab"
 
-#: ../src/plugins/formatdisk.c:599
+#: ../src/plugins/formatdisk.c:585
 msgid ""
 "You may use your other partitions to distribute your Linux system across "
 "more than one partition. Currently, you have only mounted your / partition. "
@@ -276,33 +277,25 @@ msgstr ""
 "\n"
 "Echipa Frugalware"
 
-#: ../src/plugins/hotplug.c:51 ../src/plugins/hotplug.c:56
-msgid "Detecting hardware"
-msgstr "Detectare componente hardware"
-
-#: ../src/plugins/hotplug.c:59
-msgid "Scanning for SCSI and PCI cards"
-msgstr "Scanare carduri SCSI si PCI"
-
 #: ../src/plugins/layout.c:57
 msgid "Selecting the keyboard map"
 msgstr "Selectarea tipului tastaturii"
 
-#: ../src/plugins/layout.c:108
+#: ../src/plugins/layout.c:113
 msgid "Configuring the keyboard"
 msgstr "Configurez tastatura"
 
 #. this string should be the best keyboard layout for the given
-#. * language from /usr/share/kbd/keymaps/i386
-#: ../src/plugins/layout.c:113
+#. * language from /usr/share/keymaps/i386
+#: ../src/plugins/layout.c:118
 msgid "qwerty/us.map.gz"
 msgstr "qwerty/us.map.gz"
 
-#: ../src/plugins/layout.c:114
+#: ../src/plugins/layout.c:119
 msgid "Keyboard map selection"
 msgstr "Selectia tipului tastaturii"
 
-#: ../src/plugins/layout.c:115
+#: ../src/plugins/layout.c:120
 msgid ""
 "You may select one of the following keyboard maps. If you do not select a "
 "keyboard map, 'qwerty/us.map.gz' (the US keyboard map) is the default. Use "
@@ -314,28 +307,28 @@ msgstr ""
 "implicit. Folositi sagetile SUS/JOS si PageUp/PageDown pentru a parcurge "
 "lista."
 
-#: ../src/plugins/loadsource.c:56
+#: ../src/plugins/loadsource.c:62
 msgid "Loading the installation source"
 msgstr "Incarc sursa instalarii"
 
-#: ../src/plugins/loadsource.c:123
+#: ../src/plugins/loadsource.c:156
 msgid "Selecting source media"
 msgstr "Selectare sursa media"
 
-#: ../src/plugins/loadsource.c:126
+#: ../src/plugins/loadsource.c:159
 msgid "Scanning"
 msgstr "Scananez"
 
 # aici ar merge : caut CD/DVD instalare Frugalware
-#: ../src/plugins/loadsource.c:126
+#: ../src/plugins/loadsource.c:159
 msgid "Scanning for a CD/DVD drive containing a Frugalware install disc..."
 msgstr "Caut CD/DVD care sa contina un disc de instalare Frugalware..."
 
-#: ../src/plugins/loadsource.c:137
+#: ../src/plugins/loadsource.c:175
 msgid "CD/DVD drive found"
 msgstr "CD/DVD gasit"
 
-#: ../src/plugins/loadsource.c:137
+#: ../src/plugins/loadsource.c:175
 #, c-format
 msgid "A Frugalware install disc was found in device /dev/%s."
 msgstr "Un disc de instalare Frugalware a fost gasit pe /dev/%s."
@@ -344,43 +337,47 @@ msgstr "Un disc de instalare Frugalware a fost gasit pe /dev/%s."
 msgid "Partitioning the disk drives"
 msgstr "Partitionare discuri"
 
-#: ../src/plugins/partdisk.c:114
+#: ../src/plugins/partdisk.c:118
 msgid "User friendly (curses based) version of fdisk"
 msgstr "Versiunea prietenoasa (bazata pe curses) a lui fdisk"
 
-#: ../src/plugins/partdisk.c:115
+#: ../src/plugins/partdisk.c:119
 msgid "The traditional partitioning program for Linux"
 msgstr "Programul traditional de partitionare pentru Linux"
 
-#: ../src/plugins/partdisk.c:116
+#: ../src/plugins/partdisk.c:120 ../src/plugins/partdisk.c:127
 msgid "A partition manipulation program"
 msgstr "Un program de manipulare a partitiilor"
 
-#: ../src/plugins/partdisk.c:119 ../src/plugins/partdisk.c:171
+#: ../src/plugins/partdisk.c:126
+msgid "Apple disk partitioning utility"
+msgstr ""
+
+#: ../src/plugins/partdisk.c:131 ../src/plugins/partdisk.c:183
 msgid "Creating partitions"
 msgstr "Creez partitiile"
 
-#: ../src/plugins/partdisk.c:122
+#: ../src/plugins/partdisk.c:134
 msgid "Select partitioning program"
 msgstr "Selectati un program de partitionare"
 
-#: ../src/plugins/partdisk.c:123
+#: ../src/plugins/partdisk.c:135
 msgid "Select the program you want to use for partitioning:"
 msgstr "Selectati programul pe care vrei sa-l folositi pentru partitionare:"
 
-#: ../src/plugins/partdisk.c:135
+#: ../src/plugins/partdisk.c:147
 msgid "Want to create RAID?"
 msgstr "Vreti sa creati o matrice RAID?"
 
-#: ../src/plugins/partdisk.c:136
+#: ../src/plugins/partdisk.c:148
 msgid "Do you want to create software raid partitions during partitioning?"
 msgstr "Vreti sa creati matrici RAID software in timpul partitionarii?"
 
-#: ../src/plugins/partdisk.c:165
+#: ../src/plugins/partdisk.c:177
 msgid "Disk drive not found"
 msgstr "Nu s-a gasit harddisk-ul"
 
-#: ../src/plugins/partdisk.c:165
+#: ../src/plugins/partdisk.c:177
 msgid ""
 "Sorry, no hard disk drives were found in this computer. Press ENTER to "
 "reboot."
@@ -388,20 +385,23 @@ msgstr ""
 "Ne pare rau, nu s-a gasit nici un harddisk pe acest calculator. Apasati "
 "ENTER pentru restart."
 
-#: ../src/plugins/partdisk.c:180
+#: ../src/plugins/partdisk.c:192
 msgid "Create RAID"
 msgstr "Creeaza RAID"
 
-#: ../src/plugins/partdisk.c:188
+#: ../src/plugins/partdisk.c:200
 msgid "Select a hard disk to partition"
 msgstr "Selectati un hard disk pentru partitionare"
 
-#: ../src/plugins/partdisk.c:189
+#: ../src/plugins/partdisk.c:201
+#, fuzzy
 msgid ""
-"Please select a hard disk to partition. The following ones are available:"
+"Please select a hard disk to partition. Once you are done, or in case you "
+"don't want to partition your disks at all, select 'Continue'. The following "
+"ones are available:"
 msgstr ""
-"Va rugam selectati un hard disk pentru partitionare. Urmatoarele unitati "
-"sunt disponibile:"
+"Va rugam selectati din lista urmatoare partitia pentru root (/). Urmatoarele "
+"partitii sunt disponibile:"
 
 #: ../src/plugins/restart.c:51
 msgid "Restarting your computer"
@@ -422,24 +422,24 @@ msgstr ""
 "va placa %s. Va rugam scoateti CD/DVD-ul din unitate si apasati ENTER pentru "
 "restart"
 
-#: ../src/plugins/select.c:53 ../src/plugins/select.c:278
-#: ../src/plugins/select.c:403
+#: ../src/plugins/select.c:53 ../src/plugins/select.c:279
+#: ../src/plugins/select.c:407
 msgid "Selecting packages"
 msgstr "Selectarea pachetelelor"
 
-#: ../src/plugins/select.c:260
+#: ../src/plugins/select.c:261
 msgid "Selecting categories"
 msgstr "Selectarea categoriilor"
 
-#: ../src/plugins/select.c:261
+#: ../src/plugins/select.c:262
 msgid "Please select which categories to install:"
 msgstr "Va rugam selectati categoriile dorite pentru instalare:"
 
-#: ../src/plugins/select.c:291
+#: ../src/plugins/select.c:292
 msgid "Use expert menus?"
 msgstr "Utilizati meniurile expert?"
 
-#: ../src/plugins/select.c:292
+#: ../src/plugins/select.c:293
 msgid ""
 "If you like, you may select your packages from expert menus. Where the "
 "normal menu shows a choice like 'C compiler system', the expert menus show "
@@ -459,43 +459,43 @@ msgstr ""
 "selecteaza grupuri de pachete, sau alegeti 'da' pentru a utiliza meniul "
 "expert in care puteti selecta fiecare pachet in parte."
 
-#: ../src/plugins/select.c:345 ../src/plugins/select.c:353
-#: ../src/plugins/select.c:367 ../src/plugins/select.c:371
+#: ../src/plugins/select.c:348 ../src/plugins/select.c:356
+#: ../src/plugins/select.c:370 ../src/plugins/select.c:374
 msgid "Error"
 msgstr "Eroare"
 
 # parsarea= analiza vezi dictionary.com
-#: ../src/plugins/select.c:345
+#: ../src/plugins/select.c:348
 #, c-format
 msgid "Failed to parse pacman-g2 configuration file (%s)"
 msgstr "Nu s-a reusit analiza fisierului de configurare a pacman-g2 (%s)"
 
-#: ../src/plugins/select.c:353
+#: ../src/plugins/select.c:356
 #, c-format
 msgid "Could not register '%s' database (%s)"
 msgstr "Nu s-a putut inregistra baza de date '%s'  (%s)"
 
-#: ../src/plugins/select.c:367
+#: ../src/plugins/select.c:370
 #, c-format
 msgid "Failed to synchronize %s"
 msgstr "Sincronizarea %s a esuat"
 
-#: ../src/plugins/select.c:371
+#: ../src/plugins/select.c:374
 #, c-format
 msgid "Failed to update %s (%s)"
 msgstr "Nu s-a reusit actualizarea %s (%s)"
 
-#: ../src/plugins/select.c:406
+#: ../src/plugins/select.c:410
 msgid "Searching for categories..."
 msgstr "Cautare categorii..."
 
-#: ../src/plugins/select.c:416
+#: ../src/plugins/select.c:420
 msgid "Searching for packages..."
 msgstr "Cautare pachete..."
 
 # http://dexonline.ro/search.php?cuv=dependinta
 # dependinta <> dependenta
-#: ../src/plugins/select.c:448
+#: ../src/plugins/select.c:450
 msgid "Searching for missing dependencies..."
 msgstr "Cautare dependente lipsa..."
 
@@ -504,9 +504,9 @@ msgid "Installing the selected packages"
 msgstr "Se instaleaza pachetele selectate"
 
 #: ../src/plugins/install.c:69
-#, c-format
+#, fuzzy, c-format
 msgid ""
-"Errors occured while installing selected packages.\n"
+"Errors occurred while installing selected packages.\n"
 "Press ENTER to continue..."
 msgstr ""
 "Au aparut erori in timpul instalarii pachetelor selectate.\n"
@@ -613,11 +613,11 @@ msgstr ""
 msgid "Post-install configuration"
 msgstr "Configurare post-instalare"
 
-#: ../src/plugins/postconf.c:244
+#: ../src/plugins/postconf.c:260
 msgid "Configuring kernel modules"
 msgstr "Configurez modulele kernelului"
 
-#: ../src/plugins/postconf.c:245
+#: ../src/plugins/postconf.c:261
 msgid "Updating module dependencies..."
 msgstr "Actualizez dependentele modulelor..."
 
@@ -655,15 +655,15 @@ msgstr "Iesire din programul de instalare"
 msgid "Are you sure you want to exit from the installer?"
 msgstr "Sunteti siguri ca vreti sa iesiti din programul de instalare?"
 
-#: ../src/util.c:624
+#: ../src/util.c:631
 msgid "Oops"
 msgstr "Oops"
 
-#: ../src/util.c:626
+#: ../src/util.c:633
 msgid "A problem has occurred"
 msgstr "S-a produs o problema"
 
-#: ../src/util.c:626
+#: ../src/util.c:633
 msgid ""
 "Internal error: Segmentation fault. Please report this issue to http://bugs."
 "frugalware.org"
@@ -671,21 +671,33 @@ msgstr ""
 "Eroare interna: Segmentation fault. Va rugam sa anuntati aceasta problema la "
 "http://bugs.frugalware.org"
 
-#: ../src/util.c:652
+#: ../src/util.c:659
 msgid "Selecting a task"
 msgstr "Selectand un task"
 
-#: ../src/util.c:660
+#: ../src/util.c:667
 msgid "Select task to continue with"
 msgstr "Selectati un task pentru a continua"
 
-#: ../src/util.c:661
+#: ../src/util.c:668
 msgid ""
 "You selected to change the way normally Frugalware is installed. Here are "
 "the list of tasks you can continue with:"
 msgstr ""
 "Ati ales sa schimbati modul in care Frugalware este instalat in mod normal. "
 "Lista task-urilor cu care puteti continua:"
+
+#~ msgid ""
+#~ "Please select a hard disk to partition. The following ones are available:"
+#~ msgstr ""
+#~ "Va rugam selectati un hard disk pentru partitionare. Urmatoarele unitati "
+#~ "sunt disponibile:"
+
+#~ msgid "Detecting hardware"
+#~ msgstr "Detectare componente hardware"
+
+#~ msgid "Scanning for SCSI and PCI cards"
+#~ msgstr "Scanare carduri SCSI si PCI"
 
 #~ msgid "Could not open output file for reading"
 #~ msgstr "Nu am putut deschide fisierul de output pentru citit"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-12-26 05:05+0100\n"
+"POT-Creation-Date: 2009-01-15 01:54+0100\n"
 "PO-Revision-Date: 2007-07-14 13:23+0200\n"
 "Last-Translator: Serge Vinogradov <boogie_byte@mail.ru>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Pootle 1.0\n"
 
-#: ../src/plugins/asklang.c:71
+#: ../src/plugins/asklang.c:72
 msgid "Selecting language"
 msgstr "Выбор языка"
 
@@ -26,16 +26,16 @@ msgid "Configuring the source of the installation"
 msgstr "Настройка источника установки"
 
 #. this string should be the best mirror for the given language from
-#. * /etc/pacman.d
+#. * /etc/pacman-g2/repos
 #: ../src/plugins/configsource.c:68
 #, fuzzy
 msgid "ftp://ftp5."
 msgstr "ftp://ftp5."
 
 #: ../src/plugins/configsource.c:102 ../src/plugins/dolangsh.c:58
-#: ../src/plugins/formatdisk.c:248 ../src/plugins/formatdisk.c:401
-#: ../src/plugins/layout.c:141 ../src/plugins/loadsource.c:82
-#: ../src/plugins/select.c:333 ../src/util.c:305
+#: ../src/plugins/formatdisk.c:256 ../src/plugins/formatdisk.c:409
+#: ../src/plugins/layout.c:146 ../src/plugins/loadsource.c:88
+#: ../src/plugins/select.c:334 ../src/util.c:305
 #, fuzzy
 msgid "Could not open output file for writing"
 msgstr "Невозможно открыть файл вывода для записи"
@@ -55,26 +55,31 @@ msgstr ""
 "Здесь вы можете выбрать одно или несколько ближайших зеркал для увеличения "
 "скорости загрузки пакетов."
 
-#: ../src/plugins/configsource.c:165
+#: ../src/plugins/configsource.c:166 ../src/plugins/formatdisk.c:580
+#: ../src/plugins/partdisk.c:197
+msgid "Continue"
+msgstr "Продолжить"
+
+#: ../src/plugins/configsource.c:167
 msgid "Custom mirror"
 msgstr "Другое зеркало"
 
-#: ../src/plugins/configsource.c:165
+#: ../src/plugins/configsource.c:167
+#, fuzzy
 msgid ""
 "You may now specify a custom mirror (eg. LAN) so you can download packages "
-"faster. In most cases a Cancel enough here."
+"faster. In most cases a Continue enough here."
 msgstr ""
 "Вы можете указать другое зеркало (например, в локальной сети), чтобы "
 "сократить время загрузки пакетов. В большинстве случаев, здесь достаточно "
 "нажать на кнопку \"Отмена\"."
 
-#: ../src/plugins/configsource.c:193 ../src/plugins/hotplug.c:59
-#: ../src/plugins/select.c:406 ../src/plugins/select.c:416
-#: ../src/plugins/select.c:448
+#: ../src/plugins/configsource.c:196 ../src/plugins/select.c:410
+#: ../src/plugins/select.c:420 ../src/plugins/select.c:450
 msgid "Please wait"
 msgstr "Пожалуйста, подождите"
 
-#: ../src/plugins/configsource.c:193
+#: ../src/plugins/configsource.c:196
 msgid "Configuring the network interface..."
 msgstr "Настройка сетевого интерфейса..."
 
@@ -86,41 +91,41 @@ msgstr "Запись файла настройки языка"
 msgid "Formatting the selected partitions"
 msgstr "Форматирование выбранных разделов"
 
-#: ../src/plugins/formatdisk.c:156
+#: ../src/plugins/formatdisk.c:158
 #, fuzzy
 msgid "Setting up swap space"
 msgstr "Определение пространства подкачки"
 
-#: ../src/plugins/formatdisk.c:159
+#: ../src/plugins/formatdisk.c:161
 #, fuzzy
 msgid "Setting up swap partitions"
 msgstr "Определение раздела подкачки"
 
-#: ../src/plugins/formatdisk.c:160
+#: ../src/plugins/formatdisk.c:162
 msgid "Please select which swap partitions you want Frugalware to use:"
 msgstr ""
 "Пожалуйста, выберите раздел, который Frugalware будет использовать для файла "
 "подкачки:"
 
-#: ../src/plugins/formatdisk.c:171 ../src/plugins/formatdisk.c:194
+#: ../src/plugins/formatdisk.c:173 ../src/plugins/formatdisk.c:196
 msgid "Quick format with no bad block checking"
 msgstr "Быстрое форматирование без проверки на наличие сбойных блоков"
 
-#: ../src/plugins/formatdisk.c:172 ../src/plugins/formatdisk.c:195
+#: ../src/plugins/formatdisk.c:174 ../src/plugins/formatdisk.c:197
 msgid "Slow format that checks for bad blocks"
 msgstr "Медленное форматирование с проверкой на наличие сбойных блоков"
 
-#: ../src/plugins/formatdisk.c:175 ../src/plugins/formatdisk.c:199
-#: ../src/plugins/formatdisk.c:224
+#: ../src/plugins/formatdisk.c:177 ../src/plugins/formatdisk.c:201
+#: ../src/plugins/formatdisk.c:232
 msgid "Formatting partitions"
 msgstr "Форматирование разделов"
 
-#: ../src/plugins/formatdisk.c:178 ../src/plugins/formatdisk.c:202
+#: ../src/plugins/formatdisk.c:180 ../src/plugins/formatdisk.c:204
 #, fuzzy, c-format
 msgid "Format %s"
 msgstr "Форматировать раздел %s"
 
-#: ../src/plugins/formatdisk.c:179 ../src/plugins/formatdisk.c:203
+#: ../src/plugins/formatdisk.c:181 ../src/plugins/formatdisk.c:205
 #, fuzzy, c-format
 msgid ""
 "If %s has not been formatted, you should format it.\n"
@@ -131,63 +136,63 @@ msgstr ""
 "ЗАМЕЧАНИЕ: Форматирование уничтожит все данные на разделе %s. Вы хотите его "
 "форматировать?"
 
-#: ../src/plugins/formatdisk.c:196
+#: ../src/plugins/formatdisk.c:198
 msgid "Do not format, just mount the partition"
 msgstr "Монтировать раздел без форматирования"
 
-#: ../src/plugins/formatdisk.c:218
+#: ../src/plugins/formatdisk.c:224
 msgid "Standard Linux ext2fs filesystem"
 msgstr "Стандартная файловая система Linux ext2fs"
 
-#: ../src/plugins/formatdisk.c:219
+#: ../src/plugins/formatdisk.c:225
 msgid "Journalising version of the ext2fs filesystem"
 msgstr "Файловая система Linux ext2fs с журналированием"
 
-#: ../src/plugins/formatdisk.c:220
+#: ../src/plugins/formatdisk.c:227
 msgid "Hans Reiser's journalising filesystem"
 msgstr "Файловая система с журналированием от Hans Reiser"
 
-#: ../src/plugins/formatdisk.c:221
+#: ../src/plugins/formatdisk.c:229
 msgid "SGI's journalising filesystem"
 msgstr "Файловая система с журналированием от SGI"
 
-#: ../src/plugins/formatdisk.c:228
+#: ../src/plugins/formatdisk.c:236
 #, fuzzy, c-format
 msgid "Selecting filesystem for %s"
 msgstr "Выбор файловой системы для раздела %s"
 
-#: ../src/plugins/formatdisk.c:229
+#: ../src/plugins/formatdisk.c:237
 #, c-format
 msgid "Please select the type of filesystem to use for %s."
 msgstr "Пожалуйста, выберите тип файловой системы для раздела %s."
 
-#: ../src/plugins/formatdisk.c:272 ../src/plugins/formatdisk.c:279
+#: ../src/plugins/formatdisk.c:280 ../src/plugins/formatdisk.c:287
 msgid "Formatting swap partition"
 msgstr "Форматирование раздела подкачки"
 
-#: ../src/plugins/formatdisk.c:273
+#: ../src/plugins/formatdisk.c:281
 #, c-format
 msgid "Formatting %s as a swap partition"
 msgstr "Форматирование %s в качестве раздела подкачки"
 
-#: ../src/plugins/formatdisk.c:280
+#: ../src/plugins/formatdisk.c:288
 #, c-format
 msgid "Formatting %s as a swap partition and checking for bad blocks"
 msgstr ""
 "Форматирование %s в качестве раздела подкачки с проверкой на наличие сбойных "
 "блоков"
 
-#: ../src/plugins/formatdisk.c:304
+#: ../src/plugins/formatdisk.c:312
 #, fuzzy
 msgid "Setting up the root partition"
 msgstr "Определение корневого раздела"
 
-#: ../src/plugins/formatdisk.c:306
+#: ../src/plugins/formatdisk.c:314
 #, fuzzy
 msgid "Select the Linux installation partition"
 msgstr "Выберите раздел для установки Linux"
 
-#: ../src/plugins/formatdisk.c:307
+#: ../src/plugins/formatdisk.c:315
 msgid ""
 "Please select a partition from the following list to use for your root (/) "
 "partition. The following ones are available:"
@@ -195,50 +200,46 @@ msgstr ""
 "Пожалуйста, выберите из следующего списка раздел для использования в "
 "качестве корневого (/). Доступны следующие разделы:"
 
-#: ../src/plugins/formatdisk.c:320
+#: ../src/plugins/formatdisk.c:328
 msgid "Formatting"
 msgstr "Форматирование"
 
-#: ../src/plugins/formatdisk.c:321
+#: ../src/plugins/formatdisk.c:329
 #, c-format
 msgid "Creating %s filesystem on %s and checking for bad blocks"
 msgstr ""
 "Создание файловой системы %s на разделе %s с проверкой на наличие сбойных "
 "блоков"
 
-#: ../src/plugins/formatdisk.c:322
+#: ../src/plugins/formatdisk.c:330
 #, c-format
 msgid "Creating %s filesystem on %s"
 msgstr "Создание файловой системы %s на разделе %s"
 
-#: ../src/plugins/formatdisk.c:425
+#: ../src/plugins/formatdisk.c:433
 #, c-format
 msgid "Select mount point for %s"
 msgstr "Выбор точки монтирования для раздела %s"
 
-#: ../src/plugins/formatdisk.c:449 ../src/plugins/formatdisk.c:614
+#: ../src/plugins/formatdisk.c:457 ../src/plugins/formatdisk.c:600
 msgid "(in use)"
 msgstr "(задействован)"
 
-#: ../src/plugins/formatdisk.c:457
+#: ../src/plugins/formatdisk.c:465
 #, c-format
 msgid "%s on %s/\t%s"
 msgstr ""
 
 #. non-root partitions
-#: ../src/plugins/formatdisk.c:587
+#: ../src/plugins/formatdisk.c:573
 msgid "Selecting other partitions"
 msgstr "Выбор остальных разделов"
 
-#: ../src/plugins/formatdisk.c:594 ../src/plugins/partdisk.c:185
-msgid "Continue"
-msgstr "Продолжить"
-
-#: ../src/plugins/formatdisk.c:598
+#: ../src/plugins/formatdisk.c:584
 msgid "Select other Linux partitions for /etc/fstab"
 msgstr ""
 
-#: ../src/plugins/formatdisk.c:599
+#: ../src/plugins/formatdisk.c:585
 msgid ""
 "You may use your other partitions to distribute your Linux system across "
 "more than one partition. Currently, you have only mounted your / partition. "
@@ -288,37 +289,27 @@ msgstr ""
 "\n"
 "Команда разработчиков Frugalware"
 
-#: ../src/plugins/hotplug.c:51 ../src/plugins/hotplug.c:56
-#, fuzzy
-msgid "Detecting hardware"
-msgstr "Распознается оборудование"
-
-#: ../src/plugins/hotplug.c:59
-#, fuzzy
-msgid "Scanning for SCSI and PCI cards"
-msgstr "Ищутся SCSI и PCI карты"
-
 #: ../src/plugins/layout.c:57
 msgid "Selecting the keyboard map"
 msgstr "Выбор раскладки клавиатуры"
 
-#: ../src/plugins/layout.c:108
+#: ../src/plugins/layout.c:113
 msgid "Configuring the keyboard"
 msgstr ""
 
 #. this string should be the best keyboard layout for the given
-#. * language from /usr/share/kbd/keymaps/i386
-#: ../src/plugins/layout.c:113
+#. * language from /usr/share/keymaps/i386
+#: ../src/plugins/layout.c:118
 #, fuzzy
 msgid "qwerty/us.map.gz"
 msgstr "qwerty/ru4.map.gz"
 
-#: ../src/plugins/layout.c:114
+#: ../src/plugins/layout.c:119
 #, fuzzy
 msgid "Keyboard map selection"
 msgstr "Выбор раскладки клавиатуры"
 
-#: ../src/plugins/layout.c:115
+#: ../src/plugins/layout.c:120
 msgid ""
 "You may select one of the following keyboard maps. If you do not select a "
 "keyboard map, 'qwerty/us.map.gz' (the US keyboard map) is the default. Use "
@@ -329,27 +320,27 @@ msgstr ""
 "сделан, будет выбрана раскладка \"qwerty/us.map.gz\" (США). Используйте "
 "клавиши Вверх/Вниз или PageUp/PageDown для перемещения по списку раскладок."
 
-#: ../src/plugins/loadsource.c:56
+#: ../src/plugins/loadsource.c:62
 msgid "Loading the installation source"
 msgstr ""
 
-#: ../src/plugins/loadsource.c:123
+#: ../src/plugins/loadsource.c:156
 msgid "Selecting source media"
 msgstr ""
 
-#: ../src/plugins/loadsource.c:126
+#: ../src/plugins/loadsource.c:159
 msgid "Scanning"
 msgstr ""
 
-#: ../src/plugins/loadsource.c:126
+#: ../src/plugins/loadsource.c:159
 msgid "Scanning for a CD/DVD drive containing a Frugalware install disc..."
 msgstr "Поиск привода CD/DVD с установочным диском..."
 
-#: ../src/plugins/loadsource.c:137
+#: ../src/plugins/loadsource.c:175
 msgid "CD/DVD drive found"
 msgstr "Привод CD/DVD найден"
 
-#: ../src/plugins/loadsource.c:137
+#: ../src/plugins/loadsource.c:175
 #, c-format
 msgid "A Frugalware install disc was found in device /dev/%s."
 msgstr "Установочный диск Frugalware был найден в устройстве /dev/%s."
@@ -359,43 +350,47 @@ msgstr "Установочный диск Frugalware был найден в ус
 msgid "Partitioning the disk drives"
 msgstr "Разметка дисков"
 
-#: ../src/plugins/partdisk.c:114
+#: ../src/plugins/partdisk.c:118
 msgid "User friendly (curses based) version of fdisk"
 msgstr "Основанная на curses версия fdisk"
 
-#: ../src/plugins/partdisk.c:115
+#: ../src/plugins/partdisk.c:119
 msgid "The traditional partitioning program for Linux"
 msgstr "Традиционная программа разметки для Linux"
 
-#: ../src/plugins/partdisk.c:116
+#: ../src/plugins/partdisk.c:120 ../src/plugins/partdisk.c:127
 msgid "A partition manipulation program"
 msgstr "Программа управления разделами"
 
-#: ../src/plugins/partdisk.c:119 ../src/plugins/partdisk.c:171
+#: ../src/plugins/partdisk.c:126
+msgid "Apple disk partitioning utility"
+msgstr ""
+
+#: ../src/plugins/partdisk.c:131 ../src/plugins/partdisk.c:183
 msgid "Creating partitions"
 msgstr "Создание разделов"
 
-#: ../src/plugins/partdisk.c:122
+#: ../src/plugins/partdisk.c:134
 msgid "Select partitioning program"
 msgstr "Выбор программы разметки"
 
-#: ../src/plugins/partdisk.c:123
+#: ../src/plugins/partdisk.c:135
 msgid "Select the program you want to use for partitioning:"
 msgstr "Выберите программу для разметки жестких дисков:"
 
-#: ../src/plugins/partdisk.c:135
+#: ../src/plugins/partdisk.c:147
 msgid "Want to create RAID?"
 msgstr "Вы хотите создать RAID?"
 
-#: ../src/plugins/partdisk.c:136
+#: ../src/plugins/partdisk.c:148
 msgid "Do you want to create software raid partitions during partitioning?"
 msgstr "Вы хотите создать разделы программного RAID в ходе разметки?"
 
-#: ../src/plugins/partdisk.c:165
+#: ../src/plugins/partdisk.c:177
 msgid "Disk drive not found"
 msgstr "Жесткие диски не найдены"
 
-#: ../src/plugins/partdisk.c:165
+#: ../src/plugins/partdisk.c:177
 msgid ""
 "Sorry, no hard disk drives were found in this computer. Press ENTER to "
 "reboot."
@@ -403,18 +398,23 @@ msgstr ""
 "Приносим извинения, на данном компьютере не было найдено жестких дисков. "
 "Нажмите ENTER для перезагрузки."
 
-#: ../src/plugins/partdisk.c:180
+#: ../src/plugins/partdisk.c:192
 msgid "Create RAID"
 msgstr "Создание RAID"
 
-#: ../src/plugins/partdisk.c:188
+#: ../src/plugins/partdisk.c:200
 msgid "Select a hard disk to partition"
 msgstr "Выберите жесткий диск для разметки"
 
-#: ../src/plugins/partdisk.c:189
+#: ../src/plugins/partdisk.c:201
+#, fuzzy
 msgid ""
-"Please select a hard disk to partition. The following ones are available:"
-msgstr "Пожалуйста, выберите жесткий диск для разметки из следующих доступных:"
+"Please select a hard disk to partition. Once you are done, or in case you "
+"don't want to partition your disks at all, select 'Continue'. The following "
+"ones are available:"
+msgstr ""
+"Пожалуйста, выберите из следующего списка раздел для использования в "
+"качестве корневого (/). Доступны следующие разделы:"
 
 #: ../src/plugins/restart.c:51
 msgid "Restarting your computer"
@@ -435,24 +435,24 @@ msgstr ""
 "понравится %s. Пожалуйста, удалите установочный носитель из привода, и "
 "нажмите ENTER для перезагрузки."
 
-#: ../src/plugins/select.c:53 ../src/plugins/select.c:278
-#: ../src/plugins/select.c:403
+#: ../src/plugins/select.c:53 ../src/plugins/select.c:279
+#: ../src/plugins/select.c:407
 msgid "Selecting packages"
 msgstr "Выбор пакетов"
 
-#: ../src/plugins/select.c:260
+#: ../src/plugins/select.c:261
 msgid "Selecting categories"
 msgstr "Выбор категорий"
 
-#: ../src/plugins/select.c:261
+#: ../src/plugins/select.c:262
 msgid "Please select which categories to install:"
 msgstr "Пожалуйста, выберите категории для установки:"
 
-#: ../src/plugins/select.c:291
+#: ../src/plugins/select.c:292
 msgid "Use expert menus?"
 msgstr "Использовать меню для экспертов?"
 
-#: ../src/plugins/select.c:292
+#: ../src/plugins/select.c:293
 #, fuzzy
 msgid ""
 "If you like, you may select your packages from expert menus. Where the "
@@ -473,40 +473,40 @@ msgstr ""
 "обычных меню с выбором групп пакетов, или выберите \"да\" для использования "
 "меню для экспертов с выбором отдельных пакетов."
 
-#: ../src/plugins/select.c:345 ../src/plugins/select.c:353
-#: ../src/plugins/select.c:367 ../src/plugins/select.c:371
+#: ../src/plugins/select.c:348 ../src/plugins/select.c:356
+#: ../src/plugins/select.c:370 ../src/plugins/select.c:374
 msgid "Error"
 msgstr "Ошибка"
 
-#: ../src/plugins/select.c:345
+#: ../src/plugins/select.c:348
 #, fuzzy, c-format
 msgid "Failed to parse pacman-g2 configuration file (%s)"
 msgstr "Не удалось обработать файл конфигурации pacman-g2 (%s)"
 
-#: ../src/plugins/select.c:353
+#: ../src/plugins/select.c:356
 #, fuzzy, c-format
 msgid "Could not register '%s' database (%s)"
 msgstr "Не удалось зарегистрировать базу данных \"%s\" (%s)"
 
-#: ../src/plugins/select.c:367
+#: ../src/plugins/select.c:370
 #, fuzzy, c-format
 msgid "Failed to synchronize %s"
 msgstr "Не удалось синхронизировать %s"
 
-#: ../src/plugins/select.c:371
+#: ../src/plugins/select.c:374
 #, fuzzy, c-format
 msgid "Failed to update %s (%s)"
 msgstr "Не удалось обновить %s (%s)"
 
-#: ../src/plugins/select.c:406
+#: ../src/plugins/select.c:410
 msgid "Searching for categories..."
 msgstr "Поиск категорий..."
 
-#: ../src/plugins/select.c:416
+#: ../src/plugins/select.c:420
 msgid "Searching for packages..."
 msgstr "Поиск пакетов..."
 
-#: ../src/plugins/select.c:448
+#: ../src/plugins/select.c:450
 msgid "Searching for missing dependencies..."
 msgstr "Поиск неучтенных зависимостей..."
 
@@ -515,9 +515,9 @@ msgid "Installing the selected packages"
 msgstr "Установка выбранных пакетов"
 
 #: ../src/plugins/install.c:69
-#, c-format
+#, fuzzy, c-format
 msgid ""
-"Errors occured while installing selected packages.\n"
+"Errors occurred while installing selected packages.\n"
 "Press ENTER to continue..."
 msgstr ""
 "В процессе установки выбранных пакетов возникли ошибки.\n"
@@ -613,11 +613,11 @@ msgstr ""
 msgid "Post-install configuration"
 msgstr ""
 
-#: ../src/plugins/postconf.c:244
+#: ../src/plugins/postconf.c:260
 msgid "Configuring kernel modules"
 msgstr ""
 
-#: ../src/plugins/postconf.c:245
+#: ../src/plugins/postconf.c:261
 msgid "Updating module dependencies..."
 msgstr ""
 
@@ -652,33 +652,46 @@ msgstr ""
 msgid "Are you sure you want to exit from the installer?"
 msgstr ""
 
-#: ../src/util.c:624
+#: ../src/util.c:631
 msgid "Oops"
 msgstr ""
 
-#: ../src/util.c:626
+#: ../src/util.c:633
 msgid "A problem has occurred"
 msgstr ""
 
-#: ../src/util.c:626
+#: ../src/util.c:633
 msgid ""
 "Internal error: Segmentation fault. Please report this issue to http://bugs."
 "frugalware.org"
 msgstr ""
 
-#: ../src/util.c:652
+#: ../src/util.c:659
 msgid "Selecting a task"
 msgstr ""
 
-#: ../src/util.c:660
+#: ../src/util.c:667
 msgid "Select task to continue with"
 msgstr ""
 
-#: ../src/util.c:661
+#: ../src/util.c:668
 msgid ""
 "You selected to change the way normally Frugalware is installed. Here are "
 "the list of tasks you can continue with:"
 msgstr ""
+
+#~ msgid ""
+#~ "Please select a hard disk to partition. The following ones are available:"
+#~ msgstr ""
+#~ "Пожалуйста, выберите жесткий диск для разметки из следующих доступных:"
+
+#, fuzzy
+#~ msgid "Detecting hardware"
+#~ msgstr "Распознается оборудование"
+
+#, fuzzy
+#~ msgid "Scanning for SCSI and PCI cards"
+#~ msgstr "Ищутся SCSI и PCI карты"
 
 #, fuzzy
 #~ msgid "Could not open output file for reading"
