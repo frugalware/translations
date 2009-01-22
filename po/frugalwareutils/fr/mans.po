@@ -2,20 +2,20 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-24 05:19+0100\n"
-"PO-Revision-Date: 2008-01-03 15:10+0100\n"
+"POT-Creation-Date: 2008-12-31 01:54+0100\n"
+"PO-Revision-Date: 2009-01-22 17:09+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Pootle 1.0\n"
+"X-Generator: Pootle 1.2.0\n"
 
 # type: Plain text
 #: grubconfig.txt:2
@@ -366,10 +366,8 @@ msgid ""
 msgstr ""
 "post_down = <commande>::\n"
 "\tLa syntaxe de ces directives est la même : Vous pouvez définir ces\n"
-"\tcommandes pour qu'elles soient exécutée, respectivement, avant que "
-"l'interface\n"
-"\tn'apparaisse, après que l'interface apparaisse, avant qu'il disparaisse, et "
-"après. L'utilisation de multiple entrées est\n"
+"\tcommandes pour qu'elles soient exécutée, respectivement, avant que l'interface\n"
+"\tn'apparaisse, après que l'interface apparaisse, avant qu'il disparaisse, et après. L'utilisation de multiple entrées est\n"
 " \tautorisée et les commandes sont exécutées dans l'ordre spécifié.\n"
 
 # type: Plain text
@@ -394,10 +392,8 @@ msgid ""
 "\tthe first will be used.\n"
 msgstr ""
 "essid = <essid>::\n"
-"\tDéfini l'ESSID (ou le nom du réseau - dans certain produit, il peut être "
-"aussi appelé\n"
-" \tl'ID du Domaine) pour les adaptateurs de réseaux sans fil. S'il est "
-"définit plus d'une fois,\n"
+"\tDéfini l'ESSID (ou le nom du réseau - dans certain produit, il peut être aussi appelé\n"
+" \tl'ID du Domaine) pour les adaptateurs de réseaux sans fil. S'il est définit plus d'une fois,\n"
 " \tle premier sera utilisé.\n"
 
 # type: Plain text
@@ -415,20 +411,13 @@ msgid ""
 "\tAuto. If defined more than once, the first will be used.\n"
 msgstr ""
 "mode = <mode>::\n"
-"\tDéfini le mode de fonctionnement du matériel pour les adaptateurs de "
-"réseaux sans fil. Le mode\n"
-"\tpeut être Ad- Hoc (réseau composé de seulement une cellule et sans point "
-"d'accès),\n"
-"\tManaged (noeud connecté à un réseau composé de plusieurs points d'accès "
-"avec\n"
-"\tparcours), Master (le noeud est en synchronisation maître ou est comme un "
-"point\n"
-"\td'accès), Repeater (le noeud envoie les paquets entre les autres noeuds "
-"radio),\n"
-"\tSecondary (le noeud est comme un soutien maître/redoublant), Monitor (le "
-"noeud n'est\n"
-"\tassocié avec aucune cellule et contrôle passivement tous les paquets de la "
-"fréquence) ou\n"
+"\tDéfini le mode de fonctionnement du matériel pour les adaptateurs de réseaux sans fil. Le mode\n"
+"\tpeut être Ad- Hoc (réseau composé de seulement une cellule et sans point d'accès),\n"
+"\tManaged (noeud connecté à un réseau composé de plusieurs points d'accès avec\n"
+"\tparcours), Master (le noeud est en synchronisation maître ou est comme un point\n"
+"\td'accès), Repeater (le noeud envoie les paquets entre les autres noeuds radio),\n"
+"\tSecondary (le noeud est comme un soutien maître/redoublant), Monitor (le noeud n'est\n"
+"\tassocié avec aucune cellule et contrôle passivement tous les paquets de la fréquence) ou\n"
 "\tAuto. S'il est définit plus d'une fois, le premier sera utilisé.\n"
 
 # type: Plain text
@@ -454,19 +443,22 @@ msgstr ""
 "est utilisé, cette directive est ignorée."
 
 # type: Plain text
-#: netconfig.txt:122
+#: netconfig.txt:123
 #, no-wrap
 msgid ""
 "key = <key>::\n"
 "\tUsed to manipulate encryption or scrambling keys and security mode for\n"
-"\twireless networks. Use this for WEP only, use `wpa_psk` for WPA.\n"
+"\twireless networks. Use this for WEP only, use `wpa_psk` or\n"
+"\t`wpa_supplicant` for WPA.\n"
 msgstr ""
 "key = <clé>::\n"
-"\tUtilisé pour manipuler le cryptage des différentes clés et le mode de sécurité pour\n"
-" \tles réseaux sans-fil. Utilisez cette option seulement pour les clés WEP, sinon, utilisez 'wpa_psk' pour les clés WPA.\n"
+"\tUtilisé pour manipuler les différentes clés de cryptage ou de hachage et le "
+"mode de sécurité pour\n"
+" \tles réseaux sans-fil. Utilisez cette option seulement pour les clés WEP, "
+"sinon, utilisez 'wpa_psk' pour les clés WPA.\n"
 
 # type: Plain text
-#: netconfig.txt:126
+#: netconfig.txt:127
 #, no-wrap
 msgid ""
 "wpa_psk = <passphrase>::\n"
@@ -478,7 +470,23 @@ msgstr ""
 "\tutiliser le cryptage WPA avant de régler d'autres paramètres (tel que le ESSID).\n"
 
 # type: Plain text
-#: netconfig.txt:130
+#: netconfig.txt:138
+#, no-wrap
+msgid ""
+"wpa_supplicant = yes|no::\n"
+"\tIf this directive is enabled, then wpa_supplicant will be invoked to\n"
+"\tinitialize WPA encryption before setting any other parameter, but will\n"
+"\tnot do anything else. It is intended to use instead of the `essid` and\n"
+"\t`wpa_psk` directives if you prefer to write a wpa_supplicant.conf\n"
+"\tmanually.\n"
+"+\n"
+"NOTE: In case you use WPA encryption only with your wireless card, then\n"
+"this method has the advantage of not having different network profiles\n"
+"for each WPA network, as long as each network has a different essid.\n"
+msgstr ""
+
+# type: Plain text
+#: netconfig.txt:142
 #, no-wrap
 msgid ""
 "wpa_driver = <driver>::\n"
@@ -490,7 +498,7 @@ msgstr ""
 "\tsont:\n"
 
 # type: Plain text
-#: netconfig.txt:137
+#: netconfig.txt:149
 #, no-wrap
 msgid ""
 "\t*  wext: Linux wireless extensions (generic)\n"
@@ -508,7 +516,7 @@ msgstr ""
 "\t*  ndiswrapper: Linux ndiswrapper\n"
 
 # type: Plain text
-#: netconfig.txt:142
+#: netconfig.txt:154
 #, no-wrap
 msgid ""
 "dhcp_opts = <options>::\n"
@@ -518,12 +526,11 @@ msgid ""
 msgstr ""
 "dhcp_opts = <options>::\n"
 "\tCes options sont passé démon-client DHCP. Par défaut, c'est '-t\n"
-"\t10'. Vous devrez sûrement spécifier ici le nom de l'hôte DHCP, ensuite, "
-"vous aurez besoin '-t 10 -h\n"
+"\t10'. Vous devrez sûrement spécifier ici le nom de l'hôte DHCP, ensuite, vous aurez besoin '-t 10 -h\n"
 "\t<nom de l'hôte>'.\n"
 
 # type: Plain text
-#: netconfig.txt:146
+#: netconfig.txt:158
 #, no-wrap
 msgid ""
 "dhcpclient = <dhcp client>::\n"
@@ -535,50 +542,50 @@ msgstr ""
 "\t(par défaut) ou dhclient.\n"
 
 # type: Plain text
-#: netconfig.txt:148
+#: netconfig.txt:160
 msgid "== EXAMPLES"
 msgstr "== EXEMPLES"
 
 # type: Plain text
-#: netconfig.txt:150
+#: netconfig.txt:162
 msgid "=== Static Address"
 msgstr "=== Adresses Statiques"
 
 # type: Plain text
-#: netconfig.txt:151 netconfig.txt:162 netconfig.txt:174 netconfig.txt:190
-#: netconfig.txt:204 netconfig.txt:211
+#: netconfig.txt:163 netconfig.txt:174 netconfig.txt:186 netconfig.txt:202
+#: netconfig.txt:216 netconfig.txt:222
 #, no-wrap
 msgid "----\n"
 msgstr "----\n"
 
 # type: Plain text
-#: netconfig.txt:154
+#: netconfig.txt:166
 msgid "[options] dns = 192.168.1.1"
 msgstr "[options] dns = 192.168.1.1"
-
-# type: Plain text
-#: netconfig.txt:158
-#, no-wrap
-msgid ""
-"[eth0]\n"
-"options = 192.168.1.102 netmask 255.255.255.0\n"
-"gateway = default gw 192.168.1.1\n"
-"----\n"
-msgstr ""
-"[eth0]\n"
-"options = 192.168.1.102 netmask 255.255.255.0\n"
-"gateway = default gw 192.168.1.1\n"
-"----\n"
-
-# type: Plain text
-#: netconfig.txt:161
-msgid "=== ADSL with NAT"
-msgstr "=== ADSL avec NAT"
 
 # type: Plain text
 #: netconfig.txt:170
 #, no-wrap
 msgid ""
+"[eth0]\n"
+"options = 192.168.1.102 netmask 255.255.255.0\n"
+"gateway = default gw 192.168.1.1\n"
+"----\n"
+msgstr ""
+"[eth0]\n"
+"options = 192.168.1.102 netmask 255.255.255.0\n"
+"gateway = default gw 192.168.1.1\n"
+"----\n"
+
+# type: Plain text
+#: netconfig.txt:173
+msgid "=== ADSL with NAT"
+msgstr "=== ADSL avec NAT"
+
+# type: Plain text
+#: netconfig.txt:182
+#, no-wrap
+msgid ""
 "[options]\n"
 "adsl_username = user@provider.com\n"
 "adsl_password = secret\n"
@@ -598,12 +605,12 @@ msgstr ""
 "----\n"
 
 # type: Plain text
-#: netconfig.txt:173
+#: netconfig.txt:185
 msgid "=== The `key=` directive"
 msgstr "=== La directive `key=`"
 
 # type: Plain text
-#: netconfig.txt:183
+#: netconfig.txt:195
 #, no-wrap
 msgid ""
 "key = 0123-4567-89\n"
@@ -627,12 +634,12 @@ msgstr ""
 "----\n"
 
 # type: Plain text
-#: netconfig.txt:186
+#: netconfig.txt:198
 msgid "=== Initialize before `iwconfig`"
 msgstr "=== Initialisation avant 'iwconfig'"
 
 # type: Plain text
-#: netconfig.txt:189
+#: netconfig.txt:201
 msgid ""
 "If you have to to initialize the card with `ifconfig <interface> up` before "
 "using iwconfig:"
@@ -641,7 +648,7 @@ msgstr ""
 "d'utiliser iwconfig:"
 
 # type: Plain text
-#: netconfig.txt:194
+#: netconfig.txt:206
 #, no-wrap
 msgid ""
 "[eth1]\n"
@@ -655,7 +662,7 @@ msgstr ""
 "----\n"
 
 # type: Plain text
-#: netconfig.txt:198
+#: netconfig.txt:210
 msgid ""
 "NOTE: If you use several pre_up and/or post_down lines, this pre_up should "
 "be the first, and this post_down should be the last one."
@@ -664,33 +671,31 @@ msgstr ""
 "devrait être le premier et ce post_down devrait être le dernier."
 
 # type: Plain text
-#: netconfig.txt:200
+#: netconfig.txt:212
 msgid "=== Using wpa_supplicant"
 msgstr "=== Utilisation de wpa_supplicant"
 
 # type: Plain text
-#: netconfig.txt:203
+#: netconfig.txt:215
 msgid ""
 "If you want to use wpa_supplicant instead of the simple encryption (using "
-"key = secret), then use the following pre_up and post_down lines:"
+"key = secret), then enable this by setting:"
 msgstr ""
 "Si vous voulez utiliser wpa_supplicant à la place du simple cryptage (en "
-"utilisant key = secret), suivez les prochaines lignes pre_up et post_down."
+"utilisant key = secret), alors activé le en affectant:"
 
 # type: Plain text
-#: netconfig.txt:207
+#: netconfig.txt:218
 #, no-wrap
 msgid ""
-"pre_up = wpa_supplicant -Dwext -iwlan0 -c /etc/wpa_supplicant.conf -w -B\n"
-"post_down = killall wpa_supplicant\n"
+"wpa_supplicant = yes\n"
 "----\n"
 msgstr ""
-"pre_up = wpa_supplicant -Dwext -iwlan0 -c /etc/wpa_supplicant.conf -w -B\n"
-"post_down = killall wpa_supplicant\n"
+"wpa_supplicant = yes\n"
 "----\n"
 
 # type: Plain text
-#: netconfig.txt:210
+#: netconfig.txt:221
 msgid ""
 "You also need to edit `/etc/wpa_supplicant.conf`. A possible correct setup "
 "is:"
@@ -699,12 +704,12 @@ msgstr ""
 "Une configuration correcte possible est :"
 
 # type: Plain text
-#: netconfig.txt:213
+#: netconfig.txt:224
 msgid "ctrl_interface=/var/run/wpa_supplicant"
 msgstr "ctrl_interface=/var/run/wpa_supplicant"
 
 # type: Plain text
-#: netconfig.txt:218
+#: netconfig.txt:229
 #, no-wrap
 msgid ""
 "network={\n"
@@ -720,7 +725,7 @@ msgstr ""
 "----\n"
 
 # type: Plain text
-#: netconfig.txt:222
+#: netconfig.txt:233
 msgid ""
 "NOTE: See also the `wpa_psk` and `wpa_driver` options, most users can avoid "
 "the manual `pre_up` and `pre_down` directives."
@@ -730,22 +735,22 @@ msgstr ""
 "`pre_down`."
 
 # type: Plain text
-#: netconfig.txt:224
+#: netconfig.txt:235
 msgid "== AUTHOR"
 msgstr "== AUTHOR"
 
 # type: Plain text
-#: netconfig.txt:226
+#: netconfig.txt:237
 msgid "Written by Miklos Vajna."
 msgstr "Ecrit par Miklos Vajna."
 
 # type: Plain text
-#: netconfig.txt:228
+#: netconfig.txt:239
 msgid "== REPORTING BUGS"
 msgstr "== RAPPORTER DES BUGS"
 
 # type: Plain text
-#: netconfig.txt:230
+#: netconfig.txt:241
 msgid ""
 "If you find any bug, then please file a bugreport at <http://bugs.frugalware."
 "org/>."
@@ -754,12 +759,12 @@ msgstr ""
 "frugalware.org/>"
 
 # type: Plain text
-#: netconfig.txt:232
+#: netconfig.txt:243
 msgid "== SEE ALSO"
 msgstr "== VOIR AUSSI"
 
 # type: Plain text
-#: netconfig.txt:233
+#: netconfig.txt:244
 #, no-wrap
 msgid "*ifconfig*(8), *route*(8), *iwconfig*(8), *dhcpcd*(8)\n"
 msgstr "*ifconfig*(8), *route*(8), *iwconfig*(8), *dhcpcd*(8)\n"
@@ -887,3 +892,13 @@ msgid ""
 msgstr ""
 "--silent::\n"
 "\tNe pas afficher de messages d'erreurs même si GDM ou KDM sont installé.\n"
+
+# type: Plain text
+#~ msgid ""
+#~ "pre_up = wpa_supplicant -Dwext -iwlan0 -c /etc/wpa_supplicant.conf -w -B\n"
+#~ "post_down = killall wpa_supplicant\n"
+#~ "----\n"
+#~ msgstr ""
+#~ "pre_up = wpa_supplicant -Dwext -iwlan0 -c /etc/wpa_supplicant.conf -w -B\n"
+#~ "post_down = killall wpa_supplicant\n"
+#~ "----\n"
