@@ -7,15 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-06-27 05:12+0200\n"
-"PO-Revision-Date: 2008-07-12 08:44+0200\n"
+"POT-Creation-Date: 2009-01-22 02:07+0100\n"
+"PO-Revision-Date: 2009-01-22 21:49+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Pootle 1.1.0\n"
+"X-Generator: Pootle 1.2.0\n"
 
 # type: Plain text
 #: FrugalBuild.txt:2
@@ -63,8 +64,8 @@ msgstr "=== Un exemple simple"
 
 # type: Plain text
 #: FrugalBuild.txt:17 FrugalBuild.txt:44 FrugalBuild.txt:157
-#: FrugalBuild.txt:170 FrugalBuild.txt:202 FrugalBuild.txt:244
-#: FrugalBuild.txt:412 FrugalBuild.txt:436 FrugalBuild.txt:452
+#: FrugalBuild.txt:170 FrugalBuild.txt:202 FrugalBuild.txt:248
+#: FrugalBuild.txt:416 FrugalBuild.txt:440 FrugalBuild.txt:456
 #: pacman-g2.txt:310 pacman-g2.txt:411
 #, no-wrap
 msgid "----\n"
@@ -686,21 +687,33 @@ msgstr ""
 "\t le sha1sums, dans le FrugalBuild, lancez `makepkg -G`.\n"
 
 # type: Plain text
-#: FrugalBuild.txt:243
+#: FrugalBuild.txt:247
 #, no-wrap
 msgid ""
 "signatures (array)::\n"
-"\tIf this field is present, it should contain an array of gpg signatures required\n"
-"\tto validate the source files. Where there is no signature available just leave\n"
-"\tit empty, like:\n"
+"\tIf this field is present, it should contain an array of gpg signatures\n"
+"\trequired to validate the source files. It is recommended (but not\n"
+"\trequired) that you also add the key or keyring of upstream to a file\n"
+"\tnamed $pkgname.key to make off-line build possible. If there is no such\n"
+"\tfile, and the key is available on a public keyserver, it will be\n"
+"\tretrieved automatically. Otherwise the build will be aborted. Where\n"
+"\tthere is no signature available just leave it empty, like:\n"
 msgstr ""
 "signatures (tableau)::\n"
-"\tSi ce champ est présent, il doit contenir un tableau des signatures gpg requises\n"
-"\tpour valider les fichiers sources. Quand il n'y a pas de signatures disponibles, laissez-la\n"
-"\tvide, comme :\n"
+"\tSi ce champ est présent, il doit contenir un tableau de signatures gpg\n"
+"\trequis pour valider les fichiers sources. Il est recommender (mais non\n"
+"\trequis) que vous ajoutiez la clef ou le porte clef des fichiers amont pour "
+"un fichier\n"
+"\tnommé $pkgname.key pour rendre possible la construction hors-ligne. Si un "
+"tel fichier\n"
+"\tn'existe pas, et que la clef est disponible sur un serveur plublic de clef, "
+"elle sera\n"
+"\tautomatiquement rapatriée. Dans le cas contraire la construction sera "
+"arrétée. Quand\n"
+"\til n'y a pas de signature disponible laissez le vide, comme suivant:\n"
 
 # type: Plain text
-#: FrugalBuild.txt:246
+#: FrugalBuild.txt:250
 #, no-wrap
 msgid ""
 "signatures=(${source[0]}.asc '')\n"
@@ -710,7 +723,7 @@ msgstr ""
 "----\n"
 
 # type: Plain text
-#: FrugalBuild.txt:252
+#: FrugalBuild.txt:256
 #, no-wrap
 msgid ""
 "groups (array)::\n"
@@ -724,7 +737,7 @@ msgstr ""
 "\ttous les paquets KDE en installant le groupe 'kde'.\n"
 
 # type: Plain text
-#: FrugalBuild.txt:257
+#: FrugalBuild.txt:261
 #, no-wrap
 msgid ""
 "archs (array)::\n"
@@ -738,7 +751,7 @@ msgstr ""
 "\tla base de données de paquets.\n"
 
 # type: Plain text
-#: FrugalBuild.txt:264
+#: FrugalBuild.txt:268
 #, no-wrap
 msgid ""
 "backup (array)::\n"
@@ -756,7 +769,7 @@ msgstr ""
 "\\pour de plus amples d'informations."
 
 # type: Plain text
-#: FrugalBuild.txt:273
+#: FrugalBuild.txt:277
 #, no-wrap
 msgid ""
 "depends (array)::\n"
@@ -777,7 +790,7 @@ msgstr ""
 "\tAllez voir l'exemple de FrugalBuild, plus haut, pour un exemple de la directive \"depends\".\n"
 
 # type: Plain text
-#: FrugalBuild.txt:277
+#: FrugalBuild.txt:281
 #, no-wrap
 msgid ""
 "makedepends (array)::\n"
@@ -790,7 +803,7 @@ msgstr ""
 "\tLes paquets de cette liste doivent suivre le même format que la directive 'depends'.\n"
 
 # type: Plain text
-#: FrugalBuild.txt:284
+#: FrugalBuild.txt:288
 #, no-wrap
 msgid ""
 "rodepends (array)::\n"
@@ -808,7 +821,7 @@ msgstr ""
 "\tun format identique à ceux de la directive 'depends'.\n"
 
 # type: Plain text
-#: FrugalBuild.txt:289
+#: FrugalBuild.txt:293
 #, no-wrap
 msgid ""
 "conflicts (array)::\n"
@@ -822,7 +835,7 @@ msgstr ""
 "\tspécifier ici la version des paquets, mais seulement leurs noms."
 
 # type: Plain text
-#: FrugalBuild.txt:296
+#: FrugalBuild.txt:300
 #, no-wrap
 msgid ""
 "provides (array)::\n"
@@ -840,7 +853,7 @@ msgstr ""
 "\tde 'kernel-ide' OU...\n"
 
 # type: Plain text
-#: FrugalBuild.txt:301
+#: FrugalBuild.txt:305
 #, no-wrap
 msgid ""
 "removes (array)::\n"
@@ -853,7 +866,7 @@ msgstr ""
 "\tvous ne devriez jamais l'utiliser. Mais dans certains cas, il est plus pratique d'enlever les fichiers conflictuels générés par un scriptlet si vous êtes sûr(e) qu'ils ne sont indispensables à personne.\n"
 
 # type: Plain text
-#: FrugalBuild.txt:307
+#: FrugalBuild.txt:311
 #, no-wrap
 msgid ""
 "replaces (array)::\n"
@@ -868,7 +881,7 @@ msgstr ""
 "\trenommé en 'kernel-ide', l'appel ultérieur de 'pacman-g2 -Syu' ne va pas déclencher une nouvelle mise à niveau, due à la différence des noms des paquets. 'replaces' corrige ça.\n"
 
 # type: Plain text
-#: FrugalBuild.txt:310
+#: FrugalBuild.txt:314
 #, no-wrap
 msgid ""
 "options (array)::\n"
@@ -878,7 +891,7 @@ msgstr ""
 "\tUne liste des diverses options booléennes. Les valeurs possibles sont :\n"
 
 # type: Plain text
-#: FrugalBuild.txt:313
+#: FrugalBuild.txt:317
 #, no-wrap
 msgid ""
 "\tnodocs: Don't add any documentation automatically (ie. when there'll be a\n"
@@ -888,13 +901,13 @@ msgstr ""
 "\tune documentation des sous-paquets séparée).\n"
 
 # type: Plain text
-#: FrugalBuild.txt:315
+#: FrugalBuild.txt:319
 #, no-wrap
 msgid "\tnostrip: Don't strip binaries/libraries.\n"
 msgstr "\tnostrip: Ne nettoie pas les binaires/librairies.\n"
 
 # type: Plain text
-#: FrugalBuild.txt:318
+#: FrugalBuild.txt:322
 #, no-wrap
 msgid ""
 "\tforce: This is used to force the package to be upgraded by --sysupgrade, even\n"
@@ -904,7 +917,7 @@ msgstr ""
 "\tsi la version est plus ancienne.\n"
 
 # type: Plain text
-#: FrugalBuild.txt:321
+#: FrugalBuild.txt:325
 #, no-wrap
 msgid ""
 "\tstick: This is used to skip a package upgrade, even a newer version is\n"
@@ -914,7 +927,7 @@ msgstr ""
 "\tdisponible (par exemple, les applications web où une mise à niveau manuelle est préferrable).\n"
 
 # type: Plain text
-#: FrugalBuild.txt:325
+#: FrugalBuild.txt:329
 #, no-wrap
 msgid ""
 "\tnobuild: If this directive set, gensync will ignore this package, so users must\n"
@@ -926,7 +939,7 @@ msgstr ""
 "\tavec 'pacman-g2 -S'. C'est très utile pour les logiciels gratuits dont le code-source est fermé.\n"
 
 # type: Plain text
-#: FrugalBuild.txt:328
+#: FrugalBuild.txt:332
 #, no-wrap
 msgid ""
 "\tnofakeroot: Don't drop privileges after chrooting. Required by some broken\n"
@@ -936,19 +949,19 @@ msgstr ""
 "\tpaquets cassés.\n"
 
 # type: Plain text
-#: FrugalBuild.txt:330
+#: FrugalBuild.txt:334
 #, no-wrap
 msgid "\tscriptlet: Don't skip executing scriptlets even if we're in chroot.\n"
 msgstr "\tscriptlet : Ne saute pas l'exécution des 'scriptlets' même si nous sommes dans le chroot.\n"
 
 # type: Plain text
-#: FrugalBuild.txt:332
+#: FrugalBuild.txt:336
 #, no-wrap
 msgid "\tnomirror: This means that the source should not be mirrored.\n"
 msgstr "\tnomirror : Ceci signifie que les sources ne doivent pas être hébergées sur un miroir (ou mirroirées).\n"
 
 # type: Plain text
-#: FrugalBuild.txt:335
+#: FrugalBuild.txt:339
 #, no-wrap
 msgid ""
 "\tgenscriptlet: Informs makepkg about not having a scriptlet is intentional. You\n"
@@ -958,7 +971,7 @@ msgstr ""
 "\tdevez l'utiliser quand le 'scriptlet' est généré pendant le 'build()'.\n"
 
 # type: Plain text
-#: FrugalBuild.txt:339
+#: FrugalBuild.txt:343
 #, no-wrap
 msgid ""
 "\tnoversrc: Informs makepkg about the source tarball does not contain the\n"
@@ -966,12 +979,11 @@ msgid ""
 "\tthan using an rsync mirror.\n"
 msgstr ""
 "\tnoversrc: Informe makepkg que l'archive source ne contient pas le\n"
-"\tnuméro de version du paquet, et qu'il doit donc toujours être télécharger "
-"depuis la source originale, plutôt\n"
+"\tnuméro de version du paquet, et qu'il doit donc toujours être télécharger depuis la source originale, plutôt\n"
 "\tque d'utiliser un miroir rsync.\n"
 
 # type: Plain text
-#: FrugalBuild.txt:342
+#: FrugalBuild.txt:346
 msgid ""
 "NOTE: Feel free to use `nomirror` in a WIP repo but please try avoid it when "
 "pushing to a production repository."
@@ -980,12 +992,12 @@ msgstr ""
 "êtes prié de l'éviter quand il est poussé dans un dépôt de production."
 
 # type: Plain text
-#: FrugalBuild.txt:344
+#: FrugalBuild.txt:348
 msgid "=== What is the process of chrooted build?"
 msgstr "=== Quel est le processus de la construction chrootée ?"
 
 # type: Plain text
-#: FrugalBuild.txt:349
+#: FrugalBuild.txt:353
 msgid ""
 "First, what is chroot? If you use `makepkg -H`, then you use fakeroot to "
 "prevent build() from modifying the host system, and you use a prefix or "
@@ -999,7 +1011,7 @@ msgstr ""
 "mais c'est insuffisant. "
 
 # type: Plain text
-#: FrugalBuild.txt:358
+#: FrugalBuild.txt:362
 msgid ""
 "This system lacks the ability to control the list of installed packages "
 "during the build on the system of a packager. Because of this, the given "
@@ -1021,7 +1033,7 @@ msgstr ""
 "installés, certains autres programmes se relieront aux librairies NVidia."
 
 # type: Plain text
-#: FrugalBuild.txt:361
+#: FrugalBuild.txt:365
 msgid ""
 "Of course there is a solution to avoid this, to use a real `chroot` instead "
 "of a simple `fakeroot`. What does this mean? The following:"
@@ -1031,7 +1043,7 @@ msgstr ""
 "suivante :"
 
 # type: Plain text
-#: FrugalBuild.txt:369
+#: FrugalBuild.txt:373
 msgid ""
 "When starting the build, a core chroot system is installed under /var/"
 "chroot.  (Of course you can change this value under `/etc/makepkg.conf`.) "
@@ -1052,7 +1064,7 @@ msgstr ""
 "possible.)"
 
 # type: Plain text
-#: FrugalBuild.txt:375
+#: FrugalBuild.txt:379
 msgid ""
 "When you start building with `makepkg` (without `-H`), pacman-g2 will "
 "install these packages to /var/chroot if necessary. This will produce a "
@@ -1069,7 +1081,7 @@ msgstr ""
 "plus haut. (Liaison à une librairie installé à partir des sources, etc.)"
 
 # Cette traduction est à revoir. Je bloque pour la dernière phrase :-s
-#: FrugalBuild.txt:380
+#: FrugalBuild.txt:384
 msgid ""
 "Here comes the fun part. The packages listed in depends() and makedepends() "
 "are installed to this clean (`/var/chroot`) system. From this point, this "
@@ -1083,7 +1095,7 @@ msgstr ""
 "système hôte"
 
 # type: Plain text
-#: FrugalBuild.txt:385
+#: FrugalBuild.txt:389
 msgid ""
 "After this, the chroot should be cleaned up which means the removal of the "
 "installed depends() and makedepends(). This ensures you do not have to build "
@@ -1096,7 +1108,7 @@ msgstr ""
 "de 0. Cette action est realisée par 'makepkg' après une construction réussie."
 
 # type: Plain text
-#: FrugalBuild.txt:389
+#: FrugalBuild.txt:393
 msgid ""
 "This way we can prevent lots of dependency problems and it is even possible "
 "to build packages for a different Frugalware version. This is quite "
@@ -1110,7 +1122,7 @@ msgstr ""
 "stable'."
 
 # type: Plain text
-#: FrugalBuild.txt:394
+#: FrugalBuild.txt:398
 msgid ""
 "If the build fails, the working directory will not be deleted, you can find "
 "it under `/var/chroot/$tree/var/tmp/fst`. Later if you want to clean your "
@@ -1124,7 +1136,7 @@ msgstr ""
 "inutiles), vous pourrez utiliser 'makepkg -C'."
 
 # type: Plain text
-#: FrugalBuild.txt:397
+#: FrugalBuild.txt:401
 msgid ""
 "To deactivate building in a `chroot` (for testing purposes), you should run "
 "`makepkg` with the `-H` option."
@@ -1133,12 +1145,12 @@ msgstr ""
 "pouvez lancer 'makepkg' avec l'option '-H'."
 
 # type: Plain text
-#: FrugalBuild.txt:399
+#: FrugalBuild.txt:403
 msgid "=== Package splitting"
 msgstr "=== Séparation de paquet"
 
 # type: Plain text
-#: FrugalBuild.txt:403
+#: FrugalBuild.txt:407
 msgid ""
 "Package splitting means moving out a list of specified files to "
 "'subpackages' (like `libmysql` out of `mysql`) and then defining the "
@@ -1149,7 +1161,7 @@ msgstr ""
 "définissant ensuite les propriétés des 'sous-paquets'."
 
 # type: Plain text
-#: FrugalBuild.txt:408
+#: FrugalBuild.txt:412
 msgid ""
 "NOTE: If you create several subpackages, maintaining those packages will "
 "require more and more time. Thus, unnecessary splits aren't welcome.  "
@@ -1162,7 +1174,7 @@ msgstr ""
 "juste pour abréger la construction de quelques secondes!"
 
 # type: Plain text
-#: FrugalBuild.txt:411
+#: FrugalBuild.txt:415
 msgid ""
 "The subpkgs() array is to define the pkgnames of the subpackages. From now "
 "all the directive have a subfoo equivalent:"
@@ -1171,7 +1183,7 @@ msgstr ""
 "directive a un équivalent subfoo:"
 
 # type: Plain text
-#: FrugalBuild.txt:428
+#: FrugalBuild.txt:432
 #, no-wrap
 msgid ""
 "pkgname -> subpkgs()\n"
@@ -1209,7 +1221,7 @@ msgstr ""
 "----\n"
 
 # type: Plain text
-#: FrugalBuild.txt:433
+#: FrugalBuild.txt:437
 msgid ""
 "Also note that bash does not support two-dimensional arrays, so when "
 "defining the array of arrays, then quotes are the major separators and "
@@ -1221,12 +1233,12 @@ msgstr ""
 "séparateurs, et les espaces sont secondaires."
 
 # type: Plain text
-#: FrugalBuild.txt:435
+#: FrugalBuild.txt:439
 msgid "Simple example:"
 msgstr "Un exemple simple:"
 
 # type: Plain text
-#: FrugalBuild.txt:442
+#: FrugalBuild.txt:446
 #, no-wrap
 msgid ""
 "subpkgs=('foo' 'bar')\n"
@@ -1244,7 +1256,7 @@ msgstr ""
 "----\n"
 
 # type: Plain text
-#: FrugalBuild.txt:446
+#: FrugalBuild.txt:450
 msgid ""
 "You may define conflicts, replaces and other directives for your "
 "subpackages, but the requirement is only to define these 5 ones."
@@ -1253,7 +1265,7 @@ msgstr ""
 "mais l'exigence se limite à définir ces cinq la."
 
 # type: Plain text
-#: FrugalBuild.txt:451
+#: FrugalBuild.txt:455
 msgid ""
 "The second part is to move some files to the - just defined - subpackages. "
 "You should use the Fsplit command for this at the end of your build() "
@@ -1266,7 +1278,7 @@ msgstr ""
 "Fsplit en consultant la documentation fwmakepkg, mais voici un court exemple:"
 
 # type: Plain text
-#: FrugalBuild.txt:454
+#: FrugalBuild.txt:458
 #, no-wrap
 msgid ""
 "Fsplit subpkgname usr/share/\n"
@@ -1276,7 +1288,7 @@ msgstr ""
 "----\n"
 
 # type: Plain text
-#: FrugalBuild.txt:458
+#: FrugalBuild.txt:462
 msgid ""
 "This will move the /usr/share dir of the package to the \"subpkgname\" "
 "subpackage."
@@ -1284,7 +1296,7 @@ msgstr ""
 "Ceci déplacera le/usr/share dir du paquet dans le sous-paquet \"subpkgname\"."
 
 # type: Plain text
-#: FrugalBuild.txt:461
+#: FrugalBuild.txt:465
 msgid ""
 "NOTE: Don't use a trailing slash when defining file patterns with wildcards "
 "in it!"
@@ -1293,23 +1305,23 @@ msgstr ""
 "modèles de fichier avec des caractères de remplacement!"
 
 # type: Plain text
-#: FrugalBuild.txt:463 makepkg.txt:161 pacman-g2.txt:437
+#: FrugalBuild.txt:467 makepkg.txt:161 pacman-g2.txt:437
 msgid "== SEE ALSO"
 msgstr "== VOIR AUSSI"
 
 # type: Plain text
-#: FrugalBuild.txt:465
+#: FrugalBuild.txt:469
 #, no-wrap
 msgid "*makepkg*(8), *pacman-g2*(8)\n"
 msgstr "*makepkg*(8), *pacman-g2*(8)\n"
 
 # type: Plain text
-#: FrugalBuild.txt:467 makepkg.txt:165 pacman-g2.txt:441
+#: FrugalBuild.txt:471 makepkg.txt:165 pacman-g2.txt:441
 msgid "== AUTHORS"
 msgstr "== AUTEURS"
 
 # type: Plain text
-#: FrugalBuild.txt:468 makepkg.txt:166 pacman-g2.txt:442
+#: FrugalBuild.txt:472 makepkg.txt:166 pacman-g2.txt:442
 msgid "See /usr/share/doc/pacman-g2-*/AUTHORS."
 msgstr "Voir /usr/share/doc/pacman-g2-*/AUTHORS."
 
@@ -2971,6 +2983,22 @@ msgstr ""
 #, no-wrap
 msgid "*makepkg*(8)\n"
 msgstr "*makepkg*(8)\n"
+
+# type: Plain text
+#~ msgid ""
+#~ "signatures (array)::\n"
+#~ "\tIf this field is present, it should contain an array of gpg signatures "
+#~ "required\n"
+#~ "\tto validate the source files. Where there is no signature available "
+#~ "just leave\n"
+#~ "\tit empty, like:\n"
+#~ msgstr ""
+#~ "signatures (tableau)::\n"
+#~ "\tSi ce champ est présent, il doit contenir un tableau des signatures gpg "
+#~ "requises\n"
+#~ "\tpour valider les fichiers sources. Quand il n'y a pas de signatures "
+#~ "disponibles, laissez-la\n"
+#~ "\tvide, comme :\n"
 
 # type: Plain text
 #~ msgid "\t# pacman-g2 -S gst-.*\n"
