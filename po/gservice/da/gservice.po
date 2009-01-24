@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-21 02:05+0100\n"
-"PO-Revision-Date: 2009-01-21 17:30+0200\n"
+"POT-Creation-Date: 2009-01-24 02:04+0100\n"
+"PO-Revision-Date: 2009-01-24 12:42+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -82,86 +82,119 @@ msgid "Restart"
 msgstr "Genstart"
 
 #: ../data/gservice.glade.h:17
+msgid "Search"
+msgstr "Søg"
+
+#: ../data/gservice.glade.h:18
 msgid "Service description"
 msgstr "Service beskrivelse"
 
-#: ../data/gservice.glade.h:18
+#: ../data/gservice.glade.h:19
 msgid "Service name"
 msgstr "Service navn"
 
-#: ../data/gservice.glade.h:19
+#: ../data/gservice.glade.h:20
 msgid "Show inactive services"
 msgstr "Vis inaktiv tjenester"
 
-#: ../data/gservice.glade.h:20
+#: ../data/gservice.glade.h:21
 msgid "Show service icons"
 msgstr "Vis service ikoner"
 
-#: ../data/gservice.glade.h:21
+#: ../data/gservice.glade.h:22
 msgid "Show status console"
 msgstr "Vis status konsol"
 
-#: ../data/gservice.glade.h:22
+#: ../data/gservice.glade.h:23
 msgid "Start"
 msgstr "Start"
 
-#: ../data/gservice.glade.h:23
+#: ../data/gservice.glade.h:24
 msgid "Stop"
 msgstr "Stop"
 
-#: ../data/gservice.glade.h:24
+#: ../data/gservice.glade.h:25
 msgid "_File"
 msgstr "_Fil"
 
-#: ../data/gservice.glade.h:25
+#: ../data/gservice.glade.h:26
 msgid "_Help"
 msgstr "_Hjælp"
 
-#: ../data/gservice.glade.h:26
+#: ../data/gservice.glade.h:27
 msgid "_View"
 msgstr "_Se"
 
-#: ../data/gservice.glade.h:27
+#: ../data/gservice.glade.h:28
 msgid "gService"
 msgstr "gService"
 
-#: ../data/gservice.glade.h:28
+#: ../data/gservice.glade.h:29
 msgid "gtk-about"
 msgstr "gtk-about"
 
-#: ../data/gservice.glade.h:29
+#: ../data/gservice.glade.h:30
 msgid "gtk-close"
 msgstr "gtk-close"
 
-#: ../data/gservice.glade.h:30
+#: ../data/gservice.glade.h:31
 msgid "gtk-quit"
 msgstr "gtk-quit"
 
-#: ../src/gservice-interface.c:138
-msgid "Status"
-msgstr "Status"
+#: ../src/gservice.c:54
+msgid "Interface initialization Failed"
+msgstr "Interfaceinitialering Svigtede"
 
-#: ../src/gservice-interface.c:147
-msgid "Icon"
-msgstr "Ikon"
+#: ../src/gservice.c:54
+msgid "Failed to initialize interface"
+msgstr "Fejlede i at initialisere interface"
 
-#: ../src/gservice-interface.c:165
-msgid "Service"
-msgstr "Service"
-
-#: ../src/gservice-interface.c:602 ../src/gservice-interface.c:653
-#: ../src/gservice-interface.c:692 ../src/gservice-interface.c:711
-#: ../src/gservice-interface.c:730 ../src/gservice-interface.c:749
-#: ../src/gservice-interface.c:768 ../src/gservice-interface.c:787
-#: ../src/gservice-interface.c:806 ../src/gservice-interface.c:849
+#: ../src/gservice.c:64 ../src/gservice-interface.c:623
+#: ../src/gservice-interface.c:674 ../src/gservice-interface.c:713
+#: ../src/gservice-interface.c:732 ../src/gservice-interface.c:751
+#: ../src/gservice-interface.c:770 ../src/gservice-interface.c:789
+#: ../src/gservice-interface.c:808 ../src/gservice-interface.c:827
+#: ../src/gservice-interface.c:870
 msgid "Error"
 msgstr "Fejl"
 
-#: ../src/gservice-interface.c:602
+#: ../src/gservice.c:64
+msgid ""
+"Failed to initialize configuration. Please check that a valid configuration "
+"file exists in /etc/gservice/main.conf"
+msgstr ""
+"Fejlede i at initialisere konfiguration. Tjek venligst om en gyldig "
+"konfigurationsfil eksisterer i  /etc/gservice/main.conf"
+
+#: ../src/gservice-interface.c:160
+msgid "Status"
+msgstr "Status"
+
+#: ../src/gservice-interface.c:169
+msgid "Icon"
+msgstr "Ikon"
+
+#: ../src/gservice-interface.c:187
+msgid "Service"
+msgstr "Service"
+
+#: ../src/gservice-interface.c:448
+msgid ""
+"WARNING - Changes made to the status of some services could stop Frugalware "
+"from functioning, temporarily or permanently. Please note that gService is "
+"not responsible for any damage to your computer system or loss of data that "
+"results from its use."
+msgstr ""
+"ADVARSEL - Ændringer lavet til statussen af nogle tjenester kan stoppe "
+"Frugalware i at funktionere, foreløbigt eller permanent. Noter venligst at "
+"gService ikke er ansvarlig for nogen skade på dit computersystem eller tab "
+"af data som resultat i brug af det."
+
+#: ../src/gservice-interface.c:623
 msgid "Error activating service. The service could not be activated"
 msgstr "Fejl under aktivering af tjeneste. Tjeneste kunne ikke aktiveres"
 
-#: ../src/gservice-interface.c:621
+#: ../src/gservice-interface.c:642
 msgid ""
 "Service is now activated and will be started the next time you boot your "
 "system.\n"
@@ -173,29 +206,37 @@ msgstr ""
 "\n"
 "Ønsker du at starte service nu ?"
 
-#: ../src/gservice-interface.c:653
+#: ../src/gservice-interface.c:674
 msgid "Error deactivating service. The service could not be deactivated"
 msgstr "Fejl under deaktivering af service. Service kunne ikke deaktiveredes"
 
-#: ../src/gservice-interface.c:673
+#: ../src/gservice-interface.c:694
 msgid ""
-"Service is now deactivated and will be started the next time you boot your "
-"system.\n"
+"Service is now deactivated and will not be started the next time you boot "
+"your system.\n"
 "\n"
 "Do you wish to stop the service now ?"
 msgstr ""
-"Service er nu deaktiveret og vil blive stoppet næste gang du booter dit "
+"Service er nu deaktiveret og vil ikke blive startet næste gang du booter dit "
 "system.\n"
 "\n"
 "Ønsker du at stoppe service nu  ?"
 
-#: ../src/gservice-interface.c:692 ../src/gservice-interface.c:711
-#: ../src/gservice-interface.c:730 ../src/gservice-interface.c:749
-#: ../src/gservice-interface.c:768 ../src/gservice-interface.c:787
-#: ../src/gservice-interface.c:806
+#: ../src/gservice-interface.c:713 ../src/gservice-interface.c:732
+#: ../src/gservice-interface.c:751 ../src/gservice-interface.c:770
+#: ../src/gservice-interface.c:789 ../src/gservice-interface.c:808
+#: ../src/gservice-interface.c:827
 msgid "There was an error while changing runlevel information."
 msgstr "Der var en fejl under ændring af runlevel information."
 
-#: ../src/gservice-interface.c:849
+#: ../src/gservice-interface.c:870
 msgid "An error occurred while trying to reset runlevel information."
 msgstr "En fejl opstod under forsøg i at nulstille runlevel information."
+
+#: ../src/gservice-about.c:81
+msgid "(C) 2008-2009 Frugalware Developer Team (GPL)"
+msgstr "(C) 2008-2009 Frugalware Udvikler Team (GPL)"
+
+#: ../src/gservice-about.c:82
+msgid "A graphical runlevel editor for Frugalware Linux"
+msgstr "En grafisk runlevel editor for Frugalware Linux"
