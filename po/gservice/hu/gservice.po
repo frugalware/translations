@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-22 02:07+0100\n"
-"PO-Revision-Date: 2009-01-22 15:13+0200\n"
+"POT-Creation-Date: 2009-01-25 02:05+0100\n"
+"PO-Revision-Date: 2009-01-25 18:46+0200\n"
 "Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: hu\n"
@@ -53,15 +53,15 @@ msgstr "<b>Futási szintek</b>"
 msgid "<b>Status Console</b>"
 msgstr "<b>Állapot konzol</b>"
 
-#: ../data/gservice.glade.h:10
+#: ../data/gservice.glade.h:10 ../src/gservice-interface.c:567
 msgid "Activate"
 msgstr "Aktiválás"
 
-#: ../data/gservice.glade.h:11
+#: ../data/gservice.glade.h:11 ../src/gservice-interface.c:576
 msgid "Deactivate"
 msgstr "Kikapcsolás"
 
-#: ../data/gservice.glade.h:12
+#: ../data/gservice.glade.h:12 ../src/gservice-interface.c:588
 msgid "Edit"
 msgstr "Szerkesztés"
 
@@ -77,93 +77,126 @@ msgstr "Kilépés"
 msgid "Reset"
 msgstr "Visszaállít"
 
-#: ../data/gservice.glade.h:16
+#: ../data/gservice.glade.h:16 ../src/gservice-interface.c:554
 msgid "Restart"
 msgstr "Újraindít"
 
 #: ../data/gservice.glade.h:17
+msgid "Search"
+msgstr "Keres"
+
+#: ../data/gservice.glade.h:18
 msgid "Service description"
 msgstr "Szolgáltatás leírása"
 
-#: ../data/gservice.glade.h:18
+#: ../data/gservice.glade.h:19
 msgid "Service name"
 msgstr "Szolgáltatás neve"
 
-#: ../data/gservice.glade.h:19
+#: ../data/gservice.glade.h:20
 msgid "Show inactive services"
 msgstr "Inaktív szolgáltatások mutatása"
 
-#: ../data/gservice.glade.h:20
+#: ../data/gservice.glade.h:21
 msgid "Show service icons"
 msgstr "Szolgáltatások ikonjának mutatása"
 
-#: ../data/gservice.glade.h:21
+#: ../data/gservice.glade.h:22
 msgid "Show status console"
 msgstr "Állapot-konzol mutatása"
 
-#: ../data/gservice.glade.h:22
+#: ../data/gservice.glade.h:23 ../src/gservice-interface.c:536
 msgid "Start"
 msgstr "Indítás"
 
-#: ../data/gservice.glade.h:23
+#: ../data/gservice.glade.h:24 ../src/gservice-interface.c:546
 msgid "Stop"
 msgstr "Leállítás"
 
-#: ../data/gservice.glade.h:24
+#: ../data/gservice.glade.h:25
 msgid "_File"
 msgstr "_Fájl"
 
-#: ../data/gservice.glade.h:25
+#: ../data/gservice.glade.h:26
 msgid "_Help"
 msgstr "_Segítség"
 
-#: ../data/gservice.glade.h:26
+#: ../data/gservice.glade.h:27
 msgid "_View"
 msgstr "_Nézet"
 
-#: ../data/gservice.glade.h:27
+#: ../data/gservice.glade.h:28
 msgid "gService"
 msgstr "gService"
 
-#: ../data/gservice.glade.h:28
+#: ../data/gservice.glade.h:29
 msgid "gtk-about"
 msgstr "gtk-about"
 
-#: ../data/gservice.glade.h:29
+#: ../data/gservice.glade.h:30
 msgid "gtk-close"
 msgstr "gtk-close"
 
-#: ../data/gservice.glade.h:30
+#: ../data/gservice.glade.h:31
 msgid "gtk-quit"
 msgstr "gtk-quit"
 
-#: ../src/gservice-interface.c:138
-msgid "Status"
-msgstr "Állapot"
+#: ../src/gservice.c:54
+msgid "Interface initialization Failed"
+msgstr "Az interfész inicializálása sikertelen"
 
-#: ../src/gservice-interface.c:147
-msgid "Icon"
-msgstr "Ikon"
+#: ../src/gservice.c:54
+msgid "Failed to initialize interface"
+msgstr "Hiba az interfész inicializálása közben"
 
-#: ../src/gservice-interface.c:165
-msgid "Service"
-msgstr "Szolgáltatás"
-
-#: ../src/gservice-interface.c:603 ../src/gservice-interface.c:654
-#: ../src/gservice-interface.c:693 ../src/gservice-interface.c:712
-#: ../src/gservice-interface.c:731 ../src/gservice-interface.c:750
-#: ../src/gservice-interface.c:769 ../src/gservice-interface.c:788
-#: ../src/gservice-interface.c:807 ../src/gservice-interface.c:850
+#: ../src/gservice.c:64 ../src/gservice-interface.c:806
+#: ../src/gservice-interface.c:857 ../src/gservice-interface.c:896
+#: ../src/gservice-interface.c:915 ../src/gservice-interface.c:934
+#: ../src/gservice-interface.c:953 ../src/gservice-interface.c:972
+#: ../src/gservice-interface.c:991 ../src/gservice-interface.c:1010
+#: ../src/gservice-interface.c:1053
 msgid "Error"
 msgstr "Hiba"
 
-#: ../src/gservice-interface.c:603
+#: ../src/gservice.c:64
+msgid ""
+"Failed to initialize configuration. Please check that a valid configuration "
+"file exists in /etc/gservice/main.conf"
+msgstr ""
+"Nem sikerült inicializálni a beállításokat. Kérem nézze meg, hogy van-e "
+"érvényes konfiguráció a /etc/gservice/main.conf alatt."
+
+#: ../src/gservice-interface.c:162
+msgid "Status"
+msgstr "Állapot"
+
+#: ../src/gservice-interface.c:171
+msgid "Icon"
+msgstr "Ikon"
+
+#: ../src/gservice-interface.c:189
+msgid "Service"
+msgstr "Szolgáltatás"
+
+#: ../src/gservice-interface.c:490
+msgid ""
+"WARNING - Changes made to the status of some services could stop Frugalware "
+"from functioning, temporarily or permanently. Please note that gService is "
+"not responsible for any damage to your computer system or loss of data that "
+"results from its use."
+msgstr ""
+"FIGYELEM - néhány szolgáltatás állapotának megváltoztatása a Frugalware "
+"működőképességének megszűnését jelentheti ideiglenesen vagy tartósan. Kérem "
+"vegye figyelembe, hogy a gService nem felelős semmilyen kárért vagy "
+"adatvesztésért ami a használatából adódóan bekövetkezik."
+
+#: ../src/gservice-interface.c:806
 msgid "Error activating service. The service could not be activated"
 msgstr ""
 "Hiba a szolgáltatás aktiválása közben. A szolgáltatást nem sikerült "
 "aktiválni."
 
-#: ../src/gservice-interface.c:622
+#: ../src/gservice-interface.c:825
 msgid ""
 "Service is now activated and will be started the next time you boot your "
 "system.\n"
@@ -175,27 +208,39 @@ msgstr ""
 "\n"
 "El akarja indítani most a szolgáltatást?"
 
-#: ../src/gservice-interface.c:654
+#: ../src/gservice-interface.c:857
 msgid "Error deactivating service. The service could not be deactivated"
 msgstr ""
 "Hiba a szolgáltatás kikapcsolása közben. A szolgáltatást nem sikerült "
 "kikapcsolni."
 
-#: ../src/gservice-interface.c:674
+#: ../src/gservice-interface.c:877
 msgid ""
-"Service is now deactivated and will be started the next time you boot your "
-"system.\n"
+"Service is now deactivated and will not be started the next time you boot "
+"your system.\n"
 "\n"
 "Do you wish to stop the service now ?"
 msgstr ""
+"A szolgáltatás aktiválása meg lett szüntetve, és nem fog elindulni a "
+"rendszer következő indításakor.\n"
+"\n"
+"Le akarja állítani most a szolgáltatást?"
 
-#: ../src/gservice-interface.c:693 ../src/gservice-interface.c:712
-#: ../src/gservice-interface.c:731 ../src/gservice-interface.c:750
-#: ../src/gservice-interface.c:769 ../src/gservice-interface.c:788
-#: ../src/gservice-interface.c:807
+#: ../src/gservice-interface.c:896 ../src/gservice-interface.c:915
+#: ../src/gservice-interface.c:934 ../src/gservice-interface.c:953
+#: ../src/gservice-interface.c:972 ../src/gservice-interface.c:991
+#: ../src/gservice-interface.c:1010
 msgid "There was an error while changing runlevel information."
 msgstr "Hiba történt a futási szint információinak megváltoztatása közben."
 
-#: ../src/gservice-interface.c:850
+#: ../src/gservice-interface.c:1053
 msgid "An error occurred while trying to reset runlevel information."
 msgstr "Hiba történt a futási szint információinak visszaállítása közben."
+
+#: ../src/gservice-about.c:81
+msgid "(C) 2008-2009 Frugalware Developer Team (GPL)"
+msgstr "(C) 2008-2009 Frugalware Developer Team (GPL)"
+
+#: ../src/gservice-about.c:82
+msgid "A graphical runlevel editor for Frugalware Linux"
+msgstr "Egy grafikus futási szint szerkesztő a Frugalware Linux számára"
