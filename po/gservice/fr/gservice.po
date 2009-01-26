@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-22 02:07+0100\n"
-"PO-Revision-Date: 2009-01-22 22:03+0200\n"
+"POT-Creation-Date: 2009-01-26 02:12+0100\n"
+"PO-Revision-Date: 2009-01-26 16:57+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fr\n"
@@ -47,121 +47,159 @@ msgstr "6"
 
 #: ../data/gservice.glade.h:8
 msgid "<b>Runlevels</b>"
-msgstr "<b>Runlevels</b>"
+msgstr "<b>Niveaux de démarrage</b>"
 
 #: ../data/gservice.glade.h:9
 msgid "<b>Status Console</b>"
-msgstr "<b>Status Console</b>"
+msgstr "<b>Console de status</b>"
 
-#: ../data/gservice.glade.h:10
+#: ../data/gservice.glade.h:10 ../src/gservice-interface.c:590
 msgid "Activate"
 msgstr "Activer"
 
-#: ../data/gservice.glade.h:11
+#: ../data/gservice.glade.h:11 ../src/gservice-interface.c:599
 msgid "Deactivate"
 msgstr "Désactiver"
 
-#: ../data/gservice.glade.h:12
+#: ../data/gservice.glade.h:12 ../src/gservice-interface.c:611
 msgid "Edit"
-msgstr "Editer"
+msgstr "Éditer"
 
 #: ../data/gservice.glade.h:13
 msgid "Edit Service"
-msgstr "Editer le Service"
+msgstr "Éditer le Service"
 
 #: ../data/gservice.glade.h:14
+msgid "Loading ..."
+msgstr "Chargement ..."
+
+#: ../data/gservice.glade.h:15
 msgid "Quit"
 msgstr "Quitter"
 
-#: ../data/gservice.glade.h:15
+#: ../data/gservice.glade.h:16
 msgid "Reset"
 msgstr "Remise à zéro"
 
-#: ../data/gservice.glade.h:16
+#: ../data/gservice.glade.h:17 ../src/gservice-interface.c:577
 msgid "Restart"
 msgstr "Redémarrer"
 
-#: ../data/gservice.glade.h:17
+#: ../data/gservice.glade.h:18
+msgid "Search"
+msgstr "Rechercher"
+
+#: ../data/gservice.glade.h:19
 msgid "Service description"
 msgstr "Description du service"
 
-#: ../data/gservice.glade.h:18
+#: ../data/gservice.glade.h:20
 msgid "Service name"
 msgstr "Nom du service"
 
-#: ../data/gservice.glade.h:19
+#: ../data/gservice.glade.h:21
 msgid "Show inactive services"
 msgstr "Montrer les services inactifs"
 
-#: ../data/gservice.glade.h:20
+#: ../data/gservice.glade.h:22
 msgid "Show service icons"
 msgstr "Montrer les icônes du service"
 
-#: ../data/gservice.glade.h:21
+#: ../data/gservice.glade.h:23
 msgid "Show status console"
 msgstr "Montrer le status en console"
 
-#: ../data/gservice.glade.h:22
+#: ../data/gservice.glade.h:24 ../src/gservice-interface.c:559
 msgid "Start"
 msgstr "Démarrer"
 
-#: ../data/gservice.glade.h:23
+#: ../data/gservice.glade.h:25 ../src/gservice-interface.c:569
 msgid "Stop"
 msgstr "Arrêter"
 
-#: ../data/gservice.glade.h:24
+#: ../data/gservice.glade.h:26
 msgid "_File"
 msgstr "_Fichier"
 
-#: ../data/gservice.glade.h:25
+#: ../data/gservice.glade.h:27
 msgid "_Help"
 msgstr "_Aide"
 
-#: ../data/gservice.glade.h:26
+#: ../data/gservice.glade.h:28
 msgid "_View"
 msgstr "_Vue"
 
-#: ../data/gservice.glade.h:27
+#: ../data/gservice.glade.h:29
 msgid "gService"
 msgstr "gService"
 
-#: ../data/gservice.glade.h:28
+#: ../data/gservice.glade.h:30
 msgid "gtk-about"
 msgstr "gtk-about"
 
-#: ../data/gservice.glade.h:29
+#: ../data/gservice.glade.h:31
 msgid "gtk-close"
 msgstr "gtk-close"
 
-#: ../data/gservice.glade.h:30
+#: ../data/gservice.glade.h:32
 msgid "gtk-quit"
 msgstr "gtk-quit"
 
-#: ../src/gservice-interface.c:138
-msgid "Status"
-msgstr "Status"
+#: ../src/gservice.c:54
+msgid "Interface initialization Failed"
+msgstr "Échec de l'initialisation de l'interface"
 
-#: ../src/gservice-interface.c:147
-msgid "Icon"
-msgstr "Icone"
+#: ../src/gservice.c:54
+msgid "Failed to initialize interface"
+msgstr "Échec de l'initialisation de l'interface"
 
-#: ../src/gservice-interface.c:165
-msgid "Service"
-msgstr "Service"
-
-#: ../src/gservice-interface.c:603 ../src/gservice-interface.c:654
-#: ../src/gservice-interface.c:693 ../src/gservice-interface.c:712
-#: ../src/gservice-interface.c:731 ../src/gservice-interface.c:750
-#: ../src/gservice-interface.c:769 ../src/gservice-interface.c:788
-#: ../src/gservice-interface.c:807 ../src/gservice-interface.c:850
+#: ../src/gservice.c:64 ../src/gservice-interface.c:829
+#: ../src/gservice-interface.c:880 ../src/gservice-interface.c:919
+#: ../src/gservice-interface.c:938 ../src/gservice-interface.c:957
+#: ../src/gservice-interface.c:976 ../src/gservice-interface.c:995
+#: ../src/gservice-interface.c:1014 ../src/gservice-interface.c:1033
+#: ../src/gservice-interface.c:1076
 msgid "Error"
 msgstr "Erreur"
 
-#: ../src/gservice-interface.c:603
+#: ../src/gservice.c:64
+msgid ""
+"Failed to initialize configuration. Please check that a valid configuration "
+"file exists in /etc/gservice/main.conf"
+msgstr ""
+"Échec de l'initialisation de la configuration. Veuillez vérifier qu'un "
+"fichier de configuration valide existe dans /etc/gservice/main.conf"
+
+#: ../src/gservice-interface.c:163
+msgid "Status"
+msgstr "Status"
+
+#: ../src/gservice-interface.c:172
+msgid "Icon"
+msgstr "Icone"
+
+#: ../src/gservice-interface.c:190
+msgid "Service"
+msgstr "Service"
+
+#: ../src/gservice-interface.c:513
+msgid ""
+"WARNING - Changes made to the status of some services could stop Frugalware "
+"from functioning, temporarily or permanently. Please note that gService is "
+"not responsible for any damage to your computer system or loss of data that "
+"results from its use."
+msgstr ""
+"ATTENTION - Les changements du status de quelques services peuvent empécher "
+"le fonctionnement de Frugalware, temporairement ou de façon permanante. "
+"Veuillez noté que gService n'est pas responsable pour des dommages ou des "
+"pertes de données sur votre ordinateur qui pourrait résulté de son "
+"utilisation."
+
+#: ../src/gservice-interface.c:829
 msgid "Error activating service. The service could not be activated"
 msgstr "Erreur en activant le service. Le service ne peut être activé"
 
-#: ../src/gservice-interface.c:622
+#: ../src/gservice-interface.c:848
 msgid ""
 "Service is now activated and will be started the next time you boot your "
 "system.\n"
@@ -171,30 +209,41 @@ msgstr ""
 "Le service est maintenant activé et sera démarré au prochain démarrage de "
 "votre système.Souhaitez-vous démarrer le service maintenant ?"
 
-#: ../src/gservice-interface.c:654
+#: ../src/gservice-interface.c:880
 msgid "Error deactivating service. The service could not be deactivated"
 msgstr "Erreur en désactivant le service. Le servce ne peut être désactivé"
 
-#: ../src/gservice-interface.c:674
+#: ../src/gservice-interface.c:900
 msgid ""
-"Service is now deactivated and will be started the next time you boot your "
-"system.\n"
+"Service is now deactivated and will not be started the next time you boot "
+"your system.\n"
 "\n"
 "Do you wish to stop the service now ?"
 msgstr ""
 "Le service est maintenant désactivé et sera démarré au prochain démarrage de "
-"votre système.Souhaitez-vous arrêter le service maintenant ?"
+"votre système.\n"
+"\n"
+"Souhaitez-vous arrêter le service maintenant ?"
 
-#: ../src/gservice-interface.c:693 ../src/gservice-interface.c:712
-#: ../src/gservice-interface.c:731 ../src/gservice-interface.c:750
-#: ../src/gservice-interface.c:769 ../src/gservice-interface.c:788
-#: ../src/gservice-interface.c:807
+#: ../src/gservice-interface.c:919 ../src/gservice-interface.c:938
+#: ../src/gservice-interface.c:957 ../src/gservice-interface.c:976
+#: ../src/gservice-interface.c:995 ../src/gservice-interface.c:1014
+#: ../src/gservice-interface.c:1033
 msgid "There was an error while changing runlevel information."
 msgstr ""
-"Une erreur est subvenu pendant le changement de l'information du runlevel."
+"Une erreur est subvenu pendant le changement de l'information du niveau de "
+"démarrage."
 
-#: ../src/gservice-interface.c:850
+#: ../src/gservice-interface.c:1076
 msgid "An error occurred while trying to reset runlevel information."
 msgstr ""
-"Une erreur est subvenu pendant la remise à zéro de l'information du "
-"runlevel."
+"Une erreur est subvenu pendant la remise à zéro de l'information du niveau "
+"de démarrage."
+
+#: ../src/gservice-about.c:81
+msgid "(C) 2008-2009 Frugalware Developer Team (GPL)"
+msgstr "(C) 2008-2009 L'équipe de développement Frugalware (GPL)"
+
+#: ../src/gservice-about.c:82
+msgid "A graphical runlevel editor for Frugalware Linux"
+msgstr "Un éditeur graphique de niveau de démarrage pour Frugalware Linux"
