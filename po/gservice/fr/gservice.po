@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-26 02:12+0100\n"
-"PO-Revision-Date: 2009-01-26 16:57+0200\n"
+"POT-Creation-Date: 2009-02-11 02:07+0100\n"
+"PO-Revision-Date: 2009-02-11 23:00+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fr\n"
@@ -53,15 +53,15 @@ msgstr "<b>Niveaux de démarrage</b>"
 msgid "<b>Status Console</b>"
 msgstr "<b>Console de status</b>"
 
-#: ../data/gservice.glade.h:10 ../src/gservice-interface.c:590
+#: ../data/gservice.glade.h:10 ../src/gservice-interface.c:591
 msgid "Activate"
 msgstr "Activer"
 
-#: ../data/gservice.glade.h:11 ../src/gservice-interface.c:599
+#: ../data/gservice.glade.h:11 ../src/gservice-interface.c:600
 msgid "Deactivate"
 msgstr "Désactiver"
 
-#: ../data/gservice.glade.h:12 ../src/gservice-interface.c:611
+#: ../data/gservice.glade.h:12 ../src/gservice-interface.c:612
 msgid "Edit"
 msgstr "Éditer"
 
@@ -81,7 +81,7 @@ msgstr "Quitter"
 msgid "Reset"
 msgstr "Remise à zéro"
 
-#: ../data/gservice.glade.h:17 ../src/gservice-interface.c:577
+#: ../data/gservice.glade.h:17 ../src/gservice-interface.c:578
 msgid "Restart"
 msgstr "Redémarrer"
 
@@ -109,11 +109,11 @@ msgstr "Montrer les icônes du service"
 msgid "Show status console"
 msgstr "Montrer le status en console"
 
-#: ../data/gservice.glade.h:24 ../src/gservice-interface.c:559
+#: ../data/gservice.glade.h:24 ../src/gservice-interface.c:560
 msgid "Start"
 msgstr "Démarrer"
 
-#: ../data/gservice.glade.h:25 ../src/gservice-interface.c:569
+#: ../data/gservice.glade.h:25 ../src/gservice-interface.c:570
 msgid "Stop"
 msgstr "Arrêter"
 
@@ -145,24 +145,32 @@ msgstr "gtk-close"
 msgid "gtk-quit"
 msgstr "gtk-quit"
 
-#: ../src/gservice.c:54
+#: ../src/gservice.c:52
+msgid "Insufficient privileges"
+msgstr "Privilèges insufisants"
+
+#: ../src/gservice.c:52
+msgid "gService must be run as root."
+msgstr "gService doit être exécuter en tant que root."
+
+#: ../src/gservice.c:60
 msgid "Interface initialization Failed"
 msgstr "Échec de l'initialisation de l'interface"
 
-#: ../src/gservice.c:54
+#: ../src/gservice.c:60
 msgid "Failed to initialize interface"
 msgstr "Échec de l'initialisation de l'interface"
 
-#: ../src/gservice.c:64 ../src/gservice-interface.c:829
-#: ../src/gservice-interface.c:880 ../src/gservice-interface.c:919
-#: ../src/gservice-interface.c:938 ../src/gservice-interface.c:957
-#: ../src/gservice-interface.c:976 ../src/gservice-interface.c:995
-#: ../src/gservice-interface.c:1014 ../src/gservice-interface.c:1033
-#: ../src/gservice-interface.c:1076
+#: ../src/gservice.c:70 ../src/gservice-interface.c:830
+#: ../src/gservice-interface.c:881 ../src/gservice-interface.c:920
+#: ../src/gservice-interface.c:939 ../src/gservice-interface.c:958
+#: ../src/gservice-interface.c:977 ../src/gservice-interface.c:996
+#: ../src/gservice-interface.c:1015 ../src/gservice-interface.c:1034
+#: ../src/gservice-interface.c:1077
 msgid "Error"
 msgstr "Erreur"
 
-#: ../src/gservice.c:64
+#: ../src/gservice.c:70
 msgid ""
 "Failed to initialize configuration. Please check that a valid configuration "
 "file exists in /etc/gservice/main.conf"
@@ -170,19 +178,19 @@ msgstr ""
 "Échec de l'initialisation de la configuration. Veuillez vérifier qu'un "
 "fichier de configuration valide existe dans /etc/gservice/main.conf"
 
-#: ../src/gservice-interface.c:163
+#: ../src/gservice-interface.c:164
 msgid "Status"
 msgstr "Status"
 
-#: ../src/gservice-interface.c:172
+#: ../src/gservice-interface.c:173
 msgid "Icon"
 msgstr "Icone"
 
-#: ../src/gservice-interface.c:190
+#: ../src/gservice-interface.c:191
 msgid "Service"
 msgstr "Service"
 
-#: ../src/gservice-interface.c:513
+#: ../src/gservice-interface.c:514
 msgid ""
 "WARNING - Changes made to the status of some services could stop Frugalware "
 "from functioning, temporarily or permanently. Please note that gService is "
@@ -195,11 +203,11 @@ msgstr ""
 "pertes de données sur votre ordinateur qui pourrait résulté de son "
 "utilisation."
 
-#: ../src/gservice-interface.c:829
+#: ../src/gservice-interface.c:830
 msgid "Error activating service. The service could not be activated"
 msgstr "Erreur en activant le service. Le service ne peut être activé"
 
-#: ../src/gservice-interface.c:848
+#: ../src/gservice-interface.c:849
 msgid ""
 "Service is now activated and will be started the next time you boot your "
 "system.\n"
@@ -209,11 +217,11 @@ msgstr ""
 "Le service est maintenant activé et sera démarré au prochain démarrage de "
 "votre système.Souhaitez-vous démarrer le service maintenant ?"
 
-#: ../src/gservice-interface.c:880
+#: ../src/gservice-interface.c:881
 msgid "Error deactivating service. The service could not be deactivated"
 msgstr "Erreur en désactivant le service. Le servce ne peut être désactivé"
 
-#: ../src/gservice-interface.c:900
+#: ../src/gservice-interface.c:901
 msgid ""
 "Service is now deactivated and will not be started the next time you boot "
 "your system.\n"
@@ -225,16 +233,16 @@ msgstr ""
 "\n"
 "Souhaitez-vous arrêter le service maintenant ?"
 
-#: ../src/gservice-interface.c:919 ../src/gservice-interface.c:938
-#: ../src/gservice-interface.c:957 ../src/gservice-interface.c:976
-#: ../src/gservice-interface.c:995 ../src/gservice-interface.c:1014
-#: ../src/gservice-interface.c:1033
+#: ../src/gservice-interface.c:920 ../src/gservice-interface.c:939
+#: ../src/gservice-interface.c:958 ../src/gservice-interface.c:977
+#: ../src/gservice-interface.c:996 ../src/gservice-interface.c:1015
+#: ../src/gservice-interface.c:1034
 msgid "There was an error while changing runlevel information."
 msgstr ""
 "Une erreur est subvenu pendant le changement de l'information du niveau de "
 "démarrage."
 
-#: ../src/gservice-interface.c:1076
+#: ../src/gservice-interface.c:1077
 msgid "An error occurred while trying to reset runlevel information."
 msgstr ""
 "Une erreur est subvenu pendant la remise à zéro de l'information du niveau "
