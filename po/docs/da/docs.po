@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-02-13 01:42+0100\n"
-"PO-Revision-Date: 2009-02-13 17:03+0200\n"
+"PO-Revision-Date: 2009-02-13 17:35+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -1564,49 +1564,46 @@ msgid ""
 "If you use a netinstall image follow these sub-steps. Otherwise jump to the "
 "partitioning point!"
 msgstr ""
+"Hvis du bruger et netinstall aftryk så følg disse under-skridt. Ellers "
+"spring til partitionering punkt!"
 
 # type: Plain text
 #: install.txt:308
-#, fuzzy
 msgid ""
 "These steps sets up your network options during the install. When you "
 "finished installing Frugalware the installer will ask for network options "
 "again.  Those options will be the installed system's options."
 msgstr ""
-"- Hvis du benytter et netinstall aftryk så følg disse under-skridt. Ellers "
-"spring til partioneringsdelen! + NOTE: Disse skridt opsætter dine "
-"netværksindstillinger for installering. Når du er færdig med at installere "
-"Frugalware vil installeringsprogrammet spørge om disse netværksindstillinger "
-"igen.  Disse indstillinger vil være det installerede systems indstillinger."
+"Disse skridt opsætter dine netværksindstillinger for installering. Når du er "
+"færdig med at installere Frugalware vil installeringsprogrammet spørge om "
+"disse netværksindstillinger igen.  Disse indstillinger vil være det "
+"installerede systems indstillinger."
 
 # type: Plain text
 #: install.txt:312
-#, fuzzy
 msgid ""
 "Now you should select your connection type. The installer uses the netconfig "
 "utility. You can also find the documentation for netconfig in this "
 "documentation.  See the part called: 'Networking'."
 msgstr ""
-".. Nu skal du vælge din forbindelsestype. Installeringsprogrammet benytter "
+"Nu skal du vælge din forbindelsestype. Installeringsprogrammet benytter "
 "netconfig hjælpeprogram. Du kan også finde dokumentationen for netconfig i "
 "denne dokumentation.  Se delen kaldet: 'Netværk'."
 
 # type: Plain text
 #: install.txt:316
-#, fuzzy
 msgid ""
 "After setting up the network you can choose a mirror for downloading the "
 "packages.  The installer will try other mirrors too. This feature is useful "
 "when you have got a fast local mirror or something similar."
 msgstr ""
-".. Efter opsætning af netværk kan du vælge et mirror for downloading af "
+"Efter opsætning af netværk kan du vælge et mirror for downloading af "
 "pakkerne.  Installeringsprogrammet vil også prøve andre spejle . Denne "
 "funktion er nyttig når du har lavet et hurtigt lokalt spejl eller noget "
 "lignende."
 
 # type: Plain text
 #: install.txt:323
-#, fuzzy
 msgid ""
 "The next step is partitioning. Frugalware setup displays a list of your hard "
 "disks, you should choose one of them to partition it with a program. You can "
@@ -1616,43 +1613,40 @@ msgid ""
 "swap'). The swap size should be 500-1000MB. When you have finished "
 "partitioning, press <Continue>."
 msgstr ""
-"- Det næste skridt er partitionering. Frugalware setup viser en liste af "
-"dine harddiske , du skal vælge en af dem for at paritonere det med et "
-"program. Du kan vælge partitionsprogram i den næste dialog, p.t. fdisk og "
-"cfdisk er inkluderet. Du bør mindst oprette en partition med typen 'Linux', "
-"og det anbefales også at oprette en swap partition (med typen 'Linux swap'). "
-"Swap størrelse bør være 500-1000MB. Når du er færdig med partitionering, "
-"tryk <Fortsæt>."
+"Det næste skridt er partitionering. Frugalware setup viser en liste af dine "
+"harddiske , du skal vælge en af dem for at paritonere det med et program. Du "
+"kan vælge partitionsprogram i den næste dialog, p.t. fdisk og cfdisk er "
+"inkluderet. Du bør mindst oprette en partition med typen 'Linux', og det "
+"anbefales også at oprette en swap partition (med typen 'Linux swap'). Swap "
+"størrelse bør være 500-1000MB. Når du er færdig med partitionering, tryk "
+"<Fortsæt>."
 
 # type: Plain text
 #: install.txt:328
-#, fuzzy
 msgid ""
 "On PPC, first you *must* create an `Apple Partition Map` and an `Apple "
 "Bootstrap` first (in this order). Use the `i` and `b` commands of `mac-"
 "fdisk` to do so. Then you can create your `Linux swap` and `Linux` "
 "partitions using `C` and `c`."
 msgstr ""
-"NOTE: På PPC, *skal* du først skabe en `Apple Partition Map` og en `Apple "
+"På PPC, *skal* du først skabe en `Apple Partition Map` og en `Apple "
 "Bootstrap`  (i den her rækkefølge). Brug `i` og `b` komandoer med `mac-"
 "fdisk` for at gøre dette. Derefter kan du skabe din `Linux swap` og `Linux` "
 "partitioner ved at bruge  `C` og `c`."
 
 # type: Plain text
 #: install.txt:332
-#, fuzzy
 msgid ""
 "The following list displays your swap partitions, here you can choose which "
 "swap partitions are allowed to be used by Frugalware. Then setup formats "
 "your swap partitions. If you have no swap partition just press <Cancel>!"
 msgstr ""
-"- Følgende liste viser dine swap partitioner, her kan du vælge hvilken swap "
+"Følgende liste viser dine swap partitioner, her kan du vælge hvilken swap "
 "partition der er tilladt at bruge med Frugalware. Så vil setup formatere din "
 "swap partition. Hvis du ikke har nogen swap partition så tryk <Annuller>!"
 
 # type: Plain text
 #: install.txt:338
-#, fuzzy
 msgid ""
 "In the next window, you should select your root partition first, then you "
 "can choose if you wish to format it or keep the existing filesystem on it. "
@@ -1660,28 +1654,25 @@ msgid ""
 "optionally format them, and set their mount points. Using a separate "
 "partition is supported for /boot, /home, /var, but not yet for /usr."
 msgstr ""
-"- I det næste vindue, skal du først vælge din root partition, så kan du "
-"vælge om den skal formateres eller om du vil beholde det eksisterende "
-"filsystem på den. Efter at have valgt root partition, kan du opsætte andre "
-"Linux partitioner, formater dem, og sæt deres mount punkter. Brug af "
-"seperate partitioner er understøttet for /boot, /home, /var, men endnu ikke "
-"for /usr."
+"I det næste vindue, skal du først vælge din root partition, så kan du vælge "
+"om den skal formateres eller om du vil beholde det eksisterende filsystem på "
+"den. Efter at have valgt root partition, kan du opsætte andre Linux "
+"partitioner, formater dem, og sæt deres mount punkter. Brug af seperate "
+"partitioner er understøttet for /boot, /home, /var, men endnu ikke for /usr."
 
 # type: Plain text
 #: install.txt:342
-#, fuzzy
 msgid ""
 "After having your Linux partitions mounted, you should do the same with your "
 "DOS/Windows ones. Setup will display a list of them, if any exists.  You "
 "should simply choose a mount point for them here."
 msgstr ""
-"- Efter at have mounted dine Linux partitioner, bør du gøre det samme med "
-"dine DOS/Windows partitioner. Setup vil vise dem, hvis de eksisterer.  Du "
-"bør ganske enkelt vælge et mount punkt for dem her."
+"Efter at have mounted dine Linux partitioner, bør du gøre det samme med dine "
+"DOS/Windows partitioner. Setup vil vise dem, hvis de eksisterer.  Du bør "
+"ganske enkelt vælge et mount punkt for dem her."
 
 # type: Plain text
 #: install.txt:349
-#, fuzzy
 msgid ""
 "Now it is the time to select if you want to use expert menus or not. If you "
 "choose expert menu after selecting the categories you will be able to pick "
@@ -1690,15 +1681,12 @@ msgid ""
 "finished picking the packages you will see the packages in base. After "
 "picking them the installation begins."
 msgstr ""
-"- Nu er tiden kommet til at vælge om du vil bruge expert menuer eller ej. "
-"Hvis du vælger expert menu efter at have valgt kategorierne vil du være i "
-"stand til at vælge pakker en-efter-en fra de udvalgte kategorier. Så hvis du "
+"Nu er tiden kommet til at vælge om du vil bruge expert menuer eller ej. Hvis "
+"du vælger expert menu efter at have valgt kategorierne vil du være i stand "
+"til at vælge pakker en-efter-en fra de udvalgte kategorier. Så hvis du "
 "vælger apps og base vil installeringsprogrammet give dig en liste af pakker "
 "i apps, efter du er færdig med at udvælge pakkerne vil du se pakkerne i "
-"base. Efter at du har udvalgt dem begynder installationen.  + Hvis du vælger "
-"den normale menu (dette er standard) så vil du kun se grupperne, men ikke de "
-"individuelle pakker. Så efter at have udvalgt grupperne begynder "
-"installationen."
+"base. Efter at du har udvalgt dem begynder installationen. "
 
 # type: Plain text
 #: install.txt:352
@@ -1707,23 +1695,22 @@ msgid ""
 "groups, but not the individual packages. So after picking the groups "
 "installation starts."
 msgstr ""
+"Hvis du vælger den normale menu (dette er standard) så vil du kun se "
+"grupperne, men ikke de individuelle pakker. Så efter at have udvalgt "
+"grupperne begynder installationen."
 
 # type: Plain text
 #: install.txt:357
-#, fuzzy
 msgid ""
 "The next step is to select package categories. If you will not use KDE or "
 "GNOME, you may probably want to disable them. In most cases, it is not a "
 "good idea to disable other categories. If you selected the expert menu you "
 "will see the package list after this dialog."
 msgstr ""
-"- Det næste skridt er at vælge pakke kategorier. Hvis du ikke vil bruge KDE "
+"Det næste skridt er at vælge pakke kategorier. Hvis du ikke vil bruge KDE "
 "eller GNOME, vil du sandsynligvis fravælge dem. I de fleste tilfælde, er det "
 "ikke en god idé at fravælge andre kategorier. Hvis du har valgt expert menu "
-"vil du se pakkelisten efter denne dialog.  + NOTE: Hvis gruppelisten er tom "
-"betyder det sandsynligvis at du miskonfigurerede dit netværk. Venligst gå "
-"tilbage og forsøg at rette det. Du kan også teste din forbindelse hvis du "
-"trykker Alt+F2 og forsøger at pinge nogle servere."
+"vil du se pakkelisten efter denne dialog. "
 
 # type: Plain text
 #: install.txt:361
@@ -1732,33 +1719,35 @@ msgid ""
 "network. Please go back and try to fix it. You can also test your connection "
 "if you press Alt+F2 and try to ping some servers."
 msgstr ""
+"Hvis gruppelisten er tom betyder det sandsynligvis at du miskonfigurerede "
+"dit netværk. Venligst gå tilbage og forsøg at rette det. Du kan også teste "
+"din forbindelse hvis du trykker Alt+F2 og forsøger at pinge nogle servere."
 
 # type: Plain text
 #: install.txt:365
-#, fuzzy
 msgid ""
 "Setup will install the packages your selected from the first CD. When it is "
 "done, you will be prompted to insert the next Frugalware install.  If you "
 "have only one disc, feel free to abort installing packages, you can install "
 "anything else from the net later."
 msgstr ""
-"- Setup vil installere pakkerne du valgte fra den første CD. Når det er "
-"gjort, vil du blive bedt om at indsætte den næste Frugalware CD.  Hvis du "
-"kun har en CD, kan du afbryde installering af pakker, du kan installere alt "
-"det andet senere fra nettet."
+"Setup vil installere pakkerne du valgte fra den første CD. Når det er gjort, "
+"vil du blive bedt om at indsætte den næste Frugalware CD.  Hvis du kun har "
+"en CD, kan du afbryde installering af pakker, du kan installere alt det "
+"andet senere fra nettet."
 
 # type: Plain text
 #: postinst.txt:1
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Basic configuration"
-msgstr "= Grundlæggende konfiguration"
+msgstr "Grundlæggende konfiguration"
 
 # type: Plain text
 #: postinst.txt:3 bugs.txt:3 packages.txt:2207 list-rules.txt:3
 #: irc-rules.txt:3 makepkg.txt:3
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Introduction"
-msgstr "== Introduktion"
+msgstr "Introduktion"
 
 # type: Plain text
 #: postinst.txt:8
@@ -1773,19 +1762,18 @@ msgstr ""
 
 # type: Plain text
 #: postinst.txt:11
-#, fuzzy
 msgid ""
 "If any problem occurs, there is a debug console on `tty4`, you can see that "
 "by pressing `Alt-F4`. You can switch back by hitting `Alt-F1`."
 msgstr ""
-"NOTE: Hvis der opstår problemer, er der en debug konsol på `tty4`, du kan se "
-"det ved at trykke `Alt-F4`. Du kan skifte tilbage med `Alt-F1`."
+"Hvis der opstår problemer, er der en debug konsol på `tty4`, du kan se det "
+"ved at trykke `Alt-F4`. Du kan skifte tilbage med `Alt-F1`."
 
 # type: Plain text
 #: postinst.txt:12
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "GRUB"
-msgstr "== GRUB"
+msgstr "GRUB"
 
 # type: Plain text
 #: postinst.txt:21
@@ -1809,9 +1797,9 @@ msgstr ""
 
 # type: Plain text
 #: postinst.txt:22 makepkg.txt:568
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Kernel modules"
-msgstr "== Kerne moduler"
+msgstr "Kerne moduler"
 
 # type: Plain text
 #: postinst.txt:26
@@ -1825,9 +1813,9 @@ msgstr ""
 
 # type: Plain text
 #: postinst.txt:27
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Accounts and passwords"
-msgstr "== Kontoer og passwords"
+msgstr "Kontoer og passwords"
 
 # type: Plain text
 #: postinst.txt:32
@@ -1855,9 +1843,9 @@ msgstr ""
 
 # type: Plain text
 #: postinst.txt:38
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Network"
-msgstr "== Netværk"
+msgstr "Netværk"
 
 # type: Plain text
 #: postinst.txt:42
@@ -1871,9 +1859,9 @@ msgstr ""
 
 # type: Plain text
 #: postinst.txt:43
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Timezone"
-msgstr "== Tidszone"
+msgstr "Tidszone"
 
 # type: Plain text
 #: postinst.txt:50
@@ -1894,9 +1882,9 @@ msgstr ""
 
 # type: Plain text
 #: postinst.txt:51
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Mouse"
-msgstr "== Mus"
+msgstr "Mus"
 
 # type: Plain text
 #: postinst.txt:56
@@ -1911,9 +1899,9 @@ msgstr ""
 
 # type: Plain text
 #: postinst.txt:57
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Graphical interface"
-msgstr "== Grafisk interface"
+msgstr "Grafisk interface"
 
 # type: Plain text
 #: postinst.txt:61
@@ -1928,15 +1916,15 @@ msgstr ""
 
 # type: Plain text
 #: pacman-g2.txt:1
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Pacman-G2"
-msgstr "= Pacman-G2"
+msgstr "Pacman-G2"
 
 # type: Plain text
 #: pacman-g2.txt:3
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Basics"
-msgstr "== Grundlæggende"
+msgstr "Grundlæggende"
 
 # type: Plain text
 #: pacman-g2.txt:11
@@ -1964,11 +1952,9 @@ msgstr ""
 
 # type: Plain text
 #: pacman-g2.txt:16
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# pacman-g2 -Sy\n"
-msgstr ""
-"# pacman-g2 -Sy\n"
-"---------------\n"
+msgstr "# pacman-g2 -Sy\n"
 
 # type: Plain text
 #: pacman-g2.txt:20
@@ -1981,11 +1967,9 @@ msgstr ""
 
 # type: Plain text
 #: pacman-g2.txt:23
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# pacman-g2 -Su\n"
-msgstr ""
-"# pacman-g2 -Su\n"
-"---------------\n"
+msgstr "# pacman-g2 -Su\n"
 
 # type: Plain text
 #: pacman-g2.txt:27
@@ -1998,11 +1982,9 @@ msgstr ""
 
 # type: Plain text
 #: pacman-g2.txt:30
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# pacman-g2 -Syu\n"
-msgstr ""
-"# pacman-g2 -Syu\n"
-"----------------\n"
+msgstr "# pacman-g2 -Syu\n"
 
 # type: Plain text
 #: pacman-g2.txt:33
@@ -2014,11 +1996,9 @@ msgstr ""
 
 # type: Plain text
 #: pacman-g2.txt:36
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "$ pacman-g2 -Sup\n"
-msgstr ""
-"$ pacman-g2 -Sup\n"
-"----------------\n"
+msgstr "$ pacman-g2 -Sup\n"
 
 # type: Plain text
 #: pacman-g2.txt:42
@@ -2035,11 +2015,9 @@ msgstr ""
 
 # type: Plain text
 #: pacman-g2.txt:45
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# pacman-g2 -S sendmail\n"
-msgstr ""
-"# pacman-g2 -S sendmail\n"
-"-----------------------\n"
+msgstr "# pacman-g2 -S sendmail\n"
 
 # type: Plain text
 #: pacman-g2.txt:50
@@ -2054,11 +2032,9 @@ msgstr ""
 
 # type: Plain text
 #: pacman-g2.txt:53
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "$ pacman-g2 -Ss perl\n"
-msgstr ""
-"# pacman-g2 -R gpm kernel\n"
-"----\n"
+msgstr "$ pacman-g2 -Ss perl\n"
 
 # type: Plain text
 #: pacman-g2.txt:58
@@ -2082,11 +2058,9 @@ msgstr ""
 
 # type: Plain text
 #: pacman-g2.txt:64
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# pacman-g2 -U zsh-4.2.1-1.fpm\n"
-msgstr ""
-"# pacman-g2 -U zsh-4.2.1-1.fpm\n"
-"------------------------------\n"
+msgstr "# pacman-g2 -U zsh-4.2.1-1.fpm\n"
 
 # type: Plain text
 #: pacman-g2.txt:68
@@ -2099,11 +2073,9 @@ msgstr ""
 
 # type: Plain text
 #: pacman-g2.txt:71
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# pacman-g2 -R qt\n"
-msgstr ""
-"# pacman-g2 -R qt\n"
-"-----------------\n"
+msgstr "# pacman-g2 -R qt\n"
 
 # type: Plain text
 #: pacman-g2.txt:74
@@ -2112,11 +2084,9 @@ msgstr "Fjerner qt pakken."
 
 # type: Plain text
 #: pacman-g2.txt:77
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "$ pacman-g2 -Qs perl\n"
-msgstr ""
-"# pacman-g2 -R gpm kernel\n"
-"----\n"
+msgstr "$ pacman-g2 -Qs perl\n"
 
 # type: Plain text
 #: pacman-g2.txt:80
@@ -2137,11 +2107,9 @@ msgstr ""
 
 # type: Plain text
 #: pacman-g2.txt:87
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "$ pacman-g2 -h\n"
-msgstr ""
-"$ pacman-g2 -h\n"
-"--------------\n"
+msgstr "$ pacman-g2 -h\n"
 
 # type: Plain text
 #: pacman-g2.txt:92
@@ -2156,17 +2124,15 @@ msgstr ""
 
 # type: Plain text
 #: pacman-g2.txt:94
-#, fuzzy
 msgid ""
 "Full documentation for pacman-g2 can be reached by issuing `man pacman-g2`."
-msgstr ""
-"NOTE: Fuld dokumentation for pacman-g2 kan ses ved at læse `man pacman-g2`."
+msgstr "Fuld dokumentation for pacman-g2 kan ses ved at læse `man pacman-g2`."
 
 # type: Plain text
 #: pacman-g2.txt:95
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Apt - pacman-g2 cross reference"
-msgstr "== Apt - pacman-g2 krydsreference"
+msgstr "Apt - pacman-g2 krydsreference"
 
 # type: Plain text
 #: pacman-g2.txt:99
@@ -2179,18 +2145,19 @@ msgstr ""
 
 # type: Plain text
 #: pacman-g2.txt:102
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "`-------------------------------------------`------------------------`-----------------\n"
 "Action                                      Apt command              Pacman command\n"
 msgstr ""
-"`-------------------------------------------`------------------------`-----------------\n"
-"Handling                                       Apt kommando              Pacman kommando\n"
-"---------------------------------------------------------------------------------------\n"
+"`-------------------------------------------`------------------------`------"
+"-----------\n"
+" Handling                                        Apt kommando               "
+"Pacman kommando\n"
 
 # type: Plain text
 #: pacman-g2.txt:110
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "Refresh the package database:               apt-get update           pacman-g2 -Sy\n"
 "Upgrade currently installed packages:       apt-get upgrade          pacman-g2 -Su\n"
@@ -2200,26 +2167,31 @@ msgid ""
 "Install a package from a file:              dpkg -i foo.deb          pacman-g2 -A foo.fpm\n"
 "Clean the package cache:                    apt-get clean            pacman-g2 -Sc\n"
 msgstr ""
-"Opdaterer pakkedatabasen:                apt-get update           pacman-g2 -Sy\n"
+"Opdaterer pakkedatabasen:               apt-get update           pacman-g2 "
+"-Sy\n"
 "Opgraderer installerede pakker:       apt-get upgrade          pacman-g2 -Su\n"
-"Installerer en ny pakke:                      apt-get install foo      pacman-g2 -S foo\n"
-"Fjerner en pakke:                            apt-get remove foo       pacman-g2 -Rc foo\n"
-"Søg i den fulde pakkedatabase:         apt-cache search foo     pacman-g2 -Ss foo\n"
-"Installerer en pakke fra en fil:              dpkg -i foo.deb          pacman-g2 -A foo.fpm\n"
-"Rydder pakke cache:                    apt-get clean            pacman-g2 -Sc\n"
-"---------------------------------------------------------------------------------------\n"
+"Installerer en ny pakke:                      apt-get install foo      "
+"pacman-g2 -S foo\n"
+"Fjerner en pakke:                           apt-get remove foo       "
+"pacman-g2 -Rc foo\n"
+"Søg i den fulde pakkedatabase:        apt-cache search foo     pacman-g2 -Ss "
+"foo\n"
+"Installerer en pakke fra en fil:              dpkg -i foo.deb          "
+"pacman-g2 -A foo.fpm\n"
+"Rydder pakke cache:                    apt-get clean            pacman-g2 "
+"-Sc\n"
 
 # type: Plain text
 #: network.txt:1
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Networking"
-msgstr "= Netværk"
+msgstr "Netværk"
 
 # type: Plain text
 #: network.txt:3
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Initializing the network card"
-msgstr "== At initialisere netværkskortet"
+msgstr "At initialisere netværkskortet"
 
 # type: Plain text
 #: network.txt:12
@@ -2243,9 +2215,9 @@ msgstr ""
 
 # type: Plain text
 #: network.txt:13
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "The netconfig utility"
-msgstr "== Netconfig værktøj"
+msgstr "Netconfig værktøj"
 
 # type: Plain text
 #: network.txt:16
@@ -2256,17 +2228,15 @@ msgstr ""
 
 # type: Plain text
 #: network.txt:19
-#, fuzzy
 msgid ""
 "First, we have to give a name to your computer. The name must consist of at "
 "least two parts, separated by a dot (.)."
 msgstr ""
-". Først, vi er nødt til at give din computer et navn. Navnet skal bestå af "
+"Først, vi er nødt til at give din computer et navn. Navnet skal bestå af "
 "mindst to dele, adskilt med et punktum (.)."
 
 # type: Plain text
 #: network.txt:28
-#, fuzzy
 msgid ""
 "In the next dialog, you should choose how your machine connects to the "
 "network.  If you have an internal network card and an assigned IP address, "
@@ -2277,18 +2247,14 @@ msgid ""
 "select the lo choice. The lo is also the correct choice if you are using a "
 "PCMCIA network card."
 msgstr ""
-". I den næste dialog skal du vælge hvordan din maskine forbinder til "
+"I den næste dialog skal du vælge hvordan din maskine forbinder til "
 "netværket. Hvis du har et internt netværkskort og en tildelt IP adresse, "
 "gateway, og DNS, brug statisk og skriv disse værdier. Hvis du har IP "
 "adresser tildelt af en DHCP server (almindeligt brugt af kabel "
 "modemtjenester, ikke lige dsl services), vælg dhcp. I tilfælde hvor du har "
 "en DSL-forbindelse (f.eks. ADSL) vælg dsl indstillingen! Til sidst, hvis du "
 "ikke har et netværkskort, vælg lo muligheden. lo er også det korrekte valg "
-"hvis du bruger et PCMCIA netværkskort.  + Når du opsætter netværket vil det "
-"første spørgsmål være interfacet du vil sætte op. Det er normalt eth0, men "
-"det kan difrancere når du opsætter trådløse interfaces f.eks. Hvis du "
-"opsætter et trådløst kort vil netconfig også spørge om din ESSID og "
-"krypteringsnøgle."
+"hvis du bruger et PCMCIA netværkskort.  "
 
 # type: Plain text
 #: network.txt:32
@@ -2298,6 +2264,10 @@ msgid ""
 "interfaces for example.  If you set up a wireless card netconfig will also "
 "ask your ESSID and encription key."
 msgstr ""
+"Når du opsætter netværket vil det første spørgsmål være interfacet du vil "
+"sætte op. Det er normalt eth0, men det kan difrancere når du opsætter "
+"trådløse interfaces f.eks. Hvis du opsætter et trådløst kort vil netconfig "
+"også spørge om din ESSID og krypteringsnøgle."
 
 # type: Plain text
 #: network.txt:37
