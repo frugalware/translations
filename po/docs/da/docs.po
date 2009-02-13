@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-02-13 01:42+0100\n"
-"PO-Revision-Date: 2009-02-13 17:35+0200\n"
+"PO-Revision-Date: 2009-02-13 19:08+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -2271,41 +2271,38 @@ msgstr ""
 
 # type: Plain text
 #: network.txt:37
-#, fuzzy
 msgid ""
 "If you chose static, you must give your IP address, the netmask of your "
 "local network, your gateway address (you may leave it blank) and the IP "
 "address of your primary name server (you can add more nameservers later by "
 "editing the '/etc/resolv.conf' file) and then the configuration is finished."
 msgstr ""
-".. Hvis du vælger statisk, skal du skrive din IP adresse, netmask på dit "
-"lokale netværk, din gateway adresse (du kan lade det være blankt) og IP "
-"adressen på din primære navneserver (du kan tilføje flere navneservere "
-"senere ved at at ændre i '/etc/resolv.conf' filen) og derefter er "
-"konfigurationen færdiggjort."
+"Hvis du vælger statisk, skal du skrive din IP adresse, netmask på dit lokale "
+"netværk, din gateway adresse (du kan lade det være blankt) og IP adressen "
+"på din primære navneserver (du kan tilføje flere navneservere senere ved at "
+"at ændre i '/etc/resolv.conf' filen) og derefter er konfigurationen "
+"færdiggjort."
 
 # type: Plain text
 #: network.txt:41
-#, fuzzy
 msgid ""
 "If you chose dhcp, you can optionally give your dhcp hostname, however, "
 "netconfig will not ask more questions about your network, since all other "
 "data will be provided by the DHCP server."
 msgstr ""
-".. Hvis du vælger dhcp, kan du valgfrit give dit dhcp hostname, men  "
-"netconfig vil herefter ikke udspørge dig mere om dit netværk, fordi alle "
-"andre data vil blive stillet til rådighed af DHCP-serveren."
+"Hvis du vælger dhcp, kan du valgfrit give dit dhcp hostname, men  netconfig "
+"vil herefter ikke udspørge dig mere om dit netværk, fordi alle andre data "
+"vil blive stillet til rådighed af DHCP-serveren."
 
 # type: Plain text
 #: network.txt:46
-#, fuzzy
 msgid ""
 "In dsl part you must give your username, something like 'someone@provider."
 "net'.  Then you'll have to specify the network interface (usually eth0) "
 "through which the ADSL connecting script will try to communicate with your "
 "ADSL modem. Then enter your password twice."
 msgstr ""
-".. I dsl delen skal du opgive dit brugernavn, noget som f.eks "
+"I dsl delen skal du opgive dit brugernavn, noget som f.eks "
 "'someone@provider.net'.  Derefter vil du være nødt til at præcisere "
 "netværksinterfacet (normalt eth0) som gennem ADSL tilknyttende script vil "
 "forsøge at kommunikere med dit ADSL-modem. Derefter skal du skrive dit "
@@ -2313,13 +2310,11 @@ msgstr ""
 
 # type: Plain text
 #: network.txt:48
-#, fuzzy
 msgid "If you chose lo, you don't have to answer any questions."
-msgstr ".. Hvis du vælger lo, skal du ikke besvare nogen spørgsmål."
+msgstr "Hvis du vælger lo, skal du ikke besvare nogen spørgsmål."
 
 # type: Plain text
 #: network.txt:55
-#, fuzzy
 msgid ""
 "Finally, netconfig will write all your network configuration files. If you "
 "want to edit your settings by hand, the interface information is stored in "
@@ -2328,18 +2323,18 @@ msgid ""
 "It's very useful when you got a laptop so you can set up options for all "
 "networks you use."
 msgstr ""
-". Til slut, vil netconfig skrive alle dine netværks konfigurations filer. "
-"Hvis du senere ønsker at ændre indstillingerne er interface informationen "
-"gemt i '/etc/sysconfig/network' mappen. Der er kun en fil der bliver kaldt "
-"default i de fleste tilfælde. Det er fordi du kan opsætte mere end en "
-"profil.  Det er meget nyttigt når du har en bærbar, for så kan du opstille "
-"valgmuligheder for alle netværk du bruger."
+"Til slut, vil netconfig skrive alle dine netværks konfigurations filer. Hvis "
+"du senere ønsker at ændre indstillingerne er interface informationen gemt i "
+"'/etc/sysconfig/network' mappen. Der er kun en fil der bliver kaldt default "
+"i de fleste tilfælde. Det er fordi du kan opsætte mere end en profil.  Det "
+"er meget nyttigt når du har en bærbar, for så kan du opstille valgmuligheder "
+"for alle netværk du bruger."
 
 # type: Plain text
 #: network.txt:56
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Basic firewall configuration"
-msgstr "== Grundlæggende firewall konfiguration"
+msgstr "Grundlæggende firewall konfiguration"
 
 # type: Plain text
 #: network.txt:62
@@ -2356,13 +2351,12 @@ msgstr ""
 
 # type: Plain text
 #: network.txt:65
-#, fuzzy
 msgid ""
 "You will not find this file if you have not installed iptables package as "
 "this is an iptables firewall."
 msgstr ""
-"NOTE: Du vil ikke finde denne fil hvis du ikke har installeret iptables "
-"pakken, da den er en iptables firewall."
+"Du vil ikke finde denne fil hvis du ikke har installeret iptables pakken, da "
+"den er en iptables firewall."
 
 # type: Plain text
 #: network.txt:70
@@ -2377,11 +2371,9 @@ msgstr ""
 
 # type: Plain text
 #: network.txt:73 packages.txt:257 packages.txt:1226
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# service firewall restart\n"
-msgstr ""
-"# service firewall restart\n"
-"--------------------------\n"
+msgstr "# service firewall restart\n"
 
 # type: Plain text
 #: network.txt:76
@@ -2400,34 +2392,31 @@ msgstr ""
 
 # type: Plain text
 #: network.txt:83
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# iptables-save > /etc/sysconfig/firewall\n"
-msgstr ""
-"# iptables-save > /etc/sysconfig/firewall\n"
-"-----------------------------------------\n"
+msgstr "# iptables-save > /etc/sysconfig/firewall\n"
 
 # type: Plain text
 #: network.txt:87
-#, fuzzy
 msgid ""
 "It will overwrite your existing configuration! It is strongly recommended to "
 "make a backup of '/etc/sysconfig/firewall' before saving your settings."
 msgstr ""
-"ADVARSEL: Det vil overskrive din eksisterende konfiguration! Det anbefales "
-"på det kraftigste at du laver en backup af '/etc/sysconfig/firewall' før du "
-"gemmer dine nye indstillinger."
+"Det vil overskrive din eksisterende konfiguration! Det anbefales på det "
+"kraftigste at du laver en backup af '/etc/sysconfig/firewall' før du gemmer "
+"dine nye indstillinger."
 
 # type: Plain text
 #: x.txt:1
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Graphical interface (X11)"
-msgstr "= Grafisk interface (X11)"
+msgstr "Grafisk interface (X11)"
 
 # type: Plain text
 #: x.txt:3
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Configuring your graphics card"
-msgstr "== Konfigurere dit grafikkort"
+msgstr "Konfigurere dit grafikkort"
 
 # type: Plain text
 #: x.txt:10
@@ -2447,22 +2436,22 @@ msgstr ""
 # type: Plain text
 #: x.txt:12
 msgid "Automatically configures the mouse wheel, if found"
-msgstr ""
+msgstr "Automatisk konfigurerer mushjul, hvis det bliver fundet"
 
 # type: Plain text
 #: x.txt:13
 msgid "Sets keyboard layout according to the selected language"
-msgstr ""
+msgstr "Sætter keyboard layout ifølge det valgte sprog"
 
 # type: Plain text
 #: x.txt:14
 msgid "Enables DPMS"
-msgstr ""
+msgstr "Aktiverer DPMS"
 
 # type: Plain text
 #: x.txt:15
 msgid "Enables users to use the DRI extension"
-msgstr ""
+msgstr "Aktiverer brugere så de kan bruge DRI-udvidelse"
 
 # type: Plain text
 #: x.txt:19
@@ -2477,9 +2466,9 @@ msgstr ""
 
 # type: Plain text
 #: x.txt:20
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "3D acceleration, binary drivers"
-msgstr "== 3D acceleration, binære drivere"
+msgstr "3D acceleration, binære drivere"
 
 # type: Plain text
 #: x.txt:25
@@ -2504,11 +2493,9 @@ msgstr ""
 
 # type: Plain text
 #: x.txt:31 packages.txt:3337
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# pacman-g2 -Sy nvidia\n"
-msgstr ""
-"# pacman-g2 -Sy nvidia\n"
-"------------------\n"
+msgstr "# pacman-g2 -Sy nvidia\n"
 
 # type: Plain text
 #: x.txt:35
@@ -2521,17 +2508,15 @@ msgstr ""
 
 # type: Plain text
 #: x.txt:38
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# pacman-g2 -Sy fglrx\n"
-msgstr ""
-"# pacman-g2 -Sy fglrx\n"
-"---------------------\n"
+msgstr "# pacman-g2 -Sy fglrx\n"
 
 # type: Plain text
 #: x.txt:40
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Allow root login in KDM/GDM"
-msgstr "== Tillade root login i KDM/GDM"
+msgstr "Tillade root login i KDM/GDM"
 
 # type: Plain text
 #: x.txt:44
@@ -2584,15 +2569,15 @@ msgstr "'AllowRoot=true'"
 
 # type: Plain text
 #: sound.txt:1
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Sound"
-msgstr "= Lyd"
+msgstr "Lyd"
 
 # type: Plain text
 #: sound.txt:3
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Configuring the sound card"
-msgstr "== Konfiguration af lydkort"
+msgstr "Konfiguration af lydkort"
 
 # type: Plain text
 #: sound.txt:8
@@ -2624,9 +2609,9 @@ msgstr ""
 
 # type: Plain text
 #: sound.txt:15
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Volume configuration with alsamixer"
-msgstr "== volumenkontrol konfiguration med alsamixer"
+msgstr "Volumenkontrol konfiguration med alsamixer"
 
 # type: Plain text
 #: sound.txt:21
@@ -2653,11 +2638,9 @@ msgstr ""
 
 # type: Plain text
 #: sound.txt:27
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# service alsa save\n"
-msgstr ""
-"# service alsa save\n"
-"-------------------\n"
+msgstr "# service alsa save\n"
 
 # type: Plain text
 #: sound.txt:30
@@ -2666,11 +2649,9 @@ msgstr "og"
 
 # type: Plain text
 #: sound.txt:33
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# service alsa load\n"
-msgstr ""
-"# service alsa load\n"
-"-------------------\n"
+msgstr "# service alsa load\n"
 
 # type: Plain text
 #: sound.txt:35 packages.txt:50 packages.txt:1229 gpg.txt:12
@@ -2679,9 +2660,9 @@ msgstr "kommando."
 
 # type: Plain text
 #: printing.txt:1
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Printing"
-msgstr "= Udskrivning"
+msgstr "Udskrivning"
 
 # type: Plain text
 #: printing.txt:5
@@ -2694,9 +2675,9 @@ msgstr ""
 
 # type: Plain text
 #: printing.txt:6
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Before you start"
-msgstr "== Før du starter"
+msgstr "Før du starter"
 
 # type: Plain text
 #: printing.txt:9
@@ -2707,9 +2688,9 @@ msgstr ""
 
 # type: Plain text
 #: printing.txt:10
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Hewlett-Packard"
-msgstr "=== Hewlett-Packard"
+msgstr "Hewlett-Packard"
 
 # type: Plain text
 #: printing.txt:15
@@ -2724,9 +2705,9 @@ msgstr ""
 
 # type: Plain text
 #: printing.txt:16
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Canon"
-msgstr "=== Canon"
+msgstr "Canon"
 
 # type: Plain text
 #: printing.txt:20
@@ -2743,12 +2724,15 @@ msgid ""
 "bjfilter-2.2: Canon Pixus 550i / 850i / 950i (i550 / i850 / i950) and iP90 "
 "Driver"
 msgstr ""
+"bjfilter-2.2: Canon Pixus 550i / 850i / 950i (i550 / i850 / i950) og iP90 "
+"Driver"
 
 # type: Plain text
 #: printing.txt:24
 msgid ""
 "bjfilter-2.4: Canon Pixus 560i / 860i / 960i (i560 / i860 / i960) Driver"
 msgstr ""
+"bjfilter-2.4: Canon Pixus 560i / 860i / 960i (i560 / i860 / i960) Driver"
 
 # type: Plain text
 #: printing.txt:25
@@ -2756,11 +2740,13 @@ msgid ""
 "bjfilter-2.5: Canon Pixus iP3100 / iP4100 / iP8600 (and Pixma iP1000 / "
 "iP1500) Driver"
 msgstr ""
+"bjfilter-2.5: Canon Pixus iP3100 / iP4100 / iP8600 (og Pixma iP1000 / "
+"iP1500) Driver"
 
 # type: Plain text
 #: printing.txt:26
 msgid "bjfilter: Canon Pixus iP2200 / iP4200 / iP6600D / iP7500 / MP500 Driver"
-msgstr ""
+msgstr "bjfilter: Canon Pixus iP2200 / iP4200 / iP6600D / iP7500 / MP500 Driver"
 
 # type: Plain text
 #: printing.txt:28
@@ -2773,9 +2759,9 @@ msgstr ""
 
 # type: Plain text
 #: printing.txt:29
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Epson"
-msgstr "=== Epson"
+msgstr "Epson"
 
 # type: Plain text
 #: printing.txt:33
@@ -2790,7 +2776,7 @@ msgstr ""
 
 # type: Plain text
 #: printing.txt:38
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "sudo service cups restart\n"
 "sudo service ekpd start\n"
@@ -2799,19 +2785,17 @@ msgstr ""
 "sudo service cups restart\n"
 "sudo service ekpd start\n"
 "sudo service ekpd add\n"
-"-------------------------\n"
 
 # type: Plain text
 #: printing.txt:41
-#, fuzzy
 msgid "Till now nobody confirmed that this package actually works."
-msgstr "NOTE: Indtil nu har ingen bekræftet at denne pakke faktisk fungerer."
+msgstr "Indtil nu har ingen bekræftet at denne pakke faktisk fungerer."
 
 # type: Plain text
 #: printing.txt:42
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Samsung"
-msgstr "=== Samsung"
+msgstr "Samsung"
 
 # type: Plain text
 #: printing.txt:46
@@ -2825,73 +2809,64 @@ msgstr ""
 
 # type: Plain text
 #: printing.txt:47
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Configuring the printer"
-msgstr "== At konfigurere printeren"
+msgstr "At konfigurere printeren"
 
 # type: Plain text
 #: printing.txt:51
-#, fuzzy
 msgid ""
 "Open your favorite Internet browser and go to http://localhost:631[http://"
 "localhost:631].  This is the Web interface of CUPS."
 msgstr ""
-"1. Åbn din favorit Internet browser og skriv http://localhost:631[http://"
-"localhost:631].\n"
-"Dette er Web interface for CUPS.\n"
+"Åbn din favorit Internet browser og skriv "
+"http://localhost:631[http://localhost:631]. Dette er Web interface for CUPS."
 
 # type: Plain text
 #: printing.txt:54
-#, fuzzy
 msgid ""
 "Select Administration from the top menu. If a username is required, type "
 "root, and give your root password."
 msgstr ""
-"2. Vælg Administration fra top menuen. Hvis et brugernavn er påkrævet,\n"
-"skriv root, og skriv dit root password.\n"
+"Vælg Administration fra top menuen. Hvis et brugernavn er påkrævet, skriv "
+"root, og skriv dit root password."
 
 # type: Plain text
 #: printing.txt:57
-#, fuzzy
 msgid ""
 "You can do almost everything here in connection with printing.  In our "
 "example, we will add a new local printer."
 msgstr ""
-"3. Du kan næsten gøre alt her i forbindelse med udskrivning.\n"
-"I vores eksempel, vil vi tilføje en ny lokal printer.\n"
+"Du kan næsten gøre alt her i forbindelse med udskrivning. I vores eksempel, "
+"vil vi tilføje en ny lokal printer."
 
 # type: Plain text
 #: printing.txt:60
-#, fuzzy
 msgid ""
 "Click Add Printer, type in a name and optionally fill the Location and "
 "Description lines, then click on continue."
 msgstr ""
-"4. Klik Add Printer, skriv et navn ind og udfyld valgfrit\n"
-"Lokalations og Beskrivelse linierne, klik herefter på fortsæt.\n"
+"Klik Add Printer, skriv et navn ind og udfyld valgfrit Lokalations og "
+"Beskrivelse linierne, klik herefter på fortsæt."
 
 # type: Plain text
 #: printing.txt:64
-#, fuzzy
 msgid ""
 "Select Device, in most cases it is Parallel Port #1 for older models and one "
 "of the USB ports for newer ones. I you have got a USB printer cups will "
 "write the printer name next to the proper port."
 msgstr ""
-"5. Vælg Device, i de fleste tilfælde er det Parallel Port #1 for ældre "
-"modeller\n"
-"og en USB port for nyere modeller. Hvis du har en USB printer vil cups\n"
-"skrive printernavnet nærmest den behørige port.\n"
+"Vælg Device, i de fleste tilfælde er det Parallel Port #1 for ældre modeller "
+"og en USB port for nyere modeller. Hvis du har en USB printer vil cups "
+"skrive printernavnet nærmest den behørige port."
 
 # type: Plain text
 #: printing.txt:66
-#, fuzzy
 msgid ""
 "On the next page, select your vendor and your printer type (the driver/"
 "filter)."
 msgstr ""
-"6. På den næste side, vælg dit frabrikat og din printertype (driver/"
-"filter).\n"
+"På den næste side, vælg dit frabrikat og din printertype (driver/filter)."
 
 # type: Plain text
 #: printing.txt:71
@@ -2915,9 +2890,9 @@ msgstr ""
 
 # type: Plain text
 #: printing.txt:75
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "My printer is not listed"
-msgstr "== Min printer er ikke oplistet"
+msgstr "Min printer er ikke oplistet"
 
 # type: Plain text
 #: printing.txt:82
@@ -2937,11 +2912,9 @@ msgstr ""
 
 # type: Plain text
 #: printing.txt:85
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# service cups restart\n"
-msgstr ""
-"# service cups restart\n"
-"----------------------\n"
+msgstr "# service cups restart\n"
 
 # type: Plain text
 #: printing.txt:92
