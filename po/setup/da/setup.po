@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-19 01:52+0200\n"
-"PO-Revision-Date: 2009-01-15 21:07+0200\n"
+"POT-Creation-Date: 2009-02-13 02:24+0100\n"
+"PO-Revision-Date: 2009-02-13 15:45+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -32,7 +32,7 @@ msgid "ftp://ftp5."
 msgstr "ftp://ftp5."
 
 #: ../src/plugins/configsource.c:102 ../src/plugins/dolangsh.c:58
-#: ../src/plugins/formatdisk.c:256 ../src/plugins/formatdisk.c:409
+#: ../src/plugins/formatdisk.c:257 ../src/plugins/formatdisk.c:412
 #: ../src/plugins/layout.c:146 ../src/plugins/loadsource.c:88
 #: ../src/plugins/select.c:334 ../src/util.c:305
 msgid "Could not open output file for writing"
@@ -52,7 +52,7 @@ msgid ""
 msgstr ""
 "Her kan du vælge en eller flere mirrors for hurtigere download af pakker"
 
-#: ../src/plugins/configsource.c:166 ../src/plugins/formatdisk.c:580
+#: ../src/plugins/configsource.c:166 ../src/plugins/formatdisk.c:583
 #: ../src/plugins/partdisk.c:197
 msgid "Continue"
 msgstr "Fortsæt"
@@ -109,7 +109,7 @@ msgid "Slow format that checks for bad blocks"
 msgstr "Langsom formatering som søger efter dårlige blokke på harddisken"
 
 #: ../src/plugins/formatdisk.c:177 ../src/plugins/formatdisk.c:201
-#: ../src/plugins/formatdisk.c:232
+#: ../src/plugins/formatdisk.c:233
 msgid "Formatting partitions"
 msgstr "Formaterer partitionerne"
 
@@ -137,50 +137,54 @@ msgid "Standard Linux ext2fs filesystem"
 msgstr "Standard Linux ext2fs filsystem"
 
 #: ../src/plugins/formatdisk.c:225
-msgid "Journalising version of the ext2fs filesystem"
+msgid "Journalising version of the ext2 filesystem"
 msgstr "Journalising version af ext2fs filesystem"
 
-#: ../src/plugins/formatdisk.c:227
+#: ../src/plugins/formatdisk.c:226
+msgid "The evolution of the ext3 filesystem (EXPERIMENTAL!)"
+msgstr "Udvikling af ext3-filsystem (EKSPERIMENTEL!)"
+
+#: ../src/plugins/formatdisk.c:228
 msgid "Hans Reiser's journalising filesystem"
 msgstr "Hans Reiser's journalising filesystem"
 
-#: ../src/plugins/formatdisk.c:229
+#: ../src/plugins/formatdisk.c:230
 msgid "SGI's journalising filesystem"
 msgstr "SGI's journalising filsystem"
 
-#: ../src/plugins/formatdisk.c:236
+#: ../src/plugins/formatdisk.c:237
 #, c-format
 msgid "Selecting filesystem for %s"
 msgstr "Vælg filsystem for %s"
 
-#: ../src/plugins/formatdisk.c:237
+#: ../src/plugins/formatdisk.c:238
 #, c-format
 msgid "Please select the type of filesystem to use for %s."
 msgstr "Vær venlig at vælge den type filsystem du vil anvende på %s"
 
-#: ../src/plugins/formatdisk.c:280 ../src/plugins/formatdisk.c:287
+#: ../src/plugins/formatdisk.c:281 ../src/plugins/formatdisk.c:288
 msgid "Formatting swap partition"
 msgstr "Formater swap partitionen"
 
-#: ../src/plugins/formatdisk.c:281
+#: ../src/plugins/formatdisk.c:282
 #, c-format
 msgid "Formatting %s as a swap partition"
 msgstr "Formater %s som en swap partition"
 
-#: ../src/plugins/formatdisk.c:288
+#: ../src/plugins/formatdisk.c:289
 #, c-format
 msgid "Formatting %s as a swap partition and checking for bad blocks"
 msgstr "Formater %s som en swap partition og check for dårlige blokke"
 
-#: ../src/plugins/formatdisk.c:312
+#: ../src/plugins/formatdisk.c:313
 msgid "Setting up the root partition"
 msgstr "Opsætning af root partitionen"
 
-#: ../src/plugins/formatdisk.c:314
+#: ../src/plugins/formatdisk.c:315
 msgid "Select the Linux installation partition"
 msgstr "Vælg installationspartition for dit linuxsystem"
 
-#: ../src/plugins/formatdisk.c:315
+#: ../src/plugins/formatdisk.c:316
 msgid ""
 "Please select a partition from the following list to use for your root (/) "
 "partition. The following ones are available:"
@@ -188,44 +192,44 @@ msgstr ""
 "Vær venlig at vælge en partition fra den følgende liste til brug for din "
 "root- partition (/). Følgende partitioner er tillgængelige:"
 
-#: ../src/plugins/formatdisk.c:328
+#: ../src/plugins/formatdisk.c:329
 msgid "Formatting"
 msgstr "Formaterer"
 
-#: ../src/plugins/formatdisk.c:329
+#: ../src/plugins/formatdisk.c:330
 #, c-format
 msgid "Creating %s filesystem on %s and checking for bad blocks"
 msgstr "Laver %s filsystem på %s og søger efter dårlige blokke"
 
-#: ../src/plugins/formatdisk.c:330
+#: ../src/plugins/formatdisk.c:331
 #, c-format
 msgid "Creating %s filesystem on %s"
 msgstr "Laver %s filesystem på %s"
 
-#: ../src/plugins/formatdisk.c:433
+#: ../src/plugins/formatdisk.c:436
 #, c-format
 msgid "Select mount point for %s"
 msgstr "Vælg monteringspunkt for %s"
 
-#: ../src/plugins/formatdisk.c:457 ../src/plugins/formatdisk.c:600
+#: ../src/plugins/formatdisk.c:460 ../src/plugins/formatdisk.c:603
 msgid "(in use)"
 msgstr "(i brug)"
 
-#: ../src/plugins/formatdisk.c:465
+#: ../src/plugins/formatdisk.c:468
 #, c-format
 msgid "%s on %s/\t%s"
 msgstr "%s på %s/\t%s"
 
 #. non-root partitions
-#: ../src/plugins/formatdisk.c:573
+#: ../src/plugins/formatdisk.c:576
 msgid "Selecting other partitions"
 msgstr "Vælg andre partitioner"
 
-#: ../src/plugins/formatdisk.c:584
+#: ../src/plugins/formatdisk.c:587
 msgid "Select other Linux partitions for /etc/fstab"
 msgstr "Vælg andre Linux partitioner for /etc/fstab"
 
-#: ../src/plugins/formatdisk.c:585
+#: ../src/plugins/formatdisk.c:588
 msgid ""
 "You may use your other partitions to distribute your Linux system across "
 "more than one partition. Currently, you have only mounted your / partition. "
@@ -517,9 +521,9 @@ msgid ""
 "can finish up the installation. Have you inserted the next disk?"
 msgstr ""
 "Vær venlig at indsætte den næste Frugalware installations CD/DVD og tryk "
-"ENTER for at fortsætte med installering af pakker. Hvis du ikke har flere "
-"CD/DVD, vælg NEJ, og du kan afslutte installationen. Har du isat den næste "
-"CD/DVD?"
+"ENTER for at fortsætte med installering af pakker. Hvis du ikke har flere CD/"
+"DVD, vælg NEJ, og du kan afslutte installationen. Har du isat den næste CD/"
+"DVD?"
 
 #: ../src/plugins/postconf.c:46
 msgid "Configuring the installed system"
@@ -600,8 +604,8 @@ msgid ""
 "now?"
 msgstr ""
 "Der findes ingen almindelig bruger på systenet endnu. Det anbefales kraftigt "
-"al lave en almindelig brugerkonto. Ønsker du at lave en almindelig bruger "
-"på systemet nu?"
+"al lave en almindelig brugerkonto. Ønsker du at lave en almindelig bruger på "
+"systemet nu?"
 
 #: ../src/plugins/postconf.c:230
 msgid "Post-install configuration"
