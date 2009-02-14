@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-02-14 01:42+0100\n"
-"PO-Revision-Date: 2009-02-14 18:39+0200\n"
+"PO-Revision-Date: 2009-02-14 20:01+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -6562,9 +6562,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:932
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "eAccelerator API:\n"
-msgstr "eAccelerator API:"
+msgstr "eAccelerator API:\n"
 
 # type: Plain text
 #: packages.txt:935
@@ -6732,68 +6732,63 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:993
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "eaccelerator_load($code)\n"
 "  loads script which was encoded by eaccelerator_encode()\n"
 msgstr ""
 "eaccelerator_load($code)\n"
 "  loader script som blev kodet af eaccelerator_encode()\n"
-"-------------------------------------------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:995
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "egroupware"
-msgstr "== egroupware"
+msgstr "egroupware"
 
 # type: Plain text
 #: packages.txt:1000
-#, fuzzy
 msgid ""
 "set up apache to access `/var/www/egroupware` from the web the way you like"
 msgstr ""
-"* opsætte apache til at tilgå `/var/www/egroupware` fra nettet på måden som "
-"du synes om;\n"
+"opsætte apache til at tilgå `/var/www/egroupware` fra nettet på måden som du "
+"synes om;"
 
 # type: Plain text
 #: packages.txt:1003
-#, fuzzy
 msgid ""
 "install and set up your favourite SQL database (mysql, postgresql or "
 "oracle), this package DOES NOT depend on any of them)"
 msgstr ""
-"* installere og opsætte din favorit SQL database (mysql postgresql eller\n"
-"  oracle), denne pakke afhænger IKKE af nogen af dem)\n"
+"installere og opsætte din favorit SQL database (mysql postgresql "
+"elleroracle), denne pakke afhænger IKKE af nogen af dem)"
 
 # type: Plain text
 #: packages.txt:1005
-#, fuzzy
 msgid "create and/or grant access to the database"
-msgstr "* skab og/eller giv tilladelse til at tilgå databasen\n"
+msgstr "skab og/eller giv tilladelse til at tilgå databasen"
 
 # type: Plain text
 #: packages.txt:1008
-#, fuzzy
 msgid ""
 "set up your eGroupware installation itself by entering the correct "
 "credentials at the install screen to be able to reach the above-mentioned "
 "database."
 msgstr ""
-"* opsæt din eGroupware installation ved at indføje de rigtige akkreditiver\n"
-"ved installationsskærmen for at kunne tilgå den ovennævnte database.\n"
+"opsæt din eGroupware installation ved at indføje de rigtige akkreditiver ved "
+"installationsskærmen for at kunne tilgå den ovennævnte database."
 
 # type: Plain text
 #: packages.txt:1009
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "ejabberd"
-msgstr "== ejabberd"
+msgstr "ejabberd"
 
 # type: Plain text
 #: packages.txt:1011
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Creating your SSL keys"
-msgstr "=== Skabe dine SSL-nøgler"
+msgstr "Skabe dine SSL-nøgler"
 
 # type: Plain text
 #: packages.txt:1014
@@ -6802,22 +6797,21 @@ msgstr "Generere Key Pair:"
 
 # type: Plain text
 #: packages.txt:1018
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "# cd /etc/jabberd\n"
 "# openssl req -new -x509 -newkey rsa:1024 -days 3650 -keyout privkey.pem -out server.pem\n"
 msgstr ""
 "# cd /etc/jabberd\n"
-"# openssl req -new -x509 -newkey rsa:1024 -days 3650 -keyout privkey.pem -out server.pem\n"
-"----\n"
+"# openssl req -new -x509 -newkey rsa:1024 -days 3650 -keyout privkey.pem "
+"-out server.pem\n"
 
 # type: Plain text
 #: packages.txt:1022
-#, fuzzy
 msgid ""
 "You should enter your domain name as the Common Name for your certificate."
 msgstr ""
-"NOTE: Du bør skrive din internetdomæne navn som almindligt navn for dit "
+"Du bør skrive din internetdomæne navn som almindligt navn for dit "
 "certifikat."
 
 # type: Plain text
@@ -6827,11 +6821,9 @@ msgstr "Fjerne pass parse:"
 
 # type: Plain text
 #: packages.txt:1027
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# openssl rsa -in privkey.pem -out privkey.pem\n"
-msgstr ""
-"# openssl rsa -in privkey.pem -out privkey.pem\n"
-"----\n"
+msgstr "# openssl rsa -in privkey.pem -out privkey.pem\n"
 
 # type: Plain text
 #: packages.txt:1030
@@ -6840,11 +6832,9 @@ msgstr "Kombiner Privat og Public Key:"
 
 # type: Plain text
 #: packages.txt:1033
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# cat privkey.pem >> server.pem\n"
-msgstr ""
-"# cat privkey.pem >> server.pem\n"
-"----\n"
+msgstr "# cat privkey.pem >> server.pem\n"
 
 # type: Plain text
 #: packages.txt:1036
@@ -6853,11 +6843,9 @@ msgstr "Slette Privat Key:"
 
 # type: Plain text
 #: packages.txt:1039
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# rm privkey.pem\n"
-msgstr ""
-"# rm privkey.pem\n"
-"----\n"
+msgstr "# rm privkey.pem\n"
 
 # type: Plain text
 #: packages.txt:1042
@@ -6866,14 +6854,13 @@ msgstr "Sætte tilladelser:"
 
 # type: Plain text
 #: packages.txt:1046
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "# chown root:ejabberd server.pem    \n"
 "# chmod 640 server.pem\n"
 msgstr ""
 "# chown root:ejabberd server.pem    \n"
 "# chmod 640 server.pem\n"
-"----\n"
 
 # type: Plain text
 #: packages.txt:1049
@@ -6882,25 +6869,23 @@ msgstr "Endeligt opdatering af konfigurationsfilen:"
 
 # type: Plain text
 #: packages.txt:1051
-#, fuzzy
 msgid "Change the `./ssl.pem` string to `/etc/ejabberd/server.pam`."
-msgstr "* Ændre `./ssl.pem` streng til `/etc/ejabberd/server.pam`.\n"
+msgstr "Ændre `./ssl.pem` streng til `/etc/ejabberd/server.pam`."
 
 # type: Plain text
 #: packages.txt:1054
-#, fuzzy
 msgid ""
 "Change `starttls` to `tls` in the `listen` section if you want to force "
 "users to use SSL."
 msgstr ""
-"* Ændre `starttls` til `tls` i `listen` afsnit hvis du vil tvinge brugere\n"
-"  til at bruge SSL.\n"
+"Ændre `starttls` til `tls` i `listen` afsnit hvis du vil tvinge brugere til "
+"at bruge SSL."
 
 # type: Plain text
 #: packages.txt:1055
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Creating an administrator"
-msgstr "=== Skabe en administrator"
+msgstr "Skabe en administrator"
 
 # type: Plain text
 #: packages.txt:1059
@@ -6918,14 +6903,13 @@ msgstr "Tilføj følgende linier til din config:"
 
 # type: Plain text
 #: packages.txt:1065
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "{acl, admins, {user, \"admin\", \"example.org\"}}.\n"
 "{access, configure, [{allow, admins}]}.\n"
 msgstr ""
 "{acl, admins, {user, \"admin\", \"example.org\"}}.\n"
 "{access, configure, [{allow, admins}]}.\n"
-"----\n"
 
 # type: Plain text
 #: packages.txt:1069
@@ -6938,9 +6922,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1070
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Testing"
-msgstr "=== Afprøvning"
+msgstr "Afprøvning"
 
 # type: Plain text
 #: packages.txt:1074
@@ -6953,14 +6937,13 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1078
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "# ejabberd\n"
 "-A INPUT -p tcp -m tcp --dport 5222 -j ACCEPT\n"
 msgstr ""
 "# ejabberd\n"
 "-A INPUT -p tcp -m tcp --dport 5222 -j ACCEPT\n"
-"----\n"
 
 # type: Plain text
 #: packages.txt:1083
@@ -6984,9 +6967,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1089
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "enemy-territory"
-msgstr "== enemy-territory"
+msgstr "enemy-territory"
 
 # type: Plain text
 #: packages.txt:1093
@@ -7009,9 +6992,9 @@ msgstr "Venligst"
 
 # type: Plain text
 #: packages.txt:1098
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "entrace"
-msgstr "== entrace"
+msgstr "entrace"
 
 # type: Plain text
 #: packages.txt:1103
@@ -7026,11 +7009,10 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1106
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# ecore_config -c /etc/entrance_config.cfg -k /entranced/xserver -s \"/usr/X11R6/bin/X -quiet -nolisten tcp vt7\"\n"
-msgstr ""
-"# ecore_config -c /etc/entrance_config.cfg -k /entranced/xserver -s \"/usr/X11R6/bin/X -quiet -nolisten tcp vt7\"\n"
-"---------------------------------------------------------------------------------------------------------------\n"
+msgstr "# ecore_config -c /etc/entrance_config.cfg -k /entranced/xserver -s "
+"\"/usr/X11R6/bin/X -quiet -nolisten tcp vt7\"\n"
 
 # type: Plain text
 #: packages.txt:1109
@@ -7039,9 +7021,9 @@ msgstr "I dette eksempel vil du køre entrance på vt7."
 
 # type: Plain text
 #: packages.txt:1110
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "festival"
-msgstr "== festival"
+msgstr "festival"
 
 # type: Plain text
 #: packages.txt:1113
@@ -7050,54 +7032,48 @@ msgstr "For at teste festival, prøv:"
 
 # type: Plain text
 #: packages.txt:1116
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "$ echo \"Frugalware can speak\" | festival --tts\n"
-msgstr ""
-"$ echo \"Frugalware can speak\" | festival --tts\n"
-"--------------------------------------------\n"
+msgstr "$ echo \"Frugalware can speak\" | festival --tts\n"
 
 # type: Plain text
 #: packages.txt:1119
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "To test it with kttsd:\n"
-msgstr "For at teste det med kttsd: ~~~~~~~~~~~~~~~~~~~~~~"
+msgstr "For at teste det med kttsd:\n"
 
 # type: Plain text
 #: packages.txt:1122
 msgid "Start KTTSD (if not already running): `kttsd`"
-msgstr ""
+msgstr "Start KTTSD (hvis det ikke allerede kører): `kttsd`"
 
 # type: Plain text
 #: packages.txt:1123
 msgid "Send \"Frugalware can speak\" to KTTSD for speaking in English:"
-msgstr ""
+msgstr "Send \"Frugalware can speak\" til KTTSD for at tale på engelsk:"
 
 # type: Plain text
 #: packages.txt:1126
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "$ dcop kttsd KSpeech setText \"Frugalware can speak\" \"en\"\n"
-msgstr ""
-"$ dcop kttsd KSpeech setText \"Frugalware can speak\" \"en\"\n"
-"------------------------------------------------------\n"
+msgstr "$ dcop kttsd KSpeech setText \"Frugalware can speak\" \"en\"\n"
 
 # type: Plain text
 #: packages.txt:1128
 msgid "Speak the text:"
-msgstr ""
+msgstr "Tal teksten:"
 
 # type: Plain text
 #: packages.txt:1131
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "$ dcop kttsd KSpeech startText 0\n"
-msgstr ""
-"$ dcop kttsd KSpeech startText 0\n"
-"------------------------------\n"
+msgstr "$ dcop kttsd KSpeech startText 0\n"
 
 # type: Plain text
 #: packages.txt:1133
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "fglrx"
-msgstr "== fglrx"
+msgstr "fglrx"
 
 # type: Plain text
 #: packages.txt:1137
@@ -7110,11 +7086,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1140
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "tmpfs /dev/shm  tmpfs   defaults     0  0\n"
-msgstr ""
-"tmpfs /dev/shm  tmpfs   defaults     0  0\n"
-"-----------------------------------------\n"
+msgstr "tmpfs /dev/shm  tmpfs   defaults     0  0\n"
 
 # type: Plain text
 #: packages.txt:1144
@@ -7127,11 +7101,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1147
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Option \"VideoOverlay\" \"on\"\n"
-msgstr ""
-"Option \"VideoOverlay\" \"on\"\n"
-"--------------------------\n"
+msgstr "Option \"VideoOverlay\" \"on\"\n"
 
 # type: Plain text
 #: packages.txt:1152
@@ -7145,9 +7117,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1153
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "firestarter"
-msgstr "== firestarter"
+msgstr "firestarter"
 
 # type: Plain text
 #: packages.txt:1158
@@ -7167,14 +7139,13 @@ msgstr "For at tilfæje det til opstart, kør dette:"
 
 # type: Plain text
 #: packages.txt:1164
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "# chkconfig --del rc.firewall\n"
 "# chkconfig --add rc.firestarter\n"
 msgstr ""
 "# chkconfig --del rc.firewall\n"
 "# chkconfig --add rc.firestarter\n"
-"--------------------------------\n"
 
 # type: Plain text
 #: packages.txt:1167
@@ -7183,20 +7154,19 @@ msgstr "For at fjerne det fra opstart:"
 
 # type: Plain text
 #: packages.txt:1171
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "# chkconfig --del rc.firestarter\n"
 "# chkconfig --add rc.firewall\n"
 msgstr ""
 "# chkconfig --del rc.firestarter\n"
 "# chkconfig --add rc.firewall\n"
-"--------------------------------\n"
 
 # type: Plain text
 #: packages.txt:1173
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "flowplayer"
-msgstr "== flowplayer"
+msgstr "flowplayer"
 
 # type: Plain text
 #: packages.txt:1179
@@ -7212,9 +7182,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1182
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "foo2zjs"
-msgstr "== foo2zjs"
+msgstr "foo2zjs"
 
 # type: Plain text
 #: packages.txt:1188
@@ -7233,158 +7203,115 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1189
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "freenx"
-msgstr "== freenx"
+msgstr "freenx"
 
 # type: Plain text
 #: packages.txt:1194
 msgid "On the server:"
-msgstr ""
+msgstr "På serveren:"
 
 # type: Plain text
 #: packages.txt:1197
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# pacman-g2 -S freenx\n"
-msgstr ""
-"# pacman-g2 -S freenx\n"
-"---------------------\n"
+msgstr "# pacman-g2 -S freenx\n"
 
 # type: Plain text
 #: packages.txt:1200
 msgid "On the client:"
-msgstr ""
+msgstr "På klienten:"
 
 # type: Plain text
 #: packages.txt:1203
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# pacman-g2 -S knx\n"
-msgstr ""
-"# pacman-g2 -R gpm kernel\n"
-"----\n"
+msgstr "# pacman-g2 -S knx\n"
 
 # type: Plain text
 #: packages.txt:1208
-#, fuzzy
 msgid "On the server setup a fake password for the nx user:"
-msgstr ""
-"2. Konfiguration\n"
-"+\n"
-"Opsæt et falskt kodeord på severen for nx brugeren:\n"
-"+\n"
-"-----------\n"
+msgstr "På serveren opsæt et falsk kodeord for nx brugeren:"
 
 # type: Plain text
 #: packages.txt:1211
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# passwd nx\n"
-msgstr ""
-"# passwd nx\n"
-"-----------\n"
+msgstr "# passwd nx\n"
 
 # type: Plain text
 #: packages.txt:1216
-#, fuzzy
 msgid ""
 "Now allow the client to connect to the server by copying the file '/usr/NX/"
 "home/nx/id_dsa' from the server to '/usr/share/knx/client.id_dsa.key' on the "
 "client. Also make sure about it's readable by users:"
 msgstr ""
-"+\n"
-"Tillad nu klienten at forbinde til serveren ved at kopiere filen\n"
-"'/usr/NX/home/nx/id_dsa' fra serveren til '/usr/share/knx/client.id_dsa."
-"key'\n"
-"på klienten. Sikr dig også at den er læsbar for brugere:\n"
-"+\n"
-"--------------------------------------------\n"
+"Tillad nu klienten at forbinde til serveren ved at kopiere filen "
+"'/usr/NX/home/nx/id_dsa' fra serveren til '/usr/share/knx/client.id_dsa.key' "
+"på klienten. Sikr dig også at den er læsbar for brugere:"
 
 # type: Plain text
 #: packages.txt:1219
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# chmod 644 /usr/share/knx/client.id_dsa.key\n"
-msgstr ""
-"# chmod 644 /usr/share/knx/client.id_dsa.key\n"
-"--------------------------------------------\n"
+msgstr "# chmod 644 /usr/share/knx/client.id_dsa.key\n"
 
 # type: Plain text
 #: packages.txt:1223
-#, fuzzy
 msgid ""
 "Also don't forget to allow incoming ssh connections (by default port 22) in "
 "'/etc/sysconfig/firwall', then load the config with the"
 msgstr ""
-"+\n"
 "Og glem ikke at tillade indgående ssh forbindelser (normalt standard port "
-"22) i\n"
-"'/etc/sysconfig/firwall', derefter load config med\n"
-"+\n"
-"--------------------------\n"
+"22) i '/etc/sysconfig/firwall', derefter load config med"
 
 # type: Plain text
 #: packages.txt:1231
 msgid "Users"
-msgstr ""
+msgstr "Brugere"
 
 # type: Plain text
 #: packages.txt:1234
-#, fuzzy
 msgid ""
 "By default shell accounts are not allowed to connect to th nx server, you "
 "can allow a user to do so by"
 msgstr ""
-"3. Brugere\n"
-"+\n"
-"har shell kontoer ikke tilladelse at forbinde til nx serveren, du kan\n"
-"tillade en bruger at gøre det med\n"
-"+\n"
-"-------------------------------\n"
+"Som standard har shell kontoer ikke tilladelse at forbinde til nx serveren, "
+"du kan tillade en bruger at gøre det med"
 
 # type: Plain text
 #: packages.txt:1237
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# nxserver --adduser <username>\n"
-msgstr ""
-"# nxserver --adduser <brugernavn>\n"
-"-------------------------------\n"
+msgstr "# nxserver --adduser <brugernavn>\n"
 
 # type: Plain text
 #: packages.txt:1240
-#, fuzzy
 msgid "then set a separate (for nx) password for the user:"
-msgstr ""
-"+\n"
-"derefter sæt et særskilt kodeord (for nx) brugeren:\n"
-"+\n"
-"------------------------------\n"
+msgstr "derefter sæt et særskilt kodeord (for nx) brugeren:"
 
 # type: Plain text
 #: packages.txt:1243
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# nxserver --passwd <username>\n"
-msgstr ""
-"# nxserver --passwd <brugernavn>\n"
-"------------------------------\n"
+msgstr "# nxserver --passwd <brugernavn>\n"
 
 # type: Plain text
 #: packages.txt:1246
-#, fuzzy
 msgid "The client"
-msgstr "== ddclient"
+msgstr "Klienten"
 
 # type: Plain text
 #: packages.txt:1248
-#, fuzzy
 msgid "Now start knx, the usage of that application is self-explaining."
-msgstr ""
-"4. Klienten\n"
-"+\n"
-"Start nu knx, brugen af denne applikation er selvforklarende.\n"
+msgstr "Start nu knx, brug af denne applikation er selvforklarende."
 
 # type: Plain text
 #: packages.txt:1249
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "fudforum"
-msgstr "== fudforum"
+msgstr "fudforum"
 
 # type: Plain text
 #: packages.txt:1253
@@ -7397,9 +7324,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1254
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "fuse"
-msgstr "== fuse"
+msgstr "fuse"
 
 # type: Plain text
 #: packages.txt:1263
@@ -7423,11 +7350,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1266
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# pacman-g2 -S fuse\n"
-msgstr ""
-"# pacman-g2 -S vim-spell-xx\n"
-"----\n"
+msgstr "# pacman-g2 -S fuse\n"
 
 # type: Plain text
 #: packages.txt:1270
@@ -7440,14 +7365,13 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1274
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "# service fuse add\n"
 "# service fuse start\n"
 msgstr ""
 "# service fuse add\n"
 "# service fuse start\n"
-"------------------\n"
 
 # type: Plain text
 #: packages.txt:1279
@@ -7462,11 +7386,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1282
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "$ pacman-g2 -Ss fuse\n"
-msgstr ""
-"$ pacman-g2 -Ss fuse\n"
-"---------------\n"
+msgstr "$ pacman-g2 -Ss fuse\n"
 
 # type: Plain text
 #: packages.txt:1288
@@ -7483,11 +7405,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1291
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# pacman-g2 -S fuseftp sshfs-fuse\n"
-msgstr ""
-"# pacman-g2 -S fuseftp sshfs-fuse\n"
-"----------------------------\n"
+msgstr "# pacman-g2 -S fuseftp sshfs-fuse\n"
 
 # type: Plain text
 #: packages.txt:1294
@@ -7499,11 +7419,10 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1297
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "$ /sbin/mount.fuse  sshfs#YOURUSERNAME@SERVER:/REMOTEDIR /LOCALDIR -o rw,OTHEROPTIONS\n"
-msgstr ""
-"$ /sbin/mount.fuse  sshfs#DIRBRUGERNAVN@SERVER:/REMOTEDIR /LOCALDIR -o rw,ANDREINDSTILLINGER\n"
-"-----------------------------------------------------------------------------------\n"
+msgstr "$ /sbin/mount.fuse  sshfs#DITBRUGERNAVN@SERVER:/REMOTEDIR /LOCALDIR -o "
+"rw,ANDREINDSTILLINGER\n"
 
 # type: Plain text
 #: packages.txt:1300
@@ -7512,17 +7431,15 @@ msgstr "Du kan også unmounte det som regulær bruger med :"
 
 # type: Plain text
 #: packages.txt:1303
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "$ fusermount -u /LOCALDIR \n"
-msgstr ""
-"$ fusermount -u /LOCALDIR \n"
-"-----------------------\n"
+msgstr "$ fusermount -u /LOCALDIR \n"
 
 # type: Plain text
 #: packages.txt:1305
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "gammu"
-msgstr "== gammu"
+msgstr "gammu"
 
 # type: Plain text
 #: packages.txt:1310
@@ -7531,7 +7448,7 @@ msgstr "Du er nødt til at skabe din ~/.gammurc:"
 
 # type: Plain text
 #: packages.txt:1315
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "[gammu]\n"
 "port = /dev/ttyUSB0\n"
@@ -7540,7 +7457,6 @@ msgstr ""
 "[gammu]\n"
 "port = /dev/ttyUSB0\n"
 "connection = fbus\n"
-"----\n"
 
 # type: Plain text
 #: packages.txt:1320
@@ -7560,11 +7476,9 @@ msgstr "Når du tror du er færdig, tjek så dit setup:"
 
 # type: Plain text
 #: packages.txt:1325
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "$ gnokii --identify\n"
-msgstr ""
-"$ gnokii --identify\n"
-"----\n"
+msgstr "$ gnokii --identify\n"
 
 # type: Plain text
 #: packages.txt:1329
@@ -7577,9 +7491,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1330
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Creating a backup"
-msgstr "=== Skabe en backup"
+msgstr "Skabe en backup"
 
 # type: Plain text
 #: packages.txt:1333
@@ -7594,37 +7508,25 @@ msgstr "Dette involverer to trin:"
 
 # type: Plain text
 #: packages.txt:1337
-#, fuzzy
 msgid "Backing up your SMSes"
-msgstr ""
-"* Backup af dine SMSes\n"
-"+\n"
-"----\n"
+msgstr "Backup af dine SMSes"
 
 # type: Plain text
 #: packages.txt:1340
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "$ gammu --backupsms backupsms.txt\n"
-msgstr ""
-"$ gammu --backupsms backupsms.txt\n"
-"----\n"
+msgstr "$ gammu --backupsms backupsms.txt\n"
 
 # type: Plain text
 #: packages.txt:1343
-#, fuzzy
 msgid "The rest of your phone."
-msgstr ""
-"* Resten af din telefon.\n"
-"+\n"
-"----\n"
+msgstr "Resten af din telefon."
 
 # type: Plain text
 #: packages.txt:1346
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "$ gammu --backup backup.txt\n"
-msgstr ""
-"$ gammu --backup backup.txt\n"
-"----\n"
+msgstr "$ gammu --backup backup.txt\n"
 
 # type: Plain text
 #: packages.txt:1349
@@ -7633,11 +7535,9 @@ msgstr "Du kan finde et alternativt format mere menneske-læseligt for SMSes:"
 
 # type: Plain text
 #: packages.txt:1352
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "$ gammu --geteachsms > eachsms.txt\n"
-msgstr ""
-"$ gammu --geteachsms > eachsms.txt\n"
-"----\n"
+msgstr "$ gammu --geteachsms > eachsms.txt\n"
 
 # type: Plain text
 #: packages.txt:1355
@@ -7646,15 +7546,15 @@ msgstr "Se manuel siden for flere kneb!"
 
 # type: Plain text
 #: packages.txt:1358
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "gcc"
-msgstr "== gcc"
+msgstr "gcc"
 
 # type: Plain text
 #: packages.txt:1360
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "libstdc++"
-msgstr "=== libstdc++"
+msgstr "libstdc++"
 
 # type: Plain text
 #: packages.txt:1363
@@ -7676,9 +7576,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1367
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "gcjwebplugin"
-msgstr "=== gcjwebplugin"
+msgstr "gcjwebplugin"
 
 # type: Plain text
 #: packages.txt:1372
@@ -7716,43 +7616,38 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1385
-#, fuzzy
 msgid ""
 "http and DNS can be spoofed meaning that the URL named in the warning dialog "
 "cannot be trusted"
 msgstr ""
-"- http og DNS kan blive spoofed det betyder at URL navnet i\n"
-"  advarselsdialog kan man ikke stole på\n"
+"http og DNS kan blive spoofed det betyder at URL navnet i advarselsdialog "
+"kan man ikke stole på"
 
 # type: Plain text
 #: packages.txt:1390
-#, fuzzy
 msgid ""
 "someone could create a browser denial-of-service attack by creating a page "
 "with hundreds of applet tags, causing gcjwebplugin to create warning dialog "
 "after warning dialog.  The browser would have to be closed to eliminate the "
 "latest dialog"
 msgstr ""
-"- nogen kunne skabe en browser denial-of-service attack ved at skabe en\n"
-"  side med hundreder af applet tags, som gør at gcjwebplugin skaber\n"
-"  advarer dialog efter advare dialog.  Browseren ville være nødt til at "
-"blive\n"
-"  lukket for at eliminere den sidste dialog\n"
+"nogen kunne skabe en browser denial-of-service attack ved at skabe en side "
+"med hundreder af applet tags, som gør at gcjwebplugin skaber advarel dialog "
+"efter advare dialog. Browseren ville være nødt til at blive lukket for at "
+"eliminere den sidste dialog"
 
 # type: Plain text
 #: packages.txt:1395
-#, fuzzy
 msgid ""
 "the whitelist is provided as a convenience, but it is unsafe because a "
 "domain may change hands from a trusted owner to an untrusted owner.  If that "
 "domain is in the whitelist then the warning dialog will not appear when "
 "loading the new malicious applet."
 msgstr ""
-"- hvid-listen bliver stillet til rådighed som en bekvemmelighed, men det er "
-"usikkert fordi et\n"
-"  domæne kan ændre hænder fra en betroet ejer til en ubetroet ejer.\n"
-"  Hvis domænet er på hvid-listen så vil ingen advarsel dialog\n"
-"  dukke op når man loader den nye ondsindede applet.\n"
+"hvid-listen bliver stillet til rådighed som en bekvemmelighed, men det er "
+"usikkert fordi et domæne kan ændre hænder fra en betroet ejer til en "
+"ubetroet ejer. Hvis domænet er på hvid-listen så vil ingen advarsel dialog "
+"dukke op når man loader den nye ondsindede applet."
 
 # type: Plain text
 #: packages.txt:1401
@@ -7799,11 +7694,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1415
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "ln -s /usr/lib/gcj-*/libgcjwebplugin.so ~/.mozilla/plugins/\n"
-msgstr ""
-"ln -s /usr/lib/gcj-*/libgcjwebplugin.so ~/.mozilla/plugins/\n"
-"-----------------------------------------------------------\n"
+msgstr "ln -s /usr/lib/gcj-*/libgcjwebplugin.so ~/.mozilla/plugins/\n"
 
 # type: Plain text
 #: packages.txt:1419
@@ -7816,11 +7709,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1422
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "$ firefox -g\n"
-msgstr ""
-"$ firefox -g\n"
-"------------\n"
+msgstr "$ firefox -g\n"
 
 # type: Plain text
 #: packages.txt:1425
@@ -7829,23 +7720,21 @@ msgstr "derefter ved GDB-prompten, tast"
 
 # type: Plain text
 #: packages.txt:1428
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "(gdb) run\n"
-msgstr ""
-"(gdb) run\n"
-"------------\n"
+msgstr "(gdb) run\n"
 
 # type: Plain text
 #: packages.txt:1430
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "git"
-msgstr "== git"
+msgstr "git"
 
 # type: Plain text
 #: packages.txt:1432
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "gitweb"
-msgstr "=== gitweb"
+msgstr "gitweb"
 
 # type: Plain text
 #: packages.txt:1435
@@ -7856,32 +7745,29 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1437
-#, fuzzy
 msgid "install the `gitweb` package"
-msgstr "Installer først de nødvendige pakker:"
+msgstr "Installer `gitweb` pakken"
 
 # type: Plain text
 #: packages.txt:1439
-#, fuzzy
 msgid ""
 "edit `/etc/gitweb.conf` so that `$projectroot` will point to the repository "
 "directory"
 msgstr ""
-"* installer `gitweb` pakken\n"
-"* rediger `/etc/gitweb.conf` således at `$projectroot` vil pege på\n"
-"  arkiv directory\n"
-"* genstart `apache` således at `gitweb` konfiguration vil blive inkluderet.\n"
+"rediger `/etc/gitweb.conf` således at `$projectroot` vil pege på arkiv "
+"directory"
 
 # type: Plain text
 #: packages.txt:1440
 msgid "restart `apache` so that the `gitweb` configuration will be included."
 msgstr ""
+"genstart `apache` således at `gitweb` konfiguration vil blive inkluderet."
 
 # type: Plain text
 #: packages.txt:1441
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "gnome-applets"
-msgstr "== gnome-applets"
+msgstr "gnome-applets"
 
 # type: Plain text
 #: packages.txt:1446
@@ -7896,9 +7782,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1447
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "help2man"
-msgstr "== help2man"
+msgstr "help2man"
 
 # type: Plain text
 #: packages.txt:1450
@@ -7907,17 +7793,16 @@ msgstr "Den mest almene brug af denne applikation er sådan noget som dette:"
 
 # type: Plain text
 #: packages.txt:1453
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "$ help2man -n \"<oneliner description>\" -S Frugalware -N ./<binary> |sed 's/\\\\(co/(c)/' ><binary>.1\n"
-msgstr ""
-"$ help2man -n \"<oneliner description>\" -S Frugalware -N ./<binary> |sed 's/\\\\(co/(c)/' ><binary>.1\n"
-"----\n"
+msgstr "$ help2man -n \"<oneliner description>\" -S Frugalware -N ./<binary> |sed "
+"'s/\\\\(co/(c)/' ><binary>.1\n"
 
 # type: Plain text
 #: packages.txt:1455
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "horde-webmail"
-msgstr "== horde-webmail"
+msgstr "horde-webmail"
 
 # type: Plain text
 #: packages.txt:1461
@@ -7946,9 +7831,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1466
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "httpircproxy"
-msgstr "== httpircproxy"
+msgstr "httpircproxy"
 
 # type: Plain text
 #: packages.txt:1469
@@ -7965,14 +7850,13 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1475
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "# httpircproxy\n"
 "-A INPUT -p tcp -m tcp --dport 8080 -j ACCEPT\n"
 msgstr ""
-"# ejabberd\n"
-"-A INPUT -p tcp -m tcp --dport 5222 -j ACCEPT\n"
-"----\n"
+"# httpircproxy\n"
+"-A INPUT -p tcp -m tcp --dport 8080 -j ACCEPT\n"
 
 # type: Plain text
 #: packages.txt:1478 packages.txt:1923
@@ -7981,9 +7865,9 @@ msgstr "for eksempel efter MySQLs postering."
 
 # type: Plain text
 #: packages.txt:1479
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "hylafax"
-msgstr "== hylafax"
+msgstr "hylafax"
 
 # type: Plain text
 #: packages.txt:1482
@@ -8047,9 +7931,9 @@ msgstr "Nyd det!"
 
 # type: Plain text
 #: packages.txt:1502
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "icewm"
-msgstr "== icewm"
+msgstr "icewm"
 
 # type: Plain text
 #: packages.txt:1512
@@ -8074,9 +7958,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1513
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "joomla"
-msgstr "== joomla"
+msgstr "joomla"
 
 # type: Plain text
 #: packages.txt:1517
@@ -8089,9 +7973,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1518
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "k3b"
-msgstr "== k3b"
+msgstr "k3b"
 
 # type: Plain text
 #: packages.txt:1521
@@ -8100,9 +7984,9 @@ msgstr "Hvis du ønsker at rippe en video DVD, installer transcode pakken også.
 
 # type: Plain text
 #: packages.txt:1522
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "kbstick"
-msgstr "== kbstick"
+msgstr "kbstick"
 
 # type: Plain text
 #: packages.txt:1533
@@ -8131,18 +8015,17 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1534
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "kexec-tools"
-msgstr "== kexec-tools"
+msgstr "kexec-tools"
 
 # type: Plain text
 #: packages.txt:1537
-#, fuzzy
 msgid ""
 "kexec works just like 'reboot', so please save your data before using it!"
 msgstr ""
-"ADVARSEL: kexec virker lige som 'reboot', så venligst, gem dine data før du "
-"bruger det!"
+"kexec virker lige som 'reboot', så venligst, gem dine data før du bruger "
+"det!"
 
 # type: Plain text
 #: packages.txt:1539
@@ -8151,9 +8034,10 @@ msgstr "Loading af den nye kerne:"
 
 # type: Plain text
 #: packages.txt:1542
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# kexec -l /boot/vmlinuz-2.6.18-fw1 --append=\"ro root=/dev/hda3 quiet vga=792 resume=/dev/hda2\"\n"
-msgstr "`kernel (hd0,2)/boot/vmlinuz ro root=/dev/hda3 quiet vga=788 resume=/dev/hda2`"
+msgstr "# kexec -l /boot/vmlinuz-2.6.18-fw1 --append=\"ro root=/dev/hda3 quiet "
+"vga=792 resume=/dev/hda2\"\n"
 
 # type: Plain text
 #: packages.txt:1545
@@ -8162,17 +8046,15 @@ msgstr "Boote den:"
 
 # type: Plain text
 #: packages.txt:1548
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# kexec -e\n"
-msgstr ""
-"# kexec -e\n"
-"----------\n"
+msgstr "# kexec -e\n"
 
 # type: Plain text
 #: packages.txt:1550
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "keytouch"
-msgstr "== keytouch"
+msgstr "keytouch"
 
 # type: Plain text
 #: packages.txt:1554
@@ -8185,9 +8067,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1557
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# service keytouch start\n"
-msgstr "== Før du starter"
+msgstr "# service keytouch start\n"
 
 # type: Plain text
 #: packages.txt:1560
@@ -8198,11 +8080,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1563
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# service keytouch add\n"
 msgstr ""
-"# service keytouch add\n"
-"-----------------------------\n"
 
 # type: Plain text
 #: packages.txt:1571
@@ -8223,9 +8103,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1572
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "kiax"
-msgstr "== kiax"
+msgstr "kiax"
 
 # type: Plain text
 #: packages.txt:1576
@@ -8255,9 +8135,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1583
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "knb"
-msgstr "== knb"
+msgstr "knb"
 
 # type: Plain text
 #: packages.txt:1586
@@ -8266,7 +8146,7 @@ msgstr "For at kunne bruge knb, behøver du en config fil som dette:"
 
 # type: Plain text
 #: packages.txt:1593
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "nick idlenick\n"
 "realname Knb\n"
@@ -8279,7 +8159,6 @@ msgstr ""
 "nicks keepnick\n"
 "server irc.server.com 6667\n"
 "channel #channel\n"
-"----\n"
 
 # type: Plain text
 #: packages.txt:1597
@@ -8301,11 +8180,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1603
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "!new nick!ident@host\n"
-msgstr ""
-"!new nick!ident@host\n"
-"----\n"
+msgstr "!new nick!ident@host\n"
 
 # type: Plain text
 #: packages.txt:1606
@@ -8322,11 +8199,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1611
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "!n -yes idlenick\n"
-msgstr ""
-"!n -yes idlenick\n"
-"----\n"
+msgstr "!n -yes idlenick\n"
 
 # type: Plain text
 #: packages.txt:1615
@@ -8347,9 +8222,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1619
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "kqemu"
-msgstr "== kqemu"
+msgstr "kqemu"
 
 # type: Plain text
 #: packages.txt:1625
@@ -8367,17 +8242,16 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1628
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "tmpfs            /dev/shm         tmpfs       defaults,size=144m         0   0\n"
-msgstr ""
-"tmpfs            /dev/shm         tmpfs       defaults,size=144m         0   0\n"
-"----\n"
+msgstr "tmpfs            /dev/shm         tmpfs       defaults,size=144m         0 "
+"  0\n"
 
 # type: Plain text
 #: packages.txt:1632
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "kvpnc"
-msgstr "== kvpnc"
+msgstr "kvpnc"
 
 # type: Plain text
 #: packages.txt:1635
@@ -8386,55 +8260,50 @@ msgstr "Howto opsætning for KVpnc for brug uden root password - sudo"
 
 # type: Plain text
 #: packages.txt:1637
-#, fuzzy
 msgid "Install sudo"
-msgstr "1. Installer sudo\n"
+msgstr "Installer sudo"
 
 # type: Plain text
 #: packages.txt:1639
-#, fuzzy
 msgid "Edit '/etc/sudoers': add an command alias"
-msgstr ""
-"2. Rediger '/etc/sudoers': tilføj en komando alias\n"
-"+\n"
-"---------------------------------\n"
+msgstr "Rediger '/etc/sudoers': tilføj en komando alias"
 
 # type: Plain text
 #: packages.txt:1643
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "# Cmnd alias specification\n"
 "Cmnd_Alias KVPNC = /usr/bin/kvpnc\n"
-msgstr "# Cmnd alias specification Cmnd_Alias KVPNC = /usr/bin/kvpnc"
+msgstr ""
+"# Cmnd alias specification\n"
+"Cmnd_Alias KVPNC = /usr/bin/kvpnc\n"
 
 # type: Plain text
 #: packages.txt:1646
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "# User privilege specification\n"
 "ALL ALL=NOPASSWD:KVPNC\n"
 msgstr ""
 "# User privilege specification\n"
 "ALL ALL=NOPASSWD:KVPNC\n"
-"---------------------------------\n"
 
 # type: Plain text
 #: packages.txt:1649
-#, fuzzy
 msgid "Do it gently! (As always, when you edit '/etc/sudoers'.)"
-msgstr "ADVARSEL: Gør det blidt! (Som altid, når du redigerer '/etc/sudoers'.)"
+msgstr "Gør det blidt! (Som altid, når du redigerer '/etc/sudoers'.)"
 
 # type: Plain text
 #: packages.txt:1650
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "lastfmsubmitd"
-msgstr "== lastfmsubmitd"
+msgstr "lastfmsubmitd"
 
 # type: Plain text
 #: packages.txt:1652
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Configuring Lastfmsubmitd"
-msgstr "=== Konfigurering af Lastfmsubmitd"
+msgstr "Konfigurering af Lastfmsubmitd"
 
 # type: Plain text
 #: packages.txt:1657
@@ -8448,9 +8317,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1658
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Starting the daemon(s)"
-msgstr "=== Start af daemon(s)"
+msgstr "Start af daemon(s)"
 
 # type: Plain text
 #: packages.txt:1662
@@ -8463,20 +8332,19 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1666
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "# service lastfmsubmitd start\n"
 "# service lastmp start\n"
 msgstr ""
 "# service lastfmsubmitd start\n"
 "# service lastmp start\n"
-"-----------------------------\n"
 
 # type: Plain text
 #: packages.txt:1668
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "lilo"
-msgstr "== lilo"
+msgstr "lilo"
 
 # type: Plain text
 #: packages.txt:1673
@@ -8491,29 +8359,25 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1675
-#, fuzzy
 msgid "`lilo` must be rerun every time you upgrade the kernel"
-msgstr ". `lilo` skal genkøres hver gang du opgraderer kernen"
+msgstr "`lilo` skal genkøres hver gang du opgraderer kernen"
 
 # type: Plain text
 #: packages.txt:1677
-#, fuzzy
 msgid ""
 "`lilo` must also be rerun if you change configuration for it to take effect"
 msgstr ""
-". `lilo` skal også genkøres hvis du ændrer konfiguration for at det kan "
-"træde i kraft"
+"`lilo` skal også genkøres hvis du ændrer konfiguration for at det kan træde "
+"i kraft"
 
 # type: Plain text
 #: packages.txt:1680
-#, fuzzy
 msgid ""
 "only `lilo` or grub can be installed to your boot sector at the same time, "
 "however they do not conflict while simply residing on your system"
 msgstr ""
-". kun `lilo` eller grub kan installeres på din boot sector på samme\n"
-"  tid, men hvor om alt er, så konflikter de ikke selvom de begge 2 er på dit "
-"system\n"
+"kun `lilo` eller grub kan installeres på din boot sector på samme tid, men "
+"hvor om alt er, så konflikter de ikke selvom de begge 2 er på dit system"
 
 # type: Plain text
 #: packages.txt:1686
