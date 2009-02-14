@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-02-14 01:42+0100\n"
-"PO-Revision-Date: 2009-02-14 20:01+0200\n"
+"PO-Revision-Date: 2009-02-14 20:37+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -8082,7 +8082,7 @@ msgstr ""
 #: packages.txt:1563
 #, no-wrap
 msgid "# service keytouch add\n"
-msgstr ""
+msgstr "# service keytouch add\n"
 
 # type: Plain text
 #: packages.txt:1571
@@ -8396,9 +8396,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1689
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "lineakd"
-msgstr "== lineakd"
+msgstr "lineakd"
 
 # type: Plain text
 #: packages.txt:1693
@@ -8431,15 +8431,15 @@ msgstr "Du kan så starte lineak daemon ved at køre følgende komando:"
 
 # type: Plain text
 #: packages.txt:1703
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "$ lineakd\n"
-msgstr "== lineakd"
+msgstr "$ lineakd\n"
 
 # type: Plain text
 #: packages.txt:1705
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "lirc"
-msgstr "== lirc"
+msgstr "lirc"
 
 # type: Plain text
 #: packages.txt:1708
@@ -8448,72 +8448,58 @@ msgstr "Efter installation af lirc er du nødt til at tage følgende skridt:"
 
 # type: Plain text
 #: packages.txt:1712
-#, fuzzy
 msgid ""
 "Find a lird.conf for your remote control on http://lirc.sourceforge.net/"
 "remotes/[remotes] You can also take a look on '/usr/share/remotes' directory "
 "if you do not have an internet connection.  If you do not find your remote "
 "controller, try `irrecord myremote` command."
 msgstr ""
-"1. Find en lird.conf for din remote control på http://lirc.sourceforge.net/"
-"remotes/[remotes]\n"
-"   Du kan også tage et blik på '/usr/share/remotes' folderen hvis du ikke "
-"har en internet forbindelse.\n"
-"   Hvis du ikke finder din remote controller, prøv `irrecord myremote` "
-"komando.\n"
-"2. Kopier din lircd.conf til '/etc/' folderen som root.\n"
-"3. Tilføj evdev til '/etc/sysconfig/modules'.\n"
-"4. Load mondulet med `modprobe evdev`.\n"
-"5. rediger '/etc/sysconfig/lirc' om nødvendigt.\n"
-"+\n"
-"----------------------------------------------\n"
+"Find en lird.conf for din remote control på "
+"http://lirc.sourceforge.net/remotes/[remotes]  Du kan også tage et blik på "
+"'/usr/share/remotes' folderen hvis du ikke har en internet forbindelse. Hvis "
+"du ikke finder din remote controller, prøv `irrecord myremote` komando."
 
 # type: Plain text
 #: packages.txt:1713
 msgid "Copy your lircd.conf to '/etc/' directory as root."
-msgstr ""
+msgstr "Kopier din lircd.conf til '/etc/' folderen som root."
 
 # type: Plain text
 #: packages.txt:1714
-#, fuzzy
 msgid "Add evdev to '/etc/sysconfig/modules'."
-msgstr "* Liste disse moduller i `/etc/sysconfig/modules`:\n"
+msgstr "Tilføj evdev til '/etc/sysconfig/modules'."
 
 # type: Plain text
 #: packages.txt:1715
 msgid "Load the module with `modprobe evdev`."
-msgstr ""
+msgstr "Load mondulet med `modprobe evdev`."
 
 # type: Plain text
 #: packages.txt:1716
 msgid "Edit '/etc/sysconfig/lirc' if necessary."
-msgstr ""
+msgstr "Rediger '/etc/sysconfig/lirc' om nødvendigt."
 
 # type: Plain text
 #: packages.txt:1719
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "$ cat /proc/bus/input/devices | grep -e N -e H\n"
-msgstr ""
-"$ cat /proc/bus/input/devices | grep -e N -e H\n"
-"----------------------------------------------\n"
+msgstr "$ cat /proc/bus/input/devices | grep -e N -e H\n"
 
 # type: Plain text
 #: packages.txt:1722
-#, fuzzy
 msgid "will show you the event# you should use. (Default is 2.)"
-msgstr "+ vil vise dig hændelse# du bør bruge. (Standard er 2.)"
+msgstr "vil vise dig hændelse# du bør bruge. (Standard er 2.)"
 
 # type: Plain text
 #: packages.txt:1724
-#, fuzzy
 msgid "Start lircd and lircmd with `sudo service lirc start`."
-msgstr "6. Start lircd og lircmd med `sudo service lirc start`.\n"
+msgstr " Start lircd og lircmd med `sudo service lirc start`."
 
 # type: Plain text
 #: packages.txt:1725
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "lmsensors"
-msgstr "== lmsensorer"
+msgstr "lmsensorer"
 
 # type: Plain text
 #: packages.txt:1733
@@ -8539,11 +8525,9 @@ msgstr "Så hvis du vil bruge lmsensors prøv at køre"
 
 # type: Plain text
 #: packages.txt:1738
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# sensors-detect\n"
-msgstr ""
-"# sensors-detect\n"
-"----------------\n"
+msgstr "# sensors-detect\n"
 
 # type: Plain text
 #: packages.txt:1741
@@ -8560,17 +8544,15 @@ msgstr "Og så:"
 
 # type: Plain text
 #: packages.txt:1746
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# service lmsensors start\n"
-msgstr ""
-"# service lmsensors start\n"
-"-------------------------\n"
+msgstr "# service lmsensors start\n"
 
 # type: Plain text
 #: packages.txt:1748
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "lvm2"
-msgstr "== lvm2"
+msgstr "lvm2"
 
 # type: Plain text
 #: packages.txt:1754
@@ -8588,19 +8570,15 @@ msgstr "Først hvis du er på en setup cd, er du nødt til"
 
 # type: Plain text
 #: packages.txt:1759
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "modprobe dm-mod\n"
-msgstr ""
-"modprobe dm-mod\n"
-"----\n"
+msgstr "modprobe dm-mod\n"
 
 # type: Plain text
 #: packages.txt:1765
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "vgchange -a y\n"
-msgstr ""
-"vgchange -a y\n"
-"----\n"
+msgstr "vgchange -a y\n"
 
 # type: Plain text
 #: packages.txt:1770
@@ -8631,11 +8609,9 @@ msgstr "Lad os initialisere dem for brug af LVM:"
 
 # type: Plain text
 #: packages.txt:1779
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "pvcreate /dev/hda2 /dev/hdc1\n"
-msgstr ""
-"pvcreate /dev/hda2 /dev/hdc1\n"
-"----\n"
+msgstr "pvcreate /dev/hda2 /dev/hdc1\n"
 
 # type: Plain text
 #: packages.txt:1782
@@ -8644,11 +8620,9 @@ msgstr "Skab en volume group kaldt `vg`:"
 
 # type: Plain text
 #: packages.txt:1785
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "vgcreate vg /dev/hda2\n"
-msgstr ""
-"vgcreate vg /dev/hda2\n"
-"----\n"
+msgstr "vgcreate vg /dev/hda2\n"
 
 # type: Plain text
 #: packages.txt:1788
@@ -8657,11 +8631,9 @@ msgstr "Udvid det med `/dev/hdb1`:"
 
 # type: Plain text
 #: packages.txt:1791
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "vgextend vg /dev/hdc1\n"
-msgstr ""
-"vgextend vg /dev/hdc1\n"
-"----\n"
+msgstr "vgextend vg /dev/hdc1\n"
 
 # type: Plain text
 #: packages.txt:1794
@@ -8672,11 +8644,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1797
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "lvcreate -L400G -nhome vg\n"
-msgstr ""
-"lvcreate -L400G -nhome vg\n"
-"----\n"
+msgstr "lvcreate -L400G -nhome vg\n"
 
 # type: Plain text
 #: packages.txt:1800
@@ -8685,11 +8655,9 @@ msgstr "Skab et filsystem på det som sædvanligt, f.eks ext3:"
 
 # type: Plain text
 #: packages.txt:1803
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "mke2fs -j /dev/vg/home\n"
-msgstr ""
-"mke2fs -j /dev/vg/home\n"
-"----\n"
+msgstr "mke2fs -j /dev/vg/home\n"
 
 # type: Plain text
 #: packages.txt:1806
@@ -8700,17 +8668,15 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1809
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "mount /dev/vg/home /mnt/target/home\n"
-msgstr ""
-"mount /dev/vg/home /mnt/target/home\n"
-"----\n"
+msgstr "mount /dev/vg/home /mnt/target/home\n"
 
 # type: Plain text
 #: packages.txt:1811
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Extending"
-msgstr "=== Udvidelse"
+msgstr "Udvidelse"
 
 # type: Plain text
 #: packages.txt:1815
@@ -8728,7 +8694,7 @@ msgstr "Hvis du bruger ext3:"
 
 # type: Plain text
 #: packages.txt:1823
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "umount /mnt/target/home\n"
 "lvextend -L+900M /dev/vg/home\n"
@@ -8739,17 +8705,15 @@ msgstr ""
 "lvextend -L+900M /dev/vg/home\n"
 "resize2fs /dev/vg/home\n"
 "mount /dev/vg/home /mnt/target/home\n"
-"----\n"
 
 # type: Plain text
 #: packages.txt:1827
-#, fuzzy
 msgid ""
 "According to the manpage of resize2fs, it would have support resizing "
 "without umounting, but this does not seem to work."
 msgstr ""
-"NOTE: Ifølge man-siden af resize2fs, har det understøttelse for udvidelse "
-"uden at unmounte det, men dette synes ikke at virke."
+"Ifølge man-siden af resize2fs, har det understøttelse for udvidelse uden at "
+"unmounte det, men dette synes ikke at virke."
 
 # type: Plain text
 #: packages.txt:1829
@@ -8758,20 +8722,19 @@ msgstr "Hvis du bruger reiserfs:"
 
 # type: Plain text
 #: packages.txt:1833
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "lvextend -L+900M /dev/vg/home\n"
 "resize_reiserfs /dev/vg/home\n"
 msgstr ""
 "lvextend -L+900M /dev/vg/home\n"
 "resize_reiserfs /dev/vg/home\n"
-"----\n"
 
 # type: Plain text
 #: packages.txt:1835
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Removing"
-msgstr "=== Fjerne"
+msgstr "Fjerne"
 
 # type: Plain text
 #: packages.txt:1838
@@ -8780,11 +8743,9 @@ msgstr "For at fjerne en logical volume:"
 
 # type: Plain text
 #: packages.txt:1841
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "lvremove /dev/vg/home\n"
-msgstr ""
-"lvremove /dev/vg/home\n"
-"----\n"
+msgstr "lvremove /dev/vg/home\n"
 
 # type: Plain text
 #: packages.txt:1844
@@ -8793,11 +8754,9 @@ msgstr "For at fjerne en fysisk volume fra en volume group:"
 
 # type: Plain text
 #: packages.txt:1847
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "vgreduce vg /dev/hdc1\n"
-msgstr ""
-"vgreduce vg /dev/hdc1\n"
-"----\n"
+msgstr "vgreduce vg /dev/hdc1\n"
 
 # type: Plain text
 #: packages.txt:1850
@@ -8806,11 +8765,9 @@ msgstr "For at fjerne en volume group:"
 
 # type: Plain text
 #: packages.txt:1853
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "vgremove vg\n"
-msgstr ""
-"vgremove vg\n"
-"----\n"
+msgstr "vgremove vg\n"
 
 # type: Plain text
 #: packages.txt:1856
@@ -8819,9 +8776,9 @@ msgstr "Det var det."
 
 # type: Plain text
 #: packages.txt:1859
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "mailman"
-msgstr "== mailman"
+msgstr "mailman"
 
 # type: Plain text
 #: packages.txt:1865
@@ -8836,9 +8793,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1866
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "man"
-msgstr "og"
+msgstr "man"
 
 # type: Plain text
 #: packages.txt:1869
@@ -8848,11 +8805,9 @@ msgstr "Hvis du kan lide farvede man-sider så kan du aktivere dette med"
 
 # type: Plain text
 #: packages.txt:1872
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# chmod +x /etc/profile.d/man-colors.sh\n"
-msgstr ""
-"# chmod +x /etc/profile.d/man-colors.sh\n"
-"----\n"
+msgstr "# chmod +x /etc/profile.d/man-colors.sh\n"
 
 # type: Plain text
 #: packages.txt:1876
@@ -8865,9 +8820,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1877
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "mantis"
-msgstr "== mantis"
+msgstr "mantis"
 
 # type: Plain text
 #: packages.txt:1885
@@ -8901,9 +8856,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1890
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "mb2md"
-msgstr "== mb2md"
+msgstr "mb2md"
 
 # type: Plain text
 #: packages.txt:1893
@@ -8920,7 +8875,7 @@ msgstr "Hvis du er for doven til at læse den fuldstændige dokumentation:"
 
 # type: Plain text
 #: packages.txt:1904
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "cd /var/mail\n"
 "for i in *\n"
@@ -8937,13 +8892,12 @@ msgstr ""
 "\tsu - $i -c \"mb2md -m\"\n"
 "\trm -v $i\n"
 "done\n"
-"-----------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:1906
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "mediawiki"
-msgstr "== mediawiki"
+msgstr "mediawiki"
 
 # type: Plain text
 #: packages.txt:1910
@@ -8956,9 +8910,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1911
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "midpssh-http-server"
-msgstr "== midpssh-http-server"
+msgstr "midpssh-http-server"
 
 # type: Plain text
 #: packages.txt:1914
@@ -8967,20 +8921,19 @@ msgstr "Glem ikke at åbne port 8080 på din firewall!"
 
 # type: Plain text
 #: packages.txt:1920
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "# midpssh-http-server\n"
 "-A INPUT -p tcp -m tcp --dport 8080 -j ACCEPT\n"
 msgstr ""
 "# midpssh-http-server\n"
 "-A INPUT -p tcp -m tcp --dport 8080 -j ACCEPT\n"
-"---------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:1924
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "monit"
-msgstr "== monit"
+msgstr "monit"
 
 # type: Plain text
 #: packages.txt:1927
@@ -8989,20 +8942,19 @@ msgstr "Du kan opsætte Monit ved at tilføje disse linjer til '/etc/inittab':"
 
 # type: Plain text
 #: packages.txt:1931
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "# Run monit in standard run-levels\n"
 "mo:2345:respawn:/usr/sbin/monit -Ic /etc/monit/monitrc\n"
 msgstr ""
-"# Run monit in standard run-levels\n"
+"# Kør monit i standard run-levels\n"
 "mo:2345:respawn:/usr/sbin/monit -Ic /etc/monit/monitrc\n"
-"------------------------------------------------------\n"
 
 # type: Plain text
 #: packages.txt:1933
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "motion"
-msgstr "== motion"
+msgstr "motion"
 
 # type: Plain text
 #: packages.txt:1937
@@ -9025,9 +8977,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1941
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "munin"
-msgstr "== munin"
+msgstr "munin"
 
 # type: Plain text
 #: packages.txt:1946
@@ -9042,7 +8994,7 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1954
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "groupmod -g 47 munin\n"
 "usermod -u 47 -g 47 munin\n"
@@ -9057,7 +9009,6 @@ msgstr ""
 "chown -R munin:munin /var/www/html/munin\n"
 "chown -R munin:munin /var/log/munin\n"
 "chown -R munin:munin /var/run/munin\n"
-"------------\n"
 
 # type: Plain text
 #: packages.txt:1958
@@ -9070,9 +9021,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1959
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "mythtv"
-msgstr "== mythtv"
+msgstr "mythtv"
 
 # type: Plain text
 #: packages.txt:1962
@@ -9085,6 +9036,8 @@ msgid ""
 "Start mysql service and setup mysql database password with `mysqladmin -u "
 "root password mysqlpassword`."
 msgstr ""
+"Start mysql service og setup mysql database password med `mysqladmin -u root "
+"password mysqlpassword`."
 
 # type: Plain text
 #: packages.txt:1965
@@ -9092,27 +9045,28 @@ msgid ""
 "Set up the initial database with `mysql -u root -p < /usr/share/mythtv/mc."
 "sql` and enter mysqlpassword."
 msgstr ""
+"Opsæt den initiale database med `mysql -u root -p < "
+"/usr/share/mythtv/mc.sql` og skriv mysqlpassword."
 
 # type: Plain text
 #: packages.txt:1966
 msgid "Run `sudo mythtv-setup` for tune your tvcard."
-msgstr ""
+msgstr "Kør `sudo mythtv-setup` for at tune dit tv kort."
 
 # type: Plain text
 #: packages.txt:1967
-#, fuzzy
 msgid "Start mythtv backend with `sudo service mythtv start`."
-msgstr "6. Start lircd og lircmd med `sudo service lirc start`.\n"
+msgstr "Start mythtv backend med `sudo service mythtv start`."
 
 # type: Plain text
 #: packages.txt:1968
 msgid "Use `mythfilldatabase` to fill in your database."
-msgstr ""
+msgstr "Brug `mythfilldatabase` for at fylde ind i din database."
 
 # type: Plain text
 #: packages.txt:1969
 msgid "Finally run `mythfrontend` and have fun!"
-msgstr ""
+msgstr "Til slut, kør `mythfrontend` og nyd det!"
 
 # type: Plain text
 #: packages.txt:1972
@@ -9125,9 +9079,9 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1973
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "nautilus-share"
-msgstr "== nautilus-deling"
+msgstr "nautilus-deling"
 
 # type: Plain text
 #: packages.txt:1977
@@ -9140,32 +9094,39 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:1980
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "USERSHARE\n"
-msgstr "USERSHARE"
+msgstr "USERSHARE\n"
 
 # type: Plain text
 #: packages.txt:1984
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "Starting with version 3.0.23, a Samba server now supports the ability\n"
 "for non-root users to add user define shares to be exported using the\n"
 "\"net usershare\" commands.\n"
-msgstr "Startende med version 3.0.23, så understøtter en Sambaserver nu evnen for ikke-root brugere at kunne tilføje bruger definerbare shares for eksportering af \"net usershare\" kommandoerne."
+msgstr ""
+"Startende med version 3.0.23, så understøtter en Sambaserver nu evnen\n"
+"for ikke-root brugere at kunne tilføje bruger definerbare shares for "
+"eksportering af\n"
+"\"net usershare\" kommandoerne.\n"
 
 # type: Plain text
 #: packages.txt:1987
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "To set this up, first set up your smb.conf by adding to the [global] \n"
 "section:\n"
-msgstr "For at sætte det op, sæt først op din smb.conf ved at tilføje dette til [global] afsnit:"
+msgstr ""
+"For at sætte det op, sæt først op din smb.conf ved at tilføje dette til "
+"[global]\n"
+"afsnit:\n"
 
 # type: Plain text
 #: packages.txt:1989
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "usershare path = /home/usershares\n"
-msgstr "usershare path = /home/usershares"
+msgstr "usershare path = /home/usershares\n"
 
 # type: Plain text
 #: packages.txt:1998
