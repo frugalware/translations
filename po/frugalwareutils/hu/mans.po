@@ -2,20 +2,20 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-24 05:19+0100\n"
-"PO-Revision-Date: 2008-02-19 14:03+0100\n"
+"POT-Creation-Date: 2008-12-31 01:54+0100\n"
+"PO-Revision-Date: 2009-02-16 23:34+0200\n"
 "Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 1.0\n"
+"X-Generator: Pootle 1.2.0\n"
 
 # type: Plain text
 #: grubconfig.txt:2
@@ -365,8 +365,7 @@ msgid ""
 msgstr ""
 "post_down = <cparancs>::\n"
 "\tEzeknek a direktíváknak azonos a szintaxisa: parancsokat lehet\n"
-"\tdefiniálni, hogy azok lefussanak az interfész inicializálása előtt, után, "
-"miután már az interfész\n"
+"\tdefiniálni, hogy azok lefussanak az interfész inicializálása előtt, után, miután már az interfész\n"
 "\tnem él, vagy utána. A többszörös használat megengedett,\n"
 "\ta parancsok a megadott sorrendben lesznel lefuttatva.\n"
 
@@ -392,10 +391,8 @@ msgid ""
 "\tthe first will be used.\n"
 msgstr ""
 "essid = <essid>::\n"
-"\tBeállítja az ESSID-t (vagy Hálózati Nevet - néhány termékben úgy is "
-"nevezhetik, hogy \n"
-"\tDomain ID) vezetéknélküli hálózati adapterekhez. Ha többször van megadva, "
-"az első lesz használva.\n"
+"\tBeállítja az ESSID-t (vagy Hálózati Nevet - néhány termékben úgy is nevezhetik, hogy \n"
+"\tDomain ID) vezetéknélküli hálózati adapterekhez. Ha többször van megadva, az első lesz használva.\n"
 
 # type: Plain text
 #: netconfig.txt:111
@@ -412,17 +409,11 @@ msgid ""
 "\tAuto. If defined more than once, the first will be used.\n"
 msgstr ""
 "mode = <mód>::\n"
-"\tBeállítja az eszköz működési módját a vezetéknéküli hálózati csatolók "
-"számára. A mód lehet Ad-Hoc\n"
-"\t(a hálózatban nincs Access Point), Managed (a  hálózatban  több  Access  "
-"Point  van),  Master  (a\n"
-"\tcsomópont  a szinkronizációs master vagy Access Pointként viselkedik), "
-"Repeater (a csomópont csomagokat\n"
-"\ttovábbít más vezetéknélküli csomópontoknak) ,Secondary (a  csomópont  egy  "
-"tartalék  mas              ter/repeater),  Monitor  (a  csomópont  nem  "
-"kapcsolódik  egy  csomóponthoz  sem,  csak figyeli a\n"
-"\tfrenkvencián az összes csomagot) vagy Auto. Ha  többször  van  definiálva, "
-" akkor  az  első  lesz érvényes.\n"
+"\tBeállítja az eszköz működési módját a vezetéknéküli hálózati csatolók számára. A mód lehet Ad-Hoc\n"
+"\t(a hálózatban nincs Access Point), Managed (a  hálózatban  több  Access  Point  van),  Master  (a\n"
+"\tcsomópont  a szinkronizációs master vagy Access Pointként viselkedik), Repeater (a csomópont csomagokat\n"
+"\ttovábbít más vezetéknélküli csomópontoknak) ,Secondary (a  csomópont  egy  tartalék  mas              ter/repeater),  Monitor  (a  csomópont  nem  kapcsolódik  egy  csomóponthoz  sem,  csak figyeli a\n"
+"\tfrenkvencián az összes csomagot) vagy Auto. Ha  többször  van  definiálva,  akkor  az  első  lesz érvényes.\n"
 
 # type: Plain text
 #: netconfig.txt:114
@@ -447,19 +438,22 @@ msgstr ""
 "dhcphasználata esetén ez a direktíva figyelmen kívül lesz hagyva."
 
 # type: Plain text
-#: netconfig.txt:122
+#: netconfig.txt:123
 #, no-wrap
 msgid ""
 "key = <key>::\n"
 "\tUsed to manipulate encryption or scrambling keys and security mode for\n"
-"\twireless networks. Use this for WEP only, use `wpa_psk` for WPA.\n"
+"\twireless networks. Use this for WEP only, use `wpa_psk` or\n"
+"\t`wpa_supplicant` for WPA.\n"
 msgstr ""
 "key = <key>::\n"
-"\tTitkosítási kulcsok es biztonsági módok megadásához használt. Csak WEP-hez, "
-"WPA esetén a `wpa_psk`-t kell használni.\n"
+"\tTitkosítási kulcsok és a biztonsági mód\n"
+"\tmanipulálására való, vezetéknélküli hálózatok esetén. Csak WEP esetére, a "
+"`wpa_psk` vagy\n"
+"\t`wpa_supplicant` kell WPA esetén.\n"
 
 # type: Plain text
-#: netconfig.txt:126
+#: netconfig.txt:127
 #, no-wrap
 msgid ""
 "wpa_psk = <passphrase>::\n"
@@ -467,11 +461,39 @@ msgid ""
 "\tinitialize WPA encryption before setting any other parameter (like ESSID).\n"
 msgstr ""
 "wpa_psk = <kódszó>::\n"
-"\tHa ez definiálva van, akkor a wpa_supplicant el fog indulni, hogy beállítsa "
-"a WPA titkosítást minden más előtt (pl. ESSID).\n"
+"\tHa ez definiálva van, akkor a wpa_supplicant el fog indulni, hogy beállítsa a WPA titkosítást minden más előtt (pl. ESSID).\n"
 
 # type: Plain text
-#: netconfig.txt:130
+#: netconfig.txt:138
+#, no-wrap
+msgid ""
+"wpa_supplicant = yes|no::\n"
+"\tIf this directive is enabled, then wpa_supplicant will be invoked to\n"
+"\tinitialize WPA encryption before setting any other parameter, but will\n"
+"\tnot do anything else. It is intended to use instead of the `essid` and\n"
+"\t`wpa_psk` directives if you prefer to write a wpa_supplicant.conf\n"
+"\tmanually.\n"
+"+\n"
+"NOTE: In case you use WPA encryption only with your wireless card, then\n"
+"this method has the advantage of not having different network profiles\n"
+"for each WPA network, as long as each network has a different essid.\n"
+msgstr ""
+"wpa_supplicant = yes|no::\n"
+"\tHa ez a direktíva be van kapcsolva, akkor a wpa_supplicant el lesz indítva, "
+"hogy\n"
+"\tinicializálja a WPA titkosítást a többi paraméter beállítása előtt, de "
+"semmi mást\n"
+"\tnem fog csinálni. Ez akkor jó, ha az `essid` és\n"
+"\t`wpa_psk` direktívák helyett a saját kézzel írt wpa_supplicant.conf\n"
+"\thasználatát kedveljük.\n"
+"+\n"
+"NOTE: Abban az esetben, ha csak WPA titkosítást használ, \n"
+"ennek a metódusnak megvan az az előnye, hogy nem szükséges külön profilt "
+"létrehozni minden\n"
+"WPA hálózathoz, amennyiben az összes hálózatnak külön essid-je van.\n"
+
+# type: Plain text
+#: netconfig.txt:142
 #, no-wrap
 msgid ""
 "wpa_driver = <driver>::\n"
@@ -479,11 +501,10 @@ msgid ""
 "\tare:\n"
 msgstr ""
 "wpa_driver = <meghajtó>::\n"
-"\tA wpa_supplicant meghajtó neve. Az alapértelmezett a `wext`. Lehetséges "
-"meghajtók:\n"
+"\tA wpa_supplicant meghajtó neve. Az alapértelmezett a `wext`. Lehetséges meghajtók:\n"
 
 # type: Plain text
-#: netconfig.txt:137
+#: netconfig.txt:149
 #, no-wrap
 msgid ""
 "\t*  wext: Linux wireless extensions (generic)\n"
@@ -501,7 +522,7 @@ msgstr ""
 "\t*  ndiswrapper: Linux ndiswrapper\n"
 
 # type: Plain text
-#: netconfig.txt:142
+#: netconfig.txt:154
 #, no-wrap
 msgid ""
 "dhcp_opts = <options>::\n"
@@ -510,13 +531,12 @@ msgid ""
 "\t<hostname>`.\n"
 msgstr ""
 "dhcp_opts = <options>::\n"
-"\tEzek az opciók át lesznek adva a dhcp kliens démonnak. Az alapértelmezés a "
-"`-t\n"
+"\tEzek az opciók át lesznek adva a dhcp kliens démonnak. Az alapértelmezés a `-t\n"
 "\t10`. Ha dhcp hostnevet szeretne megadni, akkor a `-t 10 -h\n"
 "\t<hostnév>` paraméterekre lesz szüksége.\n"
 
 # type: Plain text
-#: netconfig.txt:146
+#: netconfig.txt:158
 #, no-wrap
 msgid ""
 "dhcpclient = <dhcp client>::\n"
@@ -528,29 +548,29 @@ msgstr ""
 "\t(alapértelmezés) vagy dhclient.\n"
 
 # type: Plain text
-#: netconfig.txt:148
+#: netconfig.txt:160
 msgid "== EXAMPLES"
 msgstr "== PÉLDÁK"
 
 # type: Plain text
-#: netconfig.txt:150
+#: netconfig.txt:162
 msgid "=== Static Address"
 msgstr "=== Statikus cím"
 
 # type: Plain text
-#: netconfig.txt:151 netconfig.txt:162 netconfig.txt:174 netconfig.txt:190
-#: netconfig.txt:204 netconfig.txt:211
+#: netconfig.txt:163 netconfig.txt:174 netconfig.txt:186 netconfig.txt:202
+#: netconfig.txt:216 netconfig.txt:222
 #, no-wrap
 msgid "----\n"
 msgstr "----\n"
 
 # type: Plain text
-#: netconfig.txt:154
+#: netconfig.txt:166
 msgid "[options] dns = 192.168.1.1"
 msgstr "[options] dns = 192.168.1.1"
 
 # type: Plain text
-#: netconfig.txt:158
+#: netconfig.txt:170
 #, no-wrap
 msgid ""
 "[eth0]\n"
@@ -564,12 +584,12 @@ msgstr ""
 "----\n"
 
 # type: Plain text
-#: netconfig.txt:161
+#: netconfig.txt:173
 msgid "=== ADSL with NAT"
 msgstr "=== ADSL NAT-tal"
 
 # type: Plain text
-#: netconfig.txt:170
+#: netconfig.txt:182
 #, no-wrap
 msgid ""
 "[options]\n"
@@ -591,12 +611,12 @@ msgstr ""
 "----\n"
 
 # type: Plain text
-#: netconfig.txt:173
+#: netconfig.txt:185
 msgid "=== The `key=` directive"
 msgstr "=== A `key=` direktíva"
 
 # type: Plain text
-#: netconfig.txt:183
+#: netconfig.txt:195
 #, no-wrap
 msgid ""
 "key = 0123-4567-89\n"
@@ -620,12 +640,12 @@ msgstr ""
 "----\n"
 
 # type: Plain text
-#: netconfig.txt:186
+#: netconfig.txt:198
 msgid "=== Initialize before `iwconfig`"
 msgstr "=== Initicializálás a `iwconfig` előtt"
 
 # type: Plain text
-#: netconfig.txt:189
+#: netconfig.txt:201
 msgid ""
 "If you have to to initialize the card with `ifconfig <interface> up` before "
 "using iwconfig:"
@@ -634,7 +654,7 @@ msgstr ""
 "az iwconfig előtt:"
 
 # type: Plain text
-#: netconfig.txt:194
+#: netconfig.txt:206
 #, no-wrap
 msgid ""
 "[eth1]\n"
@@ -648,7 +668,7 @@ msgstr ""
 "----\n"
 
 # type: Plain text
-#: netconfig.txt:198
+#: netconfig.txt:210
 msgid ""
 "NOTE: If you use several pre_up and/or post_down lines, this pre_up should "
 "be the first, and this post_down should be the last one."
@@ -657,33 +677,31 @@ msgstr ""
 "a post_down kell legyen az első és az utolsó."
 
 # type: Plain text
-#: netconfig.txt:200
+#: netconfig.txt:212
 msgid "=== Using wpa_supplicant"
 msgstr "=== A wpa_supplicant használata"
 
 # type: Plain text
-#: netconfig.txt:203
+#: netconfig.txt:215
 msgid ""
 "If you want to use wpa_supplicant instead of the simple encryption (using "
-"key = secret), then use the following pre_up and post_down lines:"
+"key = secret), then enable this by setting:"
 msgstr ""
-"Ha a wpa_supplicantot akarja használni az egyszerű titkosítás helyett (lásd "
-"key direktíva), akkor a következő pre_up és post_down sorok szükségesek:"
+"Ha a wpa_supplicant-ot akarja használni az egyszerű titkosítás helyett (a "
+"key = titok használatával), akkor ezt úgy lehet, hogy:"
 
 # type: Plain text
-#: netconfig.txt:207
+#: netconfig.txt:218
 #, no-wrap
 msgid ""
-"pre_up = wpa_supplicant -Dwext -iwlan0 -c /etc/wpa_supplicant.conf -w -B\n"
-"post_down = killall wpa_supplicant\n"
+"wpa_supplicant = yes\n"
 "----\n"
 msgstr ""
-"pre_up = wpa_supplicant -Dwext -iwlan0 -c /etc/wpa_supplicant.conf -w -B\n"
-"post_down = killall wpa_supplicant\n"
+"wpa_supplicant = yes\n"
 "----\n"
 
 # type: Plain text
-#: netconfig.txt:210
+#: netconfig.txt:221
 msgid ""
 "You also need to edit `/etc/wpa_supplicant.conf`. A possible correct setup "
 "is:"
@@ -692,12 +710,12 @@ msgstr ""
 "lehetséges beállítás:"
 
 # type: Plain text
-#: netconfig.txt:213
+#: netconfig.txt:224
 msgid "ctrl_interface=/var/run/wpa_supplicant"
 msgstr "ctrl_interface=/var/run/wpa_supplicant"
 
 # type: Plain text
-#: netconfig.txt:218
+#: netconfig.txt:229
 #, no-wrap
 msgid ""
 "network={\n"
@@ -713,7 +731,7 @@ msgstr ""
 "----\n"
 
 # type: Plain text
-#: netconfig.txt:222
+#: netconfig.txt:233
 msgid ""
 "NOTE: See also the `wpa_psk` and `wpa_driver` options, most users can avoid "
 "the manual `pre_up` and `pre_down` directives."
@@ -723,36 +741,36 @@ msgstr ""
 "direktívákat."
 
 # type: Plain text
-#: netconfig.txt:224
+#: netconfig.txt:235
 msgid "== AUTHOR"
 msgstr "== SZERZŐ"
 
 # type: Plain text
-#: netconfig.txt:226
+#: netconfig.txt:237
 msgid "Written by Miklos Vajna."
 msgstr "Írta Vajna Miklós."
 
 # type: Plain text
-#: netconfig.txt:228
+#: netconfig.txt:239
 msgid "== REPORTING BUGS"
 msgstr "== HIBÁK JELENTÉSE"
 
 # type: Plain text
-#: netconfig.txt:230
+#: netconfig.txt:241
 msgid ""
 "If you find any bug, then please file a bugreport at <http://bugs.frugalware."
 "org/>."
 msgstr ""
-"Ha hibát talál, kérjük töltsön ki egy hibajelentést a "
-"<http://bugs.frugalware.org/> címen."
+"Ha hibát talál, kérjük töltsön ki egy hibajelentést a <http://bugs."
+"frugalware.org/> címen."
 
 # type: Plain text
-#: netconfig.txt:232
+#: netconfig.txt:243
 msgid "== SEE ALSO"
 msgstr "== LÁSD MÉG"
 
 # type: Plain text
-#: netconfig.txt:233
+#: netconfig.txt:244
 #, no-wrap
 msgid "*ifconfig*(8), *route*(8), *iwconfig*(8), *dhcpcd*(8)\n"
 msgstr "*ifconfig*(8), *route*(8), *iwconfig*(8), *dhcpcd*(8)\n"
@@ -879,5 +897,14 @@ msgid ""
 "\tDo not print any warning if GDM or KDM are installed.\n"
 msgstr ""
 "--silent::\n"
-"\tNe írjon ki semmilyen figyelmeztetést ha a GDM vagy a KDM már telepítve "
-"van.\n"
+"\tNe írjon ki semmilyen figyelmeztetést ha a GDM vagy a KDM már telepítve van.\n"
+
+# type: Plain text
+#~ msgid ""
+#~ "pre_up = wpa_supplicant -Dwext -iwlan0 -c /etc/wpa_supplicant.conf -w -B\n"
+#~ "post_down = killall wpa_supplicant\n"
+#~ "----\n"
+#~ msgstr ""
+#~ "pre_up = wpa_supplicant -Dwext -iwlan0 -c /etc/wpa_supplicant.conf -w -B\n"
+#~ "post_down = killall wpa_supplicant\n"
+#~ "----\n"
