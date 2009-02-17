@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-02-17 01:43+0100\n"
-"PO-Revision-Date: 2009-02-17 20:39+0200\n"
+"PO-Revision-Date: 2009-02-17 21:00+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fr\n"
@@ -1597,21 +1597,20 @@ msgid ""
 "If you use a netinstall image follow these sub-steps. Otherwise jump to the "
 "partitioning point!"
 msgstr ""
+"Si vous utilisez l'image netinstal suivez les étapes suivantes. Sinon allez "
+" directement à l'étape partitionnement!"
 
 # type: Plain text
 #: install.txt:308
-#, fuzzy
 msgid ""
 "These steps sets up your network options during the install. When you "
 "finished installing Frugalware the installer will ask for network options "
 "again.  Those options will be the installed system's options."
 msgstr ""
-"Si vous utilisez l'image netinstal suivez les étapes suivantes. Sinon allez  "
-"directement à l'étape partitionnement! + NOTE: Ces différentes étapes "
-"permettent de configurer vos préférences réseau pendant l'installation. "
-"Lorsque vous aurez fini l'installation de frugalware, l'installateur vous "
-"demandera de nouveau de configurer les préférences réseau.  Ces préférences "
-"seront celles du système installé."
+"Ces différentes étapes permettent de configurer vos préférences réseau "
+"pendant l'installation. Lorsque vous aurez fini l'installation de "
+"frugalware, l'installateur vous demandera de nouveau de configurer les "
+"préférences réseau. Ces préférences seront celles du système installé."
 
 # type: Plain text
 #: install.txt:312
@@ -3942,7 +3941,7 @@ msgstr ""
 # type: Plain text
 #: bugs.txt:41
 msgid "Steps to reproduce the problem"
-msgstr ""
+msgstr "Étapes pour reproduire le problème"
 
 # type: Plain text
 #: bugs.txt:42
@@ -4011,17 +4010,17 @@ msgstr ""
 # type: Plain text
 #: bugs.txt:61
 msgid "If you request a package, please include:"
-msgstr ""
+msgstr "Si vous réclamez un paquets, veuillez inclure:"
 
 # type: Plain text
 #: bugs.txt:62
 msgid "The name of the application (yes, \"more games\" is not enough!)"
-msgstr ""
+msgstr "Le nom de l'application (oui, \"plus de jeux\" n'est pas suffisant!)"
 
 # type: Plain text
 #: bugs.txt:63
 msgid "The URL of the application"
-msgstr ""
+msgstr "L'URL de l'application"
 
 # type: Plain text
 #: bugs.txt:65
@@ -4029,6 +4028,8 @@ msgid ""
 "Optionally a short note about why do you think this package would be "
 "interesting for others, too"
 msgstr ""
+"Optionnellement une note courte décrivant la raison pour laquelle ce paquet "
+"serais interessant pour d'autres utilisateurs, aussi"
 
 # type: Plain text
 #: bugs.txt:69
@@ -4611,6 +4612,8 @@ msgstr ""
 msgid ""
 "The Apache server isn't started by default. You can change this with the"
 msgstr ""
+"Le serveur Apache n'est pas démarrer par défaut. Vous pouvez changer cela "
+"avec"
 
 # type: Plain text
 #: packages.txt:47
@@ -6360,12 +6363,12 @@ msgstr "Remplacez passwd par le mot de passe que vous avez choisi."
 # type: Plain text
 #: packages.txt:797
 msgid "Optimizing the datebase:"
-msgstr ""
+msgstr "Optimisation de la base de données:"
 
 # type: Plain text
 #: packages.txt:799
 msgid "If you want a space optimized db do:"
-msgstr ""
+msgstr "Si vous voulez optimiser l'espace de la base de données faites:"
 
 # type: Plain text
 #: packages.txt:802
@@ -6376,7 +6379,7 @@ msgstr "$ mysql -u dspam dspam -p < /var/lib/dspam/mysql/mysql_objects-space.sql
 # type: Plain text
 #: packages.txt:805
 msgid "If you want a speed optimized db do:"
-msgstr ""
+msgstr "Si vous voulez optimiser la vitesse de la base de données faites:"
 
 # type: Plain text
 #: packages.txt:808
@@ -7879,26 +7882,22 @@ msgstr "Si vous voulez installer une interface web pour vos dépôts git,"
 
 # type: Plain text
 #: packages.txt:1437
-#, fuzzy
 msgid "install the `gitweb` package"
-msgstr "Premièrement installez les paquets nécéssaires:"
+msgstr "installez le paquet `gitweb`"
 
 # type: Plain text
 #: packages.txt:1439
-#, fuzzy
 msgid ""
 "edit `/etc/gitweb.conf` so that `$projectroot` will point to the repository "
 "directory"
 msgstr ""
-"* installer le paquet `gitweb`\n"
-"* éditer le fichier `/etc/gitweb.conf` de façon que le `$projectroot` pointe "
-"sur le répertoire du depôt\n"
-"* redémarrer `apache` ainsi la configuration de `gitweb` sera incluse.\n"
+"éditez le fichier `/etc/gitweb.conf` de façon que le `$projectroot` pointe "
+"sur le répertoire du depôt"
 
 # type: Plain text
 #: packages.txt:1440
 msgid "restart `apache` so that the `gitweb` configuration will be included."
-msgstr ""
+msgstr "redémarrez `apache` ainsi la configuration de `gitweb` sera incluse."
 
 # type: Plain text
 #: packages.txt:1441
@@ -8605,25 +8604,17 @@ msgstr "Apres l'installation de lirc, vous devez suivre les étapes suivantes:"
 
 # type: Bullet: '1. '
 #: packages.txt:1712
-#, fuzzy
 msgid ""
 "Find a lird.conf for your remote control on http://lirc.sourceforge.net/"
 "remotes/[remotes] You can also take a look on '/usr/share/remotes' directory "
 "if you do not have an internet connection.  If you do not find your remote "
 "controller, try `irrecord myremote` command."
 msgstr ""
-"1. Trouver un lird.conf pour votre télécommande sur http://lirc.sourceforge."
-"net/remotes/[remotes]\n"
-"  Vous pouvez également jeter un coup d'oeil dans le répertoire '/usr/share/"
-"remotes' si vous ne disposez pas d'une connexion internet.\n"
-"  Si vous ne trouvez pas votre télécommande, essayez la commande `irrecord "
-"myremote`.\n"
-"2. Copiez votre lircd.conf dans le répertoire '/etc/' en tant que root.\n"
-"3. Ajoutez evdev au fichier '/etc/sysconfig/modules'.\n"
-"4. Charger le module avec `modprobe evdev`.\n"
-"5. Editez '/etc/sysconfig/lirc' si nécessaire.\n"
-"+\n"
-"----------------------------------------------\n"
+"Trouver un lird.conf pour votre télécommande sur "
+"http://lirc.sourceforge.net/remotes/[remotes] Vous pouvez également jeter un "
+"coup d'oeil dans le répertoire '/usr/share/remotes' si vous ne disposez pas "
+"d'une connexion internet. Si vous ne trouvez pas votre télécommande, "
+"essayez la commande `irrecord myremote`."
 
 # type: Bullet: '2. '
 #: packages.txt:1713
@@ -9301,7 +9292,7 @@ msgstr "usershare path = /home/usershares\n"
 
 # type: Plain text
 #: packages.txt:1998
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "Next create the directory /home/usershares, change the owner to \n"
 "root and set the group owner to the UNIX group who should have the \n"
@@ -9311,7 +9302,15 @@ msgid ""
 "that directory can be renamed or deleted only by the owner of the file).\n"
 "Finally, tell smbd how many usershares you will allow by adding to the\n"
 "[global] section of smb.conf a line such as:\n"
-msgstr "Créez ensuite le répertoire /home/usershares, changer le propiétaire à  root et le groupe à un groupe unix qui à le droit de créer de créer des partages utilisateurs, par exemple le groupe \"users\". Changer les permissions de /home/usershares à 01770. (Propriétaire et groupe ont tous les droit, aucun accès pour les autres, plus le sticky bit, ce qui veut dire qu'un fichier dans ce répertoire peut être renommé ou effacé seulement par le propriétaire du fichier).  Pour finir, dire à smbd le nombre de partage utilisateur que vous allez autoriser en ajoutant à la section [global] de smb.conf une ligne comme:"
+msgstr "Créez ensuite le répertoire /home/usershares, changer le propiétaire à  root "
+"et le groupe à un groupe unix qui à le droit de créer de créer des partages "
+"utilisateurs, par exemple le groupe \"users\". Changer les permissions de "
+"/home/usershares à 01770. (Propriétaire et groupe ont tous les droit, aucun "
+"accès pour les autres, plus le sticky bit, ce qui veut dire qu'un fichier "
+"dans ce répertoire peut être renommé ou effacé seulement par le propriétaire "
+"du fichier).  Pour finir, dire à smbd le nombre de partage utilisateur que "
+"vous allez autoriser en ajoutant à la section [global] de smb.conf une ligne "
+"comme:\n"
 
 # type: Plain text
 #: packages.txt:2000
@@ -9337,18 +9336,20 @@ msgstr "Les commandes usershare (partages utilisateurs) sont:\n"
 
 # type: Plain text
 #: packages.txt:2010
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "net usershare add sharename path [comment] [acl] [guest_ok=[y|n]] - to add or change a user defined share.\n"
 "net usershare delete sharename - to delete a user defined share.\n"
 "net usershare info [-l|--long] [wildcard sharename] - to print info about a user defined share.\n"
 "net usershare list [-l|--long] [wildcard sharename] - to list user defined shares.\n"
 msgstr ""
-"net usershare add nom_de_partage chemin [commentaire] [acl] [guest_ok=[y|n]] - pour ajouter ou modifier un partage utilisateur.\n"
+"net usershare add nom_de_partage chemin [commentaire] [acl] [guest_ok=[y|n]] "
+"- pour ajouter ou modifier un partage utilisateur.\n"
 "net usershare delete nom_de_partage - pour effacer un partage utilisateur.\n"
-"net usershare info [-l|--long] [nom_de_partage avec jokers] - pour afficher les informations du partage utilisateur.\n"
-"net usershare list [-l|--long] [nom_de_partage avec jokers] - pour obtenir la liste des partages utilisateurs.\n"
-"------------------------------------------------------------------------------------------------------------"
+"net usershare info [-l|--long] [nom_de_partage avec jokers] - pour afficher "
+"les informations du partage utilisateur.\n"
+"net usershare list [-l|--long] [nom_de_partage avec jokers] - pour obtenir "
+"la liste des partages utilisateurs.\n"
 
 # type: Plain text
 #: packages.txt:2013
@@ -10227,9 +10228,8 @@ msgstr ""
 
 # type: Plain text
 #: packages.txt:2392
-#, fuzzy
 msgid "Install the necessary \"pptp\" package:"
-msgstr "Premièrement installez les paquets nécéssaires:"
+msgstr "Installez les paquets \"pptp\" nécéssaires:"
 
 # type: Plain text
 #: packages.txt:2395
@@ -11310,9 +11310,8 @@ msgstr "$ trac-admin /path/to/myproject initenv\n"
 
 # type: Plain text
 #: packages.txt:2833
-#, fuzzy
 msgid "You can check the result with:"
-msgstr "Vous pouvez charger ce module avec"
+msgstr "Vous pouvez vérifier le résultat avec:"
 
 # type: Plain text
 #: packages.txt:2835
@@ -12868,40 +12867,34 @@ msgstr "Mailing Lists"
 #: list-rules.txt:10
 #, no-wrap
 msgid "There are 3 read-only lists"
-msgstr ""
+msgstr "Il y a 3 listes en lecture seule"
 
 # type: Plain text
 #: list-rules.txt:12
 msgid "frugalware-announce for general announcements (low traffic)"
-msgstr ""
+msgstr "frugalware-announce pour les annonces générales (trafic faible)"
 
 # type: Plain text
 #: list-rules.txt:13
 msgid "frugalware-security for Frugalware Security Advisories"
-msgstr ""
+msgstr "frugalware-security pour les annonces de sécurités de Frugalware"
 
 # type: Plain text
 #: list-rules.txt:16
-#, fuzzy
 msgid ""
 "frugalware-bugs for newly opened tasks in the Bug Tracking System (This may "
 "be extended in future, currently you must use the web interface to comment a "
 "task.)"
 msgstr ""
-".Il y a 3 listes en lecture seule\n"
-"* frugalware-announce pour les annonces générales (trafic faible)\n"
-"* frugalware-security pour les annonces de sécurités de Frugalware\n"
-"* frugalware-bugs pour les taches récemment ouvertes dans le système de "
-"suivit des bugs (Cela pourrait\n"
-"  élargis dans le futur, pour l'instant vous devez utiliser l'interface web "
-"pour faire un commentaire\n"
-"  sur une tache.)\n"
+"frugalware-bugs pour les taches récemment ouvertes dans le système de suivit "
+"des bugs (Cela pourrait élargis dans le futur, pour l'instant vous devez "
+"utiliser l'interface web pour faire un commentaire sur une tache.)"
 
 # type: Block title
 #: list-rules.txt:17
 #, no-wrap
 msgid "There are 3 lists for developers"
-msgstr ""
+msgstr "Il y a 3 listes pour les développeurs"
 
 # type: Plain text
 #: list-rules.txt:21
@@ -12910,31 +12903,23 @@ msgid ""
 "supposed to read this list. It has a moderate traffic. (Usually only a few "
 "mails / day.)"
 msgstr ""
+"frugalware-devel pour les question de développement en général. Tous les "
+"développeurs sont supposés lire cette liste. Le trafic y est modéré. (Trafic "
+"journalié faible.)"
 
 # type: Plain text
 #: list-rules.txt:25
-#, fuzzy
 msgid ""
 "frugalware-git for Git commits. This is a high traffic list. Every developer "
 "is supposed to subscribe to this list, but feel free to set 'Mail delivery' "
 "to 'Disabled' if you don't want to receive mails. (This is required as only "
 "subscribed users can post to prevent spam.)"
 msgstr ""
-".Il y a 3 listes pour les développeurs\n"
-"* frugalware-devel pour les question de développement en général. Tous les "
-"développeurs sont\n"
-"  supposés lire cette liste. Le trafic y est modéré. (Trafic journalié "
-"faible.)\n"
-"* frugalware-git commit Git.  Ceci est une liste à grand trafic. Chaque "
-"développeur\n"
-"  est supposé s'inscrire à cette liste, mais vous pouvez changer 'Mail "
-"delivery'\n"
-"  à 'Disabled' si vous ne voulez pas recevoir d'email. (Ceci est requis "
-"comme seulement les utilisateurs\n"
-"  enregistres peuvent posté pour évité le spam.)\n"
-"* frugalware-darcs pour les patchs Darcs. Elle n'est plus utilisée, mais "
-"nous gardons cette liste car\n"
-"  son archive est utile par moment.\n"
+"frugalware-git commit Git.  Ceci est une liste à grand trafic. Chaque "
+"développeur est supposé s'inscrire à cette liste, mais vous pouvez changer "
+"'Mail delivery' à 'Disabled' si vous ne voulez pas recevoir d'email. (Ceci "
+"est requis comme seulement les utilisateurs enregistres peuvent posté pour "
+"évité le spam.)"
 
 # type: Plain text
 #: list-rules.txt:27
@@ -12942,16 +12927,17 @@ msgid ""
 "frugalware-darcs for Darcs patches. No longer used, but we keep this list as "
 "the archive is useful sometimes."
 msgstr ""
+"frugalware-darcs pour les patchs Darcs. Elle n'est plus utilisée, mais nous "
+"gardons cette liste car son archive est utile par moment."
 
 # type: Plain text
 #: list-rules.txt:28
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "There are 3 lists for users"
-msgstr "Il y a deux méthodes."
+msgstr "Il y a 3 listes pour les utilisateurs"
 
 # type: Plain text
 #: list-rules.txt:34
-#, fuzzy
 msgid ""
 "frugalware-forums is a bidirectional gateway between the users of the "
 "Frugalware Forums (link:http://forums.frugalware.org/index.php?"
@@ -12959,19 +12945,12 @@ msgid ""
 "The primary benefit is that not all developers read the Forums, but mailing "
 "lists."
 msgstr ""
-".Il y a 3 listes pour les utilisateurs\n"
-"* frugalware-forums est une porte d'accès bidirectionnel entre les "
-"utilisateurs des Forums Frugalware\n"
-"  (link:http://forums.frugalware.org/index.php?t=thread&frm_id=34[this "
-"forum])\n"
-"  et les utilisateurs qui lisent seulement la mailing list. Le principal "
-"bénéfice est que pas tout les\n"
-"  développeurs lise les forums, mais les mailing lists.\n"
-"* frugalware-users est pour les questions utilisateurs générale. Il semble "
-"que les forums soient plus\n"
-"  populaire, mais nous fournissons la liste malgré tout pour les questions "
-"utilisateurs.\n"
-"* frugalware-users-hu est pour les question utilisateur en Hongrois.\n"
+"frugalware-forums est une porte d'accès bidirectionnel entre les "
+"utilisateurs des Forums Frugalware "
+"(link:http://forums.frugalware.org/index.php?t=thread&frm_id=34[this forum]) "
+"et les utilisateurs qui lisent seulement la mailing list. Le principal "
+"bénéfice est que pas tout les développeurs lise les forums, mais les mailing "
+"lists."
 
 # type: Plain text
 #: list-rules.txt:36
@@ -12979,11 +12958,14 @@ msgid ""
 "frugalware-users is for general user questions. It seems the Forums are much "
 "popular, but we still provide a mailing list for user questions."
 msgstr ""
+"frugalware-users est pour les questions utilisateurs générale. Il semble que "
+"les forums soient plus populaire, mais nous fournissons la liste malgré "
+"tout pour les questions utilisateurs."
 
 # type: Plain text
 #: list-rules.txt:37
 msgid "frugalware-users-hu is for Hungarian user questions."
-msgstr ""
+msgstr "frugalware-users-hu est pour les questions utilisateurs en Hongrois."
 
 # type: Plain text
 #: list-rules.txt:41
@@ -13193,20 +13175,18 @@ msgstr ""
 #: irc-rules.txt:28
 #, no-wrap
 msgid "There is a Frugalware Linux channel for developers"
-msgstr ""
+msgstr "Il y a un salon Frugalware Linux pour les développeurs"
 
 # type: Plain text
 #: irc-rules.txt:32
-#, fuzzy
 msgid ""
 "#frugalware.dev (Frugalware development discussion.  Only Frugalware "
 "developers can 'speak' on this channel but everyone can see what's being "
 "discussed)."
 msgstr ""
-".Il y a un salon Frugalware Linux pour les développeurs\n"
-"* #frugalware.dev (Discussion sur le développement de Frugalware. Seuls les "
+"#frugalware.dev (Discussion sur le développement de Frugalware. Seuls les "
 "développeurs de Frugalware peuvent 'parler' dans ce salon mais tout le monde "
-"peut voir ce qui est dit).\n"
+"peut voir ce qui est dit)."
 
 # type: Plain text
 #: irc-rules.txt:40
@@ -13359,30 +13339,24 @@ msgstr "Coller"
 
 # type: Plain text
 #: irc-rules.txt:88
-#, fuzzy
 msgid ""
 "If you have a few lines of an error message or something similar to show to "
 "others in the channel, don't paste it into the channel.  This is because"
 msgstr ""
 "Si vous avez quelques lignes d'un message d'erreur ou quelque chose de "
 "similaire à montrer aux autres personnes dans le salon, ne le copier pas "
-"dedans. Parce que: (1) IRC est lent et, (2) cela casse la continuité de la "
-"discussion des autres personnes.  A la place, vous êtes prié d'utiliser "
-"notre Pastebin, disponible http://frugalware.org/paste[ici]."
+"dedans. Parce que:"
 
 # type: Plain text
 #: irc-rules.txt:91
-#, fuzzy
 msgid ""
 "IRC is slow and (2) it breaks the flow of other peoples' conversations.  "
 "Instead, please use our Pastebin, which is available http://frugalware.org/"
 "paste[here]."
 msgstr ""
-"Si vous avez quelques lignes d'un message d'erreur ou quelque chose de "
-"similaire à montrer aux autres personnes dans le salon, ne le copier pas "
-"dedans. Parce que: (1) IRC est lent et, (2) cela casse la continuité de la "
-"discussion des autres personnes.  A la place, vous êtes prié d'utiliser "
-"notre Pastebin, disponible http://frugalware.org/paste[ici]."
+"(1) IRC est lent et, (2) cela casse la continuité de la discussion des "
+"autres personnes.  A la place, vous êtes prié d'utiliser notre Pastebin, "
+"disponible http://frugalware.org/paste[ici]."
 
 # type: Plain text
 #: irc-rules.txt:92
