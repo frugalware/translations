@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-15 01:54+0100\n"
-"PO-Revision-Date: 2009-01-09 20:47+0200\n"
+"POT-Creation-Date: 2009-02-18 02:12+0100\n"
+"PO-Revision-Date: 2009-02-18 09:40+0200\n"
 "Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
 "Language-Team: <hu@li.org>\n"
 "Language: hu\n"
@@ -35,7 +35,7 @@ msgid "ftp://ftp5."
 msgstr "ftp://ftp4."
 
 #: ../src/plugins/configsource.c:102 ../src/plugins/dolangsh.c:58
-#: ../src/plugins/formatdisk.c:256 ../src/plugins/formatdisk.c:409
+#: ../src/plugins/formatdisk.c:257 ../src/plugins/formatdisk.c:412
 #: ../src/plugins/layout.c:146 ../src/plugins/loadsource.c:88
 #: ../src/plugins/select.c:334 ../src/util.c:305
 msgid "Could not open output file for writing"
@@ -56,7 +56,7 @@ msgstr ""
 "Itt egy vagy több közeli tükörszervert választhat ki a csomagok gyorsabb "
 "letöltése érdekében."
 
-#: ../src/plugins/configsource.c:166 ../src/plugins/formatdisk.c:580
+#: ../src/plugins/configsource.c:166 ../src/plugins/formatdisk.c:583
 #: ../src/plugins/partdisk.c:197
 msgid "Continue"
 msgstr "Folytatás"
@@ -111,7 +111,7 @@ msgid "Slow format that checks for bad blocks"
 msgstr "Lassú formázás hibás blokkok keresésével"
 
 #: ../src/plugins/formatdisk.c:177 ../src/plugins/formatdisk.c:201
-#: ../src/plugins/formatdisk.c:232
+#: ../src/plugins/formatdisk.c:233
 msgid "Formatting partitions"
 msgstr "Partíciók formázása"
 
@@ -140,50 +140,54 @@ msgid "Standard Linux ext2fs filesystem"
 msgstr "Szabványos Linux ext2fs fájlrendszer"
 
 #: ../src/plugins/formatdisk.c:225
-msgid "Journalising version of the ext2fs filesystem"
-msgstr "Az ext2fs fájlrendszer naplózó változata"
+msgid "Journalising version of the ext2 filesystem"
+msgstr "Az ext2 fájlrendszer naplózó változata"
 
-#: ../src/plugins/formatdisk.c:227
+#: ../src/plugins/formatdisk.c:226
+msgid "The evolution of the ext3 filesystem (EXPERIMENTAL!)"
+msgstr "Az ext3 fájlrendszer továbbfejlesztése (KÍSÉRLETI!)"
+
+#: ../src/plugins/formatdisk.c:228
 msgid "Hans Reiser's journalising filesystem"
 msgstr "Hans Reiser naplózó fájlrendszere"
 
-#: ../src/plugins/formatdisk.c:229
+#: ../src/plugins/formatdisk.c:230
 msgid "SGI's journalising filesystem"
 msgstr "Az SGI naplózó fájlrendszere"
 
-#: ../src/plugins/formatdisk.c:236
+#: ../src/plugins/formatdisk.c:237
 #, c-format
 msgid "Selecting filesystem for %s"
 msgstr "Fájlrendszer kiválasztása a %s számára"
 
-#: ../src/plugins/formatdisk.c:237
+#: ../src/plugins/formatdisk.c:238
 #, c-format
 msgid "Please select the type of filesystem to use for %s."
 msgstr "Válassza ki a %s számára használandó fájlrendszert."
 
-#: ../src/plugins/formatdisk.c:280 ../src/plugins/formatdisk.c:287
+#: ../src/plugins/formatdisk.c:281 ../src/plugins/formatdisk.c:288
 msgid "Formatting swap partition"
 msgstr "Swap partíció formázása"
 
-#: ../src/plugins/formatdisk.c:281
+#: ../src/plugins/formatdisk.c:282
 #, c-format
 msgid "Formatting %s as a swap partition"
 msgstr "%s formázása swap partícióként"
 
-#: ../src/plugins/formatdisk.c:288
+#: ../src/plugins/formatdisk.c:289
 #, c-format
 msgid "Formatting %s as a swap partition and checking for bad blocks"
 msgstr "%s formázása swap partícióként és hibás blokkok keresése"
 
-#: ../src/plugins/formatdisk.c:312
+#: ../src/plugins/formatdisk.c:313
 msgid "Setting up the root partition"
 msgstr "A root partíció beállítása"
 
-#: ../src/plugins/formatdisk.c:314
+#: ../src/plugins/formatdisk.c:315
 msgid "Select the Linux installation partition"
 msgstr "A Linux telepítési partíciójának kiválasztása"
 
-#: ../src/plugins/formatdisk.c:315
+#: ../src/plugins/formatdisk.c:316
 msgid ""
 "Please select a partition from the following list to use for your root (/) "
 "partition. The following ones are available:"
@@ -191,44 +195,44 @@ msgstr ""
 "Válasszon ki egy partíciót a következő listából, amelyet root (/) "
 "partícióként kíván használni. A következők érhetőek el:"
 
-#: ../src/plugins/formatdisk.c:328
+#: ../src/plugins/formatdisk.c:329
 msgid "Formatting"
 msgstr "Formázás"
 
-#: ../src/plugins/formatdisk.c:329
+#: ../src/plugins/formatdisk.c:330
 #, c-format
 msgid "Creating %s filesystem on %s and checking for bad blocks"
 msgstr "%s fájlrendszer létrehozása a %s partíción és hibás blokkok keresése"
 
-#: ../src/plugins/formatdisk.c:330
+#: ../src/plugins/formatdisk.c:331
 #, c-format
 msgid "Creating %s filesystem on %s"
 msgstr "%s fájlrendszer létrehozása a %s partíción"
 
-#: ../src/plugins/formatdisk.c:433
+#: ../src/plugins/formatdisk.c:436
 #, c-format
 msgid "Select mount point for %s"
 msgstr "Csatolási pont kiválasztása a %s számára"
 
-#: ../src/plugins/formatdisk.c:457 ../src/plugins/formatdisk.c:600
+#: ../src/plugins/formatdisk.c:460 ../src/plugins/formatdisk.c:603
 msgid "(in use)"
 msgstr "(használatban)"
 
-#: ../src/plugins/formatdisk.c:465
+#: ../src/plugins/formatdisk.c:468
 #, c-format
 msgid "%s on %s/\t%s"
 msgstr "%s ezen: %s\t%s"
 
 #. non-root partitions
-#: ../src/plugins/formatdisk.c:573
+#: ../src/plugins/formatdisk.c:576
 msgid "Selecting other partitions"
 msgstr "Egyéb partíciók kiválasztása"
 
-#: ../src/plugins/formatdisk.c:584
+#: ../src/plugins/formatdisk.c:587
 msgid "Select other Linux partitions for /etc/fstab"
 msgstr "Egyéb Linux partíciók beállítása az /etc/fstab-ban"
 
-#: ../src/plugins/formatdisk.c:585
+#: ../src/plugins/formatdisk.c:588
 msgid ""
 "You may use your other partitions to distribute your Linux system across "
 "more than one partition. Currently, you have only mounted your / partition. "
@@ -241,8 +245,8 @@ msgid ""
 msgstr ""
 "Felhasználhat egyéb partíciókat arra, hogy Linux rendszere egynél több "
 "partícióra legyen telepítve. Jelenleg csak a / partíció van csatolva. Külön "
-"partícióra tehet könyvtárakat például a partíciók /boot/, /home vagy /usr"
-"/local-ba való csatolásával. Ne próbálja az /usr-t, az /etc-t, az /sbin-t "
+"partícióra tehet könyvtárakat például a partíciók /boot/, /home vagy /usr/"
+"local-ba való csatolásával. Ne próbálja az /usr-t, az /etc-t, az /sbin-t "
 "vagy a /bin-t külön partícióra tenni, mivel olyan eszközöket tartalmaznak, "
 "amelyek szükségesek a rendszer indulásához és a partíciók csatolásához. "
 "Szintén figyeljen arra, hogy két partíciót ne csatoljon egy helyre. Kérem "
@@ -372,7 +376,8 @@ msgstr "Szeretne RAID-et építeni?"
 
 #: ../src/plugins/partdisk.c:148
 msgid "Do you want to create software raid partitions during partitioning?"
-msgstr "Létre szeretne hozni szoftveres RAID partíciókat a particionálás során?"
+msgstr ""
+"Létre szeretne hozni szoftveres RAID partíciókat a particionálás során?"
 
 #: ../src/plugins/partdisk.c:177
 msgid "Disk drive not found"
@@ -665,8 +670,8 @@ msgid ""
 "Internal error: Segmentation fault. Please report this issue to http://bugs."
 "frugalware.org"
 msgstr ""
-"Belső hiba: Szegmens hiba. Kérjük jelentse ezt a hibát a "
-"http://bugs.frugalware.org címen."
+"Belső hiba: Szegmens hiba. Kérjük jelentse ezt a hibát a http://bugs."
+"frugalware.org címen."
 
 #: ../src/util.c:659
 msgid "Selecting a task"
