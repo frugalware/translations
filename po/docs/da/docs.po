@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-23 01:49+0100\n"
-"PO-Revision-Date: 2009-02-23 17:55+0200\n"
+"POT-Creation-Date: 2009-02-25 01:49+0100\n"
+"PO-Revision-Date: 2009-02-25 15:58+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -1741,7 +1741,7 @@ msgstr "Grundlæggende konfiguration"
 
 # type: Plain text
 #: postinst.txt:3 bugs.txt:3 packages.txt:2207 list-rules.txt:3
-#: irc-rules.txt:3 makepkg.txt:3
+#: irc-rules.txt:3 makepkg.txt:3 introduction.txt:1
 #, no-wrap
 msgid "Introduction"
 msgstr "Introduktion"
@@ -7842,8 +7842,8 @@ msgstr "Glem ikke at åbne port 8080 på din firewall!"
 msgid ""
 "To do this, add the following two lines to your '/etc/sysconfig/firewall':"
 msgstr ""
-"For at gøre dettte, tilføj følgende 2 linier til din "
-"'/etc/sysconfig/firewall':"
+"For at gøre dettte, tilføj følgende 2 linier til din '/etc/sysconfig/"
+"firewall':"
 
 # type: Plain text
 #: packages.txt:1475
@@ -8094,8 +8094,8 @@ msgid ""
 msgstr ""
 "Nu, før du kan bruge keytouch, er du nødt til at starte en dæmon mere (denne "
 "gang som bruger) kaldet keytoukd. Du ønsker måske endda at tilføje keytoukd "
-"til listen over opstartsprogrammer i dit respektive Skrivebordsmiljø. "
-"F.eks.: I GNOME, vælg System->Præferencer->Personlig og åbn sessioner for at "
+"til listen over opstartsprogrammer i dit respektive Skrivebordsmiljø. F."
+"eks.: I GNOME, vælg System->Præferencer->Personlig og åbn sessioner for at "
 "åbne sessionspræferencer. Nu kan du tilføje keytouchd til listen over "
 "opstartsprogrammer."
 
@@ -8864,8 +8864,8 @@ msgstr "mb2md"
 msgid ""
 "How to convert each users mbox from /var/mail to Maildir (under /home/$user)?"
 msgstr ""
-"Hvordan konveteres hver brugers mbox fra /var/mail til Maildir (under "
-"/home/$user)?"
+"Hvordan konveteres hver brugers mbox fra /var/mail til Maildir (under /home/"
+"$user)?"
 
 # type: Plain text
 #: packages.txt:1895
@@ -9106,8 +9106,7 @@ msgid ""
 "\"net usershare\" commands.\n"
 msgstr ""
 "Startende med version 3.0.23, så understøtter en Sambaserver nu evnen\n"
-"for ikke-root brugere at kunne tilføje bruger definerbare shares til "
-"eksportering af\n"
+"for ikke-root brugere at kunne tilføje bruger definerbare shares til eksportering af\n"
 "\"net usershare\" kommandoerne.\n"
 
 # type: Plain text
@@ -9117,8 +9116,7 @@ msgid ""
 "To set this up, first set up your smb.conf by adding to the [global] \n"
 "section:\n"
 msgstr ""
-"For at sætte det op, sæt først din smb.conf op ved at tilføje dette til "
-"[global]\n"
+"For at sætte det op, sæt først din smb.conf op ved at tilføje dette til [global]\n"
 "afsnit:\n"
 
 # type: Plain text
@@ -9140,16 +9138,13 @@ msgid ""
 "Finally, tell smbd how many usershares you will allow by adding to the\n"
 "[global] section of smb.conf a line such as:\n"
 msgstr ""
-"Som det næste skal du skabe folderen /home/usershares, du skal ændre ejeren "
-"til\n"
+"Som det næste skal du skabe folderen /home/usershares, du skal ændre ejeren til\n"
 "root og sætte group owner til UNIX gruppen som skal have\n"
 "lov til at skabe usershares, for eksempel \"users\" group. Sæt\n"
-" tilladelserne på /home/usershares til 01770. (Ejer og gruppe har alle "
-"tilladelser,\n"
+" tilladelserne på /home/usershares til 01770. (Ejer og gruppe har alle tilladelser,\n"
 "ingen adgang for andre, plus sticky bit, hvilket betyder at en fil i\n"
 "denne folder kun kan omdøbes eller blive slettet af ejeren af filen).\n"
-"Til slut, fortæl smbd hvor mange usershares du vil tillade at der tilføjes "
-"til\n"
+"Til slut, fortæl smbd hvor mange usershares du vil tillade at der tilføjes til\n"
 "[global] afsnit af smb.conf en linie som f.eks:\n"
 
 # type: Plain text
@@ -9183,13 +9178,10 @@ msgid ""
 "net usershare info [-l|--long] [wildcard sharename] - to print info about a user defined share.\n"
 "net usershare list [-l|--long] [wildcard sharename] - to list user defined shares.\n"
 msgstr ""
-"net usershare add sharename path [comment] [acl] [guest_ok=[y|n]] - til at "
-"tilføje eller ændre en bruger defineret share.\n"
+"net usershare add sharename path [comment] [acl] [guest_ok=[y|n]] - til at tilføje eller ændre en bruger defineret share.\n"
 "net usershare delete sharename - for at slette en bruger defineret share.\n"
-"net usershare info [-l|--long] [wildcard sharename] - for at udskrive info "
-"om en bruger defineret share.\n"
-"net usershare list [-l|--long] [wildcard sharename] - for at opliste bruger "
-"defineret shares.\n"
+"net usershare info [-l|--long] [wildcard sharename] - for at udskrive info om en bruger defineret share.\n"
+"net usershare list [-l|--long] [wildcard sharename] - for at opliste bruger defineret shares.\n"
 
 # type: Plain text
 #: packages.txt:2013
@@ -9427,8 +9419,8 @@ msgid ""
 "usr/share/openttd/data/'"
 msgstr ""
 "Det kræver datafilerne af originalen Transport Tycoon Deluxe for Windows for "
-"at spille spillet. Du er nødt til manuelt at kopiere følgende filer til "
-"'/usr/share/openttd/data/'"
+"at spille spillet. Du er nødt til manuelt at kopiere følgende filer til '/"
+"usr/share/openttd/data/'"
 
 # type: Plain text
 #: packages.txt:2133
@@ -15683,6 +15675,168 @@ msgstr ""
 "(men ikke som udkast) af Free Software Foundation."
 
 # type: Plain text
+#: introduction.txt:5
+msgid ""
+"Before you start to read this document, you should know some important "
+"things about how to read it."
+msgstr ""
+"Før du begynder for læse dette dokument, bør du vide nogle vigtige ting om "
+"hvordan det skal læses."
+
+# type: Plain text
+#: introduction.txt:6
+#, no-wrap
+msgid "Things that you should really read"
+msgstr "Ting som du virkeligt bør læse"
+
+# type: Plain text
+#: introduction.txt:10
+msgid ""
+"First there are some part of this document that you should really read, to "
+"understand how frugalware is working and how to administrate it."
+msgstr ""
+"Først er der nogle dele af dette dokument som du bør læse, for at forstå "
+"hvordan Frugalware arbejder og hvordan du administrerer det."
+
+# type: Block title
+#: introduction.txt:11
+#, no-wrap
+msgid "Important references to read:"
+msgstr "Vigtig referencer at læse:"
+
+# type: Plain text
+#: introduction.txt:13
+msgid "This introduction ;)"
+msgstr "Denne introduktion ;)"
+
+# type: Plain text
+#: introduction.txt:14
+msgid "How to use pacman-g2."
+msgstr "Hvordan pacman-g2 bruges."
+
+# type: Plain text
+#: introduction.txt:15
+msgid "How to manage service."
+msgstr "Hvordan service håndteres"
+
+# type: Plain text
+#: introduction.txt:16
+#, no-wrap
+msgid "Running console commands"
+msgstr "Køre konsolkommandoer"
+
+# type: Plain text
+#: introduction.txt:21
+msgid ""
+"Along this document, there are boxed text that shows you a console log. "
+"These logs are important and requires quite some attentions since most off "
+"the time you are expected to run them and get the same output."
+msgstr ""
+"Gennem dette dokument bliver der vist indrammet tekst der viser dig en "
+"konsol. Disse visninger er vigtige og kræver opmærksomhed, fordi det meste "
+"af tiden forventes det at du kører dem og får det samme output."
+
+# type: Plain text
+#: introduction.txt:25
+#, no-wrap
+msgid ""
+"$ echo foo bar\n"
+"foo bar\n"
+msgstr ""
+"$ echo foo bar\n"
+"foo bar\n"
+
+# type: Plain text
+#: introduction.txt:28
+msgid ""
+"This is how a console log look. Lets details it so you understand what means."
+msgstr ""
+"Dette er hvordan en konsol ser ud. Lad os vise det i detaljer så du forstår "
+"hvad det betyder."
+
+# type: Plain text
+#: introduction.txt:31
+msgid ""
+"The `echo foo bar` part is what you should type and it's the command. The "
+"following line `foo bar` is the ouput of the previous command."
+msgstr ""
+"`echo foo bar` delen er hvad du skal skrive, og det er komandoen. Følgende "
+"linje `foo bar` er output af den foregående komando."
+
+# type: Plain text
+#: introduction.txt:36
+msgid ""
+"You may wonder what differenciate the command from the output. You see that "
+"in front of the command there is a `$`. This indicates that it's a command "
+"line, but there is more meaning in this symbol. This symbol can change "
+"depending on the user priviledges required to run the command."
+msgstr ""
+"Du undrer dig måske over differenciat fra komando til output. Du kan se at "
+"der foran komando er der et `$`. Dette indikerer at det er en kommandolinie, "
+"men der er mere mening i dette symbol. Dette symbol kan ændre sig afhængig "
+"af brugerpåkrævet priviledger for at køre kommandoen."
+
+# type: Block title
+#: introduction.txt:37
+#, no-wrap
+msgid "Here is the list of the common prefix for the console commands:"
+msgstr "Her er en liste af almene præfiks for konsolkommandoer:"
+
+# type: Plain text
+#: introduction.txt:40
+msgid ""
+"`$` indicates that any user can run the command. Most of the time it means "
+"you have to run it with your user."
+msgstr ""
+"`$` indikerer at enhver bruger kan køre kommandoen. For det meste betyder "
+"det at du skal køre det som almindelig bruger."
+
+# type: Plain text
+#: introduction.txt:43
+msgid ""
+"`user$` indicates that a the specified user priviledge are required to run "
+"this command. Usually this is necessary for security reasons."
+msgstr ""
+"`bruger$` indikerer at et specificeret bruger privilegium er påkrævet for at "
+"køre denne komando. Sædvanligvis er dette nødvendig af sikkerhedsårsager."
+
+# type: Plain text
+#: introduction.txt:46
+msgid ""
+"You can get an interactive shell for this user, replacing 'user' with the "
+"wanted user name, by issuing:"
+msgstr ""
+"Du kan få en interaktiv shell for denne bruger, ved at erstatte 'bruger' med "
+"ønskede bruger navn, ved at skrive:"
+
+# type: Plain text
+#: introduction.txt:49
+#, no-wrap
+msgid "$ su - user\n"
+msgstr "$ su - brugernavn\n"
+
+# type: Plain text
+#: introduction.txt:53
+msgid ""
+"`#` indicates that the `root` users priviledges are required to run this "
+"command.  Usually this is required to manage the system configuration."
+msgstr ""
+"`#` indikerer at `root` bruger privilegium er påkrævet for at køre denne "
+"komando. Sædvanligvis er dette påkrævet for at håndtere system "
+"konfiguration."
+
+# type: Plain text
+#: introduction.txt:55
+msgid "You can get an interactive shell for 'root' running:"
+msgstr "Du kan få en interaktiv shell for  'root' ved at skrive:"
+
+# type: Plain text
+#: introduction.txt:58
+#, no-wrap
+msgid "$ su - \n"
+msgstr "$ su - \n"
+
+# type: Plain text
 #~ msgid "--------------------------------------------------------------------------\n"
 #~ msgstr "--------------------------------------------------------------------------\n"
 
@@ -16655,149 +16809,11 @@ msgstr ""
 
 # type: Plain text
 #~ msgid ""
-#~ "Before you start to read this document, you should know some important "
-#~ "things about how to read it."
-#~ msgstr ""
-#~ "Før du begynder for læse dette dokument, bør du vide nogle vigtige ting "
-#~ "om hvordan det skal læses."
-
-# type: Plain text
-#~ msgid "=== Things that you should really read"
-#~ msgstr "=== Ting som du virkeligt bør læse"
-
-# type: Plain text
-#~ msgid ""
-#~ "First there are some part of this document that you should really read, "
-#~ "to understand how frugalware is working and how to administrate it."
-#~ msgstr ""
-#~ "Først er der nogle dele af dette dokument som du bør læse, for at forstå "
-#~ "hvordan Frugalware arbejder og hvordan du administrerer det."
-
-# type: Plain text
-#~ msgid ""
 #~ ".Important references to read: * This introduction ;)  * How to use "
 #~ "pacman-g2.  * How to manage service."
 #~ msgstr ""
 #~ ".Vigtige referencer der bør læses: * Denne introduktion ;)  * Hvordan "
 #~ "pacman-g2 bruges.  * Hvordan du håndterer service."
-
-# type: Plain text
-#~ msgid "=== Running console commands"
-#~ msgstr "=== Køre konsolkommandoer"
-
-# type: Plain text
-#~ msgid ""
-#~ "Along this document, there are boxed text that shows you a console log. "
-#~ "These logs are important and requires quite some attentions since most "
-#~ "off the time you are expected to run them and get the same output."
-#~ msgstr ""
-#~ "Gennem dette dokument bliver der vist indrammet tekst der viser dig en "
-#~ "konsol. Disse visninger er vigtige og kræver opmærksomhed, fordi det "
-#~ "meste af tiden forventes det at du kører dem og får det samme output."
-
-# type: Plain text
-#~ msgid ""
-#~ "$ echo foo bar\n"
-#~ "foo bar\n"
-#~ "--------------\n"
-#~ msgstr ""
-#~ "$ echo foo bar\n"
-#~ "foo bar\n"
-#~ "--------------\n"
-
-# type: Plain text
-#~ msgid ""
-#~ "This is how a console log look. Lets details it so you understand what "
-#~ "means."
-#~ msgstr ""
-#~ "Dette er hvordan en konsol ser ud. Lad os vise det i detaljer så du "
-#~ "forstår hvad det betyder."
-
-# type: Plain text
-#~ msgid ""
-#~ "The `echo foo bar` part is what you should type and it's the command. The "
-#~ "following line `foo bar` is the ouput of the previous command."
-#~ msgstr ""
-#~ "`echo foo bar` delen er hvad du skal skrive, og det er komandoen. "
-#~ "Følgende linje `foo bar` er output af den foregående komando."
-
-# type: Plain text
-#~ msgid ""
-#~ "You may wonder what differenciate the command from the output. You see "
-#~ "that in front of the command there is a `$`. This indicates that it's a "
-#~ "command line, but there is more meaning in this symbol. This symbol can "
-#~ "change depending on the user priviledges required to run the command."
-#~ msgstr ""
-#~ "Du undrer dig måske over differenciat fra komando til output. Du kan se "
-#~ "at der foran komando er der et `$`. Dette indikerer at det er en "
-#~ "kommandolinie, men der er mere mening i dette symbol. Dette symbol kan "
-#~ "ændre sig afhængig af brugerpåkrævet priviledger for at køre kommandoen."
-
-# type: Plain text
-#~ msgid ""
-#~ ".Here is the list of the common prefix for the console commands: * `$` "
-#~ "indicates that any user can run the command. Most of the time it means "
-#~ "you have to run it with your user."
-#~ msgstr ""
-#~ ".Her er en liste af almene præfiks for konsolkommandoer: * `$` indikerer "
-#~ "at enhver bruger kan køre kommandoen. For det meste betyder det at du "
-#~ "skal køre det som almindelig bruger."
-
-# type: Plain text
-#~ msgid ""
-#~ "* `user$` indicates that a the specified user priviledge are required to "
-#~ "run this\n"
-#~ "command. Usually this is necessary for security reasons.\n"
-#~ "+\n"
-#~ "You can get an interactive shell for this user, replacing 'user' with "
-#~ "the\n"
-#~ "wanted user name, by issuing:\n"
-#~ "+\n"
-#~ "-----------\n"
-#~ msgstr ""
-#~ "* `bruger$` indikerer at en specificeret bruger priviledge er påkrævet "
-#~ "for at køre denne\n"
-#~ "komando. Sædvanligvis er dette nødvendig for sikkerhedsårsager.\n"
-#~ "+\n"
-#~ "Du kan få en interaktiv skal for denne bruger, ved at erstatte 'bruger' "
-#~ "med\n"
-#~ "ønskede bruger navn, ved at skrive:\n"
-#~ "+\n"
-#~ "-----------\n"
-
-# type: Plain text
-#~ msgid ""
-#~ "$ su - user\n"
-#~ "-----------\n"
-#~ msgstr ""
-#~ "$ su - brugernavn\n"
-#~ "-----------\n"
-
-# type: Plain text
-#~ msgid ""
-#~ "* `#` indicates that the `root` users priviledges are required to run "
-#~ "this command.\n"
-#~ "Usually this is required to manage the system configuration.\n"
-#~ "+\n"
-#~ "You can get an interactive shell for 'root' running:\n"
-#~ "+\n"
-#~ "------\n"
-#~ msgstr ""
-#~ "* `#` indikerer at `root` bruger priviledge er påkrævet for at køre denne "
-#~ "komando.\n"
-#~ "Sædvanligvis er dette påkrævet for at håndtere system konfiguration.\n"
-#~ "+\n"
-#~ "Du kan få en interaktiv skal for  'root' ved at skrive:\n"
-#~ "+\n"
-#~ "------\n"
-
-# type: Plain text
-#~ msgid ""
-#~ "$ su - \n"
-#~ "------\n"
-#~ msgstr ""
-#~ "$ su - \n"
-#~ "------\n"
 
 # type: Plain text
 #~ msgid "== About Frugalware"
