@@ -6,14 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-18 01:45+0100\n"
-"PO-Revision-Date: 2009-02-17 22:33+0200\n"
+"POT-Creation-Date: 2009-02-27 01:49+0100\n"
+"PO-Revision-Date: 2009-02-27 18:37+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 1.2.0\n"
 
@@ -1793,7 +1793,7 @@ msgstr "Configuration de base"
 
 # type: Plain text
 #: postinst.txt:3 bugs.txt:3 packages.txt:2207 list-rules.txt:3
-#: irc-rules.txt:3 makepkg.txt:3
+#: irc-rules.txt:3 makepkg.txt:3 introduction.txt:1
 #, no-wrap
 msgid "Introduction"
 msgstr "Introduction"
@@ -15935,6 +15935,174 @@ msgstr ""
 "Free Software Foundation."
 
 # type: Plain text
+#: introduction.txt:5
+msgid ""
+"Before you start to read this document, you should know some important "
+"things about how to read it."
+msgstr ""
+"Avant que vous ne commenciez à lire ce document, vous devez savoir quelques "
+"informations importantes sur la façon de le lire."
+
+# type: Plain text
+#: introduction.txt:6
+#, no-wrap
+msgid "Things that you should really read"
+msgstr "Ce que vous devriez lire avant tout"
+
+# type: Plain text
+#: introduction.txt:10
+msgid ""
+"First there are some part of this document that you should really read, to "
+"understand how frugalware is working and how to administrate it."
+msgstr ""
+"Tour d'abord, il y a certaines sections de ce document que vous devriez lire "
+"avec attention, afin de comprendre comment Frugalware fonctionne et comment "
+"l'administrer."
+
+# type: Block title
+#: introduction.txt:11
+#, no-wrap
+msgid "Important references to read:"
+msgstr "Références importantes à lire:"
+
+# type: Plain text
+#: introduction.txt:13
+msgid "This introduction ;)"
+msgstr "Cette introduction ;)"
+
+# type: Plain text
+#: introduction.txt:14
+msgid "How to use pacman-g2."
+msgstr "Comment utiliser pacman-g2."
+
+# type: Plain text
+#: introduction.txt:15
+msgid "How to manage service."
+msgstr "Comment gérer les services."
+
+# type: Plain text
+#: introduction.txt:16
+#, no-wrap
+msgid "Running console commands"
+msgstr "Exécution de commandes dans une console"
+
+# type: Plain text
+#: introduction.txt:21
+msgid ""
+"Along this document, there are boxed text that shows you a console log. "
+"These logs are important and requires quite some attentions since most off "
+"the time you are expected to run them and get the same output."
+msgstr ""
+"Tout au long de ce document, il y a des textes à l'intérieur de boites qui "
+"montrent des historiques de console. Ces historiques sont important et "
+"requièrent un peu d'attention puisque la plus part du temps il est attendu "
+"que vous les exécutiez et obteniez la même sortie."
+
+# type: Plain text
+#: introduction.txt:25
+#, no-wrap
+msgid ""
+"$ echo foo bar\n"
+"foo bar\n"
+msgstr ""
+"$ echo foo bar\n"
+"foo bar\n"
+
+# type: Plain text
+#: introduction.txt:28
+msgid ""
+"This is how a console log look. Lets details it so you understand what means."
+msgstr ""
+"Voilà à quoi ressemble un historique de console. Détaillons-la afin que vous "
+"compreniez ce que cela veut dire."
+
+# type: Plain text
+#: introduction.txt:31
+msgid ""
+"The `echo foo bar` part is what you should type and it's the command. The "
+"following line `foo bar` is the ouput of the previous command."
+msgstr ""
+"La partie `echo foo bar` est ce que vous devez taper et cela correspond à la "
+"commande. La ligne suivante `foo bar` est la sortie de la commande "
+"précédente."
+
+# type: Plain text
+#: introduction.txt:36
+msgid ""
+"You may wonder what differenciate the command from the output. You see that "
+"in front of the command there is a `$`. This indicates that it's a command "
+"line, but there is more meaning in this symbol. This symbol can change "
+"depending on the user priviledges required to run the command."
+msgstr ""
+"Vous pouvez vous demander ce qui différencie une commande de ça sortie. Vous "
+"voyez qu'au début de la commande il y a un `$`. Cela indique que c'est une "
+"ligne de commande, mais il y a un peu plus de sens dans se symbole. Ce "
+"symbole peut changer en fonction des privilèges utilisateurs requis pour "
+"exécuter la commande."
+
+# type: Block title
+#: introduction.txt:37
+#, no-wrap
+msgid "Here is the list of the common prefix for the console commands:"
+msgstr "Voici la liste des préfixes communs pour les commandes sur une console:"
+
+# type: Plain text
+#: introduction.txt:40
+msgid ""
+"`$` indicates that any user can run the command. Most of the time it means "
+"you have to run it with your user."
+msgstr ""
+"`$` indique que n'importe quel utilisateur peut exécuter la commande. La "
+"plus part du temps cela signifie que vous avez a l'exécuter avec votre "
+"utilisateur."
+
+# type: Plain text
+#: introduction.txt:43
+msgid ""
+"`user$` indicates that a the specified user priviledge are required to run "
+"this command. Usually this is necessary for security reasons."
+msgstr ""
+"`utilisateur$` indique que les privilèges spécifiques de 'utilisateur' sont "
+"requis pour exécuter cette commande. Habituellement ceci est requis pour des "
+"questions de sécurité."
+
+# type: Plain text
+#: introduction.txt:46
+msgid ""
+"You can get an interactive shell for this user, replacing 'user' with the "
+"wanted user name, by issuing:"
+msgstr ""
+"Vous pouvez obtenir un console interactive pour cet utilisateur, en "
+"replaçant 'utilisateur' par le nom d'utilisateur souhaité, en exécutant:"
+
+# type: Plain text
+#: introduction.txt:49
+#, no-wrap
+msgid "$ su - user\n"
+msgstr "$ su - utilisateur\n"
+
+# type: Plain text
+#: introduction.txt:53
+msgid ""
+"`#` indicates that the `root` users priviledges are required to run this "
+"command.  Usually this is required to manage the system configuration."
+msgstr ""
+"`#` indique que les privilèges utilisateurs de `root` sont requis pour "
+"exécuter cette commande. Habituellement ceci est requis pour contrôler la "
+"configuration du système."
+
+# type: Plain text
+#: introduction.txt:55
+msgid "You can get an interactive shell for 'root' running:"
+msgstr "Vous pouvez obtenir une console interactive pour 'root' en exécutant:"
+
+# type: Plain text
+#: introduction.txt:58
+#, no-wrap
+msgid "$ su - \n"
+msgstr "$ su - \n"
+
+# type: Plain text
 #~ msgid "--------------------------------------------------------------------------\n"
 #~ msgstr "--------------------------------------------------------------------------\n"
 
@@ -17244,27 +17412,6 @@ msgstr ""
 
 # type: Plain text
 #~ msgid ""
-#~ "Before you start to read this document, you should know some important "
-#~ "things about how to read it."
-#~ msgstr ""
-#~ "Avant que vous ne commenciez à lire ce document, vous devez savoir "
-#~ "quelques informations importantes sur la façon de le lire."
-
-# type: Plain text
-#~ msgid "=== Things that you should really read"
-#~ msgstr "=== Ce que vous devriez lire avant tout"
-
-# type: Plain text
-#~ msgid ""
-#~ "First there are some part of this document that you should really read, "
-#~ "to understand how frugalware is working and how to administrate it."
-#~ msgstr ""
-#~ "Tour d'abord, il y a certaines sections de ce document que vous devriez "
-#~ "lire avec attention, afin de comprendre comment Frugalware fonctionne et "
-#~ "comment l'administrer."
-
-# type: Plain text
-#~ msgid ""
 #~ ".Important references to read: * This introduction ;)  * How to use "
 #~ "pacman-g2.  * How to manage service."
 #~ msgstr ""
@@ -17272,129 +17419,6 @@ msgstr ""
 #~ "* Cette introduction ;)\n"
 #~ "* Comment utiliser pacman-g2.\n"
 #~ "* Comment administrer les services.\n"
-
-# type: Plain text
-#~ msgid "=== Running console commands"
-#~ msgstr "=== Exécution de commandes de console"
-
-# type: Plain text
-#~ msgid ""
-#~ "Along this document, there are boxed text that shows you a console log. "
-#~ "These logs are important and requires quite some attentions since most "
-#~ "off the time you are expected to run them and get the same output."
-#~ msgstr ""
-#~ "Tout au long de ce document, il y a des textes à l'intérieur de boites "
-#~ "qui montrent des historiques de console. Ces historiques sont important "
-#~ "et requièrent un peu d'attention puisque la plus part du temps il est "
-#~ "attendu que vous les exécutiez et obteniez la même sortie."
-
-# type: Plain text
-#~ msgid ""
-#~ "$ echo foo bar\n"
-#~ "foo bar\n"
-#~ "--------------\n"
-#~ msgstr ""
-#~ "$ echo foo bar\n"
-#~ "foo bar\n"
-#~ "--------------\n"
-
-# type: Plain text
-#~ msgid ""
-#~ "This is how a console log look. Lets details it so you understand what "
-#~ "means."
-#~ msgstr ""
-#~ "Voilà à quoi ressemble un historique de console. Détaillons-la afin que "
-#~ "vous compreniez ce que cela veut dire."
-
-# type: Plain text
-#~ msgid ""
-#~ "The `echo foo bar` part is what you should type and it's the command. The "
-#~ "following line `foo bar` is the ouput of the previous command."
-#~ msgstr ""
-#~ "La partie `echo foo bar` est ce que vous devez taper et cela correspond à "
-#~ "la commande. La ligne suivante `foo bar` est la sortie de la commande "
-#~ "précédente."
-
-# type: Plain text
-#~ msgid ""
-#~ "You may wonder what differenciate the command from the output. You see "
-#~ "that in front of the command there is a `$`. This indicates that it's a "
-#~ "command line, but there is more meaning in this symbol. This symbol can "
-#~ "change depending on the user priviledges required to run the command."
-#~ msgstr ""
-#~ "Vous pouvez vous demander ce qui différencie une commande de ça sortie. "
-#~ "Vous voyez qu'au début de la commande il y a un `$`. Cela indique que "
-#~ "c'est une ligne de commande, mais il y a un peu plus de sens dans se "
-#~ "symbole. Ce symbole peut changer en fonction des privilèges utilisateurs "
-#~ "requis pour exécuter la commande."
-
-# type: Plain text
-#~ msgid ""
-#~ ".Here is the list of the common prefix for the console commands: * `$` "
-#~ "indicates that any user can run the command. Most of the time it means "
-#~ "you have to run it with your user."
-#~ msgstr ""
-#~ ".Voici la liste des préfixes communs aux commandes de consoles:\n"
-#~ "* `$` indique que n'importe quel utilisateur peut exécuter la commande. "
-#~ "La plus part du temps cela signifie que vous avez a l'exécuter avec votre "
-#~ "utilisateur.\n"
-
-# type: Plain text
-#~ msgid ""
-#~ "* `user$` indicates that a the specified user priviledge are required to "
-#~ "run this\n"
-#~ "command. Usually this is necessary for security reasons.\n"
-#~ "+\n"
-#~ "You can get an interactive shell for this user, replacing 'user' with "
-#~ "the\n"
-#~ "wanted user name, by issuing:\n"
-#~ "+\n"
-#~ "-----------\n"
-#~ msgstr ""
-#~ "* `utilisateur$` indique que les privilèges spécifiques de 'utilisateur' "
-#~ "sont requis pour exécuter cette commande.\n"
-#~ "Habituellement ceci est requis pour des questions de sécurité.\n"
-#~ "+\n"
-#~ "Vous pouvez obtenir un console interactive pour cet utilisateur, en "
-#~ "replaçant 'utilisateur' par\n"
-#~ "le nom d'utilisateur souhaité, en exécutant:\n"
-#~ "+\n"
-#~ "-----------\n"
-
-# type: Plain text
-#~ msgid ""
-#~ "$ su - user\n"
-#~ "-----------\n"
-#~ msgstr ""
-#~ "$ su - utilisateur\n"
-#~ "-----------\n"
-
-# type: Plain text
-#~ msgid ""
-#~ "* `#` indicates that the `root` users priviledges are required to run "
-#~ "this command.\n"
-#~ "Usually this is required to manage the system configuration.\n"
-#~ "+\n"
-#~ "You can get an interactive shell for 'root' running:\n"
-#~ "+\n"
-#~ "------\n"
-#~ msgstr ""
-#~ "* `#` indique que les privilèges utilisateurs de `root` sont requis pour "
-#~ "exécuter cette commande.\n"
-#~ "Habituellement ceci est requis pour contrôler la configuration du "
-#~ "système.\n"
-#~ "+\n"
-#~ "Vous pouvez obtenir une console interactive pour 'root' en exécutant:\n"
-#~ "+\n"
-#~ "------\n"
-
-# type: Plain text
-#~ msgid ""
-#~ "$ su - \n"
-#~ "------\n"
-#~ msgstr ""
-#~ "$ su -\n"
-#~ "------\n"
 
 # type: Plain text
 #~ msgid "== About Frugalware"
