@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: setup current\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-24 02:24+0100\n"
-"PO-Revision-Date: 2009-02-24 14:22+0200\n"
+"POT-Creation-Date: 2009-03-07 02:23+0100\n"
+"PO-Revision-Date: 2009-03-07 17:51+0200\n"
 "Last-Translator: Balint Krizsan <balint@krizsan.de>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
 "Language: de\n"
@@ -584,28 +584,41 @@ msgstr ""
 msgid "Ignore setting password"
 msgstr "Setzen des Passwortes auslassen"
 
-#: ../src/plugins/postconf.c:153
+#: ../src/plugins/postconf.c:155
 msgid "Enter login"
 msgstr "Login eingeben"
 
-#: ../src/plugins/postconf.c:153
+#: ../src/plugins/postconf.c:155
 msgid "Please enter the login name you should like to create:"
 msgstr "Bitte den Login-Namen eingeben, der angelegt werden soll:"
 
-#: ../src/plugins/postconf.c:156
+#: ../src/plugins/postconf.c:158
 msgid "Enter full name"
 msgstr "Vollständigen Namen eingeben"
 
-#: ../src/plugins/postconf.c:156
+#: ../src/plugins/postconf.c:158
 msgid "Please enter the full name of the user you would like to create:"
 msgstr ""
 "Bitte vollständigen Namen des Benutzers eingeben, der angelegt werden soll:"
 
-#: ../src/plugins/postconf.c:201
+#: ../src/plugins/postconf.c:173
+#, c-format
+msgid ""
+"'/home/%s' already exists! Please change the home directory path to a non-"
+"existing directory:"
+msgstr ""
+"'/home/%s' existiert bereits! Bitte verändern Sie den Pfad des "
+"Heimatverzeichnisses auf ein noch nicht vorhandenes Verzeichnis:"
+
+#: ../src/plugins/postconf.c:175
+msgid "Enter home directory"
+msgstr "Heimatverzeichnis eingeben"
+
+#: ../src/plugins/postconf.c:215
 msgid "No normal user account detected"
 msgstr "Kein normales Benutzerkonto gefunden"
 
-#: ../src/plugins/postconf.c:202
+#: ../src/plugins/postconf.c:216
 msgid ""
 "There is currently no non-root user account configured. It is strongly "
 "recommended to create one. Would you like to create a normal user account "
@@ -614,15 +627,15 @@ msgstr ""
 "Es wurde noch kein Benutzerkonto angelegt. Es ist stark zu empfehlen, eines "
 "anzulegen. Soll jetzt ein normales Benutzerkonto angelegt werden?"
 
-#: ../src/plugins/postconf.c:230
+#: ../src/plugins/postconf.c:244
 msgid "Post-install configuration"
 msgstr "Post-Install Konfiguration"
 
-#: ../src/plugins/postconf.c:260
+#: ../src/plugins/postconf.c:274
 msgid "Configuring kernel modules"
 msgstr "Konfiguriere Kernel-Module"
 
-#: ../src/plugins/postconf.c:261
+#: ../src/plugins/postconf.c:275
 msgid "Updating module dependencies..."
 msgstr "Aktualisiere Modul-Abhängigkeiten..."
 
@@ -660,15 +673,15 @@ msgstr "Installation beenden"
 msgid "Are you sure you want to exit from the installer?"
 msgstr "Installation wirklich verlassen?"
 
-#: ../src/util.c:631
+#: ../src/util.c:634
 msgid "Oops"
 msgstr "Ups"
 
-#: ../src/util.c:633
+#: ../src/util.c:636
 msgid "A problem has occurred"
 msgstr "Ein Fehler ist aufgetreten"
 
-#: ../src/util.c:633
+#: ../src/util.c:636
 msgid ""
 "Internal error: Segmentation fault. Please report this issue to http://bugs."
 "frugalware.org"
@@ -676,15 +689,15 @@ msgstr ""
 "Interner Fehler: Speicherzugriffsfehler. Bitte dieses Vorkommen an http://"
 "bugs.frugalware.org melden"
 
-#: ../src/util.c:659
+#: ../src/util.c:662
 msgid "Selecting a task"
 msgstr "Aufgabe auswählen"
 
-#: ../src/util.c:667
+#: ../src/util.c:670
 msgid "Select task to continue with"
 msgstr "Aufgabe wählen, mit der fortgefahren werden soll"
 
-#: ../src/util.c:668
+#: ../src/util.c:671
 msgid ""
 "You selected to change the way normally Frugalware is installed. Here are "
 "the list of tasks you can continue with:"
