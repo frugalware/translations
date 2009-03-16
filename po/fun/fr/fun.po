@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-22 02:07+0100\n"
-"PO-Revision-Date: 2009-01-22 17:05+0200\n"
+"POT-Creation-Date: 2009-03-16 02:22+0100\n"
+"PO-Revision-Date: 2009-03-16 20:52+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fr\n"
@@ -17,28 +17,28 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 1.2.0\n"
 
-#: ../src/fun.c:67 ../src/fun.c:75
+#: ../src/fun.c:69 ../src/fun.c:77
 msgid "Error"
-msgstr "erreur"
+msgstr "Erreur"
 
-#: ../src/fun.c:67
+#: ../src/fun.c:69
 msgid "Failed to initialize dbus subsystem"
-msgstr "erreur d'initialisation du système dbus"
+msgstr "Erreur d'initialisation du système dbus"
 
-#: ../src/fun.c:75
+#: ../src/fun.c:77
 msgid "Failed to initialize interface"
-msgstr "l'interface ne peut demarer"
+msgstr "L'interface ne peut demarer"
 
 #. About
-#: ../src/fun-ui.c:144
+#: ../src/fun-ui.c:148
 msgid "About FUN"
 msgstr "À propos de FUN"
 
-#: ../src/fun-ui.c:269
+#: ../src/fun-ui.c:274
 msgid "Restart Fun"
 msgstr "Redémarrer Fun"
 
-#: ../src/fun-ui.c:270
+#: ../src/fun-ui.c:275
 msgid ""
 "Fun needs to be restarted in order for the changes to take effect. Do you "
 "want to restart Fun now ?"
@@ -46,32 +46,32 @@ msgstr ""
 "Fun doit être redémarré pour appliquer les changements . Voulez vous "
 "redémarrer Fun maintenant ?"
 
-#: ../src/fun-ui.c:418
+#: ../src/fun-ui.c:430
 msgid "S"
 msgstr "S"
 
-#: ../src/fun-ui.c:426
+#: ../src/fun-ui.c:438
 msgid "Package Name"
 msgstr "Nom du paquet"
 
-#: ../src/fun-ui.c:436
+#: ../src/fun-ui.c:448
 msgid "Latest Version"
 msgstr "Dernière version"
 
-#: ../src/fun-ui.c:444
+#: ../src/fun-ui.c:456
 msgid "Description"
 msgstr "Description"
 
-#: ../src/fun-ui.c:498
+#: ../src/fun-ui.c:512
 msgid "Connection Failed"
 msgstr "Échec de la connexion"
 
-#: ../src/fun-ui.c:498
+#: ../src/fun-ui.c:512
 msgid "Failed to connect to the fun daemon\n"
 msgstr "N'a pu se connecter au démon fun\r\n"
 
 #. set the status
-#: ../src/fun-ui.c:502
+#: ../src/fun-ui.c:516
 msgid ""
 "The frugalware update notifier daemon is not running. Update checking is "
 "disabled"
@@ -80,7 +80,7 @@ msgstr ""
 "vérification de mises à jour est désactivée."
 
 #. display an error
-#: ../src/fun-ui.c:504
+#: ../src/fun-ui.c:518
 msgid "Update checking disabled"
 msgstr "Vérification de mises à jour désactivé"
 
@@ -88,20 +88,20 @@ msgstr "Vérification de mises à jour désactivé"
 #. fun_tooltip_set_text2 (tooltip, "", FALSE);
 #. set the status to Idle
 #. and the status back to Idle
-#: ../src/fun-ui.c:521 ../src/fun-ui.c:553 ../src/fun-ui.c:591
+#: ../src/fun-ui.c:535 ../src/fun-ui.c:567 ../src/fun-ui.c:612
 msgid "Idle"
 msgstr "En attente"
 
 #. set the status to let the user know that fun is checking for an update
-#: ../src/fun-ui.c:570
+#: ../src/fun-ui.c:591
 msgid "Checking for new updates..."
 msgstr "Vérification pour de nouvelles mises à jour..."
 
-#: ../src/fun-ui.c:584
+#: ../src/fun-ui.c:605
 msgid "Updates are available"
 msgstr "Mises à jour disponibles"
 
-#: ../src/fun-ui.c:584
+#: ../src/fun-ui.c:605
 msgid ""
 "New package updates are available for your system. Click the tray icon for "
 "more details"
@@ -109,25 +109,33 @@ msgstr ""
 "De nouveaux paquets sont disponibles pour votre système. Cliquer sur l'icone "
 "pour voir les détails"
 
-#: ../src/fun-ui.c:610
+#: ../src/fun-ui.c:627
+msgid "Failed to create thread for checking update"
+msgstr "N'a pu créer un thread pour vérifier la présence d'une mise à jour"
+
+#: ../src/fun-ui.c:646
 msgid "(C) 2007-2009 Frugalware Developer Team (GPL)"
 msgstr "(C) 2007-2009 L'équipe de développeur Frugalware (GPL)"
 
-#: ../src/fun-ui.c:611 ../data/fun.glade.h:9
+#: ../src/fun-ui.c:647 ../data/fun.glade.h:9
 msgid "Frugalware Update Notifier"
 msgstr "Notifieur de mises à jour de Frugalware"
 
-#: ../src/fun-ui.c:663
+#: ../src/fun-ui.c:699
 msgid "Error getting update information"
-msgstr "erreur pour obtenir les informations de mises a jour"
+msgstr "Erreur pour obtenir les informations de mises a jour"
 
-#: ../src/fun-ui.c:663
+#: ../src/fun-ui.c:699
 msgid "There was an error getting update information"
-msgstr "il y a une erreur pour obtenir les informations de mise a jour"
+msgstr "Il y a une erreur pour obtenir les informations de mise a jour"
+
+#: ../src/fun-ui.c:772
+msgid "Error launching GFpm"
+msgstr "Erreur au démarrage de GFpm"
 
 #: ../src/fun-tooltip.c:44
 msgid "View Updates"
-msgstr "voir les mises a jour"
+msgstr "Voir les mises a jour"
 
 #: ../data/fun.glade.h:1
 msgid "<b>News Notification</b>"
