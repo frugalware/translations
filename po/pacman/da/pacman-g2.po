@@ -6,15 +6,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-05-05 05:13+0200\n"
-"PO-Revision-Date: 2008-05-05 16:53+0200\n"
+"POT-Creation-Date: 2009-03-20 04:59+0100\n"
+"PO-Revision-Date: 2009-03-20 20:50+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 1.1.0\n"
+"X-Generator: Pootle 1.2.0\n"
 
 #: ../add.c:69 ../deptest.c:64 ../remove.c:83 ../sync.c:304 ../sync.c:343
 #, c-format
@@ -283,75 +284,76 @@ msgstr "Beskrivelse    : "
 msgid "error calculating md5sum or sha1sum for %s\n"
 msgstr "fejlberegning md5sum eller sha1sum for %s\n"
 
-#: ../package.c:115 ../package.c:117
+#: ../package.c:115
 #, c-format
-msgid "%sMODIFIED\t%s\n"
-msgstr "%sÆNDRET\t%s\n"
+msgid "NOT MODIFIED\t%s\n"
+msgstr "IKKE ÆNDRET\t%s\n"
 
-#: ../package.c:115 ../package.c:117
-msgid "NOT "
-msgstr "IKKE "
+#: ../package.c:117
+#, c-format
+msgid "MODIFIED\t%s\n"
+msgstr "ÆNDRET\t%s\n"
 
-#: ../package.c:121
+#: ../package.c:122
 #, c-format
 msgid "MISSING\t\t%s\n"
 msgstr "MANGLENDE\t\t%s\n"
 
-#: ../package.c:139
+#: ../package.c:140
 #, c-format
 msgid "Repository        : %s\n"
 msgstr "Arkiv        : %s\n"
 
-#: ../package.c:140
+#: ../package.c:141
 #, c-format
 msgid "Name              : %s\n"
 msgstr "Navn              : %s\n"
 
-#: ../package.c:141
+#: ../package.c:142
 #, c-format
 msgid "Version           : %s\n"
 msgstr "Version           : %s\n"
 
-#: ../package.c:143
+#: ../package.c:144
 msgid "Groups            :"
 msgstr "Grupper            :"
 
-#: ../package.c:144
+#: ../package.c:145
 msgid "Provides          :"
 msgstr "Fremskaffer          :"
 
-#: ../package.c:145
+#: ../package.c:146
 msgid "Depends On        :"
 msgstr "Afhænger Af        :"
 
-#: ../package.c:146
+#: ../package.c:147
 msgid "Removes           :"
 msgstr "Fjerner           :"
 
-#: ../package.c:147
+#: ../package.c:148
 msgid "Conflicts With    :"
 msgstr "Er i konflikt Med    :"
 
-#: ../package.c:148
+#: ../package.c:149
 msgid "Replaces          :"
 msgstr "Erstatter          :"
 
-#: ../package.c:150
+#: ../package.c:151
 #, c-format
 msgid "Size (compressed) : %ld\n"
 msgstr "Størrelse (komprimeret) : %ld\n"
 
-#: ../package.c:151
+#: ../package.c:152
 #, c-format
 msgid "Size (installed)  : %ld\n"
 msgstr "Størrelse (installeret)  : %ld\n"
 
-#: ../package.c:152
+#: ../package.c:153
 #, c-format
 msgid "Description       : "
 msgstr "Beskrivelse       : "
 
-#: ../package.c:156
+#: ../package.c:157
 #, c-format
 msgid ""
 "\n"
@@ -360,7 +362,7 @@ msgstr ""
 "\n"
 "MD5 Sum           : %s"
 
-#: ../package.c:160
+#: ../package.c:161
 #, c-format
 msgid ""
 "\n"
@@ -369,7 +371,7 @@ msgstr ""
 "\n"
 "SHA1 Sum          : %s"
 
-#: ../package.c:189
+#: ../package.c:190
 #, c-format
 msgid "No changelog available for '%s'.\n"
 msgstr "Ingen ændringslog tilgængelig for '%s'.\n"
@@ -509,7 +511,8 @@ msgstr "  -c, --changelog     se ændrings log på en pakke\n"
 msgid ""
 "  -d, --nodeps        if used with -e, list packages that were not "
 "installed\n"
-msgstr "  -d, --nodeps        hvis brugt med -e, oplist pakker der ikke blev "
+msgstr ""
+"  -d, --nodeps        hvis brugt med -e, oplist pakker der ikke blev "
 "installeret\n"
 
 #: ../pacman-g2.c:134
@@ -973,10 +976,6 @@ msgstr "sykroniserer pakkelister"
 msgid ":: Starting local database upgrade...\n"
 msgstr ":: Starter lokal databaseopgradering...\n"
 
-#: ../sync.c:312
-msgid "starting full system upgrade"
-msgstr "starter fuld systemopgradering"
-
 #: ../sync.c:330
 msgid ""
 "\n"
@@ -1104,30 +1103,15 @@ msgstr "ser efter for indre-konflikter... "
 msgid "installing %s... "
 msgstr "installerer %s... "
 
-#: ../trans.c:101
-#, c-format
-msgid "installed %s (%s)"
-msgstr "installeret %s (%s)"
-
 #: ../trans.c:108
 #, c-format
 msgid "removing %s... "
 msgstr "fjerner %s... "
 
-#: ../trans.c:117
-#, c-format
-msgid "removed %s (%s)"
-msgstr "fjernet %s (%s)"
-
 #: ../trans.c:124
 #, c-format
 msgid "upgrading %s... "
 msgstr "opgraderer %s... "
-
-#: ../trans.c:131
-#, c-format
-msgid "upgraded %s (%s -> %s)"
-msgstr "opgraderet %s (%s -> %s)"
 
 #: ../trans.c:138
 msgid "checking package integrity... "
@@ -1214,3 +1198,18 @@ msgstr "ser efter for indre-konflikter"
 #, c-format
 msgid "failed to allocated %d bytes\n"
 msgstr "fejlede at allokere %d bytes\n"
+
+#~ msgid "NOT "
+#~ msgstr "IKKE "
+
+#~ msgid "starting full system upgrade"
+#~ msgstr "starter fuld systemopgradering"
+
+#~ msgid "installed %s (%s)"
+#~ msgstr "installeret %s (%s)"
+
+#~ msgid "removed %s (%s)"
+#~ msgstr "fjernet %s (%s)"
+
+#~ msgid "upgraded %s (%s -> %s)"
+#~ msgstr "opgraderet %s (%s -> %s)"
