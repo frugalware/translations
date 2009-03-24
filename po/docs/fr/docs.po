@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-27 01:49+0100\n"
-"PO-Revision-Date: 2009-02-27 18:37+0200\n"
+"POT-Creation-Date: 2009-03-24 01:49+0100\n"
+"PO-Revision-Date: 2009-03-24 11:17+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fr\n"
@@ -146,12 +146,12 @@ msgstr "link:init.html[Le système de démarage (init)]"
 # type: Bullet: '* '
 #: index.txt:39 index-user.txt:40
 msgid "link:contribute.html[How to contribute?]"
-msgstr "link:contribute.html[Comment contribuer?]"
+msgstr "link:contribute.html[Comment contribuer ?]"
 
 # type: Bullet: '* '
 #: index.txt:41 index-user.txt:42
 msgid "link:bugs.html[How to report bugs?]"
-msgstr "link:bugs.html[Comment rapporter des bogues?]"
+msgstr "link:bugs.html[Comment rapporter des bogues ?]"
 
 # type: Bullet: '* '
 #: index.txt:43 index-user.txt:44
@@ -1881,6 +1881,20 @@ msgstr ""
 # type: Plain text
 #: postinst.txt:37
 msgid ""
+"If you are trying to log in in text mode and numbers appear instead of "
+"letters, like r66t instead of root, it is very likely that you are on a "
+"laptop computer with Num Lock turned on, so just turn it off. You can also "
+"set the default Num Lock state in `/etc/sysconfig/numlock`."
+msgstr ""
+"Si vous essayez de vous identifier en mode texte et que des nombres "
+"apparaissent à la place de lettres, comme r66t à la place de root, il est "
+"très probable que vous soyez sur un ordinateur portable avec Num Lock "
+"activé, veuillez alors simplement le désactivé. Vous pouvez aussi définir "
+"l'état par défaut du Num Lock dans `/etc/sysconfig/numlock`."
+
+# type: Plain text
+#: postinst.txt:42
+msgid ""
 "After this step, you can create a regular (also known as non-root) user.  "
 "It's highly recommended to create one, and log in as a regular user.  If a "
 "command should be run as root, you should use su or sudo under console, and "
@@ -1893,13 +1907,13 @@ msgstr ""
 "sous X."
 
 # type: Plain text
-#: postinst.txt:38
+#: postinst.txt:43
 #, no-wrap
 msgid "Network"
 msgstr "Réseau"
 
 # type: Plain text
-#: postinst.txt:42
+#: postinst.txt:47
 msgid ""
 "After this, setup will configure your network settings. Setup simply runs "
 "the netconfig utility, which is described in the Networking section."
@@ -1909,13 +1923,13 @@ msgstr ""
 "dans la section Réseau."
 
 # type: Plain text
-#: postinst.txt:43
+#: postinst.txt:48
 #, no-wrap
 msgid "Timezone"
 msgstr "Fuseau horaire"
 
 # type: Plain text
-#: postinst.txt:50
+#: postinst.txt:55
 msgid ""
 "If network installation is done, we should configure the system's time.  "
 "This means two actions. First, you should decide if the hardware (BIOS) "
@@ -1932,13 +1946,13 @@ msgstr ""
 "Non. Si vous n'êtes pas sur de ce dont il s'agit, vous devriez répondre Non."
 
 # type: Plain text
-#: postinst.txt:51
+#: postinst.txt:56
 #, no-wrap
 msgid "Mouse"
 msgstr "Souris"
 
 # type: Plain text
-#: postinst.txt:56
+#: postinst.txt:61
 msgid ""
 "The next step is to configure your mouse. The configuration will take effect "
 "on the console mouse services (gpm) and on the X server.  The setting is "
@@ -1949,13 +1963,13 @@ msgstr ""
 "X.  Cette configuration est faite par xconfig plus tard."
 
 # type: Plain text
-#: postinst.txt:57
+#: postinst.txt:62
 #, no-wrap
 msgid "Graphical interface"
 msgstr "Interface Graphique"
 
 # type: Plain text
-#: postinst.txt:61
+#: postinst.txt:66
 msgid ""
 "If you have installed an X server (by default xorg), the setup will run "
 "xconfig. For more information on xconfig, see the section Graphical "
