@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-22 01:50+0100\n"
-"PO-Revision-Date: 2009-03-22 22:15+0200\n"
+"POT-Creation-Date: 2009-03-24 01:49+0100\n"
+"PO-Revision-Date: 2009-03-24 19:21+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -1828,6 +1828,15 @@ msgstr ""
 # type: Plain text
 #: postinst.txt:37
 msgid ""
+"If you are trying to log in in text mode and numbers appear instead of "
+"letters, like r66t instead of root, it is very likely that you are on a "
+"laptop computer with Num Lock turned on, so just turn it off. You can also "
+"set the default Num Lock state in `/etc/sysconfig/numlock`."
+msgstr ""
+
+# type: Plain text
+#: postinst.txt:42
+msgid ""
 "After this step, you can create a regular (also known as non-root) user.  "
 "It's highly recommended to create one, and log in as a regular user.  If a "
 "command should be run as root, you should use su or sudo under console, and "
@@ -1839,13 +1848,13 @@ msgstr ""
 "eller sudo i konsol, og `gksu` eller `kdesu` under X."
 
 # type: Plain text
-#: postinst.txt:38
+#: postinst.txt:43
 #, no-wrap
 msgid "Network"
 msgstr "Netværk"
 
 # type: Plain text
-#: postinst.txt:42
+#: postinst.txt:47
 msgid ""
 "After this, setup will configure your network settings. Setup simply runs "
 "the netconfig utility, which is described in the Networking section."
@@ -1855,13 +1864,13 @@ msgstr ""
 "netværksafsnitet."
 
 # type: Plain text
-#: postinst.txt:43
+#: postinst.txt:48
 #, no-wrap
 msgid "Timezone"
 msgstr "Tidszone"
 
 # type: Plain text
-#: postinst.txt:50
+#: postinst.txt:55
 msgid ""
 "If network installation is done, we should configure the system's time.  "
 "This means two actions. First, you should decide if the hardware (BIOS) "
@@ -1878,13 +1887,13 @@ msgstr ""
 "er sikker på hvad det er, bør du svare nej her."
 
 # type: Plain text
-#: postinst.txt:51
+#: postinst.txt:56
 #, no-wrap
 msgid "Mouse"
 msgstr "Mus"
 
 # type: Plain text
-#: postinst.txt:56
+#: postinst.txt:61
 msgid ""
 "The next step is to configure your mouse. The configuration will take effect "
 "on the console mouse services (gpm) and on the X server.  The setting is "
@@ -1895,13 +1904,13 @@ msgstr ""
 "senere af xconfig."
 
 # type: Plain text
-#: postinst.txt:57
+#: postinst.txt:62
 #, no-wrap
 msgid "Graphical interface"
 msgstr "Grafisk interface"
 
 # type: Plain text
-#: postinst.txt:61
+#: postinst.txt:66
 msgid ""
 "If you have installed an X server (by default xorg), the setup will run "
 "xconfig. For more information on xconfig, see the section Graphical "
@@ -13081,8 +13090,7 @@ msgstr ""
 "Ja, det er der. Det informerer brugere om nye binære pakker, håndterer "
 "rettigheder på kanalen og så videre. Hvis du ønsker en ny facilitet skal "
 "blive implementeret, så står det dig frit for at anmode om det på Frugalware "
-"Bug Tracker System (BTS) som er tilgængelig "
-"http://bugs.frugalware.org[her]."
+"Bug Tracker System (BTS) som er tilgængelig http://bugs.frugalware.org[her]."
 
 # type: Plain text
 #: irc-rules.txt:99
@@ -13103,9 +13111,9 @@ msgstr ""
 "Det er ikke et problem, men husk venligst følgende: hvis du er borte på det "
 "tidspunkt, og vender tilbage bør du kunne læse linierne som bliver "
 "fremhævet.  Hvis dette ikke er muligt så er det bedre at forlade kanalerne, "
-"da vi tror at vi er ved at tale til dig men vi så istedet taler med "
-"/dev/null. Også hvis du er online og du er blevet fremhævet og spurgt, så "
-"prøv venligst at svare. Hvis du ikke har tid, skriv følgende"
+"da vi tror at vi er ved at tale til dig men vi så istedet taler med /dev/"
+"null. Også hvis du er online og du er blevet fremhævet og spurgt, så prøv "
+"venligst at svare. Hvis du ikke har tid, skriv følgende"
 
 # type: Plain text
 #: irc-rules.txt:109
@@ -13132,8 +13140,7 @@ msgid ""
 msgstr ""
 "Venligst send _ikke_ /beskeder til brugere medmindre du først beder om "
 "tilladelse til at gøre det.  Dette er en support kanal: du spørger i kanalen "
-"og hvem der end må have tid/viden svarer. Det er den hurtigste måde, tro "
-"os.."
+"og hvem der end må have tid/viden svarer. Det er den hurtigste måde, tro os.."
 
 # type: Plain text
 #: irc-rules.txt:121
@@ -13238,8 +13245,8 @@ msgid ""
 msgstr ""
 "Frugalware består af tusinder af pakker. Hver fil i distributionen tilhører "
 "en eller anden pakke. Du kan nemt lave en forespørgelse, om hvilken pakke "
-"den specifike fil tilhører. Hvis du vil vide hvilken pakke indeholder '/etc"
-"/frugalware-release', skriver du bare følgende:"
+"den specifike fil tilhører. Hvis du vil vide hvilken pakke indeholder '/etc/"
+"frugalware-release', skriver du bare følgende:"
 
 # type: Plain text
 #: makepkg.txt:13
@@ -13956,11 +13963,9 @@ msgid ""
 "The example used above would be the following with cut and tr:\n"
 msgstr ""
 "En kort kommando der vil give os den senest stabile version af pakken.\n"
-" Dette hjælper vedligeholderne at holde FST up to date. Sædvanligvis vil "
-"denne streng\n"
+" Dette hjælper vedligeholderne at holde FST up to date. Sædvanligvis vil denne streng\n"
 "bestå af tre dele: et lynx -dump noget-url, en grep foo, og en sed\n"
-"kommando. Vi bruger http protokol om muligt, men somme tider er vi nødt til "
-"at\n"
+"kommando. Vi bruger http protokol om muligt, men somme tider er vi nødt til at\n"
 " bruge ftp. I dette tilfælde i stedet for `lynx -dump` skal du bruge\n"
 "`wget -O - -q`. Selvfølgelig, kan du bruge wget hele tiden,\n"
 "men lynx er mere enkel. Sed kommandoen kan erstattes med en\n"
@@ -14005,12 +14010,9 @@ msgstr ""
 "script er. Du kan bruge URLs hvis du ønsker at makepkg skal downloade dem\n"
 "automatisk. Det er vigtigt at anbringe alle kilderne i pakkens\n"
 "folder inklusive kilde-filen som du kan downloade fra et site.\n"
-" Også når der dowloades fra sourceforge, brug da venligst Finclude "
-"sourceforge!\n"
-"Hvis du benytter forskellige tilfældige patches fra ukendte kilder, forvent "
-"da ikke at\n"
-"nogen anden vil portere disse patches til en nyere version. Du er selv nødt "
-"til\n"
+" Også når der dowloades fra sourceforge, brug da venligst Finclude sourceforge!\n"
+"Hvis du benytter forskellige tilfældige patches fra ukendte kilder, forvent da ikke at\n"
+"nogen anden vil portere disse patches til en nyere version. Du er selv nødt til\n"
 "at lave dette arbejde. Du er blevet advaret! Forsøg at undgå patches\n"
 "medmindre de er virkelig nødvendige (f.eks: secfix, bugfix).\n"
 
@@ -14399,9 +14401,8 @@ msgid ""
 msgstr ""
 "Siden 0.5 kan makepkg også skabe underpakker. Det er meget nyttigt når din "
 "pakke har grafiske dele baseret på qt for eksempel. Det er en pine for gnome "
-"brugere eftersom de ønsker pakken, men de ønsker ikke qt delen. Så du "
-"skaber en underpakke for qt delen og begge parter er glade. Lad os se et "
-"eksempel :"
+"brugere eftersom de ønsker pakken, men de ønsker ikke qt delen. Så du skaber "
+"en underpakke for qt delen og begge parter er glade. Lad os se et eksempel :"
 
 # type: Plain text
 #: makepkg.txt:482
@@ -14612,10 +14613,8 @@ msgid ""
 msgstr ""
 "Det er ganske enkelt. I pakkefolderen bør du gøre præcist det samme\n"
 " som beskrevet i Rekompilering-pakke afsnittet. Hvis du vil bidrage med\n"
-" denne pakke til Frugalware projektet, så gå til "
-"http://bugs.frugalware.org[BTS],\n"
-" åbn en feature request og upload hver ikke-downloadbar fil (det vil sige, "
-"FrugalBuild,\n"
+" denne pakke til Frugalware projektet, så gå til http://bugs.frugalware.org[BTS],\n"
+" åbn en feature request og upload hver ikke-downloadbar fil (det vil sige, FrugalBuild,\n"
 " install scriptlet, patches) som en vedhæftning.\n"
 "Glem venligst ikke at tjekke din FrugalBuild med 'fblint' kommando før det\n"
 "oploades. Fblint er tilgængeligt i pacman-tools pakken.\n"
@@ -14639,10 +14638,10 @@ msgstr ""
 "Nogle ord om kernemoduler. De er specielle selv om du har installeret den "
 "rigtige version af kerne (og kernel-source) pakken, somme tider bliver "
 "modulerne kompileret for den kørende kerne, så du må tjekke om kompileringen "
-"af andre kerneversioner end den kerne versione du kører med virker eller "
-"ej. Du kan bruge modinfo kommando for dette. Hvis kryds-kompilering ikke "
-"altid fungerer tilføj Fcheckkernel til build(). Så her er listen over "
-"betingelser en kernemodulpakke skal have tilfredsstillet:"
+"af andre kerneversioner end den kerne versione du kører med virker eller ej. "
+"Du kan bruge modinfo kommando for dette. Hvis kryds-kompilering ikke altid "
+"fungerer tilføj Fcheckkernel til build(). Så her er listen over betingelser "
+"en kernemodulpakke skal have tilfredsstillet:"
 
 # type: Plain text
 #: makepkg.txt:580
@@ -15472,8 +15471,8 @@ msgid ""
 msgstr ""
 "Det kombinerede værk behøver kun at rumme én kopi af denne licens, og flere "
 "identiske, uforanderlige afsnit kan erstattes af en enkelt kopi. Hvis der er "
-"flere uforanderlige afsnit med samme navn, men med forskelligt indhold, "
-"skal man gøre titlen på hvert af disse afsnit forskellig fra de andre ved at "
+"flere uforanderlige afsnit med samme navn, men med forskelligt indhold, skal "
+"man gøre titlen på hvert af disse afsnit forskellig fra de andre ved at "
 "tilføje navnet på den oprindelige forfatter eller udgiver i parentes ved "
 "slutningen af afsnittet, hvis navnet er kendt, og ellers skal man tilføje et "
 "tal, som ikke bruges ved andre titler. De samme tilpasninger skal foretages "
@@ -15837,7 +15836,7 @@ msgstr ""
 # type: Plain text
 #: introduction.txt:55
 msgid "You can get an interactive shell for 'root' running:"
-msgstr "Du kan få en interaktiv shell for  'root' ved at skrive:"
+msgstr "Du kan få en interaktiv shell til  'root' ved at skrive:"
 
 # type: Plain text
 #: introduction.txt:58
