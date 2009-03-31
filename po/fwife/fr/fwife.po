@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-29 13:03+0200\n"
-"PO-Revision-Date: 2009-03-29 14:32+0200\n"
+"POT-Creation-Date: 2009-03-31 02:27+0200\n"
+"PO-Revision-Date: 2009-03-31 21:21+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Pootle 1.2.0\n"
+"X-Generator: Pootle 1.2.1\n"
 
 #: ../src/plugins/asklang.c:84
 msgid "Select your language"
@@ -137,7 +137,7 @@ msgstr ""
 
 #: ../src/plugins/partdisk.c:537 ../src/plugins/partdisk.c:701
 msgid "Do you want to format partition?"
-msgstr ""
+msgstr "Voulez-vous formater cette partition?"
 
 #. On utilise les balises
 #: ../src/plugins/partdisk.c:551
@@ -193,7 +193,8 @@ msgstr "Vérification des blocs défectueux - minutieusement"
 msgid ""
 "<span face=\"Courier New\"><b>Creating filesystem... Please wait ... </b></"
 "span>\n"
-msgstr "<span face=\"Courier New\"><b>Création du système de fichiers... Veuillez "
+msgstr ""
+"<span face=\"Courier New\"><b>Création du système de fichiers... Veuillez "
 "patienté ... </b></span>\n"
 
 #. On utilise les balises
@@ -213,6 +214,8 @@ msgstr "Sélectionnez cette partition comme partition racine?"
 #: ../src/plugins/partdisk.c:848
 msgid "Can't do this operation directly! Change your root partition first."
 msgstr ""
+"Impossible d'effectuer cette opération directement! Veuillez tout d'abord "
+"changer changer la partition racine."
 
 #: ../src/plugins/partdisk.c:895
 msgid "Do you want to run gparted to create/modify partitions?"
@@ -384,7 +387,7 @@ msgstr "Désélectionner tous les paquets de se groupe"
 
 #: ../src/plugins/select.c:623
 msgid "<b>Choose packages into selected group :</b>"
-msgstr ""
+msgstr "<b>Choisir les paquets dans les groupes sélectionnés:</b>"
 
 #: ../src/plugins/select.c:748 ../src/plugins/select.c:949
 msgid "KDE"
@@ -711,6 +714,8 @@ msgid ""
 "<span face=\"Courier New\"><b>You can configure some parts of your system</"
 "b></span>"
 msgstr ""
+"<span face=\"Courier New\"><b>Vous pouvez configurer quelques parties de votre "
+"système</b></span>"
 
 #: ../src/plugins/postconf.c:594
 msgid "Hardware"
@@ -849,8 +854,8 @@ msgstr "Configuration de GRUB"
 #: ../src/plugins/grubconf.c:75
 msgid "<span face=\"Courier New\"><b>Installing GRUB bootloader</b></span>"
 msgstr ""
-"<span face=\"Courier New\"><b>Installation du chargeur de démarrage "
-"GRUB</b></span>"
+"<span face=\"Courier New\"><b>Installation du chargeur de démarrage GRUB</"
+"b></span>"
 
 #: ../src/plugins/grubconf.c:78
 msgid "Choose install type :"
@@ -977,33 +982,32 @@ msgid "Network Mask : "
 msgstr "Masque réseau:"
 
 #: ../src/plugins/netconf.c:284
-#, fuzzy
 msgid "Gateway : "
-msgstr "Gateway:"
+msgstr "Passerelle:"
 
 #: ../src/plugins/netconf.c:331
 msgid "Configure DSL connexion"
-msgstr ""
+msgstr "Configurer une connexion DSL"
 
 #: ../src/plugins/netconf.c:338
 msgid "Enter DSL parameters"
-msgstr ""
+msgstr "Entrez les paramètres DSL"
 
 #: ../src/plugins/netconf.c:342
 msgid "PPPOE username : "
-msgstr ""
+msgstr "Nom d'utilisateur PPPOE:"
 
 #: ../src/plugins/netconf.c:349
 msgid "PPPOE password : "
-msgstr ""
+msgstr "Mot de passe PPPOE:"
 
 #: ../src/plugins/netconf.c:356
 msgid "Re-enter PPPOE password : "
-msgstr ""
+msgstr "Vérification du mot de passe PPPOE:"
 
 #: ../src/plugins/netconf.c:363
 msgid "Associate with interface : "
-msgstr ""
+msgstr "Associer avec l'interface:"
 
 #: ../src/plugins/netconf.c:396
 msgid "Passwords do not match! Try again."
@@ -1011,7 +1015,7 @@ msgstr ""
 
 #: ../src/plugins/netconf.c:441
 msgid "This interface has been already configured!"
-msgstr ""
+msgstr "Cette interface a déjà été configurée!"
 
 #: ../src/plugins/netconf.c:475
 msgid ""
@@ -1019,6 +1023,9 @@ msgid ""
 "\n"
 "Configure your wireless now?"
 msgstr ""
+"Il semble que cette carte réseau possède une extension sans fils.\n"
+"\n"
+"Configurer votre réseaux sans fils maintenant?"
 
 #: ../src/plugins/netconf.c:487
 msgid "Set DHCP hostname"
@@ -1038,6 +1045,8 @@ msgid ""
 "<span face=\"Courier New\"><b>You can configure all network interfaces you "
 "need</b></span>"
 msgstr ""
+"<span face=\"Courier New\"><b>Vous pouvez configurer tout les interfaces "
+"réseau dont vous avez besoin</b></span>"
 
 #: ../src/plugins/netconf.c:561
 msgid "Device"
@@ -1052,13 +1061,12 @@ msgid "Netmask"
 msgstr "Masque réseau"
 
 #: ../src/plugins/netconf.c:573
-#, fuzzy
 msgid "Gateway"
-msgstr "Gateway"
+msgstr "Passerelle"
 
 #: ../src/plugins/netconf.c:577
 msgid "DHCP Nameserver"
-msgstr ""
+msgstr "Nom du serveur DHCP"
 
 #: ../src/plugins/netconf.c:583
 msgid "Network configuration"
@@ -1131,4 +1139,4 @@ msgstr "Privilèges insuffisant. Fwife doit être exécuter en tant que root."
 
 #: ../src/fwife.c:288
 msgid "Fwife : Frugalware Installer Front-End"
-msgstr ""
+msgstr "Fwife : Frugalware Installer Front-End"
