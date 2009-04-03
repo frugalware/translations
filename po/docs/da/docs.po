@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-01 01:49+0300\n"
-"PO-Revision-Date: 2009-04-02 19:36+0200\n"
+"POT-Creation-Date: 2009-04-03 01:49+0300\n"
+"PO-Revision-Date: 2009-04-03 16:46+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -276,7 +276,8 @@ msgstr "include::header.txt[]"
 #: index-user.txt:4
 msgid ""
 "Frugalware's user documentation is also available in the following formats:"
-msgstr "Frugalware brugerdokumentation er også tilgængelig i følgende formater:"
+msgstr ""
+"Frugalware brugerdokumentation er også tilgængelig i følgende formater:"
 
 # type: Plain text
 #: index-user.txt:7
@@ -366,8 +367,8 @@ msgstr ""
 "hurtigere og mere enkel. Vi håber du vil kunne lide det. I denne "
 "introduktion, vi vil gerne svare på nogle spørgsmål som der er blevet "
 "stillet i flere interviews med VMiklos, stifteren af projektet. Du kan se "
-"den fulde liste af artikler der er blevet skrevet om Frugalware "
-"http://frugalware.org/media[her]."
+"den fulde liste af artikler der er blevet skrevet om Frugalware http://"
+"frugalware.org/media[her]."
 
 # type: Plain text
 #: about.txt:20
@@ -446,15 +447,14 @@ msgid ""
 "doc/*/COPYING files.''"
 msgstr ""
 "``Frugalware licens selv står for buildscripts der er brugt for at bygge "
-"Frugalware. Source er tilgængelig under GPL licensen "
-"http://git.frugalware.org[her].Frugalware init scripts blev oprindeligt "
-"skrevet af Patrick J. Volkerding, skaberen af Slackware Linux "
-"distributionen. Vi frigiver vores tilføjelser under GPL, men Patrick J. "
-"Volkerding's code er stadig under BSD licens.  Frugalware har også nogle "
-"sideprojekter, som vores pacman-g2 pakke håndterer, Frugalware installer "
-"O.S.V. De er også tilgængelige under GPL licensen. For mere information om "
-"licens på pakker der er nkluderet i Frugalware, se på "
-"/usr/share/doc/*/COPYING filer.''"
+"Frugalware. Source er tilgængelig under GPL licensen http://git.frugalware."
+"org[her].Frugalware init scripts blev oprindeligt skrevet af Patrick J. "
+"Volkerding, skaberen af Slackware Linux distributionen. Vi frigiver vores "
+"tilføjelser under GPL, men Patrick J. Volkerding's code er stadig under BSD "
+"licens.  Frugalware har også nogle sideprojekter, som vores pacman-g2 pakke "
+"håndterer, Frugalware installer O.S.V. De er også tilgængelige under GPL "
+"licensen. For mere information om licens på pakker der er nkluderet i "
+"Frugalware, se på /usr/share/doc/*/COPYING filer.''"
 
 # type: Plain text
 #: about.txt:54
@@ -599,8 +599,8 @@ msgstr ""
 "eller alt andet i forbindelse med Frugalware fællesskabet. Hvis du kun "
 "ønsker at hjælpe os, men ikke kan lave rettelse til programmer, kan du "
 "hjælpe os med oversættelse af Frugalware til dit eller andre sprog. Og, "
-"selvfølgelig modtager vi gerne donationer :) Mere info link:getting-"
-"involved.html[her].''"
+"selvfølgelig modtager vi gerne donationer :) Mere info link:getting-involved."
+"html[her].''"
 
 # type: Plain text
 #: about.txt:110
@@ -2161,34 +2161,32 @@ msgstr ""
 "krydshenvisning."
 
 # type: Plain text
-#: pacman-g2.txt:102
-#, no-wrap
-msgid ""
-"`-------------------------------------------`------------------------`-----------------\n"
-"Action                                      Apt command              Pacman command\n"
-msgstr ""
-"`-------------------------------------------`------------------------`-----------------\n"
-" Handling                                        Apt kommando               Pacman kommando\n"
-
-# type: Plain text
 #: pacman-g2.txt:110
 #, no-wrap
 msgid ""
-"Refresh the package database:               apt-get update           pacman-g2 -Sy\n"
-"Upgrade currently installed packages:       apt-get upgrade          pacman-g2 -Su\n"
-"Install a new package:                      apt-get install foo      pacman-g2 -S foo\n"
-"Remove a package:                           apt-get remove foo       pacman-g2 -Rc foo\n"
-"Search in the full package database:        apt-cache search foo     pacman-g2 -Ss foo\n"
-"Install a package from a file:              dpkg -i foo.deb          pacman-g2 -A foo.fpm\n"
-"Clean the package cache:                    apt-get clean            pacman-g2 -Sc\n"
+"[options=\"header\",grid=\"all\"]\n"
+"|====\n"
+"| Action\t\t\t\t| Apt command\t\t| Pacman-G2 command\n"
+"| Refresh the package database:\t\t| apt-get update\t| pacman-g2 -Sy\n"
+"| Upgrade currently installed packages:\t| apt-get upgrade\t| pacman-g2 -Su\n"
+"| Install a new package:\t\t| apt-get install foo\t| pacman-g2 -S foo\n"
+"| Remove a package:\t\t\t| apt-get remove foo\t| pacman-g2 -Rc foo\n"
+"| Search in the full package database:\t| apt-cache search foo\t| pacman-g2 -Ss foo\n"
+"| Install a package from a file:\t| dpkg -i foo.deb\t| pacman-g2 -A foo.fpm\n"
+"| Clean the package cache:\t\t| apt-get clean\t\t| pacman-g2 -Sc\n"
+"|====\n"
 msgstr ""
-"Opdaterer pakkedatabasen:               apt-get update           pacman-g2 -Sy\n"
-"Opgraderer installerede pakker:       apt-get upgrade          pacman-g2 -Su\n"
-"Installerer en ny pakke:                      apt-get install foo      pacman-g2 -S foo\n"
-"Fjerner en pakke:                           apt-get remove foo       pacman-g2 -Rc foo\n"
-"Søg i den fulde pakkedatabase:        apt-cache search foo     pacman-g2 -Ss foo\n"
-"Installerer en pakke fra en fil:              dpkg -i foo.deb          pacman-g2 -A foo.fpm\n"
-"Rydder pakke cache:                    apt-get clean            pacman-g2 -Sc\n"
+"[options=\"header\",grid=\"all\"]\n"
+"|====\n"
+"| Handling\t\t\t\t| Apt kommando\t\t| Pacman-G2 kommando\n"
+"| Opdaterer pakkedatabasen:\t\t| apt-get update\t| pacman-g2 -Sy\n"
+"| Opgraderer installerede pakker:\t| apt-get upgrade\t| pacman-g2 -Su\n"
+"| Installerer en ny pakke:\t\t| apt-get install foo\t| pacman-g2 -S foo\n"
+"| Fjerner en pakke:\t\t\t| apt-get remove foo\t| pacman-g2 -Rc foo\n"
+"| Søg i den fulde pakkedatabase:\t| apt-cache search foo\t| pacman-g2 -Ss foo\n"
+"| Installerer en pakke fra en fil:\t| dpkg -i foo.deb\t| pacman-g2 -A foo.fpm\n"
+"| Rydder pakke cache:\t\t| apt-get clean\t\t| pacman-g2 -Sc\n"
+"|====\n"
 
 # type: Plain text
 #: network.txt:1
@@ -2661,7 +2659,7 @@ msgid "# service alsa load\n"
 msgstr "# service alsa load\n"
 
 # type: Plain text
-#: sound.txt:35 packages.txt:50 packages.txt:1229 gpg.txt:12
+#: sound.txt:35 packages.txt:50 packages.txt:1229
 msgid "command."
 msgstr "kommando."
 
@@ -3257,13 +3255,13 @@ msgid ""
 "kernel. Don't worry, it's fairly simple."
 msgstr ""
 "Linux kerne er i kernepakken. Vi forsøger at bruge så få patches som muligt "
-"for at forblive tæt på den oprindelige vanilla kerne. Vi bruger også "
-"http://alioth.debian.org/projects/splashy[splashy] i stedet for den "
-"velkendte bootsplash. Kernen indeholder direkte-compiled understøttelse for "
-"de fleste IDE-kontrollere, men alle low-level SCSI-drivere bliver kompileret "
-"som et modul. Hvis Frugalwares kerne ikke indeholder indbygget støtte for "
-"din kontroller, kan du kompilere din egen kerne. Hav ingen bekymringer, det "
-"er ganske enkelt."
+"for at forblive tæt på den oprindelige vanilla kerne. Vi bruger også http://"
+"alioth.debian.org/projects/splashy[splashy] i stedet for den velkendte "
+"bootsplash. Kernen indeholder direkte-compiled understøttelse for de fleste "
+"IDE-kontrollere, men alle low-level SCSI-drivere bliver kompileret som et "
+"modul. Hvis Frugalwares kerne ikke indeholder indbygget støtte for din "
+"kontroller, kan du kompilere din egen kerne. Hav ingen bekymringer, det er "
+"ganske enkelt."
 
 # type: Plain text
 #: init.txt:15
@@ -3373,8 +3371,8 @@ msgid ""
 "help looking at the `service` manual doing:"
 msgstr ""
 "I det følgende eksempel vil vi forklare hvordan man forandrer den løbende "
-"tilstand af en givet tjeneste. Du vil være nødt til at erstatte "
-"`$service_navn$` med det ønskede tjenestenavn. Som du vil se er syntaksen "
+"tilstand af en givet tjeneste. Du vil være nødt til at erstatte `"
+"$service_navn$` med det ønskede tjenestenavn. Som du vil se er syntaksen "
 "enkel, og du kan få meget mere hjælp ved at se på `service` manualen ved at "
 "skrive følgende i en terminal:"
 
@@ -3835,10 +3833,9 @@ msgid ""
 "version and we will update it as soon as possible."
 msgstr ""
 "Hvis kunne tænke dig at rapportere om forældede pakker, så tjek først at det "
-"ikke er oplistet på "
-"http://frugalware.org/~vmiklos/stats/chkworld.html[dette site]. Hvis pakken "
-"bliver oplistet så vær venlig *ikke* at raportere det da vi ved der er en ny "
-"version og vi vil opdatere det så snart som muligt."
+"ikke er oplistet på http://frugalware.org/~vmiklos/stats/chkworld.html[dette "
+"site]. Hvis pakken bliver oplistet så vær venlig *ikke* at raportere det da "
+"vi ved der er en ny version og vi vil opdatere det så snart som muligt."
 
 # type: Plain text
 #: bugs.txt:34
@@ -4015,10 +4012,9 @@ msgid ""
 msgstr ""
 "Vær venlig, ikke at anmode om tilpassede kerner. Vi forsøger at benytte så "
 "få patches som muligt.  Se `man kernel.sh` som en reference på det at bygge "
-"din egen kerne med brug af diverse patch. Også en "
-"link:http://wiki.frugalware.org/How_to_build_a_custom_kernel[tutorial] er "
-"tilgængelig. At bygge sådan en kerne kræver sædvanligvis et buildscript på "
-"kun 5 linier!"
+"din egen kerne med brug af diverse patch. Også en link:http://wiki."
+"frugalware.org/How_to_build_a_custom_kernel[tutorial] er tilgængelig. At "
+"bygge sådan en kerne kræver sædvanligvis et buildscript på kun 5 linier!"
 
 # type: Plain text
 #: bugs.txt:89
@@ -4146,8 +4142,8 @@ msgstr "Batteri, knapper, termisk management"
 # type: Plain text
 #: mobile.txt:9
 msgid ""
-"Notebook users are usually interested in the state of their battery.  To get "
-"the power button and the lid's sensor of its closed state emit events is "
+"Notebook users are usually interested in the state of their battery. To get "
+"the power button and the lid's sensor of its closed state to emit events is "
 "also nice. Some notebooks only shut down their continously running fans and "
 "operate only if needed if the thermal module is loaded."
 msgstr ""
@@ -4247,19 +4243,19 @@ msgstr ""
 "Infrarød og GPU hvis du har en kraftig en."
 
 # type: Plain text
-#: mobile.txt:52
+#: mobile.txt:51
 msgid ""
 "You can conserve a fair amount of power if you lessen the brightness level "
 "of the LCD screen. Some notebooks can remember two settings of this level, "
-"one when the equipment operates from battery and for another when powered "
-"from AC."
+"one when the equipment operates from battery and another when powered from "
+"AC."
 msgstr ""
-"Du kan holde igen med strømmen hvis du formindsker lysstyrke niveau på "
-"Lcdskærmen. Nogle bærbare kan huske to indstillinger af dette niveau, et når "
+"Du kan holde igen med strømmen hvis du formindsker lysstyrke niveau på LCD "
+"skærmen. Nogle bærbare kan huske to indstillinger af dette niveau, et når "
 "udstyret opererer fra batteri og et andet når det er drevet fra AC."
 
 # type: Plain text
-#: mobile.txt:56
+#: mobile.txt:55
 msgid ""
 "The CPUs have some sort of power saving capabilities, the most basic is "
 "\"CPU throttling\". Common on Intel mobile Celeron CPUs, only ACPI is "
@@ -4271,12 +4267,12 @@ msgstr ""
 "præcisere niveauet."
 
 # type: Plain text
-#: mobile.txt:58
+#: mobile.txt:57
 msgid "//FIXME governors, Intel Centrino/Core, AMD"
 msgstr "//FIXME systemer, Intel Centrino/Core, AMD"
 
 # type: Plain text
-#: mobile.txt:63
+#: mobile.txt:62
 msgid ""
 "Letting the HDD spin down gives little extra battery operating time, but "
 "frequent spinups (data access) and spindowns wears the disk. Only useful in "
@@ -4289,13 +4285,13 @@ msgstr ""
 "haddisken som det at vise en præsentation."
 
 # type: Plain text
-#: mobile.txt:64
+#: mobile.txt:63
 #, no-wrap
 msgid "Hibernation"
 msgstr "Dvale"
 
 # type: Plain text
-#: mobile.txt:70
+#: mobile.txt:69
 msgid ""
 "Hibernating your computer can cause data loss or severe filesystem damage if "
 "things go wrong. It's highly advised that first, you should consider if "
@@ -4308,12 +4304,12 @@ msgstr ""
 "installation først, i stedet for et produktionssystem."
 
 # type: Plain text
-#: mobile.txt:72
+#: mobile.txt:71
 msgid "From kernel/suspend.c:"
 msgstr "Fra kernel/suspend.c:"
 
 # type: Plain text
-#: mobile.txt:93
+#: mobile.txt:92
 #, no-wrap
 msgid ""
 "* BIG FAT WARNING *********************************************************\n"
@@ -4357,12 +4353,12 @@ msgstr ""
 "* (*) suspend/resume understøttelse behøves for at gøre det sikkert.\n"
 
 # type: Plain text
-#: mobile.txt:96
+#: mobile.txt:95
 msgid "You have been warned. If you are still not discouraged, read on!"
 msgstr "Du er blevet advaret. Hvis du ikke er blevet skræmt, læs vidre!"
 
 # type: Plain text
-#: mobile.txt:100
+#: mobile.txt:99
 msgid ""
 "First, you need to create a swap partition (if you don't have any yet).  You "
 "have to add an extra resume=/dev/swappart kernel parameter to '/boot/grub/"
@@ -4374,17 +4370,17 @@ msgstr ""
 "den gamle linie:"
 
 # type: Plain text
-#: mobile.txt:102
+#: mobile.txt:101
 msgid "`kernel (hd0,2)/boot/vmlinuz ro root=/dev/hda3 quiet vga=788`"
 msgstr "`kernel (hd0,2)/boot/vmlinuz ro root=/dev/hda3 quiet vga=788`"
 
 # type: Plain text
-#: mobile.txt:104
+#: mobile.txt:103
 msgid "The new line:"
 msgstr "Den nye linje:"
 
 # type: Plain text
-#: mobile.txt:106
+#: mobile.txt:105
 msgid ""
 "`kernel (hd0,2)/boot/vmlinuz ro root=/dev/hda3 quiet vga=788 resume=/dev/"
 "hda2`"
@@ -4393,7 +4389,7 @@ msgstr ""
 "hda2`"
 
 # type: Plain text
-#: mobile.txt:108
+#: mobile.txt:107
 msgid ""
 "After the above are done, you must reboot. The hibernation can be started "
 "with:"
@@ -4402,7 +4398,7 @@ msgstr ""
 "med:"
 
 # type: Plain text
-#: mobile.txt:110
+#: mobile.txt:109
 msgid "`echo shutdown > /sys/power/disk; echo disk > /sys/power/state`"
 msgstr "`echo shutdown > /sys/power/disk; echo disk > /sys/power/state`"
 
@@ -12592,11 +12588,11 @@ msgstr "Mailliste Regler"
 # type: Plain text
 #: list-rules.txt:7
 msgid ""
-"The purpose of this document is to define rules that helps the communication "
+"The purpose of this document is to define rules that help the communication "
 "on the mailing lists of Frugalware Linux."
 msgstr ""
 "Formålet med dette dokument er at definere regler der hjælper "
-"kommunikationen på adresselisterne for Frugalware Linux."
+"kommunikationen på mail listerne for Frugalware Linux."
 
 # type: Plain text
 #: list-rules.txt:8
@@ -12695,7 +12691,7 @@ msgstr ""
 # type: Plain text
 #: list-rules.txt:36
 msgid ""
-"frugalware-users is for general user questions. It seems the Forums are much "
+"frugalware-users is for general user questions. It seems the Forums are very "
 "popular, but we still provide a mailing list for user questions."
 msgstr ""
 "frugalware-users er for generale bruger spørgsmål. Det virker som om forum "
@@ -12771,18 +12767,17 @@ msgstr ""
 "oprindelige sender, hvilket du ikke ønsker i de fleste tilfælde."
 
 # type: Plain text
-#: list-rules.txt:64
+#: list-rules.txt:63
 msgid ""
-"Also please do not use the 'group-reply' function if possible, users must "
-"subscribe before they post, so you can be sure about they are in the mailing "
-"list."
+"Also please do not use the 'group-reply' function if possible. Users must "
+"subscribe before they post, so you can be sure they are in the mailing list."
 msgstr ""
 "Brug venligst heller ikke  'gruppe-svar' funktion hvis det er muligt, "
 "brugere skal abonnere før de skriver, så du kan være sikker på at de er i "
 "mail listen."
 
 # type: Plain text
-#: list-rules.txt:67
+#: list-rules.txt:66
 msgid ""
 "(This is different to some other projects' rules. Some projects require you "
 "to use 'group-reply' all the time, please do not do so on our lists.)"
@@ -12792,13 +12787,13 @@ msgstr ""
 "lister.)"
 
 # type: Plain text
-#: list-rules.txt:68
+#: list-rules.txt:67
 #, no-wrap
 msgid "Top posting and HTML messages"
 msgstr "Top porstering og HTML-beskeder"
 
 # type: Plain text
-#: list-rules.txt:73
+#: list-rules.txt:72
 msgid ""
 "Please do not link:http://www.idallen.com/topposting.html[top post] on our "
 "lists. Also please try to avoid HTML messages, many developers use a console "
@@ -12810,13 +12805,13 @@ msgstr ""
 "beskeder er altid problematiske."
 
 # type: Plain text
-#: list-rules.txt:74
+#: list-rules.txt:73
 #, no-wrap
 msgid "Archives"
 msgstr "Arkiver"
 
 # type: Plain text
-#: list-rules.txt:78
+#: list-rules.txt:77
 msgid ""
 "We have our own archive of our mailing lists link:http://frugalware.org/"
 "pipermail/[here]. Gmane also provides link:http://news.gmane.org/?"
@@ -13191,7 +13186,7 @@ msgstr ""
 # type: Plain text
 #: gpg.txt:1
 #, no-wrap
-msgid "Checking if Frugalware tarballs are from trusted source"
+msgid "Checking if Frugalware tarballs are from a trusted source"
 msgstr "Tjekke om Frugalware tarballs er fra betroet source"
 
 # type: Plain text
@@ -13202,8 +13197,8 @@ msgstr "Hvordan man verificerer"
 
 # type: Plain text
 #: gpg.txt:6
-msgid "Import our public keyring with the"
-msgstr "Importer vores offentlige nøgle med"
+msgid "Import our public keyring with the following command:"
+msgstr "Importer vores offentlige nøgle med følgende kommando:"
 
 # type: Plain text
 #: gpg.txt:9
@@ -13212,12 +13207,12 @@ msgid "$ gpg --recv-keys 20F55619\n"
 msgstr "$ gpg --recv-keys 20F55619\n"
 
 # type: Plain text
-#: gpg.txt:14
+#: gpg.txt:12
 msgid "Verify the tarball. Here is an example:"
 msgstr "Verificer tar-arkiv. Her er et eksempel:"
 
 # type: Plain text
-#: gpg.txt:20
+#: gpg.txt:18
 #, no-wrap
 msgid ""
 "$ gpg --verify pacman-tools-0.7.2.tar.gz.asc pacman-tools-0.7.2.tar.gz\n"
@@ -13231,17 +13226,18 @@ msgstr ""
 "\t<frugalware-devel@frugalware.org>\"\n"
 
 # type: Plain text
-#: gpg.txt:22
+#: gpg.txt:20
 #, no-wrap
 msgid "The meaning of this signature"
 msgstr "Betydningen af denne signatur"
 
 # type: Plain text
-#: gpg.txt:26
+#: gpg.txt:24
 msgid ""
 "This signature does not guarantee that the Frugalware Linux Archives master "
 "site itself has not been compromised. However, if we suffer an intrusion we "
-"will revoke the key and post information here as quickly as possible."
+"will revoke the key and post information on the home page as quickly as "
+"possible."
 msgstr ""
 "Denne signatur garanterer ikke i sig selv at Frugalware Linux Hovedarkiv-"
 "site ikke kan være været komprimeret. Men, hvis vi lider under et angreb vil "
@@ -15719,7 +15715,7 @@ msgstr "Ting som du virkeligt bør læse"
 #: introduction.txt:10
 msgid ""
 "First there are some part of this document that you should really read, to "
-"understand how frugalware is working and how to administrate it."
+"understand how Frugalware works and how to administer it."
 msgstr ""
 "Først er der nogle dele af dette dokument som du bør læse, for at forstå "
 "hvordan Frugalware arbejder og hvordan du administrerer det."
@@ -15742,8 +15738,8 @@ msgstr "Hvordan pacman-g2 bruges."
 
 # type: Plain text
 #: introduction.txt:15
-msgid "How to manage service."
-msgstr "Hvordan service håndteres"
+msgid "How to manage services."
+msgstr "Hvordan service håndteres."
 
 # type: Plain text
 #: introduction.txt:16
@@ -15753,9 +15749,10 @@ msgstr "Køre konsolkommandoer"
 
 # type: Plain text
 #: introduction.txt:21
+#, fuzzy
 msgid ""
-"Along this document, there are boxed text that shows you a console log. "
-"These logs are important and requires quite some attentions since most off "
+"Throughout this document, there is boxed text which shows you console "
+"output.  These are important and require quite some attention since most of "
 "the time you are expected to run them and get the same output."
 msgstr ""
 "Gennem dette dokument bliver der vist indrammet tekst der viser dig en "
@@ -15773,29 +15770,38 @@ msgstr ""
 "foo bar\n"
 
 # type: Plain text
-#: introduction.txt:28
+#: introduction.txt:29
+#, fuzzy
 msgid ""
-"This is how a console log look. Lets details it so you understand what means."
+"This is how a console log look. Let's look at its details so you understand "
+"what it means."
 msgstr ""
 "Dette er hvordan en konsol ser ud. Lad os vise det i detaljer så du forstår "
 "hvad det betyder."
 
 # type: Plain text
-#: introduction.txt:31
+#: introduction.txt:32
+#, fuzzy
 msgid ""
 "The `echo foo bar` part is what you should type and it's the command. The "
-"following line `foo bar` is the ouput of the previous command."
+"following line `foo bar` is the output of the previous command."
 msgstr ""
 "`echo foo bar` delen er hvad du skal skrive, og det er kommandoen. Følgende "
 "linie `foo bar` er output af den foregående kommando."
 
 # type: Plain text
-#: introduction.txt:36
+#: introduction.txt:34
+msgid "<<<>>>"
+msgstr ""
+
+# type: Plain text
+#: introduction.txt:39
+#, fuzzy
 msgid ""
-"You may wonder what differenciate the command from the output. You see that "
+"You may wonder what differentiates the command from the output. You see that "
 "in front of the command there is a `$`. This indicates that it's a command "
 "line, but there is more meaning in this symbol. This symbol can change "
-"depending on the user priviledges required to run the command."
+"depending on the user privileges required to run the command."
 msgstr ""
 "Du undrer dig måske over differenciat fra kommando til output. Du kan se at "
 "der foran kommando er et `$`. Dette indikerer at det er en kommandolinie, "
@@ -15803,64 +15809,76 @@ msgstr ""
 "af brugerpåkrævet privilegier for at køre kommandoen."
 
 # type: Block title
-#: introduction.txt:37
+#: introduction.txt:40
 #, no-wrap
 msgid "Here is the list of the common prefix for the console commands:"
 msgstr "Her er en liste af almene præfiks for konsolkommandoer:"
 
 # type: Plain text
-#: introduction.txt:40
+#: introduction.txt:43
+#, fuzzy
 msgid ""
 "`$` indicates that any user can run the command. Most of the time it means "
-"you have to run it with your user."
+"you have to run it with your own user account."
 msgstr ""
 "`$` indikerer at enhver bruger kan køre kommandoen. For det meste betyder "
 "det at du skal køre det som almindelig bruger."
 
 # type: Plain text
-#: introduction.txt:43
+#: introduction.txt:46
+#, fuzzy
 msgid ""
-"`user$` indicates that a the specified user priviledge are required to run "
+"`user$` indicates that the specified user's privileges are required to run "
 "this command. Usually this is necessary for security reasons."
 msgstr ""
 "`bruger$` indikerer at specificeret bruger privilegier er påkrævet for at "
 "køre denne kommando. Sædvanligvis er dette nødvendig af sikkerhedsårsager."
 
 # type: Plain text
-#: introduction.txt:46
+#: introduction.txt:49
+#, fuzzy
 msgid ""
 "You can get an interactive shell for this user, replacing 'user' with the "
-"wanted user name, by issuing:"
+"desired user name, by issuing:"
 msgstr ""
 "Du kan få en interaktiv shell til denne bruger, ved at erstatte 'bruger' med "
 "ønskede bruger navn, ved at skrive:"
 
 # type: Plain text
-#: introduction.txt:49
+#: introduction.txt:52
 #, no-wrap
 msgid "$ su - user\n"
 msgstr "$ su - brugernavn\n"
 
 # type: Plain text
-#: introduction.txt:53
+#: introduction.txt:56
+#, fuzzy
 msgid ""
-"`#` indicates that the `root` users priviledges are required to run this "
-"command.  Usually this is required to manage the system configuration."
+"`#` indicates that the `root` user's privileges are required to run this "
+"command. Usually this is required to manage the system configuration."
 msgstr ""
 "`#` indikerer at `root` bruger privilegier er påkrævet for at køre denne "
 "kommando. Sædvanligvis er dette påkrævet for at håndtere system "
 "konfiguration."
 
 # type: Plain text
-#: introduction.txt:55
+#: introduction.txt:58
 msgid "You can get an interactive shell for 'root' running:"
 msgstr "Du kan få en interaktiv shell til  'root' ved at skrive:"
 
 # type: Plain text
-#: introduction.txt:58
-#, no-wrap
-msgid "$ su - \n"
+#: introduction.txt:61
+#, fuzzy, no-wrap
+msgid "$ su -\n"
 msgstr "$ su - \n"
+
+# type: Plain text
+#~ msgid ""
+#~ "`-------------------------------------------`------------------------`-----------------\n"
+#~ "Action                                      Apt command              Pacman command\n"
+#~ msgstr ""
+#~ "`-------------------------------------------`------------------------`-----------------\n"
+#~ " Handling                                        Apt kommando               Pacman kommando\n"
 
 # type: Plain text
 #~ msgid "--------------------------------------------------------------------------\n"
