@@ -6,269 +6,315 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-12-26 05:05+0100\n"
-"PO-Revision-Date: 2007-09-22 22:06+0200\n"
+"POT-Creation-Date: 2009-04-05 02:25+0200\n"
+"PO-Revision-Date: 2009-04-06 00:21+0200\n"
 "Last-Translator: Patric Werme <xenonpower@clovermail.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 1.0\n"
+"X-Generator: Pootle 1.2.1\n"
 
-#: ../src/gfpm-about.c:86
-msgid "(C) 2006-2007 Frugalware Developer Team (GPL)"
+#: ../src/gfpm-about.c:89
+#, fuzzy
+msgid "(C) 2006-2009 Frugalware Developer Team (GPL)"
 msgstr "(C) 2006-2007 Frugalware Developer Team (GPL)"
 
-#: ../src/gfpm-about.c:87
+#: ../src/gfpm-about.c:90
 msgid "A graphical package manager for Frugalware Linux"
 msgstr "En grafisk paket hanterare för Frugalware Linux."
 
-#: ../src/gfpm-interface.c:124 ../src/gfpm-interface.c:1218
+#: ../src/gfpm-interface.c:175 ../src/gfpm-interface.c:1453
+#: ../src/gfpm-interface.c:1842
 msgid "Installed Packages"
 msgstr "Installerade Paket"
 
-#: ../src/gfpm-interface.c:186
-msgid "S"
-msgstr "S"
-
-#: ../src/gfpm-interface.c:194
-msgid "Status"
-msgstr "Status"
-
-#: ../src/gfpm-interface.c:202
-msgid "Package Name"
-msgstr "Paket namn"
-
-#: ../src/gfpm-interface.c:212
-msgid "Installed Version"
-msgstr "Installerad version"
-
-#: ../src/gfpm-interface.c:220
-msgid "Latest Version"
-msgstr "Senaste version"
-
-#: ../src/gfpm-interface.c:280 ../src/gfpm-interface.c:342
-#: ../src/gfpm-interface.c:398 ../src/gfpm-interface.c:421
-#: ../src/gfpm-interface.c:1013 ../src/gfpm-interface.c:1093
-#: ../src/gfpm-interface.c:1184 ../src/gfpm-interface.c:1503
-#: ../src/gfpm-interface.c:1516 ../src/gfpm-interface.c:1820
-#: ../src/gfpm-interface.c:1835 ../src/gfpm-optimizedb.c:117
-#: ../src/gfpm-optimizedb.c:124
+#: ../src/gfpm-interface.c:194 ../src/gfpm-interface.c:428
+#: ../src/gfpm-interface.c:501 ../src/gfpm-interface.c:569
+#: ../src/gfpm-interface.c:594 ../src/gfpm-interface.c:1219
+#: ../src/gfpm-interface.c:1302 ../src/gfpm-interface.c:1419
+#: ../src/gfpm-interface.c:1756 ../src/gfpm-interface.c:1769
+#: ../src/gfpm-interface.c:2141 ../src/gfpm-interface.c:2156
+#: ../src/gfpm-optimizedb.c:116 ../src/gfpm-optimizedb.c:123
+#: ../src/gfpm-logviewer.c:115 ../src/gfpm-logviewer.c:184
+#: ../src/gfpm-logviewer.c:235 ../src/gfpm-repomanager.c:350
+#: ../src/gfpm-repomanager.c:419 ../src/gfpm-repomanager.c:425
+#: ../src/gfpm-repomanager.c:929 ../src/gfpm-repomanager.c:1034
 msgid "Error"
 msgstr "Fel"
 
-#: ../src/gfpm-interface.c:280
+#: ../src/gfpm-interface.c:194
+msgid "Error parsing repository information from configuration file."
+msgstr ""
+
+#: ../src/gfpm-interface.c:236 ../src/gfpm-repomanager.c:118
+#: ../src/gfpm-repomanager.c:148
+msgid "S"
+msgstr "S"
+
+#: ../src/gfpm-interface.c:244
+msgid "Status"
+msgstr "Status"
+
+#: ../src/gfpm-interface.c:252
+msgid "Package Name"
+msgstr "Paket namn"
+
+#: ../src/gfpm-interface.c:263
+msgid "Installed Version"
+msgstr "Installerad version"
+
+#: ../src/gfpm-interface.c:271
+msgid "Latest Version"
+msgstr "Senaste version"
+
+#: ../src/gfpm-interface.c:279 ../data/gfpm.glade.h:40
+#, fuzzy
+msgid "Compressed Size"
+msgstr "Storlek (Komprimerad):"
+
+#: ../src/gfpm-interface.c:290 ../data/gfpm.glade.h:86
+#, fuzzy
+msgid "Uncompressed Size"
+msgstr "Storlek (Okomprimerad):"
+
+#: ../src/gfpm-interface.c:428
 msgid "Failed to initialize local package database."
 msgstr "Fel uppstod när den lokala paketdatabasen skulle initieras."
 
-#: ../src/gfpm-interface.c:310 ../data/gfpm.glade.h:18
+#: ../src/gfpm-interface.c:465 ../data/gfpm.glade.h:53
 msgid "Gfpm"
 msgstr "Gfpm"
 
-#: ../src/gfpm-interface.c:310
+#: ../src/gfpm-interface.c:465
 msgid "No changes to apply."
 msgstr "Inga ändringar att verkställa."
 
-#: ../src/gfpm-interface.c:315
+#: ../src/gfpm-interface.c:470
 msgid "Cancel Operation"
 msgstr "Avbryt åtgärd"
 
-#: ../src/gfpm-interface.c:315
+# reverseras är visserligen ett korrekt ord, fast jag tror nog gemene man förstår innebörden av återställas bättre.
+#: ../src/gfpm-interface.c:470
 msgid ""
 "Are you sure you want to cancel this operation ? \n"
 "Note: All changes made till now will be reverted."
 msgstr ""
 "Är du säker på att du vill avbryta denna åtgärd? \n"
-"Observera: Alla ändringar fram tills nu kommer att reverseras."
+"Observera: Alla ändringar fram tills nu kommer att återställas."
 
-#: ../src/gfpm-interface.c:338 ../src/gfpm-interface.c:394
-#: ../src/gfpm-interface.c:1179 ../src/gfpm-interface.c:1815
+#: ../src/gfpm-interface.c:497 ../src/gfpm-interface.c:565
+#: ../src/gfpm-interface.c:1414 ../src/gfpm-interface.c:2136
 #, c-format
 msgid "Failed to init transaction (%s)\n"
 msgstr ""
 
-#: ../src/gfpm-interface.c:421
+#. Ask the user before clearing the package list
+#: ../src/gfpm-interface.c:543 ../src/gfpm-interface.c:612
+msgid "Remember selection"
+msgstr "Kom ihåg val"
+
+#: ../src/gfpm-interface.c:544 ../src/gfpm-interface.c:613
+msgid ""
+"GFpm has detected that a failure has occurred. Do you want GFpm to remember "
+"your current package selection?"
+msgstr ""
+"GFpm har upptäct att ett fel har uppstått. Vill du att GFpm skall komma ihåg "
+"nuvarande paket val?"
+
+#: ../src/gfpm-interface.c:594
 msgid "Error getting transaction info"
 msgstr ""
 
-#: ../src/gfpm-interface.c:491
+#: ../src/gfpm-interface.c:675
 #, c-format
 msgid "Loading groups ... [%s]"
 msgstr "Laddar grupper ... [%s]"
 
-#: ../src/gfpm-interface.c:502
+#: ../src/gfpm-interface.c:686
 msgid "Loading groups ... DONE"
 msgstr "Laddar grupper ... KLART"
 
-#: ../src/gfpm-interface.c:531
+#: ../src/gfpm-interface.c:721
 msgid "Loading package list ..."
 msgstr "Laddar paket lista ..."
 
-#: ../src/gfpm-interface.c:625
+#: ../src/gfpm-interface.c:831
 msgid "Loading package list ...DONE"
 msgstr "Laddar paket lista ...KLART"
 
-#: ../src/gfpm-interface.c:676
+#: ../src/gfpm-interface.c:882
 msgid "Name:"
 msgstr "Namn:"
 
-#: ../src/gfpm-interface.c:683
+#: ../src/gfpm-interface.c:889
 msgid "Version:"
 msgstr "Version:"
 
-#: ../src/gfpm-interface.c:690
+#: ../src/gfpm-interface.c:896
 msgid "Description:"
 msgstr "Beskrivning:"
 
-#: ../src/gfpm-interface.c:708
+#: ../src/gfpm-interface.c:914
 msgid "License:"
 msgstr "Licens:"
 
-#: ../src/gfpm-interface.c:727
+#: ../src/gfpm-interface.c:933
 msgid "Depends:"
 msgstr "Beroenden:"
 
-#: ../src/gfpm-interface.c:744
+#: ../src/gfpm-interface.c:950
 msgid "Group(s):"
 msgstr "Grupp(er):"
 
-#: ../src/gfpm-interface.c:763
+#: ../src/gfpm-interface.c:969
 msgid "Provides:"
 msgstr "Tillhandahåller:"
 
-#: ../src/gfpm-interface.c:783
+#: ../src/gfpm-interface.c:989
 msgid "Conflicts:"
 msgstr "Konflikter:"
 
-#: ../src/gfpm-interface.c:803
+#: ../src/gfpm-interface.c:1009
 msgid "Replaces:"
 msgstr "Ersätter:"
 
-#: ../src/gfpm-interface.c:815
+#: ../src/gfpm-interface.c:1021
 msgid "URL:"
 msgstr "URL:"
 
-#: ../src/gfpm-interface.c:822
+#: ../src/gfpm-interface.c:1028
 msgid "Packager:"
 msgstr "Paketerare:"
 
-#: ../src/gfpm-interface.c:829
+#: ../src/gfpm-interface.c:1035
 msgid "Install Date:"
 msgstr "Installations datum:"
 
-#: ../src/gfpm-interface.c:838
+#: ../src/gfpm-interface.c:1044
 msgid "Size:"
 msgstr "Storlek:"
 
-#: ../src/gfpm-interface.c:851
+#: ../src/gfpm-interface.c:1057
 msgid "Size (Compressed):"
 msgstr "Storlek (Komprimerad):"
 
-#: ../src/gfpm-interface.c:861
+#: ../src/gfpm-interface.c:1067
 msgid "Size (Uncompressed):"
 msgstr "Storlek (Okomprimerad):"
 
-#: ../src/gfpm-interface.c:872
+#: ../src/gfpm-interface.c:1078
 msgid "SHA1SUM:"
 msgstr "SHA1SUM:"
 
-#: ../src/gfpm-interface.c:891
+#: ../src/gfpm-interface.c:1097
 msgid "Required By:"
 msgstr "Krävs av:"
 
-#: ../src/gfpm-interface.c:900
+#: ../src/gfpm-interface.c:1106
 msgid "Reason:"
 msgstr "Orsak:"
 
-#: ../src/gfpm-interface.c:907
+#: ../src/gfpm-interface.c:1113
 msgid "Explicitly Installed"
 msgstr ""
 
-#: ../src/gfpm-interface.c:913
+#: ../src/gfpm-interface.c:1119
 msgid "Installed as a dependency for another package"
 msgstr "Installerad som beroende till annat paket"
 
-#: ../src/gfpm-interface.c:939
+#: ../src/gfpm-interface.c:1145
 msgid "Files in package:\n"
 msgstr "Filer i paket:\n"
 
-#: ../src/gfpm-interface.c:949
+#: ../src/gfpm-interface.c:1155
 msgid "Package is not installed.\n"
 msgstr "Paketet är inte installerat.\n"
 
-#: ../src/gfpm-interface.c:983
+#: ../src/gfpm-interface.c:1189
 msgid "No changelog available for this package"
 msgstr "Ingen ändringslogg tillgänglig för detta paket"
 
-#: ../src/gfpm-interface.c:998
+#: ../src/gfpm-interface.c:1204
 msgid "Package is not installed"
 msgstr "Paketet är inte installerat"
 
-#: ../src/gfpm-interface.c:1012
+#: ../src/gfpm-interface.c:1218
 #, c-format
 msgid "Failed to prepare transaction (%s)\n"
 msgstr "Fel uppstod vid förberedning av överföring (%s)\n"
 
-#: ../src/gfpm-interface.c:1028
+#: ../src/gfpm-interface.c:1234
 msgid "is required by"
 msgstr "är beroende av"
 
-#: ../src/gfpm-interface.c:1058
+#: ../src/gfpm-interface.c:1264
 msgid "Missing dependencies"
 msgstr "Beroenden saknas"
 
-#: ../src/gfpm-interface.c:1058
+#: ../src/gfpm-interface.c:1264
 msgid ""
 "Following dependencies were not met. Please install these packages first."
 msgstr ""
 "Följande beroenden kunde inte uppfyllas. Var vänlig installera dessa först."
 
-#: ../src/gfpm-interface.c:1060
+#: ../src/gfpm-interface.c:1266
 msgid "Could not satisfy dependencies"
 msgstr "Kunde inte tillfredställa beroenden"
 
-#: ../src/gfpm-interface.c:1060
+#: ../src/gfpm-interface.c:1266
 msgid ""
 "The packages you are trying to remove are required by the following packages:"
 msgstr "Paketet du försöker ta bort behövs av följande paket:"
 
-#: ../src/gfpm-interface.c:1072
+#: ../src/gfpm-interface.c:1278
 msgid "Package conflict"
 msgstr "Paket konflikt"
 
-#: ../src/gfpm-interface.c:1072
+#: ../src/gfpm-interface.c:1278
 msgid "This package conflicts with the following packages"
 msgstr "Detta paket är i konflikt med följande paket"
 
-#: ../src/gfpm-interface.c:1092 ../src/gfpm-interface.c:1834
+#: ../src/gfpm-interface.c:1301 ../src/gfpm-interface.c:2155
 #, c-format
 msgid "Failed to commit transaction (%s)\n"
 msgstr ""
 
-#: ../src/gfpm-interface.c:1114
+#: ../src/gfpm-interface.c:1323
 #, fuzzy
 msgid "Conflicting Files"
 msgstr "Konflikter:"
 
-#: ../src/gfpm-interface.c:1115
+#: ../src/gfpm-interface.c:1324
 msgid ""
 "The file(s) provided by the following package(s) already exist on the system"
 msgstr ""
+"Filen/Filerna tillhandahållna av det här paketet/paketen finns redan på "
+"systemet"
 
-#: ../src/gfpm-interface.c:1123
+#: ../src/gfpm-interface.c:1332
 msgid "Corrupted package(s)"
-msgstr ""
+msgstr "Trasigt/Trasiga paket"
 
-#: ../src/gfpm-interface.c:1124
+#: ../src/gfpm-interface.c:1333
 msgid "The package(s) you're trying to install are corrupted"
-msgstr ""
+msgstr "Paketet/Paketen du försöker installera är trasigt/trasiga"
 
-#: ../src/gfpm-interface.c:1146
+#: ../src/gfpm-interface.c:1339
+msgid "Download Failed"
+msgstr "Nedladdningsfel"
+
+#: ../src/gfpm-interface.c:1339
+msgid "Failed to retrieve packages."
+msgstr "Fel uppstod när paketen skulle hämtas."
+
+#: ../src/gfpm-interface.c:1375
 msgid "Synchronizing package databases"
 msgstr "Synkroniserar paket databas"
 
-#: ../src/gfpm-interface.c:1153
+#: ../src/gfpm-interface.c:1388
 #, c-format
 msgid ""
 "Gfpm has detected a newer version of the pacman-g2 package. It is "
@@ -278,11 +324,11 @@ msgstr ""
 "Gfpm har detekterat en nyare version av pacman-g2. Det är rekommenderat att "
 "du tillåter gfpm att uppdatera pacman-g2 först. Vill du uppdatera pacman-g2?"
 
-#: ../src/gfpm-interface.c:1154
+#: ../src/gfpm-interface.c:1389
 msgid "Update pacman-g2"
 msgstr "Updatera pacman-g2"
 
-#: ../src/gfpm-interface.c:1165
+#: ../src/gfpm-interface.c:1400
 #, c-format
 msgid ""
 "Gfpm has detected a newer version of the gfpm package. It is recommended "
@@ -292,11 +338,11 @@ msgstr ""
 "Gfpm har detekterat en nyare version av gfpm. Det är att rekommendera att du "
 "tillåter gfpm att uppdatera sig självt. Vill du uppdatera gfpm?"
 
-#: ../src/gfpm-interface.c:1166
+#: ../src/gfpm-interface.c:1401
 msgid "Update Gfpm"
 msgstr "Updatera Gfpm"
 
-#: ../src/gfpm-interface.c:1183 ../src/gfpm-interface.c:1819
+#: ../src/gfpm-interface.c:1418 ../src/gfpm-interface.c:2140
 msgid ""
 "If you're sure a package manager is not already running, you can delete /tmp/"
 "pacman-g2.lck"
@@ -304,560 +350,1012 @@ msgstr ""
 "Om du är säker på att en pakethanterare inte redan används, kan du radera /"
 "tmp/pacman-g2.lck"
 
-#: ../src/gfpm-interface.c:1195
+#: ../src/gfpm-interface.c:1430
+msgid "No updates"
+msgstr "Inga uppdateringar"
+
+#: ../src/gfpm-interface.c:1430
 msgid "No new package updates are available. The system is up to date."
 msgstr "Inga nya paket finns tillgängliga. Ditt system är uppdaterat."
 
-#: ../src/gfpm-interface.c:1199
+#: ../src/gfpm-interface.c:1434
 msgid "Package upgrade"
 msgstr "Paket uppdatering"
 
-#: ../src/gfpm-interface.c:1199
+#: ../src/gfpm-interface.c:1434
 msgid "Following packages will be upgraded. Do you want to continue ?"
 msgstr "Följande paket kommer att uppgraderas. Vill du fortsätta?"
 
-#: ../src/gfpm-interface.c:1381
+#: ../src/gfpm-interface.c:1619
 msgid "Mark for upgrade"
 msgstr "Markera för uppdatering"
 
-#: ../src/gfpm-interface.c:1409
-#, fuzzy
+#: ../src/gfpm-interface.c:1647
 msgid "Mark for installation"
-msgstr "Paket installation avslutad"
+msgstr "Markera för installation"
 
-#: ../src/gfpm-interface.c:1418
-#, fuzzy
+#: ../src/gfpm-interface.c:1656
 msgid "Reinstall package"
-msgstr "Installera paket"
+msgstr "Ominstallera paket"
 
-#: ../src/gfpm-interface.c:1425
-#, fuzzy
+#: ../src/gfpm-interface.c:1663
+msgid "Mark for re-installation"
+msgstr "Markera för om-installation"
+
+#: ../src/gfpm-interface.c:1670
 msgid "Mark for removal"
-msgstr "Markera för uppdatering"
+msgstr "Markera för borttagning"
 
-#: ../src/gfpm-interface.c:1503
+#: ../src/gfpm-interface.c:1756
 msgid "There was an error while populating packages"
 msgstr ""
 
-#: ../src/gfpm-interface.c:1516
-msgid "There are no installed pacakges in this group"
-msgstr ""
+#: ../src/gfpm-interface.c:1769
+msgid "There are no installed packages in this group"
+msgstr "Det finns inga installerade paket i denna grupp"
 
-#: ../src/gfpm-interface.c:1519
-#, fuzzy
+#: ../src/gfpm-interface.c:1772
 msgid "Remove Group"
-msgstr "Radera"
+msgstr "Radera Grupp"
 
-#: ../src/gfpm-interface.c:1519
-#, fuzzy
+#: ../src/gfpm-interface.c:1772
 msgid "Are you sure you want to remove the entire group ?"
-msgstr "Är du säker på att du vill ta bort gamla paket från cachen?"
+msgstr "Är du säker på att du vill radera hela denna gruppen ?"
 
-#: ../src/gfpm-interface.c:1565
+#: ../src/gfpm-interface.c:1872
 msgid "Search Complete"
 msgstr "Sökning avslutad"
 
-#: ../src/gfpm-interface.c:1566
+#: ../src/gfpm-interface.c:1873
 msgid "Package not found"
 msgstr "Paketet ej hittat"
 
-#: ../src/gfpm-interface.c:1566
+#: ../src/gfpm-interface.c:1873
 msgid "No such package found"
 msgstr "Inget sådant paket funnet"
 
-#: ../src/gfpm-interface.c:1573
+#: ../src/gfpm-interface.c:1882
 msgid "Searching for packages ..."
 msgstr "Söker efter paket ..."
 
-#: ../src/gfpm-interface.c:1678
+#: ../src/gfpm-interface.c:1996
 msgid "Searching for packages ...DONE"
 msgstr "Söker efter paket ...KLART"
 
-#: ../src/gfpm-interface.c:1750 ../src/gfpm-interface.c:1768
+#: ../src/gfpm-interface.c:2071 ../src/gfpm-interface.c:2089
 msgid "Clear package cache"
 msgstr "Rensa paket cache"
 
-#: ../src/gfpm-interface.c:1750
+#: ../src/gfpm-interface.c:2071
 msgid "Are you sure you want to remove old packages from cache ?"
 msgstr "Är du säker på att du vill ta bort gamla paket från cachen?"
 
-#: ../src/gfpm-interface.c:1756 ../src/gfpm-interface.c:1774
+#: ../src/gfpm-interface.c:2077 ../src/gfpm-interface.c:2095
 msgid "Finished clearing the cache"
 msgstr "Rensning av cachen är färdig"
 
-#: ../src/gfpm-interface.c:1759 ../src/gfpm-interface.c:1777
+#: ../src/gfpm-interface.c:2080 ../src/gfpm-interface.c:2098
 #, c-format
 msgid "Failed to clean the cache (%s)"
 msgstr "Kunde inte rensa cachen (%s)"
 
-#: ../src/gfpm-interface.c:1760 ../src/gfpm-interface.c:1778
+#: ../src/gfpm-interface.c:2081 ../src/gfpm-interface.c:2099
 msgid "Error clearing cache"
-msgstr ""
+msgstr "Fel vid rensning av cache"
 
-#: ../src/gfpm-interface.c:1768
+#: ../src/gfpm-interface.c:2089
 msgid "Are you sure you want to remove all packages from cache ?"
 msgstr "Är du säker på att du vill ta bort alla paket från cachen?"
 
-#: ../src/gfpm-interface.c:1800
+#: ../src/gfpm-interface.c:2121
 msgid "No packages selected"
 msgstr "Inga paket valda"
 
-#: ../src/gfpm-interface.c:1800
+#: ../src/gfpm-interface.c:2121
 msgid "No package selected for install. Please select a package to install."
 msgstr ""
 "Inget paket valt för installation. Var vänlig välj ett paket att installera."
 
-#: ../src/gfpm-interface.c:1803
+#: ../src/gfpm-interface.c:2124
 msgid "Install package"
 msgstr "Installera paket"
 
-#: ../src/gfpm-interface.c:1803
+#: ../src/gfpm-interface.c:2124
 msgid "Are you sure you want to install this package ?"
 msgstr "Är du säker på att du vill installera detta paket?"
 
-#: ../src/gfpm-interface.c:1841
+#: ../src/gfpm-interface.c:2162
 msgid "Package successfully installed"
-msgstr ""
+msgstr "Paket installerat med lyckat resultat"
 
-#: ../src/gfpm-progress.c:237
+#: ../src/gfpm-progress.c:275
 msgid "Installing packages..."
 msgstr "Installerar paketen..."
 
-#: ../src/gfpm-progress.c:239
+#: ../src/gfpm-progress.c:277
 msgid "Installing package..."
 msgstr "Installerar paket..."
 
-#: ../src/gfpm-progress.c:243
+#: ../src/gfpm-progress.c:281
 msgid "Upgrading packages..."
 msgstr "Uppgraderar paketen..."
 
-#: ../src/gfpm-progress.c:245
+#: ../src/gfpm-progress.c:283
 msgid "Upgrading package..."
 msgstr "Uppgraderar paket..."
 
-#: ../src/gfpm-progress.c:249
+#: ../src/gfpm-progress.c:287
 msgid "Removing packages..."
 msgstr "Raderar paketen..."
 
-#: ../src/gfpm-progress.c:251
+#: ../src/gfpm-progress.c:289
 msgid "Removing package..."
 msgstr "Raderar paket..."
 
-#: ../src/gfpm-progress.c:255
+#: ../src/gfpm-progress.c:293
 msgid "Checking packages for file conflicts..."
-msgstr ""
+msgstr "Kontrollerar filkonflikter för paket..."
 
-#: ../src/gfpm-progress.c:257
+#: ../src/gfpm-progress.c:295
 msgid "Checking package for file conflicts..."
-msgstr ""
+msgstr "Kontrollerar filkonflikter för paket..."
 
-#: ../src/gfpm-progress.c:290
+#: ../src/gfpm-progress.c:336
 msgid "Checking dependencies"
 msgstr "Kontrollerar beroenden"
 
-#: ../src/gfpm-progress.c:294
+#: ../src/gfpm-progress.c:340
 msgid "Checking for file conflicts"
-msgstr ""
+msgstr "Kontrollerar filkonflikter"
 
-#: ../src/gfpm-progress.c:298
+#: ../src/gfpm-progress.c:344
 msgid "Resolving dependencies"
-msgstr ""
+msgstr "Löser beroenden"
 
-#: ../src/gfpm-progress.c:301
+#: ../src/gfpm-progress.c:347
 msgid "Looking for inter-conflicts"
 msgstr ""
 
-#: ../src/gfpm-progress.c:307 ../src/gfpm-progress.c:347
-#: ../src/gfpm-progress.c:357
+#: ../src/gfpm-progress.c:353 ../src/gfpm-progress.c:393
+#: ../src/gfpm-progress.c:403
 msgid "Done"
 msgstr "Klar"
 
-#: ../src/gfpm-progress.c:310
+#: ../src/gfpm-progress.c:356
 #, c-format
 msgid "Installing %s-%s"
 msgstr "Installerar %s-%s"
 
-#: ../src/gfpm-progress.c:316
+#: ../src/gfpm-progress.c:362
 msgid "Package installation finished"
 msgstr "Paket installation avslutad"
 
-#: ../src/gfpm-progress.c:317
+#: ../src/gfpm-progress.c:363
 #, c-format
 msgid "Installed %s-%s"
 msgstr "Installerade %s-%s"
 
-#: ../src/gfpm-progress.c:322
+#: ../src/gfpm-progress.c:368
 #, c-format
 msgid "Upgrading %s"
 msgstr "Uppgraderar %s"
 
-#: ../src/gfpm-progress.c:327
+#: ../src/gfpm-progress.c:373
 msgid "Package upgrade finished"
 msgstr "Paket uppgradering avslutad"
 
-#: ../src/gfpm-progress.c:328
+#: ../src/gfpm-progress.c:374
 #, c-format
-msgid "upgraded %s from %s to %s"
+msgid "Upgraded %s from %s to %s"
 msgstr "uppgraderade %s från %s till %s"
 
-#: ../src/gfpm-progress.c:334
+#: ../src/gfpm-progress.c:380
 #, c-format
 msgid "removing %s"
 msgstr "Raderar %s"
 
-#: ../src/gfpm-progress.c:338
+#: ../src/gfpm-progress.c:384
 msgid "Package removal finished"
 msgstr "Paket radering avslutad"
 
-#: ../src/gfpm-progress.c:339
+#: ../src/gfpm-progress.c:385
 #, c-format
-msgid "removed %s"
-msgstr "raderade %s"
+msgid "Removed %s"
+msgstr "Raderade %s"
 
-#: ../src/gfpm-progress.c:344
+#: ../src/gfpm-progress.c:390
 msgid "Checking package integrity"
 msgstr "Kontrollerar paket integritet"
 
-#: ../src/gfpm-progress.c:361
+#: ../src/gfpm-progress.c:407
 #, c-format
 msgid "Retrieving packages from %s"
 msgstr "Mottar paket från %s"
 
-#: ../src/gfpm.c:54
-#, fuzzy
+#: ../src/gfpm.c:58
 msgid "Interface initialization Failed"
-msgstr "Paket installation avslutad"
+msgstr ""
 
-#: ../src/gfpm.c:54
-#, fuzzy
+#: ../src/gfpm.c:58
 msgid "Failed to initialize interface"
-msgstr "Fel uppstod när den lokala paketdatabasen skulle initieras."
+msgstr ""
 
-#: ../src/gfpm.c:62
+#: ../src/gfpm.c:66
 msgid "Error initializing libpacman"
 msgstr ""
 
-#: ../src/gfpm.c:62
+#: ../src/gfpm.c:66
 msgid "Failed to initialize libpacman"
 msgstr ""
 
-#: ../src/gfpm-optimizedb.c:117
+#: ../src/gfpm-optimizedb.c:116
 msgid ""
 "Cannot optimize database. Another instance of pacman-g2 or gfpm is already "
 "running."
 msgstr ""
-"Kunde inte optimera databasen. En annan instans av pacman-g2 eller gfpm är "
+"Kan inte optimera databasen. En annan instans av pacman-g2 eller gfpm är "
 "redan igång."
 
-#: ../src/gfpm-optimizedb.c:124
+#: ../src/gfpm-optimizedb.c:123
 msgid "Error creating lockfile. Failed to optimize package database"
-msgstr ""
+msgstr "Fel vid skapande av låsfil. Kunde inte optimera paketdatabasen"
 
 #. generate checksums for the old database
-#: ../src/gfpm-optimizedb.c:129
+#: ../src/gfpm-optimizedb.c:128
 msgid "generating checksums for the old database"
 msgstr "genererar kontrollsummor för den gamla databasen"
 
 #. copy the old database to a new directory
-#: ../src/gfpm-optimizedb.c:138
+#: ../src/gfpm-optimizedb.c:137
 #, c-format
 msgid "copying %s"
 msgstr "kopierar %s"
 
 #. generate checksums for the new database
-#: ../src/gfpm-optimizedb.c:148
+#: ../src/gfpm-optimizedb.c:147
 msgid "generating checksums for the new database"
 msgstr "Genererar kontrollsumma för nya databasen"
 
 #. check integrity
-#: ../src/gfpm-optimizedb.c:165
+#: ../src/gfpm-optimizedb.c:164
 msgid "performing integrity check"
 msgstr "Utför integritetskontroll"
 
-#: ../src/gfpm-optimizedb.c:169
+#: ../src/gfpm-optimizedb.c:168
 msgid "Optimization failed"
 msgstr "Optimering misslyckades"
 
-#: ../src/gfpm-optimizedb.c:169
+#: ../src/gfpm-optimizedb.c:168
 msgid "Integrity check failed"
 msgstr "Integritetskontroll misslyckades"
 
-#: ../src/gfpm-optimizedb.c:170
+#: ../src/gfpm-optimizedb.c:169
 msgid "Failed."
 msgstr "Misslyckat."
 
 #. remove old database
-#: ../src/gfpm-optimizedb.c:182
+#: ../src/gfpm-optimizedb.c:181
 msgid "removing old database"
 msgstr "raderar gammal databas"
 
 #. remove temp files
-#: ../src/gfpm-optimizedb.c:190
+#: ../src/gfpm-optimizedb.c:189
 msgid "removing temporary files"
 msgstr "raderar temporära filer"
 
-#: ../src/gfpm-optimizedb.c:197
+#: ../src/gfpm-optimizedb.c:196
 msgid "Database optimized."
 msgstr "Databas optimerad."
 
-#: ../src/gfpm-optimizedb.c:198
+#: ../src/gfpm-optimizedb.c:197
 msgid "Database optimized"
 msgstr "Databas optimerad"
 
-#: ../src/gfpm-optimizedb.c:198
+#: ../src/gfpm-optimizedb.c:197
 msgid "Your package database is now optimized."
 msgstr "Din paketdatabas är nu optimerad."
 
-#: ../src/gfpm-messages.c:70 ../src/gfpm-messages.c:75
-#: ../src/gfpm-messages.c:317 ../src/gfpm-messages.c:427
+#: ../src/gfpm-messages.c:71 ../src/gfpm-messages.c:76
+#: ../src/gfpm-messages.c:318 ../src/gfpm-messages.c:428
 msgid "Package"
 msgstr "Paket"
 
-#: ../src/gfpm-messages.c:71 ../src/gfpm-messages.c:76
-#: ../src/gfpm-messages.c:329
+#: ../src/gfpm-messages.c:72 ../src/gfpm-messages.c:77
+#: ../src/gfpm-messages.c:330
 msgid "Size"
 msgstr "Storlek"
 
-#: ../src/gfpm-messages.c:129 ../src/gfpm-messages.c:161
+#: ../src/gfpm-messages.c:130 ../src/gfpm-messages.c:162
 #, c-format
 msgid "Total package size: %0.2f MB"
 msgstr "Total paket storlek: %0.2f MB"
 
-#: ../src/gfpm-messages.c:311 ../data/gfpm.glade.h:34
+#: ../src/gfpm-messages.c:312
 msgid "Upgrade"
 msgstr "Uppgradera"
 
-#: ../src/gfpm-messages.c:323
+#: ../src/gfpm-messages.c:324
 msgid "Version"
 msgstr "Version"
 
-#: ../src/gfpm-messages.c:492
+#: ../src/gfpm-messages.c:495
 #, c-format
 msgid "Do you want to replace %s with %s/%s ?"
 msgstr "Vill du ersätta %s med %s/%s ?"
 
-#: ../src/gfpm-messages.c:496
+#: ../src/gfpm-messages.c:499
 msgid "Replace package"
 msgstr "Ersätt paket"
 
-#: ../src/gfpm-messages.c:502
+#: ../src/gfpm-messages.c:505
 #, c-format
 msgid "%s requires %s, but it is IgnorePkg. Install anyway?"
 msgstr "%s behöver %s som är i IgnorePkg. Installera ändå?"
 
-#: ../src/gfpm-messages.c:511
+#: ../src/gfpm-messages.c:514
 #, c-format
 msgid "%s is designated as HoldPkg. Remove anyway?"
 msgstr "%s är markerat som HoldPkg. Ta bort ändå?"
 
-#: ../src/gfpm-messages.c:519
+#: ../src/gfpm-messages.c:522
 #, c-format
 msgid "%s conflicts with %s. Remove %s?"
 msgstr "%s är i konflikt med %s. Ta bort %s?"
 
-#: ../src/gfpm-messages.c:523
+#: ../src/gfpm-messages.c:526
 msgid "Conflict"
 msgstr "Konflikt"
 
-#: ../src/gfpm-messages.c:529
+#: ../src/gfpm-messages.c:532
 #, c-format
 msgid "%s-%s: local version is newer. Upgrade anyway?"
 msgstr "%s-%s: lokal version är nyare. Uppdatera ändå?"
 
-#: ../src/gfpm-messages.c:532
+#: ../src/gfpm-messages.c:535
 msgid "Local version newer"
 msgstr "Lokal version är nyare"
 
-#: ../src/gfpm-messages.c:538
+#: ../src/gfpm-messages.c:541
 #, c-format
 msgid "%s-%s: local version is up to date. Upgrade anyway?"
 msgstr "%s-%s: Lokal version är uppdaterad. Uppdatera ändå?"
 
-#: ../src/gfpm-messages.c:541
+#: ../src/gfpm-messages.c:544
 msgid "Local version up to date"
 msgstr "Lokal version är uppdaterad"
 
-#: ../src/gfpm-messages.c:547
+#: ../src/gfpm-messages.c:550
 #, c-format
 msgid "Archive %s is corrupted. Do you want to delete it?"
 msgstr "Paket %s är skadat. Vill du ta bort det?"
 
-#: ../src/gfpm-messages.c:549
+#: ../src/gfpm-messages.c:552
 msgid "Package corrupted"
 msgstr "Paket skadat"
 
+#: ../src/gfpm-logviewer.c:115
+msgid "Error opening log file."
+msgstr "Fel vid öppnande av loggfil."
+
+#: ../src/gfpm-logviewer.c:184
+msgid "Missing datemsk file. Make sure that the file exists on your system"
+msgstr "Saknar datemsk fil. Vänligen säkerställ att filen finns i ditt system"
+
+#: ../src/gfpm-logviewer.c:186
+msgid "Unknown Error"
+msgstr "Okänt fel"
+
+#: ../src/gfpm-logviewer.c:186
+msgid "Unknown Error."
+msgstr "Okänt fel."
+
+#: ../src/gfpm-logviewer.c:235
+msgid "Error opening log file"
+msgstr "Fel vid öppnande av loggfil"
+
+#: ../src/gfpm-repomanager.c:128
+msgid "Enabled"
+msgstr "Aktiverat"
+
+#: ../src/gfpm-repomanager.c:136
+msgid "Repository"
+msgstr "Paketsamling"
+
+#: ../src/gfpm-repomanager.c:156
+msgid "Server"
+msgstr "Server"
+
+#: ../src/gfpm-repomanager.c:272 ../src/gfpm-prefs.c:512
+msgid "Error saving configuration"
+msgstr "Fel vid sparande av konfugiration"
+
+#: ../src/gfpm-repomanager.c:272
+msgid ""
+"Gfpm could not open the pacman-g2.conf file for saving. Make sure no other "
+"program is using it"
+msgstr ""
+"GFpm kunde inte öppna pacman-g2.conf filen för sparande. Säkerställ att "
+"inget annat program använder den"
+
+#: ../src/gfpm-repomanager.c:350 ../src/gfpm-repomanager.c:425
+#: ../src/gfpm-repomanager.c:929
+msgid "The Repository URL field cannot be left blank"
+msgstr "Paketsamlingens URL fält kan ej lämnas tomt"
+
+#: ../src/gfpm-repomanager.c:419
+msgid "The Repository Name field cannot be left blank"
+msgstr "Paketsamlingens Namnfält kan ej lämnas tomt"
+
+#: ../src/gfpm-repomanager.c:437
+msgid "Repository exists"
+msgstr "Paketsamlingen finns redan"
+
+#: ../src/gfpm-repomanager.c:437
+msgid ""
+"A repository with the specified name already exists. Please provide a "
+"different name for the repository."
+msgstr ""
+"En paketsamling med det givna namnet finns redan. Vänligen ange ett annat "
+"namn för paketsamlingen."
+
+#: ../src/gfpm-repomanager.c:569
+msgid "Error opening"
+msgstr ""
+
+#: ../src/gfpm-repomanager.c:569
+msgid "This repository will be disabled"
+msgstr "Paketsamlingen kommer att inaktiveras"
+
+#: ../src/gfpm-repomanager.c:570 ../src/gfpm-repomanager.c:1034
+msgid "Error opening repository file"
+msgstr "Fel vid öppnande av paketsamlingsfilen"
+
+#: ../src/gfpm-repomanager.c:718
+msgid "Warning"
+msgstr "Varning"
+
+#: ../src/gfpm-repomanager.c:718
+msgid "No usable package repositories configured"
+msgstr "Ingen användbar paketsamling inställd"
+
+#: ../src/gfpm-repomanager.c:914
+msgid "Edit Server"
+msgstr "Redigera Server"
+
+#. set the original title back
+#: ../src/gfpm-repomanager.c:970 ../data/gfpm.glade.h:63
+msgid "New Server"
+msgstr "Ny Server"
+
+#: ../src/gfpm-repomanager.c:1140
+msgid "Confirmation"
+msgstr "Bekräftelse"
+
+#: ../src/gfpm-repomanager.c:1140
+msgid "Are you sure you want to delete this repository ?"
+msgstr "Är du säker på att du vill radera denna paketsamling ?"
+
+#: ../src/gfpm-repomanager.c:1175
+msgid "Server already exists"
+msgstr "Servern finns redan"
+
+#: ../src/gfpm-repomanager.c:1175
+msgid "The server you're trying to add already exists"
+msgstr "Servern du försöker att lägga till finns redan"
+
+# Where is this text in gui? Wouid help me do a proper translation.. /TranzeManiaC
+#: ../src/gfpm-prefs.c:105 ../src/gfpm-prefs.c:116 ../data/gfpm.glade.h:67
+#, fuzzy
+msgid "Packages"
+msgstr "Paketet/Paketen"
+
+#: ../src/gfpm-prefs.c:300
+msgid "Could not open temporary file"
+msgstr "Kunde inte öppna temporärfil"
+
+#: ../src/gfpm-prefs.c:676
+msgid "Hold Package"
+msgstr "Håll paket"
+
+#: ../src/gfpm-prefs.c:676 ../src/gfpm-prefs.c:710
+msgid "Enter the name of the package :"
+msgstr "Skriv in namnet på paketet :"
+
+#: ../src/gfpm-prefs.c:689 ../src/gfpm-prefs.c:723
+msgid "Duplicate"
+msgstr "Kopiera"
+
+#: ../src/gfpm-prefs.c:689 ../src/gfpm-prefs.c:723
+msgid "This package already exists in the list"
+msgstr "Detta paket finns redan i listan"
+
+#: ../src/gfpm-prefs.c:710
+msgid "Ignore Package"
+msgstr "Ignorera paket"
+
+#. get url of the proxy server from user
+#: ../src/gfpm-prefs.c:878
+msgid "Enter proxy server url"
+msgstr "Skriv in proxy server adress"
+
+#: ../src/gfpm-prefs.c:878
+msgid "Enter the URL of the proxy server :"
+msgstr "Skriv in adressen till proxy servern :"
+
+#: ../src/gfpm-prefs.c:936
+msgid "Select log file"
+msgstr ""
+
+#: ../src/gfpm-prefs.c:966 ../src/gfpm-prefs.c:996
+msgid "Select directory"
+msgstr ""
+
 #: ../data/gfpm.glade.h:1
+#, fuzzy
+msgid "<b><span size=\"larger\">Package Search</span></b>"
+msgstr "<span size=\"larger\"><b>Optimera paketdatabas</b></span>"
+
+#: ../data/gfpm.glade.h:2
+#, fuzzy
+msgid "<b><span size=\"larger\">Repositories</span></b>"
+msgstr "<span size=\"larger\"><b>Optimera paketdatabas</b></span>"
+
+#: ../data/gfpm.glade.h:3
+#, fuzzy
+msgid "<b>Browse : </b>"
+msgstr "<b>Status:</b>"
+
+#: ../data/gfpm.glade.h:4
+#, fuzzy
+msgid "<b>Directories</b>"
+msgstr "<b>Information</b>"
+
+#: ../data/gfpm.glade.h:5
+#, fuzzy
+msgid "<b>Download Settings</b>"
+msgstr "<b>Information</b>"
+
+#: ../data/gfpm.glade.h:6
+#, fuzzy
+msgid "<b>Hold Packages</b>"
+msgstr "<b>Paket</b>"
+
+#: ../data/gfpm.glade.h:7
+#, fuzzy
+msgid "<b>Ignore Packages</b>"
+msgstr "<b>Paket</b>"
+
+#: ../data/gfpm.glade.h:8
 msgid "<b>Information</b>"
 msgstr "<b>Information</b>"
 
-#: ../data/gfpm.glade.h:2
+#: ../data/gfpm.glade.h:9
 msgid "<b>Install packages:</b>"
 msgstr "<b>Installera paket:</b>"
 
-#: ../data/gfpm.glade.h:3
+#: ../data/gfpm.glade.h:10
+msgid "<b>Log file size:</b>"
+msgstr ""
+
+#: ../data/gfpm.glade.h:11
+#, fuzzy
+msgid "<b>Logging</b>"
+msgstr "<b>Information</b>"
+
+#: ../data/gfpm.glade.h:12
+#, fuzzy
+msgid "<b>Miscellaneous</b>"
+msgstr "<b>Paket</b>"
+
+#: ../data/gfpm.glade.h:13
+msgid ""
+"<b>Old Delay</b>\n"
+"Issue a warning when you try to install a package, but the local package "
+"database hasn't been updated for specified number of days. (0 = disabled)"
+msgstr ""
+
+#: ../data/gfpm.glade.h:15
+#, fuzzy
+msgid "<b>Options</b>"
+msgstr "<b>Information</b>"
+
+#: ../data/gfpm.glade.h:16
+#, fuzzy
+msgid "<b>Package Information</b>"
+msgstr "<b>Information</b>"
+
+#: ../data/gfpm.glade.h:17
 msgid "<b>Packages</b>"
 msgstr "<b>Paket</b>"
 
-#: ../data/gfpm.glade.h:4
+#: ../data/gfpm.glade.h:18
+#, fuzzy
+msgid "<b>Proxy Settings</b>"
+msgstr "<b>Information</b>"
+
+#: ../data/gfpm.glade.h:19
 msgid "<b>Remove packages:</b>"
 msgstr "<Radera paket:</b>"
 
-#: ../data/gfpm.glade.h:5
+#: ../data/gfpm.glade.h:20
+#, fuzzy
+msgid "<b>Search in :</b>"
+msgstr "<b>Status:</b>"
+
+#: ../data/gfpm.glade.h:21
 msgid "<b>Status : </b>"
 msgstr "<b>Status:</b>"
 
-#: ../data/gfpm.glade.h:6
-msgid "<span size=\"larger\"><b>Optimize package database</b></span>"
-msgstr "<span size=\"larger\"><b>Optimera paketdatabas</b></span>"
-
-#: ../data/gfpm.glade.h:7
-msgid "About Gfpm"
-msgstr "Om Gfpm"
-
-#: ../data/gfpm.glade.h:8
-msgid "Apply"
-msgstr "Verkställ"
-
-#: ../data/gfpm.glade.h:9
-msgid "Apply Changes"
-msgstr "Verkställ ändringar"
-
-#: ../data/gfpm.glade.h:10
-msgid "Changelog"
-msgstr "Ändringslogg"
-
-#: ../data/gfpm.glade.h:11
-msgid "Close"
-msgstr "Stäng"
-
-#: ../data/gfpm.glade.h:12
-msgid "Close this dialog when the operation is finished"
-msgstr "Stäng denna dialogruta när operationen är klar"
-
-#: ../data/gfpm.glade.h:13
-msgid "Details"
-msgstr "Detaljer"
-
-#: ../data/gfpm.glade.h:14
-msgid "Download only (do not install/upgrade)"
-msgstr "Hämta endast (Installera/Uppgradera inte)"
-
-#: ../data/gfpm.glade.h:15
-msgid "E_xit"
-msgstr "A_vsluta"
-
-#: ../data/gfpm.glade.h:16
-msgid "Files"
-msgstr "Filer"
-
-#: ../data/gfpm.glade.h:17
-msgid "Force install"
-msgstr "Tvinga installation"
-
-#: ../data/gfpm.glade.h:19
-msgid "Install"
-msgstr "Installera"
-
-#: ../data/gfpm.glade.h:20
-msgid "Install package from file"
-msgstr "Installera paket från fil"
-
-#: ../data/gfpm.glade.h:21
-msgid "Optimize"
-msgstr "Optimera"
-
 #: ../data/gfpm.glade.h:22
-msgid "Options"
+msgid ""
+"<b>Upgrade Delay</b>\n"
+"Upgrade only the packages that are specified number of days old while "
+"performing a system upgrade. (0 = disabled)"
 msgstr ""
 
-#: ../data/gfpm.glade.h:23
-msgid "Please wait..."
-msgstr "Vänligen vänta..."
-
 #: ../data/gfpm.glade.h:24
-msgid "Quit"
-msgstr "Avsluta"
+#, fuzzy
+msgid "<span size=\"larger\"><b>Add a new Repository</b></span>"
+msgstr "<span size=\"larger\"><b>Optimera paketdatabas</b></span>"
 
 #: ../data/gfpm.glade.h:25
-msgid "Refresh the package lists"
-msgstr "Uppdatera paket listorna"
+#, fuzzy
+msgid "<span size=\"larger\"><b>Add a new server</b></span>"
+msgstr "<span size=\"larger\"><b>Optimera paketdatabas</b></span>"
 
 #: ../data/gfpm.glade.h:26
 #, fuzzy
-msgid "Remove"
-msgstr "Radera"
+msgid "<span size=\"larger\"><b>Install Package from File</b></span>"
+msgstr "<span size=\"larger\"><b>Optimera paketdatabas</b></span>"
 
 #: ../data/gfpm.glade.h:27
-msgid "Remove all packages from cache"
-msgstr "Radera alla paket från cache"
+#, fuzzy
+msgid "<span size=\"larger\"><b>Manage Package Repositories</b></span>"
+msgstr "<span size=\"larger\"><b>Optimera paketdatabas</b></span>"
 
 #: ../data/gfpm.glade.h:28
-msgid "Remove old packages from cache"
-msgstr "Radera gamla paket från cache"
+#, fuzzy
+msgid "<span size=\"larger\"><b>Manage Servers</b></span>"
+msgstr "<span size=\"larger\"><b>Optimera paketdatabas</b></span>"
 
 #: ../data/gfpm.glade.h:29
-msgid "Search packages"
-msgstr "Sök paket"
+msgid "<span size=\"larger\"><b>Optimize package database</b></span>"
+msgstr "<span size=\"larger\"><b>Optimera paketdatabas</b></span>"
 
 #: ../data/gfpm.glade.h:30
-msgid "Skip dependency checks"
-msgstr "Hoppa över beroende kontroll"
+#, fuzzy
+msgid "<span size=\"larger\"><b>Preferences</b></span>"
+msgstr "<span size=\"larger\"><b>Optimera paketdatabas</b></span>"
 
 #: ../data/gfpm.glade.h:31
-msgid "The following operations will be performed"
-msgstr "Följande åtgärder kommer att utföras"
+#, fuzzy
+msgid "<span size=\"larger\"><b>System Log</b></span>"
+msgstr "<span size=\"larger\"><b>Optimera paketdatabas</b></span>"
 
 #: ../data/gfpm.glade.h:32
-msgid "Total size:"
-msgstr "Total storlek:"
+msgid "About Gfpm"
+msgstr "Om Gfpm"
 
 #: ../data/gfpm.glade.h:33
-msgid "Transfer Rate:  "
-msgstr "Överföringshastighet:"
+msgid "Apply"
+msgstr "Verkställ"
+
+#: ../data/gfpm.glade.h:34
+msgid "Apply Changes"
+msgstr "Verkställ ändringar"
 
 #: ../data/gfpm.glade.h:35
-msgid "Upgrade existing"
-msgstr "Uppgradera befintligt"
+#, fuzzy
+msgid "Change"
+msgstr "Ändringslogg"
 
 #: ../data/gfpm.glade.h:36
-msgid "View Readme"
-msgstr ""
+msgid "Changelog"
+msgstr "Ändringslogg"
 
 #: ../data/gfpm.glade.h:37
-msgid "_About Gfpm"
-msgstr "_Om Gfpm"
+msgid "Close"
+msgstr "Stäng"
 
 #: ../data/gfpm.glade.h:38
-msgid "_Clear package cache"
-msgstr "_Rensa paket cache"
+msgid "Close this dialog when the operation is finished"
+msgstr "Stäng denna dialogruta när operationen är klar"
 
 #: ../data/gfpm.glade.h:39
-msgid "_Gfpm"
-msgstr "_Gfpm"
-
-#: ../data/gfpm.glade.h:40
-msgid "_Help"
-msgstr "_Hjälp"
+msgid "Comment (Optional)"
+msgstr ""
 
 #: ../data/gfpm.glade.h:41
-msgid "_Optimize package database"
-msgstr "_Optimera paketdatabas"
+#, fuzzy
+msgid "Database"
+msgstr "Databas optimerad"
 
 #: ../data/gfpm.glade.h:42
-msgid "clear package cache"
-msgstr "rensa paket cache"
+msgid "Details"
+msgstr "Detaljer"
 
 #: ../data/gfpm.glade.h:43
-msgid "gtk-apply"
+msgid "Disable passive FTP connections"
 msgstr ""
 
 #: ../data/gfpm.glade.h:44
-msgid "gtk-close"
+msgid "Display the following additional information about packages :"
 msgstr ""
 
 #: ../data/gfpm.glade.h:45
+msgid "Download"
+msgstr ""
+
+#: ../data/gfpm.glade.h:46
+msgid "Download only (do not install/upgrade)"
+msgstr "Hämta endast (Installera/Uppgradera inte)"
+
+#: ../data/gfpm.glade.h:47
+msgid "E_xit"
+msgstr "A_vsluta"
+
+#: ../data/gfpm.glade.h:48
+msgid "Enable Logging"
+msgstr ""
+
+#: ../data/gfpm.glade.h:49
+msgid "Files"
+msgstr "Filer"
+
+#: ../data/gfpm.glade.h:50
+msgid "Force install"
+msgstr "Tvinga installation"
+
+#: ../data/gfpm.glade.h:51
+#, fuzzy
+msgid "GFpm"
+msgstr "Gfpm"
+
+#: ../data/gfpm.glade.h:52
+msgid "General"
+msgstr ""
+
+#: ../data/gfpm.glade.h:54
+#, fuzzy
+msgid "Ignore any upgrades for the following packages"
+msgstr "Detta paket är i konflikt med följande paket"
+
+#: ../data/gfpm.glade.h:55
+msgid "Install"
+msgstr "Installera"
+
+#: ../data/gfpm.glade.h:56
+#, fuzzy
+msgid "Install a package from file"
+msgstr "Installera paket från fil"
+
+#: ../data/gfpm.glade.h:57
+msgid "Install package from file"
+msgstr "Installera paket från fil"
+
+#: ../data/gfpm.glade.h:58
+#, fuzzy
+msgid "Install this Package"
+msgstr "Installera paket"
+
+#: ../data/gfpm.glade.h:59
+#, fuzzy
+msgid "Issue a warning before removal of the following packages"
+msgstr "Paketet du försöker ta bort behövs av följande paket:"
+
+#: ../data/gfpm.glade.h:60
+msgid "Log File Path"
+msgstr ""
+
+#: ../data/gfpm.glade.h:61
+msgid "Maximum retries (in case of failure) (0 = disabled)"
+msgstr ""
+
+#: ../data/gfpm.glade.h:62
+msgid "New Repository"
+msgstr ""
+
+#: ../data/gfpm.glade.h:64
+msgid "Optimize"
+msgstr "Optimera"
+
+#: ../data/gfpm.glade.h:65
+msgid "Options"
+msgstr ""
+
+#: ../data/gfpm.glade.h:66
+#, fuzzy
+msgid "Package cache"
+msgstr "Paket namn"
+
+#: ../data/gfpm.glade.h:68
+msgid "Please wait..."
+msgstr "Vänligen vänta..."
+
+#: ../data/gfpm.glade.h:69
+msgid "Preferences"
+msgstr ""
+
+#: ../data/gfpm.glade.h:70
+msgid "Proxy URL (eg: http://foo.com:8080)"
+msgstr ""
+
+#: ../data/gfpm.glade.h:71
+msgid "Quit"
+msgstr "Avsluta"
+
+#: ../data/gfpm.glade.h:72
+msgid "Refresh the package lists"
+msgstr "Uppdatera paket listorna"
+
+#: ../data/gfpm.glade.h:73
+msgid "Remove all packages from cache"
+msgstr "Radera alla paket från cache"
+
+#: ../data/gfpm.glade.h:74
+msgid "Remove old packages from cache"
+msgstr "Radera gamla paket från cache"
+
+#: ../data/gfpm.glade.h:75
+#, fuzzy
+msgid "Remove this Package"
+msgstr "Raderar paket..."
+
+#: ../data/gfpm.glade.h:76
+msgid "Repositories"
+msgstr ""
+
+#: ../data/gfpm.glade.h:77
+msgid "Repository Manager"
+msgstr ""
+
+#: ../data/gfpm.glade.h:78
+msgid "Repository Name"
+msgstr ""
+
+#: ../data/gfpm.glade.h:79
+msgid "Search"
+msgstr ""
+
+#: ../data/gfpm.glade.h:80
+msgid "Server URL"
+msgstr ""
+
+#: ../data/gfpm.glade.h:81
+msgid "Servers Manager"
+msgstr ""
+
+#: ../data/gfpm.glade.h:82
+msgid "Skip dependency checks"
+msgstr "Hoppa över beroende kontroll"
+
+#: ../data/gfpm.glade.h:83
+msgid "The following operations will be performed"
+msgstr "Följande åtgärder kommer att utföras"
+
+#: ../data/gfpm.glade.h:84
+msgid "Total size:"
+msgstr "Total storlek:"
+
+#: ../data/gfpm.glade.h:85
+msgid "Transfer Rate:  "
+msgstr "Överföringshastighet:"
+
+#: ../data/gfpm.glade.h:87
+msgid "Upgrade existing"
+msgstr "Uppgradera befintligt"
+
+#: ../data/gfpm.glade.h:88
+#, fuzzy
+msgid "Upgrade this Package"
+msgstr "Uppgraderar paket..."
+
+#: ../data/gfpm.glade.h:89
+msgid "Use proxy server"
+msgstr ""
+
+#: ../data/gfpm.glade.h:90
+msgid "View"
+msgstr ""
+
+#: ../data/gfpm.glade.h:91
+msgid "View Readme"
+msgstr ""
+
+#: ../data/gfpm.glade.h:92
+msgid "View System _Log"
+msgstr ""
+
+#: ../data/gfpm.glade.h:93
+msgid "_About Gfpm"
+msgstr "_Om Gfpm"
+
+#: ../data/gfpm.glade.h:94
+#, fuzzy
+msgid "_Clear Package Cache"
+msgstr "_Rensa paket cache"
+
+#: ../data/gfpm.glade.h:95
+#, fuzzy
+msgid "_Edit"
+msgstr "A_vsluta"
+
+#: ../data/gfpm.glade.h:96
+msgid "_Gfpm"
+msgstr "_Gfpm"
+
+#: ../data/gfpm.glade.h:97
+msgid "_Help"
+msgstr "_Hjälp"
+
+#: ../data/gfpm.glade.h:98
+#, fuzzy
+msgid "_Optimize Package Database"
+msgstr "_Optimera paketdatabas"
+
+#: ../data/gfpm.glade.h:99
+msgid "_Tools"
+msgstr ""
+
+#: ../data/gfpm.glade.h:100
+msgid "clear package cache"
+msgstr "rensa paket cache"
+
+#: ../data/gfpm.glade.h:101
+msgid "days"
+msgstr ""
+
+#: ../data/gfpm.glade.h:102
+msgid "gtk-add"
+msgstr ""
+
+#: ../data/gfpm.glade.h:103
+msgid "gtk-apply"
+msgstr ""
+
+#: ../data/gfpm.glade.h:104
+msgid "gtk-cancel"
+msgstr ""
+
+#: ../data/gfpm.glade.h:105
+msgid "gtk-close"
+msgstr ""
+
+#: ../data/gfpm.glade.h:106
+msgid "gtk-delete"
+msgstr ""
+
+#: ../data/gfpm.glade.h:107
+msgid "gtk-edit"
+msgstr ""
+
+#: ../data/gfpm.glade.h:108
+msgid "gtk-go-down"
+msgstr ""
+
+#: ../data/gfpm.glade.h:109
+msgid "gtk-go-up"
+msgstr ""
+
+#: ../data/gfpm.glade.h:110
+msgid "gtk-ok"
+msgstr ""
+
+#: ../data/gfpm.glade.h:111
+#, fuzzy
+msgid "gtk-remove"
+msgstr "Radera"
+
+#: ../data/gfpm.glade.h:112
 msgid "optimize your package database to improve performance"
 msgstr "Optimera din paket databas för att öka prestanda"
+
+#, fuzzy
+#~ msgid "Error opening repository servers file"
+#~ msgstr "raderar temporära filer"
+
+#~ msgid "Search packages"
+#~ msgstr "Sök paket"
 
 #~ msgid "Ready"
 #~ msgstr "Klar"
