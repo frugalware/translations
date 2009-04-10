@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-31 02:27+0200\n"
-"PO-Revision-Date: 2009-04-10 09:50+0200\n"
+"PO-Revision-Date: 2009-04-10 19:55+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -300,10 +300,31 @@ msgid ""
 "If you want to modify partition table (create or modify partitions),\n"
 " you can run GParted but this will erase all your selected partitions."
 msgstr ""
+"Du skal som det mindste vælge en root partition for at fortsætte til det "
+"næste skridt.\n"
+" For eksempel, at tildele en root partition, vælg device i listen "
+"lokaliseret i toppen af siden,\n"
+" vælg så en partition og brug knappen til at lave det som root partition.\n"
+"\n"
+"Du kan bruge dine andre partitioner til at fordele dit Linux-system på flere "
+"end en partition.\n"
+" Du vil måske gerne vælge seperate foldere så som /boot, /home eller "
+"/usr/local på særskilte partitioner.\n"
+" Du bør ikke prøve at tildelle /usr, /etc, /sbin eller /bin på egne "
+"partitioner\n"
+" fordi de indeholder programmer der er nødvendige for at bringe systemet op "
+"og montere partitioner.\n"
+" Genanvend heller ikke en partition som du allerede har valgt før.\n"
+" For at sætte et mountpoint for en partition, rediger cellen i tabellen af "
+"partitioner (kolonne \"Mountpoint\") ved at dobbelt-klikke på den.\n"
+"\n"
+"Hvis du vil modificere partition tabellen (skabe eller modificere "
+"partitioner),\n"
+" kan du køre GParted men dette vil slette alle dine valgte partitioner."
 
 #: ../src/plugins/greet.c:48
 msgid "Welcome"
-msgstr ""
+msgstr "Velkommen"
 
 #: ../src/plugins/greet.c:59
 msgid ""
@@ -317,108 +338,119 @@ msgid ""
 "<span font_desc=\"Times New Roman italic 12\" foreground=\"#0000FF\">The "
 "Frugalware Developer Team</span>\n"
 msgstr ""
+"<span face=\"Times New Roman 12\"><b>Velkommen blandt brugere af Frugalware!\n"
+"\n"
+"</b></span>\n"
+"Målet med at skabe Frugalware var at hjælpe dig til gøre dit arbejde "
+"hurtigere og mere enkel.\n"
+" Vi håber at du vil kunne lide vores produkt.\n"
+"\n"
+"<span font_desc=\"Times New Roman italic 12\" foreground=\"#0000FF\">Frugalware "
+"Udvikler Team</span>\n"
 
 #: ../src/plugins/layout.c:76
 msgid "Keyboard map selection"
-msgstr ""
+msgstr "Vælg tastaturlayout"
 
 #: ../src/plugins/layout.c:323 ../src/plugins/layout.c:464
 msgid "Personalized keyboard"
-msgstr ""
+msgstr "Personaliseret tastaturlayout"
 
 #: ../src/plugins/layout.c:347
 msgid "Console Keymap"
-msgstr ""
+msgstr "Konsol tastaturlayout"
 
 #: ../src/plugins/layout.c:358
 msgid "X Keymap (Used only if X server installed)"
-msgstr ""
+msgstr "X tastaturlayout (Bruges kun hvis X server er installeret)"
 
 #: ../src/plugins/layout.c:364
 msgid "Model"
-msgstr ""
+msgstr "Model"
 
 #: ../src/plugins/layout.c:369
 msgid "Variant"
-msgstr ""
+msgstr "Variant"
 
 #: ../src/plugins/layout.c:390
 msgid "You must enter a name for this keyboard"
-msgstr ""
+msgstr "Du skal skrive et navn for dette tastaturlayout"
 
 #: ../src/plugins/layout.c:433
 msgid "X Layout"
-msgstr ""
+msgstr "X Layout"
 
 #: ../src/plugins/layout.c:437
 msgid "X Variant"
-msgstr ""
+msgstr "X Variant"
 
 #: ../src/plugins/layout.c:441
 msgid "Console keymap"
-msgstr ""
+msgstr "Konsol tastaturlayout"
 
 #: ../src/plugins/layout.c:456
 msgid ""
 "<span face=\"Courier New\"><b>You may select one of the following keyboard "
 "maps.</b></span>"
 msgstr ""
+"<span face=\"Courier New\"><b>Du skal vælge en af følgende "
+"tastaturlayouts.</b></span>"
 
 #: ../src/plugins/layout.c:463
 msgid "Test your keyboard here :"
-msgstr ""
+msgstr "Test dit tastaturlayout her :"
 
 #: ../src/plugins/select.c:84
 msgid "Packages selection"
-msgstr ""
+msgstr "Pakkeudvælgelse"
 
 #: ../src/plugins/select.c:449 ../src/plugins/select.c:552
 msgid "Install?"
-msgstr ""
+msgstr "Installere?"
 
 #: ../src/plugins/select.c:453
 msgid "Package Name"
-msgstr ""
+msgstr "Pakke Navn"
 
 #: ../src/plugins/select.c:556
 msgid "Groups"
-msgstr ""
+msgstr "Grupper"
 
 #: ../src/plugins/select.c:588 ../src/plugins/select.c:1002
 msgid "<b>Choose groups you want to install :</b>"
-msgstr ""
+msgstr "<b>Vælg grupper du ønsker at installere :</b>"
 
 #: ../src/plugins/select.c:604
 msgid "Select all this group's packages"
-msgstr ""
+msgstr "Vælg alle denne gruppes pakker"
 
 #: ../src/plugins/select.c:605
 msgid "Unselect all this group's packages"
-msgstr ""
+msgstr "Fravælg alle denne gruppes pakker"
 
 #: ../src/plugins/select.c:623
 msgid "<b>Choose packages into selected group :</b>"
-msgstr ""
+msgstr "<b>Vælg pakker i udvalgt gruppe :</b>"
 
 #: ../src/plugins/select.c:748 ../src/plugins/select.c:949
 msgid "KDE"
-msgstr ""
+msgstr "KDE"
 
 #: ../src/plugins/select.c:755
 msgid "Gnome"
-msgstr ""
+msgstr "Gnome"
 
 #: ../src/plugins/select.c:760 ../src/plugins/select.c:967
 msgid "XFCE"
-msgstr ""
+msgstr "XFCE"
 
 #: ../src/plugins/select.c:765 ../src/plugins/select.c:976
 msgid "LXDE"
-msgstr ""
+msgstr "LXDE"
 
 #: ../src/plugins/select.c:773 ../src/plugins/select.c:985
 msgid "E17"
-msgstr ""
+msgstr "E17"
 
 #: ../src/plugins/select.c:943
 msgid "<b>Choose your desktop environment :</b>"
