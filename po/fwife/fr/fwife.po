@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-31 02:27+0200\n"
-"PO-Revision-Date: 2009-04-08 18:45+0200\n"
+"PO-Revision-Date: 2009-04-14 19:45+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fr\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../src/plugins/asklang.c:84
 msgid "Select your language"
-msgstr ""
+msgstr "Sélectionner votre langue"
 
 #: ../src/plugins/asklang.c:128
 msgid "Flag"
@@ -70,7 +70,7 @@ msgstr "Impossible d'effacer les miroirs par défaut"
 
 #: ../src/plugins/configsource.c:220
 msgid "Use"
-msgstr ""
+msgstr "Utilisez"
 
 #: ../src/plugins/configsource.c:226
 msgid "Mirrors"
@@ -111,6 +111,10 @@ msgid ""
 "You can add your own custom mirrors to increase downloadind speed by using "
 "suitable button."
 msgstr ""
+"Sélectionnez un ou plus de miroirs proches pour accélérer le téléchargement "
+"de paquets.\n"
+"Vous pouvez ajouter vos propres miroirs personnalisés pour accroître la "
+"vitesse de téléchargement en utilisant le bouton prévu à cet effet."
 
 #: ../src/plugins/finish.c:60
 msgid "Installation completed"
@@ -150,9 +154,10 @@ msgid ""
 "<span face=\"Courier New\" foreground=\"#f90909\"><b>!!! NOTE: This will "
 "erase all data on it. Would you like to format this partition? !!!</b></"
 "span>\n"
-msgstr "<span face=\"Courier New\" foreground=\"#f90909\"><b>!!! NOTE: Cela effacera "
-"toutes les données qu'elle contient. Voulez-vous formater cette partition? "
-"!!!</b></span>\n"
+msgstr ""
+"<span face=\"Courier New\" foreground=\"#f90909\"><b>!!! NOTE: Cela effacera "
+"toutes les données qu'elle contient. Voulez-vous formater cette "
+"partition? !!!</b></span>\n"
 
 #: ../src/plugins/partdisk.c:555
 msgid "Choose filesystem :"
@@ -213,6 +218,11 @@ msgid ""
 "\n"
 " Do you want to continue? </b></span>\n"
 msgstr ""
+"<span face=\"Courier New\" foreground=\"#f90909\"><b>Vous devez formater si "
+"vous voulez l'utiliser comme partition swap!\n"
+"Ceci effacera toute les données sur cette partition !\n"
+"\n"
+"Voulez-vous continuer? </b></span>\n"
 
 #: ../src/plugins/partdisk.c:771
 msgid "Select this partition as root partition?"
@@ -232,7 +242,8 @@ msgstr "Voulez vous utiliser gparted pour créer/modifier des partitions?"
 msgid ""
 "<span face=\"Courier New\"><b>Select and format your partitions or launch "
 "GParted to modify them.</b></span>\n"
-msgstr "<span face=\"Courier New\"><b>Sélectionner et formater vos partitions ou "
+msgstr ""
+"<span face=\"Courier New\"><b>Sélectionner et formater vos partitions ou "
 "lancer GParted pour les modifier.</b></span>\n"
 
 #: ../src/plugins/partdisk.c:930
@@ -296,6 +307,31 @@ msgid ""
 "If you want to modify partition table (create or modify partitions),\n"
 " you can run GParted but this will erase all your selected partitions."
 msgstr ""
+"Vous devez choisir une partition racine pour continuer vers l'étape "
+"suivante.\n"
+" Par exemple, pour définir la définition racine, sélectionner le "
+"périphérique dans la liste en haut de la page,\n"
+" puis sélectionner une partition et utiliser le bouton prévu pour en faire "
+"la partition racine.\n"
+"\n"
+"Vous pouvez utiliser d'autres partitions pour distribué votre système Linux "
+"sur plus d'une seule partition.\n"
+" Vous voudrez sans doutes monté des répertoires comme /boot, /home ou "
+"/usr/local sur des partitions séparées.\n"
+" Vous ne devez pas essayer de monté /usr, /etc, /sbin ou /bin dans leur "
+"propres partitions\n"
+" puisqu'ils contiennent les utilitaires nécessaires pour démarrer le système "
+"et monter des partitions.\n"
+" Aussi, ne pas réutiliser une partition que vous aviez rentrée au "
+"préalablement.\n"
+" Pour définir un point de montage pour une partition, éditer la céllule dans "
+"la tables des partitions (colonne \"Point de Montage\") en double-cliquant "
+"dessus.\n"
+"\n"
+"Si vous voulez modifier la table de partitions (créer ou modifier des "
+"partitions),\n"
+" vous pouvez utiliser GParted mais cela effacera toutes les partitions "
+"sélectionnées."
 
 #: ../src/plugins/greet.c:48
 msgid "Welcome"
@@ -324,9 +360,8 @@ msgstr ""
 "\">L'équipe de développeurs de Frugalware</span>\n"
 
 #: ../src/plugins/layout.c:76
-#, fuzzy
 msgid "Keyboard map selection"
-msgstr "Sélection de ?????????? du clavier"
+msgstr "Sélection de la langue du clavier"
 
 #: ../src/plugins/layout.c:323 ../src/plugins/layout.c:464
 msgid "Personalized keyboard"
@@ -334,11 +369,13 @@ msgstr "Clavier personnalisé"
 
 #: ../src/plugins/layout.c:347
 msgid "Console Keymap"
-msgstr ""
+msgstr "Disposition du clavier pour la console"
 
 #: ../src/plugins/layout.c:358
 msgid "X Keymap (Used only if X server installed)"
 msgstr ""
+"Disposition du clavier pour X (utiliser seulement si le serveur X est "
+"installé)"
 
 #: ../src/plugins/layout.c:364
 msgid "Model"
@@ -354,7 +391,7 @@ msgstr "Vous devez entrer un nom pour ce clavier"
 
 #: ../src/plugins/layout.c:433
 msgid "X Layout"
-msgstr ""
+msgstr "Layout X"
 
 #: ../src/plugins/layout.c:437
 msgid "X Variant"
@@ -362,13 +399,15 @@ msgstr "Variante X"
 
 #: ../src/plugins/layout.c:441
 msgid "Console keymap"
-msgstr ""
+msgstr "Disposition du clavier pour la console"
 
 #: ../src/plugins/layout.c:456
 msgid ""
 "<span face=\"Courier New\"><b>You may select one of the following keyboard "
 "maps.</b></span>"
 msgstr ""
+"<span face=\"Courier New\"><b>Vous devez sélectionner au moins une disposition "
+"de clavier suivante.</b></span>"
 
 #: ../src/plugins/layout.c:463
 msgid "Test your keyboard here :"
@@ -551,7 +590,7 @@ msgstr "Résolutions des dépendances"
 
 #: ../src/plugins/install.c:164
 msgid "Looking for inter-conflicts"
-msgstr ""
+msgstr "Recherche de conflits"
 
 #: ../src/plugins/install.c:167
 #, c-format
@@ -578,9 +617,10 @@ msgid "Configure your system"
 msgstr "Configurer votre système"
 
 #: ../src/plugins/postconf.c:86
-#, fuzzy
 msgid "PS/2 port mouse (most desktops and laptops)"
-msgstr "Port souris PS/2 (pour la plus parts des desktops et laptops)"
+msgstr ""
+"Port souris PS/2 (pour la plus parts des ordinateurs de bureaux et "
+"portables)"
 
 #: ../src/plugins/postconf.c:87
 msgid "Microsoft PS/2 Intellimouse"
@@ -596,11 +636,12 @@ msgstr "Souris sur port série 3 boutons compatible Microsoft"
 
 #: ../src/plugins/postconf.c:90
 msgid "Logitech serial MouseMan and similar devices"
-msgstr ""
+msgstr "Dispositifs Logitech Mouseman série et similaires"
 
 #: ../src/plugins/postconf.c:91
 msgid "MouseSystems serial (most 3 button serial mice)"
 msgstr ""
+"Souris sur port série MouseSystems (la plus part des souris à 3 bouttons)"
 
 #: ../src/plugins/postconf.c:92
 msgid "Plug and Play (serial mice that do not work with ms)"
@@ -612,15 +653,15 @@ msgstr "Souris connectée sur USB"
 
 #: ../src/plugins/postconf.c:94
 msgid "Microsoft serial Intellimouse"
-msgstr ""
+msgstr "Microsoft Intellimouse série"
 
 #: ../src/plugins/postconf.c:95
 msgid "Genius Netmouse on PS/2 port"
-msgstr ""
+msgstr "Genius Netmouse sur port PS/2"
 
 #: ../src/plugins/postconf.c:96
 msgid "Some serial Logitech devices"
-msgstr ""
+msgstr "Certaines souris Logitech sur port série"
 
 #: ../src/plugins/postconf.c:97
 msgid "Make serial Logitech behave like msc"
@@ -640,23 +681,23 @@ msgstr ""
 
 #: ../src/plugins/postconf.c:101
 msgid "A pointing pen (NCR3125) on some laptops"
-msgstr ""
+msgstr "Un stylo pointeur (NCR3125) sur certains portables"
 
 #: ../src/plugins/postconf.c:102
 msgid "Twiddler keyboard, by HandyKey Corp"
-msgstr ""
+msgstr "Clavier Twiddler, par HandyKey Corp"
 
 #: ../src/plugins/postconf.c:103
 msgid "Genitizer tablet (relative mode)"
-msgstr ""
+msgstr "Tablette Genitizer tablet (mode relatif)"
 
 #: ../src/plugins/postconf.c:104
 msgid "Use a joystick as a mouse"
-msgstr ""
+msgstr "Utilisez un joystick comme souris"
 
 #: ../src/plugins/postconf.c:105
 msgid "Wacom serial graphics tablet"
-msgstr ""
+msgstr "Tablette graphique Wacom série"
 
 #: ../src/plugins/postconf.c:139
 msgid "(COM1: under DOS)"
@@ -688,23 +729,25 @@ msgstr "Sélection du port souris :"
 
 #: ../src/plugins/postconf.c:380
 msgid "   X Window Display Manager"
-msgstr ""
+msgstr "   Gestionnaire de session X"
 
 #: ../src/plugins/postconf.c:384
 msgid "  KDE Display Manager"
-msgstr ""
+msgstr "  Gestionnaire de session KDE"
 
 #: ../src/plugins/postconf.c:389
 msgid "  Gnome Display Manager"
-msgstr ""
+msgstr "  Gestionnaire de session Gnome"
 
 #: ../src/plugins/postconf.c:394
 msgid "  Simple Login Manager"
-msgstr ""
+msgstr "  Gestionnaire de session simple (slim)"
 
 #: ../src/plugins/postconf.c:454
 msgid "Corrupted X installation. Missing file, see log for more details"
 msgstr ""
+"Installation de X corrompue. Fichier manquant, regarder l'historique pour "
+"plus de détails"
 
 #: ../src/plugins/postconf.c:458
 msgid "Configuring X11"
@@ -724,7 +767,7 @@ msgstr "Profondeur de couleurs:"
 
 #: ../src/plugins/postconf.c:488
 msgid "Select your default display manager : "
-msgstr ""
+msgstr "Sélectionnez un environnement de bureau par défaut : _"
 
 #: ../src/plugins/postconf.c:591
 msgid ""
@@ -842,6 +885,8 @@ msgid ""
 "<span face=\"Courier New\"><b>You can configure non-root user account. It is "
 "strongly recommended to create one.</b></span>"
 msgstr ""
+"<span face=\"Courier New\"><b>Vous pouvez configurer un compte utilisateur "
+"non-root. Il est fortement recommandé d'en créer un.</b></span>"
 
 #: ../src/plugins/usersconf.c:296
 msgid "User"
@@ -921,7 +966,7 @@ msgstr "Commentaires"
 
 #: ../src/plugins/timeconf.c:413
 msgid "Set clock to UTC/GMT time coordinates"
-msgstr ""
+msgstr "Paramétrer l'horloge au temps coordonné UTC/GMT"
 
 #: ../src/plugins/netconf.c:76
 msgid "Configuring your network"
@@ -1028,7 +1073,7 @@ msgstr "Associer avec l'interface:"
 
 #: ../src/plugins/netconf.c:396
 msgid "Passwords do not match! Try again."
-msgstr ""
+msgstr "Les mots de passe ne correspondent pas! Essayez encore."
 
 #: ../src/plugins/netconf.c:441
 msgid "This interface has been already configured!"
@@ -1046,7 +1091,7 @@ msgstr ""
 
 #: ../src/plugins/netconf.c:487
 msgid "Set DHCP hostname"
-msgstr ""
+msgstr "Sélection du nom d'hôte DHCP"
 
 #: ../src/plugins/netconf.c:487
 msgid ""
@@ -1056,6 +1101,12 @@ msgid ""
 " If you wereassigned a DHCP hostname, please enter it below.\n"
 " If you do not have a DHCP hostname, justhit enter."
 msgstr ""
+"Quelques fournisseurs d'accès internet requièrent que le nom d'hôte DHCP "
+"soit définir\n"
+"pour pouvoir se connecter.\n"
+" Si c'est le cas, un nom d'hôte a été donné pour votre machine.\n"
+" Si un nom d'hôte DHCP vous à été assigné, veuillez l'entrer si dessous.\n"
+" Si vous n'avez pas de nom d'hôte DHCP, veuillez juste appuyer sur Entrée."
 
 #: ../src/plugins/netconf.c:544
 msgid ""
@@ -1114,12 +1165,20 @@ msgid ""
 "\n"
 "Enter full hostname:"
 msgstr ""
+"Nous aurons besoin du nom que vous voulez attribuer à votre hôte.\n"
+"Le nom d'hôte complet est nécessaire, par exemple:\n"
+"\n"
+"frugalware.example.net\n"
+"\n"
+"Entrer le nom d'hôte complet:"
 
 #: ../src/plugins/netconf.c:679
 msgid ""
 "Select network interface you want to configure then click on add button and "
 "follow instructions..."
 msgstr ""
+"Sélectionnez l'interface réseau que vous voulez configurer puis cliquez sur "
+"le bouton ajouter et suivez les instructions..."
 
 #: ../src/fwife.c:139
 msgid "Are you sure you want to exit from the installer?\n"
@@ -1135,7 +1194,7 @@ msgstr ""
 
 #: ../src/fwife.c:164
 msgid "Error when running plugin. Please report"
-msgstr ""
+msgstr "Erreur pendant l'exécution du plugin. Reportez s'il vous plaît"
 
 #: ../src/fwife.c:193
 msgid "Plugin help"
@@ -1143,7 +1202,7 @@ msgstr ""
 
 #: ../src/fwife.c:206
 msgid "No help available for this plugin"
-msgstr ""
+msgstr "Pas d'aide disponible pour ce plugin"
 
 #: ../src/fwife.c:235
 #, fuzzy
