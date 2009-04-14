@@ -6,15 +6,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-15 01:54+0100\n"
-"PO-Revision-Date: 2007-07-29 14:07+0200\n"
-"Last-Translator: Fredrik Liljedahl <fredrik.lilj@gmail.com>\n"
+"POT-Creation-Date: 2009-04-14 02:27+0200\n"
+"PO-Revision-Date: 2009-04-14 04:22+0200\n"
+"Last-Translator: Patric Werme <tranzemaniac@jabberlive.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 1.0\n"
+"X-Generator: Pootle 1.2.1\n"
 
 #: ../src/plugins/asklang.c:72
 msgid "Selecting language"
@@ -32,7 +33,7 @@ msgid "ftp://ftp5."
 msgstr "ftp://ftp5."
 
 #: ../src/plugins/configsource.c:102 ../src/plugins/dolangsh.c:58
-#: ../src/plugins/formatdisk.c:256 ../src/plugins/formatdisk.c:409
+#: ../src/plugins/formatdisk.c:257 ../src/plugins/formatdisk.c:412
 #: ../src/plugins/layout.c:146 ../src/plugins/loadsource.c:88
 #: ../src/plugins/select.c:334 ../src/util.c:305
 msgid "Could not open output file for writing"
@@ -53,7 +54,7 @@ msgstr ""
 "Här väljer du en eller fler speglar i närheten av dig för att snabba upp "
 "hämtningen av paket."
 
-#: ../src/plugins/configsource.c:166 ../src/plugins/formatdisk.c:580
+#: ../src/plugins/configsource.c:166 ../src/plugins/formatdisk.c:583
 #: ../src/plugins/partdisk.c:197
 msgid "Continue"
 msgstr "Fortsätt"
@@ -63,13 +64,12 @@ msgid "Custom mirror"
 msgstr "Anpassad spegel"
 
 #: ../src/plugins/configsource.c:167
-#, fuzzy
 msgid ""
 "You may now specify a custom mirror (eg. LAN) so you can download packages "
 "faster. In most cases a Continue enough here."
 msgstr ""
-"Du får nu välja en anpassad spegel (tex. LAN) för att snabbare hämta "
-"paketen. I de flesta fallen blir standardvärdet bra."
+"Du kan nu välja en anpassad spegel (tex, LAN) så att du kan hämta paketen "
+"snabbare. I de flesta fall räcker det att bara fortsätta här."
 
 #: ../src/plugins/configsource.c:196 ../src/plugins/select.c:410
 #: ../src/plugins/select.c:420 ../src/plugins/select.c:450
@@ -110,7 +110,7 @@ msgid "Slow format that checks for bad blocks"
 msgstr "Långsam formatering som söker efter dåliga block"
 
 #: ../src/plugins/formatdisk.c:177 ../src/plugins/formatdisk.c:201
-#: ../src/plugins/formatdisk.c:232
+#: ../src/plugins/formatdisk.c:233
 msgid "Formatting partitions"
 msgstr "Formaterar partitioner"
 
@@ -139,50 +139,54 @@ msgid "Standard Linux ext2fs filesystem"
 msgstr "Standard Linux ext2fs filsystem"
 
 #: ../src/plugins/formatdisk.c:225
-msgid "Journalising version of the ext2fs filesystem"
-msgstr "Journalförande version av ext2fs filsystemet"
+msgid "Journalising version of the ext2 filesystem"
+msgstr "Journalförande version av ext2 filsystemet"
 
-#: ../src/plugins/formatdisk.c:227
+#: ../src/plugins/formatdisk.c:226
+msgid "The evolution of the ext3 filesystem (EXPERIMENTAL!)"
+msgstr "Uppföljaren till ext3 filsystemet (EXPERIMENTEL!)"
+
+#: ../src/plugins/formatdisk.c:228
 msgid "Hans Reiser's journalising filesystem"
 msgstr "Hans Reisers journalförande filsystem"
 
-#: ../src/plugins/formatdisk.c:229
+#: ../src/plugins/formatdisk.c:230
 msgid "SGI's journalising filesystem"
 msgstr "SGIs journalförande filsystem"
 
-#: ../src/plugins/formatdisk.c:236
+#: ../src/plugins/formatdisk.c:237
 #, c-format
 msgid "Selecting filesystem for %s"
 msgstr "Väljer filsystem för %s"
 
-#: ../src/plugins/formatdisk.c:237
+#: ../src/plugins/formatdisk.c:238
 #, c-format
 msgid "Please select the type of filesystem to use for %s."
 msgstr "Var god välj vilken typ av filsystem att använda för %s"
 
-#: ../src/plugins/formatdisk.c:280 ../src/plugins/formatdisk.c:287
+#: ../src/plugins/formatdisk.c:281 ../src/plugins/formatdisk.c:288
 msgid "Formatting swap partition"
 msgstr "Formaterar växlingspartition"
 
-#: ../src/plugins/formatdisk.c:281
+#: ../src/plugins/formatdisk.c:282
 #, c-format
 msgid "Formatting %s as a swap partition"
 msgstr "Formaterar %s som en växlingspartition"
 
-#: ../src/plugins/formatdisk.c:288
+#: ../src/plugins/formatdisk.c:289
 #, c-format
 msgid "Formatting %s as a swap partition and checking for bad blocks"
 msgstr "Formaterar %s som en växlingspartition och söker efter dåliga områden"
 
-#: ../src/plugins/formatdisk.c:312
+#: ../src/plugins/formatdisk.c:313
 msgid "Setting up the root partition"
 msgstr "Skapar rootpartition"
 
-#: ../src/plugins/formatdisk.c:314
+#: ../src/plugins/formatdisk.c:315
 msgid "Select the Linux installation partition"
 msgstr "Välj installationspartition för ditt linuxsystem"
 
-#: ../src/plugins/formatdisk.c:315
+#: ../src/plugins/formatdisk.c:316
 msgid ""
 "Please select a partition from the following list to use for your root (/) "
 "partition. The following ones are available:"
@@ -190,44 +194,44 @@ msgstr ""
 "Var god välj en partition från den följande listan att använda som din root- "
 "partition (/). Följande partitioner är tillgängliga:"
 
-#: ../src/plugins/formatdisk.c:328
+#: ../src/plugins/formatdisk.c:329
 msgid "Formatting"
 msgstr "Formaterar"
 
-#: ../src/plugins/formatdisk.c:329
+#: ../src/plugins/formatdisk.c:330
 #, c-format
 msgid "Creating %s filesystem on %s and checking for bad blocks"
 msgstr "Skapar %s filsystem på %s och söker efter dåliga block"
 
-#: ../src/plugins/formatdisk.c:330
+#: ../src/plugins/formatdisk.c:331
 #, c-format
 msgid "Creating %s filesystem on %s"
 msgstr "Skapar %s filsystem på %s"
 
-#: ../src/plugins/formatdisk.c:433
+#: ../src/plugins/formatdisk.c:436
 #, c-format
 msgid "Select mount point for %s"
 msgstr "Väljer monteringspunkt för %s"
 
-#: ../src/plugins/formatdisk.c:457 ../src/plugins/formatdisk.c:600
+#: ../src/plugins/formatdisk.c:460 ../src/plugins/formatdisk.c:603
 msgid "(in use)"
 msgstr "(i bruk)"
 
-#: ../src/plugins/formatdisk.c:465
+#: ../src/plugins/formatdisk.c:468
 #, c-format
 msgid "%s on %s/\t%s"
 msgstr "%s på %s/\t%s"
 
 #. non-root partitions
-#: ../src/plugins/formatdisk.c:573
+#: ../src/plugins/formatdisk.c:576
 msgid "Selecting other partitions"
 msgstr "Väljer andra partitioner"
 
-#: ../src/plugins/formatdisk.c:584
+#: ../src/plugins/formatdisk.c:587
 msgid "Select other Linux partitions for /etc/fstab"
 msgstr "Välj andra Linuxpartitioner för /etc/fstab"
 
-#: ../src/plugins/formatdisk.c:585
+#: ../src/plugins/formatdisk.c:588
 msgid ""
 "You may use your other partitions to distribute your Linux system across "
 "more than one partition. Currently, you have only mounted your / partition. "
@@ -303,8 +307,8 @@ msgid ""
 msgstr ""
 "Du kan välja en av de följande tangentbordslayouter. Om du inte väljer en "
 "tangentbordslayout, är 'qwerty/us.map.gz' (Amerikansk-engelsk "
-"tangentbordslayout) standard. Använd UPP/NER piltangenterna och PageUp/"
-"PageDown för att rulla igenom listan av urval."
+"tangentbordslayout) standard. Använd UPP/NER piltangenterna och "
+"PageUp/PageDown för att rulla igenom listan av urval."
 
 #: ../src/plugins/loadsource.c:62
 msgid "Loading the installation source"
@@ -350,7 +354,7 @@ msgstr "Ett partitioneringsprogram"
 
 #: ../src/plugins/partdisk.c:126
 msgid "Apple disk partitioning utility"
-msgstr ""
+msgstr "Apple hårddisk partionerings verktyg"
 
 #: ../src/plugins/partdisk.c:131 ../src/plugins/partdisk.c:183
 msgid "Creating partitions"
@@ -393,14 +397,14 @@ msgid "Select a hard disk to partition"
 msgstr "Välj en hårddisk att partitionera"
 
 #: ../src/plugins/partdisk.c:201
-#, fuzzy
 msgid ""
 "Please select a hard disk to partition. Once you are done, or in case you "
 "don't want to partition your disks at all, select 'Continue'. The following "
 "ones are available:"
 msgstr ""
-"Var god välj en partition från den följande listan att använda som din root- "
-"partition (/). Följande partitioner är tillgängliga:"
+"Var god välj en hårdisk att partitionera. När du är klar eller om du inte "
+"vill partitionera din(a) hårdisk(ar) alls, välj 'Fortsätt'. Följande "
+"hårddiskar finns tillgängliga:"
 
 #: ../src/plugins/restart.c:51
 msgid "Restarting your computer"
@@ -499,12 +503,12 @@ msgid "Installing the selected packages"
 msgstr "Installerar de valda paketen"
 
 #: ../src/plugins/install.c:69
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Errors occurred while installing selected packages.\n"
 "Press ENTER to continue..."
 msgstr ""
-"Fel uppstod under installation av de valda paketen.\n"
+"Fel uppstod vid installation av valda paket.\n"
 "Tryck ENTER för att fortsätta..."
 
 #: ../src/plugins/install.c:90
@@ -574,27 +578,40 @@ msgstr "Är du säker på att du vill hoppa över lösenordsinställningar för 
 msgid "Ignore setting password"
 msgstr "Ignorera lösenordsinställningar"
 
-#: ../src/plugins/postconf.c:153
+#: ../src/plugins/postconf.c:155
 msgid "Enter login"
 msgstr "Ange användarnamn"
 
-#: ../src/plugins/postconf.c:153
+#: ../src/plugins/postconf.c:155
 msgid "Please enter the login name you should like to create:"
 msgstr "Var god ange användarnamn för det konto du vill skapa:"
 
-#: ../src/plugins/postconf.c:156
+#: ../src/plugins/postconf.c:158
 msgid "Enter full name"
 msgstr "Ange fullständigt namn"
 
-#: ../src/plugins/postconf.c:156
+#: ../src/plugins/postconf.c:158
 msgid "Please enter the full name of the user you would like to create:"
 msgstr "Var god ange fullständigt namn för det användarkonto du vill skapa:"
 
-#: ../src/plugins/postconf.c:201
+#: ../src/plugins/postconf.c:173
+#, c-format
+msgid ""
+"'/home/%s' already exists! Please change the home directory path to a non-"
+"existing directory:"
+msgstr ""
+"'/home/%s' finns redan! Vänligen peka hem katalog sökvägen till en icke "
+"befintlig katalog:"
+
+#: ../src/plugins/postconf.c:175
+msgid "Enter home directory"
+msgstr "Skriv in hem katalog"
+
+#: ../src/plugins/postconf.c:217
 msgid "No normal user account detected"
 msgstr "Inget normalt användarkonto hittades"
 
-#: ../src/plugins/postconf.c:202
+#: ../src/plugins/postconf.c:218
 msgid ""
 "There is currently no non-root user account configured. It is strongly "
 "recommended to create one. Would you like to create a normal user account "
@@ -604,15 +621,15 @@ msgstr ""
 "konfigurerat. Det är starkt rekomenderat att skapa ett. Vill du skapa ett "
 "normalt användarkonto nu?"
 
-#: ../src/plugins/postconf.c:230
+#: ../src/plugins/postconf.c:246
 msgid "Post-install configuration"
 msgstr "Inställningar efter installationen"
 
-#: ../src/plugins/postconf.c:260
+#: ../src/plugins/postconf.c:276
 msgid "Configuring kernel modules"
 msgstr "Konfigruerar kärnmoduler"
 
-#: ../src/plugins/postconf.c:261
+#: ../src/plugins/postconf.c:277
 msgid "Updating module dependencies..."
 msgstr "Uppdaterar modulberoenden..."
 
@@ -650,15 +667,15 @@ msgstr "Gå ut ur installationsprogrammet"
 msgid "Are you sure you want to exit from the installer?"
 msgstr "Är du säker på att du vill gå ut ur installationsprogrammet?"
 
-#: ../src/util.c:631
+#: ../src/util.c:634
 msgid "Oops"
 msgstr "Ojsan"
 
-#: ../src/util.c:633
+#: ../src/util.c:636
 msgid "A problem has occurred"
 msgstr "Ett problem har inträffat"
 
-#: ../src/util.c:633
+#: ../src/util.c:636
 msgid ""
 "Internal error: Segmentation fault. Please report this issue to http://bugs."
 "frugalware.org"
@@ -666,15 +683,15 @@ msgstr ""
 "Internt problem: Segmentation fault. Var god rapportera detta problem till "
 "http://bugs.frugalware.org"
 
-#: ../src/util.c:659
+#: ../src/util.c:662
 msgid "Selecting a task"
 msgstr "Väljer en uppgift"
 
-#: ../src/util.c:667
+#: ../src/util.c:670
 msgid "Select task to continue with"
 msgstr "Välj uppgift att fortsätta med"
 
-#: ../src/util.c:668
+#: ../src/util.c:671
 msgid ""
 "You selected to change the way normally Frugalware is installed. Here are "
 "the list of tasks you can continue with:"
