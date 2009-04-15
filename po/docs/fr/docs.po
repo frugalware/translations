@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-01 01:49+0300\n"
-"PO-Revision-Date: 2009-04-02 19:58+0200\n"
+"POT-Creation-Date: 2009-04-15 01:49+0300\n"
+"PO-Revision-Date: 2009-04-15 18:59+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fr\n"
@@ -371,8 +371,8 @@ msgstr ""
 "simplement et plus rapidement. Nous espérons que vous l'aimerez. Dans cette "
 "introduction, nous aimerions répondre à quelques questions qui ont été "
 "posées dans une interview à VMiklos, le créateur du projet. Vous pouvez lire "
-"la liste complète des articles parlant de Frugalware "
-"http://frugalware.org/media[ici]."
+"la liste complète des articles parlant de Frugalware http://frugalware.org/"
+"media[ici]."
 
 # type: Plain text
 #: about.txt:20
@@ -528,9 +528,8 @@ msgstr ""
 "peuvent être utilisés pour communiquer avec nous ou avec d'autres "
 "utilisateurs et ainsi obtenir de l'aide. Vous pouvez obtenir une liste des "
 "mailing listes disponibles http://frugalware.org/mailman/listinfo[ici]. Les "
-"canaux IRC sont disponibles sur le réseau Freenode (serveur: "
-"`irc.freenode.net`), les forums sont disponible "
-"http://forums.frugalware.org[ici].''"
+"canaux IRC sont disponibles sur le réseau Freenode (serveur: `irc.freenode."
+"net`), les forums sont disponible http://forums.frugalware.org[ici].''"
 
 # type: Plain text
 #: about.txt:79
@@ -2220,34 +2219,34 @@ msgstr ""
 "référence croisée."
 
 # type: Plain text
-#: pacman-g2.txt:102
-#, no-wrap
-msgid ""
-"`-------------------------------------------`------------------------`-----------------\n"
-"Action                                      Apt command              Pacman command\n"
-msgstr ""
-"`-------------------------------------------`------------------------`-----------------\n"
-"Action                                      Commande apt             Commande pacman\n"
-
-# type: Plain text
 #: pacman-g2.txt:110
 #, no-wrap
 msgid ""
-"Refresh the package database:               apt-get update           pacman-g2 -Sy\n"
-"Upgrade currently installed packages:       apt-get upgrade          pacman-g2 -Su\n"
-"Install a new package:                      apt-get install foo      pacman-g2 -S foo\n"
-"Remove a package:                           apt-get remove foo       pacman-g2 -Rc foo\n"
-"Search in the full package database:        apt-cache search foo     pacman-g2 -Ss foo\n"
-"Install a package from a file:              dpkg -i foo.deb          pacman-g2 -A foo.fpm\n"
-"Clean the package cache:                    apt-get clean            pacman-g2 -Sc\n"
+"[options=\"header\",grid=\"all\"]\n"
+"|====\n"
+"| Action\t\t\t\t| Apt command\t\t| Pacman-G2 command\n"
+"| Refresh the package database:\t\t| apt-get update\t| pacman-g2 -Sy\n"
+"| Upgrade currently installed packages:\t| apt-get upgrade\t| pacman-g2 -Su\n"
+"| Install a new package:\t\t| apt-get install foo\t| pacman-g2 -S foo\n"
+"| Remove a package:\t\t\t| apt-get remove foo\t| pacman-g2 -Rc foo\n"
+"| Search in the full package database:\t| apt-cache search foo\t| pacman-g2 -Ss foo\n"
+"| Install a package from a file:\t| dpkg -i foo.deb\t| pacman-g2 -A foo.fpm\n"
+"| Clean the package cache:\t\t| apt-get clean\t\t| pacman-g2 -Sc\n"
+"|====\n"
 msgstr ""
-"Rafraichir la liste des paquets:               apt-get update           pacman-g2 -Sy\n"
-"Mettre à jour les paquets installés:       apt-get upgrade          pacman-g2 -Su\n"
-"Installer un nouveau paquet:                      apt-get install foo      pacman-g2 -S foo\n"
-"Retirer un paquet:                           apt-get remove foo       pacman-g2 -Rc foo\n"
-"Rechercher dans la liste des paquets:        apt-cache search foo     pacman-g2 -Ss foo\n"
-"Installer un paquet depuis un fichier:              dpkg -i foo.deb          pacman-g2 -A foo.fpm\n"
-"Nettoyer le cache des paquets:                    apt-get clean            pacman-g2 -Sc\n"
+"[options=\"header\",grid=\"all\"]\n"
+"|====\n"
+"| Action\t\t\t\t| Commande Aptitude\t\t| Commande Pacman-G2\n"
+"|Rafraîchir la liste des paquets:\t\t| apt-get update\t| pacman-g2 -Sy\n"
+"| Mettre à jour les paquets installés:\t| apt-get upgrade\t| pacman-g2 -Su\n"
+"| Installer un nouveau paquet:\t\t| apt-get install foo\t| pacman-g2 -S foo\n"
+"| Retirer un paquet:\t\t\t| apt-get remove foo\t| pacman-g2 -Rc foo\n"
+"| Rechercher dans la liste des paquets:\t| apt-cache search foo\t| pacman-g2 "
+"-Ss foo\n"
+"| Installer un paquet depuis un fichier:\t| dpkg -i foo.deb\t| pacman-g2 -A "
+"foo.fpm\n"
+"| Nettoyer le cache des paquets:\t\t| apt-get clean\t\t| pacman-g2 -Sc\n"
+"|====\n"
 
 # type: Plain text
 #: network.txt:1
@@ -2729,7 +2728,7 @@ msgid "# service alsa load\n"
 msgstr "# service alsa load\n"
 
 # type: Plain text
-#: sound.txt:35 packages.txt:50 packages.txt:1229 gpg.txt:12
+#: sound.txt:35 packages.txt:50 packages.txt:1229
 msgid "command."
 msgstr "commande."
 
@@ -3448,10 +3447,9 @@ msgid ""
 "usually you will prefer to use our utility `service`. This tool allows you "
 "to control the running state of the services."
 msgstr ""
-"Les fichiers qui permettent de les gérer peuvent être trouvés dans "
-"/etc/rc.d, mais vous aller sûrement préférer utiliser notre utilitaire "
-"`service`. Cet outil permet de contrôler les états de fonctionnement des "
-"services."
+"Les fichiers qui permettent de les gérer peuvent être trouvés dans /etc/rc."
+"d, mais vous aller sûrement préférer utiliser notre utilitaire `service`. "
+"Cet outil permet de contrôler les états de fonctionnement des services."
 
 # type: Plain text
 #: init.txt:56
@@ -3671,8 +3669,8 @@ msgid ""
 msgstr ""
 "Frugalware vient avec un joli menu graphique pour grub (merci aux "
 "développeurs SuSE de gfxmenu). Si vous ne l'aimez pas, vous pouvez le "
-"désactiver en commentant la ligne d'initialisation de gfxmenu dans "
-"/boot/grub/menu.lst."
+"désactiver en commentant la ligne d'initialisation de gfxmenu dans /boot/"
+"grub/menu.lst."
 
 # type: Plain text
 #: init.txt:143
@@ -3910,8 +3908,8 @@ msgstr ""
 "Avant d'ouvrir une nouvelle tache, utilisez la fonction recherche, il est "
 "peut être possible qu'il y ait une tache similaire déjà ouverte. Dans ce cas "
 "ajoutez juste un commentaire à cette tache pour signaler que vous avez le "
-"même bug écrivez \"I can reproduce this, too.\" ou pour également réclamer une "
-"nouvelle fonctionnalité écrivez \"I would enjoy this feature too.\""
+"même bug écrivez \"I can reproduce this, too.\" ou pour également réclamer "
+"une nouvelle fonctionnalité écrivez \"I would enjoy this feature too.\""
 
 # type: Plain text
 #: bugs.txt:26
@@ -4099,8 +4097,7 @@ msgid ""
 msgstr ""
 "Vous êtes prié de ne pas indiquer des scripts de constructions d'autres "
 "distribution lorsque vous demandé un paquet. Cette information est inutile "
-"dans la plus part des cas et si vous ne les n'indiquez, simplifiez notre "
-"vie."
+"dans la plus part des cas et si vous ne les n'indiquez, simplifiez notre vie."
 
 # type: Plain text
 #: bugs.txt:80
@@ -4256,8 +4253,8 @@ msgstr "Batteries, boutons, et gestion de la température"
 # type: Plain text
 #: mobile.txt:9
 msgid ""
-"Notebook users are usually interested in the state of their battery.  To get "
-"the power button and the lid's sensor of its closed state emit events is "
+"Notebook users are usually interested in the state of their battery. To get "
+"the power button and the lid's sensor of its closed state to emit events is "
 "also nice. Some notebooks only shut down their continously running fans and "
 "operate only if needed if the thermal module is loaded."
 msgstr ""
@@ -4265,7 +4262,7 @@ msgstr ""
 "l'état de leurs batteries.  Réagir aussi à des événements quand le bouton "
 "d'alimentation ainsi que le capteur de fermeture(NDT: lid sensor) est "
 "intéressant. Quelques portables arrêtent seulement les ventilateurs qui "
-"fonctionnent en continu et les met seulement en fonctionnement is le module "
+"fonctionnent en continu et les met seulement en fonctionnement si le module "
 "de de gestion de la température est chargé."
 
 # type: Plain text
@@ -4360,12 +4357,12 @@ msgstr ""
 "vous en avez un puissant."
 
 # type: Plain text
-#: mobile.txt:52
+#: mobile.txt:51
 msgid ""
 "You can conserve a fair amount of power if you lessen the brightness level "
 "of the LCD screen. Some notebooks can remember two settings of this level, "
-"one when the equipment operates from battery and for another when powered "
-"from AC."
+"one when the equipment operates from battery and another when powered from "
+"AC."
 msgstr ""
 "Vous pouvez économisé une quantité d'énergie non négligeable en baissant la "
 "brillance de votre écran LCD. Quelques portables peuvent se souvenir de deux "
@@ -4373,7 +4370,7 @@ msgstr ""
 "et l'autre sur secteur."
 
 # type: Plain text
-#: mobile.txt:56
+#: mobile.txt:55
 msgid ""
 "The CPUs have some sort of power saving capabilities, the most basic is "
 "\"CPU throttling\". Common on Intel mobile Celeron CPUs, only ACPI is "
@@ -4385,12 +4382,12 @@ msgstr ""
 "configuration pour cela, ou vous pouvez spécifié le niveau."
 
 # type: Plain text
-#: mobile.txt:58
+#: mobile.txt:57
 msgid "//FIXME governors, Intel Centrino/Core, AMD"
 msgstr "//FIXME governors, Intel Centrino/Core, AMD"
 
 # type: Plain text
-#: mobile.txt:63
+#: mobile.txt:62
 msgid ""
 "Letting the HDD spin down gives little extra battery operating time, but "
 "frequent spinups (data access) and spindowns wears the disk. Only useful in "
@@ -4404,13 +4401,13 @@ msgstr ""
 "lors d'une présentation lors d'une conférence."
 
 # type: Plain text
-#: mobile.txt:64
+#: mobile.txt:63
 #, no-wrap
 msgid "Hibernation"
 msgstr "Mise en veille prolongée"
 
 # type: Plain text
-#: mobile.txt:70
+#: mobile.txt:69
 msgid ""
 "Hibernating your computer can cause data loss or severe filesystem damage if "
 "things go wrong. It's highly advised that first, you should consider if "
@@ -4424,12 +4421,12 @@ msgstr ""
 "installation toute propre, au lieu d'un système en production."
 
 # type: Plain text
-#: mobile.txt:72
+#: mobile.txt:71
 msgid "From kernel/suspend.c:"
 msgstr "Extrait de kernel/suspend.c:"
 
 # type: Plain text
-#: mobile.txt:93
+#: mobile.txt:92
 #, no-wrap
 msgid ""
 "* BIG FAT WARNING *********************************************************\n"
@@ -4474,14 +4471,14 @@ msgstr ""
 "* (*) le support de suspend/resume est nécessaire pour le rendre sur.\n"
 
 # type: Plain text
-#: mobile.txt:96
+#: mobile.txt:95
 msgid "You have been warned. If you are still not discouraged, read on!"
 msgstr ""
 "Vous avez été prévenu. Si vous n'êtes toujours pas découragés, continuez à "
 "lire!"
 
 # type: Plain text
-#: mobile.txt:100
+#: mobile.txt:99
 msgid ""
 "First, you need to create a swap partition (if you don't have any yet).  You "
 "have to add an extra resume=/dev/swappart kernel parameter to '/boot/grub/"
@@ -4493,17 +4490,17 @@ msgstr ""
 "machine l'ancienne ligne était:"
 
 # type: Plain text
-#: mobile.txt:102
+#: mobile.txt:101
 msgid "`kernel (hd0,2)/boot/vmlinuz ro root=/dev/hda3 quiet vga=788`"
 msgstr "`kernel (hd0,2)/boot/vmlinuz ro root=/dev/hda3 quiet vga=788`"
 
 # type: Plain text
-#: mobile.txt:104
+#: mobile.txt:103
 msgid "The new line:"
 msgstr "La nouvelle ligne:"
 
 # type: Plain text
-#: mobile.txt:106
+#: mobile.txt:105
 msgid ""
 "`kernel (hd0,2)/boot/vmlinuz ro root=/dev/hda3 quiet vga=788 resume=/dev/"
 "hda2`"
@@ -4512,7 +4509,7 @@ msgstr ""
 "hda2`"
 
 # type: Plain text
-#: mobile.txt:108
+#: mobile.txt:107
 msgid ""
 "After the above are done, you must reboot. The hibernation can be started "
 "with:"
@@ -4521,7 +4518,7 @@ msgstr ""
 "être démarré avec:"
 
 # type: Plain text
-#: mobile.txt:110
+#: mobile.txt:109
 msgid "`echo shutdown > /sys/power/disk; echo disk > /sys/power/state`"
 msgstr "`echo shutdown > /sys/power/disk; echo disk > /sys/power/state`"
 
@@ -12846,11 +12843,11 @@ msgstr "Règles des Mailing Lists"
 # type: Plain text
 #: list-rules.txt:7
 msgid ""
-"The purpose of this document is to define rules that helps the communication "
+"The purpose of this document is to define rules that help the communication "
 "on the mailing lists of Frugalware Linux."
 msgstr ""
 "Le but de se document est de définir les règles qui facilitent la "
-"communication sur les mailing lists de Frugalware Linux."
+"communication sur les listes de diffusions de Frugalware Linux."
 
 # type: Plain text
 #: list-rules.txt:8
@@ -12949,12 +12946,12 @@ msgstr ""
 # type: Plain text
 #: list-rules.txt:36
 msgid ""
-"frugalware-users is for general user questions. It seems the Forums are much "
+"frugalware-users is for general user questions. It seems the Forums are very "
 "popular, but we still provide a mailing list for user questions."
 msgstr ""
-"frugalware-users est pour les questions utilisateurs générale. Il semble que "
-"les forums soient plus populaire, mais nous fournissons la liste malgré tout "
-"pour les questions utilisateurs."
+"frugalware-users est pour les questions utilisateurs générales. Il semble "
+"que les forums soient très populaires, mais nous fournissons la liste malgré "
+"tout pour les questions utilisateurs."
 
 # type: Plain text
 #: list-rules.txt:37
@@ -13027,18 +13024,17 @@ msgstr ""
 "ce que vous souhaitez dans la plus part des cas."
 
 # type: Plain text
-#: list-rules.txt:64
+#: list-rules.txt:63
 msgid ""
-"Also please do not use the 'group-reply' function if possible, users must "
-"subscribe before they post, so you can be sure about they are in the mailing "
-"list."
+"Also please do not use the 'group-reply' function if possible. Users must "
+"subscribe before they post, so you can be sure they are in the mailing list."
 msgstr ""
 "Veuillez aussi ne pas utilisez la fonction 'répondre au groupe' si possible, "
 "les utilisateurs doivent être inscrits avant de poster, vous pouvez donc "
-"être sur qu'ils sont dans la mailing list."
+"être sur qu'ils sont dans la liste de diffusion."
 
 # type: Plain text
-#: list-rules.txt:67
+#: list-rules.txt:66
 msgid ""
 "(This is different to some other projects' rules. Some projects require you "
 "to use 'group-reply' all the time, please do not do so on our lists.)"
@@ -13048,13 +13044,13 @@ msgstr ""
 "faire ainsi dans nos listes.)"
 
 # type: Plain text
-#: list-rules.txt:68
+#: list-rules.txt:67
 #, no-wrap
 msgid "Top posting and HTML messages"
 msgstr "Top posting et messages HTML"
 
 # type: Plain text
-#: list-rules.txt:73
+#: list-rules.txt:72
 msgid ""
 "Please do not link:http://www.idallen.com/topposting.html[top post] on our "
 "lists. Also please try to avoid HTML messages, many developers use a console "
@@ -13066,13 +13062,13 @@ msgstr ""
 "lire de tel message est toujours difficile."
 
 # type: Plain text
-#: list-rules.txt:74
+#: list-rules.txt:73
 #, no-wrap
 msgid "Archives"
 msgstr "Archives"
 
 # type: Plain text
-#: list-rules.txt:78
+#: list-rules.txt:77
 msgid ""
 "We have our own archive of our mailing lists link:http://frugalware.org/"
 "pipermail/[here]. Gmane also provides link:http://news.gmane.org/?"
@@ -13456,8 +13452,9 @@ msgstr ""
 # type: Plain text
 #: gpg.txt:1
 #, no-wrap
-msgid "Checking if Frugalware tarballs are from trusted source"
-msgstr "Vérifier si les tarballs Frugalware proviennent d'une source de confiance"
+msgid "Checking if Frugalware tarballs are from a trusted source"
+msgstr ""
+"Vérifier si les tarballs Frugalware proviennent d'une source de confiance"
 
 # type: Plain text
 #: gpg.txt:3
@@ -13467,8 +13464,8 @@ msgstr "Comment vérifier"
 
 # type: Bullet: '- '
 #: gpg.txt:6
-msgid "Import our public keyring with the"
-msgstr "Chargez notre clef jeux de clefs avec"
+msgid "Import our public keyring with the following command:"
+msgstr "Importer notre jeu de clefs publiques avec la commande suivante:"
 
 # type: Plain text
 #: gpg.txt:9
@@ -13477,12 +13474,12 @@ msgid "$ gpg --recv-keys 20F55619\n"
 msgstr "$ gpg --recv-keys 20F55619\n"
 
 # type: Bullet: '- '
-#: gpg.txt:14
+#: gpg.txt:12
 msgid "Verify the tarball. Here is an example:"
 msgstr "Vérification d'une archive. Voici un exemple:"
 
 # type: Plain text
-#: gpg.txt:20
+#: gpg.txt:18
 #, no-wrap
 msgid ""
 "$ gpg --verify pacman-tools-0.7.2.tar.gz.asc pacman-tools-0.7.2.tar.gz\n"
@@ -13496,21 +13493,22 @@ msgstr ""
 "\t<frugalware-devel@frugalware.org>\"\n"
 
 # type: Plain text
-#: gpg.txt:22
+#: gpg.txt:20
 #, no-wrap
 msgid "The meaning of this signature"
 msgstr "La signification de cette signature"
 
 # type: Plain text
-#: gpg.txt:26
+#: gpg.txt:24
 msgid ""
 "This signature does not guarantee that the Frugalware Linux Archives master "
 "site itself has not been compromised. However, if we suffer an intrusion we "
-"will revoke the key and post information here as quickly as possible."
+"will revoke the key and post information on the home page as quickly as "
+"possible."
 msgstr ""
 "Cette signature ne garantie pas que le maître du site des archives de "
-"Frugalware Linux Archives en personne n'as pas été compromis. Néanmoins, si "
-"nous subissons une intrusion nous révoquerons la clef et posterons des "
+"Frugalware Linux en personne n'as pas été compromis. Néanmoins, si nous "
+"subissons une intrusion nous révoquerons la clef et posterons des "
 "informations ici aussi rapidement que possible."
 
 # type: Plain text
@@ -15981,7 +15979,7 @@ msgstr "Ce que vous devriez lire avant tout"
 #: introduction.txt:10
 msgid ""
 "First there are some part of this document that you should really read, to "
-"understand how frugalware is working and how to administrate it."
+"understand how Frugalware works and how to administer it."
 msgstr ""
 "Tour d'abord, il y a certaines sections de ce document que vous devriez lire "
 "avec attention, afin de comprendre comment Frugalware fonctionne et comment "
@@ -16005,7 +16003,7 @@ msgstr "Comment utiliser pacman-g2."
 
 # type: Plain text
 #: introduction.txt:15
-msgid "How to manage service."
+msgid "How to manage services."
 msgstr "Comment gérer les services."
 
 # type: Plain text
@@ -16017,8 +16015,8 @@ msgstr "Exécution de commandes dans une console"
 # type: Plain text
 #: introduction.txt:21
 msgid ""
-"Along this document, there are boxed text that shows you a console log. "
-"These logs are important and requires quite some attentions since most off "
+"Throughout this document, there is boxed text which shows you console "
+"output.  These are important and require quite some attention since most of "
 "the time you are expected to run them and get the same output."
 msgstr ""
 "Tout au long de ce document, il y a des textes à l'intérieur de boites qui "
@@ -16037,30 +16035,36 @@ msgstr ""
 "foo bar\n"
 
 # type: Plain text
-#: introduction.txt:28
+#: introduction.txt:29
 msgid ""
-"This is how a console log look. Lets details it so you understand what means."
+"This is how a console log look. Let's look at its details so you understand "
+"what it means."
 msgstr ""
 "Voilà à quoi ressemble un historique de console. Détaillons-la afin que vous "
 "compreniez ce que cela veut dire."
 
 # type: Plain text
-#: introduction.txt:31
+#: introduction.txt:32
 msgid ""
 "The `echo foo bar` part is what you should type and it's the command. The "
-"following line `foo bar` is the ouput of the previous command."
+"following line `foo bar` is the output of the previous command."
 msgstr ""
 "La partie `echo foo bar` est ce que vous devez taper et cela correspond à la "
 "commande. La ligne suivante `foo bar` est la sortie de la commande "
 "précédente."
 
 # type: Plain text
-#: introduction.txt:36
+#: introduction.txt:34
+msgid "<<<>>>"
+msgstr "<<<>>>"
+
+# type: Plain text
+#: introduction.txt:39
 msgid ""
-"You may wonder what differenciate the command from the output. You see that "
+"You may wonder what differentiates the command from the output. You see that "
 "in front of the command there is a `$`. This indicates that it's a command "
 "line, but there is more meaning in this symbol. This symbol can change "
-"depending on the user priviledges required to run the command."
+"depending on the user privileges required to run the command."
 msgstr ""
 "Vous pouvez vous demander ce qui différencie une commande de ça sortie. Vous "
 "voyez qu'au début de la commande il y a un `$`. Cela indique que c'est une "
@@ -16069,25 +16073,25 @@ msgstr ""
 "exécuter la commande."
 
 # type: Block title
-#: introduction.txt:37
+#: introduction.txt:40
 #, no-wrap
 msgid "Here is the list of the common prefix for the console commands:"
 msgstr "Voici la liste des préfixes communs pour les commandes sur une console:"
 
 # type: Plain text
-#: introduction.txt:40
+#: introduction.txt:43
 msgid ""
 "`$` indicates that any user can run the command. Most of the time it means "
-"you have to run it with your user."
+"you have to run it with your own user account."
 msgstr ""
 "`$` indique que n'importe quel utilisateur peut exécuter la commande. La "
 "plus part du temps cela signifie que vous avez a l'exécuter avec votre "
 "utilisateur."
 
 # type: Plain text
-#: introduction.txt:43
+#: introduction.txt:46
 msgid ""
-"`user$` indicates that a the specified user priviledge are required to run "
+"`user$` indicates that the specified user's privileges are required to run "
 "this command. Usually this is necessary for security reasons."
 msgstr ""
 "`utilisateur$` indique que les privilèges spécifiques de 'utilisateur' sont "
@@ -16095,40 +16099,52 @@ msgstr ""
 "questions de sécurité."
 
 # type: Plain text
-#: introduction.txt:46
+#: introduction.txt:49
 msgid ""
 "You can get an interactive shell for this user, replacing 'user' with the "
-"wanted user name, by issuing:"
+"desired user name, by issuing:"
 msgstr ""
 "Vous pouvez obtenir un console interactive pour cet utilisateur, en "
 "replaçant 'utilisateur' par le nom d'utilisateur souhaité, en exécutant:"
 
 # type: Plain text
-#: introduction.txt:49
+#: introduction.txt:52
 #, no-wrap
 msgid "$ su - user\n"
 msgstr "$ su - utilisateur\n"
 
 # type: Plain text
-#: introduction.txt:53
+#: introduction.txt:56
 msgid ""
-"`#` indicates that the `root` users priviledges are required to run this "
-"command.  Usually this is required to manage the system configuration."
+"`#` indicates that the `root` user's privileges are required to run this "
+"command. Usually this is required to manage the system configuration."
 msgstr ""
 "`#` indique que les privilèges utilisateurs de `root` sont requis pour "
 "exécuter cette commande. Habituellement ceci est requis pour contrôler la "
 "configuration du système."
 
 # type: Plain text
-#: introduction.txt:55
+#: introduction.txt:58
 msgid "You can get an interactive shell for 'root' running:"
 msgstr "Vous pouvez obtenir une console interactive pour 'root' en exécutant:"
 
 # type: Plain text
-#: introduction.txt:58
+#: introduction.txt:61
 #, no-wrap
-msgid "$ su - \n"
-msgstr "$ su - \n"
+msgid "$ su -\n"
+msgstr "$ su -\n"
+
+# type: Plain text
+#~ msgid ""
+#~ "`-------------------------------------------`------------------------"
+#~ "`-----------------\n"
+#~ "Action                                      Apt command              "
+#~ "Pacman command\n"
+#~ msgstr ""
+#~ "`-------------------------------------------`------------------------"
+#~ "`-----------------\n"
+#~ "Action                                      Commande apt             "
+#~ "Commande pacman\n"
 
 # type: Plain text
 #~ msgid "--------------------------------------------------------------------------\n"
