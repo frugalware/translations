@@ -6,15 +6,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-07-27 05:12+0200\n"
-"PO-Revision-Date: 2008-08-13 18:08+0200\n"
+"POT-Creation-Date: 2009-04-20 02:25+0200\n"
+"PO-Revision-Date: 2009-04-20 16:07+0200\n"
 "Last-Translator: Martin Burda <brdam@email.cz>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Pootle 1.1.0\n"
+"X-Generator: Pootle 1.2.1\n"
 
 #. FIXME: use docs/about.txt as a source instead of this one
 #: ../about.php:36
@@ -216,10 +217,10 @@ msgstr ""
 "připravují skripty pro nové, ještě nezačleněné balíčky. Prostě připravují "
 "stále něco nového a věnují se i komunitě okolo Frugalware. Pokud bude chtít "
 "někdo pomoci a není vývojář, může třeba začít s překlady do svého rodného "
-"jazyka. Samozřejmě budeme také rádi za jakýkoli "
-"<ahref=\"/donations\">příspěvek</a>. Více informací můžete naleznout <a "
-"href=\"/docs/getting-involved#_further_options_for_those_who_have_developer_a"
-"ccount_packagers_coders\">zde</a>."
+"jazyka. Samozřejmě budeme také rádi za jakýkoli <ahref=\"/donations"
+"\">příspěvek</a>. Více informací můžete naleznout <a href=\"/docs/getting-"
+"involved#_further_options_for_those_who_have_developer_account_packagers_coders"
+"\">zde</a>."
 
 #: ../about.php:58
 msgid "Who develops Frugalware?"
@@ -274,8 +275,8 @@ msgid "What about Asian languages?"
 msgstr "Podporuje Frugalware asijské jazyky?"
 
 #: ../about.php:67
-msgid "Frugalware does not support Asian languages currently."
-msgstr "V současnosti Frugalware asijské jazyky nepodporuje."
+msgid "Frugalware does not currently support languages written in ideographs."
+msgstr "V současnosti Frugalware asijské jazyky a znaky nepodporuje."
 
 #: ../about.php:68
 msgid "What architectures does Frugalware support?"
@@ -325,7 +326,7 @@ msgstr "zavináč"
 msgid "dot"
 msgstr "tečka"
 
-#: ../authors.php:68 ../config.inc.php:81
+#: ../authors.php:68 ../config.inc.php:83
 msgid "Authors"
 msgstr "Autoři"
 
@@ -436,49 +437,57 @@ msgstr "Rádio last.fm"
 msgid "National sites"
 msgstr "Národní stránky"
 
+#: ../config.inc.php:67
+msgid "Artwork"
+msgstr "Artwork"
+
 #: ../config.inc.php:68
+msgid "Identi.ca group"
+msgstr "Skupina Identi.ca"
+
+#: ../config.inc.php:70
 msgid "Download"
 msgstr "Stáhnout"
 
-#: ../config.inc.php:70
+#: ../config.inc.php:72
 msgid "ISO images"
 msgstr "Obrazy ISO"
 
-#: ../config.inc.php:71
+#: ../config.inc.php:73
 msgid "Packages"
 msgstr "Balíčky"
 
-#: ../config.inc.php:73
+#: ../config.inc.php:75
 msgid "Development"
 msgstr "Vývojářský koutek"
 
-#: ../config.inc.php:75
+#: ../config.inc.php:77
 msgid "Roadmap"
 msgstr "Historie verzí"
 
-#: ../config.inc.php:76
+#: ../config.inc.php:78
 msgid "Git repository"
 msgstr "Repozitář git"
 
-#: ../config.inc.php:77
+#: ../config.inc.php:79
 msgid "Bug Tracker"
 msgstr "Hlášení chyb"
 
-#: ../config.inc.php:78
+#: ../config.inc.php:80
 msgid "Translation portal"
 msgstr "Překladatelský portál"
 
-#: ../config.inc.php:79
+#: ../config.inc.php:81
 msgid "Blogs"
 msgstr "Blogy"
 
-#: ../config.inc.php:80 ../donations.php:50 ../header.php:55
+#: ../config.inc.php:82 ../donations.php:50 ../header.php:55
 msgid "Donations"
 msgstr "Přispějte na vývoj"
 
-#: ../config.inc.php:92 ../config.inc.php:94 ../config.inc.php:96
-#: ../config.inc.php:98 ../config.inc.php:100 ../config.inc.php:102
-#: ../config.inc.php:104
+#: ../config.inc.php:94 ../config.inc.php:96 ../config.inc.php:98
+#: ../config.inc.php:100 ../config.inc.php:102 ../config.inc.php:104
+#: ../config.inc.php:106 ../config.inc.php:108
 msgid "Change language"
 msgstr "Změnit jazyk"
 
@@ -547,11 +556,11 @@ msgstr ""
 msgid "The Frugalware Team"
 msgstr "Tým Frugalware"
 
-#: ../download.php:86
+#: ../download.php:88
 msgid "Archive"
 msgstr "Archiv"
 
-#: ../download.php:86
+#: ../download.php:88
 msgid ""
 "Unfortunately due our limited resources we cannot store our old stable "
 "versions, they are being removed shortly after a new official stable "
@@ -757,7 +766,7 @@ msgstr "Storno"
 #: ../packages.php:120
 #, php-format
 msgid "Searching in %d binary and %d source-only packages."
-msgstr "Vyhledávání bude zahájeno v %d binárních a v %d zdrojových balíčcích."
+msgstr "Vyhledávání bude zahájeno ve %d binárních a v %d zdrojových balíčcích."
 
 #: ../packages.php:134
 msgid "You will need a Mozilla based browser to install a search plugin."
@@ -992,147 +1001,135 @@ msgstr "Dostupné aktualizace"
 
 #: ../rss.php:191
 msgid "Blog posts"
-msgstr "Záznamy z blogů"
+msgstr "Zápisky z blogů"
 
 #: ../screenshots.php:32
-msgid "01_splash.png"
-msgstr "01_splash.png"
+msgid "Splash screen"
+msgstr "Úvodní obrazovka"
 
 #: ../screenshots.php:34
-msgid "02_lang.png"
-msgstr "02_lang.png"
+msgid "Language selection"
+msgstr "Výběr jazyka"
 
 #: ../screenshots.php:36
-msgid "03_welcome.png"
-msgstr "03_welcome.png"
+msgid "Welcome Screen"
+msgstr "Uvítací obrazovka"
 
 #: ../screenshots.php:38
-msgid "04_key.png"
-msgstr "04_key.png"
+msgid "Keyboard map"
+msgstr "Výběr klávesnice"
 
 #: ../screenshots.php:40
-msgid "05_raid.png"
-msgstr "05_raid.png"
+msgid "RAID Selection"
+msgstr "Výběr RAIDu"
 
 #: ../screenshots.php:42
-msgid "06_part.png"
-msgstr "06_part.png"
+msgid "Selecting Hard Disk"
+msgstr "Výběr pevného disku"
 
 #: ../screenshots.php:44
-msgid "07_part.png"
-msgstr "07_part.png"
+msgid "Partitioning"
+msgstr "Dělení disku na oddíly"
 
 #: ../screenshots.php:46
-msgid "08_part.png"
-msgstr "08_part.png"
+msgid "Partitioning using cfdisk"
+msgstr "Dělení disku pomocí cfdisk"
 
-#: ../screenshots.php:48
-msgid "09_part.png"
-msgstr "09_part.png"
-
-#: ../screenshots.php:50
-msgid "10_part.png"
-msgstr "10_part.png"
+#: ../screenshots.php:48 ../screenshots.php:50
+msgid "Setting up swap space"
+msgstr "Nastavení odkládacího oddílu"
 
 #: ../screenshots.php:52
-msgid "11_part.png"
-msgstr "11_part.png"
+msgid "Root partition selection"
+msgstr "Výběr kořenového oddílu"
 
 #: ../screenshots.php:54
-msgid "12_part.png"
-msgstr "12_part.png"
+msgid "Formatting root partition"
+msgstr "Formátování kořenového oddílu"
 
 #: ../screenshots.php:56
-msgid "13_part.png"
-msgstr "13_part.png"
+msgid "Creating filesystem"
+msgstr "Vytvoření soub. systému"
 
 #: ../screenshots.php:58
-msgid "14_part.png"
-msgstr "14_part.png"
+msgid "Other partitions"
+msgstr "Další oddíly"
 
 #: ../screenshots.php:60
-msgid "15_pack.png"
-msgstr "15_pack.png"
+msgid "Package selection"
+msgstr "Výběr balíčků"
 
-#: ../screenshots.php:62
-msgid "16_pack.png"
-msgstr "16_pack.png"
-
-#: ../screenshots.php:64
-msgid "17_pack.png"
-msgstr "17_pack.png"
+#: ../screenshots.php:62 ../screenshots.php:64
+msgid "Selecting package categories"
+msgstr "Výběr kategorií balíčků"
 
 #: ../screenshots.php:66
-msgid "18_pack.png"
-msgstr "18_pack.png"
+msgid "Beginning installation"
+msgstr "Pokračování instalace"
 
 #: ../screenshots.php:68
-msgid "19_pack.png"
-msgstr "19_pack.png"
+msgid "Installing packages"
+msgstr "Instalace balíčků"
 
 #: ../screenshots.php:70
-msgid "20_grub.png"
-msgstr "20_grub.png"
+msgid "Setup MBR"
+msgstr "Nastavení MBR"
 
 #: ../screenshots.php:72
-msgid "21_grub.png"
-msgstr "21_grub.png"
+msgid "Installing MBR"
+msgstr "Instalace MBR"
 
 #: ../screenshots.php:74
-msgid "22_modules.png"
-msgstr "22_modules.png"
+msgid "Installing modules"
+msgstr "Instalace modulů"
 
-#: ../screenshots.php:76
-msgid "23_root.png"
-msgstr "23_root.png"
-
-#: ../screenshots.php:78
-msgid "24_root.png"
-msgstr "24_root.png"
+#: ../screenshots.php:76 ../screenshots.php:78
+msgid "Setting a root password"
+msgstr "Zadání hesla uživatele root"
 
 #: ../screenshots.php:80
-msgid "25_user.png"
-msgstr "25_user.png"
+msgid "Creating user"
+msgstr "Vytvoření uživatele"
 
 #: ../screenshots.php:82
-msgid "26_user.png"
-msgstr "26_user.png"
+msgid "Choosing a user name"
+msgstr "Zadání uživatelského jména"
 
 #: ../screenshots.php:84
-msgid "27_user.png"
-msgstr "27_user.png"
+msgid "Choosing a user password"
+msgstr "Zadání hesla"
 
 #: ../screenshots.php:86
-msgid "28_hostname.png"
-msgstr "28_hostname.png"
+msgid "Setup system hostname"
+msgstr "Nastavení názvu počítače"
 
 #: ../screenshots.php:88
-msgid "29_network.png"
-msgstr "29_network.png"
+msgid "Network configuration"
+msgstr "Nastavení sítě"
 
 #: ../screenshots.php:90
-msgid "30_network.png"
-msgstr "30_network.png"
+msgid "Network configuration - DHCP"
+msgstr "Nastavení sítě - DHCP"
 
 #: ../screenshots.php:92
-msgid "31_config.png"
-msgstr "31_config.png"
+msgid "Applying settings"
+msgstr "Nastavení"
 
 #: ../screenshots.php:94
-msgid "32_localtime.png"
-msgstr "32_localtime.png"
+msgid "Setting up system time"
+msgstr "Nastavení systémového času"
 
 #: ../screenshots.php:96
-msgid "33_timezone.png"
-msgstr "33_timezone.png"
+msgid "Selecting Timezone"
+msgstr "Výběr časového pásma"
 
 #: ../screenshots.php:98
-msgid "34_mouse.png"
-msgstr "34_mouse.png"
+msgid "Mouse configuration"
+msgstr "Nastavení myši"
 
 #: ../screenshots.php:100
-msgid "35_success.png"
-msgstr "35_success.png"
+msgid "Installation success"
+msgstr "Dokončení instalace"
 
 #: ../screenshots.php:103
 msgid "01_grub.png"
@@ -1191,20 +1188,20 @@ msgid "File Manager"
 msgstr "Správce souborů"
 
 #: ../screenshots.php:134
+msgid "Login Screen (SliM)"
+msgstr "Přihlašovací opbrazovka (SliM)"
+
+#: ../screenshots.php:136
 msgid "Default XFCE Desktop"
 msgstr "Výchozí vzhled XFCE"
 
-#: ../screenshots.php:136
+#: ../screenshots.php:138
 msgid "XFCE in Action"
 msgstr "Náhled na XFCE"
 
-#: ../screenshots.php:138
+#: ../screenshots.php:140
 msgid "XFCE Menu"
 msgstr "Menu XFCE"
-
-#: ../screenshots.php:140
-msgid "XFCE Settings Manager"
-msgstr "Nastavení XFCE"
 
 #: ../screenshots.php:142
 msgid "XFCE Terminal"
@@ -1222,9 +1219,9 @@ msgstr "Synchronizace Gfpm"
 msgid "Repository Manager"
 msgstr "Správce repozitářů"
 
-#: ../screenshots.php:151
-msgid "Servers Manager"
-msgstr "Správce serverů"
+#: ../screenshots.php:151 ../screenshots.php:162
+msgid "Preferences Window"
+msgstr "Nastavení FUN"
 
 #: ../screenshots.php:153
 msgid "Optimizing Package Database"
@@ -1242,41 +1239,65 @@ msgstr "Upozornění na aktualizace"
 msgid "FUN Main Window"
 msgstr "Hlavní okno apletu FUN"
 
-#: ../screenshots.php:162
-msgid "Preferences Window"
-msgstr "Nastavení FUN"
-
 #: ../screenshots.php:165
-msgid "18_runlevel_editor.png"
-msgstr "18_runlevel_editor.png"
+msgid "GNetconfig"
+msgstr "GNetconfig"
+
+#: ../screenshots.php:167
+msgid "GNetconfig - Interface Management"
+msgstr "Nastavení vzhledu Gnetconfigu"
+
+#: ../screenshots.php:169
+msgid "GNetconfig - DNS Settings"
+msgstr "Nastavení DNS v Gnetconfigu"
 
 #: ../screenshots.php:172
+msgid "gService - Main Window"
+msgstr "gService - Hlavní okno"
+
+#: ../screenshots.php:174
+msgid "gService - Editing Runlevel Information"
+msgstr "gService - Editace úrovní běhu"
+
+#: ../screenshots.php:176
+msgid "gService - Minimal Interface"
+msgstr "gService - Minimální rozhraní"
+
+#: ../screenshots.php:183
 msgid "Installer"
 msgstr "Instalační program"
 
-#: ../screenshots.php:180
+#: ../screenshots.php:191
 msgid "Startup"
 msgstr "Zavádění systému"
 
-#: ../screenshots.php:188
+#: ../screenshots.php:199
 msgid "KDE Desktop"
 msgstr "Plocha s KDE"
 
-#: ../screenshots.php:196
+#: ../screenshots.php:207
 msgid "GNOME Desktop"
 msgstr "Plocha s Gnome"
 
-#: ../screenshots.php:204
+#: ../screenshots.php:215
 msgid "XFCE Desktop"
 msgstr "Plocha s XFCE"
 
-#: ../screenshots.php:212
+#: ../screenshots.php:223
 msgid "GFpm (Package Manager)"
 msgstr "Správce software Gfpm"
 
-#: ../screenshots.php:220
+#: ../screenshots.php:231
 msgid "FUN (Update Notifier)"
 msgstr "Vyhledávač aktualizací FUN"
+
+#: ../screenshots.php:239
+msgid "GNetconfig (Network Configuration Tool)"
+msgstr "Gnetconfig - nástroj pro nastavení sítě"
+
+#: ../screenshots.php:247
+msgid "gService (GUI Runlevel Editor)"
+msgstr "gService (editor úrovní běhu systému)"
 
 #: ../security.php:46
 msgid "Sorry, a security file has not been written yet."
@@ -1317,6 +1338,120 @@ msgstr "CVE"
 #: ../security.php:94
 msgid "Description"
 msgstr "Popis chyby"
+
+#~ msgid "01_splash.png"
+#~ msgstr "01_splash.png"
+
+#~ msgid "02_lang.png"
+#~ msgstr "02_lang.png"
+
+#~ msgid "03_welcome.png"
+#~ msgstr "03_welcome.png"
+
+#~ msgid "04_key.png"
+#~ msgstr "04_key.png"
+
+#~ msgid "05_raid.png"
+#~ msgstr "05_raid.png"
+
+#~ msgid "06_part.png"
+#~ msgstr "06_part.png"
+
+#~ msgid "07_part.png"
+#~ msgstr "07_part.png"
+
+#~ msgid "08_part.png"
+#~ msgstr "08_part.png"
+
+#~ msgid "09_part.png"
+#~ msgstr "09_part.png"
+
+#~ msgid "10_part.png"
+#~ msgstr "10_part.png"
+
+#~ msgid "11_part.png"
+#~ msgstr "11_part.png"
+
+#~ msgid "12_part.png"
+#~ msgstr "12_part.png"
+
+#~ msgid "13_part.png"
+#~ msgstr "13_part.png"
+
+#~ msgid "14_part.png"
+#~ msgstr "14_part.png"
+
+#~ msgid "15_pack.png"
+#~ msgstr "15_pack.png"
+
+#~ msgid "16_pack.png"
+#~ msgstr "16_pack.png"
+
+#~ msgid "17_pack.png"
+#~ msgstr "17_pack.png"
+
+#~ msgid "18_pack.png"
+#~ msgstr "18_pack.png"
+
+#~ msgid "19_pack.png"
+#~ msgstr "19_pack.png"
+
+#~ msgid "20_grub.png"
+#~ msgstr "20_grub.png"
+
+#~ msgid "21_grub.png"
+#~ msgstr "21_grub.png"
+
+#~ msgid "22_modules.png"
+#~ msgstr "22_modules.png"
+
+#~ msgid "23_root.png"
+#~ msgstr "23_root.png"
+
+#~ msgid "24_root.png"
+#~ msgstr "24_root.png"
+
+#~ msgid "25_user.png"
+#~ msgstr "25_user.png"
+
+#~ msgid "26_user.png"
+#~ msgstr "26_user.png"
+
+#~ msgid "27_user.png"
+#~ msgstr "27_user.png"
+
+#~ msgid "28_hostname.png"
+#~ msgstr "28_hostname.png"
+
+#~ msgid "29_network.png"
+#~ msgstr "29_network.png"
+
+#~ msgid "30_network.png"
+#~ msgstr "30_network.png"
+
+#~ msgid "31_config.png"
+#~ msgstr "31_config.png"
+
+#~ msgid "32_localtime.png"
+#~ msgstr "32_localtime.png"
+
+#~ msgid "33_timezone.png"
+#~ msgstr "33_timezone.png"
+
+#~ msgid "34_mouse.png"
+#~ msgstr "34_mouse.png"
+
+#~ msgid "35_success.png"
+#~ msgstr "35_success.png"
+
+#~ msgid "18_runlevel_editor.png"
+#~ msgstr "18_runlevel_editor.png"
+
+#~ msgid "XFCE Settings Manager"
+#~ msgstr "Nastavení XFCE"
+
+#~ msgid "Servers Manager"
+#~ msgstr "Správce serverů"
 
 #~ msgid "Social diagram"
 #~ msgstr "Diagram"
