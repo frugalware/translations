@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-31 02:27+0200\n"
-"PO-Revision-Date: 2009-04-23 21:19+0200\n"
+"PO-Revision-Date: 2009-04-24 20:44+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -770,8 +770,8 @@ msgid ""
 "<span face=\"Courier New\"><b>You can configure some parts of your system</"
 "b></span>"
 msgstr ""
-"<span face=\"Courier New\"><b>Du kan konfigurere nogle dele af dit "
-"system</b></span>"
+"<span face=\"Courier New\"><b>Du kan konfigurere nogle dele af dit system</"
+"b></span>"
 
 #: ../src/plugins/postconf.c:594
 msgid "Hardware"
@@ -881,62 +881,66 @@ msgid ""
 "User can be added! Check that you use lowercase name or that there is not an "
 "other user bearing the same name."
 msgstr ""
+"Bruger kan tilføjes! Du kan kun benytte navn med små bogstaver, og vær "
+"sikker på at der er ikke en anden bruger, der får det samme navn."
 
 #: ../src/plugins/usersconf.c:282
 msgid ""
 "<span face=\"Courier New\"><b>You can configure non-root user account. It is "
 "strongly recommended to create one.</b></span>"
 msgstr ""
+"<span face=\"Courier New\"><b>Du kan konfigurere ikke-root brugerkonto. Det "
+"anbefales på det kraftigste at skabe en.</b></span>"
 
 #: ../src/plugins/usersconf.c:296
 msgid "User"
-msgstr ""
+msgstr "Bruger"
 
 #: ../src/plugins/usersconf.c:300
 msgid "Full Name"
-msgstr ""
+msgstr "Fuldt navn"
 
 #: ../src/plugins/usersconf.c:308
 msgid "Home"
-msgstr ""
+msgstr "Home"
 
 #: ../src/plugins/usersconf.c:312
 msgid "Password"
-msgstr ""
+msgstr "Password"
 
 #: ../src/plugins/usersconf.c:332
 msgid "Remove a user"
-msgstr ""
+msgstr "Fjern en bruger"
 
 #: ../src/plugins/grubconf.c:61
 msgid "Configuring GRUB"
-msgstr ""
+msgstr "Konfigurering af GRUB"
 
 #. top info label
 #: ../src/plugins/grubconf.c:75
 msgid "<span face=\"Courier New\"><b>Installing GRUB bootloader</b></span>"
-msgstr ""
+msgstr "<span face=\"Courier New\"><b>Installering af GRUB bootloader</b></span>"
 
 #: ../src/plugins/grubconf.c:78
 msgid "Choose install type :"
-msgstr ""
+msgstr "Vælg installeringsmåde :"
 
 #. Set up radio buttons
 #: ../src/plugins/grubconf.c:82 ../src/plugins/grubconf.c:126
 msgid "MBR  -  Install to Master Boot Record"
-msgstr ""
+msgstr "MBR  -  Installer på Master Boot Record"
 
 #: ../src/plugins/grubconf.c:85 ../src/plugins/grubconf.c:128
 msgid "Floppy  -  Install to a formatted floppy in /dev/fd0"
-msgstr ""
+msgstr "Diskette  -  Installer på en formateret diskette i /dev/fd0"
 
 #: ../src/plugins/grubconf.c:88 ../src/plugins/grubconf.c:130
 msgid "Root  -  Install to superblock (do NOT use with XFS)"
-msgstr ""
+msgstr "Root  -  Installer på superblock (brug ikke dette med XFS)"
 
 #: ../src/plugins/grubconf.c:91
 msgid "Skip  -  Skip the installation of GRUB."
-msgstr ""
+msgstr "Spring over  -  Spring installationen af GRUB over."
 
 #: ../src/plugins/grubconf.c:172
 msgid ""
@@ -949,38 +953,46 @@ msgid ""
 "Option 3 requires setting the partition bootable with (c)fdisk\n"
 "Hint: Choose option 3 if you already have a boot manager installed.\n"
 msgstr ""
+"GRUB kan blive installeret forskellige steder:\n"
+"\n"
+"\t1. På Master Boot Record af din første harddisk.\n"
+"\t2. På en formateret diskette.\n"
+"\t3. På superblock af din root Linux partition.\n"
+"\n"
+"Indstilling 3 kræver at du sætter partitionen bootbar med (c)fdisk\n"
+"Fif: Vælg mulighed 3 hvis du allerede har en boot manager installeret.\n"
 
 #: ../src/plugins/timeconf.c:75
 msgid "Timezone configuration"
-msgstr ""
+msgstr "Tidszonekonfiguration"
 
 #: ../src/plugins/timeconf.c:392
 msgid "Continent/Main City"
-msgstr ""
+msgstr "Kontinent/Hovedstad"
 
 #: ../src/plugins/timeconf.c:399
 msgid "Comments"
-msgstr ""
+msgstr "Kommentarer"
 
 #: ../src/plugins/timeconf.c:413
 msgid "Set clock to UTC/GMT time coordinates"
-msgstr ""
+msgstr "Sæt uret til UTC/GMT tidskoordinater"
 
 #: ../src/plugins/netconf.c:76
 msgid "Configuring your network"
-msgstr ""
+msgstr "Konfiguration af dit netværk"
 
 #: ../src/plugins/netconf.c:106
 msgid "Use a DHCP server"
-msgstr ""
+msgstr "Brug en DHCP server"
 
 #: ../src/plugins/netconf.c:107
 msgid "Use a static IP address"
-msgstr ""
+msgstr "Brug en statisk IP adresse"
 
 #: ../src/plugins/netconf.c:140
 msgid "Select network type"
-msgstr ""
+msgstr "Vælg netværkstype"
 
 #: ../src/plugins/netconf.c:146
 msgid ""
@@ -992,10 +1004,17 @@ msgid ""
 "modem services),\n"
 " select 'dhcp'. \n"
 msgstr ""
+"Nu er vi nødt til at vide hvordan din maskine er forbundet til netværket.\n"
+"Hvis du har et internt netværkskort og en tildelt IP adresse, gateway, og "
+"DNS,\n"
+" brug 'statisk' for at angive værdierne.\n"
+"Hvis din IP adresse bliver tildelt af en DHCP server (nårmalt brugt med "
+"kabel modemforbindelse),\n"
+" vælg 'dhcp'. \n"
 
 #: ../src/plugins/netconf.c:182
 msgid "Configure Wireless"
-msgstr ""
+msgstr "Konfiguration af trådløst"
 
 #: ../src/plugins/netconf.c:190
 msgid ""
@@ -1008,74 +1027,82 @@ msgid ""
 "then please enter it below.\n"
 "If unsure enter nothing"
 msgstr ""
+"For at bruge trådløst, skal du sætte dit udvidede netvæksnavn (ESSID).\n"
+"Hvis du har en WEP krypteringsnøgle, så vær venlig at skriv den herunder.\n"
+"Eksempler: 4567-89AB-CD eller  s:password\n"
+"Hvis du har en WPA adgangskode, så vær venlig at skriv den herunder.\n"
+"Eksempel: hemlig\n"
+"Hvis du ønsker at bruge en brugerdefineret driver (ikke den almindelige, "
+"kaldet 'wext'), så vær venlig at skrive den herunder.\n"
+"Hvis du er usikker, så skriv ikke noget"
 
 #: ../src/plugins/netconf.c:203
 msgid "Essid : "
-msgstr ""
+msgstr "Essid : "
 
 #: ../src/plugins/netconf.c:210
 msgid "WEP encryption key : "
-msgstr ""
+msgstr "WEP Krypteringsnøgle : "
 
 #: ../src/plugins/netconf.c:217
 msgid "WPA encryption passphrase : "
-msgstr ""
+msgstr "WPA krypteringsadgangskode : "
 
 #: ../src/plugins/netconf.c:224
 msgid "WPA Driver : "
-msgstr ""
+msgstr "WPA Driver : "
 
 #: ../src/plugins/netconf.c:260
 msgid "Configure static network"
-msgstr ""
+msgstr "Konfigurer statisk netværk"
 
 #: ../src/plugins/netconf.c:266
 msgid "Enter static network parameters :"
-msgstr ""
+msgstr "Skriv statiske netværksparametre :"
 
 #: ../src/plugins/netconf.c:270
 msgid "IP Address : "
-msgstr ""
+msgstr "IP Adresse : "
 
 #: ../src/plugins/netconf.c:277
 msgid "Network Mask : "
-msgstr ""
+msgstr "Netværk-Maske : "
 
 #: ../src/plugins/netconf.c:284
 msgid "Gateway : "
-msgstr ""
+msgstr "Gateway : "
 
 #: ../src/plugins/netconf.c:331
 msgid "Configure DSL connexion"
-msgstr ""
+msgstr "konfiguration af DSL forbindelse"
 
 #: ../src/plugins/netconf.c:338
 msgid "Enter DSL parameters"
-msgstr ""
+msgstr "Skriv DSL parametre"
 
 #: ../src/plugins/netconf.c:342
 msgid "PPPOE username : "
-msgstr ""
+msgstr "PPPOE brugernavn : "
 
 #: ../src/plugins/netconf.c:349
 msgid "PPPOE password : "
-msgstr ""
+msgstr "PPPOE password : "
 
 #: ../src/plugins/netconf.c:356
 msgid "Re-enter PPPOE password : "
-msgstr ""
+msgstr "Skriv PPPOE password igen : "
 
 #: ../src/plugins/netconf.c:363
 msgid "Associate with interface : "
-msgstr ""
+msgstr "Associeret med interface : "
 
 #: ../src/plugins/netconf.c:396
 msgid "Passwords do not match! Try again."
-msgstr ""
+msgstr "Password stemte ikke overens! Prøv igen."
 
 #: ../src/plugins/netconf.c:441
 msgid "This interface has been already configured!"
-msgstr ""
+msgstr "Dette interface er blevet allerede konfigureret!"
 
 #: ../src/plugins/netconf.c:475
 msgid ""
@@ -1083,10 +1110,13 @@ msgid ""
 "\n"
 "Configure your wireless now?"
 msgstr ""
+"Det ser ud til at dette netværkskort har en trådløs udvidelse.\n"
+"\n"
+"Konfigurer dit trådløs nu?"
 
 #: ../src/plugins/netconf.c:487
 msgid "Set DHCP hostname"
-msgstr ""
+msgstr "Sæt DHCP hostname"
 
 #: ../src/plugins/netconf.c:487
 msgid ""
@@ -1096,52 +1126,60 @@ msgid ""
 " If you wereassigned a DHCP hostname, please enter it below.\n"
 " If you do not have a DHCP hostname, justhit enter."
 msgstr ""
+"Nogle netværk udbydere kræver at et DHCP værtsnavn bliver\n"
+"sat for at opnå forbindelse.\n"
+" Hvis det er tilfældet, vil de have specificeret et værtsnavn til din "
+"maskine.\n"
+" Hvis du har et DHCP værtsnavn, vær venlig at skrive det herunder.\n"
+" Hvis du ikke har et DHCP værtsnavn, slå da enter."
 
 #: ../src/plugins/netconf.c:544
 msgid ""
 "<span face=\"Courier New\"><b>You can configure all network interfaces you "
 "need</b></span>"
 msgstr ""
+"<span face=\"Courier New\"><b>Du kan konfigurere alle netværksinterfaces du "
+"har brug for</b></span>"
 
 #: ../src/plugins/netconf.c:561
 msgid "Device"
-msgstr ""
+msgstr "Enhed"
 
 #: ../src/plugins/netconf.c:565
 msgid "Ip Address"
-msgstr ""
+msgstr "Ip Adresse"
 
 #: ../src/plugins/netconf.c:569
 msgid "Netmask"
-msgstr ""
+msgstr "Netmask"
 
 #: ../src/plugins/netconf.c:573
 msgid "Gateway"
-msgstr ""
+msgstr "Gateway"
 
 #: ../src/plugins/netconf.c:577
 msgid "DHCP Nameserver"
-msgstr ""
+msgstr "DHCP Navneserver"
 
 #: ../src/plugins/netconf.c:583
 msgid "Network configuration"
-msgstr ""
+msgstr "Netværkkonfiguration"
 
 #: ../src/plugins/netconf.c:588
 msgid "Interface :"
-msgstr ""
+msgstr "Interface :"
 
 #: ../src/plugins/netconf.c:598
 msgid "Network configuration :   "
-msgstr ""
+msgstr "Netværkkonfiguration :   "
 
 #: ../src/plugins/netconf.c:648
 msgid "Do you want to configure a DSL connexion now?"
-msgstr ""
+msgstr "Vil du konfigurere en DSL forbindelse nu?"
 
 #: ../src/plugins/netconf.c:656
 msgid "Hostname"
-msgstr ""
+msgstr "Hostname"
 
 #: ../src/plugins/netconf.c:656
 msgid ""
