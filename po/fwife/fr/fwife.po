@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-31 02:27+0200\n"
-"PO-Revision-Date: 2009-04-23 19:03+0200\n"
+"PO-Revision-Date: 2009-04-25 23:32+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fr\n"
@@ -655,6 +655,7 @@ msgstr ""
 #: ../src/plugins/postconf.c:92
 msgid "Plug and Play (serial mice that do not work with ms)"
 msgstr ""
+"Plug and Play (souris sur port série qui n'est pas reconnu par Microsoft)"
 
 #: ../src/plugins/postconf.c:93
 msgid "USB connected mouse"
@@ -879,9 +880,8 @@ msgid "Other (optionnal)"
 msgstr "Autre (optionnel)"
 
 #: ../src/plugins/usersconf.c:163 ../src/plugins/usersconf.c:304
-#, fuzzy
 msgid "Shell"
-msgstr "Shell"
+msgstr "Console"
 
 #: ../src/plugins/usersconf.c:168
 msgid "Home directory"
@@ -1022,6 +1022,14 @@ msgid ""
 "modem services),\n"
 " select 'dhcp'. \n"
 msgstr ""
+"Nous avons besoin maintenant de savoir comment votre machine se connecte au "
+"réseau.\n"
+"Si vous avez une carte réseau interne avec une adresse IP définie, une "
+"passerelle, et un DNS,\n"
+" utilisez 'static' pour entrer ses valeurs.\n"
+"Si votre adresse IP est définie par un serveur DHCP (couramment utilisé par "
+"les fournisseurs d'accès internet),\n"
+" utilisez 'dhcp'. \n"
 
 #: ../src/plugins/netconf.c:182
 msgid "Configure Wireless"
@@ -1038,6 +1046,15 @@ msgid ""
 "then please enter it below.\n"
 "If unsure enter nothing"
 msgstr ""
+"Pour utiliser le réseau sans fils, vous devez entrer votre nom de réseau "
+"étendu (ESSID).\n"
+"Si vous avez une clef de cryptage WEP, veuillez l'entrer ci-dessous.\n"
+"Par exemple: 4567-89AB-CD ou s:password\n"
+"Si vous avez une clef de cryptage WPA, veuillez l'entrer ci-dessous.\n"
+"Par exemple: secret\n"
+"Si vous voulez choisir un pilote particulier (et non le générique, nommé "
+"'wext'), veuillez l'entrer ci-dessous.\n"
+"Si vous n'êtes pas sur, n'entrez rien"
 
 #: ../src/plugins/netconf.c:203
 msgid "Essid : "
