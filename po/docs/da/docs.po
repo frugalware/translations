@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-06-25 01:51+0300\n"
-"PO-Revision-Date: 2009-06-25 15:29+0200\n"
+"PO-Revision-Date: 2009-06-25 16:28+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -13680,7 +13680,6 @@ msgstr "`# Compiling Time: 0.06 SBU`"
 
 # type: Plain text
 #: makepkg.txt:209
-#, fuzzy
 msgid ""
 "You should write here how much time it took to build the package.  Of "
 "course, it depends on your hardware, so we use SBUs instead of minutes as a "
@@ -13881,7 +13880,6 @@ msgstr "`archs=(\\'i686\\' \\'x86_64\\')`"
 
 # type: Plain text
 #: makepkg.txt:292
-#, fuzzy
 msgid ""
 "This array defines for which architectures the given package is available.  "
 "If it's not available, it means that gensync will skip it when generating "
@@ -13892,10 +13890,10 @@ msgid ""
 msgstr ""
 "Dette array definerer for hvilke arkitekturer den givne pakke er "
 "tilgængelig.  Hvis det ikke er tilgængeligt, betyder det at gensync vil "
-"springe det over når man genererer pakkedatabaser. Hvis du ikke kan stille "
-"en binær pakke til rådighed for en given arch, så inkluder det ikke i  archs"
-"()! For eksempel, ligegyldigt hvis pakken kunne kompileres i x86_64, hvis du "
-"ikke selv har kompileret det, så inkluder det ikke."
+"springe det over når det genererer pakkedatabaser. Hvis du ikke kan stille "
+"en binær pakke til rådighed for en given arch, så inkluder det ikke i  "
+"archs()! For eksempel, ligegyldigt hvis pakken kunne kompileres i x86_64, "
+"hvis du ikke selv har kompileret det, så inkluder det ikke."
 
 # type: Plain text
 #: makepkg.txt:296
@@ -13949,7 +13947,7 @@ msgstr ""
 
 # type: Plain text
 #: makepkg.txt:326
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "Here you define the sources of the package in a bash array.\n"
 "You can use simple filenames for patches, or additional files\n"
@@ -13965,19 +13963,21 @@ msgid ""
 msgstr ""
 "Her definerer du kilderne af pakken i en bash array.\n"
 "Du kan bruge enkle filnavne for patches, eller ekstra filer\n"
-"når du placerer dem i den samme folder hvor FrugalBuild\n"
+"når du placerer dem i den samme folder som FrugalBuild\n"
 "script er. Du kan bruge URLs hvis du ønsker at makepkg skal downloade dem\n"
 "automatisk. Det er vigtigt at anbringe alle kilderne i pakkens\n"
 "folder inklusive kilde-filen som du kan downloade fra et site.\n"
-" Også når der dowloades fra sourceforge, brug da venligst Finclude sourceforge!\n"
-"Hvis du benytter forskellige tilfældige patches fra ukendte kilder, forvent da ikke at\n"
-"nogen anden vil portere disse patches til en nyere version. Du er selv nødt til\n"
+" Også når der dowloades fra sourceforge, brug da venligst Finclude "
+"sourceforge!\n"
+"Hvis du benytter forskellige tilfældige patches fra ukendte kilder, forvent "
+"da ikke at\n"
+"nogen anden vil portere disse patches til en nyere version. Du er selv nødt "
+"til\n"
 "at lave dette arbejde. Du er blevet advaret! Forsøg at undgå patches\n"
 "medmindre de er virkelig nødvendige (f.eks: secfix, bugfix).\n"
 
 # type: Plain text
 #: makepkg.txt:335
-#, fuzzy
 msgid ""
 "A few words about the size of the sources. If you use an URL then the size "
 "is almost unlimited, but if the source is not an url then the source will be "
@@ -13994,8 +13994,9 @@ msgstr ""
 "større end 100KB i FST. for at løse dette problem, vil kilderne for en given "
 "pakke blive placeret i /pub/other/sources/pkgname dir for hver pakke. Hvis "
 "kilden ikke er komprimeret, vi bruger gzip eller bzip2 til at komprimere det "
-"først. Efter det kan der bruges en `http://ftp.frugalware.org/pub/other/"
-"sources/pkgname/foo`-styled URL for disse store kilder."
+"først. Efter det kan der bruges en "
+"`http://ftp.frugalware.org/pub/other/sources/pkgname/foo`-styled URL for "
+"disse store kilder."
 
 # type: Plain text
 #: makepkg.txt:337
@@ -14004,25 +14005,20 @@ msgstr "`sha1sums=(\\'094e3afb2fe8dfe82f63731cdcd3b999f4856cff\\')`"
 
 # type: Plain text
 #: makepkg.txt:342
-#, fuzzy
 msgid ""
 "Another bash array to prevent compiling from the wrong source. Of course "
 "this is useless if you just run sha1sum foo.tar.gz after download. Try "
 "fetching original sha1sums from the projects website, if possible. It's a "
 "good idea to leave a comment above this line about where to find these "
 "sha1sums."
-msgstr ""
-"Endnu et bash array for at forhindre at kompilere fra forkerte kilder. "
-"Selvfølgelig er\n"
-" dette ubrugelig hvis du bare kører sha1sum foo.tar.gz efter download . "
-"Forsøg at finde\n"
-" original sha1sums fra projekts website, om muligt. Det er en god idé\n"
-" at efterlade en kommentar over denne linie om hvor disse sha1sums kan "
-"findes.\n"
+msgstr "Et andet bash array for at forhindre at kompilere fra forkerte kilder. "
+"Selvfølgelig er dette ubrugelig hvis du bare kører sha1sum foo.tar.gz efter "
+"download . Prøv at bruge original sha1sums fra projekts website, om muligt. "
+"Det er en god idé at efterlade en kommentar over denne linie om hvor disse "
+"sha1sums kan findes.\n"
 
 # type: Plain text
 #: makepkg.txt:347
-#, fuzzy
 msgid ""
 "As you can see there in no build() function in this FB. It's because we "
 "wrote some F* functions to make our work easier. It's something similar you "
@@ -14088,7 +14084,6 @@ msgstr "`# optimization OK`"
 
 # type: Plain text
 #: makepkg.txt:377
-#, fuzzy
 msgid ""
 "This line will be added automatically to the end of the FrugalBuild if the "
 "build() function used your $CFLAGS or $CXXFLAGS. This is handy if you want "
@@ -14101,7 +14096,7 @@ msgstr ""
 "Denne linie vil blive tilbygget automatisk til enden af FrugalBuild hvis "
 "build() funktion bruger din $CFLAGS eller $CXXFLAGS. Dette er praktisk hvis "
 "du vil kryds-kompilere på en hurtigere maskine for en mere langsom "
-"arkitektur.  Indtil pakken ikke bruger vores $CFLAGS kan vi ikke kryds-"
+"arkitektur.  Hvis pakken ikke bruger vores $CFLAGS kan vi ikke kryds-"
 "kompilere det, så undgå venligst at skabe \"ikke-optimeret\" pakker. Hvis "
 "pakken ikke indeholder nogen arkitektur-afhængig fil, så kan kan du tilføje "
 "denne linie manuelt som makepkg så ikke vil detektere ."
@@ -14189,24 +14184,21 @@ msgstr "Noter at det foranstillet slash mangler!"
 
 # type: Plain text
 #: makepkg.txt:409
-#, fuzzy
 msgid ""
 "For more information about this, see the handling config files section in "
 "the pacman-g2 manpage"
 msgstr ""
-"For mere information om dette, se håndterings-konfigenfileafsnittet i pacman-"
-"g2 manside."
+"For mere information om dette, se håndterings-konfig-fileafsnittet i "
+"pacman-g2 manside."
 
 # type: Plain text
 #: makepkg.txt:412
-#, fuzzy
 msgid ""
 "The depends array has been discussed already, except I haven't mentioned "
 "before that the elements may include version information, for example:"
 msgstr ""
 "Afhængigheds array er allerede blevet diskuteret, undtaget jeg har ikke "
-"nævnt\n"
-" før at elementer kan inkludere versionsinformation, for eksempel:\n"
+"nævnt før, at elementer kan inkludere versionsinformation, for eksempel:"
 
 # type: Plain text
 #: makepkg.txt:416
@@ -14236,15 +14228,14 @@ msgstr ""
 
 # type: Plain text
 #: makepkg.txt:426
-#, fuzzy
 msgid ""
 "The rodepends array defines packages required only in runtime. It must be "
 "used in any case when putting the given package in the depends() array would "
 "cause circular dependency."
 msgstr ""
 "Rodepends array definerer pakker der kræves kun i kørselstid. Det skal buges "
-"under alle omstændigheder når man putter den givne pakke til depends() under "
-"causecirkulær afhængighed."
+"under alle omstændigheder når man putter den givne pakke til depends() "
+"array under causecirkulær afhængighed."
 
 # type: Plain text
 #: makepkg.txt:429
@@ -14267,14 +14258,13 @@ msgstr ""
 
 # type: Plain text
 #: makepkg.txt:439
-#, fuzzy
 msgid ""
 "It is necessary as the two packages are almost the same, but the binaries "
 "differ. In this case the mutt package must also contain this line: "
 "`conflicts=(\\'mutt-devel\\')`. Of course, if two or more packages conflict "
 "eachother, only one of them can be placed in a non-extra group."
 msgstr ""
-"Det er nødvendigt fordi de to pakker næsten er den samme, men de binære er "
+"Det er nødvendigt fordi de to pakker næsten er den samme, men de er binære "
 "forskellige.  I dette tilfælde skal mutt pakken også indeholde denne linie: "
 "`conflicts=(\\'mutt-devel\\')`.  Selvfølgelig, hvis to eller flere pakker "
 "konflikter med hinanden, så kan kun en dem placeres i en ikke-ekstra gruppe."
@@ -14692,7 +14682,6 @@ msgstr ""
 
 # type: Plain text
 #: makepkg.txt:607
-#, fuzzy
 msgid "The most commonly used repoman commands are the following:"
 msgstr "De mest almindeligt brugte repoman kommandoer er følgende:"
 
