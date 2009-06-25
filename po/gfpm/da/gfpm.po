@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-06-11 02:25+0200\n"
-"PO-Revision-Date: 2009-06-11 19:44+0200\n"
+"POT-Creation-Date: 2009-06-25 02:30+0200\n"
+"PO-Revision-Date: 2009-06-25 15:07+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -25,75 +25,90 @@ msgstr "(C) 2006-2009 Frugalware Developer Team (GPL)"
 msgid "A graphical package manager for Frugalware Linux"
 msgstr "Et grafisk pakkeprogram for Frugalware Linux."
 
-#: ../src/gfpm-interface.c:175 ../src/gfpm-interface.c:1467
-#: ../src/gfpm-interface.c:1865
+#: ../src/gfpm-interface.c:184 ../src/gfpm-interface.c:1677
+#: ../src/gfpm-interface.c:2075
 msgid "Installed Packages"
 msgstr "Installerede Pakker"
 
-#: ../src/gfpm-interface.c:194 ../src/gfpm-interface.c:428
-#: ../src/gfpm-interface.c:504 ../src/gfpm-interface.c:575
-#: ../src/gfpm-interface.c:600 ../src/gfpm-interface.c:1226
-#: ../src/gfpm-interface.c:1311 ../src/gfpm-interface.c:1430
-#: ../src/gfpm-interface.c:1770 ../src/gfpm-interface.c:1783
-#: ../src/gfpm-interface.c:2173 ../src/gfpm-interface.c:2190
-#: ../src/gfpm-optimizedb.c:120 ../src/gfpm-optimizedb.c:127
-#: ../src/gfpm-logviewer.c:124 ../src/gfpm-logviewer.c:228
-#: ../src/gfpm-logviewer.c:281 ../src/gfpm-repomanager.c:350
-#: ../src/gfpm-repomanager.c:419 ../src/gfpm-repomanager.c:425
-#: ../src/gfpm-repomanager.c:929 ../src/gfpm-repomanager.c:1034
+#. handle error
+#: ../src/gfpm-interface.c:203 ../src/gfpm-interface.c:571
+#: ../src/gfpm-interface.c:607 ../src/gfpm-interface.c:670
+#: ../src/gfpm-interface.c:741 ../src/gfpm-interface.c:766
+#: ../src/gfpm-interface.c:1061 ../src/gfpm-interface.c:1434
+#: ../src/gfpm-interface.c:1521 ../src/gfpm-interface.c:1640
+#: ../src/gfpm-interface.c:1980 ../src/gfpm-interface.c:1993
+#: ../src/gfpm-interface.c:2383 ../src/gfpm-interface.c:2395
+#: ../src/gfpm-interface.c:2409 ../src/gfpm-optimizedb.c:120
+#: ../src/gfpm-optimizedb.c:127 ../src/gfpm-logviewer.c:124
+#: ../src/gfpm-logviewer.c:228 ../src/gfpm-logviewer.c:281
+#: ../src/gfpm-repomanager.c:350 ../src/gfpm-repomanager.c:419
+#: ../src/gfpm-repomanager.c:425 ../src/gfpm-repomanager.c:929
+#: ../src/gfpm-repomanager.c:1034
 msgid "Error"
 msgstr "Fejl"
 
-#: ../src/gfpm-interface.c:194
+#: ../src/gfpm-interface.c:203
 msgid "Error parsing repository information from configuration file."
 msgstr "Fejl syntaksanalyse arkivinformation fra konfigurationsfil."
 
-#: ../src/gfpm-interface.c:236 ../src/gfpm-repomanager.c:118
+#: ../src/gfpm-interface.c:245 ../src/gfpm-repomanager.c:118
 #: ../src/gfpm-repomanager.c:148
 msgid "S"
 msgstr "S"
 
-#: ../src/gfpm-interface.c:244
+#: ../src/gfpm-interface.c:253
 msgid "Status"
 msgstr "Status"
 
-#: ../src/gfpm-interface.c:252
+#: ../src/gfpm-interface.c:261
 msgid "Package Name"
 msgstr "Pakke Navn"
 
-#: ../src/gfpm-interface.c:263
+#: ../src/gfpm-interface.c:272
 msgid "Installed Version"
 msgstr "Installeret Version"
 
-#: ../src/gfpm-interface.c:271
+#: ../src/gfpm-interface.c:280
 msgid "Latest Version"
 msgstr "Seneste Version"
 
-#: ../src/gfpm-interface.c:279 ../data/gfpm.glade.h:41
+#: ../src/gfpm-interface.c:288 ../data/gfpm.glade.h:41
 msgid "Compressed Size"
 msgstr "Komprimeret Størrelse "
 
-#: ../src/gfpm-interface.c:290 ../data/gfpm.glade.h:87
+#: ../src/gfpm-interface.c:299 ../data/gfpm.glade.h:87
 msgid "Uncompressed Size"
 msgstr "Ukomprimeret Størrelse"
 
-#: ../src/gfpm-interface.c:428
+#: ../src/gfpm-interface.c:571
 msgid "Failed to initialize local package database."
 msgstr "Fejlede at initialisere lokal pakkedatabase."
 
-#: ../src/gfpm-interface.c:465 ../data/gfpm.glade.h:53
+#: ../src/gfpm-interface.c:594
+msgid "Insufficient privileges"
+msgstr "Utilstrækkelige privilegier"
+
+#: ../src/gfpm-interface.c:595
+msgid "You need to be root in order to install packages"
+msgstr "Du er nødt til at være root for at installere pakker"
+
+#: ../src/gfpm-interface.c:608
+msgid "Unknown error"
+msgstr "Ukendt fejl"
+
+#: ../src/gfpm-interface.c:631 ../data/gfpm.glade.h:53
 msgid "Gfpm"
 msgstr "Gfpm"
 
-#: ../src/gfpm-interface.c:465
+#: ../src/gfpm-interface.c:631
 msgid "No changes to apply."
 msgstr "Ingen ændringer at tilføje."
 
-#: ../src/gfpm-interface.c:470
+#: ../src/gfpm-interface.c:636
 msgid "Cancel Operation"
 msgstr "Annullerer Handling"
 
-#: ../src/gfpm-interface.c:470
+#: ../src/gfpm-interface.c:636
 msgid ""
 "Are you sure you want to cancel this operation ? \n"
 "Note: All changes made till now will be reverted."
@@ -101,18 +116,18 @@ msgstr ""
 "Er du sikker på at du vil annullere denne handling ? \n"
 "Note: Alle ændringer indtil nu vil blive forkastet."
 
-#: ../src/gfpm-interface.c:498 ../src/gfpm-interface.c:569
-#: ../src/gfpm-interface.c:1425 ../src/gfpm-interface.c:2168
+#: ../src/gfpm-interface.c:664 ../src/gfpm-interface.c:735
+#: ../src/gfpm-interface.c:1635 ../src/gfpm-interface.c:2378
 #, c-format
 msgid "Failed to init transaction (%s)\n"
 msgstr "Fejlede ved initialisering af udførelse (%s)\n"
 
 #. Ask the user before clearing the package list
-#: ../src/gfpm-interface.c:546 ../src/gfpm-interface.c:618
+#: ../src/gfpm-interface.c:712 ../src/gfpm-interface.c:784
 msgid "Remember selection"
 msgstr "Husk udvælgelse"
 
-#: ../src/gfpm-interface.c:547 ../src/gfpm-interface.c:619
+#: ../src/gfpm-interface.c:713 ../src/gfpm-interface.c:785
 msgid ""
 "GFpm has detected that a failure has occurred. Do you want GFpm to remember "
 "your current package selection?"
@@ -120,195 +135,209 @@ msgstr ""
 "GFpm har detekteret at en fejl er sket. Ønsker at du GFpm husker din "
 "aktuelle pakkeudvælgelse?"
 
-#: ../src/gfpm-interface.c:600
+#: ../src/gfpm-interface.c:766
 msgid "Error getting transaction info"
 msgstr "Fejl ved posteringsinfo"
 
-#: ../src/gfpm-interface.c:681
+#: ../src/gfpm-interface.c:847
 #, c-format
 msgid "Loading groups ... [%s]"
 msgstr "Indlæser grupper ... [%s]"
 
-#: ../src/gfpm-interface.c:692
+#: ../src/gfpm-interface.c:858
 msgid "Loading groups ... DONE"
 msgstr "Indlæser grupper ... FÆRDIG"
 
-#: ../src/gfpm-interface.c:727
+#: ../src/gfpm-interface.c:893
 msgid "Loading package list ..."
 msgstr "Indlæser pakkeliste ..."
 
-#: ../src/gfpm-interface.c:837
+#: ../src/gfpm-interface.c:1003
 msgid "Loading package list ...DONE"
 msgstr "Indlæser pakkeliste ...FÆRDIG"
 
-#: ../src/gfpm-interface.c:888
+#: ../src/gfpm-interface.c:1061
+msgid "Error loading package information from file"
+msgstr "Fejl ved loading af pakkeinformation fra fil"
+
+#: ../src/gfpm-interface.c:1072 ../nautilus-extension/nautilus-gfpm.c:181
+#: ../thunar-plugin/thunar-gfpm.c:178
 msgid "Name:"
 msgstr "Navn:"
 
-#: ../src/gfpm-interface.c:895
+#: ../src/gfpm-interface.c:1079 ../nautilus-extension/nautilus-gfpm.c:190
+#: ../thunar-plugin/thunar-gfpm.c:187
 msgid "Version:"
 msgstr "Version:"
 
-#: ../src/gfpm-interface.c:902
+#: ../src/gfpm-interface.c:1086 ../nautilus-extension/nautilus-gfpm.c:199
+#: ../thunar-plugin/thunar-gfpm.c:196
 msgid "Description:"
 msgstr "Beskrivelse:"
 
-#: ../src/gfpm-interface.c:920
+#: ../src/gfpm-interface.c:1104 ../nautilus-extension/nautilus-gfpm.c:220
+#: ../thunar-plugin/thunar-gfpm.c:217
 msgid "License:"
 msgstr "Licens:"
 
-#: ../src/gfpm-interface.c:939
+#: ../src/gfpm-interface.c:1123 ../nautilus-extension/nautilus-gfpm.c:236
+#: ../thunar-plugin/thunar-gfpm.c:233
 msgid "Depends:"
 msgstr "Afhænger af:"
 
-#: ../src/gfpm-interface.c:956
+#: ../src/gfpm-interface.c:1140 ../nautilus-extension/nautilus-gfpm.c:251
+#: ../thunar-plugin/thunar-gfpm.c:248
 msgid "Group(s):"
 msgstr "Gruppe(r):"
 
-#: ../src/gfpm-interface.c:975
+#: ../src/gfpm-interface.c:1159 ../nautilus-extension/nautilus-gfpm.c:266
+#: ../thunar-plugin/thunar-gfpm.c:263
 msgid "Provides:"
 msgstr "Fremskaffer:"
 
-#: ../src/gfpm-interface.c:995
+#: ../src/gfpm-interface.c:1179 ../nautilus-extension/nautilus-gfpm.c:281
+#: ../thunar-plugin/thunar-gfpm.c:278
 msgid "Conflicts:"
 msgstr "Konflikter:"
 
-#: ../src/gfpm-interface.c:1015
+#: ../src/gfpm-interface.c:1199 ../nautilus-extension/nautilus-gfpm.c:296
+#: ../thunar-plugin/thunar-gfpm.c:293
 msgid "Replaces:"
 msgstr "Erstatter:"
 
-#: ../src/gfpm-interface.c:1027
+#: ../src/gfpm-interface.c:1218 ../nautilus-extension/nautilus-gfpm.c:208
+#: ../thunar-plugin/thunar-gfpm.c:205
 msgid "URL:"
 msgstr "URL:"
 
-#: ../src/gfpm-interface.c:1034
+#: ../src/gfpm-interface.c:1225 ../nautilus-extension/nautilus-gfpm.c:321
+#: ../thunar-plugin/thunar-gfpm.c:318
 msgid "Packager:"
 msgstr "Pakker:"
 
-#: ../src/gfpm-interface.c:1041
+#: ../src/gfpm-interface.c:1234
 msgid "Install Date:"
 msgstr "Installationsdato:"
 
-#: ../src/gfpm-interface.c:1050
+#: ../src/gfpm-interface.c:1244 ../nautilus-extension/nautilus-gfpm.c:311
+#: ../thunar-plugin/thunar-gfpm.c:308
 msgid "Size:"
 msgstr "Størrelse:"
 
-#: ../src/gfpm-interface.c:1063
+#: ../src/gfpm-interface.c:1257
 msgid "Size (Compressed):"
 msgstr "Størrelse (Komprimeret):"
 
-#: ../src/gfpm-interface.c:1073
+#: ../src/gfpm-interface.c:1267
 msgid "Size (Uncompressed):"
 msgstr "Størrelse (Ukomprimeret):"
 
-#: ../src/gfpm-interface.c:1084
+#: ../src/gfpm-interface.c:1278
 msgid "SHA1SUM:"
 msgstr "SHA1SUM:"
 
-#: ../src/gfpm-interface.c:1103
+#: ../src/gfpm-interface.c:1297 ../nautilus-extension/nautilus-gfpm.c:334
+#: ../thunar-plugin/thunar-gfpm.c:331
 msgid "Required By:"
 msgstr "Påkrævet af:"
 
-#: ../src/gfpm-interface.c:1112
+#: ../src/gfpm-interface.c:1310
 msgid "Reason:"
 msgstr "Årsag:"
 
-#: ../src/gfpm-interface.c:1119
+#: ../src/gfpm-interface.c:1317
 msgid "Explicitly Installed"
 msgstr "Udtrykkelist Installeret"
 
-#: ../src/gfpm-interface.c:1125
+#: ../src/gfpm-interface.c:1323
 msgid "Installed as a dependency for another package"
 msgstr "Installeret som en afhængighed for en anden pakke"
 
-#: ../src/gfpm-interface.c:1151
+#: ../src/gfpm-interface.c:1358
 msgid "Files in package:\n"
 msgstr "Filer i pakke:\n"
 
-#: ../src/gfpm-interface.c:1161
+#: ../src/gfpm-interface.c:1368
 msgid "Package is not installed.\n"
 msgstr "Pakken er ikke installeret.\n"
 
-#: ../src/gfpm-interface.c:1195
+#: ../src/gfpm-interface.c:1402
 msgid "No changelog available for this package"
 msgstr "Ingen ændrings-log tilgænglig for denne pakke"
 
-#: ../src/gfpm-interface.c:1210
+#: ../src/gfpm-interface.c:1417
 msgid "Package is not installed"
 msgstr "Pakken er ikke installeret"
 
-#: ../src/gfpm-interface.c:1225
+#: ../src/gfpm-interface.c:1433
 #, c-format
 msgid "Failed to prepare transaction (%s)\n"
 msgstr "Fejlede ved klargøring af udførelse (%s)\n"
 
-#: ../src/gfpm-interface.c:1242
+#: ../src/gfpm-interface.c:1450
 msgid "is required by"
 msgstr "er påkrævet af"
 
-#: ../src/gfpm-interface.c:1272
-msgid "Missing dependencies"
-msgstr "Manglende afhængigheder"
+#: ../src/gfpm-interface.c:1457
+msgid " : requires "
+msgstr " : kræver "
 
-#: ../src/gfpm-interface.c:1272
-msgid ""
-"Following dependencies were not met. Please install these packages first."
-msgstr ""
-"Følgende afhængigheder blev ikke fundet. Vær venlig at installere disse "
-"pakker først."
+#: ../src/gfpm-interface.c:1482 ../src/gfpm-interface.c:1484
+msgid "Unsatisfied dependencies"
+msgstr "Utilfredsstillede afhængigheder"
 
-#: ../src/gfpm-interface.c:1274
-msgid "Could not satisfy dependencies"
-msgstr "Kunne ikke opfylde afhængigheder"
+#: ../src/gfpm-interface.c:1482
+msgid "Could not satisfy the following dependencies."
+msgstr "Kunne ikke opfylde følgende afhængigheder"
 
-#: ../src/gfpm-interface.c:1274
+#: ../src/gfpm-interface.c:1484
 msgid ""
 "The packages you are trying to remove are required by the following packages:"
 msgstr "Pakkerne du prøver at fjerne er påkrævet af følgende pakker:"
 
-#: ../src/gfpm-interface.c:1286
+#: ../src/gfpm-interface.c:1496
 msgid "Package conflict"
 msgstr "Pakkekonflikt"
 
-#: ../src/gfpm-interface.c:1286
+#: ../src/gfpm-interface.c:1496
 msgid "This package conflicts with the following packages"
 msgstr "Denne pakke er i konflikt med følgende pakke"
 
-#: ../src/gfpm-interface.c:1310 ../src/gfpm-interface.c:2189
+#: ../src/gfpm-interface.c:1520 ../src/gfpm-interface.c:2408
 #, c-format
 msgid "Failed to commit transaction (%s)\n"
 msgstr "Fejlede ved udførsel af komando (%s)\n"
 
-#: ../src/gfpm-interface.c:1333
+#: ../src/gfpm-interface.c:1543
 msgid "Conflicting Files"
 msgstr "Filer i konflikt"
 
-#: ../src/gfpm-interface.c:1334
+#: ../src/gfpm-interface.c:1544
 msgid ""
 "The file(s) provided by the following package(s) already exist on the system"
 msgstr "Fil(er) tilhørende følgende pakke(r) findes allerede på systemet"
 
-#: ../src/gfpm-interface.c:1342
+#: ../src/gfpm-interface.c:1552
 msgid "Corrupted package(s)"
 msgstr "Beskadiget pakke(r)"
 
-#: ../src/gfpm-interface.c:1343
+#: ../src/gfpm-interface.c:1553
 msgid "The package(s) you're trying to install are corrupted"
 msgstr "Pakke(r) som du prøver at installere er beskadiget "
 
-#: ../src/gfpm-interface.c:1349
+#: ../src/gfpm-interface.c:1559
 msgid "Download Failed"
 msgstr "Download fejlede"
 
-#: ../src/gfpm-interface.c:1349
+#: ../src/gfpm-interface.c:1559
 msgid "Failed to retrieve packages."
 msgstr "Formåede ikke at tilbagehente pakker."
 
-#: ../src/gfpm-interface.c:1385
+#: ../src/gfpm-interface.c:1595
 msgid "Synchronizing package databases"
 msgstr "Synkroniserer pakkedatabasen"
 
-#: ../src/gfpm-interface.c:1398
+#: ../src/gfpm-interface.c:1608
 #, c-format
 msgid ""
 "Gfpm has detected a newer version of the pacman-g2 package. It is "
@@ -319,11 +348,11 @@ msgstr ""
 "tillader gfpm at opdatere pacman-g2 først. Ønsker du en opgradering af "
 "pacman-g2 udføres først ?"
 
-#: ../src/gfpm-interface.c:1399
+#: ../src/gfpm-interface.c:1609
 msgid "Update pacman-g2"
 msgstr "Opdaterer pacman-g2"
 
-#: ../src/gfpm-interface.c:1410
+#: ../src/gfpm-interface.c:1620
 #, c-format
 msgid ""
 "Gfpm has detected a newer version of the gfpm package. It is recommended "
@@ -334,11 +363,11 @@ msgstr ""
 "tillader gfpm at opdatere sig selv først. Ønsker du en opgradering af gfpm  "
 "udføres først ?"
 
-#: ../src/gfpm-interface.c:1411
+#: ../src/gfpm-interface.c:1621
 msgid "Update Gfpm"
 msgstr "Opdaterer Gfpm"
 
-#: ../src/gfpm-interface.c:1429 ../src/gfpm-interface.c:2172
+#: ../src/gfpm-interface.c:1639 ../src/gfpm-interface.c:2382
 msgid ""
 "If you're sure a package manager is not already running, you can delete /tmp/"
 "pacman-g2.lck"
@@ -346,244 +375,249 @@ msgstr ""
 "Hvis du er sikker på at en pakkehåndterer ikke allerede kører, kan du "
 "slette /tmp/pacman-g2.lck"
 
-#: ../src/gfpm-interface.c:1444
+#: ../src/gfpm-interface.c:1654
 msgid "No updates"
 msgstr "Ingen opdateringer"
 
-#: ../src/gfpm-interface.c:1444
+#: ../src/gfpm-interface.c:1654
 msgid "No new package updates are available. The system is up to date."
 msgstr ""
 "Ingen nye pakkeopdateringer er tilgængelige. Systemet er fuldt ud opdateret."
 
-#: ../src/gfpm-interface.c:1448
+#: ../src/gfpm-interface.c:1658
 msgid "Package upgrade"
 msgstr "Pakkeopgradering"
 
-#: ../src/gfpm-interface.c:1448
+#: ../src/gfpm-interface.c:1658
 msgid "Following packages will be upgraded. Do you want to continue ?"
 msgstr "Følgende pakker vil blive opgraderede. Ønsker du at forsætte ?"
 
-#: ../src/gfpm-interface.c:1633
+#: ../src/gfpm-interface.c:1843
 msgid "Mark for upgrade"
 msgstr "Markering af opgradering"
 
-#: ../src/gfpm-interface.c:1661
+#: ../src/gfpm-interface.c:1871
 msgid "Mark for installation"
 msgstr "Markering af installation"
 
-#: ../src/gfpm-interface.c:1670
+#: ../src/gfpm-interface.c:1880
 msgid "Reinstall package"
 msgstr "Gen-installerer pakke"
 
-#: ../src/gfpm-interface.c:1677
+#: ../src/gfpm-interface.c:1887
 msgid "Mark for re-installation"
 msgstr "Markering for gen-installation"
 
-#: ../src/gfpm-interface.c:1684
+#: ../src/gfpm-interface.c:1894
 msgid "Mark for removal"
 msgstr "Markering af fjernelse"
 
-#: ../src/gfpm-interface.c:1770
+#: ../src/gfpm-interface.c:1980
 msgid "There was an error while populating packages"
 msgstr "Der var en generel fejl ved hentning af pakken"
 
-#: ../src/gfpm-interface.c:1783
+#: ../src/gfpm-interface.c:1993
 msgid "There are no installed packages in this group"
 msgstr "Der er ingen installerede pakker i denne gruppe"
 
-#: ../src/gfpm-interface.c:1786
+#: ../src/gfpm-interface.c:1996
 msgid "Remove Group"
 msgstr "Fjern Gruppe"
 
-#: ../src/gfpm-interface.c:1786
+#: ../src/gfpm-interface.c:1996
 msgid "Are you sure you want to remove the entire group ?"
 msgstr "Er du sikker på at du vil fjerne hele gruppen ?"
 
-#: ../src/gfpm-interface.c:1876
+#: ../src/gfpm-interface.c:2086
 msgid "Searching for packages ..."
 msgstr "Søger efter pakker ..."
 
-#: ../src/gfpm-interface.c:1901
+#: ../src/gfpm-interface.c:2111
 msgid "Search Complete"
 msgstr "Søgning Komplet"
 
-#: ../src/gfpm-interface.c:1906
+#: ../src/gfpm-interface.c:2116
 msgid "Package not found"
 msgstr "Pakke ikke fundet"
 
-#: ../src/gfpm-interface.c:1906
+#: ../src/gfpm-interface.c:2116
 msgid "No such package found"
 msgstr "En sådan pakke blev ikke fundet"
 
-#: ../src/gfpm-interface.c:2022
+#: ../src/gfpm-interface.c:2232
 msgid "Searching for packages ...DONE"
 msgstr "Søger efter pakker ...FÆRDIG"
 
-#: ../src/gfpm-interface.c:2098 ../src/gfpm-interface.c:2118
+#: ../src/gfpm-interface.c:2308 ../src/gfpm-interface.c:2328
 #: ../data/gfpm.glade.h:37
 msgid "Clear package cache"
 msgstr "Rydder pakke cache"
 
-#: ../src/gfpm-interface.c:2098
+#: ../src/gfpm-interface.c:2308
 msgid "Are you sure you want to remove old packages from cache ?"
 msgstr "Er du sikker på at du vil fjerne gamle pakker fra cache ?"
 
-#: ../src/gfpm-interface.c:2104 ../src/gfpm-interface.c:2124
+#: ../src/gfpm-interface.c:2314 ../src/gfpm-interface.c:2334
 msgid "Finished clearing the cache"
 msgstr "Færdig med at rydde cache"
 
-#: ../src/gfpm-interface.c:2108 ../src/gfpm-interface.c:2128
+#: ../src/gfpm-interface.c:2318 ../src/gfpm-interface.c:2338
 #, c-format
 msgid "Failed to clean the cache (%s)"
 msgstr "Mislykkes at rydde cache (%s)"
 
-#: ../src/gfpm-interface.c:2109 ../src/gfpm-interface.c:2129
+#: ../src/gfpm-interface.c:2319 ../src/gfpm-interface.c:2339
 msgid "Error clearing cache"
 msgstr "Fejl ved rydning af cache"
 
-#: ../src/gfpm-interface.c:2118
+#: ../src/gfpm-interface.c:2328
 msgid "Are you sure you want to remove all packages from cache ?"
 msgstr "Er du sikker på at du vil fjerne alle pakker fra cache ?"
 
-#: ../src/gfpm-interface.c:2152
+#: ../src/gfpm-interface.c:2362
 msgid "No packages selected"
 msgstr "Ingen pakker er valgt"
 
-#: ../src/gfpm-interface.c:2152
+#: ../src/gfpm-interface.c:2362
 msgid "No package selected for install. Please select a package to install."
 msgstr ""
 "Ingen pakker er valgt til installation. Vær venlig at vælge en pakke til "
 "installation."
 
-#: ../src/gfpm-interface.c:2155
+#: ../src/gfpm-interface.c:2365
 msgid "Install package"
 msgstr "Installerer pakke"
 
-#: ../src/gfpm-interface.c:2155
+#: ../src/gfpm-interface.c:2365
 msgid "Are you sure you want to install this package ?"
 msgstr "Er du sikker på at du vil installere denne pakke ?"
 
-#: ../src/gfpm-interface.c:2197
+#: ../src/gfpm-interface.c:2394
+#, c-format
+msgid "Failed to add target (%s)\n"
+msgstr "Formåede ikke at tilføje mål (%s)\n"
+
+#: ../src/gfpm-interface.c:2416
 msgid "Package successfully installed"
 msgstr "Pakke problemfrit installeret"
 
-#: ../src/gfpm-progress.c:275
+#: ../src/gfpm-progress.c:301
 msgid "Installing packages..."
 msgstr "Installerer pakker..."
 
-#: ../src/gfpm-progress.c:277
+#: ../src/gfpm-progress.c:303
 msgid "Installing package..."
 msgstr "Installerer pakke..."
 
-#: ../src/gfpm-progress.c:281
+#: ../src/gfpm-progress.c:307
 msgid "Upgrading packages..."
 msgstr "Opgraderer pakker..."
 
-#: ../src/gfpm-progress.c:283
+#: ../src/gfpm-progress.c:309
 msgid "Upgrading package..."
 msgstr "Opgraderer pakke..."
 
-#: ../src/gfpm-progress.c:287
+#: ../src/gfpm-progress.c:313
 msgid "Removing packages..."
 msgstr "Fjerner pakker..."
 
-#: ../src/gfpm-progress.c:289
+#: ../src/gfpm-progress.c:315
 msgid "Removing package..."
 msgstr "Fjerner pakke..."
 
-#: ../src/gfpm-progress.c:293
+#: ../src/gfpm-progress.c:319
 msgid "Checking packages for file conflicts..."
 msgstr "Tjekker pakker for filkonflikter..."
 
-#: ../src/gfpm-progress.c:295
+#: ../src/gfpm-progress.c:321
 msgid "Checking package for file conflicts..."
 msgstr "Tjekker pakke for filkonflikter..."
 
-#: ../src/gfpm-progress.c:336
+#: ../src/gfpm-progress.c:362
 msgid "Checking dependencies"
 msgstr "Tjekker afhængigheder"
 
-#: ../src/gfpm-progress.c:340
+#: ../src/gfpm-progress.c:366
 msgid "Checking for file conflicts"
 msgstr "Tjekker for filkonflikter"
 
-#: ../src/gfpm-progress.c:344
+#: ../src/gfpm-progress.c:370
 msgid "Resolving dependencies"
 msgstr "Løser afhængigheder"
 
-#: ../src/gfpm-progress.c:347
+#: ../src/gfpm-progress.c:373
 msgid "Looking for inter-conflicts"
 msgstr "Ser efter fælles-konflikter"
 
-#: ../src/gfpm-progress.c:353 ../src/gfpm-progress.c:393
-#: ../src/gfpm-progress.c:403
+#: ../src/gfpm-progress.c:379 ../src/gfpm-progress.c:419
+#: ../src/gfpm-progress.c:429
 msgid "Done"
 msgstr "Færdig"
 
-#: ../src/gfpm-progress.c:356
+#: ../src/gfpm-progress.c:382
 #, c-format
 msgid "Installing %s-%s"
 msgstr "Installerer %s-%s"
 
-#: ../src/gfpm-progress.c:362
+#: ../src/gfpm-progress.c:388
 msgid "Package installation finished"
 msgstr "Pakkeinstallation færdig"
 
-#: ../src/gfpm-progress.c:363
+#: ../src/gfpm-progress.c:389
 #, c-format
 msgid "Installed %s-%s"
 msgstr "installeret %s-%s"
 
-#: ../src/gfpm-progress.c:368
+#: ../src/gfpm-progress.c:394
 #, c-format
 msgid "Upgrading %s"
 msgstr "opgraderet %s"
 
-#: ../src/gfpm-progress.c:373
+#: ../src/gfpm-progress.c:399
 msgid "Package upgrade finished"
 msgstr "Pakkeopgradering færdig"
 
-#: ../src/gfpm-progress.c:374
+#: ../src/gfpm-progress.c:400
 #, c-format
 msgid "Upgraded %s from %s to %s"
 msgstr "Opgraderet %s fra %s til %s"
 
-#: ../src/gfpm-progress.c:380
+#: ../src/gfpm-progress.c:406
 #, c-format
 msgid "removing %s"
 msgstr "Fjerner %s"
 
-#: ../src/gfpm-progress.c:384
+#: ../src/gfpm-progress.c:410
 msgid "Package removal finished"
 msgstr "Fjernelse af pakke er færdig"
 
-#: ../src/gfpm-progress.c:385
+#: ../src/gfpm-progress.c:411
 #, c-format
 msgid "Removed %s"
 msgstr "Fjernet %s"
 
-#: ../src/gfpm-progress.c:390
+#: ../src/gfpm-progress.c:416
 msgid "Checking package integrity"
 msgstr "Tjekker pakkeintegritet"
 
-#: ../src/gfpm-progress.c:407
+#: ../src/gfpm-progress.c:433
 #, c-format
 msgid "Retrieving packages from %s"
 msgstr "Henter pakker fra %s"
 
-#: ../src/gfpm.c:61
+#: ../src/gfpm.c:104
 msgid "Interface initialization Failed"
 msgstr "Interface initialisering fejlede"
 
-#: ../src/gfpm.c:61
+#: ../src/gfpm.c:104
 msgid "Failed to initialize interface"
 msgstr "Fejlede ved initialisering af grænseflade"
 
-#: ../src/gfpm.c:69
+#: ../src/gfpm.c:112
 msgid "Error initializing libpacman"
 msgstr "Fejl initialisering libpacman"
 
-#: ../src/gfpm.c:69
+#: ../src/gfpm.c:112
 msgid "Failed to initialize libpacman"
 msgstr "Fejlede ved initialisering af libpacman"
 
@@ -656,6 +690,8 @@ msgstr "Din pakkedatabase er nu optimeret."
 
 #: ../src/gfpm-messages.c:71 ../src/gfpm-messages.c:76
 #: ../src/gfpm-messages.c:318 ../src/gfpm-messages.c:428
+#: ../nautilus-extension/nautilus-gfpm.c:445
+#: ../thunar-plugin/thunar-gfpm.c:445
 msgid "Package"
 msgstr "Pakke"
 
@@ -886,6 +922,16 @@ msgstr "Vælg logfil"
 #: ../src/gfpm-prefs.c:966 ../src/gfpm-prefs.c:996
 msgid "Select directory"
 msgstr "Vælg mappe"
+
+#: ../nautilus-extension/nautilus-gfpm.c:491
+#: ../thunar-plugin/thunar-gfpm.c:493
+msgid "Install this package"
+msgstr "Installer denne pakke"
+
+#: ../nautilus-extension/nautilus-gfpm.c:492
+#: ../thunar-plugin/thunar-gfpm.c:494
+msgid "Install this package using GFpm"
+msgstr "Installer denne pakke med brug af GFpm"
 
 #: ../data/gfpm.glade.h:1
 msgid "<b><span size=\"larger\">Package Search</span></b>"
@@ -1311,6 +1357,15 @@ msgstr "gtk-remove"
 #: ../data/gfpm.glade.h:111
 msgid "optimize your package database to improve performance"
 msgstr "optimerer din pakkedatabase for at forbedre ydelse"
+
+#~ msgid "Missing dependencies"
+#~ msgstr "Manglende afhængigheder"
+
+#~ msgid ""
+#~ "Following dependencies were not met. Please install these packages first."
+#~ msgstr ""
+#~ "Følgende afhængigheder blev ikke fundet. Vær venlig at installere disse "
+#~ "pakker først."
 
 #~ msgid "E_xit"
 #~ msgstr "E_xit"
