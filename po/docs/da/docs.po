@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-06-11 01:49+0300\n"
-"PO-Revision-Date: 2009-06-11 20:31+0200\n"
+"POT-Creation-Date: 2009-06-25 01:51+0300\n"
+"PO-Revision-Date: 2009-06-25 15:29+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -3110,9 +3110,9 @@ msgstr ""
 "scripts og udev. Hvis du isætter en Usb-Pen i dit USB stik, vil udev skabe "
 "et device node for det i /dev. De fleste Usb-penne indeholder kun en "
 "partition og deres filsystem er vfat. I de fleste tilfælde, vil Usb-pennen "
-"opføre sig som en SCSI disk. Det betyder, at du kan finde pennen under "
-"/dev/sda og dens første partition under /dev/sda1. Tilføj følgende linie til "
-"/etc/fstab:"
+"opføre sig som en SCSI disk. Det betyder, at du kan finde pennen under /dev/"
+"sda og dens første partition under /dev/sda1. Tilføj følgende linie til /etc/"
+"fstab:"
 
 # type: Plain text
 #: hotplug.txt:29
@@ -3675,10 +3675,8 @@ msgid ""
 " These include our own applications, documentation, web site etc.\n"
 msgstr ""
 "Omfattende, flersproget dokumentation er altafgørende for os fordi vi\n"
-"ønsker Frugalware skal være tilgængelig for som mange mennesker så mulig. "
-"Hvis du har den\n"
-"påkrævede sproglige viden, kunne du hjælpe med at oversætte forskellige "
-"arbejder.\n"
+"ønsker Frugalware skal være tilgængelig for som mange mennesker så mulig. Hvis du har den\n"
+"påkrævede sproglige viden, kunne du hjælpe med at oversætte forskellige arbejder.\n"
 " Disse inkluderer vores egne programmer, dokumentation, hjemeside etc.\n"
 
 # type: Plain text
@@ -13219,7 +13217,6 @@ msgstr ""
 
 # type: Plain text
 #: makepkg.txt:24
-#, fuzzy
 msgid ""
 "If you browse the FST (Frugalware Source Tree), you can see, that in the "
 "source directory there are category and category-extra dirs. The dirs "
@@ -13232,14 +13229,14 @@ msgid ""
 "be in some extra dir."
 msgstr ""
 "Hvis du browser igennem FST (Frugalware Source Tree), kan du se, at der i "
-"kildefolderen er kategori og kategori-ekstra folder. Folderen uden -extra "
+"kildefolderen er kategori og kategori-ekstra foldere. Folderen uden -extra "
 "tag indeholder de grundlæggende pakker den givne kategori og afhængigheder "
 "af grundlæggende pakker. Så en pakke i disse foldere ikke kan afhænge af en "
 "pakke i ekstra foldere.  Det samme gælder for konsol/grafiske programmer: "
 "ihvis dit program/ bibliotek er grafisk, så brug xapps/xlib, hvis ikke så "
-"brug apps/lib.  For hver opgave er der en standard pakke. For eksempel er "
-"postfix vores standard MTA, så exim, sendmail, etc skal være i en eller "
-"anden ekstra folder."
+"brug xapps/lib, hvis ikke så brug apps/lib.  For hver opgave er der en "
+"standard pakke. For eksempel er postfix vores standard MTA, så exim, "
+"sendmail, etc skal være i en eller anden ekstra folder."
 
 # type: Plain text
 #: makepkg.txt:30
@@ -13476,7 +13473,6 @@ msgstr ""
 
 # type: Plain text
 #: makepkg.txt:130
-#, fuzzy
 msgid ""
 "First we enter the directory of mplayer then (like make and Makefile)  we "
 "run makepkg that will build the package according to the parameters "
@@ -13487,7 +13483,7 @@ msgid ""
 "group) to use sudo makepkg, start visudo as root, and add the following line:"
 msgstr ""
 "Først skifter vi til folderen hvor mplayer er, så (som make og Makefile)  "
-"kører vi makepkg dette vil bygge pakken ifølge parametrene beskrevet i "
+"kører vi makepkg vil dette bygge pakken ifølge parametrene beskrevet i "
 "FrugalBuild. Vi har brugt -R option til at bygge pakken i et chroot-ed "
 "miljø. Siden 0.5  er bygning i chroot standard metoden, du skal bruge -H "
 "hvis du vil bygge på værtssystemet.  Chroot kræver root privilegier. For at "
