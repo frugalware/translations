@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-22 02:29+0100\n"
-"PO-Revision-Date: 2009-03-22 10:55+0200\n"
+"POT-Creation-Date: 2009-07-02 02:25+0200\n"
+"PO-Revision-Date: 2009-07-02 11:41+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Pootle 1.2.0\n"
+"X-Generator: Pootle 1.2.1\n"
 "X-Poedit-Language: French\n"
 "X-Poedit-Country: FRANCE\n"
 
@@ -35,9 +35,9 @@ msgid "ftp://ftp5."
 msgstr "ftp://ftp5."
 
 #: ../src/plugins/configsource.c:102 ../src/plugins/dolangsh.c:58
-#: ../src/plugins/formatdisk.c:257 ../src/plugins/formatdisk.c:412
+#: ../src/plugins/formatdisk.c:267 ../src/plugins/formatdisk.c:467
 #: ../src/plugins/layout.c:146 ../src/plugins/loadsource.c:88
-#: ../src/plugins/select.c:334 ../src/util.c:305
+#: ../src/util.c:305
 msgid "Could not open output file for writing"
 msgstr "N'a pas pu ouvrir le fichier en mode écriture"
 
@@ -56,7 +56,7 @@ msgstr ""
 "Vous pouvez choisir ici un ou plusieurs miroirs proches pour augmenter la "
 "vitesse de téléchargement des paquets."
 
-#: ../src/plugins/configsource.c:166 ../src/plugins/formatdisk.c:583
+#: ../src/plugins/configsource.c:166 ../src/plugins/formatdisk.c:649
 #: ../src/plugins/partdisk.c:197
 msgid "Continue"
 msgstr "Suivant"
@@ -74,8 +74,8 @@ msgstr ""
 "afin que vous puissiez télécharger les paquets plus rapidement. Dans la "
 "plupart des cas Continuer est suffisant ici."
 
-#: ../src/plugins/configsource.c:196 ../src/plugins/select.c:410
-#: ../src/plugins/select.c:420 ../src/plugins/select.c:450
+#: ../src/plugins/configsource.c:196 ../src/plugins/select.c:422
+#: ../src/plugins/select.c:438 ../src/plugins/select.c:477
 msgid "Please wait"
 msgstr "Veuillez patienter"
 
@@ -105,25 +105,25 @@ msgstr ""
 "Veuillez sélectionner quelle(s) partition(s) de swap vous souhaitez que "
 "Frugalware utilise:"
 
-#: ../src/plugins/formatdisk.c:173 ../src/plugins/formatdisk.c:196
+#: ../src/plugins/formatdisk.c:176 ../src/plugins/formatdisk.c:204
 msgid "Quick format with no bad block checking"
 msgstr "Formatage rapide sans analyse des blocs défectueux"
 
-#: ../src/plugins/formatdisk.c:174 ../src/plugins/formatdisk.c:197
+#: ../src/plugins/formatdisk.c:177 ../src/plugins/formatdisk.c:205
 msgid "Slow format that checks for bad blocks"
 msgstr "Formatage lent avec contrôle des blocs défectueux"
 
-#: ../src/plugins/formatdisk.c:177 ../src/plugins/formatdisk.c:201
-#: ../src/plugins/formatdisk.c:233
+#: ../src/plugins/formatdisk.c:180 ../src/plugins/formatdisk.c:209
+#: ../src/plugins/formatdisk.c:243
 msgid "Formatting partitions"
 msgstr "Formatage des partitions"
 
-#: ../src/plugins/formatdisk.c:180 ../src/plugins/formatdisk.c:204
+#: ../src/plugins/formatdisk.c:183 ../src/plugins/formatdisk.c:212
 #, c-format
 msgid "Format %s"
 msgstr "Formater %s"
 
-#: ../src/plugins/formatdisk.c:181 ../src/plugins/formatdisk.c:205
+#: ../src/plugins/formatdisk.c:184 ../src/plugins/formatdisk.c:213
 #, c-format
 msgid ""
 "If %s has not been formatted, you should format it.\n"
@@ -134,65 +134,65 @@ msgstr ""
 "ATTENTION : Ceci va effacer toutes les données sur %s. êtes-vous sûr de "
 "vouloir formater cette partition ?"
 
-#: ../src/plugins/formatdisk.c:198
+#: ../src/plugins/formatdisk.c:206
 msgid "Do not format, just mount the partition"
 msgstr "Ne pas formater, simplement monter la partition"
 
-#: ../src/plugins/formatdisk.c:224
+#: ../src/plugins/formatdisk.c:234
 msgid "Standard Linux ext2fs filesystem"
 msgstr "Système de fichiers standard ext2fs"
 
-#: ../src/plugins/formatdisk.c:225
+#: ../src/plugins/formatdisk.c:235
 msgid "Journalising version of the ext2 filesystem"
 msgstr "Version journalisée du système de fichiers ext2"
 
-#: ../src/plugins/formatdisk.c:226
+#: ../src/plugins/formatdisk.c:236
 msgid "The evolution of the ext3 filesystem (EXPERIMENTAL!)"
 msgstr "L'évolution du système de fichiers ext3 (EXPERIMENTAL!)"
 
-#: ../src/plugins/formatdisk.c:228
+#: ../src/plugins/formatdisk.c:238
 msgid "Hans Reiser's journalising filesystem"
 msgstr "Système de fichiers journalisé de Hans Raiser"
 
-#: ../src/plugins/formatdisk.c:230
+#: ../src/plugins/formatdisk.c:240
 msgid "SGI's journalising filesystem"
 msgstr "Système de fichiers journalisé de SGI"
 
-#: ../src/plugins/formatdisk.c:237
+#: ../src/plugins/formatdisk.c:247
 #, c-format
 msgid "Selecting filesystem for %s"
 msgstr "Sélection du système de fichiers pour %s"
 
-#: ../src/plugins/formatdisk.c:238
+#: ../src/plugins/formatdisk.c:248
 #, c-format
 msgid "Please select the type of filesystem to use for %s."
 msgstr "Veuillez sélectionner le système de fichiers à utiliser pour %s."
 
-#: ../src/plugins/formatdisk.c:281 ../src/plugins/formatdisk.c:288
-msgid "Formatting swap partition"
-msgstr "Formatage de la partition de swap"
-
-#: ../src/plugins/formatdisk.c:282
+#: ../src/plugins/formatdisk.c:293
 #, c-format
 msgid "Formatting %s as a swap partition"
 msgstr "Formatage de %s en tant que partition de swap"
 
-#: ../src/plugins/formatdisk.c:289
+#: ../src/plugins/formatdisk.c:295 ../src/plugins/formatdisk.c:305
+msgid "Formatting swap partition"
+msgstr "Formatage de la partition de swap"
+
+#: ../src/plugins/formatdisk.c:303
 #, c-format
 msgid "Formatting %s as a swap partition and checking for bad blocks"
 msgstr ""
 "Formatage de %s en tant que partition de swap et vérification des blocs "
 "défectueux"
 
-#: ../src/plugins/formatdisk.c:313
+#: ../src/plugins/formatdisk.c:333
 msgid "Setting up the root partition"
 msgstr "Configure la partition racine en cours..."
 
-#: ../src/plugins/formatdisk.c:315
+#: ../src/plugins/formatdisk.c:335
 msgid "Select the Linux installation partition"
 msgstr "Sélection de la partition d'installation Linux"
 
-#: ../src/plugins/formatdisk.c:316
+#: ../src/plugins/formatdisk.c:336
 msgid ""
 "Please select a partition from the following list to use for your root (/) "
 "partition. The following ones are available:"
@@ -200,46 +200,46 @@ msgstr ""
 "Veuillez sélectionner, dans la liste suivante, une partition à utiliser en "
 "tant que partition racine (/). Les partitions disponibles sont :"
 
-#: ../src/plugins/formatdisk.c:329
+#: ../src/plugins/formatdisk.c:351
 msgid "Formatting"
 msgstr "Formatage en cour"
 
-#: ../src/plugins/formatdisk.c:330
+#: ../src/plugins/formatdisk.c:352
 #, c-format
 msgid "Creating %s filesystem on %s and checking for bad blocks"
 msgstr ""
 "Création du système de fichiers %s sur %s et vérification des blocs "
 "défectueux"
 
-#: ../src/plugins/formatdisk.c:331
+#: ../src/plugins/formatdisk.c:353
 #, c-format
 msgid "Creating %s filesystem on %s"
 msgstr "Création du système de fichiers %s sur %s"
 
-#: ../src/plugins/formatdisk.c:436
+#: ../src/plugins/formatdisk.c:498
 #, c-format
 msgid "Select mount point for %s"
 msgstr "Sélectionner le point de montage pour %s"
 
-#: ../src/plugins/formatdisk.c:460 ../src/plugins/formatdisk.c:603
+#: ../src/plugins/formatdisk.c:522 ../src/plugins/formatdisk.c:669
 msgid "(in use)"
 msgstr "(en cour d'utilisation)"
 
-#: ../src/plugins/formatdisk.c:468
+#: ../src/plugins/formatdisk.c:530
 #, c-format
 msgid "%s on %s/\t%s"
 msgstr "%s sur %s/\t%s"
 
 #. non-root partitions
-#: ../src/plugins/formatdisk.c:576
+#: ../src/plugins/formatdisk.c:642
 msgid "Selecting other partitions"
 msgstr "Sélectionner d'autres partitions"
 
-#: ../src/plugins/formatdisk.c:587
+#: ../src/plugins/formatdisk.c:653
 msgid "Select other Linux partitions for /etc/fstab"
 msgstr "Sélectionner d'autres partitions Linux pour /etc/fstab"
 
-#: ../src/plugins/formatdisk.c:588
+#: ../src/plugins/formatdisk.c:654
 msgid ""
 "You may use your other partitions to distribute your Linux system across "
 "more than one partition. Currently, you have only mounted your / partition. "
@@ -325,24 +325,24 @@ msgstr ""
 msgid "Loading the installation source"
 msgstr "Chargement de la source d'installation"
 
-#: ../src/plugins/loadsource.c:156
+#: ../src/plugins/loadsource.c:158
 msgid "Selecting source media"
 msgstr "Sélection du média source"
 
-#: ../src/plugins/loadsource.c:159
+#: ../src/plugins/loadsource.c:161
 msgid "Scanning"
 msgstr "Détection"
 
-#: ../src/plugins/loadsource.c:159
+#: ../src/plugins/loadsource.c:161
 msgid "Scanning for a CD/DVD drive containing a Frugalware install disc..."
 msgstr ""
 "Recherche d'un CD/DVD contenant un disque d'installation de Frugalware..."
 
-#: ../src/plugins/loadsource.c:175
+#: ../src/plugins/loadsource.c:177
 msgid "CD/DVD drive found"
 msgstr "Lecteur CD/DVD trouvé"
 
-#: ../src/plugins/loadsource.c:175
+#: ../src/plugins/loadsource.c:177
 #, c-format
 msgid "A Frugalware install disc was found in device /dev/%s."
 msgstr ""
@@ -440,24 +440,24 @@ msgstr ""
 "Nous espérons que vous aurez plaisir à utiliser %s. Veuillez retirer le "
 "média de votre lecteur et appuyer sur Entrée pour redémarrer."
 
-#: ../src/plugins/select.c:53 ../src/plugins/select.c:279
-#: ../src/plugins/select.c:407
+#: ../src/plugins/select.c:54 ../src/plugins/select.c:282
+#: ../src/plugins/select.c:419
 msgid "Selecting packages"
 msgstr "Sélection des paquets"
 
-#: ../src/plugins/select.c:261
+#: ../src/plugins/select.c:262
 msgid "Selecting categories"
 msgstr "Sélection des catégories"
 
-#: ../src/plugins/select.c:262
+#: ../src/plugins/select.c:263
 msgid "Please select which categories to install:"
 msgstr "Veuillez sélectionner les catégories à installer:"
 
-#: ../src/plugins/select.c:292
+#: ../src/plugins/select.c:296
 msgid "Use expert menus?"
 msgstr "Utiliser les menus experts?"
 
-#: ../src/plugins/select.c:293
+#: ../src/plugins/select.c:297
 msgid ""
 "If you like, you may select your packages from expert menus. Where the "
 "normal menu shows a choice like 'C compiler system', the expert menus show "
@@ -469,49 +469,48 @@ msgid ""
 "each package."
 msgstr ""
 "Si vous le souhaitez, vous pouvez sélectionner vos paquets depuis les menus "
-"experts. Là où les menus standard indiquent des choix tels que 'C compiler "
+"experts. Là où les menus standards indiquent des choix tels que 'C compiler "
 "system', les menus experts vous proposeront 'C libs', 'C compiler', 'C "
-"include files', etc - chaque paquets individuellement. Évidemment, vous "
-"devez savoir ce que vous faites avant de sélectionner le menu expert, car il "
-"est possible de ne pas sélectionner des paquets indispensables au "
-"fonctionnement du système. Choisissez 'non' pour utiliser les options "
-"standards, 'oui' pour le mode expert avec une sélection individuelle de "
-"chaque paquet."
+"include files', etc - chaque paquet individuellement. Évidemment, vous devez "
+"savoir ce que vous faites avant de sélectionner le menu expert, car il est "
+"possible de ne pas sélectionner des paquets indispensables au fonctionnement "
+"du système. Choisissez 'non' pour utiliser les options standards, 'oui' pour "
+"le mode expert avec une sélection individuelle de chaque paquet."
 
-#: ../src/plugins/select.c:348 ../src/plugins/select.c:356
-#: ../src/plugins/select.c:370 ../src/plugins/select.c:374
+#: ../src/plugins/select.c:360 ../src/plugins/select.c:368
+#: ../src/plugins/select.c:382 ../src/plugins/select.c:386
 msgid "Error"
 msgstr "Erreur"
 
-#: ../src/plugins/select.c:348
+#: ../src/plugins/select.c:360
 #, c-format
 msgid "Failed to parse pacman-g2 configuration file (%s)"
 msgstr "Échec d'analyse du fichier de configuration de pacman-g2 (%s)"
 
-#: ../src/plugins/select.c:356
+#: ../src/plugins/select.c:368
 #, c-format
 msgid "Could not register '%s' database (%s)"
 msgstr "N'a pas pu enregistrer la base de données '%s' (%s)"
 
-#: ../src/plugins/select.c:370
+#: ../src/plugins/select.c:382
 #, c-format
 msgid "Failed to synchronize %s"
 msgstr "Échec de synchronisation %s"
 
-#: ../src/plugins/select.c:374
+#: ../src/plugins/select.c:386
 #, c-format
 msgid "Failed to update %s (%s)"
 msgstr "Échec de mise à jour %s (%s)"
 
-#: ../src/plugins/select.c:410
+#: ../src/plugins/select.c:422
 msgid "Searching for categories..."
 msgstr "Recherche des catégories..."
 
-#: ../src/plugins/select.c:420
+#: ../src/plugins/select.c:438
 msgid "Searching for packages..."
 msgstr "Recherche de paquets..."
 
-#: ../src/plugins/select.c:450
+#: ../src/plugins/select.c:477
 msgid "Searching for missing dependencies..."
 msgstr "Recherche de dépendances manquantes..."
 
@@ -671,7 +670,7 @@ msgstr "Erreur d'installation"
 
 #: ../src/util.c:167
 msgid ""
-"Errors occured while installing selected packages. It is recommended to "
+"Errors occurred while installing selected packages. It is recommended to "
 "abort the installation, however you may want to ignore this problem. Do you "
 "want to leave the installer?"
 msgstr ""
