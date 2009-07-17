@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-07-12 02:01+0300\n"
-"PO-Revision-Date: 2009-07-12 18:31+0200\n"
+"POT-Creation-Date: 2009-07-17 01:49+0300\n"
+"PO-Revision-Date: 2009-07-17 20:43+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -1747,7 +1747,7 @@ msgid "Basic configuration"
 msgstr "Grundlæggende konfiguration"
 
 # type: Plain text
-#: postinst.txt:3 bugs.txt:3 packages.txt:2147 list-rules.txt:3
+#: postinst.txt:3 bugs.txt:3 packages.txt:2153 list-rules.txt:3
 #: irc-rules.txt:3 makepkg.txt:3 introduction.txt:1
 #, no-wrap
 msgid "Introduction"
@@ -2497,7 +2497,7 @@ msgstr ""
 "ligefrem:"
 
 # type: Plain text
-#: x.txt:31 packages.txt:3323
+#: x.txt:31 packages.txt:3329
 #, no-wrap
 msgid "# pacman-g2 -Sy nvidia\n"
 msgstr "# pacman-g2 -Sy nvidia\n"
@@ -3049,7 +3049,7 @@ msgid "The hotplug subsystem"
 msgstr "Hotplug subsystem"
 
 # type: Plain text
-#: hotplug.txt:3 packages.txt:2829
+#: hotplug.txt:3 packages.txt:2835
 #, no-wrap
 msgid "udev"
 msgstr "udev"
@@ -5011,10 +5011,10 @@ msgstr ""
 "}\n"
 
 # type: Plain text
-#: packages.txt:239 packages.txt:689 packages.txt:1088 packages.txt:1181
-#: packages.txt:1297 packages.txt:1571 packages.txt:1628 packages.txt:1798
-#: packages.txt:2451 packages.txt:2711 packages.txt:2794 packages.txt:3003
-#: packages.txt:3021 packages.txt:3090 packages.txt:3122
+#: packages.txt:239 packages.txt:689 packages.txt:1088 packages.txt:1187
+#: packages.txt:1303 packages.txt:1577 packages.txt:1634 packages.txt:1804
+#: packages.txt:2457 packages.txt:2717 packages.txt:2800 packages.txt:3009
+#: packages.txt:3027 packages.txt:3096 packages.txt:3128
 msgid "// vim: ft=asciidoc"
 msgstr "// vim: ft=asciidoc"
 
@@ -5383,7 +5383,7 @@ msgid "Follow these steps to when using `cryptsetup-luks`:"
 msgstr "Følg disse trin når man vil bruge `cryptsetup-luks`:"
 
 # type: Plain text
-#: packages.txt:399 packages.txt:1690
+#: packages.txt:399 packages.txt:1696
 #, no-wrap
 msgid "Creating"
 msgstr "Skabe"
@@ -5675,7 +5675,7 @@ msgid "cyrus-sasl"
 msgstr "cyrus-sasl"
 
 # type: Plain text
-#: packages.txt:525 packages.txt:1247
+#: packages.txt:525 packages.txt:1253
 #, no-wrap
 msgid "Configuring"
 msgstr "Konfigurering"
@@ -5766,7 +5766,7 @@ msgid "SASL_DIE=1\n"
 msgstr "SASL_DIE=1\n"
 
 # type: Plain text
-#: packages.txt:567 packages.txt:579 packages.txt:2936 makepkg.txt:141
+#: packages.txt:567 packages.txt:579 packages.txt:2942 makepkg.txt:141
 msgid "to"
 msgstr "til"
 
@@ -5777,7 +5777,7 @@ msgid "SASL_DIE=0\n"
 msgstr "SASL_DIE=0\n"
 
 # type: Plain text
-#: packages.txt:573 packages.txt:1702
+#: packages.txt:573 packages.txt:1708
 msgid "and"
 msgstr "og"
 
@@ -7088,64 +7088,81 @@ msgstr "# ecore_config -c /etc/entrance_config.cfg -k /entranced/xserver -s \"/u
 msgid "In this example you want to run entrance on vt7."
 msgstr "I dette eksempel vil du køre entrance på vt7."
 
-# type: Plain text
+# type: Title ==
 #: packages.txt:1110
+#, no-wrap
+msgid "fbterm"
+msgstr "fbterm"
+
+# type: Plain text
+#: packages.txt:1113
+msgid "To use fbterm, your user needs to be a member of the video group."
+msgstr "For at bruge fbterm, skal din bruger at være medlem af videogruppen."
+
+# type: Plain text
+#: packages.txt:1115
+msgid "To use a background image, install the fbv package and run fbterm-bi."
+msgstr ""
+"For at benytte et baggrundsbillede, installer fbv pakken og kør fbterm-bi."
+
+# type: Plain text
+#: packages.txt:1116
 #, no-wrap
 msgid "festival"
 msgstr "festival"
 
 # type: Plain text
-#: packages.txt:1113
+#: packages.txt:1119
 msgid "To test festival, try:"
 msgstr "For at teste festival, prøv:"
 
 # type: Plain text
-#: packages.txt:1116
+#: packages.txt:1122
 #, no-wrap
 msgid "$ echo \"Frugalware can speak\" | festival --tts\n"
 msgstr "$ echo \"Frugalware can speak\" | festival --tts\n"
 
 # type: Plain text
-#: packages.txt:1119
+#: packages.txt:1125
 #, no-wrap
 msgid "To test it with kttsd:\n"
 msgstr "For at teste det med kttsd:\n"
 
 # type: Plain text
-#: packages.txt:1122
+#: packages.txt:1128
 msgid "Start KTTSD (if not already running): `kttsd`"
 msgstr "Start KTTSD (hvis det ikke allerede kører): `kttsd`"
 
 # type: Plain text
-#: packages.txt:1123
+#: packages.txt:1129
 msgid "Send \"Frugalware can speak\" to KTTSD for speaking in English:"
 msgstr "Send \"Frugalware can speak\" til KTTSD for at tale på engelsk:"
 
 # type: Plain text
-#: packages.txt:1126
+#: packages.txt:1132
 #, no-wrap
 msgid "$ dcop kttsd KSpeech setText \"Frugalware can speak\" \"en\"\n"
 msgstr "$ dcop kttsd KSpeech setText \"Frugalware can speak\" \"en\"\n"
 
 # type: Plain text
-#: packages.txt:1128
+#: packages.txt:1134
 msgid "Speak the text:"
 msgstr "Tal teksten:"
 
 # type: Plain text
-#: packages.txt:1131
+#: packages.txt:1137
 #, no-wrap
 msgid "$ dcop kttsd KSpeech startText 0\n"
 msgstr "$ dcop kttsd KSpeech startText 0\n"
 
 # type: Plain text
-#: packages.txt:1133
+#: packages.txt:1139
 #, no-wrap
 msgid "fglrx"
 msgstr "fglrx"
 
 # type: Plain text
-#: packages.txt:1137
+#: packages.txt:1143
 msgid ""
 "If hardware acceleration does not work make sure you have something similar "
 "in '/etc/fstab':"
@@ -7154,13 +7171,13 @@ msgstr ""
 "lignende i '/etc/fstab':"
 
 # type: Plain text
-#: packages.txt:1140
+#: packages.txt:1146
 #, no-wrap
 msgid "tmpfs /dev/shm  tmpfs   defaults     0  0\n"
 msgstr "tmpfs /dev/shm  tmpfs   defaults     0  0\n"
 
 # type: Plain text
-#: packages.txt:1144
+#: packages.txt:1150
 msgid ""
 "If xv output doesn't work in mplayer add the following line to '/etx/X11/"
 "xorg.conf''s Device section:"
@@ -7169,13 +7186,13 @@ msgstr ""
 "xorg.conf''s Device section:"
 
 # type: Plain text
-#: packages.txt:1147
+#: packages.txt:1153
 #, no-wrap
 msgid "Option \"VideoOverlay\" \"on\"\n"
 msgstr "Option \"VideoOverlay\" \"on\"\n"
 
 # type: Plain text
-#: packages.txt:1152
+#: packages.txt:1158
 msgid ""
 "On the following page you can find some useful solutions for different fglrx "
 "problems: http://www.thinkwiki.org/wiki/Problems_with_fglrx[Thinkwiki fglrx]."
@@ -7185,13 +7202,13 @@ msgstr ""
 "fglrx]."
 
 # type: Plain text
-#: packages.txt:1153
+#: packages.txt:1159
 #, no-wrap
 msgid "firestarter"
 msgstr "firestarter"
 
 # type: Plain text
-#: packages.txt:1158
+#: packages.txt:1164
 msgid ""
 "This version comes with a system init script now. You have to run the "
 "'firestarter' executable from the command line (in an X driven console)  "
@@ -7202,12 +7219,12 @@ msgstr ""
 "skal initial start-up scripts genereres."
 
 # type: Plain text
-#: packages.txt:1160
+#: packages.txt:1166
 msgid "To add it to startup, run this:"
 msgstr "For at tilfæje det til opstart, kør dette:"
 
 # type: Plain text
-#: packages.txt:1164
+#: packages.txt:1170
 #, no-wrap
 msgid ""
 "# chkconfig --del rc.firewall\n"
@@ -7217,12 +7234,12 @@ msgstr ""
 "# chkconfig --add rc.firestarter\n"
 
 # type: Plain text
-#: packages.txt:1167
+#: packages.txt:1173
 msgid "To remove it from startup:"
 msgstr "For at fjerne det fra opstart:"
 
 # type: Plain text
-#: packages.txt:1171
+#: packages.txt:1177
 #, no-wrap
 msgid ""
 "# chkconfig --del rc.firestarter\n"
@@ -7232,13 +7249,13 @@ msgstr ""
 "# chkconfig --add rc.firewall\n"
 
 # type: Plain text
-#: packages.txt:1173
+#: packages.txt:1179
 #, no-wrap
 msgid "flowplayer"
 msgstr "flowplayer"
 
 # type: Plain text
-#: packages.txt:1179
+#: packages.txt:1185
 msgid ""
 "Once you have the `.flv` file you want to share, you need to symlink "
 "`flowplayer.controls.swf`, `flowplayer.min.js` and `flowplayer.swf` from `/"
@@ -7250,13 +7267,13 @@ msgstr ""
 "flowplayer` og koden sniplet fra `/usr/share/flowplayer/example/index.html`."
 
 # type: Plain text
-#: packages.txt:1182
+#: packages.txt:1188
 #, no-wrap
 msgid "foo2zjs"
 msgstr "foo2zjs"
 
 # type: Plain text
-#: packages.txt:1188
+#: packages.txt:1194
 msgid ""
 "This driver is under constant change, therefore no \"stable\" branch "
 "exists.  Also, communications with the author led nowhere, that might "
@@ -7271,13 +7288,13 @@ msgstr ""
 "devel/2005-November/001432.html[Mail]"
 
 # type: Plain text
-#: packages.txt:1189
+#: packages.txt:1195
 #, no-wrap
 msgid "fudforum"
 msgstr "fudforum"
 
 # type: Plain text
-#: packages.txt:1193
+#: packages.txt:1199
 msgid ""
 "After installing this package, please run '/usr/bin/fudforumsetup' as root "
 "to setup FUDforum"
@@ -7286,13 +7303,13 @@ msgstr ""
 "root for at opsætte FUDforum"
 
 # type: Plain text
-#: packages.txt:1194
+#: packages.txt:1200
 #, no-wrap
 msgid "fuse"
 msgstr "fuse"
 
 # type: Plain text
-#: packages.txt:1203
+#: packages.txt:1209
 msgid ""
 "Fuse is a virtual filesystem \"helper\" which makes possible to mount "
 "unusual things as a filesystem. It is achieved by using a simple program, "
@@ -7312,13 +7329,13 @@ msgstr ""
 "for:"
 
 # type: Plain text
-#: packages.txt:1206
+#: packages.txt:1212
 #, no-wrap
 msgid "# pacman-g2 -S fuse\n"
 msgstr "# pacman-g2 -S fuse\n"
 
 # type: Plain text
-#: packages.txt:1210
+#: packages.txt:1216
 msgid ""
 "Then you have to add the fuse service to the startup list and start it "
 "manually for now:"
@@ -7327,7 +7344,7 @@ msgstr ""
 "manuelt nu:"
 
 # type: Plain text
-#: packages.txt:1214
+#: packages.txt:1220
 #, no-wrap
 msgid ""
 "# service fuse add\n"
@@ -7337,7 +7354,7 @@ msgstr ""
 "# service fuse start\n"
 
 # type: Plain text
-#: packages.txt:1219
+#: packages.txt:1225
 msgid ""
 "Now, having the base of fuse, we need to install the programs for each "
 "specific filesystem type. To get a hint on what is available, you can issue "
@@ -7348,13 +7365,13 @@ msgstr ""
 "der er tilgængeligt, kan du udstede følgende kommando:"
 
 # type: Plain text
-#: packages.txt:1222
+#: packages.txt:1228
 #, no-wrap
 msgid "$ pacman-g2 -Ss fuse\n"
 msgstr "$ pacman-g2 -Ss fuse\n"
 
 # type: Plain text
-#: packages.txt:1228
+#: packages.txt:1234
 msgid ""
 "The two most used (ftp, ssh) plugins can be installed by running the "
 "following command. Beware, the ftp fs is a perl module, and it seems a bit "
@@ -7367,13 +7384,13 @@ msgstr ""
 "i fremtiden."
 
 # type: Plain text
-#: packages.txt:1231
+#: packages.txt:1237
 #, no-wrap
 msgid "# pacman-g2 -S fuseftp sshfs-fuse\n"
 msgstr "# pacman-g2 -S fuseftp sshfs-fuse\n"
 
 # type: Plain text
-#: packages.txt:1234
+#: packages.txt:1240
 msgid ""
 "Then, you can mount a remote dir with sftp access as a regular user doing:"
 msgstr ""
@@ -7381,35 +7398,35 @@ msgstr ""
 "med:"
 
 # type: Plain text
-#: packages.txt:1237
+#: packages.txt:1243
 #, no-wrap
 msgid "$ /sbin/mount.fuse  sshfs#YOURUSERNAME@SERVER:/REMOTEDIR /LOCALDIR -o rw,OTHEROPTIONS\n"
 msgstr "$ /sbin/mount.fuse  sshfs#DITBRUGERNAVN@SERVER:/REMOTEDIR /LOCALDIR -o rw,ANDREINDSTILLINGER\n"
 
 # type: Plain text
-#: packages.txt:1240
+#: packages.txt:1246
 msgid "You can also unmount it as a regular user doing:"
 msgstr "Du kan også unmounte det som regulær bruger med :"
 
 # type: Plain text
-#: packages.txt:1243
+#: packages.txt:1249
 #, no-wrap
 msgid "$ fusermount -u /LOCALDIR \n"
 msgstr "$ fusermount -u /LOCALDIR \n"
 
 # type: Plain text
-#: packages.txt:1245
+#: packages.txt:1251
 #, no-wrap
 msgid "gammu"
 msgstr "gammu"
 
 # type: Plain text
-#: packages.txt:1250
+#: packages.txt:1256
 msgid "You need to create your ~/.gammurc:"
 msgstr "Du er nødt til at skabe din ~/.gammurc:"
 
 # type: Plain text
-#: packages.txt:1255
+#: packages.txt:1261
 #, no-wrap
 msgid ""
 "[gammu]\n"
@@ -7421,7 +7438,7 @@ msgstr ""
 "connection = fbus\n"
 
 # type: Plain text
-#: packages.txt:1260
+#: packages.txt:1266
 msgid ""
 "Replace `/dev/ttyUSB0` with your serial port device and `fbus` with the "
 "appropriate protocol name if you are not a Nokia user. Check if you have "
@@ -7432,18 +7449,18 @@ msgstr ""
 "til device, du er nødt til at være et medlem af `uucp` gruppen."
 
 # type: Plain text
-#: packages.txt:1262
+#: packages.txt:1268
 msgid "Once you think you're done, check your setup:"
 msgstr "Når du tror du er færdig, tjek så dit setup:"
 
 # type: Plain text
-#: packages.txt:1265
+#: packages.txt:1271
 #, no-wrap
 msgid "$ gnokii --identify\n"
 msgstr "$ gnokii --identify\n"
 
 # type: Plain text
-#: packages.txt:1269
+#: packages.txt:1275
 msgid ""
 "It should print your `IMEI` number so that you'll be able to check if "
 "`gammu` really found your phone or there is a problem."
@@ -7452,74 +7469,74 @@ msgstr ""
 "virkeligt fandt din telefon eller der er et problem."
 
 # type: Plain text
-#: packages.txt:1270
+#: packages.txt:1276
 #, no-wrap
 msgid "Creating a backup"
 msgstr "Skabe en backup"
 
 # type: Plain text
-#: packages.txt:1273
+#: packages.txt:1279
 msgid "You probably use `gammu` to make a backup of your phone."
 msgstr ""
 "Du bruger sandsynligvis `gammu` for at lave en sikkerhedskopi af din telefon."
 
 # type: Plain text
-#: packages.txt:1275
+#: packages.txt:1281
 msgid "This involves two steps:"
 msgstr "Dette involverer to trin:"
 
 # type: Plain text
-#: packages.txt:1277
+#: packages.txt:1283
 msgid "Backing up your SMSes"
 msgstr "Backup af dine SMSes"
 
 # type: Plain text
-#: packages.txt:1280
+#: packages.txt:1286
 #, no-wrap
 msgid "$ gammu --backupsms backupsms.txt\n"
 msgstr "$ gammu --backupsms backupsms.txt\n"
 
 # type: Plain text
-#: packages.txt:1283
+#: packages.txt:1289
 msgid "The rest of your phone."
 msgstr "Resten af din telefon."
 
 # type: Plain text
-#: packages.txt:1286
+#: packages.txt:1292
 #, no-wrap
 msgid "$ gammu --backup backup.txt\n"
 msgstr "$ gammu --backup backup.txt\n"
 
 # type: Plain text
-#: packages.txt:1289
+#: packages.txt:1295
 msgid "You may find an alternative format more human-readable for SMSes:"
 msgstr "Du kan finde et alternativt format mere menneske-læseligt for SMSes:"
 
 # type: Plain text
-#: packages.txt:1292
+#: packages.txt:1298
 #, no-wrap
 msgid "$ gammu --geteachsms > eachsms.txt\n"
 msgstr "$ gammu --geteachsms > eachsms.txt\n"
 
 # type: Plain text
-#: packages.txt:1295
+#: packages.txt:1301
 msgid "See the manual page for more tricks!"
 msgstr "Se manuel siden for flere kneb!"
 
 # type: Plain text
-#: packages.txt:1298
+#: packages.txt:1304
 #, no-wrap
 msgid "gcc"
 msgstr "gcc"
 
 # type: Plain text
-#: packages.txt:1300
+#: packages.txt:1306
 #, no-wrap
 msgid "libstdc++"
 msgstr "libstdc++"
 
 # type: Plain text
-#: packages.txt:1303
+#: packages.txt:1309
 msgid ""
 "'I have heard I should never remove the gcc package. Is this still true?'"
 msgstr ""
@@ -7527,7 +7544,7 @@ msgstr ""
 "rigtigt?'"
 
 # type: Plain text
-#: packages.txt:1306
+#: packages.txt:1312
 msgid ""
 "``No, since we split the gcc package, the standard C++ library is a separate "
 "package, you have to install gcc only in case you really need a C compiler.''"
@@ -7537,13 +7554,13 @@ msgstr ""
 "har brug for en C compiler.''"
 
 # type: Plain text
-#: packages.txt:1307
+#: packages.txt:1313
 #, no-wrap
 msgid "gcjwebplugin"
 msgstr "gcjwebplugin"
 
 # type: Plain text
-#: packages.txt:1312
+#: packages.txt:1318
 msgid ""
 "gcjwebplugin is a Firefox plugin for running Java applets.  It is now "
 "included in the libgcj sub-package, though it is not enabled by default."
@@ -7553,7 +7570,7 @@ msgstr ""
 "standard."
 
 # type: Plain text
-#: packages.txt:1316
+#: packages.txt:1322
 msgid ""
 "GNU Classpath and libgcj's security implementation is under active "
 "development, but it is not ready to be declared secure.  Specifically, it "
@@ -7564,7 +7581,7 @@ msgstr ""
 "kan det ikke køre ikke-betroet applets sikkert."
 
 # type: Plain text
-#: packages.txt:1322
+#: packages.txt:1328
 msgid ""
 "When gcjwebplugin is enabled, it prompts you with a dialog before loading an "
 "applet.  The dialog tells you that a certain URL would like to load an "
@@ -7577,7 +7594,7 @@ msgstr ""
 "oplysende og ikke stiller meget beskyttelse til rådighed:"
 
 # type: Plain text
-#: packages.txt:1325
+#: packages.txt:1331
 msgid ""
 "http and DNS can be spoofed meaning that the URL named in the warning dialog "
 "cannot be trusted"
@@ -7586,7 +7603,7 @@ msgstr ""
 "kan man ikke stole på"
 
 # type: Plain text
-#: packages.txt:1330
+#: packages.txt:1336
 msgid ""
 "someone could create a browser denial-of-service attack by creating a page "
 "with hundreds of applet tags, causing gcjwebplugin to create warning dialog "
@@ -7599,7 +7616,7 @@ msgstr ""
 "eliminere den sidste dialog"
 
 # type: Plain text
-#: packages.txt:1335
+#: packages.txt:1341
 msgid ""
 "the whitelist is provided as a convenience, but it is unsafe because a "
 "domain may change hands from a trusted owner to an untrusted owner.  If that "
@@ -7612,7 +7629,7 @@ msgstr ""
 "dukke op når man loader den nye ondsindede applet."
 
 # type: Plain text
-#: packages.txt:1341
+#: packages.txt:1347
 msgid ""
 "CURRENTLY GCJWEBPLUGIN RUNS WITH NO SECURITY MANAGER.  THIS MEANS THAT "
 "APPLETS CAN DO ANYTHING A JAVA APPLICATION THAT YOU DOWNLOAD AND RUN COULD "
@@ -7627,7 +7644,7 @@ msgstr ""
 "ØDELAGT ELLER STJÅLET."
 
 # type: Plain text
-#: packages.txt:1346
+#: packages.txt:1352
 msgid ""
 "The same warning applies to gappletviewer, which also runs with no security "
 "manager (in fact, gcjwebplugin spawns gappletviewer to do the applet "
@@ -7640,7 +7657,7 @@ msgstr ""
 "en advarsel ved opstart og spørger dig om du vil fortsætte."
 
 # type: Plain text
-#: packages.txt:1352
+#: packages.txt:1358
 msgid ""
 "Even considering the risks involved, you may still want to try "
 "gcjwebplugin.  GNU Classpath's AWT and Swing implementations are now "
@@ -7655,13 +7672,13 @@ msgstr ""
 "skabe et symbolsk link i ~/.mozilla/plugins så som:"
 
 # type: Plain text
-#: packages.txt:1355
+#: packages.txt:1361
 #, no-wrap
 msgid "ln -s /usr/lib/gcj-*/libgcjwebplugin.so ~/.mozilla/plugins/\n"
 msgstr "ln -s /usr/lib/gcj-*/libgcjwebplugin.so ~/.mozilla/plugins/\n"
 
 # type: Plain text
-#: packages.txt:1359
+#: packages.txt:1365
 msgid ""
 "Type about:plugins in Firefox's URL bar to confirm that the plugin has been "
 "loaded.  To see gcjwebplugin debugging output, run:"
@@ -7670,48 +7687,48 @@ msgstr ""
 "indlæst.  For at se gcjwebplugin debugging output, kør:"
 
 # type: Plain text
-#: packages.txt:1362
+#: packages.txt:1368
 #, no-wrap
 msgid "$ firefox -g\n"
 msgstr "$ firefox -g\n"
 
 # type: Plain text
-#: packages.txt:1365
+#: packages.txt:1371
 msgid "then at the GDB prompt, type"
 msgstr "derefter ved GDB-prompten, tast"
 
 # type: Plain text
-#: packages.txt:1368
+#: packages.txt:1374
 #, no-wrap
 msgid "(gdb) run\n"
 msgstr "(gdb) run\n"
 
 # type: Plain text
-#: packages.txt:1370
+#: packages.txt:1376
 #, no-wrap
 msgid "git"
 msgstr "git"
 
 # type: Plain text
-#: packages.txt:1372
+#: packages.txt:1378
 #, no-wrap
 msgid "gitweb"
 msgstr "gitweb"
 
 # type: Plain text
-#: packages.txt:1375
+#: packages.txt:1381
 msgid "If you want to set up a web interface for your git repositories, then:"
 msgstr ""
 "Hvis du ønsker at opsætte et internetinterface for dine git-arkiver, gør "
 "således:"
 
 # type: Plain text
-#: packages.txt:1377
+#: packages.txt:1383
 msgid "install the `gitweb` package"
 msgstr "Installer `gitweb` pakken"
 
 # type: Plain text
-#: packages.txt:1379
+#: packages.txt:1385
 msgid ""
 "edit `/etc/gitweb.conf` so that `$projectroot` will point to the repository "
 "directory"
@@ -7720,19 +7737,19 @@ msgstr ""
 "directory"
 
 # type: Plain text
-#: packages.txt:1380
+#: packages.txt:1386
 msgid "restart `apache` so that the `gitweb` configuration will be included."
 msgstr ""
 "genstart `apache` således at `gitweb` konfiguration vil blive inkluderet."
 
 # type: Plain text
-#: packages.txt:1381
+#: packages.txt:1387
 #, no-wrap
 msgid "gnome-applets"
 msgstr "gnome-applets"
 
 # type: Plain text
-#: packages.txt:1386
+#: packages.txt:1392
 msgid ""
 "The Mini Commander applet has been replaced by Deskbar. If you want the "
 "functionality provided by the Mini Commander applet, please install the "
@@ -7743,32 +7760,32 @@ msgstr ""
 "deskbar-applet pakken med pacman"
 
 # type: Plain text
-#: packages.txt:1387
+#: packages.txt:1393
 #, no-wrap
 msgid "help2man"
 msgstr "help2man"
 
 # type: Plain text
-#: packages.txt:1390
+#: packages.txt:1396
 msgid "The most common usage of this applications is something like this:"
 msgstr ""
 "Det mest almene form for brug af denne applikation er noget ligende som "
 "dette:"
 
 # type: Plain text
-#: packages.txt:1393
+#: packages.txt:1399
 #, no-wrap
 msgid "$ help2man -n \"<oneliner description>\" -S Frugalware -N ./<binary> |sed 's/\\\\(co/(c)/' ><binary>.1\n"
 msgstr "$ help2man -n \"<oneliner description>\" -S Frugalware -N ./<binary> |sed 's/\\\\(co/(c)/' ><binary>.1\n"
 
 # type: Plain text
-#: packages.txt:1395
+#: packages.txt:1401
 #, no-wrap
 msgid "horde-webmail"
 msgstr "horde-webmail"
 
 # type: Plain text
-#: packages.txt:1401
+#: packages.txt:1407
 msgid ""
 "This app does not have any webserver, SQL server nor IMAP server in its "
 "depends, which is intentional. Anyway, if you plan to use it, you should set "
@@ -7781,7 +7798,7 @@ msgstr ""
 "det er den mest nemme-til-at-bruge som præference-indeholder."
 
 # type: Plain text
-#: packages.txt:1405
+#: packages.txt:1411
 msgid ""
 "Additionally this app is not configured in any way: there are far too many "
 "customizable settings, so the packager cannot know how to set them for your "
@@ -7793,18 +7810,18 @@ msgstr ""
 "findes i INSTALL filen."
 
 # type: Plain text
-#: packages.txt:1406
+#: packages.txt:1412
 #, no-wrap
 msgid "httpircproxy"
 msgstr "httpircproxy"
 
 # type: Plain text
-#: packages.txt:1409
+#: packages.txt:1415
 msgid "Don't forget to open port 8080 on your firewall!"
 msgstr "Glem ikke at åbne port 8080 på din firewall!"
 
 # type: Plain text
-#: packages.txt:1411 packages.txt:1856
+#: packages.txt:1417 packages.txt:1862
 msgid ""
 "To do this, add the following two lines to your '/etc/sysconfig/firewall':"
 msgstr ""
@@ -7812,7 +7829,7 @@ msgstr ""
 "firewall':"
 
 # type: Plain text
-#: packages.txt:1415
+#: packages.txt:1421
 #, no-wrap
 msgid ""
 "# httpircproxy\n"
@@ -7822,23 +7839,23 @@ msgstr ""
 "-A INPUT -p tcp -m tcp --dport 8080 -j ACCEPT\n"
 
 # type: Plain text
-#: packages.txt:1418 packages.txt:1863
+#: packages.txt:1424 packages.txt:1869
 msgid "for example after MySQL's entry."
 msgstr "for eksempel efter MySQLs postering."
 
 # type: Plain text
-#: packages.txt:1419
+#: packages.txt:1425
 #, no-wrap
 msgid "hylafax"
 msgstr "hylafax"
 
 # type: Plain text
-#: packages.txt:1422
+#: packages.txt:1428
 msgid "Welcome to the README! Thanks for taking the time to find it ;-)"
 msgstr "Velkommen til README! Tak fordi du bruger tiden på at finde det ;-)"
 
 # type: Plain text
-#: packages.txt:1425
+#: packages.txt:1431
 msgid ""
 "For an introduction to the wonderful world of HylaFAX(tm), please see http://"
 "www.hylafax.org/. Beginners should head directly to the docs:"
@@ -7847,13 +7864,13 @@ msgstr ""
 "venligst http://www.hylafax.org/. Begyndere bør gå direkte til docs:"
 
 # type: Plain text
-#: packages.txt:1427
+#: packages.txt:1433
 #, no-wrap
 msgid "\thttp://www.hylafax.org/content/Documentation\n"
 msgstr "\thttp://www.hylafax.org/content/Documentation\n"
 
 # type: Plain text
-#: packages.txt:1430
+#: packages.txt:1436
 msgid ""
 "If you have a question which you think relates only to the FPM version of "
 "HylaFAX post a bug to the Frugalware BTS:"
@@ -7862,13 +7879,13 @@ msgstr ""
 "HylaFAX bør du skrive en bug til Frugalware BTS:"
 
 # type: Plain text
-#: packages.txt:1432
+#: packages.txt:1438
 #, no-wrap
 msgid "        http://bugs.frugalware.org/\n"
 msgstr "        http://bugs.frugalware.org/\n"
 
 # type: Plain text
-#: packages.txt:1435
+#: packages.txt:1441
 msgid ""
 "You should also be aware of the following system modification: 'FaxMaster' "
 "is added to `/etc/postfix/aliases` after installation automatically."
@@ -7877,7 +7894,7 @@ msgstr ""
 "tilføjet `/etc/postfix/aliases` efter installationen automatisk."
 
 # type: Plain text
-#: packages.txt:1439
+#: packages.txt:1445
 msgid ""
 "The default configuration files can be found under `/var/spool/hylafax/"
 "config/defaults/`.  You can copy these files to the `/var/spool/hylafax/etc/"
@@ -7888,18 +7905,18 @@ msgstr ""
 "folderen og modificere dem der."
 
 # type: Plain text
-#: packages.txt:1441
+#: packages.txt:1447
 msgid "Enjoy!"
 msgstr "Nyd det!"
 
 # type: Plain text
-#: packages.txt:1442
+#: packages.txt:1448
 #, no-wrap
 msgid "icewm"
 msgstr "icewm"
 
 # type: Plain text
-#: packages.txt:1452
+#: packages.txt:1458
 msgid ""
 "I have included a custom shell script called icewm-menus, for use with the "
 "icewm menu file. An example menus file is also include at /usr/share/icewm/"
@@ -7920,13 +7937,13 @@ msgstr ""
 "scriptet. Hav sjov med  konfigurationen af icewm."
 
 # type: Plain text
-#: packages.txt:1453
+#: packages.txt:1459
 #, no-wrap
 msgid "joomla"
 msgstr "joomla"
 
 # type: Plain text
-#: packages.txt:1457
+#: packages.txt:1463
 msgid ""
 "After installing this package, please run '/usr/bin/joomlasetup' as root to "
 "setup Joomla"
@@ -7935,26 +7952,26 @@ msgstr ""
 "at opsætte Joomla"
 
 # type: Plain text
-#: packages.txt:1458
+#: packages.txt:1464
 #, no-wrap
 msgid "k3b"
 msgstr "k3b"
 
 # type: Plain text
-#: packages.txt:1461
+#: packages.txt:1467
 msgid "If you want to rip a video DVD, install the transcode package as well."
 msgstr ""
 "Hvis du ønsker at rippe en video DVD, skal du også installere transcode "
 "pakken."
 
 # type: Plain text
-#: packages.txt:1462
+#: packages.txt:1468
 #, no-wrap
 msgid "kbstick"
 msgstr "kbstick"
 
 # type: Plain text
-#: packages.txt:1473
+#: packages.txt:1479
 msgid ""
 "If you do not know the keycodes for the keys you wish to remap the joystick "
 "events to, then please install the xev program. It will help you to identify "
@@ -7979,13 +7996,13 @@ msgstr ""
 "for yderligere hjælp, så send en email til vedligeholderen af denne pakke."
 
 # type: Plain text
-#: packages.txt:1474
+#: packages.txt:1480
 #, no-wrap
 msgid "kexec-tools"
 msgstr "kexec-tools"
 
 # type: Plain text
-#: packages.txt:1477
+#: packages.txt:1483
 msgid ""
 "kexec works just like 'reboot', so please save your data before using it!"
 msgstr ""
@@ -7993,35 +8010,35 @@ msgstr ""
 "bruger det!"
 
 # type: Plain text
-#: packages.txt:1479
+#: packages.txt:1485
 msgid "Loading the new kernel:"
 msgstr "Loading af den nye kerne:"
 
 # type: Plain text
-#: packages.txt:1482
+#: packages.txt:1488
 #, no-wrap
 msgid "# kexec -l /boot/vmlinuz-2.6.18-fw1 --append=\"ro root=/dev/hda3 quiet vga=792 resume=/dev/hda2\"\n"
 msgstr "# kexec -l /boot/vmlinuz-2.6.18-fw1 --append=\"ro root=/dev/hda3 quiet vga=792 resume=/dev/hda2\"\n"
 
 # type: Plain text
-#: packages.txt:1485
+#: packages.txt:1491
 msgid "Booting it:"
 msgstr "Boote den:"
 
 # type: Plain text
-#: packages.txt:1488
+#: packages.txt:1494
 #, no-wrap
 msgid "# kexec -e\n"
 msgstr "# kexec -e\n"
 
 # type: Plain text
-#: packages.txt:1490
+#: packages.txt:1496
 #, no-wrap
 msgid "keytouch"
 msgstr "keytouch"
 
 # type: Plain text
-#: packages.txt:1494
+#: packages.txt:1500
 msgid ""
 "In order to use keytouch, you must start the keytouch daemon. This can be "
 "done by executing the following command (as root):"
@@ -8030,26 +8047,26 @@ msgstr ""
 "kan gøres ved at udføre følgende kommando (som root) :"
 
 # type: Plain text
-#: packages.txt:1497
+#: packages.txt:1503
 #, no-wrap
 msgid "# service keytouch start\n"
 msgstr "# service keytouch start\n"
 
 # type: Plain text
-#: packages.txt:1500
+#: packages.txt:1506
 msgid "To start it automatically everytime your system boots, just type"
 msgstr ""
 "For at starte det automatisk hver gang dit system booter, udfør følgende "
 "kommando"
 
 # type: Plain text
-#: packages.txt:1503
+#: packages.txt:1509
 #, no-wrap
 msgid "# service keytouch add\n"
 msgstr "# service keytouch add\n"
 
 # type: Plain text
-#: packages.txt:1511
+#: packages.txt:1517
 msgid ""
 "Now, before you can use keytouch, you need to start one more daemon (this "
 "time as user) called keytouchd. You might even want to add keytouchd to the "
@@ -8066,13 +8083,13 @@ msgstr ""
 "opstartsprogrammer."
 
 # type: Plain text
-#: packages.txt:1512
+#: packages.txt:1518
 #, no-wrap
 msgid "kiax"
 msgstr "kiax"
 
 # type: Plain text
-#: packages.txt:1516
+#: packages.txt:1522
 msgid ""
 "If you want to test this package, you can use for example the server of "
 "http://www.voipbuster.com/en/index.html[VoipBuster]."
@@ -8081,7 +8098,7 @@ msgstr ""
 "www.voipbuster.com/en/index.html[VoipBuster]."
 
 # type: Plain text
-#: packages.txt:1520
+#: packages.txt:1526
 msgid ""
 "First, you should register a user name and password with their native "
 "(Windows-only) client. After that give 'iax.voipbuster.com' as the server "
@@ -8092,24 +8109,24 @@ msgstr ""
 "registrerede brugernavn og kodeord."
 
 # type: Plain text
-#: packages.txt:1522
+#: packages.txt:1528
 msgid "Now you should able to dial (currently the first minute is for free)."
 msgstr ""
 "Nu skulle du være i stand til at ringe (p.t. så er det første minut gratis)."
 
 # type: Plain text
-#: packages.txt:1523
+#: packages.txt:1529
 #, no-wrap
 msgid "knb"
 msgstr "knb"
 
 # type: Plain text
-#: packages.txt:1526
+#: packages.txt:1532
 msgid "To use knb, you need a config file like this:"
 msgstr "For at kunne bruge knb, behøver du en config fil som dette:"
 
 # type: Plain text
-#: packages.txt:1533
+#: packages.txt:1539
 #, no-wrap
 msgid ""
 "nick idlenick\n"
@@ -8125,7 +8142,7 @@ msgstr ""
 "channel #channel\n"
 
 # type: Plain text
-#: packages.txt:1537
+#: packages.txt:1543
 msgid ""
 "where `idlenick` is used till `keepnick` is used by someone else. The bot "
 "will join to `#channel` on `irc.server.com`."
@@ -8134,7 +8151,7 @@ msgstr ""
 "bot vil forbinde `#channel` på `irc.server.com`."
 
 # type: Plain text
-#: packages.txt:1540
+#: packages.txt:1546
 msgid ""
 "You need to register that you're the owner for the first time. To do this, "
 "join `#channel` and"
@@ -8143,18 +8160,18 @@ msgstr ""
 "dette, forbind til `#channel` og"
 
 # type: Plain text
-#: packages.txt:1543
+#: packages.txt:1549
 #, no-wrap
 msgid "!new nick!ident@host\n"
 msgstr "!new nick!ident@host\n"
 
 # type: Plain text
-#: packages.txt:1546
+#: packages.txt:1552
 msgid "to give access someone to the bot."
 msgstr "for at give adgang for nogen til bot."
 
 # type: Plain text
-#: packages.txt:1548
+#: packages.txt:1554
 msgid ""
 "Once `keepnick` is no longer used and knb switched to that nick, you can use"
 msgstr ""
@@ -8162,13 +8179,13 @@ msgstr ""
 "bruge"
 
 # type: Plain text
-#: packages.txt:1551
+#: packages.txt:1557
 #, no-wrap
 msgid "!n -yes idlenick\n"
 msgstr "!n -yes idlenick\n"
 
 # type: Plain text
-#: packages.txt:1555
+#: packages.txt:1561
 msgid ""
 "to change knb's nick back to `idlenick`, so that you can change your nick "
 "back to `keepnick`."
@@ -8177,7 +8194,7 @@ msgstr ""
 "tilbage til `keepnick`."
 
 # type: Plain text
-#: packages.txt:1558
+#: packages.txt:1564
 msgid ""
 "See the `scripts` directory on how to re-start your knb from cron "
 "automatically."
@@ -8185,13 +8202,13 @@ msgstr ""
 "Se `scripts` directory om hvordan du genstarter din knb fra cron automatisk."
 
 # type: Plain text
-#: packages.txt:1559
+#: packages.txt:1565
 #, no-wrap
 msgid "kqemu"
 msgstr "kqemu"
 
 # type: Plain text
-#: packages.txt:1565
+#: packages.txt:1571
 msgid ""
 "If you want to use kqemu, you need to mount `tmpfs` on `/dev/shm`. This is "
 "not problematic, `qemu` prints a usable error message if you miss that. The "
@@ -8205,71 +8222,71 @@ msgstr ""
 "din `/etc/fstab`:"
 
 # type: Plain text
-#: packages.txt:1568
+#: packages.txt:1574
 #, no-wrap
 msgid "tmpfs            /dev/shm         tmpfs       defaults,size=144m         0   0\n"
 msgstr "tmpfs            /dev/shm         tmpfs       defaults,size=144m         0   0\n"
 
 # type: Plain text
-#: packages.txt:1572
+#: packages.txt:1578
 #, no-wrap
 msgid "kvpnc"
 msgstr "kvpnc"
 
 # type: Plain text
-#: packages.txt:1575
+#: packages.txt:1581
 msgid "Howto setup KVpnc for use without root password - sudo"
 msgstr "Howto opsætning af KVpnc for brug uden root password - sudo"
 
 # type: Plain text
-#: packages.txt:1577
+#: packages.txt:1583
 msgid "Install sudo"
 msgstr "Installer sudo"
 
 # type: Plain text
-#: packages.txt:1579
+#: packages.txt:1585
 msgid "Edit '/etc/sudoers': add an command alias"
 msgstr "Rediger '/etc/sudoers': tilføj en kommando alias"
 
 # type: Plain text
-#: packages.txt:1583
-#, no-wrap
-msgid ""
-"# Cmnd alias specification\n"
-"Cmnd_Alias KVPNC = /usr/bin/kvpnc\n"
-msgstr ""
-"# Cmnd alias specification\n"
-"Cmnd_Alias KVPNC = /usr/bin/kvpnc\n"
-
-# type: Plain text
-#: packages.txt:1586
-#, no-wrap
-msgid ""
-"# User privilege specification\n"
-"ALL ALL=NOPASSWD:KVPNC\n"
-msgstr ""
-"# User privilege specification\n"
-"ALL ALL=NOPASSWD:KVPNC\n"
-
-# type: Plain text
 #: packages.txt:1589
+#, no-wrap
+msgid ""
+"# Cmnd alias specification\n"
+"Cmnd_Alias KVPNC = /usr/bin/kvpnc\n"
+msgstr ""
+"# Cmnd alias specification\n"
+"Cmnd_Alias KVPNC = /usr/bin/kvpnc\n"
+
+# type: Plain text
+#: packages.txt:1592
+#, no-wrap
+msgid ""
+"# User privilege specification\n"
+"ALL ALL=NOPASSWD:KVPNC\n"
+msgstr ""
+"# User privilege specification\n"
+"ALL ALL=NOPASSWD:KVPNC\n"
+
+# type: Plain text
+#: packages.txt:1595
 msgid "Do it gently! (As always, when you edit '/etc/sudoers'.)"
 msgstr "Gør det blidt! (Som altid, når du redigerer '/etc/sudoers'.)"
 
 # type: Plain text
-#: packages.txt:1590
+#: packages.txt:1596
 #, no-wrap
 msgid "lastfmsubmitd"
 msgstr "lastfmsubmitd"
 
 # type: Plain text
-#: packages.txt:1592
+#: packages.txt:1598
 #, no-wrap
 msgid "Configuring Lastfmsubmitd"
 msgstr "Konfigurering af Lastfmsubmitd"
 
 # type: Plain text
-#: packages.txt:1597
+#: packages.txt:1603
 msgid ""
 "Change your LastFM username and password in `/etc/lastfmsubmitd.conf` and "
 "the MPD server settings in `/etc/lastmp.conf` before starting the LastFM "
@@ -8279,13 +8296,13 @@ msgstr ""
 "server indstillinger i `/etc/lastmp.conf` før start af  LastFM submit daemon."
 
 # type: Plain text
-#: packages.txt:1598
+#: packages.txt:1604
 #, no-wrap
 msgid "Starting the daemon(s)"
 msgstr "Start af daemon(s)"
 
 # type: Plain text
-#: packages.txt:1602
+#: packages.txt:1608
 msgid ""
 "After configuring `lastfmsubmitd`, you should run the following commands to "
 "start the daemons:"
@@ -8294,7 +8311,7 @@ msgstr ""
 "at starte daemons:"
 
 # type: Plain text
-#: packages.txt:1606
+#: packages.txt:1612
 #, no-wrap
 msgid ""
 "# service lastfmsubmitd start\n"
@@ -8304,13 +8321,13 @@ msgstr ""
 "# service lastmp start\n"
 
 # type: Plain text
-#: packages.txt:1608
+#: packages.txt:1614
 #, no-wrap
 msgid "lilo"
 msgstr "lilo"
 
 # type: Plain text
-#: packages.txt:1613
+#: packages.txt:1619
 msgid ""
 "So, you feel like using `lilo`, do you? Well, here you will find "
 "instructions for configuring `lilo` to work with Frugalware. Some things to "
@@ -8321,12 +8338,12 @@ msgstr ""
 "nogle ting som skal huskes:"
 
 # type: Plain text
-#: packages.txt:1615
+#: packages.txt:1621
 msgid "`lilo` must be rerun every time you upgrade the kernel"
 msgstr "`lilo` skal genkøres hver gang du opgraderer kernen"
 
 # type: Plain text
-#: packages.txt:1617
+#: packages.txt:1623
 msgid ""
 "`lilo` must also be rerun if you change configuration for it to take effect"
 msgstr ""
@@ -8334,7 +8351,7 @@ msgstr ""
 "i kraft"
 
 # type: Plain text
-#: packages.txt:1620
+#: packages.txt:1626
 msgid ""
 "only `lilo` or grub can be installed to your boot sector at the same time, "
 "however they do not conflict while simply residing on your system"
@@ -8343,7 +8360,7 @@ msgstr ""
 "hvor om alt er, så konflikter de ikke selvom de begge to er på dit system"
 
 # type: Plain text
-#: packages.txt:1626
+#: packages.txt:1632
 msgid ""
 "You will find an example `lilo.conf` in `/etc/lilo.conf` already. You will "
 "need to tweak it in order for it to match your system's booting setup. The "
@@ -8358,13 +8375,13 @@ msgstr ""
 "information om `lilo`, se venligst på `man lilo` og `man lilo.conf`."
 
 # type: Plain text
-#: packages.txt:1629
+#: packages.txt:1635
 #, no-wrap
 msgid "lineakd"
 msgstr "lineakd"
 
 # type: Plain text
-#: packages.txt:1633
+#: packages.txt:1639
 msgid ""
 "After installing lineakd, make sure you create a configuration file before "
 "starting it."
@@ -8373,13 +8390,13 @@ msgstr ""
 "konfigurationsfil før det startes."
 
 # type: Plain text
-#: packages.txt:1635
+#: packages.txt:1641
 msgid "Example configuration files are located in /usr/share/doc/lineakd-*/."
 msgstr ""
 "Eksempel konfigurationsfiler er lokaliseret i /usr/share/doc/lineakd-*/."
 
 # type: Plain text
-#: packages.txt:1638
+#: packages.txt:1644
 msgid ""
 "Don't forget to copy the configuration file to /etc/lineakd after you create "
 "it."
@@ -8388,29 +8405,29 @@ msgstr ""
 "skabt den."
 
 # type: Plain text
-#: packages.txt:1640
+#: packages.txt:1646
 msgid "You can then start the lineak daemon by running the following command:"
 msgstr "Du kan så starte lineak daemon ved at køre følgende kommando:"
 
 # type: Plain text
-#: packages.txt:1643
+#: packages.txt:1649
 #, no-wrap
 msgid "$ lineakd\n"
 msgstr "$ lineakd\n"
 
 # type: Plain text
-#: packages.txt:1645
+#: packages.txt:1651
 #, no-wrap
 msgid "lirc"
 msgstr "lirc"
 
 # type: Plain text
-#: packages.txt:1648
+#: packages.txt:1654
 msgid "After installing lirc you need to take the following steps:"
 msgstr "Efter installation af lirc er du nødt til at tage følgende skridt:"
 
 # type: Plain text
-#: packages.txt:1652
+#: packages.txt:1658
 msgid ""
 "Find a lird.conf for your remote control on http://lirc.sourceforge.net/"
 "remotes/[remotes] You can also take a look on '/usr/share/remotes' directory "
@@ -8423,49 +8440,49 @@ msgstr ""
 "controller, prøv `irrecord myremote` kommando."
 
 # type: Plain text
-#: packages.txt:1653
+#: packages.txt:1659
 msgid "Copy your lircd.conf to '/etc/' directory as root."
 msgstr "Kopier din lircd.conf til '/etc/' folderen som root."
 
 # type: Plain text
-#: packages.txt:1654
+#: packages.txt:1660
 msgid "Add evdev to '/etc/sysconfig/modules'."
 msgstr "Tilføj evdev til '/etc/sysconfig/modules'."
 
 # type: Plain text
-#: packages.txt:1655
+#: packages.txt:1661
 msgid "Load the module with `modprobe evdev`."
 msgstr "Load mondulet med `modprobe evdev`."
 
 # type: Plain text
-#: packages.txt:1656
+#: packages.txt:1662
 msgid "Edit '/etc/sysconfig/lirc' if necessary."
 msgstr "Rediger '/etc/sysconfig/lirc' om nødvendigt."
 
 # type: Plain text
-#: packages.txt:1659
+#: packages.txt:1665
 #, no-wrap
 msgid "$ cat /proc/bus/input/devices | grep -e N -e H\n"
 msgstr "$ cat /proc/bus/input/devices | grep -e N -e H\n"
 
 # type: Plain text
-#: packages.txt:1662
+#: packages.txt:1668
 msgid "will show you the event# you should use. (Default is 2.)"
 msgstr "vil vise dig hændelse# du bør bruge. (Standard er 2.)"
 
 # type: Plain text
-#: packages.txt:1664
+#: packages.txt:1670
 msgid "Start lircd and lircmd with `sudo service lirc start`."
 msgstr " Start lircd og lircmd med `sudo service lirc start`."
 
 # type: Plain text
-#: packages.txt:1665
+#: packages.txt:1671
 #, no-wrap
 msgid "lmsensors"
 msgstr "lmsensorer"
 
 # type: Plain text
-#: packages.txt:1673
+#: packages.txt:1679
 msgid ""
 "Lmsensors is a hardware monitoring tool which is able to read thermal and "
 "voltage values and fan speeds from the sensor chips of your motherboard.  "
@@ -8482,18 +8499,18 @@ msgstr ""
 "fortælle dig hvordan det autoloades under boot."
 
 # type: Plain text
-#: packages.txt:1675
+#: packages.txt:1681
 msgid "So if you want to use lmsensors try to run"
 msgstr "Så hvis du vil bruge lmsensors prøv at køre"
 
 # type: Plain text
-#: packages.txt:1678
+#: packages.txt:1684
 #, no-wrap
 msgid "# sensors-detect\n"
 msgstr "# sensors-detect\n"
 
 # type: Plain text
-#: packages.txt:1681
+#: packages.txt:1687
 msgid ""
 "and say YES at end of sensors-detect to write '/etc/sysconfig/lm_sensors'."
 msgstr ""
@@ -8501,24 +8518,24 @@ msgstr ""
 "lm_sensors'."
 
 # type: Plain text
-#: packages.txt:1683
+#: packages.txt:1689
 msgid "Then issue:"
 msgstr "Og så:"
 
 # type: Plain text
-#: packages.txt:1686
+#: packages.txt:1692
 #, no-wrap
 msgid "# service lmsensors start\n"
 msgstr "# service lmsensors start\n"
 
 # type: Plain text
-#: packages.txt:1688
+#: packages.txt:1694
 #, no-wrap
 msgid "lvm2"
 msgstr "lvm2"
 
 # type: Plain text
-#: packages.txt:1694
+#: packages.txt:1700
 msgid ""
 "Here is a mini-HOWTO, a longer one is available link:http://www.tldp.org/"
 "HOWTO/LVM-HOWTO/[here]."
@@ -8527,24 +8544,24 @@ msgstr ""
 "HOWTO/LVM-HOWTO/[her]."
 
 # type: Plain text
-#: packages.txt:1696
+#: packages.txt:1702
 msgid "First if you are on a setup cd, you need to"
 msgstr "Først hvis du er på en setup cd, er du nødt til"
 
 # type: Plain text
-#: packages.txt:1699
+#: packages.txt:1705
 #, no-wrap
 msgid "modprobe dm-mod\n"
 msgstr "modprobe dm-mod\n"
 
 # type: Plain text
-#: packages.txt:1705
+#: packages.txt:1711
 #, no-wrap
 msgid "vgchange -a y\n"
 msgstr "vgchange -a y\n"
 
 # type: Plain text
-#: packages.txt:1710
+#: packages.txt:1716
 msgid ""
 "The first loads the device-mapper support for the kernel, the later enables "
 "the existing volume groups. This is automatically done for you on an "
@@ -8555,7 +8572,7 @@ msgstr ""
 "installeret Frugalware-system."
 
 # type: Plain text
-#: packages.txt:1714
+#: packages.txt:1720
 msgid ""
 "You need to decide what physical partitions to use for LVM. In this mini-"
 "HOWTO `/` is `/dev/hda1` and we create a big `/home` partition using `/dev/"
@@ -8566,83 +8583,83 @@ msgstr ""
 "stor `/home` partition ved brug af `/dev/hda2` og `/dev/hdc1`."
 
 # type: Plain text
-#: packages.txt:1716
+#: packages.txt:1722
 msgid "Let's initialize them for use by LVM:"
 msgstr "Lad os initialisere dem til brug af LVM:"
 
 # type: Plain text
-#: packages.txt:1719
+#: packages.txt:1725
 #, no-wrap
 msgid "pvcreate /dev/hda2 /dev/hdc1\n"
 msgstr "pvcreate /dev/hda2 /dev/hdc1\n"
 
 # type: Plain text
-#: packages.txt:1722
+#: packages.txt:1728
 msgid "Create a volume group titled `vg`:"
 msgstr "Skab en volume group kaldet `vg`:"
 
 # type: Plain text
-#: packages.txt:1725
+#: packages.txt:1731
 #, no-wrap
 msgid "vgcreate vg /dev/hda2\n"
 msgstr "vgcreate vg /dev/hda2\n"
 
 # type: Plain text
-#: packages.txt:1728
+#: packages.txt:1734
 msgid "Extend it with `/dev/hdb1`:"
 msgstr "Udvid det med `/dev/hdb1`:"
 
 # type: Plain text
-#: packages.txt:1731
+#: packages.txt:1737
 #, no-wrap
 msgid "vgextend vg /dev/hdc1\n"
 msgstr "vgextend vg /dev/hdc1\n"
 
 # type: Plain text
-#: packages.txt:1734
+#: packages.txt:1740
 msgid "Then we can create a logical volume with a size of 400G titled `home`:"
 msgstr ""
 "Derefter kan vi skabe en logical volume med en størrelse på 400G kaldet "
 "`home`:"
 
 # type: Plain text
-#: packages.txt:1737
+#: packages.txt:1743
 #, no-wrap
 msgid "lvcreate -L400G -nhome vg\n"
 msgstr "lvcreate -L400G -nhome vg\n"
 
 # type: Plain text
-#: packages.txt:1740
+#: packages.txt:1746
 msgid "Create a filesystem on it as usual, ie. for ext3:"
 msgstr "Skab et filsystem på det som sædvanlig, f.eks ext3:"
 
 # type: Plain text
-#: packages.txt:1743
+#: packages.txt:1749
 #, no-wrap
 msgid "mke2fs -j /dev/vg/home\n"
 msgstr "mke2fs -j /dev/vg/home\n"
 
 # type: Plain text
-#: packages.txt:1746
+#: packages.txt:1752
 msgid "And now the only task is to mount it as usual, ie:"
 msgstr ""
 "Og nu vil den eneste opgave være at montere det som sædvanlig, i det her "
 "tilfælde:"
 
 # type: Plain text
-#: packages.txt:1749
+#: packages.txt:1755
 #, no-wrap
 msgid "mount /dev/vg/home /mnt/target/home\n"
 msgstr "mount /dev/vg/home /mnt/target/home\n"
 
 # type: Plain text
-#: packages.txt:1751
+#: packages.txt:1757
 #, no-wrap
 msgid "Extending"
 msgstr "Udvidelse"
 
 # type: Plain text
-#: packages.txt:1755
+#: packages.txt:1761
 msgid ""
 "You already saw how to extend a volume group. Extending a logical volume is "
 "a bit more complex, but still easy."
@@ -8651,12 +8668,12 @@ msgstr ""
 "logical volume er lidt mere komplekst, men stadigvæk nemt."
 
 # type: Plain text
-#: packages.txt:1757
+#: packages.txt:1763
 msgid "If you use ext3:"
 msgstr "Hvis du bruger ext3:"
 
 # type: Plain text
-#: packages.txt:1763
+#: packages.txt:1769
 #, no-wrap
 msgid ""
 "umount /mnt/target/home\n"
@@ -8670,7 +8687,7 @@ msgstr ""
 "mount /dev/vg/home /mnt/target/home\n"
 
 # type: Plain text
-#: packages.txt:1767
+#: packages.txt:1773
 msgid ""
 "According to the manpage of resize2fs, it would have support resizing "
 "without umounting, but this does not seem to work."
@@ -8679,12 +8696,12 @@ msgstr ""
 "unmounte det, men dette synes ikke at virke."
 
 # type: Plain text
-#: packages.txt:1769
+#: packages.txt:1775
 msgid "If you use reiserfs:"
 msgstr "Hvis du bruger reiserfs:"
 
 # type: Plain text
-#: packages.txt:1773
+#: packages.txt:1779
 #, no-wrap
 msgid ""
 "lvextend -L+900M /dev/vg/home\n"
@@ -8694,57 +8711,57 @@ msgstr ""
 "resize_reiserfs /dev/vg/home\n"
 
 # type: Plain text
-#: packages.txt:1775
+#: packages.txt:1781
 #, no-wrap
 msgid "Removing"
 msgstr "Fjerne"
 
 # type: Plain text
-#: packages.txt:1778
+#: packages.txt:1784
 msgid "To remove a logical volume:"
 msgstr "For at fjerne en logical volume:"
 
 # type: Plain text
-#: packages.txt:1781
+#: packages.txt:1787
 #, no-wrap
 msgid "lvremove /dev/vg/home\n"
 msgstr "lvremove /dev/vg/home\n"
 
 # type: Plain text
-#: packages.txt:1784
+#: packages.txt:1790
 msgid "To remove a physical volume from a volume group:"
 msgstr "For at fjerne en fysisk volume fra en volume group:"
 
 # type: Plain text
-#: packages.txt:1787
+#: packages.txt:1793
 #, no-wrap
 msgid "vgreduce vg /dev/hdc1\n"
 msgstr "vgreduce vg /dev/hdc1\n"
 
 # type: Plain text
-#: packages.txt:1790
+#: packages.txt:1796
 msgid "To remove a volume group:"
 msgstr "For at fjerne en volume group:"
 
 # type: Plain text
-#: packages.txt:1793
+#: packages.txt:1799
 #, no-wrap
 msgid "vgremove vg\n"
 msgstr "vgremove vg\n"
 
 # type: Plain text
-#: packages.txt:1796
+#: packages.txt:1802
 msgid "That's it."
 msgstr "Det var det."
 
 # type: Plain text
-#: packages.txt:1799
+#: packages.txt:1805
 #, no-wrap
 msgid "mailman"
 msgstr "mailman"
 
 # type: Plain text
-#: packages.txt:1805
+#: packages.txt:1811
 msgid ""
 "There is no any kind of http server in mailman's depends.  It's because they "
 "are not needed to get a working mailman.  Of cource if you want to provide "
@@ -8755,13 +8772,13 @@ msgstr ""
 "vil stille arkiver til rådighed så glem ikke at installere en  http server."
 
 # type: Plain text
-#: packages.txt:1806
+#: packages.txt:1812
 #, no-wrap
 msgid "man"
 msgstr "man"
 
 # type: Plain text
-#: packages.txt:1809
+#: packages.txt:1815
 msgid ""
 "If you like coloured man-pages then you can enable that feature by issuing"
 msgstr ""
@@ -8769,13 +8786,13 @@ msgstr ""
 "følgende lommando"
 
 # type: Plain text
-#: packages.txt:1812
+#: packages.txt:1818
 #, no-wrap
 msgid "# chmod +x /etc/profile.d/man-colors.sh\n"
 msgstr "# chmod +x /etc/profile.d/man-colors.sh\n"
 
 # type: Plain text
-#: packages.txt:1816
+#: packages.txt:1822
 msgid ""
 "It is handled as a configuration file, so feel free to edit the colors in "
 "that file if you want."
@@ -8784,13 +8801,13 @@ msgstr ""
 "redigere farverne i denne fil hvis du ønsker det."
 
 # type: Plain text
-#: packages.txt:1817
+#: packages.txt:1823
 #, no-wrap
 msgid "mantis"
 msgstr "mantis"
 
 # type: Plain text
-#: packages.txt:1825
+#: packages.txt:1831
 msgid ""
 "You have to GRANT some privileges (at least for the operating user) to be "
 "able to use this package, as the installer does not GRANT them. The "
@@ -8809,7 +8826,7 @@ msgstr ""
 "rådighed for installeringsprogrammet."
 
 # type: Plain text
-#: packages.txt:1829
+#: packages.txt:1835
 msgid ""
 "Do not forget to +rm -rf /var/www/mantis/admin+ after a successful install "
 "to prevent hijacking your bugtracker, and chage the default administrator's "
@@ -8820,13 +8837,13 @@ msgstr ""
 "administrator's password."
 
 # type: Plain text
-#: packages.txt:1830
+#: packages.txt:1836
 #, no-wrap
 msgid "mb2md"
 msgstr "mb2md"
 
 # type: Plain text
-#: packages.txt:1833
+#: packages.txt:1839
 msgid ""
 "How to convert each users mbox from /var/mail to Maildir (under /home/$user)?"
 msgstr ""
@@ -8834,12 +8851,12 @@ msgstr ""
 "$user)?"
 
 # type: Plain text
-#: packages.txt:1835
+#: packages.txt:1841
 msgid "If you are too lazy to read the complete documentation:"
 msgstr "Hvis du er for doven til at læse den fuldstændige dokumentation:"
 
 # type: Plain text
-#: packages.txt:1844
+#: packages.txt:1850
 #, no-wrap
 msgid ""
 "cd /var/mail\n"
@@ -8859,13 +8876,13 @@ msgstr ""
 "done\n"
 
 # type: Plain text
-#: packages.txt:1846
+#: packages.txt:1852
 #, no-wrap
 msgid "mediawiki"
 msgstr "mediawiki"
 
 # type: Plain text
-#: packages.txt:1850
+#: packages.txt:1856
 msgid ""
 "After installing this package, please run '/usr/bin/mediawikisetup' as root "
 "to setup MediaWiki"
@@ -8874,18 +8891,18 @@ msgstr ""
 "for at opsætte MediaWiki"
 
 # type: Plain text
-#: packages.txt:1851
+#: packages.txt:1857
 #, no-wrap
 msgid "midpssh-http-server"
 msgstr "midpssh-http-server"
 
 # type: Plain text
-#: packages.txt:1854
+#: packages.txt:1860
 msgid "Do not forget to open port 8080 on your firewall!"
 msgstr "Glem ikke at åbne port 8080 på din firewall!"
 
 # type: Plain text
-#: packages.txt:1860
+#: packages.txt:1866
 #, no-wrap
 msgid ""
 "# midpssh-http-server\n"
@@ -8895,18 +8912,18 @@ msgstr ""
 "-A INPUT -p tcp -m tcp --dport 8080 -j ACCEPT\n"
 
 # type: Plain text
-#: packages.txt:1864
+#: packages.txt:1870
 #, no-wrap
 msgid "monit"
 msgstr "monit"
 
 # type: Plain text
-#: packages.txt:1867
+#: packages.txt:1873
 msgid "You can set up Monit by adding these lines to '/etc/inittab':"
 msgstr "Du kan opsætte Monit ved at tilføje disse linier til '/etc/inittab':"
 
 # type: Plain text
-#: packages.txt:1871
+#: packages.txt:1877
 #, no-wrap
 msgid ""
 "# Run monit in standard run-levels\n"
@@ -8916,13 +8933,13 @@ msgstr ""
 "mo:2345:respawn:/usr/sbin/monit -Ic /etc/monit/monitrc\n"
 
 # type: Plain text
-#: packages.txt:1873
+#: packages.txt:1879
 #, no-wrap
 msgid "motion"
 msgstr "motion"
 
 # type: Plain text
-#: packages.txt:1877
+#: packages.txt:1883
 msgid ""
 "You should edit the settings: videodevice, input, norm, frequency, width, "
 "height and target_dir in '/etc/motion.conf'"
@@ -8931,7 +8948,7 @@ msgstr ""
 "height og target_dir i '/etc/motion.conf'"
 
 # type: Plain text
-#: packages.txt:1880
+#: packages.txt:1886
 msgid ""
 "If the file already exists, it wont be overwritten by the package while "
 "upgrading. You can refer '/etc/motion-dist.conf' for configuring motion."
@@ -8941,13 +8958,13 @@ msgstr ""
 "motion."
 
 # type: Plain text
-#: packages.txt:1881
+#: packages.txt:1887
 #, no-wrap
 msgid "munin"
 msgstr "munin"
 
 # type: Plain text
-#: packages.txt:1886
+#: packages.txt:1892
 msgid ""
 "From munin-1.2.5-2 we no longer use a random uid/gid, but dedicated ones. "
 "Because of this munin service will not start if you have it installed "
@@ -8958,7 +8975,7 @@ msgstr ""
 "installeret før, så det må du rette ved at udstede disse kommandoer:"
 
 # type: Plain text
-#: packages.txt:1894
+#: packages.txt:1900
 #, no-wrap
 msgid ""
 "groupmod -g 47 munin\n"
@@ -8976,7 +8993,7 @@ msgstr ""
 "chown -R munin:munin /var/run/munin\n"
 
 # type: Plain text
-#: packages.txt:1898
+#: packages.txt:1904
 msgid ""
 "You should chown any other munin-owned stuff you may have lying around, "
 "these are only the default ones."
@@ -8985,18 +9002,18 @@ msgstr ""
 "disse er kun standard ting."
 
 # type: Plain text
-#: packages.txt:1899
+#: packages.txt:1905
 #, no-wrap
 msgid "mythtv"
 msgstr "mythtv"
 
 # type: Plain text
-#: packages.txt:1902
+#: packages.txt:1908
 msgid "You can configure MythTV this way:"
 msgstr "Du kan konfigure MythTV på denne måde:"
 
 # type: Plain text
-#: packages.txt:1904
+#: packages.txt:1910
 msgid ""
 "Start mysql service and setup mysql database password with `mysqladmin -u "
 "root password mysqlpassword`."
@@ -9005,7 +9022,7 @@ msgstr ""
 "password mysqlpassword`."
 
 # type: Plain text
-#: packages.txt:1905
+#: packages.txt:1911
 msgid ""
 "Set up the initial database with `mysql -u root -p < /usr/share/mythtv/mc."
 "sql` and enter mysqlpassword."
@@ -9014,27 +9031,27 @@ msgstr ""
 "sql` og skriv mysqlpassword."
 
 # type: Plain text
-#: packages.txt:1906
+#: packages.txt:1912
 msgid "Run `sudo mythtv-setup` for tune your tvcard."
 msgstr "Kør `sudo mythtv-setup` for at tune dit tv kort."
 
 # type: Plain text
-#: packages.txt:1907
+#: packages.txt:1913
 msgid "Start mythtv backend with `sudo service mythtv start`."
 msgstr "Start mythtv backend med `sudo service mythtv start`."
 
 # type: Plain text
-#: packages.txt:1908
+#: packages.txt:1914
 msgid "Use `mythfilldatabase` to fill in your database."
 msgstr "Brug `mythfilldatabase` for at fylde ind i din database."
 
 # type: Plain text
-#: packages.txt:1909
+#: packages.txt:1915
 msgid "Finally run `mythfrontend` and have fun!"
 msgstr "Til slut, kør `mythfrontend` og hav det sjovt!"
 
 # type: Plain text
-#: packages.txt:1912
+#: packages.txt:1918
 msgid ""
 "For more information see MythTV http://www.mythtv.org/modules.php?"
 "name=MythInstall[documentation]."
@@ -9043,13 +9060,13 @@ msgstr ""
 "name=MythInstall[dokumentation]."
 
 # type: Plain text
-#: packages.txt:1913
+#: packages.txt:1919
 #, no-wrap
 msgid "nautilus-share"
 msgstr "nautilus-deling"
 
 # type: Plain text
-#: packages.txt:1917
+#: packages.txt:1923
 msgid ""
 "Here is an excerpt from the Samba documentation explaining what you need to "
 "do to make this work:"
@@ -9058,13 +9075,13 @@ msgstr ""
 "for at få det til at virke:"
 
 # type: Plain text
-#: packages.txt:1920
+#: packages.txt:1926
 #, no-wrap
 msgid "USERSHARE\n"
 msgstr "USERSHARE\n"
 
 # type: Plain text
-#: packages.txt:1924
+#: packages.txt:1930
 #, no-wrap
 msgid ""
 "Starting with version 3.0.23, a Samba server now supports the ability\n"
@@ -9076,7 +9093,7 @@ msgstr ""
 "\"net usershare\" kommandoerne.\n"
 
 # type: Plain text
-#: packages.txt:1927
+#: packages.txt:1933
 #, no-wrap
 msgid ""
 "To set this up, first set up your smb.conf by adding to the [global] \n"
@@ -9086,13 +9103,13 @@ msgstr ""
 "afsnit:\n"
 
 # type: Plain text
-#: packages.txt:1929
+#: packages.txt:1935
 #, no-wrap
 msgid "usershare path = /home/usershares\n"
 msgstr "usershare path = /home/usershares\n"
 
 # type: Plain text
-#: packages.txt:1938
+#: packages.txt:1944
 #, no-wrap
 msgid ""
 "Next create the directory /home/usershares, change the owner to \n"
@@ -9114,13 +9131,13 @@ msgstr ""
 "[global] afsnit af smb.conf en linie som f.eks:\n"
 
 # type: Plain text
-#: packages.txt:1940
+#: packages.txt:1946
 #, no-wrap
 msgid "usershare max shares = 100\n"
 msgstr "usershare max shares = 100\n"
 
 # type: Plain text
-#: packages.txt:1943
+#: packages.txt:1949
 #, no-wrap
 msgid ""
 "to allow 100 usershare definitions. Now, members of the UNIX group \"users\"\n"
@@ -9130,13 +9147,13 @@ msgstr ""
 "skabe bruger definerede shares til enhver tid ved at benytte kommandoerne neden under.\n"
 
 # type: Plain text
-#: packages.txt:1945
+#: packages.txt:1951
 #, no-wrap
 msgid "The usershare commands are:\n"
 msgstr "Usershare kommandoerne er:\n"
 
 # type: Plain text
-#: packages.txt:1950
+#: packages.txt:1956
 #, no-wrap
 msgid ""
 "net usershare add sharename path [comment] [acl] [guest_ok=[y|n]] - to add or change a user defined share.\n"
@@ -9150,13 +9167,13 @@ msgstr ""
 "net usershare list [-l|--long] [wildcard sharename] - for at opliste bruger defineret shares.\n"
 
 # type: Plain text
-#: packages.txt:1953
+#: packages.txt:1959
 #, no-wrap
 msgid "ndiswrapper"
 msgstr "ndiswrapper"
 
 # type: Plain text
-#: packages.txt:1957
+#: packages.txt:1963
 msgid ""
 "Ndiswrapper requires .inf and .sys files from a Windows(tm) driver to "
 "function.  Download these to /root for example, then run:"
@@ -9165,13 +9182,13 @@ msgstr ""
 "virke.  Download disse til /root for eksempel, kør så:"
 
 # type: Plain text
-#: packages.txt:1960
+#: packages.txt:1966
 #, no-wrap
 msgid "# ndiswrapper -i /root/foo.inf\n"
 msgstr "# ndiswrapper -i /root/foo.inf\n"
 
 # type: Plain text
-#: packages.txt:1964
+#: packages.txt:1970
 msgid ""
 "After that you can delete them. They will be copied to the proper location. "
 "Once done, please run:"
@@ -9180,13 +9197,13 @@ msgstr ""
 "beliggenhed. Når det er gjort, kør så:"
 
 # type: Plain text
-#: packages.txt:1967
+#: packages.txt:1973
 #, no-wrap
 msgid "# depmod -a\n"
 msgstr "# depmod -a\n"
 
 # type: Plain text
-#: packages.txt:1971
+#: packages.txt:1977
 msgid ""
 "Check this http://ndiswrapper.sf.net/mediawiki/index.php/List[list] of "
 "drivers.  You can get your possible hadware with:"
@@ -9195,18 +9212,18 @@ msgstr ""
 "drivere.  Du kan finde din mulige hadware med:"
 
 # type: Plain text
-#: packages.txt:1974
+#: packages.txt:1980
 #, no-wrap
 msgid "# lspci -n | egrep 'Class (0280|0200):' |  cut -d' ' -f4\n"
 msgstr "# lspci -n | egrep 'Class (0280|0200):' |  cut -d' ' -f4\n"
 
 # type: Plain text
-#: packages.txt:1977
+#: packages.txt:1983
 msgid "Look for that on the above page for your driver."
 msgstr "Se efter det på ovenstående side for din driver."
 
 # type: Plain text
-#: packages.txt:1980
+#: packages.txt:1986
 msgid ""
 "Please have a look at the http://ndiswrapper.sourceforge.net/wiki/[wiki] for "
 "the FAQ, HowTos, Tips, Configuration, and installation information."
@@ -9215,57 +9232,57 @@ msgstr ""
 "FAQ, HowTos, Tips, Konfiguration, og installations information."
 
 # type: Plain text
-#: packages.txt:1981
+#: packages.txt:1987
 #, no-wrap
 msgid "nessus-core"
 msgstr "nessus-core"
 
 # type: Plain text
-#: packages.txt:1984 packages.txt:2002
+#: packages.txt:1990 packages.txt:2008
 msgid "Install script has generated default certificate use:"
 msgstr "Install script har genereret standard certifikatbrug:"
 
 # type: Plain text
-#: packages.txt:1987 packages.txt:2005
+#: packages.txt:1993 packages.txt:2011
 #, no-wrap
 msgid "# /usr/sbin/nessus-mkcert\n"
 msgstr "# /usr/sbin/nessus-mkcert\n"
 
 # type: Plain text
-#: packages.txt:1990 packages.txt:2008
+#: packages.txt:1996 packages.txt:2014
 msgid "if you need to make a personalized one."
 msgstr "Hvis du har brug for at lave et personligt."
 
 # type: Plain text
-#: packages.txt:1992 packages.txt:2010
+#: packages.txt:1998 packages.txt:2016
 msgid "Remember to create a user with:"
 msgstr "Husk at skabe en bruger med:"
 
 # type: Plain text
-#: packages.txt:1995 packages.txt:2013
+#: packages.txt:2001 packages.txt:2019
 #, no-wrap
 msgid "# /usr/sbin/nessus-adduser\n"
 msgstr "# /usr/sbin/nessus-adduser\n"
 
 # type: Plain text
-#: packages.txt:1998 packages.txt:2016
+#: packages.txt:2004 packages.txt:2022
 msgid "Use '/etc/sysconfig/nessusd' for setting nessusd starting arguments."
 msgstr "Brug '/etc/sysconfig/nessusd' for at sætte nessusd start argumenter."
 
 # type: Plain text
-#: packages.txt:1999
+#: packages.txt:2005
 #, no-wrap
 msgid "nessus-core-gtk"
 msgstr "nessus-core-gtk"
 
 # type: Plain text
-#: packages.txt:2017
+#: packages.txt:2023
 #, no-wrap
 msgid "nss-mdns"
 msgstr "nss-mdns"
 
 # type: Plain text
-#: packages.txt:2021
+#: packages.txt:2027
 msgid ""
 "To enable IPv4 multicast DNS lookups, append 'mdns4' to the hosts line in '/"
 "etc/nsswitch.conf'. Use 'mdns6' for IPv6 or 'mdns' for both."
@@ -9274,13 +9291,13 @@ msgstr ""
 "'/etc/nsswitch.conf'. Brug 'mdns6' for IPv6 eller 'mdns' for begge."
 
 # type: Plain text
-#: packages.txt:2022
+#: packages.txt:2028
 #, no-wrap
 msgid "ooextras"
 msgstr "ooextras"
 
 # type: Plain text
-#: packages.txt:2025
+#: packages.txt:2031
 msgid ""
 "Please add '/usr/lib/ooextras' to your template paths in OpenOffice.org!"
 msgstr ""
@@ -9288,37 +9305,37 @@ msgstr ""
 "OpenOffice.org!"
 
 # type: Plain text
-#: packages.txt:2028
+#: packages.txt:2034
 msgid "You can do this under: + 'Tools > Options > OpenOffice.org > Paths'"
 msgstr ""
 "Du kan gøre dette under: + 'Funktioner > Indstillinger > OpenOffice.org > "
 "Stier'"
 
 # type: Plain text
-#: packages.txt:2030
+#: packages.txt:2036
 msgid "Enjoy the new templates! :-)"
 msgstr "Nyd dine nye skabeloner! :-)"
 
 # type: Plain text
-#: packages.txt:2031
+#: packages.txt:2037
 #, no-wrap
 msgid "openssh"
 msgstr "openssh"
 
 # type: Plain text
-#: packages.txt:2033
+#: packages.txt:2039
 #, no-wrap
 msgid "Forwarding ports"
 msgstr "Forwarding porte"
 
 # type: Plain text
-#: packages.txt:2037
+#: packages.txt:2043
 #, no-wrap
 msgid "# ssh -L 8000:localhost:80 server.com\n"
 msgstr "# ssh -L 8000:localhost:80 server.com\n"
 
 # type: Plain text
-#: packages.txt:2041
+#: packages.txt:2047
 msgid ""
 "After this you can access server.com:80 at localhost:8000 even if server."
 "com:80 is not accessible from your machine."
@@ -9327,13 +9344,13 @@ msgstr ""
 "server.com:80 ikke er tilgængelig via din maskine."
 
 # type: Plain text
-#: packages.txt:2042
+#: packages.txt:2048
 #, no-wrap
 msgid "Socks proxy"
 msgstr "Socks proxy"
 
 # type: Plain text
-#: packages.txt:2049
+#: packages.txt:2055
 msgid ""
 "Many mobile users have the following problem: they have to use an "
 "unencrypted wireless lan and they want to access webservers which does not "
@@ -9350,13 +9367,13 @@ msgstr ""
 "på localhost:8080:"
 
 # type: delimited block -
-#: packages.txt:2052
+#: packages.txt:2058
 #, no-wrap
 msgid "$ ssh -D 8080 server.com\n"
 msgstr "$ ssh -D 8080 server.com\n"
 
 # type: Plain text
-#: packages.txt:2057
+#: packages.txt:2063
 msgid ""
 "Then configure your webbrowser to use the proxy, for example in firefox, "
 "select `Manual proxy configuration` and then set `SOCKS Host` to localhost, "
@@ -9367,18 +9384,18 @@ msgstr ""
 "localhost, `Port` til 8080."
 
 # type: Plain text
-#: packages.txt:2059
+#: packages.txt:2065
 msgid "Don't forget to clear other proxy fields! (HTTP, SSL, FTP, etc.)"
 msgstr " Glem ikke at fjerne andre proxy felter! (HTTP, SSL, FTP, etc.)"
 
 # type: Plain text
-#: packages.txt:2060
+#: packages.txt:2066
 #, no-wrap
 msgid "openttd"
 msgstr "openttd"
 
 # type: Plain text
-#: packages.txt:2065
+#: packages.txt:2071
 msgid ""
 "You require the data files of the original Transport Tycoon Deluxe for "
 "Windows to play the game. You have to manually copy the following files to '/"
@@ -9389,7 +9406,7 @@ msgstr ""
 "usr/share/openttd/data/'"
 
 # type: Plain text
-#: packages.txt:2073
+#: packages.txt:2079
 #, no-wrap
 msgid ""
 "sample.cat\n"
@@ -9407,7 +9424,7 @@ msgstr ""
 "trgtr.grf\n"
 
 # type: Plain text
-#: packages.txt:2077
+#: packages.txt:2083
 msgid ""
 "If you want to use the included scenarios, run openttd with the following "
 "command:"
@@ -9416,19 +9433,19 @@ msgstr ""
 "følgende kommando:"
 
 # type: Plain text
-#: packages.txt:2080
+#: packages.txt:2086
 #, no-wrap
 msgid "$ openttd -g openttd -g /usr/share/openttd/scenario/<scenario_name>\n"
 msgstr "$ openttd -g openttd -g /usr/share/openttd/scenario/<scenario_navn>\n"
 
 # type: Plain text
-#: packages.txt:2082
+#: packages.txt:2088
 #, no-wrap
 msgid "pawm"
 msgstr "pawm"
 
 # type: Plain text
-#: packages.txt:2088
+#: packages.txt:2094
 msgid ""
 "Copy /etc/pawm.conf to $HOME/.pawm for your own local changes. If you want "
 "icons on your desktop, add a file to your $HOME/.pawm directory that starts "
@@ -9441,22 +9458,22 @@ msgstr ""
 "til det. Derefter, skriv filstrukturen som følger:"
 
 # type: Plain text
-#: packages.txt:2093
+#: packages.txt:2099
 msgid "<icon name> <x position> <y position> <name to display> <command>"
 msgstr "<ikon navn> <x position> <y position> <navn der skal vises> <kommando>"
 
 # type: Plain text
-#: packages.txt:2095 makepkg.txt:280
+#: packages.txt:2101 makepkg.txt:280
 msgid "Example:"
 msgstr "Eksempel:"
 
 # type: Plain text
-#: packages.txt:2100
+#: packages.txt:2106
 msgid "firefox.xpm 40 40 firefox firefox"
 msgstr "firefox.xpm 40 40 firefox firefox"
 
 # type: Plain text
-#: packages.txt:2104
+#: packages.txt:2110
 msgid ""
 "Other things to remember, you can only use xpm files for this method, and it "
 "takes the files from /usr/share/pixmaps. If I knew how to change this path "
@@ -9467,13 +9484,13 @@ msgstr ""
 "stien til en folder brugeren har, ville jeg gøre det."
 
 # type: Plain text
-#: packages.txt:2105
+#: packages.txt:2111
 #, no-wrap
 msgid "pekwm"
 msgstr "pekwm"
 
 # type: Plain text
-#: packages.txt:2112
+#: packages.txt:2118
 msgid ""
 "Be sure to make your own file at $HOME/.pekwm/autostart if you use pekwm-"
 "session to auto-launch commands when you startup. I know pekwm has a start "
@@ -9489,7 +9506,7 @@ msgstr ""
 "nedenfor:"
 
 # type: Plain text
-#: packages.txt:2115
+#: packages.txt:2121
 msgid ""
 "dbus-session --exit-with-session --sh-syntax & feh --bg-scale \"$HOME/.foo/"
 "bar\" &"
@@ -9498,13 +9515,13 @@ msgstr ""
 "bar\" &"
 
 # type: Plain text
-#: packages.txt:2116
+#: packages.txt:2122
 #, no-wrap
 msgid "perlpanel"
 msgstr "perlpanel"
 
 # type: Plain text
-#: packages.txt:2123
+#: packages.txt:2129
 msgid ""
 "I have purposely left out a few perl modules from the dependencies array, "
 "because they are not needed to run perlpanel and drag in a lot of GNOME or "
@@ -9519,7 +9536,7 @@ msgstr ""
 "rapporter det venligst og jeg vil se på det."
 
 # type: Plain text
-#: packages.txt:2127
+#: packages.txt:2133
 msgid ""
 "perl-xmms - perlpanel plugin interface to xmms perl-gnome2-vfs - various "
 "gnome plugin interfaces for perlpanel libgnomeui - for full libglade support "
@@ -9530,35 +9547,35 @@ msgstr ""
 "understøttelse i perlpanel"
 
 # type: Plain text
-#: packages.txt:2128
+#: packages.txt:2134
 #, no-wrap
 msgid "php"
 msgstr "php"
 
 # type: Plain text
-#: packages.txt:2131
+#: packages.txt:2137
 msgid "You should set"
 msgstr "Du bør sætte"
 
 # type: Plain text
-#: packages.txt:2134
+#: packages.txt:2140
 #, no-wrap
 msgid "cgi.fix_pathinfo=1\n"
 msgstr "cgi.fix_pathinfo=1\n"
 
 # type: Plain text
-#: packages.txt:2137
+#: packages.txt:2143
 msgid "in '/etc/php.ini' in order to use php-cgi."
 msgstr "i '/etc/php.ini' for at kunne bruge php-cgi."
 
 # type: Plain text
-#: packages.txt:2138
+#: packages.txt:2144
 #, no-wrap
 msgid "phpbb"
 msgstr "phpbb"
 
 # type: Plain text
-#: packages.txt:2142
+#: packages.txt:2148
 msgid ""
 "After installing this package, please run '/usr/bin/phpbbsetup' as root to "
 "setup phpBB"
@@ -9567,18 +9584,18 @@ msgstr ""
 "for at opsætte phpBB"
 
 # type: Plain text
-#: packages.txt:2144
+#: packages.txt:2150
 msgid "After upgrading, make sure to run the database update script"
 msgstr "Efter opgradering, skal du huske at køre databaseopdateringsscriptet"
 
 # type: Plain text
-#: packages.txt:2145
+#: packages.txt:2151
 #, no-wrap
 msgid "pootle"
 msgstr "pootle"
 
 # type: Plain text
-#: packages.txt:2151
+#: packages.txt:2157
 msgid ""
 "Pootle provides a separate webserver, after starting it, you should be able "
 "to reach it at http://127.0.0.1:8080/."
@@ -9587,13 +9604,13 @@ msgstr ""
 "du kunne tilgå det ved http://127.0.0.1:8080/."
 
 # type: Plain text
-#: packages.txt:2152
+#: packages.txt:2158
 #, no-wrap
 msgid "Creating users"
 msgstr "Skabe brugere"
 
 # type: Plain text
-#: packages.txt:2159
+#: packages.txt:2165
 msgid ""
 "No-one can login to Pootle by default. You should edit `/usr/lib/python2.5/"
 "site-packages/Pootle/users.prefs`, and uncomment the 'startup' user. Its "
@@ -9608,19 +9625,19 @@ msgstr ""
 "igen og kommenter 'startup' brugeren."
 
 # type: Plain text
-#: packages.txt:2160
+#: packages.txt:2166
 #, no-wrap
 msgid "postfix"
 msgstr "postfix"
 
 # type: Plain text
-#: packages.txt:2162
+#: packages.txt:2168
 #, no-wrap
 msgid "Using a relay host"
 msgstr "Bruge en relay host"
 
 # type: Plain text
-#: packages.txt:2166
+#: packages.txt:2172
 msgid ""
 "These are the basic steps to set up Postfix to use SMTP Authentication to "
 "send mail through a relay host."
@@ -9629,18 +9646,18 @@ msgstr ""
 "Authentication for at sende mail gennem en relay host."
 
 # type: Plain text
-#: packages.txt:2168
+#: packages.txt:2174
 msgid "Set up a password maps file (`/etc/postfix/sasl_passwd`) as follows:"
 msgstr "Opsætte en password maps fil (`/etc/postfix/sasl_passwd`) som følger:"
 
 # type: Plain text
-#: packages.txt:2171
+#: packages.txt:2177
 #, no-wrap
 msgid "mail.ispserver.com    username:password\n"
 msgstr "mail.ispserver.com    brugernavn:password\n"
 
 # type: Plain text
-#: packages.txt:2177
+#: packages.txt:2183
 #, no-wrap
 msgid ""
 "# chown root:root /etc/postfix/sasl_passwd\n"
@@ -9652,12 +9669,12 @@ msgstr ""
 "# postmap /etc/postfix/sasl_passwd\n"
 
 # type: Plain text
-#: packages.txt:2180
+#: packages.txt:2186
 msgid "Append the following lines to `/etc/postfix/main.cf`:"
 msgstr "Tilføj følgende linier til `/etc/postfix/main.cf`:"
 
 # type: Plain text
-#: packages.txt:2186
+#: packages.txt:2192
 #, no-wrap
 msgid ""
 "relayhost = mail.ispserver.com\n"
@@ -9671,29 +9688,29 @@ msgstr ""
 "smtp_sasl_security_options =\n"
 
 # type: Plain text
-#: packages.txt:2189
+#: packages.txt:2195
 msgid "Finally reload postfix:"
 msgstr "Til slut reload postfix:"
 
 # type: Plain text
-#: packages.txt:2192
+#: packages.txt:2198
 #, no-wrap
 msgid "# postfix reload\n"
 msgstr "# postfix reload\n"
 
 # type: Plain text
-#: packages.txt:2195
+#: packages.txt:2201
 msgid "That should do it!"
 msgstr "Dette burde gøre det!"
 
 # type: Plain text
-#: packages.txt:2196
+#: packages.txt:2202
 #, no-wrap
 msgid "postfixadmin"
 msgstr "postfixadmin"
 
 # type: Plain text
-#: packages.txt:2203
+#: packages.txt:2209
 msgid ""
 "This package relies on correct install of postfix's virtual tables and it "
 "needs to be configured before usage. Be sure to read upstream's +/var/www/"
@@ -9708,18 +9725,18 @@ msgstr ""
 "baserede interface."
 
 # type: Plain text
-#: packages.txt:2204
+#: packages.txt:2210
 #, no-wrap
 msgid "postgrey"
 msgstr "postgrey"
 
 # type: Plain text
-#: packages.txt:2207
+#: packages.txt:2213
 msgid "To use postgrey, put something along the lines of"
 msgstr "For at bruge postgrey, indsæt noget ligende langs linierne af"
 
 # type: Plain text
-#: packages.txt:2213
+#: packages.txt:2219
 #, no-wrap
 msgid ""
 "    smtpd_recipient_restrictions =\n"
@@ -9733,23 +9750,23 @@ msgstr ""
 "        check_policy_service inet:127.0.0.1:60000\n"
 
 # type: Plain text
-#: packages.txt:2216
+#: packages.txt:2222
 msgid "in your /etc/postfix/main.cf (postfix 2.1 or newer is required.)"
 msgstr "i din /etc/postfix/main.cf (postfix 2.1 eller nyere er påkrævet.)"
 
 # type: Plain text
-#: packages.txt:2217
+#: packages.txt:2223
 #, no-wrap
 msgid "pptpd"
 msgstr "pptpd"
 
 # type: Plain text
-#: packages.txt:2220
+#: packages.txt:2226
 msgid "Preface"
 msgstr "Preface"
 
 # type: Plain text
-#: packages.txt:2226
+#: packages.txt:2232
 msgid ""
 "I was asked to set up VPN using PPTP. A much secure way to setup it up is "
 "using IPSec, more details http://www.schneier.com/paper-pptpv2.html[here].  "
@@ -9762,12 +9779,12 @@ msgstr ""
 "problematisk på andre platforme end Unix"
 
 # type: Plain text
-#: packages.txt:2228
+#: packages.txt:2234
 msgid "Setting up the server"
 msgstr "Opsætning af severen"
 
 # type: Plain text
-#: packages.txt:2231
+#: packages.txt:2237
 msgid ""
 "The big problem here is that most outdated HOWTO starts with patching your "
 "kernel and ppp. This is no longer needed!"
@@ -9776,7 +9793,7 @@ msgstr ""
 "patche din kerne og ppp. Dette er ikke længere nødvendigt!"
 
 # type: Plain text
-#: packages.txt:2234
+#: packages.txt:2240
 msgid ""
 "Requiements: You need kernel>=2.6.15 or newer (Frugalware 0.4 or higher is "
 "OK).  Also you need ppp>=2.4.2."
@@ -9785,7 +9802,7 @@ msgstr ""
 "OK).  Du behøver også ppp>=2.4.2."
 
 # type: Plain text
-#: packages.txt:2237
+#: packages.txt:2243
 msgid ""
 "Also probably these are already installed on your system, let's see the new "
 "package: pptpd. Install it with the usual"
@@ -9794,23 +9811,23 @@ msgstr ""
 "pakke: pptpd. Installer den med den sædvanlige"
 
 # type: Plain text
-#: packages.txt:2240
+#: packages.txt:2246
 #, no-wrap
 msgid "# pacman-g2 -S pptpd\n"
 msgstr "# pacman-g2 -S pptpd\n"
 
 # type: Plain text
-#: packages.txt:2243
+#: packages.txt:2249
 msgid "Probably this is done if you're reading this HOWTO :-)"
 msgstr "Sandsynligvis er dette gjort hvis du er ved at læse denne HOWTO :-)"
 
 # type: Plain text
-#: packages.txt:2245
+#: packages.txt:2251
 msgid "Here comes my '/etc/pptp.conf':"
 msgstr "Her kommer min '/etc/pptp.conf':"
 
 # type: Plain text
-#: packages.txt:2252
+#: packages.txt:2258
 #, no-wrap
 msgid ""
 "$ grep -v '^\\(#\\|$\\)' /etc/pptpd.conf\n"
@@ -9826,7 +9843,7 @@ msgstr ""
 "remoteip 10.0.0.89-127\n"
 
 # type: Plain text
-#: packages.txt:2256
+#: packages.txt:2262
 msgid ""
 "10.0.0.88 is the internal address of the server, 10.0.0.89-127 is the range "
 "that can be used by the pptp clients."
@@ -9835,12 +9852,12 @@ msgstr ""
 "bruges af pptp klienterne."
 
 # type: Plain text
-#: packages.txt:2258
+#: packages.txt:2264
 msgid "Then let's see that referred '/etc/ppp/options.pptpd':"
 msgstr "Derefter lad os se på den henviste '/etc/ppp/options.pptpd':"
 
 # type: Plain text
-#: packages.txt:2274
+#: packages.txt:2280
 #, no-wrap
 msgid ""
 "$ grep -v '^\\(#\\|$\\)' /etc/ppp/options.pptpd\n"
@@ -9874,19 +9891,19 @@ msgstr ""
 "nologfd\n"
 
 # type: Plain text
-#: packages.txt:2277
+#: packages.txt:2283
 msgid ""
 "After everything works fine, you can remove the \"debug\" line from the "
 "config."
 msgstr "Efter at alt virker fint, kan du fjerne \"debug\" linien fra config."
 
 # type: Plain text
-#: packages.txt:2279
+#: packages.txt:2285
 msgid "Then add at least one user:"
 msgstr "Derefter tilføj i det mindste en bruger:"
 
 # type: Plain text
-#: packages.txt:2284
+#: packages.txt:2290
 #, no-wrap
 msgid ""
 "# cat /etc/ppp/chap-secrets\n"
@@ -9898,7 +9915,7 @@ msgstr ""
 "mylogin           *      stupidpassword          *\n"
 
 # type: Plain text
-#: packages.txt:2289
+#: packages.txt:2295
 msgid ""
 "The rest is about to allow pptp on the firewall (I'm assuming that you use "
 "the default Frugalware configuration: INPUT is on DROP by default, but "
@@ -9909,14 +9926,14 @@ msgstr ""
 "FORWARD er tilladt, OUTPUT også.)"
 
 # type: Plain text
-#: packages.txt:2291
+#: packages.txt:2297
 msgid ""
 "Add the following 2 lines to the filter section of '/etc/sysconfig/firewall':"
 msgstr ""
 "Tilføj følgende 2 linier til filter section i din '/etc/sysconfig/firewall':"
 
 # type: Plain text
-#: packages.txt:2295
+#: packages.txt:2301
 #, no-wrap
 msgid ""
 "-A INPUT -p gre -j ACCEPT\n"
@@ -9926,7 +9943,7 @@ msgstr ""
 "-A INPUT -p tcp -m tcp --dport 1723 -j ACCEPT\n"
 
 # type: Plain text
-#: packages.txt:2300
+#: packages.txt:2306
 msgid ""
 "If you want to allow a client to access Internet via this pptp server, add "
 "the following line to the nat section of the same file (change ethX to the "
@@ -9937,29 +9954,29 @@ msgstr ""
 "netværk interface):"
 
 # type: Plain text
-#: packages.txt:2303
+#: packages.txt:2309
 #, no-wrap
 msgid "-A POSTROUTING -o ethX -j MASQUERADE\n"
 msgstr "-A POSTROUTING -o ethX -j MASQUERADE\n"
 
 # type: Plain text
-#: packages.txt:2306
+#: packages.txt:2312
 msgid "Then check if you have PPP support in the kernel enabled:"
 msgstr "Derefter tjek om du har PPP understøttelse i kernen aktiveret:"
 
 # type: Plain text
-#: packages.txt:2309
+#: packages.txt:2315
 #, no-wrap
 msgid "# lsmod | grep ppp_generic\n"
 msgstr "# lsmod | grep ppp_generic\n"
 
 # type: Plain text
-#: packages.txt:2312
+#: packages.txt:2318
 msgid "If there is no output, enable it:"
 msgstr "Hvis der ikke er noget output, aktiver det:"
 
 # type: Plain text
-#: packages.txt:2316
+#: packages.txt:2322
 #, no-wrap
 msgid ""
 "# modprobe ppp_generic\n"
@@ -9969,18 +9986,18 @@ msgstr ""
 "# echo \"ppp_generic\" >> /etc/sysconfig/modules\n"
 
 # type: Plain text
-#: packages.txt:2319
+#: packages.txt:2325
 msgid "Now we're ready to start:"
 msgstr "Nu er vi klar til at starte:"
 
 # type: Plain text
-#: packages.txt:2322
+#: packages.txt:2328
 #, no-wrap
 msgid "# pptpd -f -o /etc/ppp/options.pptpd\n"
 msgstr "# pptpd -f -o /etc/ppp/options.pptpd\n"
 
 # type: Plain text
-#: packages.txt:2325
+#: packages.txt:2331
 msgid ""
 "If no error messages are reported, omit the -f option so it will go "
 "background."
@@ -9989,7 +10006,7 @@ msgstr ""
 "baggrunden."
 
 # type: Plain text
-#: packages.txt:2328
+#: packages.txt:2334
 msgid ""
 "Later you can put this to your '/etc/rc.d/rc.local'. Debug messages will "
 "appear in '/var/log/messages' if you're interested in them."
@@ -9998,23 +10015,23 @@ msgstr ""
 "dukke op i '/var/log/messages' hvis du er interesseret i dem."
 
 # type: Plain text
-#: packages.txt:2330
+#: packages.txt:2336
 msgid "Client side"
 msgstr "Klientside"
 
 # type: Plain text
-#: packages.txt:2332
+#: packages.txt:2338
 msgid "Install the necessary \"pptp\" package:"
 msgstr "Installer den nødvendige \"pptp\" pakke:"
 
 # type: Plain text
-#: packages.txt:2335
+#: packages.txt:2341
 #, no-wrap
 msgid "# pacman-g2 -S pptp\n"
 msgstr "# pacman-g2 -S pptp\n"
 
 # type: Plain text
-#: packages.txt:2340
+#: packages.txt:2346
 msgid ""
 "Most howto suggets the pptpconfig (http://pptpclient.sourceforge.net/) tool, "
 "it's written in PHP and uses GTK+2. You don't want to use graphical tools "
@@ -10026,12 +10043,12 @@ msgstr ""
 "du?"
 
 # type: Plain text
-#: packages.txt:2342
+#: packages.txt:2348
 msgid "We can do it by hand, not too complicated."
 msgstr "Vi kan gøre det ved håndkraft, det er ikke så vanskeligt."
 
 # type: Plain text
-#: packages.txt:2344
+#: packages.txt:2350
 msgid ""
 "You can name every tunnel you create, I'll use here the \"mytunnel\" name."
 msgstr ""
@@ -10039,7 +10056,7 @@ msgstr ""
 "\" navn."
 
 # type: Plain text
-#: packages.txt:2347
+#: packages.txt:2353
 msgid ""
 "Fire up your favorite editor and create the /etc/ppp/peers/mytunnel file "
 "with the following contents:"
@@ -10048,7 +10065,7 @@ msgstr ""
 "følgende indhold:"
 
 # type: Plain text
-#: packages.txt:2355
+#: packages.txt:2361
 #, no-wrap
 msgid ""
 "$ grep -v '^\\(#\\|$\\)' /etc/ppp/peers/mytunnel\n"
@@ -10066,29 +10083,29 @@ msgstr ""
 "require-mppe\n"
 
 # type: Plain text
-#: packages.txt:2358
+#: packages.txt:2364
 msgid "Your /etc/ppp/chap-secrets should contain the following line:"
 msgstr "Din /etc/ppp/chap-secrets bør indeholde følgende linie:"
 
 # type: Plain text
-#: packages.txt:2361
+#: packages.txt:2367
 #, no-wrap
 msgid "mylogin  PPTP    secret  *\n"
 msgstr "mylogin  PPTP    secret  *\n"
 
 # type: Plain text
-#: packages.txt:2364
+#: packages.txt:2370
 msgid "We're ready to start the client:"
 msgstr "Vi er klar til at starte klienten:"
 
 # type: Plain text
-#: packages.txt:2367
+#: packages.txt:2373
 #, no-wrap
 msgid "# pppd pty 'pptp server --nolaunchpppd' call mytunnel debug dump logfd 2 nodetach\n"
 msgstr "# pppd pty 'pptp server --nolaunchpppd' call mytunnel debug dump logfd 2 nodetach\n"
 
 # type: Plain text
-#: packages.txt:2370
+#: packages.txt:2376
 msgid ""
 "A lot of debug messages will be printed, check on an other console if you "
 "got a new pppx interface or not:"
@@ -10097,7 +10114,7 @@ msgstr ""
 "du fik et nyt pppx interface eller ej:"
 
 # type: Plain text
-#: packages.txt:2380
+#: packages.txt:2386
 #, no-wrap
 msgid ""
 "# ifconfig ppp0\n"
@@ -10119,7 +10136,7 @@ msgstr ""
 "        RX bytes:70 (70.0 b)  TX bytes:76 (76.0 b)\n"
 
 # type: Plain text
-#: packages.txt:2384
+#: packages.txt:2390
 msgid ""
 "If it seems to be ok, you no longer need the debug messages and pppd can go "
 "backround:"
@@ -10128,23 +10145,23 @@ msgstr ""
 "fejlbeskeder og pppd kan køre i baggrunden:"
 
 # type: Plain text
-#: packages.txt:2387
+#: packages.txt:2393
 #, no-wrap
 msgid "# pppd pty 'pptp server --nolaunchpppd' call mytunnel\n"
 msgstr "# pppd pty 'pptp server --nolaunchpppd' call mytunnel\n"
 
 # type: Plain text
-#: packages.txt:2390
+#: packages.txt:2396
 msgid "That was all. Not so simple but anyone can do it :-)"
 msgstr "Dette var alt. Ikke så enkelt men alle kan gøre det :-)"
 
 # type: Plain text
-#: packages.txt:2392
+#: packages.txt:2398
 msgid "Resources"
 msgstr "Ressourcer"
 
 # type: Plain text
-#: packages.txt:2394
+#: packages.txt:2400
 msgid ""
 "http://czeh.hu/linuxdoc/vpn-pptp.html - VPN connection using PPTP and Linux "
 "by Istvan Czeh (Hungarian)"
@@ -10153,7 +10170,7 @@ msgstr ""
 "Linux af Istvan Czeh (Ungarsk)"
 
 # type: Plain text
-#: packages.txt:2395
+#: packages.txt:2401
 msgid ""
 "http://webb.gotdns.com:2080/kernel-mppe/pptp-command.html - 'pptp-command' "
 "HOWTO"
@@ -10162,44 +10179,44 @@ msgstr ""
 "HOWTO"
 
 # type: Plain text
-#: packages.txt:2396
+#: packages.txt:2402
 #, no-wrap
 msgid "psx"
 msgstr "psx"
 
 # type: Plain text
-#: packages.txt:2399
+#: packages.txt:2405
 msgid ""
 "Note: You must find a PSX bios on your own, and place it in ~/.pSX/bios."
 msgstr ""
 "Note: Du skal finde en PSX bios på egen hånd, og placere det i ~/.pSX/bios."
 
 # type: Plain text
-#: packages.txt:2400
+#: packages.txt:2406
 #, no-wrap
 msgid "pyro"
 msgstr "pyro"
 
 # type: Plain text
-#: packages.txt:2403
+#: packages.txt:2409
 msgid ""
 "You'll find pyro's scripts in '/usr/lib/python2.5/site-packages/Pyro/bin'"
 msgstr "Du finder pyro's scripts i '/usr/lib/python2.5/site-packages/Pyro/bin'"
 
 # type: Plain text
-#: packages.txt:2404
+#: packages.txt:2410
 #, no-wrap
 msgid "qemu"
 msgstr "qemu"
 
 # type: Plain text
-#: packages.txt:2406
+#: packages.txt:2412
 #, no-wrap
 msgid "QuickStart"
 msgstr "HurtigStart"
 
 # type: Plain text
-#: packages.txt:2411
+#: packages.txt:2417
 msgid ""
 "If you are completely new to `qemu`, you may find the big list of switches a "
 "bit confusing. Most users want to install an operating system from a cdrom "
@@ -10211,7 +10228,7 @@ msgstr ""
 "brug for:"
 
 # type: Plain text
-#: packages.txt:2416
+#: packages.txt:2422
 #, no-wrap
 msgid ""
 "$ qemu-img create foo.img 8G\n"
@@ -10223,13 +10240,13 @@ msgstr ""
 "$ qemu -hda foo.img -cdrom bar.iso\n"
 
 # type: Plain text
-#: packages.txt:2418
+#: packages.txt:2424
 #, no-wrap
 msgid "Tricks"
 msgstr "Tricks"
 
 # type: Plain text
-#: packages.txt:2422
+#: packages.txt:2428
 msgid ""
 "It worth to read the full documentation at `/usr/share/doc/qemu-*/qemu-doc."
 "html`, it really worth to do so."
@@ -10238,12 +10255,12 @@ msgstr ""
 "doc.html`, det er virkelig en god ide."
 
 # type: Plain text
-#: packages.txt:2424
+#: packages.txt:2430
 msgid "To demonstrate how powerfull `qemu` is, here are a few cheap tricks:"
 msgstr "For at vise hvor kraftfuld `qemu` er, her er nogle billige kneb:"
 
 # type: Plain text
-#: packages.txt:2428
+#: packages.txt:2434
 msgid ""
 "If you want to be able to ssh to the machine, you can use port derirection. "
 "For example using the `-redir tcp:1022::22` option, `qemu:22` will be "
@@ -10254,12 +10271,12 @@ msgstr ""
 "`qemu:22` vil være tilgængelig på `localhost:1022`."
 
 # type: Plain text
-#: packages.txt:2430
+#: packages.txt:2436
 msgid "This requires `root` privileges."
 msgstr "Dette kræver `root` privilegier."
 
 # type: Plain text
-#: packages.txt:2433
+#: packages.txt:2439
 msgid ""
 "You can create a unix socket to control your virtual machine. For example if "
 "you are not able to ssh to the machine, you can still properly shut it down:"
@@ -10269,7 +10286,7 @@ msgstr ""
 "forsvarligt:"
 
 # type: Plain text
-#: packages.txt:2436
+#: packages.txt:2442
 msgid ""
 "Use the `-monitor unix:/tmp/qemu,server,nowait` option, then send the "
 "`sendkey ctrl-alt-delete` string to the socket, for example using python:"
@@ -10278,7 +10295,7 @@ msgstr ""
 "`sendkey ctrl-alt-delete` streng til socket, for eksempel ved brug af python:"
 
 # type: Plain text
-#: packages.txt:2441
+#: packages.txt:2447
 #, no-wrap
 msgid ""
 "python -c \"import socket; sock = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM); \\\n"
@@ -10291,7 +10308,7 @@ msgstr ""
 "')\"\n"
 
 # type: Plain text
-#: packages.txt:2447
+#: packages.txt:2453
 msgid ""
 "Finally a trick about vnc: using for example the `-vnc 0` option, it's "
 "possible to reach qemu's display via vnc. This is quite handy if you run "
@@ -10304,18 +10321,18 @@ msgstr ""
 "frakoble fra den hvornår du ønsker at gøre dette."
 
 # type: Plain text
-#: packages.txt:2449
+#: packages.txt:2455
 msgid "Really, read the full documentation! :)"
 msgstr "Virkelig, læs den fulde dokumentation! :)"
 
 # type: Plain text
-#: packages.txt:2452
+#: packages.txt:2458
 #, no-wrap
 msgid "quagga"
 msgstr "quagga"
 
 # type: Plain text
-#: packages.txt:2456
+#: packages.txt:2462
 msgid ""
 "The config files have to be in the /etc/quagga dir and have to be writeable "
 "by the 'quagga' user (to be able to save config from the daemon's shell)."
@@ -10324,7 +10341,7 @@ msgstr ""
 "'quagga' brugeren (for at kunne gemme config fra daemon shell)."
 
 # type: Plain text
-#: packages.txt:2459
+#: packages.txt:2465
 msgid ""
 "Neither of the daemons will start till you edit the config files and rename/"
 "move them from *.conf.sample to *.conf (be careful to the uid/gid)."
@@ -10333,7 +10350,7 @@ msgstr ""
 "fjerner dem fra *.conf.sample til *.conf (vær forsigtig med uid/gid)."
 
 # type: Plain text
-#: packages.txt:2462
+#: packages.txt:2468
 msgid ""
 "You have to enable explicitly the routing daemons to get started from the "
 "init script. The config file is '/etc/sysconfig/quagga'"
@@ -10342,7 +10359,7 @@ msgstr ""
 "config-filen er '/etc/sysconfig/quagga'"
 
 # type: Plain text
-#: packages.txt:2467
+#: packages.txt:2473
 msgid ""
 "If you have a working firewall, the OSPF daemon will not get working, you "
 "have to enable it in the firewall with this rule (maybe other routing "
@@ -10355,18 +10372,18 @@ msgstr ""
 "om det):"
 
 # type: Plain text
-#: packages.txt:2469
+#: packages.txt:2475
 msgid "'iptables -A INPUT -p 89 -m state --state NEW -j ACCEPT'"
 msgstr "'iptables -A INPUT -p 89 -m state --state NEW -j ACCEPT'"
 
 # type: Plain text
-#: packages.txt:2472
+#: packages.txt:2478
 #, no-wrap
 msgid "quota-tools"
 msgstr "quota-værktøjer"
 
 # type: Plain text
-#: packages.txt:2476
+#: packages.txt:2482
 msgid ""
 "To really activate quotas, you'll need to add `usrquota` to the appropriate "
 "partitions as listed in `/etc/fstab`.  Here's an example:"
@@ -10375,13 +10392,13 @@ msgstr ""
 "passende partitioner som oplistet i `/etc/fstab`.  Her er et eksempel:"
 
 # type: Plain text
-#: packages.txt:2479
+#: packages.txt:2485
 #, no-wrap
 msgid "/dev/hda2   /home   ext2   defaults,usrquota    1   1\n"
 msgstr "/dev/hda2   /home   ext2   defaults,usrquota    1   1\n"
 
 # type: Plain text
-#: packages.txt:2483
+#: packages.txt:2489
 msgid ""
 "When you want quota support for a given partition, some special files have "
 "to be created boot-time. This is not done by default. To do so, you need to"
@@ -10391,35 +10408,35 @@ msgstr ""
 "at gøre dette, er du nødt til at gøre dette"
 
 # type: Plain text
-#: packages.txt:2486
+#: packages.txt:2492
 #, no-wrap
 msgid "# touch /var/lib/quota/new\n"
 msgstr "# touch /var/lib/quota/new\n"
 
 # type: Plain text
-#: packages.txt:2489
+#: packages.txt:2495
 msgid "then, reboot to create those files."
 msgstr "så, reboot for at skabe disse filer."
 
 # type: Plain text
-#: packages.txt:2491
+#: packages.txt:2497
 msgid "To edit user quotas, use `edquota`.  See `man edquota`."
 msgstr "For at redigere user quotas, brug `edquota`.  Se `man edquota`."
 
 # type: Plain text
-#: packages.txt:2492
+#: packages.txt:2498
 #, no-wrap
 msgid "r8168"
 msgstr "r8168"
 
 # type: Plain text
-#: packages.txt:2494 packages.txt:2521
+#: packages.txt:2500 packages.txt:2527
 #, no-wrap
 msgid "About the driver"
 msgstr "Om driveren"
 
 # type: Plain text
-#: packages.txt:2498
+#: packages.txt:2504
 msgid ""
 "This is the r8168 driver from Realtek. This in _not_ the same r8168 "
 "presented in Linux kernel."
@@ -10428,42 +10445,42 @@ msgstr ""
 "findes i Linux-kernen."
 
 # type: Plain text
-#: packages.txt:2500
+#: packages.txt:2506
 msgid "This driver supports: RTL8168S/8110S, RTL8168SB/8110SB, RTL8110SC"
 msgstr "Denne driver understøtter: RTL8168S/8110S, RTL8168SB/8110SB, RTL8110SC"
 
 # type: Plain text
-#: packages.txt:2501 packages.txt:2528
+#: packages.txt:2507 packages.txt:2534
 #, no-wrap
 msgid "Using the driver"
 msgstr "Brug af driver"
 
 # type: Plain text
-#: packages.txt:2504
+#: packages.txt:2510
 msgid "To use this driver you have to remove the official r8168 if loaded."
 msgstr ""
 "For at bruge denne driver er du nødt til at fjerne den officielle r8168 hvis "
 "den er loaded."
 
 # type: Plain text
-#: packages.txt:2507
+#: packages.txt:2513
 #, no-wrap
 msgid "# rmmod r8168\n"
 msgstr "# rmmod r8168\n"
 
 # type: Plain text
-#: packages.txt:2510 packages.txt:2537
+#: packages.txt:2516 packages.txt:2543
 msgid "You can load this module with"
 msgstr "Du kan loade dette mondul med"
 
 # type: Plain text
-#: packages.txt:2513
+#: packages.txt:2519
 #, no-wrap
 msgid "# modprobe realtek-r8168\n"
 msgstr "# modprobe realtek-r8168\n"
 
 # type: Plain text
-#: packages.txt:2518
+#: packages.txt:2524
 msgid ""
 "It might be a good idea to blacklist `r8168` and add `realtek-r8168` to `/"
 "etc/sysconfig/modules`, so you do not have to play this game after every "
@@ -10474,13 +10491,13 @@ msgstr ""
 "reboot."
 
 # type: Plain text
-#: packages.txt:2519
+#: packages.txt:2525
 #, no-wrap
 msgid "r8169"
 msgstr "r8169"
 
 # type: Plain text
-#: packages.txt:2525
+#: packages.txt:2531
 msgid ""
 "This is the r8169 driver from Realtek. This in _not_ the same r8169 "
 "presented in Linux kernel."
@@ -10489,31 +10506,31 @@ msgstr ""
 "findes i Linux-kernen."
 
 # type: Plain text
-#: packages.txt:2527
+#: packages.txt:2533
 msgid "This driver supports: RTL8169S/8110S, RTL8169SB/8110SB, RTL8110SC"
 msgstr "Denne driver understøtter: RTL8169S/8110S, RTL8169SB/8110SB, RTL8110SC"
 
 # type: Plain text
-#: packages.txt:2531
+#: packages.txt:2537
 msgid "To use this driver you have to remove the official r8169 if loaded."
 msgstr ""
 "For at bruge denne driver er du nødt til at fjerne den officielle r8169 hvis "
 "den er loaded."
 
 # type: Plain text
-#: packages.txt:2534
+#: packages.txt:2540
 #, no-wrap
 msgid "# rmmod r8169\n"
 msgstr "# rmmod r8169\n"
 
 # type: Plain text
-#: packages.txt:2540
+#: packages.txt:2546
 #, no-wrap
 msgid "# modprobe realtek-r8169\n"
 msgstr "# modprobe realtek-r8169\n"
 
 # type: Plain text
-#: packages.txt:2545
+#: packages.txt:2551
 msgid ""
 "It might be a good idea to blacklist `r8169` and add `realtek-r8169` to `/"
 "etc/sysconfig/modules`, so you do not have to play this game after every "
@@ -10524,13 +10541,13 @@ msgstr ""
 "reboot."
 
 # type: Plain text
-#: packages.txt:2546
+#: packages.txt:2552
 #, no-wrap
 msgid "rox-filer"
 msgstr "rox-filer"
 
 # type: Plain text
-#: packages.txt:2551
+#: packages.txt:2557
 msgid ""
 "Use the included desktop2appfile shell script, if you want an automatic way "
 "of converting system installed desktop files in /usr/share/applications to a "
@@ -10541,41 +10558,41 @@ msgstr ""
 "share/applications til en ROX applikation-folder."
 
 # type: Plain text
-#: packages.txt:2552
+#: packages.txt:2558
 #, no-wrap
 msgid "rss2email"
 msgstr "rss2email"
 
 # type: Plain text
-#: packages.txt:2555
+#: packages.txt:2561
 #, no-wrap
 msgid "Configure:\n"
 msgstr "Konfigurere:\n"
 
 # type: Plain text
-#: packages.txt:2558
+#: packages.txt:2564
 msgid "Create a new feed database:"
 msgstr "Skab en ny feed database:"
 
 # type: Plain text
-#: packages.txt:2561
+#: packages.txt:2567
 #, no-wrap
 msgid "$ r2e new you@yourdomain.com\n"
 msgstr "$ r2e new dig@ditdomæne.com\n"
 
 # type: Plain text
-#: packages.txt:2564
+#: packages.txt:2570
 msgid "Subscribe to some feeds:"
 msgstr "Abonner på nogle feeds:"
 
 # type: Plain text
-#: packages.txt:2567
+#: packages.txt:2573
 #, no-wrap
 msgid "$ r2e add http://www.aaronsw.com/2002/rss2email/updates.rss\n"
 msgstr "$ r2e add http://www.aaronsw.com/2002/rss2email/updates.rss\n"
 
 # type: Plain text
-#: packages.txt:2571
+#: packages.txt:2577
 msgid ""
 "(That's the feed to be notified when there's a new version of rss2email.)  "
 "Repeat this for each feed you want to subscribe to."
@@ -10584,7 +10601,7 @@ msgstr ""
 "Gentag dette for hvert feed du ønsker at abonnere på."
 
 # type: Plain text
-#: packages.txt:2575
+#: packages.txt:2581
 msgid ""
 "When you run rss2email, it emails you about every story it hasn't seen "
 "before.  But the first time you run it, that will be every story. To avoid "
@@ -10597,36 +10614,36 @@ msgstr ""
 "første gang du kører den:"
 
 # type: Plain text
-#: packages.txt:2578
+#: packages.txt:2584
 #, no-wrap
 msgid "$ r2e run --no-send\n"
 msgstr "$ r2e run --no-send\n"
 
 # type: Plain text
-#: packages.txt:2581
+#: packages.txt:2587
 msgid "Then later, you can ask it to email you new stories:"
 msgstr "Senere kan du spørge det om at emaile dig nye fhistorier:"
 
 # type: Plain text
-#: packages.txt:2584
+#: packages.txt:2590
 #, no-wrap
 msgid "$ r2e run\n"
 msgstr "$ r2e run\n"
 
 # type: Plain text
-#: packages.txt:2587
+#: packages.txt:2593
 msgid "You probably want to set this up as a cron job or something."
 msgstr ""
 "Du vil sandsynligvis gerne opsætte det til et cron job eller noget andet."
 
 # type: Plain text
-#: packages.txt:2589
+#: packages.txt:2595
 #, no-wrap
 msgid "Customize:\n"
 msgstr "Tilpasse:\n"
 
 # type: Plain text
-#: packages.txt:2594
+#: packages.txt:2600
 msgid ""
 "There are a few options, described at the top of rss2email.py. If you want "
 "to change something, add it to config.py. For example, to be notified every "
@@ -10638,13 +10655,13 @@ msgstr ""
 "indlæg:"
 
 # type: Plain text
-#: packages.txt:2597
+#: packages.txt:2603
 #, no-wrap
 msgid "$ echo \"TRUST_GUID = 0\" >>~/.rss2email/config.py\n"
 msgstr "$ echo \"TRUST_GUID = 0\" >>~/.rss2email/config.py\n"
 
 # type: Plain text
-#: packages.txt:2600
+#: packages.txt:2606
 msgid ""
 "And you can ask rss2email to make the emails look as if they were sent when "
 "the item was actually posted:"
@@ -10653,19 +10670,19 @@ msgstr ""
 "når de faktisk blev skrevet:"
 
 # type: Plain text
-#: packages.txt:2603
+#: packages.txt:2609
 #, no-wrap
 msgid "$ echo \"DATE_HEADER = 1\" >>~/.rss2email/config.py\n"
 msgstr "$ echo \"DATE_HEADER = 1\" >>~/.rss2email/config.py\n"
 
 # type: Plain text
-#: packages.txt:2605
+#: packages.txt:2611
 #, no-wrap
 msgid "sawfish"
 msgstr "sawfish"
 
 # type: Plain text
-#: packages.txt:2627
+#: packages.txt:2633
 msgid ""
 "I have included a simple script called sawfish-session which sources $HOME/."
 "sawfish/startup, if it exists. It is setup so you can easily run your own "
@@ -10712,7 +10729,7 @@ msgstr ""
 "bibeholde det.  Happy hacking!"
 
 # type: Plain text
-#: packages.txt:2648
+#: packages.txt:2654
 #, no-wrap
 msgid ""
 "(setq root-menu '(\n"
@@ -10758,35 +10775,35 @@ msgstr ""
 "))\n"
 
 # type: Plain text
-#: packages.txt:2649
+#: packages.txt:2655
 #, no-wrap
 msgid "scratchbox"
 msgstr "scratchbox"
 
 # type: Plain text
-#: packages.txt:2652
+#: packages.txt:2658
 msgid "You need to complete the install, running:"
 msgstr "For at gøre installationen færdig, skal du køre:"
 
 # type: Plain text
-#: packages.txt:2655
+#: packages.txt:2661
 #, no-wrap
 msgid "# /usr/lib/scratchbox/run_me_first.sh\n"
 msgstr "# /usr/lib/scratchbox/run_me_first.sh\n"
 
 # type: Plain text
-#: packages.txt:2658
+#: packages.txt:2664
 msgid "Do not forget to create a scratchbox user:"
 msgstr "Glem ikke at skabe scratchbox brugeren:"
 
 # type: Plain text
-#: packages.txt:2661
+#: packages.txt:2667
 #, no-wrap
 msgid "# /usr/lib/scratchbox/sbin/sbox_adduser <user>\n"
 msgstr "# /usr/lib/scratchbox/sbin/sbox_adduser <bruger>\n"
 
 # type: Plain text
-#: packages.txt:2666
+#: packages.txt:2672
 msgid ""
 "For further documentation about how to setup scratchbox for your development "
 "needs have a look at http://www.scratchbox.org/documentation/user[scratchbox "
@@ -10797,7 +10814,7 @@ msgstr ""
 "[scratchbox dokumentation]."
 
 # type: Plain text
-#: packages.txt:2668
+#: packages.txt:2674
 msgid ""
 "Also note that when you reboot and before trying to run scratchbox, you "
 "should run:"
@@ -10806,52 +10823,52 @@ msgstr ""
 "køre:"
 
 # type: Plain text
-#: packages.txt:2671
+#: packages.txt:2677
 #, no-wrap
 msgid "# service scratchbox start\n"
 msgstr "# service scratchbox start\n"
 
 # type: Plain text
-#: packages.txt:2674
+#: packages.txt:2680
 msgid "You can also add it to the default runlevel:"
 msgstr "Du kan også tilføje det til standard runlevel:"
 
 # type: Plain text
-#: packages.txt:2677
+#: packages.txt:2683
 #, no-wrap
 msgid "# service scratchbox add\n"
 msgstr "# service scratchbox add\n"
 
 # type: Plain text
-#: packages.txt:2680
+#: packages.txt:2686
 msgid "Then to start scratchbox, run:"
 msgstr "Derefter for at starte scratchbox, kør:"
 
 # type: Plain text
-#: packages.txt:2683
+#: packages.txt:2689
 #, no-wrap
 msgid "$ /usr/lib/scratchbox/login\n"
 msgstr "$ /usr/lib/scratchbox/login\n"
 
 # type: Plain text
-#: packages.txt:2686
+#: packages.txt:2692
 msgid "In order to run scratchbox, you have to be in the 'sbox' group."
 msgstr "For at kunne køre scratchbox, skal du være i 'sbox' gruppen."
 
 # type: Plain text
-#: packages.txt:2687
+#: packages.txt:2693
 #, no-wrap
 msgid "screen"
 msgstr "screen"
 
 # type: Plain text
-#: packages.txt:2689
+#: packages.txt:2695
 #, no-wrap
 msgid "Keeping your screen running across reboots"
 msgstr "At bibeholde din screen kørende ved genstart"
 
 # type: Plain text
-#: packages.txt:2694
+#: packages.txt:2700
 msgid ""
 "You may want to restart your screen session automatically after a reboot. "
 "This is the case, for example, when we seed the Frugalware ISOs using a "
@@ -10862,7 +10879,7 @@ msgstr ""
 "en torrent client. Her er hvad du har brug for:"
 
 # type: Plain text
-#: packages.txt:2697
+#: packages.txt:2703
 msgid ""
 "Set up your `~/.screenrc` so that it'll start your application when screen "
 "starts up:"
@@ -10871,45 +10888,45 @@ msgstr ""
 "starter op:"
 
 # type: Plain text
-#: packages.txt:2700
+#: packages.txt:2706
 #, no-wrap
 msgid "screen -t seed 0 /bin/sh -c 'cd $HOME/frugalware-torrents; rtorrent'\n"
 msgstr "screen -t seed 0 /bin/sh -c 'cd $HOME/frugalware-torrents; rtorrent'\n"
 
 # type: Plain text
-#: packages.txt:2703
+#: packages.txt:2709
 msgid "Run `crontab -e` and append the following line to your crontab:"
 msgstr "Kør `crontab -e` og tilføj følgende linie til din crontab:"
 
 # type: Plain text
-#: packages.txt:2706
+#: packages.txt:2712
 #, no-wrap
 msgid "@reboot screen -d -m\n"
 msgstr "@reboot screen -d -m\n"
 
 # type: Plain text
-#: packages.txt:2709
+#: packages.txt:2715
 msgid "You're ready!"
 msgstr "Du er klar!"
 
 # type: Plain text
-#: packages.txt:2712
+#: packages.txt:2718
 #, no-wrap
 msgid "speedtouch"
 msgstr "speedtouch"
 
 # type: Plain text
-#: packages.txt:2715
+#: packages.txt:2721
 msgid "Driver for the SpeedTouch USB and SpeedTouch 330"
 msgstr "Driver for SpeedTouch USB og SpeedTouch 330"
 
 # type: Plain text
-#: packages.txt:2717
+#: packages.txt:2723
 msgid "The binaries (modem_run and pppoax) have been installed in `/usr/sbin`."
 msgstr "Binære (modem_run og pppoax) er blevet installeret i `/usr/sbin`."
 
 # type: Plain text
-#: packages.txt:2719
+#: packages.txt:2725
 msgid ""
 "You will find the documentation and example script files in: `/usr/share/doc/"
 "speedtouch-pkgver`"
@@ -10918,18 +10935,18 @@ msgstr ""
 "speedtouch-pkgver`"
 
 # type: Plain text
-#: packages.txt:2721
+#: packages.txt:2727
 msgid "You can start configuring your modem by running"
 msgstr "Du kan begynde at konfigurere dit modem ved at køre"
 
 # type: Plain text
-#: packages.txt:2724
+#: packages.txt:2730
 #, no-wrap
 msgid "/usr/bin/speedtouch-setup\n"
 msgstr "/usr/bin/speedtouch-setup\n"
 
 # type: Plain text
-#: packages.txt:2728
+#: packages.txt:2734
 msgid ""
 "Read the documentation ('/usr/share/doc/speedtouch-pkgver/howto')  carefully "
 "to use this driver correctly!"
@@ -10938,13 +10955,13 @@ msgstr ""
 "forsigtigt, denne driver skal bruges rigtigt!"
 
 # type: Plain text
-#: packages.txt:2729
+#: packages.txt:2735
 #, no-wrap
 msgid "spring"
 msgstr "kilde"
 
 # type: Plain text
-#: packages.txt:2732
+#: packages.txt:2738
 msgid ""
 "In order to use spring properly, you need non-free data files (maps, AI, "
 "games mods...)."
@@ -10953,23 +10970,23 @@ msgstr ""
 "AI, games mods...)."
 
 # type: Plain text
-#: packages.txt:2734
+#: packages.txt:2740
 msgid "Download the data files tarball spring_data_pack (270mo)"
 msgstr "Download data filerne tarball spring_data_pack (270mo)"
 
 # type: delimited block -
-#: packages.txt:2737
+#: packages.txt:2743
 #, no-wrap
 msgid "$ wget -c http://ftp.jeuxlinux.fr/divers/spring_data_pack.tar.gz\n"
 msgstr "$ wget -c http://ftp.jeuxlinux.fr/divers/spring_data_pack.tar.gz\n"
 
 # type: Plain text
-#: packages.txt:2740
+#: packages.txt:2746
 msgid "Then untar it to your home!"
 msgstr "Udpak den herefter i din home mappe!"
 
 # type: delimited block -
-#: packages.txt:2744
+#: packages.txt:2750
 #, no-wrap
 msgid ""
 "$ cd ~/.spring\n"
@@ -10979,49 +10996,49 @@ msgstr ""
 "$ tar -xvjf ~/spring_data_pack.tar.gz\n"
 
 # type: Plain text
-#: packages.txt:2747
+#: packages.txt:2753
 msgid "Enjoy !"
 msgstr "Nyd det!"
 
 # type: Plain text
-#: packages.txt:2748
+#: packages.txt:2754
 #, no-wrap
 msgid "squirrelmail"
 msgstr "squirrelmail"
 
 # type: Plain text
-#: packages.txt:2751
+#: packages.txt:2757
 msgid ""
 "Please start the 'configure' script in the /var/www/squirrelmail directory!"
 msgstr "'configure' script skal startes i  /var/www/squirrelmail folderen!"
 
 # type: Plain text
-#: packages.txt:2752
+#: packages.txt:2758
 #, no-wrap
 msgid "squirrelmail-check_quota"
 msgstr "squirrelmail-check_quota"
 
 # type: Plain text
-#: packages.txt:2755 packages.txt:2759
+#: packages.txt:2761 packages.txt:2765
 msgid ""
 "You have to install this plugin with squirrelmail's own +./configure+ tool."
 msgstr ""
 "Du skal installere dette plugin med squirrelmail's own +./configure+ tool."
 
 # type: Plain text
-#: packages.txt:2756
+#: packages.txt:2762
 #, no-wrap
 msgid "squirrelmail-login_notes"
 msgstr "squirrelmail-login_noter"
 
 # type: Plain text
-#: packages.txt:2760
+#: packages.txt:2766
 #, no-wrap
 msgid "stunnel"
 msgstr "stunnel"
 
 # type: Plain text
-#: packages.txt:2763
+#: packages.txt:2769
 msgid ""
 "You need some additional configuration before stunnel will be functional:"
 msgstr ""
@@ -11029,12 +11046,12 @@ msgstr ""
 "funktionel"
 
 # type: Plain text
-#: packages.txt:2765
+#: packages.txt:2771
 msgid "Adjust the configuration file:"
 msgstr "Tilpas konfigurationsfilen:"
 
 # type: Plain text
-#: packages.txt:2769
+#: packages.txt:2775
 #, no-wrap
 msgid ""
 "# cp /etc/stunnel/stunnel.conf-sample /etc/stunnel/stunnel.conf\n"
@@ -11044,17 +11061,17 @@ msgstr ""
 "# vi /etc/stunnel/stunnel.conf\n"
 
 # type: Plain text
-#: packages.txt:2772
+#: packages.txt:2778
 msgid "If something goes wrong, try setting `sslVersion` to `all`."
 msgstr "Hvis noget går galt, prøv at sætte `sslVersion` til `all`."
 
 # type: Plain text
-#: packages.txt:2774
+#: packages.txt:2780
 msgid "Genrate your certificate:"
 msgstr "Generering af dit certifikat:"
 
 # type: Plain text
-#: packages.txt:2778
+#: packages.txt:2784
 #, no-wrap
 msgid ""
 "# openssl req -new -x509 -days 365 -nodes -config /etc/stunnel/stunnel.cnf -out \\\n"
@@ -11064,23 +11081,23 @@ msgstr ""
 "/etc/stunnel/mail.pem -keyout /etc/stunnel/mail.pem\n"
 
 # type: Plain text
-#: packages.txt:2781
+#: packages.txt:2787
 msgid "Hide the certificate from users:"
 msgstr "Skjul certifikatet for brugere:"
 
 # type: Plain text
-#: packages.txt:2784
+#: packages.txt:2790
 #, no-wrap
 msgid "# chmod 600 /etc/stunnel/mail.pem\n"
 msgstr "# chmod 600 /etc/stunnel/mail.pem\n"
 
 # type: Plain text
-#: packages.txt:2787
+#: packages.txt:2793
 msgid "Now you can enable and start the service:"
 msgstr "Nu kan du aktivere og starte service:"
 
 # type: Plain text
-#: packages.txt:2791
+#: packages.txt:2797
 #, no-wrap
 msgid ""
 "# service stunnel add\n"
@@ -11090,13 +11107,13 @@ msgstr ""
 "# service stunnel start\n"
 
 # type: Plain text
-#: packages.txt:2795
+#: packages.txt:2801
 #, no-wrap
 msgid "sugarcrm"
 msgstr "sugarcrm"
 
 # type: Plain text
-#: packages.txt:2799
+#: packages.txt:2805
 msgid ""
 "In order to use the sugarcrm, you have to symlink it to somewhere. For "
 "example, if you want to use it under http://localhost/sugarcrm, then use:"
@@ -11105,13 +11122,13 @@ msgstr ""
 "hvis du vil bruge det under http://localhost/sugarcrm, brug da:"
 
 # type: Plain text
-#: packages.txt:2802
+#: packages.txt:2808
 #, no-wrap
 msgid "# ln -s /var/www/SugarSuite /var/www/html/sugarcrm\n"
 msgstr "# ln -s /var/www/SugarSuite /var/www/html/sugarcrm\n"
 
 # type: Plain text
-#: packages.txt:2806
+#: packages.txt:2812
 msgid ""
 "After installing this package, please run in a browser http://localhost/"
 "sugarcrm/install.php to setup SugarSuite (sugarcrm)."
@@ -11120,13 +11137,13 @@ msgstr ""
 "localhost/sugarcrm/install.php for at opsætte SugarSuite (sugarcrm)."
 
 # type: Plain text
-#: packages.txt:2807
+#: packages.txt:2813
 #, no-wrap
 msgid "trac"
 msgstr "trac"
 
 # type: Plain text
-#: packages.txt:2812
+#: packages.txt:2818
 msgid ""
 "After installing trac you need a few steps to set it up.  First of all do "
 "not forget to install postgresql/mysql/sqlite according to which database "
@@ -11137,34 +11154,34 @@ msgstr ""
 "hvilken database backend du vil bruge."
 
 # type: Plain text
-#: packages.txt:2814
+#: packages.txt:2820
 msgid "To create a new trac project, just use the command:"
 msgstr "For at skabe et nyt trac projekt, brug bare denne kommando:"
 
 # type: Plain text
-#: packages.txt:2816
+#: packages.txt:2822
 #, no-wrap
 msgid "$ trac-admin /path/to/myproject initenv\n"
 msgstr "$ trac-admin /path/to/myproject initenv\n"
 
 # type: Plain text
-#: packages.txt:2819
+#: packages.txt:2825
 msgid "You can check the result with:"
 msgstr "Du kan tjekke resultatet med:"
 
 # type: Plain text
-#: packages.txt:2821
+#: packages.txt:2827
 #, no-wrap
 msgid "tracd --port 8000 /path/to/myproject\n"
 msgstr "tracd --port 8000 /path/to/myproject\n"
 
 # type: Plain text
-#: packages.txt:2824
+#: packages.txt:2830
 msgid "Then, fire up a browser and visit http://localhost:8000"
 msgstr "Derefter, fyr op under en browser og besøg http://localhost:8000"
 
 # type: Plain text
-#: packages.txt:2828
+#: packages.txt:2834
 msgid ""
 "For further documentation on trac, how to set up with different HTTP daemons "
 "see http://trac.edgewall.org/wiki/TracGuide[TracGuide]"
@@ -11173,7 +11190,7 @@ msgstr ""
 "daemons se http://trac.edgewall.org/wiki/TracGuide[TracGuide]"
 
 # type: Plain text
-#: packages.txt:2835
+#: packages.txt:2841
 msgid ""
 "/lib/udev/devices is the directory where packages or you can place real "
 "device nodes, which get copied over to /dev at every boot. This replaces our "
@@ -11186,46 +11203,46 @@ msgstr ""
 "anbefalet af upstream.)"
 
 # type: Plain text
-#: packages.txt:2836
+#: packages.txt:2842
 #, no-wrap
 msgid "user-mode-linux"
 msgstr "user-mode-linux"
 
 # type: Plain text
-#: packages.txt:2838
+#: packages.txt:2844
 #, no-wrap
 msgid "Creating a root image"
 msgstr "Skabe et root image"
 
 # type: Plain text
-#: packages.txt:2841
+#: packages.txt:2847
 msgid "Create a big empty file:"
 msgstr "Skab en stor tom fil:"
 
 # type: Plain text
-#: packages.txt:2844
+#: packages.txt:2850
 #, no-wrap
 msgid "# dd if=/dev/zero of=root_fs bs=1M count=1000\n"
 msgstr "# dd if=/dev/zero of=root_fs bs=1M count=1000\n"
 
 # type: Plain text
-#: packages.txt:2847
+#: packages.txt:2853
 msgid "Format it:"
 msgstr "Formater det:"
 
 # type: Plain text
-#: packages.txt:2850
+#: packages.txt:2856
 #, no-wrap
 msgid "# mke2fs -F -j root_fs\n"
 msgstr "# mke2fs -F -j root_fs\n"
 
 # type: Plain text
-#: packages.txt:2853
+#: packages.txt:2859
 msgid "Mount it:"
 msgstr "Mount det:"
 
 # type: Plain text
-#: packages.txt:2858
+#: packages.txt:2864
 #, no-wrap
 msgid ""
 "# mkdir uml\n"
@@ -11237,12 +11254,12 @@ msgstr ""
 "# cd uml\n"
 
 # type: Plain text
-#: packages.txt:2861
+#: packages.txt:2867
 msgid "Install `base` and `openssh`:"
 msgstr "Installer `base` og `openssh`:"
 
 # type: Plain text
-#: packages.txt:2865
+#: packages.txt:2871
 #, no-wrap
 msgid ""
 "# mkdir -p var/log tmp\n"
@@ -11252,12 +11269,12 @@ msgstr ""
 "# pacman-g2 -Sy base openssh -r ./\n"
 
 # type: Plain text
-#: packages.txt:2868
+#: packages.txt:2874
 msgid "Create `etc/fstab` with the following contents:"
 msgstr "Skab `etc/fstab` med følgende indhold:"
 
 # type: Plain text
-#: packages.txt:2874
+#: packages.txt:2880
 #, no-wrap
 msgid ""
 "none             /proc            proc        defaults         0   0\n"
@@ -11271,23 +11288,23 @@ msgstr ""
 "/dev/ubda        /                ext3        defaults         1   1\n"
 
 # type: Plain text
-#: packages.txt:2877
+#: packages.txt:2883
 msgid "Create `etc/sysconfig/keymap` with the following contents:"
 msgstr "Skab `etc/sysconfig/keymap` med følgende indhold:"
 
 # type: Plain text
-#: packages.txt:2880
+#: packages.txt:2886
 #, no-wrap
 msgid "keymap=us\n"
 msgstr "keymap=dk\n"
 
 # type: Plain text
-#: packages.txt:2883
+#: packages.txt:2889
 msgid "Create `etc/profile.d/lang.sh` with the following contents:"
 msgstr "Skab `etc/profile.d/lang.sh` med følgende indhold:"
 
 # type: Plain text
-#: packages.txt:2887
+#: packages.txt:2893
 #, no-wrap
 msgid ""
 "export LANG=en_US\n"
@@ -11297,13 +11314,13 @@ msgstr ""
 "export LC_ALL=$LANG\n"
 
 # type: Plain text
-#: packages.txt:2890
+#: packages.txt:2896
 msgid ""
 "We want networking, put the followings to `etc/sysconfig/network/default`:"
 msgstr "Vi ønsker netværk, indsæt følgende i `etc/sysconfig/network/default`:"
 
 # type: Plain text
-#: packages.txt:2895
+#: packages.txt:2901
 #, no-wrap
 msgid ""
 "[eth0]\n"
@@ -11315,7 +11332,7 @@ msgstr ""
 "gateway = default gw 192.168.0.254\n"
 
 # type: Plain text
-#: packages.txt:2899
+#: packages.txt:2905
 msgid ""
 "If you want to use multiple virtual machines, use `192.168.0.2`, "
 "`192.168.0.3` and so on instead."
@@ -11324,12 +11341,12 @@ msgstr ""
 "`192.168.0.3` og så videre i stedet for."
 
 # type: Plain text
-#: packages.txt:2901
+#: packages.txt:2907
 msgid "Let's copy in the terminal device and change our root:"
 msgstr "Lad os kopiere det i terminal device og ændre vores root:"
 
 # type: Plain text
-#: packages.txt:2905
+#: packages.txt:2911
 #, no-wrap
 msgid ""
 "# cp -a /dev/tty dev/\n"
@@ -11339,23 +11356,23 @@ msgstr ""
 "# chroot ./\n"
 
 # type: Plain text
-#: packages.txt:2908
+#: packages.txt:2914
 msgid "Create a regular user:"
 msgstr "Skab en regulær bruger:"
 
 # type: Plain text
-#: packages.txt:2911
+#: packages.txt:2917
 #, no-wrap
 msgid "# adduser\n"
 msgstr "# adduser\n"
 
 # type: Plain text
-#: packages.txt:2914
+#: packages.txt:2920
 msgid "Remove unnecessary services and enable ssh:"
 msgstr "Fjern unødvendige services og aktiver ssh:"
 
 # type: Plain text
-#: packages.txt:2920
+#: packages.txt:2926
 #, no-wrap
 msgid ""
 "# service keymap del\n"
@@ -11369,18 +11386,18 @@ msgstr ""
 "# service sshd add\n"
 
 # type: Plain text
-#: packages.txt:2923
+#: packages.txt:2929
 msgid "Remove unnecessary packages:"
 msgstr "Fjern unødvendige pakker:"
 
 # type: Plain text
-#: packages.txt:2926
+#: packages.txt:2932
 #, no-wrap
 msgid "# pacman-g2 -R gpm kernel\n"
 msgstr "# pacman-g2 -R gpm kernel\n"
 
 # type: Plain text
-#: packages.txt:2930
+#: packages.txt:2936
 msgid ""
 "Change `/etc/inittab` so that ctrl-alt-del will halt (and not reboot the "
 "system).  Change the line"
@@ -11389,24 +11406,24 @@ msgstr ""
 "systemet).  Ændr linien"
 
 # type: Plain text
-#: packages.txt:2933
+#: packages.txt:2939
 #, no-wrap
 msgid "ca::ctrlaltdel:/sbin/shutdown -t5 -r now\n"
 msgstr "ca::ctrlaltdel:/sbin/shutdown -t5 -r now\n"
 
 # type: Plain text
-#: packages.txt:2939
+#: packages.txt:2945
 #, no-wrap
 msgid "ca::ctrlaltdel:/sbin/shutdown -t5 -h now\n"
 msgstr "ca::ctrlaltdel:/sbin/shutdown -t5 -h now\n"
 
 # type: Plain text
-#: packages.txt:2942
+#: packages.txt:2948
 msgid "Exit from the chroot and umount:"
 msgstr "Exit fra chroot og umount:"
 
 # type: Plain text
-#: packages.txt:2947
+#: packages.txt:2953
 #, no-wrap
 msgid ""
 "# exit\n"
@@ -11418,18 +11435,18 @@ msgstr ""
 "# umount uml\n"
 
 # type: Plain text
-#: packages.txt:2950
+#: packages.txt:2956
 msgid "You're ready, let's register it!"
 msgstr "Du er parat, lad os registere det!"
 
 # type: Plain text
-#: packages.txt:2951
+#: packages.txt:2957
 #, no-wrap
 msgid "Configuration file"
 msgstr "Konfiguration fil"
 
 # type: Plain text
-#: packages.txt:2955
+#: packages.txt:2961
 msgid ""
 "You should edit `/etc/sysconfig/uml`. Each item in the machines array "
 "defines a virtual machine. Here is an example:"
@@ -11438,33 +11455,33 @@ msgstr ""
 "en virtuel maskine. Her er et eksempel:"
 
 # type: Plain text
-#: packages.txt:2958
+#: packages.txt:2964
 #, no-wrap
 msgid "machines=('ubd0=/home/uml/root_fs_0 eth0=tuntap,,,192.168.0.254 mem=128MB con0=null,fd:1 con=null')\n"
 msgstr "machines=('ubd0=/home/uml/root_fs_0 eth0=tuntap,,,192.168.0.254 mem=128MB con0=null,fd:1 con=null')\n"
 
 # type: Plain text
-#: packages.txt:2961
+#: packages.txt:2967
 msgid "This does the following:"
 msgstr "Dette gør følgende:"
 
 # type: Plain text
-#: packages.txt:2963
+#: packages.txt:2969
 msgid "root fs will be /home/uml/root_fs_0"
 msgstr "root fs vil være /home/uml/root_fs_0"
 
 # type: Plain text
-#: packages.txt:2965
+#: packages.txt:2971
 msgid "the IP of the host will be 192.168.0.254"
 msgstr "IP på værten vil være 192.168.0.254"
 
 # type: Plain text
-#: packages.txt:2967
+#: packages.txt:2973
 msgid "allocate 128MB of memory"
 msgstr "tildeler 128MB hukommelse"
 
 # type: Plain text
-#: packages.txt:2969
+#: packages.txt:2975
 msgid ""
 "disable console input, console output will be stdout (that'll be logged to `/"
 "var/log`)"
@@ -11473,23 +11490,23 @@ msgstr ""
 "`/var/log`)"
 
 # type: Plain text
-#: packages.txt:2971
+#: packages.txt:2977
 msgid "disable other consoles (we don't need them, we can use ssh)"
 msgstr "inaktiver andre konsoller (vi behøver dem ikke, vi kan bruge ssh)"
 
 # type: Plain text
-#: packages.txt:2972
+#: packages.txt:2978
 #, no-wrap
 msgid "Configuring the host network"
 msgstr "Konfigurer værtsnetværket"
 
 # type: Plain text
-#: packages.txt:2975
+#: packages.txt:2981
 msgid "First you need the `tun` kernel module:"
 msgstr "Først har du brug for `tun` kerne modul:"
 
 # type: Plain text
-#: packages.txt:2979
+#: packages.txt:2985
 #, no-wrap
 msgid ""
 "# modprobe tun\n"
@@ -11499,7 +11516,7 @@ msgstr ""
 "# echo tun >> /etc/sysconfig/module\n"
 
 # type: Plain text
-#: packages.txt:2984
+#: packages.txt:2990
 msgid ""
 "Second, you need NAT. Let's assume you access the external network via the "
 "`eth0` interface, then edit `/etc/sysconfig/network/default` and search the "
@@ -11510,29 +11527,29 @@ msgstr ""
 "gå til enden af `[eth0]` afsnit. Bare tilføj"
 
 # type: Plain text
-#: packages.txt:2987
+#: packages.txt:2993
 #, no-wrap
 msgid "post_up = iptables -t nat -A POSTROUTING -j MASQUERADE\n"
 msgstr "post_up = iptables -t nat -A POSTROUTING -j MASQUERADE\n"
 
 # type: Plain text
-#: packages.txt:2990
+#: packages.txt:2996
 msgid "to the section. After a"
 msgstr "til afsnittet. Efter en"
 
 # type: Plain text
-#: packages.txt:2993
+#: packages.txt:2999
 #, no-wrap
 msgid "# netconfig restart\n"
 msgstr "# netconfig restart\n"
 
 # type: Plain text
-#: packages.txt:2996
+#: packages.txt:3002
 msgid "NAT will be enabled."
 msgstr "NAT vil blive aktiveret."
 
 # type: Plain text
-#: packages.txt:2999
+#: packages.txt:3005
 msgid ""
 "Now you can easily start/stop your machines using the usual `service uml "
 "start/stop` command."
@@ -11541,24 +11558,24 @@ msgstr ""
 "uml start/stop` kommando."
 
 # type: Plain text
-#: packages.txt:3001
+#: packages.txt:3007
 msgid "// TODO: How to start X?"
 msgstr "// TODO: Hvordan startes X?"
 
 # type: Plain text
-#: packages.txt:3004
+#: packages.txt:3010
 #, no-wrap
 msgid "util-linux-ng"
 msgstr "util-linux-ng"
 
 # type: Plain text
-#: packages.txt:3006
+#: packages.txt:3012
 #, no-wrap
 msgid "Using `tmpfs` for `/tmp`"
 msgstr "Bruge `tmpfs` for `/tmp`"
 
 # type: Plain text
-#: packages.txt:3013
+#: packages.txt:3019
 msgid ""
 "Frugalware does not use `tmpfs` for `/tmp` by default. However on servers "
 "this can cause problems: if you do not reboot for months, then cleaning `/"
@@ -11573,31 +11590,31 @@ msgstr ""
 "genstart. Alt du behøver er at tilføje følgende linie til din `/etc/fstab`:"
 
 # type: Plain text
-#: packages.txt:3016
+#: packages.txt:3022
 #, no-wrap
 msgid "tmpfs            /tmp             tmpfs       defaults         0   0\n"
 msgstr "tmpfs            /tmp             tmpfs       defaults         0   0\n"
 
 # type: Plain text
-#: packages.txt:3019
+#: packages.txt:3025
 msgid "You need `util-linux >= 2.12-31` for this, otherwise X may not start."
 msgstr ""
 "Du behøver `util-linux >= 2.12-31` for dette, ellers starter X måske ikke."
 
 # type: Plain text
-#: packages.txt:3022
+#: packages.txt:3028
 #, no-wrap
 msgid "vavoom"
 msgstr "vavoom"
 
 # type: Plain text
-#: packages.txt:3024
+#: packages.txt:3030
 #, no-wrap
 msgid "Before you play"
 msgstr "Før du spiller"
 
 # type: Plain text
-#: packages.txt:3030
+#: packages.txt:3036
 msgid ""
 "To be able to play, you must have the IWAD files of the original games and "
 "copy it in ~/.vavoom or in /usr/share/vavoom. You can find this IWAD file on "
@@ -11609,68 +11626,68 @@ msgstr ""
 "shareware IWAD spillet."
 
 # type: Plain text
-#: packages.txt:3031
+#: packages.txt:3037
 #, no-wrap
 msgid "vim"
 msgstr "vim"
 
 # type: Plain text
-#: packages.txt:3034
+#: packages.txt:3040
 msgid "If you want to enable spell check support, you need to:"
 msgstr "Hvis du vil bruge stavekontrolunderstøttelse, har du brug for:"
 
 # type: Plain text
-#: packages.txt:3036
+#: packages.txt:3042
 msgid "install the spell files for your language:"
 msgstr "installer stavefiler for dit sprog:"
 
 # type: Plain text
-#: packages.txt:3039
+#: packages.txt:3045
 #, no-wrap
 msgid "# pacman-g2 -S vim-spell-xx\n"
 msgstr "# pacman-g2 -S vim-spell-xx\n"
 
 # type: Plain text
-#: packages.txt:3042
+#: packages.txt:3048
 msgid "where `xx` is code of the requested language."
 msgstr "hvor `xx` er kode for det brugte sprog."
 
 # type: Plain text
-#: packages.txt:3044
+#: packages.txt:3050
 msgid "enable the spell check support for your language (type in `vim`):"
 msgstr "aktiver stavekontrolunderstøttelse for dit sprog (skrive i `vim`):"
 
 # type: Plain text
-#: packages.txt:3047
+#: packages.txt:3053
 #, no-wrap
 msgid ":setlocal spell spelllang=xx_yy\n"
 msgstr ":setlocal spell spelllang=xx_yy\n"
 
 # type: Plain text
-#: packages.txt:3050
+#: packages.txt:3056
 msgid "Some languages need correctly set encoding. If you get a message like:"
 msgstr ""
 "Nogle sprog behøver korrekt sprogkodesætning. Hvis du får en besked som:"
 
 # type: Plain text
-#: packages.txt:3053
+#: packages.txt:3059
 #, no-wrap
 msgid "Warning: Cannot find word list \"hu.latin1.spl\" or \"hu.ascii.spl\"\n"
 msgstr "Advarsel: Kan ikke finde ordliste \"da.latin1.spl\" eller \"da.ascii.spl\"\n"
 
 # type: Plain text
-#: packages.txt:3056
+#: packages.txt:3062
 msgid "then you need to set your encoding as well:"
 msgstr "så skal du også sætte sprogkode:"
 
 # type: Plain text
-#: packages.txt:3059
+#: packages.txt:3065
 #, no-wrap
 msgid ":set encoding=latin2\n"
 msgstr ":set encoding=latin1\n"
 
 # type: Plain text
-#: packages.txt:3063
+#: packages.txt:3069
 msgid ""
 "The incorrect words are coloured red by default. You can reach a list of "
 "suggested words by pressing `z=` when the cursor is at the given word."
@@ -11679,18 +11696,18 @@ msgstr ""
 "foreslåede ord ved at presse `z=` når cursoren er ved det givne ord."
 
 # type: Plain text
-#: packages.txt:3065
+#: packages.txt:3071
 msgid "If you want to disable the spell check support, type:"
 msgstr "Hvis du vil inaktivere stavekontrolstøtten, skriv:"
 
 # type: Plain text
-#: packages.txt:3068
+#: packages.txt:3074
 #, no-wrap
 msgid ":setlocal nospell\n"
 msgstr ":setlocal nospell\n"
 
 # type: Plain text
-#: packages.txt:3072
+#: packages.txt:3078
 msgid ""
 "It may be handy to have map function keys in `~/.vimrc` to enable / disable "
 "the spell check support:"
@@ -11699,7 +11716,7 @@ msgstr ""
 "aktivere/inaktivere stavekontrolstøtten:"
 
 # type: Plain text
-#: packages.txt:3078
+#: packages.txt:3084
 #, no-wrap
 msgid ""
 "set encoding=latin2\n"
@@ -11713,7 +11730,7 @@ msgstr ""
 "map <F7> <Esc>:setlocal nospell<CR>\n"
 
 # type: Plain text
-#: packages.txt:3082
+#: packages.txt:3088
 msgid ""
 "The language code is sometimes in an `xx` and sometimes is in an `xx_yy` "
 "form. This is something you need to figure out for your language."
@@ -11722,24 +11739,24 @@ msgstr ""
 "er noget som du må finde ud for dit sprog."
 
 # type: Plain text
-#: packages.txt:3084
+#: packages.txt:3090
 msgid "See the upstream documentation for more info about spell check support:"
 msgstr "Se upstream dokumentationen for mere info om stavekontrolstøtte:"
 
 # type: Plain text
-#: packages.txt:3087
+#: packages.txt:3093
 #, no-wrap
 msgid ":help spell\n"
 msgstr ":help spell\n"
 
 # type: Plain text
-#: packages.txt:3091
+#: packages.txt:3097
 #, no-wrap
 msgid "virtualbox"
 msgstr "virtualbox"
 
 # type: Plain text
-#: packages.txt:3096
+#: packages.txt:3102
 msgid ""
 "If you want to be able to use the VirtualBox guest additions, run this "
 "command as root to get the Additions ISO (requires an active Internet "
@@ -11749,120 +11766,120 @@ msgstr ""
 "som root for at få Additions ISO (kræver en aktiv Internetforbindelse):"
 
 # type: Plain text
-#: packages.txt:3099
+#: packages.txt:3105
 #, no-wrap
 msgid "# /usr/bin/get-vbox-additions\n"
 msgstr "# /usr/bin/get-vbox-additions\n"
 
 # type: Plain text
-#: packages.txt:3101
+#: packages.txt:3107
 #, no-wrap
 msgid "wifi-radar"
 msgstr "wifi-radar"
 
 # type: Plain text
-#: packages.txt:3104
+#: packages.txt:3110
 msgid ""
 "Don't forget to change the wifi interface name in '/etc/wifi-radar.conf'!"
 msgstr "Glem ikke at ændre wifi interface navn i '/etc/wifi-radar.conf'!"
 
 # type: Plain text
-#: packages.txt:3105
+#: packages.txt:3111
 #, no-wrap
 msgid "x11vnc"
 msgstr "x11vnc"
 
 # type: Plain text
-#: packages.txt:3108
+#: packages.txt:3114
 msgid ""
 "Running `x11vnc` without a password is not recommended. To create one, type:"
 msgstr ""
 "At køre `x11vnc` uden et password anbefales ikke. For at skabe det, skriv:"
 
 # type: Plain text
-#: packages.txt:3111
+#: packages.txt:3117
 #, no-wrap
 msgid "vncpasswd ~/.vnc/passwd\n"
 msgstr "vncpasswd ~/.vnc/passwd\n"
 
 # type: Plain text
-#: packages.txt:3114
+#: packages.txt:3120
 msgid "Then you can start the VNC server using"
 msgstr "Så kan du starte VNC serveren ved brug af"
 
 # type: Plain text
-#: packages.txt:3117
+#: packages.txt:3123
 #, no-wrap
 msgid "x11vnc -display :0 -rfbauth ~/.vnc/passwd -forever\n"
 msgstr "x11vnc -display :0 -rfbauth ~/.vnc/passwd -forever\n"
 
 # type: Plain text
-#: packages.txt:3120
+#: packages.txt:3126
 msgid "if are logged in on `:0`."
 msgstr "hvis der bliver logget ind på `:0`."
 
 # type: Plain text
-#: packages.txt:3123
+#: packages.txt:3129
 #, no-wrap
 msgid "xcache"
 msgstr "xcache"
 
 # type: Plain text
-#: packages.txt:3126
+#: packages.txt:3132
 #, no-wrap
 msgid "Installing As PHP Extension?\n"
 msgstr "Installer Som PHP Udvidelse?\n"
 
 # type: Plain text
-#: packages.txt:3129
+#: packages.txt:3135
 msgid "Check '/etc/php.ini'"
 msgstr "Tjek '/etc/php.ini'"
 
 # type: Plain text
-#: packages.txt:3132
+#: packages.txt:3138
 #, no-wrap
 msgid "# cat /usr/share/doc/xcache-$pkgver/xcache.ini >> /etc/php.ini\n"
 msgstr "# cat /usr/share/doc/xcache-$pkgver/xcache.ini >> /etc/php.ini\n"
 
 # type: Plain text
-#: packages.txt:3135
+#: packages.txt:3141
 msgid "Modify php.ini for your needs:"
 msgstr "Modificer php.ini for dine behov:"
 
 # type: Plain text
-#: packages.txt:3138
+#: packages.txt:3144
 #, no-wrap
 msgid "# $EDITOR /etc/php.ini\n"
 msgstr "# $EDITOR /etc/php.ini\n"
 
 # type: Plain text
-#: packages.txt:3141
+#: packages.txt:3147
 msgid "Restart php"
 msgstr "Genstart php"
 
 # type: Plain text
-#: packages.txt:3143
+#: packages.txt:3149
 msgid "Use >> with cat, not simply >"
 msgstr "Brug >> med cat, ikke kun >"
 
 # type: Plain text
-#: packages.txt:3145
+#: packages.txt:3151
 msgid "Please take a look on http://xcache.lighttpd.net/[xcache wiki]."
 msgstr "Tag venligst og kik på http://xcache.lighttpd.net/[xcache wiki]."
 
 # type: Plain text
-#: packages.txt:3146
+#: packages.txt:3152
 #, no-wrap
 msgid "xchat"
 msgstr "xchat"
 
 # type: Plain text
-#: packages.txt:3149
+#: packages.txt:3155
 msgid "How should I remote control xmms from xchat?"
 msgstr "Hvordan skal jeg fjernbetjene xmms fra xchat?"
 
 # type: Plain text
-#: packages.txt:3151
+#: packages.txt:3157
 msgid ""
 "First make sure you really need it - some people think it's a security hole."
 msgstr ""
@@ -11870,7 +11887,7 @@ msgstr ""
 "mennesker mener at det er et sikkerhedshul."
 
 # type: Plain text
-#: packages.txt:3163
+#: packages.txt:3169
 msgid ""
 "You need http://inconnu.isu.edu/~ink/new/projects/xchat-xmms/xchat-xmms-"
 "0.8.1.tar.gz[XChat-XMMS plugin] from http://scripts.xchat.org/cgi-bin/search?"
@@ -11893,13 +11910,13 @@ msgstr ""
 "tysk PDF, som er ved at blive oversat til engelsk/ungarsk.)"
 
 # type: Plain text
-#: packages.txt:3164
+#: packages.txt:3170
 #, no-wrap
 msgid "xdm-frugalware"
 msgstr "xdm-frugalware"
 
 # type: Plain text
-#: packages.txt:3169
+#: packages.txt:3175
 msgid ""
 "To use this theme, please add -config /etc/X11/xdm/frugalware/xdm-config to "
 "your xdm environmental variable in /etc/sysconfig/desktop and restart xdm."
@@ -11908,13 +11925,13 @@ msgstr ""
 "til din xdm miljømæssig variabel i /etc/sysconfig/desktop og genstart xdm."
 
 # type: Plain text
-#: packages.txt:3170
+#: packages.txt:3176
 #, no-wrap
 msgid "xen"
 msgstr "xen"
 
 # type: Plain text
-#: packages.txt:3175
+#: packages.txt:3181
 msgid ""
 "Xen is unstable software, meaning that it should not be used on your main "
 "PC, it may destroy your data. As an example, I destroyed my file system "
@@ -11925,24 +11942,24 @@ msgstr ""
 "mit filsystem under afprøvning."
 
 # type: Plain text
-#: packages.txt:3176
+#: packages.txt:3182
 #, no-wrap
 msgid "xf86-input-synaptics"
 msgstr "xf86-input-synaptics"
 
 # type: Plain text
-#: packages.txt:3179
+#: packages.txt:3185
 msgid "First of all, read the INSTALL file for the instructions."
 msgstr "For det første, læs INSTALL filen for instrukser."
 
 # type: Plain text
-#: packages.txt:3181
+#: packages.txt:3187
 msgid "For lazy users, here's what i had to do to get the driver working:"
 msgstr ""
 "For dovne brugere, her er hvad jeg måtte gøre at få driveren til at virke:"
 
 # type: Plain text
-#: packages.txt:3184
+#: packages.txt:3190
 msgid ""
 "Make sure you have the 'evdev' kernel module loaded _before_ the x server "
 "started (or restart it after you loaded the module)."
@@ -11951,28 +11968,28 @@ msgstr ""
 "(eller genstart det efter du har loaded modulet)."
 
 # type: Plain text
-#: packages.txt:3186
+#: packages.txt:3192
 msgid "Now open your '/etc/X11/xorg.conf' and add the following:"
 msgstr "Åbn nu din '/etc/X11/xorg.conf' og tilføj følgende:"
 
 # type: Plain text
-#: packages.txt:3189
+#: packages.txt:3195
 #, no-wrap
 msgid "Load \"synaptics\"\n"
 msgstr "Load \"synaptics\"\n"
 
 # type: Plain text
-#: packages.txt:3192
+#: packages.txt:3198
 msgid "to the \"Module\" section."
 msgstr "til \"Module\" afsnit."
 
 # type: Plain text
-#: packages.txt:3194
+#: packages.txt:3200
 msgid "Replace the content of your \"InputDevice\" section to the followings:"
 msgstr "Erstat indholdet af din \"InputDevice\" section til følgende:"
 
 # type: Plain text
-#: packages.txt:3216
+#: packages.txt:3222
 #, no-wrap
 msgid ""
 "Section \"InputDevice\"\n"
@@ -12018,30 +12035,30 @@ msgstr ""
 "EndSection\n"
 
 # type: Plain text
-#: packages.txt:3219
+#: packages.txt:3225
 msgid "Add this line to the \"ServerLayout\" Section:"
 msgstr "Og tilføj denne linie \"ServerLayout\" Section:"
 
 # type: Plain text
-#: packages.txt:3222
+#: packages.txt:3228
 #, no-wrap
 msgid "InputDevice \"Synaptics Mouse\"  \"CorePointer\"\n"
 msgstr "InputDevice \"Synaptics Mouse\"  \"CorePointer\"\n"
 
 # type: Plain text
-#: packages.txt:3224
+#: packages.txt:3230
 #, no-wrap
 msgid "xgl"
 msgstr "xgl"
 
 # type: Plain text
-#: packages.txt:3227
+#: packages.txt:3233
 #, no-wrap
 msgid "*Xgl server*\n"
 msgstr "*Xgl server*\n"
 
 # type: Plain text
-#: packages.txt:3233
+#: packages.txt:3239
 #, no-wrap
 msgid ""
 "Xgl is a hardware accelerated X server. It renders everything that gets drawn \n"
@@ -12057,13 +12074,13 @@ msgstr ""
 "grafikkort der understøtter GLX_EXT_texture_from_pixmap.\n"
 
 # type: Plain text
-#: packages.txt:3235
+#: packages.txt:3241
 #, no-wrap
 msgid "*AIGLX*\n"
 msgstr "*AIGLX*\n"
 
 # type: Plain text
-#: packages.txt:3242
+#: packages.txt:3248
 #, no-wrap
 msgid ""
 "Accelerated Indirect GLX (\"AIGLX\") is an open source project founded by Red Hat \n"
@@ -12080,13 +12097,13 @@ msgstr ""
 "hardware acceleration.\n"
 
 # type: Plain text
-#: packages.txt:3244
+#: packages.txt:3250
 #, no-wrap
 msgid "*Compiz Fusion*\n"
 msgstr "*Compiz Fusion*\n"
 
 # type: Plain text
-#: packages.txt:3250
+#: packages.txt:3256
 #, no-wrap
 msgid ""
 "Compiz Fusion is the result of a merge between the well-known Beryl composite window \n"
@@ -12102,7 +12119,7 @@ msgstr ""
 "skærmen, og stille nogle imponerende virkninger, til rådighed, så som hurtighed og brugbarhed.\n"
 
 # type: Plain text
-#: packages.txt:3254
+#: packages.txt:3260
 msgid ""
 "Before starting with installing compiz fusion, make sure you remove all "
 "beryl packages installed on your system. Beryl is now merged with compiz-"
@@ -12113,13 +12130,13 @@ msgstr ""
 "med compiz-fusion og bliver ikke længere understøttet på Frugalware."
 
 # type: Plain text
-#: packages.txt:3255
+#: packages.txt:3261
 #, no-wrap
 msgid "Setting it up"
 msgstr "Sætte det op"
 
 # type: Plain text
-#: packages.txt:3258
+#: packages.txt:3264
 msgid ""
 "This section describes how to setup Xgl or AIGLX depending on which graphics "
 "card you have."
@@ -12128,13 +12145,13 @@ msgstr ""
 "hvilket grafikkort du har."
 
 # type: Plain text
-#: packages.txt:3259
+#: packages.txt:3265
 #, no-wrap
 msgid "Intel Graphics Cards (i810)"
 msgstr "Intel Grafikkort (i810)"
 
 # type: Plain text
-#: packages.txt:3263
+#: packages.txt:3269
 msgid ""
 "This section describes how to setup Xgl/AIGLX on computers having Intel "
 "Graphics Cards.  First, make sure that the Intel Xorg drivers are installed. "
@@ -12145,13 +12162,13 @@ msgstr ""
 "installeret. Du kan installere det med:"
 
 # type: Plain text
-#: packages.txt:3266
+#: packages.txt:3272
 #, no-wrap
 msgid "# pacman-g2 -S xf86-video-i810\n"
 msgstr "# pacman-g2 -S xf86-video-i810\n"
 
 # type: Plain text
-#: packages.txt:3271
+#: packages.txt:3277
 msgid ""
 "I would recommend using AIGLX and NOT xgl for intel users. This is because "
 "Xgl works extremely slow on such cards. On the other hand, AIGLX is much "
@@ -12164,12 +12181,12 @@ msgstr ""
 "beskriver hvordan det opsættes til AIGLX for Intel GMA seriekort."
 
 # type: Plain text
-#: packages.txt:3273 packages.txt:3330
+#: packages.txt:3279 packages.txt:3336
 msgid "You have to edit the '/etc/X11/xorg.conf' as root."
 msgstr "Du skal redigere '/etc/X11/xorg.conf' som root."
 
 # type: Plain text
-#: packages.txt:3275
+#: packages.txt:3281
 msgid ""
 "Look for Section \"Module\" and make sure that the following lines exist in "
 "that section"
@@ -12178,7 +12195,7 @@ msgstr ""
 "dette afsnit"
 
 # type: Plain text
-#: packages.txt:3280
+#: packages.txt:3286
 #, no-wrap
 msgid ""
 "  Load    \"dri\"\n"
@@ -12190,13 +12207,13 @@ msgstr ""
 "  Load    \"dbe\"\n"
 
 # type: Plain text
-#: packages.txt:3283
+#: packages.txt:3289
 msgid "Now, look for Section \"Device\" and add the following lines to it"
 msgstr ""
 "Derefter, se efter Section \"Device\" og tilføj følgende linier til det"
 
 # type: Plain text
-#: packages.txt:3287
+#: packages.txt:3293
 #, no-wrap
 msgid ""
 "  Option      \"XAANoOffscreenPixmaps\" \"true\"\n"
@@ -12206,18 +12223,18 @@ msgstr ""
 "  Option      \"DRI\"                   \"true\"\n"
 
 # type: Plain text
-#: packages.txt:3290
+#: packages.txt:3296
 msgid "And add this to Section \"ServerLayout\""
 msgstr "Og tilføj dette til Section \"ServerLayout\""
 
 # type: Plain text
-#: packages.txt:3293
+#: packages.txt:3299
 #, no-wrap
 msgid "  Option      \"AIGLX\"  \"true\"\n"
 msgstr "  Option      \"AIGLX\"  \"true\"\n"
 
 # type: Plain text
-#: packages.txt:3296
+#: packages.txt:3302
 msgid ""
 "Now look for Section \"DRI\". Create it if it doesn't exist and make sure it "
 "looks like the following"
@@ -12226,7 +12243,7 @@ msgstr ""
 "at det ser ud som følgende"
 
 # type: Plain text
-#: packages.txt:3302
+#: packages.txt:3308
 #, no-wrap
 msgid ""
 "  Section     \"DRI\"\n"
@@ -12240,23 +12257,23 @@ msgstr ""
 "  EndSection\n"
 
 # type: Plain text
-#: packages.txt:3305
+#: packages.txt:3311
 msgid "Also please make sure you are in the `video` group."
 msgstr "Sikr dig også at du er i`video` group."
 
 # type: Plain text
-#: packages.txt:3307
+#: packages.txt:3313
 msgid "Finally, add this line to Section \"Extensions\""
 msgstr "Og til slut, tilføj denne linie til Section \"Extensions\""
 
 # type: Plain text
-#: packages.txt:3310
+#: packages.txt:3316
 #, no-wrap
 msgid "  \"Option\" \"Composite\" \"Enable\"\n"
 msgstr "  \"Option\" \"Composite\" \"Enable\"\n"
 
 # type: Plain text
-#: packages.txt:3314
+#: packages.txt:3320
 msgid ""
 "Save the file and exit the editor. Reboot your system. Your system should "
 "now be set up to use Compiz Fusion.  Now read on to the Window Manager setup "
@@ -12266,13 +12283,13 @@ msgstr ""
 "opsat til at bruge Compiz Fusion.  Læs nu på på Vindueshåndterer afsnittet!"
 
 # type: Plain text
-#: packages.txt:3315
+#: packages.txt:3321
 #, no-wrap
 msgid "NVIDIA Graphics Cards"
 msgstr "NVIDIA Grafikkort"
 
 # type: Plain text
-#: packages.txt:3320
+#: packages.txt:3326
 msgid ""
 "If you have an nVidia card, you're in luck - you can use all the fancy "
 "effects without the need for Xgl.  This means you'll get much better "
@@ -12285,7 +12302,7 @@ msgstr ""
 "Installer dem hvis du ikke allerede har gjort det."
 
 # type: Plain text
-#: packages.txt:3326
+#: packages.txt:3332
 msgid ""
 "Now, as i stated earlier, you can use it with or without Xgl. Both the ways "
 "are described below."
@@ -12294,13 +12311,13 @@ msgstr ""
 "beskrevet nedenfor."
 
 # type: Plain text
-#: packages.txt:3327
+#: packages.txt:3333
 #, no-wrap
 msgid "Without XGL"
 msgstr "Uden XGL"
 
 # type: Plain text
-#: packages.txt:3332
+#: packages.txt:3338
 msgid ""
 "First find the Device section for your nVidia card. Add the following line "
 "to it:"
@@ -12309,18 +12326,18 @@ msgstr ""
 "det:"
 
 # type: Plain text
-#: packages.txt:3335
+#: packages.txt:3341
 #, no-wrap
 msgid " Option      \"XAANoOffscreenPixmaps\" \"false\"\n"
 msgstr " Option      \"XAANoOffscreenPixmaps\" \"false\"\n"
 
 # type: Plain text
-#: packages.txt:3338
+#: packages.txt:3344
 msgid "Now go to the Screen section. Make sure the following lines are there:"
 msgstr "Gå nu til Screen section. Og sikr dig at følgende linier er der:"
 
 # type: Plain text
-#: packages.txt:3345
+#: packages.txt:3351
 #, no-wrap
 msgid ""
 " Option     \"AddARGBGLXVisuals\" \"True\"\n"
@@ -12336,7 +12353,7 @@ msgstr ""
 " Option     \"AllowGLXWithComposite\" \"True\"\n"
 
 # type: Plain text
-#: packages.txt:3348
+#: packages.txt:3354
 msgid ""
 "Finally, make sure the Composite extension is enabled. If it's not, add "
 "these lines to the bottom of the file:"
@@ -12345,7 +12362,7 @@ msgstr ""
 "tilføj disse linier til bunden af filen:"
 
 # type: Plain text
-#: packages.txt:3353
+#: packages.txt:3359
 #, no-wrap
 msgid ""
 " Section \"Extensions\"\n"
@@ -12357,7 +12374,7 @@ msgstr ""
 " EndSection\n"
 
 # type: Plain text
-#: packages.txt:3356
+#: packages.txt:3362
 msgid ""
 "Save the file, and then reboot. Your system should now be set up to use "
 "Compiz Fusion."
@@ -12366,13 +12383,13 @@ msgstr ""
 "Compiz Fusion."
 
 # type: Plain text
-#: packages.txt:3357
+#: packages.txt:3363
 #, no-wrap
 msgid "With XGL"
 msgstr "Med XGL"
 
 # type: Plain text
-#: packages.txt:3361
+#: packages.txt:3367
 msgid ""
 "This section describes how to use Xgl on a system with an Nvidia card.  "
 "First of all, you'll need to install Xgl. This can be done by running:"
@@ -12381,13 +12398,13 @@ msgstr ""
 "Først af alt, så skal du installere Xgl. Det kan gøres ved at køre:"
 
 # type: Plain text
-#: packages.txt:3364
+#: packages.txt:3370
 #, no-wrap
 msgid "#  pacman-g2 -Sy xgl\n"
 msgstr "#  pacman-g2 -Sy xgl\n"
 
 # type: Plain text
-#: packages.txt:3367
+#: packages.txt:3373
 msgid ""
 "Once installed, xgl can be enabled by initiating the following command (as "
 "root) :"
@@ -12396,24 +12413,24 @@ msgstr ""
 "(som root) :"
 
 # type: Plain text
-#: packages.txt:3370
+#: packages.txt:3376
 #, no-wrap
 msgid "# fw-xgl-control --enable\n"
 msgstr "# fw-xgl-control --enable\n"
 
 # type: Plain text
-#: packages.txt:3373
+#: packages.txt:3379
 msgid "To disable Xgl, run the following command (as root) :"
 msgstr "For at inaktivere Xgl, kør følgende kommando (som root) :"
 
 # type: Plain text
-#: packages.txt:3376
+#: packages.txt:3382
 #, no-wrap
 msgid "# fw-xgl-control --disable\n"
 msgstr "# fw-xgl-control --disable\n"
 
 # type: Plain text
-#: packages.txt:3380
+#: packages.txt:3386
 msgid ""
 "Every time xgl is enabled or disabled, you need to restart GDM. This can be "
 "done by running the following command (as root) :"
@@ -12422,24 +12439,24 @@ msgstr ""
 "GDM. Dette kan gøres ved at køre følgende kommando (som root) :"
 
 # type: Plain text
-#: packages.txt:3383
+#: packages.txt:3389
 #, no-wrap
 msgid "# gdm-restart\n"
 msgstr "# gdm-restart\n"
 
 # type: Plain text
-#: packages.txt:3386
+#: packages.txt:3392
 msgid "Now read on to the Window Manager setup section!"
 msgstr " Læs nu på på Vinduehåndterer afsnittet!"
 
 # type: Plain text
-#: packages.txt:3387
+#: packages.txt:3393
 #, no-wrap
 msgid "Window Manager Setup"
 msgstr "Vinduehåndterer Opsætning"
 
 # type: Plain text
-#: packages.txt:3392
+#: packages.txt:3398
 msgid ""
 "Now you need to install a window manager to be able to get all these fancy "
 "effects. Frugalware currently has compiz-fusion window manager that can be "
@@ -12451,13 +12468,13 @@ msgstr ""
 "understøtter Beryl."
 
 # type: Plain text
-#: packages.txt:3393
+#: packages.txt:3399
 #, no-wrap
 msgid "Compiz Fusion"
 msgstr "Compiz Fusion"
 
 # type: Plain text
-#: packages.txt:3397
+#: packages.txt:3403
 msgid ""
 "This section describes how to setup / use Compiz Fusion as the window "
 "manager with XGL / AIGLX depending on your Desktop environment."
@@ -12466,25 +12483,25 @@ msgstr ""
 "vinduehåndterer med XGL / AIGLX afhængig af dit skrivebordsmiljø."
 
 # type: Title =====
-#: packages.txt:3398
+#: packages.txt:3404
 #, no-wrap
 msgid "XFCE"
 msgstr "XFCE"
 
 # type: Plain text
-#: packages.txt:3401 packages.txt:3416 packages.txt:3442
+#: packages.txt:3407 packages.txt:3422 packages.txt:3448
 msgid "Run the following command (as root) to install the necessary packages:"
 msgstr ""
 "Kør følgende kommando (som root) for at installere de nødvendige pakker:"
 
 # type: Plain text
-#: packages.txt:3404
+#: packages.txt:3410
 #, no-wrap
 msgid "#  pacman-g2 -Sy compiz compiz-emerald compiz-emerald-themes fusion-icon ccsm\n"
 msgstr "#  pacman-g2 -Sy compiz compiz-emerald compiz-emerald-themes fusion-icon ccsm\n"
 
 # type: Plain text
-#: packages.txt:3409
+#: packages.txt:3415
 msgid ""
 "Now you can simply fire up Fusion Icon from your Xfce menu. An icon should "
 "appear in your system tray.  Right click it and go to Select Window Manager. "
@@ -12497,7 +12514,7 @@ msgstr ""
 "normale vindueshåndterer, så vælg det fra fusion ikonet."
 
 # type: Plain text
-#: packages.txt:3412
+#: packages.txt:3418
 msgid ""
 "If it works, you should add fusion-icon to the startup programs in your "
 "desktop environment. This can be done by going to *Settings -> Autostarted "
@@ -12508,19 +12525,19 @@ msgstr ""
 "Applications* i din Xfce menu."
 
 # type: Plain text
-#: packages.txt:3413
+#: packages.txt:3419
 #, no-wrap
 msgid "GNOME"
 msgstr "GNOME"
 
 # type: Plain text
-#: packages.txt:3419
+#: packages.txt:3425
 #, no-wrap
 msgid "# pacman-g2 -Sy compiz-gnome fusion-icon ccsm\n"
 msgstr "# pacman-g2 -Sy compiz-gnome fusion-icon ccsm\n"
 
 # type: Plain text
-#: packages.txt:3424
+#: packages.txt:3430
 msgid ""
 "Now you can simply fire up Fusion Icon from your GNOME menu. An icon should "
 "appear in your system tray.  Right click it and go to Select Window Manager. "
@@ -12533,7 +12550,7 @@ msgstr ""
 "til din normale vinduehåndterer, så vælg det fra fusion ikonet."
 
 # type: Plain text
-#: packages.txt:3428
+#: packages.txt:3434
 msgid ""
 "If it works, you should add fusion-icon to the startup programs so that it "
 "automatically starts everytime you login into GNOME. This can be done by "
@@ -12546,7 +12563,7 @@ msgstr ""
 "Programmer* i din Gnome menu."
 
 # type: Plain text
-#: packages.txt:3431
+#: packages.txt:3437
 msgid ""
 "By default, compiz-gnome is shipped with gtk-window-decorator. Gnome users "
 "can also use Emerald as a window decorator with compiz. To install emerald, "
@@ -12557,13 +12574,13 @@ msgstr ""
 "emerald, kør (som root):"
 
 # type: Plain text
-#: packages.txt:3434 packages.txt:3454
+#: packages.txt:3440 packages.txt:3460
 #, no-wrap
 msgid "# pacman-g2 -Sy compiz-emerald compiz-emerald-themes\n"
 msgstr "# pacman-g2 -Sy compiz-emerald compiz-emerald-themes\n"
 
 # type: Plain text
-#: packages.txt:3438 packages.txt:3458
+#: packages.txt:3444 packages.txt:3464
 msgid ""
 "Once installed, you can switch to emerald as the window decorator. To do "
 "this, just right click the Fusion icon, navigate to \"Select Window Decorator"
@@ -12574,24 +12591,24 @@ msgstr ""
 "Decorator\" og vælg \"emerald\" fra listen."
 
 # type: Title =====
-#: packages.txt:3439
+#: packages.txt:3445
 #, no-wrap
 msgid "KDE"
 msgstr "KDE"
 
 # type: Plain text
-#: packages.txt:3445
+#: packages.txt:3451
 #, no-wrap
 msgid "# pacman-g2 -Sy compiz-kde fusion-icon ccsm taskbar-compiz kicker-compiz\n"
 msgstr "# pacman-g2 -Sy compiz-kde fusion-icon ccsm taskbar-compiz kicker-compiz\n"
 
 # type: Plain text
-#: packages.txt:3448
+#: packages.txt:3454
 msgid "You can now use compiz by starting Fusion Icon from the KDE menu."
 msgstr "Du kan nu bruge compiz ved at bruge Fusion Icon fra KDE menuen."
 
 # type: Plain text
-#: packages.txt:3451
+#: packages.txt:3457
 msgid ""
 "By default, compiz-kde is shipped with kde-window-decorator. Kde users can "
 "also use Emerald as a window decorator with compiz. To install emerald, run "
@@ -12602,13 +12619,13 @@ msgstr ""
 "emerald, kør (som root):"
 
 # type: Plain text
-#: packages.txt:3459
+#: packages.txt:3465
 #, no-wrap
 msgid "xpenguinsapplet"
 msgstr "xpenguinsapplet"
 
 # type: Plain text
-#: packages.txt:3464
+#: packages.txt:3470
 msgid ""
 "If no penguins appear on your desktop after you hit the launch button, go in "
 "'KDE Control Center' -> 'LookNFeel' -> 'Behavior' and make sure 'Allow "
