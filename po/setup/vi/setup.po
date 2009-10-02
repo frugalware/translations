@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-19 02:25+0100\n"
-"PO-Revision-Date: 2009-02-19 05:54+0200\n"
+"POT-Creation-Date: 2009-10-02 02:25+0200\n"
+"PO-Revision-Date: 2009-10-02 16:06+0200\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: vi\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 1.2.0\n"
+"X-Generator: Pootle 1.2.1\n"
 
 #: ../src/plugins/asklang.c:72
 msgid "Selecting language"
@@ -32,9 +32,9 @@ msgid "ftp://ftp5."
 msgstr "ftp://ftp5."
 
 #: ../src/plugins/configsource.c:102 ../src/plugins/dolangsh.c:58
-#: ../src/plugins/formatdisk.c:257 ../src/plugins/formatdisk.c:412
+#: ../src/plugins/formatdisk.c:267 ../src/plugins/formatdisk.c:467
 #: ../src/plugins/layout.c:146 ../src/plugins/loadsource.c:88
-#: ../src/plugins/select.c:334 ../src/util.c:305
+#: ../src/util.c:305
 msgid "Could not open output file for writing"
 msgstr "Không thể mở tập tin kết xuất để ghi"
 
@@ -53,7 +53,7 @@ msgstr ""
 "Ở đây thì bạn có thể chọn một hay nhiều máy nhân bản gần để tăng tốc độ tải "
 "xuống gói phần mềm."
 
-#: ../src/plugins/configsource.c:166 ../src/plugins/formatdisk.c:583
+#: ../src/plugins/configsource.c:166 ../src/plugins/formatdisk.c:649
 #: ../src/plugins/partdisk.c:197
 msgid "Continue"
 msgstr "Tiếp"
@@ -71,8 +71,8 @@ msgstr ""
 "phần mềm xuống một cách nhanh hơn. Trong hậu hết trường hợp đều, ở điểm thời "
 "này thích hợp để bấm nút Tiếp."
 
-#: ../src/plugins/configsource.c:196 ../src/plugins/select.c:410
-#: ../src/plugins/select.c:420 ../src/plugins/select.c:450
+#: ../src/plugins/configsource.c:196 ../src/plugins/select.c:422
+#: ../src/plugins/select.c:438 ../src/plugins/select.c:477
 msgid "Please wait"
 msgstr "Hãy đợi"
 
@@ -100,25 +100,25 @@ msgstr "Đang thiết lập các phân vùng trao đổi..."
 msgid "Please select which swap partitions you want Frugalware to use:"
 msgstr "Hãy chọn những phân vùng trao đổi cần sử dụng: "
 
-#: ../src/plugins/formatdisk.c:173 ../src/plugins/formatdisk.c:196
+#: ../src/plugins/formatdisk.c:176 ../src/plugins/formatdisk.c:204
 msgid "Quick format with no bad block checking"
 msgstr "Định dạng nhanh, không kiểm tra khối sai"
 
-#: ../src/plugins/formatdisk.c:174 ../src/plugins/formatdisk.c:197
+#: ../src/plugins/formatdisk.c:177 ../src/plugins/formatdisk.c:205
 msgid "Slow format that checks for bad blocks"
 msgstr "Định dạng chậm mà kiểm tra khối sai"
 
-#: ../src/plugins/formatdisk.c:177 ../src/plugins/formatdisk.c:201
-#: ../src/plugins/formatdisk.c:233
+#: ../src/plugins/formatdisk.c:180 ../src/plugins/formatdisk.c:209
+#: ../src/plugins/formatdisk.c:243
 msgid "Formatting partitions"
 msgstr "Đang định dạng các phân vùng..."
 
-#: ../src/plugins/formatdisk.c:180 ../src/plugins/formatdisk.c:204
+#: ../src/plugins/formatdisk.c:183 ../src/plugins/formatdisk.c:212
 #, c-format
 msgid "Format %s"
 msgstr "Định dạng %s"
 
-#: ../src/plugins/formatdisk.c:181 ../src/plugins/formatdisk.c:205
+#: ../src/plugins/formatdisk.c:184 ../src/plugins/formatdisk.c:213
 #, c-format
 msgid ""
 "If %s has not been formatted, you should format it.\n"
@@ -129,64 +129,64 @@ msgstr ""
 "GHI CHÚ : việc này sẽ cũng xoá toàn bộ dữ liệu trên %s.\n"
 "Bạn có muốn định dạng phân vùng này không?"
 
-#: ../src/plugins/formatdisk.c:198
+#: ../src/plugins/formatdisk.c:206
 msgid "Do not format, just mount the partition"
 msgstr "Không định dạng, chỉ gắn kết phân vùng"
 
-#: ../src/plugins/formatdisk.c:224
+#: ../src/plugins/formatdisk.c:234
 msgid "Standard Linux ext2fs filesystem"
 msgstr "Hệ thống tập tin Linux ext2fs tiêu chuẩn"
 
-#: ../src/plugins/formatdisk.c:225
+#: ../src/plugins/formatdisk.c:235
 msgid "Journalising version of the ext2 filesystem"
 msgstr "Phiên bản tạo nhật ký của hệ thống tập tin ext2"
 
-#: ../src/plugins/formatdisk.c:226
+#: ../src/plugins/formatdisk.c:236
 msgid "The evolution of the ext3 filesystem (EXPERIMENTAL!)"
 msgstr "Sự tiến triển hệ thống tập tin ext3 (VẪN THỰC NGHIỆM !)"
 
-#: ../src/plugins/formatdisk.c:228
+#: ../src/plugins/formatdisk.c:238
 msgid "Hans Reiser's journalising filesystem"
 msgstr "Hệ thống tập tin tạo nhật ký của Hans Reiser"
 
-#: ../src/plugins/formatdisk.c:230
+#: ../src/plugins/formatdisk.c:240
 msgid "SGI's journalising filesystem"
 msgstr "Hệ thống tập tin tạo nhật ký của SGI"
 
-#: ../src/plugins/formatdisk.c:237
+#: ../src/plugins/formatdisk.c:247
 #, c-format
 msgid "Selecting filesystem for %s"
 msgstr "Đang chọn hệ thống tập tin cho %s"
 
-#: ../src/plugins/formatdisk.c:238
+#: ../src/plugins/formatdisk.c:248
 #, c-format
 msgid "Please select the type of filesystem to use for %s."
 msgstr "Hãy chọn kiểu hệ thống tập tin cần dùng cho %s."
 
-#: ../src/plugins/formatdisk.c:281 ../src/plugins/formatdisk.c:288
-msgid "Formatting swap partition"
-msgstr "Đang định dạng phân vùng trao đổi..."
-
-#: ../src/plugins/formatdisk.c:282
+#: ../src/plugins/formatdisk.c:293
 #, c-format
 msgid "Formatting %s as a swap partition"
 msgstr "Đang định dạng %s dưới dạng một phân vùng trao đổi..."
 
-#: ../src/plugins/formatdisk.c:289
+#: ../src/plugins/formatdisk.c:295 ../src/plugins/formatdisk.c:305
+msgid "Formatting swap partition"
+msgstr "Đang định dạng phân vùng trao đổi..."
+
+#: ../src/plugins/formatdisk.c:303
 #, c-format
 msgid "Formatting %s as a swap partition and checking for bad blocks"
 msgstr ""
 "Đang định dạng %s dưới dạng một phân vùng trao đổi và kiểm tra có khối sai..."
 
-#: ../src/plugins/formatdisk.c:313
+#: ../src/plugins/formatdisk.c:333
 msgid "Setting up the root partition"
 msgstr "Đang thiết lập phân vùng gốc..."
 
-#: ../src/plugins/formatdisk.c:315
+#: ../src/plugins/formatdisk.c:335
 msgid "Select the Linux installation partition"
 msgstr "Chọn phân vùng cài đặt Linux"
 
-#: ../src/plugins/formatdisk.c:316
+#: ../src/plugins/formatdisk.c:336
 msgid ""
 "Please select a partition from the following list to use for your root (/) "
 "partition. The following ones are available:"
@@ -194,44 +194,44 @@ msgstr ""
 "Hãy chọn một phân vùng trong danh sách theo đây để sử dụng làm phân vùng gốc "
 "(/). Có sẵn những phân vùng này: "
 
-#: ../src/plugins/formatdisk.c:329
+#: ../src/plugins/formatdisk.c:351
 msgid "Formatting"
 msgstr "Đang định dạng..."
 
-#: ../src/plugins/formatdisk.c:330
+#: ../src/plugins/formatdisk.c:352
 #, c-format
 msgid "Creating %s filesystem on %s and checking for bad blocks"
 msgstr "Đang tạo hệ thống tập tin %s trên %s và kiểm tra có khối sai..."
 
-#: ../src/plugins/formatdisk.c:331
+#: ../src/plugins/formatdisk.c:353
 #, c-format
 msgid "Creating %s filesystem on %s"
 msgstr "Đang tạo hệ thống tập tin %s trên %s..."
 
-#: ../src/plugins/formatdisk.c:436
+#: ../src/plugins/formatdisk.c:498
 #, c-format
 msgid "Select mount point for %s"
 msgstr "Hãy chọn điểm gắn kết cho %s"
 
-#: ../src/plugins/formatdisk.c:460 ../src/plugins/formatdisk.c:603
+#: ../src/plugins/formatdisk.c:522 ../src/plugins/formatdisk.c:669
 msgid "(in use)"
 msgstr "(đang dùng)"
 
-#: ../src/plugins/formatdisk.c:468
+#: ../src/plugins/formatdisk.c:530
 #, c-format
 msgid "%s on %s/\t%s"
 msgstr "%s trên %s/\t%s"
 
 #. non-root partitions
-#: ../src/plugins/formatdisk.c:576
+#: ../src/plugins/formatdisk.c:642
 msgid "Selecting other partitions"
 msgstr "Đang chọn các phân vùng khác"
 
-#: ../src/plugins/formatdisk.c:587
+#: ../src/plugins/formatdisk.c:653
 msgid "Select other Linux partitions for /etc/fstab"
 msgstr "Chọn các phân vùng Linux khác cho /etc/fstab"
 
-#: ../src/plugins/formatdisk.c:588
+#: ../src/plugins/formatdisk.c:654
 msgid ""
 "You may use your other partitions to distribute your Linux system across "
 "more than one partition. Currently, you have only mounted your / partition. "
@@ -314,23 +314,23 @@ msgstr ""
 msgid "Loading the installation source"
 msgstr "Đang nạp nguồn cài đặt"
 
-#: ../src/plugins/loadsource.c:156
+#: ../src/plugins/loadsource.c:158
 msgid "Selecting source media"
 msgstr "Đang chọn vật chứa nguồn"
 
-#: ../src/plugins/loadsource.c:159
+#: ../src/plugins/loadsource.c:161
 msgid "Scanning"
 msgstr "Đang quét"
 
-#: ../src/plugins/loadsource.c:159
+#: ../src/plugins/loadsource.c:161
 msgid "Scanning for a CD/DVD drive containing a Frugalware install disc..."
 msgstr "Đang quét tìm một ổ đĩa CD/DVD chứa một đĩa cài đặt Frugalware..."
 
-#: ../src/plugins/loadsource.c:175
+#: ../src/plugins/loadsource.c:177
 msgid "CD/DVD drive found"
 msgstr "Tìm thấy ổ đĩa CD/DVD"
 
-#: ../src/plugins/loadsource.c:175
+#: ../src/plugins/loadsource.c:177
 #, c-format
 msgid "A Frugalware install disc was found in device /dev/%s."
 msgstr "Một đĩa cài đặt Frugalware đã được tìm thấy trong thiết bị « /dev/%s »."
@@ -423,24 +423,24 @@ msgstr ""
 "vọng bạn hài lòng khi dùng %s. Hãy đẩy vật chứa ra ổ, sau đó bấm phím Enter "
 "để khởi động lại."
 
-#: ../src/plugins/select.c:53 ../src/plugins/select.c:279
-#: ../src/plugins/select.c:407
+#: ../src/plugins/select.c:54 ../src/plugins/select.c:282
+#: ../src/plugins/select.c:419
 msgid "Selecting packages"
 msgstr "Đang lựa chọn các gói phần mềm"
 
-#: ../src/plugins/select.c:261
+#: ../src/plugins/select.c:262
 msgid "Selecting categories"
 msgstr "Đang lựa chọn các phân loại"
 
-#: ../src/plugins/select.c:262
+#: ../src/plugins/select.c:263
 msgid "Please select which categories to install:"
 msgstr "Hãy chọn những phân loại cần cài đặt:"
 
-#: ../src/plugins/select.c:292
+#: ../src/plugins/select.c:296
 msgid "Use expert menus?"
 msgstr "Dùng trình đơn thành thạo ?"
 
-#: ../src/plugins/select.c:293
+#: ../src/plugins/select.c:297
 msgid ""
 "If you like, you may select your packages from expert menus. Where the "
 "normal menu shows a choice like 'C compiler system', the expert menus show "
@@ -460,40 +460,40 @@ msgstr ""
 "sử dụng trình đơn thông thường mà chọn các nhóm gói phần mềm, hoặc chọn « Có "
 "» để sử dụng trình đơn thành thạo mà ghi rõ mỗi gói cụ thể."
 
-#: ../src/plugins/select.c:348 ../src/plugins/select.c:356
-#: ../src/plugins/select.c:370 ../src/plugins/select.c:374
+#: ../src/plugins/select.c:360 ../src/plugins/select.c:368
+#: ../src/plugins/select.c:382 ../src/plugins/select.c:386
 msgid "Error"
 msgstr "Lỗi"
 
-#: ../src/plugins/select.c:348
+#: ../src/plugins/select.c:360
 #, c-format
 msgid "Failed to parse pacman-g2 configuration file (%s)"
 msgstr "Lỗi phân tích tập tin cấu hình pacman-g2 (%s)"
 
-#: ../src/plugins/select.c:356
+#: ../src/plugins/select.c:368
 #, c-format
 msgid "Could not register '%s' database (%s)"
 msgstr "Không thể đăng ký cơ sở dữ liệu « %s » (%s)"
 
-#: ../src/plugins/select.c:370
+#: ../src/plugins/select.c:382
 #, c-format
 msgid "Failed to synchronize %s"
 msgstr "Lỗi đồng bộ hoá %s"
 
-#: ../src/plugins/select.c:374
+#: ../src/plugins/select.c:386
 #, c-format
 msgid "Failed to update %s (%s)"
 msgstr "Lỗi cập nhật %s (%s)"
 
-#: ../src/plugins/select.c:410
+#: ../src/plugins/select.c:422
 msgid "Searching for categories..."
 msgstr "Đang tìm phân loại..."
 
-#: ../src/plugins/select.c:420
+#: ../src/plugins/select.c:438
 msgid "Searching for packages..."
 msgstr "Đang tìm gói phần mềm..."
 
-#: ../src/plugins/select.c:450
+#: ../src/plugins/select.c:477
 msgid "Searching for missing dependencies..."
 msgstr "Đang tìm quan hệ phụ thuộc chưa thỏa..."
 
@@ -576,27 +576,40 @@ msgstr "Bạn có chắc muốn bỏ qua việc đặt mật khẩu cho %s khôn
 msgid "Ignore setting password"
 msgstr "Bỏ qua đặt mật khẩu"
 
-#: ../src/plugins/postconf.c:153
+#: ../src/plugins/postconf.c:155
 msgid "Enter login"
 msgstr "Nhập tên đăng nhập"
 
-#: ../src/plugins/postconf.c:153
+#: ../src/plugins/postconf.c:155
 msgid "Please enter the login name you should like to create:"
 msgstr "Hãy nhập tên đăng nhập bạn muốn tạo :"
 
-#: ../src/plugins/postconf.c:156
+#: ../src/plugins/postconf.c:158
 msgid "Enter full name"
 msgstr "Nhập họ tên"
 
-#: ../src/plugins/postconf.c:156
+#: ../src/plugins/postconf.c:158
 msgid "Please enter the full name of the user you would like to create:"
 msgstr "Hãy nhập họ tên của người dùng bạn muốn tạo :"
 
-#: ../src/plugins/postconf.c:201
+#: ../src/plugins/postconf.c:173
+#, c-format
+msgid ""
+"'/home/%s' already exists! Please change the home directory path to a non-"
+"existing directory:"
+msgstr ""
+"« /home/%s » đã có. Hãy chuyển đổi đường dẫn đến thư mục chính sang một thư "
+"mục chưa tồn tại:"
+
+#: ../src/plugins/postconf.c:175
+msgid "Enter home directory"
+msgstr "Nhập thư mục chính"
+
+#: ../src/plugins/postconf.c:217
 msgid "No normal user account detected"
 msgstr "Không phát hiện tài khoản người dùng thông thường"
 
-#: ../src/plugins/postconf.c:202
+#: ../src/plugins/postconf.c:218
 msgid ""
 "There is currently no non-root user account configured. It is strongly "
 "recommended to create one. Would you like to create a normal user account "
@@ -605,15 +618,15 @@ msgstr ""
 "Chưa cấu hình tài khoản người dùng không chủ. Rất khuyên bạn tạo một tài "
 "khoản người dùng thông thường: tạo ngay không?"
 
-#: ../src/plugins/postconf.c:230
+#: ../src/plugins/postconf.c:246
 msgid "Post-install configuration"
 msgstr "Cấu hình cuối cùng cài đặt "
 
-#: ../src/plugins/postconf.c:260
+#: ../src/plugins/postconf.c:276
 msgid "Configuring kernel modules"
 msgstr "Đang cấu hình các mô-đun hạt nhân"
 
-#: ../src/plugins/postconf.c:261
+#: ../src/plugins/postconf.c:277
 msgid "Updating module dependencies..."
 msgstr "Đang cập nhật các quan hệ phụ thuộc của mô-đun..."
 
@@ -635,13 +648,13 @@ msgstr "Lỗi cài đặt"
 
 #: ../src/util.c:167
 msgid ""
-"Errors occured while installing selected packages. It is recommended to "
+"Errors occurred while installing selected packages. It is recommended to "
 "abort the installation, however you may want to ignore this problem. Do you "
 "want to leave the installer?"
 msgstr ""
 "Gặp lỗi trong khi cài đặt những gói phần mềm được chọn. Khuyên bạn hủy bỏ "
-"tiến trình cài đặt, nhưng bạn cũng có thể muốn lờ vấn đề này đi. Bạn có muốn "
-"thoát khỏi trình cài đặt không?"
+"tiến trình cài đặt, nhưng bạn cũng có thể muốn lờ vấn đề này đi. Muốn thoát "
+"khỏi trình cài đặt ?"
 
 #: ../src/util.c:183
 msgid "Exit from the installer"
@@ -651,15 +664,15 @@ msgstr "Thoát khỏi trình cài đặt"
 msgid "Are you sure you want to exit from the installer?"
 msgstr "Bạn có chắc muốn thoát khỏi trình cài đặt không?"
 
-#: ../src/util.c:631
+#: ../src/util.c:634
 msgid "Oops"
 msgstr "Gặp lỗi"
 
-#: ../src/util.c:633
+#: ../src/util.c:636
 msgid "A problem has occurred"
 msgstr "Một vấn đề đã xảy ra"
 
-#: ../src/util.c:633
+#: ../src/util.c:636
 msgid ""
 "Internal error: Segmentation fault. Please report this issue to http://bugs."
 "frugalware.org"
@@ -667,15 +680,15 @@ msgstr ""
 "Lỗi nội bộ : lỗi chia ra từng đoạn. Hãy thông báo lỗi này dùng bộ theo dõi "
 "vấn đề ở địa chỉ \\\"http://bugs.frugalware.org\\\"."
 
-#: ../src/util.c:659
+#: ../src/util.c:662
 msgid "Selecting a task"
 msgstr "Lựa chọn công việc"
 
-#: ../src/util.c:667
+#: ../src/util.c:670
 msgid "Select task to continue with"
 msgstr "Hãy chọn công việc cần làm để tiếp tục"
 
-#: ../src/util.c:668
+#: ../src/util.c:671
 msgid ""
 "You selected to change the way normally Frugalware is installed. Here are "
 "the list of tasks you can continue with:"
