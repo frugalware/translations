@@ -1,0 +1,1535 @@
+# Vietnamese translation for Lib Pacman.
+# Copyright © 2009 Free Software Foundation, Inc.
+# Clytie Siddall <clytie@riverland.net.au>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: libpacman\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-10-02 02:25+0200\n"
+"PO-Revision-Date: 2009-10-02 16:17+0200\n"
+"Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
+"Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 1.2.1\n"
+
+#: ../add.c:93
+#, c-format
+msgid "could not parse token %s"
+msgstr "Không thể phân tích cú pháp của hiệu bài %s"
+
+#: ../add.c:129
+#, c-format
+msgid "loading target '%s'"
+msgstr "đang nạp đích « %s »"
+
+#: ../add.c:167
+#, c-format
+msgid "replacing older version %s-%s by %s in target list"
+msgstr "đang thay thế phiên bản cũ %s-%s bằng %s trong danh sách đích"
+
+#: ../add.c:176
+#, c-format
+msgid "newer version %s-%s is in the target list -- skipping"
+msgstr "phiên bản mới %s-%s nằm trong danh sách đích nên bỏ qua"
+
+#. look for unsatisfied dependencies
+#: ../add.c:219 ../remove.c:103
+msgid "looking for unsatisfied dependencies"
+msgstr "đang tìm quan hệ phụ thuộc chưa thỏa"
+
+#. no unsatisfied deps, so look for conflicts
+#: ../add.c:231 ../sync.c:500
+msgid "looking for conflicts"
+msgstr "đang tìm sự xung đột"
+
+#. re-order w.r.t. dependencies
+#: ../add.c:243 ../remove.c:139
+msgid "sorting by dependencies"
+msgstr "đang sắp xếp theo quan hệ phụ thuộc"
+
+#: ../add.c:255
+msgid "cleaning up"
+msgstr "đang làm sạch"
+
+#: ../add.c:272
+msgid "looking for file conflicts"
+msgstr "đang tìm các tập tin bị xung đột"
+
+#: ../add.c:340
+#, c-format
+msgid "upgrading package %s-%s"
+msgstr "đang nâng cấp gói %s-%s"
+
+#: ../add.c:350 ../conflict.c:321 ../conflict.c:337 ../package.c:553
+#, c-format
+msgid "loading FILES info for '%s'"
+msgstr "đang nạp thông tin FILES (tập tin) về « %s »"
+
+#: ../add.c:366
+#, c-format
+msgid "removing old package first (%s-%s)"
+msgstr "trước tiên đang gỡ bỏ gói cũ (%s-%s)"
+
+#: ../add.c:396
+#, c-format
+msgid "adding package %s-%s"
+msgstr "đang thêm gói %s-%s"
+
+#: ../add.c:407
+#, c-format
+msgid "adding new package %s-%s"
+msgstr "đang thêm gói mới %s-%s"
+
+#: ../add.c:411
+msgid "extracting files"
+msgstr "đang giải nén các tập tin"
+
+#: ../add.c:427 ../util.c:527 ../util.c:625
+msgid "could not get current working directory"
+msgstr "không thể lấy thư mục hoạt động hiện tại"
+
+#: ../add.c:485
+#, c-format
+msgid "notice: %s is in NoExtract -- skipping extraction"
+msgstr "chú ý: %s là một gói Không Nên Giải Nén thì không giải nén nó"
+
+#: ../add.c:525 ../add.c:526 ../add.c:679
+#, c-format
+msgid "could not extract %s (%s)"
+msgstr "không thể giải nén %s (%s)"
+
+#: ../add.c:569
+#, c-format
+msgid "checking md5 hashes for %s"
+msgstr "đang kiểm tra các chuỗi duy nhất MD5 cho %s"
+
+#: ../add.c:570 ../add.c:577
+#, c-format
+msgid "current:  %s"
+msgstr "hiện thời: %s"
+
+#: ../add.c:571 ../add.c:578
+#, c-format
+msgid "new:      %s"
+msgstr "mới:      %s"
+
+#: ../add.c:573 ../add.c:580
+#, c-format
+msgid "original: %s"
+msgstr "gốc:      %s "
+
+#: ../add.c:576
+#, c-format
+msgid "checking sha1 hashes for %s"
+msgstr "đang kiểm tra các chuỗi duy nhất SHA1 cho %s"
+
+#: ../add.c:594
+#, c-format
+msgid "could not rename %s (%s)"
+msgstr "không thể thay đổi tên %s (%s)"
+
+#: ../add.c:595
+#, c-format
+msgid "error: could not rename %s (%s)"
+msgstr "lỗi: không thể thay đổi tên %s (%s)"
+
+#: ../add.c:599 ../add.c:643
+#, c-format
+msgid "could not copy %s to %s (%s)"
+msgstr "không thể sao chép %s vào %s (%s)"
+
+#: ../add.c:600
+#, c-format
+msgid "error: could not copy %s to %s (%s)"
+msgstr "lỗi: không thể sao chép %s vào %s (%s)"
+
+#: ../add.c:604
+#, c-format
+msgid "%s saved as %s.pacorig"
+msgstr "%s được lưu dạng %s.pacorig"
+
+#: ../add.c:605
+#, c-format
+msgid "warning: %s saved as %s"
+msgstr "cảnh báo : %s được lưu dạng %s"
+
+#: ../add.c:615 ../add.c:618 ../add.c:624
+msgid "action: installing new file"
+msgstr "hành vi: đang cài đặt tập tin mới"
+
+#: ../add.c:622
+msgid "action: leaving existing file in place"
+msgstr "hành vi: đang để lại tập tin đã có"
+
+#: ../add.c:628
+msgid "action: keeping current file and installing new one with .pacnew ending"
+msgstr ""
+"hành vi: đang giữ tập tin hiện thời và cài đặt tập tin mới với đuôi « .pacnew "
+"»"
+
+#: ../add.c:632
+#, c-format
+msgid "could not install %s as %s: %s"
+msgstr "không thể cài đặt %s như là %s: %s"
+
+#: ../add.c:633
+#, c-format
+msgid "error: could not install %s as %s: %s"
+msgstr "lỗi: không thể cài đặt %s như là %s: %s"
+
+#: ../add.c:635
+#, c-format
+msgid "%s installed as %s"
+msgstr "%s được cài đặt như là %s"
+
+#: ../add.c:636
+#, c-format
+msgid "warning: %s installed as %s"
+msgstr "cảnh báo : %s được cài đặt như là %s"
+
+#: ../add.c:641 ../add.c:661
+#, c-format
+msgid "extracting %s"
+msgstr "đang giải nén %s"
+
+#: ../add.c:663
+#, c-format
+msgid "%s is in NoUpgrade -- skipping"
+msgstr "%s là một gói Không Nên Nâng Cấp thì đang bỏ qua nó"
+
+#: ../add.c:665
+#, c-format
+msgid "extracting %s as %s.pacnew"
+msgstr "đang giải nén %s như là %s.pacnew"
+
+#: ../add.c:666
+#, c-format
+msgid "warning: extracting %s%s as %s"
+msgstr "cảnh báo: đang giải nén %s%s như là %s"
+
+#: ../add.c:680
+#, c-format
+msgid "error: could not extract %s (%s)"
+msgstr "lỗi: không thể giải nén %s (%s)"
+
+#: ../add.c:691
+msgid "appending backup entry"
+msgstr "đang phụ thêm mục nhập sao lưu"
+
+#: ../add.c:726 ../add.c:728
+#, c-format
+msgid "errors occurred while %s %s"
+msgstr "gặp lỗi trong khi %s %s"
+
+#: ../add.c:727 ../add.c:729
+msgid "upgrading"
+msgstr "đang nâng cấp"
+
+#: ../add.c:727 ../add.c:729
+msgid "installing"
+msgstr "đang cài đặt"
+
+#: ../add.c:752 ../add.c:803
+#, c-format
+msgid "adding '%s' in requiredby field for '%s'"
+msgstr "đang thêm « %s » vào trường « yêu cầu bởi » đối với « %s »"
+
+#. remove the package from the database
+#: ../add.c:763 ../remove.c:288
+msgid "updating database"
+msgstr "đang nâng cấp cơ sở dữ liệu"
+
+#: ../add.c:764
+#, c-format
+msgid "adding database entry '%s'"
+msgstr "đang thêm mục nhập cơ sở dữ liệu « %s »"
+
+#: ../add.c:766
+#, c-format
+msgid "could not update database entry %s-%s"
+msgstr "không thể nâng cấp mục nhập cơ sở dữ liệu %s-%s"
+
+#: ../add.c:768
+#, c-format
+msgid "error updating database for %s-%s!"
+msgstr "gặp lỗi khi nâng cấp cơ sở dữ liệu cho %s-%s !"
+
+#: ../add.c:772
+#, c-format
+msgid "could not add entry '%s' in cache"
+msgstr "không thể thêm mục nhập « %s » vào vùng nhớ tạm"
+
+#. update dependency packages' REQUIREDBY fields
+#: ../add.c:777 ../remove.c:298
+msgid "updating dependency packages 'requiredby' fields"
+msgstr "đang nâng cấp trường « yêu cầu bởi » của các gói có điều kiện phụ thuộc"
+
+#: ../add.c:798 ../remove.c:326
+#, c-format
+msgid "could not find dependency '%s'"
+msgstr "không tìm thấy gói phụ thuộc « %s »"
+
+#: ../add.c:806 ../remove.c:336
+#, c-format
+msgid "could not update 'requiredby' database entry %s-%s"
+msgstr "không thể nâng cấp mục nhập cơ sở dữ liệu « yêu cầu bởi » %s-%s"
+
+#: ../add.c:832 ../remove.c:348
+#, c-format
+msgid "running \"ldconfig -r %s\""
+msgstr "đang chạy câu lệnh « ldconfig -r %s »"
+
+#: ../pacman.c:215
+#, c-format
+msgid "unregistering database '%s'"
+msgstr "đang hủy đăng ký cơ sở dữ liệu « %s »"
+
+#: ../pacman.c:220
+#, c-format
+msgid "closing database '%s'"
+msgstr "đang đóng cơ sở dữ liệu « %s »"
+
+#: ../pacman.c:298
+#, c-format
+msgid ""
+"adding new server to database '%s': protocol '%s', server '%s', path '%s'"
+msgstr ""
+"đang thêm máy phục vụ mới vào cơ sở dữ liệu « %s »:\n"
+" • giao thức « %s »\n"
+" • máy phục vụ « %s »\n"
+" • đường dẫn « %s »"
+
+#: ../pacman.c:302
+#, c-format
+msgid "serverlist flushed for '%s'"
+msgstr "danh sách máy phục vụ bị xoá sạch cho « %s »"
+
+#: ../pacman.c:345
+#, c-format
+msgid "failed to get lastupdate time for %s (no big deal)\n"
+msgstr "không lấy được giờ nâng cấp cuối cùng cho %s (không quan trọng lắm)\n"
+
+#: ../pacman.c:359
+#, c-format
+msgid "failed to sync db: %s [%d]\n"
+msgstr "không đồng bộ hoá được cơ sở dữ liệu : %s [%d]\n"
+
+#: ../pacman.c:366
+#, c-format
+msgid "sync: new mtime for %s: %s\n"
+msgstr "đồng bộ : giờ sửa đổi mới cho %s: %s\n"
+
+#: ../pacman.c:373
+#, c-format
+msgid "flushing database %s/%s"
+msgstr "đang xoá sạch cơ sở dữ liệu %s/%s"
+
+#: ../pacman.c:377
+#, c-format
+msgid "could not remove database entry %s/%s"
+msgstr "không thể gỡ bỏ mục nhập cơ sở dữ liệu %s/%s"
+
+#: ../pacman.c:400 ../pacman.c:943
+#, c-format
+msgid "could not remove lock file %s"
+msgstr "không thể gỡ bỏ tập tin khoá %s"
+
+#: ../pacman.c:401 ../pacman.c:944
+#, c-format
+msgid "warning: could not remove lock file %s"
+msgstr "cảnh báo : không thể gỡ bỏ tập tin khoá %s"
+
+#: ../pacman.c:575
+#, c-format
+msgid "could not get sha1 checksum for package %s-%s\n"
+msgstr "không thể lấy chuỗi tổng kiểm SHA1 cho gói %s-%s\n"
+
+#: ../pacman.c:581 ../pacman.c:628 ../package.c:535
+#, c-format
+msgid "loading DESC info for '%s'"
+msgstr "đang nạp thông tin DESC (mô tả) về « %s »"
+
+#: ../pacman.c:586 ../pacman.c:633
+#, c-format
+msgid "checksums for package %s-%s are matching"
+msgstr "gói %s-%s có hai chuỗi tổng kiểm trùng"
+
+#: ../pacman.c:589
+#, c-format
+msgid "sha1sums do not match for package %s-%s\n"
+msgstr "gói %s-%s có hai chuỗi duy nhất SHA1 không trùng\n"
+
+#: ../pacman.c:622
+#, c-format
+msgid "could not get md5 checksum for package %s-%s\n"
+msgstr "không thể lấy chuỗi tổng kiểm MD5 cho gói %s-%s\n"
+
+#: ../pacman.c:636
+#, c-format
+msgid "md5sums do not match for package %s-%s\n"
+msgstr "gói %s-%s có hai chuỗi duy nhất MD5 không trùng\n"
+
+#: ../pacman.c:1215
+#, c-format
+msgid "config: new section '%s'\n"
+msgstr "cấu hình: phần mới « %s »\n"
+
+#: ../pacman.c:1246
+msgid "config: usesyslog\n"
+msgstr "cấu hình: dùng sổ theo dõi hệ thống (syslog)\n"
+
+#: ../pacman.c:1257
+#, c-format
+msgid "config: including %s\n"
+msgstr "cấu hình: đang bao gồm %s\n"
+
+#: ../pacman.c:1269 ../pacman.c:1277
+#, c-format
+msgid "config: noupgrade: %s\n"
+msgstr "cấu hình: không nên nâng cấp: %s\n"
+
+#: ../pacman.c:1287 ../pacman.c:1295
+#, c-format
+msgid "config: noextract: %s\n"
+msgstr "cấu hình: không nên giải nén: %s\n"
+
+#: ../pacman.c:1305 ../pacman.c:1313
+#, c-format
+msgid "config: ignorepkg: %s\n"
+msgstr "cấu hình: gói nên lờ đi: %s\n"
+
+#: ../pacman.c:1323 ../pacman.c:1331
+#, c-format
+msgid "config: holdpkg: %s\n"
+msgstr "cấu hình: gói nên giữ lại: %s\n"
+
+#: ../pacman.c:1341
+#, c-format
+msgid "config: dbpath: %s\n"
+msgstr "cấu hình: đường dẫn CDSL: %s\n"
+
+#: ../pacman.c:1351
+#, c-format
+msgid "config: cachedir: %s\n"
+msgstr "cấu hình: thư mục nhớ tạm: %s\n"
+
+#: ../pacman.c:1357
+#, c-format
+msgid "config: log file: %s\n"
+msgstr "cấu hình: tập tin theo dõi: %s\n"
+
+#. The config value is in days, we use seconds
+#: ../pacman.c:1365
+#, c-format
+msgid "config: UpgradeDelay: %i\n"
+msgstr "cấu hình: khoảng đợi nâng cấp: %i\n"
+
+#. The config value is in days, we use seconds
+#: ../pacman.c:1372
+#, c-format
+msgid "config: OldDelay: %i\n"
+msgstr "cấu hình: khoảng đợi cũ : %i\n"
+
+#. add to the list
+#: ../pacman.c:1398
+#, c-format
+msgid "config: %s: server: %s\n"
+msgstr "cấu hình: %s: máy phục vụ : %s\n"
+
+#. TODO
+#. we should not simply unpack the archive, but better parse it and
+#. db_write each entry (see sync_load_dbarchive to get archive content)
+#: ../be_files.c:56
+#, c-format
+msgid "unpacking database '%s'"
+msgstr "đang giải nén cơ sở dữ liệu « %s »"
+
+#: ../be_files.c:81
+#, c-format
+msgid "%s: description file is missing"
+msgstr "%s: tập tin mô tả bị thiếu"
+
+#: ../be_files.c:87
+#, c-format
+msgid "%s: dependency information is missing"
+msgstr "%s: thông tin về quan hệ phụ thuộc bị thiếu"
+
+#: ../be_files.c:93
+#, c-format
+msgid "%s: file list is missing"
+msgstr "%s: danh sách tập tin bị thiếu"
+
+#: ../be_files.c:205
+#, c-format
+msgid "invalid name for dabatase entry '%s'"
+msgstr "tên không hợp lệ cho mục nhập cơ sở dữ liệu « %s »"
+
+#: ../be_files.c:229
+msgid "invalid package entry provided to _pacman_db_read"
+msgstr "mục nhập gói không hợp lệ được cung cấp cho hàm « _pacman_db_read »"
+
+#: ../be_files.c:488
+#, c-format
+msgid "db_write: could not open file %s/desc"
+msgstr "db_write: không thể mở tập tin %s/desc"
+
+#: ../be_files.c:573
+#, c-format
+msgid "db_write: could not open file %s/files"
+msgstr "db_write: không thể mở tập tin %s/files"
+
+#: ../be_files.c:599
+#, c-format
+msgid "db_write: could not open file %s/depends"
+msgstr "db_write: không thể mở tập tin %s/depends"
+
+#: ../cache.c:57
+#, c-format
+msgid "loading package cache (infolevel=%#x) for repository '%s'"
+msgstr "đang nạp vùng nhớ tạm gói (cấp thông tin=%#x) cho kho gói « %s »"
+
+#: ../cache.c:77
+#, c-format
+msgid "freeing package cache for repository '%s'"
+msgstr "đang giải phóng vùng nhớ tạm gói cho kho gói « %s »"
+
+#: ../cache.c:112
+#, c-format
+msgid "adding entry '%s' in '%s' cache"
+msgstr "đang thêm mục nhập « %s » vào vùng nhớ tạm « %s »"
+
+#: ../cache.c:134
+#, c-format
+msgid "removing entry '%s' from '%s' cache"
+msgstr "đang gỡ bỏ mục nhập « %s » khỏi vùng nhớ tạm « %s »"
+
+#: ../cache.c:165
+#, c-format
+msgid "loading group cache for repository '%s'"
+msgstr "đang nạp vùng nhớ tạm nhóm cho kho gói « %s »"
+
+#. CHECK 1: check targets against database
+#: ../conflict.c:84
+#, c-format
+msgid "checkconflicts: targ '%s' vs db"
+msgstr "kiểm tra xung đột: đích « %s » so với CDSL"
+
+#. conflict
+#. confict
+#: ../conflict.c:93 ../conflict.c:107
+#, c-format
+msgid "targs vs db: found %s as a conflict for %s"
+msgstr "đích so với CDSL: tìm thấy %s xung đột đối với %s"
+
+#. CHECK 2: check targets against targets
+#: ../conflict.c:120
+#, c-format
+msgid "checkconflicts: targ '%s' vs targs"
+msgstr "kiểm tra xung đột: đích « %s » so với các đích"
+
+#. otp is listed in tp's conflict list
+#: ../conflict.c:129 ../conflict.c:142
+#, c-format
+msgid "targs vs targs: found %s as a conflict for %s"
+msgstr "đích so với các đích: tìm thấy %s xung đột đối với %s"
+
+#. CHECK 3: check database against targets
+#: ../conflict.c:156
+#, c-format
+msgid "checkconflicts: db vs targ '%s'"
+msgstr "kiểm tra xung đột: CSDL so với đích « %s »"
+
+#: ../conflict.c:183 ../conflict.c:198
+#, c-format
+msgid "db vs targs: found %s as a conflict for %s"
+msgstr "CSDL so với đích: tìm thấy %s xung đột đối với %s"
+
+#: ../conflict.c:283 ../conflict.c:368 ../deps.c:68 ../deps.c:622
+#: ../deps.c:662 ../group.c:40 ../handle.c:52 ../package.c:103 ../sync.c:63
+#: ../sync.c:631 ../sync.c:647 ../sync.c:742 ../trans.c:65 ../util.c:762
+#: ../util.c:769
+#, c-format
+msgid "malloc failure: could not allocate %d bytes"
+msgstr "lỗi malloc: không thể cấp phát %d byte"
+
+#: ../db.c:59 ../db.c:66
+#, c-format
+msgid "malloc failed: could not allocate %d bytes"
+msgstr "malloc không chạy được: không thể cấp phát %d byte"
+
+#: ../db.c:185
+msgid "attempt to re-register the 'local' DB\n"
+msgstr "thử đăng ký lại CSDL « cục bộ »\n"
+
+#: ../db.c:193
+#, c-format
+msgid "attempt to re-register the '%s' database, using existing\n"
+msgstr "sự thử đăng ký lại cơ sở dữ liệu « %s », dùng cái đã có\n"
+
+#: ../db.c:199
+#, c-format
+msgid "registering database '%s'"
+msgstr "đang đăng ký cơ sở dữ liệu « %s »"
+
+#: ../db.c:204
+#, c-format
+msgid "database directory '%s' does not exist -- try creating it"
+msgstr "thư mục cơ sở dữ liệu « %s » không tồn tại — hãy thử tạo nó"
+
+#: ../db.c:215
+#, c-format
+msgid "opening database '%s'"
+msgstr "đang mở cơ sở dữ liệu « %s »"
+
+#: ../deps.c:127
+msgid "started sorting dependencies"
+msgstr "đã bắt đầu sắp xếp các quan hệ phụ thuộc"
+
+#: ../deps.c:171
+msgid "dependency cycle detected"
+msgstr "phát hiện được một vòng lặp phụ thuộc"
+
+#: ../deps.c:189
+msgid "sorting dependencies finished"
+msgstr "hoàn tất sắp xếp các quan hệ phụ thuộc"
+
+#: ../deps.c:252
+#, c-format
+msgid "checkdeps: updated '%s' won't satisfy a dependency of '%s'"
+msgstr ""
+"kiểm tra phụ thuộc: « %s » được nâng cấp vẫn còn không thoả quan hệ phụ thuộc "
+"của « %s »"
+
+#: ../deps.c:387
+#, c-format
+msgid "checkdeps: found %s as a dependency for %s"
+msgstr "kiểm tra phụ thuộc: tìm thấy %s có quan hệ phụ thuộc với %s"
+
+#: ../deps.c:423
+#, c-format
+msgid "checkdeps: found %s which requires %s"
+msgstr "kiểm tra phụ thuộc: tìm thấy %s mà yêu cầu %s"
+
+#: ../deps.c:515
+#, c-format
+msgid "cannot find package \"%s\" or anything that provides it!"
+msgstr "không tìm thấy gói « %s », cũng không tìm thấy cái nào cung cấp nó !"
+
+#: ../deps.c:520
+msgid "dep is NULL!"
+msgstr "quan hệ phụ thuộc vô giá trị !"
+
+#: ../deps.c:532
+#, c-format
+msgid "excluding %s -- explicitly installed"
+msgstr "đang loại trừ %s — được cài đặt dứt khoát"
+
+#. add it to the target list
+#: ../deps.c:549
+#, c-format
+msgid "loading ALL info for '%s'"
+msgstr "đang nạp TẤT CẢ các thông tin về « %s »"
+
+#: ../deps.c:552
+#, c-format
+msgid "adding '%s' to the targets"
+msgstr "đang thêm « %s » vào các đích"
+
+#: ../deps.c:594
+#, c-format
+msgid "%s provides dependency %s -- skipping"
+msgstr "%s cung cấp gói phụ thuộc %s — đang bỏ qua"
+
+#: ../deps.c:618
+#, c-format
+msgid ""
+"cannot resolve dependencies for \"%s\" (\"%s\" is not in the package set)"
+msgstr ""
+"không thể thoả quan hệ phụ thuộc với « %s » (« %s » không nằm trong tập hợp "
+"các gói)"
+
+#. this dep is already in the target list
+#: ../deps.c:635
+#, c-format
+msgid "dependency %s is already in the target list -- skipping"
+msgstr "gói phụ thuộc %s đã có trong danh sách đích nên bỏ qua"
+
+#: ../deps.c:655
+#, c-format
+msgid "pulling dependency %s (needed by %s)"
+msgstr "đang lấy gói phụ thuộc %s (cần bởi %s)"
+
+#: ../deps.c:659
+#, c-format
+msgid "cannot resolve dependencies for \"%s\""
+msgstr "không thể thoả quan hệ phụ thuộc với « %s »"
+
+#. cycle detected -- skip it
+#: ../deps.c:675
+#, c-format
+msgid "dependency cycle detected: %s"
+msgstr "phát hiện một vòng lặp quan hệ phụ thuộc: %s"
+
+#: ../deps.c:719
+#, c-format
+msgid "depcmp: %s-%s %s %s-%s => %s"
+msgstr "depcmp: %s-%s %s %s-%s => %s"
+
+#: ../deps.c:724
+#, c-format
+msgid "depcmp: %s-%s %s %s => %s"
+msgstr "depcmp: %s-%s %s %s => %s"
+
+#: ../error.c:35
+msgid "out of memory!"
+msgstr "không đủ bộ nhớ !"
+
+#: ../error.c:37 ../error.c:154
+msgid "unexpected error"
+msgstr "lỗi bất thường"
+
+#: ../error.c:39
+msgid "insufficient privileges"
+msgstr "không đủ quyền"
+
+#: ../error.c:41
+msgid "wrong or NULL argument passed"
+msgstr "đã gửi một đối số sai hay vô giá trị"
+
+#: ../error.c:43
+msgid "could not find or read file"
+msgstr "không thể tìm thấy hoặc đọc tập tin"
+
+#: ../error.c:46
+msgid "library not initialized"
+msgstr "chưa sơ khởi thư viện"
+
+#: ../error.c:48
+msgid "library already initialized"
+msgstr "thư viện đã sơ khởi"
+
+#: ../error.c:50
+msgid "unable to lock database"
+msgstr "không thể khoá cơ sở dữ liệu"
+
+#: ../error.c:53
+msgid "could not open database"
+msgstr "không thể mở cơ sở dữ liệu"
+
+#: ../error.c:55
+msgid "could not create database"
+msgstr "không thể tạo cơ sở dữ liệu"
+
+#: ../error.c:57
+msgid "database not initialized"
+msgstr "chưa sơ khởi cơ sở dữ liệu"
+
+#: ../error.c:59
+msgid "database already registered"
+msgstr "cơ sở dữ liệu đã đăng ký"
+
+#: ../error.c:61
+msgid "could not find database"
+msgstr "không tìm thấy cơ sở dữ liệu"
+
+#: ../error.c:63
+msgid "could not update database"
+msgstr "không thể cập nhật cơ sở dữ liệu"
+
+#: ../error.c:65
+msgid "could not remove database entry"
+msgstr "không thể gỡ bỏ mục nhập cơ sở dữ liệu"
+
+#: ../error.c:72
+msgid "could not set parameter"
+msgstr "không thể đặt tham số"
+
+#: ../error.c:75 ../error.c:81
+msgid "transaction not initialized"
+msgstr "chưa sơ khởi giao dịch"
+
+#: ../error.c:77
+msgid "transaction already initialized"
+msgstr "giao dịch đã sơ khởi"
+
+#: ../error.c:79
+msgid "duplicate target"
+msgstr "đích trùng"
+
+#: ../error.c:83
+msgid "transaction not prepared"
+msgstr "chưa chuẩn bị giao dịch"
+
+#: ../error.c:85
+msgid "transaction aborted"
+msgstr "giao dịch bị huỷ bỏ"
+
+#: ../error.c:87
+msgid "operation not compatible with the transaction type"
+msgstr "thao tác không tương thích với loại giao dịch"
+
+#: ../error.c:90
+msgid "could not find or read package"
+msgstr "không thể tìm thấy hoặc đọc gói"
+
+#: ../error.c:92
+msgid "invalid or corrupted package"
+msgstr "gói không hợp lệ hoặc bị hỏng"
+
+#: ../error.c:94
+msgid "cannot open package file"
+msgstr "không thể mở tập tin gói"
+
+#: ../error.c:96
+msgid "cannot load package data"
+msgstr "không thể nạp dữ liệu gói"
+
+#: ../error.c:98
+msgid "package already installed"
+msgstr "gói đã cài đặt"
+
+#: ../error.c:100
+msgid "package not installed or lesser version"
+msgstr "gói chưa được cài đặt hoặc phiên bản ít hơn"
+
+#: ../error.c:102
+msgid "package name is not valid"
+msgstr "tên gói không hợp lệ"
+
+#: ../error.c:104
+msgid "corrupted package"
+msgstr "gói bị hỏng"
+
+#: ../error.c:107
+msgid "group not found"
+msgstr "không tìm thấy nhóm"
+
+#: ../error.c:110
+msgid "could not satisfy dependencies"
+msgstr "không thể thoả quan hệ phụ thuộc"
+
+#: ../error.c:112
+msgid "conflicting dependencies"
+msgstr "quan hệ phụ thuộc bị xung đột"
+
+#: ../error.c:114
+msgid "conflicting files"
+msgstr "tập tin bị xung đột"
+
+#: ../error.c:117
+msgid "user aborted"
+msgstr "người dùng đã huỷ bỏ"
+
+#: ../error.c:119
+msgid "libarchive error"
+msgstr "lỗi libarchive"
+
+#: ../error.c:121
+msgid "internal error"
+msgstr "lỗi nội bộ"
+
+#: ../error.c:123
+msgid "not enough space"
+msgstr "không đủ sức chứa"
+
+#: ../error.c:125
+msgid "not confirmed"
+msgstr "chưa xác nhận"
+
+#: ../error.c:128
+msgid "bad section name"
+msgstr "tên phần sai"
+
+#: ../error.c:130
+msgid "'local' is reserved and cannot be used as a package tree"
+msgstr "« local » dành riêng nên không thể dùng làm cây gói"
+
+#: ../error.c:132
+msgid "syntax error"
+msgstr "lỗi cú pháp"
+
+#: ../error.c:134
+msgid "all directives must belong to a section"
+msgstr "mọi chỉ thị đều phải thuộc về một phần nào đó"
+
+#: ../error.c:136
+msgid "invalid regular expression"
+msgstr "biểu thức chính quy không hợp lệ"
+
+#: ../error.c:138
+msgid "connection to remote host failed"
+msgstr "không kết nối được tới máy chủ từ xa"
+
+#: ../error.c:140
+msgid "forking process failed"
+msgstr "không tạo được tiến trình con"
+
+#: ../error.c:142
+msgid "no package owns the file"
+msgstr "không có gói sở hữu tập tin này"
+
+#: ../error.c:144
+msgid "could not access cache directory"
+msgstr "không thể truy cập vào thư mục nhớ tạm"
+
+#: ../error.c:146
+msgid "could not remove cache directory"
+msgstr "không thể gỡ bỏ thư mục nhớ tạm"
+
+#: ../error.c:148
+msgid "could not create new cache directory"
+msgstr "không thể tạo thư mục nhớ tạm mới"
+
+#: ../error.c:150
+msgid "this package is not for this architecture"
+msgstr "gói này không thích hợp với kiến trúc này"
+
+#: ../error.c:152
+msgid "could not retrieve the file"
+msgstr "không thể lấy tập tin"
+
+#: ../handle.c:139
+#, c-format
+msgid "PM_OPT_DBPATH set to '%s'"
+msgstr "PM_OPT_DBPATH được đặt thành « %s »"
+
+#: ../handle.c:146
+#, c-format
+msgid "PM_OPT_CACHEDIR set to '%s'"
+msgstr "PM_OPT_CACHEDIR được đặt thành « %s »"
+
+#: ../handle.c:153
+#, c-format
+msgid "PM_OPT_HOOKSDIR set to '%s'"
+msgstr "PM_OPT_HOOKSDIR được đặt thành « %s »"
+
+#: ../handle.c:180
+#, c-format
+msgid "can't open log file %s"
+msgstr "không thể mở tập tin theo dõi %s"
+
+#: ../handle.c:184
+#, c-format
+msgid "PM_OPT_LOGFILE set to '%s'"
+msgstr "PM_OPT_LOGFILE được đặt thành « %s »"
+
+#: ../handle.c:189
+#, c-format
+msgid "'%s' added to PM_OPT_NOUPGRADE"
+msgstr "« %s » được thêm vào PM_OPT_NOUPGRADE"
+
+#: ../handle.c:192
+msgid "PM_OPT_NOUPGRADE flushed"
+msgstr "PM_OPT_NOUPGRADE bị xoá sạch"
+
+#: ../handle.c:198
+#, c-format
+msgid "'%s' added to PM_OPT_NOEXTRACT"
+msgstr "« %s » được thêm vào PM_OPT_NOEXTRACT"
+
+#: ../handle.c:201
+msgid "PM_OPT_NOEXTRACT flushed"
+msgstr "PM_OPT_NOEXTRACT bị xoá sạch"
+
+#: ../handle.c:207
+#, c-format
+msgid "'%s' added to PM_OPT_IGNOREPKG"
+msgstr "« %s » được thêm vào PM_OPT_IGNOREPKG"
+
+#: ../handle.c:210
+msgid "PM_OPT_IGNOREPKG flushed"
+msgstr "PM_OPT_IGNOREPKG bị xoá sạch"
+
+#: ../handle.c:216
+#, c-format
+msgid "'%s' added to PM_OPT_HOLDPKG"
+msgstr "« %s » được thêm vào PM_OPT_HOLDPKG"
+
+#: ../handle.c:219
+msgid "PM_OPT_HOLDPKG flushed"
+msgstr "PM_OPT_HOLDPKG bị xoá sạch"
+
+#: ../handle.c:225
+#, c-format
+msgid "'%s' added to PM_OPT_NEEDLES"
+msgstr "« %s » được thêm vào PM_OPT_NEEDLES"
+
+#: ../handle.c:228
+msgid "PM_OPT_NEEDLES flushed"
+msgstr "PM_OPT_NEEDLES bị xoá sạch"
+
+#: ../handle.c:244
+#, c-format
+msgid "PM_OPT_USESYSLOG set to '%d'"
+msgstr "PM_OPT_USESYSLOG được đặt thành « %d »"
+
+#: ../handle.c:293
+#, c-format
+msgid "PM_OPT_LOGMASK set to '%02x'"
+msgstr "PM_OPT_LOGMASK được đặt thành « %02x »"
+
+#: ../handle.c:312
+#, c-format
+msgid "PM_OPT_PROXYHOST set to '%s'"
+msgstr "PM_OPT_PROXYHOST được đặt thành « %s »"
+
+#: ../handle.c:316
+#, c-format
+msgid "PM_OPT_PROXYPORT set to '%d'"
+msgstr "PM_OPT_PROXYPORT được đặt thành « %d »"
+
+#: ../handle.c:327
+#, c-format
+msgid "PM_OPT_XFERCOMMAND set to '%s'"
+msgstr "PM_OPT_XFERCOMMAND được đặt thành « %s »"
+
+#: ../handle.c:331
+#, c-format
+msgid "PM_OPT_NOPASSIVEFTP set to '%d'"
+msgstr "PM_OPT_NOPASSIVEFTP được đặt thành « %d »"
+
+#: ../handle.c:335
+#, c-format
+msgid "PM_OPT_CHOMP set to '%d'"
+msgstr "PM_OPT_CHOMP được đặt thành « %d »"
+
+#: ../handle.c:339
+#, c-format
+msgid "PM_OPT_MAXTRIES set to '%d'"
+msgstr "PM_OPT_MAXTRIES được đặt thành « %d »"
+
+#: ../md5driver.c:49 ../sha1.c:395
+#, c-format
+msgid "%s can't be opened\n"
+msgstr "không thể mở %s\n"
+
+#: ../package.c:191
+#, c-format
+msgid "could not open file %s"
+msgstr "không thể mở tập tin %s"
+
+#: ../package.c:208 ../package.c:262
+#, c-format
+msgid "%s: syntax error in description file line %d"
+msgstr "%s: gặp lỗi cú pháp trong tập tin mô tả dòng %d"
+
+#: ../package.c:320
+msgid "could not parse the package description file"
+msgstr "không thể phân tích cú pháp của tập tin mô tả gói"
+
+#: ../package.c:328
+#, c-format
+msgid "missing package name in %s"
+msgstr "thiếu tên gói trong %s"
+
+#: ../package.c:336
+#, c-format
+msgid "missing package version in %s"
+msgstr "thiếu phiên bản gói trong %s"
+
+#: ../package.c:345
+#, c-format
+msgid "missing package architecture in %s"
+msgstr "thiếu kiến trúc gói trong %s"
+
+#: ../package.c:355
+#, c-format
+msgid "wrong package architecture in %s"
+msgstr "kiến trúc gói sai trong %s"
+
+#: ../package.c:395
+#, c-format
+msgid "could not remove tempfile %s"
+msgstr "không thể gỡ bỏ tập tin tạm thời %s"
+
+#: ../package.c:412
+#, c-format
+msgid "bad package file in %s"
+msgstr "tập tin gói sai trong %s"
+
+#: ../package.c:420
+#, c-format
+msgid "missing package info file in %s"
+msgstr "thiếu tập tin thông tin gói trong %s"
+
+#: ../package.c:560
+#, c-format
+msgid "loading SCRIPLET info for '%s'"
+msgstr "đang nạp thông tin SCRIPLET (văn lệnh nhỏ) về « %s »"
+
+#: ../remove.c:74
+#, c-format
+msgid "could not find %s in database"
+msgstr "không tìm thấy %s trong cơ sở dữ liệu"
+
+#: ../remove.c:87
+#, c-format
+msgid "adding %s in the targets list"
+msgstr "đang thêm %s vào danh sách đích"
+
+#: ../remove.c:113
+#, c-format
+msgid "pulling %s in the targets list"
+msgstr "đang lấy %s vào danh sách đích"
+
+#: ../remove.c:116
+#, c-format
+msgid "could not find %s in database -- skipping"
+msgstr "không tìm thấy %s trong cơ sở dữ liệu thì bỏ qua"
+
+#: ../remove.c:134
+msgid "finding removable dependencies"
+msgstr "đang tìm các quan hệ phụ thuộc có thể gỡ bỏ"
+
+#: ../remove.c:184
+#, c-format
+msgid "removing package %s-%s"
+msgstr "đang gỡ bỏ gói %s-%s"
+
+#: ../remove.c:195
+msgid "removing files"
+msgstr "đang gỡ bỏ các tập tin"
+
+#: ../remove.c:221
+#, c-format
+msgid "file %s does not exist"
+msgstr "tập tin %s không tồn tại"
+
+#. this is okay, other packages are probably using it.
+#: ../remove.c:227
+#, c-format
+msgid "keeping directory %s"
+msgstr "đang giữ thư mục %s"
+
+#: ../remove.c:229
+#, c-format
+msgid "removing directory %s"
+msgstr "đang gỡ bỏ thư mục %s"
+
+#: ../remove.c:243
+#, c-format
+msgid "skipping removal of %s as it has moved to another package"
+msgstr "đang bỏ qua bước gỡ bỏ %s vì nó đã dời sang một gói khác"
+
+#: ../remove.c:255 ../remove.c:256
+#, c-format
+msgid "%s saved as %s"
+msgstr "%s được lưu dạng %s"
+
+#: ../remove.c:258 ../remove.c:265
+#, c-format
+msgid "unlinking %s"
+msgstr "đang bỏ liên kết %s"
+
+#: ../remove.c:260 ../remove.c:270
+#, c-format
+msgid "cannot remove file %s"
+msgstr "không thể gỡ bỏ tập tin %s"
+
+#: ../remove.c:289
+#, c-format
+msgid "removing database entry '%s'"
+msgstr "đang gỡ bỏ mục nhập cơ sở dữ liệu « %s »"
+
+#: ../remove.c:291
+#, c-format
+msgid "could not remove database entry %s-%s"
+msgstr "không thể gỡ bỏ mục nhập cơ sở dữ liệu %s-%s"
+
+#: ../remove.c:294
+#, c-format
+msgid "could not remove entry '%s' from cache"
+msgstr "không thể gỡ bỏ mục nhập « %s » khỏi vùng nhớ tạm"
+
+#: ../remove.c:334
+#, c-format
+msgid "updating 'requiredby' field for package '%s'"
+msgstr "đang nâng cấp trường « yêu cầu bởi » cho gói « %s »"
+
+#. check for "recommended" package replacements
+#: ../sync.c:129
+msgid "checking for package replacements"
+msgstr "đang kiểm tra có gói thay thế"
+
+#: ../sync.c:138
+#, c-format
+msgid "checking replacement '%s' for package '%s'"
+msgstr "đang kiểm tra bản thay thế « %s » có gói « %s »"
+
+#: ../sync.c:140
+#, c-format
+msgid "%s-%s: ignoring package upgrade (to be replaced by %s-%s)"
+msgstr "%s-%s: đang bỏ qua bước nâng cấp gói (sẽ được %s-%s thay thế)"
+
+#: ../sync.c:174
+#, c-format
+msgid "%s-%s elected for upgrade (to be replaced by %s-%s)"
+msgstr "%s-%s được chọn nâng cấp (sẽ được %s-%s thay thế)"
+
+#. match installed packages with the sync dbs and compare versions
+#: ../sync.c:186
+msgid "checking for package upgrades"
+msgstr "đang kiểm tra có bản nâng cấp gói"
+
+#: ../sync.c:198
+#, c-format
+msgid "'%s' not found in sync db -- skipping"
+msgstr "không tìm thấy « %s » trong CSDL đồng bộ thì bỏ qua"
+
+#: ../sync.c:212 ../sync.c:526
+#, c-format
+msgid "'%s' is already elected for removal -- skipping"
+msgstr "« %s » đã chọn để gỡ bỏ thì bỏ qua"
+
+#. local version is newer
+#: ../sync.c:221
+#, c-format
+msgid "%s-%s: local version is newer"
+msgstr "%s-%s: phiên bản bên này vẫn mới hơn"
+
+#. package should be ignored (IgnorePkg)
+#: ../sync.c:227
+#, c-format
+msgid "%s-%s: ignoring package upgrade (%s)"
+msgstr "%s-%s: đang bỏ qua bước nâng cấp gói (%s)"
+
+#. package too new (UpgradeDelay)
+#: ../sync.c:231
+#, c-format
+msgid "%s-%s: delaying upgrade of package (%s)\n"
+msgstr "%s-%s: đang làm trễ bước nâng cấp gói (%s)\n"
+
+#: ../sync.c:234
+#, c-format
+msgid "%s-%s: please upgrade manually (%s => %s)"
+msgstr "%s-%s: hãy nâng cấp thủ công (%s => %s)"
+
+#: ../sync.c:237
+#, c-format
+msgid "%s-%s elected for upgrade (%s => %s)"
+msgstr "%s-%s được chọn nâng cấp (%s => %s)"
+
+#. Search provides
+#: ../sync.c:289 ../sync.c:308
+#, c-format
+msgid "target '%s' not found -- looking for provisions"
+msgstr "không tìm thấy đích « %s » — đang tìm sự dự phòng"
+
+#: ../sync.c:294 ../sync.c:313
+#, c-format
+msgid "found '%s' as a provision for '%s'"
+msgstr "tìm thấy « %s » dự phòng cho « %s »"
+
+#: ../sync.c:332
+#, c-format
+msgid "%s-%s: local version is newer -- skipping"
+msgstr "%s-%s: phiên bản bên này vẫn mới hơn thì bỏ qua"
+
+#: ../sync.c:340
+#, c-format
+msgid "%s-%s is up to date -- skipping"
+msgstr "%s-%s vẫn hiện thời thì bỏ qua"
+
+#: ../sync.c:360
+#, c-format
+msgid "adding target '%s' to the transaction set"
+msgstr "đang thêm đích « %s » vào tập hợp giao dịch"
+
+#: ../sync.c:398
+#, c-format
+msgid "local copy of '%s' repo is too old"
+msgstr "kho gói « %s » bên này quá cũ"
+
+#: ../sync.c:430
+msgid "resolving targets dependencies"
+msgstr "đang giải quyết quan hệ phụ thuộc với đích"
+
+#: ../sync.c:450
+#, c-format
+msgid "adding package %s-%s to the transaction targets"
+msgstr "đang thêm gói %s-%s vào các đích giao dịch"
+
+#: ../sync.c:481
+msgid "looking for unresolvable dependencies"
+msgstr "đang tìm quan hệ phụ thuộc không thể thoả"
+
+#: ../sync.c:511
+#, c-format
+msgid "package '%s' is conflicting with '%s'"
+msgstr "gói « %s » xung đột với « %s »"
+
+#: ../sync.c:533
+#, c-format
+msgid "'%s' not found in transaction set -- skipping"
+msgstr "không tìm thấy « %s » trong tập hợp giao dịch thì bỏ qua"
+
+#. so just treat it like a "replaces" item so the REQUIREDBY
+#. * fields are inherited properly.
+#.
+#: ../sync.c:544
+#, c-format
+msgid "package '%s' provides its own conflict"
+msgstr "gói « %s » cung cấp sự xung đột của riêng mình"
+
+#: ../sync.c:567 ../sync.c:572
+#, c-format
+msgid "'%s' is in the target list -- keeping it"
+msgstr "« %s » nằm trong danh sách đích thì giữ lại"
+
+#: ../sync.c:584 ../sync.c:621
+#, c-format
+msgid "removing '%s' from target list"
+msgstr "đang gỡ bỏ « %s » khỏi danh sách đích"
+
+#. It's a conflict -- see if they want to remove it
+#.
+#: ../sync.c:593
+#, c-format
+msgid "resolving package '%s' conflict"
+msgstr "đang giải quyết sự xung đột của gói « %s »"
+
+#. append to the replaces list
+#: ../sync.c:616
+#, c-format
+msgid "electing '%s' for removal"
+msgstr "đang chọn « %s » để gỡ bỏ"
+
+#. abort
+#: ../sync.c:627 ../sync.c:643
+msgid "unresolvable package conflicts detected"
+msgstr "phát hiện được sự xung đột gói không thể giải quyết"
+
+#: ../sync.c:695
+msgid "checking dependencies of packages designated for removal"
+msgstr "đang kiểm tra quan hệ phụ thuộc của những gói cần gỡ bỏ"
+
+#: ../sync.c:708
+msgid "something has gone horribly wrong"
+msgstr "có gì rất xấu"
+
+#. found matching provisio -- we're good to go
+#: ../sync.c:727
+#, c-format
+msgid "found '%s' as a provision for '%s' -- conflict aborted"
+msgstr "tìm thấy « %s » dự phòng cho « %s » — sự xung đột bị hủy bỏ"
+
+#: ../sync.c:831
+#, c-format
+msgid "%s-%s-%s%s is already in the cache\n"
+msgstr "%s-%s-%s%s đã có trong vùng nhớ tạm\n"
+
+#. no cache directory.... try creating it
+#: ../sync.c:843
+#, c-format
+msgid "no %s cache exists.  creating...\n"
+msgstr "chưa có vùng nhớ tạm %s, đang tạo...\n"
+
+#: ../sync.c:844
+#, c-format
+msgid "warning: no %s cache exists.  creating..."
+msgstr "cảnh báo : không có vùng nhớ tạm %s, đang tạo..."
+
+#. couldn't mkdir the cache directory, so fall back to /tmp and unlink
+#. * the package afterwards.
+#.
+#: ../sync.c:849
+msgid "couldn't create package cache, using /tmp instead\n"
+msgstr "không thể tạo vùng nhớ tạm gói thì dùng thư mục « /tmp » thay vào đó\n"
+
+#: ../sync.c:850
+msgid "warning: couldn't create package cache, using /tmp instead"
+msgstr ""
+"cảnh báo : không thể tạo vùng nhớ tạm gói thì dùng thư mục « /tmp » thay vào "
+"đó"
+
+#: ../sync.c:853
+#, c-format
+msgid "failed to set option CACHEDIR (%s)\n"
+msgstr "không đặt được tuỳ chọn CACHEDIR (%s)\n"
+
+#: ../sync.c:860
+#, c-format
+msgid "failed to retrieve some files from %s\n"
+msgstr "không lấy được một số tập tin từ %s\n"
+
+#: ../sync.c:891 ../sync.c:903
+#, c-format
+msgid "can't get md5 or sha1 checksum for package %s\n"
+msgstr "không thể lấy chuỗi tổng kiểm tra loại MD5 hay SHA1 cho gói %s\n"
+
+#: ../sync.c:909
+#, c-format
+msgid "expected md5:  '%s'"
+msgstr "mong đợi MD5:  '%s'"
+
+#: ../sync.c:910
+#, c-format
+msgid "actual md5:    '%s'"
+msgstr "MD5 thật:    '%s'"
+
+#: ../sync.c:911
+#, c-format
+msgid "expected sha1: '%s'"
+msgstr "mong đợi SHA1:  '%s'"
+
+#: ../sync.c:912
+#, c-format
+msgid "actual sha1:   '%s'"
+msgstr "SHA1 thật:    '%s'"
+
+#: ../sync.c:925
+#, c-format
+msgid "archive %s was corrupted (bad MD5 or SHA1 checksum)\n"
+msgstr "kho nén %s đã bị hỏng (chuỗi tổng kiểm tra sai loại MD5 hay SHA1)\n"
+
+#: ../sync.c:927
+#, c-format
+msgid "archive %s is corrupted (bad MD5 or SHA1 checksum)\n"
+msgstr "kho nén %s bị hỏng (chuỗi tổng kiểm tra sai loại MD5 hay SHA1)\n"
+
+#: ../sync.c:958
+msgid "could not create removal transaction"
+msgstr "không thể tạo giao dịch gỡ bỏ"
+
+#: ../sync.c:964
+msgid "could not initialize the removal transaction"
+msgstr "không thể sơ khởi giao dịch gỡ bỏ"
+
+#: ../sync.c:983
+msgid "removing conflicting and to-be-replaced packages"
+msgstr "đang gỡ bỏ các gói đang xung đột và cần thay thế"
+
+#: ../sync.c:985
+msgid "could not prepare removal transaction"
+msgstr "không thể chuẩn bị giao dịch gỡ bỏ"
+
+#: ../sync.c:991
+msgid "could not commit removal transaction"
+msgstr "không thể gài vào giao dịch gỡ bỏ"
+
+#. install targets
+#: ../sync.c:998
+msgid "installing packages"
+msgstr "đang cài đặt các gói"
+
+#: ../sync.c:1001
+msgid "could not create transaction"
+msgstr "không thể tạo giao dịch"
+
+#: ../sync.c:1006
+msgid "could not initialize transaction"
+msgstr "không thể sơ khởi giao dịch"
+
+#: ../sync.c:1027
+msgid "could not prepare transaction"
+msgstr "không thể chuẩn bị giao dịch"
+
+#: ../sync.c:1032
+msgid "could not commit transaction"
+msgstr "không thể gài vào giao dịch"
+
+#: ../sync.c:1039
+msgid "updating database for replaced packages' dependencies"
+msgstr ""
+"đang nâng cấp cơ sở dữ liệu đối với quan hệ phụ thuộc của những gói được "
+"thay thế"
+
+#: ../sync.c:1067
+#, c-format
+msgid "could not update requiredby for database entry %s-%s"
+msgstr ""
+"không thể cập nhật trường « yêu cầu bởi » cho mục nhập cơ sở dữ liệu %s-%s"
+
+#: ../sync.c:1076
+#, c-format
+msgid "could not update new database entry %s-%s"
+msgstr "không thể cập nhật mục nhập cơ sở dữ liệu mới %s-%s"
+
+#: ../trans.c:52
+#, c-format
+msgid "cache for '%s' repo is too old"
+msgstr "kho gói « %s » có vùng nhớ tạm quá cũ"
+
+#: ../trans.c:55
+#, c-format
+msgid "cache for '%s' repo is up to date"
+msgstr "kho gói « %s » có vùng nhớ tạm hiện thời"
+
+#: ../util.c:345
+#, c-format
+msgid "could not extract %s: %s\n"
+msgstr "không thể giải nén %s: %s\n"
+
+#: ../util.c:507
+msgid "could not create temp directory"
+msgstr "không thể tạo thư mục tạm thời"
+
+#: ../util.c:534 ../util.c:632
+#, c-format
+msgid "could not change directory to %s (%s)"
+msgstr "không thể chuyển đổi thư mục sang %s (%s)"
+
+#: ../util.c:537
+#, c-format
+msgid "executing %s script..."
+msgstr "đang thực hiện văn lệnh %s..."
+
+#: ../util.c:550 ../util.c:658
+#, c-format
+msgid "could not fork a new process (%s)"
+msgstr "không thể tạo tiến trình con (%s)"
+
+#: ../util.c:557 ../util.c:665
+#, c-format
+msgid "chrooting in %s"
+msgstr "đang chroot trong %s"
+
+#: ../util.c:559 ../util.c:667
+#, c-format
+msgid "could not change the root directory (%s)"
+msgstr "không thể chuyển đổi thư mục gốc (%s)"
+
+#: ../util.c:563 ../util.c:671
+#, c-format
+msgid "could not change directory to / (%s)"
+msgstr "không thể chuyển đổi thư mục sang / (%s)"
+
+#: ../util.c:567 ../util.c:675
+#, c-format
+msgid "executing \"%s\""
+msgstr "đang thực hiện « %s »"
+
+#: ../util.c:570 ../util.c:678
+#, c-format
+msgid "call to popen failed (%s)"
+msgstr "lỗi gọi popen (%s)"
+
+#: ../util.c:592 ../util.c:700
+#, c-format
+msgid "call to waitpid failed (%s)"
+msgstr "lỗi gọi waitpid (%s)"
+
+#: ../util.c:600
+#, c-format
+msgid "could not remove tmpdir %s"
+msgstr "không thể gỡ bỏ thư mục tạm thời %s"
+
+#: ../util.c:621
+#, c-format
+msgid "executing %s hooks..."
+msgstr "đang thực hiện %s hàm móc..."
+
+#: ../util.c:639
+#, c-format
+msgid "opening hooks directory failed (%s)"
+msgstr "không mở được thư mục hàm móc (%s)"
+
+#: ../util.c:757
+#, c-format
+msgid "check_freespace: total pkg size: %lld, disk space: %lld"
+msgstr "check_freespace: tổng cỡ gói: %lld, chỗ đĩa: %lld"
