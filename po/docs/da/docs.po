@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-24 01:49+0300\n"
-"PO-Revision-Date: 2009-10-24 17:31+0200\n"
+"POT-Creation-Date: 2009-10-25 01:50+0300\n"
+"PO-Revision-Date: 2009-10-25 16:22+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -722,67 +722,62 @@ msgstr "Pakkehåndtering: pacman-g2 (kommandolinie)"
 
 # type: Plain text
 #: quickref.txt:7
-msgid "No PAM problems/support (a'la Slackware)"
-msgstr "Ingen PAM problemer/understøttelse (a'la Slackware)"
-
-# type: Plain text
-#: quickref.txt:8
 msgid "Linux kernel 2.6 (no 2.4 support)"
 msgstr "Linux kerne 2.6 (ingen 2.4 understøttelse)"
 
 # type: Plain text
-#: quickref.txt:9
+#: quickref.txt:8
 msgid "i686 or later CPU needed on x86"
 msgstr "i686 eller senere CPU kræves på x86"
 
 # type: Plain text
-#: quickref.txt:10
+#: quickref.txt:9
 msgid "The latest documentation is http://frugalware.org/docs[here]."
 msgstr "Den seneste dokumentation er http://frugalware.org/docs[her]."
 
 # type: Plain text
-#: quickref.txt:11
+#: quickref.txt:10
 #, no-wrap
 msgid "Features"
 msgstr "Egenskaber"
 
 # type: Plain text
-#: quickref.txt:14
+#: quickref.txt:13
 msgid "Supported architectures: i686, x86_64"
 msgstr "Understøttet arkitekturer: i686, x86_64"
 
 # type: Plain text
-#: quickref.txt:15
+#: quickref.txt:14
 msgid "Stable releases every 6 months"
 msgstr "Stabil frigivelse hver 6 måned"
 
 # type: Plain text
-#: quickref.txt:16
+#: quickref.txt:15
 msgid "Security support for stable releases"
 msgstr "Sikkerhedssupport for stabile frigivelser"
 
 # type: Plain text
-#: quickref.txt:17
+#: quickref.txt:16
 msgid "Text mode installation"
 msgstr "Tekst mode installation"
 
 # type: Plain text
-#: quickref.txt:18
+#: quickref.txt:17
 msgid "Offline installation, netboot install supported"
 msgstr "Offline installation, netboot installation understøttet"
 
 # type: Plain text
-#: quickref.txt:19
+#: quickref.txt:18
 msgid "Prebuilt CD/DVD, USB, TFTP images are available"
 msgstr "Tilgængelige CD/DVD, USB, TFTP aftryk kan hentes"
 
 # type: Plain text
-#: quickref.txt:20
+#: quickref.txt:19
 msgid "Localization supported whereever it's possible"
 msgstr "Undertøttet Lokalisering hvor som helst det er muligt"
 
 # type: Plain text
-#: quickref.txt:21
+#: quickref.txt:20
 msgid ""
 "About 3000 source packages and (as of Februrary 2007) 3200 binary packages "
 "supported."
@@ -1055,6 +1050,11 @@ msgid ""
 "partitions not whole disks.  If you can find a way to successfully write an "
 "USB image under Windows, please share with us."
 msgstr ""
+"Du kan måske bruge et lignende redskab "
+"(link:http://www.chrysocome.net/dd[som dette]) også på Windows systemer, men "
+"det ser ud til at det kun virker virker på partioner ikke hele harddisken. "
+" Hvis du kan finde en vellykket måde at skrive et USB-billede under "
+"Windows, så fortæl os det venligst."
 
 # type: Plain text
 #: install.txt:107
@@ -16592,6 +16592,11 @@ msgid ""
 "similar) kernel parameter from the kernel command line.  That way you will "
 "have a similar framebuffer as before."
 msgstr ""
+"Hvis du opgraderer og du genstarter, vil du have en blank framebuffer, men "
+"straks X kommer op, vil du have et fungerende system. For at undgå denne "
+"situation må du redigere din `/boot/grub/menu.lst` og fjerne `vga=791` "
+"(eller lignende) kerneparameter fra kerne kommandolinien. På den måde vil du "
+"have en lignende framebuffer som før."
 
 # type: Plain text
 #: upgrade.txt:69
@@ -16601,22 +16606,29 @@ msgid ""
 "modeset=0` to the kernel command line and you will no longer have a "
 "framebuffer."
 msgstr ""
+"Hvis du ikke havde en `vga=` linie før (fordi du manuelt fjernede det) og nu "
+"er vred over at have en framebuffer, kan du tilføje `i915.modeset=0` til "
+"kerne kommandolinien og så vil du ikke længere have en framebuffer."
 
 # type: Plain text
 #: upgrade.txt:70
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "The reboot"
-msgstr "Klienten"
+msgstr "Reboot"
 
 # type: Plain text
 #: upgrade.txt:73
 msgid "Since the kernel is upgraded, too, you have to reboot your machine."
-msgstr ""
+msgstr "Siden kernen også bliver opgraderet, skal du genstarte din maskine"
 
 # type: Plain text
 #: upgrade.txt:74
 msgid "Done!"
-msgstr ""
+msgstr "Færdig!"
+
+# type: Plain text
+#~ msgid "No PAM problems/support (a'la Slackware)"
+#~ msgstr "Ingen PAM problemer/understøttelse (a'la Slackware)"
 
 # type: Plain text
 #~ msgid ""
