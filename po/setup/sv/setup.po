@@ -6,14 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-14 02:27+0200\n"
+"POT-Creation-Date: 2010-02-05 02:02+0100\n"
 "PO-Revision-Date: 2009-04-14 04:22+0200\n"
 "Last-Translator: Patric Werme <tranzemaniac@jabberlive.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 1.2.1\n"
 
@@ -33,9 +33,9 @@ msgid "ftp://ftp5."
 msgstr "ftp://ftp5."
 
 #: ../src/plugins/configsource.c:102 ../src/plugins/dolangsh.c:58
-#: ../src/plugins/formatdisk.c:257 ../src/plugins/formatdisk.c:412
+#: ../src/plugins/formatdisk.c:267 ../src/plugins/formatdisk.c:467
 #: ../src/plugins/layout.c:146 ../src/plugins/loadsource.c:88
-#: ../src/plugins/select.c:334 ../src/util.c:305
+#: ../src/util.c:305
 msgid "Could not open output file for writing"
 msgstr "Kunde inte öppna utskriftsfilen för skrivning"
 
@@ -54,7 +54,7 @@ msgstr ""
 "Här väljer du en eller fler speglar i närheten av dig för att snabba upp "
 "hämtningen av paket."
 
-#: ../src/plugins/configsource.c:166 ../src/plugins/formatdisk.c:583
+#: ../src/plugins/configsource.c:166 ../src/plugins/formatdisk.c:655
 #: ../src/plugins/partdisk.c:197
 msgid "Continue"
 msgstr "Fortsätt"
@@ -71,12 +71,23 @@ msgstr ""
 "Du kan nu välja en anpassad spegel (tex, LAN) så att du kan hämta paketen "
 "snabbare. I de flesta fall räcker det att bara fortsätta här."
 
-#: ../src/plugins/configsource.c:196 ../src/plugins/select.c:410
-#: ../src/plugins/select.c:420 ../src/plugins/select.c:450
+#: ../src/plugins/configsource.c:195
+msgid "Failed to configure the network"
+msgstr ""
+
+#: ../src/plugins/configsource.c:196
+msgid ""
+"Failed to write the network configuration files. Please try again, "
+"especially pay attention to give a valid IP address and/or netmask if you "
+"are using a static IP configuration."
+msgstr ""
+
+#: ../src/plugins/configsource.c:203 ../src/plugins/select.c:422
+#: ../src/plugins/select.c:438 ../src/plugins/select.c:477
 msgid "Please wait"
 msgstr "Var god vänta"
 
-#: ../src/plugins/configsource.c:196
+#: ../src/plugins/configsource.c:203
 msgid "Configuring the network interface..."
 msgstr "Konfigruerar nätverksgränssnittet..."
 
@@ -101,25 +112,25 @@ msgid "Please select which swap partitions you want Frugalware to use:"
 msgstr ""
 "Vad god välj vilka växlingspartitioner du vill att Frugalware ska använda:"
 
-#: ../src/plugins/formatdisk.c:173 ../src/plugins/formatdisk.c:196
+#: ../src/plugins/formatdisk.c:176 ../src/plugins/formatdisk.c:204
 msgid "Quick format with no bad block checking"
 msgstr "Snabb formatering som inte söker efter dåliga block"
 
-#: ../src/plugins/formatdisk.c:174 ../src/plugins/formatdisk.c:197
+#: ../src/plugins/formatdisk.c:177 ../src/plugins/formatdisk.c:205
 msgid "Slow format that checks for bad blocks"
 msgstr "Långsam formatering som söker efter dåliga block"
 
-#: ../src/plugins/formatdisk.c:177 ../src/plugins/formatdisk.c:201
-#: ../src/plugins/formatdisk.c:233
+#: ../src/plugins/formatdisk.c:180 ../src/plugins/formatdisk.c:209
+#: ../src/plugins/formatdisk.c:243
 msgid "Formatting partitions"
 msgstr "Formaterar partitioner"
 
-#: ../src/plugins/formatdisk.c:180 ../src/plugins/formatdisk.c:204
+#: ../src/plugins/formatdisk.c:183 ../src/plugins/formatdisk.c:212
 #, c-format
 msgid "Format %s"
 msgstr "Formatera %s"
 
-#: ../src/plugins/formatdisk.c:181 ../src/plugins/formatdisk.c:205
+#: ../src/plugins/formatdisk.c:184 ../src/plugins/formatdisk.c:213
 #, c-format
 msgid ""
 "If %s has not been formatted, you should format it.\n"
@@ -130,63 +141,63 @@ msgstr ""
 "OBS: Detta kommer att radera all data på %s. Vill du formatera denna "
 "partition?"
 
-#: ../src/plugins/formatdisk.c:198
+#: ../src/plugins/formatdisk.c:206
 msgid "Do not format, just mount the partition"
 msgstr "Montera endast partitionen, formatera inte."
 
-#: ../src/plugins/formatdisk.c:224
+#: ../src/plugins/formatdisk.c:234
 msgid "Standard Linux ext2fs filesystem"
 msgstr "Standard Linux ext2fs filsystem"
 
-#: ../src/plugins/formatdisk.c:225
+#: ../src/plugins/formatdisk.c:235
 msgid "Journalising version of the ext2 filesystem"
 msgstr "Journalförande version av ext2 filsystemet"
 
-#: ../src/plugins/formatdisk.c:226
+#: ../src/plugins/formatdisk.c:236
 msgid "The evolution of the ext3 filesystem (EXPERIMENTAL!)"
 msgstr "Uppföljaren till ext3 filsystemet (EXPERIMENTEL!)"
 
-#: ../src/plugins/formatdisk.c:228
+#: ../src/plugins/formatdisk.c:238
 msgid "Hans Reiser's journalising filesystem"
 msgstr "Hans Reisers journalförande filsystem"
 
-#: ../src/plugins/formatdisk.c:230
+#: ../src/plugins/formatdisk.c:240
 msgid "SGI's journalising filesystem"
 msgstr "SGIs journalförande filsystem"
 
-#: ../src/plugins/formatdisk.c:237
+#: ../src/plugins/formatdisk.c:247
 #, c-format
 msgid "Selecting filesystem for %s"
 msgstr "Väljer filsystem för %s"
 
-#: ../src/plugins/formatdisk.c:238
+#: ../src/plugins/formatdisk.c:248
 #, c-format
 msgid "Please select the type of filesystem to use for %s."
 msgstr "Var god välj vilken typ av filsystem att använda för %s"
 
-#: ../src/plugins/formatdisk.c:281 ../src/plugins/formatdisk.c:288
-msgid "Formatting swap partition"
-msgstr "Formaterar växlingspartition"
-
-#: ../src/plugins/formatdisk.c:282
+#: ../src/plugins/formatdisk.c:293
 #, c-format
 msgid "Formatting %s as a swap partition"
 msgstr "Formaterar %s som en växlingspartition"
 
-#: ../src/plugins/formatdisk.c:289
+#: ../src/plugins/formatdisk.c:295 ../src/plugins/formatdisk.c:305
+msgid "Formatting swap partition"
+msgstr "Formaterar växlingspartition"
+
+#: ../src/plugins/formatdisk.c:303
 #, c-format
 msgid "Formatting %s as a swap partition and checking for bad blocks"
 msgstr "Formaterar %s som en växlingspartition och söker efter dåliga områden"
 
-#: ../src/plugins/formatdisk.c:313
+#: ../src/plugins/formatdisk.c:333
 msgid "Setting up the root partition"
 msgstr "Skapar rootpartition"
 
-#: ../src/plugins/formatdisk.c:315
+#: ../src/plugins/formatdisk.c:335
 msgid "Select the Linux installation partition"
 msgstr "Välj installationspartition för ditt linuxsystem"
 
-#: ../src/plugins/formatdisk.c:316
+#: ../src/plugins/formatdisk.c:336
 msgid ""
 "Please select a partition from the following list to use for your root (/) "
 "partition. The following ones are available:"
@@ -194,44 +205,44 @@ msgstr ""
 "Var god välj en partition från den följande listan att använda som din root- "
 "partition (/). Följande partitioner är tillgängliga:"
 
-#: ../src/plugins/formatdisk.c:329
+#: ../src/plugins/formatdisk.c:351
 msgid "Formatting"
 msgstr "Formaterar"
 
-#: ../src/plugins/formatdisk.c:330
+#: ../src/plugins/formatdisk.c:352
 #, c-format
 msgid "Creating %s filesystem on %s and checking for bad blocks"
 msgstr "Skapar %s filsystem på %s och söker efter dåliga block"
 
-#: ../src/plugins/formatdisk.c:331
+#: ../src/plugins/formatdisk.c:353
 #, c-format
 msgid "Creating %s filesystem on %s"
 msgstr "Skapar %s filsystem på %s"
 
-#: ../src/plugins/formatdisk.c:436
+#: ../src/plugins/formatdisk.c:498
 #, c-format
 msgid "Select mount point for %s"
 msgstr "Väljer monteringspunkt för %s"
 
-#: ../src/plugins/formatdisk.c:460 ../src/plugins/formatdisk.c:603
+#: ../src/plugins/formatdisk.c:522 ../src/plugins/formatdisk.c:675
 msgid "(in use)"
 msgstr "(i bruk)"
 
-#: ../src/plugins/formatdisk.c:468
+#: ../src/plugins/formatdisk.c:530
 #, c-format
 msgid "%s on %s/\t%s"
 msgstr "%s på %s/\t%s"
 
 #. non-root partitions
-#: ../src/plugins/formatdisk.c:576
+#: ../src/plugins/formatdisk.c:648
 msgid "Selecting other partitions"
 msgstr "Väljer andra partitioner"
 
-#: ../src/plugins/formatdisk.c:587
+#: ../src/plugins/formatdisk.c:659
 msgid "Select other Linux partitions for /etc/fstab"
 msgstr "Välj andra Linuxpartitioner för /etc/fstab"
 
-#: ../src/plugins/formatdisk.c:588
+#: ../src/plugins/formatdisk.c:660
 msgid ""
 "You may use your other partitions to distribute your Linux system across "
 "more than one partition. Currently, you have only mounted your / partition. "
@@ -307,31 +318,31 @@ msgid ""
 msgstr ""
 "Du kan välja en av de följande tangentbordslayouter. Om du inte väljer en "
 "tangentbordslayout, är 'qwerty/us.map.gz' (Amerikansk-engelsk "
-"tangentbordslayout) standard. Använd UPP/NER piltangenterna och "
-"PageUp/PageDown för att rulla igenom listan av urval."
+"tangentbordslayout) standard. Använd UPP/NER piltangenterna och PageUp/"
+"PageDown för att rulla igenom listan av urval."
 
 #: ../src/plugins/loadsource.c:62
 msgid "Loading the installation source"
 msgstr "Laddar installations-mediumet"
 
-#: ../src/plugins/loadsource.c:156
+#: ../src/plugins/loadsource.c:158
 msgid "Selecting source media"
 msgstr "Väljer medium"
 
-#: ../src/plugins/loadsource.c:159
+#: ../src/plugins/loadsource.c:161
 msgid "Scanning"
 msgstr "Söker"
 
-#: ../src/plugins/loadsource.c:159
+#: ../src/plugins/loadsource.c:161
 msgid "Scanning for a CD/DVD drive containing a Frugalware install disc..."
 msgstr ""
 "Söker efter en CD/DVD-rom som innehåller en Frugalware installationsdisk..."
 
-#: ../src/plugins/loadsource.c:175
+#: ../src/plugins/loadsource.c:177
 msgid "CD/DVD drive found"
 msgstr "CD/DVD-enhet hittad"
 
-#: ../src/plugins/loadsource.c:175
+#: ../src/plugins/loadsource.c:177
 #, c-format
 msgid "A Frugalware install disc was found in device /dev/%s."
 msgstr "En Frugalware installationsdisk hittades i enheten /dev/%s"
@@ -425,24 +436,24 @@ msgstr ""
 "du kommer att tycka om %s. Var god ta bort mediumet från din CD/DVD-enhet "
 "och tryck ENTER för att starta om."
 
-#: ../src/plugins/select.c:53 ../src/plugins/select.c:279
-#: ../src/plugins/select.c:407
+#: ../src/plugins/select.c:54 ../src/plugins/select.c:282
+#: ../src/plugins/select.c:419
 msgid "Selecting packages"
 msgstr "Väljer paket"
 
-#: ../src/plugins/select.c:261
+#: ../src/plugins/select.c:262
 msgid "Selecting categories"
 msgstr "Väljer kategorier"
 
-#: ../src/plugins/select.c:262
+#: ../src/plugins/select.c:263
 msgid "Please select which categories to install:"
 msgstr "Var god välj vilka kategorier som ska installeras:"
 
-#: ../src/plugins/select.c:292
+#: ../src/plugins/select.c:296
 msgid "Use expert menus?"
 msgstr "Använd expertmenyerna?"
 
-#: ../src/plugins/select.c:293
+#: ../src/plugins/select.c:297
 msgid ""
 "If you like, you may select your packages from expert menus. Where the "
 "normal menu shows a choice like 'C compiler system', the expert menus show "
@@ -461,40 +472,40 @@ msgstr ""
 "normala menyerna som väljer grupper av paket, eller välj 'ja' för att "
 "använda expertmenyerna där du väljer paket för paket."
 
-#: ../src/plugins/select.c:348 ../src/plugins/select.c:356
-#: ../src/plugins/select.c:370 ../src/plugins/select.c:374
+#: ../src/plugins/select.c:360 ../src/plugins/select.c:368
+#: ../src/plugins/select.c:382 ../src/plugins/select.c:386
 msgid "Error"
 msgstr "Fel"
 
-#: ../src/plugins/select.c:348
+#: ../src/plugins/select.c:360
 #, c-format
 msgid "Failed to parse pacman-g2 configuration file (%s)"
 msgstr "Misslyckades med att analysera pacman-g2's konfigurationsfil (%s)"
 
-#: ../src/plugins/select.c:356
+#: ../src/plugins/select.c:368
 #, c-format
 msgid "Could not register '%s' database (%s)"
 msgstr "Kunde inte registrera '%s' databas (%s)"
 
-#: ../src/plugins/select.c:370
+#: ../src/plugins/select.c:382
 #, c-format
 msgid "Failed to synchronize %s"
 msgstr "Misslyckades med att synkronisera %s"
 
-#: ../src/plugins/select.c:374
+#: ../src/plugins/select.c:386
 #, c-format
 msgid "Failed to update %s (%s)"
 msgstr "Misslyckades med att uppdatera %s (%s)"
 
-#: ../src/plugins/select.c:410
+#: ../src/plugins/select.c:422
 msgid "Searching for categories..."
 msgstr "Söker efter kategorier..."
 
-#: ../src/plugins/select.c:420
+#: ../src/plugins/select.c:438
 msgid "Searching for packages..."
 msgstr "Söker efter paket..."
 
-#: ../src/plugins/select.c:450
+#: ../src/plugins/select.c:477
 msgid "Searching for missing dependencies..."
 msgstr "Söker efter saknade paketberoenden..."
 
@@ -625,11 +636,11 @@ msgstr ""
 msgid "Post-install configuration"
 msgstr "Inställningar efter installationen"
 
-#: ../src/plugins/postconf.c:276
+#: ../src/plugins/postconf.c:273
 msgid "Configuring kernel modules"
 msgstr "Konfigruerar kärnmoduler"
 
-#: ../src/plugins/postconf.c:277
+#: ../src/plugins/postconf.c:274
 msgid "Updating module dependencies..."
 msgstr "Uppdaterar modulberoenden..."
 
@@ -650,8 +661,9 @@ msgid "Installation error"
 msgstr "Installationsfel"
 
 #: ../src/util.c:167
+#, fuzzy
 msgid ""
-"Errors occured while installing selected packages. It is recommended to "
+"Errors occurred while installing selected packages. It is recommended to "
 "abort the installation, however you may want to ignore this problem. Do you "
 "want to leave the installer?"
 msgstr ""

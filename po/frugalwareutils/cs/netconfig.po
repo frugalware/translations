@@ -6,15 +6,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-28 05:08+0100\n"
-"PO-Revision-Date: 2008-03-28 15:43+0100\n"
+"POT-Creation-Date: 2010-02-05 02:02+0100\n"
+"PO-Revision-Date: 2010-01-12 16:40+0200\n"
 "Last-Translator: Martin Burda <brdam@email.cz>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: cs\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Pootle 1.1.0\n"
+"X-Generator: Pootle 1.2.1\n"
 
 #: ../netconfig.c:57
 msgid "Use a DHCP server"
@@ -111,15 +112,15 @@ msgstr ""
 "Pokud si nejste jisti, stiskněte pouze ENTER.\n"
 "Zadejte název rozhraní:"
 
-#: ../netconfig.c:140
+#: ../netconfig.c:142
 msgid "Network configuration"
 msgstr "Nastavení sítě"
 
-#: ../netconfig.c:143
+#: ../netconfig.c:145
 msgid "Enter hostname"
 msgstr "Zadat název počítače"
 
-#: ../netconfig.c:143
+#: ../netconfig.c:145
 msgid ""
 "We'll need the name you'd like to give your host.\n"
 "The full hostname is needed, such as:\n"
@@ -135,7 +136,7 @@ msgstr ""
 "\n"
 "Zadejte název počítače:"
 
-#: ../netconfig.c:161
+#: ../netconfig.c:163
 msgid ""
 "We'll need the name of the interface you'd like to use for your network "
 "connection.\n"
@@ -146,23 +147,23 @@ msgstr ""
 "Pokud si nejste jisti, stiskněte pouze enter.\n"
 "Zadejte název rozhraní:"
 
-#: ../netconfig.c:170
+#: ../netconfig.c:173
 msgid "Extended network name"
 msgstr "Rozšířený síťový název"
 
-#: ../netconfig.c:170
+#: ../netconfig.c:173
 msgid ""
 "It seems that this network card has a wireless extension. In order to use "
-"it, you must set your extended netwok name (ESSID). Enter your ESSID:"
+"it, you must set your extended network name (ESSID). Enter your ESSID:"
 msgstr ""
-"Vypadá to, že se připojujete k síti pomocí Wi-Fi. Abyste mohli pokračovat, "
-"musíte zadat rozšířený síťový název (ESSID). Zadejte ESSID:"
+"Vypadá to, že se připojujete k síti pomocí bezdrátové sítě. Abyste mohli "
+"pokračovat, musíte zadat rozšířený síťový název (ESSID). Zadejte ESSID:"
 
-#: ../netconfig.c:175
+#: ../netconfig.c:178
 msgid "WEP encryption key"
 msgstr "Šifrovací klíč WEP"
 
-#: ../netconfig.c:176
+#: ../netconfig.c:179
 msgid ""
 "If you have a WEP encryption key, then please enter it below.\n"
 "Examples: 4567-89AB-CD or  s:password"
@@ -170,11 +171,11 @@ msgstr ""
 "Pokud máte šifrovací klíč WEP, zadejte jej prosím níže.\n"
 "Příklady: 4567-89AB-CD nebo  s:heslo"
 
-#: ../netconfig.c:180
+#: ../netconfig.c:183
 msgid "WPA encryption passphrase"
 msgstr "Zadání klíčového slova (passphrase) pro WPA"
 
-#: ../netconfig.c:181
+#: ../netconfig.c:184
 msgid ""
 "If you have a WPA passphrase, then please enter it below.\n"
 "Example: secret"
@@ -182,11 +183,11 @@ msgstr ""
 "Pokud máte klíčové slovo pro WPA, zadejte je prosím níže\n"
 "Příklady klíčových slov: secret :-)"
 
-#: ../netconfig.c:185
+#: ../netconfig.c:188
 msgid "WPA driver"
 msgstr "Ovladač zabezpečeného připojení WPA"
 
-#: ../netconfig.c:186
+#: ../netconfig.c:189
 msgid ""
 "If you want to use a custom driver (not the generic one, called 'wext'), "
 "then please enter it below. If unsure, just hit enter."
@@ -195,11 +196,11 @@ msgstr ""
 "ovladač 'wext'), stiskněte níže enter. Pokud si nejste jisti, stiskněte "
 "pouze enter."
 
-#: ../netconfig.c:193
+#: ../netconfig.c:196
 msgid "Set DHCP hostname"
 msgstr "Zadat název serveru DHCP"
 
-#: ../netconfig.c:193
+#: ../netconfig.c:196
 msgid ""
 "Some network providers require that the DHCP hostname beset in order to "
 "connect. If so, they'll have assigned a hostname to your machine. If you "
@@ -213,19 +214,19 @@ msgstr ""
 "nemáte název počítače k připojení k DHCP, stiskněte pouze enter."
 
 #. options = ip netmask netmask
-#: ../netconfig.c:208
+#: ../netconfig.c:211
 msgid "Enter ip address"
 msgstr "Zadat IP adresy"
 
-#: ../netconfig.c:208
+#: ../netconfig.c:211
 msgid "Enter your IP address for the local machine."
 msgstr "Zadejte IP adresy počítače pro připojení k místní síti."
 
-#: ../netconfig.c:209
+#: ../netconfig.c:212
 msgid "Enter netmask for local network"
 msgstr "Zadat síťovou masku lokální sítě (masku podsítě)"
 
-#: ../netconfig.c:210
+#: ../netconfig.c:213
 msgid ""
 "Enter your netmask. This will generally look something like this: "
 "255.255.255.0\n"
@@ -235,11 +236,11 @@ msgstr ""
 "255.255.255.0\n"
 "Pokud si nejste jisti, stiskněte pouze enter."
 
-#: ../netconfig.c:217
+#: ../netconfig.c:220
 msgid "Enter gateway address"
 msgstr "Zadat IP adresu výchozí brány (gateway)"
 
-#: ../netconfig.c:217
+#: ../netconfig.c:220
 msgid ""
 "Enter the address for the gateway on your network. If you don't have a "
 "gateway on your network just hit enter, without entering any ip address."
@@ -248,11 +249,11 @@ msgstr ""
 "síti výchozí brána, stiskněte pouze enter a adresy výchozí brány nebudou "
 "zapsány."
 
-#: ../netconfig.c:223
+#: ../netconfig.c:226
 msgid "Select nameserver"
 msgstr "Vybrat server pro překlad jmen (nameserver)"
 
-#: ../netconfig.c:223
+#: ../netconfig.c:226
 msgid ""
 "Please give the IP address of the name server to use. You can add more "
 "Domain Name Servers later by editing /etc/sysconfig/network/default.\n"
@@ -264,20 +265,20 @@ msgstr ""
 "Pokud se nenachází ve Vaší síti nameserver, stiskněte pouze enter k "
 "pokračování bez zadání adresy."
 
-#: ../netconfig.c:234
+#: ../netconfig.c:237
 msgid "Adjust configuration files"
 msgstr "Zapsat do konfiguračních souborů"
 
-#: ../netconfig.c:234
+#: ../netconfig.c:237
 msgid "Accept these settings and adjust configuration files?"
 msgstr "Akceptovat tato nastavení a zapsat je do konfiguračních souborů?"
 
-#: ../netconfig.c:318
+#: ../netconfig.c:321
 #, c-format
 msgid "No profile loaded.\n"
 msgstr "Nebyl načten žádný profil.\n"
 
-#: ../netconfig.c:323
+#: ../netconfig.c:326
 #, c-format
 msgid "Current profile: %s\n"
 msgstr "Aktuální profil: %s\n"

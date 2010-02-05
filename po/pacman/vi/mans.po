@@ -6,40 +6,45 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mans\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-02 02:25+0300\n"
+"POT-Creation-Date: 2010-02-05 02:02+0100\n"
 "PO-Revision-Date: 2009-10-02 16:21+0200\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
-"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 1.2.1\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:2
 msgid "= FrugalBuild(5)"
 msgstr "= FrugalBuild(5)"
 
 # type: Plain text
 # type: =head1
+#. type: Plain text
 #: FrugalBuild.txt:4 makepkg.txt:4 pacman-g2.txt:4
 msgid "== NAME"
 msgstr "== TÊN"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:6
 msgid "FrugalBuild - Frugalware package builder descriptor"
 msgstr "FrugalBuild — bộ mô tả xây dựng gói Frugalware"
 
 # type: Plain text
 # type: =head1
+#. type: Plain text
 #: FrugalBuild.txt:8 makepkg.txt:8 pacman-g2.txt:8
 msgid "== SYNOPSIS"
 msgstr "== TÓM TẮT"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:12
 msgid ""
 "This manual page is meant to describe general rules about FrugalBuilds. If "
@@ -52,25 +57,29 @@ msgstr ""
 
 # type: Plain text
 # type: =head1
+#. type: Plain text
 #: FrugalBuild.txt:14 makepkg.txt:12 pacman-g2.txt:12
 msgid "== DESCRIPTION"
 msgstr "== MÔ TẢ"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:16
 msgid "=== Simple Example"
 msgstr "== Ví dụ Đơn giản"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:17 FrugalBuild.txt:44 FrugalBuild.txt:157
 #: FrugalBuild.txt:170 FrugalBuild.txt:202 FrugalBuild.txt:248
 #: FrugalBuild.txt:416 FrugalBuild.txt:440 FrugalBuild.txt:456
-#: pacman-g2.txt:310 pacman-g2.txt:411
+#: pacman-g2.txt:311 pacman-g2.txt:412
 #, no-wrap
 msgid "----\n"
 msgstr "----\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:20
 msgid "# Compiling Time: 0.17 SBU # Maintainer: Name <email@addr.ess>"
 msgstr ""
@@ -78,6 +87,7 @@ msgstr ""
 "(Thời gian biên dịch: 0,17 SBU # Nhà duy trì: Họ tên <tên@địa.chỉ>)"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:31
 #, no-wrap
 msgid ""
@@ -106,6 +116,7 @@ msgstr ""
 "----\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:35
 msgid ""
 "As you can see, the setup is fairly simple. The first line tracks the time "
@@ -115,6 +126,7 @@ msgstr ""
 "cập nhật cuối cùng, mà được tự động cập nhật sau mỗi lần xây dựng thành công."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:38
 msgid ""
 "The next line defines its build time. Of course, it depends on your "
@@ -124,6 +136,7 @@ msgstr ""
 "dùng đơn vị « SBU » thay cho phút."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:43
 msgid ""
 "`SBU` is the Static Binutils Unit, which means the time `repoman merge "
@@ -137,6 +150,7 @@ msgstr ""
 "thì bạn nên cập nhật tập tin cấu hình « /etc/makepkg.conf »."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:46
 #, no-wrap
 msgid ""
@@ -147,6 +161,7 @@ msgstr ""
 "----\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:51
 msgid ""
 "The line above means compiling `binutils` on your machine took 257 seconds.  "
@@ -160,6 +175,7 @@ msgstr ""
 "Đơn vị SBU này cũng tương đương trên mọi máy tính."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:57
 msgid ""
 "If you wish to maintain the package, write your name or nick and e-mail "
@@ -177,6 +193,7 @@ msgstr ""
 "thông điệp gài vào (commit) để nói đến người khác nếu thích hợp."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:66
 msgid ""
 "`pkgname` defines the package name. It should not contain any uppercase "
@@ -199,6 +216,7 @@ msgstr ""
 "» (hiện thời).)"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:69
 msgid ""
 "`pkgdesc` is a short one-line description for the package. Usually taken "
@@ -213,6 +231,7 @@ msgstr ""
 "VNOSS, HanoiLUG)."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:74
 msgid ""
 "`depends()` is a bash array which defines the dependencies of the package.  "
@@ -227,6 +246,7 @@ msgstr ""
 "() »."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:83
 msgid ""
 "The next line is a special `Finclude` command which allows you to inherit "
@@ -248,6 +268,7 @@ msgstr ""
 "hợp."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:87
 msgid ""
 "The `groups()` array's first element is mandatory, and it should be a valid "
@@ -259,6 +280,7 @@ msgstr ""
 "dưới « /source » trong « FST »."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:96
 msgid ""
 "The `archs()` array defines for which architectures the given package is "
@@ -280,6 +302,7 @@ msgstr ""
 "assembly) thì ngụ ý với dấu chấm than, v.d. « !x86_64 »."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:101
 msgid ""
 "The `sha1sums()` array can be generated with the `makepkg -G` command. Its "
@@ -295,6 +318,7 @@ msgstr ""
 "không nên cập nhật mỗi lần bằng tay."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:109
 msgid ""
 "The last line will be added automatically to the end of the FrugalBuild if "
@@ -314,6 +338,7 @@ msgstr ""
 "thể tự thêm dòng này, vì « makepkg » không phát hiện trường hợp này."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:117
 msgid ""
 "Finally we define a `build()` function that will build the package. If you "
@@ -334,6 +359,7 @@ msgstr ""
 "cần dùng."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:123
 msgid ""
 "Once the package is successfully installed into the package root, makepkg "
@@ -349,6 +375,7 @@ msgstr ""
 "« makepkg »."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:126
 msgid ""
 "At this point you should have a package file in the current directory, named "
@@ -358,11 +385,13 @@ msgstr ""
 "tên-phiên_bản-bản_phát_hành-kiến_trúc.fpm ». Hoàn tất !"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:128
 msgid "=== Install/Upgrade/Remove Scripting"
 msgstr "=== Cài đặt/Nâng cấp/Gỡ bò Văn lệnh"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:133
 msgid ""
 "`pacman-g2` has the ability to store and execute a package-specific non-"
@@ -376,11 +405,13 @@ msgstr ""
 "khi nó bị gỡ bỏ."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:135
 msgid "The exact time the script is run varies with each operation:"
 msgstr "Lúc chạy văn lệnh cũng biến đổi với mỗi thao tác:"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:138
 #, no-wrap
 msgid ""
@@ -391,6 +422,7 @@ msgstr ""
 "\tvăn lệnh được chạy đúng trước khi giải nén tập tin.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:141
 #, no-wrap
 msgid ""
@@ -401,6 +433,7 @@ msgstr ""
 "\tvăn lệnh được chạy đúng sau khi giải nén tập tin.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:144
 #, no-wrap
 msgid ""
@@ -411,6 +444,7 @@ msgstr ""
 "\tvăn lệnh được chạy đúng trước khi giải nén tập tin.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:147
 #, no-wrap
 msgid ""
@@ -421,6 +455,7 @@ msgstr ""
 "\tvăn lệnh được chạy đúng sau khi giải nén tập tin.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:150
 #, no-wrap
 msgid ""
@@ -431,6 +466,7 @@ msgstr ""
 "\tvăn lệnh được chạy đúng trước khi gỡ bỏ tập tin.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:153
 #, no-wrap
 msgid ""
@@ -441,6 +477,7 @@ msgstr ""
 "\tvăn lệnh được chạy đúng sau khi gỡ bỏ tập tin.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:156
 msgid ""
 "To use this feature, just create a file (eg, pkgname.install) and put it in "
@@ -451,6 +488,7 @@ msgstr ""
 "cài đặt:"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:159
 #, no-wrap
 msgid ""
@@ -461,6 +499,7 @@ msgstr ""
 "----\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:164
 msgid ""
 "The install script does not need to be specified in the source array. If you "
@@ -472,6 +511,7 @@ msgstr ""
 "không, có thì sử dụng nó."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:167
 msgid ""
 "You can find a scriptlet skeleton in the `/docs/skel/` directory, use it "
@@ -481,12 +521,14 @@ msgstr ""
 "thể sử dụng khi tạo gói mới."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:169
 msgid ""
 "The scriptlet messages are parsed, a simple example tells you everything:"
 msgstr "Trong văn lệnh nhỏ này, các thông điệp có cú pháp của mẫu ví dụ này:"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:179
 #, no-wrap
 msgid ""
@@ -511,11 +553,13 @@ msgstr ""
 "----\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:182
 msgid "=== FrugalBuild Directives"
 msgstr "== Chỉ thị FrugalBuild"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:186
 #, no-wrap
 msgid ""
@@ -527,6 +571,7 @@ msgstr ""
 "\tTên của gói. Chuỗi này nên chứa chỉ chữ thường và dấu nối. Nó thường là phần tên của kho nén nguồn.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:190
 #, no-wrap
 msgid ""
@@ -539,6 +584,7 @@ msgstr ""
 "\t(v.d. 2.7.1).\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:193
 #, no-wrap
 msgid ""
@@ -549,6 +595,7 @@ msgstr ""
 "\tĐây là số thứ tự phát hành đặc trưng cho gói Frugalware Linux.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:197
 #, no-wrap
 msgid ""
@@ -560,6 +607,7 @@ msgstr ""
 "\tĐây nên là một mô tả ngắn về gói và chức năng của nó.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:201
 #, no-wrap
 msgid ""
@@ -571,6 +619,7 @@ msgstr ""
 "\tMảng các mô tả gói đã dịch, theo định dạng:\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:204
 #, no-wrap
 msgid ""
@@ -581,6 +630,7 @@ msgstr ""
 "----\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:209
 #, no-wrap
 msgid ""
@@ -592,6 +642,7 @@ msgstr ""
 "\tTrường này chứa một địa chỉ URL vẫn tuỳ chọn mà liên quan đến phần mềm được đóng gói. Thường là trang chủ của dự án.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:212
 #, no-wrap
 msgid ""
@@ -602,6 +653,7 @@ msgstr ""
 "\tĐặt loại giấy phép (v.d. \"GPL\", \"BSD\", \"NON-FREE\").\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:215
 msgid ""
 "NOTE: This option is currently optional and there are no rules what exact "
@@ -611,6 +663,7 @@ msgstr ""
 "định dạng chính xác (nên dùng « GPL », « GPL2 » v.v. ?). "
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:221
 #, no-wrap
 msgid ""
@@ -624,6 +677,7 @@ msgstr ""
 "\tGhi rõ một văn lệnh cài đặt đặc biệt nên bao gồm trong gói. Tập tin này nên nằm trong cùng một thư mục với bản xây dựng FrugalBuild, makepkg sẽ sao chép nó vào gói. Không cần bao gồm nó trong mảng nguồn (v.d. « install=modutils.install »).\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:226
 #, no-wrap
 msgid ""
@@ -636,6 +690,7 @@ msgstr ""
 "\tChỉ thị này nên chứa một câu lệnh mà in ra phiên bản ổn định hiện thời của dự án gốc. Bằng cách này, chúng ta có thể kiểm tra có phiên bản mới chưa mà không tự thăm trang chủ của dự án (xem trên).\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:232
 #, no-wrap
 msgid ""
@@ -649,6 +704,7 @@ msgstr ""
 "\tDòng nguồn là một mảng các tập tin mã nguồn cần thiết để xây dựng gói. Các tập tin mã nguồn phải nằm trong cùng một thư mục với tập tin FrugalBuild, nếu không có một địa chỉ URL khả năng đầy đủ. Vì vậy nếu tập tin mã nguồn chưa có trong thư mục « /var/cache/pacman-g2/src », tập tin được tải về bởi công cụ wget.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:238
 #, no-wrap
 msgid ""
@@ -662,6 +718,7 @@ msgstr ""
 "\tNếu có trường này thì nó nên chứa một chuỗi duy nhất SHA1 cho mỗi tập tin mã nguồn được liệt kê trong mảng nguồn (theo cùng thứ tự). « makepkg » sẽ sử dụng nó để thẩm tra tính nguyên vẹn của tập tin nguồn trong mỗi tiến trình xây dựng xảy ra sau. Để dễ cập nhật các tổng SHA1 (sha1sum) trong FrugalBuild, chạy câu lệnh « makepkg -G ».\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:247
 #, no-wrap
 msgid ""
@@ -678,6 +735,7 @@ msgstr ""
 "\tNếu có trường này thì nó nên chứa một mảng các chữ ký GPG cần thiết để thẩm tra tập tin mã nguồn. Khuyên bạn cũng thêm khoá hay vòng khoá của dự án gốc vào một tập tin tên « $pkgname.key », để làm cho có thể xây dựng được ngoại tuyến. Nếu không có tập tin như vậy, và khoá sẵn sàng trên một máy phục vụ khoá công cộng, thì nó được tự động lấy. Không thì tiến trình xây dựng bị hủy bỏ. Không có chữ ký sẵn sàng thì bỏ trống trường này, v.d.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:250
 #, no-wrap
 msgid ""
@@ -688,6 +746,7 @@ msgstr ""
 "----\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:256
 #, no-wrap
 msgid ""
@@ -700,6 +759,7 @@ msgstr ""
 "\tĐây là một mảng các tên tượng trưng, mỗi tên đại diện một nhóm gói, thì cho phép bạn cài đặt nhiều gói bằng cách yêu cầu một đích riêng lẻ. Ví dụ, người dùng có thể cài đặt tất cả các gói của môi trường đồ họa KDE bằng cách cài đặt nhóm « kde ».\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:261
 #, no-wrap
 msgid ""
@@ -712,6 +772,7 @@ msgstr ""
 "\tMảng này xác định những kiến trúc trên chúng gói đó sẵn sàng. Không sẵn sàng cho một kiến trúc nào đó thì hàm tạo và đồng bộ hoá « gensync » sẽ bỏ qua nó trong khi xây dựng cơ sở dữ liệu gói.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:268
 #, no-wrap
 msgid ""
@@ -726,6 +787,7 @@ msgstr ""
 "\tMột mảng các tên tập tin định giới bằng dấu cách (không có dấu sổ chéo / nằm trước). Dòng sao lưu này sẽ được lan truyền sang tập tin siêu thông tin về gói cho pacman-g2. Nó sẽ chỉ định những tập tin bên trong nên được sao lưu nếu gói này bị gỡ bỏ khỏi hệ thống. Xem phần QUẢN LÝ TẬP TIN CẤU HÌNH trên trang hướng dẫn pacman-g2 để tìm thêm thông tin.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:277
 #, no-wrap
 msgid ""
@@ -748,6 +810,7 @@ msgstr ""
 "Xem mẫu FrugalBuild hiện trên để thấy một chỉ thị phụ thuộc thí dụ.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:281
 #, no-wrap
 msgid ""
@@ -759,6 +822,7 @@ msgstr ""
 "\tMột mảng các gói vào chúng gói này phụ thuộc để xây dựng (không phải để chạy). Các chuỗi trong danh sách này nên theo cùng một định dạng với « depends ».\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:288
 #, no-wrap
 msgid ""
@@ -773,6 +837,7 @@ msgstr ""
 "\tMột mảng các gói vào chúng gói này phụ thuộc để chạy (không phải để xây dựng). Nói chung, có nên tránh dùng rodepends để ủng hộ depends, trừ khi depends tạo quan hệ phụ thuộc theo vòng lặp. (Ví dụ, xây dựng « logrotate » không yêu cầu cài đặt « dcron ».) Các chuỗi trong danh sách này nên theo cùng một định dạng với « depends ».\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:293
 #, no-wrap
 msgid ""
@@ -785,6 +850,7 @@ msgstr ""
 "\tMột mảng các gói xung đột với gói này (tức là không thể cài đặt vào cùng một hệ thống). Chỉ thị này theo cùng một định dạng với depends, trừ không thể ghi rõ phiên bản, chỉ tên gói.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:300
 #, no-wrap
 msgid ""
@@ -799,6 +865,7 @@ msgstr ""
 "\tMột mảng các « sự cung cấp ảo » mà gói này cung cấp. Nó cho phép một gói cung cấp tên của gói phụ thuộc mà khác với tên gói của chính nó. Ví dụ, mỗi gói « kernel-scsi » và « kernel-ide » có khả năng cung cấp « kernel » mà cho phép các gói phụ thuộc đơn giản vào « kernel » thay cho « kernel-scsi » HOẶC « kernel-ide » HOẶC ...\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:305
 #, no-wrap
 msgid ""
@@ -811,6 +878,7 @@ msgstr ""
 "\tĐây là một mảng các tập tin cần gỡ bỏ trước khi kiểm tra có tập tin xung đột. Theo lý tưởng, không bao giờ nên dùng nọ, nhưng trong một số trường hợp nào đó nó hữu ích để gỡ bỏ tập tin bị xung đột mà được tạo bởi văn lệnh nhỏ, nếu bạn chắc chắc là không có phần mềm khác yêu cầu tập tin đó.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:311
 #, no-wrap
 msgid ""
@@ -824,6 +892,7 @@ msgstr ""
 "\tĐây là một mảng các gói nên bị gói này thay thế: nó có thể được sử dụng để quản lý gói bị thay tên và gói kết hợp. Ví dụ, nếu gói « kernel » bị thay tên thành « kernel-ide » thì các cuộc gọi « pacman-g2 -Syu » sẽ không phát hiện gói cần nâng cấp, do hai tên gói khác nhau. « replaces » quản lý trường hợp này.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:314
 #, no-wrap
 msgid ""
@@ -834,6 +903,7 @@ msgstr ""
 "\tĐây là một mảng các tuỳ chọn luận lý khác nhau. Các giá trị có thể:\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:317
 #, no-wrap
 msgid ""
@@ -842,12 +912,14 @@ msgid ""
 msgstr " • nodocs\tđừng tự động thêm tài liệu nào (tức là khi có một gói phụ tài liệu)\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:319
 #, no-wrap
 msgid "\tnostrip: Don't strip binaries/libraries.\n"
 msgstr " • nostrip\t\tđừng gỡ bỏ các tập tin nhị phân hay thư viện.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:322
 #, no-wrap
 msgid ""
@@ -856,6 +928,7 @@ msgid ""
 msgstr " • force\t\tTuỳ chọn này được dùng để ép buộc gói được nâng cấp bởi « --sysupgrade », thậm chí nếu nó là một phiên bản cũ.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:325
 #, no-wrap
 msgid ""
@@ -864,6 +937,7 @@ msgid ""
 msgstr " • stick\t\tTuỳ chọn này được dùng để bỏ qua một bước nâng cấp gói, thậm chí nếu có sẵn một phiên bản mới (v.d. cho ứng dụng Web lợi dụng nâng cấp thủ công).\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:329
 #, no-wrap
 msgid ""
@@ -873,6 +947,7 @@ msgid ""
 msgstr " • nobuild\tĐặt chỉ thị này thì hàm « gensync » bỏ qua gói này, do đó người dùng cần phải tự xây dựng gói này, không thể cài đặt nó dùng « pacman-g2 -S ». Có ích cho mã nguồn bị đóng mà vẫn miễn phí.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:332
 #, no-wrap
 msgid ""
@@ -881,18 +956,21 @@ msgid ""
 msgstr " • nofakeroot\tĐừng bỏ quyền truy cập sau khi chroot. Yêu cầu bởi một số gói bị lỗi.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:334
 #, no-wrap
 msgid "\tscriptlet: Don't skip executing scriptlets even if we're in chroot.\n"
 msgstr " • scriptlet\tĐừng bỏ qua bước thực hiện văn lệnh nhỏ, thậm chí nếu trong chroot.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:336
 #, no-wrap
 msgid "\tnomirror: This means that the source should not be mirrored.\n"
 msgstr " • nomirror\tKhông nên nhân bản mã nguồn.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:339
 #, no-wrap
 msgid ""
@@ -901,6 +979,7 @@ msgid ""
 msgstr " • genscriptlet\t\tBáo hàm makepkg rằng có ý định trước khi không có văn lệnh nhỏ. Người dùng nên sử dụng tuỳ chọn này khi văn lệnh nhỏ được tạo trong khi chạy build().\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:343
 #, no-wrap
 msgid ""
@@ -910,6 +989,7 @@ msgid ""
 msgstr " • noversrc\tBáo hàm makepkg rằng kho nén mã nguồn không chứa phiên bản gói, vì thế lúc nào cũng tải nó xuống dự án gốc, hơn là sử dụng một máy nhân bản rsync.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:346
 msgid ""
 "NOTE: Feel free to use `nomirror` in a WIP repo but please try avoid it when "
@@ -919,11 +999,13 @@ msgstr ""
 "nhưng không nên sử dụng nó khi đẩy đến một kho gói sử dụng hằng ngày."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:348
 msgid "=== What is the process of chrooted build?"
 msgstr "== Xây dựng với chroot như thế nào?"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:353
 msgid ""
 "First, what is chroot? If you use `makepkg -H`, then you use fakeroot to "
@@ -937,6 +1019,7 @@ msgstr ""
 "thống chủ. Đây là tốt, nhưng vẫn chưa đủ."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:362
 msgid ""
 "This system lacks the ability to control the list of installed packages "
@@ -959,6 +1042,7 @@ msgstr ""
 "viện của NVidia."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:365
 msgid ""
 "Of course there is a solution to avoid this, to use a real `chroot` instead "
@@ -968,6 +1052,7 @@ msgstr ""
 "cho một « fakeroot » đơn giản. Có nghĩa nào?"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:373
 msgid ""
 "When starting the build, a core chroot system is installed under /var/"
@@ -987,6 +1072,7 @@ msgstr ""
 "rất ít sửa đổi danh sách này và giữ nó ngắn.)"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:379
 msgid ""
 "When you start building with `makepkg` (without `-H`), pacman-g2 will "
@@ -1003,6 +1089,7 @@ msgstr ""
 "đề nói trên (liên kết đến một thư viện được cài đặt từ mã nguồn v.v.)."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:384
 msgid ""
 "Here comes the fun part. The packages listed in depends() and makedepends() "
@@ -1016,6 +1103,7 @@ msgstr ""
 "đặt gói không cần, hoàn toàn riêng với hệ thống chủ."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:389
 msgid ""
 "After this, the chroot should be cleaned up which means the removal of the "
@@ -1029,6 +1117,7 @@ msgstr ""
 "xây dựng thành công."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:393
 msgid ""
 "This way we can prevent lots of dependency problems and it is even possible "
@@ -1042,6 +1131,7 @@ msgstr ""
 "yếu trong cây « ổn định » (stable)."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:398
 msgid ""
 "If the build fails, the working directory will not be deleted, you can find "
@@ -1055,6 +1145,7 @@ msgstr ""
 "dụng câu lệnh « makepkg -C »."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:401
 msgid ""
 "To deactivate building in a `chroot` (for testing purposes), you should run "
@@ -1064,11 +1155,13 @@ msgstr ""
 "makepkg với tuỳ chọn « -H »."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:403
 msgid "=== Package splitting"
 msgstr "== Chia gói ra"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:407
 msgid ""
 "Package splitting means moving out a list of specified files to "
@@ -1079,6 +1172,7 @@ msgstr ""
 "libmysql » từ gói chính « mysql »), và xác định các thuộc tính của gói phụ."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:412
 msgid ""
 "NOTE: If you create several subpackages, maintaining those packages will "
@@ -1091,6 +1185,7 @@ msgstr ""
 "tăng tốc xây dựng theo vài giây."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:415
 msgid ""
 "The subpkgs() array is to define the pkgnames of the subpackages. From now "
@@ -1100,6 +1195,7 @@ msgstr ""
 "thì có tiền tố « sub » (phụ):"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:432
 #, no-wrap
 msgid ""
@@ -1138,6 +1234,7 @@ msgstr ""
 "----\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:437
 msgid ""
 "Also note that bash does not support two-dimensional arrays, so when "
@@ -1149,11 +1246,13 @@ msgstr ""
 "phụ là dấu cách."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:439
 msgid "Simple example:"
 msgstr "Ví dụ đơn giản:"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:446
 #, no-wrap
 msgid ""
@@ -1172,6 +1271,7 @@ msgstr ""
 "----\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:450
 msgid ""
 "You may define conflicts, replaces and other directives for your "
@@ -1181,6 +1281,7 @@ msgstr ""
 "khác, nhưng chỉ cần thiết xác định 5 chỉ thị này."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:455
 msgid ""
 "The second part is to move some files to the - just defined - subpackages. "
@@ -1193,6 +1294,7 @@ msgstr ""
 "Fsplit, xem tài liệu fwmakepkg, nhưng đây là một mẫu ví dụ ngắn:"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:458
 #, no-wrap
 msgid ""
@@ -1203,6 +1305,7 @@ msgstr ""
 "----\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:462
 msgid ""
 "This will move the /usr/share dir of the package to the \"subpkgname\" "
@@ -1210,6 +1313,7 @@ msgid ""
 msgstr "Câu lệnh này sẽ dời thư mục « /usr/share » của gói sang gói phụ tên đó."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:465
 msgid ""
 "NOTE: Don't use a trailing slash when defining file patterns with wildcards "
@@ -1220,43 +1324,56 @@ msgstr ""
 
 # type: Plain text
 # type: =head1
-#: FrugalBuild.txt:467 makepkg.txt:161 pacman-g2.txt:437
+#. type: Plain text
+#: FrugalBuild.txt:467 makepkg.txt:161 pacman-g2.txt:438
 msgid "== SEE ALSO"
 msgstr "== XEM THÊM"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:469
 #, no-wrap
 msgid "*makepkg*(8), *pacman-g2*(8)\n"
 msgstr "*makepkg*(8), *pacman-g2*(8)\n"
 
+#. type: Plain text
+#: FrugalBuild.txt:471 makepkg.txt:165 pacman-g2.txt:442
+msgid "include::bugs.txt[]"
+msgstr ""
+
 # type: Plain text
 # type: =head1
-#: FrugalBuild.txt:471 makepkg.txt:165 pacman-g2.txt:441
+#. type: Plain text
+#: FrugalBuild.txt:473 makepkg.txt:167 pacman-g2.txt:444
 msgid "== AUTHORS"
 msgstr "== TÁC GIẢ"
 
 # type: Plain text
-#: FrugalBuild.txt:472 makepkg.txt:166 pacman-g2.txt:442
+#. type: Plain text
+#: FrugalBuild.txt:474 makepkg.txt:168 pacman-g2.txt:445
 msgid "See /usr/share/doc/pacman-g2-*/AUTHORS."
 msgstr "Xem « /usr/share/doc/pacman-g2-*/AUTHORS »."
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:2
 msgid "= makepkg(8)"
 msgstr "= makepkg(8)"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:6
 msgid "makepkg - creates pacman-g2 packages"
 msgstr "makepkg — tạo gói kiểu pacman-g2"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:10
 msgid "makepkg [options]"
 msgstr "makepkg [tùy_chọn ...]"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:21
 msgid ""
 "`makepkg` will build packages for you. All it needs is a build-capable Linux "
@@ -1278,6 +1395,7 @@ msgstr ""
 "cho « pacman-g2 » sử dụng."
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:24
 msgid ""
 "`makeworld` can be used to rebuild an entire package group or the entire "
@@ -1288,11 +1406,13 @@ msgstr ""
 
 # type: Plain text
 # type: =head1
+#. type: Plain text
 #: makepkg.txt:26 pacman-g2.txt:60
 msgid "== OPTIONS"
 msgstr "== TÙY CHỌN"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:29
 #, no-wrap
 msgid ""
@@ -1303,6 +1423,7 @@ msgstr ""
 "\tThử đoán giá trị đúng của mảng depends().\n"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:32
 #, no-wrap
 msgid ""
@@ -1313,6 +1434,7 @@ msgstr ""
 "\tĐịa chỉ URL nhớ tạm rsync để sử dụng trước khi tải về gì.\n"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:39
 #, no-wrap
 msgid ""
@@ -1327,6 +1449,7 @@ msgstr ""
 "\tXây dựng từ mã nguồn các gói cần thiết mà còn thiếu. Khi makepkg tìm quan hệ phụ thuộc chưa thoả cho lúc xây dựng hay lúc chạy, nó sẽ tìm kiếm các tập tin FrugalBuild của những gói bị thiếu dưới « $fst_root » (được đặt trong tập tin cấu hình « /etc/repoman.conf » của người dùng). Tìm được thì nó chạy một hàm makepkg riêng để xây dựng và cài đặt các gói bị thiếu. Các cuộc gọi makepkg phụ sẽ được làm với hai tuỳ chọn « -b » và « -i ».\n"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:42
 #, no-wrap
 msgid ""
@@ -1337,6 +1460,7 @@ msgstr ""
 "\tĐừng sử dụng vùng nhớ tạm ccache trong khi xây dựng.\n"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:45
 #, no-wrap
 msgid ""
@@ -1347,6 +1471,7 @@ msgstr ""
 "\tLàm sạch các tập tin hay thư mục làm việc còn lại sau khi xây dựng thành công.\n"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:50
 #, no-wrap
 msgid ""
@@ -1359,6 +1484,7 @@ msgstr ""
 "\tDùng với « --chroot » thì làm sạch chroot (gỡ bỏ khỏi nó các gói không cần thiết). Nếu dùng hai lần thì nó gỡ bỏ khỏi thư mục nhớ tạm tất cả các tập tin mã nguồn, và làm sạch vùng nhớ tạm biên dịch hoàn toàn để giải phóng thêm chỗ trống trên đĩa.\n"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:55
 #, no-wrap
 msgid ""
@@ -1371,6 +1497,7 @@ msgstr ""
 "\tĐừng thực hiện hàm nào kiểm tra quan hệ phụ thuộc. Tuỳ chọn này cũng cho phép bạn bỏ qua quan hệ phụ thuộc, thì rất có thể phá vỡ tiến trình xây dựng thực sự cần thiết gói khác mà chưa được cài đặt.\n"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:58
 #, no-wrap
 msgid ""
@@ -1381,6 +1508,7 @@ msgstr ""
 "\tLàm sạch vùng nhớ tạm biên dịch của chỉ một gói (dùng « ccache -C »).\n"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:63
 #, no-wrap
 msgid ""
@@ -1393,6 +1521,7 @@ msgstr ""
 "\tĐừng giải nén tập tin mã nguồn. Thay vào đó, sử dụng tập tin nào đã có trong thư mục « src/ ». Có ích nếu bạn muốn vào « src » và tự đắp vá hay điều chỉnh mã, và sau đó đóng gói từ kết quả.\n"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:68
 #, no-wrap
 msgid ""
@@ -1405,6 +1534,7 @@ msgstr ""
 "\tmakepkg sẽ không xây dựng gói nếu thư mục xây dựng đã có một tập tin « tên_gói-phiên_bản_gói-bản_phát_hành_gói-kiến_trúc.fpm ». Bạn cũng có thể ghi đè lên ứng xử này dùng cờ ép buộc « --force ».\n"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:72
 #, no-wrap
 msgid ""
@@ -1416,6 +1546,7 @@ msgstr ""
 "\tTải về tất cả các tập tin mã nguồn (nếu cần thiết) và sử dụng sha1sum để tạo một chuỗi duy nhất SHA1 cho mỗi tập tin.\n"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:76
 #, no-wrap
 msgid ""
@@ -1427,6 +1558,7 @@ msgstr ""
 "\tGiống « -g » nhưng thay thế nội dung của mảng sha1sums() trong bản xây dựng FrugalBuild bằng kết quả.\n"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:79
 #, no-wrap
 msgid ""
@@ -1437,6 +1569,7 @@ msgstr ""
 "\tXuất cú pháp và các tuỳ chọn dòng lệnh.\n"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:82
 #, no-wrap
 msgid ""
@@ -1447,6 +1580,7 @@ msgstr ""
 "\tCài đặt hay nâng cấp gói sau khi xây dựng thành công.\n"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:86
 #, no-wrap
 msgid ""
@@ -1458,6 +1592,7 @@ msgstr ""
 "\tĐặt « MAKEFLAGS=\"-j<công_việc ...>\" » trước khi xây dựng gói. Có ích để ghi đè lên thiết lập MAKEFLAGS trong tập tin cấu hình « /etc/makepkg.conf ».\n"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:91
 #, no-wrap
 msgid ""
@@ -1470,6 +1605,7 @@ msgstr ""
 "\tTải về văn lệnh xây dựng của gói trước khi khởi chạy tiến trình xây dựng. Có ích nếu bạn không muốn làm một « repoman upd » đầy đủ, cũng không muốn tự tải về văn lệnh xây dựng.\n"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:94
 #, no-wrap
 msgid ""
@@ -1480,6 +1616,7 @@ msgstr ""
 "\tTắt màu sắc trong thông điệp kết xuất.\n"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:97
 #, no-wrap
 msgid ""
@@ -1490,6 +1627,7 @@ msgstr ""
 "\tĐừng gỡ bỏ tập tin nhị phân hay thư viện.\n"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:100
 #, no-wrap
 msgid ""
@@ -1500,6 +1638,7 @@ msgstr ""
 "\tChỉ tải về và giải nén tập tin, đừng xây dựng.\n"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:103
 #, no-wrap
 msgid ""
@@ -1510,6 +1649,7 @@ msgstr ""
 "\tĐọc văn lệnh gói này thay cho mặc định (FrugalBuild).\n"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:107
 #, no-wrap
 msgid ""
@@ -1521,6 +1661,7 @@ msgstr ""
 "\tMột khi xây dựng thành công, gỡ bỏ gói nào được cài đặt bởi makepkg hay pacman-g2 do tự động giải quyết quan hệ phụ thuộc (dùng « -b » hay « -s »).\n"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:111
 #, no-wrap
 msgid ""
@@ -1532,6 +1673,7 @@ msgstr ""
 "\tXây dựng gói trong một môi trường chroot. Đây là mặc định nếu không đặt cờ « -g » hay « -o ».\n"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:114
 #, no-wrap
 msgid ""
@@ -1542,6 +1684,7 @@ msgstr ""
 "\tXây dựng gói trên hệ thống chủ (trái ngược với tuỳ chọn « -R »).\n"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:120
 #, no-wrap
 msgid ""
@@ -1555,6 +1698,7 @@ msgstr ""
 "\tCài đặt các gói cần thiết bị thiếu dùng pacman-g2. Khi makepkg tìm gói bị thiếu do quan hệ phụ thuộc cho lúc xây dựng hay lúc chạy, nó sẽ chạy pacman-g2 để thử giải quyết. Nếu thành công thì pacman-g2 sẽ tải các gói bị thiếu xuống một kho gói và cài đặt chúng cho bạn.\n"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:125
 #, no-wrap
 msgid ""
@@ -1567,6 +1711,7 @@ msgstr ""
 "\tKhi xây dựng trong chroot (dùng cờ « -R »), bạn có thể muốn xây dựng gói cho một phiên bản khác với phiên bản chủ. Dùng tuỳ chọn này, có thể xây dựng gói của phần kho « ổn định » (stable) còn hệ thống chủ có gói « hiện thời » (current), và ngược lại.\n"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:133
 #, no-wrap
 msgid ""
@@ -1585,6 +1730,7 @@ msgstr ""
 "\tCài đặt các gói cần thiết bị thiếu dùng pacman-g2 và sudo. Tuỳ chọn này giống « -s » trừ makepkg sẽ gọi pacman-g2 dùng lệnh gọi quyền người chủ sudo. Có nghĩa là bạn không cần phải xây dựng dưới người chủ (root) để sử dụng chức năng tự động giải quyết quan hệ phụ thuộc.\n"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:137
 #, no-wrap
 msgid ""
@@ -1596,6 +1742,7 @@ msgstr ""
 "\tGhi tập tin gói kết quả vào thư mục này thay cho thư mục làm việc hiện thời.\n"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:140
 #, no-wrap
 msgid ""
@@ -1606,6 +1753,7 @@ msgstr ""
 "\tNén gói bằng gzip thay cho bzip2.\n"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:145
 #, no-wrap
 msgid ""
@@ -1618,6 +1766,7 @@ msgstr ""
 "\tKhi gọi pacman-g2 để giải quyết quan hệ phụ thuộc hay xung đột, makepkg có khả năng gửi tuỳ chọn « --noconfirm » cho nó để mà nó không đợi người dùng xác nhận trước khi tiếp tục lại.\n"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:149
 #, no-wrap
 msgid ""
@@ -1629,11 +1778,13 @@ msgstr ""
 "\tKhi gọi pacman-g2, makepkg có khả năng gửi tuỳ chọn « --noprogressbar » cho nó. Có ích nếu bạn chuyển tiếp kết xuất của makepkg tới một đích không phải thiết bị cuối (v.d. một tập tin).\n"
 
 # type: Plain text
-#: makepkg.txt:151 pacman-g2.txt:301
+#. type: Plain text
+#: makepkg.txt:151 pacman-g2.txt:302
 msgid "== CONFIGURATION"
 msgstr "== CẤU HÌNH"
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:156
 msgid ""
 "Configuration options are stored in /etc/makepkg.conf. This file is parsed "
@@ -1647,6 +1798,7 @@ msgstr ""
 "khác nhau, hoặc với các hệ số tối ưu hoá khác nhau."
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:159
 msgid ""
 "NOTE: This does not guarantee that all package Makefiles will use your "
@@ -1656,27 +1808,32 @@ msgstr ""
 "bạn xuất. Một số Makefile nào đó bị lỗi..."
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:163
 #, no-wrap
 msgid "*FrugalBuild*(5), *pacman-g2*(8)\n"
 msgstr "*FrugalBuild*(5), *pacman-g2*(8)\n"
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:2
 msgid "= pacman-g2(8)"
 msgstr "= pacman-g2(8)"
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:6
 msgid "pacman-g2 - package manager utility"
 msgstr "pacman-g2 — tiện ích quản lý gói"
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:10
 msgid "pacman-g2 <operation> [options] <package> [package] ..."
 msgstr "pacman-g2 <thao_tác> [tuỳ_chọn ...] <gói> [gói] ..."
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:17
 msgid ""
 "pacman-g2 is a package management utility that tracks installed packages on "
@@ -1692,11 +1849,13 @@ msgstr ""
 
 # type: Plain text
 # type: =head1
+#. type: Plain text
 #: pacman-g2.txt:19
 msgid "== OPERATIONS"
 msgstr "== THAO TÁC"
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:23
 #, no-wrap
 msgid ""
@@ -1708,6 +1867,7 @@ msgstr ""
 "\tThêm một gói vào hệ thống. Gói sẽ được giải nén vào gốc cài đặt, và cơ sở dữ liệu sẽ được cập nhật.\n"
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:27
 #, no-wrap
 msgid ""
@@ -1719,6 +1879,7 @@ msgstr ""
 "\tGiống « --upgrade » trừ thao tác này chỉ nâng cấp những gói được cài đặt trên hệ thống này.\n"
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:34
 #, no-wrap
 msgid ""
@@ -1733,6 +1894,7 @@ msgstr ""
 "\tTruy vấn cơ sở dữ liệu gói. Thao tác này cho phép bạn xem các gói đã cài đặt và các tập tin liên quan, cũng như siêu thông tin về mỗi gói riêng (quan hệ phụ thuộc, sự xung đột, ngày cài đặt, ngày xây dựng, kích cỡ). Nó có thể được chạy đối với cơ sở dữ liệu gói cục bộ, hoặc với mỗi gói .fpm riêng. Xem các TÙY CHỌN TRUY VẤN dưới đây.\n"
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:39
 #, no-wrap
 msgid ""
@@ -1745,6 +1907,7 @@ msgstr ""
 "\tGỡ bỏ một gói khỏi hệ thống. Các tập tin thuộc về gói đó sẽ cũng bị xoá, và cơ sở dữ liệu sẽ được cập nhật. Hậu hết tập tin cấu hình sẽ được lưu với phần mở rộng « .pacsave » nếu không đặt tuỳ chọn « --nosave ».\n"
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:46
 #, no-wrap
 msgid ""
@@ -1759,6 +1922,7 @@ msgstr ""
 "\tĐồng bộ hoá các gói. Dùng hàm này, bạn có thể cài đặt các gói một cách trực tiếp từ máy phục vụ FTP, cùng với mọi gói cần thiết để chạy gói do quan hệ phụ thuộc. Ví dụ, câu lệnh « pacman-g2 -S qt » sẽ tải về « qt » và tất cả các gói nó cần thiết, và cài đặt chúng. Bạn cũng có thể sử dụng câu lệnh « pacman-g2 -Su » để nâng cấp các gói cũ (xem dưới).\n"
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:51
 #, no-wrap
 msgid ""
@@ -1771,6 +1935,7 @@ msgstr ""
 "\tNâng cấp một gói. Về cơ bản đây là một quá trình « gỡ bỏ, sau đó thêm ». Xem phần QUẢN LÝ TẬP TIN CẤU HÌNH để tìm lời giải thích pacman-g2 quản lý các tập tin cấu hình như thế nào.\n"
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:54
 #, no-wrap
 msgid ""
@@ -1781,6 +1946,7 @@ msgstr ""
 "\tHiển thị phiên bản, sau đó thoát.\n"
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:58
 #, no-wrap
 msgid ""
@@ -1792,6 +1958,7 @@ msgstr ""
 "\tHiển thị cú pháp của thao tác đưa ra. Không đưa ra thì hiển thị cú pháp chung.\n"
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:65
 #, no-wrap
 msgid ""
@@ -1804,6 +1971,7 @@ msgstr ""
 "\tBỏ qua mọi bước kiểm tra tình trạng của quan hệ phụ thuộc. Bình thường, pacman-g2 lúc nào cũng kiểm tra các trường gói cần thiết của một gói để đảm bảo mọi gói cần thiết đều đã được cài đặt và không có gói xung đột trong hệ thống. Cờ này tắt những hàm kiểm tra này.\n"
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:71
 #, no-wrap
 msgid ""
@@ -1817,6 +1985,7 @@ msgstr ""
 "\tĐi vòng các bước kiểm tra tập tin bị xung đột, thì ghi đè lên các tập tin cấu hình. Nếu gói sắp cài đặt chứa tập tin đã cài đặt, tuỳ chọn này sẽ gây ra các tập tin đó bị ghi đè. Không nên sử dụng tuỳ chọn này.\n"
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:75
 #, no-wrap
 msgid ""
@@ -1828,6 +1997,7 @@ msgstr ""
 "\tĐi vòng bước kiểm tra kiến trúc, để (v.d.) cài đặt một gói « i686 » vào máy « x86_64 ». Chỉ sử dụng tuỳ chọn này nếu bạn chịu hậu quả.\n"
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:83
 #, no-wrap
 msgid ""
@@ -1843,6 +2013,7 @@ msgstr ""
 "\tGhi rõ một gốc cài đặt khác (mặc định là « / »). Không nên sử dụng tuỳ chọn này để cài đặt phần mềm vào (v.d.) « /usr/local » thay cho « /usr ». Có nên sử dụng nó nếu bạn cần cài đặt một gói vào một phân vùng được gắn kết tạm thời mà « bị sở hữu » bởi một hệ thống khác. Khi sử dụng tuỳ chọn này, bạn không chỉ ghi rõ đích cài đặt, cũng đặt cơ sở dữ liệu gói cần dùng.\n"
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:86
 #, no-wrap
 msgid ""
@@ -1853,6 +2024,7 @@ msgstr ""
 "\tGhi rõ một đường dẫn cơ sở dữ liệu xen kẽ (mặc định là « var/lib/pacman »).\n"
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:89
 #, no-wrap
 msgid ""
@@ -1863,6 +2035,7 @@ msgstr ""
 "\tXuất thêm thông điệp về trạng thái và lỗi.\n"
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:92
 #, no-wrap
 msgid ""
@@ -1873,6 +2046,7 @@ msgstr ""
 "\tGhi rõ một tập tin cấu hình xen kẽ.\n"
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:96
 #, no-wrap
 msgid ""
@@ -1884,6 +2058,7 @@ msgstr ""
 "\tĐi vòng bất kỳ và tất cả thông điệp kiểu « Bạn có chắc chưa? ». Không nên bật tuỳ chọn này, trừ khi bạn muốn chạy pacman-g2 từ một văn lệnh.\n"
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:101
 #, no-wrap
 msgid ""
@@ -1896,6 +2071,7 @@ msgstr ""
 "\tĐiều chỉnh cờ « --noconfirm » bằng cách tự đáp ứng những câu hỏi của libpacman (thay vào đơn giản đồng ý với tất cả):\n"
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:108
 #, no-wrap
 msgid ""
@@ -1914,6 +2090,7 @@ msgstr ""
 "\t* Phiên bản này vẫn hiện thời. (32)\n"
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:111
 #, no-wrap
 msgid ""
@@ -1922,6 +2099,7 @@ msgid ""
 msgstr "\tChọn những câu hỏi với đó bạn muốn đồng ý, cộng những giá trị đại diện và sử dụng tổng làm một tham số cho tuỳ chọn này.\n"
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:115
 #, no-wrap
 msgid ""
@@ -1933,6 +2111,7 @@ msgstr ""
 "\tĐừng hiển thị thanh tiến hành khi tải về tập tin. Có ích khi sử dụng văn lệnh để gọi pacman-g2 và lưu trữ kết xuất.\n"
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:118
 #, no-wrap
 msgid ""
@@ -1943,6 +2122,7 @@ msgstr ""
 "\tĐừng thực hiện văn lệnh nhỏ cài đặt (nếu có).\n"
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:121
 #, no-wrap
 msgid ""
@@ -1953,6 +2133,7 @@ msgstr ""
 "\tBỏ qua bước kiểm tra tính nguyên vẹn SHA1 của mỗi gói đã tải về.\n"
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:124
 #, no-wrap
 msgid ""
@@ -1963,6 +2144,7 @@ msgstr ""
 "\tXử lý tên đích là biểu thức chính quy nếu không tìm thấy đích.\n"
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:129
 #, no-wrap
 msgid ""
@@ -1978,11 +2160,13 @@ msgstr ""
 
 # type: Plain text
 # type: =head1
+#. type: Plain text
 #: pacman-g2.txt:131
 msgid "== SYNC OPTIONS"
 msgstr "== TÙY CHỌN ĐỒNG BỘ"
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:138
 #, no-wrap
 msgid ""
@@ -1997,6 +2181,7 @@ msgstr ""
 "\tGỡ bỏ các gói cũ khỏi vùng nhớ tạm. Khi pacman-g2 tải về gói, nó lưu mỗi gói vào thư mục « /var/cache/pacman-g2/pkg ». Nếu bạn cần giải phóng thêm chỗ trống trên đĩa, cũng có thể gỡ bỏ các gói này dùng tuỳ chọn « --clean ». Dùng chỉ một cờ « --clean » (hay « -c ») thì chỉ gỡ bỏ các gói cũ. Hãy dùng nó hai lần để gỡ bỏ mọi gói khỏi vùng nhớ tạm.\n"
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:143
 #, no-wrap
 msgid ""
@@ -2009,6 +2194,7 @@ msgstr ""
 "\tĐừng cài đặt mỗi gói chính nó, chỉ những gói nó cần thiết do quan hệ phụ thuộc. Tuỳ chọn này có ích nếu bạn muốn cài đặt gói với các tuỳ chọn khác với mã nguồn.\n"
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:147
 #, no-wrap
 msgid ""
@@ -2020,6 +2206,7 @@ msgstr ""
 "\tHiển thị tất cả các bộ phận của mỗi nhóm gói đưa ra. Không cung cấp tên nhóm thì liệt kê tất cả các nhóm.\n"
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:152
 #, no-wrap
 msgid ""
@@ -2032,6 +2219,7 @@ msgstr ""
 "\tHiển thị thông tin về quan hệ phụ thuộc của một gói. Tuỳ chọn này sẽ quét tất cả các kho gói tìm một gói tương ứng, và hiển thị mỗi gói cần thiết, xung đột v.v.\n"
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:156
 #, no-wrap
 msgid ""
@@ -2043,19 +2231,22 @@ msgstr ""
 "\tLiệt kê tất cả các tập tin trong những kho gói đưa ra. Cũng có thể chỉ định nhiều kho gói trên dòng lệnh.\n"
 
 # type: Plain text
-#: pacman-g2.txt:161
-#, no-wrap
+#. type: Plain text
+#: pacman-g2.txt:162
+#, fuzzy, no-wrap
 msgid ""
 "-p, --print-uris::\n"
 "\tPrint out URIs for each package that will be installed, including any\n"
-"\tdependencies that have yet to be installed. These can be piped to a file and\n"
-"\tdownloaded at a later time, using a program like wget.\n"
+"\tdependencies. These can be piped to a file and downloaded at a later time,\n"
+"\tusing a program like wget. If you need to get the URIs even if they're downloaded,\n"
+"\tjust use -pp for it.\n"
 msgstr ""
 "-p, --print-uris::\n"
 "\tIn ra các địa chỉ URI cho mỗi gói cần cài đặt, bao gồm gói nào chưa cài đặt mà cần thiết do quan hệ phụ thuộc. Các địa chỉ URI này cũng có thể được gửi qua ống dẫn cho một tập tin, và được tải xuống về sau, dùng một chương trình như wget.\n"
 
 # type: Plain text
-#: pacman-g2.txt:165
+#. type: Plain text
+#: pacman-g2.txt:166
 #, no-wrap
 msgid ""
 "-s, --search <regexp>::\n"
@@ -2066,7 +2257,8 @@ msgstr ""
 "\tTùy chọn này sẽ quét tất cả các gói trong danh sách gói tìm tên hay mô tả chứa biểu thức chính quy này.\n"
 
 # type: Plain text
-#: pacman-g2.txt:173
+#. type: Plain text
+#: pacman-g2.txt:174
 #, no-wrap
 msgid ""
 "-u, --sysupgrade::\n"
@@ -2081,7 +2273,8 @@ msgstr ""
 "\tNâng cấp các gói cũ. pacman-g2 sẽ kiểm tra mọi gói được cài đặt trên hệ thống, và nếu một gói mới nằm trên máy phục vụ nó có khả năng nâng cấp lên nó. pacman-g2 sẽ hiển thị một báo cáo về mỗi gói cần nâng cấp, đợi tiếp tục đến khi người dùng xác nhận. Mọi quan hệ phụ thuộc đều được tự động giải quyết ở cấp này, và sẽ được cài đặt hay nâng cấp nếu cần thiết.\n"
 
 # type: Plain text
-#: pacman-g2.txt:176
+#. type: Plain text
+#: pacman-g2.txt:177
 #, no-wrap
 msgid ""
 "-w, --downloadonly::\n"
@@ -2091,7 +2284,8 @@ msgstr ""
 "\tTải các gói xuống máy phục vụ mà không cài đặt hay nâng cấp gì.\n"
 
 # type: Plain text
-#: pacman-g2.txt:182
+#. type: Plain text
+#: pacman-g2.txt:183
 #, no-wrap
 msgid ""
 "-y, --refresh::\n"
@@ -2104,7 +2298,8 @@ msgstr ""
 "\tTải một bản sao mới của danh sách gói chủ xuống máy phục vụ FTP xác định trong tập tin cấu hình « /etc/pacman-g2.conf ». Công việc này nên được làm mỗi lần bạn sử dụng tuỳ chọn « --sysupgrade ». Nếu dùng nhiều lần thì nó ép buộc tải về lại cơ sở dữ liệu gói, thậm chí nếu nó vẫn hiện thời.\n"
 
 # type: Plain text
-#: pacman-g2.txt:187
+#. type: Plain text
+#: pacman-g2.txt:188
 #, no-wrap
 msgid ""
 "--ignore <pkg>::\n"
@@ -2116,12 +2311,14 @@ msgstr ""
 "\tTùy chọn này chức năng đúng như chỉ thị cấu hình IgnorePkg (lờ đi gói). Đôi khi có ích khi bỏ qua một số bước cập nhật gói mà không cần chỉnh sửa mỗi lần tập tin « pacman-g2.conf ».\n"
 
 # type: Plain text
-#: pacman-g2.txt:189
+#. type: Plain text
+#: pacman-g2.txt:190
 msgid "== REMOVE OPTIONS"
 msgstr "== TÙY CHỌN GỠ BỎ"
 
 # type: Plain text
-#: pacman-g2.txt:193
+#. type: Plain text
+#: pacman-g2.txt:194
 #, no-wrap
 msgid ""
 "-c, --cascade::\n"
@@ -2132,7 +2329,8 @@ msgstr ""
 "\tGỡ bỏ tất cả các gói đích, cũng như tất cả các gói phụ thuộc vào một hay nhiều gói đích. Thao tác này cũng đệ quy.\n"
 
 # type: Plain text
-#: pacman-g2.txt:196
+#. type: Plain text
+#: pacman-g2.txt:197
 #, no-wrap
 msgid ""
 "-k, --keep::\n"
@@ -2142,7 +2340,8 @@ msgstr ""
 "\tGỡ bỏ chỉ mục nhập cơ sở dữ liệu. Vẫn còn để lại mọi tập tin còn lại.\n"
 
 # type: Plain text
-#: pacman-g2.txt:202
+#. type: Plain text
+#: pacman-g2.txt:203
 #, no-wrap
 msgid ""
 "-n, --nosave::\n"
@@ -2155,7 +2354,8 @@ msgstr ""
 "\tBáo pacman-g2 nên bỏ qua các chỉ thị sao lưu tập tin. Bình thường, khi một tập tin sắp bị gỡ bỏ khỏi hệ thống, trước tiên cơ sở dữ liệu được kiểm tra để thấy nếu tập tin nên bị thay tên thành một phần mở rộng « .pacsave ». Nếu dùng « --nosave » thì bỏ qua các chỉ thị này, và những tập tin bị gỡ bỏ.\n"
 
 # type: Plain text
-#: pacman-g2.txt:208
+#. type: Plain text
+#: pacman-g2.txt:209
 #, no-wrap
 msgid ""
 "-s, --recursive::\n"
@@ -2165,19 +2365,18 @@ msgid ""
 "\toperation.\n"
 msgstr ""
 "-s, --recursive::\n"
-"\tĐối với mỗi địch đưa ra, gỡ bỏ nó và tất cả các gói cần thiết do quan hệ "
-"phụ thuộc, miễn là (A) gói đó không phải được gói khác yêu cầu, và (B) gói "
-"đó không phải được cài đặt dứt khoát bởi người dùng. Tuỳ chọn này tương tự "
-"với một thao tác « --sync » đảo ngược.\n"
+"\tĐối với mỗi địch đưa ra, gỡ bỏ nó và tất cả các gói cần thiết do quan hệ phụ thuộc, miễn là (A) gói đó không phải được gói khác yêu cầu, và (B) gói đó không phải được cài đặt dứt khoát bởi người dùng. Tuỳ chọn này tương tự với một thao tác « --sync » đảo ngược.\n"
 
 # type: Plain text
 # type: =head1
-#: pacman-g2.txt:210
+#. type: Plain text
+#: pacman-g2.txt:211
 msgid "== QUERY OPTIONS"
 msgstr "== TÙY CHỌN TRUY VẤN"
 
 # type: Plain text
-#: pacman-g2.txt:213
+#. type: Plain text
+#: pacman-g2.txt:214
 #, no-wrap
 msgid ""
 "-c, --changelog::\n"
@@ -2187,7 +2386,8 @@ msgstr ""
 "\tXem bản ghi thay đổi của một gói nào đó.\n"
 
 # type: Plain text
-#: pacman-g2.txt:217
+#. type: Plain text
+#: pacman-g2.txt:218
 #, no-wrap
 msgid ""
 "-d, --nodeps::\n"
@@ -2196,7 +2396,8 @@ msgid ""
 msgstr "-d, --nodeps::\tKhi dùng cùng với « -e », liệt kê tất cả các gói không phải được cài đặt do quan hệ phụ thuộc và không phải được gói khác yêu cầu.\n"
 
 # type: Plain text
-#: pacman-g2.txt:221
+#. type: Plain text
+#: pacman-g2.txt:222
 #, no-wrap
 msgid ""
 "-e, --orphans::\n"
@@ -2207,7 +2408,8 @@ msgstr ""
 "\tLiệt kê tất cả các gói không phải được cài đặt do quan hệ phụ thuộc (tức là không phải được cài đặt dứt khoát) và không phải được gói khác yêu cầu.\n"
 
 # type: Plain text
-#: pacman-g2.txt:225
+#. type: Plain text
+#: pacman-g2.txt:226
 #, no-wrap
 msgid ""
 "-g, --groups::\n"
@@ -2218,7 +2420,8 @@ msgstr ""
 "\tHiển thị tất cả các nhóm chứa một gói đưa ra. Không đưa ra tên gói thì liệt kê mọi nhóm và  bộ phận.\n"
 
 # type: Plain text
-#: pacman-g2.txt:229
+#. type: Plain text
+#: pacman-g2.txt:230
 #, no-wrap
 msgid ""
 "-i, --info::\n"
@@ -2229,7 +2432,8 @@ msgstr ""
 "\tHiển thị thông tin về một gói đưa ra. Nếu dùng cùng với tuỳ chọn « -p » thì in ra tập tin « .PKGINFO ».\n"
 
 # type: Plain text
-#: pacman-g2.txt:233
+#. type: Plain text
+#: pacman-g2.txt:234
 #, no-wrap
 msgid ""
 "-l, --list::\n"
@@ -2240,7 +2444,8 @@ msgstr ""
 "\tLiệt kê tất cả các tập tin được gói này sở hữu. Cũng có thể ghi rõ nhiều gói trên dòng lệnh.\n"
 
 # type: Plain text
-#: pacman-g2.txt:237
+#. type: Plain text
+#: pacman-g2.txt:238
 #, no-wrap
 msgid ""
 "-m, --foreign::\n"
@@ -2251,7 +2456,8 @@ msgstr ""
 "\tLiệt kê tất cả các gói không được tìm trong cơ sở dữ liệu đồng bộ. Bình thường đây là những gói được tải về thủ công và cài đặt dùng « -add ».\n"
 
 # type: Plain text
-#: pacman-g2.txt:240
+#. type: Plain text
+#: pacman-g2.txt:241
 #, no-wrap
 msgid ""
 "-o, --owns <path>::\n"
@@ -2261,7 +2467,8 @@ msgstr ""
 " \tTìm gói sở hữu tập tin hay thư mục này.\n"
 
 # type: Plain text
-#: pacman-g2.txt:245
+#. type: Plain text
+#: pacman-g2.txt:246
 #, no-wrap
 msgid ""
 "-p, --file::\n"
@@ -2273,7 +2480,8 @@ msgstr ""
 "\tBáo pacman-g2 rằng gói đưa ra trên dòng lệnh là một tập tin, không phải một mục nhập trong cơ sở dữ liệu. Pacman sẽ giải nén tập tin và truy vấn nó. Có ích với « --info » và « --list ».\n"
 
 # type: Plain text
-#: pacman-g2.txt:249
+#. type: Plain text
+#: pacman-g2.txt:250
 #, no-wrap
 msgid ""
 "-s, --search <regexp>::\n"
@@ -2284,7 +2492,8 @@ msgstr ""
 "\tQuét các gói được cài đặt cục bộ tìm tên hay mô tả chứa biểu thức chính quy này.\n"
 
 # type: Plain text
-#: pacman-g2.txt:252
+#. type: Plain text
+#: pacman-g2.txt:253
 #, no-wrap
 msgid ""
 "-t, --test::\n"
@@ -2294,7 +2503,8 @@ msgstr ""
 "\tThử cơ sở dữ liệu cục bộ, bằng cách tìm kiếm thông tin bị thiếu. Ví dụ :\n"
 
 # type: Plain text
-#: pacman-g2.txt:257
+#. type: Plain text
+#: pacman-g2.txt:258
 #, no-wrap
 msgid ""
 "\t----\n"
@@ -2308,13 +2518,15 @@ msgstr ""
 "\t----\n"
 
 # type: Plain text
-#: pacman-g2.txt:259
+#. type: Plain text
+#: pacman-g2.txt:260
 #, no-wrap
 msgid "\tThe recommended method in this case is to remove the database entry:\n"
 msgstr "\tPhương pháp khuyến khích trong trường hợp này là gỡ bỏ mục nhập cơ sở dữ liệu.\n"
 
 # type: Plain text
-#: pacman-g2.txt:263
+#. type: Plain text
+#: pacman-g2.txt:264
 #, no-wrap
 msgid ""
 "\t----\n"
@@ -2326,13 +2538,15 @@ msgstr ""
 "\t----\n"
 
 # type: Plain text
-#: pacman-g2.txt:265
+#. type: Plain text
+#: pacman-g2.txt:266
 #, no-wrap
 msgid "\tand forcing the reinstall of the package:\n"
 msgstr "\tvà ép buộc cài đặt lại gói đó.\n"
 
 # type: Plain text
-#: pacman-g2.txt:269
+#. type: Plain text
+#: pacman-g2.txt:270
 #, no-wrap
 msgid ""
 "\t----\n"
@@ -2344,12 +2558,14 @@ msgstr ""
 "\t----\n"
 
 # type: Plain text
-#: pacman-g2.txt:271
+#. type: Plain text
+#: pacman-g2.txt:272
 msgid "== HANDLING CONFIG FILES"
 msgstr "== QUẢN LÝ TẬP TIN CẤU HÌNH"
 
 # type: Plain text
-#: pacman-g2.txt:278
+#. type: Plain text
+#: pacman-g2.txt:279
 msgid ""
 "pacman-g2 uses the same logic as rpm to determine action against files that "
 "are designated to be backed up. During an upgrade, it uses 3 md5 hashes for "
@@ -2366,7 +2582,8 @@ msgstr ""
 "bản theo đây có thể xảy ra:"
 
 # type: Plain text
-#: pacman-g2.txt:281
+#. type: Plain text
+#: pacman-g2.txt:282
 #, no-wrap
 msgid ""
 "original=X, current=X, new=X::\n"
@@ -2376,7 +2593,8 @@ msgstr ""
 "\tCả ba tập tin trùng nhau, tốt đẹp. Cài đặt tập tin mới.\n"
 
 # type: Plain text
-#: pacman-g2.txt:286
+#. type: Plain text
+#: pacman-g2.txt:287
 #, no-wrap
 msgid ""
 "original=X, current=X, new=Y::\n"
@@ -2388,7 +2606,8 @@ msgstr ""
 "\tTập tin hiện thời không khác với tập tin gốc, còn tập tin mới vẫn khác. Vì người dùng đã không sửa đổi tập tin mới, và nó có thể chứa sự cải tiến và/hay sự sửa chữa lỗi, chúng ta cài đặt tập tin mới.\n"
 
 # type: Plain text
-#: pacman-g2.txt:291
+#. type: Plain text
+#: pacman-g2.txt:292
 #, no-wrap
 msgid ""
 "original=X, current=Y, new=X::\n"
@@ -2400,7 +2619,8 @@ msgstr ""
 "\tCả hai phiên bản gói chứa tập tin trùng, nhưng tập tin trên hệ thống tập tin đã bị sửa đổi kể từ cài đặt. Trong trường hợp này, chúng ta để lại tập tin hiện thời còn lại. Rất có thể là người dùng đã sửa đổi nó.\n"
 
 # type: Plain text
-#: pacman-g2.txt:294
+#. type: Plain text
+#: pacman-g2.txt:295
 #, no-wrap
 msgid ""
 "original=X, current=Y, new=Y::\n"
@@ -2410,7 +2630,8 @@ msgstr ""
 "\tPhiên bản gói mới vẫn trùng với phiên bản hiện thời. Tốt đẹp. Cài đặt tập tin mới.\n"
 
 # type: Plain text
-#: pacman-g2.txt:299
+#. type: Plain text
+#: pacman-g2.txt:300
 #, no-wrap
 msgid ""
 "original=X, current=Y, new=Z::\n"
@@ -2422,7 +2643,8 @@ msgstr ""
 "\tCả ba tập tin khác với nhau, thì chúng ta cài đặt tập tin mới với phần mở rộng « .pacnew » và cảnh báo người dùng, để mà họ có thể tự dời tập tin vào chỗ sau khi tùy chỉnh như thích hợp.\n"
 
 # type: Plain text
-#: pacman-g2.txt:307
+#. type: Plain text
+#: pacman-g2.txt:308
 msgid ""
 "pacman-g2 will attempt to read /etc/pacman-g2.conf each time it is invoked. "
 "This configuration file is divided into sections or repositories. Each "
@@ -2436,23 +2658,27 @@ msgstr ""
 "phần tuỳ chọn mà xác định các tuỳ chọn toàn cục."
 
 # type: Plain text
-#: pacman-g2.txt:309
+#. type: Plain text
+#: pacman-g2.txt:310
 msgid "Example:"
 msgstr "Ví dụ :"
 
 # type: Plain text
-#: pacman-g2.txt:314
+#. type: Plain text
+#: pacman-g2.txt:315
 msgid "[options] HoldPkg = pacman-g2 glibc bash coreutils HoldPkg = chkconfig"
 msgstr ""
 "[tuỳ_chọn ...] HoldPkg = pacman-g2 glibc bash coreutils HoldPkg = chkconfig"
 
 # type: Plain text
-#: pacman-g2.txt:316
+#. type: Plain text
+#: pacman-g2.txt:317
 msgid "Include = /etc/pacman-g2/repos/frugalware-current"
 msgstr "Include = /etc/pacman-g2/repos/frugalware-current"
 
 # type: Plain text
-#: pacman-g2.txt:319
+#. type: Plain text
+#: pacman-g2.txt:320
 #, no-wrap
 msgid ""
 "[custom]\n"
@@ -2464,12 +2690,14 @@ msgstr ""
 "----\n"
 
 # type: Plain text
-#: pacman-g2.txt:322
+#. type: Plain text
+#: pacman-g2.txt:323
 msgid "== CONFIG: OPTIONS"
 msgstr "== CẤU HÌNH: TÙY CHỌN"
 
 # type: Plain text
-#: pacman-g2.txt:326
+#. type: Plain text
+#: pacman-g2.txt:327
 #, no-wrap
 msgid ""
 "DBPath = path/to/db/dir::\n"
@@ -2480,7 +2708,8 @@ msgstr ""
 "\tGhi đè lên vị trí mặc định của thư mục cơ sở dữ liệu cấp đầu. Giá trị mặc định là « var/lib/pacman-g2 ».\n"
 
 # type: Plain text
-#: pacman-g2.txt:330
+#. type: Plain text
+#: pacman-g2.txt:331
 #, no-wrap
 msgid ""
 "CacheDir = path/to/cache/dir::\n"
@@ -2491,7 +2720,8 @@ msgstr ""
 "\tGhi đè lên vị trí mặc định của thư mục nhớ tạm gói. Giá trị mặc định là « var/cache/pacman-g2 ».\n"
 
 # type: Plain text
-#: pacman-g2.txt:334
+#. type: Plain text
+#: pacman-g2.txt:335
 #, no-wrap
 msgid ""
 "HoldPkg = <package> [package] ...::\n"
@@ -2502,7 +2732,8 @@ msgstr ""
 "\tNếu người dùng thử gỡ bỏ một gói được liệt kê ở HoldPkg (Giữ Lại Gói), pacman-g2 sẽ yêu cầu sự xác nhận trước khi tiếp tục.\n"
 
 # type: Plain text
-#: pacman-g2.txt:338
+#. type: Plain text
+#: pacman-g2.txt:339
 #, no-wrap
 msgid ""
 "IgnorePkg = <package> [package] ...::\n"
@@ -2513,7 +2744,8 @@ msgstr ""
 "Báo pacman-g2 nên bỏ qua bất cứ bản cập nhật nào cho gói này khi thực hiện một quá trình cập nhật hệ thống (--sysupgrade).\n"
 
 # type: Plain text
-#: pacman-g2.txt:342
+#. type: Plain text
+#: pacman-g2.txt:343
 #, no-wrap
 msgid ""
 "UpgradeDelay = <number>::\n"
@@ -2524,7 +2756,8 @@ msgstr ""
 "\tNâng cấp chỉ những gói đã có trong ít nhất số ngày này khi thực hiện một quá trình cập nhật hệ thống (--sysupgrade).\n"
 
 # type: Plain text
-#: pacman-g2.txt:346
+#. type: Plain text
+#: pacman-g2.txt:347
 #, no-wrap
 msgid ""
 "OldDelay = <number>::\n"
@@ -2535,7 +2768,8 @@ msgstr ""
 "\tCảnh báo khi cài đặt gói mà cơ sở dữ liệu đồng bộ cục bộ (mà cũng có thể được nâng cấp dùng tuỳ chọn « -Sy ») vẫn chưa được cập nhật trong vòng số ngày này.\n"
 
 # type: Plain text
-#: pacman-g2.txt:350
+#. type: Plain text
+#: pacman-g2.txt:351
 #, no-wrap
 msgid ""
 "MaxTries = <number>::\n"
@@ -2546,7 +2780,8 @@ msgstr ""
 "\tThử tải về gói số lần này. Có ích trong trường hợp có kết nối Internet sai thì gói bị hỏng trong khi tải về.\n"
 
 # type: Plain text
-#: pacman-g2.txt:354
+#. type: Plain text
+#: pacman-g2.txt:355
 #, no-wrap
 msgid ""
 "Include = <path>::\n"
@@ -2557,7 +2792,8 @@ msgstr ""
 "\tBao gồm một tập tin cấu hình bổ sung. Tập tin cấu hình này có thể chứa các kho gói hay tuỳ chọn cấu hình chung.\n"
 
 # type: Plain text
-#: pacman-g2.txt:357
+#. type: Plain text
+#: pacman-g2.txt:358
 #, no-wrap
 msgid ""
 "ProxyServer = <host|ip>::\n"
@@ -2567,7 +2803,8 @@ msgstr ""
 "\tBật tuỳ chọn này thì pacman-g2 sử dụng máy phục vụ ủy nhiệm này cho mọi việc truyền loại FTP hay HTTP.\n"
 
 # type: Plain text
-#: pacman-g2.txt:361
+#. type: Plain text
+#: pacman-g2.txt:362
 #, no-wrap
 msgid ""
 "ProxyPort = port::\n"
@@ -2578,7 +2815,8 @@ msgstr ""
 "\tBật tuỳ chọn này thì pacman-g2 sử dụng cổng ủy nhiệm này cho mọi việc truyền loại FTP hay HTTP (cổng mặc định: 80).\n"
 
 # type: Plain text
-#: pacman-g2.txt:367
+#. type: Plain text
+#: pacman-g2.txt:368
 #, no-wrap
 msgid ""
 "XferCommand = /path/to/command %u::\n"
@@ -2591,7 +2829,8 @@ msgstr ""
 "\tBật tuỳ chọn này thì pacman-g2 sử dụng chương trình bên ngoài này để tải về mọi tập tin từ xa. Mọi thể hiện %u sẽ bị thay thế bằng địa chỉ URL cần tải về. Thể hiện %o (nếu có) bị thay thế bằng tên tập tin cục bộ, cộng với phần mở rộng « .part » (phần) mà cho phép công cụ tải về như wget thực hiện đúng việc tiếp tục lại quá trình tải về tập tin.\n"
 
 # type: Plain text
-#: pacman-g2.txt:371
+#. type: Plain text
+#: pacman-g2.txt:372
 #, no-wrap
 msgid ""
 "\tThis option is useful for users who experience problems with pacman-g2's\n"
@@ -2600,7 +2839,8 @@ msgid ""
 msgstr "\tTùy chọn này có ích cho người dùng gặp vấn đề trong khả năng hỗ trợ HTTP/FTP dựng sẵn của pacman-g2, hoặc cần sử dụng khả năng hỗ trợ ủy nhiệm cấp cao hơn mà có sẵn với tiện ích như curl.\n"
 
 # type: Plain text
-#: pacman-g2.txt:374
+#. type: Plain text
+#: pacman-g2.txt:375
 #, no-wrap
 msgid ""
 "NoPassiveFtp::\n"
@@ -2610,7 +2850,8 @@ msgstr ""
 "\tTắt kết nối FTP bị động (passive FTP) khi tải về gói. Cũng được biết như là Chế độ Hoạt động (Active Mode).\n"
 
 # type: Plain text
-#: pacman-g2.txt:378
+#. type: Plain text
+#: pacman-g2.txt:379
 #, no-wrap
 msgid ""
 "NoUpgrade = <file> [file] ...::\n"
@@ -2621,13 +2862,15 @@ msgstr ""
 "\tMọi tập tin ở đây đều không bao giờ bị sửa đổi trong khi thực hiện quá trình cài đặt hay nâng cấp các gói.\n"
 
 # type: Plain text
-#: pacman-g2.txt:380
+#. type: Plain text
+#: pacman-g2.txt:381
 #, no-wrap
 msgid "\tNOTE: Do not include the leading slash when specifying files.\n"
 msgstr "\tGHI CHÚ : không nên bao gồm dấu sổ chéo đi trước khi ghi rõ đường dẫn đến tập tin.\n"
 
 # type: Plain text
-#: pacman-g2.txt:387
+#. type: Plain text
+#: pacman-g2.txt:388
 #, no-wrap
 msgid ""
 "NoExtract = <file> [file] ...::\n"
@@ -2641,7 +2884,8 @@ msgstr ""
 "\tMọi tập tin ở đây thì không bị giải nén từ gói vào hệ thống tập tin. Có ích khi bạn không muốn cài đặt toàn bộ gói. Ví dụ, nếu gốc httpd dùng tập tin chỉ mục « index.php », người dùng cũng không muốn giải nén tập tin « index.html » từ gói apache.\n"
 
 # type: Plain text
-#: pacman-g2.txt:391
+#. type: Plain text
+#: pacman-g2.txt:392
 #, no-wrap
 msgid ""
 "UseSyslog::\n"
@@ -2652,7 +2896,8 @@ msgstr ""
 "\tGhi lưu các thông điệp hành vi qua công cụ theo dõi hệ thống *syslog (2). Nó sẽ chèn các mục nhập theo dõi pacman-g2 vào « /var/log/messages » hay tương đương.\n"
 
 # type: Plain text
-#: pacman-g2.txt:394
+#. type: Plain text
+#: pacman-g2.txt:395
 #, no-wrap
 msgid ""
 "LogFile = /path/to/file::\n"
@@ -2662,12 +2907,14 @@ msgstr ""
 "\tGhi lưu các hành vi một cách trực tiếp vào một tập tin, thường là «  /var/log/pacman-g2.log ».\n"
 
 # type: Plain text
-#: pacman-g2.txt:396
+#. type: Plain text
+#: pacman-g2.txt:397
 msgid "== CONFIG: REPOSITORIES"
 msgstr "== CẤU HÌNH: KHO GÓI"
 
 # type: Plain text
-#: pacman-g2.txt:403
+#. type: Plain text
+#: pacman-g2.txt:404
 msgid ""
 "Each repository section defines a section name and at least one location "
 "where the packages can be found. The section name is defined by the string "
@@ -2686,12 +2933,14 @@ msgstr ""
 "dẫn đầy đủ với tiền tố « file:// » như hiển thị bên trên."
 
 # type: Plain text
-#: pacman-g2.txt:405
+#. type: Plain text
+#: pacman-g2.txt:406
 msgid "== USING YOUR OWN REPOSITORY"
 msgstr "== SỬ DỤNG KHO GÓI CỦA MÌNH"
 
 # type: Plain text
-#: pacman-g2.txt:410
+#. type: Plain text
+#: pacman-g2.txt:411
 msgid ""
 "Let's say you have a bunch of custom packages in /home/pkgs and their "
 "respective FrugalBuild files are all in /var/fst/local. All you need to do "
@@ -2704,7 +2953,8 @@ msgstr ""
 "g2 tìm được khi được chạy với tuỳ chọn làm tươi (--refresh)."
 
 # type: Plain text
-#: pacman-g2.txt:413
+#. type: Plain text
+#: pacman-g2.txt:414
 #, no-wrap
 msgid ""
 "# gensync /var/fst/local /home/pkgs/custom.fdb\n"
@@ -2714,7 +2964,8 @@ msgstr ""
 "----\n"
 
 # type: Plain text
-#: pacman-g2.txt:423
+#. type: Plain text
+#: pacman-g2.txt:424
 msgid ""
 "The above command will read all FrugalBuild files in /var/fst/local and "
 "generate a compressed database called /home/pkgs/custom.fdb. Note that the "
@@ -2735,12 +2986,14 @@ msgstr ""
 "làm tươi (--refresh) của pacman-g2."
 
 # type: Plain text
-#: pacman-g2.txt:425
+#. type: Plain text
+#: pacman-g2.txt:426
 msgid "== HOOKS"
 msgstr "== HÀM MÓC"
 
 # type: Plain text
-#: pacman-g2.txt:429
+#. type: Plain text
+#: pacman-g2.txt:430
 msgid ""
 "pacman-g2 will attempt to execute hooks in the /etc/pacman-g2/hooks "
 "directory.  The hooks are like package scriptlets: each file can provide "
@@ -2752,7 +3005,8 @@ msgstr ""
 "đây:"
 
 # type: Plain text
-#: pacman-g2.txt:435
+#. type: Plain text
+#: pacman-g2.txt:436
 #, no-wrap
 msgid ""
 "pre_sysupgrade::\n"
@@ -2767,7 +3021,8 @@ msgstr ""
 "\tHàm móc được thực hiện sau khi chạy thành công « pacman-g2 -S --sysupgrade ».\n"
 
 # type: Plain text
-#: pacman-g2.txt:439
+#. type: Plain text
+#: pacman-g2.txt:440
 #, no-wrap
 msgid "*makepkg*(8)\n"
 msgstr "*makepkg*(8)\n"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-15 01:54+0100\n"
+"POT-Creation-Date: 2010-02-05 02:02+0100\n"
 "PO-Revision-Date: 2008-12-05 11:12+0200\n"
 "Last-Translator: Tutku Dalmaz <tutkudalmaz@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,9 +32,9 @@ msgid "ftp://ftp5."
 msgstr "ftp://ftp5."
 
 #: ../src/plugins/configsource.c:102 ../src/plugins/dolangsh.c:58
-#: ../src/plugins/formatdisk.c:256 ../src/plugins/formatdisk.c:409
+#: ../src/plugins/formatdisk.c:267 ../src/plugins/formatdisk.c:467
 #: ../src/plugins/layout.c:146 ../src/plugins/loadsource.c:88
-#: ../src/plugins/select.c:334 ../src/util.c:305
+#: ../src/util.c:305
 msgid "Could not open output file for writing"
 msgstr "Çıktı dosyası yazmak için açılamadı"
 
@@ -53,7 +53,7 @@ msgstr ""
 "Burada paket indirme hızınızı arttırmak için yakınınızdaki bir ya da daha "
 "fazla yansıyı seçebilirsiniz."
 
-#: ../src/plugins/configsource.c:166 ../src/plugins/formatdisk.c:580
+#: ../src/plugins/configsource.c:166 ../src/plugins/formatdisk.c:655
 #: ../src/plugins/partdisk.c:197
 msgid "Continue"
 msgstr "Devam"
@@ -70,12 +70,23 @@ msgstr ""
 "Şuan özel bir yansı belirleyebilirsiniz (örn. LAN) böylece paketleri daha "
 "hızlı indirebilirsiniz. Birçok durumda \"Devam\" burada yeterlidir."
 
-#: ../src/plugins/configsource.c:196 ../src/plugins/select.c:410
-#: ../src/plugins/select.c:420 ../src/plugins/select.c:450
+#: ../src/plugins/configsource.c:195
+msgid "Failed to configure the network"
+msgstr ""
+
+#: ../src/plugins/configsource.c:196
+msgid ""
+"Failed to write the network configuration files. Please try again, "
+"especially pay attention to give a valid IP address and/or netmask if you "
+"are using a static IP configuration."
+msgstr ""
+
+#: ../src/plugins/configsource.c:203 ../src/plugins/select.c:422
+#: ../src/plugins/select.c:438 ../src/plugins/select.c:477
 msgid "Please wait"
 msgstr "Lütfen bekleyiniz"
 
-#: ../src/plugins/configsource.c:196
+#: ../src/plugins/configsource.c:203
 msgid "Configuring the network interface..."
 msgstr "Ağ arayüzleri yapılandırılıyor..."
 
@@ -99,25 +110,25 @@ msgstr "Takas bölümleri ayarlanıyor"
 msgid "Please select which swap partitions you want Frugalware to use:"
 msgstr "Lütfen Frugalware'in kullanacağı takas bölümlerini seçiniz:"
 
-#: ../src/plugins/formatdisk.c:173 ../src/plugins/formatdisk.c:196
+#: ../src/plugins/formatdisk.c:176 ../src/plugins/formatdisk.c:204
 msgid "Quick format with no bad block checking"
 msgstr "Bölüm denetimi yapmadan hızlı biçimlendir"
 
-#: ../src/plugins/formatdisk.c:174 ../src/plugins/formatdisk.c:197
+#: ../src/plugins/formatdisk.c:177 ../src/plugins/formatdisk.c:205
 msgid "Slow format that checks for bad blocks"
 msgstr "Bölüm denetimi yaparak yavaş biçimlendir"
 
-#: ../src/plugins/formatdisk.c:177 ../src/plugins/formatdisk.c:201
-#: ../src/plugins/formatdisk.c:232
+#: ../src/plugins/formatdisk.c:180 ../src/plugins/formatdisk.c:209
+#: ../src/plugins/formatdisk.c:243
 msgid "Formatting partitions"
 msgstr "Bölümler biçimlendiriliyor"
 
-#: ../src/plugins/formatdisk.c:180 ../src/plugins/formatdisk.c:204
+#: ../src/plugins/formatdisk.c:183 ../src/plugins/formatdisk.c:212
 #, c-format
 msgid "Format %s"
 msgstr "%s Biçimlendir"
 
-#: ../src/plugins/formatdisk.c:181 ../src/plugins/formatdisk.c:205
+#: ../src/plugins/formatdisk.c:184 ../src/plugins/formatdisk.c:213
 #, c-format
 msgid ""
 "If %s has not been formatted, you should format it.\n"
@@ -128,60 +139,65 @@ msgstr ""
 "NOT: Bu %s üzerindeki tüm verileri silecektir.Bu bölümü biçimlendirmek "
 "istiyor musunuz?"
 
-#: ../src/plugins/formatdisk.c:198
+#: ../src/plugins/formatdisk.c:206
 msgid "Do not format, just mount the partition"
 msgstr "Biçimlendirme, sadece bölümü bağla"
 
-#: ../src/plugins/formatdisk.c:224
+#: ../src/plugins/formatdisk.c:234
 msgid "Standard Linux ext2fs filesystem"
 msgstr "Standart Linux ext2fs dosya sistemi"
 
-#: ../src/plugins/formatdisk.c:225
-msgid "Journalising version of the ext2fs filesystem"
+#: ../src/plugins/formatdisk.c:235
+#, fuzzy
+msgid "Journalising version of the ext2 filesystem"
 msgstr "ext2fs'in kayıtlı sürümü olan dosya sistemi"
 
-#: ../src/plugins/formatdisk.c:227
+#: ../src/plugins/formatdisk.c:236
+msgid "The evolution of the ext3 filesystem (EXPERIMENTAL!)"
+msgstr ""
+
+#: ../src/plugins/formatdisk.c:238
 msgid "Hans Reiser's journalising filesystem"
 msgstr "Hans Reiser'in kayıtlı dosya sistemi"
 
-#: ../src/plugins/formatdisk.c:229
+#: ../src/plugins/formatdisk.c:240
 msgid "SGI's journalising filesystem"
 msgstr "SGI'nın kayıtlı dosya sistemi"
 
-#: ../src/plugins/formatdisk.c:236
+#: ../src/plugins/formatdisk.c:247
 #, c-format
 msgid "Selecting filesystem for %s"
 msgstr "%s için dosya sistemi seçiniz"
 
-#: ../src/plugins/formatdisk.c:237
+#: ../src/plugins/formatdisk.c:248
 #, c-format
 msgid "Please select the type of filesystem to use for %s."
 msgstr "Lütfen %s için kullanacağını dosya sistemi tipini seçiniz"
 
-#: ../src/plugins/formatdisk.c:280 ../src/plugins/formatdisk.c:287
-msgid "Formatting swap partition"
-msgstr "Takas bölümü biçimlendiriliyor"
-
-#: ../src/plugins/formatdisk.c:281
+#: ../src/plugins/formatdisk.c:293
 #, c-format
 msgid "Formatting %s as a swap partition"
 msgstr "%s takas bölümü olarak biçimlendiriliyor"
 
-#: ../src/plugins/formatdisk.c:288
+#: ../src/plugins/formatdisk.c:295 ../src/plugins/formatdisk.c:305
+msgid "Formatting swap partition"
+msgstr "Takas bölümü biçimlendiriliyor"
+
+#: ../src/plugins/formatdisk.c:303
 #, c-format
 msgid "Formatting %s as a swap partition and checking for bad blocks"
 msgstr ""
 "%s bölümü takas bölümü olarak biçimlendiriliyor ve bölüm denetimi yapılıyor"
 
-#: ../src/plugins/formatdisk.c:312
+#: ../src/plugins/formatdisk.c:333
 msgid "Setting up the root partition"
 msgstr "Kök bölümü ayarlanıyor"
 
-#: ../src/plugins/formatdisk.c:314
+#: ../src/plugins/formatdisk.c:335
 msgid "Select the Linux installation partition"
 msgstr "Linux kurulum bölümünü seçiniz"
 
-#: ../src/plugins/formatdisk.c:315
+#: ../src/plugins/formatdisk.c:336
 msgid ""
 "Please select a partition from the following list to use for your root (/) "
 "partition. The following ones are available:"
@@ -189,44 +205,44 @@ msgstr ""
 "Lütfen aşağıdaki listeden kök (/) dizini olarak kullanmak istediğiniz bölümü "
 "seçiniz. Şu bölümler seçim için uygundur:"
 
-#: ../src/plugins/formatdisk.c:328
+#: ../src/plugins/formatdisk.c:351
 msgid "Formatting"
 msgstr "Biçimlendiriliyor"
 
-#: ../src/plugins/formatdisk.c:329
+#: ../src/plugins/formatdisk.c:352
 #, c-format
 msgid "Creating %s filesystem on %s and checking for bad blocks"
 msgstr "%s üzerinde %s dosya sistemi oluşturuluyor ve bölümler denetleniyor"
 
-#: ../src/plugins/formatdisk.c:330
+#: ../src/plugins/formatdisk.c:353
 #, c-format
 msgid "Creating %s filesystem on %s"
 msgstr "%s üzerinde %s dosya sistemi oluşturuluyor"
 
-#: ../src/plugins/formatdisk.c:433
+#: ../src/plugins/formatdisk.c:498
 #, c-format
 msgid "Select mount point for %s"
 msgstr "%s için bağlama noktasını seçiniz"
 
-#: ../src/plugins/formatdisk.c:457 ../src/plugins/formatdisk.c:600
+#: ../src/plugins/formatdisk.c:522 ../src/plugins/formatdisk.c:675
 msgid "(in use)"
 msgstr "(kullanımda)"
 
-#: ../src/plugins/formatdisk.c:465
+#: ../src/plugins/formatdisk.c:530
 #, c-format
 msgid "%s on %s/\t%s"
 msgstr "%s/\t%s üzerinde %s"
 
 #. non-root partitions
-#: ../src/plugins/formatdisk.c:573
+#: ../src/plugins/formatdisk.c:648
 msgid "Selecting other partitions"
 msgstr "Diğer bölümleri seçiniz"
 
-#: ../src/plugins/formatdisk.c:584
+#: ../src/plugins/formatdisk.c:659
 msgid "Select other Linux partitions for /etc/fstab"
 msgstr "/etc/fstab için diğer Linux bölümlerini seçiniz"
 
-#: ../src/plugins/formatdisk.c:585
+#: ../src/plugins/formatdisk.c:660
 msgid ""
 "You may use your other partitions to distribute your Linux system across "
 "more than one partition. Currently, you have only mounted your / partition. "
@@ -307,23 +323,23 @@ msgstr ""
 msgid "Loading the installation source"
 msgstr "Kurulum kaynağı yükleniyor"
 
-#: ../src/plugins/loadsource.c:156
+#: ../src/plugins/loadsource.c:158
 msgid "Selecting source media"
 msgstr "Kaynak ortamı seçiniz"
 
-#: ../src/plugins/loadsource.c:159
+#: ../src/plugins/loadsource.c:161
 msgid "Scanning"
 msgstr "Taranıyor"
 
-#: ../src/plugins/loadsource.c:159
+#: ../src/plugins/loadsource.c:161
 msgid "Scanning for a CD/DVD drive containing a Frugalware install disc..."
 msgstr "Frugalware kurulum diski içeren CD/DVD sürücüsü taranıyor..."
 
-#: ../src/plugins/loadsource.c:175
+#: ../src/plugins/loadsource.c:177
 msgid "CD/DVD drive found"
 msgstr "CD/DVD sürücü bulundu"
 
-#: ../src/plugins/loadsource.c:175
+#: ../src/plugins/loadsource.c:177
 #, c-format
 msgid "A Frugalware install disc was found in device /dev/%s."
 msgstr "/dev/%s içerisinde Frugalware kurulum diski bulundu"
@@ -417,24 +433,24 @@ msgstr ""
 "hoşlanacağınızı umuyoruz. Lütfen kurulum diskini sürücüden çıkartıp sistemi "
 "yeniden başlatmak için ENTER tuşuna basın."
 
-#: ../src/plugins/select.c:53 ../src/plugins/select.c:279
-#: ../src/plugins/select.c:407
+#: ../src/plugins/select.c:54 ../src/plugins/select.c:282
+#: ../src/plugins/select.c:419
 msgid "Selecting packages"
 msgstr "Paketler seçiliyor"
 
-#: ../src/plugins/select.c:261
+#: ../src/plugins/select.c:262
 msgid "Selecting categories"
 msgstr "Kategoriler seçiliyor"
 
-#: ../src/plugins/select.c:262
+#: ../src/plugins/select.c:263
 msgid "Please select which categories to install:"
 msgstr "Lütfen kurulacak kategorileri seçin:"
 
-#: ../src/plugins/select.c:292
+#: ../src/plugins/select.c:296
 msgid "Use expert menus?"
 msgstr "Uzman menüleri kullanılsın mı?"
 
-#: ../src/plugins/select.c:293
+#: ../src/plugins/select.c:297
 msgid ""
 "If you like, you may select your packages from expert menus. Where the "
 "normal menu shows a choice like 'C compiler system', the expert menus show "
@@ -453,40 +469,40 @@ msgstr ""
 "kullanmak için \"HAYIR\"ı seçin. Her paketi elle seçebildiğiniz uzman "
 "menüsünü kullanmak için de \"EVET\"i seçin."
 
-#: ../src/plugins/select.c:348 ../src/plugins/select.c:356
-#: ../src/plugins/select.c:370 ../src/plugins/select.c:374
+#: ../src/plugins/select.c:360 ../src/plugins/select.c:368
+#: ../src/plugins/select.c:382 ../src/plugins/select.c:386
 msgid "Error"
 msgstr "Hata"
 
-#: ../src/plugins/select.c:348
+#: ../src/plugins/select.c:360
 #, c-format
 msgid "Failed to parse pacman-g2 configuration file (%s)"
 msgstr "(%s) pacman-g2 yapılandırma dosyası ayrıştırılmasında hata"
 
-#: ../src/plugins/select.c:356
+#: ../src/plugins/select.c:368
 #, c-format
 msgid "Could not register '%s' database (%s)"
 msgstr "(%s)'e '%s' veritabanı kaydedilemedi."
 
-#: ../src/plugins/select.c:370
+#: ../src/plugins/select.c:382
 #, c-format
 msgid "Failed to synchronize %s"
 msgstr "%s senkronlamasında hata"
 
-#: ../src/plugins/select.c:374
+#: ../src/plugins/select.c:386
 #, c-format
 msgid "Failed to update %s (%s)"
 msgstr "(%s) %s güncellemesinde hata"
 
-#: ../src/plugins/select.c:410
+#: ../src/plugins/select.c:422
 msgid "Searching for categories..."
 msgstr "Kategoriler aranıyor..."
 
-#: ../src/plugins/select.c:420
+#: ../src/plugins/select.c:438
 msgid "Searching for packages..."
 msgstr "Paketler aranıyor..."
 
-#: ../src/plugins/select.c:450
+#: ../src/plugins/select.c:477
 msgid "Searching for missing dependencies..."
 msgstr "Eksik bağımlılıklar aranıyor..."
 
@@ -569,27 +585,38 @@ msgstr "%s için parola belirleme adımını atlamak istediğinizden emin misini
 msgid "Ignore setting password"
 msgstr "Parola ayarlamasını iptal et"
 
-#: ../src/plugins/postconf.c:153
+#: ../src/plugins/postconf.c:155
 msgid "Enter login"
 msgstr "İsim girin"
 
-#: ../src/plugins/postconf.c:153
+#: ../src/plugins/postconf.c:155
 msgid "Please enter the login name you should like to create:"
 msgstr "Lütfen oluşturmak istediğin kayıt ismini giriniz:"
 
-#: ../src/plugins/postconf.c:156
+#: ../src/plugins/postconf.c:158
 msgid "Enter full name"
 msgstr "Tam adınızı giriniz"
 
-#: ../src/plugins/postconf.c:156
+#: ../src/plugins/postconf.c:158
 msgid "Please enter the full name of the user you would like to create:"
 msgstr "Lütfen oluşturmak istediğiniz kullanıcının tam adını giriniz:"
 
-#: ../src/plugins/postconf.c:201
+#: ../src/plugins/postconf.c:173
+#, c-format
+msgid ""
+"'/home/%s' already exists! Please change the home directory path to a non-"
+"existing directory:"
+msgstr ""
+
+#: ../src/plugins/postconf.c:175
+msgid "Enter home directory"
+msgstr ""
+
+#: ../src/plugins/postconf.c:217
 msgid "No normal user account detected"
 msgstr "Normal kullanıcı hesabı algılanmadı"
 
-#: ../src/plugins/postconf.c:202
+#: ../src/plugins/postconf.c:218
 msgid ""
 "There is currently no non-root user account configured. It is strongly "
 "recommended to create one. Would you like to create a normal user account "
@@ -598,15 +625,15 @@ msgstr ""
 "Yönetici olmayan kullanıcı ayarlanmamış. Bir tane ayarlamanız önemle tavsiye "
 "olunur. Normal kullanıcı hesabı oluşturmak istiyor musunuz?"
 
-#: ../src/plugins/postconf.c:230
+#: ../src/plugins/postconf.c:246
 msgid "Post-install configuration"
 msgstr "Kurulum sonrası yapılandırması"
 
-#: ../src/plugins/postconf.c:260
+#: ../src/plugins/postconf.c:273
 msgid "Configuring kernel modules"
 msgstr "Kernel modülleri yapılandırılıyor"
 
-#: ../src/plugins/postconf.c:261
+#: ../src/plugins/postconf.c:274
 msgid "Updating module dependencies..."
 msgstr "Modül bağımlılıkları güncelleniyor..."
 
@@ -627,8 +654,9 @@ msgid "Installation error"
 msgstr "Kurulum hatası"
 
 #: ../src/util.c:167
+#, fuzzy
 msgid ""
-"Errors occured while installing selected packages. It is recommended to "
+"Errors occurred while installing selected packages. It is recommended to "
 "abort the installation, however you may want to ignore this problem. Do you "
 "want to leave the installer?"
 msgstr ""
@@ -644,15 +672,15 @@ msgstr "Kurulumdan çık"
 msgid "Are you sure you want to exit from the installer?"
 msgstr "Kurulumdan çıkmak istediğinizden emin misiniz?"
 
-#: ../src/util.c:631
+#: ../src/util.c:634
 msgid "Oops"
 msgstr "Oops"
 
-#: ../src/util.c:633
+#: ../src/util.c:636
 msgid "A problem has occurred"
 msgstr "Bir sorun oluştu"
 
-#: ../src/util.c:633
+#: ../src/util.c:636
 msgid ""
 "Internal error: Segmentation fault. Please report this issue to http://bugs."
 "frugalware.org"
@@ -660,15 +688,15 @@ msgstr ""
 "İçsel hata: Parçalama arızası. Lütfen bu hatayı http://bugs.frugalware.org "
 "adresine raporlayın"
 
-#: ../src/util.c:659
+#: ../src/util.c:662
 msgid "Selecting a task"
 msgstr "Görev seçiniz"
 
-#: ../src/util.c:667
+#: ../src/util.c:670
 msgid "Select task to continue with"
 msgstr "Devam etmek için görev seçiniz"
 
-#: ../src/util.c:668
+#: ../src/util.c:671
 msgid ""
 "You selected to change the way normally Frugalware is installed. Here are "
 "the list of tasks you can continue with:"

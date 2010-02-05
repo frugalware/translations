@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-12-26 05:05+0100\n"
+"POT-Creation-Date: 2010-02-05 02:02+0100\n"
 "PO-Revision-Date: 2007-08-07 23:47+0200\n"
 "Last-Translator: Serge Vinogradov <boogie_byte@mail.ru>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -200,6 +200,7 @@ msgstr "Что делают разработчики?"
 
 # Uh... "square game"? Untranslatable, I think. 
 #: ../about.php:57
+#, fuzzy
 msgid ""
 "In short, what they want to, if they play a square game. They may maintain "
 "packages: building them if a newer version is available and update the "
@@ -208,7 +209,10 @@ msgid ""
 "write articles about Frugalware, or anything else in connection with the "
 "Frugalware community. If you only want to help us, but you don't want to "
 "hack, you may help in translating Frugalware to your or other language. And, "
-"of course, we happily accept <a href=\"donations.php\">donations</a> :)"
+"of course, we happily accept <a href=\"/donations\">donations</a>. :) More "
+"on this <a href=\"/docs/getting-"
+"involved#_further_options_for_those_who_have_developer_account_packagers_coders"
+"\">here</a>."
 msgstr ""
 "Если вкратце, то они могут делать, что хотят. Они могут сопровождать пакеты: "
 "собирать их, если вышла новая версия ПО и обновлять сценарии FrugalBuild для "
@@ -247,10 +251,11 @@ msgid "Do you plan to release a live cd?"
 msgstr "Вы планируете выпустить Live-CD?"
 
 #: ../about.php:63
+#, fuzzy
 msgid ""
 "Well, we have already a live cd, called FwLive. Currently it supports only "
-"i686, but an x86_64 version is also under development. You can find it <a "
-"href=\"http://fwlive.frugalware.hu\">here</a>."
+"i686, but an x86_64 version is also under development. You can find it in "
+"the standard release directories."
 msgstr ""
 "Ну, у нас уже есть Live-CD, он называется FwLive. На данный момент он "
 "поддерживает только архитектуру i686, однако версия под x86_64 уже находится "
@@ -276,7 +281,8 @@ msgid "What about Asian languages?"
 msgstr "А что с азиатскими языками?"
 
 #: ../about.php:67
-msgid "Frugalware does not support Asian languages currently."
+#, fuzzy
+msgid "Frugalware does not currently support languages written in ideographs."
 msgstr "Frugalware на данный момент не поддерживает азиатских языков."
 
 #: ../about.php:68
@@ -327,7 +333,7 @@ msgstr "Дата"
 msgid "dot"
 msgstr ""
 
-#: ../authors.php:68 ../config.inc.php:81
+#: ../authors.php:68 ../config.inc.php:83
 msgid "Authors"
 msgstr ""
 
@@ -364,7 +370,7 @@ msgid "Frugalware Linux Author list"
 msgstr "Frugalware в СМИ"
 
 #. $menucontent = '<a class="menu" href="' . $fwng_root . '">' . gettext('News') . "</a> &middot; \n";
-#: ../config.inc.php:44 ../rss.php:184
+#: ../config.inc.php:44 ../rss.php:186
 msgid "News"
 msgstr "Новости"
 
@@ -372,7 +378,7 @@ msgstr "Новости"
 msgid "Announcements"
 msgstr "Объявления"
 
-#: ../config.inc.php:47 ../rss.php:191
+#: ../config.inc.php:47 ../rss.php:193
 msgid "Security announcements"
 msgstr "Объявления о безопасности"
 
@@ -429,55 +435,65 @@ msgid "Map"
 msgstr "Карта"
 
 #: ../config.inc.php:65
-msgid "Last.fm group"
+#, fuzzy
+msgid "Libre.fm group"
 msgstr "Группа Last.fm"
 
 #: ../config.inc.php:66
 msgid "National sites"
 msgstr "Национальные сайты"
 
+#: ../config.inc.php:67
+msgid "Artwork"
+msgstr ""
+
 #: ../config.inc.php:68
+msgid "Identi.ca group"
+msgstr ""
+
+#: ../config.inc.php:70
 msgid "Download"
 msgstr "Скачать"
 
-#: ../config.inc.php:70
+#: ../config.inc.php:72
 msgid "ISO images"
 msgstr "ISO-образы"
 
-#: ../config.inc.php:71
+#: ../config.inc.php:73
 msgid "Packages"
 msgstr "Пакеты"
 
-#: ../config.inc.php:73
+#: ../config.inc.php:75
 msgid "Development"
 msgstr "Разработка"
 
-#: ../config.inc.php:75
+#: ../config.inc.php:77
 msgid "Roadmap"
 msgstr "План разработки"
 
-#: ../config.inc.php:76
+#: ../config.inc.php:78
 msgid "Git repository"
 msgstr "Репозиторий Git"
 
-#: ../config.inc.php:77
+#: ../config.inc.php:79
 msgid "Bug Tracker"
 msgstr "Трекер ошибок"
 
-#: ../config.inc.php:78
+#: ../config.inc.php:80
 msgid "Translation portal"
 msgstr "Портал переводов"
 
-#: ../config.inc.php:79
+#: ../config.inc.php:81
 msgid "Blogs"
 msgstr "Блоги"
 
-#: ../config.inc.php:80 ../donations.php:50 ../header.php:54
+#: ../config.inc.php:82 ../donations.php:50 ../header.php:55
 msgid "Donations"
 msgstr "Пожертвования"
 
-#: ../config.inc.php:92 ../config.inc.php:94 ../config.inc.php:96
-#: ../config.inc.php:98 ../config.inc.php:100 ../config.inc.php:102
+#: ../config.inc.php:94 ../config.inc.php:96 ../config.inc.php:98
+#: ../config.inc.php:100 ../config.inc.php:102 ../config.inc.php:104
+#: ../config.inc.php:106 ../config.inc.php:108
 msgid "Change language"
 msgstr "Сменить язык"
 
@@ -506,6 +522,7 @@ msgid "View online documentation (development version)"
 msgstr "Просмотр онлайн-документации (разрабатываемая версия)"
 
 #: ../donations.php:38
+#, fuzzy
 msgid ""
 "<div align=\"left\">Donations are a great way to show your appreciation\n"
 "and support for Frugalware Linux. On this page we list the donations we "
@@ -522,7 +539,7 @@ msgid ""
 "list, or if you do not wish to subscribe, send a mail directly to "
 "vmiklos_at_frugalware_dot_org.\n"
 "If you wish to donate something to an individual developer, see the <a href="
-"\"authors.php\">authors</a>\n"
+"\"/authors\">authors</a>\n"
 "page and send the developer a mail. You can also use the PayPal donate link "
 "on the side of the page\n"
 "if you wish to donate money.</div>"
@@ -543,27 +560,44 @@ msgstr ""
 "же вы можете использовать кнопку пожертвований PayPal сбоку страницы, если "
 "вы желаете пожертвовать деньги.</div>"
 
-#: ../donations.php:77
+#: ../donations.php:54
+msgid "Advertisers"
+msgstr ""
+
+#: ../donations.php:76
 msgid "The Frugalware Team"
 msgstr "Команда Frugalware"
 
-#: ../header.php:52
+#: ../download.php:88
+#, fuzzy
+msgid "Archive"
+msgstr "Архитектура:"
+
+#: ../download.php:88
+msgid ""
+"Unfortunately due our limited resources we cannot store our old stable "
+"versions, they are being removed shortly after a new official stable "
+"release. But if you are interested in our old stable versions, ask IroNiQ on "
+"#frugalware @freenode or ask in email on one of our lists."
+msgstr ""
+
+#: ../header.php:53
 msgid "Releases"
 msgstr "Выпуски"
 
-#: ../header.php:55
+#: ../header.php:56
 msgid "Recent updates"
 msgstr "Последние обновления"
 
-#: ../header.php:56
+#: ../header.php:57
 msgid "Languages"
 msgstr "Языки"
 
-#: ../header.php:57
+#: ../header.php:58
 msgid "Information"
 msgstr "Информация"
 
-#: ../header.php:58
+#: ../header.php:59
 msgid "Server information"
 msgstr "Информация о сервере"
 
@@ -586,7 +620,7 @@ msgstr ""
 msgid " edited this news on "
 msgstr " редактировал эту новость "
 
-#: ../index.php:107 ../index.php:120 ../security.php:82
+#: ../index.php:107 ../index.php:120 ../security.php:89
 msgid "Posted by"
 msgstr "Опубликовано"
 
@@ -637,17 +671,16 @@ msgstr "Логин"
 msgid "Login via web"
 msgstr "Войти через веб-интерфейс"
 
-#: ../irc.php:141
-msgid "Social diagram"
-msgstr "Социальный граф канала"
+#: ../irc.php:142
+msgid "Support channel logs"
+msgstr ""
 
-#: ../irc.php:173 ../irc.php:175
-msgid "Log of the channel: #frugalware"
-msgstr "Журнал канала #frugalware"
-
-#: ../irc.php:173
-msgid "Sorry, currently no log available"
-msgstr "Приносим извинения, на данный момент журнал не доступен"
+#: ../irc.php:142
+#, php-format
+msgid ""
+"Our support channels are logged and the logs are available <a href=\"%s"
+"\">here</a>."
+msgstr ""
 
 #: ../media.php:46
 msgid "Sorry, a media file has not been written yet."
@@ -675,7 +708,7 @@ msgstr "Заголовок"
 msgid "Where"
 msgstr "Размещение"
 
-#: ../media.php:78 ../security.php:81
+#: ../media.php:78 ../security.php:88
 msgid "Date"
 msgstr "Дата"
 
@@ -687,55 +720,70 @@ msgstr "Язык"
 msgid "Link"
 msgstr "Ссылка"
 
-#: ../packages.php:91
+#: ../packages.php:92
 msgid "Package search"
 msgstr "Поиск по пакетам"
 
-#: ../packages.php:92
+#: ../packages.php:93
 msgid "Search for:"
 msgstr "Искать:"
 
 #: ../packages.php:94
+#, fuzzy
+msgid "packages"
+msgstr "Пакеты"
+
+#: ../packages.php:95
 msgid "Search in description"
 msgstr "Искать в описании"
 
+#: ../packages.php:96
+#, fuzzy
+msgid "files"
+msgstr "Заголовок"
+
 #: ../packages.php:97
+#, fuzzy
+msgid "groups"
+msgstr "Группы:"
+
+#: ../packages.php:98
 msgid "Regular expression"
 msgstr "Регулярное выражение"
 
-#: ../packages.php:97
+#: ../packages.php:98
 #, fuzzy
 msgid "(regular expression)"
 msgstr "Регулярное выражение"
 
-#: ../packages.php:100 ../packages.php:331 ../packages.php:340
+#: ../packages.php:101 ../packages.php:341 ../packages.php:350
 msgid "Architecture:"
 msgstr "Архитектура:"
 
-#: ../packages.php:107 ../packages.php:331 ../packages.php:340
-#: ../packages.php:404
+#: ../packages.php:109 ../packages.php:341 ../packages.php:350
+#: ../packages.php:414
 msgid "Version:"
 msgstr "Версия: "
 
-#: ../packages.php:119
+#: ../packages.php:121
 msgid "Search"
 msgstr "Поиск"
 
-#: ../packages.php:119
+#: ../packages.php:121
 msgid "Reset"
 msgstr "Сброс"
 
-#: ../packages.php:120
+#: ../packages.php:122
 #, php-format
 msgid "Searching in %d binary and %d source-only packages."
 msgstr "Поиск в %d бинарных пакетах и %d пакетах с исходным кодом."
 
-#: ../packages.php:134
+#: ../packages.php:136
 msgid "You will need a Mozilla based browser to install a search plugin."
 msgstr ""
 "Вам нужен Mozilla-совместимый браузер, чтобы установить поисковый плагин."
 
-#: ../packages.php:138
+#: ../packages.php:140
 msgid ""
 "Click <a href=\"javascript:addEngine()\">here</a> to install the Firefox "
 "search plugin."
@@ -743,188 +791,188 @@ msgstr ""
 "Кликните <a href=\"javascript:addEngine()\">здесь</a>, чтобы установить "
 "поисковый плагин для Firefox."
 
-#: ../packages.php:191
+#: ../packages.php:193
 msgid "Error in the query, please change the searching conditions"
 msgstr ""
 
-#: ../packages.php:197
+#: ../packages.php:199
 msgid "No package found"
 msgstr "Нет найденых пакетов"
 
-#: ../packages.php:234
+#: ../packages.php:236
 msgid "No such file or directory"
 msgstr "Нет такого файла или директории"
 
-#: ../packages.php:273 ../packages.php:306
+#: ../packages.php:277 ../packages.php:313
 msgid "No such group"
 msgstr "Нет такой группы"
 
-#: ../packages.php:315
+#: ../packages.php:324
 msgid "Listing groups"
 msgstr "Список групп"
 
-#: ../packages.php:326
+#: ../packages.php:336
 msgid "Listing contents of group:"
 msgstr "Список содержимого группы"
 
-#: ../packages.php:328 ../packages.php:337
+#: ../packages.php:338 ../packages.php:347
 msgid "Search result for:"
 msgstr "Результаты поиска"
 
-#: ../packages.php:400
+#: ../packages.php:410
 msgid "Package information:"
 msgstr "Информация о пакете"
 
-#: ../packages.php:402
+#: ../packages.php:412
 msgid "Name:"
 msgstr "Имя:"
 
-#: ../packages.php:403
+#: ../packages.php:413
 msgid "Parent:"
 msgstr "Родительский пакет:"
 
-#: ../packages.php:406
+#: ../packages.php:416
 msgid "Documentation:"
 msgstr "Документация:"
 
-#: ../packages.php:408
+#: ../packages.php:418
 msgid "Buildlog:"
 msgstr "Журнал сборки:"
 
-#: ../packages.php:409
+#: ../packages.php:419
 msgid "Changelog:"
 msgstr "Журнал изменений:"
 
-#: ../packages.php:413
+#: ../packages.php:423
 msgid "Groups:"
 msgstr "Группы:"
 
-#: ../packages.php:418
+#: ../packages.php:428
 msgid "URL:"
 msgstr "URL:"
 
-#: ../packages.php:421
+#: ../packages.php:431
 msgid "Depends:"
 msgstr "Зависимости:"
 
-#: ../packages.php:428
+#: ../packages.php:438
 msgid "Exact reverse depends:"
 msgstr "Четкие обратные зависимости:"
 
-#: ../packages.php:435
+#: ../packages.php:445
 msgid "Other reverse depends:"
 msgstr "Другие обратные зависимости:"
 
-#: ../packages.php:442
+#: ../packages.php:452
 msgid "Conflicts:"
 msgstr "Конфликты:"
 
-#: ../packages.php:449
+#: ../packages.php:459
 msgid "Provides:"
 msgstr "Обеспечивает:"
 
-#: ../packages.php:454
+#: ../packages.php:464
 msgid "Compressed size:"
 msgstr "Сжатый размер:"
 
-#: ../packages.php:455
+#: ../packages.php:465
 msgid "Uncompressed size:"
 msgstr "Несжатый размер:"
 
-#: ../packages.php:456
+#: ../packages.php:466
 msgid "Arch:"
 msgstr "Архитектура:"
 
-#: ../packages.php:457
+#: ../packages.php:467
 msgid "Description:"
 msgstr "Описание:"
 
 #. FIXME: latin -> utf8 conversion hardwired
-#: ../packages.php:459
+#: ../packages.php:469
 msgid "Maintainer:"
 msgstr "Сопровождающий:"
 
-#: ../packages.php:460
+#: ../packages.php:470
 msgid "Uploaded by:"
 msgstr "Загружен:"
 
-#: ../packages.php:461
+#: ../packages.php:471
 msgid "Download:"
 msgstr "Скачать:"
 
-#: ../packages.php:466
+#: ../packages.php:476
 msgid "Forums:"
 msgstr "Форум:"
 
-#: ../packages.php:466
+#: ../packages.php:476
 msgid "Related posts"
 msgstr "Связанные посты"
 
-#: ../packages.php:467
+#: ../packages.php:477
 msgid "Wiki:"
 msgstr "Вики:"
 
-#: ../packages.php:467
+#: ../packages.php:477
 msgid "Related pages"
 msgstr "Связанные страницы"
 
-#: ../packages.php:468
+#: ../packages.php:478
 msgid "Bug Tracking System:"
 msgstr "Трекер ошибок:"
 
-#: ../packages.php:468
+#: ../packages.php:478
 msgid "Related open bugs"
 msgstr "Связанные нерешенные ошибки"
 
-#: ../packages.php:469
+#: ../packages.php:479
 msgid "Syndicate:"
 msgstr "Анонсы:"
 
-#: ../packages.php:469
+#: ../packages.php:479
 msgid "RSS"
 msgstr "RSS"
 
-#: ../packages.php:470
+#: ../packages.php:480
 msgid "SHA1 Sum:"
 msgstr "Контрольная сумма SHA1:"
 
-#: ../packages.php:471
+#: ../packages.php:481
 msgid "Frugalware version:"
 msgstr "Версия Frugalware:"
 
-#: ../packages.php:472
+#: ../packages.php:482
 msgid "Updated:"
 msgstr "Обновлен:"
 
-#: ../packages.php:477 ../packages.php:528 ../packages.php:577
-#: ../packages.php:635 ../packages.php:665
+#: ../packages.php:487 ../packages.php:538 ../packages.php:587
+#: ../packages.php:645 ../packages.php:675
 msgid "No such package!"
 msgstr "Нет такого пакета!"
 
-#: ../packages.php:513
+#: ../packages.php:523
 #, php-format
 msgid "Changelog for %s"
 msgstr "Журнал изменений %s"
 
-#: ../packages.php:524 ../packages.php:573
+#: ../packages.php:534 ../packages.php:583
 msgid "Sorry, currently no log available."
 msgstr "Приносим извинения, на данный момент журнал не доступен."
 
-#: ../packages.php:562
+#: ../packages.php:572
 #, php-format
 msgid "Build log for %s"
 msgstr "Журнал сборки %s"
 
-#: ../packages.php:611
+#: ../packages.php:621
 #, php-format
 msgid "Documentation for %s"
 msgstr "Документация для %s"
 
-#: ../packages.php:631
+#: ../packages.php:641
 msgid "Sorry, currently no documentation available."
 msgstr "Приносим извинения, на данный момент документация не доступна."
 
-#: ../packages.php:650
+#: ../packages.php:660
 msgid "File list for"
 msgstr "Список файлов для"
 
@@ -940,253 +988,341 @@ msgstr "сделано"
 msgid "pending"
 msgstr "в процессе"
 
-#: ../rss.php:185
+#: ../rss.php:187
 msgid "Stable releases"
 msgstr "Стабильные выпуски"
 
-#: ../rss.php:186
+#: ../rss.php:188
 #, fuzzy
 msgid "-current commits"
 msgstr "Пополнения в Git"
 
-#: ../rss.php:187
+#: ../rss.php:189
 #, fuzzy
 msgid "-stable patches"
 msgstr "Стабильные выпуски"
 
-#: ../rss.php:188
+#: ../rss.php:190
 msgid "BTS entries"
 msgstr "Записи в трекере ошибок"
 
-#: ../rss.php:189
+#: ../rss.php:191
 msgid "Package updates"
 msgstr "Обновления пакета"
 
-#: ../rss.php:190
+#: ../rss.php:192
 msgid "Blog posts"
 msgstr "Публикации в блоге"
 
 #: ../screenshots.php:32
-msgid "01_splash.png"
-msgstr "Загрузчик"
+msgid "Splash screen"
+msgstr ""
 
 #: ../screenshots.php:34
-msgid "02_lang.png"
-msgstr "Язык"
+#, fuzzy
+msgid "Language selection"
+msgstr "Языки"
 
 #: ../screenshots.php:36
-msgid "03_welcome.png"
-msgstr "Добро пожаловать"
+msgid "Welcome Screen"
+msgstr ""
 
 #: ../screenshots.php:38
-msgid "04_key.png"
-msgstr "Клавиатура"
+#, fuzzy
+msgid "Keyboard map"
+msgstr "План разработки"
 
 #: ../screenshots.php:40
-msgid "05_raid.png"
-msgstr "RAID"
+msgid "RAID Selection"
+msgstr ""
 
 #: ../screenshots.php:42
-msgid "06_part.png"
-msgstr "Разметка"
+msgid "Selecting Hard Disk"
+msgstr ""
 
 #: ../screenshots.php:44
-msgid "07_part.png"
-msgstr "Разметка"
+msgid "Partitioning"
+msgstr ""
 
 #: ../screenshots.php:46
-msgid "08_part.png"
-msgstr "Разметка"
+msgid "Partitioning using cfdisk"
+msgstr ""
 
-#: ../screenshots.php:48
-msgid "09_part.png"
-msgstr "Разметка"
-
-#: ../screenshots.php:50
-msgid "10_part.png"
-msgstr "Разметка"
+#: ../screenshots.php:48 ../screenshots.php:50
+msgid "Setting up swap space"
+msgstr ""
 
 #: ../screenshots.php:52
-msgid "11_part.png"
-msgstr "Разметка"
+msgid "Root partition selection"
+msgstr ""
 
 #: ../screenshots.php:54
-msgid "12_part.png"
-msgstr "Разметка"
+msgid "Formatting root partition"
+msgstr ""
 
 #: ../screenshots.php:56
-msgid "13_part.png"
-msgstr "Разметка"
+msgid "Creating filesystem"
+msgstr ""
 
 #: ../screenshots.php:58
-msgid "14_part.png"
-msgstr "Разметка"
+msgid "Other partitions"
+msgstr ""
 
 #: ../screenshots.php:60
-msgid "15_pack.png"
-msgstr "Пакеты"
+#, fuzzy
+msgid "Package selection"
+msgstr "Поиск по пакетам"
 
-#: ../screenshots.php:62
-msgid "16_pack.png"
-msgstr "Пакеты"
-
-#: ../screenshots.php:64
-msgid "17_pack.png"
-msgstr "Пакеты"
+#: ../screenshots.php:62 ../screenshots.php:64
+msgid "Selecting package categories"
+msgstr ""
 
 #: ../screenshots.php:66
-msgid "18_pack.png"
-msgstr "Пакеты"
+msgid "Beginning installation"
+msgstr ""
 
 #: ../screenshots.php:68
-msgid "19_pack.png"
-msgstr "Пакеты"
+msgid "Installing packages"
+msgstr ""
 
 #: ../screenshots.php:70
-msgid "20_grub.png"
-msgstr "GRUB"
+msgid "Setup MBR"
+msgstr ""
 
 #: ../screenshots.php:72
-msgid "21_grub.png"
-msgstr "GRUB"
+#, fuzzy
+msgid "Installing MBR"
+msgstr "Программа установки"
 
 #: ../screenshots.php:74
-msgid "22_modules.png"
-msgstr "Модули"
+msgid "Installing modules"
+msgstr ""
 
-#: ../screenshots.php:76
-msgid "23_root.png"
-msgstr "root"
-
-#: ../screenshots.php:78
-msgid "24_root.png"
-msgstr "root"
+#: ../screenshots.php:76 ../screenshots.php:78
+msgid "Setting a root password"
+msgstr ""
 
 #: ../screenshots.php:80
-msgid "25_user.png"
-msgstr "Пользователь"
+msgid "Creating user"
+msgstr ""
 
 #: ../screenshots.php:82
-msgid "26_user.png"
-msgstr "Пользователь"
+msgid "Choosing a user name"
+msgstr ""
 
 #: ../screenshots.php:84
-msgid "27_user.png"
-msgstr "Пользователь"
+msgid "Choosing a user password"
+msgstr ""
 
 #: ../screenshots.php:86
-msgid "28_hostname.png"
-msgstr "Имя узла"
+msgid "Setup system hostname"
+msgstr ""
 
 #: ../screenshots.php:88
-msgid "29_network.png"
-msgstr "Сеть"
+msgid "Network configuration"
+msgstr ""
 
 #: ../screenshots.php:90
-msgid "30_network.png"
-msgstr "Сеть"
+msgid "Network configuration - DHCP"
+msgstr ""
 
 #: ../screenshots.php:92
-msgid "31_config.png"
-msgstr "Настройка"
+msgid "Applying settings"
+msgstr ""
 
 #: ../screenshots.php:94
-msgid "32_localtime.png"
-msgstr "Местное время"
+msgid "Setting up system time"
+msgstr ""
 
 #: ../screenshots.php:96
-msgid "33_timezone.png"
-msgstr "Часовой пояс"
+msgid "Selecting Timezone"
+msgstr ""
 
 #: ../screenshots.php:98
-msgid "34_mouse.png"
-msgstr "Мышь"
+msgid "Mouse configuration"
+msgstr ""
 
 #: ../screenshots.php:100
-msgid "35_success.png"
-msgstr "Готово"
+msgid "Installation success"
+msgstr ""
 
-#: ../screenshots.php:102
-msgid "01_grub.png"
-msgstr "GRUB"
+#: ../screenshots.php:103
+msgid "Bootloader (GRUB)"
+msgstr ""
 
-#: ../screenshots.php:104
-msgid "02_boot.png"
-msgstr "Загрузка"
+#: ../screenshots.php:105
+msgid "Startup (Splash)"
+msgstr ""
 
-#: ../screenshots.php:106
-msgid "03_boot.png"
-msgstr "Загрузка"
+#: ../screenshots.php:107 ../screenshots.php:109
+msgid "Startup (Console)"
+msgstr ""
 
-#: ../screenshots.php:108
-msgid "04_boot.png"
-msgstr "Загрузка"
+#: ../screenshots.php:111
+msgid "Console Login"
+msgstr ""
 
-#: ../screenshots.php:110
-msgid "05_console.png"
-msgstr "Консоль"
+#: ../screenshots.php:113
+msgid "Console"
+msgstr ""
 
-#: ../screenshots.php:112
-msgid "06_console.png"
-msgstr "Консоль"
-
-#: ../screenshots.php:114
+#: ../screenshots.php:116
 msgid "08_kde_login.png"
 msgstr "Вход в KDE"
 
-#: ../screenshots.php:116
+#: ../screenshots.php:118
 msgid "09_kde.png"
 msgstr "KDE"
 
-#: ../screenshots.php:118
+#: ../screenshots.php:120
 msgid "10_kde_menu.png"
 msgstr "Меню KDE"
 
-#: ../screenshots.php:120
-msgid "11_gdm.png"
-msgstr "GDM"
+#: ../screenshots.php:123
+msgid "GDM Login Screen"
+msgstr ""
 
-#: ../screenshots.php:122
-msgid "13_gnome.png"
-msgstr "GNOME"
+#: ../screenshots.php:125
+#, fuzzy
+msgid "Default Gnome Desktop"
+msgstr "Рабочий стол по умолчанию"
 
-#: ../screenshots.php:124
-msgid "14_gnome_menu.png"
-msgstr "Меню GNOME"
+#: ../screenshots.php:127
+msgid "Gnome Menu"
+msgstr ""
 
-#: ../screenshots.php:126
-msgid "15_gnome_menu.png"
-msgstr "Меню GNOME"
+#: ../screenshots.php:129
+msgid "Web Browser"
+msgstr ""
 
-#: ../screenshots.php:128
-msgid "16_gnome_menu.png"
-msgstr "Меню GNOME"
+#: ../screenshots.php:131
+msgid "File Manager"
+msgstr ""
 
-#: ../screenshots.php:130
-msgid "17_package_manager.png"
-msgstr "Менеджер пакетов"
+#: ../screenshots.php:134
+msgid "Login Screen (SliM)"
+msgstr ""
 
-#: ../screenshots.php:132
-msgid "18_runlevel_editor.png"
-msgstr "Редактор уровней загрузки"
+#: ../screenshots.php:136
+#, fuzzy
+msgid "Default XFCE Desktop"
+msgstr "Рабочий стол по умолчанию"
 
-#: ../screenshots.php:139
+#: ../screenshots.php:138
+msgid "XFCE in Action"
+msgstr ""
+
+#: ../screenshots.php:140
+msgid "XFCE Menu"
+msgstr ""
+
+#: ../screenshots.php:142
+msgid "XFCE Terminal"
+msgstr ""
+
+#: ../screenshots.php:145
+msgid "Gfpm"
+msgstr ""
+
+#: ../screenshots.php:147
+msgid "Gfpm Synchronizing"
+msgstr ""
+
+#: ../screenshots.php:149
+msgid "Repository Manager"
+msgstr ""
+
+#: ../screenshots.php:151 ../screenshots.php:162
+msgid "Preferences Window"
+msgstr ""
+
+#: ../screenshots.php:153
+msgid "Optimizing Package Database"
+msgstr ""
+
+#: ../screenshots.php:155
+#, fuzzy
+msgid "Log Viewer"
+msgstr "Войти через веб-интерфейс"
+
+#: ../screenshots.php:158
+msgid "Update Notification"
+msgstr ""
+
+#: ../screenshots.php:160
+msgid "FUN Main Window"
+msgstr ""
+
+#: ../screenshots.php:165
+msgid "GNetconfig"
+msgstr ""
+
+#: ../screenshots.php:167
+msgid "GNetconfig - Interface Management"
+msgstr ""
+
+#: ../screenshots.php:169
+msgid "GNetconfig - DNS Settings"
+msgstr ""
+
+#: ../screenshots.php:172
+msgid "gService - Main Window"
+msgstr ""
+
+#: ../screenshots.php:174
+msgid "gService - Editing Runlevel Information"
+msgstr ""
+
+#: ../screenshots.php:176
+msgid "gService - Minimal Interface"
+msgstr ""
+
+#: ../screenshots.php:183
 msgid "Installer"
 msgstr "Программа установки"
 
-#: ../screenshots.php:147
-msgid "Default Desktop"
+#: ../screenshots.php:191
+msgid "Startup"
+msgstr ""
+
+#: ../screenshots.php:199
+#, fuzzy
+msgid "KDE Desktop"
 msgstr "Рабочий стол по умолчанию"
+
+#: ../screenshots.php:207
+msgid "GNOME Desktop"
+msgstr ""
+
+#: ../screenshots.php:215
+msgid "XFCE Desktop"
+msgstr ""
+
+#: ../screenshots.php:223
+msgid "GFpm (Package Manager)"
+msgstr ""
+
+#: ../screenshots.php:231
+msgid "FUN (Update Notifier)"
+msgstr ""
+
+#: ../screenshots.php:239
+msgid "GNetconfig (Network Configuration Tool)"
+msgstr ""
+
+#: ../screenshots.php:247
+msgid "gService (GUI Runlevel Editor)"
+msgstr ""
 
 #: ../security.php:46
 msgid "Sorry, a security file has not been written yet."
 msgstr "Приносим извинения, файл безопасности еще не был написан."
 
-#: ../security.php:52
+#: ../security.php:58
 msgid "Frugalware Security Announcements (FSAs)"
 msgstr "Объявления о безопасности Frugalware (FSA)"
 
-#: ../security.php:53
+#: ../security.php:59
 msgid ""
 "This is a list of security announcments that have been released for the "
 "current stable version of Frugalware"
@@ -1194,29 +1330,182 @@ msgstr ""
 "Это список объявлений о безопасности, который был выпущен для текущей "
 "стабильной версии Frugalware"
 
-#: ../security.php:80
+#: ../security.php:87
 msgid "Package"
 msgstr "Пакет"
 
-#: ../security.php:83
+#: ../security.php:90
 msgid "Vulnerable version"
 msgstr "Уязвимая версия"
 
-#: ../security.php:84
+#: ../security.php:91
 msgid "Unaffected version"
 msgstr "Неподверженная уязвимости версия"
 
-#: ../security.php:85
+#: ../security.php:92
 msgid "Bug tracker entry"
 msgstr "Запись в трекере ошибок"
 
-#: ../security.php:86
+#: ../security.php:93
 msgid "CVEs"
 msgstr "CVE"
 
-#: ../security.php:87
+#: ../security.php:94
 msgid "Description"
 msgstr "Описание"
+
+#~ msgid "01_grub.png"
+#~ msgstr "GRUB"
+
+#~ msgid "02_boot.png"
+#~ msgstr "Загрузка"
+
+#~ msgid "03_boot.png"
+#~ msgstr "Загрузка"
+
+#~ msgid "04_boot.png"
+#~ msgstr "Загрузка"
+
+#~ msgid "05_console.png"
+#~ msgstr "Консоль"
+
+#~ msgid "06_console.png"
+#~ msgstr "Консоль"
+
+#~ msgid "01_splash.png"
+#~ msgstr "Загрузчик"
+
+#~ msgid "02_lang.png"
+#~ msgstr "Язык"
+
+#~ msgid "03_welcome.png"
+#~ msgstr "Добро пожаловать"
+
+#~ msgid "04_key.png"
+#~ msgstr "Клавиатура"
+
+#~ msgid "05_raid.png"
+#~ msgstr "RAID"
+
+#~ msgid "06_part.png"
+#~ msgstr "Разметка"
+
+#~ msgid "07_part.png"
+#~ msgstr "Разметка"
+
+#~ msgid "08_part.png"
+#~ msgstr "Разметка"
+
+#~ msgid "09_part.png"
+#~ msgstr "Разметка"
+
+#~ msgid "10_part.png"
+#~ msgstr "Разметка"
+
+#~ msgid "11_part.png"
+#~ msgstr "Разметка"
+
+#~ msgid "12_part.png"
+#~ msgstr "Разметка"
+
+#~ msgid "13_part.png"
+#~ msgstr "Разметка"
+
+#~ msgid "14_part.png"
+#~ msgstr "Разметка"
+
+#~ msgid "15_pack.png"
+#~ msgstr "Пакеты"
+
+#~ msgid "16_pack.png"
+#~ msgstr "Пакеты"
+
+#~ msgid "17_pack.png"
+#~ msgstr "Пакеты"
+
+#~ msgid "18_pack.png"
+#~ msgstr "Пакеты"
+
+#~ msgid "19_pack.png"
+#~ msgstr "Пакеты"
+
+#~ msgid "20_grub.png"
+#~ msgstr "GRUB"
+
+#~ msgid "21_grub.png"
+#~ msgstr "GRUB"
+
+#~ msgid "22_modules.png"
+#~ msgstr "Модули"
+
+#~ msgid "23_root.png"
+#~ msgstr "root"
+
+#~ msgid "24_root.png"
+#~ msgstr "root"
+
+#~ msgid "25_user.png"
+#~ msgstr "Пользователь"
+
+#~ msgid "26_user.png"
+#~ msgstr "Пользователь"
+
+#~ msgid "27_user.png"
+#~ msgstr "Пользователь"
+
+#~ msgid "28_hostname.png"
+#~ msgstr "Имя узла"
+
+#~ msgid "29_network.png"
+#~ msgstr "Сеть"
+
+#~ msgid "30_network.png"
+#~ msgstr "Сеть"
+
+#~ msgid "31_config.png"
+#~ msgstr "Настройка"
+
+#~ msgid "32_localtime.png"
+#~ msgstr "Местное время"
+
+#~ msgid "33_timezone.png"
+#~ msgstr "Часовой пояс"
+
+#~ msgid "34_mouse.png"
+#~ msgstr "Мышь"
+
+#~ msgid "35_success.png"
+#~ msgstr "Готово"
+
+#~ msgid "18_runlevel_editor.png"
+#~ msgstr "Редактор уровней загрузки"
+
+#~ msgid "Social diagram"
+#~ msgstr "Социальный граф канала"
+
+#~ msgid "Log of the channel: #frugalware"
+#~ msgstr "Журнал канала #frugalware"
+
+#~ msgid "Sorry, currently no log available"
+#~ msgstr "Приносим извинения, на данный момент журнал не доступен"
+
+#~ msgid "11_gdm.png"
+#~ msgstr "GDM"
+
+#~ msgid "13_gnome.png"
+#~ msgstr "GNOME"
+
+#~ msgid "14_gnome_menu.png"
+#~ msgstr "Меню GNOME"
+
+#~ msgid "15_gnome_menu.png"
+#~ msgstr "Меню GNOME"
+
+#~ msgid "16_gnome_menu.png"
+#~ msgstr "Меню GNOME"
+
+#~ msgid "17_package_manager.png"
+#~ msgstr "Менеджер пакетов"
 
 #~ msgid "Developers"
 #~ msgstr "Разработчики"

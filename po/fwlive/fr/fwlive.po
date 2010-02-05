@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-12-26 05:05+0100\n"
-"PO-Revision-Date: 2007-11-10 12:33+0100\n"
-"Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
+"POT-Creation-Date: 2010-02-05 02:02+0100\n"
+"PO-Revision-Date: 2008-02-25 21:59+0100\n"
+"Last-Translator: aquae <aquaeroman@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -38,7 +38,7 @@ msgstr "Enregistrement des modifications dans %s... "
 
 #: ../configsave.sh:45
 msgid "Can't write config to %s\\n"
-msgstr "N'a pas pu sauver la confuration dans %s\\n"
+msgstr "N'a pas pu sauver la configuration dans %s\n"
 
 #: ../configsave.sh:47 ../configsave.sh:58
 msgid "done."
@@ -46,7 +46,7 @@ msgstr "fini."
 
 #: ../configsave.sh:55
 msgid "Restoring changes from %s... "
-msgstr "Chargement des changements depuis %s... "
+msgstr "Restauration des changements depuis %s... "
 
 #: ../fileswap.sh:18
 msgid "File Swap - create swap as a file in writable filesystem"
@@ -84,7 +84,7 @@ msgstr "Recherche d'un fichier de configuration de FWLive précédent"
 
 #: ../rc.config.sh:33 ../rc.config.sh:67
 msgid "Found an FWLive config file."
-msgstr "Un fichier de configuration de FWLive  à été trouvé."
+msgstr "Un fichier de configuration de FWLive a été trouvé."
 
 #: ../rc.config.sh:34
 msgid "Do you want to restore saved settings from %s?\\n"
@@ -92,7 +92,7 @@ msgstr "Voulez vous rétablir la configuration sauvée dans %s?\\n"
 
 #: ../rc.config.sh:39 ../rc.config.sh:73
 msgid "No previous FWLive config file found."
-msgstr "Aucune configuration de FWLive précédente trouvée."
+msgstr "Aucun fichier de configuration FWLive trouvé."
 
 #: ../rc.config.sh:48
 msgid "enter=confirm"
@@ -100,7 +100,9 @@ msgstr "entrée=confirmer"
 
 #: ../rc.config.sh:56
 msgid "\\nTimed out. Never mind, skipped."
-msgstr "\\nDélais dépassé. Sans importance, ignoré."
+msgstr ""
+"\n"
+"Délai dépassé. Sans importance, ignoré."
 
 #. automatically restore/save settings in the case fwliveconf.lzm is found
 #. in root directory of any partition. Only the first one is used.
@@ -138,69 +140,70 @@ msgstr "\\e[01mBienvenue dans \\e[01;36mFwlive\\e[0m\\e[01m!\\e[0m"
 msgid "Parsing /proc/cmdline"
 msgstr "Traitement de /proc/cmdline"
 
-#: ../parse_cmdline.sh:48
+#. eg. Welcome to FWLive 1.0 by Frugalware
+#: ../parse_cmdline.sh:49
 msgid "Welcome to FWLive %s by %s"
 msgstr "Bienvenue dans le LiveCD Frugalware %s par %s"
 
-#: ../parse_cmdline.sh:52
-msgid "The system is up and running now."
-msgstr "Le système est lancé et en fonctionnement maintenant."
-
 #: ../parse_cmdline.sh:53
+msgid "The system is up and running now."
+msgstr "Le système est lancé et fonctionne maintenant."
+
+#: ../parse_cmdline.sh:54
 msgid "Login as '%s', with password '%s' or"
 msgstr "S'identifier en tant que '%s', avec le mot de passe '%s' ou"
 
-#: ../parse_cmdline.sh:55
+#: ../parse_cmdline.sh:56
 msgid "login as 'root', with password '%s', both without quotes, lowercase."
 msgstr ""
 "s'identifier en tant que 'root', avec le mot de passe '%s', les deux sans "
-"les quotes, et en minuscules."
+"les guillemets, et en minuscules."
 
-#: ../parse_cmdline.sh:56
+#: ../parse_cmdline.sh:57
 msgid "After login, try the following commands:"
 msgstr "Après l'identification, essayez les commandes suivantes:"
 
-#: ../parse_cmdline.sh:57
+#: ../parse_cmdline.sh:58
 msgid ""
 "mc .... to start Midnight Commander (edit/copy/move/create/delete files)"
 msgstr ""
 "mc .... pour démarrer Midnight Commander (éditer/copier/déplacer/créer/"
 "effacer des fichiers)"
 
-#: ../parse_cmdline.sh:58
+#: ../parse_cmdline.sh:59
 msgid "configsave/configrestore  - or use - service config save/restore ..."
 msgstr ""
 "configsave/configrestore  - ou utilisez - service config save/restore ..."
 
-#: ../parse_cmdline.sh:59
+#: ../parse_cmdline.sh:60
 msgid "to save and restore all filesystem changes"
 msgstr "pour sauvegarder et restaurer tous changements du système de fichiers"
 
-#: ../parse_cmdline.sh:60
+#: ../parse_cmdline.sh:61
 msgid "fileswap .... to create special file for swapping RAM to your harddisk"
 msgstr ""
 "fileswap .... pour créer un fichier particulier pour l'échange de RAM sur "
 "votre disque dur"
 
-#: ../parse_cmdline.sh:61
+#: ../parse_cmdline.sh:62
 msgid "make_disk .... to install FWLive, use make_disk script on FWLive CD"
 msgstr ""
-"make_disk .... pour installer FWLive, utilisez le script make_disk sur  le "
+"make_disk .... pour installer FWLive, utilisez le script make_disk sur le "
 "FWLive CD"
 
-#: ../parse_cmdline.sh:62
+#: ../parse_cmdline.sh:63
 msgid ""
 "xstart .... to start KDE with autodetected settings (upon failure vesa "
 "driver will be used)"
 msgstr ""
-"xstart .... pour démarrer KDE avec paramètres autodetectés (au moindre "
+"xstart .... pour démarrer KDE avec des paramètres autodetectés (au moindre "
 "problème le driver vesa sera utilisé)"
 
-#: ../parse_cmdline.sh:63
+#: ../parse_cmdline.sh:64
 msgid "setup .... a script for your own settings"
 msgstr "setup .... un script pour vos propres paramètres"
 
-#: ../parse_cmdline.sh:64
+#: ../parse_cmdline.sh:65
 msgid ""
 "When finished, use 'poweroff' or 'reboot' command and wait until it completes"
 msgstr ""

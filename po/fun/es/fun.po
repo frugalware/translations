@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-12-30 05:12+0100\n"
+"POT-Creation-Date: 2010-02-05 02:02+0100\n"
 "PO-Revision-Date: 2007-12-31 00:16+0100\n"
 "Last-Translator: mcklaren <mcklaren@gmil.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,23 +16,28 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 1.0\n"
 
-#: ../src/fun.c:63 ../src/fun.c:71
+#: ../src/fun.c:69 ../src/fun.c:77
 msgid "Error"
 msgstr "Error"
 
-#: ../src/fun.c:63
+#: ../src/fun.c:69
 msgid "Failed to initialize dbus subsystem"
 msgstr "Fallo al iniciar el subsistema dbus"
 
-#: ../src/fun.c:71
+#: ../src/fun.c:77
 msgid "Failed to initialize interface"
 msgstr "Fallo al iniciar la interfaz"
 
-#: ../src/fun-ui.c:217
+#. About
+#: ../src/fun-ui.c:148
+msgid "About FUN"
+msgstr ""
+
+#: ../src/fun-ui.c:274
 msgid "Restart Fun"
 msgstr "Reiniciar Fun"
 
-#: ../src/fun-ui.c:218
+#: ../src/fun-ui.c:275
 msgid ""
 "Fun needs to be restarted in order for the changes to take effect. Do you "
 "want to restart Fun now ?"
@@ -40,28 +45,32 @@ msgstr ""
 "Necesitas reiniciar FUN para que los cambios surtan efecto. ¿Quieres "
 "reiniciar FUN ahora?"
 
-#: ../src/fun-ui.c:317
+#: ../src/fun-ui.c:430
 msgid "S"
 msgstr "S"
 
-#: ../src/fun-ui.c:325
+#: ../src/fun-ui.c:438
 msgid "Package Name"
 msgstr "Nombre del Paquete"
 
-#: ../src/fun-ui.c:335
+#: ../src/fun-ui.c:448
 msgid "Latest Version"
 msgstr "Última versión"
 
-#: ../src/fun-ui.c:343
+#: ../src/fun-ui.c:456
 msgid "Description"
 msgstr "Descripción"
 
-#: ../src/fun-ui.c:400
+#: ../src/fun-ui.c:512
+msgid "Connection Failed"
+msgstr ""
+
+#: ../src/fun-ui.c:512
 msgid "Failed to connect to the fun daemon\n"
 msgstr "Fallo al conectar al demonio fun\n"
 
 #. set the status
-#: ../src/fun-ui.c:404
+#: ../src/fun-ui.c:516
 msgid ""
 "The frugalware update notifier daemon is not running. Update checking is "
 "disabled"
@@ -70,7 +79,7 @@ msgstr ""
 "funcionando. La revisión de actualizaciones esta desactivado."
 
 #. display an error
-#: ../src/fun-ui.c:406
+#: ../src/fun-ui.c:518
 msgid "Update checking disabled"
 msgstr "Revisión de actualizaciones desactivado"
 
@@ -78,20 +87,20 @@ msgstr "Revisión de actualizaciones desactivado"
 #. fun_tooltip_set_text2 (tooltip, "", FALSE);
 #. set the status to Idle
 #. and the status back to Idle
-#: ../src/fun-ui.c:423 ../src/fun-ui.c:443 ../src/fun-ui.c:481
+#: ../src/fun-ui.c:535 ../src/fun-ui.c:567 ../src/fun-ui.c:612
 msgid "Idle"
 msgstr "Inactivo"
 
 #. set the status to let the user know that fun is checking for an update
-#: ../src/fun-ui.c:460
+#: ../src/fun-ui.c:591
 msgid "Checking for new updates..."
 msgstr "Comprobando actualizaciones nueva..."
 
-#: ../src/fun-ui.c:474
+#: ../src/fun-ui.c:605
 msgid "Updates are available"
 msgstr "Actualizaciones disponibles"
 
-#: ../src/fun-ui.c:474
+#: ../src/fun-ui.c:605
 msgid ""
 "New package updates are available for your system. Click the tray icon for "
 "more details"
@@ -99,25 +108,117 @@ msgstr ""
 "Nuevos paquetes están disponibles para actualizarse en tu sistema. Pincha "
 "sobre el icono de la bandeja para más información"
 
-#: ../src/fun-ui.c:500
-msgid "(C) 2007 Frugalware Developer Team (GPL)"
+#: ../src/fun-ui.c:627
+#, fuzzy
+msgid "Failed to create thread for checking update"
+msgstr "Fallo al conectar al demonio fun\n"
+
+#: ../src/fun-ui.c:646
+#, fuzzy
+msgid "(C) 2007-2009 Frugalware Developer Team (GPL)"
 msgstr "(C) 2007 Frugalware Developer Team (GPL)"
 
-#: ../src/fun-ui.c:501
+#: ../src/fun-ui.c:647 ../data/fun.glade.h:9
 msgid "Frugalware Update Notifier"
 msgstr "Notificador de Actualizaciones Frugalware"
 
-#: ../src/fun-ui.c:553
+#: ../src/fun-ui.c:699
 msgid "Error getting update information"
 msgstr "Error al obtener la información sobre las actualizaciones"
 
-#: ../src/fun-ui.c:553
+#: ../src/fun-ui.c:699
 msgid "There was an error getting update information"
 msgstr "Ha ocurrido un error al obtener la información de la actualización"
+
+#: ../src/fun-ui.c:772
+msgid "Error launching GFpm"
+msgstr ""
 
 #: ../src/fun-tooltip.c:44
 msgid "View Updates"
 msgstr "Ver actualizaciones"
+
+#: ../data/fun.glade.h:1
+msgid "<b>News Notification</b>"
+msgstr ""
+
+#: ../data/fun.glade.h:2
+msgid "<b>Options</b>"
+msgstr ""
+
+#: ../data/fun.glade.h:3
+msgid "<b>Package Notification</b>"
+msgstr ""
+
+#: ../data/fun.glade.h:4
+msgid "<span size=\"large\"><b>Configure Frugalware Update Notifier</b></span>"
+msgstr ""
+
+#: ../data/fun.glade.h:5
+msgid "About"
+msgstr ""
+
+#: ../data/fun.glade.h:6
+msgid "Close"
+msgstr ""
+
+#: ../data/fun.glade.h:7
+msgid "Enabled"
+msgstr ""
+
+#: ../data/fun.glade.h:8
+msgid "FUN Preferences"
+msgstr ""
+
+#: ../data/fun.glade.h:10
+msgid "Launch Gfpm"
+msgstr ""
+
+#: ../data/fun.glade.h:11
+msgid "Launch Gfpm using"
+msgstr ""
+
+#: ../data/fun.glade.h:12
+msgid "News"
+msgstr ""
+
+#: ../data/fun.glade.h:13
+msgid ""
+"Notification timeout (seconds)\n"
+"The time in seconds for which the notification popup is displayed"
+msgstr ""
+
+#: ../data/fun.glade.h:15
+msgid "Open links in Browser"
+msgstr ""
+
+#: ../data/fun.glade.h:16
+#, fuzzy
+msgid "Packages"
+msgstr "Nombre del Paquete"
+
+#: ../data/fun.glade.h:17
+msgid "Preferences"
+msgstr ""
+
+#: ../data/fun.glade.h:18
+msgid "Update Interval (minutes)"
+msgstr ""
+
+#: ../data/fun.glade.h:19
+msgid "Visit Link"
+msgstr ""
+
+#: ../data/fun.glade.h:20
+msgid "_Check"
+msgstr ""
+
+#: ../data/fun.glade.h:21
+msgid ""
+"gksu\n"
+"kdesu\n"
+"sudo"
+msgstr ""
 
 #~ msgid "Click the tray icon for details"
 #~ msgstr "Pinche sobre el icono de la bandeja para mas detalles"

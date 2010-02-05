@@ -2,22 +2,21 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-12-26 05:05+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2010-02-05 02:02+0100\n"
+"PO-Revision-Date: 2008-07-30 18:42+0200\n"
+"Last-Translator: andrej prochazka <a.prochazka@gsi.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 0.11\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Pootle 1.1.0\n"
 
-#: ../add.c:69 ../deptest.c:64 ../remove.c:83 ../sync.c:304 ../sync.c:343
+#: ../add.c:69 ../deptest.c:64 ../remove.c:83 ../sync.c:312 ../sync.c:351
 #, c-format
 msgid ""
 "       if you're sure a package manager is not already running,\n"
@@ -27,87 +26,89 @@ msgstr ""
 #. and add targets to it
 #: ../add.c:76
 msgid "loading package data... "
-msgstr ""
+msgstr "načítavam informácie o bálíčku ..."
 
 #: ../add.c:79 ../remove.c:92
 #, c-format
 msgid "failed to add target '%s' (%s)\n"
-msgstr ""
+msgstr "nepodarilo sa pridať balíček  '%s' (%s)\n"
 
-#: ../add.c:84 ../sync.c:267 ../trans.c:76 ../trans.c:83 ../trans.c:87
+#: ../add.c:84 ../sync.c:275 ../trans.c:76 ../trans.c:83 ../trans.c:87
 #: ../trans.c:99 ../trans.c:113 ../trans.c:129 ../trans.c:141
 msgid "done.\n"
-msgstr ""
+msgstr "hotovo\n"
 
-#: ../add.c:92 ../remove.c:102 ../sync.c:451
+#: ../add.c:92 ../remove.c:102 ../sync.c:459
 #, c-format
 msgid "failed to prepare transaction (%s)\n"
-msgstr ""
+msgstr "nepodarilo sa pripraviť operáciu"
 
 #: ../add.c:97
 #, c-format
 msgid ":: %s: requires %s"
-msgstr ""
+msgstr ":: %s: vyžaduje %s"
 
-#: ../add.c:111 ../sync.c:472
+#: ../add.c:111 ../sync.c:480
 #, c-format
 msgid ":: %s: conflicts with %s"
-msgstr ""
+msgstr ":: %s: koliduje s%s"
 
-#: ../add.c:121 ../sync.c:597
+#: ../add.c:121 ../sync.c:605
 #, c-format
 msgid "%s%s exists in \"%s\" (target) and \"%s\" (target)"
 msgstr ""
 
-#: ../add.c:128 ../sync.c:604
+#: ../add.c:128 ../sync.c:612
 #, c-format
 msgid "%s: %s%s exists in filesystem"
-msgstr ""
+msgstr "%s: %s%s existuje v systéme"
 
-#: ../add.c:136 ../sync.c:612 ../sync.c:619
+#: ../add.c:136 ../sync.c:630
 msgid ""
 "\n"
 "errors occurred, no packages were upgraded.\n"
 msgstr ""
+"\n"
+"vyskytli sa chyby, balíčky neboli aktualizované.\n"
 
-#: ../add.c:143 ../sync.c:482
+#: ../add.c:143 ../sync.c:490
 #, c-format
 msgid ":: %.1f MB required, have %.1f MB"
-msgstr ""
+msgstr ":: %.1f MB potrebných, volných %.1f MB"
 
-#: ../add.c:157 ../remove.c:142 ../sync.c:590
+#: ../add.c:157 ../remove.c:142 ../sync.c:598
 #, c-format
 msgid "failed to commit transaction (%s)\n"
-msgstr ""
+msgstr "nepodarilo sa vykonať operáciu (%s)\n"
 
-#: ../add.c:164 ../remove.c:152 ../sync.c:336 ../sync.c:632
+#: ../add.c:164 ../remove.c:152 ../sync.c:344 ../sync.c:639
 #, c-format
 msgid "failed to release transaction (%s)\n"
-msgstr ""
+msgstr "nepodarilo sa spustiť operáciu (%s)\n"
 
 #: ../deptest.c:77
 msgid "memory allocation failure\n"
-msgstr ""
+msgstr "chyba alokácie pamäte\n"
 
 #: ../deptest.c:87
 #, c-format
 msgid "add target %s\n"
-msgstr ""
+msgstr "pridaj balíček %s\n"
 
 #: ../deptest.c:90
 #, c-format
 msgid "could not add target (%s)\n"
-msgstr ""
+msgstr "nemôže sa pridať (%s)\n"
 
 #: ../deptest.c:110
 #, c-format
 msgid "requires: %s"
-msgstr ""
+msgstr "vyžaduje: %s"
 
 #: ../deptest.c:126
 #, c-format
 msgid "conflict: %s"
-msgstr ""
+msgstr "konflikt: %s"
 
 #: ../deptest.c:140 ../deptest.c:158
 #, c-format
@@ -127,12 +128,12 @@ msgstr ""
 #: ../log.c:58
 #, c-format
 msgid "error"
-msgstr ""
+msgstr "chyba"
 
 #: ../log.c:61
 #, c-format
 msgid "warning"
-msgstr ""
+msgstr "upozornenie"
 
 #: ../log.c:64
 #, c-format
@@ -149,35 +150,35 @@ msgstr ""
 msgid "function"
 msgstr ""
 
-#: ../log.c:163
+#: ../log.c:164
 msgid "Y"
 msgstr ""
 
-#: ../log.c:163
+#: ../log.c:164
 msgid "YES"
-msgstr ""
+msgstr "ANO"
 
 #: ../log.h:26
 msgid "error: "
-msgstr ""
+msgstr "chyba:"
 
 #: ../log.h:30
 msgid "warning: "
-msgstr ""
+msgstr "upozornenie:"
 
 #: ../package.c:46
 #, c-format
 msgid "Name           : %s\n"
-msgstr ""
+msgstr "Meno           : %s\n"
 
 #: ../package.c:47
 #, c-format
 msgid "Version        : %s\n"
-msgstr ""
+msgstr "Verzia        : %s\n"
 
 #: ../package.c:49
 msgid "Groups         :"
-msgstr ""
+msgstr "Skupiny         :"
 
 #: ../package.c:51
 #, c-format
@@ -186,639 +187,670 @@ msgstr ""
 
 #: ../package.c:53
 msgid "License        :"
-msgstr ""
+msgstr "Licencia        :"
 
 #: ../package.c:54
 #, c-format
 msgid "Architecture   : %s\n"
-msgstr ""
+msgstr "Architektúra   : %s\n"
 
 #: ../package.c:55
 #, c-format
 msgid "Size           : %ld\n"
-msgstr ""
+msgstr "Veľkosť           : %ld\n"
 
 #: ../package.c:58
 #, c-format
 msgid "Build Date     : %s %s\n"
-msgstr ""
+msgstr "dátum   : %s %s\n"
 
 #: ../package.c:60
 #, c-format
 msgid "Build Type     : %s\n"
-msgstr ""
+msgstr "Typ     : %s\n"
 
 #: ../package.c:60
 msgid "Unknown"
-msgstr ""
+msgstr "neznámy"
 
 #: ../package.c:62
 #, c-format
 msgid "Install Date   : %s %s\n"
-msgstr ""
+msgstr "Dátum inštalácie   : %s %s\n"
 
 #: ../package.c:64
 #, c-format
 msgid "Install Script : %s\n"
-msgstr ""
+msgstr "Inštalačný skript : %s\n"
 
 #: ../package.c:64
 msgid "Yes"
-msgstr ""
+msgstr "Ano"
 
 #: ../package.c:64
 msgid "No"
-msgstr ""
+msgstr "Nie"
 
 #: ../package.c:66
 #, c-format
 msgid "Reason         : "
-msgstr ""
+msgstr "Dôvod         :"
 
 #: ../package.c:69
 #, c-format
 msgid "Explicitly installed\n"
-msgstr ""
+msgstr "Priamo inštalované\n"
 
 #: ../package.c:72
 #, c-format
 msgid "Installed as a dependency for another package\n"
-msgstr ""
+msgstr "Inštalované ako závislí balíček na inom balíčku\n"
 
 #: ../package.c:75
 #, c-format
 msgid "Unknown\n"
-msgstr ""
+msgstr "Neznámy\n"
 
 #: ../package.c:79
 msgid "Provides       :"
-msgstr ""
+msgstr "poskytuje       :"
 
 #: ../package.c:80
 msgid "Depends On     :"
-msgstr ""
+msgstr "Závisí na     :"
 
 #: ../package.c:81
 msgid "Removes        :"
-msgstr ""
+msgstr "Odstrňuje        :"
 
 #: ../package.c:82
 msgid "Required By    :"
-msgstr ""
+msgstr "Vyžadované od   :"
 
 #: ../package.c:83
 msgid "Conflicts With :"
-msgstr ""
+msgstr "V konflikte s :"
 
 #: ../package.c:85
 #, c-format
 msgid "Description    : "
-msgstr ""
+msgstr "Opis    :"
 
 #: ../package.c:110
 #, c-format
 msgid "error calculating md5sum or sha1sum for %s\n"
-msgstr ""
+msgstr "chyba kalkulácie md5sum alebo sha1sum for %s\n"
 
-#: ../package.c:115 ../package.c:117
-#, c-format
-msgid "%sMODIFIED\t%s\n"
-msgstr ""
+#: ../package.c:115
+#, fuzzy, c-format
+msgid "NOT MODIFIED\t%s\n"
+msgstr "%sZMENENE\t%s\n"
 
-#: ../package.c:115 ../package.c:117
-msgid "NOT "
-msgstr ""
+#: ../package.c:117
+#, fuzzy, c-format
+msgid "MODIFIED\t%s\n"
+msgstr "%sZMENENE\t%s\n"
 
-#: ../package.c:121
+#: ../package.c:122
 #, c-format
 msgid "MISSING\t\t%s\n"
-msgstr ""
-
-#: ../package.c:139
-#, c-format
-msgid "Repository        : %s\n"
-msgstr ""
+msgstr "CHÝBA\t\t%s\n"
 
 #: ../package.c:140
 #, c-format
-msgid "Name              : %s\n"
-msgstr ""
+msgid "Repository        : %s\n"
+msgstr "Zdroj        : %s\n"
 
 #: ../package.c:141
 #, c-format
-msgid "Version           : %s\n"
-msgstr ""
+msgid "Name              : %s\n"
+msgstr "Meno              : %s\n"
 
-#: ../package.c:143
-msgid "Groups            :"
-msgstr ""
+#: ../package.c:142
+#, c-format
+msgid "Version           : %s\n"
+msgstr "Verzia           : %s\n"
 
 #: ../package.c:144
-msgid "Provides          :"
-msgstr ""
+msgid "Groups            :"
+msgstr "Skupiny            :"
 
 #: ../package.c:145
-msgid "Depends On        :"
-msgstr ""
+msgid "Provides          :"
+msgstr "Poskytuje          :"
 
 #: ../package.c:146
-msgid "Removes           :"
-msgstr ""
+msgid "Depends On        :"
+msgstr "Závisí na        :"
 
 #: ../package.c:147
-msgid "Conflicts With    :"
-msgstr ""
+msgid "Removes           :"
+msgstr "Odstraňuje            :"
 
 #: ../package.c:148
-msgid "Replaces          :"
-msgstr ""
+msgid "Conflicts With    :"
+msgstr "V konflikte s    :"
 
-#: ../package.c:150
-#, c-format
-msgid "Size (compressed) : %ld\n"
-msgstr ""
+#: ../package.c:149
+msgid "Replaces          :"
+msgstr "Nahradzuje          :"
 
 #: ../package.c:151
 #, c-format
-msgid "Size (installed)  : %ld\n"
-msgstr ""
+msgid "Size (compressed) : %ld\n"
+msgstr "Veľkosť (komprimovaná) : %ld\n"
 
 #: ../package.c:152
 #, c-format
-msgid "Description       : "
-msgstr ""
+msgid "Size (installed)  : %ld\n"
+msgstr "Veľkosť (po nanštalovaní)  : %ld\n"
 
-#: ../package.c:156
+#: ../package.c:153
+#, c-format
+msgid "Description       : "
+msgstr "Opis       :"
+
+#: ../package.c:157
 #, c-format
 msgid ""
 "\n"
 "MD5 Sum           : %s"
 msgstr ""
+"\n"
+"MD5 Suma : %s"
 
-#: ../package.c:160
+#: ../package.c:161
 #, c-format
 msgid ""
 "\n"
 "SHA1 Sum          : %s"
 msgstr ""
+"\n"
+"SHA1 Suma : %s"
 
-#: ../package.c:189
+#: ../package.c:190
 #, c-format
 msgid "No changelog available for '%s'.\n"
-msgstr ""
+msgstr "Nie je k dispozícii záznam zmien pre '%s'.\n"
 
-#: ../pacman-g2.c:95
+#: ../pacman-g2.c:110
 #, c-format
 msgid "usage:  %s {-h --help}\n"
-msgstr ""
+msgstr "použitie:  %s {-h --help}\n"
 
-#: ../pacman-g2.c:96
+#: ../pacman-g2.c:111
 #, c-format
 msgid "        %s {-V --version}\n"
-msgstr ""
+msgstr "        %s {-V --version}\n"
 
-#: ../pacman-g2.c:97
+#: ../pacman-g2.c:112
 #, c-format
 msgid "        %s {-A --add}     [options] <file>\n"
-msgstr ""
+msgstr "        %s {-A --add}     [options] <file>\n"
 
-#: ../pacman-g2.c:98
+#: ../pacman-g2.c:113
 #, c-format
 msgid "        %s {-R --remove}  [options] <package>\n"
-msgstr ""
+msgstr "       %s {-R --remove}  [options] <package>\n"
 
-#: ../pacman-g2.c:99
+#: ../pacman-g2.c:114
 #, c-format
 msgid "        %s {-U --upgrade} [options] <file>\n"
-msgstr ""
+msgstr "        %s {-U --upgrade} [options] <file>\n"
 
-#: ../pacman-g2.c:100
+#: ../pacman-g2.c:115
 #, c-format
 msgid "        %s {-F --freshen} [options] <file>\n"
-msgstr ""
+msgstr "        %s {-F --freshen} [options] <file>\n"
 
-#: ../pacman-g2.c:101
+#: ../pacman-g2.c:116
 #, c-format
 msgid "        %s {-Q --query}   [options] [package]\n"
-msgstr ""
+msgstr "        %s {-Q --query}   [options] [package]\n"
 
-#: ../pacman-g2.c:102
+#: ../pacman-g2.c:117
 #, c-format
 msgid "        %s {-S --sync}    [options] [package]\n"
-msgstr ""
+msgstr "        %s {-S --sync}    [options] [package]\n"
 
-#: ../pacman-g2.c:103
+#: ../pacman-g2.c:118
 #, c-format
 msgid ""
 "\n"
 "use '%s --help' with other options for more syntax\n"
 msgstr ""
+"\n"
+"použi '%s --help' s inými nastaveniami pre väčšiu syntax\n"
 
-#: ../pacman-g2.c:106
+#: ../pacman-g2.c:121
 #, c-format
 msgid "usage:  %s {-A --add} [options] <file>\n"
-msgstr ""
+msgstr "použitie:  %s {-A --add} [options] <file>\n"
 
-#: ../pacman-g2.c:107 ../pacman-g2.c:113 ../pacman-g2.c:125 ../pacman-g2.c:130
-#: ../pacman-g2.c:145
+#: ../pacman-g2.c:122 ../pacman-g2.c:128 ../pacman-g2.c:140 ../pacman-g2.c:145
+#: ../pacman-g2.c:162
 #, c-format
 msgid "options:\n"
-msgstr ""
+msgstr "nastanenia:\n"
 
-#: ../pacman-g2.c:108 ../pacman-g2.c:115 ../pacman-g2.c:126 ../pacman-g2.c:147
+#: ../pacman-g2.c:123 ../pacman-g2.c:130 ../pacman-g2.c:141 ../pacman-g2.c:164
 #, c-format
 msgid "  -d, --nodeps        skip dependency checks\n"
-msgstr ""
+msgstr "  -d, --nodeps        nekontrolovať závislosti balíčkov\n"
 
-#: ../pacman-g2.c:109 ../pacman-g2.c:127 ../pacman-g2.c:149
+#: ../pacman-g2.c:124 ../pacman-g2.c:142 ../pacman-g2.c:166
 #, c-format
 msgid "  -f, --force         force install, overwrite conflicting files\n"
 msgstr ""
+" -f, --force         nainštalovať nasilu, konfliktné súbory budú prepísané\n"
 
-#: ../pacman-g2.c:110
+#: ../pacman-g2.c:125
 #, c-format
 msgid ""
 "      --noarch        install the package, even if it is for an other arch\n"
 msgstr ""
+"      --noarch        inštalovať balíček, aj keď je určený pre inú "
+"architektúru\n"
 
-#: ../pacman-g2.c:112
+#: ../pacman-g2.c:127
 #, c-format
 msgid "usage:  %s {-R --remove} [options] <package>\n"
-msgstr ""
+msgstr "použitie:  %s {-R --remove} [options] <package>\n"
 
-#: ../pacman-g2.c:114
+#: ../pacman-g2.c:129
 #, c-format
 msgid ""
 "  -c, --cascade       remove packages and all packages that depend on them\n"
 msgstr ""
-
-#: ../pacman-g2.c:116
-#, c-format
-msgid "  -k, --dbonly        only remove database entry, do not remove files\n"
-msgstr ""
-
-#: ../pacman-g2.c:117
-#, c-format
-msgid "  -n, --nosave        remove configuration files as well\n"
-msgstr ""
-
-#: ../pacman-g2.c:118
-#, c-format
-msgid ""
-"  -s, --recursive     remove dependencies also (that won't break packages)\n"
-msgstr ""
-
-#: ../pacman-g2.c:121
-#, c-format
-msgid "usage:  %s {-F --freshen} [options] <file>\n"
-msgstr ""
-
-#: ../pacman-g2.c:123
-#, c-format
-msgid "usage:  %s {-U --upgrade} [options] <file>\n"
-msgstr ""
-
-#: ../pacman-g2.c:129
-#, c-format
-msgid "usage:  %s {-Q --query} [options] [package]\n"
-msgstr ""
+"  -c, --cascade       odstráni balíčky a všetky ostatné balíčky, ktoré na "
+"nich závisia\n"
 
 #: ../pacman-g2.c:131
 #, c-format
-msgid "  -c, --changelog     view the changelog of a package\n"
+msgid "  -k, --dbonly        only remove database entry, do not remove files\n"
 msgstr ""
+" -k, --dbonly        vymaže iba záznam z databázy balíčkov, nebudú sa mazať "
+"súbory\n"
 
 #: ../pacman-g2.c:132
+#, c-format
+msgid "  -n, --nosave        remove configuration files as well\n"
+msgstr "  -n, --nosave        vymazať tiež konfiguračné súbory\n"
+
+#: ../pacman-g2.c:133
+#, c-format
+msgid ""
+"  -s, --recursive     remove dependencies also (that won't break packages)\n"
+msgstr " -s, --recursive     vymazať tiež závislosti (nepokazí to balíčky)\n"
+
+#: ../pacman-g2.c:136
+#, c-format
+msgid "usage:  %s {-F --freshen} [options] <file>\n"
+msgstr "použitie:  %s {-F --freshen} [options] <file>\n"
+
+#: ../pacman-g2.c:138
+#, c-format
+msgid "usage:  %s {-U --upgrade} [options] <file>\n"
+msgstr "použitie:  %s {-U --upgrade} [options] <file>\n"
+
+#: ../pacman-g2.c:144
+#, c-format
+msgid "usage:  %s {-Q --query} [options] [package]\n"
+msgstr "dependency:  %s {-Q --query} [options] [package]\n"
+
+#: ../pacman-g2.c:146
+#, c-format
+msgid "  -c, --changelog     view the changelog of a package\n"
+msgstr " -c, --changelog     pozreť záznam zmien balíčka\n"
+
+#: ../pacman-g2.c:147
+#, c-format
+msgid ""
+"  -d, --nodeps        if used with -e, list packages that were not "
+"installed\n"
+msgstr ""
+
+#: ../pacman-g2.c:148
+#, c-format
+msgid "                      as a dependency\n"
+msgstr ""
+
+#: ../pacman-g2.c:149
 #, c-format
 msgid ""
 "  -e, --orphans       list all packages that were installed as a dependency\n"
 msgstr ""
 
-#: ../pacman-g2.c:133
+#: ../pacman-g2.c:150
 #, c-format
 msgid "                      and are not required by any other packages\n"
 msgstr ""
 
-#: ../pacman-g2.c:134 ../pacman-g2.c:150
+#: ../pacman-g2.c:151 ../pacman-g2.c:167
 #, c-format
 msgid "  -g, --groups        view all members of a package group\n"
 msgstr ""
 
-#: ../pacman-g2.c:135
+#: ../pacman-g2.c:152
 #, c-format
 msgid "  -i, --info          view package information\n"
 msgstr ""
 
-#: ../pacman-g2.c:136
+#: ../pacman-g2.c:153
 #, c-format
 msgid "  -l, --list          list the contents of the queried package\n"
 msgstr ""
 
-#: ../pacman-g2.c:137
+#: ../pacman-g2.c:154
 #, c-format
 msgid ""
 "  -m, --foreign       list all packages that were not found in the sync db"
 "(s)\n"
 msgstr ""
 
-#: ../pacman-g2.c:138
+#: ../pacman-g2.c:155
 #, c-format
 msgid "  -o, --owns <file>   query the package that owns <file>\n"
 msgstr ""
 
-#: ../pacman-g2.c:139
+#: ../pacman-g2.c:156
 #, c-format
 msgid ""
 "  -p, --file          pacman-g2 will query the package file [package] "
 "instead of\n"
 msgstr ""
 
-#: ../pacman-g2.c:140
+#: ../pacman-g2.c:157
 #, c-format
 msgid "                      looking in the database\n"
 msgstr ""
 
-#: ../pacman-g2.c:141
+#: ../pacman-g2.c:158
 #, c-format
 msgid ""
 "  -s, --search        search locally-installed packages for matching "
 "strings\n"
 msgstr ""
 
-#: ../pacman-g2.c:142
+#: ../pacman-g2.c:159
 #, c-format
 msgid "  -t, --test          search problems in the local database\n"
 msgstr ""
 
-#: ../pacman-g2.c:144
+#: ../pacman-g2.c:161
 #, c-format
 msgid "usage:  %s {-S --sync} [options] [package]\n"
 msgstr ""
 
-#: ../pacman-g2.c:146
+#: ../pacman-g2.c:163
 #, c-format
 msgid ""
 "  -c, --clean         remove old packages from cache directory (use -cc for "
 "all)\n"
 msgstr ""
 
-#: ../pacman-g2.c:148
+#: ../pacman-g2.c:165
 #, c-format
 msgid "  -e, --dependsonly   install dependencies only\n"
 msgstr ""
 
-#: ../pacman-g2.c:151
+#: ../pacman-g2.c:168
 #, c-format
 msgid ""
 "  -p, --print-uris    print out URIs for given packages and their "
 "dependencies\n"
 msgstr ""
 
-#: ../pacman-g2.c:152
+#: ../pacman-g2.c:169
 #, c-format
 msgid "  -s, --search        search remote repositories for matching strings\n"
 msgstr ""
 
-#: ../pacman-g2.c:153
+#: ../pacman-g2.c:170
 #, c-format
 msgid "  -u, --sysupgrade    upgrade all packages that are out of date\n"
 msgstr ""
 
-#: ../pacman-g2.c:154
+#: ../pacman-g2.c:171
 #, c-format
 msgid ""
 "  -w, --downloadonly  download packages but do not install/upgrade anything\n"
 msgstr ""
 
-#: ../pacman-g2.c:155
+#: ../pacman-g2.c:172
 #, c-format
 msgid ""
 "  -y, --refresh       download fresh package databases from the server\n"
 msgstr ""
 
-#: ../pacman-g2.c:156
+#: ../pacman-g2.c:173
 #, c-format
 msgid ""
 "      --ignore <pkg>  ignore a package upgrade (can be used more than once)\n"
 msgstr ""
 
-#: ../pacman-g2.c:157
+#: ../pacman-g2.c:174
 #, c-format
 msgid ""
 "      --nointegrity   don't check the integrity of the packages using sha1\n"
 msgstr ""
 
-#: ../pacman-g2.c:159
+#: ../pacman-g2.c:175
+#, c-format
+msgid "      --regex         treat targets as regexs if no package found\n"
+msgstr ""
+
+#: ../pacman-g2.c:177
 #, c-format
 msgid "      --config <path> set an alternate configuration file\n"
 msgstr ""
 
-#: ../pacman-g2.c:160
+#: ../pacman-g2.c:178
 #, c-format
 msgid "      --noconfirm     do not ask for anything confirmation\n"
 msgstr ""
 
-#: ../pacman-g2.c:161
+#: ../pacman-g2.c:179
 #, c-format
 msgid "      --ask  <number> pre-specify answers for questions (see manpage)\n"
 msgstr ""
 
-#: ../pacman-g2.c:162
+#: ../pacman-g2.c:180
 #, c-format
 msgid ""
 "      --noprogressbar do not show a progress bar when downloading files\n"
 msgstr ""
 
-#: ../pacman-g2.c:163
+#: ../pacman-g2.c:181
 #, c-format
 msgid ""
 "      --noscriptlet   do not execute the install scriptlet if there is any\n"
 msgstr ""
 
-#: ../pacman-g2.c:164
+#: ../pacman-g2.c:182
 #, c-format
 msgid "  -v, --verbose       be verbose\n"
 msgstr ""
 
-#: ../pacman-g2.c:165
+#: ../pacman-g2.c:183
 #, c-format
 msgid "  -r, --root <path>   set an alternate installation root\n"
 msgstr ""
 
-#: ../pacman-g2.c:166
+#: ../pacman-g2.c:184
 #, c-format
 msgid "  -b, --dbpath <path> set an alternate database location\n"
 msgstr ""
 
-#: ../pacman-g2.c:179
+#: ../pacman-g2.c:197
 #, c-format
 msgid "                       This program may be freely redistributed under\n"
 msgstr ""
 
-#: ../pacman-g2.c:180
+#: ../pacman-g2.c:198
 #, c-format
 msgid "                       the terms of the GNU General Public License\n"
 msgstr ""
 
-#: ../pacman-g2.c:361
+#: ../pacman-g2.c:386
 msgid "bad root path"
 msgstr ""
 
-#: ../pacman-g2.c:389
+#: ../pacman-g2.c:414
 msgid "only one operation may be used at a time\n"
 msgstr ""
 
-#: ../pacman-g2.c:489
+#: ../pacman-g2.c:514
 msgid "you cannot perform this operation unless you are root.\n"
 msgstr ""
 
-#: ../pacman-g2.c:513
+#: ../pacman-g2.c:538
 #, c-format
-msgid "failed to initilize pacman library (%s)\n"
+msgid "failed to initialize pacman library (%s)\n"
 msgstr ""
 
-#: ../pacman-g2.c:519
+#: ../pacman-g2.c:544
 #, c-format
 msgid "failed to set option LOGMASK (%s)\n"
 msgstr ""
 
-#: ../pacman-g2.c:523
+#: ../pacman-g2.c:548
 #, c-format
 msgid "failed to set option DBPATH (%s)\n"
 msgstr ""
 
-#: ../pacman-g2.c:527
+#: ../pacman-g2.c:552
 #, c-format
 msgid "failed to set option LOGCB (%s)\n"
 msgstr ""
 
-#: ../pacman-g2.c:535
+#: ../pacman-g2.c:560
 #, c-format
 msgid "failed to parse config (%s)\n"
 msgstr ""
 
-#: ../pacman-g2.c:541
+#: ../pacman-g2.c:566
 #, c-format
 msgid "failed to set option DLCB (%s)\n"
 msgstr ""
 
-#: ../pacman-g2.c:545
+#: ../pacman-g2.c:570
 #, c-format
 msgid "failed to set option DLFNM (%s)\n"
 msgstr ""
 
-#: ../pacman-g2.c:549
+#: ../pacman-g2.c:574
 #, c-format
 msgid "failed to set option DLOFFSET (%s)\n"
 msgstr ""
 
-#: ../pacman-g2.c:553
+#: ../pacman-g2.c:578
 #, c-format
 msgid "failed to set option DLT0 (%s)\n"
 msgstr ""
 
-#: ../pacman-g2.c:557
+#: ../pacman-g2.c:582
 #, c-format
 msgid "failed to set option DLT (%s)\n"
 msgstr ""
 
-#: ../pacman-g2.c:561
+#: ../pacman-g2.c:586
 #, c-format
 msgid "failed to set option DLRATE (%s)\n"
 msgstr ""
 
-#: ../pacman-g2.c:565
+#: ../pacman-g2.c:590
 #, c-format
 msgid "failed to set option DLXFERED1 (%s)\n"
 msgstr ""
 
-#: ../pacman-g2.c:569
+#: ../pacman-g2.c:594
 #, c-format
 msgid "failed to set option DLETA_H (%s)\n"
 msgstr ""
 
-#: ../pacman-g2.c:573
+#: ../pacman-g2.c:598
 #, c-format
 msgid "failed to set option DLETA_M (%s)\n"
 msgstr ""
 
-#: ../pacman-g2.c:577
+#: ../pacman-g2.c:602
 #, c-format
 msgid "failed to set option DLETA_S (%s)\n"
 msgstr ""
 
-#: ../pacman-g2.c:581
+#: ../pacman-g2.c:606
 #, c-format
 msgid "failed to set option DLREMAIN (%s)\n"
 msgstr ""
 
-#: ../pacman-g2.c:585
+#: ../pacman-g2.c:610
 #, c-format
 msgid "failed to set option DLHOWMANY (%s)\n"
 msgstr ""
 
-#: ../pacman-g2.c:593
+#: ../pacman-g2.c:618
 #, c-format
 msgid "failed to set option IGNOREPKG (%s)\n"
 msgstr ""
 
-#: ../pacman-g2.c:601
+#: ../pacman-g2.c:626
 msgid "Targets:"
 msgstr ""
 
-#: ../pacman-g2.c:607
+#: ../pacman-g2.c:632
 #, c-format
 msgid "could not register 'local' database (%s)\n"
 msgstr ""
 
-#: ../pacman-g2.c:614
+#: ../pacman-g2.c:639
 msgid "no targets specified (use -h for help)\n"
 msgstr ""
 
-#: ../pacman-g2.c:627
+#: ../pacman-g2.c:652
 msgid "no operation specified (use -h for help)\n"
 msgstr ""
 
-#: ../query.c:77
+#: ../query.c:76
 #, c-format
 msgid ":: the database seems to be consistent\n"
 msgstr ""
 
-#: ../query.c:89 ../sync.c:248
+#: ../query.c:88 ../sync.c:256
 msgid "no usable package repositories configured.\n"
 msgstr ""
 
-#: ../query.c:128
+#: ../query.c:127
 #, c-format
 msgid "group \"%s\" was not found\n"
 msgstr ""
 
-#: ../query.c:138
+#: ../query.c:137
 msgid "no package file was specified for --file\n"
 msgstr ""
 
-#: ../query.c:142
+#: ../query.c:141
 #, c-format
 msgid "failed to load package '%s' (%s)\n"
 msgstr ""
 
-#: ../query.c:164
+#: ../query.c:163
 #, c-format
 msgid "No package owns %s\n"
 msgstr ""
 
-#: ../query.c:170
+#: ../query.c:169
 #, c-format
 msgid "%s %s is an owner of %s\n"
 msgstr ""
 
 #. something weird happened
-#: ../query.c:192 ../query.c:234
+#: ../query.c:191 ../query.c:239
 #, c-format
 msgid "package \"%s\" not found\n"
 msgstr ""
 
-#: ../remove.c:64 ../sync.c:382
+#: ../remove.c:64 ../sync.c:390
 #, c-format
 msgid ":: group %s:\n"
 msgstr ""
@@ -832,7 +864,7 @@ msgstr ""
 msgid ":: Remove %s from group %s? [Y/n] "
 msgstr ""
 
-#: ../remove.c:81 ../sync.c:302 ../sync.c:341
+#: ../remove.c:81 ../sync.c:310 ../sync.c:349
 #, c-format
 msgid "failed to init transaction (%s)\n"
 msgstr ""
@@ -855,157 +887,158 @@ msgid ""
 "Do you want to remove these packages? [Y/n] "
 msgstr ""
 
-#: ../sync.c:66
+#: ../sync.c:68
 #, c-format
 msgid "failed to synchronize %s\n"
 msgstr ""
 
-#: ../sync.c:68
+#: ../sync.c:70
 #, c-format
 msgid "failed to update %s (%s)\n"
 msgstr ""
 
-#: ../sync.c:73
+#: ../sync.c:75
 #, c-format
 msgid " %s is up to date\n"
 msgstr ""
 
-#: ../sync.c:171
+#: ../sync.c:111
+#, fuzzy
+msgid "installed"
+msgstr "Priamo inštalované\n"
+
+#: ../sync.c:179
 #, c-format
 msgid "package \"%s\" was not found.\n"
 msgstr ""
 
-#: ../sync.c:209
+#: ../sync.c:217
 #, c-format
 msgid "repository \"%s\" was not found.\n"
 msgstr ""
 
-#: ../sync.c:256
+#: ../sync.c:264
 msgid "Do you want to remove old packages from cache? [Y/n] "
 msgstr ""
 
-#: ../sync.c:258
+#: ../sync.c:266
 msgid "removing old packages from cache... "
 msgstr ""
 
-#: ../sync.c:261
+#: ../sync.c:269
 msgid "Do you want to remove all packages from cache? [Y/n] "
 msgstr ""
 
-#: ../sync.c:263
+#: ../sync.c:271
 msgid "removing all packages from cache... "
 msgstr ""
 
-#: ../sync.c:269
+#: ../sync.c:277
 #, c-format
 msgid "failed to clean the cache (%s)\n"
 msgstr ""
 
 #. grab a fresh package list
-#: ../sync.c:276
+#: ../sync.c:284
 msgid ":: Synchronizing package databases...\n"
 msgstr ""
 
-#: ../sync.c:277
+#: ../sync.c:285
 msgid "synchronizing package lists"
 msgstr ""
 
-#: ../sync.c:311
+#: ../sync.c:319
 msgid ":: Starting local database upgrade...\n"
 msgstr ""
 
-#: ../sync.c:312
-msgid "starting full system upgrade"
-msgstr ""
-
-#: ../sync.c:330
+#: ../sync.c:338
 msgid ""
 "\n"
 ":: pacman-g2 has detected a newer version of the \"pacman-g2\" package.\n"
 msgstr ""
 
-#: ../sync.c:331
+#: ../sync.c:339
 msgid ":: It is recommended that you allow pacman-g2 to upgrade itself\n"
 msgstr ""
 
-#: ../sync.c:332
+#: ../sync.c:340
 msgid ":: first, then you can re-run the operation with the newer version.\n"
 msgstr ""
 
-#: ../sync.c:334
+#: ../sync.c:342
 msgid ":: Upgrade pacman-g2 first? [Y/n] "
 msgstr ""
 
-#: ../sync.c:349 ../sync.c:370 ../sync.c:413
+#: ../sync.c:357 ../sync.c:378 ../sync.c:421
 #, c-format
 msgid "could not add target '%s': %s\n"
 msgstr ""
 
-#: ../sync.c:388
+#: ../sync.c:396
 msgid ":: Install whole content? [Y/n] "
 msgstr ""
 
-#: ../sync.c:395
+#: ../sync.c:403
 #, c-format
 msgid ":: Install %s from group %s? [Y/n] "
 msgstr ""
 
-#: ../sync.c:438
+#: ../sync.c:446
 #, c-format
 msgid "could not add target '%s': not found in sync db\n"
 msgstr ""
 
-#: ../sync.c:457
+#: ../sync.c:465
 msgid "requires"
 msgstr ""
 
-#: ../sync.c:457
+#: ../sync.c:465
 msgid "is required by"
 msgstr ""
 
-#: ../sync.c:534
+#: ../sync.c:542
 msgid ""
 "\n"
 "Remove:  "
 msgstr ""
 
-#: ../sync.c:550
+#: ../sync.c:558
 msgid ""
 "\n"
 "Targets: "
 msgstr ""
 
-#: ../sync.c:553
+#: ../sync.c:561
 #, c-format
 msgid ""
 "\n"
 "Total Package Size:   %.1f MB\n"
 msgstr ""
 
-#: ../sync.c:555
+#: ../sync.c:563
 #, c-format
 msgid ""
 "\n"
 "Total Uncompressed Package Size:   %.1f MB\n"
 msgstr ""
 
-#: ../sync.c:562
+#: ../sync.c:570
 msgid ""
 "\n"
 "Beginning download...\n"
 msgstr ""
 
-#: ../sync.c:566
+#: ../sync.c:574
 msgid "Proceed with download? [Y/n] "
 msgstr ""
 
-#: ../sync.c:574
+#: ../sync.c:582
 msgid ""
 "\n"
 "Beginning upgrade process...\n"
 msgstr ""
 
-#: ../sync.c:578
+#: ../sync.c:586
 msgid "Proceed with upgrade? [Y/n] "
 msgstr ""
 
@@ -1030,29 +1063,14 @@ msgstr ""
 msgid "installing %s... "
 msgstr ""
 
-#: ../trans.c:101
-#, c-format
-msgid "installed %s (%s)"
-msgstr ""
-
 #: ../trans.c:108
 #, c-format
 msgid "removing %s... "
 msgstr ""
 
-#: ../trans.c:117
-#, c-format
-msgid "removed %s (%s)"
-msgstr ""
-
 #: ../trans.c:124
 #, c-format
 msgid "upgrading %s... "
-msgstr ""
-
-#: ../trans.c:131
-#, c-format
-msgid "upgraded %s (%s -> %s)"
 msgstr ""
 
 #: ../trans.c:138
@@ -1133,7 +1151,10 @@ msgstr ""
 msgid "looking for inter-conflicts"
 msgstr ""
 
-#: ../util.c:177
+#: ../util.c:102
 #, c-format
 msgid "failed to allocated %d bytes\n"
 msgstr ""
+
+#~ msgid "NOT "
+#~ msgstr "NIE "

@@ -2,74 +2,89 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-12-26 05:05+0100\n"
-"PO-Revision-Date: 2007-11-10 01:59+0100\n"
-"Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
+"POT-Creation-Date: 2010-02-05 02:02+0100\n"
+"PO-Revision-Date: 2009-08-12 02:37+0200\n"
+"Last-Translator: Horvtáh Krisztián <raksi.raksi@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: hu\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 1.0\n"
+"X-Generator: Pootle 1.2.1\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:2
 msgid "= FrugalBuild(5)"
 msgstr "= FrugalBuild(5)"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:4 makepkg.txt:4 pacman-g2.txt:4
 msgid "== NAME"
 msgstr "== NAME"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:6
 msgid "FrugalBuild - Frugalware package builder descriptor"
 msgstr "FrugalBuild - A Frugalware csomagfordító leírója"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:8 makepkg.txt:8 pacman-g2.txt:8
 msgid "== SYNOPSIS"
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:12
 msgid ""
 "This manual page is meant to describe general rules about FrugalBuilds. If "
 "you're interested in the package builder makepkg itself, then see its manual "
 "page, not this one."
 msgstr ""
+"Ez az ismertető a FrugalBuildre vonatkozó általános szabályokat ismerteti. "
+"Ha a makepkg csomagkészítőről szeretnél bővebb információhoz jutni, akkor "
+"azokat nem itt, hanem annak ismertetőjében találod meg."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:14 makepkg.txt:12 pacman-g2.txt:12
 msgid "== DESCRIPTION"
-msgstr ""
+msgstr "== LEÍRÁS"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:16
+#, fuzzy
 msgid "=== Simple Example"
-msgstr ""
+msgstr "=== Egyszerű példa"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:17 FrugalBuild.txt:44 FrugalBuild.txt:157
-#: FrugalBuild.txt:170 FrugalBuild.txt:202 FrugalBuild.txt:244
-#: FrugalBuild.txt:407 FrugalBuild.txt:431 FrugalBuild.txt:447
-#: pacman-g2.txt:299 pacman-g2.txt:400
+#: FrugalBuild.txt:170 FrugalBuild.txt:202 FrugalBuild.txt:248
+#: FrugalBuild.txt:416 FrugalBuild.txt:440 FrugalBuild.txt:456
+#: pacman-g2.txt:311 pacman-g2.txt:412
 #, no-wrap
 msgid "----\n"
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:20
 msgid "# Compiling Time: 0.17 SBU # Maintainer: Name <email@addr.ess>"
-msgstr ""
+msgstr "# Fordítási idő: 0.17 SBU # Csomagkarbantartó: Név <email@addr.ess>"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:31
 #, no-wrap
 msgid ""
@@ -85,22 +100,42 @@ msgid ""
 "# optimization OK\n"
 "----\n"
 msgstr ""
+"pkgname=dvdauthor\n"
+"pkgver=0.6.11\n"
+"pkgrel=3\n"
+"pkgdesc=\"DVD film létrehozása mpeg2 állományokból\"\n"
+"depends=('imagemagick' 'libdvdread')\n"
+"Finclude sourceforge\n"
+"groups=('xapps')\n"
+"archs=('i686' 'x86_64')\n"
+"sha1sums=('a99ea7ef6e50646b77ad47a015127925053d34ea')\n"
+"# optimization OK\n"
+"----\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:35
 msgid ""
 "As you can see, the setup is fairly simple. The first line tracks the time "
 "of the last update, this is automatically updated after a successful build."
 msgstr ""
+"A példán is jól látszik, hogy egy FrugalBuild szkript felépítése "
+"meglehetősen egyszerű. Az első sor a legutolsó módosítás dátumát mutatja. Ez "
+"automatikusan felülíródik a sikeres csomagkészítés után."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:38
 msgid ""
 "The next line defines its build time. Of course, it depends on your "
 "hardware, so we use `SBU`s instead of minutes as a unit."
 msgstr ""
+"A következő sor a csomag készítéséhez szükséges időt mutatja. Mivel ez "
+"nagyban függ az adott hardvertől, ezért itt perc helyett 'SBU' egységet "
+"használunk."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:43
 msgid ""
 "`SBU` is the Static Binutils Unit, which means the time `repoman merge "
@@ -108,16 +143,24 @@ msgid ""
 "many seconds the build took. After you have built `binutils`, you should "
 "update your `/etc/makepkg.conf`:"
 msgstr ""
+"`SBU`-val a Statikus Binutils Egységet jelöljük. 1 SBU a `repoman merge "
+"binutils` időszükséglete az adott hardveren. Alapértelmezés szerint a "
+"'makepkg' kiírja, hogy a folyamat hány másodpercig tartott. Ez alapján "
+"módosítsd a `/etc/makepkg.conf` fájl megfeleő sorát: "
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:46
 #, no-wrap
 msgid ""
 "SBU=\"257\"\n"
 "----\n"
 msgstr ""
+"SBU=\"257\"\n"
+"----\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:51
 msgid ""
 "The line above means compiling `binutils` on your machine took 257 seconds.  "
@@ -125,8 +168,13 @@ msgid ""
 "after successful builds, and this SBU value will be equal on everyone's "
 "machine."
 msgstr ""
+"A fenti sor szerint a `binutils` lefordítása 257 másodpercet vesz idénybe az "
+"adott hardveren. Az `/etc/makepkg.conf` fenti módon történt módosítása után "
+"a `makepkg` a sikeres csomagkészítés idejét SBU-ban fogja kiírni, ami minden "
+"egyes gépen azonos kell, hogy legyen."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:57
 msgid ""
 "If you wish to maintain the package, write your name or nick and e-mail "
@@ -136,8 +184,16 @@ msgid ""
 "`Modified by` are not allowed. Use the commit message to mention others if "
 "you wish."
 msgstr ""
+"Ha úgy döntesz, hogy karban fogod tartani az adott csomagot, akkor a második "
+"sorba írd be a neved és az email címed. Ha csak a FrugalBuild szkriptet "
+"szeretnéd megírni, és a jövőben nem kívánod karban tartani a csomagot akkor "
+"`Maintainer` helyett `Contributor`-t írj ide, és majd más, aki a csomagot "
+"felkarolja, beírja magát fenntartóként. Egyéb sorok hozzáadása, mint pl. "
+"`Modified by` nem engedélyezettek. Ha úgy gondolod, javasolhatsz is valakit "
+"azt a `commit message` használatával megteheted."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:66
 msgid ""
 "`pkgname` defines the package name. It should not contain any uppercase "
@@ -149,16 +205,30 @@ msgid ""
 "`5wanda1`, `5wanda2` and so on. This way the user can easily upgrade to "
 "`pkgrel=5` which is in `-current`."
 msgstr ""
+"`pkgname` sorban lehet megadni a csomag nevét, ami nem tartalmazhat "
+"nagybetűket. A csomag verziószáma (`pkgver`) az eredeti program "
+"verziószámára utal. A kiadás száma (`pkgrel`) követi nyomon a Frugalware-"
+"specifikus változásokat, változatokat. A `pkgrel` egy egész szám kell, hogy "
+"legyen. A `5wanda1` típusú nevek a biztonsági frissítések számára vannak "
+"fenntartva. Ha biztonsági patchet adsz egy csomaghoz, akkor a következő "
+"szabályokat tartsd szem előtt: ha az eredeti csomag kiadási száma (`pkgrel`) "
+"4 volt, akkor ezt növeld meg eggyel, majd használd az `5wanda1`, `5wanda2`, "
+"stb. neveket. Ily módon a felhasználó könnyen frissítheti a csomagot a `-"
+"current`-ben levő `pkgrel=5`-re."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:69
 msgid ""
 "`pkgdesc` is a short one-line description for the package. Usually taken "
 "from the project's homepage or manpage. Try to keep the length under 80 "
 "chars."
 msgstr ""
+"A `pkgdesc` egy rövid, általában a program honlapjáról vagy kézikönyvéből "
+"vett egysoros ismertető. Próbáld meg 80 karakter alatt tartani a hosszát!"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:74
 msgid ""
 "`depends()` is a bash array which defines the dependencies of the package.  "
@@ -166,8 +236,14 @@ msgid ""
 "one.  If the dependency is runtime-only, then use `rodepends()`, if "
 "buildtime-only then use `makedepends()`."
 msgstr ""
+"A `depends()` a csomag függőségeinek meghatározására szolgáló bash tömb. A "
+"`depends()` felsorolja azokat a csomagokat, amelyek a jelenlegi csomag "
+"felépítéséhez és használatához szükségesek. Ha csak a program futtatásához "
+"szükséges függőségről van szó, akkor `rodepends()`-t használj, míg ha csak a "
+"csomag forgatásához kell, akkor `makedepends()`-t."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:83
 msgid ""
 "The next line is a special `Finclude` command which allows you to inherit "
@@ -179,16 +255,33 @@ msgid ""
 "you can overwrite the inherited directives, for example define a custom "
 "`up2date` if the inherited one is not suitable for you."
 msgstr ""
+"A következő sor egy speciális `Finclude` parancs, amely lehetőséget ad egy "
+"már létező FrugalBuild sémából bármilyen utasítás átvételére. Ezek a sémák "
+"az `FST`-ben (Frugalware Source Tree), a `/source/include` könyvtárban "
+"találhatók. Mivel a `util` séma függvényeit szinte minden egyes FrugalBuild "
+"szkript felhasználja, ezért ez mindig figyelembe van véve. Ha megnézed a `/"
+"source/include/sourceforge.sh` tartalmát (a fenti példában ennek a sémának "
+"az utasításai lettek átvéve), akkor láthatod, hogy ez az `url`, `up2date` és "
+"a `source()` utasításokat szolgáltatja, így ezeket már nem kell külön "
+"definiálnod. A `Finclude` után felül is írhatos a már átvett utasításokat, "
+"például ha az `up2date` nem felel meg az igényeidnek, akkor definiálhatsz "
+"egy számodra megfeleőbb `up2date`-et is."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:87
 msgid ""
 "The `groups()` array's first element is mandatory, and it should be a valid "
 "\"first group\". This means it should be in a `foo` or `foo-extra` format, "
 "where `foo` or `foo-extra` is a directory under `/source` in the `FST`."
 msgstr ""
+"A `groups()` tömb első elemét kötelező kitölteni egy valós \"elsődleges "
+"csoport\"-tal. Ez azt jelenti, hogy `foo` vagy `foo-extra` formátumú kell, "
+"hogy legyen, ahol a `foo` vagy `foo-extra` egy létező könyvtár az `FST`-ben "
+"a `/source` alatt."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:96
 msgid ""
 "The `archs()` array defines for which architectures the given package is "
@@ -200,8 +293,18 @@ msgid ""
 "on a given arch (for example it's written in assembly), then use !arch, for "
 "example `!x86_64`."
 msgstr ""
+"Az `archs()` tömbben lehet definiálni, hogy az adott csomag milyen "
+"architektúrákra érhető el. Ha ez a tömb üres, akkor a `gensync` csomag "
+"adatbázis létrehozásakor át fogja ugrani ezt a csomagot. Fontos, hogy ha egy "
+"adott architektútára nem tudsz csomagot szolgáltatni, akkor azt nem tüntesd "
+"fel ebben a tömbben! Függetlenül attól például, hogy az adott csomag amúgy "
+"lefordítható lenne x86_64 architektúrákra, ha te azt nem tetted meg, akkor "
+"ne vedd fel a listára. Ha biztos vagy benne, hogy a csomag nem lesz elérhető "
+"egy adott architektúrára (mert pl. assemblyben íródott), akkor használd az !"
+"arch leírót, pl. írd be, hogy `!x86_64`."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:101
 msgid ""
 "The `sha1sums()` array can be generated with the `makepkg -G` command. Its "
@@ -210,8 +313,15 @@ msgid ""
 "provided by upstream, its goal is that you don't have to update it manually "
 "every time."
 msgstr ""
+"A `sha1sums()` tömb tartalmát a `makepkg -G` paranccsal tudod előállítani. "
+"Ennek a célja, hogy megelőzze a hamis forrásból származó programok "
+"lefordítását. Ez különösen akkor fontos, ha a csomagkészítés automatikus. Ha "
+"a program készítői biztosítanak digitális aláírást, akkor a signatures()-t "
+"is használhatod. Ebben az esetben nem neked kell kézzel frissítened ezt a "
+"tömböt minden egyes alkalommal."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:109
 msgid ""
 "The last line will be added automatically to the end of the FrugalBuild if "
@@ -222,8 +332,17 @@ msgid ""
 "any architecture-dependent file, then you can add this line manually as "
 "`makepkg` will not detect this."
 msgstr ""
+"Az utolsó sor automatikusan adódik hozzá a FrugalBuild szkripthez ha a `build"
+"()` függvényben a `$CFLAGS` vagy a `$CXXFLAGS`-ek valamelyikét használtad. "
+"Ez nagyon praktikus, ha egy gyorsabb gépen szeretnéd a csomagot egy lassúbb "
+"architektúra számára fordítani. Ha a csomag nem tartalmaza a `$CFLAGS`-"
+"ünket, akkor keresztfordítást nem áll módunkban végrehajtani, ezért légy "
+"szíves próbáld meg elkerülni az optimalizálatlan csomagok készítését. Ha a "
+"csomag nem tartalmaz semmilyen architektúra függő fájlt, akkor kézzel is "
+"hozzáadhatod ezt a sort, mivel a `makepkg` nem fogja felismerni."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:117
 msgid ""
 "Finally we define a `build()` function that will build the package. If you "
@@ -234,9 +353,21 @@ msgid ""
 "and others refer to the `fwmakepkg` manpage. Again, `util.sh` is included "
 "automatically, but you have to `Finclude` the others before using them!"
 msgstr ""
+"Legvégül egy `build()` függvényt kell definiálnunk, ami elkészíti a kívánt "
+"csomagot. Ha nem valamikülönleges dolgot akarsz csinálni, akkor nagy "
+"valószínűséggel az alapértelmezett,  `util.sh`-ből átvett build() megfelelő "
+"lesz számodra. Ebben az esetben nem kell külön definiálnod a build() "
+"függvényt. Még abban az esetben is, ha egyéni build()-re van szükséged, nagy "
+"valószínűséggel fel tudod használni az alapértelmezett build() egy részét. A "
+"util.sh és egyéb sémák által szolgáltatott speciális függvényekről a "
+"`fwmakepkg` ismertetőjében találhatsz bővebb információkat. Ahogy azt már "
+"fentebb említettük, a `util.sh` automatikusan figyelembe van véve, de a "
+"többit neked kell a `Finclude` sorban definiálni."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:123
+#, fuzzy
 msgid ""
 "Once the package is successfully installed into the package root, makepkg "
 "will prepare some documentation. It will then strip debugging info from "
@@ -244,20 +375,27 @@ msgid ""
 "compress everything into a `.fpm` file and leave it in the directory from "
 "which you ran `makepkg`."
 msgstr ""
+"... Végül mindent betömörít egy `.fpm` fájlba, amit abban a könyvtárban "
+"hagy, amelyben a `makepkg` parancsot kiadtad."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:126
 msgid ""
 "At this point you should have a package file in the current directory, named "
 "something like `name-version-release-arch.fpm`. Done!"
 msgstr ""
+"Ha eddig eljutottál, akkor egy `név-verzió-kiadás-arch.fpm` nevű csomagfájlt "
+"kell hogy találj az aktuális könyvtárban. Ennyi!"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:128
 msgid "=== Install/Upgrade/Remove Scripting"
-msgstr ""
+msgstr "=== Telepítő/Frissítő/Eltávolító szkriptek"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:133
 msgid ""
 "`pacman-g2` has the ability to store and execute a package-specific non-"
@@ -265,97 +403,140 @@ msgid ""
 "allows a package to 'configure itself' after installation and do the "
 "opposite right before it is removed."
 msgstr ""
+"A `pacman-g2` képes arra, hogy csomagspecifikus, nem interaktív szkripteket "
+"futtasson ill. tároljon csomagtelepítés, -eltávolítás vagy -frissítés "
+"közben. Ezzel lehetővé válik, hogy az adott csomag bekonfigurálja magát a "
+"telepítés után, ill. hogy ennek ellenkezőjét megtegye eltávolítása előtt."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:135
 msgid "The exact time the script is run varies with each operation:"
 msgstr ""
+"A szkript futásának időpontja különbözik az egyes munkafolyamatok esetén:"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:138
 #, no-wrap
 msgid ""
 "pre_install::\n"
 "\tscript is run right before files are extracted.\n"
 msgstr ""
+"pre_install::\n"
+"\ta szkript közvetlenül a fájlok kicsomagolása előtt fut le.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:141
 #, no-wrap
 msgid ""
 "post_install::\n"
 "\tscript is run right after files are extracted.\n"
 msgstr ""
+"post_install::\n"
+"\ta szkript közvetlenül a fájlok kicsomagolása után fut le.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:144
 #, no-wrap
 msgid ""
 "pre_upgrade::\n"
 "\tscript is run right before files are extracted.\n"
 msgstr ""
+"pre_upgrade::\n"
+"\ta szkript közvetlenül a fájlok kicsomagolása előtt fut le.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:147
 #, no-wrap
 msgid ""
 "post_upgrade::\n"
 "\tscript is run after files are extracted.\n"
 msgstr ""
+"post_upgrade::\n"
+"\ta szkript a fájlok kicsomagolása után fut le.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:150
 #, no-wrap
 msgid ""
 "pre_remove::\n"
 "\tscript is run right before files are removed.\n"
 msgstr ""
+"pre_remove::\n"
+"\ta szkript közvetlenül a fájlok eltávolítása előtt fut le.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:153
 #, no-wrap
 msgid ""
 "post_remove::\n"
 "\tscript is run right after files are removed.\n"
 msgstr ""
+"post_remove::\n"
+"\ta szkript a fájlok eltávolítása után fut le.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:156
 msgid ""
 "To use this feature, just create a file (eg, pkgname.install) and put it in "
 "the same directory as the FrugalBuild script. Then use the install directive:"
 msgstr ""
+"Ezen szolgáltatások használatához mindössze annyit kell tenned, hogy "
+"készítesz egy fájlt pl. csomagnév.install néven. Ezt másold be ugyanabba a "
+"könyvtárba, amelyikben a FrugalBuild szkript található, és használd az "
+"alábbi telepítési utasítást:"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:159
 #, no-wrap
 msgid ""
 "install=pkgname.install\n"
 "----\n"
 msgstr ""
+"install=csomagnév.install\n"
+"----\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:164
 msgid ""
 "The install script does not need to be specified in the source array. If you "
 "omit the install directive then makepkg will check for the $pkgname.install "
 "script and will use it if it's present."
 msgstr ""
+"A telepítési szkriptet nem kell a forrás tömbben meghatározni. Ha elhagyod a "
+"telepítési utasítást, a makepkg akkor is automatikusan rákeres a $pkgname."
+"install szkriptre és ha az jelen van a könyvtárban, felhasználja azt."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:167
 msgid ""
 "You can find a scriptlet skeleton in the `/docs/skel/` directory, use it "
 "when creating new packages."
 msgstr ""
+"A `/docs/skel/` könyvtárban található egy szkriptlet váz, amit új csomag "
+"készítésekor felhasználhatsz."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:169
 msgid ""
 "The scriptlet messages are parsed, a simple example tells you everything:"
 msgstr ""
+"A szkriptlet üzenetek tördelésének módját az alábbi egyszerű példa jól "
+"reprezentálja:"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:179
 #, no-wrap
 msgid ""
@@ -369,13 +550,24 @@ msgid ""
 "}\n"
 "----\n"
 msgstr ""
+"post_upgrade()\n"
+"{\n"
+"\techo \"START működni fog\"\n"
+"\techo \"DONE 0\"\n"
+"\techo \"START hibás lesz\"\n"
+"\techo \"DONE 1\"\n"
+"\techo \"régi üzenet\"\n"
+"}\n"
+"----\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:182
 msgid "=== FrugalBuild Directives"
-msgstr ""
+msgstr "=== FrugalBuild utasítások"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:186
 #, no-wrap
 msgid ""
@@ -383,8 +575,11 @@ msgid ""
 "\tThe name of the package. It can contain hyphens and should be lowercase. It is\n"
 "\tusually the name part of the source tarball.\n"
 msgstr ""
+"pkgname::\n"
+"\tA csomag neve, mely csak kisbetűket tartalmazhat. Kötőjel szerepelhet benne. Általában megyegyezik a forrásprogram nevével.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:190
 #, no-wrap
 msgid ""
@@ -392,16 +587,22 @@ msgid ""
 "\tThis is the version of the software as released from the author (eg,\n"
 "\t2.7.1).\n"
 msgstr ""
+"pkgver::\n"
+"\tA program verziója, ahogy azt a készítői definiálták (pl. 2.7.1).\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:193
 #, no-wrap
 msgid ""
 "pkgrel::\n"
 "\tThis is the release number specific to Frugalware Linux packages.\n"
 msgstr ""
+"pkgrel::\n"
+"\tA csomag Frugalware specifikus kiadási száma.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:197
 #, no-wrap
 msgid ""
@@ -409,8 +610,11 @@ msgid ""
 "\tThis should be a brief description of the package and its\n"
 "\tfunctionality.\n"
 msgstr ""
+"pkgdesc::\n"
+"\tA csomag és annak főbb funcióinak rövid ismertetője.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:201
 #, no-wrap
 msgid ""
@@ -418,16 +622,22 @@ msgid ""
 "\tArray of the localized package descriptions. The format is the\n"
 "\tfollowing:\n"
 msgstr ""
+"pkgdesc_localized::\n"
+"\tHonosított csomagleírásokat tartalmazó tömb, melynek az alábbi formátumot kell követnie:\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:204
 #, no-wrap
 msgid ""
 "pkgdesc_localized=('xx_YY foo' 'xx_YY bar')\n"
 "----\n"
 msgstr ""
+"pkgdesc_localized=('xx_YY foo' 'xx_YY bar')\n"
+"----\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:209
 #, no-wrap
 msgid ""
@@ -435,23 +645,32 @@ msgid ""
 "\tThis field contains an optional URL that is associated with the piece\n"
 "\tof software being packaged. This is typically the project's website.\n"
 msgstr ""
+"url::\n"
+"\tA becsomagolt programhoz köthető URL, mely általában a projekt honlapjára mutat.\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:212
 #, no-wrap
 msgid ""
 "license::\n"
 "\tSets the license type (eg, \"GPL\", \"BSD\", \"NON-FREE\").\n"
 msgstr ""
+"license::\n"
+"\tA program licencének típusa (pl. \"GPL\", \"BSD\", \"NON-FREE\").\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:215
 msgid ""
 "NOTE: This option is currently optional and there are no rules what exact "
 "formats you should use (if you should use `GPL` or `GPL2` and so on)."
 msgstr ""
+"Megjegyzés: A licenc definiálása egyelőre opcionális. Nincs pontos szabály "
+"arra, hogy milyen formában kell használni (`GPL` vagy `GPL2` pl.)."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:221
 #, no-wrap
 msgid ""
@@ -461,8 +680,11 @@ msgid ""
 "\tinto the package by makepkg. It does not need to be included in the source\n"
 "\tarray. (eg, `install=modutils.install`)\n"
 msgstr ""
+"install::\n"
+"\tA csomagban levő speciális install szkript meghatározása. Ezt a fájlt, melynek ugyanabban a könyvtárban kell lennie, mint a Frugalbiuld szkriptnek, a makepg másolja be a csomagba. Nem szükséges a forrástömbben definiálni (pl. `install=modutils.install`)\n"
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:226
 #, no-wrap
 msgid ""
@@ -471,8 +693,11 @@ msgid ""
 "\tversion of the project. This way we can check for newer version without\n"
 "\tvisiting manually the project's website (see above).\n"
 msgstr ""
+"up2date::\n"
+"\tEz az utasítás egy olyan parancsot kell, hogy tartalmazzon, mely az adott projekt legfrissebb stabil verzióját mutatja meg. Ezúton lehetőségünk van  a projekt honlapjának (ld. fentebb) közvetlen meglátogatása nélkül is az újabb verziók kiadásának nyomonkövetésére."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:232
 #, no-wrap
 msgid ""
@@ -480,10 +705,13 @@ msgid ""
 "\tThe source line is an array of source files required to build the package.\n"
 "\tSource files must reside in the same directory as the FrugalBuild file, unless\n"
 "\tthey have a fully-qualified URL. Then if the source file does not already exist\n"
-"\tin `/var/cache/pacman/src`, the file is downloaded by wget.\n"
+"\tin `/var/cache/pacman-g2/src`, the file is downloaded by wget.\n"
 msgstr ""
+"source (tömb)::\n"
+"\tA csomag építéséhez szükséges forrásfájlokat definiáló tömb. A forrásfájloknak a FrugalBiuld szkripttel megegyező könyvtárban kell lennie, hacsak nem rendelkeznek egy működő URL címmel, ahonnét letölthetők. Ha a a forrásfájl nincs jelen a `/var/cache/pacman-g2/src`könyvtárban sem, akkor azt a wget a megadott URL alapján letölti."
 
 # type: Plain text
+#. type: Plain text
 #: FrugalBuild.txt:238
 #, no-wrap
 msgid ""
@@ -493,27 +721,40 @@ msgid ""
 "\tverify source file integrity during subsequent builds. To easily update\n"
 "\tsha1sums in the FrugalBuild, run `makepkg -G`.\n"
 msgstr ""
+"sha1sums (tömb)::\n"
+"\tHa ez a mező jelen van, akkor minden egyes forrásfájlhoz tartalmaznia kell egy SHA1 lenyomatot ugyanabban a sorrendben, ahogy a forrásfájlok definiálva vannak a source tömbben. A `makepkg` ez alapján ellenőrzi a forrásfájlok integritását a csomagkészítés során. A FrugalBuild szkriptben található  sha1sum-ok frissítéséhez futtasd a `makepkg -G` parancsot."
 
 # type: Plain text
-#: FrugalBuild.txt:243
+#. type: Plain text
+#: FrugalBuild.txt:247
 #, no-wrap
 msgid ""
 "signatures (array)::\n"
-"\tIf this field is present, it should contain an array of gpg signatures required\n"
-"\tto validate the source files. Where there is no signature available just leave\n"
-"\tit empty, like:\n"
+"\tIf this field is present, it should contain an array of gpg signatures\n"
+"\trequired to validate the source files. It is recommended (but not\n"
+"\trequired) that you also add the key or keyring of upstream to a file\n"
+"\tnamed $pkgname.key to make off-line build possible. If there is no such\n"
+"\tfile, and the key is available on a public keyserver, it will be\n"
+"\tretrieved automatically. Otherwise the build will be aborted. Where\n"
+"\tthere is no signature available just leave it empty, like:\n"
 msgstr ""
+"signatures (tömb)::\n"
+"\tEbben a mezőben, ha létezik, gpg aláírásokat tartalmazó tömbnek kell szerepelni, melyes segítségével a forrásfájlok ellenőrizhetők. Bár nem kötelező, de jobb ha a programhoz tartozó kulcsot vagy kulcstartót egy $csomagnév.key fájlba is elmented, mert így a csomag off-line fordítására is lehetőség van. Ha nincs ilyen fájl, de a program kulcsa egy publikus kulcsszerveren elérhető, akkor az automatikusan le lesz töltve. Máskülönben a csomagfordítás leáll. Ha az adott programhoz nem érhető el aláírás, akkor ezt a mezőt hagyd üresen az alábbi módon:"
 
 # type: Plain text
-#: FrugalBuild.txt:246
+#. type: Plain text
+#: FrugalBuild.txt:250
 #, no-wrap
 msgid ""
 "signatures=(${source[0]}.asc '')\n"
 "----\n"
 msgstr ""
+"signatures=(${source[0]}.asc '')\n"
+"----\n"
 
 # type: Plain text
-#: FrugalBuild.txt:252
+#. type: Plain text
+#: FrugalBuild.txt:256
 #, no-wrap
 msgid ""
 "groups (array)::\n"
@@ -521,9 +762,12 @@ msgid ""
 "\tinstall multiple packages by requesting a single target. For example, one could install\n"
 "\tall KDE packages by installing the 'kde' group.\n"
 msgstr ""
+"groups (tömb)::\n"
+"\tKülönböző csomagcsoportokat reprezentáló szimbolikus nevek vannak ebben a tömbben felsorolva, melyek segítségével lehetőség van több csomag telepítsére egy egyszerű kulcsszó segítségével. Például a 'kde' csoport telepítésével több KDE csomag is telepíthető egyszerre."
 
 # type: Plain text
-#: FrugalBuild.txt:257
+#. type: Plain text
+#: FrugalBuild.txt:261
 #, no-wrap
 msgid ""
 "archs (array)::\n"
@@ -531,9 +775,12 @@ msgid ""
 "\tit's not available, that will mean that `gensync` will skip it when generating\n"
 "\tthe package database.\n"
 msgstr ""
+"archs (tömb)::\n"
+"\tEbben a tömbben van definiálva, hogy az adott csomag milyen architektúrákra érhető el. Ha ez nem elérhető, akkor a `gensync` kihagyja a csomagot a csomag-adatbázisból.\n"
 
 # type: Plain text
-#: FrugalBuild.txt:264
+#. type: Plain text
+#: FrugalBuild.txt:268
 #, no-wrap
 msgid ""
 "backup (array)::\n"
@@ -543,31 +790,41 @@ msgid ""
 "\tremoved from a system. See 'HANDLING CONFIG FILES' in the `pacman-g2` manual\n"
 "\tpage for more information.\n"
 msgstr ""
+"backup (tömb)::\n"
+"\tSzóközökkel határolt fájlnevek tömbje (perjelet nem tartalmaz). A tömb tartalma a csomag metainformációs fájlába továbbítódik. A felsorolt fájlokról a csomag eltávolítása során biztonsági másolatok (backupok) készülnek. További információkat a `pacman-g2` kézikönyvében, a `Konfigurációs fájlok kezelése` címszó alatt találhatsz.\n"
 
 # type: Plain text
-#: FrugalBuild.txt:272
+#. type: Plain text
+#: FrugalBuild.txt:277
 #, no-wrap
 msgid ""
 "depends (array)::\n"
 "\tAn array of packages that this package depends on to build and run. Packages in\n"
 "\tthis list should be surrounded with single quotes and contain at least the\n"
 "\tpackage name. They can also include a version requirement of the form\n"
-"\tname<>version, where <> is one of these three comparisons: >= (greater than\n"
-"\tequal to), <= (less than or equal to), or = (equal to). See the FrugalBuild\n"
-"\texample above for an example of the depends directive.\n"
+"\t'name<>version', where <> is one of five comparisons: >= (greater than or equal\n"
+"\tto), <= (less than or equal to), = (equal to), > (greater than), or < (less\n"
+"\tthan). See the FrugalBuild example above for an example of the depends\n"
+"\tdirective.\n"
 msgstr ""
+"depends (tömb)::\n"
+"\tAzon csomagok listája, melyekre a csomag elkészítéséhez ill. futtatásához van szükség. A felsorolt csomagoknak legalább a nevét meg kell adni, azokat aposztróffal kell határolni. Szükség esetén meg kell határozni a függőség verziójára vonatkozó követelményeket is az alábbi forma szerint: 'csomagnév<>verzió', ahol <> az alábbi 5 reláció közül valamelyik: >= (nagyobb, vagy egyenlő), <= (kisebb vagy egyenlő), = (egyenlő), > (nagyobb), < (kisebb). A függőségek leírására egy példa a fentebb bemutatott FrugalBuild szkriptben látható.\n"
 
 # type: Plain text
-#: FrugalBuild.txt:276
+#. type: Plain text
+#: FrugalBuild.txt:281
 #, no-wrap
 msgid ""
 "makedepends (array)::\n"
 "\tAn array of packages that this package depends on to build (ie, not required to\n"
 "\trun). Packages in this list should follow the same format as depends.\n"
 msgstr ""
+"makedepends (tömb)::\n"
+"\tAzon csomagok vannak ebben a tömbben felsorolva, melyek a csomag elkészítéséhez szükségesek (azaz a csomag futtatásához nem). A csomagokat függőségeknél ismertetett módon kell felsorolni.\n"
 
 # type: Plain text
-#: FrugalBuild.txt:283
+#. type: Plain text
+#: FrugalBuild.txt:288
 #, no-wrap
 msgid ""
 "rodepends (array)::\n"
@@ -577,9 +834,12 @@ msgid ""
 "\tdoesn't require that dcron be installed.) Packages in this list should follow\n"
 "\tthe same format as depends.\n"
 msgstr ""
+"rodepends (array)::\n"
+"\tA csomag futtatásához szükséges függőségeket tartalmazó tömb (azaz ezek nem szükségesek a csomag elkészítéséhez). Normál esetben a futási függőségek ily módon történő definiálását célszerű elkerülni, kivéve ha a függőségek \"depends\" tömbben való felsorolása \"körbefüggőséget\" okozna (pl. a logrotate csomag elkészítéséhez nincs szükség arra, hogy a dcron telepítve legyen). A \"rodepends\" tömböt is a függőségeknél ismertetett módon kell elkészíteni.\n"
 
 # type: Plain text
-#: FrugalBuild.txt:288
+#. type: Plain text
+#: FrugalBuild.txt:293
 #, no-wrap
 msgid ""
 "conflicts (array)::\n"
@@ -587,9 +847,12 @@ msgid ""
 "\tbe installed at the same time). This directive follows the same format as\n"
 "\tdepends except you cannot specify versions here, only package names.\n"
 msgstr ""
+"conflicts (tömb)::\n"
+"\tAzon csomagokat kell felsorolni ebben a tömbben, melyek ütköznek ezzel a csomaggal (azaz egyszerre nem lehetnek feltelepítve). A függőségeknél ismertetett módon kell ezt a tömböt is elkészíteni, azzal a különbséggel, hogy nincs szükség az ütköző csomag verziószámára csak a nevére.\n"
 
 # type: Plain text
-#: FrugalBuild.txt:295
+#. type: Plain text
+#: FrugalBuild.txt:300
 #, no-wrap
 msgid ""
 "provides (array)::\n"
@@ -599,9 +862,12 @@ msgid ""
 "\twhich allows packages to simply depend on 'kernel' rather than \"kernel-scsi OR\n"
 "\tkernel-ide OR ...\"\n"
 msgstr ""
+"provides (tömb)::\n"
+"\t ... Ezzel lehetővé válik, hogy a csomag a saját nevétől eltérő \"függőségi nevekkel\" is bírjon. Például a kernel-scsi és a kernel-ide csomagok egyaránt rendelkezthetnek a 'kernel' függöségi névvel, így más csomagok függhetnek egyszerűen csak a 'kernel' csomagtól, ahelyett, hogy azok leírásában fel kellene sorolni egyenként a 'kernel-scsi'-t, a 'kernel-ide'-t, stb. csomagokat.\n"
 
 # type: Plain text
-#: FrugalBuild.txt:300
+#. type: Plain text
+#: FrugalBuild.txt:305
 #, no-wrap
 msgid ""
 "removes (array)::\n"
@@ -609,9 +875,12 @@ msgid ""
 "\tyou should never use it, but in some cases it's handy to remove conflicting\n"
 "\tfiles generated by a scriptlet if you are sure about really nobody needs it.\n"
 msgstr ""
+"removes (tömb)::\n"
+"\tA fájlütközések vizsgálata előtt eltávolítandó fájlok listáját tartalmazó tömb. Ideális esetben nincs szükség ennek a leírónak a használatára, de néhány esetben hasznos lehet azon ütköző fájlok eltávolítása, melyre biztos, hogy senkinek sincs szüksége.\n"
 
 # type: Plain text
-#: FrugalBuild.txt:306
+#. type: Plain text
+#: FrugalBuild.txt:311
 #, no-wrap
 msgid ""
 "replaces (array)::\n"
@@ -620,105 +889,141 @@ msgid ""
 "\trenamed to kernel-ide, then subsequent 'pacman-g2 -Syu' calls will not pick up\n"
 "\tthe upgrade, due to the differing package names. replaces handles this.\n"
 msgstr ""
+"replaces (tömb)::\n"
+"\tAzokat a csomagokat kell felsorolni ebben a tömbben, amelyeket ez a csomag lecserél. Ezáltal az átnevezett ill. összevont csomagok is kezelhetővé válnak. Például ha a 'kernel' csomag át lenne nevezve 'kernel-ide'-re, akkor a 'pacman-g2 -Syu' parancs nem frissítené a 'kernel' csomagot az új verzióra, hisz nem egyezne meg a neve az új csomaggal. A 'replaces' tömb segítségével ez a probléma könnyen kezelhetővé válik.\n"
 
 # type: Plain text
-#: FrugalBuild.txt:309
+#. type: Plain text
+#: FrugalBuild.txt:314
 #, no-wrap
 msgid ""
 "options (array)::\n"
 "\tThis is an array of various boolean options. The possible values are:\n"
 msgstr ""
+"options (tömb)::\n"
+"\tNéhány boolean típusú opciót lehet felsorolni ebben a listában. A lehetséges opciók a következők:\n"
 
 # type: Plain text
-#: FrugalBuild.txt:312
+#. type: Plain text
+#: FrugalBuild.txt:317
 #, no-wrap
 msgid ""
 "\tnodocs: Don't add any documentation automatically (ie. when there'll be a\n"
 "\tseparate documentation subpackage).\n"
-msgstr ""
+msgstr "\tnodocs: Automatikusan semmilyen dokumentáció ne legyen hozzáadva a rendszerhez (pl. ha van egy különálló dokumentáció csomag).\n"
 
 # type: Plain text
-#: FrugalBuild.txt:314
+#. type: Plain text
+#: FrugalBuild.txt:319
 #, no-wrap
 msgid "\tnostrip: Don't strip binaries/libraries.\n"
-msgstr ""
+msgstr "\tnostrip: \n"
 
 # type: Plain text
-#: FrugalBuild.txt:317
+#. type: Plain text
+#: FrugalBuild.txt:322
 #, no-wrap
 msgid ""
 "\tforce: This is used to force the package to be upgraded by --sysupgrade, even\n"
 "\tif its an older version.\n"
-msgstr ""
+msgstr "\tforce: Ezzel erőltetni lehet, hogy a csomag még akkor is frissüljön a --sysupgrade által, ha egy régebbi verzióra cserélődik le.\n"
 
 # type: Plain text
-#: FrugalBuild.txt:320
+#. type: Plain text
+#: FrugalBuild.txt:325
 #, no-wrap
 msgid ""
 "\tstick: This is used to skip a package upgrade, even a newer version is\n"
 "\tavailable (eg. for web applications where a manual upgrade is better).\n"
-msgstr ""
+msgstr "\tstick: A csomag frissítése kerülhető el ezzel az opcióval, még abban az esetben is, ha rendelkezésre áll belőle újabb (pl. olyan webalkalmazások, amelyek esetén a kézi frissítés eredményesebb).\n"
 
 # type: Plain text
-#: FrugalBuild.txt:324
+#. type: Plain text
+#: FrugalBuild.txt:329
 #, no-wrap
 msgid ""
 "\tnobuild: If this directive set, gensync will ignore this package, so users must\n"
 "\tbuild these packages on their machines, they will not be able to install them\n"
 "\twith pacman-g2 -S. Useful for closed-source, but freeware programs.\n"
-msgstr ""
+msgstr "\tnobuild: Ha ez az opció be van állítva, akkor a 'gensync' figyelmen kívül hagyja ezt a csomagot, azaz a felhasználóknak maguknak kell azt felépíteniük a saját gépükön, nem tudják a 'pacman-g2 -S' paranccsal feltelepíteni. Zárt forrású, de ingyenes programok esetén hasznos.\n"
 
 # type: Plain text
-#: FrugalBuild.txt:327
-#, no-wrap
+#. type: Plain text
+#: FrugalBuild.txt:332
+#, fuzzy, no-wrap
 msgid ""
 "\tnofakeroot: Don't drop privileges after chrooting. Required by some broken\n"
 "\tpackages.\n"
-msgstr ""
+msgstr "\tnofakeroot: A chroot után is megmaradnak a jogosultságok. Néhány pillanatnyilag nem működő, elromlott csomag esetén hasznos ez az opció. \n"
 
 # type: Plain text
-#: FrugalBuild.txt:329
-#, no-wrap
+#. type: Plain text
+#: FrugalBuild.txt:334
+#, fuzzy, no-wrap
 msgid "\tscriptlet: Don't skip executing scriptlets even if we're in chroot.\n"
-msgstr ""
+msgstr "\tscriptlet: Nem hagyja ki a szkriptek futtatását, még akkor sem, ha azok chroot környezetben voltak.\n"
 
 # type: Plain text
-#: FrugalBuild.txt:331
+#. type: Plain text
+#: FrugalBuild.txt:336
 #, no-wrap
 msgid "\tnomirror: This means that the source should not be mirrored.\n"
-msgstr ""
+msgstr "\tnomirror: A program forrását nem szükséges tükrözni ebben az esetben. \n"
 
 # type: Plain text
-#: FrugalBuild.txt:334
-#, no-wrap
+#. type: Plain text
+#: FrugalBuild.txt:339
+#, fuzzy, no-wrap
 msgid ""
 "\tgenscriptlet: Informs makepkg about not having a scriptlet is intentional. You\n"
 "\twant to use this when the scriptlet is generated during build().\n"
-msgstr ""
+msgstr "\tgenscriptlet: A makepkg-t lehet értesíteni ezzel az opcióval arról, hogy a szkriptlet hiánya szándékos. Akkor kell használni, ha a szkriptlet a csomagkészítés során generálódik le. \n"
 
 # type: Plain text
-#: FrugalBuild.txt:337
+#. type: Plain text
+#: FrugalBuild.txt:343
+#, fuzzy, no-wrap
+msgid ""
+"\tnoversrc: Informs makepkg about the source tarball does not contain the\n"
+"\tpackage version, so it should be always downloaded from upstream, rather\n"
+"\tthan using an rsync mirror.\n"
+msgstr "\tnoversrc: A makepkg értesítése arról, hogy a forráscsomag nem tartalmazza a program verzióját, így azt a ...-ról kell letölteni és nem egy rsync tükörről.\n"
+
+# type: Plain text
+#. type: Plain text
+#: FrugalBuild.txt:346
 msgid ""
 "NOTE: Feel free to use `nomirror` in a WIP repo but please try avoid it when "
 "pushing to a production repository."
 msgstr ""
+"MEGJEGYZÉS: WIP (work-in-progress) tároló esetén nyugodtan használd a "
+"'nomirror' opciót, de próbáld ezt kerülni éles használatban levő tároló "
+"esetén. \n"
 
 # type: Plain text
-#: FrugalBuild.txt:339
+#. type: Plain text
+#: FrugalBuild.txt:348
 msgid "=== What is the process of chrooted build?"
-msgstr ""
+msgstr "=== A csomagkészítés folyamatai chroot környezetben."
 
 # type: Plain text
-#: FrugalBuild.txt:344
+#. type: Plain text
+#: FrugalBuild.txt:353
 msgid ""
 "First, what is chroot? If you use `makepkg -H`, then you use fakeroot to "
 "prevent build() from modifying the host system, and you use a prefix or "
 "DESTDIR directive to install everything to a directory and not under to the "
 "host system. This is good, but not enough."
 msgstr ""
+"Először is, mi az a chroot? Ha `makepkg -H` parancsot használsz, akkor egy "
+"ál-root környezetet használsz, ami megakadályozza, hogy az eredeti "
+"rendszeredet módosítsd. A program a prefixumban vagy a DESTDIR leíróban "
+"meghatározott könyvtárba lesz installálva az ál root környezetn belül, nem "
+"pedig az eredeti rendszereden belül. Ez eddig jól hangzik, de mégsem elég."
 
 # type: Plain text
-#: FrugalBuild.txt:353
+#. type: Plain text
+#: FrugalBuild.txt:362
 msgid ""
 "This system lacks the ability to control the list of installed packages "
 "during the build on the system of a packager. Because of this, the given "
@@ -729,16 +1034,30 @@ msgid ""
 "incorrect. Or if you have the closed source binary NVidia drivers installed, "
 "some programs will link to NVidia's libraries."
 msgstr ""
+"Az így felépített rendszernek nincs meg a képessége arra, hogy a "
+"csomagkészítés során a fordításra használt rendszerre már telepített "
+"programok listáját kontrollálja. Ennek következtében előfordulhat, hogy a "
+"lefordított csomag egy a forgatásra használt rendszer egyik installált "
+"függvénykönytárához linkeli magát. Például, ha a rendszereden a "
+"`libquicktime`-ot forrásból installáltad, akkor az `mplayer`, vagy egyéb más "
+"olyan program hozzá linkelheti magát. Ennek eredményeként a depends() leíró "
+"helytelen lesz. Hasonlóan, ha a zárt kódú NVidia meghajtó fel van telepítve, "
+"akkor néhány program az NVidia függvénykönyvtáraihoz linkelheti magát."
 
 # type: Plain text
-#: FrugalBuild.txt:356
+#. type: Plain text
+#: FrugalBuild.txt:365
 msgid ""
 "Of course there is a solution to avoid this, to use a real `chroot` instead "
 "of a simple `fakeroot`. What does this mean? The following:"
 msgstr ""
+"Szerencsére van megoldás ezen probléma elkerülésére. A valódi `chroot` "
+"környezet használata az ál-root környezet helyett. Mindez a következőket "
+"jelenti pontosan:"
 
 # type: Plain text
-#: FrugalBuild.txt:364
+#. type: Plain text
+#: FrugalBuild.txt:373
 msgid ""
 "When starting the build, a core chroot system is installed under /var/"
 "chroot.  (Of course you can change this value under `/etc/makepkg.conf`.) "
@@ -748,9 +1067,19 @@ msgid ""
 "core chroot-core devel-core` should show you the actual list. (We try to "
 "change this list rarely and try to keep it short, of course.)"
 msgstr ""
+"Amikor elindul a csomagkészítés, egy alap chroot rendszer települ a /var/"
+"chroot könyvtárba (amit persze a `/etc/makepkg.conf` fájlban átírhatsz). Ez "
+"az alap rendszer kb. 60 csomagot tartalmaz, ami a csomagok chroot "
+"környezetben történő készítéséhez feltétlenül szükséges. Ezeket a csomagokat "
+"(pl. gcc, kernel-headers, make, ...) nem kell megemlíteni a makedepends() "
+"leíróban. A `pacman-g2 -Sg core chroot-core devel-core` parancs segítségével "
+"megtudhatod, hogy megy csomagokról van is szó pontosan. (Lehetőségeink "
+"szerint ezt a listát csak ritkán változtatjuk, és méretét egyekszünk a "
+"lehető legkisebbre venni.)"
 
 # type: Plain text
-#: FrugalBuild.txt:370
+#. type: Plain text
+#: FrugalBuild.txt:379
 msgid ""
 "When you start building with `makepkg` (without `-H`), pacman-g2 will "
 "install these packages to /var/chroot if necessary. This will produce a "
@@ -759,81 +1088,129 @@ msgid ""
 "the problems mentioned above. (Linking to a library installed from source, "
 "etc.)"
 msgstr ""
+"Ha a `makepkg` paranccsal (a `-H` opció nélkül) kezdesz el csomagot "
+"készíteni, akkor a pacman-g2 program installálja ezeket a csomagokat a /var/"
+"chroot könyvtárba. Ezzel egy nagyon alap, letisztult Frugalware rendszer jön "
+"létre, ami tényleg csak a legalapabb csomagokat tartalmazza. A `/var/chroot` "
+"teljes egészében el van választva a gazda rendszertől, így a kiindulásként "
+"ismertetett probléma (meglévő föggvénykönytárakhoz linkelés, stb.) nem áll "
+"fenn tovább."
 
 # type: Plain text
-#: FrugalBuild.txt:375
+#. type: Plain text
+#: FrugalBuild.txt:384
 msgid ""
 "Here comes the fun part. The packages listed in depends() and makedepends() "
 "are installed to this clean (`/var/chroot`) system. From this point, this "
 "chroot is capable to build the specified package in it without unnecessary "
 "packages being installed, fully separated from the host system."
 msgstr ""
+"A nagy dobás azonban még csak most jön. Azok a csomagok is feltelepülnek a `/"
+"var/chroot` könyvtárba, melyek a depends() és makedepends() tömbben fel "
+"lettek sorolva. Ettől a ponttól kezdve a chroot környezet már alkalmas arra, "
+"hogy a kívánt csomagot elkészítsük a gazdaerndszertől teljesen elválasztva, "
+"anélkül, hogy további csomagokat kellene telepíteni hozzá."
 
 # type: Plain text
-#: FrugalBuild.txt:380
+#. type: Plain text
+#: FrugalBuild.txt:389
 msgid ""
 "After this, the chroot should be cleaned up which means the removal of the "
 "installed depends() and makedepends(). This ensures you do not have to build "
 "the core chroot from scratch. This action is performed by `makepkg` after a "
 "successful build."
 msgstr ""
+"Sikeres csomagépítés után a `makepkg` eltávolítja azokat a csomagokat a "
+"chroot környezetből, melyek függőségként lettek feltelepítve, azaz a depends"
+"() és makedepends() tömbben felsorolt csomagokat. Ennek köszönhetően nem "
+"kell a későbbiekben újra az elejétől kezdve felépíteni a chroot környezetet."
 
 # type: Plain text
-#: FrugalBuild.txt:384
+#. type: Plain text
+#: FrugalBuild.txt:393
 msgid ""
 "This way we can prevent lots of dependency problems and it is even possible "
 "to build packages for a different Frugalware version. This is quite "
 "efficient when building security updates or fixing critical bugs in the `-"
 "stable` tree."
 msgstr ""
+"Ezt a módszert követve sok függőségi probléma megelőzhető ill. különböző "
+"Frugalware verziókhoz is készíthetők csomagok. Különösen hatékony a módszer "
+"a `-stabil` ág biztonsági frissítéseinek elkészítése és kritikus bugjainak "
+"kijavítása során."
 
 # type: Plain text
-#: FrugalBuild.txt:389
+#. type: Plain text
+#: FrugalBuild.txt:398
 msgid ""
 "If the build fails, the working directory will not be deleted, you can find "
 "it under `/var/chroot/$tree/var/tmp/fst`. Later if you want to clean your "
 "chroot (delete the working directory and remove unnecessary packages) you "
 "can use `makepkg -C`."
 msgstr ""
+"Ha a csomagkészítés valami miatt sikertelen, a munkakönyvtár nem törlődik "
+"le, a `/var/chroot/$tree/var/tmp/fst`helyen továbbra is megtalálható. "
+"Később, ha szeretnéd a chroot környezetet kitisztítani (eltávolítani a "
+"munkakönyvtárat és a függőségként telepített csomagokat), csak add ki a "
+"`makepkg -C` parancsot."
 
 # type: Plain text
-#: FrugalBuild.txt:392
+#. type: Plain text
+#: FrugalBuild.txt:401
 msgid ""
 "To deactivate building in a `chroot` (for testing purposes), you should run "
 "`makepkg` with the `-H` option."
 msgstr ""
+"Ha nem szeretnéd, hogy a chroot környezet felépüljön (pl. tesztelési "
+"célokból), a `makepkg` parancsot a `-H` opcióval futasd!"
 
 # type: Plain text
-#: FrugalBuild.txt:394
+#. type: Plain text
+#: FrugalBuild.txt:403
 msgid "=== Package splitting"
-msgstr ""
+msgstr "=== Csomag megosztása"
 
 # type: Plain text
-#: FrugalBuild.txt:398
+#. type: Plain text
+#: FrugalBuild.txt:407
 msgid ""
 "Package splitting means moving out a list of specified files to "
 "'subpackages' (like `libmysql` out of `mysql`) and then defining the "
 "properties of subpackages."
 msgstr ""
+"Egy csomag megosztása annyit jelent, hogy egyes fájlok kikerülnek a "
+"csomagból és ún. alcsomagokat alkotnak (pl. `libmysql` alcsomag létrehozható "
+"a `mysql` csomagból). Az alcsomag megfelelő jellemzőit a megosztás után meg "
+"kell adni."
 
 # type: Plain text
-#: FrugalBuild.txt:403
+#. type: Plain text
+#: FrugalBuild.txt:412
 msgid ""
 "NOTE: If you create several subpackages, maintaining those packages will "
 "require more and more time. Thus, unnecessary splits aren't welcome.  "
 "Especially, if you split out a library, then don't move the headers to the "
 "package just to speed up building with a few seconds!"
 msgstr ""
+"MEGJEGYZÉS: Az újabb és újabb alcsomagok létrehozásával az összes "
+"karbatartásra fordított idő is növekszik. Ráadásul például egy "
+"függvénykönyvtár csomagból való kivétele csak néhány másodperccel csökkenti "
+"le a csomagkésztés idejét, viszont a megfelelő fejlécek nem kerülnek a "
+"csomagba. Ezek miatt csak valóban indokolt esetben ossz meg csomagokat! "
 
 # type: Plain text
-#: FrugalBuild.txt:406
+#. type: Plain text
+#: FrugalBuild.txt:415
 msgid ""
 "The subpkgs() array is to define the pkgnames of the subpackages. From now "
 "all the directive have a subfoo equivalent:"
 msgstr ""
+"A subpkgs() tömb szolgál az alcsomagok felsorolására. Az összes "
+"csomagleírónak létezik megfelelője alcsomagok esetére:"
 
 # type: Plain text
-#: FrugalBuild.txt:423
+#. type: Plain text
+#: FrugalBuild.txt:432
 #, no-wrap
 msgid ""
 "pkgname -> subpkgs()\n"
@@ -853,22 +1230,44 @@ msgid ""
 "archs -> subarchs()\n"
 "----\n"
 msgstr ""
+"pkgname -> subpkgs()\n"
+"pkgdesc -> subdescs()\n"
+"pkgdesc_localized -> subdescs_localized()\n"
+"license() -> sublicense()\n"
+"replaces() -> subreplaces()\n"
+"groups() -> subgroups()\n"
+"depends() -> subdepends()\n"
+"rodepends() -> subrodepends()\n"
+"removes() -> subremoves()\n"
+"conflicts() -> subconflicts()\n"
+"provides() -> subprovides()\n"
+"backup() -> subbackup()\n"
+"install -> subinstall()\n"
+"options -> suboptions()\n"
+"archs -> subarchs()\n"
+"----\n"
 
 # type: Plain text
-#: FrugalBuild.txt:428
+#. type: Plain text
+#: FrugalBuild.txt:437
 msgid ""
 "Also note that bash does not support two-dimensional arrays, so when "
 "defining the array of arrays, then quotes are the major separators and "
 "spaces are the minor ones."
 msgstr ""
+"Fontos megjegyezni, hogy a bash nem támogatja a kétdimenziós tömböket, ezért "
+"amikor egy tömböt definiálsz egy másik tömbben idézőjelet és spacet használj "
+"a fő ill. mellék elválasztónak."
 
 # type: Plain text
-#: FrugalBuild.txt:430
+#. type: Plain text
+#: FrugalBuild.txt:439
 msgid "Simple example:"
-msgstr ""
+msgstr "Egy egyszerű példa:"
 
 # type: Plain text
-#: FrugalBuild.txt:437
+#. type: Plain text
+#: FrugalBuild.txt:446
 #, no-wrap
 msgid ""
 "subpkgs=('foo' 'bar')\n"
@@ -878,16 +1277,27 @@ msgid ""
 "subarchs=('i686 x86_64' 'i686 x86_64')\n"
 "----\n"
 msgstr ""
+"subpkgs=('foo' 'bar')\n"
+"subdescs=('desc of foo' 'desc of bar')\n"
+"subdepends=('foodep1 foodep2' 'bardep1 bardep2')\n"
+"subgroups=('apps' 'apps')\n"
+"subarchs=('i686 x86_64' 'i686 x86_64')\n"
+"----\n"
 
 # type: Plain text
-#: FrugalBuild.txt:441
+#. type: Plain text
+#: FrugalBuild.txt:450
 msgid ""
 "You may define conflicts, replaces and other directives for your "
 "subpackages, but the requirement is only to define these 5 ones."
 msgstr ""
+"A fent felsorolt 5 csomagleírót mindenképpen meg kell határoznod alcsomagok "
+"esetén is. Ezek mellett természetesen bármilyen csomagleírót is "
+"használhatsz, ha arra szükség van (pl. ütközések, helyettesítések, stb.)."
 
 # type: Plain text
-#: FrugalBuild.txt:446
+#. type: Plain text
+#: FrugalBuild.txt:455
 msgid ""
 "The second part is to move some files to the - just defined - subpackages. "
 "You should use the Fsplit command for this at the end of your build() "
@@ -896,7 +1306,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: FrugalBuild.txt:449
+#. type: Plain text
+#: FrugalBuild.txt:458
 #, no-wrap
 msgid ""
 "Fsplit subpkgname usr/share/\n"
@@ -904,56 +1315,71 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: FrugalBuild.txt:453
+#. type: Plain text
+#: FrugalBuild.txt:462
 msgid ""
 "This will move the /usr/share dir of the package to the \"subpkgname\" "
 "subpackage."
 msgstr ""
 
 # type: Plain text
-#: FrugalBuild.txt:456
+#. type: Plain text
+#: FrugalBuild.txt:465
 msgid ""
 "NOTE: Don't use a trailing slash when defining file patterns with wildcards "
 "in it!"
 msgstr ""
 
 # type: Plain text
-#: FrugalBuild.txt:458 makepkg.txt:161 pacman-g2.txt:423
+#. type: Plain text
+#: FrugalBuild.txt:467 makepkg.txt:161 pacman-g2.txt:438
 msgid "== SEE ALSO"
 msgstr ""
 
 # type: Plain text
-#: FrugalBuild.txt:460
+#. type: Plain text
+#: FrugalBuild.txt:469
 #, no-wrap
 msgid "*makepkg*(8), *pacman-g2*(8)\n"
 msgstr ""
 
+#. type: Plain text
+#: FrugalBuild.txt:471 makepkg.txt:165 pacman-g2.txt:442
+msgid "include::bugs.txt[]"
+msgstr ""
+
 # type: Plain text
-#: FrugalBuild.txt:462 makepkg.txt:165 pacman-g2.txt:427
+#. type: Plain text
+#: FrugalBuild.txt:473 makepkg.txt:167 pacman-g2.txt:444
 msgid "== AUTHORS"
 msgstr ""
 
 # type: Plain text
-#: FrugalBuild.txt:463 makepkg.txt:166 pacman-g2.txt:428
+#. type: Plain text
+#: FrugalBuild.txt:474 makepkg.txt:168 pacman-g2.txt:445
 msgid "See /usr/share/doc/pacman-g2-*/AUTHORS."
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:2
 msgid "= makepkg(8)"
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:6
 msgid "makepkg - creates pacman-g2 packages"
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:10
 msgid "makepkg [options]"
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:21
 msgid ""
 "`makepkg` will build packages for you. All it needs is a build-capable Linux "
@@ -967,6 +1393,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:24
 msgid ""
 "`makeworld` can be used to rebuild an entire package group or the entire "
@@ -974,11 +1401,13 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: makepkg.txt:26 pacman-g2.txt:62
+#. type: Plain text
+#: makepkg.txt:26 pacman-g2.txt:60
 msgid "== OPTIONS"
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:29
 #, no-wrap
 msgid ""
@@ -987,6 +1416,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:32
 #, no-wrap
 msgid ""
@@ -995,6 +1425,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:39
 #, no-wrap
 msgid ""
@@ -1007,6 +1438,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:42
 #, no-wrap
 msgid ""
@@ -1015,6 +1447,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:45
 #, no-wrap
 msgid ""
@@ -1023,6 +1456,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:50
 #, no-wrap
 msgid ""
@@ -1033,6 +1467,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:55
 #, no-wrap
 msgid ""
@@ -1043,6 +1478,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:58
 #, no-wrap
 msgid ""
@@ -1051,6 +1487,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:63
 #, no-wrap
 msgid ""
@@ -1061,6 +1498,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:68
 #, no-wrap
 msgid ""
@@ -1071,6 +1509,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:72
 #, no-wrap
 msgid ""
@@ -1080,6 +1519,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:76
 #, no-wrap
 msgid ""
@@ -1089,6 +1529,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:79
 #, no-wrap
 msgid ""
@@ -1097,6 +1538,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:82
 #, no-wrap
 msgid ""
@@ -1105,6 +1547,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:86
 #, no-wrap
 msgid ""
@@ -1114,6 +1557,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:91
 #, no-wrap
 msgid ""
@@ -1124,6 +1568,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:94
 #, no-wrap
 msgid ""
@@ -1132,6 +1577,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:97
 #, no-wrap
 msgid ""
@@ -1140,6 +1586,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:100
 #, no-wrap
 msgid ""
@@ -1148,6 +1595,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:103
 #, no-wrap
 msgid ""
@@ -1156,6 +1604,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:107
 #, no-wrap
 msgid ""
@@ -1165,6 +1614,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:111
 #, no-wrap
 msgid ""
@@ -1174,6 +1624,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:114
 #, no-wrap
 msgid ""
@@ -1182,6 +1633,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:120
 #, no-wrap
 msgid ""
@@ -1193,6 +1645,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:125
 #, no-wrap
 msgid ""
@@ -1203,6 +1656,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:133
 #, no-wrap
 msgid ""
@@ -1216,6 +1670,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:137
 #, no-wrap
 msgid ""
@@ -1225,6 +1680,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:140
 #, no-wrap
 msgid ""
@@ -1233,6 +1689,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:145
 #, no-wrap
 msgid ""
@@ -1243,6 +1700,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:149
 #, no-wrap
 msgid ""
@@ -1252,11 +1710,13 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: makepkg.txt:151 pacman-g2.txt:290
+#. type: Plain text
+#: makepkg.txt:151 pacman-g2.txt:302
 msgid "== CONFIGURATION"
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:156
 msgid ""
 "Configuration options are stored in /etc/makepkg.conf. This file is parsed "
@@ -1266,6 +1726,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:159
 msgid ""
 "NOTE: This does not guarantee that all package Makefiles will use your "
@@ -1273,27 +1734,32 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: makepkg.txt:163
 #, no-wrap
 msgid "*FrugalBuild*(5), *pacman-g2*(8)\n"
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:2
 msgid "= pacman-g2(8)"
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:6
 msgid "pacman-g2 - package manager utility"
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:10
 msgid "pacman-g2 <operation> [options] <package> [package] ..."
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:17
 msgid ""
 "pacman-g2 is a package management utility that tracks installed packages on "
@@ -1303,11 +1769,13 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:19
 msgid "== OPERATIONS"
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:23
 #, no-wrap
 msgid ""
@@ -1317,6 +1785,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:27
 #, no-wrap
 msgid ""
@@ -1326,6 +1795,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:34
 #, no-wrap
 msgid ""
@@ -1338,6 +1808,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:39
 #, no-wrap
 msgid ""
@@ -1348,6 +1819,7 @@ msgid ""
 msgstr ""
 
 # type: Plain text
+#. type: Plain text
 #: pacman-g2.txt:46
 #, no-wrap
 msgid ""
@@ -1356,17 +1828,12 @@ msgid ""
 "\tthe ftp servers, complete with all dependencies required to run the packages.\n"
 "\tFor example, pacman-g2 -S qt will download qt and all the packages it depends\n"
 "\ton and install them. You could also use pacman-g2 -Su to upgrade all packages\n"
-"\tthat are out of date (see below). Target can be a regex, like:\n"
+"\tthat are out of date (see below).\n"
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:48
-#, no-wrap
-msgid "\t# pacman-g2 -S gst-.*\n"
-msgstr ""
-
-# type: Plain text
-#: pacman-g2.txt:53
+#. type: Plain text
+#: pacman-g2.txt:51
 #, no-wrap
 msgid ""
 "-U, --upgrade::\n"
@@ -1376,7 +1843,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:56
+#. type: Plain text
+#: pacman-g2.txt:54
 #, no-wrap
 msgid ""
 "-V, --version::\n"
@@ -1384,7 +1852,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:60
+#. type: Plain text
+#: pacman-g2.txt:58
 #, no-wrap
 msgid ""
 "-h, --help::\n"
@@ -1393,7 +1862,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:67
+#. type: Plain text
+#: pacman-g2.txt:65
 #, no-wrap
 msgid ""
 "-d, --nodeps::\n"
@@ -1403,7 +1873,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:73
+#. type: Plain text
+#: pacman-g2.txt:71
 #, no-wrap
 msgid ""
 "-f, --force::\n"
@@ -1414,7 +1885,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:77
+#. type: Plain text
+#: pacman-g2.txt:75
 #, no-wrap
 msgid ""
 "--noarch::\n"
@@ -1423,7 +1895,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:85
+#. type: Plain text
+#: pacman-g2.txt:83
 #, no-wrap
 msgid ""
 "-r, --root <path>::\n"
@@ -1436,7 +1909,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:88
+#. type: Plain text
+#: pacman-g2.txt:86
 #, no-wrap
 msgid ""
 "-b, --dbpath:\n"
@@ -1444,7 +1918,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:91
+#. type: Plain text
+#: pacman-g2.txt:89
 #, no-wrap
 msgid ""
 "-v, --verbose::\n"
@@ -1452,7 +1927,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:94
+#. type: Plain text
+#: pacman-g2.txt:92
 #, no-wrap
 msgid ""
 "--config <path>::\n"
@@ -1460,7 +1936,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:98
+#. type: Plain text
+#: pacman-g2.txt:96
 #, no-wrap
 msgid ""
 "--noconfirm::\n"
@@ -1469,7 +1946,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:103
+#. type: Plain text
+#: pacman-g2.txt:101
 #, no-wrap
 msgid ""
 "--ask <number>::\n"
@@ -1479,7 +1957,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:110
+#. type: Plain text
+#: pacman-g2.txt:108
 #, no-wrap
 msgid ""
 "\t* The given package is in IgnorePkg. (1)\n"
@@ -1491,7 +1970,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:113
+#. type: Plain text
+#: pacman-g2.txt:111
 #, no-wrap
 msgid ""
 "\tSelect for what types do you want to answer yes, sum up the values and use the\n"
@@ -1499,7 +1979,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:117
+#. type: Plain text
+#: pacman-g2.txt:115
 #, no-wrap
 msgid ""
 "--noprogressbar::\n"
@@ -1508,7 +1989,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:120
+#. type: Plain text
+#: pacman-g2.txt:118
 #, no-wrap
 msgid ""
 "--noscriptlet::\n"
@@ -1516,7 +1998,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:123
+#. type: Plain text
+#: pacman-g2.txt:121
 #, no-wrap
 msgid ""
 "--nointegrity::\n"
@@ -1524,24 +2007,47 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:125
+#. type: Plain text
+#: pacman-g2.txt:124
+#, no-wrap
+msgid ""
+"--regex::\n"
+"\tTreat the target names as regular expressions if no target found.\n"
+msgstr ""
+
+# type: Plain text
+#. type: Plain text
+#: pacman-g2.txt:129
+#, no-wrap
+msgid ""
+"\tExample:\n"
+"\t----\n"
+"\t# pacman-g2 -S --regex perl-.*\n"
+"\t----\n"
+msgstr ""
+
+# type: Plain text
+#. type: Plain text
+#: pacman-g2.txt:131
 msgid "== SYNC OPTIONS"
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:132
+#. type: Plain text
+#: pacman-g2.txt:138
 #, no-wrap
 msgid ""
 "-c, --clean::\n"
 "\tRemove old packages from the cache. When pacman-g2 downloads packages, it saves\n"
-"\tthem in /var/cache/pacman/pkg. If you need to free up diskspace, you can remove\n"
+"\tthem in /var/cache/pacman-g2/pkg. If you need to free up diskspace, you can remove\n"
 "\tthese packages by using the --clean option. Using one --clean (or -c) switch\n"
 "\twill only remove old packages. Use it twice to remove all packages from the\n"
 "\tcache.\n"
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:137
+#. type: Plain text
+#: pacman-g2.txt:143
 #, no-wrap
 msgid ""
 "-e, --dependsonly::\n"
@@ -1551,7 +2057,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:141
+#. type: Plain text
+#: pacman-g2.txt:147
 #, no-wrap
 msgid ""
 "-g, --groups::\n"
@@ -1560,7 +2067,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:146
+#. type: Plain text
+#: pacman-g2.txt:152
 #, no-wrap
 msgid ""
 "-i, --info::\n"
@@ -1570,7 +2078,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:150
+#. type: Plain text
+#: pacman-g2.txt:156
 #, no-wrap
 msgid ""
 "-l, --list::\n"
@@ -1578,18 +2087,20 @@ msgid ""
 "\tspecified on the command line.\n"
 msgstr ""
 
-# type: Plain text
-#: pacman-g2.txt:155
+#. type: Plain text
+#: pacman-g2.txt:162
 #, no-wrap
 msgid ""
 "-p, --print-uris::\n"
 "\tPrint out URIs for each package that will be installed, including any\n"
-"\tdependencies that have yet to be installed. These can be piped to a file and\n"
-"\tdownloaded at a later time, using a program like wget.\n"
+"\tdependencies. These can be piped to a file and downloaded at a later time,\n"
+"\tusing a program like wget. If you need to get the URIs even if they're downloaded,\n"
+"\tjust use -pp for it.\n"
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:159
+#. type: Plain text
+#: pacman-g2.txt:166
 #, no-wrap
 msgid ""
 "-s, --search <regexp>::\n"
@@ -1598,7 +2109,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:167
+#. type: Plain text
+#: pacman-g2.txt:174
 #, no-wrap
 msgid ""
 "-u, --sysupgrade::\n"
@@ -1611,7 +2123,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:170
+#. type: Plain text
+#: pacman-g2.txt:177
 #, no-wrap
 msgid ""
 "-w, --downloadonly::\n"
@@ -1619,32 +2132,37 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:175
+#. type: Plain text
+#: pacman-g2.txt:183
 #, no-wrap
 msgid ""
 "-y, --refresh::\n"
 "\tDownload a fresh copy of the master package list from the ftp server defined in\n"
-"\t/etc/pacman.conf. This should typically be used each time you use\n"
-"\t--sysupgrade.\n"
+"\t/etc/pacman-g2.conf. This should typically be used each time you use\n"
+"\t--sysupgrade. If used more than once, then it forces the re-download of the\n"
+"\tpackage database, even in case it's up to date.\n"
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:180
+#. type: Plain text
+#: pacman-g2.txt:188
 #, no-wrap
 msgid ""
 "--ignore <pkg>::\n"
 "\tThis option functions exactly the same as the IgnorePkg configuration\n"
 "\tdirective. Sometimes it can be handy to skip some package updates without\n"
-"\thaving to edit pacman.conf each time.\n"
+"\thaving to edit pacman-g2.conf each time.\n"
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:182
+#. type: Plain text
+#: pacman-g2.txt:190
 msgid "== REMOVE OPTIONS"
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:186
+#. type: Plain text
+#: pacman-g2.txt:194
 #, no-wrap
 msgid ""
 "-c, --cascade::\n"
@@ -1653,7 +2171,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:189
+#. type: Plain text
+#: pacman-g2.txt:197
 #, no-wrap
 msgid ""
 "-k, --keep::\n"
@@ -1661,7 +2180,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:195
+#. type: Plain text
+#: pacman-g2.txt:203
 #, no-wrap
 msgid ""
 "-n, --nosave::\n"
@@ -1672,23 +2192,26 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:201
+#. type: Plain text
+#: pacman-g2.txt:209
 #, no-wrap
 msgid ""
 "-s, --recursive::\n"
 "\tFor each target specified, remove it and all its dependencies, provided that\n"
 "\t(A) they are not required by other packages; and (B) they were not explicitly\n"
-"\tinstalled by the user. This option is analagous to a backwards --sync\n"
+"\tinstalled by the user. This option is analogous to a backwards --sync\n"
 "\toperation.\n"
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:203
+#. type: Plain text
+#: pacman-g2.txt:211
 msgid "== QUERY OPTIONS"
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:206
+#. type: Plain text
+#: pacman-g2.txt:214
 #, no-wrap
 msgid ""
 "-c, --changelog::\n"
@@ -1696,7 +2219,18 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:210
+#. type: Plain text
+#: pacman-g2.txt:218
+#, no-wrap
+msgid ""
+"-d, --nodeps::\n"
+"\tWhen used with -e, list all packages that were not installed as\n"
+"        a dependency and are not required by any other packages.\n"
+msgstr ""
+
+# type: Plain text
+#. type: Plain text
+#: pacman-g2.txt:222
 #, no-wrap
 msgid ""
 "-e, --orphans::\n"
@@ -1705,7 +2239,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:214
+#. type: Plain text
+#: pacman-g2.txt:226
 #, no-wrap
 msgid ""
 "-g, --groups::\n"
@@ -1714,7 +2249,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:218
+#. type: Plain text
+#: pacman-g2.txt:230
 #, no-wrap
 msgid ""
 "-i, --info::\n"
@@ -1723,7 +2259,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:222
+#. type: Plain text
+#: pacman-g2.txt:234
 #, no-wrap
 msgid ""
 "-l, --list::\n"
@@ -1732,7 +2269,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:226
+#. type: Plain text
+#: pacman-g2.txt:238
 #, no-wrap
 msgid ""
 "-m, --foreign::\n"
@@ -1741,7 +2279,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:229
+#. type: Plain text
+#: pacman-g2.txt:241
 #, no-wrap
 msgid ""
 "-o, --owns <path>::\n"
@@ -1749,7 +2288,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:234
+#. type: Plain text
+#: pacman-g2.txt:246
 #, no-wrap
 msgid ""
 "-p, --file::\n"
@@ -1759,7 +2299,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:238
+#. type: Plain text
+#: pacman-g2.txt:250
 #, no-wrap
 msgid ""
 "-s, --search <regexp>::\n"
@@ -1768,7 +2309,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:241
+#. type: Plain text
+#: pacman-g2.txt:253
 #, no-wrap
 msgid ""
 "-t, --test::\n"
@@ -1776,7 +2318,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:246
+#. type: Plain text
+#: pacman-g2.txt:258
 #, no-wrap
 msgid ""
 "\t----\n"
@@ -1786,28 +2329,32 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:248
+#. type: Plain text
+#: pacman-g2.txt:260
 #, no-wrap
 msgid "\tThe recommended method in this case is to remove the database entry:\n"
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:252
+#. type: Plain text
+#: pacman-g2.txt:264
 #, no-wrap
 msgid ""
 "\t----\n"
-"\t# rm -rf /var/lib/pacman/local/zip-2.32-1\n"
+"\t# rm -rf /var/lib/pacman-g2/local/zip-2.32-1\n"
 "\t----\n"
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:254
+#. type: Plain text
+#: pacman-g2.txt:266
 #, no-wrap
 msgid "\tand forcing the reinstall of the package:\n"
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:258
+#. type: Plain text
+#: pacman-g2.txt:270
 #, no-wrap
 msgid ""
 "\t----\n"
@@ -1816,12 +2363,14 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:260
+#. type: Plain text
+#: pacman-g2.txt:272
 msgid "== HANDLING CONFIG FILES"
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:267
+#. type: Plain text
+#: pacman-g2.txt:279
 msgid ""
 "pacman-g2 uses the same logic as rpm to determine action against files that "
 "are designated to be backed up. During an upgrade, it uses 3 md5 hashes for "
@@ -1832,7 +2381,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:270
+#. type: Plain text
+#: pacman-g2.txt:282
 #, no-wrap
 msgid ""
 "original=X, current=X, new=X::\n"
@@ -1840,7 +2390,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:275
+#. type: Plain text
+#: pacman-g2.txt:287
 #, no-wrap
 msgid ""
 "original=X, current=X, new=Y::\n"
@@ -1850,7 +2401,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:280
+#. type: Plain text
+#: pacman-g2.txt:292
 #, no-wrap
 msgid ""
 "original=X, current=Y, new=X::\n"
@@ -1860,7 +2412,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:283
+#. type: Plain text
+#: pacman-g2.txt:295
 #, no-wrap
 msgid ""
 "original=X, current=Y, new=Y::\n"
@@ -1868,7 +2421,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:288
+#. type: Plain text
+#: pacman-g2.txt:300
 #, no-wrap
 msgid ""
 "original=X, current=Y, new=Z::\n"
@@ -1878,9 +2432,10 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:296
+#. type: Plain text
+#: pacman-g2.txt:308
 msgid ""
-"pacman-g2 will attempt to read /etc/pacman.conf each time it is invoked. "
+"pacman-g2 will attempt to read /etc/pacman-g2.conf each time it is invoked. "
 "This configuration file is divided into sections or repositories. Each "
 "section defines a package repository that pacman-g2 can use when searching "
 "for packages in --sync mode. The exception to this is the options section, "
@@ -1888,22 +2443,26 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:298
+#. type: Plain text
+#: pacman-g2.txt:310
 msgid "Example:"
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:303
+#. type: Plain text
+#: pacman-g2.txt:315
 msgid "[options] HoldPkg = pacman-g2 glibc bash coreutils HoldPkg = chkconfig"
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:305
-msgid "Include = /etc/pacman.d/frugalware-current"
+#. type: Plain text
+#: pacman-g2.txt:317
+msgid "Include = /etc/pacman-g2/repos/frugalware-current"
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:308
+#. type: Plain text
+#: pacman-g2.txt:320
 #, no-wrap
 msgid ""
 "[custom]\n"
@@ -1912,30 +2471,34 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:311
+#. type: Plain text
+#: pacman-g2.txt:323
 msgid "== CONFIG: OPTIONS"
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:315
+#. type: Plain text
+#: pacman-g2.txt:327
 #, no-wrap
 msgid ""
 "DBPath = path/to/db/dir::\n"
 "\tOverrides the default location of the toplevel database directory. The default\n"
-"\tis var/lib/pacman.\n"
+"\tis var/lib/pacman-g2.\n"
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:319
+#. type: Plain text
+#: pacman-g2.txt:331
 #, no-wrap
 msgid ""
 "CacheDir = path/to/cache/dir::\n"
 "\tOverrides the default location of the package cache directory. The default is\n"
-"\tvar/cache/pacman.\n"
+"\tvar/cache/pacman-g2.\n"
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:323
+#. type: Plain text
+#: pacman-g2.txt:335
 #, no-wrap
 msgid ""
 "HoldPkg = <package> [package] ...::\n"
@@ -1944,7 +2507,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:327
+#. type: Plain text
+#: pacman-g2.txt:339
 #, no-wrap
 msgid ""
 "IgnorePkg = <package> [package] ...::\n"
@@ -1953,7 +2517,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:331
+#. type: Plain text
+#: pacman-g2.txt:343
 #, no-wrap
 msgid ""
 "UpgradeDelay = <number>::\n"
@@ -1962,7 +2527,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:335
+#. type: Plain text
+#: pacman-g2.txt:347
 #, no-wrap
 msgid ""
 "OldDelay = <number>::\n"
@@ -1971,7 +2537,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:339
+#. type: Plain text
+#: pacman-g2.txt:351
 #, no-wrap
 msgid ""
 "MaxTries = <number>::\n"
@@ -1980,7 +2547,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:343
+#. type: Plain text
+#: pacman-g2.txt:355
 #, no-wrap
 msgid ""
 "Include = <path>::\n"
@@ -1989,7 +2557,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:346
+#. type: Plain text
+#: pacman-g2.txt:358
 #, no-wrap
 msgid ""
 "ProxyServer = <host|ip>::\n"
@@ -1997,7 +2566,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:350
+#. type: Plain text
+#: pacman-g2.txt:362
 #, no-wrap
 msgid ""
 "ProxyPort = port::\n"
@@ -2006,7 +2576,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:356
+#. type: Plain text
+#: pacman-g2.txt:368
 #, no-wrap
 msgid ""
 "XferCommand = /path/to/command %u::\n"
@@ -2017,7 +2588,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:360
+#. type: Plain text
+#: pacman-g2.txt:372
 #, no-wrap
 msgid ""
 "\tThis option is useful for users who experience problems with pacman-g2's\n"
@@ -2026,7 +2598,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:363
+#. type: Plain text
+#: pacman-g2.txt:375
 #, no-wrap
 msgid ""
 "NoPassiveFtp::\n"
@@ -2034,7 +2607,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:367
+#. type: Plain text
+#: pacman-g2.txt:379
 #, no-wrap
 msgid ""
 "NoUpgrade = <file> [file] ...::\n"
@@ -2043,13 +2617,15 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:369
+#. type: Plain text
+#: pacman-g2.txt:381
 #, no-wrap
 msgid "\tNOTE: Do not include the leading slash when specifying files.\n"
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:376
+#. type: Plain text
+#: pacman-g2.txt:388
 #, no-wrap
 msgid ""
 "NoExtract = <file> [file] ...::\n"
@@ -2061,7 +2637,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:380
+#. type: Plain text
+#: pacman-g2.txt:392
 #, no-wrap
 msgid ""
 "UseSyslog::\n"
@@ -2070,7 +2647,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:383
+#. type: Plain text
+#: pacman-g2.txt:395
 #, no-wrap
 msgid ""
 "LogFile = /path/to/file::\n"
@@ -2078,12 +2656,14 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:385
+#. type: Plain text
+#: pacman-g2.txt:397
 msgid "== CONFIG: REPOSITORIES"
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:392
+#. type: Plain text
+#: pacman-g2.txt:404
 msgid ""
 "Each repository section defines a section name and at least one location "
 "where the packages can be found. The section name is defined by the string "
@@ -2095,12 +2675,14 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:394
+#. type: Plain text
+#: pacman-g2.txt:406
 msgid "== USING YOUR OWN REPOSITORY"
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:399
+#. type: Plain text
+#: pacman-g2.txt:411
 msgid ""
 "Let's say you have a bunch of custom packages in /home/pkgs and their "
 "respective FrugalBuild files are all in /var/fst/local. All you need to do "
@@ -2109,7 +2691,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:402
+#. type: Plain text
+#: pacman-g2.txt:414
 #, no-wrap
 msgid ""
 "# gensync /var/fst/local /home/pkgs/custom.fdb\n"
@@ -2117,7 +2700,8 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:412
+#. type: Plain text
+#: pacman-g2.txt:424
 msgid ""
 "The above command will read all FrugalBuild files in /var/fst/local and "
 "generate a compressed database called /home/pkgs/custom.fdb. Note that the "
@@ -2130,28 +2714,43 @@ msgid ""
 msgstr ""
 
 # type: Plain text
-#: pacman-g2.txt:414
+#. type: Plain text
+#: pacman-g2.txt:426
 msgid "== HOOKS"
-msgstr ""
+msgstr "== HURKOK"
 
 # type: Plain text
-#: pacman-g2.txt:418
+#. type: Plain text
+#: pacman-g2.txt:430
 msgid ""
 "pacman-g2 will attempt to execute hooks in the /etc/pacman-g2/hooks "
 "directory.  The hooks are like package scriptlets: each file can provide "
 "functions for a given hook. At the moment the following hooks are supported:"
 msgstr ""
+"pacman-g2 megpróbálja végrehajtani az /etc/pacman-g2/hooks könyvtárban levő "
+"hurkokat.  A hurkok olyanok mint csomag szkriptletek: mindegyik állomány "
+"függvényeket tartalmazhat egy bizonyos hurok számára. Pillanatnyilag a "
+"következő hurkok vannak támogatva:"
 
 # type: Plain text
-#: pacman-g2.txt:421
+#. type: Plain text
+#: pacman-g2.txt:436
 #, no-wrap
 msgid ""
+"pre_sysupgrade::\n"
+"\tExecuted before upgrading packages (and after the integrity check) during a\n"
+"\t`pacman-g2 -S --sysupgrade`.\n"
 "post_sysupgrade::\n"
 "\tExecuted after a successful `pacman-g2 -S --sysupgrade`.\n"
 msgstr ""
+"pre_sysupgrade::\n"
+"\tCsomag frissítés előtt van végrehajtva (és az integritás teszt után), egy `pacman-g2 -S --sysupgrade` alkalmával.\n"
+"post_sysupgrade::\n"
+"\tEgy sikeres `pacman-g2 -S --sysupgrade` után van végrehajtva.\n"
 
 # type: Plain text
-#: pacman-g2.txt:425
+#. type: Plain text
+#: pacman-g2.txt:440
 #, no-wrap
 msgid "*makepkg*(8)\n"
-msgstr ""
+msgstr "*makepkg*(8)\n"

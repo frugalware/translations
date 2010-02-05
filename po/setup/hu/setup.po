@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-04 10:10+0100\n"
+"POT-Creation-Date: 2010-02-05 02:02+0100\n"
 "PO-Revision-Date: 2009-03-04 23:33+0200\n"
 "Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
 "Language-Team: <hu@li.org>\n"
-"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: hu\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 1.2.0\n"
 
@@ -35,9 +35,9 @@ msgid "ftp://ftp5."
 msgstr "ftp://ftp4."
 
 #: ../src/plugins/configsource.c:102 ../src/plugins/dolangsh.c:58
-#: ../src/plugins/formatdisk.c:257 ../src/plugins/formatdisk.c:412
+#: ../src/plugins/formatdisk.c:267 ../src/plugins/formatdisk.c:467
 #: ../src/plugins/layout.c:146 ../src/plugins/loadsource.c:88
-#: ../src/plugins/select.c:334 ../src/util.c:305
+#: ../src/util.c:305
 msgid "Could not open output file for writing"
 msgstr "Nem sikerült írásra megnyitni a kimeneti fájlt"
 
@@ -56,7 +56,7 @@ msgstr ""
 "Itt egy vagy több közeli tükörszervert választhat ki a csomagok gyorsabb "
 "letöltése érdekében."
 
-#: ../src/plugins/configsource.c:166 ../src/plugins/formatdisk.c:583
+#: ../src/plugins/configsource.c:166 ../src/plugins/formatdisk.c:655
 #: ../src/plugins/partdisk.c:197
 msgid "Continue"
 msgstr "Folytatás"
@@ -73,12 +73,23 @@ msgstr ""
 "A gyorsabb letöltés érdekében megadhatja a legközelebbi (pl. helyi) "
 "tükörszerver címét. A legtöbb esetben elég csak a Folytatás választása."
 
-#: ../src/plugins/configsource.c:196 ../src/plugins/select.c:410
-#: ../src/plugins/select.c:420 ../src/plugins/select.c:450
+#: ../src/plugins/configsource.c:195
+msgid "Failed to configure the network"
+msgstr ""
+
+#: ../src/plugins/configsource.c:196
+msgid ""
+"Failed to write the network configuration files. Please try again, "
+"especially pay attention to give a valid IP address and/or netmask if you "
+"are using a static IP configuration."
+msgstr ""
+
+#: ../src/plugins/configsource.c:203 ../src/plugins/select.c:422
+#: ../src/plugins/select.c:438 ../src/plugins/select.c:477
 msgid "Please wait"
 msgstr "Kérem várjon"
 
-#: ../src/plugins/configsource.c:196
+#: ../src/plugins/configsource.c:203
 msgid "Configuring the network interface..."
 msgstr "Hálózati felület beállítása..."
 
@@ -102,25 +113,25 @@ msgstr "Swap partíciók beállítása"
 msgid "Please select which swap partitions you want Frugalware to use:"
 msgstr "Válassza ki, hogy mely swap partíciókat használhatja a Frugalware:"
 
-#: ../src/plugins/formatdisk.c:173 ../src/plugins/formatdisk.c:196
+#: ../src/plugins/formatdisk.c:176 ../src/plugins/formatdisk.c:204
 msgid "Quick format with no bad block checking"
 msgstr "Gyors formázás hibás blokk keresés nélkül"
 
-#: ../src/plugins/formatdisk.c:174 ../src/plugins/formatdisk.c:197
+#: ../src/plugins/formatdisk.c:177 ../src/plugins/formatdisk.c:205
 msgid "Slow format that checks for bad blocks"
 msgstr "Lassú formázás hibás blokkok keresésével"
 
-#: ../src/plugins/formatdisk.c:177 ../src/plugins/formatdisk.c:201
-#: ../src/plugins/formatdisk.c:233
+#: ../src/plugins/formatdisk.c:180 ../src/plugins/formatdisk.c:209
+#: ../src/plugins/formatdisk.c:243
 msgid "Formatting partitions"
 msgstr "Partíciók formázása"
 
-#: ../src/plugins/formatdisk.c:180 ../src/plugins/formatdisk.c:204
+#: ../src/plugins/formatdisk.c:183 ../src/plugins/formatdisk.c:212
 #, c-format
 msgid "Format %s"
 msgstr "%s formázása"
 
-#: ../src/plugins/formatdisk.c:181 ../src/plugins/formatdisk.c:205
+#: ../src/plugins/formatdisk.c:184 ../src/plugins/formatdisk.c:213
 #, c-format
 msgid ""
 "If %s has not been formatted, you should format it.\n"
@@ -131,63 +142,63 @@ msgstr ""
 "MEGJEGYZÉS: Ez az összes adatot törölni fogja a %s partíción. Meg kívánja "
 "formázni ezt a partíciót?"
 
-#: ../src/plugins/formatdisk.c:198
+#: ../src/plugins/formatdisk.c:206
 msgid "Do not format, just mount the partition"
 msgstr "Ne formázza, csak csatolja a partíciót"
 
-#: ../src/plugins/formatdisk.c:224
+#: ../src/plugins/formatdisk.c:234
 msgid "Standard Linux ext2fs filesystem"
 msgstr "Szabványos Linux ext2fs fájlrendszer"
 
-#: ../src/plugins/formatdisk.c:225
+#: ../src/plugins/formatdisk.c:235
 msgid "Journalising version of the ext2 filesystem"
 msgstr "Az ext2 fájlrendszer naplózó változata"
 
-#: ../src/plugins/formatdisk.c:226
+#: ../src/plugins/formatdisk.c:236
 msgid "The evolution of the ext3 filesystem (EXPERIMENTAL!)"
 msgstr "Az ext3 fájlrendszer továbbfejlesztése (KÍSÉRLETI!)"
 
-#: ../src/plugins/formatdisk.c:228
+#: ../src/plugins/formatdisk.c:238
 msgid "Hans Reiser's journalising filesystem"
 msgstr "Hans Reiser naplózó fájlrendszere"
 
-#: ../src/plugins/formatdisk.c:230
+#: ../src/plugins/formatdisk.c:240
 msgid "SGI's journalising filesystem"
 msgstr "Az SGI naplózó fájlrendszere"
 
-#: ../src/plugins/formatdisk.c:237
+#: ../src/plugins/formatdisk.c:247
 #, c-format
 msgid "Selecting filesystem for %s"
 msgstr "Fájlrendszer kiválasztása a %s számára"
 
-#: ../src/plugins/formatdisk.c:238
+#: ../src/plugins/formatdisk.c:248
 #, c-format
 msgid "Please select the type of filesystem to use for %s."
 msgstr "Válassza ki a %s számára használandó fájlrendszert."
 
-#: ../src/plugins/formatdisk.c:281 ../src/plugins/formatdisk.c:288
-msgid "Formatting swap partition"
-msgstr "Swap partíció formázása"
-
-#: ../src/plugins/formatdisk.c:282
+#: ../src/plugins/formatdisk.c:293
 #, c-format
 msgid "Formatting %s as a swap partition"
 msgstr "%s formázása swap partícióként"
 
-#: ../src/plugins/formatdisk.c:289
+#: ../src/plugins/formatdisk.c:295 ../src/plugins/formatdisk.c:305
+msgid "Formatting swap partition"
+msgstr "Swap partíció formázása"
+
+#: ../src/plugins/formatdisk.c:303
 #, c-format
 msgid "Formatting %s as a swap partition and checking for bad blocks"
 msgstr "%s formázása swap partícióként és hibás blokkok keresése"
 
-#: ../src/plugins/formatdisk.c:313
+#: ../src/plugins/formatdisk.c:333
 msgid "Setting up the root partition"
 msgstr "A root partíció beállítása"
 
-#: ../src/plugins/formatdisk.c:315
+#: ../src/plugins/formatdisk.c:335
 msgid "Select the Linux installation partition"
 msgstr "A Linux telepítési partíciójának kiválasztása"
 
-#: ../src/plugins/formatdisk.c:316
+#: ../src/plugins/formatdisk.c:336
 msgid ""
 "Please select a partition from the following list to use for your root (/) "
 "partition. The following ones are available:"
@@ -195,44 +206,44 @@ msgstr ""
 "Válasszon ki egy partíciót a következő listából, amelyet root (/) "
 "partícióként kíván használni. A következők érhetőek el:"
 
-#: ../src/plugins/formatdisk.c:329
+#: ../src/plugins/formatdisk.c:351
 msgid "Formatting"
 msgstr "Formázás"
 
-#: ../src/plugins/formatdisk.c:330
+#: ../src/plugins/formatdisk.c:352
 #, c-format
 msgid "Creating %s filesystem on %s and checking for bad blocks"
 msgstr "%s fájlrendszer létrehozása a %s partíción és hibás blokkok keresése"
 
-#: ../src/plugins/formatdisk.c:331
+#: ../src/plugins/formatdisk.c:353
 #, c-format
 msgid "Creating %s filesystem on %s"
 msgstr "%s fájlrendszer létrehozása a %s partíción"
 
-#: ../src/plugins/formatdisk.c:436
+#: ../src/plugins/formatdisk.c:498
 #, c-format
 msgid "Select mount point for %s"
 msgstr "Csatolási pont kiválasztása a %s számára"
 
-#: ../src/plugins/formatdisk.c:460 ../src/plugins/formatdisk.c:603
+#: ../src/plugins/formatdisk.c:522 ../src/plugins/formatdisk.c:675
 msgid "(in use)"
 msgstr "(használatban)"
 
-#: ../src/plugins/formatdisk.c:468
+#: ../src/plugins/formatdisk.c:530
 #, c-format
 msgid "%s on %s/\t%s"
 msgstr "%s ezen: %s\t%s"
 
 #. non-root partitions
-#: ../src/plugins/formatdisk.c:576
+#: ../src/plugins/formatdisk.c:648
 msgid "Selecting other partitions"
 msgstr "Egyéb partíciók kiválasztása"
 
-#: ../src/plugins/formatdisk.c:587
+#: ../src/plugins/formatdisk.c:659
 msgid "Select other Linux partitions for /etc/fstab"
 msgstr "Egyéb Linux partíciók beállítása az /etc/fstab-ban"
 
-#: ../src/plugins/formatdisk.c:588
+#: ../src/plugins/formatdisk.c:660
 msgid ""
 "You may use your other partitions to distribute your Linux system across "
 "more than one partition. Currently, you have only mounted your / partition. "
@@ -316,23 +327,23 @@ msgstr ""
 msgid "Loading the installation source"
 msgstr "A telepítési forrás betöltése"
 
-#: ../src/plugins/loadsource.c:156
+#: ../src/plugins/loadsource.c:158
 msgid "Selecting source media"
 msgstr "Forrás adathordozó kiválasztása"
 
-#: ../src/plugins/loadsource.c:159
+#: ../src/plugins/loadsource.c:161
 msgid "Scanning"
 msgstr "Keresés"
 
-#: ../src/plugins/loadsource.c:159
+#: ../src/plugins/loadsource.c:161
 msgid "Scanning for a CD/DVD drive containing a Frugalware install disc..."
 msgstr "A Frugalware telepítőlemezt tartalmazó CD/DVD meghajtó keresése..."
 
-#: ../src/plugins/loadsource.c:175
+#: ../src/plugins/loadsource.c:177
 msgid "CD/DVD drive found"
 msgstr "Megtalált CD/DVD meghajtó"
 
-#: ../src/plugins/loadsource.c:175
+#: ../src/plugins/loadsource.c:177
 #, c-format
 msgid "A Frugalware install disc was found in device /dev/%s."
 msgstr "Frugalware telepítő lemez a /dev/%s eszközön"
@@ -427,24 +438,24 @@ msgstr ""
 "%s elnyeri tetszését. Távolítsa el az adathordozót a meghajtóból és üssön "
 "ENTER-t az újraindításhoz."
 
-#: ../src/plugins/select.c:53 ../src/plugins/select.c:279
-#: ../src/plugins/select.c:407
+#: ../src/plugins/select.c:54 ../src/plugins/select.c:282
+#: ../src/plugins/select.c:419
 msgid "Selecting packages"
 msgstr "Csomagok kiválasztása"
 
-#: ../src/plugins/select.c:261
+#: ../src/plugins/select.c:262
 msgid "Selecting categories"
 msgstr "Kategóriák kiválasztása"
 
-#: ../src/plugins/select.c:262
+#: ../src/plugins/select.c:263
 msgid "Please select which categories to install:"
 msgstr "Válassza ki a telepíteni kívánt kategóriákat:"
 
-#: ../src/plugins/select.c:292
+#: ../src/plugins/select.c:296
 msgid "Use expert menus?"
 msgstr "Használni szeretné a haladó menüket?"
 
-#: ../src/plugins/select.c:293
+#: ../src/plugins/select.c:297
 msgid ""
 "If you like, you may select your packages from expert menus. Where the "
 "normal menu shows a choice like 'C compiler system', the expert menus show "
@@ -465,40 +476,40 @@ msgstr ""
 "normál menük használatához, vagy az 'igen'-t a csomagok egyesével való "
 "kiválasztását támogató haladó menükhöz."
 
-#: ../src/plugins/select.c:348 ../src/plugins/select.c:356
-#: ../src/plugins/select.c:370 ../src/plugins/select.c:374
+#: ../src/plugins/select.c:360 ../src/plugins/select.c:368
+#: ../src/plugins/select.c:382 ../src/plugins/select.c:386
 msgid "Error"
 msgstr "Hiba"
 
-#: ../src/plugins/select.c:348
+#: ../src/plugins/select.c:360
 #, c-format
 msgid "Failed to parse pacman-g2 configuration file (%s)"
 msgstr "Nem sikerült értelmezni a pacman-g2 beállítási fájlját (%s)"
 
-#: ../src/plugins/select.c:356
+#: ../src/plugins/select.c:368
 #, c-format
 msgid "Could not register '%s' database (%s)"
 msgstr "Nem sikerült regisztrálni a '%s' adatbázist (%s)"
 
-#: ../src/plugins/select.c:370
+#: ../src/plugins/select.c:382
 #, c-format
 msgid "Failed to synchronize %s"
 msgstr "Nem sikerült szinkronizálni a %s adatbázist"
 
-#: ../src/plugins/select.c:374
+#: ../src/plugins/select.c:386
 #, c-format
 msgid "Failed to update %s (%s)"
 msgstr "Nem sikerült frissiteni: %s (%s)"
 
-#: ../src/plugins/select.c:410
+#: ../src/plugins/select.c:422
 msgid "Searching for categories..."
 msgstr "Kategóriák keresése..."
 
-#: ../src/plugins/select.c:420
+#: ../src/plugins/select.c:438
 msgid "Searching for packages..."
 msgstr "Csomagok keresése..."
 
-#: ../src/plugins/select.c:450
+#: ../src/plugins/select.c:477
 msgid "Searching for missing dependencies..."
 msgstr "Hiányzó függőségek keresése..."
 
@@ -610,11 +621,11 @@ msgstr ""
 msgid "Enter home directory"
 msgstr "Saját könyvtár megadása"
 
-#: ../src/plugins/postconf.c:215
+#: ../src/plugins/postconf.c:217
 msgid "No normal user account detected"
 msgstr "Nem található normál felhasználói fiók"
 
-#: ../src/plugins/postconf.c:216
+#: ../src/plugins/postconf.c:218
 msgid ""
 "There is currently no non-root user account configured. It is strongly "
 "recommended to create one. Would you like to create a normal user account "
@@ -624,15 +635,15 @@ msgstr ""
 "ajánlott létrehozni legalább egyet. Szeretne létrehozni most egy normál "
 "felhasználói fiókot?"
 
-#: ../src/plugins/postconf.c:244
+#: ../src/plugins/postconf.c:246
 msgid "Post-install configuration"
 msgstr "Telepítés utáni beállítások"
 
-#: ../src/plugins/postconf.c:274
+#: ../src/plugins/postconf.c:273
 msgid "Configuring kernel modules"
 msgstr "Kernelmodulok beállítása"
 
-#: ../src/plugins/postconf.c:275
+#: ../src/plugins/postconf.c:274
 msgid "Updating module dependencies..."
 msgstr "Modulfüggőségek frissítése..."
 
@@ -653,8 +664,9 @@ msgid "Installation error"
 msgstr "Telepítési hiba"
 
 #: ../src/util.c:167
+#, fuzzy
 msgid ""
-"Errors occured while installing selected packages. It is recommended to "
+"Errors occurred while installing selected packages. It is recommended to "
 "abort the installation, however you may want to ignore this problem. Do you "
 "want to leave the installer?"
 msgstr ""
@@ -670,15 +682,15 @@ msgstr "Kilépés a telepítőből"
 msgid "Are you sure you want to exit from the installer?"
 msgstr "Biztos benne hogy kilép a telepítőből?"
 
-#: ../src/util.c:631
+#: ../src/util.c:634
 msgid "Oops"
 msgstr "Upsz"
 
-#: ../src/util.c:633
+#: ../src/util.c:636
 msgid "A problem has occurred"
 msgstr "Probléma történt"
 
-#: ../src/util.c:633
+#: ../src/util.c:636
 msgid ""
 "Internal error: Segmentation fault. Please report this issue to http://bugs."
 "frugalware.org"
@@ -686,15 +698,15 @@ msgstr ""
 "Belső hiba: Szegmens hiba. Kérjük jelentse ezt a hibát a http://bugs."
 "frugalware.org címen."
 
-#: ../src/util.c:659
+#: ../src/util.c:662
 msgid "Selecting a task"
 msgstr "Egy feladat kiválasztása"
 
-#: ../src/util.c:667
+#: ../src/util.c:670
 msgid "Select task to continue with"
 msgstr "Válasszon ki egy feladatot amivel folytatni kívánja"
 
-#: ../src/util.c:668
+#: ../src/util.c:671
 msgid ""
 "You selected to change the way normally Frugalware is installed. Here are "
 "the list of tasks you can continue with:"

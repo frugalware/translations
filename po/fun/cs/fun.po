@@ -6,38 +6,39 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-07-27 05:12+0200\n"
-"PO-Revision-Date: 2008-07-15 00:34+0200\n"
+"POT-Creation-Date: 2010-02-05 02:02+0100\n"
+"PO-Revision-Date: 2009-06-06 16:02+0200\n"
 "Last-Translator: Martin Burda <brdam@email.cz>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: cs\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Pootle 1.1.0\n"
+"X-Generator: Pootle 1.2.1\n"
 
-#: ../src/fun.c:67 ../src/fun.c:75
+#: ../src/fun.c:69 ../src/fun.c:77
 msgid "Error"
 msgstr "Chyba"
 
-#: ../src/fun.c:67
+#: ../src/fun.c:69
 msgid "Failed to initialize dbus subsystem"
 msgstr "Nelze inicializovat subsystém dbus"
 
-#: ../src/fun.c:75
+#: ../src/fun.c:77
 msgid "Failed to initialize interface"
 msgstr "Nelze inicializovat rozhraní"
 
 #. About
-#: ../src/fun-ui.c:144
+#: ../src/fun-ui.c:148
 msgid "About FUN"
 msgstr "O programu FUN"
 
-#: ../src/fun-ui.c:269
+#: ../src/fun-ui.c:274
 msgid "Restart Fun"
 msgstr "Restartovat FUN"
 
-#: ../src/fun-ui.c:270
+#: ../src/fun-ui.c:275
 msgid ""
 "Fun needs to be restarted in order for the changes to take effect. Do you "
 "want to restart Fun now ?"
@@ -45,39 +46,39 @@ msgstr ""
 "Aby se změny projevily, musí být aplet FUN restartován. Chcete nyní "
 "restartovat FUN ?"
 
-#: ../src/fun-ui.c:418
+#: ../src/fun-ui.c:430
 msgid "S"
 msgstr "S"
 
-#: ../src/fun-ui.c:426
+#: ../src/fun-ui.c:438
 msgid "Package Name"
 msgstr "Název balíčku"
 
-#: ../src/fun-ui.c:436
+#: ../src/fun-ui.c:448
 msgid "Latest Version"
 msgstr "Nejnovější verze"
 
-#: ../src/fun-ui.c:444
+#: ../src/fun-ui.c:456
 msgid "Description"
 msgstr "Charakteristika"
 
-#: ../src/fun-ui.c:498
+#: ../src/fun-ui.c:512
 msgid "Connection Failed"
 msgstr "Připojení selhalo"
 
-#: ../src/fun-ui.c:498
+#: ../src/fun-ui.c:512
 msgid "Failed to connect to the fun daemon\n"
 msgstr "Nelze se připojit ke službě fun\n"
 
 #. set the status
-#: ../src/fun-ui.c:502
+#: ../src/fun-ui.c:516
 msgid ""
 "The frugalware update notifier daemon is not running. Update checking is "
 "disabled"
 msgstr "Služba apletu FUN není spuštěna. Vyhledávání aktualizací není dostupné"
 
 #. display an error
-#: ../src/fun-ui.c:504
+#: ../src/fun-ui.c:518
 msgid "Update checking disabled"
 msgstr "Vyhledávání aktualizací není dostupné"
 
@@ -85,20 +86,20 @@ msgstr "Vyhledávání aktualizací není dostupné"
 #. fun_tooltip_set_text2 (tooltip, "", FALSE);
 #. set the status to Idle
 #. and the status back to Idle
-#: ../src/fun-ui.c:521 ../src/fun-ui.c:553 ../src/fun-ui.c:591
+#: ../src/fun-ui.c:535 ../src/fun-ui.c:567 ../src/fun-ui.c:612
 msgid "Idle"
 msgstr "Nečinný"
 
 #. set the status to let the user know that fun is checking for an update
-#: ../src/fun-ui.c:570
+#: ../src/fun-ui.c:591
 msgid "Checking for new updates..."
 msgstr "Vyhledávání nových aktualizací..."
 
-#: ../src/fun-ui.c:584
+#: ../src/fun-ui.c:605
 msgid "Updates are available"
 msgstr "Jsou dostupné nové aktualizace"
 
-#: ../src/fun-ui.c:584
+#: ../src/fun-ui.c:605
 msgid ""
 "New package updates are available for your system. Click the tray icon for "
 "more details"
@@ -106,21 +107,29 @@ msgstr ""
 "Jsou dostupné nové aktualizace pro Váš počítač. Klikněte na ikonu v panelu "
 "pro více informací"
 
-#: ../src/fun-ui.c:610
-msgid "(C) 2007-2008 Frugalware Developer Team (GPL)"
-msgstr "(C) 2007-2008 Tým vývojářů Frugalware (GPL)"
+#: ../src/fun-ui.c:627
+msgid "Failed to create thread for checking update"
+msgstr "Nelze ověřit aktualizace"
 
-#: ../src/fun-ui.c:611 ../data/fun.glade.h:9
+#: ../src/fun-ui.c:646
+msgid "(C) 2007-2009 Frugalware Developer Team (GPL)"
+msgstr "(C) 2007-2009 Frugalware Developer Team (GPL)"
+
+#: ../src/fun-ui.c:647 ../data/fun.glade.h:9
 msgid "Frugalware Update Notifier"
 msgstr "FUN - aplet pro vyhledávání aktualizací"
 
-#: ../src/fun-ui.c:663
+#: ../src/fun-ui.c:699
 msgid "Error getting update information"
 msgstr "Chyba při získávání nových aktualizací"
 
-#: ../src/fun-ui.c:663
+#: ../src/fun-ui.c:699
 msgid "There was an error getting update information"
 msgstr "Při získávání nových aktualizací došlo k chybě"
+
+#: ../src/fun-ui.c:772
+msgid "Error launching GFpm"
+msgstr "Chyba při spuštění GFpm"
 
 #: ../src/fun-tooltip.c:44
 msgid "View Updates"

@@ -8,36 +8,37 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-24 05:09+0100\n"
-"PO-Revision-Date: 2007-05-27 23:53+0200\n"
-"Last-Translator: Artur Grunau <link25@o2.pl>\n"
+"POT-Creation-Date: 2010-02-05 02:02+0100\n"
+"PO-Revision-Date: 2009-08-06 23:36+0200\n"
+"Last-Translator: Jan Krochmal <jankro@vp.pl>\n"
 "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-2\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: pl\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Pootle 0.10.1\n"
+"X-Generator: Pootle 1.2.1\n"
 
 #: ../netconfig.c:57
 msgid "Use a DHCP server"
-msgstr "U�yj serwera DHCP"
+msgstr "Użyj serwera DHCP"
 
 #: ../netconfig.c:58
 msgid "Use a static IP address"
-msgstr "U�yj statycznego IP"
+msgstr "Użyj statycznego adresu IP"
 
 #: ../netconfig.c:59
 msgid "DSL connection"
-msgstr "Po��czenie DSL"
+msgstr "Połączenie DSL"
 
 #: ../netconfig.c:60
 msgid "No network - loopback connection only"
-msgstr "Brak po��czenia sieciowego"
+msgstr "Brak połączenia sieciowego"
 
 #: ../netconfig.c:62
 msgid "Select network connection type"
-msgstr "Wybierz typ po��czenia sieciowego"
+msgstr "Wybierz typ połączenia sieciowego"
 
 #: ../netconfig.c:63
 msgid ""
@@ -51,77 +52,74 @@ msgid ""
 "select 'dsl'. \n"
 "Finally, if you do not have a network card, select the 'lo' choice. \n"
 msgstr ""
-"W tej chwili musimy ustali� w jaki spos�b Tw�j komputer ��czy si� z sieci�.\n"
-"Je�eli posiadasz kart� sieciow� z przypisanym adresem IP, bramk� domy�ln� "
-"oraz serwerami DNS, u�yj opcji 'static' aby wprowadzi� te warto�ci. Z tej "
-"opcji skorzysta� mo�esz r�wnie� wtedy, gdy posiadasz po��czenie DSL.\n"
-"Je�eli adres IP jest Ci przydzielany przez serwer DHCP (powszechnie "
+"W tej chwili musimy ustalić w jaki sposób Twój komputer łączy się z siecią.\n"
+"Jeżeli posiadasz kartę sieciową z przypisanym adresem IP, bramą domyślną oraz serwerami DNS, użyj opcji 'static' aby wprowadzić te wartości. Z tej "
+"opcji skorzystać możesz również wtedy, gdy posiadasz połączenie DSL.\n"
+"Jeżeli adres IP jest Ci przydzielany przez serwer DHCP (powszechnie "
 "stosowane w sieciach telewizji kablowych), skorzystaj z opcji 'dhcp'.\n"
-"Je�li posiadasz kart� sieciow�, aby pod��czy� si� bezpo�rednio do modemu "
-"DSL, wybierz 'dsl'.\n"
-"Natomiast je�eli nie posiadasz karty sieciowej, u�yj opcji 'lo'.\n"
+"Jeżeli posiadasz kartę sieciową, aby podłączyć się bezpośrednio do modemu DSL, wybierz 'dsl'.\n"
+"Natomiast jeżeli nie posiadasz karty sieciowej, użyj opcji 'lo'.\n"
 
-#: ../netconfig.c:80
+#: ../netconfig.c:77
+msgid "Select interface"
+msgstr "Wybierz interfejs"
+
+#: ../netconfig.c:92
 msgid "DSL configuration"
 msgstr "Konfiguracja DSL"
 
-#: ../netconfig.c:80
+#: ../netconfig.c:92
 msgid "Do you want to configure a DSL connection now?"
-msgstr "Czy chcesz teraz skonfigurowa� po��czenie DSL?"
+msgstr "Czy chcesz teraz skonfigurować połączenie DSL?"
 
-#: ../netconfig.c:82
+#: ../netconfig.c:94
 msgid "Enter user name"
-msgstr "Podaj nazw� u�ytkownika"
+msgstr "Podaj nazwę użytkownika"
 
-#: ../netconfig.c:83
+#: ../netconfig.c:95
 msgid "Enter your PPPoE user name:"
-msgstr "Podaj nazw� u�ytkownika PPPoE:"
+msgstr "Podaj nazwę użytkownika PPPoE:"
 
-#: ../netconfig.c:87 ../netconfig.c:89
+#: ../netconfig.c:99 ../netconfig.c:101
 msgid "Password"
-msgstr "Has�o"
+msgstr "Hasło"
 
-#: ../netconfig.c:88
+#: ../netconfig.c:100
 msgid "Please enter your PPPoE password"
-msgstr "Podaj has�o PPPoE"
+msgstr "Podaj hasło PPPoE"
 
-#: ../netconfig.c:90
+#: ../netconfig.c:102
 msgid "Please re-enter your PPPoE password"
-msgstr "Podaj has�o PPPoE ponownie"
+msgstr "Podaj hasło PPPoE ponownie"
 
-#: ../netconfig.c:96
+#: ../netconfig.c:108
 msgid "Passwords don't match"
-msgstr "Has�a nie zgadzaj� si�"
+msgstr "Hasła nie zgadzają się"
 
-#: ../netconfig.c:97
+#: ../netconfig.c:109
 msgid "Sorry, the passwords do not match. Try again?"
-msgstr "Spr�bowa� ponownie?"
+msgstr "Hasła nie zgadzają się. Spróbować ponownie?"
 
-#: ../netconfig.c:100 ../netconfig.c:150
-msgid "Enter interface name"
-msgstr "Podaj nazw� interfejsu"
-
-#: ../netconfig.c:101
+#: ../netconfig.c:112
 msgid ""
 "Enter the Ethernet interface connected to the DSL modem. It will be ethn, "
 "where 'n' is a number.\n"
 "If unsure, just hit enter.\n"
 "Enter interface name:"
 msgstr ""
-"Podaj nazw� interfejsu ��cz�cego si� z modemem DSL. B�dzie to ethN, gdzie "
-"'N' to liczba.\n"
-"Je�eli nie jeste� pewien wci�nij enter.\n"
-"Podaj nazw� interfejsu:"
+"Podaj nazwę interfejsu łączącego się z modemem DSL. Będzie to ethN, gdzie 'N' to liczba.\n"
+"Jeżeli nie jesteś pewien wciśnij enter.\n"
+"Podaj nazwę interfejsu:"
 
-#: ../netconfig.c:129
+#: ../netconfig.c:142
 msgid "Network configuration"
 msgstr "Konfiguracja sieci"
 
-#: ../netconfig.c:132
+#: ../netconfig.c:145
 msgid "Enter hostname"
-msgstr "Podaj nazw� hosta"
+msgstr "Podaj nazwę hosta"
 
-#: ../netconfig.c:132
+#: ../netconfig.c:145
 msgid ""
 "We'll need the name you'd like to give your host.\n"
 "The full hostname is needed, such as:\n"
@@ -130,152 +128,155 @@ msgid ""
 "\n"
 "Enter full hostname:"
 msgstr ""
-"Podaj nazw� jak� chcesz nada� swojej maszynie.\n"
-"Wymagana jest pe�ne nazwa, np:\n"
+"Podaj nazwę jaką chcesz nadać swojej maszynie.\n"
+"Wymagana jest pełna nazwa, np:\n"
 "\n"
 "frugalware.przyklad.net\n"
 "\n"
-"Podaj pe�n� nazw� hosta:"
+"Podaj pełną nazwę hosta:"
 
-#: ../netconfig.c:151
+#: ../netconfig.c:163
 msgid ""
 "We'll need the name of the interface you'd like to use for your network "
 "connection.\n"
 "If unsure, just hit enter.\n"
-"Enter interface name:"
+"Select interface:"
 msgstr ""
-"Podaj nazw� interfejsu do wykorzystania w po��czeniu.\n"
-"Je�eli nie jeste� pewien wci�nij enter.\n"
-"Podaj nazw� interfejsu:"
+"Podaj nazwę interfejsu do wykorzystania w połączeniu.\n"
+"Jeżeli nie jesteś pewien wciśnij enter.\n"
+"Podaj nazwę interfejsu:"
 
-#: ../netconfig.c:160
+#: ../netconfig.c:173
 msgid "Extended network name"
 msgstr "Rozszerzona nazwa sieci"
 
-#: ../netconfig.c:160
+#: ../netconfig.c:173
 msgid ""
 "It seems that this network card has a wireless extension. In order to use "
-"it, you must set your extended netwok name (ESSID). Enter your ESSID:"
-msgstr ""
-"Wygl�da na to �e ta karta sieciowa s�u�y do po��cze� bezprzewodowych. Musisz "
-"poda� ESSID - rozszerzon� nazw� sieci:"
+"it, you must set your extended network name (ESSID). Enter your ESSID:"
+msgstr "Wygląda na to że ta karta sieciowa służy do połączeń bezprzewodowych. Musisz podać ESSID - rozszerzoną nazwę sieci:"
 
-#: ../netconfig.c:165
-#, fuzzy
+#: ../netconfig.c:178
 msgid "WEP encryption key"
-msgstr "Klucz"
+msgstr "Klucz kodowania WEP"
 
-#: ../netconfig.c:166
-#, fuzzy
+#: ../netconfig.c:179
 msgid ""
 "If you have a WEP encryption key, then please enter it below.\n"
 "Examples: 4567-89AB-CD or  s:password"
-msgstr "Je�eli sie� jest kodowana podaj klucz poni�ej."
-
-#: ../netconfig.c:170
-msgid "WPA encryption passphrase"
 msgstr ""
+"Jeżeli sieć jest kodowana, podaj klucz kodowania WEP poniżej.\n"
+"Przykłady: 4567-89AB-CD lub s:hasło"
 
-#: ../netconfig.c:171
-#, fuzzy
+#: ../netconfig.c:183
+msgid "WPA encryption passphrase"
+msgstr "Hasło kodowania WPA"
+
+#: ../netconfig.c:184
 msgid ""
 "If you have a WPA passphrase, then please enter it below.\n"
 "Example: secret"
-msgstr "Je�eli sie� jest kodowana podaj klucz poni�ej."
-
-#: ../netconfig.c:175
-msgid "WPA driver"
 msgstr ""
+"Jeżeli sieć jest kodowana podaj klucz WPA poniżej.Przykład: tajne hasło"
 
-#: ../netconfig.c:176
+#: ../netconfig.c:188
+msgid "WPA driver"
+msgstr "Sterownik WPA"
+
+#: ../netconfig.c:189
 msgid ""
 "If you want to use a custom driver (not the generic one, called 'wext'), "
 "then please enter it below. If unsure, just hit enter."
 msgstr ""
+"Jeśli chcesz używać własnego sterownika (niż ten domyślny 'wext'), wpisz "
+"jego nazwę.\n"
+" Jeśli nie jesteś pewien, wciśnij enter."
 
-#: ../netconfig.c:183
+#: ../netconfig.c:196
 msgid "Set DHCP hostname"
 msgstr "Nazwa hosta serwera DHCP"
 
-#: ../netconfig.c:183
+#: ../netconfig.c:196
 msgid ""
 "Some network providers require that the DHCP hostname beset in order to "
 "connect. If so, they'll have assigned a hostname to your machine. If you "
 "wereassigned a DHCP hostname, please enter it below. If you do not have a "
 "DHCP hostname, justhit enter."
-msgstr ""
-"Niekt�rzy dostawcy us�ug internetowych wymagaj� ustawienia nazwy hosta DHCP "
-"w celu nawi�zania po��czenia. Je�eli posiadasz nazw� hosta DHCP to j� podaj "
-"poni�ej, je�eli nie to wci�nij enter."
+msgstr "Niektórzy dostawcy usług internetowych wymagają ustawienia nazwy hosta DHCP w celu nawiązania połączenia. Jeżeli posiadasz nazwę hosta DHCP to ją podaj poniżej, jeżeli nie to wciśnij enter."
 
 #. options = ip netmask netmask
-#: ../netconfig.c:198
+#: ../netconfig.c:211
 msgid "Enter ip address"
 msgstr "Podaj adres IP"
 
-#: ../netconfig.c:198
+#: ../netconfig.c:211
 msgid "Enter your IP address for the local machine."
 msgstr "Podaj adres IP dla lokalnej maszyny."
 
-#: ../netconfig.c:199
+#: ../netconfig.c:212
 msgid "Enter netmask for local network"
-msgstr "Podaj mask� sieci dla maszymy"
+msgstr "Podaj maskę dla lokalnej sieci"
 
-#: ../netconfig.c:200
+#: ../netconfig.c:213
 msgid ""
 "Enter your netmask. This will generally look something like this: "
 "255.255.255.0\n"
 "If unsure, just hit enter."
 msgstr ""
-"Podaj mas� sieci. Zazwyczaj b�dzie to: 255.255.255.0\n"
-"Je�eli nie jeste� pewien wci�nij enter."
+"Podaj maskę sieci. Zazwyczaj będzie to: 255.255.255.0\n"
+"Jeżeli nie jesteś pewien wciśnij enter."
 
-#: ../netconfig.c:207
+#: ../netconfig.c:220
 msgid "Enter gateway address"
-msgstr "Podaj adres bramki"
+msgstr "Podaj adres bramy"
 
-#: ../netconfig.c:207
+#: ../netconfig.c:220
 msgid ""
 "Enter the address for the gateway on your network. If you don't have a "
 "gateway on your network just hit enter, without entering any ip address."
-msgstr "Podaj adres bramki je�eli posiadasz taki."
+msgstr ""
+"Podaj adres bramy. Jeżeli nie jesteś pewien, wciśnij enter bez wprowadzania "
+"jakiegokolwiek adresu ip."
 
-#: ../netconfig.c:213
+#: ../netconfig.c:226
 msgid "Select nameserver"
-msgstr "Serwery DNS"
+msgstr "Wybierz nazwę serwera"
 
-#: ../netconfig.c:213
-#, fuzzy
+#: ../netconfig.c:226
 msgid ""
 "Please give the IP address of the name server to use. You can add more "
 "Domain Name Servers later by editing /etc/sysconfig/network/default.\n"
 "If you don't have a name server on your network just hit enter, without "
 "entering any ip address."
 msgstr ""
-"Podaj adresy IP serwer�w DNS. Mo�esz doda� ich wi�cej p�niej edytuj�c /etc/"
-"sysconfig/network/default.\n"
-"Je�eli DNSy nie funkcjonuj� w twojej sieci wci�nij enter."
+"Podaj adresy IP serwerów DNS. Możesz dodać ich więcej później edytując /etc/sysconfig/network/default.\n"
+"Jeżeli DNSy nie funkcjonują w twojej sieci wciśnij enter."
 
-#: ../netconfig.c:224
+#: ../netconfig.c:237
 msgid "Adjust configuration files"
-msgstr "Edycja plik�w konfiguracyjnych"
+msgstr "Edycja plików konfiguracyjnych"
 
-#: ../netconfig.c:224
+#: ../netconfig.c:237
 msgid "Accept these settings and adjust configuration files?"
-msgstr "Zaakceptowa� ustawienia i zmodyfikowa� pliki konfiguracyjne?"
+msgstr "Zaakceptować ustawienia i zmodyfikować pliki konfiguracyjne?"
 
-#: ../netconfig.c:308
+#: ../netconfig.c:321
 #, c-format
 msgid "No profile loaded.\n"
-msgstr "Nie za�adowano profilu.\n"
+msgstr "Nie załadowano profilu.\n"
 
-#: ../netconfig.c:313
+#: ../netconfig.c:326
 #, c-format
 msgid "Current profile: %s\n"
 msgstr "Obecny profil: %s\n"
 
+#~ msgid "Enter interface name"
+#~ msgstr "Podaj nazwÄÂĂÂÄÂĂÂĂÂĂÂÄÂĂÂ interfejsu"
+
 #~ msgid "usage: %s [options] start|stop|restart|status|list [interface]\n"
-#~ msgstr "u�ycie: %s [opcje] start|stop|restart|status|list [interfejs]\n"
+#~ msgstr ""
+#~ "uĂÂĂÂĂĹĄĂÂÄÂÄšÄĂĹĄĂÂycie: %s [opcje] start|stop|restart|"
+#~ "status|list [interfejs]\n"
 
 #~ msgid "       %s [options] [profile] [interface]\n"
 #~ msgstr "       %s [opcje] [profil] [interfejs]\n"
@@ -284,11 +285,14 @@ msgstr "Obecny profil: %s\n"
 #~ msgstr "-h | --help              Pomoc.\n"
 
 #~ msgid "-f | --fast              Fast mode, used by the setup.\n"
-#~ msgstr "-f | --fast             Tryb szybki, u�ywany przez konfigurator.\n"
+#~ msgstr ""
+#~ "-f | --fast             Tryb szybki, "
+#~ "uĂÂĂÂĂĹĄĂÂÄÂÄšÄĂĹĄĂÂywany przez konfigurator.\n"
 
 #~ msgid "     --dry-run           Do not actually perform the operation.\n"
 #~ msgstr ""
-#~ "     --dry-run           Nie wykonuj �adnych operacji (symulacja).\n"
+#~ "     --dry-run           Nie wykonuj "
+#~ "ĂÂĂÂĂĹĄĂÂÄÂÄšÄĂĹĄĂÂadnych operacji (symulacja).\n"
 
 #~ msgid "     --loup              Bring up the loopback interface.\n"
 #~ msgstr "     --loup              Aktywuj interfejs lokalny.\n"

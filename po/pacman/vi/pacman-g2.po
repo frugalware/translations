@@ -6,18 +6,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-02 02:25+0200\n"
+"POT-Creation-Date: 2010-02-05 02:02+0100\n"
 "PO-Revision-Date: 2009-10-02 16:25+0200\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
-"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 1.2.1\n"
 
-#: ../add.c:69 ../deptest.c:64 ../remove.c:83 ../sync.c:304 ../sync.c:343
+#: ../add.c:69 ../deptest.c:64 ../remove.c:83 ../sync.c:312 ../sync.c:351
 #, c-format
 msgid ""
 "       if you're sure a package manager is not already running,\n"
@@ -36,12 +36,12 @@ msgstr "đang nạp dữ liệu gói... "
 msgid "failed to add target '%s' (%s)\n"
 msgstr "lỗi thêm đích « %s » (%s)\n"
 
-#: ../add.c:84 ../sync.c:267 ../trans.c:76 ../trans.c:83 ../trans.c:87
+#: ../add.c:84 ../sync.c:275 ../trans.c:76 ../trans.c:83 ../trans.c:87
 #: ../trans.c:99 ../trans.c:113 ../trans.c:129 ../trans.c:141
 msgid "done.\n"
 msgstr "hoàn tất.\n"
 
-#: ../add.c:92 ../remove.c:102 ../sync.c:451
+#: ../add.c:92 ../remove.c:102 ../sync.c:459
 #, c-format
 msgid "failed to prepare transaction (%s)\n"
 msgstr "lỗi chuẩn bị giao dịch (%s)\n"
@@ -51,22 +51,22 @@ msgstr "lỗi chuẩn bị giao dịch (%s)\n"
 msgid ":: %s: requires %s"
 msgstr ":: %s: yêu cầu %s"
 
-#: ../add.c:111 ../sync.c:472
+#: ../add.c:111 ../sync.c:480
 #, c-format
 msgid ":: %s: conflicts with %s"
 msgstr ":: %s: xung đột với %s"
 
-#: ../add.c:121 ../sync.c:597
+#: ../add.c:121 ../sync.c:605
 #, c-format
 msgid "%s%s exists in \"%s\" (target) and \"%s\" (target)"
 msgstr "%s%s đã có trong « %s » (đích) và « %s » (đích)"
 
-#: ../add.c:128 ../sync.c:604
+#: ../add.c:128 ../sync.c:612
 #, c-format
 msgid "%s: %s%s exists in filesystem"
 msgstr "%s: %s%s đã có trên hệ thống tập tin"
 
-#: ../add.c:136 ../sync.c:622
+#: ../add.c:136 ../sync.c:630
 msgid ""
 "\n"
 "errors occurred, no packages were upgraded.\n"
@@ -74,17 +74,17 @@ msgstr ""
 "\n"
 "gặp lỗi nên không nâng cấp gói nào.\n"
 
-#: ../add.c:143 ../sync.c:482
+#: ../add.c:143 ../sync.c:490
 #, c-format
 msgid ":: %.1f MB required, have %.1f MB"
 msgstr ":: %.1f MB yêu cầu còn có %.1f MB"
 
-#: ../add.c:157 ../remove.c:142 ../sync.c:590
+#: ../add.c:157 ../remove.c:142 ../sync.c:598
 #, c-format
 msgid "failed to commit transaction (%s)\n"
 msgstr "không làm được giao dịch (%s)\n"
 
-#: ../add.c:164 ../remove.c:152 ../sync.c:336 ../sync.c:631
+#: ../add.c:164 ../remove.c:152 ../sync.c:344 ../sync.c:639
 #, c-format
 msgid "failed to release transaction (%s)\n"
 msgstr "không buông được giao dịch (%s)\n"
@@ -153,11 +153,11 @@ msgstr "luồng2"
 msgid "function"
 msgstr "hàm"
 
-#: ../log.c:163
+#: ../log.c:164
 msgid "Y"
 msgstr "Y"
 
-#: ../log.c:163
+#: ../log.c:164
 msgid "YES"
 msgstr "CÓ"
 
@@ -376,47 +376,47 @@ msgstr ""
 msgid "No changelog available for '%s'.\n"
 msgstr "Không có bản ghi thay đổi sẵn sàng cho « %s ».\n"
 
-#: ../pacman-g2.c:96
+#: ../pacman-g2.c:110
 #, c-format
 msgid "usage:  %s {-h --help}\n"
 msgstr "sử dụng:  %s {-h --help}\t\txem trợ giúp\n"
 
-#: ../pacman-g2.c:97
+#: ../pacman-g2.c:111
 #, c-format
 msgid "        %s {-V --version}\n"
 msgstr "        %s {-V --version}\t\txem phiên bản\n"
 
-#: ../pacman-g2.c:98
+#: ../pacman-g2.c:112
 #, c-format
 msgid "        %s {-A --add}     [options] <file>\n"
 msgstr "        %s {-A --add}     [tuỳ_chọn...] <tập tin>\t\t(thêm)\n"
 
-#: ../pacman-g2.c:99
+#: ../pacman-g2.c:113
 #, c-format
 msgid "        %s {-R --remove}  [options] <package>\n"
 msgstr "        %s {-R --remove}  [tuỳ_chọn...] <gói>\t\t(gỡ bỏ)\n"
 
-#: ../pacman-g2.c:100
+#: ../pacman-g2.c:114
 #, c-format
 msgid "        %s {-U --upgrade} [options] <file>\n"
 msgstr "        %s {-U --upgrade} [tuỳ_chọn...] <tập tin>\t\t(nâng cấp)\n"
 
-#: ../pacman-g2.c:101
+#: ../pacman-g2.c:115
 #, c-format
 msgid "        %s {-F --freshen} [options] <file>\n"
 msgstr "        %s {-F --freshen} [tuỳ_chọn...] <tập tin>\t\t(làm tươi)\n"
 
-#: ../pacman-g2.c:102
+#: ../pacman-g2.c:116
 #, c-format
 msgid "        %s {-Q --query}   [options] [package]\n"
 msgstr "        %s {-Q --query}   [tuỳ_chọn...] [gói]\t\t(truy vấn)\n"
 
-#: ../pacman-g2.c:103
+#: ../pacman-g2.c:117
 #, c-format
 msgid "        %s {-S --sync}    [options] [package]\n"
 msgstr "        %s {-S --sync}    [tuỳ_chọn...] [gói]\t\t(đồng bộ hoá)\n"
 
-#: ../pacman-g2.c:104
+#: ../pacman-g2.c:118
 #, c-format
 msgid ""
 "\n"
@@ -425,85 +425,85 @@ msgstr ""
 "\n"
 "hãy dùng « %s --help » với các tuỳ chọn khác để xem thêm cú pháp\n"
 
-#: ../pacman-g2.c:107
+#: ../pacman-g2.c:121
 #, c-format
 msgid "usage:  %s {-A --add} [options] <file>\n"
 msgstr "sử dụng:  %s {-A --add} [tuỳ_chọn...] <tập tin>\t\t(thêm)\n"
 
-#: ../pacman-g2.c:108 ../pacman-g2.c:114 ../pacman-g2.c:126 ../pacman-g2.c:131
-#: ../pacman-g2.c:148
+#: ../pacman-g2.c:122 ../pacman-g2.c:128 ../pacman-g2.c:140 ../pacman-g2.c:145
+#: ../pacman-g2.c:162
 #, c-format
 msgid "options:\n"
 msgstr "tùy chọn:\n"
 
-#: ../pacman-g2.c:109 ../pacman-g2.c:116 ../pacman-g2.c:127 ../pacman-g2.c:150
+#: ../pacman-g2.c:123 ../pacman-g2.c:130 ../pacman-g2.c:141 ../pacman-g2.c:164
 #, c-format
 msgid "  -d, --nodeps        skip dependency checks\n"
 msgstr "  -d, --nodeps        bỏ qua hàm kiểm tra quan hệ phụ thuộc\n"
 
-#: ../pacman-g2.c:110 ../pacman-g2.c:128 ../pacman-g2.c:152
+#: ../pacman-g2.c:124 ../pacman-g2.c:142 ../pacman-g2.c:166
 #, c-format
 msgid "  -f, --force         force install, overwrite conflicting files\n"
 msgstr ""
 "  -f, --force         ép buộc cài đặt, ghi đè lên các tập tin xung đột\n"
 
-#: ../pacman-g2.c:111
+#: ../pacman-g2.c:125
 #, c-format
 msgid ""
 "      --noarch        install the package, even if it is for an other arch\n"
 msgstr "      --noarch        cài đặt gói này, bất chấp kiến trúc khác\n"
 
-#: ../pacman-g2.c:113
+#: ../pacman-g2.c:127
 #, c-format
 msgid "usage:  %s {-R --remove} [options] <package>\n"
 msgstr "sử dụng:  %s {-R --remove} [tuỳ_chọn...] <gói>\t\t(gỡ bỏ)\n"
 
-#: ../pacman-g2.c:115
+#: ../pacman-g2.c:129
 #, c-format
 msgid ""
 "  -c, --cascade       remove packages and all packages that depend on them\n"
 msgstr "  -c, --cascade       gỡ bỏ các gói và những gói phụ thuộc vào chúng\n"
 
-#: ../pacman-g2.c:117
+#: ../pacman-g2.c:131
 #, c-format
 msgid "  -k, --dbonly        only remove database entry, do not remove files\n"
 msgstr ""
 "  -k, --dbonly        chỉ gỡ bỏ mục nhập khỏi cơ sở dữ liệu, không gỡ bỏ tập "
 "tin\n"
 
-#: ../pacman-g2.c:118
+#: ../pacman-g2.c:132
 #, c-format
 msgid "  -n, --nosave        remove configuration files as well\n"
 msgstr "  -n, --nosave        cũng gỡ bỏ các tập tin cấu hình\n"
 
-#: ../pacman-g2.c:119
+#: ../pacman-g2.c:133
 #, c-format
 msgid ""
 "  -s, --recursive     remove dependencies also (that won't break packages)\n"
 msgstr ""
 "  -s, --recursive     cũng gỡ bỏ quan hệ phụ thuộc (mà không làm hỏng gói)\n"
 
-#: ../pacman-g2.c:122
+#: ../pacman-g2.c:136
 #, c-format
 msgid "usage:  %s {-F --freshen} [options] <file>\n"
 msgstr "sử dụng:  %s {-F --freshen} [tuỳ_chọn...] <tập tin>\t\t(làm tươi)\n"
 
-#: ../pacman-g2.c:124
+#: ../pacman-g2.c:138
 #, c-format
 msgid "usage:  %s {-U --upgrade} [options] <file>\n"
 msgstr "sử dụng:  %s {-U --upgrade} [tùy_chọn...] <tập tin>\t\t(nâng cấp)\n"
 
-#: ../pacman-g2.c:130
+#: ../pacman-g2.c:144
 #, c-format
 msgid "usage:  %s {-Q --query} [options] [package]\n"
 msgstr "sử dụng:  %s {-Q --query} [tuỳ_chọn...] [gói]\t\t(truy vấn)\n"
 
-#: ../pacman-g2.c:132
+#: ../pacman-g2.c:146
 #, c-format
 msgid "  -c, --changelog     view the changelog of a package\n"
 msgstr "  -c, --changelog     xem bản ghi thay đổi của một gói nào đó\n"
 
-#: ../pacman-g2.c:133
+#: ../pacman-g2.c:147
 #, c-format
 msgid ""
 "  -d, --nodeps        if used with -e, list packages that were not "
@@ -511,39 +511,39 @@ msgid ""
 msgstr ""
 "  -d, --nodeps        dùng với « -e » thì liệt kê các gói chưa được cài đặt\n"
 
-#: ../pacman-g2.c:134
+#: ../pacman-g2.c:148
 #, c-format
 msgid "                      as a dependency\n"
 msgstr "                      bất chấp quan hệ phụ thuộc\n"
 
-#: ../pacman-g2.c:135
+#: ../pacman-g2.c:149
 #, c-format
 msgid ""
 "  -e, --orphans       list all packages that were installed as a dependency\n"
 msgstr ""
 "  -e, --orphans       liệt kê mọi gói đều được cài đặt do quan hệ phụ thuộc\n"
 
-#: ../pacman-g2.c:136
+#: ../pacman-g2.c:150
 #, c-format
 msgid "                      and are not required by any other packages\n"
 msgstr "                      mà không được gói khác yêu cầu\n"
 
-#: ../pacman-g2.c:137 ../pacman-g2.c:153
+#: ../pacman-g2.c:151 ../pacman-g2.c:167
 #, c-format
 msgid "  -g, --groups        view all members of a package group\n"
 msgstr "  -g, --groups        xem mọi bộ phạn của một nhóm gói nào đó\n"
 
-#: ../pacman-g2.c:138
+#: ../pacman-g2.c:152
 #, c-format
 msgid "  -i, --info          view package information\n"
 msgstr "  -i, --info          xem thông tin về gói đó\n"
 
-#: ../pacman-g2.c:139
+#: ../pacman-g2.c:153
 #, c-format
 msgid "  -l, --list          list the contents of the queried package\n"
 msgstr "  -l, --list          liệt kê nội dung của gói được truy vấn\n"
 
-#: ../pacman-g2.c:140
+#: ../pacman-g2.c:154
 #, c-format
 msgid ""
 "  -m, --foreign       list all packages that were not found in the sync db"
@@ -552,24 +552,24 @@ msgstr ""
 "  -m, --foreign       liệt kê mọi gói không được tìm trong (các) CSDL đồng "
 "bộ\n"
 
-#: ../pacman-g2.c:141
+#: ../pacman-g2.c:155
 #, c-format
 msgid "  -o, --owns <file>   query the package that owns <file>\n"
 msgstr "  -o, --owns <tập tin>   truy vấn gói sở hữu tập tin này\n"
 
-#: ../pacman-g2.c:142
+#: ../pacman-g2.c:156
 #, c-format
 msgid ""
 "  -p, --file          pacman-g2 will query the package file [package] "
 "instead of\n"
 msgstr "  -p, --file          pacman-g2 sẽ truy vấn tập tin gói này thay vào\n"
 
-#: ../pacman-g2.c:143
+#: ../pacman-g2.c:157
 #, c-format
 msgid "                      looking in the database\n"
 msgstr "                      tìm trong cơ sở dữ liệu\n"
 
-#: ../pacman-g2.c:144
+#: ../pacman-g2.c:158
 #, c-format
 msgid ""
 "  -s, --search        search locally-installed packages for matching "
@@ -577,17 +577,17 @@ msgid ""
 msgstr ""
 "  -s, --search        quét các gói được cài đặt cục bộ tìm chuỗi tương ứng\n"
 
-#: ../pacman-g2.c:145
+#: ../pacman-g2.c:159
 #, c-format
 msgid "  -t, --test          search problems in the local database\n"
 msgstr "  -t, --test          tìm vấn đề trong cơ sở dữ liệu cục bộ\n"
 
-#: ../pacman-g2.c:147
+#: ../pacman-g2.c:161
 #, c-format
 msgid "usage:  %s {-S --sync} [options] [package]\n"
 msgstr "sử dụng:  %s {-S --sync} [tuỳ_chọn...] [gói]\t\t(động bộ hoá)\n"
 
-#: ../pacman-g2.c:149
+#: ../pacman-g2.c:163
 #, c-format
 msgid ""
 "  -c, --clean         remove old packages from cache directory (use -cc for "
@@ -596,12 +596,12 @@ msgstr ""
 "  -c, --clean         gỡ bỏ các gói cũ khỏi thư mục nhớ tạm (dùng « -cc » để "
 "gỡ bỏ tất cả)\n"
 
-#: ../pacman-g2.c:151
+#: ../pacman-g2.c:165
 #, c-format
 msgid "  -e, --dependsonly   install dependencies only\n"
 msgstr "  -e, --dependsonly   chỉ cài đặt gói yêu cầu do quan hệ phụ thuộc\n"
 
-#: ../pacman-g2.c:154
+#: ../pacman-g2.c:168
 #, c-format
 msgid ""
 "  -p, --print-uris    print out URIs for given packages and their "
@@ -610,262 +610,263 @@ msgstr ""
 "  -p, --print-uris    in ra các địa chỉ URI của những gói đưa ra và quan hệ "
 "phụ thuộc tương ứng\n"
 
-#: ../pacman-g2.c:155
+#: ../pacman-g2.c:169
 #, c-format
 msgid "  -s, --search        search remote repositories for matching strings\n"
 msgstr "  -s, --search        quét các kho gói từ xa tìm chuỗi tương ứng\n"
 
-#: ../pacman-g2.c:156
+#: ../pacman-g2.c:170
 #, c-format
 msgid "  -u, --sysupgrade    upgrade all packages that are out of date\n"
 msgstr "  -u, --sysupgrade    nâng cấp mọi gói quá cũ\n"
 
-#: ../pacman-g2.c:157
+#: ../pacman-g2.c:171
 #, c-format
 msgid ""
 "  -w, --downloadonly  download packages but do not install/upgrade anything\n"
 msgstr "  -w, --downloadonly    tải về gói mà không cài đặt hay nâng cấp gì\n"
 
-#: ../pacman-g2.c:158
+#: ../pacman-g2.c:172
 #, c-format
 msgid ""
 "  -y, --refresh       download fresh package databases from the server\n"
 msgstr ""
 "  -y, --refresh       tải các cơ sở dữ liệu gói mới xuống máy phục vụ\n"
 
-#: ../pacman-g2.c:159
+#: ../pacman-g2.c:173
 #, c-format
 msgid ""
 "      --ignore <pkg>  ignore a package upgrade (can be used more than once)\n"
 msgstr "      --ignore <gói>  bỏ qua một bản nâng cấp gói (có thể dùng lại)\n"
 
-#: ../pacman-g2.c:160
+#: ../pacman-g2.c:174
 #, c-format
 msgid ""
 "      --nointegrity   don't check the integrity of the packages using sha1\n"
 msgstr "      --nointegrity     không kiểm tra sự vẹn của gói, dùng SHA1\n"
 
-#: ../pacman-g2.c:161
+#: ../pacman-g2.c:175
 #, c-format
 msgid "      --regex         treat targets as regexs if no package found\n"
-msgstr "      --regex         xử lý đích là biểu thức chính quy nếu không tìm thấy "
+msgstr ""
+"      --regex         xử lý đích là biểu thức chính quy nếu không tìm thấy "
 "gói\n"
 
-#: ../pacman-g2.c:163
+#: ../pacman-g2.c:177
 #, c-format
 msgid "      --config <path> set an alternate configuration file\n"
 msgstr "      --config <đường_dẫn>   đặt một tập tin cấu hình xen kẽ\n"
 
-#: ../pacman-g2.c:164
+#: ../pacman-g2.c:178
 #, c-format
 msgid "      --noconfirm     do not ask for anything confirmation\n"
 msgstr "      --noconfirm         không yêu cầu xác nhận về gì\n"
 
-#: ../pacman-g2.c:165
+#: ../pacman-g2.c:179
 #, c-format
 msgid "      --ask  <number> pre-specify answers for questions (see manpage)\n"
 msgstr ""
 "      --ask  <số>   định sẵn đáp ứng cho câu hỏi (xem trang hướng dẫn man)\n"
 
-#: ../pacman-g2.c:166
+#: ../pacman-g2.c:180
 #, c-format
 msgid ""
 "      --noprogressbar do not show a progress bar when downloading files\n"
 msgstr ""
 "      --noprogressbar   không hiển thị thanh tiến hành khi tải về tập tin\n"
 
-#: ../pacman-g2.c:167
+#: ../pacman-g2.c:181
 #, c-format
 msgid ""
 "      --noscriptlet   do not execute the install scriptlet if there is any\n"
 msgstr "      --noscriptlet     không thực hiện văn lệnh cài đặt (nếu có)\n"
 
-#: ../pacman-g2.c:168
+#: ../pacman-g2.c:182
 #, c-format
 msgid "  -v, --verbose       be verbose\n"
 msgstr "  -v, --verbose       xuất chi tiết\n"
 
-#: ../pacman-g2.c:169
+#: ../pacman-g2.c:183
 #, c-format
 msgid "  -r, --root <path>   set an alternate installation root\n"
 msgstr "  -r, --root <đường dẫn>     đặt một gốc cài đặt xen kẽ\n"
 
-#: ../pacman-g2.c:170
+#: ../pacman-g2.c:184
 #, c-format
 msgid "  -b, --dbpath <path> set an alternate database location\n"
 msgstr "  -b, --dbpath <đường dẫn>     đặt một vị trí cơ sở dữ liệu xen kẽ\n"
 
-#: ../pacman-g2.c:183
+#: ../pacman-g2.c:197
 #, c-format
 msgid "                       This program may be freely redistributed under\n"
 msgstr ""
 "                       Chương trình này có thể được phát hành lại một cách "
 "tự do với\n"
 
-#: ../pacman-g2.c:184
+#: ../pacman-g2.c:198
 #, c-format
 msgid "                       the terms of the GNU General Public License\n"
 msgstr "                       điều kiện của Giấy Phép Công Cộng GNU (GPL)\n"
 
-#: ../pacman-g2.c:370
+#: ../pacman-g2.c:386
 msgid "bad root path"
 msgstr "đường dẫn gốc sai"
 
-#: ../pacman-g2.c:398
+#: ../pacman-g2.c:414
 msgid "only one operation may be used at a time\n"
 msgstr "chỉ có thể dùng mỗi lần một thao tác\n"
 
-#: ../pacman-g2.c:498
+#: ../pacman-g2.c:514
 msgid "you cannot perform this operation unless you are root.\n"
 msgstr "không thể thực hiện thao tác này nếu không phải là người chủ (root).\n"
 
-#: ../pacman-g2.c:522
+#: ../pacman-g2.c:538
 #, c-format
 msgid "failed to initialize pacman library (%s)\n"
 msgstr "không sơ khởi được thư viện pacman (%s)\n"
 
-#: ../pacman-g2.c:528
+#: ../pacman-g2.c:544
 #, c-format
 msgid "failed to set option LOGMASK (%s)\n"
 msgstr "không đặt được tuỳ chọn LOGMASK (%s)\n"
 
-#: ../pacman-g2.c:532
+#: ../pacman-g2.c:548
 #, c-format
 msgid "failed to set option DBPATH (%s)\n"
 msgstr "không đặt được tuỳ chọn DBPATH (%s)\n"
 
-#: ../pacman-g2.c:536
+#: ../pacman-g2.c:552
 #, c-format
 msgid "failed to set option LOGCB (%s)\n"
 msgstr "không đặt được tuỳ chọn LOGCB (%s)\n"
 
-#: ../pacman-g2.c:544
+#: ../pacman-g2.c:560
 #, c-format
 msgid "failed to parse config (%s)\n"
 msgstr "không phân tích được cú pháp của cấu hình (%s)\n"
 
-#: ../pacman-g2.c:550
+#: ../pacman-g2.c:566
 #, c-format
 msgid "failed to set option DLCB (%s)\n"
 msgstr "không đặt được tuỳ chọn DLCB (%s)\n"
 
-#: ../pacman-g2.c:554
+#: ../pacman-g2.c:570
 #, c-format
 msgid "failed to set option DLFNM (%s)\n"
 msgstr "không đặt được tuỳ chọn DLFNM (%s)\n"
 
-#: ../pacman-g2.c:558
+#: ../pacman-g2.c:574
 #, c-format
 msgid "failed to set option DLOFFSET (%s)\n"
 msgstr "không đặt được tuỳ chọn DLOFFSET (%s)\n"
 
-#: ../pacman-g2.c:562
+#: ../pacman-g2.c:578
 #, c-format
 msgid "failed to set option DLT0 (%s)\n"
 msgstr "không đặt được tuỳ chọn DLTO (%s)\n"
 
-#: ../pacman-g2.c:566
+#: ../pacman-g2.c:582
 #, c-format
 msgid "failed to set option DLT (%s)\n"
 msgstr "không đặt được tuỳ chọn DLT (%s)\n"
 
-#: ../pacman-g2.c:570
+#: ../pacman-g2.c:586
 #, c-format
 msgid "failed to set option DLRATE (%s)\n"
 msgstr "không đặt được tuỳ chọn DLRATE (%s)\n"
 
-#: ../pacman-g2.c:574
+#: ../pacman-g2.c:590
 #, c-format
 msgid "failed to set option DLXFERED1 (%s)\n"
 msgstr "không đặt được tuỳ chọn DLXFERED1 (%s)\n"
 
-#: ../pacman-g2.c:578
+#: ../pacman-g2.c:594
 #, c-format
 msgid "failed to set option DLETA_H (%s)\n"
 msgstr "không đặt được tuỳ chọn DLETA_H (%s)\n"
 
-#: ../pacman-g2.c:582
+#: ../pacman-g2.c:598
 #, c-format
 msgid "failed to set option DLETA_M (%s)\n"
 msgstr "không đặt được tuỳ chọn DLETA_M (%s)\n"
 
-#: ../pacman-g2.c:586
+#: ../pacman-g2.c:602
 #, c-format
 msgid "failed to set option DLETA_S (%s)\n"
 msgstr "hông đặt được tuỳ chọn DLETA_S (%s)\n"
 
-#: ../pacman-g2.c:590
+#: ../pacman-g2.c:606
 #, c-format
 msgid "failed to set option DLREMAIN (%s)\n"
 msgstr "hông đặt được tuỳ chọn DLREMAIN (%s)\n"
 
-#: ../pacman-g2.c:594
+#: ../pacman-g2.c:610
 #, c-format
 msgid "failed to set option DLHOWMANY (%s)\n"
 msgstr "hông đặt được tuỳ chọn DLHOWMANY (%s)\n"
 
-#: ../pacman-g2.c:602
+#: ../pacman-g2.c:618
 #, c-format
 msgid "failed to set option IGNOREPKG (%s)\n"
 msgstr "hông đặt được tuỳ chọn IGNOREPKG (%s)\n"
 
-#: ../pacman-g2.c:610
+#: ../pacman-g2.c:626
 msgid "Targets:"
 msgstr "Đích:"
 
-#: ../pacman-g2.c:616
+#: ../pacman-g2.c:632
 #, c-format
 msgid "could not register 'local' database (%s)\n"
 msgstr "không thể đăng ký cơ sở dữ liệu « cục bộ » (%s)\n"
 
-#: ../pacman-g2.c:623
+#: ../pacman-g2.c:639
 msgid "no targets specified (use -h for help)\n"
 msgstr "chưa ghi rõ đích (dùng « -h » để xem trợ giúp)\n"
 
-#: ../pacman-g2.c:636
+#: ../pacman-g2.c:652
 msgid "no operation specified (use -h for help)\n"
 msgstr "chưa ghi rõ thao tác (dùng « -h » để xem trợ giúp)\n"
 
-#: ../query.c:77
+#: ../query.c:76
 #, c-format
 msgid ":: the database seems to be consistent\n"
 msgstr ":: cơ sở dữ liệu hình như thống nhất\n"
 
-#: ../query.c:89 ../sync.c:248
+#: ../query.c:88 ../sync.c:256
 msgid "no usable package repositories configured.\n"
 msgstr "chưa cấu hình kho gói có thể sử dụng\n"
 
-#: ../query.c:128
+#: ../query.c:127
 #, c-format
 msgid "group \"%s\" was not found\n"
 msgstr "không tìm thấy nhóm « %s »\n"
 
-#: ../query.c:138
+#: ../query.c:137
 msgid "no package file was specified for --file\n"
 msgstr "chưa đưa ra tập tin gói đối với « --file »\n"
 
-#: ../query.c:142
+#: ../query.c:141
 #, c-format
 msgid "failed to load package '%s' (%s)\n"
 msgstr "không nạp được gói « %s » (%s)\n"
 
-#: ../query.c:164
+#: ../query.c:163
 #, c-format
 msgid "No package owns %s\n"
 msgstr "Không có gói sở hữu %s\n"
 
-#: ../query.c:170
+#: ../query.c:169
 #, c-format
 msgid "%s %s is an owner of %s\n"
 msgstr "%s %s cũng sở hữu %s\n"
 
 #. something weird happened
-#: ../query.c:192 ../query.c:240
+#: ../query.c:191 ../query.c:239
 #, c-format
 msgid "package \"%s\" not found\n"
 msgstr "không thể tìm thấy gói « %s »\n"
 
-#: ../remove.c:64 ../sync.c:382
+#: ../remove.c:64 ../sync.c:390
 #, c-format
 msgid ":: group %s:\n"
 msgstr ":: nhóm %s:\n"
@@ -879,7 +880,7 @@ msgstr "    Gỡ bỏ toàn bộ nội dung không? [Y = có, n = không] "
 msgid ":: Remove %s from group %s? [Y/n] "
 msgstr ":: Gỡ bỏ %s khỏi nhóm %s không? [Y = có, n = không] "
 
-#: ../remove.c:81 ../sync.c:302 ../sync.c:341
+#: ../remove.c:81 ../sync.c:310 ../sync.c:349
 #, c-format
 msgid "failed to init transaction (%s)\n"
 msgstr "không sơ khởi giao dịch (%s)\n"
@@ -906,68 +907,73 @@ msgstr ""
 "\n"
 "Bạn có muốn gỡ bỏ các gói này không? [Y = có, n = không] "
 
-#: ../sync.c:66
+#: ../sync.c:68
 #, c-format
 msgid "failed to synchronize %s\n"
 msgstr "không đồng bộ hoá được %s\n"
 
-#: ../sync.c:68
+#: ../sync.c:70
 #, c-format
 msgid "failed to update %s (%s)\n"
 msgstr "không cập nhật được %s (%s)\n"
 
-#: ../sync.c:73
+#: ../sync.c:75
 #, c-format
 msgid " %s is up to date\n"
 msgstr " %s vẫn hiện thời\n"
 
-#: ../sync.c:171
+#: ../sync.c:111
+#, fuzzy
+msgid "installed"
+msgstr "đang cài đặt"
+
+#: ../sync.c:179
 #, c-format
 msgid "package \"%s\" was not found.\n"
 msgstr "không thể tìm thấy gói « %s ».\n"
 
-#: ../sync.c:209
+#: ../sync.c:217
 #, c-format
 msgid "repository \"%s\" was not found.\n"
 msgstr "không tìm thấy kho gói « %s ».\n"
 
-#: ../sync.c:256
+#: ../sync.c:264
 msgid "Do you want to remove old packages from cache? [Y/n] "
 msgstr ""
 "Bạn có muốn gỡ bỏ các gói cũ khỏi vùng nhớ tạm không? [Y = có, n = không] "
 
-#: ../sync.c:258
+#: ../sync.c:266
 msgid "removing old packages from cache... "
 msgstr "đang gỡ bỏ các gói cũ khỏi vùng nhớ tạm... "
 
-#: ../sync.c:261
+#: ../sync.c:269
 msgid "Do you want to remove all packages from cache? [Y/n] "
 msgstr ""
 "Bạn có muốn gỡ bỏ tất cả các gói khỏi vùng nhớ tạm không? [Y = có, n = không]"
 
-#: ../sync.c:263
+#: ../sync.c:271
 msgid "removing all packages from cache... "
 msgstr "đang gỡ bỏ mọi gói khỏi vùng nhớ tạm... "
 
-#: ../sync.c:269
+#: ../sync.c:277
 #, c-format
 msgid "failed to clean the cache (%s)\n"
 msgstr "không làm sạch được vùng nhớ tạm (%s)\n"
 
 #. grab a fresh package list
-#: ../sync.c:276
+#: ../sync.c:284
 msgid ":: Synchronizing package databases...\n"
 msgstr ":: Đang đồng bộ hoá các cơ sở dữ liệu gói...\n"
 
-#: ../sync.c:277
+#: ../sync.c:285
 msgid "synchronizing package lists"
 msgstr "đang đồng bộ hoá các danh sách gói"
 
-#: ../sync.c:311
+#: ../sync.c:319
 msgid ":: Starting local database upgrade...\n"
 msgstr ":: Đang khởi chạy tiến trình nâng cấp cơ sở dữ liệu cục bộ...\n"
 
-#: ../sync.c:330
+#: ../sync.c:338
 msgid ""
 "\n"
 ":: pacman-g2 has detected a newer version of the \"pacman-g2\" package.\n"
@@ -975,47 +981,47 @@ msgstr ""
 "\n"
 ":: pacman-g2 đã phát hiện một phiên bản mới của gói « pacman-g2 ».\n"
 
-#: ../sync.c:331
+#: ../sync.c:339
 msgid ":: It is recommended that you allow pacman-g2 to upgrade itself\n"
 msgstr ":: Khuyên bạn cho phép pacman-g2 tự cập nhật\n"
 
-#: ../sync.c:332
+#: ../sync.c:340
 msgid ":: first, then you can re-run the operation with the newer version.\n"
 msgstr ""
 ":: trước tiên, sau đó bạn có thể chạy lại thao tác này với phiên bản mới.\n"
 
-#: ../sync.c:334
+#: ../sync.c:342
 msgid ":: Upgrade pacman-g2 first? [Y/n] "
 msgstr ":: Trước tiên nâng cấp pacman-g2 không? [Y = có, n = không] "
 
-#: ../sync.c:349 ../sync.c:370 ../sync.c:413
+#: ../sync.c:357 ../sync.c:378 ../sync.c:421
 #, c-format
 msgid "could not add target '%s': %s\n"
 msgstr "không thể thêm đích « %s »: %s\n"
 
-#: ../sync.c:388
+#: ../sync.c:396
 msgid ":: Install whole content? [Y/n] "
 msgstr ":: Cài đặt toàn bộ nội dung không? [Y = có, n = không] "
 
-#: ../sync.c:395
+#: ../sync.c:403
 #, c-format
 msgid ":: Install %s from group %s? [Y/n] "
 msgstr ":: Cài đặt %s từ nhóm %s không? [Y = có, n = không] "
 
-#: ../sync.c:438
+#: ../sync.c:446
 #, c-format
 msgid "could not add target '%s': not found in sync db\n"
 msgstr "không thể thêm đích « %s »: không tìm thấy trong CSDL đồng bộ\n"
 
-#: ../sync.c:457
+#: ../sync.c:465
 msgid "requires"
 msgstr "cần"
 
-#: ../sync.c:457
+#: ../sync.c:465
 msgid "is required by"
 msgstr "cần bời"
 
-#: ../sync.c:534
+#: ../sync.c:542
 msgid ""
 "\n"
 "Remove:  "
@@ -1023,7 +1029,7 @@ msgstr ""
 "\n"
 "Bỏ :  "
 
-#: ../sync.c:550
+#: ../sync.c:558
 msgid ""
 "\n"
 "Targets: "
@@ -1031,7 +1037,7 @@ msgstr ""
 "\n"
 "Đích: "
 
-#: ../sync.c:553
+#: ../sync.c:561
 #, c-format
 msgid ""
 "\n"
@@ -1040,7 +1046,7 @@ msgstr ""
 "\n"
 "Tổng Kích Cỡ Gói:   %.1f MB\n"
 
-#: ../sync.c:555
+#: ../sync.c:563
 #, c-format
 msgid ""
 "\n"
@@ -1049,7 +1055,7 @@ msgstr ""
 "\n"
 "Tổng kích cỡ gói đã giải nén:   %1f MB\n"
 
-#: ../sync.c:562
+#: ../sync.c:570
 msgid ""
 "\n"
 "Beginning download...\n"
@@ -1057,11 +1063,11 @@ msgstr ""
 "\n"
 "Đang bắt đầu tải về...\n"
 
-#: ../sync.c:566
+#: ../sync.c:574
 msgid "Proceed with download? [Y/n] "
 msgstr "Tiếp tục lại tải về không? [Y = có, n = không] "
 
-#: ../sync.c:574
+#: ../sync.c:582
 msgid ""
 "\n"
 "Beginning upgrade process...\n"
@@ -1069,7 +1075,7 @@ msgstr ""
 "\n"
 "Đăng khởi chạy tiến trình nâng cấp...\n"
 
-#: ../sync.c:578
+#: ../sync.c:586
 msgid "Proceed with upgrade? [Y/n] "
 msgstr "Tiếp tục nâng cấp không? [Y = có, n = không] "
 
@@ -1184,7 +1190,7 @@ msgstr "đang kiểm tra có tập tin xung đột"
 msgid "looking for inter-conflicts"
 msgstr "đang tìm sự xung đột ở giữa"
 
-#: ../util.c:177
+#: ../util.c:102
 #, c-format
 msgid "failed to allocated %d bytes\n"
 msgstr "không cấp phát được %d byte\n"

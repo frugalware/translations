@@ -6,14 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-11 02:23+0100\n"
+"POT-Creation-Date: 2010-02-05 02:02+0100\n"
 "PO-Revision-Date: 2009-03-11 18:54+0200\n"
 "Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: hu\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 1.2.0\n"
 
@@ -25,75 +25,91 @@ msgstr "(C) 2006-2009 Frugalware Fejlesztő Csapat (GPL)"
 msgid "A graphical package manager for Frugalware Linux"
 msgstr "Egy grafikus csomagkezelő a Frugalware Linux számára."
 
-#: ../src/gfpm-interface.c:171 ../src/gfpm-interface.c:1435
-#: ../src/gfpm-interface.c:1785
+#: ../src/gfpm-interface.c:184 ../src/gfpm-interface.c:1693
+#: ../src/gfpm-interface.c:2091
 msgid "Installed Packages"
 msgstr "Telepített csomagok"
 
-#: ../src/gfpm-interface.c:190 ../src/gfpm-interface.c:425
-#: ../src/gfpm-interface.c:495 ../src/gfpm-interface.c:557
-#: ../src/gfpm-interface.c:580 ../src/gfpm-interface.c:1201
-#: ../src/gfpm-interface.c:1284 ../src/gfpm-interface.c:1401
-#: ../src/gfpm-interface.c:1723 ../src/gfpm-interface.c:1736
-#: ../src/gfpm-interface.c:2075 ../src/gfpm-interface.c:2090
-#: ../src/gfpm-optimizedb.c:116 ../src/gfpm-optimizedb.c:123
-#: ../src/gfpm-logviewer.c:112 ../src/gfpm-logviewer.c:181
-#: ../src/gfpm-logviewer.c:232 ../src/gfpm-repomanager.c:350
-#: ../src/gfpm-repomanager.c:419 ../src/gfpm-repomanager.c:425
-#: ../src/gfpm-repomanager.c:929 ../src/gfpm-repomanager.c:1034
+#. handle error
+#: ../src/gfpm-interface.c:203 ../src/gfpm-interface.c:565
+#: ../src/gfpm-interface.c:601 ../src/gfpm-interface.c:664
+#: ../src/gfpm-interface.c:735 ../src/gfpm-interface.c:760
+#: ../src/gfpm-interface.c:1078 ../src/gfpm-interface.c:1450
+#: ../src/gfpm-interface.c:1537 ../src/gfpm-interface.c:1656
+#: ../src/gfpm-interface.c:1996 ../src/gfpm-interface.c:2009
+#: ../src/gfpm-interface.c:2401 ../src/gfpm-interface.c:2413
+#: ../src/gfpm-interface.c:2427 ../src/gfpm-optimizedb.c:122
+#: ../src/gfpm-optimizedb.c:129 ../src/gfpm-logviewer.c:126
+#: ../src/gfpm-logviewer.c:230 ../src/gfpm-logviewer.c:283
+#: ../src/gfpm-repomanager.c:351 ../src/gfpm-repomanager.c:420
+#: ../src/gfpm-repomanager.c:426 ../src/gfpm-repomanager.c:930
+#: ../src/gfpm-repomanager.c:1035
 msgid "Error"
 msgstr "Hiba"
 
-#: ../src/gfpm-interface.c:190
+#: ../src/gfpm-interface.c:203
 msgid "Error parsing repository information from configuration file."
 msgstr "Hiba a repó-információk értelmezése közben a beállítási file-ból."
 
-#: ../src/gfpm-interface.c:233 ../src/gfpm-repomanager.c:118
-#: ../src/gfpm-repomanager.c:148
+#: ../src/gfpm-interface.c:239 ../src/gfpm-repomanager.c:119
+#: ../src/gfpm-repomanager.c:149
 msgid "S"
 msgstr "S"
 
-#: ../src/gfpm-interface.c:241
+#: ../src/gfpm-interface.c:247
 msgid "Status"
 msgstr "Státusz"
 
-#: ../src/gfpm-interface.c:249
+#: ../src/gfpm-interface.c:255
 msgid "Package Name"
 msgstr "Csomagnév"
 
-#: ../src/gfpm-interface.c:260
+#: ../src/gfpm-interface.c:266
 msgid "Installed Version"
 msgstr "Telepített verzió"
 
-#: ../src/gfpm-interface.c:268
+#: ../src/gfpm-interface.c:274
 msgid "Latest Version"
 msgstr "Legújabb verzió"
 
-#: ../src/gfpm-interface.c:276 ../data/gfpm.glade.h:40
+#: ../src/gfpm-interface.c:282
 msgid "Compressed Size"
 msgstr "Tömörített méret"
 
-#: ../src/gfpm-interface.c:287 ../data/gfpm.glade.h:86
+#: ../src/gfpm-interface.c:293
 msgid "Uncompressed Size"
 msgstr "Tömörítetlen méret"
 
-#: ../src/gfpm-interface.c:425
+#: ../src/gfpm-interface.c:565
 msgid "Failed to initialize local package database."
 msgstr "Nem sikerült inicializálni a helyi csomagadatbázist."
 
-#: ../src/gfpm-interface.c:459 ../data/gfpm.glade.h:53
+#: ../src/gfpm-interface.c:588
+msgid "Insufficient privileges"
+msgstr ""
+
+#: ../src/gfpm-interface.c:589
+msgid "You need to be root in order to install packages"
+msgstr ""
+
+#: ../src/gfpm-interface.c:602
+#, fuzzy
+msgid "Unknown error"
+msgstr "Ismeretlen hiba"
+
+#: ../src/gfpm-interface.c:625
 msgid "Gfpm"
 msgstr "Gfpm"
 
-#: ../src/gfpm-interface.c:459
+#: ../src/gfpm-interface.c:625
 msgid "No changes to apply."
 msgstr "Nincsenek alkalmazásra váró változások."
 
-#: ../src/gfpm-interface.c:464
+#: ../src/gfpm-interface.c:630
 msgid "Cancel Operation"
 msgstr "Művelet megszakítása"
 
-#: ../src/gfpm-interface.c:464
+#: ../src/gfpm-interface.c:630
 msgid ""
 "Are you sure you want to cancel this operation ? \n"
 "Note: All changes made till now will be reverted."
@@ -101,202 +117,232 @@ msgstr ""
 "Biztosak vagyunk benne, hogy mégsem akarjuk ezt a műveletet ? \n"
 "Megjegyzés: Az összes eddigi változtatás vissza lesz vonva."
 
-#: ../src/gfpm-interface.c:491 ../src/gfpm-interface.c:553
-#: ../src/gfpm-interface.c:1396 ../src/gfpm-interface.c:2070
+#: ../src/gfpm-interface.c:658 ../src/gfpm-interface.c:729
+#: ../src/gfpm-interface.c:1651 ../src/gfpm-interface.c:2396
 #, c-format
 msgid "Failed to init transaction (%s)\n"
 msgstr "Nem sikerült inicializálni a tranzakciót (%s)\n"
 
-#: ../src/gfpm-interface.c:580
+#. Ask the user before clearing the package list
+#: ../src/gfpm-interface.c:706 ../src/gfpm-interface.c:778
+msgid "Remember selection"
+msgstr ""
+
+#: ../src/gfpm-interface.c:707 ../src/gfpm-interface.c:779
+msgid ""
+"GFpm has detected that a failure has occurred. Do you want GFpm to remember "
+"your current package selection?"
+msgstr ""
+
+#: ../src/gfpm-interface.c:760
 msgid "Error getting transaction info"
 msgstr "Nem sikerült információkat kapni a tranzakcióról."
 
-#: ../src/gfpm-interface.c:657
+#: ../src/gfpm-interface.c:864
 #, c-format
 msgid "Loading groups ... [%s]"
 msgstr "Csoportok betöltése ... [%s]"
 
-#: ../src/gfpm-interface.c:668
+#: ../src/gfpm-interface.c:875
 msgid "Loading groups ... DONE"
 msgstr "Csoportok betöltése ... KÉSZ"
 
-#: ../src/gfpm-interface.c:703
+#: ../src/gfpm-interface.c:910
 msgid "Loading package list ..."
 msgstr "Csomaglista betöltése ..."
 
-#: ../src/gfpm-interface.c:813
+#: ../src/gfpm-interface.c:1020
 msgid "Loading package list ...DONE"
 msgstr "Csomaglista betöltése ... KÉSZ"
 
-#: ../src/gfpm-interface.c:864
+#: ../src/gfpm-interface.c:1078
+#, fuzzy
+msgid "Error loading package information from file"
+msgstr "Hiba a repó-információk értelmezése közben a beállítási file-ból."
+
+#: ../src/gfpm-interface.c:1089 ../nautilus-extension/nautilus-gfpm.c:181
+#: ../thunar-plugin/thunar-gfpm.c:178
 msgid "Name:"
 msgstr "Név:"
 
-#: ../src/gfpm-interface.c:871
+#: ../src/gfpm-interface.c:1096 ../nautilus-extension/nautilus-gfpm.c:190
+#: ../thunar-plugin/thunar-gfpm.c:187
 msgid "Version:"
 msgstr "Verzió:"
 
-#: ../src/gfpm-interface.c:878
+#: ../src/gfpm-interface.c:1103 ../nautilus-extension/nautilus-gfpm.c:199
+#: ../thunar-plugin/thunar-gfpm.c:196
 msgid "Description:"
 msgstr "Leírás:"
 
-#: ../src/gfpm-interface.c:896
+#: ../src/gfpm-interface.c:1121 ../nautilus-extension/nautilus-gfpm.c:220
+#: ../thunar-plugin/thunar-gfpm.c:217
 msgid "License:"
 msgstr "Licenc:"
 
-#: ../src/gfpm-interface.c:915
+#: ../src/gfpm-interface.c:1140 ../nautilus-extension/nautilus-gfpm.c:236
+#: ../thunar-plugin/thunar-gfpm.c:233
 msgid "Depends:"
 msgstr "Függőségek:"
 
-#: ../src/gfpm-interface.c:932
+#: ../src/gfpm-interface.c:1157 ../nautilus-extension/nautilus-gfpm.c:251
+#: ../thunar-plugin/thunar-gfpm.c:248
 msgid "Group(s):"
 msgstr "Csoport(ok):"
 
-#: ../src/gfpm-interface.c:951
+#: ../src/gfpm-interface.c:1176 ../nautilus-extension/nautilus-gfpm.c:266
+#: ../thunar-plugin/thunar-gfpm.c:263
 msgid "Provides:"
 msgstr "Szolgáltatja:"
 
-#: ../src/gfpm-interface.c:971
+#: ../src/gfpm-interface.c:1196 ../nautilus-extension/nautilus-gfpm.c:281
+#: ../thunar-plugin/thunar-gfpm.c:278
 msgid "Conflicts:"
 msgstr "Ütközik:"
 
-#: ../src/gfpm-interface.c:991
+#: ../src/gfpm-interface.c:1216 ../nautilus-extension/nautilus-gfpm.c:296
+#: ../thunar-plugin/thunar-gfpm.c:293
 msgid "Replaces:"
 msgstr "Lecseréli:"
 
-#: ../src/gfpm-interface.c:1003
+#: ../src/gfpm-interface.c:1235 ../nautilus-extension/nautilus-gfpm.c:208
+#: ../thunar-plugin/thunar-gfpm.c:205
 msgid "URL:"
 msgstr "URL:"
 
-#: ../src/gfpm-interface.c:1010
+#: ../src/gfpm-interface.c:1242 ../nautilus-extension/nautilus-gfpm.c:321
+#: ../thunar-plugin/thunar-gfpm.c:318
 msgid "Packager:"
 msgstr "Csomagoló:"
 
-#: ../src/gfpm-interface.c:1017
+#: ../src/gfpm-interface.c:1251
 msgid "Install Date:"
 msgstr "Telepítési dátum:"
 
-#: ../src/gfpm-interface.c:1026
+#: ../src/gfpm-interface.c:1261 ../nautilus-extension/nautilus-gfpm.c:311
+#: ../thunar-plugin/thunar-gfpm.c:308
 msgid "Size:"
 msgstr "Méret:"
 
-#: ../src/gfpm-interface.c:1039
+#: ../src/gfpm-interface.c:1274
 msgid "Size (Compressed):"
 msgstr "Méret (tömörített):"
 
-#: ../src/gfpm-interface.c:1049
+#: ../src/gfpm-interface.c:1284
 msgid "Size (Uncompressed):"
 msgstr "Méret (tömörítetlen):"
 
-#: ../src/gfpm-interface.c:1060
+#: ../src/gfpm-interface.c:1295
 msgid "SHA1SUM:"
 msgstr "SHA1SUM:"
 
-#: ../src/gfpm-interface.c:1079
+#: ../src/gfpm-interface.c:1314 ../nautilus-extension/nautilus-gfpm.c:334
+#: ../thunar-plugin/thunar-gfpm.c:331
 msgid "Required By:"
 msgstr "Igényli:"
 
-#: ../src/gfpm-interface.c:1088
+#: ../src/gfpm-interface.c:1327
 msgid "Reason:"
 msgstr "Telepítési ok:"
 
-#: ../src/gfpm-interface.c:1095
+#: ../src/gfpm-interface.c:1334
 msgid "Explicitly Installed"
 msgstr "Kézzel telepítve"
 
-#: ../src/gfpm-interface.c:1101
+#: ../src/gfpm-interface.c:1340
 msgid "Installed as a dependency for another package"
 msgstr "Függőségként lett telepítve egy másik csomag miatt"
 
-#: ../src/gfpm-interface.c:1127
+#: ../src/gfpm-interface.c:1375
 msgid "Files in package:\n"
 msgstr "Fájlok a csomagban:\n"
 
-#: ../src/gfpm-interface.c:1137
+#: ../src/gfpm-interface.c:1385
 msgid "Package is not installed.\n"
 msgstr "A csomag nincs telepítve:\n"
 
-#: ../src/gfpm-interface.c:1171
+#: ../src/gfpm-interface.c:1419
 msgid "No changelog available for this package"
 msgstr "Nem érhető el változáslista ehhez a csomaghoz."
 
-#: ../src/gfpm-interface.c:1186
+#: ../src/gfpm-interface.c:1434
 msgid "Package is not installed"
 msgstr "A csomag nincs telepítve"
 
-#: ../src/gfpm-interface.c:1200
+#: ../src/gfpm-interface.c:1449
 #, c-format
 msgid "Failed to prepare transaction (%s)\n"
 msgstr "Nem sikerült előkészíteni a tranzakciót (%s)\n"
 
-#: ../src/gfpm-interface.c:1216
+#: ../src/gfpm-interface.c:1466
 msgid "is required by"
 msgstr "igényli a(z)"
 
-#: ../src/gfpm-interface.c:1246
-msgid "Missing dependencies"
-msgstr "Hiányzó függőségek"
+#: ../src/gfpm-interface.c:1473
+#, fuzzy
+msgid " : requires "
+msgstr "igényli a(z)"
 
-#: ../src/gfpm-interface.c:1246
-msgid ""
-"Following dependencies were not met. Please install these packages first."
-msgstr ""
-"A következő függőségek nem egyeznek. Telepítsük ezeket a csomagokat először."
-
-#: ../src/gfpm-interface.c:1248
-msgid "Could not satisfy dependencies"
+#: ../src/gfpm-interface.c:1498 ../src/gfpm-interface.c:1500
+#, fuzzy
+msgid "Unsatisfied dependencies"
 msgstr "Nem sikerült kielégíteni a függőségeket"
 
-#: ../src/gfpm-interface.c:1248
+#: ../src/gfpm-interface.c:1498
+#, fuzzy
+msgid "Could not satisfy the following dependencies."
+msgstr "Nem sikerült kielégíteni a függőségeket"
+
+#: ../src/gfpm-interface.c:1500
 msgid ""
 "The packages you are trying to remove are required by the following packages:"
 msgstr "A következő csomagok igénylik az eltávolítandó csomagokat:"
 
-#: ../src/gfpm-interface.c:1260
+#: ../src/gfpm-interface.c:1512
 msgid "Package conflict"
 msgstr "Csomag-ütközés"
 
-#: ../src/gfpm-interface.c:1260
+#: ../src/gfpm-interface.c:1512
 msgid "This package conflicts with the following packages"
 msgstr "Ez a csomag a következő csomagokkal ütközik"
 
-#: ../src/gfpm-interface.c:1283 ../src/gfpm-interface.c:2089
+#: ../src/gfpm-interface.c:1536 ../src/gfpm-interface.c:2426
 #, c-format
 msgid "Failed to commit transaction (%s)\n"
 msgstr "Nem sikerült végrehajtani a tranzakciót (%s)\n"
 
-#: ../src/gfpm-interface.c:1305
+#: ../src/gfpm-interface.c:1559
 msgid "Conflicting Files"
 msgstr "Ütköző fájlok:"
 
-#: ../src/gfpm-interface.c:1306
+#: ../src/gfpm-interface.c:1560
 msgid ""
 "The file(s) provided by the following package(s) already exist on the system"
 msgstr ""
 "A következő csomagok által szolgáltatott fájlok már léteznek a "
 "fájlrendszerben"
 
-#: ../src/gfpm-interface.c:1314
+#: ../src/gfpm-interface.c:1568
 msgid "Corrupted package(s)"
 msgstr "Sérült csomag(ok)"
 
-#: ../src/gfpm-interface.c:1315
+#: ../src/gfpm-interface.c:1569
 msgid "The package(s) you're trying to install are corrupted"
 msgstr "A telepítendő csomag(ok) sérült(ek)"
 
-#: ../src/gfpm-interface.c:1321
+#: ../src/gfpm-interface.c:1575
 msgid "Download Failed"
 msgstr "A letöltés sikertelen"
 
-#: ../src/gfpm-interface.c:1321
+#: ../src/gfpm-interface.c:1575
 msgid "Failed to retrieve packages."
 msgstr "Nem sikerült letölteni a csomagokat."
 
-#: ../src/gfpm-interface.c:1357
+#: ../src/gfpm-interface.c:1611
 msgid "Synchronizing package databases"
 msgstr "A csomagadatbázisok szinkronizálása"
 
-#: ../src/gfpm-interface.c:1370
+#: ../src/gfpm-interface.c:1624
 #, c-format
 msgid ""
 "Gfpm has detected a newer version of the pacman-g2 package. It is "
@@ -307,11 +353,11 @@ msgstr ""
 "engedje, hogy a gfpm előbb a pacman-g2-t frissítse. Szeretné a pacman-g2 "
 "frissítésével folytatni?"
 
-#: ../src/gfpm-interface.c:1371
+#: ../src/gfpm-interface.c:1625
 msgid "Update pacman-g2"
 msgstr "A pacman-g2 frissítése"
 
-#: ../src/gfpm-interface.c:1382
+#: ../src/gfpm-interface.c:1636
 #, c-format
 msgid ""
 "Gfpm has detected a newer version of the gfpm package. It is recommended "
@@ -322,11 +368,11 @@ msgstr ""
 "engedje, hogy a gfpm előbb saját magát frissítse. Szeretné a gfpm "
 "frissítésével folytatni?"
 
-#: ../src/gfpm-interface.c:1383
+#: ../src/gfpm-interface.c:1637
 msgid "Update Gfpm"
 msgstr "A gfpm frissítése"
 
-#: ../src/gfpm-interface.c:1400 ../src/gfpm-interface.c:2074
+#: ../src/gfpm-interface.c:1655 ../src/gfpm-interface.c:2400
 msgid ""
 "If you're sure a package manager is not already running, you can delete /tmp/"
 "pacman-g2.lck"
@@ -334,241 +380,270 @@ msgstr ""
 "Ha biztosak vagyunk benne, hogy nem fut semmilyen csomagkezelő, a /tmp/"
 "pacman-g2.lck fájl törölhető"
 
-#: ../src/gfpm-interface.c:1412
+#: ../src/gfpm-interface.c:1670
 msgid "No updates"
 msgstr "Nincsenek frissítések"
 
-#: ../src/gfpm-interface.c:1412
+#: ../src/gfpm-interface.c:1670
 msgid "No new package updates are available. The system is up to date."
 msgstr "Nincs frissítendő csomag. A rendszer már naprakész."
 
-#: ../src/gfpm-interface.c:1416
+#: ../src/gfpm-interface.c:1674
 msgid "Package upgrade"
 msgstr "Csomagfrissítés"
 
-#: ../src/gfpm-interface.c:1416
+#: ../src/gfpm-interface.c:1674
 msgid "Following packages will be upgraded. Do you want to continue ?"
 msgstr "A következő csomagok lesznek telepítve. Folytatás?"
 
-#: ../src/gfpm-interface.c:1601
+#: ../src/gfpm-interface.c:1859
 msgid "Mark for upgrade"
 msgstr "Megjelölés frissítéshez"
 
-#: ../src/gfpm-interface.c:1629
+#: ../src/gfpm-interface.c:1887
 msgid "Mark for installation"
 msgstr "Megjelölés telepítésre"
 
-#: ../src/gfpm-interface.c:1638
+#: ../src/gfpm-interface.c:1896
 msgid "Reinstall package"
 msgstr "Csomag újratelepítése"
 
-#: ../src/gfpm-interface.c:1645
+#: ../src/gfpm-interface.c:1903
+#, fuzzy
+msgid "Mark for re-installation"
+msgstr "Megjelölés telepítésre"
+
+#: ../src/gfpm-interface.c:1910
 msgid "Mark for removal"
 msgstr "Megjelölés eltávolításhoz"
 
-#: ../src/gfpm-interface.c:1723
+#: ../src/gfpm-interface.c:1996
 msgid "There was an error while populating packages"
 msgstr "Hiba történt a csomagok felépítése közben"
 
-#: ../src/gfpm-interface.c:1736
+#: ../src/gfpm-interface.c:2009
 msgid "There are no installed packages in this group"
 msgstr "Nincsenek telepített csomagok ebben a csoportban"
 
-#: ../src/gfpm-interface.c:1739
+#: ../src/gfpm-interface.c:2012
 msgid "Remove Group"
 msgstr "Csoport eltávolítása"
 
-#: ../src/gfpm-interface.c:1739
+#: ../src/gfpm-interface.c:2012
 msgid "Are you sure you want to remove the entire group ?"
 msgstr "Biztosan el akarjuk távolítani a teljes csoportot?"
 
-#: ../src/gfpm-interface.c:1816
-msgid "Search Complete"
-msgstr "Keresés kész"
-
-#: ../src/gfpm-interface.c:1817
-msgid "Package not found"
-msgstr "Nem található csomag"
-
-#: ../src/gfpm-interface.c:1817
-msgid "No such package found"
-msgstr "Nem található ilyen csomag"
-
-#: ../src/gfpm-interface.c:1824
+#: ../src/gfpm-interface.c:2102
 msgid "Searching for packages ..."
 msgstr "Csomagok keresése ..."
 
-#: ../src/gfpm-interface.c:1933
+#: ../src/gfpm-interface.c:2125
+msgid "Search Complete"
+msgstr "Keresés kész"
+
+#: ../src/gfpm-interface.c:2129
+msgid "Package not found"
+msgstr "Nem található csomag"
+
+#: ../src/gfpm-interface.c:2129
+msgid "No such package found"
+msgstr "Nem található ilyen csomag"
+
+#: ../src/gfpm-interface.c:2244
 msgid "Searching for packages ...DONE"
 msgstr "Csomagok keresése ... KÉSZ"
 
-#: ../src/gfpm-interface.c:2005 ../src/gfpm-interface.c:2023
+#: ../src/gfpm-interface.c:2320 ../src/gfpm-interface.c:2343
 msgid "Clear package cache"
 msgstr "Gyorsítótár ürítése"
 
-#: ../src/gfpm-interface.c:2005
+#: ../src/gfpm-interface.c:2320
 msgid "Are you sure you want to remove old packages from cache ?"
 msgstr "Biztosan el akarjuk távolítani a régi csomagokat a gyorsítótárból?"
 
-#: ../src/gfpm-interface.c:2011 ../src/gfpm-interface.c:2029
+#: ../src/gfpm-interface.c:2327 ../src/gfpm-interface.c:2350
+msgid "Cache cleared"
+msgstr ""
+
+#: ../src/gfpm-interface.c:2327 ../src/gfpm-interface.c:2350
 msgid "Finished clearing the cache"
 msgstr "A gyorsítótár ürítése befejeződött"
 
-#: ../src/gfpm-interface.c:2014 ../src/gfpm-interface.c:2032
+#: ../src/gfpm-interface.c:2333 ../src/gfpm-interface.c:2356
 #, c-format
 msgid "Failed to clean the cache (%s)"
 msgstr "A gyorsítótár törlése sikertelen (%s)"
 
-#: ../src/gfpm-interface.c:2015 ../src/gfpm-interface.c:2033
+#: ../src/gfpm-interface.c:2334 ../src/gfpm-interface.c:2357
 msgid "Error clearing cache"
 msgstr "A gyorsítótár ürítése sikertelen"
 
-#: ../src/gfpm-interface.c:2023
+#: ../src/gfpm-interface.c:2343
 msgid "Are you sure you want to remove all packages from cache ?"
 msgstr "Biztosan el akarjuk távolítani az összes csomagot a gyorsítótárból?"
 
-#: ../src/gfpm-interface.c:2055
+#: ../src/gfpm-interface.c:2380
 msgid "No packages selected"
 msgstr "Nincsenek kiválasztott csomagok"
 
-#: ../src/gfpm-interface.c:2055
-msgid "No package selected for install. Please select a package to install."
+#: ../src/gfpm-interface.c:2380
+#, fuzzy
+msgid ""
+"No package selected for installation. Please select a package to install."
 msgstr ""
 "Nincs telepítésre kiválasztott csomag. Válasszunk egy telepítendő csomagot."
 
-#: ../src/gfpm-interface.c:2058
+#: ../src/gfpm-interface.c:2383
 msgid "Install package"
 msgstr "Csomag telepítése"
 
-#: ../src/gfpm-interface.c:2058
+#: ../src/gfpm-interface.c:2383
 msgid "Are you sure you want to install this package ?"
 msgstr "Biztosan telepíteni akarjuk ezt a csomagot?"
 
-#: ../src/gfpm-interface.c:2096
+#: ../src/gfpm-interface.c:2412
+#, fuzzy, c-format
+msgid "Failed to add target (%s)\n"
+msgstr "A gyorsítótár törlése sikertelen (%s)"
+
+#: ../src/gfpm-interface.c:2434
+msgid "Success"
+msgstr ""
+
+#: ../src/gfpm-interface.c:2434
 msgid "Package successfully installed"
 msgstr "A csomag sikeresen telepítve"
 
-#: ../src/gfpm-progress.c:257
+#: ../src/gfpm-progress.c:151
+msgid "Summary"
+msgstr ""
+
+#: ../src/gfpm-progress.c:161
+msgid "Details"
+msgstr "Részletek"
+
+#: ../src/gfpm-progress.c:304
 msgid "Installing packages..."
 msgstr "Csomagok telepítése..."
 
-#: ../src/gfpm-progress.c:259
+#: ../src/gfpm-progress.c:306
 msgid "Installing package..."
 msgstr "Csomag telepítése..."
 
-#: ../src/gfpm-progress.c:263
+#: ../src/gfpm-progress.c:310
 msgid "Upgrading packages..."
 msgstr "Csomagok frisítése..."
 
-#: ../src/gfpm-progress.c:265
+#: ../src/gfpm-progress.c:312
 msgid "Upgrading package..."
 msgstr "Csomag frissítése..."
 
-#: ../src/gfpm-progress.c:269
+#: ../src/gfpm-progress.c:316
 msgid "Removing packages..."
 msgstr "Csomagok eltávolítása..."
 
-#: ../src/gfpm-progress.c:271
+#: ../src/gfpm-progress.c:318
 msgid "Removing package..."
 msgstr "Csomag eltávolítása..."
 
-#: ../src/gfpm-progress.c:275
+#: ../src/gfpm-progress.c:322
 msgid "Checking packages for file conflicts..."
 msgstr "A csomagok fájlütközéseinek vizsgálata..."
 
-#: ../src/gfpm-progress.c:277
+#: ../src/gfpm-progress.c:324
 msgid "Checking package for file conflicts..."
 msgstr "A csomag fájlütközéseinek vizsgálata..."
 
-#: ../src/gfpm-progress.c:310
+#: ../src/gfpm-progress.c:365
 msgid "Checking dependencies"
 msgstr "Függőségek vizsgálata"
 
-#: ../src/gfpm-progress.c:314
+#: ../src/gfpm-progress.c:369
 msgid "Checking for file conflicts"
 msgstr "Fájlütközések vizsgálata"
 
-#: ../src/gfpm-progress.c:318
+#: ../src/gfpm-progress.c:373
 msgid "Resolving dependencies"
 msgstr "Függőségek feloldása"
 
-#: ../src/gfpm-progress.c:321
+#: ../src/gfpm-progress.c:376
 msgid "Looking for inter-conflicts"
 msgstr "Belső ütközések keresése"
 
-#: ../src/gfpm-progress.c:327 ../src/gfpm-progress.c:367
-#: ../src/gfpm-progress.c:377
+#: ../src/gfpm-progress.c:382 ../src/gfpm-progress.c:422
+#: ../src/gfpm-progress.c:432
 msgid "Done"
 msgstr "Kész"
 
-#: ../src/gfpm-progress.c:330
+#: ../src/gfpm-progress.c:385
 #, c-format
 msgid "Installing %s-%s"
 msgstr "%s-%s telepítése"
 
-#: ../src/gfpm-progress.c:336
+#: ../src/gfpm-progress.c:391
 msgid "Package installation finished"
 msgstr "A csomagtelepítés befejeződött"
 
-#: ../src/gfpm-progress.c:337
+#: ../src/gfpm-progress.c:392
 #, c-format
 msgid "Installed %s-%s"
 msgstr "%s-%s telepítve"
 
-#: ../src/gfpm-progress.c:342
+#: ../src/gfpm-progress.c:397
 #, c-format
 msgid "Upgrading %s"
 msgstr "%s frissítése"
 
-#: ../src/gfpm-progress.c:347
+#: ../src/gfpm-progress.c:402
 msgid "Package upgrade finished"
 msgstr "A csomagfrissítés befejeződött"
 
-#: ../src/gfpm-progress.c:348
-#, c-format
-msgid "upgraded %s from %s to %s"
+#: ../src/gfpm-progress.c:403
+#, fuzzy, c-format
+msgid "Upgraded %s from %s to %s"
 msgstr "%s frissítve: %s -> %s"
 
-#: ../src/gfpm-progress.c:354
+#: ../src/gfpm-progress.c:409
 #, c-format
 msgid "removing %s"
 msgstr "%s eltávolítása"
 
-#: ../src/gfpm-progress.c:358
+#: ../src/gfpm-progress.c:413
 msgid "Package removal finished"
 msgstr "A csomageltávolítás befejeződött"
 
-#: ../src/gfpm-progress.c:359
-#, c-format
-msgid "removed %s"
+#: ../src/gfpm-progress.c:414
+#, fuzzy, c-format
+msgid "Removed %s"
 msgstr "%s eltávolítva"
 
-#: ../src/gfpm-progress.c:364
+#: ../src/gfpm-progress.c:419
 msgid "Checking package integrity"
 msgstr "A csomagok integritásának ellenőrzése"
 
-#: ../src/gfpm-progress.c:381
+#: ../src/gfpm-progress.c:436
 #, c-format
 msgid "Retrieving packages from %s"
 msgstr "Csomagok letöltése a(z) %s repóból"
 
-#: ../src/gfpm.c:55
+#: ../src/gfpm.c:107
+msgid ""
+"Failed to initialize interface due to the following error(s) in gfpm.ui:"
+msgstr ""
+
+#: ../src/gfpm.c:109
 msgid "Interface initialization Failed"
 msgstr "Az interfész inicializálása sikertelen"
 
-#: ../src/gfpm.c:55
-msgid "Failed to initialize interface"
-msgstr "Nem sikerült inicializálni az interfészt"
-
-#: ../src/gfpm.c:63
+#: ../src/gfpm.c:118
 msgid "Error initializing libpacman"
 msgstr "Nem sikerült inicializálni a libpacmant"
 
-#: ../src/gfpm.c:63
+#: ../src/gfpm.c:118
 msgid "Failed to initialize libpacman"
 msgstr "Nem sikerült inicializálni a libpacmant"
 
-#: ../src/gfpm-optimizedb.c:116
+#: ../src/gfpm-optimizedb.c:122
 msgid ""
 "Cannot optimize database. Another instance of pacman-g2 or gfpm is already "
 "running."
@@ -576,69 +651,71 @@ msgstr ""
 "Nem sikerült optimalizálni az adatbázist. Egy másik pacman-g2 vagy gfpm már "
 "fut."
 
-#: ../src/gfpm-optimizedb.c:123
+#: ../src/gfpm-optimizedb.c:129
 msgid "Error creating lockfile. Failed to optimize package database"
 msgstr ""
 "Hiba a zárolófájl létrehozása közben. Nem sikerült optimalizálni a "
 "csomagadatbázist"
 
 #. generate checksums for the old database
-#: ../src/gfpm-optimizedb.c:128
+#: ../src/gfpm-optimizedb.c:134
 msgid "generating checksums for the old database"
 msgstr "ellenőrzőösszegek gyártása a régi adatbázishoz"
 
 #. copy the old database to a new directory
-#: ../src/gfpm-optimizedb.c:137
+#: ../src/gfpm-optimizedb.c:143
 #, c-format
 msgid "copying %s"
 msgstr "%s másolása"
 
 #. generate checksums for the new database
-#: ../src/gfpm-optimizedb.c:147
+#: ../src/gfpm-optimizedb.c:153
 msgid "generating checksums for the new database"
 msgstr "ellenőrzőösszegek gyártása az új adatbázishoz"
 
 #. check integrity
-#: ../src/gfpm-optimizedb.c:164
+#: ../src/gfpm-optimizedb.c:170
 msgid "performing integrity check"
 msgstr "integritás-ellenőrzés folyamatban"
 
-#: ../src/gfpm-optimizedb.c:168
+#: ../src/gfpm-optimizedb.c:174
 msgid "Optimization failed"
 msgstr "Az optimalizálás sikertelen"
 
-#: ../src/gfpm-optimizedb.c:168
+#: ../src/gfpm-optimizedb.c:174
 msgid "Integrity check failed"
 msgstr "Az integritás-ellenőrzés sikertelen"
 
-#: ../src/gfpm-optimizedb.c:169
+#: ../src/gfpm-optimizedb.c:175
 msgid "Failed."
 msgstr "Sikertelen."
 
 #. remove old database
-#: ../src/gfpm-optimizedb.c:181
+#: ../src/gfpm-optimizedb.c:187
 msgid "removing old database"
 msgstr "régi adatbázis eltávolítása"
 
 #. remove temp files
-#: ../src/gfpm-optimizedb.c:189
+#: ../src/gfpm-optimizedb.c:195
 msgid "removing temporary files"
 msgstr "ideiglenes fájlok törlése"
 
-#: ../src/gfpm-optimizedb.c:196
+#: ../src/gfpm-optimizedb.c:202
 msgid "Database optimized."
 msgstr "Az adatbázis optimalizálva."
 
-#: ../src/gfpm-optimizedb.c:197
+#: ../src/gfpm-optimizedb.c:203
 msgid "Database optimized"
 msgstr "Az adatbázis optimalizálva"
 
-#: ../src/gfpm-optimizedb.c:197
+#: ../src/gfpm-optimizedb.c:203
 msgid "Your package database is now optimized."
 msgstr "A csomagadatbázis most optimális."
 
 #: ../src/gfpm-messages.c:71 ../src/gfpm-messages.c:76
 #: ../src/gfpm-messages.c:318 ../src/gfpm-messages.c:428
+#: ../nautilus-extension/nautilus-gfpm.c:445
+#: ../thunar-plugin/thunar-gfpm.c:445
 msgid "Package"
 msgstr "Csomag"
 
@@ -675,10 +752,20 @@ msgid "%s requires %s, but it is IgnorePkg. Install anyway?"
 msgstr ""
 "A(z) %s igényli a(z) %s csomagot, de az az IgnorePkg része. Mégis telepíti?"
 
+#: ../src/gfpm-messages.c:508
+#, fuzzy
+msgid "Install anyway?"
+msgstr "Csomag telepítése"
+
 #: ../src/gfpm-messages.c:514
 #, c-format
 msgid "%s is designated as HoldPkg. Remove anyway?"
 msgstr "A(z) %s HoldPkgnak lett jelölve. Biztosan eltávolítja?"
+
+#: ../src/gfpm-messages.c:516
+#, fuzzy
+msgid "Remove anyway?"
+msgstr "Eltávolítás"
 
 #: ../src/gfpm-messages.c:522
 #, c-format
@@ -716,44 +803,44 @@ msgstr "A(z) %s sérült. Kívánja törölni?"
 msgid "Package corrupted"
 msgstr "Sérült csomag"
 
-#: ../src/gfpm-logviewer.c:112
+#: ../src/gfpm-logviewer.c:126
 msgid "Error opening log file."
 msgstr "Nem sikerült megnyitni a naplót."
 
-#: ../src/gfpm-logviewer.c:181
+#: ../src/gfpm-logviewer.c:230
 msgid "Missing datemsk file. Make sure that the file exists on your system"
 msgstr ""
 "Hiányzó datemsk fájl. Győződjön meg róla, hogy a fájl létezik a rendszeren"
 
-#: ../src/gfpm-logviewer.c:183
+#: ../src/gfpm-logviewer.c:232
 msgid "Unknown Error"
 msgstr "Ismeretlen hiba"
 
-#: ../src/gfpm-logviewer.c:183
+#: ../src/gfpm-logviewer.c:232
 msgid "Unknown Error."
 msgstr "Ismeretlen hiba."
 
-#: ../src/gfpm-logviewer.c:232
+#: ../src/gfpm-logviewer.c:283
 msgid "Error opening log file"
 msgstr "Nem sikerült megnyitni a naplót"
 
-#: ../src/gfpm-repomanager.c:128
+#: ../src/gfpm-repomanager.c:129
 msgid "Enabled"
 msgstr "Engedélyezve"
 
-#: ../src/gfpm-repomanager.c:136
+#: ../src/gfpm-repomanager.c:137
 msgid "Repository"
 msgstr "Tároló"
 
-#: ../src/gfpm-repomanager.c:156
+#: ../src/gfpm-repomanager.c:157
 msgid "Server"
 msgstr "Kiszolgáló"
 
-#: ../src/gfpm-repomanager.c:272 ../src/gfpm-prefs.c:510
+#: ../src/gfpm-repomanager.c:273 ../src/gfpm-prefs.c:514
 msgid "Error saving configuration"
 msgstr "Hiba a beállítás elmentése közben"
 
-#: ../src/gfpm-repomanager.c:272
+#: ../src/gfpm-repomanager.c:273
 msgid ""
 "Gfpm could not open the pacman-g2.conf file for saving. Make sure no other "
 "program is using it"
@@ -761,547 +848,469 @@ msgstr ""
 "A gfpm nem tudta megnyitni a pacman-g2.conf file-t mentésre. Győződjön meg "
 "róla, hogy nem használja más program"
 
-#: ../src/gfpm-repomanager.c:350 ../src/gfpm-repomanager.c:425
-#: ../src/gfpm-repomanager.c:929
+#: ../src/gfpm-repomanager.c:351 ../src/gfpm-repomanager.c:426
+#: ../src/gfpm-repomanager.c:930
 msgid "The Repository URL field cannot be left blank"
 msgstr "A tároló URL-je nem lehet üres"
 
-#: ../src/gfpm-repomanager.c:419
+#: ../src/gfpm-repomanager.c:420
 msgid "The Repository Name field cannot be left blank"
 msgstr "A tároló neve nem lehet üres"
 
-#: ../src/gfpm-repomanager.c:437
+#: ../src/gfpm-repomanager.c:438
 msgid "Repository exists"
 msgstr "A tároló már létezik"
 
-#: ../src/gfpm-repomanager.c:437
+#: ../src/gfpm-repomanager.c:438
 msgid ""
 "A repository with the specified name already exists. Please provide a "
 "different name for the repository."
 msgstr ""
 "Ezzel a névvel létezik már tároló. Adjon meg egy másik nevet a tárolónak."
 
-#: ../src/gfpm-repomanager.c:569
+#: ../src/gfpm-repomanager.c:570
 msgid "Error opening"
 msgstr "Nem sikerült megnyitni:"
 
-#: ../src/gfpm-repomanager.c:569
+#: ../src/gfpm-repomanager.c:570
 msgid "This repository will be disabled"
 msgstr "A tároló nem lesz engedélyezve"
 
-#: ../src/gfpm-repomanager.c:570 ../src/gfpm-repomanager.c:1034
+#: ../src/gfpm-repomanager.c:571 ../src/gfpm-repomanager.c:1035
 msgid "Error opening repository file"
 msgstr "Nem sikerült megnyitni a tároló file-t"
 
-#: ../src/gfpm-repomanager.c:718
+#: ../src/gfpm-repomanager.c:719
 msgid "Warning"
 msgstr "Figyelem"
 
-#: ../src/gfpm-repomanager.c:718
+#: ../src/gfpm-repomanager.c:719
 msgid "No usable package repositories configured"
 msgstr "Nincsenek használható beállított csomag-repók."
 
-#: ../src/gfpm-repomanager.c:914
+#: ../src/gfpm-repomanager.c:915
 msgid "Edit Server"
 msgstr "Kiszolgáló szerkesztése"
 
 #. set the original title back
-#: ../src/gfpm-repomanager.c:970 ../data/gfpm.glade.h:63
+#: ../src/gfpm-repomanager.c:971
 msgid "New Server"
 msgstr "Új kiszolgáló"
 
-#: ../src/gfpm-repomanager.c:1140
+#: ../src/gfpm-repomanager.c:1141
 msgid "Confirmation"
 msgstr "Megerősítés"
 
-#: ../src/gfpm-repomanager.c:1140
+#: ../src/gfpm-repomanager.c:1141
 msgid "Are you sure you want to delete this repository ?"
 msgstr "Biztosan el akarja távolítani ezt a tárolót?"
 
-#: ../src/gfpm-repomanager.c:1175
+#: ../src/gfpm-repomanager.c:1176
 msgid "Server already exists"
 msgstr "A kiszolgáló már létezik"
 
-#: ../src/gfpm-repomanager.c:1175
+#: ../src/gfpm-repomanager.c:1176
 msgid "The server you're trying to add already exists"
 msgstr "A kiszolgáló amit hozzá akart adni, már létezik"
 
-#: ../src/gfpm-prefs.c:105 ../src/gfpm-prefs.c:116 ../data/gfpm.glade.h:67
+#: ../src/gfpm-prefs.c:107 ../src/gfpm-prefs.c:118
 msgid "Packages"
 msgstr "Csomagok"
 
-#: ../src/gfpm-prefs.c:298
+#: ../src/gfpm-prefs.c:302
 msgid "Could not open temporary file"
 msgstr "Nem sikerült megnyitni az ideiglenes file-t."
 
-#: ../src/gfpm-prefs.c:674
+#: ../src/gfpm-prefs.c:678
 msgid "Hold Package"
 msgstr "Csomag visszatartása"
 
-#: ../src/gfpm-prefs.c:674 ../src/gfpm-prefs.c:708
+#: ../src/gfpm-prefs.c:678 ../src/gfpm-prefs.c:712
 msgid "Enter the name of the package :"
 msgstr "Adja meg a csomag nevét :"
 
-#: ../src/gfpm-prefs.c:687 ../src/gfpm-prefs.c:721
+#: ../src/gfpm-prefs.c:691 ../src/gfpm-prefs.c:725
 msgid "Duplicate"
 msgstr "Duplikálás"
 
-#: ../src/gfpm-prefs.c:687 ../src/gfpm-prefs.c:721
+#: ../src/gfpm-prefs.c:691 ../src/gfpm-prefs.c:725
 msgid "This package already exists in the list"
 msgstr "Ez a csomag már létezik a listában"
 
-#: ../src/gfpm-prefs.c:708
+#: ../src/gfpm-prefs.c:712
 msgid "Ignore Package"
 msgstr "Csomag figyelmen kívül hagyása"
 
 #. get url of the proxy server from user
-#: ../src/gfpm-prefs.c:876
+#: ../src/gfpm-prefs.c:880
 msgid "Enter proxy server url"
 msgstr "Proxy kiszolgáló URL megadása"
 
-#: ../src/gfpm-prefs.c:876
+#: ../src/gfpm-prefs.c:880
 msgid "Enter the URL of the proxy server :"
 msgstr "Adja meg a proxy kiszolgáló URL-jét :"
 
-#: ../src/gfpm-prefs.c:934
+#: ../src/gfpm-prefs.c:938
 msgid "Select log file"
 msgstr "Napló állomány kiválasztása"
 
-#: ../src/gfpm-prefs.c:964 ../src/gfpm-prefs.c:994
+#: ../src/gfpm-prefs.c:968 ../src/gfpm-prefs.c:998
 msgid "Select directory"
 msgstr "Könyvtár kiválasztása"
 
-#: ../data/gfpm.glade.h:1
-msgid "<b><span size=\"larger\">Package Search</span></b>"
-msgstr "<b><span size=\"larger\">Csomagok keresése</span></b>"
-
-#: ../data/gfpm.glade.h:2
-msgid "<b><span size=\"larger\">Repositories</span></b>"
-msgstr "<b><span size=\"larger\">Tárolók</span></b>"
-
-#: ../data/gfpm.glade.h:3
-msgid "<b>Browse : </b>"
-msgstr "<b>Böngészés : </b>"
-
-#: ../data/gfpm.glade.h:4
-msgid "<b>Directories</b>"
-msgstr "<b>Könyvtárak</b>"
-
-#: ../data/gfpm.glade.h:5
-msgid "<b>Download Settings</b>"
-msgstr "<b>Letöltési beállítások</b>"
-
-#: ../data/gfpm.glade.h:6
-msgid "<b>Hold Packages</b>"
-msgstr "<b>Visszatartott csomagok</b>"
-
-#: ../data/gfpm.glade.h:7
-msgid "<b>Ignore Packages</b>"
-msgstr "<b>Figyelmen kívül hagyott csomagok</b>"
-
-#: ../data/gfpm.glade.h:8
-msgid "<b>Information</b>"
-msgstr "<b>Információ</b>"
-
-#: ../data/gfpm.glade.h:9
-msgid "<b>Install packages:</b>"
-msgstr "<b>Telepítendő csomagok:</b>"
-
-#: ../data/gfpm.glade.h:10
-msgid "<b>Log file size:</b>"
-msgstr "<b>Napló file mérete:</b>"
-
-#: ../data/gfpm.glade.h:11
-msgid "<b>Logging</b>"
-msgstr "<b>Naplózás</b>"
-
-#: ../data/gfpm.glade.h:12
-msgid "<b>Miscellaneous</b>"
-msgstr "<b>Egyéb</b>"
-
-#: ../data/gfpm.glade.h:13
-msgid ""
-"<b>Old Delay</b>\n"
-"Issue a warning when you try to install a package, but the local package "
-"database hasn't been updated for specified number of days. (0 = disabled)"
-msgstr ""
-"<b>Régi késleltetés</b>\n"
-"Egy figyelmeztetés kerül megjelenítésre, ha csomag telepítésekor a helyi "
-"adatbázis nem volt frissítve adott számú napig. (0 = kikapcsolva)"
-
-#: ../data/gfpm.glade.h:15
-msgid "<b>Options</b>"
-msgstr "<b>Opciók</b>"
-
-#: ../data/gfpm.glade.h:16
-msgid "<b>Package Information</b>"
-msgstr "<b>Csomag-információk</b>"
-
-#: ../data/gfpm.glade.h:17
-msgid "<b>Packages</b>"
-msgstr "<b>Csomagok</b>"
-
-#: ../data/gfpm.glade.h:18
-msgid "<b>Proxy Settings</b>"
-msgstr "<b>Proxy beállítások</b>"
-
-#: ../data/gfpm.glade.h:19
-msgid "<b>Remove packages:</b>"
-msgstr "<b>Eltávolítandó csomagok:</b>"
-
-#: ../data/gfpm.glade.h:20
-msgid "<b>Search in :</b>"
-msgstr "<b>Keresés itt :</b>"
-
-#: ../data/gfpm.glade.h:21
-msgid "<b>Status : </b>"
-msgstr "<b>Státusz : </b>"
-
-#: ../data/gfpm.glade.h:22
-msgid ""
-"<b>Upgrade Delay</b>\n"
-"Upgrade only the packages that are specified number of days old while "
-"performing a system upgrade. (0 = disabled)"
-msgstr ""
-"<b>Frissítés késleltetés</b>\n"
-"Csak azok a csomagok frissüljenek amik már legalább adott számú napja "
-"elérhetőek. (0 = kikapcsolva)"
-
-#: ../data/gfpm.glade.h:24
-msgid "<span size=\"larger\"><b>Add a new Repository</b></span>"
-msgstr "<span size=\"larger\"><b>Új tároló hozzáadása</b></span>"
-
-#: ../data/gfpm.glade.h:25
-msgid "<span size=\"larger\"><b>Add a new server</b></span>"
-msgstr "<span size=\"larger\"><b>Új kiszolgáló hozzáadása</b></span>"
-
-#: ../data/gfpm.glade.h:26
-msgid "<span size=\"larger\"><b>Install Package from File</b></span>"
-msgstr "<span size=\"larger\"><b>Csomag telepítése fájlból</b></span>"
-
-#: ../data/gfpm.glade.h:27
-msgid "<span size=\"larger\"><b>Manage Package Repositories</b></span>"
-msgstr "<span size=\"larger\"><b>Csomagtárolók kezelése</b></span>"
-
-#: ../data/gfpm.glade.h:28
-msgid "<span size=\"larger\"><b>Manage Servers</b></span>"
-msgstr "<span size=\"larger\"><b>Kiszolgálók kezelése</b></span>"
-
-#: ../data/gfpm.glade.h:29
-msgid "<span size=\"larger\"><b>Optimize package database</b></span>"
-msgstr "<span size=\"larger\"><b>Adatbázis optimalizálása</b></span>"
-
-#: ../data/gfpm.glade.h:30
-msgid "<span size=\"larger\"><b>Preferences</b></span>"
-msgstr "<span size=\"larger\"><b>Beállítások</b></span>"
-
-#: ../data/gfpm.glade.h:31
-msgid "<span size=\"larger\"><b>System Log</b></span>"
-msgstr "<span size=\"larger\"><b>Rendszernapló</b></span>"
-
-#: ../data/gfpm.glade.h:32
-msgid "About Gfpm"
-msgstr "A Gfpmről"
-
-#: ../data/gfpm.glade.h:33
-msgid "Apply"
-msgstr "Alkalmaz"
-
-#: ../data/gfpm.glade.h:34
-msgid "Apply Changes"
-msgstr "Változtatások alkalmazása"
-
-#: ../data/gfpm.glade.h:35
-msgid "Change"
-msgstr "Változtatás"
-
-#: ../data/gfpm.glade.h:36
-msgid "Changelog"
-msgstr "Változáslista"
-
-#: ../data/gfpm.glade.h:37
-msgid "Close"
-msgstr "Bezárás"
-
-#: ../data/gfpm.glade.h:38
-msgid "Close this dialog when the operation is finished"
-msgstr "Párbeszédpanel bezárása ha a művelet befejeződött"
-
-#: ../data/gfpm.glade.h:39
-msgid "Comment (Optional)"
-msgstr "Megjegyzés (elhagyható)"
-
-#: ../data/gfpm.glade.h:41
-msgid "Database"
-msgstr "Adatbázis"
-
-#: ../data/gfpm.glade.h:42
-msgid "Details"
-msgstr "Részletek"
-
-#: ../data/gfpm.glade.h:43
-msgid "Disable passive FTP connections"
-msgstr "Passzív FTP kapcsolatok tiltása"
-
-#: ../data/gfpm.glade.h:44
-msgid "Display the following additional information about packages :"
-msgstr "A következő további információk megjelenítése a csomagokról :"
-
-#: ../data/gfpm.glade.h:45
-msgid "Download"
-msgstr "Letöltés"
-
-#: ../data/gfpm.glade.h:46
-msgid "Download only (do not install/upgrade)"
-msgstr "Csak letöltés (ne legyen telepítés/frissítés)"
-
-#: ../data/gfpm.glade.h:47
-msgid "E_xit"
-msgstr "_Kilépés"
-
-#: ../data/gfpm.glade.h:48
-msgid "Enable Logging"
-msgstr "Naplózás bekapcsolása"
-
-#: ../data/gfpm.glade.h:49
-msgid "Files"
-msgstr "Fájlok"
-
-#: ../data/gfpm.glade.h:50
-msgid "Force install"
-msgstr "Telepítés eröltetése"
-
-#: ../data/gfpm.glade.h:51
-msgid "GFpm"
-msgstr "GFpm"
-
-#: ../data/gfpm.glade.h:52
-msgid "General"
-msgstr "Általános"
-
-#: ../data/gfpm.glade.h:54
-msgid "Ignore any upgrades for the following packages"
-msgstr "A következő csomagok bármilyen frissítésének figyelmen kívül hagyása"
-
-#: ../data/gfpm.glade.h:55
-msgid "Install"
-msgstr "Telepítés"
-
-#: ../data/gfpm.glade.h:56
-msgid "Install a package from file"
-msgstr "Csomag telepítése fájlból"
-
-#: ../data/gfpm.glade.h:57
-msgid "Install package from file"
-msgstr "Csomag telepítése fájlból"
-
-#: ../data/gfpm.glade.h:58
-msgid "Install this Package"
+#: ../nautilus-extension/nautilus-gfpm.c:491
+#: ../thunar-plugin/thunar-gfpm.c:493
+#, fuzzy
+msgid "Install this package"
 msgstr "Csomag telepítése"
 
-#: ../data/gfpm.glade.h:59
-msgid "Issue a warning before removal of the following packages"
-msgstr "A következő csomagok eltávolítása előtt legyen figyelmeztetés:"
+#: ../nautilus-extension/nautilus-gfpm.c:492
+#: ../thunar-plugin/thunar-gfpm.c:494
+#, fuzzy
+msgid "Install this package using GFpm"
+msgstr "Csomag telepítése"
 
-#: ../data/gfpm.glade.h:60
-msgid "Log File Path"
-msgstr "A napló file elérési útvonala"
+#~ msgid "Failed to initialize interface"
+#~ msgstr "Nem sikerült inicializálni az interfészt"
 
-#: ../data/gfpm.glade.h:61
-msgid "Maximum retries (in case of failure) (0 = disabled)"
-msgstr "Maximális újrapróbálkozások száma (hiba esetén) (0 = kikapcsolva)"
+#~ msgid "<b><span size=\"larger\">Package Search</span></b>"
+#~ msgstr "<b><span size=\"larger\">Csomagok keresése</span></b>"
 
-#: ../data/gfpm.glade.h:62
-msgid "New Repository"
-msgstr "Új tároló"
+#~ msgid "<b><span size=\"larger\">Repositories</span></b>"
+#~ msgstr "<b><span size=\"larger\">Tárolók</span></b>"
 
-#: ../data/gfpm.glade.h:64
-msgid "Optimize"
-msgstr "Optimalizálás"
+#~ msgid "<b>Browse : </b>"
+#~ msgstr "<b>Böngészés : </b>"
 
-#: ../data/gfpm.glade.h:65
-msgid "Options"
-msgstr "Opciók"
+#~ msgid "<b>Directories</b>"
+#~ msgstr "<b>Könyvtárak</b>"
 
-#: ../data/gfpm.glade.h:66
-msgid "Package cache"
-msgstr "Csomag gyorsítótár"
+#~ msgid "<b>Download Settings</b>"
+#~ msgstr "<b>Letöltési beállítások</b>"
 
-#: ../data/gfpm.glade.h:68
-msgid "Please wait..."
-msgstr "Türelem..."
+#~ msgid "<b>Hold Packages</b>"
+#~ msgstr "<b>Visszatartott csomagok</b>"
 
-#: ../data/gfpm.glade.h:69
-msgid "Preferences"
-msgstr "Beállítások"
+#~ msgid "<b>Ignore Packages</b>"
+#~ msgstr "<b>Figyelmen kívül hagyott csomagok</b>"
 
-#: ../data/gfpm.glade.h:70
-msgid "Proxy URL (eg: http://foo.com:8080)"
-msgstr "Proxy URL (pl: http://foo.com:8080)"
+#~ msgid "<b>Information</b>"
+#~ msgstr "<b>Információ</b>"
 
-#: ../data/gfpm.glade.h:71
-msgid "Quit"
-msgstr "Kilépés"
+#~ msgid "<b>Install packages:</b>"
+#~ msgstr "<b>Telepítendő csomagok:</b>"
 
-#: ../data/gfpm.glade.h:72
-msgid "Refresh the package lists"
-msgstr "Csomaglista frissítése"
+#~ msgid "<b>Log file size:</b>"
+#~ msgstr "<b>Napló file mérete:</b>"
 
-#: ../data/gfpm.glade.h:73
-msgid "Remove all packages from cache"
-msgstr "Minden csomag eltávolítása a gyorsítótárból"
+#~ msgid "<b>Logging</b>"
+#~ msgstr "<b>Naplózás</b>"
 
-#: ../data/gfpm.glade.h:74
-msgid "Remove old packages from cache"
-msgstr "Régi csomagok eltávolítása a gyorsítótárból"
+#~ msgid "<b>Miscellaneous</b>"
+#~ msgstr "<b>Egyéb</b>"
 
-#: ../data/gfpm.glade.h:75
-msgid "Remove this Package"
-msgstr "Csomag eltávolítása"
+#~ msgid ""
+#~ "<b>Old Delay</b>\n"
+#~ "Issue a warning when you try to install a package, but the local package "
+#~ "database hasn't been updated for specified number of days. (0 = disabled)"
+#~ msgstr ""
+#~ "<b>Régi késleltetés</b>\n"
+#~ "Egy figyelmeztetés kerül megjelenítésre, ha csomag telepítésekor a helyi "
+#~ "adatbázis nem volt frissítve adott számú napig. (0 = kikapcsolva)"
 
-#: ../data/gfpm.glade.h:76
-msgid "Repositories"
-msgstr "Tárolók"
+#~ msgid "<b>Options</b>"
+#~ msgstr "<b>Opciók</b>"
 
-#: ../data/gfpm.glade.h:77
-msgid "Repository Manager"
-msgstr "Tároló kezelő"
+#~ msgid "<b>Package Information</b>"
+#~ msgstr "<b>Csomag-információk</b>"
 
-#: ../data/gfpm.glade.h:78
-msgid "Repository Name"
-msgstr "Tároló neve"
+#~ msgid "<b>Packages</b>"
+#~ msgstr "<b>Csomagok</b>"
 
-#: ../data/gfpm.glade.h:79
-msgid "Search"
-msgstr "Keresés"
+#~ msgid "<b>Proxy Settings</b>"
+#~ msgstr "<b>Proxy beállítások</b>"
 
-#: ../data/gfpm.glade.h:80
-msgid "Server URL"
-msgstr "Kiszolgáló URL-je"
+#~ msgid "<b>Remove packages:</b>"
+#~ msgstr "<b>Eltávolítandó csomagok:</b>"
 
-#: ../data/gfpm.glade.h:81
-msgid "Servers Manager"
-msgstr "Kiszolgáló kezelő"
+#~ msgid "<b>Search in :</b>"
+#~ msgstr "<b>Keresés itt :</b>"
 
-#: ../data/gfpm.glade.h:82
-msgid "Skip dependency checks"
-msgstr "Függőségek ellenőrzésének kihagyása"
+#~ msgid "<b>Status : </b>"
+#~ msgstr "<b>Státusz : </b>"
 
-#: ../data/gfpm.glade.h:83
-msgid "The following operations will be performed"
-msgstr "A következő műveletek lesznek végrehajtva"
+#~ msgid ""
+#~ "<b>Upgrade Delay</b>\n"
+#~ "Upgrade only the packages that are specified number of days old while "
+#~ "performing a system upgrade. (0 = disabled)"
+#~ msgstr ""
+#~ "<b>Frissítés késleltetés</b>\n"
+#~ "Csak azok a csomagok frissüljenek amik már legalább adott számú napja "
+#~ "elérhetőek. (0 = kikapcsolva)"
 
-#: ../data/gfpm.glade.h:84
-msgid "Total size:"
-msgstr "Teljes méret:"
+#~ msgid "<span size=\"larger\"><b>Add a new Repository</b></span>"
+#~ msgstr "<span size=\"larger\"><b>Új tároló hozzáadása</b></span>"
 
-#: ../data/gfpm.glade.h:85
-msgid "Transfer Rate:  "
-msgstr "Átviteli sebesség:  "
+#~ msgid "<span size=\"larger\"><b>Add a new server</b></span>"
+#~ msgstr "<span size=\"larger\"><b>Új kiszolgáló hozzáadása</b></span>"
 
-#: ../data/gfpm.glade.h:87
-msgid "Upgrade existing"
-msgstr "Létező frissítése"
+#~ msgid "<span size=\"larger\"><b>Install Package from File</b></span>"
+#~ msgstr "<span size=\"larger\"><b>Csomag telepítése fájlból</b></span>"
 
-#: ../data/gfpm.glade.h:88
-msgid "Upgrade this Package"
-msgstr "Csomag frissítése"
+#~ msgid "<span size=\"larger\"><b>Manage Package Repositories</b></span>"
+#~ msgstr "<span size=\"larger\"><b>Csomagtárolók kezelése</b></span>"
 
-#: ../data/gfpm.glade.h:89
-msgid "Use proxy server"
-msgstr "Proxy kiszolgáló használata"
+#~ msgid "<span size=\"larger\"><b>Manage Servers</b></span>"
+#~ msgstr "<span size=\"larger\"><b>Kiszolgálók kezelése</b></span>"
 
-#: ../data/gfpm.glade.h:90
-msgid "View"
-msgstr "Megnéz"
+#~ msgid "<span size=\"larger\"><b>Optimize package database</b></span>"
+#~ msgstr "<span size=\"larger\"><b>Adatbázis optimalizálása</b></span>"
 
-#: ../data/gfpm.glade.h:91
-msgid "View Readme"
-msgstr "Readme megtekintése"
+#~ msgid "<span size=\"larger\"><b>Preferences</b></span>"
+#~ msgstr "<span size=\"larger\"><b>Beállítások</b></span>"
 
-#: ../data/gfpm.glade.h:92
-msgid "View System _Log"
-msgstr "Rendszernapló _Megtekintése"
+#~ msgid "<span size=\"larger\"><b>System Log</b></span>"
+#~ msgstr "<span size=\"larger\"><b>Rendszernapló</b></span>"
 
-#: ../data/gfpm.glade.h:93
-msgid "_About Gfpm"
-msgstr "_A Gfpmről"
+#~ msgid "About Gfpm"
+#~ msgstr "A Gfpmről"
 
-#: ../data/gfpm.glade.h:94
-msgid "_Clear Package Cache"
-msgstr "_Gyorsítótár ürítése"
+#~ msgid "Apply"
+#~ msgstr "Alkalmaz"
 
-#: ../data/gfpm.glade.h:95
-msgid "_Edit"
-msgstr "_Szerkesztés"
+#~ msgid "Apply Changes"
+#~ msgstr "Változtatások alkalmazása"
 
-#: ../data/gfpm.glade.h:96
-msgid "_Gfpm"
-msgstr "G_fpm"
+#~ msgid "Change"
+#~ msgstr "Változtatás"
 
-#: ../data/gfpm.glade.h:97
-msgid "_Help"
-msgstr "_Segítég"
+#~ msgid "Changelog"
+#~ msgstr "Változáslista"
 
-#: ../data/gfpm.glade.h:98
-msgid "_Optimize Package Database"
-msgstr "_Csomagadatbázis optimalizálása"
+#~ msgid "Close"
+#~ msgstr "Bezárás"
 
-#: ../data/gfpm.glade.h:99
-msgid "_Tools"
-msgstr "_Eszközök"
+#~ msgid "Close this dialog when the operation is finished"
+#~ msgstr "Párbeszédpanel bezárása ha a művelet befejeződött"
 
-#: ../data/gfpm.glade.h:100
-msgid "clear package cache"
-msgstr "gyorsítótár ürítése"
+#~ msgid "Comment (Optional)"
+#~ msgstr "Megjegyzés (elhagyható)"
 
-#: ../data/gfpm.glade.h:101
-msgid "days"
-msgstr "nap"
+#~ msgid "Database"
+#~ msgstr "Adatbázis"
 
-#: ../data/gfpm.glade.h:102
-msgid "gtk-add"
-msgstr "gtk-add"
+#~ msgid "Disable passive FTP connections"
+#~ msgstr "Passzív FTP kapcsolatok tiltása"
 
-#: ../data/gfpm.glade.h:103
-msgid "gtk-apply"
-msgstr "gtk-apply"
+#~ msgid "Display the following additional information about packages :"
+#~ msgstr "A következő további információk megjelenítése a csomagokról :"
 
-#: ../data/gfpm.glade.h:104
-msgid "gtk-cancel"
-msgstr "gtk-cancel"
+#~ msgid "Download"
+#~ msgstr "Letöltés"
 
-#: ../data/gfpm.glade.h:105
-msgid "gtk-close"
-msgstr "gtk-close"
+#~ msgid "Download only (do not install/upgrade)"
+#~ msgstr "Csak letöltés (ne legyen telepítés/frissítés)"
 
-#: ../data/gfpm.glade.h:106
-msgid "gtk-delete"
-msgstr "gtk-delete"
+#~ msgid "Enable Logging"
+#~ msgstr "Naplózás bekapcsolása"
 
-#: ../data/gfpm.glade.h:107
-msgid "gtk-edit"
-msgstr "gtk-edit"
+#~ msgid "Files"
+#~ msgstr "Fájlok"
 
-#: ../data/gfpm.glade.h:108
-msgid "gtk-go-down"
-msgstr "gtk-go-down"
+#~ msgid "Force install"
+#~ msgstr "Telepítés eröltetése"
 
-#: ../data/gfpm.glade.h:109
-msgid "gtk-go-up"
-msgstr "gtk-go-up"
+#~ msgid "GFpm"
+#~ msgstr "GFpm"
 
-#: ../data/gfpm.glade.h:110
-msgid "gtk-ok"
-msgstr "gtk-ok"
+#~ msgid "General"
+#~ msgstr "Általános"
 
-#: ../data/gfpm.glade.h:111
-msgid "gtk-remove"
-msgstr "gtk-remove"
+#~ msgid "Ignore any upgrades for the following packages"
+#~ msgstr ""
+#~ "A következő csomagok bármilyen frissítésének figyelmen kívül hagyása"
 
-#: ../data/gfpm.glade.h:112
-msgid "optimize your package database to improve performance"
-msgstr "csomagadatbázis optimalizálása a teljesítmény növelése érdekében"
+#~ msgid "Install"
+#~ msgstr "Telepítés"
+
+#~ msgid "Install a package from file"
+#~ msgstr "Csomag telepítése fájlból"
+
+#~ msgid "Install package from file"
+#~ msgstr "Csomag telepítése fájlból"
+
+#~ msgid "Install this Package"
+#~ msgstr "Csomag telepítése"
+
+#~ msgid "Issue a warning before removal of the following packages"
+#~ msgstr "A következő csomagok eltávolítása előtt legyen figyelmeztetés:"
+
+#~ msgid "Log File Path"
+#~ msgstr "A napló file elérési útvonala"
+
+#~ msgid "Maximum retries (in case of failure) (0 = disabled)"
+#~ msgstr "Maximális újrapróbálkozások száma (hiba esetén) (0 = kikapcsolva)"
+
+#~ msgid "New Repository"
+#~ msgstr "Új tároló"
+
+#~ msgid "Optimize"
+#~ msgstr "Optimalizálás"
+
+#~ msgid "Options"
+#~ msgstr "Opciók"
+
+#~ msgid "Package cache"
+#~ msgstr "Csomag gyorsítótár"
+
+#~ msgid "Please wait..."
+#~ msgstr "Türelem..."
+
+#~ msgid "Preferences"
+#~ msgstr "Beállítások"
+
+#~ msgid "Proxy URL (eg: http://foo.com:8080)"
+#~ msgstr "Proxy URL (pl: http://foo.com:8080)"
+
+#~ msgid "Quit"
+#~ msgstr "Kilépés"
+
+#~ msgid "Refresh the package lists"
+#~ msgstr "Csomaglista frissítése"
+
+#~ msgid "Remove all packages from cache"
+#~ msgstr "Minden csomag eltávolítása a gyorsítótárból"
+
+#~ msgid "Remove old packages from cache"
+#~ msgstr "Régi csomagok eltávolítása a gyorsítótárból"
+
+#~ msgid "Remove this Package"
+#~ msgstr "Csomag eltávolítása"
+
+#~ msgid "Repositories"
+#~ msgstr "Tárolók"
+
+#~ msgid "Repository Manager"
+#~ msgstr "Tároló kezelő"
+
+#~ msgid "Repository Name"
+#~ msgstr "Tároló neve"
+
+#~ msgid "Search"
+#~ msgstr "Keresés"
+
+#~ msgid "Server URL"
+#~ msgstr "Kiszolgáló URL-je"
+
+#~ msgid "Servers Manager"
+#~ msgstr "Kiszolgáló kezelő"
+
+#~ msgid "Skip dependency checks"
+#~ msgstr "Függőségek ellenőrzésének kihagyása"
+
+#~ msgid "The following operations will be performed"
+#~ msgstr "A következő műveletek lesznek végrehajtva"
+
+#~ msgid "Total size:"
+#~ msgstr "Teljes méret:"
+
+#~ msgid "Transfer Rate:  "
+#~ msgstr "Átviteli sebesség:  "
+
+#~ msgid "Upgrade existing"
+#~ msgstr "Létező frissítése"
+
+#~ msgid "Upgrade this Package"
+#~ msgstr "Csomag frissítése"
+
+#~ msgid "Use proxy server"
+#~ msgstr "Proxy kiszolgáló használata"
+
+#~ msgid "View"
+#~ msgstr "Megnéz"
+
+#~ msgid "View Readme"
+#~ msgstr "Readme megtekintése"
+
+#~ msgid "View System _Log"
+#~ msgstr "Rendszernapló _Megtekintése"
+
+#, fuzzy
+#~ msgid "_Clear package cache"
+#~ msgstr "Gyorsítótár ürítése"
+
+#~ msgid "_Edit"
+#~ msgstr "_Szerkesztés"
+
+#~ msgid "_Gfpm"
+#~ msgstr "G_fpm"
+
+#~ msgid "_Help"
+#~ msgstr "_Segítég"
+
+#, fuzzy
+#~ msgid "_Optimize package database"
+#~ msgstr "_Csomagadatbázis optimalizálása"
+
+#~ msgid "_Tools"
+#~ msgstr "_Eszközök"
+
+#~ msgid "days"
+#~ msgstr "nap"
+
+#~ msgid "gtk-add"
+#~ msgstr "gtk-add"
+
+#~ msgid "gtk-apply"
+#~ msgstr "gtk-apply"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-close"
+
+#~ msgid "gtk-delete"
+#~ msgstr "gtk-delete"
+
+#~ msgid "gtk-edit"
+#~ msgstr "gtk-edit"
+
+#~ msgid "gtk-go-down"
+#~ msgstr "gtk-go-down"
+
+#~ msgid "gtk-go-up"
+#~ msgstr "gtk-go-up"
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"
+
+#~ msgid "gtk-remove"
+#~ msgstr "gtk-remove"
+
+#~ msgid "optimize your package database to improve performance"
+#~ msgstr "csomagadatbázis optimalizálása a teljesítmény növelése érdekében"
+
+#~ msgid "Missing dependencies"
+#~ msgstr "Hiányzó függőségek"
+
+#~ msgid ""
+#~ "Following dependencies were not met. Please install these packages first."
+#~ msgstr ""
+#~ "A következő függőségek nem egyeznek. Telepítsük ezeket a csomagokat "
+#~ "először."
+
+#~ msgid "E_xit"
+#~ msgstr "_Kilépés"
+
+#~ msgid "_About Gfpm"
+#~ msgstr "_A Gfpmről"
+
+#~ msgid "_Clear Package Cache"
+#~ msgstr "_Gyorsítótár ürítése"
+
+#~ msgid "clear package cache"
+#~ msgstr "gyorsítótár ürítése"
 
 #~ msgid "_Options"
 #~ msgstr "_Opciók"
@@ -1319,9 +1328,6 @@ msgstr "csomagadatbázis optimalizálása a teljesítmény növelése érdekébe
 #, fuzzy
 #~ msgid "repository"
 #~ msgstr "Tárolók"
-
-#~ msgid "Remove"
-#~ msgstr "Eltávolítás"
 
 #~ msgid "Search packages"
 #~ msgstr "Csomagok keresése"

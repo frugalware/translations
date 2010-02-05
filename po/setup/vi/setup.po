@@ -6,14 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-02 02:25+0200\n"
+"POT-Creation-Date: 2010-02-05 02:02+0100\n"
 "PO-Revision-Date: 2009-10-02 16:06+0200\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 1.2.1\n"
 
@@ -53,7 +53,7 @@ msgstr ""
 "Ở đây thì bạn có thể chọn một hay nhiều máy nhân bản gần để tăng tốc độ tải "
 "xuống gói phần mềm."
 
-#: ../src/plugins/configsource.c:166 ../src/plugins/formatdisk.c:649
+#: ../src/plugins/configsource.c:166 ../src/plugins/formatdisk.c:655
 #: ../src/plugins/partdisk.c:197
 msgid "Continue"
 msgstr "Tiếp"
@@ -71,12 +71,23 @@ msgstr ""
 "phần mềm xuống một cách nhanh hơn. Trong hậu hết trường hợp đều, ở điểm thời "
 "này thích hợp để bấm nút Tiếp."
 
-#: ../src/plugins/configsource.c:196 ../src/plugins/select.c:422
+#: ../src/plugins/configsource.c:195
+msgid "Failed to configure the network"
+msgstr ""
+
+#: ../src/plugins/configsource.c:196
+msgid ""
+"Failed to write the network configuration files. Please try again, "
+"especially pay attention to give a valid IP address and/or netmask if you "
+"are using a static IP configuration."
+msgstr ""
+
+#: ../src/plugins/configsource.c:203 ../src/plugins/select.c:422
 #: ../src/plugins/select.c:438 ../src/plugins/select.c:477
 msgid "Please wait"
 msgstr "Hãy đợi"
 
-#: ../src/plugins/configsource.c:196
+#: ../src/plugins/configsource.c:203
 msgid "Configuring the network interface..."
 msgstr "Đang cấu hình giao diện mạng..."
 
@@ -213,7 +224,7 @@ msgstr "Đang tạo hệ thống tập tin %s trên %s..."
 msgid "Select mount point for %s"
 msgstr "Hãy chọn điểm gắn kết cho %s"
 
-#: ../src/plugins/formatdisk.c:522 ../src/plugins/formatdisk.c:669
+#: ../src/plugins/formatdisk.c:522 ../src/plugins/formatdisk.c:675
 msgid "(in use)"
 msgstr "(đang dùng)"
 
@@ -223,15 +234,15 @@ msgid "%s on %s/\t%s"
 msgstr "%s trên %s/\t%s"
 
 #. non-root partitions
-#: ../src/plugins/formatdisk.c:642
+#: ../src/plugins/formatdisk.c:648
 msgid "Selecting other partitions"
 msgstr "Đang chọn các phân vùng khác"
 
-#: ../src/plugins/formatdisk.c:653
+#: ../src/plugins/formatdisk.c:659
 msgid "Select other Linux partitions for /etc/fstab"
 msgstr "Chọn các phân vùng Linux khác cho /etc/fstab"
 
-#: ../src/plugins/formatdisk.c:654
+#: ../src/plugins/formatdisk.c:660
 msgid ""
 "You may use your other partitions to distribute your Linux system across "
 "more than one partition. Currently, you have only mounted your / partition. "
@@ -622,11 +633,11 @@ msgstr ""
 msgid "Post-install configuration"
 msgstr "Cấu hình cuối cùng cài đặt "
 
-#: ../src/plugins/postconf.c:276
+#: ../src/plugins/postconf.c:273
 msgid "Configuring kernel modules"
 msgstr "Đang cấu hình các mô-đun hạt nhân"
 
-#: ../src/plugins/postconf.c:277
+#: ../src/plugins/postconf.c:274
 msgid "Updating module dependencies..."
 msgstr "Đang cập nhật các quan hệ phụ thuộc của mô-đun..."
 

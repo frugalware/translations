@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-25 02:26+0100\n"
+"POT-Creation-Date: 2010-02-05 02:02+0100\n"
 "PO-Revision-Date: 2008-03-28 00:48+0100\n"
 "Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
 "Language-Team: <hu@li.org>\n"
@@ -54,10 +54,10 @@ msgstr ""
 "Ha van hálózati kártyája és ahhoz rendelt ip-címe, gateway-e és DNSe, "
 "válassza a 'static'-ot, hogy megadja ezeket az értékeket. Szintén "
 "választhatja ezt, ha DSL kapcsolattal rendelkezik.\n"
-"Ha az ip-címet egy DHCP szerver adja meg (a kábelmodem-szolgáltatók "
-"szokták használni), válassza a 'dhcp'-t. \n"
-"Ha csak azért van hálózati kártyája, hogy egy DSL modemhez "
-"kapcsolódjon, válassza a 'dsl'-t. \n"
+"Ha az ip-címet egy DHCP szerver adja meg (a kábelmodem-szolgáltatók szokták "
+"használni), válassza a 'dhcp'-t. \n"
+"Ha csak azért van hálózati kártyája, hogy egy DSL modemhez kapcsolódjon, "
+"válassza a 'dsl'-t. \n"
 "Végül, ha nincs hálózati kártyája, válassza az 'lo'-t. \n"
 
 #: ../netconfig.c:77
@@ -107,20 +107,20 @@ msgid ""
 "If unsure, just hit enter.\n"
 "Enter interface name:"
 msgstr ""
-"Adja meg a hálózati interfészt ami a DSL modemhez van kapcsolva. ethn "
-"lesz a neve, ahol az 'n' egy szám.\n"
+"Adja meg a hálózati interfészt ami a DSL modemhez van kapcsolva. ethn lesz a "
+"neve, ahol az 'n' egy szám.\n"
 "Ha nem biztos benne, csak üssön entert.\n"
 "Adja meg az interfész nevét:"
 
-#: ../netconfig.c:141
+#: ../netconfig.c:142
 msgid "Network configuration"
 msgstr "Hálózat beállítása"
 
-#: ../netconfig.c:144
+#: ../netconfig.c:145
 msgid "Enter hostname"
 msgstr "A gépnév beállítása"
 
-#: ../netconfig.c:144
+#: ../netconfig.c:145
 msgid ""
 "We'll need the name you'd like to give your host.\n"
 "The full hostname is needed, such as:\n"
@@ -136,36 +136,37 @@ msgstr ""
 "\n"
 "Adja meg a teljes gépnevet:"
 
-#: ../netconfig.c:162
+#: ../netconfig.c:163
 msgid ""
 "We'll need the name of the interface you'd like to use for your network "
 "connection.\n"
 "If unsure, just hit enter.\n"
 "Select interface:"
 msgstr ""
-"Szükségünk van az interfész nevére amit szeretne használni a "
-"hálózati kapcsolatához.\n"
+"Szükségünk van az interfész nevére amit szeretne használni a hálózati "
+"kapcsolatához.\n"
 "Ha nem biztos benne, csak üssön entert.\n"
 "Válassza ki az interfészt:"
 
-#: ../netconfig.c:172
+#: ../netconfig.c:173
 msgid "Extended network name"
 msgstr "Kiterjesztett hálózati név"
 
-#: ../netconfig.c:172
+#: ../netconfig.c:173
+#, fuzzy
 msgid ""
 "It seems that this network card has a wireless extension. In order to use "
-"it, you must set your extended netwok name (ESSID). Enter your ESSID:"
+"it, you must set your extended network name (ESSID). Enter your ESSID:"
 msgstr ""
-"Úgy tűnik, hogy ez a kártya vezeték nélküli kiterjesztéssel "
-"rendelkezik. Ha használni szeretné azt, akkor be kell állítania a "
-"kiterjesztett hálózati nevét (ESSID). Adja meg az ESSID-jét:"
+"Úgy tűnik, hogy ez a kártya vezeték nélküli kiterjesztéssel rendelkezik. Ha "
+"használni szeretné azt, akkor be kell állítania a kiterjesztett hálózati "
+"nevét (ESSID). Adja meg az ESSID-jét:"
 
-#: ../netconfig.c:177
+#: ../netconfig.c:178
 msgid "WEP encryption key"
 msgstr "WEP titkosítási kulcs"
 
-#: ../netconfig.c:178
+#: ../netconfig.c:179
 msgid ""
 "If you have a WEP encryption key, then please enter it below.\n"
 "Examples: 4567-89AB-CD or  s:password"
@@ -173,11 +174,11 @@ msgstr ""
 "Ha rendelkezik WEP titkosítási kulccsal, akkor azt adja meg itt.\n"
 "Példák: 4567-89AB-CD vagy s:jelszó"
 
-#: ../netconfig.c:182
+#: ../netconfig.c:183
 msgid "WPA encryption passphrase"
 msgstr "WPA titkosítási kulcs"
 
-#: ../netconfig.c:183
+#: ../netconfig.c:184
 msgid ""
 "If you have a WPA passphrase, then please enter it below.\n"
 "Example: secret"
@@ -185,103 +186,99 @@ msgstr ""
 "Ha rendelkezik WPA titkosítási kulccsal, akkor azt adja meg itt.\n"
 "Példák: jelszó"
 
-#: ../netconfig.c:187
+#: ../netconfig.c:188
 msgid "WPA driver"
 msgstr "WPA meghajtó"
 
-#: ../netconfig.c:188
+#: ../netconfig.c:189
 msgid ""
 "If you want to use a custom driver (not the generic one, called 'wext'), "
 "then please enter it below. If unsure, just hit enter."
 msgstr ""
-"Ha egyedi meghajtóprogramot szeretne használni (nem az általános 'wext'-"
-"et) akkor adja meg itt. Ha bizonytalan, csak üssön entert."
+"Ha egyedi meghajtóprogramot szeretne használni (nem az általános 'wext'-et) "
+"akkor adja meg itt. Ha bizonytalan, csak üssön entert."
 
-#: ../netconfig.c:195
+#: ../netconfig.c:196
 msgid "Set DHCP hostname"
 msgstr "A DHCP gépnév beállítása"
 
-#: ../netconfig.c:195
+#: ../netconfig.c:196
 msgid ""
 "Some network providers require that the DHCP hostname beset in order to "
 "connect. If so, they'll have assigned a hostname to your machine. If you "
 "wereassigned a DHCP hostname, please enter it below. If you do not have a "
 "DHCP hostname, justhit enter."
 msgstr ""
-"Némely hálózati szolgáltató a csatlakozáshoz megköveteli, hogy a DHCP "
-"gépnév be legyen állítva. Ebben az esetben egy gépnevet rendeltek a "
-"számítógépéhez. Ha kapott ilyen DHCP gépnevet, kérem alább adja meg. "
-"Ha nem kapott DHCP gépnevet, csak üssön entert."
+"Némely hálózati szolgáltató a csatlakozáshoz megköveteli, hogy a DHCP gépnév "
+"be legyen állítva. Ebben az esetben egy gépnevet rendeltek a számítógépéhez. "
+"Ha kapott ilyen DHCP gépnevet, kérem alább adja meg. Ha nem kapott DHCP "
+"gépnevet, csak üssön entert."
 
 #. options = ip netmask netmask
-#: ../netconfig.c:210
+#: ../netconfig.c:211
 msgid "Enter ip address"
 msgstr "Az ip-cím beállítása"
 
-#: ../netconfig.c:210
+#: ../netconfig.c:211
 msgid "Enter your IP address for the local machine."
 msgstr "Adja meg a helyi gép ip-címét."
 
-#: ../netconfig.c:211
+#: ../netconfig.c:212
 msgid "Enter netmask for local network"
 msgstr "Adja meg a helyi hálózat netmaskját"
 
-#: ../netconfig.c:212
+#: ../netconfig.c:213
 msgid ""
 "Enter your netmask. This will generally look something like this: "
 "255.255.255.0\n"
 "If unsure, just hit enter."
 msgstr ""
-"Adja meg a netmaskját. Ez általában ehhez hasonlóan néz ki: "
-"255.255.255.0\n"
+"Adja meg a netmaskját. Ez általában ehhez hasonlóan néz ki: 255.255.255.0\n"
 "Ha nem biztos benne, csak üssön entert."
 
-#: ../netconfig.c:219
+#: ../netconfig.c:220
 msgid "Enter gateway address"
 msgstr "A gateway-cím beállítása"
 
-#: ../netconfig.c:219
+#: ../netconfig.c:220
 msgid ""
 "Enter the address for the gateway on your network. If you don't have a "
 "gateway on your network just hit enter, without entering any ip address."
 msgstr ""
-"Adja meg a hálózatának gateway-címét. Ha nincs gateway a "
-"hálózatában, csak üssön entert, anélkül, hogy bármilyen ip-címet "
-"megadna."
+"Adja meg a hálózatának gateway-címét. Ha nincs gateway a hálózatában, csak "
+"üssön entert, anélkül, hogy bármilyen ip-címet megadna."
 
-#: ../netconfig.c:225
+#: ../netconfig.c:226
 msgid "Select nameserver"
 msgstr "A névszerver-kiválasztása"
 
-#: ../netconfig.c:225
+#: ../netconfig.c:226
 msgid ""
 "Please give the IP address of the name server to use. You can add more "
 "Domain Name Servers later by editing /etc/sysconfig/network/default.\n"
 "If you don't have a name server on your network just hit enter, without "
 "entering any ip address."
 msgstr ""
-"Kérem adja meg a használni kívánt névszerver ip-címét. Több "
-"névszervert is megadhat a későbbiekben a /sysconfig/network/default "
-"szerkesztésével.\n"
+"Kérem adja meg a használni kívánt névszerver ip-címét. Több névszervert is "
+"megadhat a későbbiekben a /sysconfig/network/default szerkesztésével.\n"
 "Ha nincs névszerver a hálózatában, csak üssön entert, anélkül, hogy "
 "bármilyen ip-címet megadna."
 
-#: ../netconfig.c:236
+#: ../netconfig.c:237
 msgid "Adjust configuration files"
 msgstr "A konfigurációs fájlok módosítása"
 
-#: ../netconfig.c:236
+#: ../netconfig.c:237
 msgid "Accept these settings and adjust configuration files?"
 msgstr ""
-"Elfogadja ezeket a beállításokat és módosítja a konfigurációs "
-"fájlokat?"
+"Elfogadja ezeket a beállításokat és módosítja a konfigurációs fájlokat?"
 
-#: ../netconfig.c:320
+#: ../netconfig.c:321
 #, c-format
 msgid "No profile loaded.\n"
 msgstr "Nincs betöltött profil.\n"
 
-#: ../netconfig.c:325
+#: ../netconfig.c:326
 #, c-format
 msgid "Current profile: %s\n"
 msgstr "Jelenlegi profil: %s\n"
@@ -290,8 +287,7 @@ msgstr "Jelenlegi profil: %s\n"
 #~ msgstr "Az interfész nevének beállítása"
 
 #~ msgid "usage: %s [options] start|stop|restart|status|list [interface]\n"
-#~ msgstr ""
-#~ "használat: %s [opciók] start|stop|restart|status|list [interfész]\n"
+#~ msgstr "használat: %s [opciók] start|stop|restart|status|list [interfész]\n"
 
 #~ msgid "       %s [options] [profile] [interface]\n"
 #~ msgstr "       %s [opciók] [profil] [interfész]\n"
@@ -304,8 +300,7 @@ msgstr "Jelenlegi profil: %s\n"
 
 #~ msgid "     --dry-run           Do not actually perform the operation.\n"
 #~ msgstr ""
-#~ "     --dry-run           Próba futtatás, ténylegesen ne történjen "
-#~ "semmi.\n"
+#~ "     --dry-run           Próba futtatás, ténylegesen ne történjen semmi.\n"
 
 #~ msgid "     --loup              Bring up the loopback interface.\n"
 #~ msgstr "--loup              A vissszacsatoló interfész betöltése.\n"

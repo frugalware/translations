@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-12-26 05:05+0100\n"
+"POT-Creation-Date: 2010-02-05 02:02+0100\n"
 "PO-Revision-Date: 2007-09-14 23:53+0200\n"
 "Last-Translator: Patric Werme <xenon-power@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,47 +59,48 @@ msgstr ""
 "välj 'dsl'. \n"
 "Slutligen, om du inte har ett nätverkskort, välj alternativet 'lo'.\n"
 
-#: ../netconfig.c:80
+#: ../netconfig.c:77
+#, fuzzy
+msgid "Select interface"
+msgstr "Välj namnserver"
+
+#: ../netconfig.c:92
 msgid "DSL configuration"
 msgstr "DSL-konfiguration"
 
-#: ../netconfig.c:80
+#: ../netconfig.c:92
 msgid "Do you want to configure a DSL connection now?"
 msgstr "Vill du konfigurera en DSL-uppkoppling nu?"
 
-#: ../netconfig.c:82
+#: ../netconfig.c:94
 msgid "Enter user name"
 msgstr "Ange användarnamn"
 
-#: ../netconfig.c:83
+#: ../netconfig.c:95
 msgid "Enter your PPPoE user name:"
 msgstr "Ange ditt PPPoE-användarnamn:"
 
-#: ../netconfig.c:87 ../netconfig.c:89
+#: ../netconfig.c:99 ../netconfig.c:101
 msgid "Password"
 msgstr "Lösenord"
 
-#: ../netconfig.c:88
+#: ../netconfig.c:100
 msgid "Please enter your PPPoE password"
 msgstr "Ange ditt PPPoE-lösenord:"
 
-#: ../netconfig.c:90
+#: ../netconfig.c:102
 msgid "Please re-enter your PPPoE password"
 msgstr "Var god bekräfta PPPoE-lösenordet:"
 
-#: ../netconfig.c:96
+#: ../netconfig.c:108
 msgid "Passwords don't match"
 msgstr "Lösenorden stämmer inte överens"
 
-#: ../netconfig.c:97
+#: ../netconfig.c:109
 msgid "Sorry, the passwords do not match. Try again?"
 msgstr "Tyvärr, lösenorden stämmer inte överens. Vill du försöka igen?"
 
-#: ../netconfig.c:100 ../netconfig.c:150
-msgid "Enter interface name"
-msgstr "Ange gränssnittets namn"
-
-#: ../netconfig.c:101
+#: ../netconfig.c:112
 msgid ""
 "Enter the Ethernet interface connected to the DSL modem. It will be ethn, "
 "where 'n' is a number.\n"
@@ -111,15 +112,15 @@ msgstr ""
 "Om du är osäker trycker du bara på enter.\n"
 "Ange gränssnittsnamn:"
 
-#: ../netconfig.c:129
+#: ../netconfig.c:142
 msgid "Network configuration"
 msgstr "Nätverkskonfiguration"
 
-#: ../netconfig.c:132
+#: ../netconfig.c:145
 msgid "Enter hostname"
 msgstr "Ange värdnamn"
 
-#: ../netconfig.c:132
+#: ../netconfig.c:145
 msgid ""
 "We'll need the name you'd like to give your host.\n"
 "The full hostname is needed, such as:\n"
@@ -134,38 +135,40 @@ msgstr ""
 "frugalware.example.net\n"
 "Ange hela värdnamnet:"
 
-#: ../netconfig.c:151
+#: ../netconfig.c:163
+#, fuzzy
 msgid ""
 "We'll need the name of the interface you'd like to use for your network "
 "connection.\n"
 "If unsure, just hit enter.\n"
-"Enter interface name:"
+"Select interface:"
 msgstr ""
 "Vi behöver namnet på det gränssnitt du vill använda för din "
 "nätverksuppkoppling.\n"
 " Om du är osäker, tryck bara enter.\n"
 "Ange gränssnittets namn:"
 
-#: ../netconfig.c:160
+#: ../netconfig.c:173
 msgid "Extended network name"
 msgstr "Utökat nätverksnamn"
 
 # Är ESSID ESSID på svenska? - Ja!
-#: ../netconfig.c:160
+#: ../netconfig.c:173
+#, fuzzy
 msgid ""
 "It seems that this network card has a wireless extension. In order to use "
-"it, you must set your extended netwok name (ESSID). Enter your ESSID:"
+"it, you must set your extended network name (ESSID). Enter your ESSID:"
 msgstr ""
 "Det verkar som att detta nätverkskort har en trådlös utökning. För att kunna "
 "använda det måste du ställa in ditt utökade nätverksnamn (ESSID). Ange ditt "
 "ESSID:"
 
-#: ../netconfig.c:165
+#: ../netconfig.c:178
 #, fuzzy
 msgid "WEP encryption key"
 msgstr "Krypteringsnyckel"
 
-#: ../netconfig.c:166
+#: ../netconfig.c:179
 #, fuzzy
 msgid ""
 "If you have a WEP encryption key, then please enter it below.\n"
@@ -174,11 +177,11 @@ msgstr ""
 "Om du har en krypteringsnyckel, ange den nedan.\n"
 "Exempel: 4567-89AB-CD eller s:password"
 
-#: ../netconfig.c:170
+#: ../netconfig.c:183
 msgid "WPA encryption passphrase"
 msgstr ""
 
-#: ../netconfig.c:171
+#: ../netconfig.c:184
 #, fuzzy
 msgid ""
 "If you have a WPA passphrase, then please enter it below.\n"
@@ -187,21 +190,21 @@ msgstr ""
 "Om du har en krypteringsnyckel, ange den nedan.\n"
 "Exempel: 4567-89AB-CD eller s:password"
 
-#: ../netconfig.c:175
+#: ../netconfig.c:188
 msgid "WPA driver"
 msgstr ""
 
-#: ../netconfig.c:176
+#: ../netconfig.c:189
 msgid ""
 "If you want to use a custom driver (not the generic one, called 'wext'), "
 "then please enter it below. If unsure, just hit enter."
 msgstr ""
 
-#: ../netconfig.c:183
+#: ../netconfig.c:196
 msgid "Set DHCP hostname"
 msgstr "Ställ in DHCP-värdnamn"
 
-#: ../netconfig.c:183
+#: ../netconfig.c:196
 msgid ""
 "Some network providers require that the DHCP hostname beset in order to "
 "connect. If so, they'll have assigned a hostname to your machine. If you "
@@ -214,19 +217,19 @@ msgstr ""
 "ange det nedan. Om du inte har ett DHCP-värdnamn, tryck bara på enter."
 
 #. options = ip netmask netmask
-#: ../netconfig.c:198
+#: ../netconfig.c:211
 msgid "Enter ip address"
 msgstr "Ange ip-adress"
 
-#: ../netconfig.c:198
+#: ../netconfig.c:211
 msgid "Enter your IP address for the local machine."
 msgstr "Ange din IP-adress för den lokala maskinen."
 
-#: ../netconfig.c:199
+#: ../netconfig.c:212
 msgid "Enter netmask for local network"
 msgstr "Ange nätmask för det lokala nätverket"
 
-#: ../netconfig.c:200
+#: ../netconfig.c:213
 msgid ""
 "Enter your netmask. This will generally look something like this: "
 "255.255.255.0\n"
@@ -235,11 +238,11 @@ msgstr ""
 "Ange din nätmask. Den ser oftast ut ungefär såhär:255.255.255.0\n"
 "Om du är osäker, tryck bara på retur."
 
-#: ../netconfig.c:207
+#: ../netconfig.c:220
 msgid "Enter gateway address"
 msgstr "Ange nätsluss(gateway)-adress"
 
-#: ../netconfig.c:207
+#: ../netconfig.c:220
 msgid ""
 "Enter the address for the gateway on your network. If you don't have a "
 "gateway on your network just hit enter, without entering any ip address."
@@ -247,15 +250,16 @@ msgstr ""
 "Ange adressen för nätslussen (gateway) för ditt nätverk. Om du inte har en "
 "nätsluss för ditt nätverk tryck bara på enter utan att ange någon IP-adress."
 
-#: ../netconfig.c:213
+#: ../netconfig.c:226
 msgid "Select nameserver"
 msgstr "Välj namnserver"
 
 # Kände mig tvungen att förtydliga, då DNS-server är betydligt mycket vanligare än mnamn-server
-#: ../netconfig.c:213
+#: ../netconfig.c:226
+#, fuzzy
 msgid ""
-"Please give the IP address of the name server to use. You canadd more Domain "
-"Name Servers later by editing /etc/sysconfig/network/default.\n"
+"Please give the IP address of the name server to use. You can add more "
+"Domain Name Servers later by editing /etc/sysconfig/network/default.\n"
 "If you don't have a name server on your network just hit enter, without "
 "entering any ip address."
 msgstr ""
@@ -266,24 +270,27 @@ msgstr ""
 "skriva in någon IP-adress"
 
 # är justera rätt ord?
-#: ../netconfig.c:224
+#: ../netconfig.c:237
 msgid "Adjust configuration files"
 msgstr "Ändra konfigurationsfiler"
 
 # är justera rätt ord?
-#: ../netconfig.c:224
+#: ../netconfig.c:237
 msgid "Accept these settings and adjust configuration files?"
 msgstr "Acceptera dessa inställningar och ändra konfigurationsfilerna?"
 
-#: ../netconfig.c:308
+#: ../netconfig.c:321
 #, c-format
 msgid "No profile loaded.\n"
 msgstr "Ingen profil laddad.\n"
 
-#: ../netconfig.c:313
+#: ../netconfig.c:326
 #, c-format
 msgid "Current profile: %s\n"
 msgstr "Nuvarande profil: %s\n"
+
+#~ msgid "Enter interface name"
+#~ msgstr "Ange gränssnittets namn"
 
 #~ msgid "usage: %s [options] start|stop|restart|status|list [interface]\n"
 #~ msgstr "användning: %s [val] start|stop|restart|status|list [gränssnitt]\n"
