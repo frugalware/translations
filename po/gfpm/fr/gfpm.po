@@ -6,14 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-06 02:03+0100\n"
+"POT-Creation-Date: 2010-04-04 01:59+0200\n"
 "PO-Revision-Date: 2010-02-06 13:20+0200\n"
 "Last-Translator: Hermier Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 2.0.2\n"
 
@@ -39,11 +39,14 @@ msgstr "Paquets installés"
 #: ../src/gfpm-interface.c:1996 ../src/gfpm-interface.c:2009
 #: ../src/gfpm-interface.c:2401 ../src/gfpm-interface.c:2413
 #: ../src/gfpm-interface.c:2427 ../src/gfpm-optimizedb.c:122
-#: ../src/gfpm-optimizedb.c:129 ../src/gfpm-logviewer.c:126
-#: ../src/gfpm-logviewer.c:230 ../src/gfpm-logviewer.c:283
-#: ../src/gfpm-repomanager.c:351 ../src/gfpm-repomanager.c:420
-#: ../src/gfpm-repomanager.c:426 ../src/gfpm-repomanager.c:930
-#: ../src/gfpm-repomanager.c:1035
+#: ../src/gfpm-optimizedb.c:129 ../src/gfpm-logviewer.c:129
+#: ../src/gfpm-logviewer.c:233 ../src/gfpm-logviewer.c:236
+#: ../src/gfpm-logviewer.c:239 ../src/gfpm-logviewer.c:242
+#: ../src/gfpm-logviewer.c:245 ../src/gfpm-logviewer.c:248
+#: ../src/gfpm-logviewer.c:251 ../src/gfpm-logviewer.c:254
+#: ../src/gfpm-logviewer.c:310 ../src/gfpm-repomanager.c:351
+#: ../src/gfpm-repomanager.c:420 ../src/gfpm-repomanager.c:426
+#: ../src/gfpm-repomanager.c:930 ../src/gfpm-repomanager.c:1035
 msgid "Error"
 msgstr "Erreur"
 
@@ -803,25 +806,55 @@ msgstr "L'archive %s est corrompue. Voulez-vous l'effacer?"
 msgid "Package corrupted"
 msgstr "Paquet corrompu"
 
-#: ../src/gfpm-logviewer.c:126
+#: ../src/gfpm-logviewer.c:129
 msgid "Error opening log file."
 msgstr "Erreur à l'ouverture du fichier d'historique."
 
-#: ../src/gfpm-logviewer.c:230
+#: ../src/gfpm-logviewer.c:233
 msgid "Missing datemsk file. Make sure that the file exists on your system"
 msgstr ""
 "Fichier datemsk manquant. Veuillez vérifier que le fichier existe sur votre "
 "système"
 
-#: ../src/gfpm-logviewer.c:232
+#: ../src/gfpm-logviewer.c:236
+#, fuzzy
+msgid "The template file cannot be opened for reading."
+msgstr "Le champ Nom du dépôt ne peut être laissé vide"
+
+#: ../src/gfpm-logviewer.c:239
+msgid "Failed to get file status information."
+msgstr ""
+
+#: ../src/gfpm-logviewer.c:242
+msgid "The template file is not a regular file."
+msgstr ""
+
+#: ../src/gfpm-logviewer.c:245
+msgid "An I/O error is encountered while reading the template file."
+msgstr ""
+
+#: ../src/gfpm-logviewer.c:248
+msgid "Memory allocation failed (not enough memory available)."
+msgstr ""
+
+#: ../src/gfpm-logviewer.c:251
+msgid "There is no line in the template that matches the input."
+msgstr ""
+
+#: ../src/gfpm-logviewer.c:254
+msgid "Invalid input specification."
+msgstr ""
+
+#: ../src/gfpm-logviewer.c:257
 msgid "Unknown Error"
 msgstr "Erreur Inconnue"
 
-#: ../src/gfpm-logviewer.c:232
-msgid "Unknown Error."
-msgstr "Erreur Inconnue."
+#: ../src/gfpm-logviewer.c:257
+#, fuzzy
+msgid "Getdate: unknown error."
+msgstr "Erreur inconnue"
 
-#: ../src/gfpm-logviewer.c:283
+#: ../src/gfpm-logviewer.c:310
 msgid "Error opening log file"
 msgstr "Erreur à l'ouverture du fichier de l'historique"
 
@@ -970,6 +1003,9 @@ msgstr "Installer ce paquet"
 #: ../thunar-plugin/thunar-gfpm.c:494
 msgid "Install this package using GFpm"
 msgstr "Installer ce paquet en utilisant GFpm"
+
+#~ msgid "Unknown Error."
+#~ msgstr "Erreur Inconnue."
 
 #~ msgid "Failed to initialize interface"
 #~ msgstr "Echec de l'initialisation de l'interface"
