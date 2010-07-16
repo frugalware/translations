@@ -6,14 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-31 02:27+0200\n"
-"PO-Revision-Date: 2010-02-10 10:45+0200\n"
-"Last-Translator: Tony <pingax@gmail.com>\n"
+"POT-Creation-Date: 2010-07-16 02:03+0200\n"
+"PO-Revision-Date: 2010-07-16 15:34+0200\n"
+"Last-Translator: Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 2.0.2\n"
 
@@ -29,32 +29,32 @@ msgstr "Drapeau"
 msgid "Code"
 msgstr "Code"
 
-#: ../src/plugins/asklang.c:138 ../src/plugins/layout.c:338
-#: ../src/plugins/layout.c:428
+#: ../src/plugins/asklang.c:138 ../src/plugins/layout.c:298
+#: ../src/plugins/layout.c:395
 msgid "Name"
 msgstr "Nom"
 
-#: ../src/plugins/asklang.c:245 ../src/plugins/configsource.c:117
-#: ../src/plugins/partdisk.c:1069 ../src/plugins/layout.c:505
-#: ../src/util.c:207
+#: ../src/plugins/asklang.c:246 ../src/plugins/configsource.c:142
+#: ../src/plugins/partdisk.c:1075 ../src/plugins/layout.c:472
+#: ../src/util.c:224
 msgid "Could not open output file for writing"
 msgstr "Impossible d'ouvrir le fichier de sortie en écriture"
 
-#: ../src/plugins/configsource.c:67
+#: ../src/plugins/configsource.c:92
 msgid "Selecting mirrors"
 msgstr "Sélections des miroirs"
 
 #. this string should be the best mirror for the given language from
 #. * /etc/pacman-g2/repos
-#: ../src/plugins/configsource.c:83
+#: ../src/plugins/configsource.c:108
 msgid "ftp://ftp5."
 msgstr "ftp://ftp5."
 
-#: ../src/plugins/configsource.c:160
+#: ../src/plugins/configsource.c:185
 msgid "Add a custom server"
 msgstr "Ajout d'un serveur personel"
 
-#: ../src/plugins/configsource.c:161
+#: ../src/plugins/configsource.c:186
 msgid ""
 "You may specify a custom mirror (eg. LAN) so you can download packages "
 "faster.\n"
@@ -64,48 +64,45 @@ msgstr ""
 "télécharger les paquets plus rapidement.\n"
 "Entrez l'adresse du serveur ci-dessous:"
 
-#: ../src/plugins/configsource.c:190
+#: ../src/plugins/configsource.c:214
 msgid "Can't delete default mirrors"
 msgstr "Impossible d'effacer les miroirs par défaut"
 
-#: ../src/plugins/configsource.c:220
+#: ../src/plugins/configsource.c:242
 msgid "Use"
 msgstr "Utilisez"
 
-#: ../src/plugins/configsource.c:226
+#: ../src/plugins/configsource.c:248
+msgid "Status"
+msgstr "Status"
+
+#: ../src/plugins/configsource.c:252
 msgid "Mirrors"
 msgstr "Miroirs"
 
-#: ../src/plugins/configsource.c:231
+#: ../src/plugins/configsource.c:257
 msgid "Froms"
 msgstr "Depuis"
 
-#: ../src/plugins/configsource.c:249
+#: ../src/plugins/configsource.c:275
+#, fuzzy
 msgid ""
-"<span face=\"Courier New\"><b>You can choose one or more nearly mirrors to "
-"speed up package downloading.</b></span>"
+"<b>You can choose one or more nearly mirrors to speed up package downloading."
+"</b>"
 msgstr ""
 "<span face=\"Courier New\"><b>Vous pouvez choisir un ou plusieurs miroirs "
 "proches pour accélérer le téléchargement de paquets.</b></span>"
 
 #. Set up buttons for custom mirrors
-#: ../src/plugins/configsource.c:265
+#: ../src/plugins/configsource.c:291
 msgid "Add custom mirror"
 msgstr "Ajout d'un miroir personnel"
 
-#: ../src/plugins/configsource.c:268
+#: ../src/plugins/configsource.c:292
 msgid "Remove custom mirror"
 msgstr "Supression d'un miroir personnel"
 
-#: ../src/plugins/configsource.c:295
-msgid ""
-"You need an active internet connection ,\n"
-" do you want to configure your network now?"
-msgstr ""
-"Vous avez besoin d'une connexion internet valide,\n"
-" voulez-vous configurer votre réseau maintenant?"
-
-#: ../src/plugins/configsource.c:365
+#: ../src/plugins/configsource.c:392
 msgid ""
 "Select one or more nearly mirrors to speed up package downloading.\n"
 "You can add your own custom mirrors to increase downloadind speed by using "
@@ -116,20 +113,265 @@ msgstr ""
 "Vous pouvez ajouter vos propres miroirs personnalisés pour accroître la "
 "vitesse de téléchargement en utilisant le bouton prévu à cet effet."
 
+#: ../src/plugins/configsource.c:595 ../src/plugins/netconf.c:234
+#, fuzzy
+msgid "Select your access point :"
+msgstr "Sélection du port souris :"
+
+#: ../src/plugins/configsource.c:613 ../src/plugins/netconf.c:252
+msgid "Signal"
+msgstr ""
+
+#: ../src/plugins/configsource.c:617 ../src/plugins/netconf.c:256
+#, fuzzy
+msgid "Address"
+msgstr "Adresse IP"
+
+#: ../src/plugins/configsource.c:620 ../src/plugins/netconf.c:259
+msgid "ESSID"
+msgstr ""
+
+#: ../src/plugins/configsource.c:623 ../src/plugins/netconf.c:262
+#, fuzzy
+msgid "Mode"
+msgstr "Modèle"
+
+#: ../src/plugins/configsource.c:626 ../src/plugins/netconf.c:265
+msgid "Protocol"
+msgstr ""
+
+#: ../src/plugins/configsource.c:629 ../src/plugins/netconf.c:268
+#, fuzzy
+msgid "Encryption"
+msgstr "Clé de cryptage WEP: "
+
+#: ../src/plugins/configsource.c:632 ../src/plugins/netconf.c:271
+msgid "Cypher"
+msgstr ""
+
+#: ../src/plugins/configsource.c:671 ../src/plugins/netconf.c:308
+#, fuzzy
+msgid "No encryption"
+msgstr "Clé de cryptage WEP: "
+
+#: ../src/plugins/configsource.c:714 ../src/plugins/netconf.c:360
+msgid "Use a DHCP server"
+msgstr "Utiliser un serveur DHCP"
+
+#: ../src/plugins/configsource.c:715 ../src/plugins/netconf.c:361
+msgid "Use a static IP address"
+msgstr "Utiliser une adresse IP statique"
+
+#: ../src/plugins/configsource.c:718 ../src/plugins/netconf.c:347
+msgid "Select network type"
+msgstr "Sélection d'un type de réseau"
+
+#: ../src/plugins/configsource.c:724 ../src/plugins/netconf.c:353
+msgid ""
+"Now we need to know how your machine connects to the network.\n"
+"If you have an internal network card and an assigned IP address, gateway, "
+"and DNS,\n"
+" use 'static' to enter these values.\n"
+"If your IP address is assigned by a DHCP server (commonly used by cable "
+"modem services),\n"
+" select 'dhcp'. \n"
+msgstr ""
+"Nous avons besoin maintenant de savoir comment votre machine se connecte au "
+"réseau.\n"
+"Si vous avez une carte réseau interne avec une adresse IP définie, une "
+"passerelle, et un DNS,\n"
+" utilisez 'static' pour entrer ses valeurs.\n"
+"Si votre adresse IP est définie par un serveur DHCP (couramment utilisé par "
+"les fournisseurs d'accès internet),\n"
+" utilisez 'dhcp'. \n"
+
+#: ../src/plugins/configsource.c:783 ../src/plugins/netconf.c:419
+msgid "Configure Wireless"
+msgstr "Configuration sans fils"
+
+#: ../src/plugins/configsource.c:791 ../src/plugins/netconf.c:427
+msgid ""
+"In order to use wireless, you must set your extended netwok name (ESSID).\n"
+"If you have a WEP encryption key, then please enter it below.\n"
+"Examples: 4567-89AB-CD or s:password\n"
+"If you have a WPA passphrase, then please enter it below.\n"
+"Example: secret\n"
+"If you want to use a custom driver (not the generic one, called 'wext'), "
+"then please enter it below.\n"
+"If unsure enter nothing"
+msgstr ""
+"Pour utiliser le réseau sans fils, vous devez entrer votre nom de réseau "
+"étendu (ESSID).\n"
+"Si vous avez une clef de cryptage WEP, veuillez l'entrer ci-dessous.\n"
+"Par exemple: 4567-89AB-CD ou s:password\n"
+"Si vous avez une clef de cryptage WPA, veuillez l'entrer ci-dessous.\n"
+"Par exemple: secret\n"
+"Si vous voulez choisir un pilote particulier (et non le générique, nommé "
+"'wext'), veuillez l'entrer ci-dessous.\n"
+"Si vous n'êtes pas sur, n'entrez rien"
+
+#: ../src/plugins/configsource.c:804 ../src/plugins/netconf.c:440
+msgid "Essid : "
+msgstr "Essid : "
+
+#: ../src/plugins/configsource.c:808
+msgid "Scan Access Points"
+msgstr ""
+
+#: ../src/plugins/configsource.c:813 ../src/plugins/netconf.c:449
+msgid "WEP encryption key : "
+msgstr "Clé de cryptage WEP: "
+
+#: ../src/plugins/configsource.c:820 ../src/plugins/netconf.c:456
+msgid "WPA encryption passphrase : "
+msgstr "Clé de cryptage WPA:"
+
+#: ../src/plugins/configsource.c:827 ../src/plugins/netconf.c:463
+msgid "WPA Driver : "
+msgstr "Pilote WPA:"
+
+#: ../src/plugins/configsource.c:861 ../src/plugins/netconf.c:500
+msgid "Configure static network"
+msgstr "Configuration du réseau statique"
+
+#: ../src/plugins/configsource.c:867 ../src/plugins/netconf.c:506
+msgid "Enter static network parameters :"
+msgstr "Entrez les paramètres du réseau statique:"
+
+#: ../src/plugins/configsource.c:871 ../src/plugins/netconf.c:510
+msgid "IP Address : "
+msgstr "Adresse IP:"
+
+#: ../src/plugins/configsource.c:878 ../src/plugins/netconf.c:517
+msgid "Network Mask : "
+msgstr "Masque réseau:"
+
+#: ../src/plugins/configsource.c:885 ../src/plugins/netconf.c:524
+msgid "Gateway : "
+msgstr "Passerelle:"
+
+#: ../src/plugins/configsource.c:924 ../src/plugins/netconf.c:579
+#, fuzzy, c-format
+msgid ""
+"Do you want to configure a DSL connection associated with the interface %s?"
+msgstr "Voulez vous configurer une connexion DSL maintenant?"
+
+#: ../src/plugins/configsource.c:935 ../src/plugins/netconf.c:587
+#, fuzzy
+msgid "Configure DSL connection"
+msgstr "Configurer une connexion DSL"
+
+#: ../src/plugins/configsource.c:942 ../src/plugins/netconf.c:594
+msgid "Enter DSL parameters"
+msgstr "Entrez les paramètres DSL"
+
+#: ../src/plugins/configsource.c:946 ../src/plugins/netconf.c:598
+msgid "PPPOE username : "
+msgstr "Nom d'utilisateur PPPOE:"
+
+#: ../src/plugins/configsource.c:953 ../src/plugins/netconf.c:605
+msgid "PPPOE password : "
+msgstr "Mot de passe PPPOE:"
+
+#: ../src/plugins/configsource.c:960 ../src/plugins/netconf.c:612
+msgid "Re-enter PPPOE password : "
+msgstr "Vérification du mot de passe PPPOE:"
+
+#: ../src/plugins/configsource.c:976 ../src/plugins/netconf.c:628
+msgid "Passwords do not match! Try again."
+msgstr "Les mots de passe ne correspondent pas! Essayez encore."
+
+#: ../src/plugins/configsource.c:1007
+msgid ""
+"Fwife cannot connect to internet with this configuration, do you want to "
+"apply this configuration anyway?"
+msgstr ""
+
+#: ../src/plugins/configsource.c:1035
+#, fuzzy
+msgid "Select your network interface :"
+msgstr "Sélection d'un type de réseau"
+
+#: ../src/plugins/configsource.c:1056 ../src/plugins/netconf.c:778
+msgid "Device"
+msgstr "Périphérique"
+
+#: ../src/plugins/configsource.c:1059 ../src/plugins/netconf.c:781
+#, fuzzy
+msgid "Description"
+msgstr "Partition"
+
+#: ../src/plugins/configsource.c:1126
+#, c-format
+msgid ""
+"A netconfig profile (\"%s\") has been found on your current installation.\n"
+"Do you want to use it?"
+msgstr ""
+"Un profile netconfig (\"%s\") a été trouvé dans votre actuelle installation.\n"
+"Voulez vous l'utiliser?"
+
+#: ../src/plugins/configsource.c:1156
+#, c-format
+msgid ""
+"An active connection seems to have been found on interface %s using dhcp.\n"
+"Do you want to use it?"
+msgstr ""
+"Une connexion active semble avoir été trouvée sur l'interface %s via dhcp.\n"
+"Voulez vous l'utiliser?"
+
+#: ../src/plugins/configsource.c:1181
+msgid ""
+"An active connection seems to have been found but the connection's type have "
+"not been found.\n"
+"Do you want to use it anyway?"
+msgstr ""
+"Une connexion active semble avoir été trouvée mais le type de connexion n'a "
+"pas été trouvé.Voulez vous quand même l'utiliser?"
+
+#: ../src/plugins/configsource.c:1202 ../src/plugins/netconf.c:695
+msgid ""
+"It seems that this network card has a wireless extension.\n"
+"\n"
+"Configure your wireless now?"
+msgstr ""
+"Il semble que cette carte réseau possède une extension sans fils.\n"
+"\n"
+"Configurer votre réseaux sans fils maintenant?"
+
+#: ../src/plugins/configsource.c:1213 ../src/plugins/netconf.c:706
+msgid "Set DHCP hostname"
+msgstr "Sélection du nom d'hôte DHCP"
+
+#: ../src/plugins/configsource.c:1213 ../src/plugins/netconf.c:706
+msgid ""
+"Some network providers require that the DHCP hostname be\n"
+"set in order to connect.\n"
+" If so, they'll have assigned a hostname to your machine.\n"
+" If you wereassigned a DHCP hostname, please enter it below.\n"
+" If you do not have a DHCP hostname, justhit enter."
+msgstr ""
+"Quelques fournisseurs d'accès internet requièrent que le nom d'hôte DHCP "
+"soit définir\n"
+"pour pouvoir se connecter.\n"
+" Si c'est le cas, un nom d'hôte a été donné pour votre machine.\n"
+" Si un nom d'hôte DHCP vous à été assigné, veuillez l'entrer si dessous.\n"
+" Si vous n'avez pas de nom d'hôte DHCP, veuillez juste appuyer sur Entrée."
+
 #: ../src/plugins/finish.c:60
 msgid "Installation completed"
 msgstr "Installation terminée"
 
-#: ../src/plugins/finish.c:70
-msgid "Installation completed! We hope that you enjoy Frugalware!"
+#: ../src/plugins/finish.c:71
+msgid "<b>Installation completed! We hope that you enjoy Frugalware!</b>"
 msgstr ""
-"Installation terminée ! Nous espérons que vous apprécierez Frugalware !"
+"<b>Installation terminée ! Nous espérons que vous apprécierez Frugalware "
+"!</b>"
 
-#: ../src/plugins/partdisk.c:91
+#: ../src/plugins/partdisk.c:100
 msgid "Partitioning the disk drives"
 msgstr "Partitionnement des disques durs"
 
-#: ../src/plugins/partdisk.c:449
+#: ../src/plugins/partdisk.c:473
 msgid ""
 "If you want to change your root partition, select the new partition and use "
 "\"Set root partition\" button!"
@@ -137,84 +379,81 @@ msgstr ""
 "Si vous voulez changer votre partition racine, sélectionnez la nouvelle "
 "partition et utilisez le bouton \"Définir comme partition racine\" !"
 
-#: ../src/plugins/partdisk.c:454
+#: ../src/plugins/partdisk.c:476
 msgid "Unselect this swap partition?"
 msgstr "Dé-sélectionner cette partition swap?"
 
-#: ../src/plugins/partdisk.c:467
+#: ../src/plugins/partdisk.c:488
 msgid "Use the suitable button to perform this action!"
 msgstr "Utiliser le bon bouton pour effectuer cette action!"
 
-#: ../src/plugins/partdisk.c:537 ../src/plugins/partdisk.c:701
+#: ../src/plugins/partdisk.c:550 ../src/plugins/partdisk.c:703
 msgid "Do you want to format partition?"
 msgstr "Voulez-vous formater cette partition?"
 
-#. On utilise les balises
-#: ../src/plugins/partdisk.c:551
+#: ../src/plugins/partdisk.c:562
+#, fuzzy
 msgid ""
-"<span face=\"Courier New\" foreground=\"#f90909\"><b>!!! NOTE: This will "
-"erase all data on it. Would you like to format this partition? !!!</b></"
-"span>\n"
+"<span foreground=\"#f90909\"><b>!!! NOTE: This will erase all data on it. "
+"Would you like to format this partition? !!!</b></span>\n"
 msgstr ""
 "<span face=\"Courier New\" foreground=\"#f90909\"><b>!!! NOTE: Cela effacera "
 "toutes les données qu'elle contient. Voulez-vous formater cette "
 "partition? !!!</b></span>\n"
 
-#: ../src/plugins/partdisk.c:555
-msgid "Choose filesystem :"
-msgstr "Sélection du système de fichiers"
+#: ../src/plugins/partdisk.c:566
+msgid "<b>Choose filesystem :</b>\n"
+msgstr "<b>Sélection du système de fichiers :</b>"
 
 #. Ext3 filesystem - default
-#: ../src/plugins/partdisk.c:559 ../src/plugins/partdisk.c:624
+#: ../src/plugins/partdisk.c:570 ../src/plugins/partdisk.c:628
 msgid "ext3 - Journalising version of the ext2 filesystem"
 msgstr "ext3 - Version journalisée du système de fichiers ext2"
 
 #. Ext2 filesystem
-#: ../src/plugins/partdisk.c:562 ../src/plugins/partdisk.c:622
+#: ../src/plugins/partdisk.c:573 ../src/plugins/partdisk.c:626
 msgid "ext2 - Standard Linux ext2 filesystem"
 msgstr "ext2 - Système de fichiers ext2 linux standard"
 
 #. Ext4 filesystem , experimental by now
-#: ../src/plugins/partdisk.c:567 ../src/plugins/partdisk.c:626
-msgid "ext4 - The evolution of the of the ext3 filesystem (EXPERIMENTAL!)"
+#: ../src/plugins/partdisk.c:576 ../src/plugins/partdisk.c:630
+#, fuzzy
+msgid "ext4 - The evolution of the ext3 filesystem (EXPERIMENTAL!)"
 msgstr "ext4 - Évolution du système de fichiers ext3 (EXPÉRIMENTAL!)"
 
 #. Reiser Filesystem
-#: ../src/plugins/partdisk.c:573 ../src/plugins/partdisk.c:628
+#: ../src/plugins/partdisk.c:583 ../src/plugins/partdisk.c:632
 msgid "reiserfs - Hans Reiser's journalising filesystem"
 msgstr "reiserfs - Système de fichiers journalisé de Hans Reiser"
 
 #. XFS
-#: ../src/plugins/partdisk.c:577 ../src/plugins/partdisk.c:630
+#: ../src/plugins/partdisk.c:587 ../src/plugins/partdisk.c:634
 msgid "xfs - SGI's journalising filesystem"
 msgstr "xfs - Système de fichier journalisé de SGI"
 
-#: ../src/plugins/partdisk.c:580
+#: ../src/plugins/partdisk.c:590
 msgid "Noformat - keep filesystem"
 msgstr "Pas de formatage - Laisser le système de fichier actuel"
 
-#: ../src/plugins/partdisk.c:586
-msgid "Options :"
-msgstr "Options :"
+#: ../src/plugins/partdisk.c:597
+msgid "<b>Options :</b>\n"
+msgstr "<b>Options :</b>"
 
-#: ../src/plugins/partdisk.c:589
+#: ../src/plugins/partdisk.c:600
 msgid "Check for bad blocks - slowly"
 msgstr "Vérification des blocs défectueux - minutieusement"
 
 #. change label
-#: ../src/plugins/partdisk.c:647
-msgid ""
-"<span face=\"Courier New\"><b>Creating filesystem... Please wait ... </b></"
-"span>\n"
-msgstr ""
-"<span face=\"Courier New\"><b>Création du système de fichiers... Veuillez "
-"patienter ... </b></span>\n"
+#: ../src/plugins/partdisk.c:648
+msgid "<b>Creating filesystem... Please wait ... </b>\n"
+msgstr "<b>Création du système de fichiers... Veuillez patienter ... </b>"
 
 #. On utilise les balises
-#: ../src/plugins/partdisk.c:715
+#: ../src/plugins/partdisk.c:717
+#, fuzzy
 msgid ""
-"<span face=\"Courier New\" foreground=\"#f90909\"><b>You need to format is "
-"you want to use it as a swap partition!\n"
+"<span foreground=\"#f90909\"><b>You need to format is you want to use it as "
+"a swap partition!\n"
 "This will erase all your data on that partition !\n"
 "\n"
 " Do you want to continue? </b></span>\n"
@@ -225,67 +464,67 @@ msgstr ""
 "\n"
 "Voulez-vous continuer? </b></span>\n"
 
-#: ../src/plugins/partdisk.c:771
+#: ../src/plugins/partdisk.c:773
 msgid "Select this partition as root partition?"
 msgstr "Sélectionnez cette partition comme partition racine?"
 
-#: ../src/plugins/partdisk.c:848
+#: ../src/plugins/partdisk.c:845
 msgid "Can't do this operation directly! Change your root partition first."
 msgstr ""
 "Impossible d'effectuer cette opération directement! Veuillez tout d'abord "
 "changer changer la partition racine."
 
-#: ../src/plugins/partdisk.c:895
+#: ../src/plugins/partdisk.c:890
 msgid "Do you want to run gparted to create/modify partitions?"
 msgstr "Voulez-vous utiliser gparted pour créer/modifier des partitions?"
 
-#: ../src/plugins/partdisk.c:923
+#: ../src/plugins/partdisk.c:917
+#, fuzzy
 msgid ""
-"<span face=\"Courier New\"><b>Select and format your partitions or launch "
-"GParted to modify them.</b></span>\n"
+"<b>Select and format your partitions or launch GParted to modify them.</b>\n"
 msgstr ""
 "<span face=\"Courier New\"><b>Sélectionner et formater vos partitions ou "
 "lancer GParted pour les modifier.</b></span>\n"
 
-#: ../src/plugins/partdisk.c:930
+#: ../src/plugins/partdisk.c:924
 msgid " Devices : "
 msgstr " Périphériques : "
 
-#: ../src/plugins/partdisk.c:976
+#: ../src/plugins/partdisk.c:970
 msgid "Partition"
 msgstr "Partition"
 
-#: ../src/plugins/partdisk.c:981 ../src/plugins/select.c:458
-#: ../src/plugins/select.c:561
+#: ../src/plugins/partdisk.c:975 ../src/plugins/select.c:388
+#: ../src/plugins/select.c:491
 msgid "Size"
 msgstr "Taille"
 
-#: ../src/plugins/partdisk.c:986
+#: ../src/plugins/partdisk.c:980
 msgid "Filesystem"
 msgstr "Système de fichiers"
 
-#: ../src/plugins/partdisk.c:991
+#: ../src/plugins/partdisk.c:985
 msgid "Mountpoint"
 msgstr "Point de montage"
 
-#. * Set buttons *//
-#: ../src/plugins/partdisk.c:1015
+#. Set buttons
+#: ../src/plugins/partdisk.c:1009
 msgid "Set as root partition"
 msgstr "Définir comme partition racine"
 
-#: ../src/plugins/partdisk.c:1016
+#: ../src/plugins/partdisk.c:1010
 msgid "Set as swap partition"
 msgstr "Définir comme partition swap"
 
-#: ../src/plugins/partdisk.c:1017
+#: ../src/plugins/partdisk.c:1011
 msgid "Format partition"
 msgstr "Formater la partition"
 
-#: ../src/plugins/partdisk.c:1018
+#: ../src/plugins/partdisk.c:1012
 msgid "Run Gparted"
 msgstr "Démarrer Gparted"
 
-#: ../src/plugins/partdisk.c:1138
+#: ../src/plugins/partdisk.c:1148
 msgid ""
 "You must select at least one root partition to continue to the next stage.\n"
 " For example, to assign a root partition, select the device in list located "
@@ -334,21 +573,22 @@ msgstr ""
 " vous pouvez utiliser GParted mais cela effacera toutes les partitions "
 "sélectionnées."
 
-#: ../src/plugins/greet.c:48
+#: ../src/plugins/greet.c:50
 msgid "Welcome"
 msgstr "Bienvenue"
 
-#: ../src/plugins/greet.c:59
+#: ../src/plugins/greet.c:61
+#, fuzzy
 msgid ""
-"<span face=\"Times New Roman 12\"><b>Welcome among the users of Frugalware!\n"
+"<b>Welcome among the users of Frugalware!\n"
 "\n"
-"</b></span>\n"
+"</b>\n"
 "The aim of creating Frugalware was to help you to do your work faster and "
 "simpler.\n"
-" We hope that you will like our product.\n"
+"We hope that you will like our product.\n"
 "\n"
-"<span font_desc=\"Times New Roman italic 12\" foreground=\"#0000FF\">The "
-"Frugalware Developer Team</span>\n"
+"<span style=\"italic\" foreground=\"#0000FF\">The Frugalware Developer Team</"
+"span>\n"
 msgstr ""
 "<span face=\"Times New Roman 12\"><b>Bienvenu parmi les utilisateurs de "
 "Frugalware!\n"
@@ -364,181 +604,178 @@ msgstr ""
 msgid "Keyboard map selection"
 msgstr "Sélection de la langue du clavier"
 
-#: ../src/plugins/layout.c:323 ../src/plugins/layout.c:464
+#: ../src/plugins/layout.c:281 ../src/plugins/layout.c:429
 msgid "Personalized keyboard"
 msgstr "Clavier personnalisé"
 
-#: ../src/plugins/layout.c:347
+#: ../src/plugins/layout.c:307
 msgid "Console Keymap"
 msgstr "Disposition du clavier pour la console"
 
-#: ../src/plugins/layout.c:358
+#: ../src/plugins/layout.c:323
 msgid "X Keymap (Used only if X server installed)"
 msgstr ""
 "Disposition du clavier pour X (utiliser seulement si le serveur X est "
 "installé)"
 
-#: ../src/plugins/layout.c:364
+#. Combo for X keyboards models
+#: ../src/plugins/layout.c:330
 msgid "Model"
 msgstr "Modèle"
 
-#: ../src/plugins/layout.c:369
+#. Combo for variants
+#: ../src/plugins/layout.c:336
 msgid "Variant"
 msgstr "Variante"
 
-#: ../src/plugins/layout.c:390
+#: ../src/plugins/layout.c:361
 msgid "You must enter a name for this keyboard"
 msgstr "Vous devez entrer un nom pour ce clavier"
 
-#: ../src/plugins/layout.c:433
+#: ../src/plugins/layout.c:399
 msgid "X Layout"
 msgstr "Layout X"
 
-#: ../src/plugins/layout.c:437
+#: ../src/plugins/layout.c:402
 msgid "X Variant"
 msgstr "Variante X"
 
-#: ../src/plugins/layout.c:441
+#: ../src/plugins/layout.c:405
 msgid "Console keymap"
 msgstr "Disposition du clavier pour la console"
 
-#: ../src/plugins/layout.c:456
-msgid ""
-"<span face=\"Courier New\"><b>You may select one of the following keyboard "
-"maps.</b></span>"
+#: ../src/plugins/layout.c:421
+#, fuzzy
+msgid "<b>You may select one of the following keyboard maps.</b>"
 msgstr ""
 "<span face=\"Courier New\"><b>Vous devez sélectionner au moins une "
 "disposition de clavier suivante.</b></span>"
 
-#: ../src/plugins/layout.c:463
+#: ../src/plugins/layout.c:428
 msgid "Test your keyboard here :"
 msgstr "Testez votre clavier ici:"
 
-#: ../src/plugins/select.c:84
+#: ../src/plugins/select.c:86
 msgid "Packages selection"
 msgstr "Sélection de paquets"
 
-#: ../src/plugins/select.c:449 ../src/plugins/select.c:552
+#: ../src/plugins/select.c:379 ../src/plugins/select.c:482
 msgid "Install?"
 msgstr "Installer?"
 
-#: ../src/plugins/select.c:453
+#: ../src/plugins/select.c:383
 msgid "Package Name"
 msgstr "Nom du paquet"
 
-#: ../src/plugins/select.c:556
+#: ../src/plugins/select.c:486
 msgid "Groups"
 msgstr "Groupes"
 
-#: ../src/plugins/select.c:588 ../src/plugins/select.c:1002
+#: ../src/plugins/select.c:518 ../src/plugins/select.c:957
 msgid "<b>Choose groups you want to install :</b>"
 msgstr "<b>Choisissez les groupes que vous voulez installer:</b>"
 
-#: ../src/plugins/select.c:604
-msgid "Select all this group's packages"
-msgstr "Sélectionner tous les paquets de se groupe"
+#: ../src/plugins/select.c:534
+msgid "Select all"
+msgstr "Tout sélectionner"
 
-#: ../src/plugins/select.c:605
-msgid "Unselect all this group's packages"
-msgstr "Désélectionner tous les paquets de se groupe"
+#: ../src/plugins/select.c:535
+msgid "Unselect all"
+msgstr "Tout dé-sélectionner"
 
-#: ../src/plugins/select.c:623
+#: ../src/plugins/select.c:553
 msgid "<b>Choose packages into selected group :</b>"
 msgstr "<b>Choisir les paquets dans les groupes sélectionnés:</b>"
 
-#: ../src/plugins/select.c:748 ../src/plugins/select.c:949
+#: ../src/plugins/select.c:673 ../src/plugins/select.c:904
 msgid "KDE"
 msgstr "KDE"
 
-#: ../src/plugins/select.c:755
-msgid "Gnome"
-msgstr "Gnome"
-
-#: ../src/plugins/select.c:760 ../src/plugins/select.c:967
-msgid "XFCE"
-msgstr "XFCE"
-
-#: ../src/plugins/select.c:765 ../src/plugins/select.c:976
-msgid "LXDE"
-msgstr "LXDE"
-
-#: ../src/plugins/select.c:773 ../src/plugins/select.c:985
-msgid "E17"
-msgstr "E17"
-
-#: ../src/plugins/select.c:943
-msgid "<b>Choose your desktop environment :</b>"
-msgstr "<b>Choisissez votre environnement de bureau:</b>"
-
-#: ../src/plugins/select.c:958
+#: ../src/plugins/select.c:682 ../src/plugins/select.c:913
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/plugins/select.c:1006
+#: ../src/plugins/select.c:686 ../src/plugins/select.c:922
+msgid "XFCE"
+msgstr "XFCE"
+
+#: ../src/plugins/select.c:690 ../src/plugins/select.c:931
+msgid "LXDE"
+msgstr "LXDE"
+
+#: ../src/plugins/select.c:695 ../src/plugins/select.c:940
+msgid "E17"
+msgstr "E17"
+
+#: ../src/plugins/select.c:898
+msgid "<b>Choose your desktop environment :</b>"
+msgstr "<b>Choisissez votre environnement de bureau:</b>"
+
+#: ../src/plugins/select.c:961
 msgid "Graphical Application (Firefox, Thunderbird,...)"
 msgstr "Applications graphiques (Firefox, Thunderbird,...)"
 
-#: ../src/plugins/select.c:1013
+#: ../src/plugins/select.c:968
 msgid "Console Applications (Nano, Vim...)"
 msgstr "Applications console (Nano, Vim...)"
 
-#: ../src/plugins/select.c:1020
+#: ../src/plugins/select.c:975
 msgid "OpenOffice Suite"
 msgstr "Suite OpenOffice"
 
-#: ../src/plugins/select.c:1027
+#: ../src/plugins/select.c:982
 msgid "Network"
 msgstr "Réseau"
 
-#: ../src/plugins/select.c:1034
+#: ../src/plugins/select.c:989
 msgid "Development"
 msgstr "Développement"
 
-#: ../src/plugins/select.c:1041
+#: ../src/plugins/select.c:996
 msgid "Multimedia"
 msgstr "Multimédia"
 
-#: ../src/plugins/select.c:1052
+#: ../src/plugins/select.c:1007
 msgid "<b>You can choose extra groups :</b>"
 msgstr "<b>Vous pouvez choisir des groupes extra:</b>"
 
-#: ../src/plugins/select.c:1056
+#: ../src/plugins/select.c:1011
 msgid "Extra - Graphical Applications"
 msgstr "Extra - Applications graphique"
 
-#: ../src/plugins/select.c:1062
+#: ../src/plugins/select.c:1017
 msgid "Extra - Console Applications"
 msgstr "Extra - Applications console"
 
-#: ../src/plugins/select.c:1068
+#: ../src/plugins/select.c:1023
 msgid "Extra - Games"
 msgstr "Extra - Jeux"
 
-#: ../src/plugins/select.c:1074
+#: ../src/plugins/select.c:1029
 msgid "Extra - Network"
 msgstr "Extra - Réseau"
 
-#: ../src/plugins/select.c:1080
+#: ../src/plugins/select.c:1035
 msgid "Extra - Development"
 msgstr "Extra - Développement"
 
-#: ../src/plugins/select.c:1086
+#: ../src/plugins/select.c:1041
 msgid "Extra - Multimedia"
 msgstr "Extra - Multimédia"
 
-#: ../src/plugins/select.c:1135
+#: ../src/plugins/select.c:1091
 msgid "Loading package's database"
 msgstr "Chargement de la base de données des paquets"
 
-#: ../src/plugins/select.c:1146
+#: ../src/plugins/select.c:1102
 msgid "Initializing pacman-g2"
 msgstr "Initialisation de pacman-g2"
 
-#: ../src/plugins/select.c:1188
+#: ../src/plugins/select.c:1138
 msgid "Udpate and load database"
 msgstr "Mise à jour et chargement de la base de données"
 
-#: ../src/plugins/select.c:1213
+#: ../src/plugins/select.c:1168
 msgid ""
 "Do you want to use expert mode?\n"
 "\n"
@@ -561,67 +798,82 @@ msgstr ""
 "choisissez 'oui' pour utiliser le mode expert avec un bouton pour chaque "
 "paquet."
 
-#: ../src/plugins/install.c:60
+#: ../src/plugins/select.c:1291
+msgid "No enought diskspace available to install all packages"
+msgstr ""
+"Pas assez d'espace disponible sur le disque pour installer tout les paquets"
+
+#: ../src/plugins/install.c:70
 msgid "Installing packages"
 msgstr "Installation des paquets"
 
-#: ../src/plugins/install.c:93
+#: ../src/plugins/install.c:146
 #, c-format
 msgid "Downloading %s... (%d/%d)"
 msgstr "Téléchargement de %s... (%d/%d)"
 
-#: ../src/plugins/install.c:121
+#: ../src/plugins/install.c:178
 #, c-format
 msgid "Installing packages... (%d/%d)"
 msgstr "Installation de paquets... (%d/%d)"
 
-#: ../src/plugins/install.c:124
+#: ../src/plugins/install.c:181
 msgid "Upgrading packages..."
 msgstr "Mise à jours de paquets..."
 
-#: ../src/plugins/install.c:127
-msgid "Removing packages..."
-msgstr "Désinstallation de paquets..."
-
-#: ../src/plugins/install.c:130
-msgid "Checking packages for file conflicts..."
-msgstr "Vérification des paquets pour des conflits de fichiers..."
-
-#: ../src/plugins/install.c:155
-msgid "Checking dependencies"
-msgstr "Vérification des dépendances"
-
-#: ../src/plugins/install.c:158
-msgid "Checking for file conflicts"
-msgstr "Vérifications des conflits de fichiers"
-
-#: ../src/plugins/install.c:161
-msgid "Resolving dependencies"
-msgstr "Résolutions des dépendances"
-
-#: ../src/plugins/install.c:164
-msgid "Looking for inter-conflicts"
-msgstr "Recherche de conflits"
-
-#: ../src/plugins/install.c:167
+#: ../src/plugins/install.c:205
 #, c-format
 msgid "Installing %s-%s"
 msgstr "Installation de %s-%s"
 
-#: ../src/plugins/install.c:172
+#: ../src/plugins/install.c:212
 #, c-format
 msgid "Packet %s-%s installed"
 msgstr "Paquet %s-%s installé"
 
-#: ../src/plugins/install.c:177
+#: ../src/plugins/install.c:219
 #, c-format
 msgid "Retrieving packages from %s"
 msgstr "Téléchargement des paquets depuis %S"
 
-#: ../src/plugins/install.c:180
+#: ../src/plugins/install.c:224
 #, c-format
 msgid "Retrieving packages from local... (%d/%d) : %s"
 msgstr "Téléchargement des paquets en local... (%d/%d): %s"
+
+#: ../src/plugins/install.c:233
+#, fuzzy
+msgid "Checking package integrity..."
+msgstr "Vérification des paquets pour des conflits de fichiers..."
+
+#: ../src/plugins/install.c:236
+msgid "Done"
+msgstr "Effectuée"
+
+#: ../src/plugins/install.c:334
+msgid "Disk full, cannot install more packages"
+msgstr "Disque plein, impossible d'installer plus de paquets"
+
+#: ../src/plugins/install.c:337
+msgid "Some packages seems corrupted, do you want to download them again?"
+msgstr ""
+"Certains paquets semblent corrompus, voulez-vous les télécharger de nouveau?"
+
+#: ../src/plugins/install.c:345
+msgid "Failed to retrieve packages"
+msgstr "Échec de l'obtention des paquets"
+
+#: ../src/plugins/install.c:378
+msgid ""
+"An error occurs during packages installation (see /var/log/fwife.log for "
+"more details)"
+msgstr ""
+"Une erreur est survenue durant l'installation des paquets (voir "
+"/var/log/fwife.log pour plus de détails)"
+
+#: ../src/plugins/install.c:381
+msgid "Packages installation completed"
+msgstr "Installation des paquets terminée"
 
 #: ../src/plugins/postconf.c:67
 msgid "Configure your system"
@@ -710,101 +962,90 @@ msgstr "Utilisez un joystick comme souris"
 msgid "Wacom serial graphics tablet"
 msgstr "Tablette graphique Wacom série"
 
-#: ../src/plugins/postconf.c:139
+#: ../src/plugins/postconf.c:137
 msgid "(COM1: under DOS)"
 msgstr "(COM1: sous DOS)"
 
-#: ../src/plugins/postconf.c:140
+#: ../src/plugins/postconf.c:138
 msgid "(COM2: under DOS)"
 msgstr "(COM2: sous DOS)"
 
-#: ../src/plugins/postconf.c:141
+#: ../src/plugins/postconf.c:139
 msgid "(COM3: under DOS)"
 msgstr "(COM3: sous DOS)"
 
-#: ../src/plugins/postconf.c:142
+#: ../src/plugins/postconf.c:140
 msgid "(COM4: under DOS)"
 msgstr "(COM4: sous DOS)"
 
-#: ../src/plugins/postconf.c:205
+#: ../src/plugins/postconf.c:196
 msgid "Mouse configuration"
 msgstr "Configuration de la souris"
 
-#: ../src/plugins/postconf.c:212
-msgid "Selecting your mouse : "
-msgstr "Sélection de votre souris :"
+#: ../src/plugins/postconf.c:207
+msgid "<b>Select your mouse : </b>"
+msgstr "<b>Sélectionnez votre souris :</b>"
 
-#: ../src/plugins/postconf.c:216
-msgid "Selecting mouse's port :"
+#: ../src/plugins/postconf.c:212
+#, fuzzy
+msgid "<b>Select mouse's port :</b>"
 msgstr "Sélection du port souris :"
 
-#: ../src/plugins/postconf.c:380
-msgid "   X Window Display Manager"
-msgstr "   Gestionnaire de session X"
-
-#: ../src/plugins/postconf.c:384
+#: ../src/plugins/postconf.c:370
 msgid "  KDE Display Manager"
 msgstr "  Gestionnaire de session KDE"
 
-#: ../src/plugins/postconf.c:389
+#: ../src/plugins/postconf.c:375
 msgid "  Gnome Display Manager"
 msgstr "  Gestionnaire de session Gnome"
 
-#: ../src/plugins/postconf.c:394
+#: ../src/plugins/postconf.c:380
 msgid "  Simple Login Manager"
 msgstr "  Gestionnaire de session simple (slim)"
 
-#: ../src/plugins/postconf.c:454
-msgid "Corrupted X installation. Missing file, see log for more details"
-msgstr ""
-"Installation de X corrompue. Fichier manquant, regarder l'historique pour "
-"plus de détails"
+#: ../src/plugins/postconf.c:385
+#, fuzzy
+msgid "  LXDE Display Manager"
+msgstr "  Gestionnaire de session KDE"
 
-#: ../src/plugins/postconf.c:458
+#: ../src/plugins/postconf.c:388
+#, fuzzy
+msgid "  X Window Display Manager"
+msgstr "   Gestionnaire de session X"
+
+#: ../src/plugins/postconf.c:435
 msgid "Configuring X11"
 msgstr "Configuration de X11"
 
-#: ../src/plugins/postconf.c:470
-msgid "X11 Configuration"
-msgstr "Configuration de X11"
-
-#: ../src/plugins/postconf.c:476
-msgid "Resolution :"
-msgstr "Résolution:"
-
-#: ../src/plugins/postconf.c:482
-msgid "Color depth :"
-msgstr "Profondeur de couleurs:"
-
-#: ../src/plugins/postconf.c:488
+#: ../src/plugins/postconf.c:450
 msgid "Select your default display manager : "
 msgstr "Sélectionnez un environnement de bureau par défaut : _"
 
-#: ../src/plugins/postconf.c:591
-msgid ""
-"<span face=\"Courier New\"><b>You can configure some parts of your system</"
-"b></span>"
+#: ../src/plugins/postconf.c:525
+#, fuzzy
+msgid "<b>You can configure some parts of your system</b>"
 msgstr ""
 "<span face=\"Courier New\"><b>Vous pouvez configurer quelques parties de "
 "votre système</b></span>"
 
-#: ../src/plugins/postconf.c:594
+#: ../src/plugins/postconf.c:528
 msgid "Hardware"
 msgstr "Matériel"
 
-#: ../src/plugins/postconf.c:602
+#: ../src/plugins/postconf.c:536
 msgid "Mouse - "
 msgstr "Souris - "
 
-#: ../src/plugins/postconf.c:604 ../src/plugins/postconf.c:619
+#: ../src/plugins/postconf.c:538 ../src/plugins/postconf.c:553
 msgid "<span foreground=\"red\"> Not Configured </span>"
 msgstr "<span foreground=\"red\"> Non configuré </span>"
 
-#: ../src/plugins/postconf.c:609 ../src/plugins/postconf.c:624
+#: ../src/plugins/postconf.c:543 ../src/plugins/postconf.c:558
+#: ../src/plugins/netconf.c:789
 msgid "Configure"
 msgstr "Configurer"
 
-#: ../src/plugins/postconf.c:617
+#: ../src/plugins/postconf.c:551
 msgid "X server - "
 msgstr "Serveur X - "
 
@@ -812,16 +1053,15 @@ msgstr "Serveur X - "
 msgid "Configure root password"
 msgstr "Configuration du mot de passe root"
 
-#: ../src/plugins/rootconf.c:81
+#: ../src/plugins/rootconf.c:80
+#, fuzzy
 msgid ""
-"<span face=\"Courier New\"><b>You can set password on the system "
-"administrator account (root).\n"
+"<b>You can set password on the system administrator account (root).\n"
 " It is recommended that you set one now so that it is active the first time "
 "the machine is rebooted.\n"
 " This is especially important if your machine is on an internet connected "
 "LAN.\n"
-" Is you don't want to set one, keep entry empty and go to the next step.</"
-"b></span>"
+" Is you don't want to set one, keep entry empty and go to the next step.</b>"
 msgstr ""
 "<span face=\"Courier New\"><b>Vous pouvez définir le mot de passe pour "
 "l'administrateur système (root).\n"
@@ -832,11 +1072,11 @@ msgstr ""
 " Si vous ne voulez pas en définir un, veuillez laissé l'entrée vide et allez "
 "à l'étape suivante.</b></span>"
 
-#: ../src/plugins/rootconf.c:87
+#: ../src/plugins/rootconf.c:86
 msgid "Enter root password :  "
 msgstr "Entrer le mot de passe root:"
 
-#: ../src/plugins/rootconf.c:88
+#: ../src/plugins/rootconf.c:87
 msgid "Verify root password :  "
 msgstr "Vérification du mot de passe root:"
 
@@ -844,87 +1084,90 @@ msgstr "Vérification du mot de passe root:"
 msgid "Configure users"
 msgstr "Configurer les utilisateurs"
 
-#: ../src/plugins/usersconf.c:83
-msgid "User can be deleted!"
+#: ../src/plugins/usersconf.c:81
+#, fuzzy
+msgid "User can't be deleted!"
 msgstr "Les utilisateurs peut être effacés!"
 
-#: ../src/plugins/usersconf.c:111 ../src/plugins/usersconf.c:326
+#: ../src/plugins/usersconf.c:109 ../src/plugins/usersconf.c:318
 msgid "Add a new user"
 msgstr "Ajouter un nouvel utilisateur"
 
-#: ../src/plugins/usersconf.c:123
+#: ../src/plugins/usersconf.c:121
 msgid "General Configuration"
 msgstr "Configuration générale"
 
-#: ../src/plugins/usersconf.c:129
+#: ../src/plugins/usersconf.c:127
 msgid "Name :"
 msgstr "Nom:"
 
-#: ../src/plugins/usersconf.c:134
+#: ../src/plugins/usersconf.c:132
 msgid "Full Name :"
 msgstr "Nom complet:"
 
-#: ../src/plugins/usersconf.c:139
+#: ../src/plugins/usersconf.c:137
 msgid "Password : "
 msgstr "Mot de passe:"
 
-#: ../src/plugins/usersconf.c:145
+#: ../src/plugins/usersconf.c:143
 msgid "Enter password :"
 msgstr "Entrer le mot de passe:"
 
-#: ../src/plugins/usersconf.c:151
+#: ../src/plugins/usersconf.c:149
 msgid "Re-enter password :"
 msgstr "Vérification du mot de passe:"
 
-#: ../src/plugins/usersconf.c:157
+#: ../src/plugins/usersconf.c:155
 msgid "Other (optionnal)"
 msgstr "Autre (optionnel)"
 
-#: ../src/plugins/usersconf.c:163 ../src/plugins/usersconf.c:304
+#: ../src/plugins/usersconf.c:161 ../src/plugins/usersconf.c:296
 msgid "Shell"
 msgstr "Console"
 
-#: ../src/plugins/usersconf.c:168
+#: ../src/plugins/usersconf.c:166
 msgid "Home directory"
 msgstr "Répertoire home"
 
-#: ../src/plugins/usersconf.c:187
+#: ../src/plugins/usersconf.c:185
 msgid "Password verification failed! Please try again."
 msgstr "La vérification du mot de passe à échoué! Veuillez réessayer!"
 
-#: ../src/plugins/usersconf.c:203
+#: ../src/plugins/usersconf.c:200
+#, fuzzy
 msgid ""
-"User can be added! Check that you use lowercase name or that there is not an "
-"other user bearing the same name."
+"User can't be added! Check that you use lowercase name or that there is not "
+"an other user bearing the same name."
 msgstr ""
 "L'utilisateur n'a pu être ajouté! Vérifiez que vous vous aillez utiliser un "
 "nom en minuscule ou qu'un autre avec le même nom n'existe pas."
 
-#: ../src/plugins/usersconf.c:282
+#: ../src/plugins/usersconf.c:274
+#, fuzzy
 msgid ""
-"<span face=\"Courier New\"><b>You can configure non-root user account. It is "
-"strongly recommended to create one.</b></span>"
+"<b>You can configure non-root user account. It is strongly recommended to "
+"create one.</b>"
 msgstr ""
 "<span face=\"Courier New\"><b>Vous pouvez configurer un compte utilisateur "
 "non-root. Il est fortement recommandé d'en créer un.</b></span>"
 
-#: ../src/plugins/usersconf.c:296
+#: ../src/plugins/usersconf.c:288
 msgid "User"
 msgstr "Utilisateur"
 
-#: ../src/plugins/usersconf.c:300
+#: ../src/plugins/usersconf.c:292
 msgid "Full Name"
 msgstr "Nom complet"
 
-#: ../src/plugins/usersconf.c:308
+#: ../src/plugins/usersconf.c:300
 msgid "Home"
 msgstr "Répertoire home"
 
-#: ../src/plugins/usersconf.c:312
+#: ../src/plugins/usersconf.c:304
 msgid "Password"
 msgstr "Mot de passe"
 
-#: ../src/plugins/usersconf.c:332
+#: ../src/plugins/usersconf.c:324
 msgid "Remove a user"
 msgstr "Supprimer un utilisateur"
 
@@ -934,7 +1177,8 @@ msgstr "Configuration de GRUB"
 
 #. top info label
 #: ../src/plugins/grubconf.c:75
-msgid "<span face=\"Courier New\"><b>Installing GRUB bootloader</b></span>"
+#, fuzzy
+msgid "<b>Installing GRUB bootloader</b>"
 msgstr ""
 "<span face=\"Courier New\"><b>Installation du chargeur de démarrage GRUB</"
 "b></span>"
@@ -960,7 +1204,7 @@ msgstr "Root  -  Installer sur le superblock (ne pas utiliser avec XFS)"
 msgid "Skip  -  Skip the installation of GRUB."
 msgstr "Ignorer  -  passer l'installation de GRUB."
 
-#: ../src/plugins/grubconf.c:172
+#: ../src/plugins/grubconf.c:171
 msgid ""
 "GRUB can be installed to a variety of places:\n"
 "\n"
@@ -985,224 +1229,69 @@ msgstr ""
 msgid "Timezone configuration"
 msgstr "Configuration du fuseau horraire"
 
-#: ../src/plugins/timeconf.c:392
+#: ../src/plugins/timeconf.c:366
 msgid "Continent/Main City"
 msgstr "Continent/Ville principale"
 
-#: ../src/plugins/timeconf.c:399
+#: ../src/plugins/timeconf.c:373
 msgid "Comments"
 msgstr "Commentaires"
 
-#: ../src/plugins/timeconf.c:413
+#: ../src/plugins/timeconf.c:387
 msgid "Set clock to UTC/GMT time coordinates"
 msgstr "Paramétrer l'horloge au temps coordonné UTC/GMT"
 
-#: ../src/plugins/netconf.c:76
+#: ../src/plugins/netconf.c:83
 msgid "Configuring your network"
 msgstr "Configuration de votre réseau"
 
-#: ../src/plugins/netconf.c:106
-msgid "Use a DHCP server"
-msgstr "Utiliser un serveur DHCP"
+#: ../src/plugins/netconf.c:444
+msgid "Scan for Access Points"
+msgstr "Détection des Points d'Accès"
 
-#: ../src/plugins/netconf.c:107
-msgid "Use a static IP address"
-msgstr "Utiliser une adresse IP statique"
+#: ../src/plugins/netconf.c:575 ../src/plugins/netconf.c:664
+msgid "You must select an interface in the above list."
+msgstr "Vous devez sélectionner une interface de la liste ci-dessus."
 
-#: ../src/plugins/netconf.c:140
-msgid "Select network type"
-msgstr "Sélection d'un type de réseau"
-
-#: ../src/plugins/netconf.c:146
+#: ../src/plugins/netconf.c:670
+#, fuzzy
 msgid ""
-"Now we need to know how your machine connects to the network.\n"
-"If you have an internal network card and an assigned IP address, gateway, "
-"and DNS,\n"
-" use 'static' to enter these values.\n"
-"If your IP address is assigned by a DHCP server (commonly used by cable "
-"modem services),\n"
-" select 'dhcp'. \n"
-msgstr ""
-"Nous avons besoin maintenant de savoir comment votre machine se connecte au "
-"réseau.\n"
-"Si vous avez une carte réseau interne avec une adresse IP définie, une "
-"passerelle, et un DNS,\n"
-" utilisez 'static' pour entrer ses valeurs.\n"
-"Si votre adresse IP est définie par un serveur DHCP (couramment utilisé par "
-"les fournisseurs d'accès internet),\n"
-" utilisez 'dhcp'. \n"
-
-#: ../src/plugins/netconf.c:182
-msgid "Configure Wireless"
-msgstr "Configuration sans fils"
-
-#: ../src/plugins/netconf.c:190
-msgid ""
-"In order to use wireless, you must set your extended netwok name (ESSID).\n"
-"If you have a WEP encryption key, then please enter it below.\n"
-"Examples: 4567-89AB-CD or s:password\n"
-"If you have a WPA passphrase, then please enter it below.\n"
-"Example: secret\n"
-"If you want to use a custom driver (not the generic one, called 'wext'), "
-"then please enter it below.\n"
-"If unsure enter nothing"
-msgstr ""
-"Pour utiliser le réseau sans fils, vous devez entrer votre nom de réseau "
-"étendu (ESSID).\n"
-"Si vous avez une clef de cryptage WEP, veuillez l'entrer ci-dessous.\n"
-"Par exemple: 4567-89AB-CD ou s:password\n"
-"Si vous avez une clef de cryptage WPA, veuillez l'entrer ci-dessous.\n"
-"Par exemple: secret\n"
-"Si vous voulez choisir un pilote particulier (et non le générique, nommé "
-"'wext'), veuillez l'entrer ci-dessous.\n"
-"Si vous n'êtes pas sur, n'entrez rien"
-
-#: ../src/plugins/netconf.c:203
-msgid "Essid : "
-msgstr "Essid : "
-
-#: ../src/plugins/netconf.c:210
-msgid "WEP encryption key : "
-msgstr "Clé de cryptage WEP: "
-
-#: ../src/plugins/netconf.c:217
-msgid "WPA encryption passphrase : "
-msgstr "Clé de cryptage WPA:"
-
-#: ../src/plugins/netconf.c:224
-msgid "WPA Driver : "
-msgstr "Pilote WPA:"
-
-#: ../src/plugins/netconf.c:260
-msgid "Configure static network"
-msgstr "Configuration du réseau statique"
-
-#: ../src/plugins/netconf.c:266
-msgid "Enter static network parameters :"
-msgstr "Entrez les paramètres du réseau statique:"
-
-#: ../src/plugins/netconf.c:270
-msgid "IP Address : "
-msgstr "Adresse IP:"
-
-#: ../src/plugins/netconf.c:277
-msgid "Network Mask : "
-msgstr "Masque réseau:"
-
-#: ../src/plugins/netconf.c:284
-msgid "Gateway : "
-msgstr "Passerelle:"
-
-#: ../src/plugins/netconf.c:331
-msgid "Configure DSL connexion"
-msgstr "Configurer une connexion DSL"
-
-#: ../src/plugins/netconf.c:338
-msgid "Enter DSL parameters"
-msgstr "Entrez les paramètres DSL"
-
-#: ../src/plugins/netconf.c:342
-msgid "PPPOE username : "
-msgstr "Nom d'utilisateur PPPOE:"
-
-#: ../src/plugins/netconf.c:349
-msgid "PPPOE password : "
-msgstr "Mot de passe PPPOE:"
-
-#: ../src/plugins/netconf.c:356
-msgid "Re-enter PPPOE password : "
-msgstr "Vérification du mot de passe PPPOE:"
-
-#: ../src/plugins/netconf.c:363
-msgid "Associate with interface : "
-msgstr "Associer avec l'interface:"
-
-#: ../src/plugins/netconf.c:396
-msgid "Passwords do not match! Try again."
-msgstr "Les mots de passe ne correspondent pas! Essayez encore."
-
-#: ../src/plugins/netconf.c:441
-msgid "This interface has been already configured!"
+"This interface has been already configured! Do you want to configure it "
+"again?"
 msgstr "Cette interface a déjà été configurée!"
 
-#: ../src/plugins/netconf.c:475
-msgid ""
-"It seems that this network card has a wireless extension.\n"
-"\n"
-"Configure your wireless now?"
-msgstr ""
-"Il semble que cette carte réseau possède une extension sans fils.\n"
-"\n"
-"Configurer votre réseaux sans fils maintenant?"
-
-#: ../src/plugins/netconf.c:487
-msgid "Set DHCP hostname"
-msgstr "Sélection du nom d'hôte DHCP"
-
-#: ../src/plugins/netconf.c:487
-msgid ""
-"Some network providers require that the DHCP hostname be\n"
-"set in order to connect.\n"
-" If so, they'll have assigned a hostname to your machine.\n"
-" If you wereassigned a DHCP hostname, please enter it below.\n"
-" If you do not have a DHCP hostname, justhit enter."
-msgstr ""
-"Quelques fournisseurs d'accès internet requièrent que le nom d'hôte DHCP "
-"soit définir\n"
-"pour pouvoir se connecter.\n"
-" Si c'est le cas, un nom d'hôte a été donné pour votre machine.\n"
-" Si un nom d'hôte DHCP vous à été assigné, veuillez l'entrer si dessous.\n"
-" Si vous n'avez pas de nom d'hôte DHCP, veuillez juste appuyer sur Entrée."
-
-#: ../src/plugins/netconf.c:544
-msgid ""
-"<span face=\"Courier New\"><b>You can configure all network interfaces you "
-"need</b></span>"
+#: ../src/plugins/netconf.c:766
+#, fuzzy
+msgid "<b>You can configure all network interfaces you need</b>"
 msgstr ""
 "<span face=\"Courier New\"><b>Vous pouvez configurer tout les interfaces "
 "réseau dont vous avez besoin</b></span>"
 
-#: ../src/plugins/netconf.c:561
-msgid "Device"
-msgstr "Périphérique"
+#: ../src/plugins/netconf.c:785
+#, fuzzy
+msgid "Configuration"
+msgstr "Configuration de X11"
 
-#: ../src/plugins/netconf.c:565
-msgid "Ip Address"
-msgstr "Adresse IP"
+#: ../src/plugins/netconf.c:795
+msgid "DSL Configuration"
+msgstr "Configuration DSL"
 
-#: ../src/plugins/netconf.c:569
-msgid "Netmask"
-msgstr "Masque réseau"
+#: ../src/plugins/netconf.c:819
+msgid ""
+"You can now reconfigure your network if you want to configure others "
+"interfaces or just apply current network configuration.\n"
+"\n"
+"Do you want to apply the current configuration ?"
+msgstr ""
+"Vous pouvez maintenant reconfigurer votre réseau si vous vous voulez "
+"configurer d'autres interfaces ou juste appliquer l'actuelle "
+"configuration.Voulez vous appliquer la configuration actuelle ?"
 
-#: ../src/plugins/netconf.c:573
-msgid "Gateway"
-msgstr "Passerelle"
-
-#: ../src/plugins/netconf.c:577
-msgid "DHCP Nameserver"
-msgstr "Nom du serveur DHCP"
-
-#: ../src/plugins/netconf.c:583
-msgid "Network configuration"
-msgstr "Configuration réseau"
-
-#: ../src/plugins/netconf.c:588
-msgid "Interface :"
-msgstr "Interface:"
-
-#: ../src/plugins/netconf.c:598
-msgid "Network configuration :   "
-msgstr "Configuration réseau:"
-
-#: ../src/plugins/netconf.c:648
-msgid "Do you want to configure a DSL connexion now?"
-msgstr "Voulez vous configurer une connexion DSL maintenant?"
-
-#: ../src/plugins/netconf.c:656
+#: ../src/plugins/netconf.c:864
 msgid "Hostname"
 msgstr "Nom d'hôte"
 
-#: ../src/plugins/netconf.c:656
+#: ../src/plugins/netconf.c:864
 msgid ""
 "We'll need the name you'd like to give your host.\n"
 "The full hostname is needed, such as:\n"
@@ -1218,7 +1307,7 @@ msgstr ""
 "\n"
 "Entrer le nom d'hôte complet:"
 
-#: ../src/plugins/netconf.c:679
+#: ../src/plugins/netconf.c:886
 msgid ""
 "Select network interface you want to configure then click on add button and "
 "follow instructions..."
@@ -1226,11 +1315,11 @@ msgstr ""
 "Sélectionnez l'interface réseau que vous voulez configurer puis cliquez sur "
 "le bouton ajouter et suivez les instructions..."
 
-#: ../src/fwife.c:139
+#: ../src/fwife.c:155
 msgid "Are you sure you want to exit from the installer?\n"
 msgstr "Êtes-vous sûr de vouloir quitter l'installateur?\n"
 
-#: ../src/fwife.c:150
+#: ../src/fwife.c:165
 msgid ""
 "Frugalware installation completed.\n"
 " You can now reboot your computer"
@@ -1238,26 +1327,87 @@ msgstr ""
 "Installation de Frugalware terminée.\n"
 " Vous pouvez à présent redémarrer votre ordinateur"
 
-#: ../src/fwife.c:164
+#: ../src/fwife.c:178 ../src/fwife.c:191 ../src/fwife.c:208
 msgid "Error when running plugin. Please report"
 msgstr "Erreur pendant l'exécution du plugin. Reportez s'il vous plaît"
 
-#: ../src/fwife.c:193
+#: ../src/fwife.c:231
 msgid "Plugin help"
 msgstr "Aide pour cette extension"
 
-#: ../src/fwife.c:206
+#: ../src/fwife.c:244
 msgid "No help available for this plugin"
 msgstr "Pas d'aide disponible pour cette extension"
 
-#: ../src/fwife.c:235
-msgid "Language selection (default : en_US)"
-msgstr "Sélection de la langue (défaut: en_US)"
+#: ../src/fwife.c:273
+msgid "Language selection"
+msgstr "Sélection de la langue"
 
-#: ../src/fwife.c:279
+#: ../src/fwife.c:318
 msgid "Insuffecient privileges. Fwife must be run as root."
 msgstr "Privilèges insuffisant. Fwife doit être exécuter en tant que root."
 
-#: ../src/fwife.c:288
+#: ../src/fwife.c:327
 msgid "Fwife : Frugalware Installer Front-End"
 msgstr "Fwife : Frugalware Installer Front-End"
+
+#~ msgid ""
+#~ "You need an active internet connection ,\n"
+#~ " do you want to configure your network now?"
+#~ msgstr ""
+#~ "Vous avez besoin d'une connexion internet valide,\n"
+#~ " voulez-vous configurer votre réseau maintenant?"
+
+#~ msgid "Select all this group's packages"
+#~ msgstr "Sélectionner tous les paquets de se groupe"
+
+#~ msgid "Unselect all this group's packages"
+#~ msgstr "Désélectionner tous les paquets de se groupe"
+
+#~ msgid "Gnome"
+#~ msgstr "Gnome"
+
+#~ msgid "Removing packages..."
+#~ msgstr "Désinstallation de paquets..."
+
+#~ msgid "Checking dependencies"
+#~ msgstr "Vérification des dépendances"
+
+#~ msgid "Checking for file conflicts"
+#~ msgstr "Vérifications des conflits de fichiers"
+
+#~ msgid "Resolving dependencies"
+#~ msgstr "Résolutions des dépendances"
+
+#~ msgid "Looking for inter-conflicts"
+#~ msgstr "Recherche de conflits"
+
+#~ msgid "Resolution :"
+#~ msgstr "Résolution:"
+
+#~ msgid "Color depth :"
+#~ msgstr "Profondeur de couleurs:"
+
+#~ msgid "Associate with interface : "
+#~ msgstr "Associer avec l'interface:"
+
+#~ msgid "Netmask"
+#~ msgstr "Masque réseau"
+
+#~ msgid "Gateway"
+#~ msgstr "Passerelle"
+
+#~ msgid "DHCP Nameserver"
+#~ msgstr "Nom du serveur DHCP"
+
+#~ msgid "Network configuration"
+#~ msgstr "Configuration réseau"
+
+#~ msgid "Interface :"
+#~ msgstr "Interface:"
+
+#~ msgid "Network configuration :   "
+#~ msgstr "Configuration réseau:"
+
+#~ msgid "Language selection (default : en_US)"
+#~ msgstr "Sélection de la langue (défaut: en_US)"
