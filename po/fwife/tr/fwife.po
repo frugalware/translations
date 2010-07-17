@@ -6,14 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-31 02:27+0200\n"
+"POT-Creation-Date: 2010-07-17 02:03+0200\n"
 "PO-Revision-Date: 2010-07-15 11:45+0200\n"
 "Last-Translator: Tutku Dalmaz <tutkudalmaz@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: tr\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 2.0.2\n"
 
@@ -29,32 +29,32 @@ msgstr "Bayrak"
 msgid "Code"
 msgstr "Kod"
 
-#: ../src/plugins/asklang.c:138 ../src/plugins/layout.c:338
-#: ../src/plugins/layout.c:428
+#: ../src/plugins/asklang.c:138 ../src/plugins/layout.c:298
+#: ../src/plugins/layout.c:395
 msgid "Name"
 msgstr "İsim"
 
-#: ../src/plugins/asklang.c:245 ../src/plugins/configsource.c:117
-#: ../src/plugins/partdisk.c:1069 ../src/plugins/layout.c:505
-#: ../src/util.c:207
+#: ../src/plugins/asklang.c:246 ../src/plugins/configsource.c:142
+#: ../src/plugins/partdisk.c:1075 ../src/plugins/layout.c:472
+#: ../src/util.c:224
 msgid "Could not open output file for writing"
 msgstr "Çıktı dosyası yazma için açılamadı"
 
-#: ../src/plugins/configsource.c:67
+#: ../src/plugins/configsource.c:92
 msgid "Selecting mirrors"
 msgstr "Yansılar seçiliyor"
 
 #. this string should be the best mirror for the given language from
 #. * /etc/pacman-g2/repos
-#: ../src/plugins/configsource.c:83
+#: ../src/plugins/configsource.c:108
 msgid "ftp://ftp5."
 msgstr "ftp://ftp5."
 
-#: ../src/plugins/configsource.c:160
+#: ../src/plugins/configsource.c:185
 msgid "Add a custom server"
 msgstr "Özel sunucu ekle"
 
-#: ../src/plugins/configsource.c:161
+#: ../src/plugins/configsource.c:186
 msgid ""
 "You may specify a custom mirror (eg. LAN) so you can download packages "
 "faster.\n"
@@ -64,48 +64,45 @@ msgstr ""
 "indirirsiniz.\n"
 "Aşağıya sunucu adresini giriniz:"
 
-#: ../src/plugins/configsource.c:190
+#: ../src/plugins/configsource.c:214
 msgid "Can't delete default mirrors"
 msgstr "Öntanımlı yansılar silinemiyor"
 
-#: ../src/plugins/configsource.c:220
+#: ../src/plugins/configsource.c:242
 msgid "Use"
 msgstr "Kullan"
 
-#: ../src/plugins/configsource.c:226
+#: ../src/plugins/configsource.c:248
+msgid "Status"
+msgstr ""
+
+#: ../src/plugins/configsource.c:252
 msgid "Mirrors"
 msgstr "Yansılar"
 
-#: ../src/plugins/configsource.c:231
+#: ../src/plugins/configsource.c:257
 msgid "Froms"
 msgstr "Karşı Taraflar"
 
-#: ../src/plugins/configsource.c:249
+#: ../src/plugins/configsource.c:275
+#, fuzzy
 msgid ""
-"<span face=\"Courier New\"><b>You can choose one or more nearly mirrors to "
-"speed up package downloading.</b></span>"
+"<b>You can choose one or more nearly mirrors to speed up package downloading."
+"</b>"
 msgstr ""
-"<span face=\"Courier New\"><b>Paket indirme işlemini hızlandırmak için bir ya "
-"da daha fazla yakın yansıları seçebilirsiniz.</b></span>"
+"<span face=\"Courier New\"><b>Paket indirme işlemini hızlandırmak için bir "
+"ya da daha fazla yakın yansıları seçebilirsiniz.</b></span>"
 
 #. Set up buttons for custom mirrors
-#: ../src/plugins/configsource.c:265
+#: ../src/plugins/configsource.c:291
 msgid "Add custom mirror"
 msgstr "Özel yansı ekle"
 
-#: ../src/plugins/configsource.c:268
+#: ../src/plugins/configsource.c:292
 msgid "Remove custom mirror"
 msgstr "ÖZel yansı kaldır"
 
-#: ../src/plugins/configsource.c:295
-msgid ""
-"You need an active internet connection ,\n"
-" do you want to configure your network now?"
-msgstr ""
-"Etkin bir internet bağlantısına ihtiyacınız var,\n"
-" Şimdi ağınızı yapılandırmak istiyor musunuz?"
-
-#: ../src/plugins/configsource.c:365
+#: ../src/plugins/configsource.c:392
 msgid ""
 "Select one or more nearly mirrors to speed up package downloading.\n"
 "You can add your own custom mirrors to increase downloadind speed by using "
@@ -116,19 +113,255 @@ msgstr ""
 "Uygun bir düğme ile indirme hızınızı arttırmak için kendi özel yansınızı da "
 "ekleyebilirsiniz."
 
+#: ../src/plugins/configsource.c:595 ../src/plugins/netconf.c:234
+#, fuzzy
+msgid "Select your access point :"
+msgstr "Fare portunuzu seçiniz:"
+
+#: ../src/plugins/configsource.c:613 ../src/plugins/netconf.c:252
+msgid "Signal"
+msgstr ""
+
+#: ../src/plugins/configsource.c:617 ../src/plugins/netconf.c:256
+#, fuzzy
+msgid "Address"
+msgstr "Ip Adresi"
+
+#: ../src/plugins/configsource.c:620 ../src/plugins/netconf.c:259
+msgid "ESSID"
+msgstr ""
+
+#: ../src/plugins/configsource.c:623 ../src/plugins/netconf.c:262
+#, fuzzy
+msgid "Mode"
+msgstr "Model"
+
+#: ../src/plugins/configsource.c:626 ../src/plugins/netconf.c:265
+msgid "Protocol"
+msgstr ""
+
+#: ../src/plugins/configsource.c:629 ../src/plugins/netconf.c:268
+#, fuzzy
+msgid "Encryption"
+msgstr "WEP şifreleme anahtarı: "
+
+#: ../src/plugins/configsource.c:632 ../src/plugins/netconf.c:271
+msgid "Cypher"
+msgstr ""
+
+#: ../src/plugins/configsource.c:671 ../src/plugins/netconf.c:308
+#, fuzzy
+msgid "No encryption"
+msgstr "WEP şifreleme anahtarı: "
+
+#: ../src/plugins/configsource.c:714 ../src/plugins/netconf.c:360
+msgid "Use a DHCP server"
+msgstr "DHCP sunucu kullan"
+
+#: ../src/plugins/configsource.c:715 ../src/plugins/netconf.c:361
+msgid "Use a static IP address"
+msgstr "Sabit IP adresi kullan"
+
+#: ../src/plugins/configsource.c:718 ../src/plugins/netconf.c:347
+msgid "Select network type"
+msgstr "Ağ tipini seçin"
+
+#: ../src/plugins/configsource.c:724 ../src/plugins/netconf.c:353
+msgid ""
+"Now we need to know how your machine connects to the network.\n"
+"If you have an internal network card and an assigned IP address, gateway, "
+"and DNS,\n"
+" use 'static' to enter these values.\n"
+"If your IP address is assigned by a DHCP server (commonly used by cable "
+"modem services),\n"
+" select 'dhcp'. \n"
+msgstr ""
+"Şimdi makineniz ağa nasıl bağlandığını bilmemiz gerekiyor.\n"
+"Eğer dahili bir ağ kartınız, atanmış IP adresiniz, ağ geçidini ve DNS\n"
+" adresiniz varsa 'sabit' seçeneğini seçip, bu değerleri giriniz.\n"
+"Eğer IP adresiniz DHCP sunucu üzerinden atanıyorsa(çoğu kablo\n"
+" modem servisi bunu kullanır) 'dhcp' seçeneğini seçiniz.\\"
+
+#: ../src/plugins/configsource.c:783 ../src/plugins/netconf.c:419
+msgid "Configure Wireless"
+msgstr "Kablosuz Ağı Yapılandır"
+
+#: ../src/plugins/configsource.c:791 ../src/plugins/netconf.c:427
+msgid ""
+"In order to use wireless, you must set your extended netwok name (ESSID).\n"
+"If you have a WEP encryption key, then please enter it below.\n"
+"Examples: 4567-89AB-CD or s:password\n"
+"If you have a WPA passphrase, then please enter it below.\n"
+"Example: secret\n"
+"If you want to use a custom driver (not the generic one, called 'wext'), "
+"then please enter it below.\n"
+"If unsure enter nothing"
+msgstr ""
+"Kablosuz ağı kullanabilmeniz için,genişletilmiş ağ adınızı (ESSID) "
+"ayarlamanız\n"
+"gerekir.\n"
+"Eğer WEP şifreleme anahtarınız varsa,lütfen aşağıda bunu giriniz.\n"
+"Örnekler: 4567-89AB-CD or s:parola\n"
+"Eğer WPA parolanız varsa,lütfen aşağıda bunu giriniz.\n"
+"Örneğin: gizli\n"
+"Eğer özel bir sürücü ('wext' diye adlandırılan standartlardan değil)\n"
+"kullanmak istiyorsanız, lütfen aşağıda bunu giriniz.\n"
+"Eğer emin değilseniz hiçbirşey girmeyiniz"
+
+#: ../src/plugins/configsource.c:804 ../src/plugins/netconf.c:440
+msgid "Essid : "
+msgstr "Essid: "
+
+#: ../src/plugins/configsource.c:808
+msgid "Scan Access Points"
+msgstr ""
+
+#: ../src/plugins/configsource.c:813 ../src/plugins/netconf.c:449
+msgid "WEP encryption key : "
+msgstr "WEP şifreleme anahtarı: "
+
+#: ../src/plugins/configsource.c:820 ../src/plugins/netconf.c:456
+msgid "WPA encryption passphrase : "
+msgstr "WPA şifreleme parolası: "
+
+#: ../src/plugins/configsource.c:827 ../src/plugins/netconf.c:463
+msgid "WPA Driver : "
+msgstr "WPA Sürücüsü: "
+
+#: ../src/plugins/configsource.c:861 ../src/plugins/netconf.c:500
+msgid "Configure static network"
+msgstr "Sabit ağı yapılandır"
+
+#: ../src/plugins/configsource.c:867 ../src/plugins/netconf.c:506
+msgid "Enter static network parameters :"
+msgstr "Sabit ağ parametlerelerini girin:"
+
+#: ../src/plugins/configsource.c:871 ../src/plugins/netconf.c:510
+msgid "IP Address : "
+msgstr "IP Adresi: "
+
+#: ../src/plugins/configsource.c:878 ../src/plugins/netconf.c:517
+msgid "Network Mask : "
+msgstr "Ağ Maskesi: "
+
+#: ../src/plugins/configsource.c:885 ../src/plugins/netconf.c:524
+msgid "Gateway : "
+msgstr "Ağ Geçidi: "
+
+#: ../src/plugins/configsource.c:924 ../src/plugins/netconf.c:579
+#, fuzzy, c-format
+msgid ""
+"Do you want to configure a DSL connection associated with the interface %s?"
+msgstr "DSL bağlantınızı şimdi yapılandırmak istiyor musunuz?"
+
+#: ../src/plugins/configsource.c:935 ../src/plugins/netconf.c:587
+#, fuzzy
+msgid "Configure DSL connection"
+msgstr "DSL bağlantısını yapılandır"
+
+#: ../src/plugins/configsource.c:942 ../src/plugins/netconf.c:594
+msgid "Enter DSL parameters"
+msgstr "DSL parametrelerini girin"
+
+#: ../src/plugins/configsource.c:946 ../src/plugins/netconf.c:598
+msgid "PPPOE username : "
+msgstr "PPPOE kullanıcı adı: "
+
+#: ../src/plugins/configsource.c:953 ../src/plugins/netconf.c:605
+msgid "PPPOE password : "
+msgstr "PPPOE parolası: "
+
+#: ../src/plugins/configsource.c:960 ../src/plugins/netconf.c:612
+msgid "Re-enter PPPOE password : "
+msgstr "PPPOE parolasını tekrar girin: "
+
+#: ../src/plugins/configsource.c:976 ../src/plugins/netconf.c:628
+msgid "Passwords do not match! Try again."
+msgstr "Parolalar eşleşmiyor! Tekrar deneyiniz."
+
+#: ../src/plugins/configsource.c:1007
+msgid ""
+"Fwife cannot connect to internet with this configuration, do you want to "
+"apply this configuration anyway?"
+msgstr ""
+
+#: ../src/plugins/configsource.c:1035
+#, fuzzy
+msgid "Select your network interface :"
+msgstr "Ağ tipini seçin"
+
+#: ../src/plugins/configsource.c:1056 ../src/plugins/netconf.c:778
+msgid "Device"
+msgstr "Aygıt"
+
+#: ../src/plugins/configsource.c:1059 ../src/plugins/netconf.c:781
+#, fuzzy
+msgid "Description"
+msgstr "Bölüm"
+
+#: ../src/plugins/configsource.c:1126
+#, c-format
+msgid ""
+"A netconfig profile (\"%s\") has been found on your current installation.\n"
+"Do you want to use it?"
+msgstr ""
+
+#: ../src/plugins/configsource.c:1156
+#, c-format
+msgid ""
+"An active connection seems to have been found on interface %s using dhcp.\n"
+"Do you want to use it?"
+msgstr ""
+
+#: ../src/plugins/configsource.c:1181
+msgid ""
+"An active connection seems to have been found but the connection's type have "
+"not been found.\n"
+"Do you want to use it anyway?"
+msgstr ""
+
+#: ../src/plugins/configsource.c:1202 ../src/plugins/netconf.c:695
+msgid ""
+"It seems that this network card has a wireless extension.\n"
+"\n"
+"Configure your wireless now?"
+msgstr ""
+"Bu ağ kartının kablosuz genişlemesi var gibi görünüyor.\n"
+"\n"
+"Kablosuz ağınız şimdi yapılandırılsın mı?"
+
+#: ../src/plugins/configsource.c:1213 ../src/plugins/netconf.c:706
+msgid "Set DHCP hostname"
+msgstr "DHCP sunucu adını ayarla"
+
+#: ../src/plugins/configsource.c:1213 ../src/plugins/netconf.c:706
+msgid ""
+"Some network providers require that the DHCP hostname be\n"
+"set in order to connect.\n"
+" If so, they'll have assigned a hostname to your machine.\n"
+" If you wereassigned a DHCP hostname, please enter it below.\n"
+" If you do not have a DHCP hostname, justhit enter."
+msgstr ""
+"Bazı ağ sağlayıcıları, ağa bağlanabilmek için DHCP sunucu adını\n"
+"şart koşarlar.\n"
+" Eğer öyleyse,makinenize bir sunucu adı atayacaklardır.\n"
+" Eğer bir DHCP sunucu adı atanmış ise, lütfen aşağıda bunu giriniz.\\ Eğer "
+"DHCP sunucu adınız yoksa,ENTER tuşuna basınız."
+
 #: ../src/plugins/finish.c:60
 msgid "Installation completed"
 msgstr "Kurulum tamamlandı"
 
-#: ../src/plugins/finish.c:70
-msgid "Installation completed! We hope that you enjoy Frugalware!"
+#: ../src/plugins/finish.c:71
+#, fuzzy
+msgid "<b>Installation completed! We hope that you enjoy Frugalware!</b>"
 msgstr "Kurulum tamamlandı!Frugalware'dan hoşlanacağınızı umuyoruz!"
 
-#: ../src/plugins/partdisk.c:91
+#: ../src/plugins/partdisk.c:100
 msgid "Partitioning the disk drives"
 msgstr "Disk sürücüler bölümlendiriliyor"
 
-#: ../src/plugins/partdisk.c:449
+#: ../src/plugins/partdisk.c:473
 msgid ""
 "If you want to change your root partition, select the new partition and use "
 "\"Set root partition\" button!"
@@ -136,82 +369,86 @@ msgstr ""
 "Yönetici bölümünüzü değiştirmek isterseniz,yeni bölümü seçin ve \"Yönetici "
 "bölümü olarak ayarla\" düğmesini kullanın!"
 
-#: ../src/plugins/partdisk.c:454
+#: ../src/plugins/partdisk.c:476
 msgid "Unselect this swap partition?"
 msgstr "Bu takas alanının seçimi kaldırılsın mı?"
 
-#: ../src/plugins/partdisk.c:467
+#: ../src/plugins/partdisk.c:488
 msgid "Use the suitable button to perform this action!"
 msgstr "Bu işlemi yerine getirmek için uygun düğmeyi kullanın!"
 
-#: ../src/plugins/partdisk.c:537 ../src/plugins/partdisk.c:701
+#: ../src/plugins/partdisk.c:550 ../src/plugins/partdisk.c:703
 msgid "Do you want to format partition?"
 msgstr "Bölümü biçimlendirmek istiyor musunuz?"
 
-#. On utilise les balises
-#: ../src/plugins/partdisk.c:551
+#: ../src/plugins/partdisk.c:562
+#, fuzzy
 msgid ""
-"<span face=\"Courier New\" foreground=\"#f90909\"><b>!!! NOTE: This will "
-"erase all data on it. Would you like to format this partition? !!!</b></"
-"span>\n"
-msgstr "<span face=\"Courier New\" foreground=\"#f90909\"><b>!!! NOT: Bu işlem disk "
+"<span foreground=\"#f90909\"><b>!!! NOTE: This will erase all data on it. "
+"Would you like to format this partition? !!!</b></span>\n"
+msgstr ""
+"<span face=\"Courier New\" foreground=\"#f90909\"><b>!!! NOT: Bu işlem disk "
 "üzerindeki tüm verileri temizleyecek. Bu bölümü biçimlendirmek istiyor "
 "musunuz?!!!</b></span>\n"
 
-#: ../src/plugins/partdisk.c:555
-msgid "Choose filesystem :"
+#: ../src/plugins/partdisk.c:566
+#, fuzzy
+msgid "<b>Choose filesystem :</b>\n"
 msgstr "Dosya sistemini seçiniz:"
 
 #. Ext3 filesystem - default
-#: ../src/plugins/partdisk.c:559 ../src/plugins/partdisk.c:624
+#: ../src/plugins/partdisk.c:570 ../src/plugins/partdisk.c:628
 msgid "ext3 - Journalising version of the ext2 filesystem"
 msgstr "ext3 -ext2 dosya sisteminin günlüklü sürümüdür"
 
 #. Ext2 filesystem
-#: ../src/plugins/partdisk.c:562 ../src/plugins/partdisk.c:622
+#: ../src/plugins/partdisk.c:573 ../src/plugins/partdisk.c:626
 msgid "ext2 - Standard Linux ext2 filesystem"
 msgstr "ext2 - Standart Linux ext2 dosya sistemidir"
 
 #. Ext4 filesystem , experimental by now
-#: ../src/plugins/partdisk.c:567 ../src/plugins/partdisk.c:626
-msgid "ext4 - The evolution of the of the ext3 filesystem (EXPERIMENTAL!)"
+#: ../src/plugins/partdisk.c:576 ../src/plugins/partdisk.c:630
+#, fuzzy
+msgid "ext4 - The evolution of the ext3 filesystem (EXPERIMENTAL!)"
 msgstr "ext4 - ext3 dosya sisteminin evrimidir (DENEYSEL)"
 
 #. Reiser Filesystem
-#: ../src/plugins/partdisk.c:573 ../src/plugins/partdisk.c:628
+#: ../src/plugins/partdisk.c:583 ../src/plugins/partdisk.c:632
 msgid "reiserfs - Hans Reiser's journalising filesystem"
 msgstr "reiserfs - Hans Reiser'in günlüklü dosya sistemidir"
 
 #. XFS
-#: ../src/plugins/partdisk.c:577 ../src/plugins/partdisk.c:630
+#: ../src/plugins/partdisk.c:587 ../src/plugins/partdisk.c:634
 msgid "xfs - SGI's journalising filesystem"
 msgstr "xfs - SGI'nin günlüklü dosya sistemidir"
 
-#: ../src/plugins/partdisk.c:580
+#: ../src/plugins/partdisk.c:590
 msgid "Noformat - keep filesystem"
 msgstr "Noformat - dosya sistemini koru"
 
-#: ../src/plugins/partdisk.c:586
-msgid "Options :"
+#: ../src/plugins/partdisk.c:597
+#, fuzzy
+msgid "<b>Options :</b>\n"
 msgstr "Seçenekler:"
 
-#: ../src/plugins/partdisk.c:589
+#: ../src/plugins/partdisk.c:600
 msgid "Check for bad blocks - slowly"
 msgstr "Blok hatalarını denetle - yavaşça"
 
 #. change label
-#: ../src/plugins/partdisk.c:647
-msgid ""
-"<span face=\"Courier New\"><b>Creating filesystem... Please wait ... </b></"
-"span>\n"
-msgstr "<span face=\"Courier New\"><b>Dosya sistemi oluşturuluyor... Lütfen bekleyiniz "
-"... </b></span>\n"
+#: ../src/plugins/partdisk.c:648
+#, fuzzy
+msgid "<b>Creating filesystem... Please wait ... </b>\n"
+msgstr ""
+"<span face=\"Courier New\"><b>Dosya sistemi oluşturuluyor... Lütfen "
+"bekleyiniz ... </b></span>\n"
 
 #. On utilise les balises
-#: ../src/plugins/partdisk.c:715
+#: ../src/plugins/partdisk.c:717
+#, fuzzy
 msgid ""
-"<span face=\"Courier New\" foreground=\"#f90909\"><b>You need to format is "
-"you want to use it as a swap partition!\n"
+"<span foreground=\"#f90909\"><b>You need to format is you want to use it as "
+"a swap partition!\n"
 "This will erase all your data on that partition !\n"
 "\n"
 " Do you want to continue? </b></span>\n"
@@ -222,66 +459,67 @@ msgstr ""
 "\n"
 "Devam etmek istiyor musunuz? </b></span>\n"
 
-#: ../src/plugins/partdisk.c:771
+#: ../src/plugins/partdisk.c:773
 msgid "Select this partition as root partition?"
 msgstr "Bu bölüm yönetici bölümü olarak seçilsin mi?"
 
-#: ../src/plugins/partdisk.c:848
+#: ../src/plugins/partdisk.c:845
 msgid "Can't do this operation directly! Change your root partition first."
 msgstr "Bu işlem doğrudan yapılamaz!İlk olarak yönetici bölümünüzü değiştirin."
 
-#: ../src/plugins/partdisk.c:895
+#: ../src/plugins/partdisk.c:890
 msgid "Do you want to run gparted to create/modify partitions?"
 msgstr ""
 "Bölümleri oluşturmak/değiştirmek içn gparted yazılımını çalıştırmak istiyor "
 "musunuz?"
 
-#: ../src/plugins/partdisk.c:923
+#: ../src/plugins/partdisk.c:917
+#, fuzzy
 msgid ""
-"<span face=\"Courier New\"><b>Select and format your partitions or launch "
-"GParted to modify them.</b></span>\n"
-msgstr "<span face=\"Courier New\"><b>Bölümlerinizi seçip biçimlendirin ya da bunları "
-"değiştirmek için GParted yazılımını başlatın.</b></span>\n"
+"<b>Select and format your partitions or launch GParted to modify them.</b>\n"
+msgstr ""
+"<span face=\"Courier New\"><b>Bölümlerinizi seçip biçimlendirin ya da "
+"bunları değiştirmek için GParted yazılımını başlatın.</b></span>\n"
 
-#: ../src/plugins/partdisk.c:930
+#: ../src/plugins/partdisk.c:924
 msgid " Devices : "
 msgstr " Aygıtlar: "
 
-#: ../src/plugins/partdisk.c:976
+#: ../src/plugins/partdisk.c:970
 msgid "Partition"
 msgstr "Bölüm"
 
-#: ../src/plugins/partdisk.c:981 ../src/plugins/select.c:458
-#: ../src/plugins/select.c:561
+#: ../src/plugins/partdisk.c:975 ../src/plugins/select.c:388
+#: ../src/plugins/select.c:491
 msgid "Size"
 msgstr "Boyut"
 
-#: ../src/plugins/partdisk.c:986
+#: ../src/plugins/partdisk.c:980
 msgid "Filesystem"
 msgstr "Dosya Sistemi"
 
-#: ../src/plugins/partdisk.c:991
+#: ../src/plugins/partdisk.c:985
 msgid "Mountpoint"
 msgstr "Bağlama Noktası"
 
-#. * Set buttons *//
-#: ../src/plugins/partdisk.c:1015
+#. Set buttons
+#: ../src/plugins/partdisk.c:1009
 msgid "Set as root partition"
 msgstr "Yönetici bölümü olarak ayarla"
 
-#: ../src/plugins/partdisk.c:1016
+#: ../src/plugins/partdisk.c:1010
 msgid "Set as swap partition"
 msgstr "Takas alanı olarak ayarla"
 
-#: ../src/plugins/partdisk.c:1017
+#: ../src/plugins/partdisk.c:1011
 msgid "Format partition"
 msgstr "Bölümü biçimlendir"
 
-#: ../src/plugins/partdisk.c:1018
+#: ../src/plugins/partdisk.c:1012
 msgid "Run Gparted"
 msgstr "Gparted yazılımını başlat"
 
-#: ../src/plugins/partdisk.c:1138
+#: ../src/plugins/partdisk.c:1148
 msgid ""
 "You must select at least one root partition to continue to the next stage.\n"
 " For example, to assign a root partition, select the device in list located "
@@ -322,26 +560,27 @@ msgstr ""
 "üzerine\n"
 "(\"Bağlama Noktası\" kolonu) çift tıklayarak düzenleyebilirsiniz.\n"
 "\n"
-"Eğer bölümleme tablosunu değiştirmek istiyorsanız (bölümler oluşturmak ya da "
-" düzenlemek için) GParted yazılımını çalıştırınız, fakat bu yazılım seçili "
-"bölümlemedeki\n"
+"Eğer bölümleme tablosunu değiştirmek istiyorsanız (bölümler oluşturmak ya "
+"da  düzenlemek için) GParted yazılımını çalıştırınız, fakat bu yazılım "
+"seçili bölümlemedeki\n"
 " tüm verileri temizler."
 
-#: ../src/plugins/greet.c:48
+#: ../src/plugins/greet.c:50
 msgid "Welcome"
 msgstr "Hoşgeldiniz"
 
-#: ../src/plugins/greet.c:59
+#: ../src/plugins/greet.c:61
+#, fuzzy
 msgid ""
-"<span face=\"Times New Roman 12\"><b>Welcome among the users of Frugalware!\n"
+"<b>Welcome among the users of Frugalware!\n"
 "\n"
-"</b></span>\n"
+"</b>\n"
 "The aim of creating Frugalware was to help you to do your work faster and "
 "simpler.\n"
-" We hope that you will like our product.\n"
+"We hope that you will like our product.\n"
 "\n"
-"<span font_desc=\"Times New Roman italic 12\" foreground=\"#0000FF\">The "
-"Frugalware Developer Team</span>\n"
+"<span style=\"italic\" foreground=\"#0000FF\">The Frugalware Developer Team</"
+"span>\n"
 msgstr ""
 "<span face=\"Times New Roman 12\"><b>Frugalware kullanıcıları arasına hoş "
 "geldiniz!\n"
@@ -351,186 +590,184 @@ msgstr ""
 "yapmanızda size\n"
 "yardımcı olmasıdır.Umarız ürünümüzden memnun kalırsınız.\n"
 "\n"
-"<span font_desc=\"Times New Roman italic 12\" foreground=\"#0000FF\">Frugalware "
-"Geliştirici Takımı</span>\n"
+"<span font_desc=\"Times New Roman italic 12\" foreground=\"#0000FF"
+"\">Frugalware Geliştirici Takımı</span>\n"
 
 #: ../src/plugins/layout.c:76
 msgid "Keyboard map selection"
 msgstr "Klavye düzeni seçimi"
 
-#: ../src/plugins/layout.c:323 ../src/plugins/layout.c:464
+#: ../src/plugins/layout.c:281 ../src/plugins/layout.c:429
 msgid "Personalized keyboard"
 msgstr "Kişiselleştirilmiş klavye"
 
-#: ../src/plugins/layout.c:347
+#: ../src/plugins/layout.c:307
 msgid "Console Keymap"
 msgstr "Konsol Klavyesi"
 
-#: ../src/plugins/layout.c:358
+#: ../src/plugins/layout.c:323
 msgid "X Keymap (Used only if X server installed)"
 msgstr "X Klavye Düzeni (Eğer sadece X sunucu kurulmuşsa kullanılır)"
 
-#: ../src/plugins/layout.c:364
+#. Combo for X keyboards models
+#: ../src/plugins/layout.c:330
 msgid "Model"
 msgstr "Model"
 
-#: ../src/plugins/layout.c:369
+#. Combo for variants
+#: ../src/plugins/layout.c:336
 msgid "Variant"
 msgstr "Değişken"
 
-#: ../src/plugins/layout.c:390
+#: ../src/plugins/layout.c:361
 msgid "You must enter a name for this keyboard"
 msgstr "Bu klavye için bir isim girmelisiniz"
 
-#: ../src/plugins/layout.c:433
+#: ../src/plugins/layout.c:399
 msgid "X Layout"
 msgstr "X Düzeni"
 
-#: ../src/plugins/layout.c:437
+#: ../src/plugins/layout.c:402
 msgid "X Variant"
 msgstr "X Değişkeni"
 
-#: ../src/plugins/layout.c:441
+#: ../src/plugins/layout.c:405
 msgid "Console keymap"
 msgstr "Konsol klavye düzeni"
 
-#: ../src/plugins/layout.c:456
-msgid ""
-"<span face=\"Courier New\"><b>You may select one of the following keyboard "
-"maps.</b></span>"
+#: ../src/plugins/layout.c:421
+#, fuzzy
+msgid "<b>You may select one of the following keyboard maps.</b>"
 msgstr ""
 "<span face=\"Courier New\"><b>Aşağıdaki kalvye düzenlerinden bir tanesini "
 "seçiniz.</b></span>"
 
-#: ../src/plugins/layout.c:463
+#: ../src/plugins/layout.c:428
 msgid "Test your keyboard here :"
 msgstr "Klavyenizi burada test ediniz:"
 
-#: ../src/plugins/select.c:84
+#: ../src/plugins/select.c:86
 msgid "Packages selection"
 msgstr "Paket seçimi"
 
-#: ../src/plugins/select.c:449 ../src/plugins/select.c:552
+#: ../src/plugins/select.c:379 ../src/plugins/select.c:482
 msgid "Install?"
 msgstr "Kurulsun mu?"
 
-#: ../src/plugins/select.c:453
+#: ../src/plugins/select.c:383
 msgid "Package Name"
 msgstr "Paket Adı"
 
-#: ../src/plugins/select.c:556
+#: ../src/plugins/select.c:486
 msgid "Groups"
 msgstr "Gruplar"
 
-#: ../src/plugins/select.c:588 ../src/plugins/select.c:1002
+#: ../src/plugins/select.c:518 ../src/plugins/select.c:957
 msgid "<b>Choose groups you want to install :</b>"
 msgstr "<b>Kurmak istediğiniz grupları seçiniz:</b>"
 
-#: ../src/plugins/select.c:604
-msgid "Select all this group's packages"
-msgstr "Bu grubun tüm paketlerin seç"
+#: ../src/plugins/select.c:534
+msgid "Select all"
+msgstr ""
 
-#: ../src/plugins/select.c:605
-msgid "Unselect all this group's packages"
-msgstr "Bu grubun tüm paketlerinin seçimini kaldır"
+#: ../src/plugins/select.c:535
+#, fuzzy
+msgid "Unselect all"
+msgstr "Kurulsun mu?"
 
-#: ../src/plugins/select.c:623
+#: ../src/plugins/select.c:553
 msgid "<b>Choose packages into selected group :</b>"
 msgstr "<b>Seçili gruptan paketleri seçiniz :</b>"
 
-#: ../src/plugins/select.c:748 ../src/plugins/select.c:949
+#: ../src/plugins/select.c:673 ../src/plugins/select.c:904
 msgid "KDE"
 msgstr "KDE"
 
-#: ../src/plugins/select.c:755
-msgid "Gnome"
-msgstr "Gnome"
-
-#: ../src/plugins/select.c:760 ../src/plugins/select.c:967
-msgid "XFCE"
-msgstr "XFCE"
-
-#: ../src/plugins/select.c:765 ../src/plugins/select.c:976
-msgid "LXDE"
-msgstr "LXDE"
-
-#: ../src/plugins/select.c:773 ../src/plugins/select.c:985
-msgid "E17"
-msgstr "E17"
-
-#: ../src/plugins/select.c:943
-msgid "<b>Choose your desktop environment :</b>"
-msgstr "<b>Masaüstü ortamınızı seçiniz :</b>"
-
-#: ../src/plugins/select.c:958
+#: ../src/plugins/select.c:682 ../src/plugins/select.c:913
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/plugins/select.c:1006
+#: ../src/plugins/select.c:686 ../src/plugins/select.c:922
+msgid "XFCE"
+msgstr "XFCE"
+
+#: ../src/plugins/select.c:690 ../src/plugins/select.c:931
+msgid "LXDE"
+msgstr "LXDE"
+
+#: ../src/plugins/select.c:695 ../src/plugins/select.c:940
+msgid "E17"
+msgstr "E17"
+
+#: ../src/plugins/select.c:898
+msgid "<b>Choose your desktop environment :</b>"
+msgstr "<b>Masaüstü ortamınızı seçiniz :</b>"
+
+#: ../src/plugins/select.c:961
 msgid "Graphical Application (Firefox, Thunderbird,...)"
 msgstr "Görsel Uygulama(Firefox, Thunderbird,...)"
 
-#: ../src/plugins/select.c:1013
+#: ../src/plugins/select.c:968
 msgid "Console Applications (Nano, Vim...)"
 msgstr "Konsol Uygulaması(Nano, Vim...)"
 
-#: ../src/plugins/select.c:1020
+#: ../src/plugins/select.c:975
 msgid "OpenOffice Suite"
 msgstr "OpenOffice Yazılımı"
 
-#: ../src/plugins/select.c:1027
+#: ../src/plugins/select.c:982
 msgid "Network"
 msgstr "Ağ"
 
-#: ../src/plugins/select.c:1034
+#: ../src/plugins/select.c:989
 msgid "Development"
 msgstr "Geliştirme"
 
-#: ../src/plugins/select.c:1041
+#: ../src/plugins/select.c:996
 msgid "Multimedia"
 msgstr "Çokluortam"
 
-#: ../src/plugins/select.c:1052
+#: ../src/plugins/select.c:1007
 msgid "<b>You can choose extra groups :</b>"
 msgstr "<b>Fazladan grup seçebilirsiniz :</b>"
 
-#: ../src/plugins/select.c:1056
+#: ../src/plugins/select.c:1011
 msgid "Extra - Graphical Applications"
 msgstr "Fazladan - Görsel Uygulamalar"
 
-#: ../src/plugins/select.c:1062
+#: ../src/plugins/select.c:1017
 msgid "Extra - Console Applications"
 msgstr "Fazladan - Konsol Uygulamaları"
 
-#: ../src/plugins/select.c:1068
+#: ../src/plugins/select.c:1023
 msgid "Extra - Games"
 msgstr "Fazladan - Oyunlar"
 
-#: ../src/plugins/select.c:1074
+#: ../src/plugins/select.c:1029
 msgid "Extra - Network"
 msgstr "Fazladan - Ağ"
 
-#: ../src/plugins/select.c:1080
+#: ../src/plugins/select.c:1035
 msgid "Extra - Development"
 msgstr "Fazladan - Geliştirme"
 
-#: ../src/plugins/select.c:1086
+#: ../src/plugins/select.c:1041
 msgid "Extra - Multimedia"
 msgstr "Fazladan - Çokluortam"
 
-#: ../src/plugins/select.c:1135
+#: ../src/plugins/select.c:1091
 msgid "Loading package's database"
 msgstr "Paketlerin veritabanı yükleniyor"
 
-#: ../src/plugins/select.c:1146
+#: ../src/plugins/select.c:1102
 msgid "Initializing pacman-g2"
 msgstr "pacman-g2 başlatılıyor"
 
-#: ../src/plugins/select.c:1188
+#: ../src/plugins/select.c:1138
 msgid "Udpate and load database"
 msgstr "Veritabanını güncelle ve yükle"
 
-#: ../src/plugins/select.c:1213
+#: ../src/plugins/select.c:1168
 msgid ""
 "Do you want to use expert mode?\n"
 "\n"
@@ -545,74 +782,88 @@ msgstr ""
 "İleri kullanıcı kipide kullanmak istiyor musunuz?\n"
 "\n"
 "Normal kip,seçimleri 'C Derleyici Sistemi' şeklinde, ileri kullanıcı kipi 'C "
-"kütüphaneleri', 'C derleyici', 'C include dosyaları' vb. şeklinde "
-"görüntüler.Açıkca, bazı paketleri atlamaksistem işlevselliği açısından çok "
-"önemli olduğu için, ileri kullanıcı kipinde ne yaptığınızı bilmeniz "
-"gerekir.Normal kipte kullanmak için 'hayır' seçeneğini seçiniz, ardından "
-"paketlerin gruplarını seçiniz, ya da 'evet' seçeneğini seçerek ileri "
-"kullanıcı kipinde her paket için işlem yapınız."
+"kütüphaneleri', 'C derleyici', 'C include dosyaları' vb. şeklinde görüntüler."
+"Açıkca, bazı paketleri atlamaksistem işlevselliği açısından çok önemli "
+"olduğu için, ileri kullanıcı kipinde ne yaptığınızı bilmeniz gerekir.Normal "
+"kipte kullanmak için 'hayır' seçeneğini seçiniz, ardından paketlerin "
+"gruplarını seçiniz, ya da 'evet' seçeneğini seçerek ileri kullanıcı kipinde "
+"her paket için işlem yapınız."
 
-#: ../src/plugins/install.c:60
+#: ../src/plugins/select.c:1291
+msgid "No enought diskspace available to install all packages"
+msgstr ""
+
+#: ../src/plugins/install.c:70
 msgid "Installing packages"
 msgstr "Paketler kuruluyor"
 
-#: ../src/plugins/install.c:93
+#: ../src/plugins/install.c:146
 #, c-format
 msgid "Downloading %s... (%d/%d)"
 msgstr "%s indiriliyor... (%d%d)"
 
-#: ../src/plugins/install.c:121
+#: ../src/plugins/install.c:178
 #, c-format
 msgid "Installing packages... (%d/%d)"
 msgstr "Paketler kuruluyor... (%d%d)"
 
-#: ../src/plugins/install.c:124
+#: ../src/plugins/install.c:181
 msgid "Upgrading packages..."
 msgstr "Paketler yükseltiliyor..."
 
-#: ../src/plugins/install.c:127
-msgid "Removing packages..."
-msgstr "Paketler kaldırılıyor..."
-
-#: ../src/plugins/install.c:130
-msgid "Checking packages for file conflicts..."
-msgstr "Paketler çakışmaya karşı denetleniyor..."
-
-#: ../src/plugins/install.c:155
-msgid "Checking dependencies"
-msgstr "Bağımlılıklar denetleniyor"
-
-#: ../src/plugins/install.c:158
-msgid "Checking for file conflicts"
-msgstr "Dosya çakışmaları denetleniyor"
-
-#: ../src/plugins/install.c:161
-msgid "Resolving dependencies"
-msgstr "Bağımlılıklar çözümleniyor"
-
-#: ../src/plugins/install.c:164
-msgid "Looking for inter-conflicts"
-msgstr "Karşılıklı çakışmalar aranıyor"
-
-#: ../src/plugins/install.c:167
+#: ../src/plugins/install.c:205
 #, c-format
 msgid "Installing %s-%s"
 msgstr "%s-%s kuruluyor"
 
-#: ../src/plugins/install.c:172
+#: ../src/plugins/install.c:212
 #, c-format
 msgid "Packet %s-%s installed"
 msgstr "%s-%s paketi kuruldu"
 
-#: ../src/plugins/install.c:177
+#: ../src/plugins/install.c:219
 #, c-format
 msgid "Retrieving packages from %s"
 msgstr "Paketler %s adresinden alınıyor"
 
-#: ../src/plugins/install.c:180
+#: ../src/plugins/install.c:224
 #, c-format
 msgid "Retrieving packages from local... (%d/%d) : %s"
 msgstr "Paketler yerelden alınıyor... (%d%d): %s"
+
+#: ../src/plugins/install.c:233
+#, fuzzy
+msgid "Checking package integrity..."
+msgstr "Paketler çakışmaya karşı denetleniyor..."
+
+#: ../src/plugins/install.c:236
+msgid "Done"
+msgstr ""
+
+#: ../src/plugins/install.c:334
+msgid "Disk full, cannot install more packages"
+msgstr ""
+
+#: ../src/plugins/install.c:337
+msgid "Some packages seems corrupted, do you want to download them again?"
+msgstr ""
+
+#: ../src/plugins/install.c:345
+msgid "Failed to retrieve packages"
+msgstr ""
+
+#: ../src/plugins/install.c:378
+#, fuzzy
+msgid ""
+"An error occurs during packages installation (see /var/log/fwife.log for "
+"more details)"
+msgstr ""
+"Bozuk X kurulumu.Dosya eksik, daha fazla detay için kayıt dosyasına bakınız"
+
+#: ../src/plugins/install.c:381
+#, fuzzy
+msgid "Packages installation completed"
+msgstr "Kurulum tamamlandı"
 
 #: ../src/plugins/postconf.c:67
 msgid "Configure your system"
@@ -698,100 +949,91 @@ msgstr "Oyun çubuğunu fare olarak kullan"
 msgid "Wacom serial graphics tablet"
 msgstr "Wacom seri görsel tablet"
 
-#: ../src/plugins/postconf.c:139
+#: ../src/plugins/postconf.c:137
 msgid "(COM1: under DOS)"
 msgstr "(COM1: DOS altında)"
 
-#: ../src/plugins/postconf.c:140
+#: ../src/plugins/postconf.c:138
 msgid "(COM2: under DOS)"
 msgstr "(COM2: DOS altında)"
 
-#: ../src/plugins/postconf.c:141
+#: ../src/plugins/postconf.c:139
 msgid "(COM3: under DOS)"
 msgstr "(COM3: DOS altında)"
 
-#: ../src/plugins/postconf.c:142
+#: ../src/plugins/postconf.c:140
 msgid "(COM4: under DOS)"
 msgstr "(COM4: DOS altında)"
 
-#: ../src/plugins/postconf.c:205
+#: ../src/plugins/postconf.c:196
 msgid "Mouse configuration"
 msgstr "Fare yapılandırması"
 
-#: ../src/plugins/postconf.c:212
-msgid "Selecting your mouse : "
+#: ../src/plugins/postconf.c:207
+#, fuzzy
+msgid "<b>Select your mouse : </b>"
 msgstr "Farenizi seçiniz: "
 
-#: ../src/plugins/postconf.c:216
-msgid "Selecting mouse's port :"
+#: ../src/plugins/postconf.c:212
+#, fuzzy
+msgid "<b>Select mouse's port :</b>"
 msgstr "Fare portunuzu seçiniz:"
 
-#: ../src/plugins/postconf.c:380
-msgid "   X Window Display Manager"
-msgstr "   X Pencere Görüntüleme Yöneticisi"
-
-#: ../src/plugins/postconf.c:384
+#: ../src/plugins/postconf.c:370
 msgid "  KDE Display Manager"
 msgstr "  KDE Görüntüleme Yöneticisi"
 
-#: ../src/plugins/postconf.c:389
+#: ../src/plugins/postconf.c:375
 msgid "  Gnome Display Manager"
 msgstr "    Gnome Görüntüleme Yöneticisi"
 
-#: ../src/plugins/postconf.c:394
+#: ../src/plugins/postconf.c:380
 msgid "  Simple Login Manager"
 msgstr "  Basit Oturum Açma Yöneticisi"
 
-#: ../src/plugins/postconf.c:454
-msgid "Corrupted X installation. Missing file, see log for more details"
-msgstr ""
-"Bozuk X kurulumu.Dosya eksik, daha fazla detay için kayıt dosyasına bakınız"
+#: ../src/plugins/postconf.c:385
+#, fuzzy
+msgid "  LXDE Display Manager"
+msgstr "  KDE Görüntüleme Yöneticisi"
 
-#: ../src/plugins/postconf.c:458
+#: ../src/plugins/postconf.c:388
+#, fuzzy
+msgid "  X Window Display Manager"
+msgstr "   X Pencere Görüntüleme Yöneticisi"
+
+#: ../src/plugins/postconf.c:435
 msgid "Configuring X11"
 msgstr "X11 Yapılandırılıyor"
 
-#: ../src/plugins/postconf.c:470
-msgid "X11 Configuration"
-msgstr "X11 Yapılandırması"
-
-#: ../src/plugins/postconf.c:476
-msgid "Resolution :"
-msgstr "Çözünürlük:"
-
-#: ../src/plugins/postconf.c:482
-msgid "Color depth :"
-msgstr "Renk derinliği:"
-
-#: ../src/plugins/postconf.c:488
+#: ../src/plugins/postconf.c:450
 msgid "Select your default display manager : "
 msgstr "Öntanımlı görüntüleme yöneticinizi seçiniz: "
 
-#: ../src/plugins/postconf.c:591
-msgid ""
-"<span face=\"Courier New\"><b>You can configure some parts of your system</"
-"b></span>"
+#: ../src/plugins/postconf.c:525
+#, fuzzy
+msgid "<b>You can configure some parts of your system</b>"
 msgstr ""
 "<span face=\"Courier New\"><b>Sisteminizin bazı kısımlarını "
 "yapılandırabilirsiniz</b></span>"
 
-#: ../src/plugins/postconf.c:594
+#: ../src/plugins/postconf.c:528
 msgid "Hardware"
 msgstr "Donanım"
 
-#: ../src/plugins/postconf.c:602
+#: ../src/plugins/postconf.c:536
 msgid "Mouse - "
 msgstr "Fare- "
 
-#: ../src/plugins/postconf.c:604 ../src/plugins/postconf.c:619
+#: ../src/plugins/postconf.c:538 ../src/plugins/postconf.c:553
 msgid "<span foreground=\"red\"> Not Configured </span>"
 msgstr "<span foreground=\"red\"> Yapılandırılmamış</span>"
 
-#: ../src/plugins/postconf.c:609 ../src/plugins/postconf.c:624
+#: ../src/plugins/postconf.c:543 ../src/plugins/postconf.c:558
+#: ../src/plugins/netconf.c:789
 msgid "Configure"
 msgstr "Yapılandır"
 
-#: ../src/plugins/postconf.c:617
+#: ../src/plugins/postconf.c:551
 msgid "X server - "
 msgstr "X sunucu- "
 
@@ -799,30 +1041,29 @@ msgstr "X sunucu- "
 msgid "Configure root password"
 msgstr "Yönetici parolasını ayarla"
 
-#: ../src/plugins/rootconf.c:81
+#: ../src/plugins/rootconf.c:80
+#, fuzzy
 msgid ""
-"<span face=\"Courier New\"><b>You can set password on the system "
-"administrator account (root).\n"
+"<b>You can set password on the system administrator account (root).\n"
 " It is recommended that you set one now so that it is active the first time "
 "the machine is rebooted.\n"
 " This is especially important if your machine is on an internet connected "
 "LAN.\n"
-" Is you don't want to set one, keep entry empty and go to the next step.</"
-"b></span>"
+" Is you don't want to set one, keep entry empty and go to the next step.</b>"
 msgstr ""
-"<span face=\"Courier New\"><b>Sistem yönetici hesabınızın(yönetici) parolasını "
-"ayarlayabilirsiniz.\n"
+"<span face=\"Courier New\"><b>Sistem yönetici hesabınızın(yönetici) "
+"parolasını ayarlayabilirsiniz.\n"
 " Burada bir parola ayarladıktan sonra, makinenizin tekrar başlatılmasında "
 "etkin hale gelir.\n"
 " Bu eğer makineniz LAN ağına bağlıysa önemlidir.\n"
 " Eğer bir parola ayarlamak istemiyorsanız, girdiyi boş bırakıp sıradaki "
 "adıma geçiniz.</b></span>"
 
-#: ../src/plugins/rootconf.c:87
+#: ../src/plugins/rootconf.c:86
 msgid "Enter root password :  "
 msgstr "Yönetici parolasını giriniz:  "
 
-#: ../src/plugins/rootconf.c:88
+#: ../src/plugins/rootconf.c:87
 msgid "Verify root password :  "
 msgstr "Yönetici parolasını doğrulayınız:  "
 
@@ -830,88 +1071,91 @@ msgstr "Yönetici parolasını doğrulayınız:  "
 msgid "Configure users"
 msgstr "Kullanıcıları yapılandır"
 
-#: ../src/plugins/usersconf.c:83
-msgid "User can be deleted!"
+#: ../src/plugins/usersconf.c:81
+#, fuzzy
+msgid "User can't be deleted!"
 msgstr "Kullanıcı silinebilir!"
 
-#: ../src/plugins/usersconf.c:111 ../src/plugins/usersconf.c:326
+#: ../src/plugins/usersconf.c:109 ../src/plugins/usersconf.c:318
 msgid "Add a new user"
 msgstr "Yeni kullanıcı ekle"
 
-#: ../src/plugins/usersconf.c:123
+#: ../src/plugins/usersconf.c:121
 msgid "General Configuration"
 msgstr "Genel Yapılandırma"
 
-#: ../src/plugins/usersconf.c:129
+#: ../src/plugins/usersconf.c:127
 msgid "Name :"
 msgstr "İsim:"
 
-#: ../src/plugins/usersconf.c:134
+#: ../src/plugins/usersconf.c:132
 msgid "Full Name :"
 msgstr "Tam İsim:"
 
-#: ../src/plugins/usersconf.c:139
+#: ../src/plugins/usersconf.c:137
 msgid "Password : "
 msgstr "Parola: "
 
-#: ../src/plugins/usersconf.c:145
+#: ../src/plugins/usersconf.c:143
 msgid "Enter password :"
 msgstr "Parolayı giriniz:"
 
-#: ../src/plugins/usersconf.c:151
+#: ../src/plugins/usersconf.c:149
 msgid "Re-enter password :"
 msgstr "Parolayı tekrar giriniz:"
 
-#: ../src/plugins/usersconf.c:157
+#: ../src/plugins/usersconf.c:155
 msgid "Other (optionnal)"
 msgstr "Diğer (isteğe bağlı)"
 
-#: ../src/plugins/usersconf.c:163 ../src/plugins/usersconf.c:304
+#: ../src/plugins/usersconf.c:161 ../src/plugins/usersconf.c:296
 msgid "Shell"
 msgstr "Kabuk"
 
-#: ../src/plugins/usersconf.c:168
+#: ../src/plugins/usersconf.c:166
 msgid "Home directory"
 msgstr "Ev dizini"
 
-#: ../src/plugins/usersconf.c:187
+#: ../src/plugins/usersconf.c:185
 msgid "Password verification failed! Please try again."
 msgstr "Parola doğrulaması başarısız oldu! Lütfen tekrar deneyiniz."
 
-#: ../src/plugins/usersconf.c:203
+#: ../src/plugins/usersconf.c:200
+#, fuzzy
 msgid ""
-"User can be added! Check that you use lowercase name or that there is not an "
-"other user bearing the same name."
+"User can't be added! Check that you use lowercase name or that there is not "
+"an other user bearing the same name."
 msgstr ""
 "Kullanıcı eklenebilir! Küçük harf kullanıp kullanmadığınızı  ya da aynı "
 "kullanıcı adından sistemde olmadığını denetleyin."
 
-#: ../src/plugins/usersconf.c:282
+#: ../src/plugins/usersconf.c:274
+#, fuzzy
 msgid ""
-"<span face=\"Courier New\"><b>You can configure non-root user account. It is "
-"strongly recommended to create one.</b></span>"
+"<b>You can configure non-root user account. It is strongly recommended to "
+"create one.</b>"
 msgstr ""
 "<span face=\"Courier New\"><b>Yönetici olmayan kullanıcı hesabını "
-"yapılandırabilirsiniz.Yeni bir hesap oluşturmanız şiddetle tavsiye "
-"edilir.</b></span>"
+"yapılandırabilirsiniz.Yeni bir hesap oluşturmanız şiddetle tavsiye edilir.</"
+"b></span>"
 
-#: ../src/plugins/usersconf.c:296
+#: ../src/plugins/usersconf.c:288
 msgid "User"
 msgstr "Kullanıcı"
 
-#: ../src/plugins/usersconf.c:300
+#: ../src/plugins/usersconf.c:292
 msgid "Full Name"
 msgstr "Tam İsim"
 
-#: ../src/plugins/usersconf.c:308
+#: ../src/plugins/usersconf.c:300
 msgid "Home"
 msgstr "Ev"
 
-#: ../src/plugins/usersconf.c:312
+#: ../src/plugins/usersconf.c:304
 msgid "Password"
 msgstr "Parola"
 
-#: ../src/plugins/usersconf.c:332
+#: ../src/plugins/usersconf.c:324
 msgid "Remove a user"
 msgstr "Kullanıcı kaldır"
 
@@ -921,7 +1165,8 @@ msgstr "GRUB'u yapılandır"
 
 #. top info label
 #: ../src/plugins/grubconf.c:75
-msgid "<span face=\"Courier New\"><b>Installing GRUB bootloader</b></span>"
+#, fuzzy
+msgid "<b>Installing GRUB bootloader</b>"
 msgstr "<span face=\"Courier New\"><b>GRUB önyükleyici kuruluyor </b></span>"
 
 #: ../src/plugins/grubconf.c:78
@@ -945,7 +1190,7 @@ msgstr "Yönetici  -  Süper bloğa kur (XFS ile birlikte kullanma)"
 msgid "Skip  -  Skip the installation of GRUB."
 msgstr "Atla  -  GRUB kurulumunu atla"
 
-#: ../src/plugins/grubconf.c:172
+#: ../src/plugins/grubconf.c:171
 msgid ""
 "GRUB can be installed to a variety of places:\n"
 "\n"
@@ -971,221 +1216,67 @@ msgstr ""
 msgid "Timezone configuration"
 msgstr "Saat kuşağı yapılandırması"
 
-#: ../src/plugins/timeconf.c:392
+#: ../src/plugins/timeconf.c:366
 msgid "Continent/Main City"
 msgstr "Kıta/Şehir"
 
-#: ../src/plugins/timeconf.c:399
+#: ../src/plugins/timeconf.c:373
 msgid "Comments"
 msgstr "Yorumlar"
 
-#: ../src/plugins/timeconf.c:413
+#: ../src/plugins/timeconf.c:387
 msgid "Set clock to UTC/GMT time coordinates"
 msgstr "Saati UTC/GMT saat koordinatına göre ayarla"
 
-#: ../src/plugins/netconf.c:76
+#: ../src/plugins/netconf.c:83
 msgid "Configuring your network"
 msgstr "Ağınız yapılandırılıyor"
 
-#: ../src/plugins/netconf.c:106
-msgid "Use a DHCP server"
-msgstr "DHCP sunucu kullan"
-
-#: ../src/plugins/netconf.c:107
-msgid "Use a static IP address"
-msgstr "Sabit IP adresi kullan"
-
-#: ../src/plugins/netconf.c:140
-msgid "Select network type"
-msgstr "Ağ tipini seçin"
-
-#: ../src/plugins/netconf.c:146
-msgid ""
-"Now we need to know how your machine connects to the network.\n"
-"If you have an internal network card and an assigned IP address, gateway, "
-"and DNS,\n"
-" use 'static' to enter these values.\n"
-"If your IP address is assigned by a DHCP server (commonly used by cable "
-"modem services),\n"
-" select 'dhcp'. \n"
+#: ../src/plugins/netconf.c:444
+msgid "Scan for Access Points"
 msgstr ""
-"Şimdi makineniz ağa nasıl bağlandığını bilmemiz gerekiyor.\n"
-"Eğer dahili bir ağ kartınız, atanmış IP adresiniz, ağ geçidini ve DNS\n"
-" adresiniz varsa 'sabit' seçeneğini seçip, bu değerleri giriniz.\n"
-"Eğer IP adresiniz DHCP sunucu üzerinden atanıyorsa(çoğu kablo\n"
-" modem servisi bunu kullanır) 'dhcp' seçeneğini seçiniz.\\"
 
-#: ../src/plugins/netconf.c:182
-msgid "Configure Wireless"
-msgstr "Kablosuz Ağı Yapılandır"
-
-#: ../src/plugins/netconf.c:190
-msgid ""
-"In order to use wireless, you must set your extended netwok name (ESSID).\n"
-"If you have a WEP encryption key, then please enter it below.\n"
-"Examples: 4567-89AB-CD or s:password\n"
-"If you have a WPA passphrase, then please enter it below.\n"
-"Example: secret\n"
-"If you want to use a custom driver (not the generic one, called 'wext'), "
-"then please enter it below.\n"
-"If unsure enter nothing"
+#: ../src/plugins/netconf.c:575 ../src/plugins/netconf.c:664
+msgid "You must select an interface in the above list."
 msgstr ""
-"Kablosuz ağı kullanabilmeniz için,genişletilmiş ağ adınızı (ESSID) "
-"ayarlamanız\n"
-"gerekir.\n"
-"Eğer WEP şifreleme anahtarınız varsa,lütfen aşağıda bunu giriniz.\n"
-"Örnekler: 4567-89AB-CD or s:parola\n"
-"Eğer WPA parolanız varsa,lütfen aşağıda bunu giriniz.\n"
-"Örneğin: gizli\n"
-"Eğer özel bir sürücü ('wext' diye adlandırılan standartlardan değil)\n"
-"kullanmak istiyorsanız, lütfen aşağıda bunu giriniz.\n"
-"Eğer emin değilseniz hiçbirşey girmeyiniz"
 
-#: ../src/plugins/netconf.c:203
-msgid "Essid : "
-msgstr "Essid: "
-
-#: ../src/plugins/netconf.c:210
-msgid "WEP encryption key : "
-msgstr "WEP şifreleme anahtarı: "
-
-#: ../src/plugins/netconf.c:217
-msgid "WPA encryption passphrase : "
-msgstr "WPA şifreleme parolası: "
-
-#: ../src/plugins/netconf.c:224
-msgid "WPA Driver : "
-msgstr "WPA Sürücüsü: "
-
-#: ../src/plugins/netconf.c:260
-msgid "Configure static network"
-msgstr "Sabit ağı yapılandır"
-
-#: ../src/plugins/netconf.c:266
-msgid "Enter static network parameters :"
-msgstr "Sabit ağ parametlerelerini girin:"
-
-#: ../src/plugins/netconf.c:270
-msgid "IP Address : "
-msgstr "IP Adresi: "
-
-#: ../src/plugins/netconf.c:277
-msgid "Network Mask : "
-msgstr "Ağ Maskesi: "
-
-#: ../src/plugins/netconf.c:284
-msgid "Gateway : "
-msgstr "Ağ Geçidi: "
-
-#: ../src/plugins/netconf.c:331
-msgid "Configure DSL connexion"
-msgstr "DSL bağlantısını yapılandır"
-
-#: ../src/plugins/netconf.c:338
-msgid "Enter DSL parameters"
-msgstr "DSL parametrelerini girin"
-
-#: ../src/plugins/netconf.c:342
-msgid "PPPOE username : "
-msgstr "PPPOE kullanıcı adı: "
-
-#: ../src/plugins/netconf.c:349
-msgid "PPPOE password : "
-msgstr "PPPOE parolası: "
-
-#: ../src/plugins/netconf.c:356
-msgid "Re-enter PPPOE password : "
-msgstr "PPPOE parolasını tekrar girin: "
-
-#: ../src/plugins/netconf.c:363
-msgid "Associate with interface : "
-msgstr "Arayüz ile ilişkilendir: "
-
-#: ../src/plugins/netconf.c:396
-msgid "Passwords do not match! Try again."
-msgstr "Parolalar eşleşmiyor! Tekrar deneyiniz."
-
-#: ../src/plugins/netconf.c:441
-msgid "This interface has been already configured!"
+#: ../src/plugins/netconf.c:670
+#, fuzzy
+msgid ""
+"This interface has been already configured! Do you want to configure it "
+"again?"
 msgstr "Bu arayüz zaten yapılandırılmış durumda!"
 
-#: ../src/plugins/netconf.c:475
-msgid ""
-"It seems that this network card has a wireless extension.\n"
-"\n"
-"Configure your wireless now?"
-msgstr ""
-"Bu ağ kartının kablosuz genişlemesi var gibi görünüyor.\n"
-"\n"
-"Kablosuz ağınız şimdi yapılandırılsın mı?"
-
-#: ../src/plugins/netconf.c:487
-msgid "Set DHCP hostname"
-msgstr "DHCP sunucu adını ayarla"
-
-#: ../src/plugins/netconf.c:487
-msgid ""
-"Some network providers require that the DHCP hostname be\n"
-"set in order to connect.\n"
-" If so, they'll have assigned a hostname to your machine.\n"
-" If you wereassigned a DHCP hostname, please enter it below.\n"
-" If you do not have a DHCP hostname, justhit enter."
-msgstr ""
-"Bazı ağ sağlayıcıları, ağa bağlanabilmek için DHCP sunucu adını\n"
-"şart koşarlar.\n"
-" Eğer öyleyse,makinenize bir sunucu adı atayacaklardır.\n"
-" Eğer bir DHCP sunucu adı atanmış ise, lütfen aşağıda bunu giriniz.\\ Eğer "
-"DHCP sunucu adınız yoksa,ENTER tuşuna basınız."
-
-#: ../src/plugins/netconf.c:544
-msgid ""
-"<span face=\"Courier New\"><b>You can configure all network interfaces you "
-"need</b></span>"
+#: ../src/plugins/netconf.c:766
+#, fuzzy
+msgid "<b>You can configure all network interfaces you need</b>"
 msgstr ""
 "<span face=\"Courier New\"><b>İhtiyacınız olan tüm ağ arayüzlerini "
 "yapılandırabilirsiniz</b></span>"
 
-#: ../src/plugins/netconf.c:561
-msgid "Device"
-msgstr "Aygıt"
+#: ../src/plugins/netconf.c:785
+#, fuzzy
+msgid "Configuration"
+msgstr "X11 Yapılandırması"
 
-#: ../src/plugins/netconf.c:565
-msgid "Ip Address"
-msgstr "Ip Adresi"
+#: ../src/plugins/netconf.c:795
+#, fuzzy
+msgid "DSL Configuration"
+msgstr "X11 Yapılandırması"
 
-#: ../src/plugins/netconf.c:569
-msgid "Netmask"
-msgstr "Ağ Maskesi"
+#: ../src/plugins/netconf.c:819
+msgid ""
+"You can now reconfigure your network if you want to configure others "
+"interfaces or just apply current network configuration.\n"
+"\n"
+"Do you want to apply the current configuration ?"
+msgstr ""
 
-#: ../src/plugins/netconf.c:573
-msgid "Gateway"
-msgstr "Ağ Geçidi"
-
-#: ../src/plugins/netconf.c:577
-msgid "DHCP Nameserver"
-msgstr "DHCP İsim Sunucusu"
-
-#: ../src/plugins/netconf.c:583
-msgid "Network configuration"
-msgstr "Ağ yapılandırması"
-
-#: ../src/plugins/netconf.c:588
-msgid "Interface :"
-msgstr "Arayüz:"
-
-#: ../src/plugins/netconf.c:598
-msgid "Network configuration :   "
-msgstr "Ağ yapılandırması:   "
-
-#: ../src/plugins/netconf.c:648
-msgid "Do you want to configure a DSL connexion now?"
-msgstr "DSL bağlantınızı şimdi yapılandırmak istiyor musunuz?"
-
-#: ../src/plugins/netconf.c:656
+#: ../src/plugins/netconf.c:864
 msgid "Hostname"
 msgstr "Sunucu Adı"
 
-#: ../src/plugins/netconf.c:656
+#: ../src/plugins/netconf.c:864
 msgid ""
 "We'll need the name you'd like to give your host.\n"
 "The full hostname is needed, such as:\n"
@@ -1201,7 +1292,7 @@ msgstr ""
 "\n"
 "Tam sunucu adını girin:"
 
-#: ../src/plugins/netconf.c:679
+#: ../src/plugins/netconf.c:886
 msgid ""
 "Select network interface you want to configure then click on add button and "
 "follow instructions..."
@@ -1209,11 +1300,11 @@ msgstr ""
 "Yapılandırmak istediğinz ağ arayzünü seçip ardından ekle düğmesine "
 "tıklayarak tarifleri takip edin..."
 
-#: ../src/fwife.c:139
+#: ../src/fwife.c:155
 msgid "Are you sure you want to exit from the installer?\n"
 msgstr "Kurulumdan çıkmak istediğinizden emin misiniz?\n"
 
-#: ../src/fwife.c:150
+#: ../src/fwife.c:165
 msgid ""
 "Frugalware installation completed.\n"
 " You can now reboot your computer"
@@ -1221,26 +1312,88 @@ msgstr ""
 "Frugalware kurulumu tamamlandı.\n"
 " Şimdi bilgisayarınızı yeniden başlatabilirsiniz"
 
-#: ../src/fwife.c:164
+#: ../src/fwife.c:178 ../src/fwife.c:191 ../src/fwife.c:208
 msgid "Error when running plugin. Please report"
 msgstr "Eklentinin işletilmesinde hata. Lütfen rapor ediniz."
 
-#: ../src/fwife.c:193
+#: ../src/fwife.c:231
 msgid "Plugin help"
 msgstr "Eklenti yardımı"
 
-#: ../src/fwife.c:206
+#: ../src/fwife.c:244
 msgid "No help available for this plugin"
 msgstr "Bu eklenti için uygun yardım yok"
 
-#: ../src/fwife.c:235
-msgid "Language selection (default : en_US)"
-msgstr "Dil seçimi (öntanımlı dil: en_US)"
+#: ../src/fwife.c:273
+#, fuzzy
+msgid "Language selection"
+msgstr "Paket seçimi"
 
-#: ../src/fwife.c:279
+#: ../src/fwife.c:318
 msgid "Insuffecient privileges. Fwife must be run as root."
 msgstr "Elverişsiz yetki. Fwife yönetici yetkileri ile işletilmelidir."
 
-#: ../src/fwife.c:288
+#: ../src/fwife.c:327
 msgid "Fwife : Frugalware Installer Front-End"
 msgstr "Fwife: Görsel Fruglware Kurulum Aracı"
+
+#~ msgid ""
+#~ "You need an active internet connection ,\n"
+#~ " do you want to configure your network now?"
+#~ msgstr ""
+#~ "Etkin bir internet bağlantısına ihtiyacınız var,\n"
+#~ " Şimdi ağınızı yapılandırmak istiyor musunuz?"
+
+#~ msgid "Select all this group's packages"
+#~ msgstr "Bu grubun tüm paketlerin seç"
+
+#~ msgid "Unselect all this group's packages"
+#~ msgstr "Bu grubun tüm paketlerinin seçimini kaldır"
+
+#~ msgid "Gnome"
+#~ msgstr "Gnome"
+
+#~ msgid "Removing packages..."
+#~ msgstr "Paketler kaldırılıyor..."
+
+#~ msgid "Checking dependencies"
+#~ msgstr "Bağımlılıklar denetleniyor"
+
+#~ msgid "Checking for file conflicts"
+#~ msgstr "Dosya çakışmaları denetleniyor"
+
+#~ msgid "Resolving dependencies"
+#~ msgstr "Bağımlılıklar çözümleniyor"
+
+#~ msgid "Looking for inter-conflicts"
+#~ msgstr "Karşılıklı çakışmalar aranıyor"
+
+#~ msgid "Resolution :"
+#~ msgstr "Çözünürlük:"
+
+#~ msgid "Color depth :"
+#~ msgstr "Renk derinliği:"
+
+#~ msgid "Associate with interface : "
+#~ msgstr "Arayüz ile ilişkilendir: "
+
+#~ msgid "Netmask"
+#~ msgstr "Ağ Maskesi"
+
+#~ msgid "Gateway"
+#~ msgstr "Ağ Geçidi"
+
+#~ msgid "DHCP Nameserver"
+#~ msgstr "DHCP İsim Sunucusu"
+
+#~ msgid "Network configuration"
+#~ msgstr "Ağ yapılandırması"
+
+#~ msgid "Interface :"
+#~ msgstr "Arayüz:"
+
+#~ msgid "Network configuration :   "
+#~ msgstr "Ağ yapılandırması:   "
+
+#~ msgid "Language selection (default : en_US)"
+#~ msgstr "Dil seçimi (öntanımlı dil: en_US)"
