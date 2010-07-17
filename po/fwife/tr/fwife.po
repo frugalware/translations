@@ -7,13 +7,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-07-17 02:03+0200\n"
-"PO-Revision-Date: 2010-07-15 11:45+0200\n"
+"PO-Revision-Date: 2010-07-17 13:39+0200\n"
 "Last-Translator: Tutku Dalmaz <tutkudalmaz@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: tr\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 2.0.2\n"
 
@@ -74,7 +74,7 @@ msgstr "Kullan"
 
 #: ../src/plugins/configsource.c:248
 msgid "Status"
-msgstr ""
+msgstr "Durum"
 
 #: ../src/plugins/configsource.c:252
 msgid "Mirrors"
@@ -85,13 +85,12 @@ msgid "Froms"
 msgstr "Karşı Taraflar"
 
 #: ../src/plugins/configsource.c:275
-#, fuzzy
 msgid ""
 "<b>You can choose one or more nearly mirrors to speed up package downloading."
 "</b>"
 msgstr ""
-"<span face=\"Courier New\"><b>Paket indirme işlemini hızlandırmak için bir "
-"ya da daha fazla yakın yansıları seçebilirsiniz.</b></span>"
+"<b>Paket indirme işlemini hızlandırmak için bir ya da daha fazla yakın "
+"yansıları seçebilirsiniz.</b>"
 
 #. Set up buttons for custom mirrors
 #: ../src/plugins/configsource.c:291
@@ -114,45 +113,40 @@ msgstr ""
 "ekleyebilirsiniz."
 
 #: ../src/plugins/configsource.c:595 ../src/plugins/netconf.c:234
-#, fuzzy
 msgid "Select your access point :"
-msgstr "Fare portunuzu seçiniz:"
+msgstr "Erişim noktanızı seçiniz:"
 
 #: ../src/plugins/configsource.c:613 ../src/plugins/netconf.c:252
 msgid "Signal"
-msgstr ""
+msgstr "Sinyal"
 
 #: ../src/plugins/configsource.c:617 ../src/plugins/netconf.c:256
-#, fuzzy
 msgid "Address"
-msgstr "Ip Adresi"
+msgstr "Adres"
 
 #: ../src/plugins/configsource.c:620 ../src/plugins/netconf.c:259
 msgid "ESSID"
-msgstr ""
+msgstr "ESSID"
 
 #: ../src/plugins/configsource.c:623 ../src/plugins/netconf.c:262
-#, fuzzy
 msgid "Mode"
-msgstr "Model"
+msgstr "Kip"
 
 #: ../src/plugins/configsource.c:626 ../src/plugins/netconf.c:265
 msgid "Protocol"
-msgstr ""
+msgstr "Protokol"
 
 #: ../src/plugins/configsource.c:629 ../src/plugins/netconf.c:268
-#, fuzzy
 msgid "Encryption"
-msgstr "WEP şifreleme anahtarı: "
+msgstr "Şifreleme"
 
 #: ../src/plugins/configsource.c:632 ../src/plugins/netconf.c:271
 msgid "Cypher"
-msgstr ""
+msgstr "Şifreleyici"
 
 #: ../src/plugins/configsource.c:671 ../src/plugins/netconf.c:308
-#, fuzzy
 msgid "No encryption"
-msgstr "WEP şifreleme anahtarı: "
+msgstr "Şifreleme yok"
 
 #: ../src/plugins/configsource.c:714 ../src/plugins/netconf.c:360
 msgid "Use a DHCP server"
@@ -214,7 +208,7 @@ msgstr "Essid: "
 
 #: ../src/plugins/configsource.c:808
 msgid "Scan Access Points"
-msgstr ""
+msgstr "Erişim Noktalarını Tara"
 
 #: ../src/plugins/configsource.c:813 ../src/plugins/netconf.c:449
 msgid "WEP encryption key : "
@@ -249,13 +243,14 @@ msgid "Gateway : "
 msgstr "Ağ Geçidi: "
 
 #: ../src/plugins/configsource.c:924 ../src/plugins/netconf.c:579
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Do you want to configure a DSL connection associated with the interface %s?"
-msgstr "DSL bağlantınızı şimdi yapılandırmak istiyor musunuz?"
+msgstr ""
+"%s arayüzü ile ilişkili olarak DSL bağlantınızı şimdi yapılandırmak istiyor "
+"musunuz?"
 
 #: ../src/plugins/configsource.c:935 ../src/plugins/netconf.c:587
-#, fuzzy
 msgid "Configure DSL connection"
 msgstr "DSL bağlantısını yapılandır"
 
@@ -284,20 +279,20 @@ msgid ""
 "Fwife cannot connect to internet with this configuration, do you want to "
 "apply this configuration anyway?"
 msgstr ""
+"Fwife bu yapılandırma ile internete bağlanamaz, bu yapılandırmayı yine de "
+"uygulamak istiyor musunuz?"
 
 #: ../src/plugins/configsource.c:1035
-#, fuzzy
 msgid "Select your network interface :"
-msgstr "Ağ tipini seçin"
+msgstr "Ağ arayüzünüzü seçiniz:"
 
 #: ../src/plugins/configsource.c:1056 ../src/plugins/netconf.c:778
 msgid "Device"
 msgstr "Aygıt"
 
 #: ../src/plugins/configsource.c:1059 ../src/plugins/netconf.c:781
-#, fuzzy
 msgid "Description"
-msgstr "Bölüm"
+msgstr "Tanımlama"
 
 #: ../src/plugins/configsource.c:1126
 #, c-format
@@ -305,6 +300,8 @@ msgid ""
 "A netconfig profile (\"%s\") has been found on your current installation.\n"
 "Do you want to use it?"
 msgstr ""
+"(\"%s\") netconfig profili güncel kurulumda bulundu.\n"
+"Bunu kullanmak ister misiniz?"
 
 #: ../src/plugins/configsource.c:1156
 #, c-format
@@ -312,6 +309,8 @@ msgid ""
 "An active connection seems to have been found on interface %s using dhcp.\n"
 "Do you want to use it?"
 msgstr ""
+"%s arayüzü üzerinde dhcp kullanan etkin bir bağlantı var.\n"
+"Bunu kullanmak ister misiniz?"
 
 #: ../src/plugins/configsource.c:1181
 msgid ""
@@ -319,6 +318,8 @@ msgid ""
 "not been found.\n"
 "Do you want to use it anyway?"
 msgstr ""
+"Bağlantı tipi bulunamayan etkin bir bağlantı var.\n"
+"Yine de bunu kullanmak ister misiniz?"
 
 #: ../src/plugins/configsource.c:1202 ../src/plugins/netconf.c:695
 msgid ""
@@ -353,9 +354,8 @@ msgid "Installation completed"
 msgstr "Kurulum tamamlandı"
 
 #: ../src/plugins/finish.c:71
-#, fuzzy
 msgid "<b>Installation completed! We hope that you enjoy Frugalware!</b>"
-msgstr "Kurulum tamamlandı!Frugalware'dan hoşlanacağınızı umuyoruz!"
+msgstr "<b>Kurulum tamamlandı!Frugalware'dan hoşlanacağınızı umuyoruz!</b>"
 
 #: ../src/plugins/partdisk.c:100
 msgid "Partitioning the disk drives"
@@ -382,19 +382,15 @@ msgid "Do you want to format partition?"
 msgstr "Bölümü biçimlendirmek istiyor musunuz?"
 
 #: ../src/plugins/partdisk.c:562
-#, fuzzy
 msgid ""
 "<span foreground=\"#f90909\"><b>!!! NOTE: This will erase all data on it. "
 "Would you like to format this partition? !!!</b></span>\n"
-msgstr ""
-"<span face=\"Courier New\" foreground=\"#f90909\"><b>!!! NOT: Bu işlem disk "
-"üzerindeki tüm verileri temizleyecek. Bu bölümü biçimlendirmek istiyor "
-"musunuz?!!!</b></span>\n"
+msgstr "<span foreground=\"#f90909\"><b>!!! NOT: Bu işlem disk üzerindeki tüm verileri "
+"temizleyecek. Bu bölümü biçimlendirmek istiyor musunuz?!!!</b></span>\n"
 
 #: ../src/plugins/partdisk.c:566
-#, fuzzy
 msgid "<b>Choose filesystem :</b>\n"
-msgstr "Dosya sistemini seçiniz:"
+msgstr "<b>Dosya sistemini seçiniz:</b>"
 
 #. Ext3 filesystem - default
 #: ../src/plugins/partdisk.c:570 ../src/plugins/partdisk.c:628
@@ -408,7 +404,6 @@ msgstr "ext2 - Standart Linux ext2 dosya sistemidir"
 
 #. Ext4 filesystem , experimental by now
 #: ../src/plugins/partdisk.c:576 ../src/plugins/partdisk.c:630
-#, fuzzy
 msgid "ext4 - The evolution of the ext3 filesystem (EXPERIMENTAL!)"
 msgstr "ext4 - ext3 dosya sisteminin evrimidir (DENEYSEL)"
 
@@ -427,9 +422,8 @@ msgid "Noformat - keep filesystem"
 msgstr "Noformat - dosya sistemini koru"
 
 #: ../src/plugins/partdisk.c:597
-#, fuzzy
 msgid "<b>Options :</b>\n"
-msgstr "Seçenekler:"
+msgstr "<b>Seçenekler:</b>"
 
 #: ../src/plugins/partdisk.c:600
 msgid "Check for bad blocks - slowly"
@@ -437,15 +431,11 @@ msgstr "Blok hatalarını denetle - yavaşça"
 
 #. change label
 #: ../src/plugins/partdisk.c:648
-#, fuzzy
 msgid "<b>Creating filesystem... Please wait ... </b>\n"
-msgstr ""
-"<span face=\"Courier New\"><b>Dosya sistemi oluşturuluyor... Lütfen "
-"bekleyiniz ... </b></span>\n"
+msgstr "<b>Dosya sistemi oluşturuluyor... Lütfen bekleyiniz ... </b>\n"
 
 #. On utilise les balises
 #: ../src/plugins/partdisk.c:717
-#, fuzzy
 msgid ""
 "<span foreground=\"#f90909\"><b>You need to format is you want to use it as "
 "a swap partition!\n"
@@ -453,8 +443,8 @@ msgid ""
 "\n"
 " Do you want to continue? </b></span>\n"
 msgstr ""
-"<span face=\"Courier New\" foreground=\"#f90909\"><b>Eğer takas alanı olarak "
-"kullanmak istiyorsanız, bu bölümü biçimlendirmeniz gerekir!\n"
+"<span foreground=\"#f90909\"><b>Eğer takas alanı olarak kullanmak "
+"istiyorsanız, bu bölümü biçimlendirmeniz gerekir!\n"
 "Bu işlem bölüm üzerindeki tüm verileri temizler !\n"
 "\n"
 "Devam etmek istiyor musunuz? </b></span>\n"
@@ -474,12 +464,10 @@ msgstr ""
 "musunuz?"
 
 #: ../src/plugins/partdisk.c:917
-#, fuzzy
 msgid ""
 "<b>Select and format your partitions or launch GParted to modify them.</b>\n"
-msgstr ""
-"<span face=\"Courier New\"><b>Bölümlerinizi seçip biçimlendirin ya da "
-"bunları değiştirmek için GParted yazılımını başlatın.</b></span>\n"
+msgstr "<b>Bölümlerinizi seçip biçimlendirin ya da bunları değiştirmek için GParted "
+"yazılımını başlatın.</b>\n"
 
 #: ../src/plugins/partdisk.c:924
 msgid " Devices : "
@@ -570,7 +558,6 @@ msgid "Welcome"
 msgstr "Hoşgeldiniz"
 
 #: ../src/plugins/greet.c:61
-#, fuzzy
 msgid ""
 "<b>Welcome among the users of Frugalware!\n"
 "\n"
@@ -582,16 +569,15 @@ msgid ""
 "<span style=\"italic\" foreground=\"#0000FF\">The Frugalware Developer Team</"
 "span>\n"
 msgstr ""
-"<span face=\"Times New Roman 12\"><b>Frugalware kullanıcıları arasına hoş "
-"geldiniz!\n"
+"<b>Frugalware kullanıcıları arasına hoş geldiniz!\n"
 "\n"
 "</b></span>\n"
 "Frugalware'ı oluşturmanın amacı, işlerinizi daha hızlı ve daha basit "
 "yapmanızda size\n"
 "yardımcı olmasıdır.Umarız ürünümüzden memnun kalırsınız.\n"
 "\n"
-"<span font_desc=\"Times New Roman italic 12\" foreground=\"#0000FF"
-"\">Frugalware Geliştirici Takımı</span>\n"
+"<span style=\"italic\" foreground=\"#0000FF\">Frugalware Geliştirici "
+"Takımı</span>\n"
 
 #: ../src/plugins/layout.c:76
 msgid "Keyboard map selection"
@@ -636,11 +622,8 @@ msgid "Console keymap"
 msgstr "Konsol klavye düzeni"
 
 #: ../src/plugins/layout.c:421
-#, fuzzy
 msgid "<b>You may select one of the following keyboard maps.</b>"
-msgstr ""
-"<span face=\"Courier New\"><b>Aşağıdaki kalvye düzenlerinden bir tanesini "
-"seçiniz.</b></span>"
+msgstr "<b>Aşağıdaki kalvye düzenlerinden bir tanesini seçiniz.</b>"
 
 #: ../src/plugins/layout.c:428
 msgid "Test your keyboard here :"
@@ -668,12 +651,11 @@ msgstr "<b>Kurmak istediğiniz grupları seçiniz:</b>"
 
 #: ../src/plugins/select.c:534
 msgid "Select all"
-msgstr ""
+msgstr "Hepsini seç"
 
 #: ../src/plugins/select.c:535
-#, fuzzy
 msgid "Unselect all"
-msgstr "Kurulsun mu?"
+msgstr "Hepsini bırak"
 
 #: ../src/plugins/select.c:553
 msgid "<b>Choose packages into selected group :</b>"
@@ -791,7 +773,7 @@ msgstr ""
 
 #: ../src/plugins/select.c:1291
 msgid "No enought diskspace available to install all packages"
-msgstr ""
+msgstr "Tüm paketleri kurabilmek için yeterli disk alanı yok"
 
 #: ../src/plugins/install.c:70
 msgid "Installing packages"
@@ -832,38 +814,36 @@ msgid "Retrieving packages from local... (%d/%d) : %s"
 msgstr "Paketler yerelden alınıyor... (%d%d): %s"
 
 #: ../src/plugins/install.c:233
-#, fuzzy
 msgid "Checking package integrity..."
-msgstr "Paketler çakışmaya karşı denetleniyor..."
+msgstr "Paket bütünlüğü denetleniyor..."
 
 #: ../src/plugins/install.c:236
 msgid "Done"
-msgstr ""
+msgstr "TAMAM"
 
 #: ../src/plugins/install.c:334
 msgid "Disk full, cannot install more packages"
-msgstr ""
+msgstr "Disk dolu, daha fazla paket kurulamaz"
 
 #: ../src/plugins/install.c:337
 msgid "Some packages seems corrupted, do you want to download them again?"
-msgstr ""
+msgstr "Bazı paketler bozulmuş, bunları tekrar indirmek istiyor musunuz?"
 
 #: ../src/plugins/install.c:345
 msgid "Failed to retrieve packages"
-msgstr ""
+msgstr "Paketlerin alınması başarısız oldu"
 
 #: ../src/plugins/install.c:378
-#, fuzzy
 msgid ""
 "An error occurs during packages installation (see /var/log/fwife.log for "
 "more details)"
 msgstr ""
-"Bozuk X kurulumu.Dosya eksik, daha fazla detay için kayıt dosyasına bakınız"
+"Paketlerin kurulumunda hata oluştu (daha fazla detay için /var/log/fwike.log "
+"dosyasına bakınız)"
 
 #: ../src/plugins/install.c:381
-#, fuzzy
 msgid "Packages installation completed"
-msgstr "Kurulum tamamlandı"
+msgstr "Paketlerin kurulumu bitti"
 
 #: ../src/plugins/postconf.c:67
 msgid "Configure your system"
@@ -970,14 +950,12 @@ msgid "Mouse configuration"
 msgstr "Fare yapılandırması"
 
 #: ../src/plugins/postconf.c:207
-#, fuzzy
 msgid "<b>Select your mouse : </b>"
-msgstr "Farenizi seçiniz: "
+msgstr "<b>Farenizi seçiniz: </b>"
 
 #: ../src/plugins/postconf.c:212
-#, fuzzy
 msgid "<b>Select mouse's port :</b>"
-msgstr "Fare portunuzu seçiniz:"
+msgstr "<b>Fare portunuzu seçiniz:</b>"
 
 #: ../src/plugins/postconf.c:370
 msgid "  KDE Display Manager"
@@ -992,12 +970,10 @@ msgid "  Simple Login Manager"
 msgstr "  Basit Oturum Açma Yöneticisi"
 
 #: ../src/plugins/postconf.c:385
-#, fuzzy
 msgid "  LXDE Display Manager"
-msgstr "  KDE Görüntüleme Yöneticisi"
+msgstr "  LXDE Görüntüleme Yöneticisi"
 
 #: ../src/plugins/postconf.c:388
-#, fuzzy
 msgid "  X Window Display Manager"
 msgstr "   X Pencere Görüntüleme Yöneticisi"
 
@@ -1010,11 +986,8 @@ msgid "Select your default display manager : "
 msgstr "Öntanımlı görüntüleme yöneticinizi seçiniz: "
 
 #: ../src/plugins/postconf.c:525
-#, fuzzy
 msgid "<b>You can configure some parts of your system</b>"
-msgstr ""
-"<span face=\"Courier New\"><b>Sisteminizin bazı kısımlarını "
-"yapılandırabilirsiniz</b></span>"
+msgstr "<b>Sisteminizin bazı kısımlarını yapılandırabilirsiniz</b>"
 
 #: ../src/plugins/postconf.c:528
 msgid "Hardware"
@@ -1042,7 +1015,6 @@ msgid "Configure root password"
 msgstr "Yönetici parolasını ayarla"
 
 #: ../src/plugins/rootconf.c:80
-#, fuzzy
 msgid ""
 "<b>You can set password on the system administrator account (root).\n"
 " It is recommended that you set one now so that it is active the first time "
@@ -1051,13 +1023,12 @@ msgid ""
 "LAN.\n"
 " Is you don't want to set one, keep entry empty and go to the next step.</b>"
 msgstr ""
-"<span face=\"Courier New\"><b>Sistem yönetici hesabınızın(yönetici) "
-"parolasını ayarlayabilirsiniz.\n"
+"<b>Sistem yönetici hesabınızın(yönetici) parolasını ayarlayabilirsiniz.\n"
 " Burada bir parola ayarladıktan sonra, makinenizin tekrar başlatılmasında "
 "etkin hale gelir.\n"
 " Bu eğer makineniz LAN ağına bağlıysa önemlidir.\n"
 " Eğer bir parola ayarlamak istemiyorsanız, girdiyi boş bırakıp sıradaki "
-"adıma geçiniz.</b></span>"
+"adıma geçiniz.</b>"
 
 #: ../src/plugins/rootconf.c:86
 msgid "Enter root password :  "
@@ -1072,9 +1043,8 @@ msgid "Configure users"
 msgstr "Kullanıcıları yapılandır"
 
 #: ../src/plugins/usersconf.c:81
-#, fuzzy
 msgid "User can't be deleted!"
-msgstr "Kullanıcı silinebilir!"
+msgstr "Kullanıcı silinemez!"
 
 #: ../src/plugins/usersconf.c:109 ../src/plugins/usersconf.c:318
 msgid "Add a new user"
@@ -1121,23 +1091,20 @@ msgid "Password verification failed! Please try again."
 msgstr "Parola doğrulaması başarısız oldu! Lütfen tekrar deneyiniz."
 
 #: ../src/plugins/usersconf.c:200
-#, fuzzy
 msgid ""
 "User can't be added! Check that you use lowercase name or that there is not "
 "an other user bearing the same name."
 msgstr ""
-"Kullanıcı eklenebilir! Küçük harf kullanıp kullanmadığınızı  ya da aynı "
+"Kullanıcı eklenemez! Küçük harf kullanıp kullanmadığınızı  ya da aynı "
 "kullanıcı adından sistemde olmadığını denetleyin."
 
 #: ../src/plugins/usersconf.c:274
-#, fuzzy
 msgid ""
 "<b>You can configure non-root user account. It is strongly recommended to "
 "create one.</b>"
 msgstr ""
-"<span face=\"Courier New\"><b>Yönetici olmayan kullanıcı hesabını "
-"yapılandırabilirsiniz.Yeni bir hesap oluşturmanız şiddetle tavsiye edilir.</"
-"b></span>"
+"<b>Yönetici olmayan kullanıcı hesabını yapılandırabilirsiniz.Yeni bir hesap "
+"oluşturmanız şiddetle tavsiye edilir.</b>"
 
 #: ../src/plugins/usersconf.c:288
 msgid "User"
@@ -1165,9 +1132,8 @@ msgstr "GRUB'u yapılandır"
 
 #. top info label
 #: ../src/plugins/grubconf.c:75
-#, fuzzy
 msgid "<b>Installing GRUB bootloader</b>"
-msgstr "<span face=\"Courier New\"><b>GRUB önyükleyici kuruluyor </b></span>"
+msgstr "<b>GRUB önyükleyici kuruluyor </b>"
 
 #: ../src/plugins/grubconf.c:78
 msgid "Choose install type :"
@@ -1234,35 +1200,31 @@ msgstr "Ağınız yapılandırılıyor"
 
 #: ../src/plugins/netconf.c:444
 msgid "Scan for Access Points"
-msgstr ""
+msgstr "Erşimi Noktalarını Tara"
 
 #: ../src/plugins/netconf.c:575 ../src/plugins/netconf.c:664
 msgid "You must select an interface in the above list."
-msgstr ""
+msgstr "Yukarıdaki listeden bir arayüz seçmelisiniz."
 
 #: ../src/plugins/netconf.c:670
-#, fuzzy
 msgid ""
 "This interface has been already configured! Do you want to configure it "
 "again?"
-msgstr "Bu arayüz zaten yapılandırılmış durumda!"
+msgstr ""
+"Bu arayüz zaten yapılandırılmış durumda! Bunu yeniden yapılandırmak istiyor "
+"musunuz?"
 
 #: ../src/plugins/netconf.c:766
-#, fuzzy
 msgid "<b>You can configure all network interfaces you need</b>"
-msgstr ""
-"<span face=\"Courier New\"><b>İhtiyacınız olan tüm ağ arayüzlerini "
-"yapılandırabilirsiniz</b></span>"
+msgstr "<b>İhtiyacınız olan tüm ağ arayüzlerini yapılandırabilirsiniz</b>"
 
 #: ../src/plugins/netconf.c:785
-#, fuzzy
 msgid "Configuration"
-msgstr "X11 Yapılandırması"
+msgstr "Yapılandırma"
 
 #: ../src/plugins/netconf.c:795
-#, fuzzy
 msgid "DSL Configuration"
-msgstr "X11 Yapılandırması"
+msgstr "DSL Yapılandırması"
 
 #: ../src/plugins/netconf.c:819
 msgid ""
@@ -1271,6 +1233,10 @@ msgid ""
 "\n"
 "Do you want to apply the current configuration ?"
 msgstr ""
+"Diğer arayüzleri yaoılandırmak istiyorsanız ağınızı yeniden "
+"yapılandırabilirsiniz ya da güncel ağ ayarlarınızı uygulayabilirsiniz.\n"
+"\n"
+"Güncel ayarları uygulamak istiyor musunuz?"
 
 #: ../src/plugins/netconf.c:864
 msgid "Hostname"
@@ -1325,9 +1291,8 @@ msgid "No help available for this plugin"
 msgstr "Bu eklenti için uygun yardım yok"
 
 #: ../src/fwife.c:273
-#, fuzzy
 msgid "Language selection"
-msgstr "Paket seçimi"
+msgstr "Dil seçimi"
 
 #: ../src/fwife.c:318
 msgid "Insuffecient privileges. Fwife must be run as root."
