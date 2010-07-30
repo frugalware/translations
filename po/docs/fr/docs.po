@@ -1,13 +1,12 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-16 01:45+0300\n"
-"PO-Revision-Date: 2010-07-16 15:45+0200\n"
+"POT-Creation-Date: 2010-07-30 01:45+0300\n"
+"PO-Revision-Date: 2010-07-30 12:02+0200\n"
 "Last-Translator: Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fr\n"
@@ -28,7 +27,7 @@ msgstr "_ Documentation pour Frugalware @VERSION@"
 #: header.txt.in:11
 #, no-wrap
 msgid ""
-"Copyright (C) 2005, 2006, 2007, 2008, 2009 The Frugalware Developer Team.\n"
+"Copyright (C) 2005, 2006, 2007, 2008, 2009, 2010 The Frugalware Developer Team.\n"
 "Permission is granted to copy, distribute and/or modify this document\n"
 "under the terms of the GNU Free Documentation License, Version 1.2\n"
 "or any later version published by the Free Software Foundation;\n"
@@ -36,7 +35,8 @@ msgid ""
 "A copy of the license is included in the section entitled \"GNU\n"
 "Free Documentation License\".\n"
 msgstr ""
-"Copyright (C) 2005, 2006, 2007, 2008, 2009 The Frugalware Developer Team.\n"
+"Copyright (C) 2005, 2006, 2007, 2008, 2009, 2010 The Frugalware Developer "
+"Team.\n"
 "Permission is granted to copy, distribute and/or modify this document\n"
 "under the terms of the GNU Free Documentation License, Version 1.2\n"
 "or any later version published by the Free Software Foundation;\n"
@@ -2781,6 +2781,11 @@ msgid ""
 "configuration will be enough for you, but you can place your own fragments "
 "there if you want to manually fine-tune some of the settings."
 msgstr ""
+"Si vous installez X, le répertoire /etc/X11/xorg.conf.d va être "
+"automatiquement créé, comprenant les différents fichiers de configuration de "
+"Xorg. Dans la plupart des cas, la configuration par défaut devrait suffire. "
+"Mais vous pouvez placer vos propres fichiers de configuration, si vous "
+"préférez régler finement certains paramètres."
 
 #. type: Plain text
 #: x.txt:14
@@ -2795,12 +2800,12 @@ msgstr ""
 #: x.txt:17
 #, no-wrap
 msgid "# vi /etc/X11/xorg.conf.d/10-evdev.conf\n"
-msgstr ""
+msgstr "# vi /etc/X11/xorg.conf.d/10-evdev.conf"
 
 #. type: Plain text
 #: x.txt:20
 msgid "and change the `xkb_layout` option there to `us`, for example."
-msgstr ""
+msgstr "et changez l'option `xkb_layout` par `fr`, par exemple"
 
 # type: Plain text
 #. type: Title ==
@@ -2824,7 +2829,6 @@ msgstr ""
 # type: Plain text
 #. type: Plain text
 #: x.txt:28
-#, fuzzy
 msgid ""
 "If you have an NVIDIA card, you probably need the manufacturer's binary "
 "drivers. Obtaining the NVIDIA binary driver is fairly simple:"
@@ -2869,9 +2873,8 @@ msgstr ""
 # type: Plain text
 #. type: Plain text
 #: x.txt:41
-#, fuzzy
 msgid "For KDM ('/etc/kde/config/kdm/kdmrc')"
-msgstr "Pour KDM ('/usr/share/config/kdm/kdmrc')"
+msgstr "Pour KDM ('/etc/kde/config/kdm/kdmrc')"
 
 # type: Plain text
 #. type: Plain text
@@ -7810,10 +7813,9 @@ msgid ""
 "The top is setup for booting to the serial port and the bottom is for "
 "booting to a framebuffer console."
 msgstr ""
-"Localisez les 2 lignes de démarrage à la fin du script efika.forth dans "
-"/boot. La partie du haut concerne la configuration pour démarrer sur le port "
-"série et la partie du bas concerne le démarrage vers une console "
-"framebuffer."
+"Localisez les 2 lignes de démarrage à la fin du script efika.forth dans /"
+"boot. La partie du haut concerne la configuration pour démarrer sur le port "
+"série et la partie du bas concerne le démarrage vers une console framebuffer."
 
 #. type: Plain text
 #: packages.txt:1043
@@ -17892,9 +17894,9 @@ msgstr "$ su -\n"
 # type: Title =
 #. type: Title =
 #: upgrade.txt:1
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Upgrading from Frugalware 1.2 to 1.3"
-msgstr "Mise à jour de Frugalware 1.1. vers 1.2."
+msgstr "Mise à jour de Frugalware 1.2 vers 1.3."
 
 # type: Plain text
 #. type: Title ==
@@ -17906,13 +17908,12 @@ msgstr "Préface"
 # type: Plain text
 #. type: Plain text
 #: upgrade.txt:7
-#, fuzzy
 msgid ""
 "The aim of this howto is to show how you can upgrade a Frugalware-1.2 "
 "(Locris) system to Frugalware-1.3 (Haven)."
 msgstr ""
 "L'objectif de ce tutoriel est de montrer que vous pouvez mettre à jour une "
-"installation Frugalware 1.1. (Getorin) vers Frugalware 1.2. (Locris)."
+"installation Frugalware-1.2 (Locris) vers Frugalware-1.3 (Haven)."
 
 # type: Plain text
 #. type: Title ==
@@ -17924,39 +17925,42 @@ msgstr "pacman-g2"
 # type: Plain text
 #. type: Plain text
 #: upgrade.txt:13
-#, fuzzy
 msgid ""
 "Locris comes with an improved pacman-g2, so the first step is to install it. "
 "Given that it depends on OpenSSL 1.0, you need to update those packages "
 "first:"
 msgstr ""
-"Locris utilise une version optimisée de pacman-g2. La première chose à "
-"faire  est de l'installer : "
+"Locris utilise une version optimisée de pacman-g2, la première chose à faire "
+"est de l'installer. Étant donné qu'il dépend de OpenSSL 1.0, vous devez "
+"tout d'abord mettre à jour les paquets suivant:"
 
 # type: Plain text
 #. type: delimited block -
 #: upgrade.txt:16
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# pacman-g2 -Sy pacman-g2 curl wget proftpd\n"
-msgstr "# pacman-g2 -Sy pacman-g2\n"
+msgstr "# pacman-g2 -Sy pacman-g2 curl wget proftpd\n"
 
 # type: Plain text
 #. type: Title ==
 #: upgrade.txt:18
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Removing obsolete packages"
-msgstr "Retirer le paquet qt."
+msgstr "Suppression des paquets obsolètes"
 
 #. type: Plain text
 #: upgrade.txt:21
 msgid "Some software has been marked as obsolete in Getorin. To remove them:"
 msgstr ""
+"Certains paquets sont marqués comme étant obsolètes dans Getorin. Pour les "
+"supprimer :"
 
 #. type: delimited block -
 #: upgrade.txt:24
 #, no-wrap
 msgid "# pacman-g2 -Rd pident ctorrent farsight gst-plugins-farsight libjingle-tapioca libchipcard2 libchipcard3 bitswash\n"
-msgstr ""
+msgstr "# pacman-g2 -Rd pident ctorrent farsight gst-plugins-farsight libjingle-"
+"tapioca libchipcard2 libchipcard3 bitswash\n"
 
 # type: Title ==
 #. type: Title ==
@@ -17989,6 +17993,20 @@ msgid ""
 ":: Replace gnome-cups-manager with frugalware-current/system-config-printer? [Y/n] \n"
 ":: Replace xf86-input-citron with frugalware-current/xf86-input-mouse? [Y/n] \n"
 msgstr ""
+"# pacman-g2 -Su\n"
+":: Starting local database upgrade...\n"
+":: Replace dvdrtools with frugalware-current/cdrtools? [Y/n] \n"
+":: Replace gqview with frugalware-current/geeqie? [Y/n] \n"
+":: Replace libgksu with frugalware-current/gksu-frugalware? [Y/n] \n"
+":: Replace gksu with frugalware-current/gksu-frugalware? [Y/n] \n"
+":: Replace nautilus-gksu with frugalware-current/gksu-frugalware? [Y/n] \n"
+":: Replace gal with frugalware-current/libgnome? [Y/n] \n"
+":: Replace eel with frugalware-current/nautilus? [Y/n] \n"
+":: Replace akode with frugalware-current/phonon? [Y/n] \n"
+":: Replace arts with frugalware-current/phonon? [Y/n] \n"
+":: Replace gnome-cups-manager with frugalware-current/system-config-printer? "
+"[Y/n] \n"
+":: Replace xf86-input-citron with frugalware-current/xf86-input-mouse? [Y/n] "
 
 # type: Plain text
 #. type: Plain text
@@ -18016,9 +18034,9 @@ msgstr ""
 # type: Plain text
 #. type: Title ==
 #: upgrade.txt:53
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Installing replacement packages"
-msgstr "Installer avec les CDs"
+msgstr "Installation des paquets de remplacement"
 
 # type: Plain text
 #. type: Plain text
@@ -18037,7 +18055,7 @@ msgstr ""
 #: upgrade.txt:59
 #, no-wrap
 msgid "ctorrent, bitswash"
-msgstr ""
+msgstr "ctorrent, bitswash"
 
 #. type: Plain text
 #: upgrade.txt:64
@@ -18046,20 +18064,23 @@ msgid ""
 "the tree. Those can be: rtorrent, deluge, btg, libtorrent-rasterbar to "
 "mention some of them."
 msgstr ""
+"Ces projets ont été abandonnés. Cherchez dans les dépôts pour un autre "
+"client BitTorrent. Cela peut être : rtorrent, deluge, btg, libtorrent-"
+"rasterbar pour en citer quelques uns."
 
 # type: Plain text
 #. type: delimited block -
 #: upgrade.txt:67
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# pacman-g2 -S deluge\n"
-msgstr "# pacman-g2 -S fuse\n"
+msgstr "# pacman-g2 -S delgue"
 
 # type: Plain text
 #. type: Title ===
 #: upgrade.txt:69
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "pident"
-msgstr "openttd"
+msgstr "pident"
 
 #. type: Plain text
 #: upgrade.txt:73
@@ -18067,12 +18088,14 @@ msgid ""
 "No replacement for this package. You should not use it anyway.  http://www."
 "clock.org/~fair/opinion/identd.html"
 msgstr ""
+"Pas de remplacement pour ce paquet. Vous pouvez néanmoins l'utiliser. "
+"http://www.clock.org/~fair/opinion/identd.html"
 
 #. type: Title ===
 #: upgrade.txt:74
 #, no-wrap
 msgid "farsight, gst-plugins-farsight, libjingle-tapioca"
-msgstr ""
+msgstr "farsight, gst-plugins-farsight, libjingle-tapioca"
 
 #. type: Plain text
 #: upgrade.txt:78
@@ -18080,19 +18103,21 @@ msgid ""
 "farsight2, gst-plugins-good and gst-plugins-bad are the replacements here. "
 "Farsight2 will install the others as well."
 msgstr ""
+"farsight2, gst-plugins-good and gst-plugins-bad sont les remplaçants. "
+"Farsight2 va installer les autres paquets comme il faut."
 
 # type: Plain text
 #. type: delimited block -
 #: upgrade.txt:81
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# pacman-g2 -S farsight2\n"
-msgstr "# pacman-g2 -S fuse\n"
+msgstr "# pacman-g2 -S farsight2\n"
 
 #. type: Title ===
 #: upgrade.txt:83
 #, no-wrap
 msgid "libchipcard2, libchipcard3"
-msgstr ""
+msgstr "libchipcard2, libchipcard3"
 
 #. type: Plain text
 #: upgrade.txt:87
@@ -18100,13 +18125,15 @@ msgid ""
 "These libraries are very old. None of your packages should depend on them, "
 "so use libchipcard package instead of these."
 msgstr ""
+"Ces librairies sont très vieilles. Aucun paquet ne dépend, normalement, "
+"d'elles. Vous pouvez donc utiliser libchipcard à la place."
 
 # type: Plain text
 #. type: Title ==
 #: upgrade.txt:88
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "XOrg configuration file removal"
-msgstr "Fichier de configuration"
+msgstr "Suppression du fichier de configuration de XOrg."
 
 #. type: Plain text
 #: upgrade.txt:93
@@ -18115,15 +18142,16 @@ msgid ""
 "XOrg, so `/etc/X11/xorg.conf` is no longer necessary, you are recommended to "
 "remove it:"
 msgstr ""
+"XOrg utilise maintenant udev pour détecter automatiquement votre matériel "
+"quand vous le lancez. Par conséquent, le fichier `/etc/X11/xorg.conf`n'est "
+"plus nécessaire. Il est recommandé de le supprimer :"
 
 # type: Plain text
 #. type: delimited block -
 #: upgrade.txt:96
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# rm /etc/X11/xorg.conf\n"
-msgstr ""
-"# vi /etc/X11/xorg.conf\n"
-"-----------------------\n"
+msgstr "# rm /etc/X11/xorg.conf\n"
 
 #. type: Plain text
 #: upgrade.txt:103
@@ -18134,6 +18162,11 @@ msgid ""
 "conflicting settings in the monolithic and the fragment files, the later "
 "ones have priority."
 msgstr ""
+"Autrement, si vous voulez réglez finement certains paramètres de XOrg, vous "
+"pouvez placer un morceau de fichier dans le nouveau répertoire "
+"`/etc/X11/xorg.conf.d`. Si vous décidez de garder le monolithique "
+"`xorg.conf` et que vous avez des paramètres conflictuels dans ce fichier et "
+"dans les fragments de fichiers, ces derniers ont la priorité."
 
 # type: Bullet: '+<br />
 # type: '
