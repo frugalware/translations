@@ -484,7 +484,15 @@ msgid ""
 "for each WPA network, as long as each network has a different essid.\n"
 msgstr ""
 "wpa_supplicant = yes|no::\n"
-"\tIf this directive is enabled, then wpa_supplicant will be invoked toinitialize WPA encryption before setting any other parameter, but willnot do anything else. It is intended to use instead of the `essid` and`wpa_psk` directives if you prefer to write a wpa_supplicant.confmanually.+NOTE: In case you use WPA encryption only with your wireless card, thenthis method has the advantage of not having different network profilesfor each WPA network, as long as each network has a different essid."
+"\tIf this directive is enabled, then wpa_supplicant will be invoked to\n"
+"\tinitialize WPA encryption before setting any other parameter, but will\n"
+"\tnot do anything else. It is intended to use instead of the `essid` and\n"
+"\t`wpa_psk` directives if you prefer to write a wpa_supplicant.conf\n"
+"\tmanually.\n"
+"+\n"
+"NOTE: In case you use WPA encryption only with your wireless card, then\n"
+"this method has the advantage of not having different network profiles\n"
+"for each WPA network, as long as each network has a different essid.\n"
 
 # type: Plain text
 #: netconfig.txt:142
@@ -693,7 +701,7 @@ msgid ""
 "----\n"
 msgstr ""
 "wpa_supplicant = yes\n"
-"----"
+"----\n"
 
 # type: Plain text
 #: netconfig.txt:221
