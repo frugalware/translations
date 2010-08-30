@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-09 01:59+0200\n"
-"PO-Revision-Date: 2010-04-09 20:07+0200\n"
+"POT-Creation-Date: 2010-08-30 02:01+0200\n"
+"PO-Revision-Date: 2010-08-30 20:20+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -275,8 +275,8 @@ msgid "What about Asian languages?"
 msgstr "Hvad med Asiatiske sprog?"
 
 #: ../about.php:67
-msgid "Frugalware does not currently support languages written in ideographs."
-msgstr "Frugalware understøtter p.t. ikke sprog skrevet i ideogrammer."
+msgid "Yes you just have to switch to UTF-8 encoding."
+msgstr "Ja må du lige skifte til UTF-8-encoding."
 
 #: ../about.php:68
 msgid "What architectures does Frugalware support?"
@@ -284,35 +284,89 @@ msgstr "Hvilke arkitekturer understøtter Frugalware?"
 
 #: ../about.php:69
 msgid ""
-"Currently we support x86 and x86_64 platforms, and inside x86, only i686 "
-"(Pentium Pro or higher instruction set) and inside x86_64 only k8 (amd64). "
-"If there are any claims, an i386 port will be created, but currently we "
-"don't have resources to build and maintain those packages. Outside x86, "
-"currently we don't have any non-x86 hardware, but happily accept such "
-"patches or any effort to create non-x86 optimized packages. We are also "
-"working on a PowerPC port"
+"Currently we support x86, x86_64 and ppc platforms, and inside x86, only "
+"i686 (Pentium Pro or higher instruction set), inside x86_64 only k8 (amd64) "
+"and inside ppc only PowerPC. If there are any claims, an i386 port will be "
+"created, but currently we don't have resources to build and maintain those "
+"packages. Outside x86, currently we don't have any non-x86 hardware, but "
+"happily accept such patches or any effort to create non-x86 optimized "
+"packages."
 msgstr ""
-"Lige nu understøtter vi x86 og x86_64 platforme, og i x86, kun i686 (Pentium "
-"Pro eller højere instruktionsæt) og i x86_64 kun k8 (amd64). Hvis der er "
-"nogen forespørgelser, på en i386 portering vil den blive lavet, men lige nu "
-"har vi ikke nogen resurser til at bygge og vedligeholde disse pakker. Lige "
-"nu har vi intet hardware udover x86, men vi modtager meget gerne sådanne "
-"programrettelser eller andre midler til at skabe sådanne ikke-x86 optimerede "
-"pakker. Vi arbejder også på en PowerPC portering"
+"Lige nu understøtter vi x86 og x86_64 og PCC platforme, og i x86, kun i686 "
+"(Pentium Pro eller højere instruktionsæt) og i x86_64 kun k8 (amd64) pg i "
+"pcc kun PowerPc. Hvis der er nogen forespørgelser, på en i386 portering vil "
+"den blive lavet, men lige nu har vi ikke nogen resurser til at bygge og "
+"vedligeholde disse pakker. Lige nu har vi intet hardware udover x86, men vi "
+"modtager meget gerne sådanne programrettelser eller andre midler til at "
+"skabe sådanne ikke-x86 optimerede pakker.."
 
-#: ../about.php:76
+#: ../about.php:70
+msgid "How are compressed the Frugalware packages?"
+msgstr "Hvordan er Frugalware-pakkerne komprimeret?"
+
+#: ../about.php:71
+msgid ""
+"FPM packages were originally .tar.gz packages, then a bit later we migrated "
+"to libarchive, which allowed bzip2 compression. Life was good, but then lzma "
+"was came, and I added support for libarchive, though others were not really "
+"interested in a migration, so we stick to .tar.bz2. A few months ago "
+"libarchive got support for the xz format (which is the successor of lzma), "
+"so we switched to it. pacman-g2 still\n"
+"support .tar.gz and .tar.bz2 as well, and the package extension is .fpm all "
+"the time to make it clear that it's a Frugalware package."
+msgstr ""
+"FPM parkkerne var oprindelig . tar.gz pakker, derefter lidt senere migrerede "
+"vi til libarkiver, som tillod bzip2-kompression. Det var godt, men derefter "
+"kom lzma, og vil tilbyggede understøttelse for libarkiver, selvom andre "
+"ikke virkeligt var interesserede i en migration, så holdt vi os til dset. "
+"For nogle månder siden understøttede libarkiverne xz formatet (som er "
+"afløseren af lzma), så vi skiftede til det. pacman-g2 men stadig væk\n"
+"support for .tar.gz ogport .tar.bz2 og pakke-endelsen er altid .fpm for at "
+"gøre det klart at det er en Frugalware-pakke."
+
+#: ../about.php:73
+msgid "What's the difference between Arch and Frugalware?"
+msgstr "Hvad er Foskellen på Arch og Frugalware?"
+
+#: ../about.php:74
+msgid ""
+"Many people think that as we use basically the same <tt>pacman</tt> as <a "
+"href=\"http://www.archlinux.org\">Arch Linux</a> then the two distribution "
+"are the same. Originally the package manager was the same, there is almost "
+"nothing other similar. There are also other major differences. We have "
+"console (such as <tt>grubconfig</tt> and <tt>netconfig</tt>) and graphical "
+"(such as <tt>gService</tt> and <tt>gFPM</tt>) configuration tools. At the "
+"end of the installation you will get a working system with x, network, mouse "
+"(and much more configured. We have an unique repo (stable or current) and "
+"it's easy to contribute with new packages, so we don't need such thing like "
+"<a href=\"http://aur.archlinux.org/\">AUR</a>. We officially support PPC "
+"arch."
+msgstr ""
+"Mange mennesker tror at vi benytter grundlæggende det samme <tt>pacman</tt> "
+"som <a href=\"http://www.archlinux.org\">Arch Linux</a> så de to "
+"distributioner må være ens mener folk. Oprindeligt var package manageren den "
+"samme, Men der er andre store forskelle. Vi har konsol (så som "
+"<tt>grubconfig</tt> og <tt>netconfig</tt>) og grafisk (så som "
+"<tt>gService</tt> og <tt>gFPM</tt>) konfigurationsredskaber. Samt ved "
+"slutningen af installationen vil du have fuldt virkende system med x, "
+"netværk, mus Graf(and much more configured. (og meget mere konfigureret. Vi "
+"har et unik repo (stable og current) og det er nemt at bidrage med nye "
+"pakker, så at vi ikke behøver sådan en ting som <a "
+"href=\"http://aur.archlinux.org/\">AUR</a>. Vi støtter officielt PPC arch."
+
+#: ../about.php:81
 msgid "Short"
 msgstr "Kort"
 
-#: ../about.php:80
+#: ../about.php:85
 msgid "Question"
 msgstr "Spørgsmål"
 
-#: ../about.php:81
+#: ../about.php:86
 msgid "Answer"
 msgstr "Svar"
 
-#: ../about.php:83
+#: ../about.php:88
 msgid "Long"
 msgstr "Lang"
 
@@ -372,7 +426,7 @@ msgstr "Nyheder"
 msgid "Announcements"
 msgstr "Meddelelser"
 
-#: ../config.inc.php:47 ../rss.php:193
+#: ../config.inc.php:47 ../rss.php:195
 msgid "Security announcements"
 msgstr "Sikkerhedsmeddeleser"
 
@@ -1007,8 +1061,24 @@ msgid "Package updates"
 msgstr "Pakkeopdateringer"
 
 #: ../rss.php:192
+msgid ""
+"There is an optional suffix to filter the package parameters: [/&lt;"
+"version&gt;[&lt;arch&gt;[&lt;package&gt;]]]."
+msgstr ""
+"Der er en valgfri suffix til at filtere pakke parameterne: "
+"[/&lt;version&gt;[&lt;arch&gt;[&lt;pakke&gt;]]]."
+
+#: ../rss.php:193
+msgid "Examples: "
+msgstr "Eksempler:"
+
+#: ../rss.php:194
 msgid "Blog posts"
 msgstr "Blog poster"
+
+#: ../rss.php:196
+msgid "New forums posts"
+msgstr "Nye Forum indlæg"
 
 #: ../screenshots.php:32
 msgid "Splash screen"
@@ -1345,6 +1415,10 @@ msgstr "CVEs"
 #: ../security.php:94
 msgid "Description"
 msgstr "Beskrivelse"
+
+#~ msgid ""
+#~ "Frugalware does not currently support languages written in ideographs."
+#~ msgstr "Frugalware understøtter p.t. ikke sprog skrevet i ideogrammer."
 
 #~ msgid "08_kde_login.png"
 #~ msgstr "KDE login"
