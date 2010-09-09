@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-09 01:44+0300\n"
-"PO-Revision-Date: 2010-09-09 12:59+0200\n"
+"PO-Revision-Date: 2010-09-09 13:54+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -7734,6 +7734,10 @@ msgid ""
 "platform.  Special thanks to CRUX PPC, which is where this script is from, "
 "with some modifications for Frugalware Linux. Instructions for usage:"
 msgstr ""
+"Det indeholder hardware fixups for Efika 5200b så at hardwaren kan virke.  "
+"Det er ikke nødvendigt at bruge dette hvis du ikke har denne "
+"hardwareplatform. Speciel tak til CRUX PPC, hvor dette script er fra med "
+"nogle modifikationer for Frugalware Linux. Instruktioner for brug af det:"
 
 #. type: Plain text
 #: packages.txt:1040
@@ -7742,6 +7746,9 @@ msgid ""
 "The top is setup for booting to the serial port and the bottom is for "
 "booting to a framebuffer console."
 msgstr ""
+"Lokaliser de 2 boot-linier ved bunden af efika.fort scriptet under/boot. "
+"Toppen er setup for at boote til den serielle port og bunden er for at boote "
+"til en framebuffer-konsol."
 
 #. type: Plain text
 #: packages.txt:1043
@@ -7749,11 +7756,13 @@ msgid ""
 "Replace 'hd:1' with the boot device and the partition where the kernel you "
 "are booting is located."
 msgstr ""
+"Erstat 'hd:1' med boot device og den partition hvor kernen du er ved at "
+"boote er lokaliseret."
 
 #. type: Plain text
 #: packages.txt:1045
 msgid "Replace 'vmlinuz' with the full path to the kernel you wish to boot."
-msgstr ""
+msgstr "Erstat 'vmlinuz' med den fulde sti til kernen du ønsker at boote."
 
 #. type: Plain text
 #: packages.txt:1048
@@ -7761,18 +7770,19 @@ msgid ""
 "Replace the 'root=/dev/sda3' parameter to the proper device path for where "
 "the root partition is located."
 msgstr ""
+"Erstat 'root=/dev/sda3' parameteren til den rigtige device sti hvor root "
+"partitionen er lokaliseret."
 
 #. type: Plain text
 #: packages.txt:1050
 msgid "Append any other kernel parameters you need."
-msgstr ""
+msgstr "Tilføj enhver anden kerneparametre du har brug for."
 
 # type: Plain text
 #. type: Plain text
 #: packages.txt:1052
-#, fuzzy
 msgid "You're done!"
-msgstr "Du er klar!"
+msgstr "Du er færdig!"
 
 # type: Plain text
 #. type: Title ==
@@ -8782,7 +8792,7 @@ msgstr ""
 #: packages.txt:1411
 #, no-wrap
 msgid "hostapd"
-msgstr ""
+msgstr "hostapd"
 
 #. type: Plain text
 #: packages.txt:1415
@@ -8790,11 +8800,13 @@ msgid ""
 "Configuration examples can be found in /etc/hostapd.  You must edit the "
 "following files located in /etc/hostapd to configure hostapd:"
 msgstr ""
+"Konfigurations eksempler kan findes i /etc/hostapd.  Du er nødt til at "
+"redigere følgende filer lokaliseret i /etc/hostapd for at konfigure hostapd:"
 
 #. type: Plain text
 #: packages.txt:1419
 msgid "hostapd.allow hostapd.conf hostapd.deny"
-msgstr ""
+msgstr "hostapd.allow hostapd.conf hostapd.deny"
 
 #. type: Plain text
 #: packages.txt:1422
@@ -8802,6 +8814,8 @@ msgid ""
 "The daemon script usable via the service command expects you to have "
 "configured it properly via these files before it can be used."
 msgstr ""
+"Daemon-scriptet er brugbart via service-ommandoen som forventer at du har "
+"konfigureret det forsvarligt via disse filer før det kan bruges."
 
 # type: Plain text
 #. type: Title ==
@@ -10788,6 +10802,8 @@ msgid ""
 "As an alternative, you can install the opensfx and opengfx packages as a "
 "partial alternative to the original data files."
 msgstr ""
+"Som et alternativ, kan du installere opensfx  og opensfx pakkerne som et "
+"delvist alternativ til de oprindelige data filer."
 
 # type: Plain text
 #. type: Title ==
@@ -17645,9 +17661,9 @@ msgstr "$ su -\n"
 # type: Title =
 #. type: Title =
 #: upgrade.txt:1
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Upgrading from Frugalware 1.2 to 1.3"
-msgstr "Opgradering fra Frugalware 1.1 til 1.2"
+msgstr "Opgradering fra Frugalware 1.2 til 1.3"
 
 # type: Plain text
 #. type: Title ==
@@ -17659,13 +17675,12 @@ msgstr "Indledning"
 # type: Plain text
 #. type: Plain text
 #: upgrade.txt:7
-#, fuzzy
 msgid ""
 "The aim of this howto is to show how you can upgrade a Frugalware-1.2 "
 "(Locris) system to Frugalware-1.3 (Haven)."
 msgstr ""
-"Formålet med denne howto er at vise hvordan du kan opgradere et Frugalware-"
-"1.1 (Getorin) system til Frugalware-1.2 (Locris)."
+"Formålet med denne howto er at fortælle hvordan kan opgradere fra et "
+"Frugalware-1.2 (Locris) system til Frugalware-1.3 (Haven)."
 
 # type: Plain text
 #. type: Title ==
@@ -17677,40 +17692,44 @@ msgstr "pacman-g2"
 # type: Plain text
 #. type: Plain text
 #: upgrade.txt:14
-#, fuzzy
 msgid ""
 "The new release comes with an improved pacman-g2, so the first step is to "
 "install it. Given that it depends on OpenSSL 1.0 and conflicts with earlier "
 "bash-completion, you need to update those packages in one go first:"
 msgstr ""
-"Locris kommer med en forbedret pacman-g2, så det første trin vil være at "
-"installere det:"
+"Denne frigivelse kommer med en forbedret pacman-g2, så det første skridt er "
+"at installere den. Givet af at den afhænger af OpenSSL 1.0 og konflikter med "
+"den tidligere bash-completion, så du bliver nødt til at opdate disse pakker "
+"på en gang først:"
 
 # type: Plain text
 #. type: delimited block -
 #: upgrade.txt:17
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# pacman-g2 -Sy pacman-g2 curl wget proftpd bash-completion\n"
-msgstr "# pacman-g2 -Sy pacman-g2\n"
+msgstr "# pacman-g2 -Sy pacman-g2 curl wget proftpd bash-completion\n"
 
 # type: Plain text
 #. type: Title ==
 #: upgrade.txt:19
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Removing obsolete packages"
-msgstr "Fjerner qt pakken."
+msgstr " Fjerne forældede pakker"
 
 #. type: Plain text
 #: upgrade.txt:23
 msgid ""
 "Some software has been marked as obsolete in the new release. To remove them:"
 msgstr ""
+"Noget software er blevet markeret ssom forældet i denne frigivelse. For at "
+"fjerne det, skriv følgende:"
 
 #. type: delimited block -
 #: upgrade.txt:26
 #, no-wrap
 msgid "# pacman-g2 -Rd pident ctorrent farsight gst-plugins-farsight libjingle-tapioca libchipcard2 libchipcard3 bitswash\n"
-msgstr ""
+msgstr "# pacman-g2 -Rd pident ctorrent farsight gst-plugins-farsight libjingle-"
+"tapioca libchipcard2 libchipcard3 bitswash\n"
 
 # type: Title ==
 #. type: Title ==
@@ -17743,6 +17762,20 @@ msgid ""
 ":: Replace gnome-cups-manager with frugalware-current/system-config-printer? [Y/n]\n"
 ":: Replace xf86-input-citron with frugalware-current/xf86-input-mouse? [Y/n]\n"
 msgstr ""
+"# pacman-g2 -Su\n"
+":: Starting local database upgrade...\n"
+":: Replace dvdrtools with frugalware-current/cdrtools? [Y/n]\n"
+":: Replace gqview with frugalware-current/geeqie? [Y/n]\n"
+":: Replace libgksu with frugalware-current/gksu-frugalware? [Y/n]\n"
+":: Replace gksu with frugalware-current/gksu-frugalware? [Y/n]\n"
+":: Replace nautilus-gksu with frugalware-current/gksu-frugalware? [Y/n]\n"
+":: Replace gal with frugalware-current/libgnome? [Y/n]\n"
+":: Replace eel with frugalware-current/nautilus? [Y/n]\n"
+":: Replace akode with frugalware-current/phonon? [Y/n]\n"
+":: Replace arts with frugalware-current/phonon? [Y/n]\n"
+":: Replace gnome-cups-manager with frugalware-current/system-config-printer? "
+"[Y/n]\n"
+":: Replace xf86-input-citron with frugalware-current/xf86-input-mouse? [Y/n]\n"
 
 # type: Plain text
 #. type: Plain text
@@ -17770,27 +17803,25 @@ msgstr ""
 # type: Plain text
 #. type: Title ==
 #: upgrade.txt:55
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Installing replacement packages"
-msgstr "Installering fra CD"
+msgstr "Installere erstatnings pakker"
 
 # type: Plain text
 #. type: Plain text
 #: upgrade.txt:59
-#, fuzzy
 msgid ""
 "In case you removed anything in section 3, now you can install the "
 "replacement packages:"
 msgstr ""
-"//== Installere erstatningspakker // //Som sagt hvis du har fjernet pakker "
-"under trin 3, er det nu tid for at installere //"
-"erstaningspakker: // //---- //# pacman-g2 -S gst-plugins-ugly-x264 //----"
+"Hvis du har fjernet nogle pakker under afsnit 3, skal du nu installere "
+"erstatnings pakker:"
 
 #. type: Title ===
 #: upgrade.txt:61
 #, no-wrap
 msgid "ctorrent, bitswash"
-msgstr ""
+msgstr "ctorrent, bitswash"
 
 #. type: Plain text
 #: upgrade.txt:66
@@ -17799,20 +17830,23 @@ msgid ""
 "the tree. Those can be: rtorrent, deluge, btg, libtorrent-rasterbar to "
 "mention some of them."
 msgstr ""
+"Disse projekter er ophørt. Så kik efter nogle andre bittorrent klienter i "
+"pakkeudvalget. Det kunne f.eks være: rtorrent, deluge, btg, libtorrent-"
+"rasterbar for nævne nogen af dem."
 
 # type: Plain text
 #. type: delimited block -
 #: upgrade.txt:69
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# pacman-g2 -S deluge\n"
-msgstr "# pacman-g2 -S fuse\n"
+msgstr "# pacman-g2 -S deluge\n"
 
 # type: Plain text
 #. type: Title ===
 #: upgrade.txt:71
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "pident"
-msgstr "openttd"
+msgstr "pident"
 
 #. type: Plain text
 #: upgrade.txt:75
@@ -17820,12 +17854,14 @@ msgid ""
 "No replacement for this package. You should not use it anyway.  http://www."
 "clock.org/~fair/opinion/identd.html"
 msgstr ""
+"Ingen erstatning for denne pakke. Du burde ikke bruge det under alle "
+"omstændigheder. http://www.clock.org/~fair/opinion/identd.html"
 
 #. type: Title ===
 #: upgrade.txt:76
 #, no-wrap
 msgid "farsight, gst-plugins-farsight, libjingle-tapioca"
-msgstr ""
+msgstr "farsight, gst-plugins-farsight, libjingle-tapioca"
 
 #. type: Plain text
 #: upgrade.txt:80
@@ -17833,19 +17869,21 @@ msgid ""
 "farsight2, gst-plugins-good and gst-plugins-bad are the replacements here. "
 "Farsight2 will install the others as well."
 msgstr ""
+"farsight2, gst-plugins-good og gst-plugins-bad er erstatningerne her. "
+"Farsight2 vil også installere de andre"
 
 # type: Plain text
 #. type: delimited block -
 #: upgrade.txt:83
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# pacman-g2 -S farsight2\n"
-msgstr "# pacman-g2 -S fuse\n"
+msgstr "# pacman-g2 -S farsight2\n"
 
 #. type: Title ===
 #: upgrade.txt:85
 #, no-wrap
 msgid "libchipcard2, libchipcard3"
-msgstr ""
+msgstr "libchipcard2, libchipcard3"
 
 #. type: Plain text
 #: upgrade.txt:89
@@ -17853,13 +17891,15 @@ msgid ""
 "These libraries are very old. None of your packages should depend on them, "
 "so use libchipcard package instead of these."
 msgstr ""
+"Disse biblioteker er meget gamle. Ingen af dine pakker burde afhænge af dem, "
+"så brug libchipcard pakken i stedet for disse."
 
 # type: Plain text
 #. type: Title ==
 #: upgrade.txt:90
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "XOrg configuration file removal"
-msgstr "Konfiguration fil"
+msgstr " XOrg konfigurationsfil fjernet"
 
 #. type: Plain text
 #: upgrade.txt:95
@@ -17868,12 +17908,15 @@ msgid ""
 "XOrg, so `/etc/X11/xorg.conf` is no longer necessary, you are recommended to "
 "remove it:"
 msgstr ""
+"XOrg bruger nu udev for at automatisk detektere din hardware når du starter "
+"XOrg, så /etc/X11/xorg.conf er ikke længere nødvendig, det anbefales at du "
+"fjerner det:"
 
 #. type: delimited block -
 #: upgrade.txt:98
 #, no-wrap
 msgid "# rm /etc/X11/xorg.conf\n"
-msgstr ""
+msgstr "# rm /etc/X11/xorg.conf\n"
 
 #. type: Plain text
 #: upgrade.txt:105
@@ -17884,6 +17927,11 @@ msgid ""
 "conflicting settings in the monolithic and the fragment files, the later "
 "ones have priority."
 msgstr ""
+"I stedet for, hvis du stadigvæk manuelt vil finindstille dele af din XOrg "
+"konfiguration, kan du placere en fragmentfil til den nye "
+"/etc/X11/xorg.conf.d mappe. Hvis du stadigvæk beholder den monolitiske "
+"xorg.conf, og du har uoverensstemmende indstillinger i den monolitiske og "
+"fragmentfilerne, har de senere første prioritet."
 
 # type: Plain text
 #. type: Title ==
