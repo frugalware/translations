@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-10-09 01:59+0300\n"
+"POT-Creation-Date: 2010-12-01 02:01+0100\n"
 "PO-Revision-Date: 2010-11-09 13:23+0200\n"
 "Last-Translator: Balint Krizsan <balint@krizsan.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -546,9 +546,18 @@ msgstr ""
 "WPA-Netzwerk erstellt werden müssen, solange jedes Netzwerk eine andere essid\n"
 "hat.\n"
 
-# type: Plain text
 #. type: Plain text
 #: netconfig.txt:142
+#, no-wrap
+msgid ""
+"scan_ssid = yes|no::\n"
+"\tIf this directive is enabled, then wpa_supplicant will handle a\n"
+"\thidden ESSID as well.\n"
+msgstr ""
+
+# type: Plain text
+#. type: Plain text
+#: netconfig.txt:146
 #, no-wrap
 msgid ""
 "wpa_driver = <driver>::\n"
@@ -561,7 +570,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: netconfig.txt:149
+#: netconfig.txt:153
 #, no-wrap
 msgid ""
 "\t*  wext: Linux wireless extensions (generic)\n"
@@ -580,7 +589,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: netconfig.txt:154
+#: netconfig.txt:158
 #, no-wrap
 msgid ""
 "dhcp_opts = <options>::\n"
@@ -595,7 +604,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: netconfig.txt:158
+#: netconfig.txt:162
 #, no-wrap
 msgid ""
 "dhcpclient = <dhcp client>::\n"
@@ -608,33 +617,33 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: netconfig.txt:160
+#: netconfig.txt:164
 msgid "== EXAMPLES"
 msgstr "== BEISPIELE"
 
 # type: Plain text
 #. type: Plain text
-#: netconfig.txt:162
+#: netconfig.txt:166
 msgid "=== Static Address"
 msgstr "=== Statische Adresse"
 
 # type: Plain text
 #. type: Plain text
-#: netconfig.txt:163 netconfig.txt:174 netconfig.txt:186 netconfig.txt:202
-#: netconfig.txt:216 netconfig.txt:222 netconfig.txt:236 netconfig.txt:244
+#: netconfig.txt:167 netconfig.txt:178 netconfig.txt:190 netconfig.txt:206
+#: netconfig.txt:220 netconfig.txt:226 netconfig.txt:240 netconfig.txt:248
 #, no-wrap
 msgid "----\n"
 msgstr "----\n"
 
 # type: Plain text
 #. type: Plain text
-#: netconfig.txt:166
+#: netconfig.txt:170
 msgid "[options] dns = 192.168.1.1"
 msgstr "[options] dns = 192.168.1.1"
 
 # type: Plain text
 #. type: Plain text
-#: netconfig.txt:170
+#: netconfig.txt:174
 #, no-wrap
 msgid ""
 "[eth0]\n"
@@ -649,13 +658,13 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: netconfig.txt:173
+#: netconfig.txt:177
 msgid "=== ADSL with NAT"
 msgstr "=== ADSL mit NAT"
 
 # type: Plain text
 #. type: Plain text
-#: netconfig.txt:182
+#: netconfig.txt:186
 #, no-wrap
 msgid ""
 "[options]\n"
@@ -678,13 +687,13 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: netconfig.txt:185
+#: netconfig.txt:189
 msgid "=== The `key=` directive"
 msgstr "=== Die `key=`-Anweisung"
 
 # type: Plain text
 #. type: Plain text
-#: netconfig.txt:195
+#: netconfig.txt:199
 #, no-wrap
 msgid ""
 "key = 0123-4567-89\n"
@@ -709,13 +718,13 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: netconfig.txt:198
+#: netconfig.txt:202
 msgid "=== Initialize before `iwconfig`"
 msgstr "=== Vor `iwconfig` initialisieren"
 
 # type: Plain text
 #. type: Plain text
-#: netconfig.txt:201
+#: netconfig.txt:205
 msgid ""
 "If you have to initialize the card with `ifconfig <interface> up` before "
 "using iwconfig:"
@@ -725,7 +734,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: netconfig.txt:206
+#: netconfig.txt:210
 #, no-wrap
 msgid ""
 "[eth1]\n"
@@ -740,7 +749,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: netconfig.txt:210
+#: netconfig.txt:214
 msgid ""
 "NOTE: If you use several pre_up and/or post_down lines, this pre_up should "
 "be the first, and this post_down should be the last one."
@@ -750,13 +759,13 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: netconfig.txt:212
+#: netconfig.txt:216
 msgid "=== Using wpa_supplicant"
 msgstr "=== Benutze wpa_supplicant"
 
 # type: Plain text
 #. type: Plain text
-#: netconfig.txt:215
+#: netconfig.txt:219
 msgid ""
 "If you want to use wpa_supplicant instead of the simple encryption (using "
 "key = secret), then enable this by setting:"
@@ -766,7 +775,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: netconfig.txt:218
+#: netconfig.txt:222
 #, no-wrap
 msgid ""
 "wpa_supplicant = yes\n"
@@ -777,7 +786,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: netconfig.txt:221
+#: netconfig.txt:225
 msgid ""
 "You also need to edit `/etc/wpa_supplicant.conf`. A possible correct setup "
 "is:"
@@ -787,13 +796,13 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: netconfig.txt:224
+#: netconfig.txt:228
 msgid "ctrl_interface=/var/run/wpa_supplicant"
 msgstr "ctrl_interface=/var/run/wpa_supplicant"
 
 # type: Plain text
 #. type: Plain text
-#: netconfig.txt:229
+#: netconfig.txt:233
 #, no-wrap
 msgid ""
 "network={\n"
@@ -810,7 +819,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: netconfig.txt:233
+#: netconfig.txt:237
 msgid ""
 "NOTE: See also the `wpa_psk` and `wpa_driver` options, most users can avoid "
 "the manual `pre_up` and `pre_down` directives."
@@ -820,13 +829,13 @@ msgstr ""
 "vermeiden."
 
 #. type: Plain text
-#: netconfig.txt:235
+#: netconfig.txt:239
 msgid "=== Using mobile net (wvdial)"
 msgstr "=== Benutze mobiles Netz (wvdial)"
 
 # type: Plain text
 #. type: Plain text
-#: netconfig.txt:240
+#: netconfig.txt:244
 #, no-wrap
 msgid ""
 "[ppp0]\n"
@@ -835,15 +844,17 @@ msgid ""
 "----\n"
 msgstr ""
 "[ppp0]\n"
-"pre_up = wvdial-up mobilnetpost_down = wvdial-down----"
+"pre_up = wvdial-up mobilnet\n"
+"post_down = wvdial-down\n"
+"----\n"
 
 #. type: Plain text
-#: netconfig.txt:243
+#: netconfig.txt:247
 msgid "Example `/etc/wvdial.conf` (Vodafone):"
 msgstr "Beispiel `/etc/wvdial.conf` (Vodafone):"
 
 #. type: Plain text
-#: netconfig.txt:259
+#: netconfig.txt:263
 msgid ""
 "[Dialer Defaults] ISDN=0 Modem=/dev/ttyUSB0 Baud=460800 Phone =*99# Ask "
 "Password=0 Stupid Mode = 1 Dial Command= ATDT Init1=ATZ Init3=ATQ0 V1 E1 "
@@ -856,7 +867,7 @@ msgstr ""
 "Init5=AT+CGQREQ=3,0,0,0,0,0 Init6=AT+CGQMIN=1,0,0,0,0,0 Auto DNS=0"
 
 #. type: Plain text
-#: netconfig.txt:263
+#: netconfig.txt:267
 #, no-wrap
 msgid ""
 "[Dialer mobilnet]\n"
@@ -869,25 +880,25 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: netconfig.txt:266
+#: netconfig.txt:270
 msgid "== AUTHOR"
 msgstr "== AUTOR"
 
 # type: Plain text
 #. type: Plain text
-#: netconfig.txt:268
+#: netconfig.txt:272
 msgid "Written by Miklos Vajna."
 msgstr "Geschrieben von Miklos Vajna."
 
 # type: Plain text
 #. type: Plain text
-#: netconfig.txt:270
+#: netconfig.txt:274
 msgid "== REPORTING BUGS"
 msgstr "== FEHLERBERICHTE"
 
 # type: Plain text
 #. type: Plain text
-#: netconfig.txt:272
+#: netconfig.txt:276
 msgid ""
 "If you find any bug, then please file a bugreport at <http://bugs.frugalware."
 "org/>."
@@ -897,13 +908,13 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: netconfig.txt:274
+#: netconfig.txt:278
 msgid "== SEE ALSO"
 msgstr "== SIEHE AUCH"
 
 # type: Plain text
 #. type: Plain text
-#: netconfig.txt:275
+#: netconfig.txt:279
 #, no-wrap
 msgid "*ifconfig*(8), *route*(8), *iwconfig*(8), *dhcpcd*(8)\n"
 msgstr "*ifconfig*(8), *route*(8), *iwconfig*(8), *dhcpcd*(8)\n"
