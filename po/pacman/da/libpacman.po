@@ -6,90 +6,90 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-05 02:02+0100\n"
-"PO-Revision-Date: 2009-06-11 19:39+0200\n"
+"POT-Creation-Date: 2011-01-27 02:02+0100\n"
+"PO-Revision-Date: 2011-01-27 20:18+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: da\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 1.2.1\n"
+"X-Generator: Pootle 2.0.2\n"
 
 #: ../add.c:93
 #, c-format
 msgid "could not parse token %s"
 msgstr "kunne ikke parse grundenhed %s"
 
-#: ../add.c:129
+#: ../add.c:130
 #, c-format
 msgid "loading target '%s'"
 msgstr "Indlæser mål '%s'"
 
-#: ../add.c:167
+#: ../add.c:168
 #, c-format
 msgid "replacing older version %s-%s by %s in target list"
 msgstr "erstatter ældre version %s-%s af %s i målliste"
 
-#: ../add.c:176
+#: ../add.c:177
 #, c-format
 msgid "newer version %s-%s is in the target list -- skipping"
 msgstr "nyere version %s-%s er i mållisten -- springer over"
 
 #. look for unsatisfied dependencies
-#: ../add.c:219 ../remove.c:103
+#: ../add.c:220 ../remove.c:103
 msgid "looking for unsatisfied dependencies"
 msgstr "ser efter utilfredsstillede afhængigheder"
 
 #. no unsatisfied deps, so look for conflicts
-#: ../add.c:231 ../sync.c:500
+#: ../add.c:232 ../sync.c:500
 msgid "looking for conflicts"
 msgstr "ser efter konflikter"
 
 #. re-order w.r.t. dependencies
-#: ../add.c:243 ../remove.c:139
+#: ../add.c:244 ../remove.c:139
 msgid "sorting by dependencies"
 msgstr "sorterer efter afhængigheder"
 
-#: ../add.c:255
+#: ../add.c:256
 msgid "cleaning up"
 msgstr "rydder op"
 
-#: ../add.c:272
+#: ../add.c:273
 msgid "looking for file conflicts"
 msgstr "ser efter filkonflikter"
 
-#: ../add.c:340
+#: ../add.c:341
 #, c-format
 msgid "upgrading package %s-%s"
 msgstr "opgraderer pakke %s-%s"
 
-#: ../add.c:350 ../conflict.c:321 ../conflict.c:337 ../package.c:553
+#: ../add.c:351 ../conflict.c:322 ../conflict.c:338 ../package.c:554
 #, c-format
 msgid "loading FILES info for '%s'"
 msgstr "indlæser FILER information for '%s'"
 
-#: ../add.c:366
+#: ../add.c:367
 #, c-format
 msgid "removing old package first (%s-%s)"
 msgstr "fjerner gammel pakke først (%s-%s)"
 
-#: ../add.c:396
+#: ../add.c:397
 #, c-format
 msgid "adding package %s-%s"
 msgstr "tilføjer pakke %s-%s"
 
-#: ../add.c:407
+#: ../add.c:408
 #, c-format
 msgid "adding new package %s-%s"
 msgstr "tilføjer ny pakke %s-%s"
 
-#: ../add.c:411
+#: ../add.c:412
 msgid "extracting files"
 msgstr "udpakker filer"
 
-#: ../add.c:427 ../util.c:530 ../util.c:629
+#: ../add.c:428 ../util.c:530 ../util.c:629
 msgid "could not get current working directory"
 msgstr "kunne ikke finde det aktuelle arbejdsbibliotek"
 
@@ -347,7 +347,7 @@ msgstr "advarsel: kunne ikke fjerne spærrefil %s"
 msgid "could not get sha1 checksum for package %s-%s\n"
 msgstr "kunne ikke få sha1 checksum for pakke %s-%s\n"
 
-#: ../pacman.c:582 ../pacman.c:629 ../package.c:535
+#: ../pacman.c:582 ../pacman.c:629 ../package.c:536
 #, c-format
 msgid "loading DESC info for '%s'"
 msgstr "indlæser DESC information for '%s'"
@@ -547,10 +547,10 @@ msgstr "checkconflicts: db vs mål '%s'"
 msgid "db vs targs: found %s as a conflict for %s"
 msgstr "db vs targs: fundet %s som en konflikt for %s"
 
-#: ../conflict.c:283 ../conflict.c:368 ../deps.c:68 ../deps.c:622
-#: ../deps.c:662 ../group.c:40 ../handle.c:52 ../package.c:103 ../sync.c:63
-#: ../sync.c:631 ../sync.c:647 ../sync.c:742 ../trans.c:65 ../util.c:767
-#: ../util.c:774
+#: ../conflict.c:284 ../conflict.c:369 ../deps.c:68 ../deps.c:625
+#: ../deps.c:665 ../group.c:40 ../handle.c:52 ../package.c:103 ../sync.c:63
+#: ../sync.c:631 ../sync.c:647 ../sync.c:742 ../trans.c:65 ../util.c:772
+#: ../util.c:779
 #, c-format
 msgid "malloc failure: could not allocate %d bytes"
 msgstr "malloc problem: kunne ikke allokere %d bytes"
@@ -585,64 +585,64 @@ msgstr "databasekataglog '%s' eksisterer ikke -- prøv at skabe det"
 msgid "opening database '%s'"
 msgstr "åbner database '%s'"
 
-#: ../deps.c:127
+#: ../deps.c:128
 msgid "started sorting dependencies"
 msgstr "startet sortering af afhængigheder"
 
-#: ../deps.c:171
+#: ../deps.c:172
 msgid "dependency cycle detected"
 msgstr "afhængighedsløkke opdaget"
 
-#: ../deps.c:189
+#: ../deps.c:190
 msgid "sorting dependencies finished"
 msgstr "sortering af afhængigheder er færdig"
 
-#: ../deps.c:252
+#: ../deps.c:253
 #, c-format
 msgid "checkdeps: updated '%s' won't satisfy a dependency of '%s'"
 msgstr "checkdeps: opdateret '%s' kan ikke opfylde en afhængighed af '%s'"
 
-#: ../deps.c:387
+#: ../deps.c:390
 #, c-format
 msgid "checkdeps: found %s as a dependency for %s"
 msgstr "checkdeps: fundet %s som en afhængighed af %s"
 
-#: ../deps.c:423
+#: ../deps.c:426
 #, c-format
 msgid "checkdeps: found %s which requires %s"
 msgstr "checkdeps: fundet %s som kræver %s"
 
-#: ../deps.c:515
+#: ../deps.c:518
 #, c-format
 msgid "cannot find package \"%s\" or anything that provides it!"
 msgstr "kan ikke finde pakke \"%s\" eller noget der kan fremskaffe den!"
 
-#: ../deps.c:520
+#: ../deps.c:523
 msgid "dep is NULL!"
 msgstr "dep er NULL!"
 
-#: ../deps.c:532
+#: ../deps.c:535
 #, c-format
 msgid "excluding %s -- explicitly installed"
 msgstr "udelader %s -- fuldt installeret"
 
 #. add it to the target list
-#: ../deps.c:549
+#: ../deps.c:552
 #, c-format
 msgid "loading ALL info for '%s'"
 msgstr "indlæser alt info for '%s'"
 
-#: ../deps.c:552
+#: ../deps.c:555
 #, c-format
 msgid "adding '%s' to the targets"
 msgstr "tilføjer '%s' til målet"
 
-#: ../deps.c:594
+#: ../deps.c:597
 #, c-format
 msgid "%s provides dependency %s -- skipping"
 msgstr "%s fremskaffer afhængighed %s -- springer over"
 
-#: ../deps.c:618
+#: ../deps.c:621
 #, c-format
 msgid ""
 "cannot resolve dependencies for \"%s\" (\"%s\" is not in the package set)"
@@ -650,33 +650,33 @@ msgstr ""
 "kan ikke løse afhængigheder for \"%s\" (\"%s\" er ikke i pakkeprogramet)"
 
 #. this dep is already in the target list
-#: ../deps.c:635
+#: ../deps.c:638
 #, c-format
 msgid "dependency %s is already in the target list -- skipping"
 msgstr "afhængighed %s er allerede i mållisten -- springer over"
 
-#: ../deps.c:655
+#: ../deps.c:658
 #, c-format
 msgid "pulling dependency %s (needed by %s)"
 msgstr "henter afhængighed %s (behøves af %s)"
 
-#: ../deps.c:659
+#: ../deps.c:662
 #, c-format
 msgid "cannot resolve dependencies for \"%s\""
 msgstr "kan ikke løse afhængigheder for \"%s\""
 
 #. cycle detected -- skip it
-#: ../deps.c:675
+#: ../deps.c:678
 #, c-format
 msgid "dependency cycle detected: %s"
 msgstr "afhængighedsløkke opdaget: %s"
 
-#: ../deps.c:719
+#: ../deps.c:722
 #, c-format
 msgid "depcmp: %s-%s %s %s-%s => %s"
 msgstr "depcmp: %s-%s %s %s-%s => %s"
 
-#: ../deps.c:724
+#: ../deps.c:727
 #, c-format
 msgid "depcmp: %s-%s %s %s => %s"
 msgstr "depcmp: %s-%s %s %s => %s"
@@ -889,112 +889,112 @@ msgstr "denne pakke er ikke for denne arkitektur"
 msgid "could not retrieve the file"
 msgstr "kunne ikke tilbagehente filen"
 
-#: ../handle.c:139
+#: ../handle.c:142
 #, c-format
 msgid "PM_OPT_DBPATH set to '%s'"
 msgstr "PM_OPT_DBPATH sat til '%s'"
 
-#: ../handle.c:146
+#: ../handle.c:149
 #, c-format
 msgid "PM_OPT_CACHEDIR set to '%s'"
 msgstr "PM_OPT_CACHEDIR sat til '%s'"
 
-#: ../handle.c:153
+#: ../handle.c:156
 #, c-format
 msgid "PM_OPT_HOOKSDIR set to '%s'"
 msgstr "PM_OPT_HOOKSDIR sat til '%s'"
 
-#: ../handle.c:180
+#: ../handle.c:183
 #, c-format
 msgid "can't open log file %s"
 msgstr "kan ikke åbne log fil %s"
 
-#: ../handle.c:184
+#: ../handle.c:187
 #, c-format
 msgid "PM_OPT_LOGFILE set to '%s'"
 msgstr "PM_OPT_LOGFILE sat til '%s'"
 
-#: ../handle.c:189
+#: ../handle.c:192
 #, c-format
 msgid "'%s' added to PM_OPT_NOUPGRADE"
 msgstr "'%s' tilføjet til PM_OPT_NOUPGRADE"
 
-#: ../handle.c:192
+#: ../handle.c:195
 msgid "PM_OPT_NOUPGRADE flushed"
 msgstr "PM_OPT_NOUPGRADE opdateret"
 
-#: ../handle.c:198
+#: ../handle.c:201
 #, c-format
 msgid "'%s' added to PM_OPT_NOEXTRACT"
 msgstr "'%s' tilføjet til PM_OPT_NOEXTRACT"
 
-#: ../handle.c:201
+#: ../handle.c:204
 msgid "PM_OPT_NOEXTRACT flushed"
 msgstr "PM_OPT_NOEXTRACT opdateret"
 
-#: ../handle.c:207
+#: ../handle.c:210
 #, c-format
 msgid "'%s' added to PM_OPT_IGNOREPKG"
 msgstr "'%s' tilføjet til PM_OPT_IGNOREPKG"
 
-#: ../handle.c:210
+#: ../handle.c:213
 msgid "PM_OPT_IGNOREPKG flushed"
 msgstr "PM_OPT_IGNOREPKG opdateret"
 
-#: ../handle.c:216
+#: ../handle.c:219
 #, c-format
 msgid "'%s' added to PM_OPT_HOLDPKG"
 msgstr "'%s' tilføjet til PM_OPT_HOLDPKG"
 
-#: ../handle.c:219
+#: ../handle.c:222
 msgid "PM_OPT_HOLDPKG flushed"
 msgstr "PM_OPT_HOLDPKG opdateret"
 
-#: ../handle.c:225
+#: ../handle.c:228
 #, c-format
 msgid "'%s' added to PM_OPT_NEEDLES"
 msgstr "'%s' tilføjet til PM_OPT_NEEDLES"
 
-#: ../handle.c:228
+#: ../handle.c:231
 msgid "PM_OPT_NEEDLES flushed"
 msgstr "PM_OPT_NEEDLES opdateret"
 
-#: ../handle.c:244
+#: ../handle.c:247
 #, c-format
 msgid "PM_OPT_USESYSLOG set to '%d'"
 msgstr "PM_OPT_USESYSLOG sat til '%d'"
 
-#: ../handle.c:293
+#: ../handle.c:296
 #, c-format
 msgid "PM_OPT_LOGMASK set to '%02x'"
 msgstr "PM_OPT_LOGMASK sat til '%02x'"
 
-#: ../handle.c:312
+#: ../handle.c:315
 #, c-format
 msgid "PM_OPT_PROXYHOST set to '%s'"
 msgstr "PM_OPT_PROXYHOST sat til '%s'"
 
-#: ../handle.c:316
+#: ../handle.c:319
 #, c-format
 msgid "PM_OPT_PROXYPORT set to '%d'"
 msgstr "PM_OPT_PROXYPORT sat til '%d'"
 
-#: ../handle.c:327
+#: ../handle.c:330
 #, c-format
 msgid "PM_OPT_XFERCOMMAND set to '%s'"
 msgstr "PM_OPT_XFERCOMMAND sat til '%s'"
 
-#: ../handle.c:331
+#: ../handle.c:334
 #, c-format
 msgid "PM_OPT_NOPASSIVEFTP set to '%d'"
 msgstr "PM_OPT_NOPASSIVEFTP sat til '%d'"
 
-#: ../handle.c:335
+#: ../handle.c:338
 #, c-format
 msgid "PM_OPT_CHOMP set to '%d'"
 msgstr "PM_OPT_CHOMP sat til '%d'"
 
-#: ../handle.c:339
+#: ../handle.c:342
 #, c-format
 msgid "PM_OPT_MAXTRIES set to '%d'"
 msgstr "PM_OPT_MAXTRIES sat til '%d'"
@@ -1014,46 +1014,46 @@ msgstr "kunne ikke åbne fil %s"
 msgid "%s: syntax error in description file line %d"
 msgstr "%s: syntaksfejl i beskrivelsefil linje %d"
 
-#: ../package.c:320
+#: ../package.c:321
 msgid "could not parse the package description file"
 msgstr "kunne ikke fortolke pakkebeskrivelses fil"
 
-#: ../package.c:328
+#: ../package.c:329
 #, c-format
 msgid "missing package name in %s"
 msgstr "manglende pakkenavn i %s"
 
-#: ../package.c:336
+#: ../package.c:337
 #, c-format
 msgid "missing package version in %s"
 msgstr "manglende pakkeudgave i %s"
 
-#: ../package.c:345
+#: ../package.c:346
 #, c-format
 msgid "missing package architecture in %s"
 msgstr "manglende pakkearkitektur i %s"
 
-#: ../package.c:355
+#: ../package.c:356
 #, c-format
 msgid "wrong package architecture in %s"
 msgstr "forkert pakkearkitektur i %s"
 
-#: ../package.c:395
+#: ../package.c:396
 #, c-format
 msgid "could not remove tempfile %s"
 msgstr "kunne ikke fjerne temp-fil %s"
 
-#: ../package.c:412
+#: ../package.c:413
 #, c-format
 msgid "bad package file in %s"
 msgstr "dårlig pakkefil i %s"
 
-#: ../package.c:420
+#: ../package.c:421
 #, c-format
 msgid "missing package info file in %s"
 msgstr "manglende pakkeinfo fil i %s"
 
-#: ../package.c:560
+#: ../package.c:561
 #, c-format
 msgid "loading SCRIPLET info for '%s'"
 msgstr "indlæser SCRIPLET info til '%s'"
@@ -1378,67 +1378,67 @@ msgstr "forventet sha1: '%s'"
 msgid "actual sha1:   '%s'"
 msgstr "faktisk sha1:   '%s'"
 
-#: ../sync.c:935
+#: ../sync.c:936
 #, c-format
 msgid "archive %s was corrupted (bad MD5 or SHA1 checksum)\n"
 msgstr "arkiv %s var beskadiget (dårlig MD5 eller SHA1 checksum)\n"
 
-#: ../sync.c:937
+#: ../sync.c:938
 #, c-format
 msgid "archive %s is corrupted (bad MD5 or SHA1 checksum)\n"
 msgstr "arkiv %s er beskadiget (dårlig MD5 eller SHA1 checksum)\n"
 
-#: ../sync.c:968
+#: ../sync.c:969
 msgid "could not create removal transaction"
 msgstr "kunne ikke lave fjernelse af postering"
 
-#: ../sync.c:974
+#: ../sync.c:975
 msgid "could not initialize the removal transaction"
 msgstr "kunne ikke initialisere fjernelse af postering"
 
-#: ../sync.c:993
+#: ../sync.c:994
 msgid "removing conflicting and to-be-replaced packages"
 msgstr "fjerner konflikter og at-blive-erstatet af pakker"
 
-#: ../sync.c:995
+#: ../sync.c:996
 msgid "could not prepare removal transaction"
 msgstr "kunne ikke forberede fjernelsespostering"
 
-#: ../sync.c:1001
+#: ../sync.c:1002
 msgid "could not commit removal transaction"
 msgstr "kunne ikke gennemføre fjernelsespostering"
 
 #. install targets
-#: ../sync.c:1008
+#: ../sync.c:1009
 msgid "installing packages"
 msgstr "installerer pakker"
 
-#: ../sync.c:1011
+#: ../sync.c:1012
 msgid "could not create transaction"
 msgstr "kunne ikke skabe postering"
 
-#: ../sync.c:1016
+#: ../sync.c:1017
 msgid "could not initialize transaction"
 msgstr "kunne ikke initialisere postering"
 
-#: ../sync.c:1037
+#: ../sync.c:1038
 msgid "could not prepare transaction"
 msgstr "kunne ikke forberede udførsel"
 
-#: ../sync.c:1042
+#: ../sync.c:1043
 msgid "could not commit transaction"
 msgstr "kunne ikke udføre postering"
 
-#: ../sync.c:1049
+#: ../sync.c:1050
 msgid "updating database for replaced packages' dependencies"
 msgstr "opdaterer database for erstattede pakker' afhængigheder"
 
-#: ../sync.c:1077
+#: ../sync.c:1078
 #, c-format
 msgid "could not update requiredby for database entry %s-%s"
 msgstr "kunne ikke opdatere krævede-af for database post %s-%s"
 
-#: ../sync.c:1086
+#: ../sync.c:1087
 #, c-format
 msgid "could not update new database entry %s-%s"
 msgstr "kunne ikke opdatere ny database post %s-%s"
@@ -1522,7 +1522,12 @@ msgstr "udfører %s hooks..."
 msgid "opening hooks directory failed (%s)"
 msgstr "åbning af hooks katalog fejlede %s"
 
-#: ../util.c:762
+#: ../util.c:764
+#, c-format
+msgid "check_freespace: total pkg size: %lld, disk space: unknown"
+msgstr "check_fri plads:: total pkg størelse: %lld, disk plads: ukendt"
+
+#: ../util.c:767
 #, c-format
 msgid "check_freespace: total pkg size: %lld, disk space: %lld"
 msgstr "check_fri plads: total pkg størelse: %lld, disk plads: %lld"
