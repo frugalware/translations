@@ -6,55 +6,55 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-31 02:27+0200\n"
-"PO-Revision-Date: 2009-04-24 21:01+0200\n"
+"POT-Creation-Date: 2011-01-27 02:02+0100\n"
+"PO-Revision-Date: 2011-01-27 21:06+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: da\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 1.2.1\n"
+"X-Generator: Pootle 2.0.2\n"
 
-#: ../src/plugins/asklang.c:84
+#: ../src/plugins/asklang.c:85
 msgid "Select your language"
 msgstr "Vælg dit sprog"
 
-#: ../src/plugins/asklang.c:128
+#: ../src/plugins/asklang.c:129
 msgid "Flag"
 msgstr "Status"
 
-#: ../src/plugins/asklang.c:133
+#: ../src/plugins/asklang.c:134
 msgid "Code"
 msgstr "Kode"
 
-#: ../src/plugins/asklang.c:138 ../src/plugins/layout.c:338
-#: ../src/plugins/layout.c:428
+#: ../src/plugins/asklang.c:139 ../src/plugins/layout.c:298
+#: ../src/plugins/layout.c:395
 msgid "Name"
 msgstr "Navn"
 
-#: ../src/plugins/asklang.c:245 ../src/plugins/configsource.c:117
-#: ../src/plugins/partdisk.c:1069 ../src/plugins/layout.c:505
-#: ../src/util.c:207
+#: ../src/plugins/asklang.c:257 ../src/plugins/configsource.c:130
+#: ../src/plugins/configsource-discs.c:65 ../src/plugins/partdisk.c:1074
+#: ../src/plugins/layout.c:472 ../src/util.c:225
 msgid "Could not open output file for writing"
 msgstr "Kunne ikke åbne output fil for skrivning"
 
-#: ../src/plugins/configsource.c:67
+#: ../src/plugins/configsource.c:80
 msgid "Selecting mirrors"
 msgstr "Vælge mirrors"
 
 #. this string should be the best mirror for the given language from
 #. * /etc/pacman-g2/repos
-#: ../src/plugins/configsource.c:83
+#: ../src/plugins/configsource.c:96
 msgid "ftp://ftp5."
 msgstr "ftp://ftp10."
 
-#: ../src/plugins/configsource.c:160
+#: ../src/plugins/configsource.c:173
 msgid "Add a custom server"
 msgstr "Tilføj en specialtilpasset server"
 
-#: ../src/plugins/configsource.c:161
+#: ../src/plugins/configsource.c:174
 msgid ""
 "You may specify a custom mirror (eg. LAN) so you can download packages "
 "faster.\n"
@@ -64,70 +64,389 @@ msgstr ""
 "hurtigere.\n"
 "Skriv serverens adresse herunder :"
 
-#: ../src/plugins/configsource.c:190
+#: ../src/plugins/configsource.c:202
 msgid "Can't delete default mirrors"
 msgstr "Kan ikke slette standard mirrors"
 
-#: ../src/plugins/configsource.c:220
+#: ../src/plugins/configsource.c:230
 msgid "Use"
 msgstr "Brug"
 
-#: ../src/plugins/configsource.c:226
+#: ../src/plugins/configsource.c:236
+msgid "Status"
+msgstr "Status"
+
+#: ../src/plugins/configsource.c:240
 msgid "Mirrors"
 msgstr "Mirrors"
 
-#: ../src/plugins/configsource.c:231
+#: ../src/plugins/configsource.c:245
 msgid "Froms"
 msgstr "Fra"
 
-#: ../src/plugins/configsource.c:249
+#: ../src/plugins/configsource.c:263
 msgid ""
-"<span face=\"Courier New\"><b>You can choose one or more nearly mirrors to "
-"speed up package downloading.</b></span>"
+"<b>You can choose one or more nearly mirrors to speed up package downloading."
+"</b>"
 msgstr ""
-"<span face=\"Courier New\"><b>Du kan vælge en eller flere nærligende spejle "
-"for at fremskynde pakkedownloadning.</b></span>"
+"<b>Du kan vælge en eller flere nærligende spejle for at fremskynde "
+"pakkedownloadning.</b>"
 
 #. Set up buttons for custom mirrors
-#: ../src/plugins/configsource.c:265
+#: ../src/plugins/configsource.c:279
 msgid "Add custom mirror"
 msgstr "Tilføj tilpasset mirror"
 
-#: ../src/plugins/configsource.c:268
+#: ../src/plugins/configsource.c:280
 msgid "Remove custom mirror"
 msgstr "Fjern tilpasset mirror"
 
-#: ../src/plugins/configsource.c:295
+#: ../src/plugins/configsource.c:387
 msgid ""
-"You need an active internet connection ,\n"
-" do you want to configure your network now?"
-msgstr ""
-"Du har brug for en aktiv internetforbindelse ,\n"
-" vil du konfigurere dit netværk nu?"
-
-#: ../src/plugins/configsource.c:365
-msgid ""
-"Select one or more nearly mirrors to speed up package downloading.\n"
-"You can add your own custom mirrors to increase downloadind speed by using "
+"Select one or more nearby mirrors to speed up package downloading.\n"
+"You can add your own custom mirrors to increase download speed by using "
 "suitable button."
 msgstr ""
 "Vælg en eller flere nærmere spejle for at fremskynde pakkedownloadning.\n"
 "Du kan tilføje dine egne specialtilpassede spejle for at øge "
 "downloadindhastighed ved at bruge egnet knap."
 
+#: ../src/plugins/configsource-discs.c:163
+msgid ""
+"Do you want to search for a installation CD/DVD?\n"
+"\n"
+"If you want an installation from a CD/DVD, you should answer 'Yes'.\n"
+"Otherwise if you want a network installation, you should answer 'No'"
+msgstr ""
+"Ønsker du at søge efter en installations CD/DVD?\n"
+"\n"
+"Hvis du ønsker en installation fra en CD/DVD, skal du svare 'Ja'.\n"
+"Hvis du ønsker en netværks installation, skal du svare 'Nej'"
+
+#: ../src/plugins/configsource-network.c:249 ../src/plugins/netconf.c:234
+msgid "Select your access point :"
+msgstr "Vælg din muse port :"
+
+#: ../src/plugins/configsource-network.c:267 ../src/plugins/netconf.c:252
+msgid "Signal"
+msgstr "Signal"
+
+#: ../src/plugins/configsource-network.c:271 ../src/plugins/netconf.c:256
+msgid "Address"
+msgstr "Adresse"
+
+#: ../src/plugins/configsource-network.c:274 ../src/plugins/netconf.c:259
+msgid "ESSID"
+msgstr "ESSID"
+
+#: ../src/plugins/configsource-network.c:277 ../src/plugins/netconf.c:262
+msgid "Mode"
+msgstr "Mode"
+
+#: ../src/plugins/configsource-network.c:280 ../src/plugins/netconf.c:265
+msgid "Protocol"
+msgstr "Protekol"
+
+#: ../src/plugins/configsource-network.c:283 ../src/plugins/netconf.c:268
+msgid "Encryption"
+msgstr "Kryptering "
+
+#: ../src/plugins/configsource-network.c:286 ../src/plugins/netconf.c:271
+msgid "Cypher"
+msgstr "Cypher"
+
+#: ../src/plugins/configsource-network.c:325 ../src/plugins/netconf.c:308
+msgid "No encryption"
+msgstr "Ingen Kryptering "
+
+#: ../src/plugins/configsource-network.c:368 ../src/plugins/netconf.c:360
+msgid "Use a DHCP server"
+msgstr "Brug en DHCP server"
+
+#: ../src/plugins/configsource-network.c:369 ../src/plugins/netconf.c:361
+msgid "Use a static IP address"
+msgstr "Brug en statisk IP adresse"
+
+#: ../src/plugins/configsource-network.c:372 ../src/plugins/netconf.c:347
+msgid "Select network type"
+msgstr "Vælg netværkstype"
+
+#: ../src/plugins/configsource-network.c:378 ../src/plugins/netconf.c:353
+msgid ""
+"Now we need to know how your machine connects to the network.\n"
+"If you have an internal network card and an assigned IP address, gateway, "
+"and DNS,\n"
+" use 'static' to enter these values.\n"
+"If your IP address is assigned by a DHCP server (commonly used by cable "
+"modem services),\n"
+" select 'dhcp'. \n"
+msgstr ""
+"Nu er vi nødt til at vide hvordan din maskine er forbundet til netværket.\n"
+"Hvis du har et internt netværkskort og en tildelt IP adresse, gateway, og "
+"DNS,\n"
+" brug 'statisk' for at angive værdierne.\n"
+"Hvis din IP adresse bliver tildelt af en DHCP server (nårmalt brugt med "
+"kabel modemforbindelse),\n"
+" vælg 'dhcp'. \n"
+
+#: ../src/plugins/configsource-network.c:437 ../src/plugins/netconf.c:419
+msgid "Configure Wireless"
+msgstr "Konfiguration af trådløst"
+
+#: ../src/plugins/configsource-network.c:445 ../src/plugins/netconf.c:427
+msgid ""
+"In order to use wireless, you must set your extended netwok name (ESSID).\n"
+"If you have a WEP encryption key, then please enter it below.\n"
+"Examples: 4567-89AB-CD or s:password\n"
+"If you have a WPA passphrase, then please enter it below.\n"
+"Example: secret\n"
+"If you want to use a custom driver (not the generic one, called 'wext'), "
+"then please enter it below.\n"
+"If unsure enter nothing"
+msgstr ""
+"For at bruge trådløst, skal du sætte dit udvidede netvæksnavn (ESSID).\n"
+"Hvis du har en WEP krypteringsnøgle, så vær venlig at skriv den herunder.\n"
+"Eksempler: 4567-89AB-CD eller  s:password\n"
+"Hvis du har en WPA adgangskode, så vær venlig at skriv den herunder.\n"
+"Eksempel: hemlig\n"
+"Hvis du ønsker at bruge en brugerdefineret driver (ikke den almindelige, "
+"kaldet 'wext'), så vær venlig at skrive den herunder.\n"
+"Hvis du er usikker, så skriv ikke noget"
+
+#: ../src/plugins/configsource-network.c:458 ../src/plugins/netconf.c:440
+msgid "Essid : "
+msgstr "Essid : "
+
+#: ../src/plugins/configsource-network.c:462
+msgid "Scan Access Points"
+msgstr "Skan muse porte"
+
+#: ../src/plugins/configsource-network.c:467 ../src/plugins/netconf.c:449
+msgid "WEP encryption key : "
+msgstr "WEP Krypteringsnøgle : "
+
+#: ../src/plugins/configsource-network.c:474 ../src/plugins/netconf.c:456
+msgid "WPA encryption passphrase : "
+msgstr "WPA krypteringsadgangskode : "
+
+#: ../src/plugins/configsource-network.c:481 ../src/plugins/netconf.c:463
+msgid "WPA Driver : "
+msgstr "WPA Driver : "
+
+#: ../src/plugins/configsource-network.c:515 ../src/plugins/netconf.c:500
+msgid "Configure static network"
+msgstr "Konfigurer statisk netværk"
+
+#: ../src/plugins/configsource-network.c:521 ../src/plugins/netconf.c:506
+msgid "Enter static network parameters :"
+msgstr "Skriv statiske netværksparametre :"
+
+#: ../src/plugins/configsource-network.c:525 ../src/plugins/netconf.c:510
+msgid "IP Address : "
+msgstr "IP Adresse : "
+
+#: ../src/plugins/configsource-network.c:532 ../src/plugins/netconf.c:517
+msgid "Network Mask : "
+msgstr "Netværk-Maske : "
+
+#: ../src/plugins/configsource-network.c:539 ../src/plugins/netconf.c:524
+msgid "Gateway : "
+msgstr "Gateway : "
+
+#: ../src/plugins/configsource-network.c:578 ../src/plugins/netconf.c:579
+#, c-format
+msgid ""
+"Do you want to configure a DSL connection associated with the interface %s?"
+msgstr "Vil du konfigurere en DSL forbindelse asioeret med interfacet %s?"
+
+#: ../src/plugins/configsource-network.c:589 ../src/plugins/netconf.c:587
+msgid "Configure DSL connection"
+msgstr "konfigurer af DSL forbindelse"
+
+#: ../src/plugins/configsource-network.c:596 ../src/plugins/netconf.c:594
+msgid "Enter DSL parameters"
+msgstr "Skriv DSL parametre"
+
+#: ../src/plugins/configsource-network.c:600 ../src/plugins/netconf.c:598
+msgid "PPPOE username : "
+msgstr "PPPOE brugernavn : "
+
+#: ../src/plugins/configsource-network.c:607 ../src/plugins/netconf.c:605
+msgid "PPPOE password : "
+msgstr "PPPOE password : "
+
+#: ../src/plugins/configsource-network.c:614 ../src/plugins/netconf.c:612
+msgid "Re-enter PPPOE password : "
+msgstr "Skriv PPPOE password igen : "
+
+#: ../src/plugins/configsource-network.c:630 ../src/plugins/netconf.c:628
+msgid "Passwords do not match! Try again."
+msgstr "Password stemte ikke overens! Prøv igen."
+
+#: ../src/plugins/configsource-network.c:661
+msgid ""
+"Fwife cannot connect to internet with this configuration, do you want to "
+"apply this configuration anyway?"
+msgstr ""
+"Fwife kan ikke forbinde til internetet med denne konfiguration, vil du "
+"anvende denne konfiguration aligevel?"
+
+#: ../src/plugins/configsource-network.c:689
+msgid "Select your network interface :"
+msgstr "Vælg dit netværk interface :"
+
+#: ../src/plugins/configsource-network.c:710 ../src/plugins/netconf.c:778
+msgid "Device"
+msgstr "Enhed"
+
+#: ../src/plugins/configsource-network.c:713 ../src/plugins/netconf.c:781
+msgid "Description"
+msgstr "Beskrivelse"
+
+#: ../src/plugins/configsource-network.c:780
+#, c-format
+msgid ""
+"A netconfig profile (\"%s\") has been found on your current installation.\n"
+"Do you want to use it?"
+msgstr ""
+"En netconfig profil (\"%s\") er blevet fundet på din aktuelle installation.\n"
+"Ønsker du at bruge denne?"
+
+#: ../src/plugins/configsource-network.c:810
+#, c-format
+msgid ""
+"An active connection seems to have been found on interface %s using DHCP.\n"
+"Do you want to use it?"
+msgstr ""
+"En aktiv forbindelse synes at være blevet fundet på interfacet %s ved brug "
+"af DHCP.\n"
+"Ønsker du at bruge denne?"
+
+#: ../src/plugins/configsource-network.c:835
+msgid ""
+"An active connection seems to have been found but the connection's type have "
+"not been found.\n"
+"Do you want to use it anyway?"
+msgstr ""
+"En aktiv forbindelse synes at være blevet fundet kun forbindelsens type er "
+"ikke blevet fundet.\n"
+"Ønsker du at bruge denne aligevel?"
+
+#: ../src/plugins/configsource-network.c:856 ../src/plugins/netconf.c:695
+msgid ""
+"It seems that this network card has a wireless extension.\n"
+"\n"
+"Configure your wireless now?"
+msgstr ""
+"Det ser ud til at dette netværkskort har en trådløs udvidelse.\n"
+"\n"
+"Konfigurer dit trådløs nu?"
+
+#: ../src/plugins/configsource-network.c:867 ../src/plugins/netconf.c:706
+msgid "Set DHCP hostname"
+msgstr "Sæt DHCP hostname"
+
+#: ../src/plugins/configsource-network.c:867 ../src/plugins/netconf.c:706
+msgid ""
+"Some network providers require that the DHCP hostname be\n"
+"set in order to connect.\n"
+" If so, they'll have assigned a hostname to your machine.\n"
+" If you wereassigned a DHCP hostname, please enter it below.\n"
+" If you do not have a DHCP hostname, justhit enter."
+msgstr ""
+"Nogle netværk udbydere kræver at et DHCP værtsnavn bliver\n"
+"sat for at opnå forbindelse.\n"
+" Hvis det er tilfældet, vil de have specificeret et værtsnavn til din "
+"maskine.\n"
+" Hvis du har et DHCP værtsnavn, vær venlig at skrive det herunder.\n"
+" Hvis du ikke har et DHCP værtsnavn, slå da enter."
+
 #: ../src/plugins/finish.c:60
 msgid "Installation completed"
 msgstr "Installation gennemført"
 
-#: ../src/plugins/finish.c:70
-msgid "Installation completed! We hope that you enjoy Frugalware!"
-msgstr "Installation gennemført! Vi håber at du nyder Frugalware!"
+#: ../src/plugins/finish.c:71
+msgid "<b>Installation completed! We hope that you enjoy Frugalware!</b>"
+msgstr "<b>Installation gennemført! Vi håber at du nyder Frugalware!</b>"
 
-#: ../src/plugins/partdisk.c:91
+#: ../src/plugins/partdisk.c:100
 msgid "Partitioning the disk drives"
 msgstr "Partitioning af harddiskene"
 
-#: ../src/plugins/partdisk.c:449
+#: ../src/plugins/partdisk.c:501 ../src/plugins/partdisk.c:654
+msgid "Do you want to format partition?"
+msgstr "Vil du formatere partition?"
+
+#: ../src/plugins/partdisk.c:513
+msgid ""
+"<span foreground=\"#f90909\"><b>!!! NOTE: This will erase all data on it. "
+"Would you like to format this partition? !!!</b></span>\n"
+msgstr ""
+"<span foreground=\"#f90909\"><b>!!! NOTE: Dette vil slette alle data på den. "
+"Vil du formatere denne partition? !!!</b></span>\n"
+
+#: ../src/plugins/partdisk.c:517
+msgid "<b>Choose filesystem :</b>\n"
+msgstr "<b>Vælg filsystem :</b>\n"
+
+#. Ext3 filesystem - default
+#: ../src/plugins/partdisk.c:521 ../src/plugins/partdisk.c:579
+msgid "ext3 - Journalising version of the ext2 filesystem"
+msgstr "ext3 - Journalising version af ext2 filsystem"
+
+#. Ext2 filesystem
+#: ../src/plugins/partdisk.c:524 ../src/plugins/partdisk.c:577
+msgid "ext2 - Standard Linux ext2 filesystem"
+msgstr "ext2 - Standard Linux ext2 filsystem"
+
+#. Ext4 filesystem , experimental by now
+#: ../src/plugins/partdisk.c:527 ../src/plugins/partdisk.c:581
+msgid "ext4 - The evolution of the ext3 filesystem (EXPERIMENTAL!)"
+msgstr "ext4 - Udvikling af ext3 filesystemet (EKSPERIMENTEL!)"
+
+#. Reiser Filesystem
+#: ../src/plugins/partdisk.c:534 ../src/plugins/partdisk.c:583
+msgid "reiserfs - Hans Reiser's journalising filesystem"
+msgstr "reiserfs - Hans Reiser's journalising filsystem"
+
+#. XFS
+#: ../src/plugins/partdisk.c:538 ../src/plugins/partdisk.c:585
+msgid "xfs - SGI's journalising filesystem"
+msgstr "xfs - SGI's journalising filsystem"
+
+#: ../src/plugins/partdisk.c:541
+msgid "Do not format - keep filesystem"
+msgstr "Formater ikke - behold filsystem"
+
+#: ../src/plugins/partdisk.c:548
+msgid "<b>Options :</b>\n"
+msgstr "<b>Valgmuligheder ::</b>\n"
+
+#: ../src/plugins/partdisk.c:551
+msgid "Check for bad blocks - note that this is slow"
+msgstr "Tjek for dårlige blokke - noter at det er meget langsomt"
+
+#. change label
+#: ../src/plugins/partdisk.c:599
+msgid "<b>Creating filesystem... Please wait ... </b>\n"
+msgstr "<b>Skaber filsystem... Vent venligst ... </b>\n"
+
+#. On utilise les balises
+#: ../src/plugins/partdisk.c:668
+msgid ""
+"<span foreground=\"#f90909\"><b>It needs to be formatted if you want to use "
+"it as a swap partition!\n"
+"This will erase all data on that partition!\n"
+"\n"
+" Do you want to continue? </b></span>\n"
+msgstr ""
+"<span foreground=\"#f90909\"><b>Du er nødt til at formatere hvis du vil bruge "
+"det som en swap partition!\n"
+"Dette vil slette alle dine data på den partition!\n"
+"\n"
+" Ønsker du at fortsætte? </b></span>\n"
+
+#: ../src/plugins/partdisk.c:729
 msgid ""
 "If you want to change your root partition, select the new partition and use "
 "\"Set root partition\" button!"
@@ -135,153 +454,91 @@ msgstr ""
 "Hvis du vil gerne at ændre dit root partition, vælg den nye partition og "
 "brug \"Sæt root partition\" knap!"
 
-#: ../src/plugins/partdisk.c:454
+#: ../src/plugins/partdisk.c:732
 msgid "Unselect this swap partition?"
 msgstr "Fravælg denne swap partition?"
 
-#: ../src/plugins/partdisk.c:467
+#: ../src/plugins/partdisk.c:739 ../src/plugins/partdisk.c:982
+msgid "Mountpoint"
+msgstr "Monteringspunkt"
+
+#: ../src/plugins/partdisk.c:739
+msgid ""
+"Please enter the mountpoint (ex: /home) or leave it empty if you want to "
+"cancel :"
+msgstr ""
+
+#: ../src/plugins/partdisk.c:742
 msgid "Use the suitable button to perform this action!"
 msgstr "Brug den egnede knap for at udføre denne handling!"
 
-#: ../src/plugins/partdisk.c:537 ../src/plugins/partdisk.c:701
-msgid "Do you want to format partition?"
-msgstr "Vil du formatere partition?"
-
-#. On utilise les balises
-#: ../src/plugins/partdisk.c:551
-msgid ""
-"<span face=\"Courier New\" foreground=\"#f90909\"><b>!!! NOTE: This will "
-"erase all data on it. Would you like to format this partition? !!!</b></"
-"span>\n"
-msgstr ""
-"<span face=\"Courier New\" foreground=\"#f90909\"><b>!!! NOTE: Dette vil "
-"slette alle data på den. Vil du formatere denne partition? !!!</b></span>\n"
-
-#: ../src/plugins/partdisk.c:555
-msgid "Choose filesystem :"
-msgstr "Vælg filsystem :"
-
-#. Ext3 filesystem - default
-#: ../src/plugins/partdisk.c:559 ../src/plugins/partdisk.c:624
-msgid "ext3 - Journalising version of the ext2 filesystem"
-msgstr "ext3 - Journalising version af ext2 filsystem"
-
-#. Ext2 filesystem
-#: ../src/plugins/partdisk.c:562 ../src/plugins/partdisk.c:622
-msgid "ext2 - Standard Linux ext2 filesystem"
-msgstr "ext2 - Standard Linux ext2 filsystem"
-
-#. Ext4 filesystem , experimental by now
-#: ../src/plugins/partdisk.c:567 ../src/plugins/partdisk.c:626
-msgid "ext4 - The evolution of the of the ext3 filesystem (EXPERIMENTAL!)"
-msgstr "ext4 - Udvikling af ext3 filesystem (EKSPERIMENTEL!)"
-
-#. Reiser Filesystem
-#: ../src/plugins/partdisk.c:573 ../src/plugins/partdisk.c:628
-msgid "reiserfs - Hans Reiser's journalising filesystem"
-msgstr "reiserfs - Hans Reiser's journalising filsystem"
-
-#. XFS
-#: ../src/plugins/partdisk.c:577 ../src/plugins/partdisk.c:630
-msgid "xfs - SGI's journalising filesystem"
-msgstr "xfs - SGI's journalising filsystem"
-
-#: ../src/plugins/partdisk.c:580
-msgid "Noformat - keep filesystem"
-msgstr "Ingen formatering - behold filsystem"
-
-#: ../src/plugins/partdisk.c:586
-msgid "Options :"
-msgstr "Valgmuligheder :"
-
-#: ../src/plugins/partdisk.c:589
-msgid "Check for bad blocks - slowly"
-msgstr "Tjek for dårlige blokke - langsomt"
-
-#. change label
-#: ../src/plugins/partdisk.c:647
-msgid ""
-"<span face=\"Courier New\"><b>Creating filesystem... Please wait ... </b></"
-"span>\n"
-msgstr ""
-"<span face=\"Courier New\"><b>Skaber filsystem... Vent venligst ... </b></"
-"span>\n"
-
-#. On utilise les balises
-#: ../src/plugins/partdisk.c:715
-msgid ""
-"<span face=\"Courier New\" foreground=\"#f90909\"><b>You need to format is "
-"you want to use it as a swap partition!\n"
-"This will erase all your data on that partition !\n"
-"\n"
-" Do you want to continue? </b></span>\n"
-msgstr ""
-"<span face=\"Courier New\" foreground=\"#f90909\"><b>Du er nødt til at "
-"formatere hvis du vil bruge det som en swap partition!\n"
-"Dette vil slette alle dine data på den partition !\n"
-"\n"
-" Ønsker du at fortsætte? </b></span>\n"
-
-#: ../src/plugins/partdisk.c:771
+#: ../src/plugins/partdisk.c:770
 msgid "Select this partition as root partition?"
 msgstr "Vælg denne partition som root partition?"
 
-#: ../src/plugins/partdisk.c:848
+#: ../src/plugins/partdisk.c:842
 msgid "Can't do this operation directly! Change your root partition first."
 msgstr ""
 "Kan ikke udføre denne operation direkte! Ændr din root partition først."
 
-#: ../src/plugins/partdisk.c:895
+#: ../src/plugins/partdisk.c:887
 msgid "Do you want to run gparted to create/modify partitions?"
 msgstr "Ønsker du at bruge gparted for at skabe/modificere partitionerne?"
 
-#: ../src/plugins/partdisk.c:923
+#: ../src/plugins/partdisk.c:914
 msgid ""
-"<span face=\"Courier New\"><b>Select and format your partitions or launch "
-"GParted to modify them.</b></span>\n"
+"<b>Select and format your partitions or launch GParted to modify them.</b>\n"
 msgstr ""
-"<span face=\"Courier New\"><b>Vælg og formater dine partitioner eller brug "
-"GParted for at modificere dem.</b></span>\n"
+"<b>Vælg og formater dine partitioner eller brug GParted for at modificere "
+"dem.</b>\n"
 
-#: ../src/plugins/partdisk.c:930
+#: ../src/plugins/partdisk.c:921
 msgid " Devices : "
 msgstr "Enheder : "
 
-#: ../src/plugins/partdisk.c:976
+#: ../src/plugins/partdisk.c:967
 msgid "Partition"
 msgstr "Partition"
 
-#: ../src/plugins/partdisk.c:981 ../src/plugins/select.c:458
-#: ../src/plugins/select.c:561
+#: ../src/plugins/partdisk.c:972 ../src/plugins/select-expert.c:162
+#: ../src/plugins/select-expert.c:280
 msgid "Size"
 msgstr "Størrelse"
 
-#: ../src/plugins/partdisk.c:986
+#: ../src/plugins/partdisk.c:977
 msgid "Filesystem"
 msgstr "Filsystem"
 
-#: ../src/plugins/partdisk.c:991
-msgid "Mountpoint"
-msgstr "Monteringspunkt"
-
-#. * Set buttons *//
-#: ../src/plugins/partdisk.c:1015
-msgid "Set as root partition"
+#. Set buttons
+#: ../src/plugins/partdisk.c:1003
+#, fuzzy
+msgid ""
+"Set as root\n"
+"partition"
 msgstr "Sat som root partition"
 
-#: ../src/plugins/partdisk.c:1016
-msgid "Set as swap partition"
+#: ../src/plugins/partdisk.c:1004
+#, fuzzy
+msgid ""
+"Set as swap\n"
+"partition"
 msgstr "Sat som swap partition"
 
-#: ../src/plugins/partdisk.c:1017
+#: ../src/plugins/partdisk.c:1005
+#, fuzzy
+msgid "Set mountpoint"
+msgstr "Monteringspunkt"
+
+#: ../src/plugins/partdisk.c:1006
 msgid "Format partition"
 msgstr "Formater partition"
 
-#: ../src/plugins/partdisk.c:1018
+#: ../src/plugins/partdisk.c:1007
 msgid "Run Gparted"
 msgstr "Kør Gparted"
 
-#: ../src/plugins/partdisk.c:1138
+#: ../src/plugins/partdisk.c:1147
+#, fuzzy
 msgid ""
 "You must select at least one root partition to continue to the next stage.\n"
 " For example, to assign a root partition, select the device in list located "
@@ -298,8 +555,7 @@ msgid ""
 " since they contain utilities needed to bring the system up and mount "
 "partitions.\n"
 " Also, do not reuse a partition that you've already entered before.\n"
-" To set a mountpoint for a partition, edit the cell in the table of the "
-"partitions (column \"Mountpoint\") by double-clicking on it.\n"
+" To set a mountpoint for a partition, use the 'Set Mountpoint' button.\n"
 "\n"
 "If you want to modify partition table (create or modify partitions),\n"
 " you can run GParted but this will erase all your selected partitions."
@@ -326,292 +582,380 @@ msgstr ""
 "partitioner),\n"
 " kan du køre GParted men dette vil slette alle dine valgte partitioner."
 
-#: ../src/plugins/greet.c:48
+#: ../src/plugins/greet.c:50
 msgid "Welcome"
 msgstr "Velkommen"
 
-#: ../src/plugins/greet.c:59
+#: ../src/plugins/greet.c:61
 msgid ""
-"<span face=\"Times New Roman 12\"><b>Welcome among the users of Frugalware!\n"
+"<b>Welcome among the users of Frugalware!\n"
 "\n"
-"</b></span>\n"
+"</b>\n"
 "The aim of creating Frugalware was to help you to do your work faster and "
 "simpler.\n"
-" We hope that you will like our product.\n"
+"We hope that you will like our product.\n"
 "\n"
-"<span font_desc=\"Times New Roman italic 12\" foreground=\"#0000FF\">The "
-"Frugalware Developer Team</span>\n"
+"<span style=\"italic\" foreground=\"#0000FF\">The Frugalware Developer Team</"
+"span>\n"
 msgstr ""
-"<span face=\"Times New Roman 12\"><b>Velkommen blandt brugere af "
-"Frugalware!\n"
+"<span face=\"Times NewVelkommen blandt brugere af Frugalware!\n"
 "\n"
-"</b></span>\n"
+"<b>Velkommen blandt  Frugalware brugere!\n"
+"\n"
+"</b>\n"
 "Målet med at skabe Frugalware var at hjælpe dig til gøre dit arbejde "
 "hurtigere og mere enkel.\n"
 " Vi håber at du vil kunne lide vores produkt.\n"
 "\n"
-"<span font_desc=\"Times New Roman italic 12\" foreground=\"#0000FF"
-"\">Frugalware Udvikler Team</span>\n"
+"<span style=\"italic\" foreground=\"#0000FF\">Frugalware Udvikler Team</"
+"span>\n"
 
 #: ../src/plugins/layout.c:76
 msgid "Keyboard map selection"
 msgstr "Vælg tastaturlayout"
 
-#: ../src/plugins/layout.c:323 ../src/plugins/layout.c:464
+#: ../src/plugins/layout.c:281 ../src/plugins/layout.c:429
 msgid "Personalized keyboard"
 msgstr "Personaliseret tastaturlayout"
 
-#: ../src/plugins/layout.c:347
+#: ../src/plugins/layout.c:307
 msgid "Console Keymap"
 msgstr "Konsol tastaturlayout"
 
-#: ../src/plugins/layout.c:358
+#: ../src/plugins/layout.c:323
 msgid "X Keymap (Used only if X server installed)"
 msgstr "X tastaturlayout (Bruges kun hvis X server er installeret)"
 
-#: ../src/plugins/layout.c:364
+#. Combo for X keyboards models
+#: ../src/plugins/layout.c:330
 msgid "Model"
 msgstr "Model"
 
-#: ../src/plugins/layout.c:369
+#. Combo for variants
+#: ../src/plugins/layout.c:336
 msgid "Variant"
 msgstr "Variant"
 
-#: ../src/plugins/layout.c:390
+#: ../src/plugins/layout.c:361
 msgid "You must enter a name for this keyboard"
 msgstr "Du skal skrive et navn for dette tastaturlayout"
 
-#: ../src/plugins/layout.c:433
+#: ../src/plugins/layout.c:399
 msgid "X Layout"
 msgstr "X Layout"
 
-#: ../src/plugins/layout.c:437
+#: ../src/plugins/layout.c:402
 msgid "X Variant"
 msgstr "X Variant"
 
-#: ../src/plugins/layout.c:441
+#: ../src/plugins/layout.c:405
 msgid "Console keymap"
 msgstr "Konsol tastaturlayout"
 
-#: ../src/plugins/layout.c:456
-msgid ""
-"<span face=\"Courier New\"><b>You may select one of the following keyboard "
-"maps.</b></span>"
-msgstr ""
-"<span face=\"Courier New\"><b>Du skal vælge en af følgende tastaturlayouts.</"
-"b></span>"
+#: ../src/plugins/layout.c:421
+msgid "<b>You may select one of the following keyboard maps.</b>"
+msgstr "<b>Du skal vælge en af følgende tastaturlayouts.</b>"
 
-#: ../src/plugins/layout.c:463
+#: ../src/plugins/layout.c:428
 msgid "Test your keyboard here :"
 msgstr "Test dit tastaturlayout her :"
 
-#: ../src/plugins/select.c:84
+#: ../src/plugins/select.c:88
 msgid "Packages selection"
 msgstr "Pakkeudvælgelse"
 
-#: ../src/plugins/select.c:449 ../src/plugins/select.c:552
-msgid "Install?"
-msgstr "Installere?"
-
-#: ../src/plugins/select.c:453
-msgid "Package Name"
-msgstr "Pakke Navn"
-
-#: ../src/plugins/select.c:556
-msgid "Groups"
-msgstr "Grupper"
-
-#: ../src/plugins/select.c:588 ../src/plugins/select.c:1002
-msgid "<b>Choose groups you want to install :</b>"
-msgstr "<b>Vælg grupper du ønsker at installere :</b>"
-
-#: ../src/plugins/select.c:604
-msgid "Select all this group's packages"
-msgstr "Vælg alle denne gruppes pakker"
-
-#: ../src/plugins/select.c:605
-msgid "Unselect all this group's packages"
-msgstr "Fravælg alle denne gruppes pakker"
-
-#: ../src/plugins/select.c:623
-msgid "<b>Choose packages into selected group :</b>"
-msgstr "<b>Vælg pakker i udvalgt gruppe :</b>"
-
-#: ../src/plugins/select.c:748 ../src/plugins/select.c:949
-msgid "KDE"
-msgstr "KDE"
-
-#: ../src/plugins/select.c:755
-msgid "Gnome"
-msgstr "Gnome"
-
-#: ../src/plugins/select.c:760 ../src/plugins/select.c:967
-msgid "XFCE"
-msgstr "XFCE"
-
-#: ../src/plugins/select.c:765 ../src/plugins/select.c:976
-msgid "LXDE"
-msgstr "LXDE"
-
-#: ../src/plugins/select.c:773 ../src/plugins/select.c:985
-msgid "E17"
-msgstr "E17"
-
-#: ../src/plugins/select.c:943
-msgid "<b>Choose your desktop environment :</b>"
-msgstr "<b>Vælg dit skrivebordsmiljø :</b>"
-
-#: ../src/plugins/select.c:958
-msgid "GNOME"
-msgstr "GNOME"
-
-#: ../src/plugins/select.c:1006
-msgid "Graphical Application (Firefox, Thunderbird,...)"
-msgstr "Grafiske programmer (Firefox, Thunderbird,...)"
-
-#: ../src/plugins/select.c:1013
-msgid "Console Applications (Nano, Vim...)"
-msgstr "Konsol programmer  (Nano, Vim...)"
-
-#: ../src/plugins/select.c:1020
-msgid "OpenOffice Suite"
-msgstr "OpenOffice Kontorprogram"
-
-#: ../src/plugins/select.c:1027
-msgid "Network"
-msgstr "Netværk"
-
-#: ../src/plugins/select.c:1034
-msgid "Development"
-msgstr "Udvikling"
-
-#: ../src/plugins/select.c:1041
-msgid "Multimedia"
-msgstr "Multimedia"
-
-#: ../src/plugins/select.c:1052
-msgid "<b>You can choose extra groups :</b>"
-msgstr "<b>Du kan vælge ekstra grupper :</b>"
-
-#: ../src/plugins/select.c:1056
-msgid "Extra - Graphical Applications"
-msgstr "Ekstra - Grafiske Programmer"
-
-#: ../src/plugins/select.c:1062
-msgid "Extra - Console Applications"
-msgstr "Ekstra - Konsol Programmer"
-
-#: ../src/plugins/select.c:1068
-msgid "Extra - Games"
-msgstr "Ekstra - Spil"
-
-#: ../src/plugins/select.c:1074
-msgid "Extra - Network"
-msgstr "Ekstra - Netværk"
-
-#: ../src/plugins/select.c:1080
-msgid "Extra - Development"
-msgstr "Ekstra - Udvikling"
-
-#: ../src/plugins/select.c:1086
-msgid "Extra - Multimedia"
-msgstr "Ekstra  - Multimedia"
-
-#: ../src/plugins/select.c:1135
+#: ../src/plugins/select.c:308
 msgid "Loading package's database"
 msgstr "Indlæser pakkernes database"
 
-#: ../src/plugins/select.c:1146
+#: ../src/plugins/select.c:319
 msgid "Initializing pacman-g2"
 msgstr "Initialiserer pacman-g2"
 
-#: ../src/plugins/select.c:1188
-msgid "Udpate and load database"
+#: ../src/plugins/select.c:350
+#, fuzzy
+msgid "Update and load database"
 msgstr "Opdaterer og loader database"
 
-#: ../src/plugins/select.c:1213
+#: ../src/plugins/select.c:384
 msgid ""
-"Do you want to use expert mode?\n"
+"Choose your preferred mode.\n"
 "\n"
-"The normal mode shows a choice like 'C compiler system', the expert mode "
-"show you 'C libs', 'C compiler', 'C include files', etc - each individual "
-"package. Obviously, you should know what you're doing if you use the expert "
-"mode since it's possible to skip packages that are crucial to the "
-"functioning of your system. Choose 'no' for using normal mode that select "
-"groups of packages, or choose 'yes' for using expert mode with a switch for "
-"each package."
+" The Basic mode is a mode designed for beginners and provide a default "
+"installation of Frugalware. \n"
+" It allows you only to choose between the differents desktop environments "
+"available in Frugalware. For each one, a short description and a picture is "
+"given.\n"
+"\n"
+"The Intermediate mode allows you to choose a desktop environment and some "
+"extra package groups. \n"
+"It is designed for intermediate users who wants to enable/disable some "
+"specifics groups of packages but don't want to deal with the Expert mode.\n"
+"\n"
+"The Expert mode gives you a complete control of the packages installed since "
+"it shows not only package groups but individual packages in each group.\n"
+"Obviously, you should know what you're doing if you use the Expert mode "
+"since it's possible to skip packages that are crucial to the functioning of "
+"your system.\n"
+"\n"
+"Users who wants a non-graphical installation should use the Intermediate or "
+"the Expert mode."
 msgstr ""
-"Ønsker du at bruge ekspert menu?\n"
-"\n"
-"Den normale menu viser et valg som f.eks 'C compiler system', viser ekspert "
-"menuen dig 'C libs', 'C compiler', 'C include files', etc - altså "
-"individuelle pakker. Selvfølgelig, bør du vide hvad du gør hvis du bruger "
-"ekspert menuen fordi det er muligt at fravælge pakker som er nødvendige for "
-"at dit system kan bruges. Vælg 'nej' for brug af normal menuer der vælger "
-"grupper af pakker, eller vælg 'ja' for brug af ekspert menuer med mulighed "
-"for valg af inviduelle pakker. "
 
-#: ../src/plugins/install.c:60
+#: ../src/plugins/select.c:404
+#, fuzzy
+msgid "Package selection"
+msgstr "Pakkeudvælgelse"
+
+#: ../src/plugins/select.c:407
+msgid "Basic Mode"
+msgstr ""
+
+#: ../src/plugins/select.c:408
+msgid "Intermediate Mode"
+msgstr ""
+
+#: ../src/plugins/select.c:409
+msgid "Expert Mode"
+msgstr ""
+
+#: ../src/plugins/select.c:519
+#, fuzzy
+msgid "No enough disk space available to install all packages"
+msgstr "Ikke nok harddiskplads til rådighed for at installere alle pakker"
+
+#: ../src/plugins/select-basic.c:53 ../src/plugins/select-basic.c:150
+msgid ""
+"KDE is an international free software community producing an integrated set "
+"of cross-platform applications designed to run on Linux. KDE was formed to "
+"create a beautiful, functional and free desktop computing environment."
+msgstr ""
+
+#: ../src/plugins/select-basic.c:59
+msgid ""
+"GNOME is an international project that includes creating software "
+"development frameworks, selecting application software for the desktop, and "
+"working on the programs which manage application launching, file handling, "
+"and window and task management. The GNOME desktop environment is designed to "
+"be an intuitive and attractive desktop for users"
+msgstr ""
+
+#: ../src/plugins/select-basic.c:65
+msgid ""
+"Xfce is a free software desktop environment designed to be fast and "
+"lightweight, while still being visually appealing and easy to use."
+msgstr ""
+
+#: ../src/plugins/select-basic.c:69
+msgid ""
+"LXDE is a free software desktop environment designed to work well with "
+"computers on the low end of the performance spectrum such as older resource-"
+"constrained machines, new generation netbooks, and other small computers."
+msgstr ""
+
+#: ../src/plugins/select-basic.c:74
+msgid ""
+"Enlightenment DR17 (or E17) is an highly flexible and customizable window "
+"manager. Enlightement is designed to work well with both old and modern "
+"computers."
+msgstr ""
+
+#: ../src/plugins/select-basic.c:88 ../src/plugins/select-intermediate.c:280
+msgid "<b>Choose your desktop environment :</b>"
+msgstr "<b>Vælg dit skrivebordsmiljø :</b>"
+
+#: ../src/plugins/select-basic.c:94 ../src/plugins/select-basic.c:200
+#: ../src/plugins/select-intermediate.c:286
+#: ../src/plugins/select-intermediate.c:479
+msgid "KDE"
+msgstr "KDE"
+
+#: ../src/plugins/select-basic.c:104 ../src/plugins/select-basic.c:209
+#: ../src/plugins/select-intermediate.c:295
+#: ../src/plugins/select-intermediate.c:488
+msgid "GNOME"
+msgstr "GNOME"
+
+#: ../src/plugins/select-basic.c:114 ../src/plugins/select-basic.c:213
+#: ../src/plugins/select-intermediate.c:304
+#: ../src/plugins/select-intermediate.c:491
+msgid "XFCE"
+msgstr "XFCE"
+
+#: ../src/plugins/select-basic.c:124 ../src/plugins/select-basic.c:217
+#: ../src/plugins/select-intermediate.c:313
+#: ../src/plugins/select-intermediate.c:493
+msgid "LXDE"
+msgstr "LXDE"
+
+#: ../src/plugins/select-basic.c:134 ../src/plugins/select-basic.c:222
+#: ../src/plugins/select-intermediate.c:322
+#: ../src/plugins/select-intermediate.c:496
+msgid "E17"
+msgstr "E17"
+
+#: ../src/plugins/select-intermediate.c:331
+#: ../src/plugins/select-intermediate.c:501
+#, fuzzy
+msgid "No X Server"
+msgstr "X server - "
+
+#: ../src/plugins/select-intermediate.c:348 ../src/plugins/select-expert.c:316
+msgid "<b>Choose groups you want to install :</b>"
+msgstr "<b>Vælg grupper du ønsker at installere :</b>"
+
+#: ../src/plugins/select-intermediate.c:352
+msgid "Graphical Application (Firefox, Thunderbird,...)"
+msgstr "Grafiske programmer (Firefox, Thunderbird,...)"
+
+#: ../src/plugins/select-intermediate.c:359
+msgid "Console Applications (Nano, Vim...)"
+msgstr "Konsol programmer  (Nano, Vim...)"
+
+#: ../src/plugins/select-intermediate.c:366
+msgid "OpenOffice Suite"
+msgstr "OpenOffice Kontorprogram"
+
+#: ../src/plugins/select-intermediate.c:373
+msgid "Network"
+msgstr "Netværk"
+
+#: ../src/plugins/select-intermediate.c:380
+msgid "Development"
+msgstr "Udvikling"
+
+#: ../src/plugins/select-intermediate.c:387
+msgid "Multimedia"
+msgstr "Multimedia"
+
+#: ../src/plugins/select-intermediate.c:398
+msgid "<b>You can choose extra groups :</b>"
+msgstr "<b>Du kan vælge ekstra grupper :</b>"
+
+#: ../src/plugins/select-intermediate.c:402
+msgid "Extra - Graphical Applications"
+msgstr "Ekstra - Grafiske Programmer"
+
+#: ../src/plugins/select-intermediate.c:408
+msgid "Extra - Console Applications"
+msgstr "Ekstra - Konsol Programmer"
+
+#: ../src/plugins/select-intermediate.c:414
+msgid "Extra - Games"
+msgstr "Ekstra - Spil"
+
+#: ../src/plugins/select-intermediate.c:420
+msgid "Extra - Network"
+msgstr "Ekstra - Netværk"
+
+#: ../src/plugins/select-intermediate.c:426
+msgid "Extra - Development"
+msgstr "Ekstra - Udvikling"
+
+#: ../src/plugins/select-intermediate.c:432
+msgid "Extra - Multimedia"
+msgstr "Ekstra  - Multimedia"
+
+#: ../src/plugins/select-expert.c:153 ../src/plugins/select-expert.c:269
+msgid "Install?"
+msgstr "Installere?"
+
+#: ../src/plugins/select-expert.c:157
+msgid "Package Name"
+msgstr "Pakke Navn"
+
+#: ../src/plugins/select-expert.c:274
+msgid "Groups"
+msgstr "Grupper"
+
+#: ../src/plugins/select-expert.c:331
+msgid "Select all"
+msgstr "Vælge alle"
+
+#: ../src/plugins/select-expert.c:332
+msgid "Unselect all"
+msgstr "Fravælg alle"
+
+#: ../src/plugins/select-expert.c:350
+msgid "<b>Choose packages into selected group :</b>"
+msgstr "<b>Vælg pakker i udvalgt gruppe :</b>"
+
+#: ../src/plugins/install.c:70
 msgid "Installing packages"
 msgstr "Installerer pakker"
 
-#: ../src/plugins/install.c:93
+#: ../src/plugins/install.c:146
 #, c-format
 msgid "Downloading %s... (%d/%d)"
 msgstr "Downloader %s... (%d/%d)"
 
-#: ../src/plugins/install.c:121
+#: ../src/plugins/install.c:178
 #, c-format
 msgid "Installing packages... (%d/%d)"
 msgstr "Installerer pakker... (%d/%d)"
 
-#: ../src/plugins/install.c:124
+#: ../src/plugins/install.c:181
 msgid "Upgrading packages..."
 msgstr "Opgraderer pakker..."
 
-#: ../src/plugins/install.c:127
-msgid "Removing packages..."
-msgstr "Fjerner pakker..."
-
-#: ../src/plugins/install.c:130
-msgid "Checking packages for file conflicts..."
-msgstr "Tjekker pakker for filkonflikter..."
-
-#: ../src/plugins/install.c:155
-msgid "Checking dependencies"
-msgstr "Tjekker afhængigheder "
-
-#: ../src/plugins/install.c:158
-msgid "Checking for file conflicts"
-msgstr "Tjekker for filkonflikter"
-
-#: ../src/plugins/install.c:161
-msgid "Resolving dependencies"
-msgstr "Løser afhængigheder"
-
-#: ../src/plugins/install.c:164
-msgid "Looking for inter-conflicts"
-msgstr "Søger efter indre-konflikter"
-
-#: ../src/plugins/install.c:167
+#: ../src/plugins/install.c:205
 #, c-format
 msgid "Installing %s-%s"
 msgstr "Installerer %s-%s"
 
-#: ../src/plugins/install.c:172
+#: ../src/plugins/install.c:212
 #, c-format
 msgid "Packet %s-%s installed"
 msgstr "Pakke %s-%s installeret"
 
-#: ../src/plugins/install.c:177
+#: ../src/plugins/install.c:219
 #, c-format
 msgid "Retrieving packages from %s"
 msgstr "Modtager pakker fra %s"
 
-#: ../src/plugins/install.c:180
+#: ../src/plugins/install.c:224
 #, c-format
 msgid "Retrieving packages from local... (%d/%d) : %s"
 msgstr "Modtager pakker fra lokal... (%d/%d) : %s"
+
+#: ../src/plugins/install.c:233
+msgid "Checking package integrity..."
+msgstr "Tjekker for pakkeintegritet..."
+
+#: ../src/plugins/install.c:236
+msgid "Done"
+msgstr "Færdig"
+
+#: ../src/plugins/install.c:338
+msgid "Disk full, cannot install more packages"
+msgstr "Disken er fuld, kan ikke insatllere flere pakker"
+
+#: ../src/plugins/install.c:341
+msgid "Some packages seems corrupted, do you want to download them again?"
+msgstr "Nogle pakker virker ødelagte, vil du downloade dem igen?"
+
+#: ../src/plugins/install.c:349
+msgid "Failed to retrieve packages"
+msgstr "Fejlede i modtagelse af pakker"
+
+#: ../src/plugins/install.c:383
+msgid ""
+"Please insert the next Frugalware install disc and press ENTER to continue "
+"installing packages. If you don't have more discs, choose NO, and then you "
+"can finish  the installation. Have you inserted the next disc?"
+msgstr ""
+
+#: ../src/plugins/install.c:432 ../src/plugins/install.c:437
+msgid ""
+"An error occurs during packages installation (see /var/log/fwife.log for "
+"more details)"
+msgstr ""
+"En fejl skete under pakkerinstallation, (see /var/log/fwife log for flere "
+"detaljer)"
+
+#: ../src/plugins/install.c:442
+msgid "Packages installation completed"
+msgstr "Pakke installation gennemført"
 
 #: ../src/plugins/postconf.c:67
 msgid "Configure your system"
@@ -697,99 +1041,84 @@ msgstr "Brug et joystick som en mus"
 msgid "Wacom serial graphics tablet"
 msgstr "Wacom serial grafisk tablet"
 
-#: ../src/plugins/postconf.c:139
+#: ../src/plugins/postconf.c:137
 msgid "(COM1: under DOS)"
 msgstr "(COM1: under DOS)"
 
-#: ../src/plugins/postconf.c:140
+#: ../src/plugins/postconf.c:138
 msgid "(COM2: under DOS)"
 msgstr "(COM2: under DOS)"
 
-#: ../src/plugins/postconf.c:141
+#: ../src/plugins/postconf.c:139
 msgid "(COM3: under DOS)"
 msgstr "(COM3: under DOS)"
 
-#: ../src/plugins/postconf.c:142
+#: ../src/plugins/postconf.c:140
 msgid "(COM4: under DOS)"
 msgstr "(COM4: under DOS)"
 
-#: ../src/plugins/postconf.c:205
+#: ../src/plugins/postconf.c:196
 msgid "Mouse configuration"
 msgstr "Musekonfiguration"
 
+#: ../src/plugins/postconf.c:207
+msgid "<b>Select your mouse : </b>"
+msgstr "<b>Vælge din mus : </b>"
+
 #: ../src/plugins/postconf.c:212
-msgid "Selecting your mouse : "
-msgstr "Vælge din mus : "
+msgid "<b>Select mouse's port :</b>"
+msgstr "<b>Vælge din muse port :</b>"
 
-#: ../src/plugins/postconf.c:216
-msgid "Selecting mouse's port :"
-msgstr "Vælge din muse port :"
-
-#: ../src/plugins/postconf.c:380
-msgid "   X Window Display Manager"
-msgstr "   X Window Logindhåndtering"
-
-#: ../src/plugins/postconf.c:384
+#: ../src/plugins/postconf.c:370
 msgid "  KDE Display Manager"
 msgstr "  KDE Logindhåndtering"
 
-#: ../src/plugins/postconf.c:389
+#: ../src/plugins/postconf.c:375
 msgid "  Gnome Display Manager"
 msgstr "  Gnome Logindhåndtering"
 
-#: ../src/plugins/postconf.c:394
+#: ../src/plugins/postconf.c:380
 msgid "  Simple Login Manager"
 msgstr "  Enkel Logindhåndtering"
 
-#: ../src/plugins/postconf.c:454
-msgid "Corrupted X installation. Missing file, see log for more details"
-msgstr "Ødelagt X-installation. manglende fil, se log for flere detaljer"
+#: ../src/plugins/postconf.c:385
+msgid "  LXDE Display Manager"
+msgstr "  LXDE  Logindhåndtering"
 
-#: ../src/plugins/postconf.c:458
+#: ../src/plugins/postconf.c:388
+msgid "  X Window Display Manager"
+msgstr "   X Window Logindhåndtering"
+
+#: ../src/plugins/postconf.c:435
 msgid "Configuring X11"
 msgstr "Konfigurere X11"
 
-#: ../src/plugins/postconf.c:470
-msgid "X11 Configuration"
-msgstr "X11 konfiguration"
-
-#: ../src/plugins/postconf.c:476
-msgid "Resolution :"
-msgstr "Opløsning :"
-
-#: ../src/plugins/postconf.c:482
-msgid "Color depth :"
-msgstr "Farvedybde :"
-
-#: ../src/plugins/postconf.c:488
+#: ../src/plugins/postconf.c:450
 msgid "Select your default display manager : "
 msgstr "Vælg din stadard logindhåndtering : "
 
-#: ../src/plugins/postconf.c:591
-msgid ""
-"<span face=\"Courier New\"><b>You can configure some parts of your system</"
-"b></span>"
-msgstr ""
-"<span face=\"Courier New\"><b>Du kan konfigurere nogle dele af dit system</"
-"b></span>"
+#: ../src/plugins/postconf.c:525
+msgid "<b>You can configure some parts of your system</b>"
+msgstr "<b>Du kan konfigurere nogle dele af dit system</b>"
 
-#: ../src/plugins/postconf.c:594
+#: ../src/plugins/postconf.c:528
 msgid "Hardware"
 msgstr "Hardware"
 
-#: ../src/plugins/postconf.c:602
+#: ../src/plugins/postconf.c:536
 msgid "Mouse - "
 msgstr "Mus - "
 
-#: ../src/plugins/postconf.c:604 ../src/plugins/postconf.c:619
+#: ../src/plugins/postconf.c:538 ../src/plugins/postconf.c:553
 msgid "<span foreground=\"red\"> Not Configured </span>"
 msgstr "<span foreground=\"red\"> Ikke Konfigureret </span>"
 
-#: ../src/plugins/postconf.c:609 ../src/plugins/postconf.c:624
+#: ../src/plugins/postconf.c:543 ../src/plugins/postconf.c:558
+#: ../src/plugins/netconf.c:789
 msgid "Configure"
 msgstr "Konfigurere"
 
-#: ../src/plugins/postconf.c:617
+#: ../src/plugins/postconf.c:551
 msgid "X server - "
 msgstr "X server - "
 
@@ -797,118 +1126,122 @@ msgstr "X server - "
 msgid "Configure root password"
 msgstr "Konfigurere root password"
 
-#: ../src/plugins/rootconf.c:81
+#: ../src/plugins/rootconf.c:80
 msgid ""
-"<span face=\"Courier New\"><b>You can set password on the system "
-"administrator account (root).\n"
+"<b>You can set password on the system administrator account (root).\n"
 " It is recommended that you set one now so that it is active the first time "
 "the machine is rebooted.\n"
 " This is especially important if your machine is on an internet connected "
 "LAN.\n"
-" Is you don't want to set one, keep entry empty and go to the next step.</"
-"b></span>"
+" Is you don't want to set one, keep entry empty and go to the next step.</b>"
 msgstr ""
-"<span face=\"Courier New\"><b>Du kan sætte password på system administrator "
-"komtoen (root).\n"
+"<b>Du kan sætte password på system administrator komtoen (root).\n"
 " Det anbefales at du vælger et nu så det er aktiveret den første gang at "
 "maskinen rebooter.\n"
 " Det er specielt vigtigt hvis din maskine er forbundet til et internet LAN.\n"
 " Hvis du ikke ønsker at lave et root password, efterlad det tomt og gå til "
-"det næste trin.</b></span>"
+"det næste trin.</b>"
 
-#: ../src/plugins/rootconf.c:87
+#: ../src/plugins/rootconf.c:86
 msgid "Enter root password :  "
 msgstr "Skriv root password :  "
 
-#: ../src/plugins/rootconf.c:88
+#: ../src/plugins/rootconf.c:87
 msgid "Verify root password :  "
 msgstr "Verificere root password :  "
+
+#: ../src/plugins/rootconf.c:119
+msgid ""
+"The root password is empty. This is highly unsecure!\n"
+"\n"
+"Do you want to continue anyway ?"
+msgstr ""
 
 #: ../src/plugins/usersconf.c:61
 msgid "Configure users"
 msgstr "Konfigurere brugere"
 
-#: ../src/plugins/usersconf.c:83
-msgid "User can be deleted!"
-msgstr "Bruger kan slettes!"
+#: ../src/plugins/usersconf.c:81
+msgid "User can't be deleted!"
+msgstr "Bruger kan ikke slettes!"
 
-#: ../src/plugins/usersconf.c:111 ../src/plugins/usersconf.c:326
+#: ../src/plugins/usersconf.c:110 ../src/plugins/usersconf.c:319
 msgid "Add a new user"
 msgstr "Tilføj en ny bruger"
 
-#: ../src/plugins/usersconf.c:123
+#: ../src/plugins/usersconf.c:122
 msgid "General Configuration"
 msgstr "Generel Konfiguration"
 
-#: ../src/plugins/usersconf.c:129
+#: ../src/plugins/usersconf.c:128
 msgid "Name :"
 msgstr "Navn :"
 
-#: ../src/plugins/usersconf.c:134
+#: ../src/plugins/usersconf.c:133
 msgid "Full Name :"
 msgstr "Fuldt navn :"
 
-#: ../src/plugins/usersconf.c:139
+#: ../src/plugins/usersconf.c:138
 msgid "Password : "
 msgstr "Password : "
 
-#: ../src/plugins/usersconf.c:145
+#: ../src/plugins/usersconf.c:144
 msgid "Enter password :"
 msgstr "Skriv password :"
 
-#: ../src/plugins/usersconf.c:151
+#: ../src/plugins/usersconf.c:150
 msgid "Re-enter password :"
 msgstr "Genindtast password :"
 
-#: ../src/plugins/usersconf.c:157
+#: ../src/plugins/usersconf.c:156
 msgid "Other (optionnal)"
 msgstr "Andet (valgfrit)"
 
-#: ../src/plugins/usersconf.c:163 ../src/plugins/usersconf.c:304
+#: ../src/plugins/usersconf.c:162 ../src/plugins/usersconf.c:297
 msgid "Shell"
 msgstr "Shell"
 
-#: ../src/plugins/usersconf.c:168
+#: ../src/plugins/usersconf.c:167
 msgid "Home directory"
 msgstr "Home mappe"
 
-#: ../src/plugins/usersconf.c:187
+#: ../src/plugins/usersconf.c:186
 msgid "Password verification failed! Please try again."
 msgstr "Kodeordverifikation fejlede! Prøv venligst igen."
 
-#: ../src/plugins/usersconf.c:203
+#: ../src/plugins/usersconf.c:201
 msgid ""
-"User can be added! Check that you use lowercase name or that there is not an "
-"other user bearing the same name."
+"User can't be added! Check that you use lowercase name or that there is not "
+"an other user bearing the same name."
 msgstr ""
-"Bruger kan tilføjes! Du kan kun benytte navn med små bogstaver, og vær "
-"sikker på at der er ikke en anden bruger, der får det samme navn."
+"Bruger ikke kan tilføjes! Tjek at navn er med små bogstaver, eller en anden "
+"bruger, har det samme navn."
 
-#: ../src/plugins/usersconf.c:282
+#: ../src/plugins/usersconf.c:275
 msgid ""
-"<span face=\"Courier New\"><b>You can configure non-root user account. It is "
-"strongly recommended to create one.</b></span>"
+"<b>You can configure non-root user account. It is strongly recommended to "
+"create one.</b>"
 msgstr ""
-"<span face=\"Courier New\"><b>Du kan konfigurere ikke-root brugerkonto. Det "
-"anbefales på det kraftigste at skabe en.</b></span>"
+"<b>Du kan konfigurere ikke-root brugerkonto. Det anbefales på det kraftigste "
+"at skabe en.</b>"
 
-#: ../src/plugins/usersconf.c:296
+#: ../src/plugins/usersconf.c:289
 msgid "User"
 msgstr "Bruger"
 
-#: ../src/plugins/usersconf.c:300
+#: ../src/plugins/usersconf.c:293
 msgid "Full Name"
 msgstr "Fuldt navn"
 
-#: ../src/plugins/usersconf.c:308
+#: ../src/plugins/usersconf.c:301
 msgid "Home"
 msgstr "Home"
 
-#: ../src/plugins/usersconf.c:312
+#: ../src/plugins/usersconf.c:305
 msgid "Password"
 msgstr "Password"
 
-#: ../src/plugins/usersconf.c:332
+#: ../src/plugins/usersconf.c:325
 msgid "Remove a user"
 msgstr "Fjern en bruger"
 
@@ -918,9 +1251,8 @@ msgstr "Konfigurering af GRUB"
 
 #. top info label
 #: ../src/plugins/grubconf.c:75
-msgid "<span face=\"Courier New\"><b>Installing GRUB bootloader</b></span>"
-msgstr ""
-"<span face=\"Courier New\"><b>Installering af GRUB bootloader</b></span>"
+msgid "<b>Installing GRUB bootloader</b>"
+msgstr "<b>Installering af GRUB bootloader</b>"
 
 #: ../src/plugins/grubconf.c:78
 msgid "Choose install type :"
@@ -943,7 +1275,7 @@ msgstr "Root  -  Installer på superblock (brug ikke dette med XFS)"
 msgid "Skip  -  Skip the installation of GRUB."
 msgstr "Spring over  -  Spring installationen af GRUB over."
 
-#: ../src/plugins/grubconf.c:172
+#: ../src/plugins/grubconf.c:171
 msgid ""
 "GRUB can be installed to a variety of places:\n"
 "\n"
@@ -967,222 +1299,66 @@ msgstr ""
 msgid "Timezone configuration"
 msgstr "Tidszonekonfiguration"
 
-#: ../src/plugins/timeconf.c:392
+#: ../src/plugins/timeconf.c:366
 msgid "Continent/Main City"
 msgstr "Kontinent/Hovedstad"
 
-#: ../src/plugins/timeconf.c:399
+#: ../src/plugins/timeconf.c:373
 msgid "Comments"
 msgstr "Kommentarer"
 
-#: ../src/plugins/timeconf.c:413
+#: ../src/plugins/timeconf.c:387
 msgid "Set clock to UTC/GMT time coordinates"
 msgstr "Sæt uret til UTC/GMT tidskoordinater"
 
-#: ../src/plugins/netconf.c:76
+#: ../src/plugins/netconf.c:83
 msgid "Configuring your network"
 msgstr "Konfiguration af dit netværk"
 
-#: ../src/plugins/netconf.c:106
-msgid "Use a DHCP server"
-msgstr "Brug en DHCP server"
+#: ../src/plugins/netconf.c:444
+msgid "Scan for Access Points"
+msgstr "Skan for Access Points"
 
-#: ../src/plugins/netconf.c:107
-msgid "Use a static IP address"
-msgstr "Brug en statisk IP adresse"
+#: ../src/plugins/netconf.c:575 ../src/plugins/netconf.c:664
+msgid "You must select an interface in the above list."
+msgstr "Du skal vælge et interface i ovenstående liste."
 
-#: ../src/plugins/netconf.c:140
-msgid "Select network type"
-msgstr "Vælg netværkstype"
-
-#: ../src/plugins/netconf.c:146
+#: ../src/plugins/netconf.c:670
 msgid ""
-"Now we need to know how your machine connects to the network.\n"
-"If you have an internal network card and an assigned IP address, gateway, "
-"and DNS,\n"
-" use 'static' to enter these values.\n"
-"If your IP address is assigned by a DHCP server (commonly used by cable "
-"modem services),\n"
-" select 'dhcp'. \n"
+"This interface has been already configured! Do you want to configure it "
+"again?"
 msgstr ""
-"Nu er vi nødt til at vide hvordan din maskine er forbundet til netværket.\n"
-"Hvis du har et internt netværkskort og en tildelt IP adresse, gateway, og "
-"DNS,\n"
-" brug 'statisk' for at angive værdierne.\n"
-"Hvis din IP adresse bliver tildelt af en DHCP server (nårmalt brugt med "
-"kabel modemforbindelse),\n"
-" vælg 'dhcp'. \n"
+"Dette interface er blevet allerede konfigureret! Vil du konfigurere det igen?"
 
-#: ../src/plugins/netconf.c:182
-msgid "Configure Wireless"
-msgstr "Konfiguration af trådløst"
+#: ../src/plugins/netconf.c:766
+msgid "<b>You can configure all network interfaces you need</b>"
+msgstr "<b>Du kan konfigurere alle netværksinterfaces du har brug for</b>"
 
-#: ../src/plugins/netconf.c:190
+#: ../src/plugins/netconf.c:785
+msgid "Configuration"
+msgstr "Konfiguration"
+
+#: ../src/plugins/netconf.c:795
+msgid "DSL Configuration"
+msgstr "DSL konfiguration"
+
+#: ../src/plugins/netconf.c:819
 msgid ""
-"In order to use wireless, you must set your extended netwok name (ESSID).\n"
-"If you have a WEP encryption key, then please enter it below.\n"
-"Examples: 4567-89AB-CD or s:password\n"
-"If you have a WPA passphrase, then please enter it below.\n"
-"Example: secret\n"
-"If you want to use a custom driver (not the generic one, called 'wext'), "
-"then please enter it below.\n"
-"If unsure enter nothing"
-msgstr ""
-"For at bruge trådløst, skal du sætte dit udvidede netvæksnavn (ESSID).\n"
-"Hvis du har en WEP krypteringsnøgle, så vær venlig at skriv den herunder.\n"
-"Eksempler: 4567-89AB-CD eller  s:password\n"
-"Hvis du har en WPA adgangskode, så vær venlig at skriv den herunder.\n"
-"Eksempel: hemlig\n"
-"Hvis du ønsker at bruge en brugerdefineret driver (ikke den almindelige, "
-"kaldet 'wext'), så vær venlig at skrive den herunder.\n"
-"Hvis du er usikker, så skriv ikke noget"
-
-#: ../src/plugins/netconf.c:203
-msgid "Essid : "
-msgstr "Essid : "
-
-#: ../src/plugins/netconf.c:210
-msgid "WEP encryption key : "
-msgstr "WEP Krypteringsnøgle : "
-
-#: ../src/plugins/netconf.c:217
-msgid "WPA encryption passphrase : "
-msgstr "WPA krypteringsadgangskode : "
-
-#: ../src/plugins/netconf.c:224
-msgid "WPA Driver : "
-msgstr "WPA Driver : "
-
-#: ../src/plugins/netconf.c:260
-msgid "Configure static network"
-msgstr "Konfigurer statisk netværk"
-
-#: ../src/plugins/netconf.c:266
-msgid "Enter static network parameters :"
-msgstr "Skriv statiske netværksparametre :"
-
-#: ../src/plugins/netconf.c:270
-msgid "IP Address : "
-msgstr "IP Adresse : "
-
-#: ../src/plugins/netconf.c:277
-msgid "Network Mask : "
-msgstr "Netværk-Maske : "
-
-#: ../src/plugins/netconf.c:284
-msgid "Gateway : "
-msgstr "Gateway : "
-
-#: ../src/plugins/netconf.c:331
-msgid "Configure DSL connexion"
-msgstr "konfiguration af DSL forbindelse"
-
-#: ../src/plugins/netconf.c:338
-msgid "Enter DSL parameters"
-msgstr "Skriv DSL parametre"
-
-#: ../src/plugins/netconf.c:342
-msgid "PPPOE username : "
-msgstr "PPPOE brugernavn : "
-
-#: ../src/plugins/netconf.c:349
-msgid "PPPOE password : "
-msgstr "PPPOE password : "
-
-#: ../src/plugins/netconf.c:356
-msgid "Re-enter PPPOE password : "
-msgstr "Skriv PPPOE password igen : "
-
-#: ../src/plugins/netconf.c:363
-msgid "Associate with interface : "
-msgstr "Associeret med interface : "
-
-#: ../src/plugins/netconf.c:396
-msgid "Passwords do not match! Try again."
-msgstr "Password stemte ikke overens! Prøv igen."
-
-#: ../src/plugins/netconf.c:441
-msgid "This interface has been already configured!"
-msgstr "Dette interface er blevet allerede konfigureret!"
-
-#: ../src/plugins/netconf.c:475
-msgid ""
-"It seems that this network card has a wireless extension.\n"
+"You can now reconfigure your network if you want to configure others "
+"interfaces or just apply current network configuration.\n"
 "\n"
-"Configure your wireless now?"
+"Do you want to apply the current configuration ?"
 msgstr ""
-"Det ser ud til at dette netværkskort har en trådløs udvidelse.\n"
+"Du kan nu omkonfigurere dit netværk hvis du vil konfigurere andre interfaces "
+"eller anvende aktuel netværkskonfiguration.\n"
 "\n"
-"Konfigurer dit trådløs nu?"
+"Ønsker du at anvende aktuel netværkskonfiguration ?"
 
-#: ../src/plugins/netconf.c:487
-msgid "Set DHCP hostname"
-msgstr "Sæt DHCP hostname"
-
-#: ../src/plugins/netconf.c:487
-msgid ""
-"Some network providers require that the DHCP hostname be\n"
-"set in order to connect.\n"
-" If so, they'll have assigned a hostname to your machine.\n"
-" If you wereassigned a DHCP hostname, please enter it below.\n"
-" If you do not have a DHCP hostname, justhit enter."
-msgstr ""
-"Nogle netværk udbydere kræver at et DHCP værtsnavn bliver\n"
-"sat for at opnå forbindelse.\n"
-" Hvis det er tilfældet, vil de have specificeret et værtsnavn til din "
-"maskine.\n"
-" Hvis du har et DHCP værtsnavn, vær venlig at skrive det herunder.\n"
-" Hvis du ikke har et DHCP værtsnavn, slå da enter."
-
-#: ../src/plugins/netconf.c:544
-msgid ""
-"<span face=\"Courier New\"><b>You can configure all network interfaces you "
-"need</b></span>"
-msgstr ""
-"<span face=\"Courier New\"><b>Du kan konfigurere alle netværksinterfaces du "
-"har brug for</b></span>"
-
-#: ../src/plugins/netconf.c:561
-msgid "Device"
-msgstr "Enhed"
-
-#: ../src/plugins/netconf.c:565
-msgid "Ip Address"
-msgstr "Ip Adresse"
-
-#: ../src/plugins/netconf.c:569
-msgid "Netmask"
-msgstr "Netmask"
-
-#: ../src/plugins/netconf.c:573
-msgid "Gateway"
-msgstr "Gateway"
-
-#: ../src/plugins/netconf.c:577
-msgid "DHCP Nameserver"
-msgstr "DHCP Navneserver"
-
-#: ../src/plugins/netconf.c:583
-msgid "Network configuration"
-msgstr "Netværkkonfiguration"
-
-#: ../src/plugins/netconf.c:588
-msgid "Interface :"
-msgstr "Interface :"
-
-#: ../src/plugins/netconf.c:598
-msgid "Network configuration :   "
-msgstr "Netværkkonfiguration :   "
-
-#: ../src/plugins/netconf.c:648
-msgid "Do you want to configure a DSL connexion now?"
-msgstr "Vil du konfigurere en DSL forbindelse nu?"
-
-#: ../src/plugins/netconf.c:656
+#: ../src/plugins/netconf.c:864
 msgid "Hostname"
 msgstr "Værtsnavn"
 
-#: ../src/plugins/netconf.c:656
+#: ../src/plugins/netconf.c:864
 msgid ""
 "We'll need the name you'd like to give your host.\n"
 "The full hostname is needed, such as:\n"
@@ -1198,7 +1374,7 @@ msgstr ""
 "\n"
 "Skriv det fulde værtsnavn:"
 
-#: ../src/plugins/netconf.c:679
+#: ../src/plugins/netconf.c:886
 msgid ""
 "Select network interface you want to configure then click on add button and "
 "follow instructions..."
@@ -1206,11 +1382,11 @@ msgstr ""
 "Vælg netværksinterface du vil konfigurere, klik derefter på tilføj knap og "
 "følg instrukser..."
 
-#: ../src/fwife.c:139
+#: ../src/fwife.c:155
 msgid "Are you sure you want to exit from the installer?\n"
 msgstr "Er du sikker på at du vil gå ud af installationsprogrammet?\n"
 
-#: ../src/fwife.c:150
+#: ../src/fwife.c:165
 msgid ""
 "Frugalware installation completed.\n"
 " You can now reboot your computer"
@@ -1218,26 +1394,108 @@ msgstr ""
 "Frugalware installation er fuldført.\n"
 " Du kan nu reboote din computer"
 
-#: ../src/fwife.c:164
+#: ../src/fwife.c:179 ../src/fwife.c:192 ../src/fwife.c:209
 msgid "Error when running plugin. Please report"
 msgstr "Fejl ved kørsel af plugin. Venligst rapporter"
 
-#: ../src/fwife.c:193
+#: ../src/fwife.c:232
 msgid "Plugin help"
 msgstr "Plugin hjælp"
 
-#: ../src/fwife.c:206
+#: ../src/fwife.c:245
 msgid "No help available for this plugin"
 msgstr "Ingen hjælp tilgængelig for dette plugin"
 
-#: ../src/fwife.c:235
-msgid "Language selection (default : en_US)"
-msgstr "Vælg sprog (standard : en_US)"
+#: ../src/fwife.c:274
+msgid "Language selection"
+msgstr "Sprogudvælgelse"
 
-#: ../src/fwife.c:279
+#: ../src/fwife.c:319
 msgid "Insuffecient privileges. Fwife must be run as root."
 msgstr "Insuffecient-privilegier. Fwife skal køres som root."
 
-#: ../src/fwife.c:288
+#: ../src/fwife.c:328
 msgid "Fwife : Frugalware Installer Front-End"
 msgstr "Fwife : Frugalware Installerings Front-End"
+
+#~ msgid ""
+#~ "Do you want to use expert mode?\n"
+#~ "\n"
+#~ "The normal mode shows a choice like 'C compiler system', the expert mode "
+#~ "show you 'C libs', 'C compiler', 'C include files', etc - each individual "
+#~ "package. Obviously, you should know what you're doing if you use the "
+#~ "expert mode since it's possible to skip packages that are crucial to the "
+#~ "functioning of your system. Choose 'no' for using normal mode that select "
+#~ "groups of packages, or choose 'yes' for using expert mode with a switch "
+#~ "for each package."
+#~ msgstr ""
+#~ "Ønsker du at bruge ekspert menu?\n"
+#~ "\n"
+#~ "Den normale menu viser et valg som f.eks 'C compiler system', viser "
+#~ "ekspert menuen dig 'C libs', 'C compiler', 'C include files', etc - altså "
+#~ "individuelle pakker. Selvfølgelig, bør du vide hvad du gør hvis du bruger "
+#~ "ekspert menuen fordi det er muligt at fravælge pakker som er nødvendige "
+#~ "for at dit system kan bruges. Vælg 'nej' for brug af normal menuer der "
+#~ "vælger grupper af pakker, eller vælg 'ja' for brug af ekspert menuer med "
+#~ "mulighed for valg af inviduelle pakker. "
+
+#~ msgid ""
+#~ "You need an active internet connection ,\n"
+#~ " do you want to configure your network now?"
+#~ msgstr ""
+#~ "Du har brug for en aktiv internetforbindelse ,\n"
+#~ " vil du konfigurere dit netværk nu?"
+
+#~ msgid "Select all this group's packages"
+#~ msgstr "Vælg alle denne gruppes pakker"
+
+#~ msgid "Unselect all this group's packages"
+#~ msgstr "Fravælg alle denne gruppes pakker"
+
+#~ msgid "Gnome"
+#~ msgstr "Gnome"
+
+#~ msgid "Removing packages..."
+#~ msgstr "Fjerner pakker..."
+
+#~ msgid "Checking dependencies"
+#~ msgstr "Tjekker afhængigheder "
+
+#~ msgid "Checking for file conflicts"
+#~ msgstr "Tjekker for filkonflikter"
+
+#~ msgid "Resolving dependencies"
+#~ msgstr "Løser afhængigheder"
+
+#~ msgid "Looking for inter-conflicts"
+#~ msgstr "Søger efter indre-konflikter"
+
+#~ msgid "Resolution :"
+#~ msgstr "Opløsning :"
+
+#~ msgid "Color depth :"
+#~ msgstr "Farvedybde :"
+
+#~ msgid "Associate with interface : "
+#~ msgstr "Associeret med interface : "
+
+#~ msgid "Netmask"
+#~ msgstr "Netmask"
+
+#~ msgid "Gateway"
+#~ msgstr "Gateway"
+
+#~ msgid "DHCP Nameserver"
+#~ msgstr "DHCP Navneserver"
+
+#~ msgid "Network configuration"
+#~ msgstr "Netværkkonfiguration"
+
+#~ msgid "Interface :"
+#~ msgstr "Interface :"
+
+#~ msgid "Network configuration :   "
+#~ msgstr "Netværkkonfiguration :   "
+
+#~ msgid "Language selection (default : en_US)"
+#~ msgstr "Vælg sprog (standard : en_US)"
