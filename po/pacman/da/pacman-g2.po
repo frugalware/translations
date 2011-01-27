@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-05 02:02+0100\n"
-"PO-Revision-Date: 2009-11-20 15:45+0200\n"
+"POT-Creation-Date: 2011-01-27 02:02+0100\n"
+"PO-Revision-Date: 2010-04-09 20:12+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -15,9 +15,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: da\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 1.2.1\n"
+"X-Generator: Pootle 2.0.2\n"
 
-#: ../add.c:69 ../deptest.c:64 ../remove.c:83 ../sync.c:312 ../sync.c:351
+#: ../add.c:69 ../deptest.c:64 ../remove.c:83 ../sync.c:320 ../sync.c:359
 #, c-format
 msgid ""
 "       if you're sure a package manager is not already running,\n"
@@ -36,12 +36,12 @@ msgstr "indlæser pakkedata... "
 msgid "failed to add target '%s' (%s)\n"
 msgstr "fejlede ved tilføjelse af mål '%s' (%s)\n"
 
-#: ../add.c:84 ../sync.c:275 ../trans.c:76 ../trans.c:83 ../trans.c:87
+#: ../add.c:84 ../sync.c:283 ../trans.c:76 ../trans.c:83 ../trans.c:87
 #: ../trans.c:99 ../trans.c:113 ../trans.c:129 ../trans.c:141
 msgid "done.\n"
 msgstr "færdig.\n"
 
-#: ../add.c:92 ../remove.c:102 ../sync.c:459
+#: ../add.c:92 ../remove.c:102 ../sync.c:467
 #, c-format
 msgid "failed to prepare transaction (%s)\n"
 msgstr "fejlede ved forberedelse af udførelse (%s)\n"
@@ -51,22 +51,22 @@ msgstr "fejlede ved forberedelse af udførelse (%s)\n"
 msgid ":: %s: requires %s"
 msgstr ":: %s: kræves %s"
 
-#: ../add.c:111 ../sync.c:480
+#: ../add.c:111 ../sync.c:488
 #, c-format
 msgid ":: %s: conflicts with %s"
 msgstr ":: %s: er i konflikt med %s"
 
-#: ../add.c:121 ../sync.c:605
+#: ../add.c:121 ../sync.c:613
 #, c-format
 msgid "%s%s exists in \"%s\" (target) and \"%s\" (target)"
 msgstr "%s%s eksisterer i \"%s\" (mål) og \"%s\" (mål)"
 
-#: ../add.c:128 ../sync.c:612
+#: ../add.c:128 ../sync.c:620
 #, c-format
 msgid "%s: %s%s exists in filesystem"
 msgstr "%s: %s%s eksisterer i filsystem"
 
-#: ../add.c:136 ../sync.c:630
+#: ../add.c:136 ../sync.c:638
 msgid ""
 "\n"
 "errors occurred, no packages were upgraded.\n"
@@ -74,17 +74,17 @@ msgstr ""
 "\n"
 "fejl forekom, ingen pakker blev opgraderede.\n"
 
-#: ../add.c:143 ../sync.c:490
+#: ../add.c:143 ../sync.c:498
 #, c-format
 msgid ":: %.1f MB required, have %.1f MB"
 msgstr ":: %.1f MB kræves, har %.1f MB"
 
-#: ../add.c:157 ../remove.c:142 ../sync.c:598
+#: ../add.c:157 ../remove.c:142 ../sync.c:606
 #, c-format
 msgid "failed to commit transaction (%s)\n"
 msgstr "fejlede ved udførelse af postering (%s)\n"
 
-#: ../add.c:164 ../remove.c:152 ../sync.c:344 ../sync.c:639
+#: ../add.c:164 ../remove.c:152 ../sync.c:352 ../sync.c:647
 #, c-format
 msgid "failed to release transaction (%s)\n"
 msgstr "fejlede ved frigivelse af postering (%s)\n"
@@ -123,32 +123,32 @@ msgstr "kunne ikke frigive postering (%s)"
 msgid "None\n"
 msgstr "Ingen\n"
 
-#: ../log.c:55
+#: ../log.c:58
 #, c-format
 msgid "debug"
 msgstr "fejlsøge"
 
-#: ../log.c:58
+#: ../log.c:61
 #, c-format
 msgid "error"
 msgstr "fejl"
 
-#: ../log.c:61
+#: ../log.c:64
 #, c-format
 msgid "warning"
 msgstr "advarsel"
 
-#: ../log.c:64
+#: ../log.c:67
 #, c-format
 msgid "flow1"
 msgstr "flow1"
 
-#: ../log.c:67
+#: ../log.c:70
 #, c-format
 msgid "flow2"
 msgstr "flow2"
 
-#: ../log.c:70
+#: ../log.c:73
 #, c-format
 msgid "function"
 msgstr "funktion"
@@ -842,11 +842,11 @@ msgstr "ingen handling specificeret (brug -h for hjælp)\n"
 msgid ":: the database seems to be consistent\n"
 msgstr ":: databasen ser ud til at være ensartet\n"
 
-#: ../query.c:88 ../sync.c:256
+#: ../query.c:88 ../sync.c:264
 msgid "no usable package repositories configured.\n"
 msgstr "ingen brugbare pakkearkiver konfigureret.\n"
 
-#: ../query.c:127
+#: ../query.c:127 ../sync.c:141
 #, c-format
 msgid "group \"%s\" was not found\n"
 msgstr "gruppe \"%s\" blev ikke fundet\n"
@@ -870,13 +870,25 @@ msgstr "Ingen pakke ejes %s\n"
 msgid "%s %s is an owner of %s\n"
 msgstr "%s %s den er ejer af %s\n"
 
+#: ../query.c:180
+msgid "This query option require an package name as argument\n"
+msgstr "Dette spørgsmåls-valgmulighed kræver et pakkenavn som argument\n"
+
+#: ../query.c:186
+msgid "Invalid query option , use 'pacman-g2 -Qed'\n"
+msgstr "Ugyldig spørgsmåls-valgmulighed , Brug 'pacman-g2 -Qed'\n"
+
 #. something weird happened
-#: ../query.c:191 ../query.c:239
+#: ../query.c:202 ../query.c:252
 #, c-format
 msgid "package \"%s\" not found\n"
 msgstr "pakke \"%s\" ikke fundet\n"
 
-#: ../remove.c:64 ../sync.c:390
+#: ../query.c:246
+msgid "This query option cannot have an package argument\n"
+msgstr "Dette spørgsmåls-valgmulighed kan ikke have et pakkeargument\n"
+
+#: ../remove.c:64 ../sync.c:398
 #, c-format
 msgid ":: group %s:\n"
 msgstr ":: gruppe %s:\n"
@@ -890,7 +902,7 @@ msgstr "    Fjern hele indholdet? [J/n] "
 msgid ":: Remove %s from group %s? [Y/n] "
 msgstr ":: Fjern %s fra gruppe %s? [J/n] "
 
-#: ../remove.c:81 ../sync.c:310 ../sync.c:349
+#: ../remove.c:81 ../sync.c:318 ../sync.c:357
 #, c-format
 msgid "failed to init transaction (%s)\n"
 msgstr "fejlede at initialisere postering (%s)\n"
@@ -932,55 +944,59 @@ msgstr "fejlede at opdatere %s (%s)\n"
 msgid " %s is up to date\n"
 msgstr " %s er fuldt opdateret\n"
 
-#: ../sync.c:111
-msgid "installed"
-msgstr "installeret"
+#: ../sync.c:112
+msgid "Installed"
+msgstr "Installeret"
 
-#: ../sync.c:179
+#: ../sync.c:115
+msgid "Desc"
+msgstr "Beskrivelse"
+
+#: ../sync.c:187
 #, c-format
 msgid "package \"%s\" was not found.\n"
 msgstr "pakke \"%s\" blev ikke fundet.\n"
 
-#: ../sync.c:217
+#: ../sync.c:225
 #, c-format
 msgid "repository \"%s\" was not found.\n"
 msgstr "arkiv \"%s\" blev ikke fundet.\n"
 
-#: ../sync.c:264
+#: ../sync.c:272
 msgid "Do you want to remove old packages from cache? [Y/n] "
 msgstr "Ønsker du at fjerne gamle pakker fra cache? [J/n] "
 
-#: ../sync.c:266
+#: ../sync.c:274
 msgid "removing old packages from cache... "
 msgstr "fjerner gamle pakker fra cache... "
 
-#: ../sync.c:269
+#: ../sync.c:277
 msgid "Do you want to remove all packages from cache? [Y/n] "
 msgstr "Ønsker du at fjerne alle pakker fra cache? [J/n] "
 
-#: ../sync.c:271
+#: ../sync.c:279
 msgid "removing all packages from cache... "
 msgstr "fjerner alle pakker fra cache... "
 
-#: ../sync.c:277
+#: ../sync.c:285
 #, c-format
 msgid "failed to clean the cache (%s)\n"
 msgstr "fejlede at rense cache (%s)\n"
 
 #. grab a fresh package list
-#: ../sync.c:284
+#: ../sync.c:292
 msgid ":: Synchronizing package databases...\n"
 msgstr ":: Sykroniserer pakke databaser...\n"
 
-#: ../sync.c:285
+#: ../sync.c:293
 msgid "synchronizing package lists"
 msgstr "sykroniserer pakkelister"
 
-#: ../sync.c:319
+#: ../sync.c:327
 msgid ":: Starting local database upgrade...\n"
 msgstr ":: Starter lokal databaseopgradering...\n"
 
-#: ../sync.c:338
+#: ../sync.c:346
 msgid ""
 "\n"
 ":: pacman-g2 has detected a newer version of the \"pacman-g2\" package.\n"
@@ -988,47 +1004,47 @@ msgstr ""
 "\n"
 ":: pacman-g2 har opdaget en nyere version af \"pacman-g2\" pakke.\n"
 
-#: ../sync.c:339
+#: ../sync.c:347
 msgid ":: It is recommended that you allow pacman-g2 to upgrade itself\n"
 msgstr ":: Det anbefales at du tillader pacman-g2 at opgradere sig selv\n"
 
-#: ../sync.c:340
+#: ../sync.c:348
 msgid ":: first, then you can re-run the operation with the newer version.\n"
 msgstr ""
 ":: først, så kan du gennemføre handlingen igen med den nyere version.\n"
 
-#: ../sync.c:342
+#: ../sync.c:350
 msgid ":: Upgrade pacman-g2 first? [Y/n] "
 msgstr ":: Opgrader pacman-g2 først? [J/n] "
 
-#: ../sync.c:357 ../sync.c:378 ../sync.c:421
+#: ../sync.c:365 ../sync.c:386 ../sync.c:429
 #, c-format
 msgid "could not add target '%s': %s\n"
 msgstr "kunne ikke tilføje mål '%s': %s\n"
 
-#: ../sync.c:396
+#: ../sync.c:404
 msgid ":: Install whole content? [Y/n] "
 msgstr ":: Installer hele indholdet? [J/n] "
 
-#: ../sync.c:403
+#: ../sync.c:411
 #, c-format
 msgid ":: Install %s from group %s? [Y/n] "
 msgstr ":: Installer %s fra gruppe %s? [J/n] "
 
-#: ../sync.c:446
+#: ../sync.c:454
 #, c-format
 msgid "could not add target '%s': not found in sync db\n"
 msgstr "kunne ikke tilføje mål '%s': ikke fundet i sync db\n"
 
-#: ../sync.c:465
+#: ../sync.c:473
 msgid "requires"
 msgstr "kræves"
 
-#: ../sync.c:465
+#: ../sync.c:473
 msgid "is required by"
 msgstr "er krævet af"
 
-#: ../sync.c:542
+#: ../sync.c:550
 msgid ""
 "\n"
 "Remove:  "
@@ -1036,7 +1052,7 @@ msgstr ""
 "\n"
 "Fjern:  "
 
-#: ../sync.c:558
+#: ../sync.c:566
 msgid ""
 "\n"
 "Targets: "
@@ -1044,7 +1060,7 @@ msgstr ""
 "\n"
 "Mål: "
 
-#: ../sync.c:561
+#: ../sync.c:569
 #, c-format
 msgid ""
 "\n"
@@ -1053,7 +1069,7 @@ msgstr ""
 "\n"
 "Total Pakkestørrelse:   %.1f MB\n"
 
-#: ../sync.c:563
+#: ../sync.c:571
 #, c-format
 msgid ""
 "\n"
@@ -1062,7 +1078,7 @@ msgstr ""
 "\n"
 "Total Ukomprimeret Pakkestørrelse:   %.1f MB\n"
 
-#: ../sync.c:570
+#: ../sync.c:578
 msgid ""
 "\n"
 "Beginning download...\n"
@@ -1070,11 +1086,11 @@ msgstr ""
 "\n"
 "Begynder at downloade...\n"
 
-#: ../sync.c:574
+#: ../sync.c:582
 msgid "Proceed with download? [Y/n] "
 msgstr "Fortsæt med at downloade? [J/n] "
 
-#: ../sync.c:582
+#: ../sync.c:590
 msgid ""
 "\n"
 "Beginning upgrade process...\n"
@@ -1082,7 +1098,7 @@ msgstr ""
 "\n"
 "Begynder opgraderingsproces...\n"
 
-#: ../sync.c:586
+#: ../sync.c:594
 msgid "Proceed with upgrade? [Y/n] "
 msgstr "Fortsæt med at opgradere? [J/n] "
 
@@ -1178,23 +1194,23 @@ msgstr ""
 msgid ":: Archive %s is corrupted. Do you want to delete it? [Y/n] "
 msgstr ":: Arkiv %s er ødelagt. Ønsker du at slette det? [J/n] "
 
-#: ../trans.c:300
+#: ../trans.c:301
 msgid "installing"
 msgstr "installerer"
 
-#: ../trans.c:301
+#: ../trans.c:302
 msgid "upgrading"
 msgstr "opgraderer"
 
-#: ../trans.c:302
+#: ../trans.c:303
 msgid "removing"
 msgstr "fjerner"
 
-#: ../trans.c:303
+#: ../trans.c:304
 msgid "checking for file conflicts"
 msgstr "tjekker for filkonflikter"
 
-#: ../trans.c:304
+#: ../trans.c:305
 msgid "looking for inter-conflicts"
 msgstr "ser efter for indre-konflikter"
 
