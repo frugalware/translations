@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-01-27 02:02+0100\n"
-"PO-Revision-Date: 2011-01-27 21:06+0200\n"
+"POT-Creation-Date: 2011-02-24 02:03+0100\n"
+"PO-Revision-Date: 2011-02-24 21:11+0200\n"
 "Last-Translator: Carl Andersen <carl@frugalware.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -440,8 +440,8 @@ msgid ""
 "\n"
 " Do you want to continue? </b></span>\n"
 msgstr ""
-"<span foreground=\"#f90909\"><b>Du er nødt til at formatere hvis du vil bruge "
-"det som en swap partition!\n"
+"<span foreground=\"#f90909\"><b>Du er nødt til at formatere hvis du vil "
+"bruge det som en swap partition!\n"
 "Dette vil slette alle dine data på den partition!\n"
 "\n"
 " Ønsker du at fortsætte? </b></span>\n"
@@ -467,6 +467,8 @@ msgid ""
 "Please enter the mountpoint (ex: /home) or leave it empty if you want to "
 "cancel :"
 msgstr ""
+"Vær venlig at vælge et mountpoint  (f.eks: /home) eller efterlad det tomt "
+"hvis du vil annullere :"
 
 #: ../src/plugins/partdisk.c:742
 msgid "Use the suitable button to perform this action!"
@@ -511,23 +513,24 @@ msgstr "Filsystem"
 
 #. Set buttons
 #: ../src/plugins/partdisk.c:1003
-#, fuzzy
 msgid ""
 "Set as root\n"
 "partition"
-msgstr "Sat som root partition"
+msgstr ""
+"Sat som root\n"
+"partition"
 
 #: ../src/plugins/partdisk.c:1004
-#, fuzzy
 msgid ""
 "Set as swap\n"
 "partition"
-msgstr "Sat som swap partition"
+msgstr ""
+"Sæt som swap\n"
+"partition"
 
 #: ../src/plugins/partdisk.c:1005
-#, fuzzy
 msgid "Set mountpoint"
-msgstr "Monteringspunkt"
+msgstr "Sæt Monteringspunkt"
 
 #: ../src/plugins/partdisk.c:1006
 msgid "Format partition"
@@ -538,7 +541,6 @@ msgid "Run Gparted"
 msgstr "Kør Gparted"
 
 #: ../src/plugins/partdisk.c:1147
-#, fuzzy
 msgid ""
 "You must select at least one root partition to continue to the next stage.\n"
 " For example, to assign a root partition, select the device in list located "
@@ -561,26 +563,27 @@ msgid ""
 " you can run GParted but this will erase all your selected partitions."
 msgstr ""
 "Du skal som det mindste vælge en root partition for at fortsætte til det "
-"næste skridt.\n"
-" For eksempel, at tildele en root partition, vælg device i listen "
+"næste skridt\n"
+" For eksempel, at tildele en  root partition, vælg enhed i listen "
 "lokaliseret i toppen af siden,\n"
-" vælg så en partition og brug knappen til at lave det som root partition.\n"
+" vælg derefter en partition og brug egnet knap for at lave det som en root "
+"partition.\n"
 "\n"
-"Du kan bruge dine andre partitioner til at fordele dit Linux-system på flere "
+"Du kan bruge dine andre partitioner til at fordele dit Linux-system på mere "
 "end en partition.\n"
-" Du vil måske gerne vælge seperate foldere så som /boot, /home eller /usr/"
-"local på særskilte partitioner.\n"
-" Du bør ikke prøve at tildelle /usr, /etc, /sbin eller /bin på egne "
+" Du ønsker måske at mounte filkataloger så som /boot, /home eller /usr/local "
+"på seperate partitioner.\n"
+" Du skal ikke prøve at mounte /usr, /etc, /sbin eller /bin på seperate "
 "partitioner\n"
-" fordi de indeholder programmer der er nødvendige for at bringe systemet op "
-"og montere partitioner.\n"
-" Genanvend heller ikke en partition som du allerede har valgt før.\n"
-" For at sætte et mountpoint for en partition, rediger cellen i tabellen af "
-"partitioner (kolonne \"Mountpoint\") ved at dobbelt-klikke på den.\n"
+" fodi de indeholder værktøjer som er nødvendige til at bringe systemet op og "
+"mounte partitionerne.\n"
+"  Genanvend heller ikke en partition som du allerede har valgt før.\n"
+"  For at sætte et mountpoint for en partition, brug 'Sæt Mountpoint' "
+"knappen.\n"
 "\n"
 "Hvis du vil modificere partition tabellen (skabe eller modificere "
 "partitioner),\n"
-" kan du køre GParted men dette vil slette alle dine valgte partitioner."
+" du køre GParted men dette vil slette alle dine valgte partitioner."
 
 #: ../src/plugins/greet.c:50
 msgid "Welcome"
@@ -673,9 +676,8 @@ msgid "Initializing pacman-g2"
 msgstr "Initialiserer pacman-g2"
 
 #: ../src/plugins/select.c:350
-#, fuzzy
 msgid "Update and load database"
-msgstr "Opdaterer og loader database"
+msgstr "Opdaterer og load database"
 
 #: ../src/plugins/select.c:384
 msgid ""
@@ -701,28 +703,47 @@ msgid ""
 "Users who wants a non-graphical installation should use the Intermediate or "
 "the Expert mode."
 msgstr ""
+"Vælg din foretrukkede måde.\n"
+"\n"
+" Det Grundlæggende mode er designet for begyndere og sørger for en standard "
+"installation af Frugalware. \n"
+" Det tillader dig kun at vælge imellem forskellige desktop miljøer der er "
+"tilgængelig i Frugalware. For hver af dem, er der en kort beskrivellse og et "
+"billed af desktopen.\n"
+"\n"
+"Det Mellemliggende mode tillader dig at vælget et desktop miljø og nogle "
+"extra pakke grupper. \n"
+"Det er tilegnet for lidt mere erfarne brugere som ønsker at vælge/fravælge "
+"nogle specifikke grupper af pakker men som ikke ønsker at bruge Expert mode.\n"
+"\n"
+"Expert mode giver dig fuld kontrol over pakker der skal installeres fordi "
+"det ikke kun viser dig gruppe pakker men også individuelle pakker i hver "
+"gruppe.\n"
+"Selvfølgelig, bør du vide hvad du gør hvis du bruger Expert mode fordi det "
+"er muligt at fravælge pakker som er nødvendige for at dit system kan bruges.\n"
+"\n"
+"Brugere som ønsker en ikke-grafisk installation bør vælge Grundlæggende mode "
+"eller Expert mode."
 
 #: ../src/plugins/select.c:404
-#, fuzzy
 msgid "Package selection"
-msgstr "Pakkeudvælgelse"
+msgstr "Pakkevalg"
 
 #: ../src/plugins/select.c:407
 msgid "Basic Mode"
-msgstr ""
+msgstr "Standard Mode"
 
 #: ../src/plugins/select.c:408
 msgid "Intermediate Mode"
-msgstr ""
+msgstr "Mellembruger Mode"
 
 #: ../src/plugins/select.c:409
 msgid "Expert Mode"
-msgstr ""
+msgstr "Expert Mode"
 
 #: ../src/plugins/select.c:519
-#, fuzzy
 msgid "No enough disk space available to install all packages"
-msgstr "Ikke nok harddiskplads til rådighed for at installere alle pakker"
+msgstr "Ikke nok harddiskplads tilgængelig for at installere alle pakker"
 
 #: ../src/plugins/select-basic.c:53 ../src/plugins/select-basic.c:150
 msgid ""
@@ -730,6 +751,9 @@ msgid ""
 "of cross-platform applications designed to run on Linux. KDE was formed to "
 "create a beautiful, functional and free desktop computing environment."
 msgstr ""
+"KDE er et internationalt frit softwaresamfund der producerer et integreret "
+"sæt af platformsuafhængige programmer designet til at køre på Linux. KDE "
+"blev dannet for at skabe et smukt, funktionelt og frit skrivebordsmiljø."
 
 #: ../src/plugins/select-basic.c:59
 msgid ""
@@ -739,12 +763,19 @@ msgid ""
 "and window and task management. The GNOME desktop environment is designed to "
 "be an intuitive and attractive desktop for users"
 msgstr ""
+"GNOME er et internationalt projekt der inkluderer softwareudviklingsrammer, "
+"at vælge software for skrivebordet, og at arbejde med de programmer som "
+"håndterer opstart og fremvisning, og vinduer og håndtering af dem. GNOME "
+"desktopen er designet til at være en intuitivt og attraktivt desktop for "
+"brugere."
 
 #: ../src/plugins/select-basic.c:65
 msgid ""
 "Xfce is a free software desktop environment designed to be fast and "
 "lightweight, while still being visually appealing and easy to use."
 msgstr ""
+"Xfce er et frit software skrivebordsmiljø designet til at være hurtig og "
+"letvægts, men stadigvæk visuelt attraktiv og nem at bruge."
 
 #: ../src/plugins/select-basic.c:69
 msgid ""
@@ -752,6 +783,10 @@ msgid ""
 "computers on the low end of the performance spectrum such as older resource-"
 "constrained machines, new generation netbooks, and other small computers."
 msgstr ""
+"LXDE er et frit software skrivebordsmiljø designet til at arbejde godt med "
+"computere som ligger i den lave ende af præstationsspektrummet så som ældre "
+"ressource-indsnævrede maskiner, nye generationer af netbooks, og andre små "
+"computere."
 
 #: ../src/plugins/select-basic.c:74
 msgid ""
@@ -759,6 +794,9 @@ msgid ""
 "manager. Enlightement is designed to work well with both old and modern "
 "computers."
 msgstr ""
+"Enlightenment DR17 (eller E17) er en meget fleksibel og konfigurerbar window "
+"manager. Enlightement er designet til at arbejde godt med både gamle og "
+"moderne computere."
 
 #: ../src/plugins/select-basic.c:88 ../src/plugins/select-intermediate.c:280
 msgid "<b>Choose your desktop environment :</b>"
@@ -796,9 +834,8 @@ msgstr "E17"
 
 #: ../src/plugins/select-intermediate.c:331
 #: ../src/plugins/select-intermediate.c:501
-#, fuzzy
 msgid "No X Server"
-msgstr "X server - "
+msgstr "Imgen X Server"
 
 #: ../src/plugins/select-intermediate.c:348 ../src/plugins/select-expert.c:316
 msgid "<b>Choose groups you want to install :</b>"
@@ -944,6 +981,9 @@ msgid ""
 "installing packages. If you don't have more discs, choose NO, and then you "
 "can finish  the installation. Have you inserted the next disc?"
 msgstr ""
+"Vær venlig at indsætte den næste Frugalware installations disk og tryk ENTER "
+"for at fortsætte installation af pakker. Hvis du ikke har flere disks, vælg "
+"NEJ, og du kan afslutte installationen.  Har du isat den næste disk?"
 
 #: ../src/plugins/install.c:432 ../src/plugins/install.c:437
 msgid ""
@@ -1156,6 +1196,9 @@ msgid ""
 "\n"
 "Do you want to continue anyway ?"
 msgstr ""
+"root password er tomt. Det er meget dumt ikka at have dette!\n"
+"\n"
+"Ønsker du alligevel at forsætte ?"
 
 #: ../src/plugins/usersconf.c:61
 msgid "Configure users"
