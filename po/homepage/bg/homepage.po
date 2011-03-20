@@ -1,0 +1,1431 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-03-19 02:02+0100\n"
+"PO-Revision-Date: 2011-03-20 21:21+0200\n"
+"Last-Translator: Lyubomir <nm.knife@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.2\n"
+
+#. FIXME: use docs/about.txt as a source instead of this one
+#: ../about.php:36
+msgid ""
+"Frugalware is a general purpose linux distribution, designed for "
+"intermediate users (who are not afraid of text mode)."
+msgstr ""
+"Frugalware е Linux дистрибуция за основни цели, предназначена за средно "
+"напреднали потребители (които не ги е страх от текстов режим)."
+
+#: ../about.php:38
+msgid "What branches does Frugalware have?"
+msgstr "Какви клонове има Frugalware?"
+
+#: ../about.php:39
+msgid ""
+"We have a <i>current</i> and a <i>stable</i> branch. The <i>current</i> "
+"branch is updated daily, and we update our <i>stable</i> branch around every "
+"6 months."
+msgstr ""
+"Имаме <i>current</i> и <i>stable</i> клонове. Клонът <i>current</i> се "
+"обновява дневно, а клонът <i>stable</i> всеки 6 месеца."
+
+#: ../about.php:40
+msgid "What is &quot;The Frugalware Philosophy&quot; about?"
+msgstr "Каква точно е &quot;Философията на Frugalware&quot;?"
+
+#: ../about.php:41
+msgid ""
+"Briefly: simplicity, multimedia, design. We try to make Frugalware as simple "
+"as possible while not forgetting to keep it comfortable for the user. We try "
+"to ship fresh and stable software, as close to the original source as "
+"possible, because in our opinion most software is the best as is, and "
+"doesn't need patching."
+msgstr ""
+"Накратко: семплост, мултимедия, дизайн. Опитваме се да направим Frugalware "
+"колкото се може по-прост, в същото време и удобен за потребителя. Опитваме "
+"се да пускаме нов и стабилен софтуеър, колкото се може по-близък до "
+"програмния код, защото според нас софтуеъра а в най-добрата си форма както е "
+"кодиран и не му трябва пачване."
+
+#: ../about.php:42
+msgid "What is the license of Frugalware?"
+msgstr "Какъв е лиценза на Frugalware?"
+
+#: ../about.php:43
+msgid ""
+"That's two questions. Most software included in Frugalware have a GPL or BSD "
+"compatible license, for more information about a license of a specific "
+"package, refer to the LICENSE or COPYRIGHT file in the source tarball of the "
+"package. On the other hand, the part written by our team (FrugalBuild "
+"scripts, setup, homepage, etc) is released under GPL license. To make it "
+"even more complicated, some parts of the setup and init scripts are written "
+"by Patrick J. Volkerding. We GPL our additions, but Patrick J. Volkerding's "
+"code is still under the BSD license. For more information, refer to the "
+"COPYRIGHT file in the root directory of the FST (Frugalware Source Tree)."
+msgstr ""
+"Това са два въпроса. По-голямата част от софтуеъра във Frugalware идва с "
+"лиценз съвместим с GPL или BSD, за повече информация относно лиценз на даден "
+"пакет, насочете се към файловете LICENSE или COPYRIGHT в tarball-а на "
+"пакета. От другата страна, кода написан от нашия отбор (скриптовете на "
+"Frugalware, инсталацията, началната страница, т.н.) са под лиценза GPL. За "
+"да се осолжни положението, част от инсталацията и init скриптовете са "
+"написани от Patrick J. Volkerding. Ние добавяме GPL към нашите допринасяния, "
+"но кода на Patrick J. Volkerding са все още под лиценза на BSD. За повече "
+"информация, насочете се към COPYRIGHT файла в root директорията на FST "
+"(Frugalware Source Tree)."
+
+#: ../about.php:44
+msgid "What package manager does Frugalware use?"
+msgstr "Кой мениджър за управление на пакети използва Frugalware?"
+
+#: ../about.php:45
+msgid ""
+"We don't have our own package manager, we use Judd Vinet's great work, the "
+"<a href=\"http://www.archlinux.org/pacman\">pacman</a> package manager. It's "
+"a tar.bz2 based package manager, similar to Slackware's .tgz. Our packages' "
+"extension is .fpm to differentiate them from regular tarballs. Unlike "
+"Slackware's scripts, pacman is written in C, so it's much faster."
+msgstr ""
+"Нямаме собствен мениджър на пакети, използваме добрия <a "
+"href=\"http://www.archlinux.org/pacman\">pacman</a> на Judd Vinet. Той е "
+"базиран на tar.bz2, подобен на .tgz на Slackware. Нашето окончание на "
+"пакетите е .fpm за да го отличава от останалите tarball-ове. За разлика от "
+"скриптовете на Slackware, pacman е кодиран в C, и е много по-бърз."
+
+#: ../about.php:46
+msgid "How does Frugalware manage updating obsolete packages?"
+msgstr "Frugalware как оправлява обновяването на остарели пакети?"
+
+#: ../about.php:47
+msgid ""
+"We don't have any standalone program for updating packages as pacman manages "
+"this task too. To update your package database, use <tt>pacman&nbsp;-Sy</"
+"tt>, and to update your packages according the just synchronized package "
+"database, you use <tt>pacman&nbsp;-Su</tt>. To install a package with the "
+"necessary dependencies directly from a mirror ftp server, you issue "
+"<tt>pacman&nbsp;-S&nbsp;foo</tt>. For more information, refer to the pacman "
+"man page."
+msgstr ""
+"Нямаме отделна програма за обновяване на пакети, тъй като pacman се занимава "
+"с това. За да обновите базата данни на пакетите, използвайте "
+"<tt>pacman&nbsp;-Sy</tt>, и за да обновите пакетите спрямо синхронизираната "
+"база данни, изпозвайте <tt>pacman&nbsp;-Su</tt>. За да инсталирате пакет с "
+"всичките му dependancies директно от огледален ftp сървър, използвайте "
+"<tt>pacman&nbsp;-S&nbsp;foo</tt>. За повече информация, насочете се към man "
+"страницата на pacman."
+
+#: ../about.php:48
+msgid "Is there any community support available for Frugalware?"
+msgstr "Има ли поддръжка от общността на Frugalware?"
+
+#: ../about.php:49
+msgid ""
+"Currently we have three mailing lists, an irc channel and forums that can be "
+"used to communicate with us or other users and to get help. The irc channel "
+"is on the Freenode network (server: irc.freenode.net). For more information "
+"about our mailing lists, please refer to the <a href=\"mailman/listinfo"
+"\">list section</a> of our web site."
+msgstr ""
+"В момента имаме три емейл листа, irc канал и форуми, които може да "
+"използвате за да комуникирате с нас или потребители на Frugalware и да "
+"получите помощ. Каналът в irc е в мрежата на Freenode. (server: "
+"irc.freenode.net). За повече информация относно нашите емeйл листи, насочете "
+"се към <a href=\"mailman/listinfo\">отдел със списъците</a> на нашия сайт."
+
+#: ../about.php:50
+msgid "Is there any commercial support available for Frugalware?"
+msgstr "Има ли платена поддръжка за Frugalware?"
+
+#: ../about.php:51
+msgid "No, there isn't for now, and <i>currently</i> it isn't planned, either."
+msgstr "Не, в момента няма, и <i>в момента</i> не е планирано да има."
+
+#: ../about.php:52
+msgid "For whom is Frugalware recommended to use?"
+msgstr "На кого се препоръчва да ползва Frugalware?"
+
+#: ../about.php:53
+msgid ""
+"Frugalware is designed for intermediate users. Installing Frugalware is not "
+"a magic, of course, but you should know what a partition, an MBR (Master "
+"Boot Record), etc. is."
+msgstr ""
+"Frugalware де проектиран за средно напреднали потребители. Инсталирането на "
+"Frugalware не е магическо, разбира се, но трябва да знаете какво са "
+"partition, MBR, и т.н."
+
+#: ../about.php:54
+msgid "How to become a developer?"
+msgstr "Как да стана developer?"
+
+#: ../about.php:55
+msgid ""
+"Get involved! :) If you installed Frugalware from CDs, get the full FST via "
+"repoman, which is available in pacman-tools. The sources are included in the "
+"DVD edition. Then start to play with the FrugalBuild scripts, for a typical "
+"example, refer to the <a href=\"/packages/44\">cabextract</a> package. Try "
+"to improve them, or write a new one for a currently unsupported program. "
+"Then send your patches to the <a href=\"mailman/listinfo/frugalware-devel"
+"\">devel</a> mailing list. From this point everything will come naturally to "
+"you :)"
+msgstr ""
+"Включете се! :) Ако сте инсталирали Frugalware от компакт дискове (CD), "
+"свалете пълната весия на FST чрез repoman, която е на разположение в pacman-"
+"tools. Source-кода е включен в DVD версията. След това, започнете да си "
+"играете със FrugalBuild скриптовете, като пример, насочете се към пакета <a "
+"href=\"/packages/44\">cabextract</a>. Опитайте се да подобрите пакетите, или "
+"да напишете нов за неподдържана в момента програма. След това пратете "
+"пачовете си на емейл листата <a href=\"mailman/listinfo/frugalware-"
+"devel\">devel</a>. От сам нататък, всичко ще ви изглежда лесно :)"
+
+#: ../about.php:56
+msgid "What do developers do?"
+msgstr "Какво правят developer-ите?"
+
+#: ../about.php:57
+msgid ""
+"In short, what they want to, if they play a square game. They may maintain "
+"packages: building them if a newer version is available and update the "
+"FrugalBuild scripts to work correctly against a newer version. They can "
+"contribute a new build script to a previously non-existent package. They can "
+"write articles about Frugalware, or anything else in connection with the "
+"Frugalware community. If you only want to help us, but you don't want to "
+"hack, you may help in translating Frugalware to your or other language. And, "
+"of course, we happily accept <a href=\"/donations\">donations</a>. :) More "
+"on this <a href=\"/docs/getting-"
+"involved#_further_options_for_those_who_have_developer_account_packagers_coders"
+"\">here</a>."
+msgstr ""
+"На кратко, каквото си поискат, стига да не правят бели. Те могат да "
+"поддържат пакети: компилират ги ако нова версия е на лице и обновяват "
+"скриптовете на FrugalBuild за да работят правилно с нови версии. Те могат да "
+"допринесат нов build скрипт за несъществуващ пакет. Те могат да пишат "
+"статии относно Frugalware, или каквото и да е във връзка с общността на "
+"Frugalware. Ако искате да помогнете, но не искате да хаквате, може да "
+"помогнете превеждайки Frugalware на майчиния ви или друг език. И, разбира "
+"се, приемаме <a href=\"/donations\">дарения</a>. :) Повече относно това <a "
+"href=\"/docs/getting-involved#_further_options_for_those_who_have_developer_a"
+"ccount_packagers_coders\">има тук</a>."
+
+#: ../about.php:58
+msgid "Who develops Frugalware?"
+msgstr "Кой разработва Frugalware?"
+
+#: ../about.php:59
+msgid "A young group, but your age is not conditional to become a developer"
+msgstr ""
+"Сравнително млада група, но възрастта не е изискване да станете developer."
+
+#: ../about.php:60
+msgid "Is Frugalware specialized in a certain purpose?"
+msgstr "Frugalware има ли специфична цел?"
+
+#: ../about.php:61
+msgid "No, it's a general purpose distribution, for desktops and servers."
+msgstr "Не, той е дистрибуция за основни цели, за десктопи и сървъри."
+
+#: ../about.php:62
+msgid "Do you plan to release a live cd?"
+msgstr "Планирате ли да пуснете live cd?"
+
+#: ../about.php:63
+msgid ""
+"Well, we have already a live cd, called FwLive. Currently it supports only "
+"i686, but an x86_64 version is also under development. You can find it in "
+"the standard release directories."
+msgstr ""
+"Вече имаме live cd, казва се FwLive. В момента поддържа само i686, но версия "
+"за x86_64 се разработва. Можете да го намерите в стандартните директории на "
+"release-а."
+
+#: ../about.php:64
+msgid "Does Frugalware support languages other than English?"
+msgstr "Frugalware поддържа ли езици различни от английския?"
+
+#: ../about.php:65
+msgid ""
+"Yes, it supports all languages supported by the packages. If the init "
+"scripts or the setup is not available in your language, then it simply means "
+"it haven't yet translated."
+msgstr ""
+"Да, поддържа всички езици поддържани от пакетите. Ако init скриптовете ги "
+"няма на вашия език, това просто означава че все още не са преведени."
+
+#: ../about.php:66
+msgid "What about Asian languages?"
+msgstr "А азиатските езици?"
+
+#: ../about.php:67
+msgid "Yes you just have to switch to UTF-8 encoding."
+msgstr "Да, само трябва да минете на UTF-8 кодиране."
+
+#: ../about.php:68
+msgid "What architectures does Frugalware support?"
+msgstr "Какви архитектури поддържа Frugalware?"
+
+#: ../about.php:69
+msgid ""
+"Currently we support x86, x86_64 and ppc platforms, and inside x86, only "
+"i686 (Pentium Pro or higher instruction set), inside x86_64 only k8 (amd64) "
+"and inside ppc only PowerPC. If there are any claims, an i386 port will be "
+"created, but currently we don't have resources to build and maintain those "
+"packages. Outside x86, currently we don't have any non-x86 hardware, but "
+"happily accept such patches or any effort to create non-x86 optimized "
+"packages."
+msgstr ""
+"В момента поддържаме x86, x86_64 и ppc платформи, а в x86, само i686 "
+"(Pentium Pro или по-нов списък с инструкции), в x86_64 само k8 (amd64) и в "
+"ppc само PowerPC. Ако има търсене, порт за i386 ще бъде създаден, но в "
+"момента нямаме средствата да построим и поддържаме тези пакети. Извън x86, в "
+"момента нямаме хардуеър за друго освен x86, но с удоволствие бихме приели "
+"пачове или каквато и да е помощ за създаването на пакети оптимизирани за "
+"архитектури различни от x86."
+
+#: ../about.php:70
+msgid "How are compressed the Frugalware packages?"
+msgstr "Как са компресирани пакетите на Frugalware?"
+
+#: ../about.php:71
+msgid ""
+"FPM packages were originally .tar.gz packages, then a bit later we migrated "
+"to libarchive, which allowed bzip2 compression. Life was good, but then lzma "
+"was came, and I added support for libarchive, though others were not really "
+"interested in a migration, so we stick to .tar.bz2. A few months ago "
+"libarchive got support for the xz format (which is the successor of lzma), "
+"so we switched to it. pacman-g2 still\n"
+"support .tar.gz and .tar.bz2 as well, and the package extension is .fpm all "
+"the time to make it clear that it's a Frugalware package."
+msgstr ""
+"FPM пакетите оригинално бяха .tar.gz пакети, малко след това мигрирахме към "
+"libarchive, който позволи bzip2 компресия. Живота беше песен, но тогава "
+"дойде lzma, и добавих поддръжка за libarchive, въпреки че другите не се "
+"интересуваха от миграция, и за това останахме с .tar.gz. Преди няколко "
+"месеца libarchive добави поддръжка за формата xz (който наследи lzma), и "
+"тогава преминахме към него. pacman-g2 все още поддържа .tar.gz и .tar.bz2, а "
+"окончанието на пакетите винаги е .fpm за да е ясно, че са пакети на "
+"Frugalware."
+
+#: ../about.php:73
+msgid "What's the difference between Arch and Frugalware?"
+msgstr "Каква е разликата между Arch и Frugalware?"
+
+#: ../about.php:74
+msgid ""
+"Many people think that as we use basically the same <tt>pacman</tt> as <a "
+"href=\"http://www.archlinux.org\">Arch Linux</a> then the two distribution "
+"are the same. Originally the package manager was the same, there is almost "
+"nothing other similar. There are also other major differences. We have "
+"console (such as <tt>grubconfig</tt> and <tt>netconfig</tt>) and graphical "
+"(such as <tt>gService</tt> and <tt>gFPM</tt>) configuration tools. At the "
+"end of the installation you will get a working system with x, network, mouse "
+"(and much more configured. We have an unique repo (stable or current) and "
+"it's easy to contribute with new packages, so we don't need such thing like "
+"<a href=\"http://aur.archlinux.org/\">AUR</a>. We officially support PPC "
+"arch."
+msgstr ""
+"Много хора мислят, че понеже ползване един и същ <tt>pacman</tt> като <a "
+"href=\"http://www.archlinux.org\">Arch Linux</a>, двете дистрибуции са "
+"еднакви. Първоначално, мениджъра на пакети беше еднакъв, няма нищо друго "
+"общо обаче. Има и други големи разлики. Ние имаме конзолни (пример: "
+"<tt>grubconfig</tt> и <tt>netconfig</tt>) и графични (пример: "
+"<tt>gService</tt> и <tt>gFPM</tt>) програми за настройки. В края на "
+"инсталацията ще получите работеща система с X, мрежа, мишка (и много други "
+"неща, вече настроени). Също така имаме уникален repository (stable или "
+"current) и е лесно да допринасяте с нови пакети, така че няма нужда от нещо "
+"като <a href=\"http://aur.archlinux.org/\">AUR</a>. Също така, поддържаме PPC "
+"архитектурата официално."
+
+#: ../about.php:81
+msgid "Short"
+msgstr "Кратък"
+
+#: ../about.php:85
+msgid "Question"
+msgstr "Въпрос"
+
+#: ../about.php:86
+msgid "Answer"
+msgstr "Отговор"
+
+#: ../about.php:88
+msgid "Long"
+msgstr "Дълъг"
+
+#: ../authors.php:57
+msgid "at"
+msgstr "at"
+
+#: ../authors.php:58
+msgid "dot"
+msgstr "точка"
+
+#: ../authors.php:68 ../config.inc.php:84
+msgid "Authors"
+msgstr "Автори"
+
+#: ../authors.php:69
+msgid ""
+"This page should list all people who contributed to Frugalware Linux in some "
+"way. However, we are aware that the contributor list is incomplete. Please "
+"contact us if your name is missing from here!<br />"
+msgstr ""
+"Тази страница съдържа списък с имената на хората помогнали на Frugalware "
+"Linux по някакъв начин. Имайте предвид, че знаем че списъка не е пълен."
+
+#: ../authors.php:70
+#, php-format
+msgid "Available filters: <a href=\"%s\">No filter</a> &middot; "
+msgstr "Налични филтри: <a href=\"%s\">Няма филтер</a> &middot;"
+
+#: ../authors.php:71
+#, php-format
+msgid "<a href=\"%s\">Active developers</a> &middot; "
+msgstr "<a href=\"%s\">Активни developer-и</a> &middot;"
+
+#: ../authors.php:72
+#, php-format
+msgid "<a href=\"%s\">Former developers</a> &middot; "
+msgstr "<a href=\"%s\">Бивши developer-и</a> &middot;"
+
+#: ../authors.php:73
+#, php-format
+msgid "<a href=\"%s\">Contributors</a><br />"
+msgstr "<a href=\"%s\">Допринесли</a><br />"
+
+#: ../authors.php:74
+msgid "Frugalware Linux Author list"
+msgstr "Frugalware Linux Авторски списък"
+
+#. $menucontent = '<a class="menu" href="' . $fwng_root . '">' . gettext('News') . "</a> | \n";
+#: ../config.inc.php:44 ../rss.php:186
+msgid "News"
+msgstr "Новини"
+
+#: ../config.inc.php:46
+msgid "Announcements"
+msgstr "Известия"
+
+#: ../config.inc.php:47 ../rss.php:195
+msgid "Security announcements"
+msgstr "Известия за сигурност"
+
+#: ../config.inc.php:48
+msgid "News feeds"
+msgstr "Новинарски feed"
+
+#: ../config.inc.php:50
+msgid "About"
+msgstr "Относно"
+
+#: ../config.inc.php:52
+msgid "Summary"
+msgstr "Резюме"
+
+#: ../config.inc.php:53
+msgid "Frugalware in the Press"
+msgstr "Frugalware в Пресата"
+
+#: ../config.inc.php:54
+msgid "Screenshots"
+msgstr "Скрийншотове"
+
+#: ../config.inc.php:57
+msgid "Get Frugalware"
+msgstr "Свалете Frugalware"
+
+#: ../config.inc.php:58
+msgid "Packages"
+msgstr "Пакети"
+
+#: ../config.inc.php:59
+msgid "Documentation"
+msgstr "Документация"
+
+#: ../config.inc.php:60
+msgid "Discussion Forums"
+msgstr "Форуми"
+
+#: ../config.inc.php:61
+msgid "Bug Tracker"
+msgstr "Бъгове"
+
+#: ../config.inc.php:62
+msgid "Wiki"
+msgstr "Уики"
+
+#: ../config.inc.php:64
+msgid "Community"
+msgstr "Общност"
+
+#: ../config.inc.php:66
+msgid "Mailing Lists"
+msgstr "Емейл Списъци"
+
+#: ../config.inc.php:67
+msgid "IRC"
+msgstr "IRC"
+
+#: ../config.inc.php:68
+msgid "Pastebin"
+msgstr "Pastebin"
+
+#: ../config.inc.php:69
+msgid "Blogs"
+msgstr "Блогове"
+
+#: ../config.inc.php:70
+msgid "Libre.fm group"
+msgstr "Libre.fm група"
+
+#: ../config.inc.php:71
+msgid "Local Communities"
+msgstr "Местни Общности"
+
+#: ../config.inc.php:72
+msgid "Artwork"
+msgstr "Графики"
+
+#: ../config.inc.php:73
+msgid "Identi.ca group"
+msgstr "Identi.ca група"
+
+#: ../config.inc.php:74
+msgid "Twitter"
+msgstr "Twitter"
+
+#: ../config.inc.php:77
+msgid "Development"
+msgstr "Разработка"
+
+#: ../config.inc.php:79
+msgid "Roadmap"
+msgstr "План"
+
+#: ../config.inc.php:80
+msgid "Git repository"
+msgstr "Git repository"
+
+#: ../config.inc.php:81
+msgid "Translation portal"
+msgstr "портал за Преводи"
+
+#: ../config.inc.php:83 ../donations.php:50 ../header.php:74
+msgid "Donations"
+msgstr "Дарения"
+
+#: ../config.inc.php:95 ../config.inc.php:97 ../config.inc.php:99
+#: ../config.inc.php:101 ../config.inc.php:103 ../config.inc.php:105
+#: ../config.inc.php:107 ../config.inc.php:109 ../config.inc.php:111
+#: ../config.inc.php:113
+msgid "Change language"
+msgstr "Смени езика"
+
+#: ../docs.php:60 ../docs.php:67
+msgid "The following categories are available:"
+msgstr "Следните категории са налице:"
+
+#: ../docs.php:62 ../docs.php:69
+msgid "Full manual"
+msgstr "Пълно ръководство"
+
+#: ../docs.php:63 ../docs.php:70
+msgid "User documentation"
+msgstr "Потребителска документация"
+
+#: ../docs.php:64 ../docs.php:71
+msgid "Developer documentation"
+msgstr "Developer документация"
+
+#: ../docs.php:74
+msgid "View online documentation (stable release)"
+msgstr "Виж онлайн документация (stable release)"
+
+#: ../docs.php:75
+msgid "View online documentation (development version)"
+msgstr "Виж онлайн документация (разработваща се версия)"
+
+#: ../donations.php:38
+msgid ""
+"<div align=\"left\">Donations are a great way to show your appreciation\n"
+"and support for Frugalware Linux. On this page we list the donations we "
+"have\n"
+"received so far and those that would help us in our work on Frugalware "
+"Linux.;\n"
+"If you have a piece of hardware or something whose Frugalware support could "
+"be\n"
+"improved, a good way to achieve this is to donate it to a developer.<br /"
+"><br />\n"
+"If you would like to donate something to the whole project (i.e. a mirror),\n"
+"please send a mail to the <a href=\"http://frugalware.org/mailman/listinfo/"
+"frugalware-devel\">frugalware-devel</a>\n"
+"list, or if you do not wish to subscribe, send a mail directly to "
+"vmiklos_at_frugalware_dot_org.\n"
+"If you wish to donate something to an individual developer, see the <a href="
+"\"/authors\">authors</a>\n"
+"page and send the developer a mail. You can also use the PayPal donate link "
+"on the side of the page\n"
+"if you wish to donate money.</div>"
+msgstr ""
+"<div align=\"left\">Даренията са чудесен начин да оцените и поддържате "
+"Frugalware Linux. На тази страница ще показваме получените даренията до сега "
+"и тези, които ни помагат с работата по Frugalware Linux.; Ако имате "
+"хардуеър, който може да помогне с разработката на Frugalware, може да по "
+"дарите на developer.<br /><br /> Ако искате да дарите нещо на целия проект "
+"(примерно огледален (mirror) сървър), моля пратете емейл на списъка <a "
+"href=\"http://frugalware.org/mailman/listinfo/frugalware-devel\">frugalware-"
+"devel</a>, или ако не искате да се абонирате, пратете емейл директно на "
+"vmiklos_at_frugalware_dot_org. Ако искате да дарите нещо на определен "
+"developer, вижте страницата <a href=\"/authors\">автори</a> и му пратете "
+"писмо. Също така можете да ползвате връзката дарение чрез Paypal отстрани "
+"ако искате да дарите пари."
+
+#: ../donations.php:54
+msgid "Advertisers"
+msgstr "Рекламни лица"
+
+#: ../donations.php:76
+msgid "The Frugalware Team"
+msgstr "Отборът на Frugalware"
+
+#: ../download.php:89
+msgid "Archive"
+msgstr "Архив"
+
+#: ../download.php:89
+msgid ""
+"Unfortunately due our limited resources we cannot store our old stable "
+"versions, they are being removed shortly after a new official stable "
+"release. But if you are interested in our old stable versions, ask IroNiQ on "
+"#frugalware @freenode or ask in email on one of our lists."
+msgstr ""
+"За съжаление поради ограничените ни ресурси не можем да складираме стари "
+"версии на stable, те се премахват кратко след като нов официален stable "
+"release е пуснат. Но ако се интересувате от стари stable версии, питайте "
+"IroNiQ във #frugalware @freenode или питайте в писмо на някой от нашите "
+"емейл списъци."
+
+#: ../header.php:70
+msgid "Languages"
+msgstr "Езици"
+
+#: ../header.php:71
+msgid "Recent updates"
+msgstr "Скорошни обновления"
+
+#: ../header.php:72
+msgid "Releases"
+msgstr "Releases"
+
+#: ../header.php:75
+msgid "Information"
+msgstr "Информация"
+
+#: ../header.php:76
+msgid "Server information"
+msgstr "Информация за сървъра"
+
+#: ../header.inc.php:135
+#, php-format
+msgid "Uptime:<br /> %d day(s) %d h %d m %d s"
+msgstr "Uptime:<br /> %d дни %d ч %d м %d с"
+
+#: ../header.inc.php:142
+msgid "Donate to support our development efforts."
+msgstr "Дарете за да поддържате разработката на Frugalware."
+
+#: ../index.php:97 ../index.php:116
+msgid "Sorry, no news on your language, using English instead."
+msgstr "Съжаляваме, няма информация на вашия език, използвайте английски."
+
+#: ../index.php:105
+msgid " edited this news on "
+msgstr "редактира тези новини на"
+
+#: ../index.php:107 ../index.php:120 ../security.php:89
+msgid "Posted by"
+msgstr "Написано от"
+
+#: ../index.php:108
+msgid "News history"
+msgstr "История на новини"
+
+#: ../irc.php:59
+msgid "General information"
+msgstr "Основна информация"
+
+#: ../irc.php:59
+msgid ""
+"Our irc channel is on the freenode network (server: irc.freenode.net), at "
+"#frugalware. This is the official Frugalware Linux irc help station. See the "
+"<a href=\"/docs/irc-rules#_irc_channels\">documentation</a> about non-"
+"English channels."
+msgstr ""
+"Каналът ни в irc е на freenode мрежата (сървър: irc.freenode.net), канал "
+"#frugalware. Това е официалната irc станция за помощ относно Frugalware "
+"Linux. Вижте <a href=\"/docs/irc-rules#_irc_channels\">документацията</a> за "
+"канали на езици различно от английския."
+
+#: ../irc.php:105
+msgid "Please enter a valid nickname"
+msgstr "Моля въведете валидно име"
+
+#: ../irc.php:121
+msgid "Nickname:"
+msgstr "Име:"
+
+#: ../irc.php:125
+msgid "Server:"
+msgstr "Сървър:"
+
+#: ../irc.php:129
+msgid "Channel:"
+msgstr "Канал:"
+
+#: ../irc.php:133
+msgid "Advanced..."
+msgstr "Разширено..."
+
+#: ../irc.php:134
+msgid "Login"
+msgstr "Вписване"
+
+#: ../irc.php:140
+msgid "Login via web"
+msgstr "Вписване чрез мрежа"
+
+#: ../irc.php:142
+msgid "Support channel logs"
+msgstr "История на канала за поддръжка"
+
+#: ../irc.php:142
+#, php-format
+msgid ""
+"Our support channels are logged and the logs are available <a href=\"%s"
+"\">here</a>."
+msgstr ""
+"Разговорите в нашите канали за поддръжка се запаметявят и можете да видите "
+"история <a href=\"%s\">тук</a>"
+
+#: ../media.php:46
+msgid "Sorry, a media file has not been written yet."
+msgstr "Съжаляваме, все още няма създаден медиен файл."
+
+#: ../media.php:52
+msgid "Frugalware in the press"
+msgstr "Frugalware в пресата"
+
+#: ../media.php:53
+msgid ""
+"This page contains details about some of the articles that have been posted "
+"on the Internet about Frugalware. If you find an article not listed here, "
+"please tell us about it!"
+msgstr ""
+"Тази страница има детайли относно статии за Frugalware публикувани в "
+"Интернет. Ако намерите статия, която не е тук, моля да ни кажете за нея."
+
+#: ../media.php:76
+msgid "Title"
+msgstr "Заглавие"
+
+#: ../media.php:77
+msgid "Where"
+msgstr "Къде"
+
+#: ../media.php:78 ../security.php:88
+msgid "Date"
+msgstr "Дата"
+
+#: ../media.php:79
+msgid "Language"
+msgstr "Език"
+
+#: ../media.php:80
+msgid "Link"
+msgstr "Връзка"
+
+#: ../packages.php:93
+msgid "Package search"
+msgstr "Търсене на пакети"
+
+#: ../packages.php:94
+msgid "Search for:"
+msgstr "Търси за:"
+
+#: ../packages.php:95
+msgid "packages"
+msgstr "пакети"
+
+#: ../packages.php:96
+msgid "Search in description"
+msgstr "Търси в описанието"
+
+#: ../packages.php:97
+msgid "files"
+msgstr "файлове"
+
+#: ../packages.php:98
+msgid "groups"
+msgstr "групи"
+
+#: ../packages.php:99
+msgid "Regular expression"
+msgstr "Regular expression"
+
+#: ../packages.php:99
+msgid "(regular expression)"
+msgstr "(regular expression)"
+
+#: ../packages.php:102 ../packages.php:337 ../packages.php:346
+msgid "Architecture:"
+msgstr "Архитектура:"
+
+#: ../packages.php:110 ../packages.php:337 ../packages.php:346
+#: ../packages.php:410
+msgid "Version:"
+msgstr "Версия:"
+
+#: ../packages.php:122
+msgid "Search"
+msgstr "Търси"
+
+#: ../packages.php:122
+msgid "Reset"
+msgstr "Изчисти"
+
+#: ../packages.php:123
+#, php-format
+msgid "Searching in %d binary and %d source-only packages."
+msgstr "Търсене в %d компилирани и %d само програмен код пакети."
+
+#: ../packages.php:137
+msgid "You will need a Mozilla based browser to install a search plugin."
+msgstr ""
+"Ще ви трябва браузер на базата на Mozilla за да инсталирате плъгин за "
+"търсене."
+
+#: ../packages.php:141
+msgid ""
+"Click <a href=\"javascript:addEngine()\">here</a> to install the Firefox "
+"search plugin."
+msgstr ""
+"Цъкнете <a href=\"javascript:addEngine()\">тук</a> за да инсталирате плъгина "
+"за търсене на Firefox."
+
+#: ../packages.php:193
+msgid "Error in the query, please change the searching conditions"
+msgstr "Грешка в заявката, моля промете условията за търсене."
+
+#: ../packages.php:198
+msgid "No package found"
+msgstr "Няма намерен пакет"
+
+#: ../packages.php:234
+msgid "No such file or directory"
+msgstr "Няма такъв файл или директория"
+
+#: ../packages.php:274 ../packages.php:310
+msgid "No such group"
+msgstr "Няма такава група"
+
+#: ../packages.php:320
+msgid "Listing groups"
+msgstr "Показване на групи"
+
+#: ../packages.php:332
+msgid "Listing contents of group:"
+msgstr "Показване на съдържанието на група:"
+
+#: ../packages.php:334 ../packages.php:343
+msgid "Search result for:"
+msgstr "Търси резултати за:"
+
+#: ../packages.php:406
+msgid "Package information:"
+msgstr "Информация на пакета:"
+
+#: ../packages.php:408
+msgid "Name:"
+msgstr "Име:"
+
+#: ../packages.php:409
+msgid "Parent:"
+msgstr "Родител:"
+
+#: ../packages.php:412
+msgid "Documentation:"
+msgstr "Документация:"
+
+#: ../packages.php:414
+msgid "Buildlog:"
+msgstr "Build история:"
+
+#: ../packages.php:415
+msgid "Changelog:"
+msgstr "История на промените:"
+
+#: ../packages.php:419
+msgid "Groups:"
+msgstr "Групи:"
+
+#: ../packages.php:424
+msgid "URL:"
+msgstr "URL:"
+
+#: ../packages.php:427
+msgid "Depends:"
+msgstr "Разчита на:"
+
+#: ../packages.php:434
+msgid "Exact reverse depends:"
+msgstr "Точно обратно разчитане:"
+
+#: ../packages.php:441
+msgid "Other reverse depends:"
+msgstr "Други обратни разчитания:"
+
+#: ../packages.php:448
+msgid "Conflicts:"
+msgstr "Конфликти:"
+
+#: ../packages.php:455
+msgid "Provides:"
+msgstr "Осигурява:"
+
+#: ../packages.php:460
+msgid "Compressed size:"
+msgstr "Компресиран размер:"
+
+#: ../packages.php:461
+msgid "Uncompressed size:"
+msgstr "Разкомпресиран размер:"
+
+#: ../packages.php:462
+msgid "Arch:"
+msgstr "Архитектура:"
+
+#: ../packages.php:463
+msgid "Description:"
+msgstr "Описание:"
+
+#. FIXME: latin -> utf8 conversion hardwired
+#: ../packages.php:465
+msgid "Maintainer:"
+msgstr "Поддържан от:"
+
+#: ../packages.php:466
+msgid "Uploaded by:"
+msgstr "Качен от:"
+
+#: ../packages.php:467
+msgid "Download:"
+msgstr "Свали:"
+
+#: ../packages.php:472
+msgid "Forums:"
+msgstr "Форуми:"
+
+#: ../packages.php:472
+msgid "Related posts"
+msgstr "Подобни публикации"
+
+#: ../packages.php:473
+msgid "Wiki:"
+msgstr "Уики:"
+
+#: ../packages.php:473
+msgid "Related pages"
+msgstr "Подобни страници"
+
+#: ../packages.php:474
+msgid "Bug Tracking System:"
+msgstr "Система за следене на бъгове"
+
+#: ../packages.php:474
+msgid "Related open bugs"
+msgstr "Подобни отворени бъгове"
+
+#: ../packages.php:475
+msgid "Syndicate:"
+msgstr "Синдикат:"
+
+#: ../packages.php:475
+msgid "RSS"
+msgstr "RSS"
+
+#: ../packages.php:476
+msgid "SHA1 Sum:"
+msgstr "SHA1 сбор:"
+
+#: ../packages.php:477
+msgid "Frugalware version:"
+msgstr "Версия на Frugalware:"
+
+#: ../packages.php:478
+msgid "Updated:"
+msgstr "Обновено:"
+
+#: ../packages.php:483 ../packages.php:534 ../packages.php:583
+#: ../packages.php:641 ../packages.php:671
+msgid "No such package!"
+msgstr "Няма такъв пакет!"
+
+#: ../packages.php:519
+#, php-format
+msgid "Changelog for %s"
+msgstr "История на промените на %s"
+
+#: ../packages.php:530 ../packages.php:579
+msgid "Sorry, currently no log available."
+msgstr "Съжаляваме, в момента няма история."
+
+#: ../packages.php:568
+#, php-format
+msgid "Build log for %s"
+msgstr "Build история на %s"
+
+#: ../packages.php:617
+#, php-format
+msgid "Documentation for %s"
+msgstr "Документация на %s"
+
+#: ../packages.php:637
+msgid "Sorry, currently no documentation available."
+msgstr "Съжаляваме, в момента няма документация."
+
+#: ../packages.php:656
+msgid "File list for"
+msgstr "Файлов списък на"
+
+#: ../roadmap.php:51
+msgid "Sorry, a roadmap has not been written yet."
+msgstr "Съжаляваме, все още няма съдаден план."
+
+#: ../roadmap.php:70 ../roadmap.php:79
+msgid "done"
+msgstr "готово"
+
+#: ../roadmap.php:72 ../roadmap.php:81
+msgid "pending"
+msgstr "нерешено"
+
+#: ../rss.php:187
+msgid "Stable releases"
+msgstr "Stable releases"
+
+#: ../rss.php:188
+msgid "-current commits"
+msgstr "-current commits"
+
+#: ../rss.php:189
+msgid "-stable patches"
+msgstr "-stable пачове"
+
+#: ../rss.php:190
+msgid "BTS entries"
+msgstr "BTS въведения"
+
+#: ../rss.php:191
+msgid "Package updates"
+msgstr "Обновления на пакета"
+
+#: ../rss.php:192
+msgid ""
+"There is an optional suffix to filter the package parameters: [/&lt;"
+"version&gt;[&lt;arch&gt;[&lt;package&gt;]]]."
+msgstr ""
+"По избор, има окончание, което филтрира параметрите на пакетите: "
+"[/&lt;version&gt;[&lt;arch&gt;[&lt;package&gt;]]]."
+
+#: ../rss.php:193
+msgid "Examples: "
+msgstr "Примери:"
+
+#: ../rss.php:194
+msgid "Blog posts"
+msgstr "Блогови публикации"
+
+#: ../rss.php:196
+msgid "New forums posts"
+msgstr "Нови публикации във форума"
+
+#: ../screenshots.php:32
+msgid "Splash screen"
+msgstr "Сплаш екран"
+
+#: ../screenshots.php:34
+msgid "Language selection"
+msgstr "Избор на език"
+
+#: ../screenshots.php:36
+msgid "Welcome Screen"
+msgstr "Начален Екран"
+
+#: ../screenshots.php:38
+msgid "Keyboard map"
+msgstr "Вид клавиатура"
+
+#: ../screenshots.php:40
+msgid "RAID Selection"
+msgstr "Избор на RAID"
+
+#: ../screenshots.php:42
+msgid "Selecting Hard Disk"
+msgstr "Избор на Твърд Диск"
+
+#: ../screenshots.php:44
+msgid "Partitioning"
+msgstr "Дялове"
+
+#: ../screenshots.php:46
+msgid "Partitioning using cfdisk"
+msgstr "Разделяне на дялове със cfdisk"
+
+#: ../screenshots.php:48 ../screenshots.php:50
+msgid "Setting up swap space"
+msgstr "Нагласяне на swap"
+
+#: ../screenshots.php:52
+msgid "Root partition selection"
+msgstr "Избор на root дял"
+
+#: ../screenshots.php:54
+msgid "Formatting root partition"
+msgstr "Форматиране на root дяла"
+
+#: ../screenshots.php:56
+msgid "Creating filesystem"
+msgstr "Създаване на файлова система"
+
+#: ../screenshots.php:58
+msgid "Other partitions"
+msgstr "Други дялове"
+
+#: ../screenshots.php:60
+msgid "Package selection"
+msgstr "Избор на пакети"
+
+#: ../screenshots.php:62 ../screenshots.php:64
+msgid "Selecting package categories"
+msgstr "Избиране на категории на пакети"
+
+#: ../screenshots.php:66
+msgid "Beginning installation"
+msgstr "Стартиране на инсталацията"
+
+#: ../screenshots.php:68
+msgid "Installing packages"
+msgstr "Инсталиране на пакети"
+
+#: ../screenshots.php:70
+msgid "Setup MBR"
+msgstr "Нагласи MBR"
+
+#: ../screenshots.php:72
+msgid "Installing MBR"
+msgstr "Инсталиране на MBR"
+
+#: ../screenshots.php:74
+msgid "Installing modules"
+msgstr "Инсталиране на модули"
+
+#: ../screenshots.php:76 ../screenshots.php:78
+msgid "Setting a root password"
+msgstr "Нагласяне на root паролата"
+
+#: ../screenshots.php:80
+msgid "Creating user"
+msgstr "Създаване на потребител"
+
+#: ../screenshots.php:82
+msgid "Choosing a user name"
+msgstr "Избор на потребителско име"
+
+#: ../screenshots.php:84
+msgid "Choosing a user password"
+msgstr "Избор на потребителска парола"
+
+#: ../screenshots.php:86
+msgid "Setup system hostname"
+msgstr "Избор на системен hostname"
+
+#: ../screenshots.php:88
+msgid "Network configuration"
+msgstr "Мрежови настройки"
+
+#: ../screenshots.php:90
+msgid "Network configuration - DHCP"
+msgstr "Мрежови настройки - DHCP"
+
+#: ../screenshots.php:92
+msgid "Applying settings"
+msgstr "Прилагане на настройките"
+
+#: ../screenshots.php:94
+msgid "Setting up system time"
+msgstr "Нагласяне на системното време"
+
+#: ../screenshots.php:96
+msgid "Selecting Timezone"
+msgstr "Избор на Времева Зона"
+
+#: ../screenshots.php:98
+msgid "Mouse configuration"
+msgstr "Настройки на мишката"
+
+#: ../screenshots.php:100
+msgid "Installation success"
+msgstr "Инсталацията е успешна"
+
+#: ../screenshots.php:103
+msgid "Bootloader (GRUB)"
+msgstr "Bootloader (GRUB)"
+
+#: ../screenshots.php:105
+msgid "Startup (Splash)"
+msgstr "Startup (Сплаш екран)"
+
+#: ../screenshots.php:107 ../screenshots.php:109
+msgid "Startup (Console)"
+msgstr "Startup (Конзола)"
+
+#: ../screenshots.php:111
+msgid "Console Login"
+msgstr "Конзолно Вписване"
+
+#: ../screenshots.php:113
+msgid "Console"
+msgstr "Конзола"
+
+#: ../screenshots.php:116
+msgid "KDM Login Screen"
+msgstr "KDM Екран на Вписване"
+
+#: ../screenshots.php:118
+msgid "Ksplash"
+msgstr "Ksplash"
+
+#: ../screenshots.php:120
+msgid "Default KDE Desktop"
+msgstr "KDE по Подразбиране"
+
+#: ../screenshots.php:122
+msgid "KDE Menu"
+msgstr "KDE Меню"
+
+#: ../screenshots.php:124
+msgid "KDE Desktop with Konqueror"
+msgstr "KDE с Konqueror"
+
+#: ../screenshots.php:126
+msgid "KDE with Cube"
+msgstr "KDE с Куб"
+
+#: ../screenshots.php:129
+msgid "GDM Login Screen"
+msgstr "GDM Екран на вписване"
+
+#: ../screenshots.php:131
+msgid "Default Gnome Desktop"
+msgstr "Gnome по Подразбиране"
+
+#: ../screenshots.php:133
+msgid "Gnome Menu"
+msgstr "Gnome Меню"
+
+#: ../screenshots.php:135
+msgid "Web Browser"
+msgstr "Уеб Браузър"
+
+#: ../screenshots.php:137
+msgid "Gnome Apps"
+msgstr "Gnome Апликации"
+
+#: ../screenshots.php:140
+msgid "Login Screen (SliM)"
+msgstr "Екран на Вписване (SliM)"
+
+#: ../screenshots.php:142
+msgid "Default XFCE Desktop"
+msgstr "XFCE по Подразбиране"
+
+#: ../screenshots.php:144
+msgid "XFCE in Action"
+msgstr "XFCE в Действие"
+
+#: ../screenshots.php:146
+msgid "XFCE Menu"
+msgstr "XFCE Меню"
+
+#: ../screenshots.php:148
+msgid "XFCE Terminal"
+msgstr "XFCE Терминал"
+
+#: ../screenshots.php:151
+msgid "Gfpm"
+msgstr "Gfpm"
+
+#: ../screenshots.php:153
+msgid "Gfpm Synchronizing"
+msgstr "Gfpm Синхронизиране"
+
+#: ../screenshots.php:155
+msgid "Repository Manager"
+msgstr "Мениджър на Repositories"
+
+#: ../screenshots.php:157 ../screenshots.php:168
+msgid "Preferences Window"
+msgstr "Прозорец на Настройки"
+
+#: ../screenshots.php:159
+msgid "Optimizing Package Database"
+msgstr "Оптимизиране на Базата Данни с Пакети"
+
+#: ../screenshots.php:161
+msgid "Log Viewer"
+msgstr "Изглед на История"
+
+#: ../screenshots.php:164
+msgid "Update Notification"
+msgstr "Уведомение за Обновления"
+
+#: ../screenshots.php:166
+msgid "FUN Main Window"
+msgstr "FUN Основен Прозорец"
+
+#: ../screenshots.php:171
+msgid "GNetconfig"
+msgstr "GNetconfig"
+
+#: ../screenshots.php:173
+msgid "GNetconfig - Interface Management"
+msgstr "GNetconfig - Мениджър на Карти"
+
+#: ../screenshots.php:175
+msgid "GNetconfig - DNS Settings"
+msgstr "GNetconfig - DNS Настройки"
+
+#: ../screenshots.php:178
+msgid "gService - Main Window"
+msgstr "gService - Главен Прозорец"
+
+#: ../screenshots.php:180
+msgid "gService - Editing Runlevel Information"
+msgstr "gService - Редактиране на Runlevel Информация"
+
+#: ../screenshots.php:182
+msgid "gService - Minimal Interface"
+msgstr "gService - Минимален Изглед"
+
+#: ../screenshots.php:185
+msgid "Openbox - by Lenezir"
+msgstr "Openbox - от Lenezir"
+
+#: ../screenshots.php:187
+msgid "GNOME - by Pingax"
+msgstr "GNOME - от Pingax"
+
+#: ../screenshots.php:189
+msgid "XFCE - by Devil505"
+msgstr "XFCE - от Devil505"
+
+#: ../screenshots.php:191
+msgid "GNOME - by Slown"
+msgstr "Openbox - от Botchchikii"
+
+#: ../screenshots.php:193
+msgid "Openbox - by Botchchikii"
+msgstr "Openbox - от Botchchikii"
+
+#: ../screenshots.php:195
+msgid "KDE - by Centuri0"
+msgstr "KDE - от Centuri0"
+
+#: ../screenshots.php:202
+msgid "Screenshots from users"
+msgstr "Потребителски скрийшотове"
+
+#: ../screenshots.php:212
+msgid "Installer"
+msgstr "Инсталатор"
+
+#: ../screenshots.php:220
+msgid "Startup"
+msgstr "Startup"
+
+#: ../screenshots.php:228
+msgid "KDE Desktop"
+msgstr "KDE Desktop"
+
+#: ../screenshots.php:236
+msgid "GNOME Desktop"
+msgstr "GNOME Desktop"
+
+#: ../screenshots.php:244
+msgid "XFCE Desktop"
+msgstr "XFCE Desktop"
+
+#: ../screenshots.php:252
+msgid "GFpm (Package Manager)"
+msgstr "GFpm (Мениджър на Пакети)"
+
+#: ../screenshots.php:260
+msgid "FUN (Update Notifier)"
+msgstr "FUN (Уведомяване за Обновление)"
+
+#: ../screenshots.php:268
+msgid "GNetconfig (Network Configuration Tool)"
+msgstr "GNetconfig (Програма за Мрежови Настройки)"
+
+#: ../screenshots.php:276
+msgid "gService (GUI Runlevel Editor)"
+msgstr "gService (GUI Runlevel Редактор)"
+
+#: ../security.php:46
+msgid "Sorry, a security file has not been written yet."
+msgstr "Съжаляваме, все още няма написан файл за сигурността."
+
+#: ../security.php:58
+msgid "Frugalware Security Announcements (FSAs)"
+msgstr "Известия Относно Сигурността на Frugalware (FSAs)"
+
+#: ../security.php:59
+msgid ""
+"This is a list of security announcments that have been released for the "
+"current stable version of Frugalware"
+msgstr ""
+"Този списък съдържа известия за сигурността, които са изпратени в current "
+"stable версията на Frugalware."
+
+#: ../security.php:87
+msgid "Package"
+msgstr "Пакет"
+
+#: ../security.php:90
+msgid "Vulnerable version"
+msgstr "Уязвима версия"
+
+#: ../security.php:91
+msgid "Unaffected version"
+msgstr "Неафектирана версия"
+
+#: ../security.php:92
+msgid "Bug tracker entry"
+msgstr "Въведения в бъг тракъра"
+
+#: ../security.php:93
+msgid "CVEs"
+msgstr "CVE-та"
+
+#: ../security.php:94
+msgid "Description"
+msgstr "Описание"
