@@ -8,16 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: setup current\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-05 02:02+0100\n"
-"PO-Revision-Date: 2009-06-06 14:47+0200\n"
-"Last-Translator: Karel Vanhelden <karelvanhelden@gmail.com>\n"
+"POT-Creation-Date: 2011-04-11 02:02+0200\n"
+"PO-Revision-Date: 2011-04-11 16:11+0200\n"
+"Last-Translator:  <frugalnl@gmail.com>\n"
 "Language-Team: Dutch <translation-team-nl@lists.sourceforge.net>\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 1.2.1\n"
+"X-Generator: Pootle 2.0.2\n"
 
 #: ../src/plugins/asklang.c:72
 msgid "Selecting language"
@@ -25,64 +25,68 @@ msgstr "Taal selecteren"
 
 #: ../src/plugins/configsource.c:52
 msgid "Configuring the source of the installation"
-msgstr "Bezig met bron van de installatie te configureren"
+msgstr "Bezig met de bron van de installatie te configureren"
 
 #. this string should be the best mirror for the given language from
 #. * /etc/pacman-g2/repos
 #: ../src/plugins/configsource.c:68
 msgid "ftp://ftp5."
-msgstr ""
+msgstr "ftp://ftp5."
 
 #: ../src/plugins/configsource.c:102 ../src/plugins/dolangsh.c:58
 #: ../src/plugins/formatdisk.c:267 ../src/plugins/formatdisk.c:467
 #: ../src/plugins/layout.c:146 ../src/plugins/loadsource.c:88
 #: ../src/util.c:305
 msgid "Could not open output file for writing"
-msgstr "Kon het output bestand niet openen om ernaar te schrijven"
+msgstr "Kon het uitvoerbestand niet openen om ernaar te schrijven"
 
 #: ../src/plugins/configsource.c:125
 msgid "Selecting a mirror"
-msgstr "Bezig met mirror te kiezen"
+msgstr "Bezig met het kiezen van een spiegelserver"
 
 #: ../src/plugins/configsource.c:132
 msgid "Please select mirrors"
-msgstr "Kies de mirrors"
+msgstr "Gelieve spiegelservers te selecteren"
 
 #: ../src/plugins/configsource.c:133
 msgid ""
-"Here you can chose one or more nearby mirror to speed up package dowloading."
+"Here you can choose one or more nearby mirrors to speed up package "
+"dowloading."
 msgstr ""
-"Hier kan je een downloadserver kiezen die zich dichter in de buurt bevindt, "
-"om het downloaden van de pakketten te versnellen."
+"Hier kunt U een spiegelserver kiezen welke zich dichter bij U in de buurt "
+"bevindt, om het downloaden van de pakketten te versnellen."
 
 #: ../src/plugins/configsource.c:166 ../src/plugins/formatdisk.c:655
 #: ../src/plugins/partdisk.c:197
 msgid "Continue"
-msgstr "Verdergaan"
+msgstr "Volgende"
 
 #: ../src/plugins/configsource.c:167
 msgid "Custom mirror"
-msgstr "Eigen downloadmirror"
+msgstr "Aangepaste spiegelserver"
 
 #: ../src/plugins/configsource.c:167
-#, fuzzy
 msgid ""
 "You may now specify a custom mirror (eg. LAN) so you can download packages "
-"faster. In most cases a Continue enough here."
+"faster. If you don't have a custom mirror, select Continue."
 msgstr ""
-"Je kan nu een mirror dicht bij jou specifiëren om de pakketten sneller te "
-"downloaden. In de meeste gevallen kan je op annuleren klikken."
+"U kunt nu een aangepaste spiegelserver selecteren (b.v. LAN) zodat U sneller "
+"kunt downloaden. Indien U geen aangepaste spiegelserver heeft, kies "
+"Volgende"
 
 #: ../src/plugins/configsource.c:195
 msgid "Failed to configure the network"
-msgstr ""
+msgstr "Netwerk instellen niet gelukt"
 
 #: ../src/plugins/configsource.c:196
 msgid ""
 "Failed to write the network configuration files. Please try again, "
-"especially pay attention to give a valid IP address and/or netmask if you "
+"especially pay attention to giving a valid IP address and/or netmask if you "
 "are using a static IP configuration."
 msgstr ""
+"Kan de netwerkconfiguratie niet opslaan. Probeer opnieuw, indien U een "
+"statisch IP-adres gebruikt kijk goed na of U een juist IP adres en/of "
+"netmask heeft opgegeven."
 
 #: ../src/plugins/configsource.c:203 ../src/plugins/select.c:422
 #: ../src/plugins/select.c:438 ../src/plugins/select.c:477
@@ -91,11 +95,11 @@ msgstr "Gelieve te wachten"
 
 #: ../src/plugins/configsource.c:203
 msgid "Configuring the network interface..."
-msgstr "De netwerk interface aan het configureren..."
+msgstr "Het netwerkapparaat in aan het stellen..."
 
 #: ../src/plugins/dolangsh.c:46
 msgid "Writing the language configuration file"
-msgstr "Het talenconfiguratiebestand schrijven"
+msgstr "Het taalinstellingenbestand aan het schrijven"
 
 #: ../src/plugins/formatdisk.c:50
 msgid "Formatting the selected partitions"
@@ -103,23 +107,25 @@ msgstr "Geselecteerde partities aan het formatteren"
 
 #: ../src/plugins/formatdisk.c:158
 msgid "Setting up swap space"
-msgstr "Swapruimte aan het instellen"
+msgstr "Ruimte voor wisselgeheugen aan het instellen"
 
 #: ../src/plugins/formatdisk.c:161
 msgid "Setting up swap partitions"
-msgstr "De swap partities aan het instellen"
+msgstr "De partities voor wisselgeheugen aan het instellen"
 
 #: ../src/plugins/formatdisk.c:162
 msgid "Please select which swap partitions you want Frugalware to use:"
-msgstr "Kies welke swap partities Frugalware moet gebruiken:"
+msgstr ""
+"Gelieve te kiezen welke partities Frugalware dient te gebruiken voor "
+"wisselgeheugen:"
 
 #: ../src/plugins/formatdisk.c:176 ../src/plugins/formatdisk.c:204
 msgid "Quick format with no bad block checking"
-msgstr "Snel formatteren zonder controle op defecte blokken"
+msgstr "Snel formatteren zonder controle op slechte blokken"
 
 #: ../src/plugins/formatdisk.c:177 ../src/plugins/formatdisk.c:205
 msgid "Slow format that checks for bad blocks"
-msgstr "Traag formatteren met controle op defecte blokken"
+msgstr "Langzaam formatteren met controle op slechte blokken"
 
 #: ../src/plugins/formatdisk.c:180 ../src/plugins/formatdisk.c:209
 #: ../src/plugins/formatdisk.c:243
@@ -138,34 +144,33 @@ msgid ""
 "NOTE: This will erase all data on %s. Would you like to format this "
 "partition?"
 msgstr ""
-" Als %s nog niet geformateerd is, zou je het beter formatteren\n"
-"LET OP: Dit zal alle data op %s verwijderen. Weet je zeker dat je deze "
-"partitie wilt formatteren?"
+"Indien %s nog niet geformateerd is, is het aanbevolen deze te formatteren\n"
+"LET OP: Dit zal alle data op %s verwijderen. Wilt U deze partitie "
+"formatteren?"
 
 #: ../src/plugins/formatdisk.c:206
 msgid "Do not format, just mount the partition"
-msgstr "De partitie niet formatteren, enkel mounten"
+msgstr "De partitie niet formatteren, partitie alleen aankoppelen"
 
 #: ../src/plugins/formatdisk.c:234
 msgid "Standard Linux ext2fs filesystem"
 msgstr "Standaard Linux ext2fs bestandssysteem"
 
 #: ../src/plugins/formatdisk.c:235
-#, fuzzy
-msgid "Journalising version of the ext2 filesystem"
-msgstr "Journaling versie van het ext2FS bestandssysteem"
+msgid "Journaling version of the ext2 filesystem"
+msgstr "Loggende versie van het ext2FS bestandssysteem"
 
 #: ../src/plugins/formatdisk.c:236
 msgid "The evolution of the ext3 filesystem (EXPERIMENTAL!)"
-msgstr ""
+msgstr "De doorontwikkeling van het Ext3 filesysteem ( EXPERIMENTEEL!)"
 
 #: ../src/plugins/formatdisk.c:238
-msgid "Hans Reiser's journalising filesystem"
-msgstr "Hans Reiser's journaling bestandssysteem"
+msgid "Hans Reiser's journaling filesystem"
+msgstr "Hans Reiser's loggend bestandssysteem"
 
 #: ../src/plugins/formatdisk.c:240
-msgid "SGI's journalising filesystem"
-msgstr "SGI's journaling bestandssysteem"
+msgid "SGI's journaling filesystem"
+msgstr "SGI's loggend bestandssysteem"
 
 #: ../src/plugins/formatdisk.c:247
 #, c-format
@@ -175,22 +180,23 @@ msgstr "Bestandssysteem selecteren voor %s"
 #: ../src/plugins/formatdisk.c:248
 #, c-format
 msgid "Please select the type of filesystem to use for %s."
-msgstr "Kies het type bestandssysteem om %s te laten gebruiken"
+msgstr "Gelieve het gewenste type bestandssysteem voor %s te selecteren."
 
 #: ../src/plugins/formatdisk.c:293
 #, c-format
 msgid "Formatting %s as a swap partition"
-msgstr "%s formatteren als swap partitie"
+msgstr "Bezig %s te formatteren als wisselgeheugen"
 
 #: ../src/plugins/formatdisk.c:295 ../src/plugins/formatdisk.c:305
 msgid "Formatting swap partition"
-msgstr "Swap partitie formatteren"
+msgstr "Bezig partitie als wisselgeheugen te formatteren"
 
 #: ../src/plugins/formatdisk.c:303
 #, c-format
 msgid "Formatting %s as a swap partition and checking for bad blocks"
 msgstr ""
-"%s aan het formatteren als swap partitie en te controleren op defecte blokken"
+"%s aan het formatteren als partitie voor wisselgeheugen en te controleren op "
+"slechte blokken"
 
 #: ../src/plugins/formatdisk.c:333
 msgid "Setting up the root partition"
@@ -205,8 +211,8 @@ msgid ""
 "Please select a partition from the following list to use for your root (/) "
 "partition. The following ones are available:"
 msgstr ""
-"Kies een partitie uit de volgende lijst om te gebruiken voor je root (/) "
-"partitie. De volgende zijn beschikbaar:"
+"Gelieve een partitie uit de volgende lijst te kiezen om te gebruiken voor Uw "
+"root (/) partitie. De volgende zijn beschikbaar:"
 
 #: ../src/plugins/formatdisk.c:351
 msgid "Formatting"
@@ -215,17 +221,17 @@ msgstr "Bezig met formatteren"
 #: ../src/plugins/formatdisk.c:352
 #, c-format
 msgid "Creating %s filesystem on %s and checking for bad blocks"
-msgstr "Het %s bestandssysteem creëren op %s en controleren op defecte blokken"
+msgstr "Het %s bestandssysteem creëren op %s en controleren op slechte blokken"
 
 #: ../src/plugins/formatdisk.c:353
 #, c-format
 msgid "Creating %s filesystem on %s"
-msgstr "Het %s bestandssysteem creëren op %s"
+msgstr "Bezig bestandssysteem %s te creëren op %s"
 
 #: ../src/plugins/formatdisk.c:498
 #, c-format
 msgid "Select mount point for %s"
-msgstr "Selecteer het mount punt voor %s"
+msgstr "Selecteer het aankoppelpunt voor %s"
 
 #: ../src/plugins/formatdisk.c:522 ../src/plugins/formatdisk.c:675
 msgid "(in use)"
@@ -256,18 +262,18 @@ msgid ""
 "already entered before. Please select one of the partitions listed below, or "
 "if you're done, hit Continue."
 msgstr ""
-"Eventueel kan je andere partities gebruiken om je Linux systeem te "
-"verspreiden over meer dan een partitie. Momenteel heb je enkel je / partitie "
-"gemount. Je wil misschien wel mappen als /boot, /home of /usr/local mounten "
-"op afzonderelijke partities. Je probeert beter niet om /usr, /etc/, /sbin "
-"of /bin te mounten op afzonderlijke partities omdat deze tools bevatten om "
-"het systeem te starten en partities te mounten. Gebruik ook geen partitie "
-"die je al eerder heb ingevoerd. Selecteer een van onderstaande partities, of "
-"als je klaar bent, druk Verdergaan."
+"ventueel kunt U andere partities gebruiken om Uw Linux systeem te "
+"verspreiden over meer dan een partitie. Momenteel heeft U enkel de / "
+"partitie aangekoppeld. Miscchien wilt U nog mappen als /boot, /home of "
+"/usr/local aankoppelen op afzonderelijke partities. Het wordt afgeraden om "
+"/usr, /etc/, /sbin of /bin aan te koppelen op afzonderlijke partities omdat "
+"deze tools bevatten om het systeem te starten en partities aan te koppelen. "
+"Gebruik ook geen partitie die U al eerder heeft ingevoerd. Selecteer een van "
+"onderstaande partities, of indien U klaar bent, kies Volgende."
 
 #: ../src/plugins/greet.c:46
 msgid "Welcome splash"
-msgstr "Welkom splash"
+msgstr "Welkom scherm"
 
 #: ../src/plugins/greet.c:59
 #, c-format
@@ -289,28 +295,28 @@ msgid ""
 msgstr ""
 "Welkom onder de gebruikers van Frugalware!\n"
 "\n"
-"Frugalware creëren had als doel je te helpen sneller en simpeler te werken. "
-"We hopen dat ons product je zal bevallen.\n"
+"Het doel van Frugalware is om U te helpen sneller en simpeler te werken. We "
+"hopen dat ons product U zal bevallen.\n"
 "\n"
 "Het Frugalware Ontwikkelaars Team"
 
 #: ../src/plugins/layout.c:57
 msgid "Selecting the keyboard map"
-msgstr "De toetsenbord instelling selecteren"
+msgstr "De toetsenbord indeling selecteren"
 
 #: ../src/plugins/layout.c:113
 msgid "Configuring the keyboard"
-msgstr "Het toetsenbord configureren"
+msgstr "Bezig het toetsenbord in te stellen"
 
 #. this string should be the best keyboard layout for the given
 #. * language from /usr/share/keymaps/i386
 #: ../src/plugins/layout.c:118
 msgid "qwerty/us.map.gz"
-msgstr ""
+msgstr "qwerty/us.map.gz"
 
 #: ../src/plugins/layout.c:119
 msgid "Keyboard map selection"
-msgstr "Toestenbord map selectie"
+msgstr "Toestenbord indeling selectie"
 
 #: ../src/plugins/layout.c:120
 msgid ""
@@ -319,10 +325,10 @@ msgid ""
 "the UP/DOWN arrow keys and PageUp/PageDown to scroll through the whole list "
 "of choices."
 msgstr ""
-"Je kan nu een van de volgende toetsenbord maps selecteren. Als je gene "
-"selecteerd, dan wordt 'qwerty/us.map.gz' (US toetsenbord map) als standaard "
-"gekozen. Gebruik de BOVEN/ONDER pijltjestoetsen en PageUp/PageDown om door "
-"de volledige lijst met keuzes te scrollen."
+"U kunt nu een van de volgende toetsenbord indelingen selecteren. Indien U "
+"geen indeling selecteerd, dan wordt 'qwerty/us.map.gz' (US toetsenbord "
+"indeling) als standaard gekozen. Gebruik de BOVEN/ONDER pijltjestoetsen en "
+"PageUp/PageDown om door de volledige lijst met keuzes te scrollen."
 
 #: ../src/plugins/loadsource.c:62
 msgid "Loading the installation source"
@@ -334,25 +340,26 @@ msgstr "Bron media selecteren"
 
 #: ../src/plugins/loadsource.c:161
 msgid "Scanning"
-msgstr "Scannen"
+msgstr "Bezig met scannen"
 
 #: ../src/plugins/loadsource.c:161
 msgid "Scanning for a CD/DVD drive containing a Frugalware install disc..."
 msgstr ""
-"Scanner naar een CD/DVD drive die een Frugalware installatie disc bevat..."
+"Bezig met zoeken naar een CD/DVD station dat een Frugalware installatie "
+"schijf bevat..."
 
 #: ../src/plugins/loadsource.c:177
 msgid "CD/DVD drive found"
-msgstr "CD/DVD drive gevonden"
+msgstr "CD/DVD station gevonden"
 
 #: ../src/plugins/loadsource.c:177
 #, c-format
 msgid "A Frugalware install disc was found in device /dev/%s."
-msgstr "Eine Frugalware Installations Quelle wurde in /dev/%s gefunden."
+msgstr "Een Frugalware installatie schijf is gevonden in /dev/%s"
 
 #: ../src/plugins/partdisk.c:53
 msgid "Partitioning the disk drives"
-msgstr "Bezig met partitioneren van de harde schijven"
+msgstr "Bezig met partitioneren van de schijfstations"
 
 #: ../src/plugins/partdisk.c:118
 msgid "User friendly (curses based) version of fdisk"
@@ -360,47 +367,47 @@ msgstr "Gebruiksvriendelijke (curses gebaseerde) versie van fdisk"
 
 #: ../src/plugins/partdisk.c:119
 msgid "The traditional partitioning program for Linux"
-msgstr "Het traditionele partitie programma for Linux"
+msgstr "Het traditionele programma voor schijfindeling onder Linux"
 
 #: ../src/plugins/partdisk.c:120 ../src/plugins/partdisk.c:127
 msgid "A partition manipulation program"
-msgstr "Een partitie-manipulatie programma"
+msgstr "Een programma om partities aan te passen"
 
 #: ../src/plugins/partdisk.c:126
 msgid "Apple disk partitioning utility"
-msgstr ""
+msgstr "Apple programma voor schijfindeling"
 
 #: ../src/plugins/partdisk.c:131 ../src/plugins/partdisk.c:183
 msgid "Creating partitions"
-msgstr "Partities creëren"
+msgstr "Bezig partities te creëren"
 
 #: ../src/plugins/partdisk.c:134
 msgid "Select partitioning program"
-msgstr "Selecteer partitie programma"
+msgstr "Selecteer programma voor schijfindeling"
 
 #: ../src/plugins/partdisk.c:135
 msgid "Select the program you want to use for partitioning:"
-msgstr "Selecteer welk programma je wil gebruiken om te partitioneren"
+msgstr "Selecteer welk programma U wilt gebruiken voor schijfindeling:"
 
 #: ../src/plugins/partdisk.c:147
-msgid "Want to create RAID?"
-msgstr "Wil je een RAID creëren?"
+msgid "Want to create RAID partitions?"
+msgstr "Wilt U RAID partities creëren?"
 
 #: ../src/plugins/partdisk.c:148
-msgid "Do you want to create software raid partitions during partitioning?"
-msgstr "Wil je een software raid partities creëren tijdens het partitioneren?"
+msgid "Do you want to create software RAID partitions during partitioning?"
+msgstr "Wilt U software raid partities creëren tijdens de schijfindeling?"
 
 #: ../src/plugins/partdisk.c:177
 msgid "Disk drive not found"
-msgstr "Disk drive niet gevonden"
+msgstr "Diskette station niet gevonden"
 
 #: ../src/plugins/partdisk.c:177
 msgid ""
 "Sorry, no hard disk drives were found in this computer. Press ENTER to "
 "reboot."
 msgstr ""
-"Sorry, er werden geen hardeschijfstations gevonden. Druk op ENTER om te "
-"herstarten."
+"Sorry, er werden geen hardeschijfstations gevonden. Druk op ENTER om opnieuw "
+"op te starten."
 
 #: ../src/plugins/partdisk.c:192
 msgid "Create RAID"
@@ -411,14 +418,14 @@ msgid "Select a hard disk to partition"
 msgstr "Selecteer een harde schijf om te partitioneren"
 
 #: ../src/plugins/partdisk.c:201
-#, fuzzy
 msgid ""
 "Please select a hard disk to partition. Once you are done, or in case you "
 "don't want to partition your disks at all, select 'Continue'. The following "
 "ones are available:"
 msgstr ""
-"Kies een partitie uit de volgende lijst om te gebruiken voor je root (/) "
-"partitie. De volgende zijn beschikbaar:"
+"Gelieve een schijfstation te kiezen om te partitioneren. Als U klaar bent of "
+"indien U geen schijfstations wilt partitioneren kies dan Volgende. De "
+"volgende zijn beschikbaar:"
 
 #: ../src/plugins/restart.c:51
 msgid "Restarting your computer"
@@ -436,21 +443,21 @@ msgid ""
 "ENTER to reboot."
 msgstr ""
 "Systeeminstallatie en configuratie zijn successvol voltooid. We hopen dat %s "
-"je zal tevreden zal stellen. Gelieve de bronmedia(meestal cd of dvd) van je "
-"drive te verwijderen en druk ENTER om te herstarten."
+"U zal bevallen. Gelieve de media uit het station te nemen, druk daarna "
+"ENTER om opnieuw op te starten."
 
 #: ../src/plugins/select.c:54 ../src/plugins/select.c:282
 #: ../src/plugins/select.c:419
 msgid "Selecting packages"
-msgstr "Pakketten selecteren"
+msgstr "Bezig pakketten te selecteren "
 
 #: ../src/plugins/select.c:262
 msgid "Selecting categories"
-msgstr "Categories selecteren"
+msgstr "Bezig categorieën te selecteren"
 
 #: ../src/plugins/select.c:263
 msgid "Please select which categories to install:"
-msgstr "Selecteer welke categorieën je wil installeren:"
+msgstr "Selecteer welke categorieën U wilt installeren:"
 
 #: ../src/plugins/select.c:296
 msgid "Use expert menus?"
@@ -467,13 +474,13 @@ msgid ""
 "groups of packages, or choose 'yes' for using expert menus with a switch for "
 "each package."
 msgstr ""
-"Als je wil, kan je je pakketten selecteren van expert menu's. Waar de "
-"normale menu's je een keuze tonen als 'C compiler system', tonen de expert "
-"menu's je 'C libs', 'C compiler', 'C include files', enz - elk individueel "
-"pakket. Natuurlijk moet je weten wat je doet, omdat het mogelijk is om "
-"pakketten over te slaan die crucieel zijn voor een functionerend systeem. "
-"Kies 'nee' voor normale menu's die pakketgroepen selecteren, of kies 'ja' "
-"voor expert menu's om individuele paketten te kiezen."
+"Als U wilt, kunt U pakketten selecteren van expert menu's. De normale menu's "
+"tonen een keuze als 'C compiler system', de expert menu's 'C libs', 'C "
+"compiler', 'C include files', enz - dus elk individueel pakket. Expert menus "
+"zijn voor gevorderde gebruikers omdat het mogelijk is om pakketten over te "
+"slaan die cruciaal zijn voor een functionerend systeem. Kies 'nee' om "
+"normale menu's te gebruiken waar U pakketgroepen kunt kiezen of kies 'ja' om "
+"expert menus te gebruiken waar U elk pakket apart kunt selecteren."
 
 #: ../src/plugins/select.c:360 ../src/plugins/select.c:368
 #: ../src/plugins/select.c:382 ../src/plugins/select.c:386
@@ -483,7 +490,7 @@ msgstr "Fout"
 #: ../src/plugins/select.c:360
 #, c-format
 msgid "Failed to parse pacman-g2 configuration file (%s)"
-msgstr "Mislukt om pacman-g2 configuratiebestand te parsen (%s)"
+msgstr "Het parsen van pacman-g2 configuratiebestand (%s) is mislukt"
 
 #: ../src/plugins/select.c:368
 #, c-format
@@ -493,7 +500,7 @@ msgstr "kon '%s' database (%s) niet registreren"
 #: ../src/plugins/select.c:382
 #, c-format
 msgid "Failed to synchronize %s"
-msgstr "Mislukt op %s te synchronizeren"
+msgstr "Mislukt om %s te synchronizeren"
 
 #: ../src/plugins/select.c:386
 #, c-format
@@ -502,51 +509,52 @@ msgstr "Updaten van %s (%s) mislukt"
 
 #: ../src/plugins/select.c:422
 msgid "Searching for categories..."
-msgstr "Zoeken naar categorieën"
+msgstr "Zoeken naar categorieën..."
 
 #: ../src/plugins/select.c:438
 msgid "Searching for packages..."
-msgstr "Zoeken naar pakketten."
+msgstr "Zoeken naar pakketten..."
 
 #: ../src/plugins/select.c:477
 msgid "Searching for missing dependencies..."
-msgstr "Zoeken naar ontbrekende afhankelijke pakketten..."
+msgstr "Zoeken naar ontbrekende vereiste pakketten..."
 
 #: ../src/plugins/install.c:52
 msgid "Installing the selected packages"
-msgstr "Installeren van de geselecteerde pakketten"
+msgstr "Bezig met installeren van de geselecteerde pakketten"
 
 #: ../src/plugins/install.c:69
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Errors occurred while installing selected packages.\n"
 "Press ENTER to continue..."
 msgstr ""
-"Fouten voorgekomen tijdens de installatie van de geslecteerde pakketten. \n"
-"Druk ENTER om verder te gaan..."
+"Er hebben zich fouten voorgedaan tijdens het installeren van de "
+"geselecteerde pakketten.\n"
+" Druk op ENTER om verder te gaan"
 
 #: ../src/plugins/install.c:90
 msgid "Insert next disc"
-msgstr "Steek de volgende disc in"
+msgstr "Steek de volgende schijf in"
 
 #: ../src/plugins/install.c:91
 msgid ""
 "Please insert the next Frugalware install disc and press ENTER to continue "
-"installing packages. If you don't have more disk, choose NO, and then you "
-"can finish up the installation. Have you inserted the next disk?"
+"installing packages. If you don't have more discs, choose NO, and then you "
+"can finish  the installation. Have you inserted the next disc?"
 msgstr ""
-"Steek de volgende Frugalware installatie disc in de drive en druk ENTER om "
-"verder te gaan met installeren van pakketten. Als je geen discs meer hebt, "
-"kies dan NEE, dan kan je de installatie vervolledigen. Heb je de volgende "
-"disc in de drive gestopt?"
+"Steek de volgende Frugalware installatie schijf in het station en druk ENTER "
+"om verder te gaan met installeren van pakketten. Indien U geen schijven "
+"meer heeft, kies dan NEE, waarna U de installatie kunt vervolledigen. Heeft "
+"U de volgende schijf in het station gelegd?"
 
 #: ../src/plugins/postconf.c:46
 msgid "Configuring the installed system"
-msgstr "Bezig met het geïnstalleerde systeem te configureren"
+msgstr "Bezig het geïnstalleerde systeem te configureren"
 
 #: ../src/plugins/postconf.c:80
 msgid "No root password detected"
-msgstr "Geen root passwoord gedetecteerd"
+msgstr "Geen root wachtwoord gevonden"
 
 #: ../src/plugins/postconf.c:81
 msgid ""
@@ -556,50 +564,51 @@ msgid ""
 "machine is on an internet connected LAN. Would you like to set a root "
 "password?"
 msgstr ""
-"Er is momenteel geen passwoord ingesteld voor de systeemadministrator "
-"account (root). Het is aangeraden om deze nu in te stellen zodat het actief "
-"is wanneeer de computer voor het eert opgestart wordt. Dit is vooral "
-"belangrijk wanneer je machine verbonden is met een internet lan. Wil je het "
-"root paswoord instellen?"
+"Er is momenteel geen wachtwoord ingesteld voor het systeembeheerder account "
+"(root). Het is aangeraden om deze nu in te stellen zodat het actief is "
+"wanneer de computer voor het eert opgestart wordt. Dit is vooral belangrijk "
+"wanneer U machine verbonden is met een internet LAN. Wilt U het root "
+"wachtwoord instellen?"
 
 #: ../src/plugins/postconf.c:100
 #, c-format
 msgid "Please enter a password for %s"
-msgstr "Vul een paswoord in voor %s"
+msgstr "Vul een wachtwoord in voor %s"
 
 #: ../src/plugins/postconf.c:101 ../src/plugins/postconf.c:107
 msgid "Password"
-msgstr "Paswoord"
+msgstr "Wachtwoord"
 
 #: ../src/plugins/postconf.c:106
 #, c-format
 msgid "Please re-enter your password for %s"
-msgstr "Vul het paswoord opnieuw in voor %s"
+msgstr "Vul het wachtwoord opnieuw in voor %s"
 
 #: ../src/plugins/postconf.c:114
 msgid "Passwords don't match"
-msgstr "Paswoorden kloppen niet"
+msgstr "Wachtwoorden zijn niet gelijk"
 
 #: ../src/plugins/postconf.c:115
 msgid "Sorry, the passwords do not match. Try again?"
-msgstr "Sorry, de paswoorden zijn niet hetzelfde. Probeer opnieuw?"
+msgstr "Sorry, de wachtwoorden zijn niet gelijk. Wilt U opnieuw proberen?"
 
 #: ../src/plugins/postconf.c:140
 #, c-format
 msgid "Are you sure you want to skip setting the password for %s?"
-msgstr "Weet je zeker dat je het instellen van het paswoord voor %s overslaan?"
+msgstr ""
+"Weet U zeker dat U het instellen van het wachtwoord voor %s wilt overslaan?"
 
 #: ../src/plugins/postconf.c:141
 msgid "Ignore setting password"
-msgstr "Negeer paswoordinstelling"
+msgstr "Wachtwoord instellen overslaan"
 
 #: ../src/plugins/postconf.c:155
 msgid "Enter login"
-msgstr "Vul login in"
+msgstr "Vul gebruikersnaam in"
 
 #: ../src/plugins/postconf.c:155
 msgid "Please enter the login name you should like to create:"
-msgstr "Vul de loginnaam die je wil maken in:"
+msgstr "Gelieve de gebruikersnaam die U wilt aanmaken ingeven:"
 
 #: ../src/plugins/postconf.c:158
 msgid "Enter full name"
@@ -607,7 +616,8 @@ msgstr "Vul volledige naam in"
 
 #: ../src/plugins/postconf.c:158
 msgid "Please enter the full name of the user you would like to create:"
-msgstr "Vul de volledige naam in van de gebruiker die je wil maken:"
+msgstr ""
+"Gelieve de volledige naam van de gebruiker die U aan wilt maken ingeven:"
 
 #: ../src/plugins/postconf.c:173
 #, c-format
@@ -615,14 +625,16 @@ msgid ""
 "'/home/%s' already exists! Please change the home directory path to a non-"
 "existing directory:"
 msgstr ""
+"'/home/%s' bestaat al! Wijzig het pad van de home directory naar een nieuwe "
+"directory"
 
 #: ../src/plugins/postconf.c:175
 msgid "Enter home directory"
-msgstr ""
+msgstr "Persoonlijke map openen"
 
 #: ../src/plugins/postconf.c:217
 msgid "No normal user account detected"
-msgstr "Geen normale gebruikersaccounts gedetecteerd"
+msgstr "Geen normale gebruikersaccounts gevonden"
 
 #: ../src/plugins/postconf.c:218
 msgid ""
@@ -630,21 +642,21 @@ msgid ""
 "recommended to create one. Would you like to create a normal user account "
 "now?"
 msgstr ""
-"Er is momenteel geen non-root gebruikersaccount geconfigureerd. Het is sterk "
-"aangeraden om er een te creëren. Wil je nu een normale gebruikeraccount "
+"Er is momenteel geen niet-root gebruikersaccount ingesteld. Het is sterk "
+"aangeraden om er een te creëren. Wilt U nu een normaal gebruikersaccount "
 "creëren?"
 
 #: ../src/plugins/postconf.c:246
 msgid "Post-install configuration"
-msgstr "Post-Installatie configuratie"
+msgstr "Instellingen na installatie"
 
 #: ../src/plugins/postconf.c:273
 msgid "Configuring kernel modules"
-msgstr "Kernel modules configureren"
+msgstr "Bezig kernel modules in te stellen"
 
 #: ../src/plugins/postconf.c:274
 msgid "Updating module dependencies..."
-msgstr "Module afhankelijkheden updaten..."
+msgstr "Bezig module afhankelijkheden bij te werken..."
 
 #: ../src/util.c:53
 msgid "Setup"
@@ -656,30 +668,29 @@ msgstr "Kon bestand niet openen om het te lezen"
 
 #: ../src/util.c:126
 msgid "Ejecting installation media..."
-msgstr "Ejecting het installatie media..."
+msgstr "Uitwerpen van installatie media..."
 
 #: ../src/util.c:166
 msgid "Installation error"
-msgstr "Installatie fouten"
+msgstr "Installatie fout"
 
 #: ../src/util.c:167
-#, fuzzy
 msgid ""
 "Errors occurred while installing selected packages. It is recommended to "
 "abort the installation, however you may want to ignore this problem. Do you "
-"want to leave the installer?"
+"want to exit the installer?"
 msgstr ""
-"Fouten tegengekomen tijdens het installeren van de geselecteerde pakketten. "
-"Het is aangeraden om de installatie te stoppen, alhoewel je dit probleem "
-"misschien wil negeren. Wil je de installer verlaten?"
+"Er zijn fouten opgetreden tijdens het installeren van de geselecteerde "
+"pakketten. U wordt aangeraden de installatie te stoppen, U kunt er ook voor "
+"kiezen dit probleem te negeren. Wilt U het installatieprogramma afsluiten?"
 
 #: ../src/util.c:183
 msgid "Exit from the installer"
-msgstr "De installatie beïndigen"
+msgstr "Het installatieprogramma afsluiten"
 
 #: ../src/util.c:184
 msgid "Are you sure you want to exit from the installer?"
-msgstr "Weet je zeker dat je de installer wil verlaten?"
+msgstr "Weet U zeker dat U het installatieprogramma af wilt sluiten ?"
 
 #: ../src/util.c:634
 msgid "Oops"
@@ -687,31 +698,31 @@ msgstr "Oeps"
 
 #: ../src/util.c:636
 msgid "A problem has occurred"
-msgstr "Een probleem heeft zich voorgedaan"
+msgstr "Er heeft zich een probleem voorgedaan"
 
 #: ../src/util.c:636
 msgid ""
 "Internal error: Segmentation fault. Please report this issue to http://bugs."
 "frugalware.org"
 msgstr ""
-"Interne fout: Segmentatie fout. Meld dit probleem aan http://bugs.frugalware."
-"org alstublieft "
+"Interne fout: Segmentatie fout. Meld dit probleem alstublieft aan op "
+"http://bugs.frugalware.org"
 
 #: ../src/util.c:662
 msgid "Selecting a task"
-msgstr "Bezig met taak selecteren"
+msgstr "Bezig met taak te selecteren"
 
 #: ../src/util.c:670
 msgid "Select task to continue with"
-msgstr "Selecteer een taak om verder mee te gaan"
+msgstr "Selecteer een taak om mee verder te gaan"
 
 #: ../src/util.c:671
 msgid ""
-"You selected to change the way normally Frugalware is installed. Here are "
-"the list of tasks you can continue with:"
+"You chose to change the way Frugalware is normally installed. Here are the "
+"tasks you can continue with:"
 msgstr ""
-"Je koos om de manier waarop Frugalware normaal geïnstalleerd is te "
-"veranderen.Hier is een lijst met taken waarmee je kan verder gaan:"
+"U heeft ervoor gezozen om de manier waarop Frugalware normaal geinstalleerd "
+"wordt te veranderen. U kunt verdergaan met deze taken:"
 
 #~ msgid ""
 #~ "Please select a hard disk to partition. The following ones are available:"
