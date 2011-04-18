@@ -6,14 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-05 01:59+0200\n"
-"PO-Revision-Date: 2010-04-04 23:39+0200\n"
+"POT-Creation-Date: 2011-04-18 02:07+0200\n"
+"PO-Revision-Date: 2011-04-18 14:52+0200\n"
 "Last-Translator: Tutku Dalmaz <tutkudalmaz@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: tr\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 2.0.2\n"
 
@@ -48,7 +48,8 @@ msgstr "Lütfen yansıları seçin"
 
 #: ../src/plugins/configsource.c:133
 msgid ""
-"Here you can chose one or more nearby mirror to speed up package dowloading."
+"Here you can choose one or more nearby mirrors to speed up package "
+"dowloading."
 msgstr ""
 "Burada paket indirme hızınızı arttırmak için yakınınızdaki bir ya da daha "
 "fazla yansıyı seçebilirsiniz."
@@ -65,10 +66,11 @@ msgstr "Özel yansı"
 #: ../src/plugins/configsource.c:167
 msgid ""
 "You may now specify a custom mirror (eg. LAN) so you can download packages "
-"faster. In most cases a Continue enough here."
+"faster. If you don't have a custom mirror, select Continue."
 msgstr ""
 "Şuan özel bir yansı belirleyebilirsiniz (örn. LAN) böylece paketleri daha "
-"hızlı indirebilirsiniz. Birçok durumda \"Devam\" burada yeterlidir."
+"hızlı indirebilirsiniz. Belirlemek istediğiniz özel bir yansı yoksa \"Devam\" "
+"burada yeterlidir."
 
 #: ../src/plugins/configsource.c:195
 msgid "Failed to configure the network"
@@ -77,7 +79,7 @@ msgstr "Ağ yapılandırması başarısız oldu"
 #: ../src/plugins/configsource.c:196
 msgid ""
 "Failed to write the network configuration files. Please try again, "
-"especially pay attention to give a valid IP address and/or netmask if you "
+"especially pay attention to giving a valid IP address and/or netmask if you "
 "are using a static IP configuration."
 msgstr ""
 "Ağ yapılandırma dosyaları yazılması başarısız oldu. Lütfen geçerli bir IP "
@@ -151,19 +153,19 @@ msgid "Standard Linux ext2fs filesystem"
 msgstr "Standart Linux ext2fs dosya sistemi"
 
 #: ../src/plugins/formatdisk.c:235
-msgid "Journalising version of the ext2 filesystem"
-msgstr "ext2fs'in kayıtlı sürümü olan dosya sistemi"
+msgid "Journaling version of the ext2 filesystem"
+msgstr "ext2 dosya sisteminin kayıtlı sürümü"
 
 #: ../src/plugins/formatdisk.c:236
-msgid "The evolution of the ext3 filesystem (EXPERIMENTAL!)"
-msgstr "ext3 dosya sistemi devrimi (DENEYSEL)"
+msgid "The evolution of the ext3 filesystem"
+msgstr "ext3 dosya sisteminin devrimi"
 
 #: ../src/plugins/formatdisk.c:238
-msgid "Hans Reiser's journalising filesystem"
+msgid "Hans Reiser's journaling filesystem"
 msgstr "Hans Reiser'in kayıtlı dosya sistemi"
 
 #: ../src/plugins/formatdisk.c:240
-msgid "SGI's journalising filesystem"
+msgid "SGI's journaling filesystem"
 msgstr "SGI'nın kayıtlı dosya sistemi"
 
 #: ../src/plugins/formatdisk.c:247
@@ -379,13 +381,12 @@ msgid "Select the program you want to use for partitioning:"
 msgstr "Bölümleme yapmak istediğiniz yazılımı seçiniz:"
 
 #: ../src/plugins/partdisk.c:147
-msgid "Want to create RAID?"
-msgstr "RAID oluşturmak ister misiniz?"
+msgid "Want to create RAID partitions?"
+msgstr "RAID bölümleme oluşturmak ister misiniz?"
 
 #: ../src/plugins/partdisk.c:148
-msgid "Do you want to create software raid partitions during partitioning?"
-msgstr ""
-"Bölümleme sırasında yazılımsal raid bölümleri oluşturmak ister misiniz?"
+msgid "Do you want to create software RAID partitions during partitioning?"
+msgstr "Bölümleme sırasında yazılımsal raid bölümleri oluşturmak ister misiniz?"
 
 #: ../src/plugins/partdisk.c:177
 msgid "Disk drive not found"
@@ -528,8 +529,8 @@ msgstr "Diğer diski takınız"
 #: ../src/plugins/install.c:91
 msgid ""
 "Please insert the next Frugalware install disc and press ENTER to continue "
-"installing packages. If you don't have more disk, choose NO, and then you "
-"can finish up the installation. Have you inserted the next disk?"
+"installing packages. If you don't have more discs, choose NO, and then you "
+"can finish  the installation. Have you inserted the next disc?"
 msgstr ""
 "Lütfen diğer Frugalware kurulum diskini takıp devam etmek için ENTER tuşuna "
 "basınız. Eğer başka diskiniz yoksa da \"Hayır\" seçeneğini seçip kurulumu "
@@ -661,7 +662,7 @@ msgstr "Kurulum hatası"
 msgid ""
 "Errors occurred while installing selected packages. It is recommended to "
 "abort the installation, however you may want to ignore this problem. Do you "
-"want to leave the installer?"
+"want to exit the installer?"
 msgstr ""
 "Seçilmiş paketlerin kurulumunda hata oluştu. Kurulumu sonlandırmanız "
 "önerilir, buna rağmen bu uyarıyı göz ardı edebilirsiniz. Kurulumdan çıkmak "
@@ -701,8 +702,8 @@ msgstr "Devam etmek için görev seçiniz"
 
 #: ../src/util.c:671
 msgid ""
-"You selected to change the way normally Frugalware is installed. Here are "
-"the list of tasks you can continue with:"
+"You chose to change the way Frugalware is normally installed. Here are the "
+"tasks you can continue with:"
 msgstr ""
 "Normal Frugalware kurulumunu değiştirmeyi seçtiniz. Aşağıda "
 "kullanabileceğiniz görevler listelenmektedir:"
