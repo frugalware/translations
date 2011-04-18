@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-14 02:03+0200\n"
-"PO-Revision-Date: 2010-07-14 13:45+0200\n"
+"POT-Creation-Date: 2011-04-18 02:07+0200\n"
+"PO-Revision-Date: 2011-04-18 16:43+0200\n"
 "Last-Translator: Tutku Dalmaz <tutkudalmaz@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: tr\n"
@@ -273,8 +273,8 @@ msgid "What about Asian languages?"
 msgstr "Asya dilleri hakkındaki durum nedir?"
 
 #: ../about.php:67
-msgid "Frugalware does not currently support languages written in ideographs."
-msgstr "Frugalware şuan için Asya dil desteğine sahip değildir."
+msgid "Yes you just have to switch to UTF-8 encoding."
+msgstr "Evet UTF-8 kodlamaya dönmek zorundasınız."
 
 #: ../about.php:68
 msgid "What architectures does Frugalware support?"
@@ -282,13 +282,13 @@ msgstr "Frugalware hangi mimarileri destekler?"
 
 #: ../about.php:69
 msgid ""
-"Currently we support x86 and x86_64 platforms, and inside x86, only i686 "
-"(Pentium Pro or higher instruction set) and inside x86_64 only k8 (amd64). "
-"If there are any claims, an i386 port will be created, but currently we "
-"don't have resources to build and maintain those packages. Outside x86, "
-"currently we don't have any non-x86 hardware, but happily accept such "
-"patches or any effort to create non-x86 optimized packages. We are also "
-"working on a PowerPC port"
+"Currently we support x86, x86_64 and ppc platforms, and inside x86, only "
+"i686 (Pentium Pro or higher instruction set), inside x86_64 only k8 (amd64) "
+"and inside ppc only PowerPC. If there are any claims, an i386 port will be "
+"created, but currently we don't have resources to build and maintain those "
+"packages. Outside x86, currently we don't have any non-x86 hardware, but "
+"happily accept such patches or any effort to create non-x86 optimized "
+"packages."
 msgstr ""
 "Şuan için x86 ve x86_86 platformlarını desteklemekteyiz.x86 mimarisi "
 "içerisinde i686(Pentium Pro ya da daha yüksek komut kümesi) ve x86_64 "
@@ -296,22 +296,75 @@ msgstr ""
 "i386 desteği de sağlanabilir, fakat şuan için bu paketleri inşa edip "
 "denetleyecek kaynaklara sahip değiliz. x86 mimarisi haricinde herhangi bir "
 "x86 olmayan donanım sahip değiliz, fahat bazı yamaların kullanılması ya da "
-"çabalarımız ile x86 olmayan paketler de yaratılmıştır. Ayrıca PowerPC "
-"desteği üzerinde de çalışmaktayız."
+"çabalarımız ile x86 olmayan paketler de yaratılmıştır. "
 
-#: ../about.php:76
+#: ../about.php:70
+msgid "How are compressed the Frugalware packages?"
+msgstr "Sıkıştırılmış Frugalware paketleri nasıldır?"
+
+#: ../about.php:71
+msgid ""
+"FPM packages were originally .tar.gz packages, then a bit later we migrated "
+"to libarchive, which allowed bzip2 compression. Life was good, but then lzma "
+"was came, and I added support for libarchive, though others were not really "
+"interested in a migration, so we stick to .tar.bz2. A few months ago "
+"libarchive got support for the xz format (which is the successor of lzma), "
+"so we switched to it. pacman-g2 still\n"
+"support .tar.gz and .tar.bz2 as well, and the package extension is .fpm all "
+"the time to make it clear that it's a Frugalware package."
+msgstr ""
+"FPM paketleri en temelinde .tar.gz paketleriydi, bir süre sonra lbzip2 "
+"sıkıştırmasına olanak sağlayan libarchive'ı entegre ettik. Hayat güzeldi, "
+"sonra Izma geldi, ve ben libarchive desteğini ekledim, aslında diğerleri "
+"entegre etme konusunda çok da istekli değillerdi.Birkaç ay sonra libarchive "
+"xz dosya biçimi desteğini aldı(bu Izma'nın başarısıdır) bu yüzden biz de "
+"buna dönüştürdük. pacman-g2 hala\n"
+".tar.gz ve .tar.bz2 dosya sıkıştırma biçimlerini destekler, ve bunun bir "
+"Frugalware paketi olduğunu açıkca belirtmek için dosya uzantısı herzaman "
+".fpm olacaktır."
+
+#: ../about.php:73
+msgid "What's the difference between Arch and Frugalware?"
+msgstr "Arch ve Frugalware arasındaki fark nedir?"
+
+#: ../about.php:74
+msgid ""
+"Many people think that as we use basically the same <tt>pacman</tt> as <a "
+"href=\"http://www.archlinux.org\">Arch Linux</a> then the two distribution "
+"are the same. Originally the package manager was the same, there is almost "
+"nothing other similar. There are also other major differences. We have "
+"console (such as <tt>grubconfig</tt> and <tt>netconfig</tt>) and graphical "
+"(such as <tt>gService</tt> and <tt>gFPM</tt>) configuration tools. At the "
+"end of the installation you will get a working system with x, network, mouse "
+"(and much more configured. We have an unique repo (stable or current) and "
+"it's easy to contribute with new packages, so we don't need such thing like "
+"<a href=\"http://aur.archlinux.org/\">AUR</a>. We officially support PPC "
+"arch."
+msgstr ""
+"Birçok insan bizim <a href=\"http://www.archlinux.org\">Arch Linux</a> ile "
+"aynı <tt>pacman</tt>'i kullandığımızı ve dolayısıyla iki dağıtımının aynı "
+"olduğunu düşünür. Temelde paket yöneticisi aynıdır, bundan başka bir "
+"benzerlik yoktur. Bunun haricinde belirgin farklarda mevcuttur. Biz terminal "
+" (<tt>grubconfig</tt> ve <tt>netconfig</tt> gibi) ve görsel "
+"(<tt>gService</tt> ve <tt>gFPM</tt>gibi) yapılandırma araçlarımız vardır. "
+"Kurulum sonunda çalışan bir X ortamı, ağ sistemi, fareniz olur ve yeni "
+"paketleri oluşturmanız oldukça kolaydır, bu yüzden <a "
+"href=\"http://aur.archlinux.org/\">AUR</a> gibi birşeye ihtiyacımız yoktur. "
+"Biz resmi olarak PPC mimarisini destekleriz."
+
+#: ../about.php:81
 msgid "Short"
 msgstr "Kısa"
 
-#: ../about.php:80
+#: ../about.php:85
 msgid "Question"
 msgstr "Soru"
 
-#: ../about.php:81
+#: ../about.php:86
 msgid "Answer"
 msgstr "Cevap"
 
-#: ../about.php:83
+#: ../about.php:88
 msgid "Long"
 msgstr "Uzun"
 
@@ -323,7 +376,7 @@ msgstr "at"
 msgid "dot"
 msgstr "dot"
 
-#: ../authors.php:68 ../config.inc.php:83
+#: ../authors.php:68 ../config.inc.php:84
 msgid "Authors"
 msgstr "Yazarlar"
 
@@ -361,7 +414,7 @@ msgstr "<a href=\"%s\">Katkıda Bulunanlar</a><br />"
 msgid "Frugalware Linux Author list"
 msgstr "Frugalware Linux Yazar listesi"
 
-#. $menucontent = '<a class="menu" href="' . $fwng_root . '">' . gettext('News') . "</a> &middot; \n";
+#. $menucontent = '<a class="menu" href="' . $fwng_root . '">' . gettext('News') . "</a> | \n";
 #: ../config.inc.php:44 ../rss.php:186
 msgid "News"
 msgstr "Haberler"
@@ -391,100 +444,97 @@ msgid "Frugalware in the Press"
 msgstr "Basında Frugalware"
 
 #: ../config.inc.php:54
-msgid "Documentation"
-msgstr "Belgelendirme"
-
-#: ../config.inc.php:56
-msgid "Community"
-msgstr "Topluluk"
-
-#: ../config.inc.php:58
-msgid "Mailing Lists"
-msgstr "E-posta Listeleri"
-
-#: ../config.inc.php:59
-msgid "Discussion Forums"
-msgstr "Tartışma Forumları"
-
-#: ../config.inc.php:60
-msgid "Wiki"
-msgstr "Wiki"
-
-#: ../config.inc.php:61
-msgid "IRC"
-msgstr "IRC"
-
-#: ../config.inc.php:62
-msgid "Pastebin"
-msgstr "Pastebin"
-
-#: ../config.inc.php:63
 msgid "Screenshots"
 msgstr "Ekran Görüntüleri"
 
-#: ../config.inc.php:64
-msgid "Map"
-msgstr "Harita"
+#: ../config.inc.php:57
+msgid "Get Frugalware"
+msgstr "Frugalware'i Edinin"
 
-#: ../config.inc.php:65
-msgid "Libre.fm group"
-msgstr "Libre.fm grubu"
-
-#: ../config.inc.php:66
-msgid "National sites"
-msgstr "Ulusal siteler"
-
-#: ../config.inc.php:67
-msgid "Artwork"
-msgstr "Sanatsal"
-
-#: ../config.inc.php:68
-msgid "Identi.ca group"
-msgstr "Identi.ca grubu"
-
-#: ../config.inc.php:70
-msgid "Download"
-msgstr "İndir"
-
-#: ../config.inc.php:72
-msgid "ISO images"
-msgstr "ISO imajları"
-
-#: ../config.inc.php:73
+#: ../config.inc.php:58
 msgid "Packages"
 msgstr "Paketler"
 
-#: ../config.inc.php:75
-msgid "Development"
-msgstr "Geliştirme"
+#: ../config.inc.php:59
+msgid "Documentation"
+msgstr "Belgelendirme"
 
-#: ../config.inc.php:77
-msgid "Roadmap"
-msgstr "Yol Haritası"
+#: ../config.inc.php:60
+msgid "Discussion Forums"
+msgstr "Tartışma Forumları"
 
-#: ../config.inc.php:78
-msgid "Git repository"
-msgstr "Git deposu"
-
-#: ../config.inc.php:79
+#: ../config.inc.php:61
 msgid "Bug Tracker"
 msgstr "Hata İzleyici"
 
-#: ../config.inc.php:80
-msgid "Translation portal"
-msgstr "Çeviri portalı"
+#: ../config.inc.php:62
+msgid "Wiki"
+msgstr "Wiki"
 
-#: ../config.inc.php:81
+#: ../config.inc.php:64
+msgid "Community"
+msgstr "Topluluk"
+
+#: ../config.inc.php:66
+msgid "Mailing Lists"
+msgstr "E-posta Listeleri"
+
+#: ../config.inc.php:67
+msgid "IRC"
+msgstr "IRC"
+
+#: ../config.inc.php:68
+msgid "Pastebin"
+msgstr "Pastebin"
+
+#: ../config.inc.php:69
 msgid "Blogs"
 msgstr "Günlükler"
 
-#: ../config.inc.php:82 ../donations.php:50 ../header.php:55
+#: ../config.inc.php:70
+msgid "Libre.fm group"
+msgstr "Libre.fm grubu"
+
+#: ../config.inc.php:71
+msgid "Local Communities"
+msgstr "Yerel Topluluklar"
+
+#: ../config.inc.php:72
+msgid "Artwork"
+msgstr "Sanatsal"
+
+#: ../config.inc.php:73
+msgid "Identi.ca group"
+msgstr "Identi.ca grubu"
+
+#: ../config.inc.php:74
+msgid "Twitter"
+msgstr "Twitter"
+
+#: ../config.inc.php:77
+msgid "Development"
+msgstr "Geliştirme"
+
+#: ../config.inc.php:79
+msgid "Roadmap"
+msgstr "Yol Haritası"
+
+#: ../config.inc.php:80
+msgid "Git repository"
+msgstr "Git deposu"
+
+#: ../config.inc.php:81
+msgid "Translation portal"
+msgstr "Çeviri portalı"
+
+#: ../config.inc.php:83 ../donations.php:50 ../header.php:74
 msgid "Donations"
 msgstr "Bağışlar"
 
-#: ../config.inc.php:94 ../config.inc.php:96 ../config.inc.php:98
-#: ../config.inc.php:100 ../config.inc.php:102 ../config.inc.php:104
-#: ../config.inc.php:106 ../config.inc.php:108
+#: ../config.inc.php:95 ../config.inc.php:97 ../config.inc.php:99
+#: ../config.inc.php:101 ../config.inc.php:103 ../config.inc.php:105
+#: ../config.inc.php:107 ../config.inc.php:109 ../config.inc.php:111
+#: ../config.inc.php:113
 msgid "Change language"
 msgstr "Dili değiştir"
 
@@ -577,23 +627,23 @@ msgstr ""
 "@freenode üzerindeki #frugalware kanalında IroNİQ ile iletişime "
 "geçebilirsiniz, ya da herhangi bir e-posta listesine de sorabilirsiniz."
 
-#: ../header.php:53
-msgid "Releases"
-msgstr "Sürümler"
-
-#: ../header.php:56
-msgid "Recent updates"
-msgstr "Son güncellemeler"
-
-#: ../header.php:57
+#: ../header.php:70
 msgid "Languages"
 msgstr "Diller"
 
-#: ../header.php:58
+#: ../header.php:71
+msgid "Recent updates"
+msgstr "Son güncellemeler"
+
+#: ../header.php:72
+msgid "Releases"
+msgstr "Sürümler"
+
+#: ../header.php:75
 msgid "Information"
 msgstr "Bilgilendirme"
 
-#: ../header.php:59
+#: ../header.php:76
 msgid "Server information"
 msgstr "Sunucu bilgileri"
 
@@ -718,67 +768,72 @@ msgstr "Dil"
 msgid "Link"
 msgstr "Bağlantı"
 
-#: ../packages.php:93
+#: ../packages.php:95
 msgid "Package search"
 msgstr "Paket arama"
 
-#: ../packages.php:94
+#: ../packages.php:96
 msgid "Search for:"
 msgstr "Arama:"
 
-#: ../packages.php:95
+#: ../packages.php:97
 msgid "packages"
 msgstr "paketler"
 
-#: ../packages.php:96
+#: ../packages.php:98
 msgid "Search in description"
 msgstr "Tanımda ara"
 
-#: ../packages.php:97
+#: ../packages.php:99
 msgid "files"
 msgstr "dosyalar"
 
-#: ../packages.php:98
+#: ../packages.php:100
 msgid "groups"
 msgstr "gruplar"
 
-#: ../packages.php:99
+#: ../packages.php:101
 msgid "Regular expression"
 msgstr "Düzenli ifadeler"
 
-#: ../packages.php:99
+#: ../packages.php:101
 msgid "(regular expression)"
 msgstr "(düzenli ifadeler)"
 
-#: ../packages.php:102 ../packages.php:337 ../packages.php:346
+#: ../packages.php:104 ../packages.php:342 ../packages.php:351
 msgid "Architecture:"
 msgstr "Mimari:"
 
-#: ../packages.php:110 ../packages.php:337 ../packages.php:346
-#: ../packages.php:410
+#: ../packages.php:112 ../packages.php:342 ../packages.php:351
+#: ../packages.php:415
 msgid "Version:"
 msgstr "Sürüm:"
 
-#: ../packages.php:122
+#: ../packages.php:124
 msgid "Search"
 msgstr "Ara"
 
-#: ../packages.php:122
+#: ../packages.php:124
 msgid "Reset"
 msgstr "Sıfırla"
 
-#: ../packages.php:123
+#: ../packages.php:125
 #, php-format
 msgid "Searching in %d binary and %d source-only packages."
 msgstr "%d ikili ve %d kaynak paketleri içerisinde aranıyor."
 
-#: ../packages.php:137
+#: ../packages.php:126
+#, php-format
+msgid "Check <a href=\"%s\">outdated</a> packages we are aware of."
+msgstr "<a href=\"%s\">zamanı geçmiş</a> paketlerden kaçınırız."
+
+#: ../packages.php:140
 msgid "You will need a Mozilla based browser to install a search plugin."
 msgstr ""
 "Arama eklentisini yüklemek için Mozilla tabanlı bir tarayıcıya ihtiyacınız "
 "var."
 
-#: ../packages.php:141
+#: ../packages.php:144
 msgid ""
 "Click <a href=\"javascript:addEngine()\">here</a> to install the Firefox "
 "search plugin."
@@ -786,188 +841,188 @@ msgstr ""
 "Firefox arama eklentisini kurmak için <a href=\"javascript:addEngine()"
 "\">buraya</a> tıklayın."
 
-#: ../packages.php:193
+#: ../packages.php:196
 msgid "Error in the query, please change the searching conditions"
 msgstr "Sorguda hata, lütfen arama koşullarını değiştirin"
 
-#: ../packages.php:198
+#: ../packages.php:201
 msgid "No package found"
 msgstr "Paket bulunamadı"
 
-#: ../packages.php:234
+#: ../packages.php:237
 msgid "No such file or directory"
 msgstr "Böyle bir dosya ya da dizin yok"
 
-#: ../packages.php:274 ../packages.php:310
+#: ../packages.php:277 ../packages.php:313
 msgid "No such group"
 msgstr "Böyle bir grup yok"
 
-#: ../packages.php:320
+#: ../packages.php:324
 msgid "Listing groups"
 msgstr "Gruplar listeleniyor"
 
-#: ../packages.php:332
+#: ../packages.php:336
 msgid "Listing contents of group:"
 msgstr "Grup içerikleri listeleniyor:"
 
-#: ../packages.php:334 ../packages.php:343
+#: ../packages.php:338 ../packages.php:348
 msgid "Search result for:"
 msgstr "Sonuçlar için arama:"
 
-#: ../packages.php:406
+#: ../packages.php:411
 msgid "Package information:"
 msgstr "Paket bilgisi:"
 
-#: ../packages.php:408
+#: ../packages.php:413
 msgid "Name:"
 msgstr "İsim:"
 
-#: ../packages.php:409
+#: ../packages.php:414
 msgid "Parent:"
 msgstr "Kaynak:"
 
-#: ../packages.php:412
+#: ../packages.php:417
 msgid "Documentation:"
 msgstr "Belgelendirme:"
 
-#: ../packages.php:414
+#: ../packages.php:419
 msgid "Buildlog:"
 msgstr "İnşa Kaydı:"
 
-#: ../packages.php:415
+#: ../packages.php:420
 msgid "Changelog:"
 msgstr "Sürüm Notları:"
 
-#: ../packages.php:419
+#: ../packages.php:424
 msgid "Groups:"
 msgstr "Gruplar:"
 
-#: ../packages.php:424
+#: ../packages.php:429
 msgid "URL:"
 msgstr "URL:"
 
-#: ../packages.php:427
+#: ../packages.php:432
 msgid "Depends:"
 msgstr "Bağımlılıklar:"
 
-#: ../packages.php:434
+#: ../packages.php:439
 msgid "Exact reverse depends:"
 msgstr "Mecburi geri bağımlılıklar:"
 
-#: ../packages.php:441
+#: ../packages.php:446
 msgid "Other reverse depends:"
 msgstr "Diğer geri bağımlılıklar:"
 
-#: ../packages.php:448
+#: ../packages.php:453
 msgid "Conflicts:"
 msgstr "Çakışmalar:"
 
-#: ../packages.php:455
+#: ../packages.php:460
 msgid "Provides:"
 msgstr "Sağlayıcılar:"
 
-#: ../packages.php:460
+#: ../packages.php:465
 msgid "Compressed size:"
 msgstr "Sıkıştırılmış boyut:"
 
-#: ../packages.php:461
+#: ../packages.php:466
 msgid "Uncompressed size:"
 msgstr "Sıkıştırılmamış boyut:"
 
-#: ../packages.php:462
+#: ../packages.php:467
 msgid "Arch:"
 msgstr "Mimari:"
 
-#: ../packages.php:463
+#: ../packages.php:468
 msgid "Description:"
 msgstr "Tanım:"
 
 #. FIXME: latin -> utf8 conversion hardwired
-#: ../packages.php:465
+#: ../packages.php:470
 msgid "Maintainer:"
 msgstr "Bakımcı:"
 
-#: ../packages.php:466
+#: ../packages.php:471
 msgid "Uploaded by:"
 msgstr "Yükleyici:"
 
-#: ../packages.php:467
+#: ../packages.php:472
 msgid "Download:"
 msgstr "İndir:"
 
-#: ../packages.php:472
+#: ../packages.php:477
 msgid "Forums:"
 msgstr "Forumlar:"
 
-#: ../packages.php:472
+#: ../packages.php:477
 msgid "Related posts"
 msgstr "İlgili gönderiler"
 
-#: ../packages.php:473
+#: ../packages.php:478
 msgid "Wiki:"
 msgstr "Wiki:"
 
-#: ../packages.php:473
+#: ../packages.php:478
 msgid "Related pages"
 msgstr "İlgili sayfalar"
 
-#: ../packages.php:474
+#: ../packages.php:479
 msgid "Bug Tracking System:"
 msgstr "Hata Takip Sistemi:"
 
-#: ../packages.php:474
+#: ../packages.php:479
 msgid "Related open bugs"
 msgstr "İlgili açık hatalar"
 
-#: ../packages.php:475
+#: ../packages.php:480
 msgid "Syndicate:"
 msgstr "Birleştir:"
 
-#: ../packages.php:475
+#: ../packages.php:480
 msgid "RSS"
 msgstr "RSS"
 
-#: ../packages.php:476
+#: ../packages.php:481
 msgid "SHA1 Sum:"
 msgstr "SHA1 Sum:"
 
-#: ../packages.php:477
+#: ../packages.php:482
 msgid "Frugalware version:"
 msgstr "Frugalware sürümü:"
 
-#: ../packages.php:478
+#: ../packages.php:483
 msgid "Updated:"
 msgstr "Güncelleme:"
 
-#: ../packages.php:483 ../packages.php:534 ../packages.php:583
-#: ../packages.php:641 ../packages.php:671
+#: ../packages.php:488 ../packages.php:539 ../packages.php:588
+#: ../packages.php:646 ../packages.php:676
 msgid "No such package!"
 msgstr "Böyle bir paket yok!"
 
-#: ../packages.php:519
+#: ../packages.php:524
 #, php-format
 msgid "Changelog for %s"
 msgstr "%s için sürüm notları"
 
-#: ../packages.php:530 ../packages.php:579
+#: ../packages.php:535 ../packages.php:584
 msgid "Sorry, currently no log available."
 msgstr "Üzgünüz, şuan için uygun kayıt yok."
 
-#: ../packages.php:568
+#: ../packages.php:573
 #, php-format
 msgid "Build log for %s"
 msgstr "%s için inşa kaydı"
 
-#: ../packages.php:617
+#: ../packages.php:622
 #, php-format
 msgid "Documentation for %s"
 msgstr "%s için belgelendirme"
 
-#: ../packages.php:637
+#: ../packages.php:642
 msgid "Sorry, currently no documentation available."
 msgstr "Üzgünüz, şuan için uygun belgelendirme yok."
 
-#: ../packages.php:656
+#: ../packages.php:661
 msgid "File list for"
 msgstr "Dosya listesi"
 
@@ -1008,8 +1063,8 @@ msgid ""
 "There is an optional suffix to filter the package parameters: [/&lt;"
 "version&gt;[&lt;arch&gt;[&lt;package&gt;]]]."
 msgstr ""
-"Bu paket parametrelerini süzebilmek için isteğe bağlı bir son "
-"ektir:[/&lt;version&gt;[&lt;arch&gt;[&lt;package&gt;]]]."
+"Bu paket parametrelerini süzebilmek için isteğe bağlı bir son ektir:[/&lt;"
+"version&gt;[&lt;arch&gt;[&lt;package&gt;]]]."
 
 #: ../rss.php:193
 msgid "Examples: "
@@ -1018,6 +1073,10 @@ msgstr "Örnekler: "
 #: ../rss.php:194
 msgid "Blog posts"
 msgstr "Blog gönderileri"
+
+#: ../rss.php:196
+msgid "New forums posts"
+msgstr "Yeni forum iletileri"
 
 #: ../screenshots.php:32
 msgid "Splash screen"
@@ -1183,135 +1242,171 @@ msgstr "Ön Tanımlı KDE Masaüstü"
 msgid "KDE Menu"
 msgstr "KDE Menu"
 
-#: ../screenshots.php:125
+#: ../screenshots.php:124
+msgid "KDE Desktop with Konqueror"
+msgstr "Konqueror ile KDE Masaüstü"
+
+#: ../screenshots.php:126
+msgid "KDE with Cube"
+msgstr "Cube ile KDE"
+
+#: ../screenshots.php:129
 msgid "GDM Login Screen"
 msgstr "GDM Giriş Ekranı"
 
-#: ../screenshots.php:127
+#: ../screenshots.php:131
 msgid "Default Gnome Desktop"
 msgstr "Ön Tanımlı Gnome Masaüstü"
 
-#: ../screenshots.php:129
+#: ../screenshots.php:133
 msgid "Gnome Menu"
 msgstr "Gnome Menu"
 
-#: ../screenshots.php:131
+#: ../screenshots.php:135
 msgid "Web Browser"
 msgstr "Web Tarayıcı"
 
-#: ../screenshots.php:133
-msgid "File Manager"
-msgstr "Dosya Yönetici"
+#: ../screenshots.php:137
+msgid "Gnome Apps"
+msgstr "Gnome Uygulamaları"
 
-#: ../screenshots.php:136
+#: ../screenshots.php:140
 msgid "Login Screen (SliM)"
 msgstr "Slim Giriş Ekranı"
 
-#: ../screenshots.php:138
+#: ../screenshots.php:142
 msgid "Default XFCE Desktop"
 msgstr "Ön Tanımlı XFCE Masaüstü"
 
-#: ../screenshots.php:140
+#: ../screenshots.php:144
 msgid "XFCE in Action"
 msgstr "Uygulamada XFCE"
 
-#: ../screenshots.php:142
+#: ../screenshots.php:146
 msgid "XFCE Menu"
 msgstr "XFCE Menu"
 
-#: ../screenshots.php:144
+#: ../screenshots.php:148
 msgid "XFCE Terminal"
 msgstr "XFCE Terminal"
 
-#: ../screenshots.php:147
+#: ../screenshots.php:151
 msgid "Gfpm"
 msgstr "Gfpm"
 
-#: ../screenshots.php:149
+#: ../screenshots.php:153
 msgid "Gfpm Synchronizing"
 msgstr "Gfpm Eş Zamanlanıyor"
 
-#: ../screenshots.php:151
+#: ../screenshots.php:155
 msgid "Repository Manager"
 msgstr "Depo Yöneticisi"
 
-#: ../screenshots.php:153 ../screenshots.php:164
+#: ../screenshots.php:157 ../screenshots.php:168
 msgid "Preferences Window"
 msgstr "Seçenekler Penceresi"
 
-#: ../screenshots.php:155
+#: ../screenshots.php:159
 msgid "Optimizing Package Database"
 msgstr "Paket Veritabanı İyileştiriliyor"
 
-#: ../screenshots.php:157
+#: ../screenshots.php:161
 msgid "Log Viewer"
 msgstr "Kayıt Görüntüleyici"
 
-#: ../screenshots.php:160
+#: ../screenshots.php:164
 msgid "Update Notification"
 msgstr "Güncelleme Uyarıcı"
 
-#: ../screenshots.php:162
+#: ../screenshots.php:166
 msgid "FUN Main Window"
 msgstr "FUN Ana Penceresi"
 
-#: ../screenshots.php:167
+#: ../screenshots.php:171
 msgid "GNetconfig"
 msgstr "GNetconfig"
 
-#: ../screenshots.php:169
+#: ../screenshots.php:173
 msgid "GNetconfig - Interface Management"
 msgstr "GNetconfig - Arayüz Yöneticisi"
 
-#: ../screenshots.php:171
+#: ../screenshots.php:175
 msgid "GNetconfig - DNS Settings"
 msgstr "GNetconfig - DNS Ayarları"
 
-#: ../screenshots.php:174
+#: ../screenshots.php:178
 msgid "gService - Main Window"
 msgstr "gService Ana Penceresi"
 
-#: ../screenshots.php:176
+#: ../screenshots.php:180
 msgid "gService - Editing Runlevel Information"
 msgstr "gService - Çalışma Seviyesi Bilgileri Düzenleniyor"
 
-#: ../screenshots.php:178
+#: ../screenshots.php:182
 msgid "gService - Minimal Interface"
 msgstr "gService - Asgari Arayüz"
 
 #: ../screenshots.php:185
+msgid "Openbox - by Lenezir"
+msgstr "Openbox - Lenezir tarafından"
+
+#: ../screenshots.php:187
+msgid "GNOME - by Pingax"
+msgstr "GNOME- Pingax tarafından"
+
+#: ../screenshots.php:189
+msgid "XFCE - by Devil505"
+msgstr "XFCE- Devil505 tarafından"
+
+#: ../screenshots.php:191
+msgid "GNOME - by Slown"
+msgstr "GNOME - Slown tarafından"
+
+#: ../screenshots.php:193
+msgid "Openbox - by Botchchikii"
+msgstr "Openbox - Botchchikii tarafından"
+
+#: ../screenshots.php:195
+msgid "KDE - by Centuri0"
+msgstr "KDE - Centuri0 tarafından"
+
+#: ../screenshots.php:202
+msgid "Screenshots from users"
+msgstr "Kullanıcıların ekran görüntüleri"
+
+#: ../screenshots.php:212
 msgid "Installer"
 msgstr "Kurulumcu"
 
-#: ../screenshots.php:193
+#: ../screenshots.php:220
 msgid "Startup"
 msgstr "Başlangıç"
 
-#: ../screenshots.php:201
+#: ../screenshots.php:228
 msgid "KDE Desktop"
 msgstr "KDE Masaüstü"
 
-#: ../screenshots.php:209
+#: ../screenshots.php:236
 msgid "GNOME Desktop"
 msgstr "GNOME Masaüstü"
 
-#: ../screenshots.php:217
+#: ../screenshots.php:244
 msgid "XFCE Desktop"
 msgstr "XFCE Masaüstü"
 
-#: ../screenshots.php:225
+#: ../screenshots.php:252
 msgid "GFpm (Package Manager)"
 msgstr "GFpm (Paket Yöneticisi)"
 
-#: ../screenshots.php:233
+#: ../screenshots.php:260
 msgid "FUN (Update Notifier)"
 msgstr "FUN (Güncelleme Bildirici)"
 
-#: ../screenshots.php:241
+#: ../screenshots.php:268
 msgid "GNetconfig (Network Configuration Tool)"
 msgstr "GNetconfig (Ağ Yapılandırma Tool)"
 
-#: ../screenshots.php:249
+#: ../screenshots.php:276
 msgid "gService (GUI Runlevel Editor)"
 msgstr "gService (GUI Çalışma Seviyesi Düzenleyici)"
 
@@ -1354,6 +1449,25 @@ msgstr "CVEs"
 #: ../security.php:94
 msgid "Description"
 msgstr "Tanım"
+
+#~ msgid "National sites"
+#~ msgstr "Ulusal siteler"
+
+#~ msgid "Download"
+#~ msgstr "İndir"
+
+#~ msgid "ISO images"
+#~ msgstr "ISO imajları"
+
+#~ msgid "File Manager"
+#~ msgstr "Dosya Yönetici"
+
+#~ msgid "Map"
+#~ msgstr "Harita"
+
+#~ msgid ""
+#~ "Frugalware does not currently support languages written in ideographs."
+#~ msgstr "Frugalware şuan için Asya dil desteğine sahip değildir."
 
 #~ msgid "08_kde_login.png"
 #~ msgstr "08_kde_login.png"
