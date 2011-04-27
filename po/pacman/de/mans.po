@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-10 02:02+0100\n"
-"PO-Revision-Date: 2011-03-10 13:29+0200\n"
+"POT-Creation-Date: 2011-04-27 02:07+0300\n"
+"PO-Revision-Date: 2011-04-27 15:57+0200\n"
 "Last-Translator: Balint Krizsan <balint@krizsan.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -71,7 +71,7 @@ msgstr "=== Einfaches Beispiel"
 #: FrugalBuild.txt:17 FrugalBuild.txt:44 FrugalBuild.txt:157
 #: FrugalBuild.txt:170 FrugalBuild.txt:202 FrugalBuild.txt:248
 #: FrugalBuild.txt:424 FrugalBuild.txt:448 FrugalBuild.txt:464
-#: FrugalBuild.txt:479 pacman-g2.txt:312 pacman-g2.txt:417
+#: FrugalBuild.txt:479 pacman-g2.txt:313 pacman-g2.txt:418
 #, no-wrap
 msgid "----\n"
 msgstr "----\n"
@@ -330,8 +330,8 @@ msgstr ""
 "Die letzte Zeile wird automatisch an das Ende des FrugalBuilds angehängt, "
 "wenn in der  `build()`-Funktion `$CFLAGS` oder `$CXXFLAGS` benutzt wurde. "
 "Dies ist praktisch, wenn man auf einer schnelleren Maschine für eine "
-"langsamere Architektur cross-compilieren will.Wenn das Paket nicht unsere "
-"`$CFLAGS` benutzt, kann man nicht cross-compilieren, daher sollte das "
+"langsamere Architektur cross-compilieren will.Wenn das Paket nicht unsere `"
+"$CFLAGS` benutzt, kann man nicht cross-compilieren, daher sollte das "
 "Erstellen 'nicht optimierter' Pakete vermieden werden. Wenn das Paket keine "
 "von einer Architektur abhängigen Dateien enthält, kann diese Zeile manuell "
 "hinzugefügt werden, da `makepkg` dies nicht erkennt."
@@ -594,8 +594,7 @@ msgid ""
 "\tThis is the release number specific to Frugalware Linux packages.\n"
 msgstr ""
 "pkgrel::\n"
-"\tDies ist die Release-Nummer, die für Frugalware Linux-Pakete spezifisch "
-"ist.\n"
+"\tDies ist die Release-Nummer, die für Frugalware Linux-Pakete spezifisch ist.\n"
 
 # type: Plain text
 #. type: Plain text
@@ -619,6 +618,9 @@ msgid ""
 "\tArray of the localized package descriptions. The format is the\n"
 "\tfollowing:\n"
 msgstr ""
+"pkgdesc_localized::\n"
+"\tAbschnitt für lokalisierte Paketbeschreibungen. Das format ist\n"
+"\twie folgt:\n"
 
 # type: Plain text
 #. type: Plain text
@@ -628,6 +630,8 @@ msgid ""
 "pkgdesc_localized=('xx_YY foo' 'xx_YY bar')\n"
 "----\n"
 msgstr ""
+"pkgdesc_localized=('xx_YY foo' 'xx_YY bar')\n"
+"----\n"
 
 # type: Plain text
 #. type: Plain text
@@ -638,6 +642,10 @@ msgid ""
 "\tThis field contains an optional URL that is associated with the piece\n"
 "\tof software being packaged. This is typically the project's website.\n"
 msgstr ""
+"url::\n"
+"\tDieses Feld enthält eine optionale URL, welche mit dem zu verpackenden "
+"Stück\n"
+"\\Software verbunden ist. Dies ist typischerweise die Webseite des Projektes.\n"
 
 # type: Plain text
 #. type: Plain text
@@ -647,6 +655,8 @@ msgid ""
 "license::\n"
 "\tSets the license type (eg, \"GPL\", \"BSD\", \"NON-FREE\").\n"
 msgstr ""
+"license::\n"
+"\tLegt den Lizenztyp fest (z.B. \"GPL\", \"BSD\", \"NON-FREE\").\n"
 
 # type: Plain text
 #. type: Plain text
@@ -655,6 +665,9 @@ msgid ""
 "NOTE: This option is currently optional and there are no rules what exact "
 "formats you should use (if you should use `GPL` or `GPL2` and so on)."
 msgstr ""
+"HINWEIS: Diese Option ist z.Z.t optional und es gibt keine Regeln, welches "
+"Format genau verwendet werden soll (ob man z.B. `GPL` oder `GPL2` usw. "
+"verwenden soll)."
 
 # type: Plain text
 #. type: Plain text
@@ -1270,7 +1283,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: FrugalBuild.txt:517 makepkg.txt:161 pacman-g2.txt:443
+#: FrugalBuild.txt:517 makepkg.txt:161 pacman-g2.txt:444
 msgid "== SEE ALSO"
 msgstr "== SEE ALSO"
 
@@ -1282,19 +1295,19 @@ msgid "*makepkg*(8), *pacman-g2*(8)\n"
 msgstr "*makepkg*(8), *pacman-g2*(8)\n"
 
 #. type: Plain text
-#: FrugalBuild.txt:521 makepkg.txt:165 pacman-g2.txt:447
+#: FrugalBuild.txt:521 makepkg.txt:165 pacman-g2.txt:448
 msgid "include::bugs.txt[]"
 msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: FrugalBuild.txt:523 makepkg.txt:167 pacman-g2.txt:449
+#: FrugalBuild.txt:523 makepkg.txt:167 pacman-g2.txt:450
 msgid "== AUTHORS"
 msgstr "== AUTHORS"
 
 # type: Plain text
 #. type: Plain text
-#: FrugalBuild.txt:524 makepkg.txt:168 pacman-g2.txt:450
+#: FrugalBuild.txt:524 makepkg.txt:168 pacman-g2.txt:451
 msgid "See /usr/share/doc/pacman-g2-*/AUTHORS."
 msgstr ""
 
@@ -1648,7 +1661,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: makepkg.txt:151 pacman-g2.txt:303
+#: makepkg.txt:151 pacman-g2.txt:304
 msgid "== CONFIGURATION"
 msgstr ""
 
@@ -1821,9 +1834,17 @@ msgid ""
 "\tcare, ideally not at all.\n"
 msgstr ""
 
+#. type: Plain text
+#: pacman-g2.txt:74
+#, no-wrap
+msgid ""
+"-k, --dbonly::\n"
+"\tRemoves the database entry only. Leaves all files in place.\n"
+msgstr ""
+
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:75
+#: pacman-g2.txt:78
 #, no-wrap
 msgid ""
 "--noarch::\n"
@@ -1833,7 +1854,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:83
+#: pacman-g2.txt:86
 #, no-wrap
 msgid ""
 "-r, --root <path>::\n"
@@ -1847,7 +1868,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:86
+#: pacman-g2.txt:89
 #, no-wrap
 msgid ""
 "-b, --dbpath:\n"
@@ -1856,7 +1877,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:89
+#: pacman-g2.txt:92
 #, no-wrap
 msgid ""
 "-v, --verbose::\n"
@@ -1865,7 +1886,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:92
+#: pacman-g2.txt:95
 #, no-wrap
 msgid ""
 "--config <path>::\n"
@@ -1874,7 +1895,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:96
+#: pacman-g2.txt:99
 #, no-wrap
 msgid ""
 "--noconfirm::\n"
@@ -1884,7 +1905,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:101
+#: pacman-g2.txt:104
 #, no-wrap
 msgid ""
 "--ask <number>::\n"
@@ -1895,7 +1916,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:108
+#: pacman-g2.txt:111
 #, no-wrap
 msgid ""
 "\t* The given package is in IgnorePkg. (1)\n"
@@ -1908,7 +1929,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:111
+#: pacman-g2.txt:114
 #, no-wrap
 msgid ""
 "\tSelect for what types do you want to answer yes, sum up the values and use the\n"
@@ -1917,7 +1938,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:115
+#: pacman-g2.txt:118
 #, no-wrap
 msgid ""
 "--noprogressbar::\n"
@@ -1927,7 +1948,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:118
+#: pacman-g2.txt:121
 #, no-wrap
 msgid ""
 "--noscriptlet::\n"
@@ -1936,7 +1957,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:121
+#: pacman-g2.txt:124
 #, no-wrap
 msgid ""
 "--nointegrity::\n"
@@ -1944,7 +1965,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pacman-g2.txt:127
+#: pacman-g2.txt:130
 #, no-wrap
 msgid ""
 "--regex::\n"
@@ -1956,7 +1977,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pacman-g2.txt:129
+#: pacman-g2.txt:132
 #, no-wrap
 msgid ""
 "# pacman-g2 -S --regex 'perl-.*'\n"
@@ -1965,13 +1986,13 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:132
+#: pacman-g2.txt:135
 msgid "== SYNC OPTIONS"
 msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:139
+#: pacman-g2.txt:142
 #, no-wrap
 msgid ""
 "-c, --clean::\n"
@@ -1984,7 +2005,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:144
+#: pacman-g2.txt:147
 #, no-wrap
 msgid ""
 "-e, --dependsonly::\n"
@@ -1995,7 +2016,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:148
+#: pacman-g2.txt:151
 #, no-wrap
 msgid ""
 "-g, --groups::\n"
@@ -2005,7 +2026,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:153
+#: pacman-g2.txt:156
 #, no-wrap
 msgid ""
 "-i, --info::\n"
@@ -2016,7 +2037,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:157
+#: pacman-g2.txt:160
 #, no-wrap
 msgid ""
 "-l, --list::\n"
@@ -2025,7 +2046,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pacman-g2.txt:163
+#: pacman-g2.txt:166
 #, no-wrap
 msgid ""
 "-p, --print-uris::\n"
@@ -2037,7 +2058,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:167
+#: pacman-g2.txt:170
 #, no-wrap
 msgid ""
 "-s, --search <regexp>::\n"
@@ -2047,7 +2068,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:175
+#: pacman-g2.txt:178
 #, no-wrap
 msgid ""
 "-u, --sysupgrade::\n"
@@ -2061,7 +2082,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:178
+#: pacman-g2.txt:181
 #, no-wrap
 msgid ""
 "-w, --downloadonly::\n"
@@ -2070,7 +2091,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:184
+#: pacman-g2.txt:187
 #, no-wrap
 msgid ""
 "-y, --refresh::\n"
@@ -2082,7 +2103,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:189
+#: pacman-g2.txt:192
 #, no-wrap
 msgid ""
 "--ignore <pkg>::\n"
@@ -2093,18 +2114,8 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:191
+#: pacman-g2.txt:194
 msgid "== REMOVE OPTIONS"
-msgstr ""
-
-# type: Plain text
-#. type: Plain text
-#: pacman-g2.txt:195
-#, no-wrap
-msgid ""
-"-c, --cascade::\n"
-"\tRemove all target packages, as well as all packages that depend on one or more\n"
-"\ttarget packages. This operation is recursive.\n"
 msgstr ""
 
 # type: Plain text
@@ -2112,8 +2123,9 @@ msgstr ""
 #: pacman-g2.txt:198
 #, no-wrap
 msgid ""
-"-k, --keep::\n"
-"\tRemoves the database entry only. Leaves all files in place.\n"
+"-c, --cascade::\n"
+"\tRemove all target packages, as well as all packages that depend on one or more\n"
+"\ttarget packages. This operation is recursive.\n"
 msgstr ""
 
 # type: Plain text
@@ -2185,29 +2197,28 @@ msgid ""
 "\tprovided, all groups and members will be listed.\n"
 msgstr ""
 
-# type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:231
+#: pacman-g2.txt:232
 #, no-wrap
 msgid ""
 "-i, --info::\n"
-"\tDisplay information on a given package. If it is used with the -p option then\n"
+"\tDisplay information on a given package, use it twice to display also the list of\n"
+"\tbackup files and their modification states. If it is used with the -p option then\n"
 "\tthe .PKGINFO file will be printed.\n"
 msgstr ""
 
-# type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:235
+#: pacman-g2.txt:236
 #, no-wrap
 msgid ""
-"-l, --list::\n"
+"-l, --lidbonly\n"
 "\tList all files owned by <package>. Multiple packages can be specified on the\n"
 "\tcommand line.\n"
 msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:239
+#: pacman-g2.txt:240
 #, no-wrap
 msgid ""
 "-m, --foreign::\n"
@@ -2217,7 +2228,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:242
+#: pacman-g2.txt:243
 #, no-wrap
 msgid ""
 "-o, --owns <path>::\n"
@@ -2226,7 +2237,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:247
+#: pacman-g2.txt:248
 #, no-wrap
 msgid ""
 "-p, --file::\n"
@@ -2237,7 +2248,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:251
+#: pacman-g2.txt:252
 #, no-wrap
 msgid ""
 "-s, --search <regexp>::\n"
@@ -2247,7 +2258,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:254
+#: pacman-g2.txt:255
 #, no-wrap
 msgid ""
 "-t, --test::\n"
@@ -2256,7 +2267,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:259
+#: pacman-g2.txt:260
 #, no-wrap
 msgid ""
 "\t----\n"
@@ -2267,14 +2278,14 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:261
+#: pacman-g2.txt:262
 #, no-wrap
 msgid "\tThe recommended method in this case is to remove the database entry:\n"
 msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:265
+#: pacman-g2.txt:266
 #, no-wrap
 msgid ""
 "\t----\n"
@@ -2284,14 +2295,14 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:267
+#: pacman-g2.txt:268
 #, no-wrap
 msgid "\tand forcing the reinstall of the package:\n"
 msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:271
+#: pacman-g2.txt:272
 #, no-wrap
 msgid ""
 "\t----\n"
@@ -2301,13 +2312,13 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:273
+#: pacman-g2.txt:274
 msgid "== HANDLING CONFIG FILES"
 msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:280
+#: pacman-g2.txt:281
 msgid ""
 "pacman-g2 uses the same logic as rpm to determine action against files that "
 "are designated to be backed up. During an upgrade, it uses 3 md5 hashes for "
@@ -2319,7 +2330,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:283
+#: pacman-g2.txt:284
 #, no-wrap
 msgid ""
 "original=X, current=X, new=X::\n"
@@ -2328,7 +2339,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:288
+#: pacman-g2.txt:289
 #, no-wrap
 msgid ""
 "original=X, current=X, new=Y::\n"
@@ -2339,7 +2350,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:293
+#: pacman-g2.txt:294
 #, no-wrap
 msgid ""
 "original=X, current=Y, new=X::\n"
@@ -2350,7 +2361,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:296
+#: pacman-g2.txt:297
 #, no-wrap
 msgid ""
 "original=X, current=Y, new=Y::\n"
@@ -2359,7 +2370,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:301
+#: pacman-g2.txt:302
 #, no-wrap
 msgid ""
 "original=X, current=Y, new=Z::\n"
@@ -2370,7 +2381,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:309
+#: pacman-g2.txt:310
 msgid ""
 "pacman-g2 will attempt to read /etc/pacman-g2.conf each time it is invoked. "
 "This configuration file is divided into sections or repositories. Each "
@@ -2381,25 +2392,25 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:311
+#: pacman-g2.txt:312
 msgid "Example:"
 msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:316
+#: pacman-g2.txt:317
 msgid "[options] HoldPkg = pacman-g2 glibc bash coreutils HoldPkg = chkconfig"
 msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:318
+#: pacman-g2.txt:319
 msgid "Include = /etc/pacman-g2/repos/frugalware-current"
 msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:321
+#: pacman-g2.txt:322
 #, no-wrap
 msgid ""
 "[custom]\n"
@@ -2409,13 +2420,13 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:324
+#: pacman-g2.txt:325
 msgid "== CONFIG: OPTIONS"
 msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:328
+#: pacman-g2.txt:329
 #, no-wrap
 msgid ""
 "DBPath = path/to/db/dir::\n"
@@ -2425,7 +2436,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:332
+#: pacman-g2.txt:333
 #, no-wrap
 msgid ""
 "CacheDir = path/to/cache/dir::\n"
@@ -2435,7 +2446,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:336
+#: pacman-g2.txt:337
 #, no-wrap
 msgid ""
 "HoldPkg = <package> [package] ...::\n"
@@ -2445,7 +2456,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:340
+#: pacman-g2.txt:341
 #, no-wrap
 msgid ""
 "IgnorePkg = <package> [package] ...::\n"
@@ -2455,7 +2466,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:344
+#: pacman-g2.txt:345
 #, no-wrap
 msgid ""
 "UpgradeDelay = <number>::\n"
@@ -2465,7 +2476,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:348
+#: pacman-g2.txt:349
 #, no-wrap
 msgid ""
 "OldDelay = <number>::\n"
@@ -2475,7 +2486,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:352
+#: pacman-g2.txt:353
 #, no-wrap
 msgid ""
 "MaxTries = <number>::\n"
@@ -2485,7 +2496,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:356
+#: pacman-g2.txt:357
 #, no-wrap
 msgid ""
 "Include = <path>::\n"
@@ -2495,7 +2506,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:359
+#: pacman-g2.txt:360
 #, no-wrap
 msgid ""
 "ProxyServer = <host|ip>::\n"
@@ -2504,7 +2515,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:363
+#: pacman-g2.txt:364
 #, no-wrap
 msgid ""
 "ProxyPort = port::\n"
@@ -2513,7 +2524,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pacman-g2.txt:377
+#: pacman-g2.txt:378
 #, no-wrap
 msgid ""
 "XferCommand = /path/to/command %u::\n"
@@ -2533,7 +2544,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:380
+#: pacman-g2.txt:381
 #, no-wrap
 msgid ""
 "NoPassiveFtp::\n"
@@ -2542,7 +2553,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:384
+#: pacman-g2.txt:385
 #, no-wrap
 msgid ""
 "NoUpgrade = <file> [file] ...::\n"
@@ -2552,14 +2563,14 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:386
+#: pacman-g2.txt:387
 #, no-wrap
 msgid "\tNOTE: Do not include the leading slash when specifying files.\n"
 msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:393
+#: pacman-g2.txt:394
 #, no-wrap
 msgid ""
 "NoExtract = <file> [file] ...::\n"
@@ -2572,7 +2583,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:397
+#: pacman-g2.txt:398
 #, no-wrap
 msgid ""
 "UseSyslog::\n"
@@ -2582,7 +2593,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:400
+#: pacman-g2.txt:401
 #, no-wrap
 msgid ""
 "LogFile = /path/to/file::\n"
@@ -2591,13 +2602,13 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:402
+#: pacman-g2.txt:403
 msgid "== CONFIG: REPOSITORIES"
 msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:409
+#: pacman-g2.txt:410
 msgid ""
 "Each repository section defines a section name and at least one location "
 "where the packages can be found. The section name is defined by the string "
@@ -2610,13 +2621,13 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:411
+#: pacman-g2.txt:412
 msgid "== USING YOUR OWN REPOSITORY"
 msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:416
+#: pacman-g2.txt:417
 msgid ""
 "Let's say you have a bunch of custom packages in /home/pkgs and their "
 "respective FrugalBuild files are all in /var/fst/local. All you need to do "
@@ -2626,7 +2637,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:419
+#: pacman-g2.txt:420
 #, no-wrap
 msgid ""
 "# gensync /var/fst/local /home/pkgs/custom.fdb\n"
@@ -2635,7 +2646,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:429
+#: pacman-g2.txt:430
 msgid ""
 "The above command will read all FrugalBuild files in /var/fst/local and "
 "generate a compressed database called /home/pkgs/custom.fdb. Note that the "
@@ -2649,13 +2660,13 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:431
+#: pacman-g2.txt:432
 msgid "== HOOKS"
 msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:435
+#: pacman-g2.txt:436
 msgid ""
 "pacman-g2 will attempt to execute hooks in the /etc/pacman-g2/hooks "
 "directory.  The hooks are like package scriptlets: each file can provide "
@@ -2664,7 +2675,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:441
+#: pacman-g2.txt:442
 #, no-wrap
 msgid ""
 "pre_sysupgrade::\n"
@@ -2676,7 +2687,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: pacman-g2.txt:445
+#: pacman-g2.txt:446
 #, no-wrap
 msgid "*makepkg*(8)\n"
 msgstr ""
