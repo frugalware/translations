@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: setup current\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-21 01:59+0200\n"
-"PO-Revision-Date: 2010-09-06 15:41+0200\n"
+"POT-Creation-Date: 2011-05-23 02:07+0200\n"
+"PO-Revision-Date: 2011-05-23 16:47+0200\n"
 "Last-Translator: Balint Krizsan <balint@krizsan.de>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.0.2\n"
 
@@ -57,7 +57,7 @@ msgstr ""
 "Paket-Download zu erhöhen."
 
 #: ../src/plugins/configsource.c:166 ../src/plugins/formatdisk.c:655
-#: ../src/plugins/partdisk.c:197
+#: ../src/plugins/partdisk.c:202
 msgid "Continue"
 msgstr "Weiter"
 
@@ -159,8 +159,8 @@ msgid "Journaling version of the ext2 filesystem"
 msgstr "Journaling-Version des ext2fs-Dateisystems"
 
 #: ../src/plugins/formatdisk.c:236
-msgid "The evolution of the ext3 filesystem (EXPERIMENTAL!)"
-msgstr "Die Weiterentwicklung des ext3fs-Dateisystems (EXPERIMENTELL!)"
+msgid "The evolution of the ext3 filesystem"
+msgstr "Die Weiterentwicklung des ext3fs-Dateisystems"
 
 #: ../src/plugins/formatdisk.c:238
 msgid "Hans Reiser's journaling filesystem"
@@ -358,48 +358,52 @@ msgstr "Eine Frugalware Installations-Quelle wurde in /dev/%s gefunden."
 msgid "Partitioning the disk drives"
 msgstr "Partitioniere Festplatten"
 
-#: ../src/plugins/partdisk.c:118
+#: ../src/plugins/partdisk.c:117
 msgid "User friendly (curses based) version of fdisk"
 msgstr "Benutzerfreundliche (curses-basierende) Version von fdisk"
 
-#: ../src/plugins/partdisk.c:119
+#: ../src/plugins/partdisk.c:118
 msgid "The traditional partitioning program for Linux"
 msgstr "Das traditionelle Partitionierungsprogramm für Linux"
 
-#: ../src/plugins/partdisk.c:120 ../src/plugins/partdisk.c:127
+#: ../src/plugins/partdisk.c:119
+msgid "Works like fdisk, but uses GPT instead of MBR."
+msgstr "Funktioniert wie fdisk, verwendet allerdings GPT anstatt MBR."
+
+#: ../src/plugins/partdisk.c:120 ../src/plugins/partdisk.c:126
 msgid "A partition manipulation program"
 msgstr "Ein Partitionierungsprogramm"
 
-#: ../src/plugins/partdisk.c:126
+#: ../src/plugins/partdisk.c:125
 msgid "Apple disk partitioning utility"
 msgstr "Apple Partitionierungsprogramm"
 
-#: ../src/plugins/partdisk.c:131 ../src/plugins/partdisk.c:183
+#: ../src/plugins/partdisk.c:136 ../src/plugins/partdisk.c:188
 msgid "Creating partitions"
 msgstr "Erstelle Partitionen"
 
-#: ../src/plugins/partdisk.c:134
+#: ../src/plugins/partdisk.c:139
 msgid "Select partitioning program"
 msgstr "Partitionierungsprogramm auswählen"
 
-#: ../src/plugins/partdisk.c:135
+#: ../src/plugins/partdisk.c:140
 msgid "Select the program you want to use for partitioning:"
 msgstr "Programm zum Partitionieren wählen:"
 
-#: ../src/plugins/partdisk.c:147
+#: ../src/plugins/partdisk.c:152
 msgid "Want to create RAID partitions?"
 msgstr "RAID_Partitionen erstellen?"
 
-#: ../src/plugins/partdisk.c:148
+#: ../src/plugins/partdisk.c:153
 msgid "Do you want to create software RAID partitions during partitioning?"
 msgstr ""
 "Wollen Sie während der Partitionierung Software-RAID-Partitionen erstellen?"
 
-#: ../src/plugins/partdisk.c:177
+#: ../src/plugins/partdisk.c:182
 msgid "Disk drive not found"
 msgstr "Laufwerk nicht gefunden"
 
-#: ../src/plugins/partdisk.c:177
+#: ../src/plugins/partdisk.c:182
 msgid ""
 "Sorry, no hard disk drives were found in this computer. Press ENTER to "
 "reboot."
@@ -407,15 +411,15 @@ msgstr ""
 "Entschuldigung, es wurden keine Festplatten in diesem Computer gefunden. "
 "ENTER drücken, um neu zu starten."
 
-#: ../src/plugins/partdisk.c:192
+#: ../src/plugins/partdisk.c:197
 msgid "Create RAID"
 msgstr "Erstelle RAID"
 
-#: ../src/plugins/partdisk.c:200
+#: ../src/plugins/partdisk.c:205
 msgid "Select a hard disk to partition"
 msgstr "Eine Festplatte zum Partitionieren wählen"
 
-#: ../src/plugins/partdisk.c:201
+#: ../src/plugins/partdisk.c:206
 msgid ""
 "Please select a hard disk to partition. Once you are done, or in case you "
 "don't want to partition your disks at all, select 'Continue'. The following "
