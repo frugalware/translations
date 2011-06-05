@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: setup current\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-04-11 02:02+0200\n"
-"PO-Revision-Date: 2011-04-11 16:22+0200\n"
+"POT-Creation-Date: 2011-06-05 02:07+0200\n"
+"PO-Revision-Date: 2011-06-05 17:40+0200\n"
 "Last-Translator:  <frugalnl@gmail.com>\n"
 "Language-Team: Dutch <translation-team-nl@lists.sourceforge.net>\n"
 "Language: nl\n"
@@ -57,7 +57,7 @@ msgstr ""
 "bevindt, om het downloaden van de pakketten te versnellen."
 
 #: ../src/plugins/configsource.c:166 ../src/plugins/formatdisk.c:655
-#: ../src/plugins/partdisk.c:197
+#: ../src/plugins/partdisk.c:202
 msgid "Continue"
 msgstr "Volgende"
 
@@ -71,8 +71,7 @@ msgid ""
 "faster. If you don't have a custom mirror, select Continue."
 msgstr ""
 "U kunt nu een aangepaste spiegelserver selecteren (b.v. LAN) zodat U sneller "
-"kunt downloaden. Indien U geen aangepaste spiegelserver heeft, kies "
-"Volgende."
+"kunt downloaden. Indien U geen aangepaste spiegelserver heeft, kies Volgende."
 
 #: ../src/plugins/configsource.c:195
 msgid "Failed to configure the network"
@@ -161,8 +160,8 @@ msgid "Journaling version of the ext2 filesystem"
 msgstr "Loggende versie van het ext2FS bestandssysteem"
 
 #: ../src/plugins/formatdisk.c:236
-msgid "The evolution of the ext3 filesystem (EXPERIMENTAL!)"
-msgstr "De doorontwikkeling van het Ext3 filesysteem (EXPERIMENTEEL!)"
+msgid "The evolution of the ext3 filesystem"
+msgstr "De doorontwikkeling van het Ext3 bestandssysteem (EXPERIMENTEEL!)"
 
 #: ../src/plugins/formatdisk.c:238
 msgid "Hans Reiser's journaling filesystem"
@@ -264,10 +263,10 @@ msgid ""
 msgstr ""
 "Eventueel kunt U andere partities gebruiken om Uw Linux systeem te "
 "verspreiden over meer dan een partitie. Momenteel heeft U enkel de / "
-"partitie aangekoppeld. Miscchien wilt U nog mappen als /boot, /home of "
-"/usr/local aankoppelen op afzonderelijke partities. Het wordt afgeraden om "
-"/usr, /etc/, /sbin of /bin aan te koppelen op afzonderlijke partities omdat "
-"deze tools bevatten om het systeem te starten en partities aan te koppelen. "
+"partitie aangekoppeld. Miscchien wilt U nog mappen als /boot, /home of /usr/"
+"local aankoppelen op afzonderelijke partities. Het wordt afgeraden om /usr, /"
+"etc/, /sbin of /bin aan te koppelen op afzonderlijke partities omdat deze "
+"tools bevatten om het systeem te starten en partities aan te koppelen. "
 "Gebruik ook geen partitie die U al eerder heeft ingevoerd. Selecteer een van "
 "onderstaande partities, of indien U klaar bent, kies Volgende."
 
@@ -361,47 +360,51 @@ msgstr "Een Frugalware installatie schijf is gevonden in /dev/%s."
 msgid "Partitioning the disk drives"
 msgstr "Bezig met partitioneren van de schijfstations"
 
-#: ../src/plugins/partdisk.c:118
+#: ../src/plugins/partdisk.c:117
 msgid "User friendly (curses based) version of fdisk"
 msgstr "Gebruiksvriendelijke (curses gebaseerde) versie van fdisk"
 
-#: ../src/plugins/partdisk.c:119
+#: ../src/plugins/partdisk.c:118
 msgid "The traditional partitioning program for Linux"
 msgstr "Het traditionele programma voor schijfindeling onder Linux"
 
-#: ../src/plugins/partdisk.c:120 ../src/plugins/partdisk.c:127
+#: ../src/plugins/partdisk.c:119
+msgid "Works like fdisk, but uses GPT instead of MBR."
+msgstr "Werkt net als fdisk maar gebruikt GPT in plaats van MBR"
+
+#: ../src/plugins/partdisk.c:120 ../src/plugins/partdisk.c:126
 msgid "A partition manipulation program"
 msgstr "Een programma om partities aan te passen"
 
-#: ../src/plugins/partdisk.c:126
+#: ../src/plugins/partdisk.c:125
 msgid "Apple disk partitioning utility"
 msgstr "Apple programma voor schijfindeling"
 
-#: ../src/plugins/partdisk.c:131 ../src/plugins/partdisk.c:183
+#: ../src/plugins/partdisk.c:136 ../src/plugins/partdisk.c:188
 msgid "Creating partitions"
 msgstr "Bezig partities te creëren"
 
-#: ../src/plugins/partdisk.c:134
+#: ../src/plugins/partdisk.c:139
 msgid "Select partitioning program"
 msgstr "Selecteer programma voor schijfindeling"
 
-#: ../src/plugins/partdisk.c:135
+#: ../src/plugins/partdisk.c:140
 msgid "Select the program you want to use for partitioning:"
 msgstr "Selecteer welk programma U wilt gebruiken voor schijfindeling:"
 
-#: ../src/plugins/partdisk.c:147
+#: ../src/plugins/partdisk.c:152
 msgid "Want to create RAID partitions?"
 msgstr "Wilt U RAID partities creëren?"
 
-#: ../src/plugins/partdisk.c:148
+#: ../src/plugins/partdisk.c:153
 msgid "Do you want to create software RAID partitions during partitioning?"
 msgstr "Wilt U software RAID partities creëren tijdens de schijfindeling?"
 
-#: ../src/plugins/partdisk.c:177
+#: ../src/plugins/partdisk.c:182
 msgid "Disk drive not found"
 msgstr "Diskette station niet gevonden"
 
-#: ../src/plugins/partdisk.c:177
+#: ../src/plugins/partdisk.c:182
 msgid ""
 "Sorry, no hard disk drives were found in this computer. Press ENTER to "
 "reboot."
@@ -409,15 +412,15 @@ msgstr ""
 "Sorry, er werden geen hardeschijfstations gevonden. Druk op ENTER om opnieuw "
 "op te starten."
 
-#: ../src/plugins/partdisk.c:192
+#: ../src/plugins/partdisk.c:197
 msgid "Create RAID"
 msgstr "RAID creëren"
 
-#: ../src/plugins/partdisk.c:200
+#: ../src/plugins/partdisk.c:205
 msgid "Select a hard disk to partition"
 msgstr "Selecteer een harde schijf om te partitioneren"
 
-#: ../src/plugins/partdisk.c:201
+#: ../src/plugins/partdisk.c:206
 msgid ""
 "Please select a hard disk to partition. Once you are done, or in case you "
 "don't want to partition your disks at all, select 'Continue'. The following "
@@ -443,8 +446,8 @@ msgid ""
 "ENTER to reboot."
 msgstr ""
 "Systeeminstallatie en configuratie zijn successvol voltooid. We hopen dat %s "
-"U zal bevallen. Gelieve de media uit het station te nemen, druk daarna "
-"ENTER om opnieuw op te starten."
+"U zal bevallen. Gelieve de media uit het station te nemen, druk daarna ENTER "
+"om opnieuw op te starten."
 
 #: ../src/plugins/select.c:54 ../src/plugins/select.c:282
 #: ../src/plugins/select.c:419
@@ -544,9 +547,9 @@ msgid ""
 "can finish  the installation. Have you inserted the next disc?"
 msgstr ""
 "Steek de volgende Frugalware installatie schijf in het station en druk ENTER "
-"om verder te gaan met installeren van pakketten. Indien U geen schijven "
-"meer heeft, kies dan NEE, waarna U de installatie kunt vervolledigen. Heeft "
-"U de volgende schijf in het station gelegd?"
+"om verder te gaan met installeren van pakketten. Indien U geen schijven meer "
+"heeft, kies dan NEE, waarna U de installatie kunt vervolledigen. Heeft U de "
+"volgende schijf in het station gelegd?"
 
 #: ../src/plugins/postconf.c:46
 msgid "Configuring the installed system"
@@ -705,8 +708,8 @@ msgid ""
 "Internal error: Segmentation fault. Please report this issue to http://bugs."
 "frugalware.org"
 msgstr ""
-"Interne fout: Segmentatie fout. Meld dit probleem alstublieft aan op "
-"http://bugs.frugalware.org"
+"Interne fout: Segmentatie fout. Meld dit probleem alstublieft aan op http://"
+"bugs.frugalware.org"
 
 #: ../src/util.c:662
 msgid "Selecting a task"
