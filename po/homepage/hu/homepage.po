@@ -9,16 +9,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-05 02:02+0100\n"
-"PO-Revision-Date: 2009-03-30 15:25+0200\n"
-"Last-Translator: Feher Attila <feherke>\n"
+"POT-Creation-Date: 2011-06-20 02:07+0200\n"
+"PO-Revision-Date: 2011-06-20 14:53+0200\n"
+"Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
 "Language-Team: <hu@li.org>\n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: hu\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 1.2.0\n"
+"X-Generator: Pootle 2.0.2\n"
 
 #. FIXME: use docs/about.txt as a source instead of this one
 #: ../about.php:36
@@ -274,9 +274,8 @@ msgid "What about Asian languages?"
 msgstr "Mi a helyzet az ázsiai nyelvekkel?"
 
 #: ../about.php:67
-#, fuzzy
-msgid "Frugalware does not currently support languages written in ideographs."
-msgstr "A Frugalware jelenleg nem támogatja az ázsiai nyelveket."
+msgid "Yes you just have to switch to UTF-8 encoding."
+msgstr "Csak át kell váltani UTF-8 kódolásra."
 
 #: ../about.php:68
 msgid "What architectures does Frugalware support?"
@@ -284,35 +283,88 @@ msgstr "Mely architektúrákat támogatja a Frugalware?"
 
 #: ../about.php:69
 msgid ""
-"Currently we support x86 and x86_64 platforms, and inside x86, only i686 "
-"(Pentium Pro or higher instruction set) and inside x86_64 only k8 (amd64). "
-"If there are any claims, an i386 port will be created, but currently we "
-"don't have resources to build and maintain those packages. Outside x86, "
-"currently we don't have any non-x86 hardware, but happily accept such "
-"patches or any effort to create non-x86 optimized packages. We are also "
-"working on a PowerPC port"
+"Currently we support x86, x86_64 and ppc platforms, and inside x86, only "
+"i686 (Pentium Pro or higher instruction set), inside x86_64 only k8 (amd64) "
+"and inside ppc only PowerPC. If there are any claims, an i386 port will be "
+"created, but currently we don't have resources to build and maintain those "
+"packages. Outside x86, currently we don't have any non-x86 hardware, but "
+"happily accept such patches or any effort to create non-x86 optimized "
+"packages."
 msgstr ""
-"Jelenleg az x86 és x86_64 platformokat támogatjuk, azon belül is csak az "
-"i686 (Pentium Pro és az annál újabb utasításkészletű), valamint k8 (amd64) "
-"processzorok támogatottak. Ha van rá igény, nyitunk egy i386 portot is, de "
-"jelenleg sajnos nincs erőforrásunk újrafordítani és kezelni ezeket a "
-"csomagokat. Jelenleg nincs nem-x86 architektúrájú hardverünk, de szívesen "
-"fogadunk bármilyen patch-et vagy erőfeszítést nem-x86-ra optimalizált "
-"csomagok készítéséhez. Ezen kívül elkezdődött a munka a PowerPC porton"
+"Jelenleg az x86, az x86_64 és a ppc platformokat támogatjuk, azon belül is "
+"csak az i686 (Pentium Pro és az annál újabb utasításkészletű), a k8 (amd64) "
+"és a PowerPC (ppc) processzorok támogatottak. Ha van rá igény, nyitunk egy "
+"i386 portot is, de jelenleg sajnos nincs erőforrásunk újrafordítani és "
+"kezelni ezeket a csomagokat. Jelenleg nincs nem-x86 architektúrájú "
+"hardverünk, de szívesen fogadunk bármilyen patch-et vagy erőfeszítést "
+"nem-x86-ra optimalizált csomagok készítéséhez."
 
-#: ../about.php:76
+#: ../about.php:70
+msgid "How are compressed the Frugalware packages?"
+msgstr "Mivel vannak a Frugalware csomagok tömörítve?"
+
+#: ../about.php:71
+msgid ""
+"FPM packages were originally .tar.gz packages, then a bit later we migrated "
+"to libarchive, which allowed bzip2 compression. Life was good, but then lzma "
+"was came, and I added support for libarchive, though others were not really "
+"interested in a migration, so we stick to .tar.bz2. A few months ago "
+"libarchive got support for the xz format (which is the successor of lzma), "
+"so we switched to it. pacman-g2 still\n"
+"support .tar.gz and .tar.bz2 as well, and the package extension is .fpm all "
+"the time to make it clear that it's a Frugalware package."
+msgstr ""
+"Az FPM csomagok eredetileg .tar.gz csomagok voltak, de egy idő után "
+"migráltunk libarchive-ra, mely megengedte a bzip2 tömörítést. Az élet szép "
+"volt de jött az lzma és elkészítettem a támogatást libarchive-hoz, bár "
+"másokat nem igazán érdekelt a váltás, így megmaradtunk .tar.bz2 mellett. Pár "
+"hónapja megérkezett az xz támogatás libarchive-ba (mely az lzma utódja), "
+"így átváltottunk arra. A pacman-g2 még mindig támogatja a .tar.gz valamint a "
+".tar.bz2 csomagokat is, valamint a csomagkiterjesztés .fpm marad mindvégig, "
+"hogy tisztázzuk ez egy Frugalware csomag."
+
+#: ../about.php:73
+msgid "What's the difference between Arch and Frugalware?"
+msgstr "Mi a különbség az Arch és a Frugalware között?"
+
+#: ../about.php:74
+msgid ""
+"Many people think that as we use basically the same <tt>pacman</tt> as <a "
+"href=\"http://www.archlinux.org\">Arch Linux</a> then the two distribution "
+"are the same. Originally the package manager was the same, there is almost "
+"nothing other similar. There are also other major differences. We have "
+"console (such as <tt>grubconfig</tt> and <tt>netconfig</tt>) and graphical "
+"(such as <tt>gService</tt> and <tt>gFPM</tt>) configuration tools. At the "
+"end of the installation you will get a working system with x, network, mouse "
+"(and much more configured. We have an unique repo (stable or current) and "
+"it's easy to contribute with new packages, so we don't need such thing like "
+"<a href=\"http://aur.archlinux.org/\">AUR</a>. We officially support PPC "
+"arch."
+msgstr ""
+"Sokan azt gondolják mivel alapvetően ugyanazt a <tt>pacman<tt>-t használjuk, "
+"mint az <a href=\"http://www.archlinux.org\">Arch Linux</a>, így a két "
+"disztribúció ugyanaz. Azonban eredetileg csak a csomagkezelő volt azonos, "
+"azonban semmi egyéb közös nincs. Nagy különbség még, hogy nekünk van "
+"konzolos (például <tt>grubconfig</tt> és <tt>netconfig</tt>) és grafikus "
+"(például <tt>gService</tt> és <tt>gFPM</tt>) konfigurációs eszközünk. A "
+"telepítés végén egy működő grafikus rendszer áll használatra készen. Van "
+"stabil ág, valamint egyszerű új csomagokkal hozzájárulni, nincs szükség "
+"olyanokra, mint például az <a href=\"http://aur.archlinux.org/\">AUR</a>. "
+"Hivatalosan is támogatott a PPC architektúra."
+
+#: ../about.php:81
 msgid "Short"
 msgstr "Röviden"
 
-#: ../about.php:80
+#: ../about.php:85
 msgid "Question"
 msgstr "Kérdés"
 
-#: ../about.php:81
+#: ../about.php:86
 msgid "Answer"
 msgstr "Válasz"
 
-#: ../about.php:83
+#: ../about.php:88
 msgid "Long"
 msgstr "Bővebben"
 
@@ -324,7 +376,7 @@ msgstr "kukac"
 msgid "dot"
 msgstr "pont"
 
-#: ../authors.php:68 ../config.inc.php:83
+#: ../authors.php:68 ../config.inc.php:84
 msgid "Authors"
 msgstr "Szerzők"
 
@@ -363,7 +415,7 @@ msgstr "<a href=\"%s\">Hozzájárulók</a><br />"
 msgid "Frugalware Linux Author list"
 msgstr "Frugalware Linux Szerző-lista"
 
-#. $menucontent = '<a class="menu" href="' . $fwng_root . '">' . gettext('News') . "</a> &middot; \n";
+#. $menucontent = '<a class="menu" href="' . $fwng_root . '">' . gettext('News') . "</a> | \n";
 #: ../config.inc.php:44 ../rss.php:186
 msgid "News"
 msgstr "Hírek"
@@ -372,7 +424,7 @@ msgstr "Hírek"
 msgid "Announcements"
 msgstr "Bejelentések"
 
-#: ../config.inc.php:47 ../rss.php:193
+#: ../config.inc.php:47 ../rss.php:195
 msgid "Security announcements"
 msgstr "Biztonsági bejelentések"
 
@@ -393,101 +445,97 @@ msgid "Frugalware in the Press"
 msgstr "Rólunk írták"
 
 #: ../config.inc.php:54
-msgid "Documentation"
-msgstr "Dokumentáció"
-
-#: ../config.inc.php:56
-msgid "Community"
-msgstr "Közösség"
-
-#: ../config.inc.php:58
-msgid "Mailing Lists"
-msgstr "Levelező listák"
-
-#: ../config.inc.php:59
-msgid "Discussion Forums"
-msgstr "Fórum"
-
-#: ../config.inc.php:60
-msgid "Wiki"
-msgstr "Wiki"
-
-#: ../config.inc.php:61
-msgid "IRC"
-msgstr "IRC"
-
-#: ../config.inc.php:62
-msgid "Pastebin"
-msgstr "Pastebin"
-
-#: ../config.inc.php:63
 msgid "Screenshots"
 msgstr "Képernyőmentések"
 
-#: ../config.inc.php:64
-msgid "Map"
-msgstr "Térkép"
+#: ../config.inc.php:57
+msgid "Get Frugalware"
+msgstr "A Frugalware letöltése"
 
-#: ../config.inc.php:65
-#, fuzzy
-msgid "Libre.fm group"
-msgstr "Last.fm csoport"
-
-#: ../config.inc.php:66
-msgid "National sites"
-msgstr "Nemzeti oldalak"
-
-#: ../config.inc.php:67
-msgid "Artwork"
-msgstr "Illusztrációk"
-
-#: ../config.inc.php:68
-msgid "Identi.ca group"
-msgstr ""
-
-#: ../config.inc.php:70
-msgid "Download"
-msgstr "Letöltés"
-
-#: ../config.inc.php:72
-msgid "ISO images"
-msgstr "ISO képek"
-
-#: ../config.inc.php:73
+#: ../config.inc.php:58
 msgid "Packages"
 msgstr "Csomagok"
 
-#: ../config.inc.php:75
-msgid "Development"
-msgstr "Fejlesztés"
+#: ../config.inc.php:59
+msgid "Documentation"
+msgstr "Dokumentáció"
 
-#: ../config.inc.php:77
-msgid "Roadmap"
-msgstr "Útiterv"
+#: ../config.inc.php:60
+msgid "Discussion Forums"
+msgstr "Fórum"
 
-#: ../config.inc.php:78
-msgid "Git repository"
-msgstr "Git repó"
-
-#: ../config.inc.php:79
+#: ../config.inc.php:61
 msgid "Bug Tracker"
 msgstr "Hibák"
 
-#: ../config.inc.php:80
-msgid "Translation portal"
-msgstr "Fordítási portál"
+#: ../config.inc.php:62
+msgid "Wiki"
+msgstr "Wiki"
 
-#: ../config.inc.php:81
+#: ../config.inc.php:64
+msgid "Community"
+msgstr "Közösség"
+
+#: ../config.inc.php:66
+msgid "Mailing Lists"
+msgstr "Levelező listák"
+
+#: ../config.inc.php:67
+msgid "IRC"
+msgstr "IRC"
+
+#: ../config.inc.php:68
+msgid "Pastebin"
+msgstr "Pastebin"
+
+#: ../config.inc.php:69
 msgid "Blogs"
 msgstr "Blogok"
 
-#: ../config.inc.php:82 ../donations.php:50 ../header.php:55
+#: ../config.inc.php:70
+msgid "Libre.fm group"
+msgstr "Libre.fm csoport"
+
+#: ../config.inc.php:71
+msgid "Local Communities"
+msgstr "Közösség"
+
+#: ../config.inc.php:72
+msgid "Artwork"
+msgstr "Illusztrációk"
+
+#: ../config.inc.php:73
+msgid "Identi.ca group"
+msgstr "Identi.ca csoport"
+
+#: ../config.inc.php:74
+msgid "Twitter"
+msgstr "Twitter"
+
+#: ../config.inc.php:77
+msgid "Development"
+msgstr "Fejlesztés"
+
+#: ../config.inc.php:79
+msgid "Roadmap"
+msgstr "Útiterv"
+
+#: ../config.inc.php:80
+msgid "Git repository"
+msgstr "Git repó"
+
+#: ../config.inc.php:81
+msgid "Translation portal"
+msgstr "Fordítási portál"
+
+#: ../config.inc.php:83 ../donations.php:50 ../header.php:85
 msgid "Donations"
 msgstr "Adományok"
 
-#: ../config.inc.php:94 ../config.inc.php:96 ../config.inc.php:98
-#: ../config.inc.php:100 ../config.inc.php:102 ../config.inc.php:104
-#: ../config.inc.php:106 ../config.inc.php:108
+#: ../config.inc.php:95 ../config.inc.php:97 ../config.inc.php:99
+#: ../config.inc.php:101 ../config.inc.php:103 ../config.inc.php:105
+#: ../config.inc.php:107 ../config.inc.php:109 ../config.inc.php:111
+#: ../config.inc.php:113
 msgid "Change language"
 msgstr "Váltson nyelvet"
 
@@ -516,7 +564,6 @@ msgid "View online documentation (development version)"
 msgstr "A dokumentáció online megtekintése (fejlesztői kiadás)"
 
 #: ../donations.php:38
-#, fuzzy
 msgid ""
 "<div align=\"left\">Donations are a great way to show your appreciation\n"
 "and support for Frugalware Linux. On this page we list the donations we "
@@ -538,36 +585,34 @@ msgid ""
 "on the side of the page\n"
 "if you wish to donate money.</div>"
 msgstr ""
-"<div align=left>Az adományozás jó mód arra, hogy mutassa támogatását és "
+"<div align=\"left\">Az adományozás jó mód arra, hogy mutassa támogatását és "
 "elismerését a Frugalware Linux iránt. Ezen a lapon összegyűjtöttük azokat az "
 "adományokat, amiket eddig kaptunk, valamint azokat, amik nagy segítséget "
 "nyújtatnának munkánk során. Ha van valamilyen hardware eszköze vagy valami, "
 "amihez még nincs a Frugalware -ben támogatás, adományozza a fejlesztőknek, "
 "hogy minél előbb bekerülhessen a Frugalware -be.<br /><br /> Ha a teljes "
-"projektnek szeretne adományozni (pl. egy mirrort),\n"
-"kérjük küldjon egy levelet a <a href=\"http://frugalware.org/mailman/"
-"listinfo/frugalware-devel\">frugalware-devel</a>\n"
-"listára (angolul), vagy ha nem szerente feliratkozni, írjon közvetlenül a "
-"vmiklos_kukac_frugalware_pont_org címre.\n"
-"Ha egy fejlesztőnek szerente adományozni, tekintse meg a <a href=\"authors."
-"php\">fejlesztők</a>\n"
-"oldalát és küldjön a fejlesztőnek egy levelet.Ezen kívül használhatja a "
-"PayPal adományozás linket az oldal szélén ha pénzt szeretne adományozni.</"
-"div>"
+"projektnek szeretne adományozni (pl. egy mirrort),kérjük küldjon egy levelet "
+"a <a href=\"http://frugalware.org/mailman/listinfo/frugalware-devel"
+"\">frugalware-devel</a>listára (angolul), vagy ha nem szerente feliratkozni, "
+"írjon közvetlenül a vmiklos_kukac_frugalware_pont_org címre.Ha egy "
+"fejlesztőnek szerente adományozni, tekintse meg a <a "
+"href=\"/authors\">fejlesztők</a>oldalát és küldjön a fejlesztőnek egy "
+"levelet.Ezen kívül használhatja a PayPal adományozás linket az oldal szélén "
+"ha pénzt szeretne adományozni.</div>"
 
 #: ../donations.php:54
 msgid "Advertisers"
-msgstr ""
+msgstr "Hírdetők"
 
 #: ../donations.php:76
 msgid "The Frugalware Team"
 msgstr "A Frugalware Csapat"
 
-#: ../download.php:88
+#: ../download.php:89
 msgid "Archive"
 msgstr "Archívum"
 
-#: ../download.php:88
+#: ../download.php:89
 msgid ""
 "Unfortunately due our limited resources we cannot store our old stable "
 "versions, they are being removed shortly after a new official stable "
@@ -580,23 +625,27 @@ msgstr ""
 "#frugalware csatornán (freenode hálózat), vagy e-mailben valamelyik "
 "levelezési listánkon."
 
-#: ../header.php:53
-msgid "Releases"
-msgstr "Kiadások"
-
-#: ../header.php:56
-msgid "Recent updates"
-msgstr "Legfrissebb csomagok"
-
-#: ../header.php:57
+#: ../header.php:86
 msgid "Languages"
 msgstr "Nyelvek"
 
-#: ../header.php:58
+#: ../header.php:87
+msgid "Share"
+msgstr "Megosztás"
+
+#: ../header.php:88
+msgid "Recent updates"
+msgstr "Legfrissebb csomagok"
+
+#: ../header.php:89
+msgid "Releases"
+msgstr "Kiadások"
+
+#: ../header.php:90
 msgid "Information"
 msgstr "Információ"
 
-#: ../header.php:59
+#: ../header.php:91
 msgid "Server information"
 msgstr "Szerver információk"
 
@@ -608,6 +657,10 @@ msgstr "Uptime:<br /> %d nap %d ó %d p %d mp"
 #: ../header.inc.php:142
 msgid "Donate to support our development efforts."
 msgstr "Adományozzon, hogy segítse fejlesztési erőfeszítéseinket."
+
+#: ../header.inc.php:150
+msgid "Share Frugalware with your friends."
+msgstr "Oszd meg a Frugalware-t a barátaiddal."
 
 #: ../index.php:97 ../index.php:116
 msgid "Sorry, no news on your language, using English instead."
@@ -721,66 +774,71 @@ msgstr "Nyelvek"
 msgid "Link"
 msgstr "Link"
 
-#: ../packages.php:92
+#: ../packages.php:95
 msgid "Package search"
 msgstr "Csomag keresés"
 
-#: ../packages.php:93
+#: ../packages.php:96
 msgid "Search for:"
 msgstr "Keressen:"
 
-#: ../packages.php:94
+#: ../packages.php:97
 msgid "packages"
 msgstr "csomagok"
 
-#: ../packages.php:95
+#: ../packages.php:98
 msgid "Search in description"
 msgstr "Keresés a leírásokban"
 
-#: ../packages.php:96
+#: ../packages.php:99
 msgid "files"
 msgstr "file-ok"
 
-#: ../packages.php:97
+#: ../packages.php:100
 msgid "groups"
 msgstr "csoportok"
 
-#: ../packages.php:98
+#: ../packages.php:101
 msgid "Regular expression"
 msgstr "Reguláris kifejezés"
 
-#: ../packages.php:98
+#: ../packages.php:101
 msgid "(regular expression)"
 msgstr "(reguláris kifejezés)"
 
-#: ../packages.php:101 ../packages.php:341 ../packages.php:350
+#: ../packages.php:104 ../packages.php:342 ../packages.php:351
 msgid "Architecture:"
 msgstr "Architektúra:"
 
-#: ../packages.php:109 ../packages.php:341 ../packages.php:350
-#: ../packages.php:414
+#: ../packages.php:112 ../packages.php:342 ../packages.php:351
+#: ../packages.php:415
 msgid "Version:"
 msgstr "Verzió:"
 
-#: ../packages.php:121
+#: ../packages.php:124
 msgid "Search"
 msgstr "Keresés"
 
-#: ../packages.php:121
+#: ../packages.php:124
 msgid "Reset"
 msgstr "Törlés"
 
-#: ../packages.php:122
+#: ../packages.php:125
 #, php-format
 msgid "Searching in %d binary and %d source-only packages."
 msgstr "Keresés %d bináris és %d csak forrásként elérhető csomagban."
 
-#: ../packages.php:136
+#: ../packages.php:126
+#, php-format
+msgid "Check <a href=\"%s\">outdated</a> packages we are aware of."
+msgstr "Nézze meg az általunk is ismert <a href=\"%s\">elavult</a> csomagokat."
+
+#: ../packages.php:140
 msgid "You will need a Mozilla based browser to install a search plugin."
 msgstr ""
 "Egy Mozilla alapú böngészrőre lesz szüksége a kereső plugin telepítéséhez."
 
-#: ../packages.php:140
+#: ../packages.php:144
 msgid ""
 "Click <a href=\"javascript:addEngine()\">here</a> to install the Firefox "
 "search plugin."
@@ -788,15 +846,15 @@ msgstr ""
 "Kattintson <a href=\"javascript:addEngine()\">ide</a> a Firefox kereső "
 "plugin telepítéséhez."
 
-#: ../packages.php:193
+#: ../packages.php:196
 msgid "Error in the query, please change the searching conditions"
 msgstr "Hiba a lekérdezésben, kérlek változtasd meg a keresési feltételeket"
 
-#: ../packages.php:199
+#: ../packages.php:201
 msgid "No package found"
 msgstr "Nem található csomag"
 
-#: ../packages.php:236
+#: ../packages.php:237
 msgid "No such file or directory"
 msgstr "Nincs ilyen fájl vagy könyvtár"
 
@@ -812,164 +870,164 @@ msgstr "Csoportok listázása"
 msgid "Listing contents of group:"
 msgstr "Csoport tartalmának listázása:"
 
-#: ../packages.php:338 ../packages.php:347
+#: ../packages.php:338 ../packages.php:348
 msgid "Search result for:"
 msgstr "Keresési találatok: "
 
-#: ../packages.php:410
+#: ../packages.php:411
 msgid "Package information:"
 msgstr "Csomaginformáció:"
 
-#: ../packages.php:412
+#: ../packages.php:413
 msgid "Name:"
 msgstr "Név:"
 
-#: ../packages.php:413
+#: ../packages.php:414
 msgid "Parent:"
 msgstr "Szülő:"
 
-#: ../packages.php:416
+#: ../packages.php:417
 msgid "Documentation:"
 msgstr "Dokumentáció:"
 
-#: ../packages.php:418
+#: ../packages.php:419
 msgid "Buildlog:"
 msgstr "Fordítási napló:"
 
-#: ../packages.php:419
+#: ../packages.php:420
 msgid "Changelog:"
 msgstr "Changelog:"
 
-#: ../packages.php:423
+#: ../packages.php:424
 msgid "Groups:"
 msgstr "Csoportok:"
 
-#: ../packages.php:428
+#: ../packages.php:429
 msgid "URL:"
 msgstr "URL:"
 
-#: ../packages.php:431
+#: ../packages.php:432
 msgid "Depends:"
 msgstr "Függ:"
 
-#: ../packages.php:438
+#: ../packages.php:439
 msgid "Exact reverse depends:"
 msgstr "Pontosan ráépülő csomagok:"
 
-#: ../packages.php:445
+#: ../packages.php:446
 msgid "Other reverse depends:"
 msgstr "Egyéb ráépülő csomagok:"
 
-#: ../packages.php:452
+#: ../packages.php:453
 msgid "Conflicts:"
 msgstr "Ütközik:"
 
-#: ../packages.php:459
+#: ../packages.php:460
 msgid "Provides:"
 msgstr "Szolgáltatja:"
 
-#: ../packages.php:464
+#: ../packages.php:465
 msgid "Compressed size:"
 msgstr "Tömörített méret:"
 
-#: ../packages.php:465
+#: ../packages.php:466
 msgid "Uncompressed size:"
 msgstr "Tömörítetlen méret:"
 
-#: ../packages.php:466
+#: ../packages.php:467
 msgid "Arch:"
 msgstr "Architektúra:"
 
-#: ../packages.php:467
+#: ../packages.php:468
 msgid "Description:"
 msgstr "Leírás:"
 
 #. FIXME: latin -> utf8 conversion hardwired
-#: ../packages.php:469
+#: ../packages.php:470
 msgid "Maintainer:"
 msgstr "Karbantartó:"
 
-#: ../packages.php:470
+#: ../packages.php:471
 msgid "Uploaded by:"
 msgstr "Feltöltő:"
 
-#: ../packages.php:471
+#: ../packages.php:472
 msgid "Download:"
 msgstr "Letöltés:"
 
-#: ../packages.php:476
+#: ../packages.php:477
 msgid "Forums:"
 msgstr "Fórumok:"
 
-#: ../packages.php:476
+#: ../packages.php:477
 msgid "Related posts"
 msgstr "Kapcsolódó hozzászólások"
 
-#: ../packages.php:477
+#: ../packages.php:478
 msgid "Wiki:"
 msgstr "Wiki:"
 
-#: ../packages.php:477
+#: ../packages.php:478
 msgid "Related pages"
 msgstr "Kapcsolódó oldalak"
 
-#: ../packages.php:478
+#: ../packages.php:479
 msgid "Bug Tracking System:"
 msgstr "Hibakövető rendszer:"
 
-#: ../packages.php:478
+#: ../packages.php:479
 msgid "Related open bugs"
 msgstr "Kapcsolódó ismert hibák"
 
-#: ../packages.php:479
+#: ../packages.php:480
 msgid "Syndicate:"
 msgstr "Iratkozzon fel:"
 
-#: ../packages.php:479
+#: ../packages.php:480
 msgid "RSS"
 msgstr "RSS"
 
-#: ../packages.php:480
+#: ../packages.php:481
 msgid "SHA1 Sum:"
 msgstr "SHA1 Szumma:"
 
-#: ../packages.php:481
+#: ../packages.php:482
 msgid "Frugalware version:"
 msgstr "Frugalware verzió:"
 
-#: ../packages.php:482
+#: ../packages.php:483
 msgid "Updated:"
 msgstr "Frissítve:"
 
-#: ../packages.php:487 ../packages.php:538 ../packages.php:587
-#: ../packages.php:645 ../packages.php:675
+#: ../packages.php:488 ../packages.php:539 ../packages.php:588
+#: ../packages.php:646 ../packages.php:676
 msgid "No such package!"
 msgstr "Nincs ilyen csomag!"
 
-#: ../packages.php:523
+#: ../packages.php:524
 #, php-format
 msgid "Changelog for %s"
 msgstr "Changelog a %s számára"
 
-#: ../packages.php:534 ../packages.php:583
+#: ../packages.php:535 ../packages.php:584
 msgid "Sorry, currently no log available."
 msgstr "Sajnos jelenleg nem érhető el napló."
 
-#: ../packages.php:572
+#: ../packages.php:573
 #, php-format
 msgid "Build log for %s"
 msgstr "Fordítási napló: %s"
 
-#: ../packages.php:621
+#: ../packages.php:622
 #, php-format
 msgid "Documentation for %s"
 msgstr "Dokumentáció a(z) %s számára"
 
-#: ../packages.php:641
+#: ../packages.php:642
 msgid "Sorry, currently no documentation available."
 msgstr "Sajnos jelenleg nem érhető el dokumentáció."
 
-#: ../packages.php:660
+#: ../packages.php:661
 msgid "File list for"
 msgstr "Fájlok listája: "
 
@@ -1006,112 +1064,123 @@ msgid "Package updates"
 msgstr "Csomag frissítések"
 
 #: ../rss.php:192
+msgid ""
+"There is an optional suffix to filter the package parameters: [/&lt;"
+"version&gt;[&lt;arch&gt;[&lt;package&gt;]]]."
+msgstr ""
+
+#: ../rss.php:193
+msgid "Examples: "
+msgstr "Példák: "
+
+#: ../rss.php:194
 msgid "Blog posts"
 msgstr "Blog bejegyzések"
+
+#: ../rss.php:196
+msgid "New forums posts"
+msgstr "Új fórum bejegyzések"
 
 #: ../screenshots.php:32
 msgid "Splash screen"
 msgstr ""
 
 #: ../screenshots.php:34
-#, fuzzy
 msgid "Language selection"
-msgstr "Nyelvek"
+msgstr "Nyelv választás"
 
 #: ../screenshots.php:36
 msgid "Welcome Screen"
-msgstr ""
+msgstr "Üdvözlőképernyő"
 
 #: ../screenshots.php:38
-#, fuzzy
 msgid "Keyboard map"
-msgstr "Útiterv"
+msgstr "Billentyűzet-kiosztás"
 
 #: ../screenshots.php:40
 msgid "RAID Selection"
-msgstr ""
+msgstr "RAID kiválasztás"
 
 #: ../screenshots.php:42
 msgid "Selecting Hard Disk"
-msgstr ""
+msgstr "Diszk kiválasztása"
 
 #: ../screenshots.php:44
 msgid "Partitioning"
-msgstr ""
+msgstr "Partícionálás"
 
 #: ../screenshots.php:46
 msgid "Partitioning using cfdisk"
-msgstr ""
+msgstr "Partícionálás cfdisk használatával"
 
 #: ../screenshots.php:48 ../screenshots.php:50
 msgid "Setting up swap space"
-msgstr ""
+msgstr "Lapozóterület (swap) beállítása"
 
 #: ../screenshots.php:52
 msgid "Root partition selection"
-msgstr ""
+msgstr "Root partíció kiválasztása"
 
 #: ../screenshots.php:54
 msgid "Formatting root partition"
-msgstr ""
+msgstr "Root partició formázása"
 
 #: ../screenshots.php:56
 msgid "Creating filesystem"
-msgstr ""
+msgstr "Fájlrendszer létrehozása"
 
 #: ../screenshots.php:58
 msgid "Other partitions"
-msgstr ""
+msgstr "Egyéb partíciók"
 
 #: ../screenshots.php:60
 #, fuzzy
 msgid "Package selection"
-msgstr "Csomag keresés"
+msgstr "Csomagkiválasztás"
 
 #: ../screenshots.php:62 ../screenshots.php:64
 msgid "Selecting package categories"
-msgstr ""
+msgstr "Csomag kategóriák kiválasztása"
 
 #: ../screenshots.php:66
 msgid "Beginning installation"
-msgstr ""
+msgstr "Telepítés kezdete"
 
 #: ../screenshots.php:68
 msgid "Installing packages"
-msgstr ""
+msgstr "Csomagok telepítése"
 
 #: ../screenshots.php:70
 msgid "Setup MBR"
-msgstr ""
+msgstr "MBR beállítása"
 
 #: ../screenshots.php:72
-#, fuzzy
 msgid "Installing MBR"
-msgstr "Telepítő"
+msgstr "MBR telepíése"
 
 #: ../screenshots.php:74
 msgid "Installing modules"
-msgstr ""
+msgstr "Modulok telepítése"
 
 #: ../screenshots.php:76 ../screenshots.php:78
 msgid "Setting a root password"
-msgstr ""
+msgstr "Rendszergazda (root) jelszó beállítása"
 
 #: ../screenshots.php:80
 msgid "Creating user"
-msgstr ""
+msgstr "Új felhasználó létrehozása"
 
 #: ../screenshots.php:82
 msgid "Choosing a user name"
-msgstr ""
+msgstr "Felhasználónév megadása"
 
 #: ../screenshots.php:84
 msgid "Choosing a user password"
-msgstr ""
+msgstr "Jelszó megadása"
 
 #: ../screenshots.php:86
 msgid "Setup system hostname"
-msgstr ""
+msgstr "A számítógép nevének beállítása"
 
 #: ../screenshots.php:88
 #, fuzzy
@@ -1125,189 +1194,230 @@ msgstr "GNetconfig (hálózati beállító eszköz)"
 
 #: ../screenshots.php:92
 msgid "Applying settings"
-msgstr ""
+msgstr "Módosítások érvényre juttatása"
 
 #: ../screenshots.php:94
 msgid "Setting up system time"
-msgstr ""
+msgstr "Rendszeridő beállítása"
 
 #: ../screenshots.php:96
 msgid "Selecting Timezone"
-msgstr ""
+msgstr "Időzóna beállítása"
 
 #: ../screenshots.php:98
 msgid "Mouse configuration"
-msgstr ""
+msgstr "Egér beállítása"
 
 #: ../screenshots.php:100
 msgid "Installation success"
-msgstr ""
+msgstr "Telepítés sikeres"
 
 #: ../screenshots.php:103
 msgid "Bootloader (GRUB)"
-msgstr ""
+msgstr "Rendszerbetöltő (GRUB)"
 
 #: ../screenshots.php:105
 #, fuzzy
 msgid "Startup (Splash)"
-msgstr "Indítás"
+msgstr "Indítás (Splash)"
 
 #: ../screenshots.php:107 ../screenshots.php:109
 msgid "Startup (Console)"
-msgstr ""
+msgstr "Indítás (Konzol)"
 
 #: ../screenshots.php:111
 msgid "Console Login"
-msgstr ""
+msgstr "Konzol bejelentkezés"
 
 #: ../screenshots.php:113
 msgid "Console"
-msgstr ""
+msgstr "Konzol"
 
 #: ../screenshots.php:116
-msgid "08_kde_login.png"
-msgstr "kde belépés"
+msgid "KDM Login Screen"
+msgstr "KDM bejelentkező képernyő"
 
 #: ../screenshots.php:118
-msgid "09_kde.png"
-msgstr "kde"
+#, fuzzy
+msgid "Ksplash"
+msgstr "üdvözlő képernyő"
 
 #: ../screenshots.php:120
-msgid "10_kde_menu.png"
-msgstr "kde menü"
+msgid "Default KDE Desktop"
+msgstr "Alapértelmezett KDE Asztal"
 
-#: ../screenshots.php:123
+#: ../screenshots.php:122
+msgid "KDE Menu"
+msgstr "KDE menü"
+
+#: ../screenshots.php:124
+msgid "KDE Desktop with Konqueror"
+msgstr "KDE asztal Konquerorral"
+
+#: ../screenshots.php:126
+msgid "KDE with Cube"
+msgstr ""
+
+#: ../screenshots.php:129
 msgid "GDM Login Screen"
 msgstr "GDM bejelentkező képernyő"
 
-#: ../screenshots.php:125
+#: ../screenshots.php:131
 msgid "Default Gnome Desktop"
 msgstr "Alapértelmezett GNOME asztal"
 
-#: ../screenshots.php:127
+#: ../screenshots.php:133
 msgid "Gnome Menu"
 msgstr "GNOME menü"
 
-#: ../screenshots.php:129
+#: ../screenshots.php:135
 msgid "Web Browser"
 msgstr "Webböngésző"
 
-#: ../screenshots.php:131
-msgid "File Manager"
-msgstr "Fájlkezelő"
-
-#: ../screenshots.php:134
+#: ../screenshots.php:137
 #, fuzzy
-msgid "Login Screen (SliM)"
-msgstr "GDM bejelentkező képernyő"
+msgid "Gnome Apps"
+msgstr "GNOME menü"
 
-#: ../screenshots.php:136
+#: ../screenshots.php:140
+msgid "Login Screen (SliM)"
+msgstr "Bejelentkező képernyő (SliM)"
+
+#: ../screenshots.php:142
 msgid "Default XFCE Desktop"
 msgstr "Alapértelmezett XFCE Asztal"
 
-#: ../screenshots.php:138
+#: ../screenshots.php:144
 msgid "XFCE in Action"
 msgstr "XFCE bevetés közben"
 
-#: ../screenshots.php:140
+#: ../screenshots.php:146
 msgid "XFCE Menu"
 msgstr "XFCE menü"
 
-#: ../screenshots.php:142
+#: ../screenshots.php:148
 msgid "XFCE Terminal"
 msgstr "XFCE terminál"
 
-#: ../screenshots.php:145
+#: ../screenshots.php:151
 msgid "Gfpm"
 msgstr "Gfpm"
 
-#: ../screenshots.php:147
+#: ../screenshots.php:153
 msgid "Gfpm Synchronizing"
 msgstr "Gfpm szinkronizál"
 
-#: ../screenshots.php:149
+#: ../screenshots.php:155
 msgid "Repository Manager"
 msgstr "Repó-kezelő"
 
-#: ../screenshots.php:151 ../screenshots.php:162
+#: ../screenshots.php:157 ../screenshots.php:168
 msgid "Preferences Window"
 msgstr "Beállítások ablak"
 
-#: ../screenshots.php:153
+#: ../screenshots.php:159
 msgid "Optimizing Package Database"
 msgstr "Csomagadatbázis optimalizálása"
 
-#: ../screenshots.php:155
+#: ../screenshots.php:161
 msgid "Log Viewer"
 msgstr "Napló nézegető"
 
-#: ../screenshots.php:158
+#: ../screenshots.php:164
 msgid "Update Notification"
 msgstr "Frissítési értesítés"
 
-#: ../screenshots.php:160
+#: ../screenshots.php:166
 msgid "FUN Main Window"
 msgstr "FUN főablak"
 
-#: ../screenshots.php:165
+#: ../screenshots.php:171
 msgid "GNetconfig"
 msgstr "GNetconfig"
 
-#: ../screenshots.php:167
+#: ../screenshots.php:173
 msgid "GNetconfig - Interface Management"
 msgstr "GNetconfig - Interfész kezelés"
 
-#: ../screenshots.php:169
+#: ../screenshots.php:175
 msgid "GNetconfig - DNS Settings"
 msgstr "GNetconfig - DNS beállítások"
 
-#: ../screenshots.php:172
+#: ../screenshots.php:178
 msgid "gService - Main Window"
 msgstr "gService - Főablak"
 
-#: ../screenshots.php:174
+#: ../screenshots.php:180
 msgid "gService - Editing Runlevel Information"
 msgstr "gService - Futásszint adatok szerkesztése"
 
-#: ../screenshots.php:176
+#: ../screenshots.php:182
 msgid "gService - Minimal Interface"
 msgstr "gService - Minimális kezelőfelület"
 
-#: ../screenshots.php:183
+#: ../screenshots.php:185
+msgid "Openbox - by Lenezir"
+msgstr ""
+
+#: ../screenshots.php:187
+msgid "GNOME - by Pingax"
+msgstr ""
+
+#: ../screenshots.php:189
+msgid "XFCE - by Devil505"
+msgstr ""
+
+#: ../screenshots.php:191
+msgid "GNOME - by Slown"
+msgstr ""
+
+#: ../screenshots.php:193
+msgid "Openbox - by Botchchikii"
+msgstr ""
+
+#: ../screenshots.php:195
+msgid "KDE - by Centuri0"
+msgstr ""
+
+#: ../screenshots.php:202
+msgid "Screenshots from users"
+msgstr "Felhasználók képernyőmentései"
+
+#: ../screenshots.php:212
 msgid "Installer"
 msgstr "Telepítő"
 
-#: ../screenshots.php:191
+#: ../screenshots.php:220
 msgid "Startup"
 msgstr "Indítás"
 
-#: ../screenshots.php:199
+#: ../screenshots.php:228
 msgid "KDE Desktop"
 msgstr "KDE Asztal"
 
-#: ../screenshots.php:207
+#: ../screenshots.php:236
 msgid "GNOME Desktop"
 msgstr "GNOME Asztal"
 
-#: ../screenshots.php:215
+#: ../screenshots.php:244
 msgid "XFCE Desktop"
 msgstr "XFCE Asztal"
 
-#: ../screenshots.php:223
+#: ../screenshots.php:252
 msgid "GFpm (Package Manager)"
 msgstr "GFpm (csomagkezelő)"
 
-#: ../screenshots.php:231
+#: ../screenshots.php:260
 msgid "FUN (Update Notifier)"
 msgstr "FUN (frissítés-kezelő)"
 
-#: ../screenshots.php:239
+#: ../screenshots.php:268
 msgid "GNetconfig (Network Configuration Tool)"
 msgstr "GNetconfig (hálózati beállító eszköz)"
 
-#: ../screenshots.php:247
+#: ../screenshots.php:276
 msgid "gService (GUI Runlevel Editor)"
-msgstr ""
+msgstr "gService (Grafikus Futtatási szint Szerkesztő)"
 
 #: ../security.php:46
 msgid "Sorry, a security file has not been written yet."
@@ -1349,6 +1459,35 @@ msgstr "CVEk"
 msgid "Description"
 msgstr "Leírás"
 
+#~ msgid "National sites"
+#~ msgstr "Nemzeti oldalak"
+
+#~ msgid "Download"
+#~ msgstr "Letöltés"
+
+#~ msgid "ISO images"
+#~ msgstr "ISO képek"
+
+#~ msgid "File Manager"
+#~ msgstr "Fájlkezelő"
+
+#~ msgid "Map"
+#~ msgstr "Térkép"
+
+#, fuzzy
+#~ msgid ""
+#~ "Frugalware does not currently support languages written in ideographs."
+#~ msgstr "A Frugalware jelenleg nem támogatja az ázsiai nyelveket."
+
+#~ msgid "08_kde_login.png"
+#~ msgstr "kde belépés"
+
+#~ msgid "09_kde.png"
+#~ msgstr "kde"
+
+#~ msgid "10_kde_menu.png"
+#~ msgstr "kde menü"
+
 #~ msgid "01_grub.png"
 #~ msgstr "grub"
 
@@ -1366,9 +1505,6 @@ msgstr "Leírás"
 
 #~ msgid "06_console.png"
 #~ msgstr "konzol"
-
-#~ msgid "01_splash.png"
-#~ msgstr "üdvözlő képernyő"
 
 #~ msgid "02_lang.png"
 #~ msgstr "nyelv"
