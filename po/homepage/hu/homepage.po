@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-06-20 02:07+0200\n"
-"PO-Revision-Date: 2011-06-20 14:53+0200\n"
+"POT-Creation-Date: 2011-08-24 02:07+0200\n"
+"PO-Revision-Date: 2011-08-24 15:53+0200\n"
 "Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
 "Language-Team: <hu@li.org>\n"
 "Language: hu\n"
@@ -296,8 +296,8 @@ msgstr ""
 "és a PowerPC (ppc) processzorok támogatottak. Ha van rá igény, nyitunk egy "
 "i386 portot is, de jelenleg sajnos nincs erőforrásunk újrafordítani és "
 "kezelni ezeket a csomagokat. Jelenleg nincs nem-x86 architektúrájú "
-"hardverünk, de szívesen fogadunk bármilyen patch-et vagy erőfeszítést "
-"nem-x86-ra optimalizált csomagok készítéséhez."
+"hardverünk, de szívesen fogadunk bármilyen patch-et vagy erőfeszítést nem-"
+"x86-ra optimalizált csomagok készítéséhez."
 
 #: ../about.php:70
 msgid "How are compressed the Frugalware packages?"
@@ -318,9 +318,9 @@ msgstr ""
 "migráltunk libarchive-ra, mely megengedte a bzip2 tömörítést. Az élet szép "
 "volt de jött az lzma és elkészítettem a támogatást libarchive-hoz, bár "
 "másokat nem igazán érdekelt a váltás, így megmaradtunk .tar.bz2 mellett. Pár "
-"hónapja megérkezett az xz támogatás libarchive-ba (mely az lzma utódja), "
-"így átváltottunk arra. A pacman-g2 még mindig támogatja a .tar.gz valamint a "
-".tar.bz2 csomagokat is, valamint a csomagkiterjesztés .fpm marad mindvégig, "
+"hónapja megérkezett az xz támogatás libarchive-ba (mely az lzma utódja), így "
+"átváltottunk arra. A pacman-g2 még mindig támogatja a .tar.gz valamint a ."
+"tar.bz2 csomagokat is, valamint a csomagkiterjesztés .fpm marad mindvégig, "
 "hogy tisztázzuk ez egy Frugalware csomag."
 
 #: ../about.php:73
@@ -535,7 +535,7 @@ msgstr "Adományok"
 #: ../config.inc.php:95 ../config.inc.php:97 ../config.inc.php:99
 #: ../config.inc.php:101 ../config.inc.php:103 ../config.inc.php:105
 #: ../config.inc.php:107 ../config.inc.php:109 ../config.inc.php:111
-#: ../config.inc.php:113
+#: ../config.inc.php:114 ../config.inc.php:118
 msgid "Change language"
 msgstr "Váltson nyelvet"
 
@@ -595,10 +595,10 @@ msgstr ""
 "a <a href=\"http://frugalware.org/mailman/listinfo/frugalware-devel"
 "\">frugalware-devel</a>listára (angolul), vagy ha nem szerente feliratkozni, "
 "írjon közvetlenül a vmiklos_kukac_frugalware_pont_org címre.Ha egy "
-"fejlesztőnek szerente adományozni, tekintse meg a <a "
-"href=\"/authors\">fejlesztők</a>oldalát és küldjön a fejlesztőnek egy "
-"levelet.Ezen kívül használhatja a PayPal adományozás linket az oldal szélén "
-"ha pénzt szeretne adományozni.</div>"
+"fejlesztőnek szerente adományozni, tekintse meg a <a href=\"/authors"
+"\">fejlesztők</a>oldalát és küldjön a fejlesztőnek egy levelet.Ezen kívül "
+"használhatja a PayPal adományozás linket az oldal szélén ha pénzt szeretne "
+"adományozni.</div>"
 
 #: ../donations.php:54
 msgid "Advertisers"
@@ -1068,6 +1068,8 @@ msgid ""
 "There is an optional suffix to filter the package parameters: [/&lt;"
 "version&gt;[&lt;arch&gt;[&lt;package&gt;]]]."
 msgstr ""
+"Lehetőség van a csomag paraméterek szűrésére is: "
+"[/&lt;verzió&gt;[&lt;architektúra&gt;[&lt;csomag&gt;]]]."
 
 #: ../rss.php:193
 msgid "Examples: "
@@ -1083,7 +1085,7 @@ msgstr "Új fórum bejegyzések"
 
 #: ../screenshots.php:32
 msgid "Splash screen"
-msgstr ""
+msgstr "Splash képernyő"
 
 #: ../screenshots.php:34
 msgid "Language selection"
@@ -1134,7 +1136,6 @@ msgid "Other partitions"
 msgstr "Egyéb partíciók"
 
 #: ../screenshots.php:60
-#, fuzzy
 msgid "Package selection"
 msgstr "Csomagkiválasztás"
 
@@ -1183,14 +1184,12 @@ msgid "Setup system hostname"
 msgstr "A számítógép nevének beállítása"
 
 #: ../screenshots.php:88
-#, fuzzy
 msgid "Network configuration"
-msgstr "GNetconfig (hálózati beállító eszköz)"
+msgstr "Hálózat beállítása"
 
 #: ../screenshots.php:90
-#, fuzzy
 msgid "Network configuration - DHCP"
-msgstr "GNetconfig (hálózati beállító eszköz)"
+msgstr "GNetconfig (hálózati beállító eszköz) - DHCP"
 
 #: ../screenshots.php:92
 msgid "Applying settings"
@@ -1217,7 +1216,6 @@ msgid "Bootloader (GRUB)"
 msgstr "Rendszerbetöltő (GRUB)"
 
 #: ../screenshots.php:105
-#, fuzzy
 msgid "Startup (Splash)"
 msgstr "Indítás (Splash)"
 
@@ -1238,9 +1236,8 @@ msgid "KDM Login Screen"
 msgstr "KDM bejelentkező képernyő"
 
 #: ../screenshots.php:118
-#, fuzzy
 msgid "Ksplash"
-msgstr "üdvözlő képernyő"
+msgstr "KDE üdvözlő képernyő"
 
 #: ../screenshots.php:120
 msgid "Default KDE Desktop"
@@ -1256,7 +1253,7 @@ msgstr "KDE asztal Konquerorral"
 
 #: ../screenshots.php:126
 msgid "KDE with Cube"
-msgstr ""
+msgstr "KDE kockával"
 
 #: ../screenshots.php:129
 msgid "GDM Login Screen"
@@ -1275,9 +1272,8 @@ msgid "Web Browser"
 msgstr "Webböngésző"
 
 #: ../screenshots.php:137
-#, fuzzy
 msgid "Gnome Apps"
-msgstr "GNOME menü"
+msgstr "GNOME alkalmazások"
 
 #: ../screenshots.php:140
 msgid "Login Screen (SliM)"
@@ -1357,27 +1353,27 @@ msgstr "gService - Minimális kezelőfelület"
 
 #: ../screenshots.php:185
 msgid "Openbox - by Lenezir"
-msgstr ""
+msgstr "Openbox (beküldő: Lenezir)"
 
 #: ../screenshots.php:187
 msgid "GNOME - by Pingax"
-msgstr ""
+msgstr "GNOME (beküldő: Pingax)"
 
 #: ../screenshots.php:189
 msgid "XFCE - by Devil505"
-msgstr ""
+msgstr "XFCE (beküldő: Devil505)"
 
 #: ../screenshots.php:191
 msgid "GNOME - by Slown"
-msgstr ""
+msgstr "GNOME (beküldő: Slown)"
 
 #: ../screenshots.php:193
 msgid "Openbox - by Botchchikii"
-msgstr ""
+msgstr "Openbox (beküldő: Botchchikii)"
 
 #: ../screenshots.php:195
 msgid "KDE - by Centuri0"
-msgstr ""
+msgstr "KDE (beküldő: Centuri0)"
 
 #: ../screenshots.php:202
 msgid "Screenshots from users"
