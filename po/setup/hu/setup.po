@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-09 02:01+0100\n"
-"PO-Revision-Date: 2010-11-09 14:46+0200\n"
+"POT-Creation-Date: 2011-09-22 02:08+0200\n"
+"PO-Revision-Date: 2011-09-22 09:33+0200\n"
 "Last-Translator: Miklos Vajna <vmiklos@frugalware.org>\n"
 "Language-Team: <hu@li.org>\n"
 "Language: hu\n"
@@ -58,7 +58,7 @@ msgstr ""
 "letöltése érdekében."
 
 #: ../src/plugins/configsource.c:166 ../src/plugins/formatdisk.c:655
-#: ../src/plugins/partdisk.c:197
+#: ../src/plugins/partdisk.c:202
 msgid "Continue"
 msgstr "Folytatás"
 
@@ -88,8 +88,8 @@ msgstr ""
 "különösen figyelve arra, hogy érvényes IP címet és/vagy netmaskot adjon meg, "
 "ha statikus IP beállítást használ."
 
-#: ../src/plugins/configsource.c:203 ../src/plugins/select.c:422
-#: ../src/plugins/select.c:438 ../src/plugins/select.c:477
+#: ../src/plugins/configsource.c:203 ../src/plugins/select.c:421
+#: ../src/plugins/select.c:437 ../src/plugins/select.c:476
 msgid "Please wait"
 msgstr "Kérem várjon"
 
@@ -159,8 +159,8 @@ msgid "Journaling version of the ext2 filesystem"
 msgstr "Az ext2 fájlrendszer naplózó változata"
 
 #: ../src/plugins/formatdisk.c:236
-msgid "The evolution of the ext3 filesystem (EXPERIMENTAL!)"
-msgstr "Az ext3 fájlrendszer továbbfejlesztése (KÍSÉRLETI!)"
+msgid "The evolution of the ext3 filesystem"
+msgstr "Az ext3 fájlrendszer továbbfejlesztése"
 
 #: ../src/plugins/formatdisk.c:238
 msgid "Hans Reiser's journaling filesystem"
@@ -356,48 +356,53 @@ msgstr "Frugalware telepítő lemez a /dev/%s eszközön"
 msgid "Partitioning the disk drives"
 msgstr "A merevlemezek particionálása"
 
-#: ../src/plugins/partdisk.c:118
+#: ../src/plugins/partdisk.c:117
 msgid "User friendly (curses based) version of fdisk"
 msgstr "Az fdisk felhasználóbarát (curses alapú) verziója"
 
-#: ../src/plugins/partdisk.c:119
+#: ../src/plugins/partdisk.c:118
 msgid "The traditional partitioning program for Linux"
 msgstr "A hagyományos particionáló program Linux alá"
 
-#: ../src/plugins/partdisk.c:120 ../src/plugins/partdisk.c:127
+#: ../src/plugins/partdisk.c:119
+msgid "Works like fdisk, but uses GPT instead of MBR."
+msgstr "Úgy működik, mint az fdisk, de GPT-t használ MBR helyett"
+
+#: ../src/plugins/partdisk.c:120 ../src/plugins/partdisk.c:126
 msgid "A partition manipulation program"
 msgstr "Egy partíció-manipuláló program"
 
-#: ../src/plugins/partdisk.c:126
+#: ../src/plugins/partdisk.c:125
 msgid "Apple disk partitioning utility"
 msgstr "Apple partícionáló eszköz"
 
-#: ../src/plugins/partdisk.c:131 ../src/plugins/partdisk.c:183
+#: ../src/plugins/partdisk.c:136 ../src/plugins/partdisk.c:188
 msgid "Creating partitions"
 msgstr "Partíciók létrehozása"
 
-#: ../src/plugins/partdisk.c:134
+#: ../src/plugins/partdisk.c:139
 msgid "Select partitioning program"
 msgstr "Particionáló program kiválasztása"
 
-#: ../src/plugins/partdisk.c:135
+#: ../src/plugins/partdisk.c:140
 msgid "Select the program you want to use for partitioning:"
 msgstr ""
 "Válassza ki, hogy melyik programot kívánja használni a particionáláshoz:"
 
-#: ../src/plugins/partdisk.c:147
+#: ../src/plugins/partdisk.c:152
 msgid "Want to create RAID partitions?"
 msgstr "Szeretne RAID partíciókat létrehozni?"
 
-#: ../src/plugins/partdisk.c:148
+#: ../src/plugins/partdisk.c:153
 msgid "Do you want to create software RAID partitions during partitioning?"
-msgstr "Létre szeretne hozni szoftveres RAID partíciókat a particionálás során?"
+msgstr ""
+"Létre szeretne hozni szoftveres RAID partíciókat a particionálás során?"
 
-#: ../src/plugins/partdisk.c:177
+#: ../src/plugins/partdisk.c:182
 msgid "Disk drive not found"
 msgstr "Lemezmeghajtó nem található"
 
-#: ../src/plugins/partdisk.c:177
+#: ../src/plugins/partdisk.c:182
 msgid ""
 "Sorry, no hard disk drives were found in this computer. Press ENTER to "
 "reboot."
@@ -405,15 +410,15 @@ msgstr ""
 "Sajnos nem található merevlemez meghajtó a számítógépben. Üssön ENTER-t az "
 "újraindításhoz."
 
-#: ../src/plugins/partdisk.c:192
+#: ../src/plugins/partdisk.c:197
 msgid "Create RAID"
 msgstr "RAID építése"
 
-#: ../src/plugins/partdisk.c:200
+#: ../src/plugins/partdisk.c:205
 msgid "Select a hard disk to partition"
 msgstr "Válassza ki a particionálni kívánt merevlemezt"
 
-#: ../src/plugins/partdisk.c:201
+#: ../src/plugins/partdisk.c:206
 msgid ""
 "Please select a hard disk to partition. Once you are done, or in case you "
 "don't want to partition your disks at all, select 'Continue'. The following "
@@ -442,7 +447,7 @@ msgstr ""
 "ENTER-t az újraindításhoz."
 
 #: ../src/plugins/select.c:54 ../src/plugins/select.c:282
-#: ../src/plugins/select.c:419
+#: ../src/plugins/select.c:418
 msgid "Selecting packages"
 msgstr "Csomagok kiválasztása"
 
@@ -479,40 +484,40 @@ msgstr ""
 "normál menük használatához, vagy az 'igen'-t a csomagok egyesével való "
 "kiválasztását támogató haladó menükhöz."
 
-#: ../src/plugins/select.c:360 ../src/plugins/select.c:368
-#: ../src/plugins/select.c:382 ../src/plugins/select.c:386
+#: ../src/plugins/select.c:359 ../src/plugins/select.c:367
+#: ../src/plugins/select.c:381 ../src/plugins/select.c:385
 msgid "Error"
 msgstr "Hiba"
 
-#: ../src/plugins/select.c:360
+#: ../src/plugins/select.c:359
 #, c-format
 msgid "Failed to parse pacman-g2 configuration file (%s)"
 msgstr "Nem sikerült értelmezni a pacman-g2 beállítási fájlját (%s)"
 
-#: ../src/plugins/select.c:368
+#: ../src/plugins/select.c:367
 #, c-format
 msgid "Could not register '%s' database (%s)"
 msgstr "Nem sikerült regisztrálni a '%s' adatbázist (%s)"
 
-#: ../src/plugins/select.c:382
+#: ../src/plugins/select.c:381
 #, c-format
 msgid "Failed to synchronize %s"
 msgstr "Nem sikerült szinkronizálni a %s adatbázist"
 
-#: ../src/plugins/select.c:386
+#: ../src/plugins/select.c:385
 #, c-format
 msgid "Failed to update %s (%s)"
 msgstr "Nem sikerült frissiteni: %s (%s)"
 
-#: ../src/plugins/select.c:422
+#: ../src/plugins/select.c:421
 msgid "Searching for categories..."
 msgstr "Kategóriák keresése..."
 
-#: ../src/plugins/select.c:438
+#: ../src/plugins/select.c:437
 msgid "Searching for packages..."
 msgstr "Csomagok keresése..."
 
-#: ../src/plugins/select.c:477
+#: ../src/plugins/select.c:476
 msgid "Searching for missing dependencies..."
 msgstr "Hiányzó függőségek keresése..."
 
