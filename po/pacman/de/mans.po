@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 02:08+0300\n"
-"PO-Revision-Date: 2011-09-23 12:44+0200\n"
+"POT-Creation-Date: 2011-10-16 02:08+0300\n"
+"PO-Revision-Date: 2011-10-16 12:17+0200\n"
 "Last-Translator: Balint <balint@krizsan.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -807,6 +807,15 @@ msgid ""
 "\tremoved from a system. See 'HANDLING CONFIG FILES' in the `pacman-g2` manual\n"
 "\tpage for more information.\n"
 msgstr ""
+"backup (array)::\tEin leerzeichen-getrenntes Array von Dateinamen (ohne "
+"voranstehenden Schrägstrich).\n"
+"\tDie Backup-Zeile wird in die Paket Meta-Informations-Datei für pacman-g2 "
+"übertragen.\n"
+"\tDiese wird alle Dateien benennen, die gesichert werden müssen, wenn dieses "
+"Paket\n"
+"\t jemals entfernt wird. Für mehr Informationen siehe die 'HANDLING CONFIG "
+"FILES' in den\n"
+"\t `pacman-g2`-Manual-Seiten.\n"
 
 # type: Plain text
 #. type: Plain text
@@ -822,6 +831,14 @@ msgid ""
 "\tthan). See the FrugalBuild example above for an example of the depends\n"
 "\tdirective.\n"
 msgstr ""
+"depends (array)::\n"
+"\tEin Array von Paketen welche dieses Paket benötigt um erstellt werden zu können und um zu laufen.\n"
+"\tPakete in dieser Liste sollten von einzelnen Anführungszeichen umgeben sein und mindestens\n"
+"\tden Paketnamen enthalten. Sie können außerdem eine Versionsvorraussetzung der Form\n"
+"\t'Name<>Version' enthalten, wobei <> einer der folgenden Vergleiche ist: >= (größer als\n"
+"\toder gleich wie), <= (kleiner als or gleich wie), = (gleich wie), > (größer als), oder < (kleiner\n"
+"\tals). Siehe das FrugalBuild Beispiel oben für ein Beispiel der Abhängigkeiten\n"
+"\tRichtlinie.\n"
 
 # type: Plain text
 #. type: Plain text
@@ -832,6 +849,10 @@ msgid ""
 "\tAn array of packages that this package depends on to build (ie, not required to\n"
 "\trun). Packages in this list should follow the same format as depends.\n"
 msgstr ""
+"makedepends (array)::\n"
+"\tEin Array von Paketen die dieses Paket benötigt um erstellt werden zu können (d.h.\n"
+"\tes muss nicht laufen können). Pakete in dieser Liste sollten das gleiche Format einhalten\n"
+"\twie die Abhängigkeiten (depends)\n"
 
 # type: Plain text
 #. type: Plain text
@@ -845,6 +866,15 @@ msgid ""
 "\tdoesn't require that dcron be installed.) Packages in this list should follow\n"
 "\tthe same format as depends.\n"
 msgstr ""
+"rodepends (array)::\n"
+"\tEin Array von Paketen, die dieses Paket benötigt, um zu laufen (d.h. nicht "
+"zum Bauen\n"
+"\tbenötigt). Generell sollten rodepends zugungsten von depends vermieden "
+"werden,\n"
+"\tes sei denn, diese sorgen für Abhängigkeiten, die sich \"im Kreis drehen\".\n"
+"\t(z.B. verlangt das Bauen von logrotate nicht, dass dcron installiert ist.) "
+"Pakete\n"
+"\tin dieser Liste sollten das gleiche Format aufweisen wie bei depends.\n"
 
 # type: Plain text
 #. type: Plain text
@@ -856,6 +886,10 @@ msgid ""
 "\tbe installed at the same time). This directive follows the same format as\n"
 "\tdepends except you cannot specify versions here, only package names.\n"
 msgstr ""
+"conflicts (array)::\n"
+"\tEin Array von Paketen, die mit diesem Paket in Konflikt stehen (d.h. sie können beide\n"
+"\tnicht zur selben Zeit installiert sein). Pakete in dieser Liste sollten das gleiche Format einhalten\n"
+"\twie die Abhängigkeiten (depends), außer dass Sie hier keine Versionen angeben können, nur Paketnamen."
 
 # type: Plain text
 #. type: Plain text
@@ -902,8 +936,7 @@ msgid ""
 "\tThis is an array of various boolean options. The possible values are:\n"
 msgstr ""
 "options (array)::\n"
-"\tDies ist ein Array verschiedener Boolean-Optionen. Die möglichen Werte "
-"sind:\n"
+"\tDies ist ein Array verschiedener Boolean-Optionen. Die möglichen Werte sind:\n"
 
 # type: Plain text
 #. type: Plain text
