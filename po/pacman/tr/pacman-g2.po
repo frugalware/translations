@@ -1,0 +1,1243 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-24 02:08+0200\n"
+"PO-Revision-Date: 2011-10-20 11:06+0200\n"
+"Last-Translator: Tutku Dalmaz <tutkudalmaz@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 2.0.2\n"
+
+#: ../add.c:69 ../deptest.c:64 ../remove.c:83 ../sync.c:321 ../sync.c:360
+#, c-format
+msgid ""
+"       if you're sure a package manager is not already running,\n"
+"       you can remove %s%s\n"
+msgstr ""
+"       Eğer paket yöneticisinin zaten çalışmadığından eminseniz.\n"
+"       %s%s paketini kaldırabilirsiniz\n"
+
+#. and add targets to it
+#: ../add.c:76
+msgid "loading package data... "
+msgstr "paket verisi yükleniyor..."
+
+#: ../add.c:79 ../remove.c:101 ../remove.c:112
+#, c-format
+msgid "failed to add target '%s' (%s)\n"
+msgstr "'%s' (%s) hedifinin eklenmesi başarısız oldu\n"
+
+#: ../add.c:84 ../sync.c:284 ../trans.c:76 ../trans.c:83 ../trans.c:87
+#: ../trans.c:99 ../trans.c:113 ../trans.c:129 ../trans.c:141
+msgid "done.\n"
+msgstr "tamam.\n"
+
+#: ../add.c:92 ../remove.c:123 ../sync.c:468
+#, c-format
+msgid "failed to prepare transaction (%s)\n"
+msgstr "(%s) işlemi hazırlığı başarısız oldu\n"
+
+#: ../add.c:97
+#, c-format
+msgid ":: %s: requires %s"
+msgstr ":: %s: %s paketine gereksinim duyar"
+
+#: ../add.c:111 ../sync.c:489
+#, c-format
+msgid ":: %s: conflicts with %s"
+msgstr ":: %s: %s paketi ile çakışır"
+
+#: ../add.c:121 ../sync.c:614
+#, c-format
+msgid "%s%s exists in \"%s\" (target) and \"%s\" (target)"
+msgstr "%s%s \"%s\" (hedef) ve \"%s\" (hedef) içerisinde var"
+
+#: ../add.c:128 ../sync.c:621
+#, c-format
+msgid "%s: %s%s exists in filesystem"
+msgstr "%s: %s%s dosya sistemi içerisinde var"
+
+#: ../add.c:136 ../sync.c:639
+msgid ""
+"\n"
+"errors occurred, no packages were upgraded.\n"
+msgstr ""
+"\n"
+"hata oluştu. hiçbir paket yükseltilemedi.\n"
+
+#: ../add.c:143 ../sync.c:499
+#, c-format
+msgid ":: %.1f MB required, have %.1f MB"
+msgstr ":: %.1f MB alan gerekli. %.1f MB alanınız var"
+
+#: ../add.c:157 ../remove.c:163 ../sync.c:607
+#, c-format
+msgid "failed to commit transaction (%s)\n"
+msgstr "(%s) işlem teslimi başarısız oldu\n"
+
+#: ../add.c:164 ../remove.c:173 ../sync.c:353 ../sync.c:652
+#, c-format
+msgid "failed to release transaction (%s)\n"
+msgstr "(%s) işlem bitirilmesi başarısız oldu\n"
+
+#: ../deptest.c:77
+msgid "memory allocation failure\n"
+msgstr "bellek paylaştırma hatası\n"
+
+#: ../deptest.c:87
+#, c-format
+msgid "add target %s\n"
+msgstr "%s hedefini ekle\n"
+
+#: ../deptest.c:90
+#, c-format
+msgid "could not add target (%s)\n"
+msgstr "(%s) hedefi eklenemedi\n"
+
+#: ../deptest.c:110
+#, c-format
+msgid "requires: %s"
+msgstr "gereksinim duyulan: %s"
+
+#: ../deptest.c:126
+#, c-format
+msgid "conflict: %s"
+msgstr "çakışan: %s"
+
+#: ../deptest.c:140 ../deptest.c:158
+#, c-format
+msgid "could not release transaction (%s)"
+msgstr "(%s) işlemi bırakılamadı"
+
+#: ../list.c:143 ../list.c:171
+#, c-format
+msgid "None\n"
+msgstr "Hiç\n"
+
+#: ../log.c:58
+#, c-format
+msgid "debug"
+msgstr "hata ayıklama"
+
+#: ../log.c:61
+#, c-format
+msgid "error"
+msgstr "hata"
+
+#: ../log.c:64
+#, c-format
+msgid "warning"
+msgstr "uyarı"
+
+#: ../log.c:67
+#, c-format
+msgid "flow1"
+msgstr "akış1"
+
+#: ../log.c:70
+#, c-format
+msgid "flow2"
+msgstr "akış2"
+
+#: ../log.c:73
+#, c-format
+msgid "function"
+msgstr "işlev"
+
+#: ../log.c:164
+msgid "Y"
+msgstr "Y"
+
+#: ../log.c:164
+msgid "YES"
+msgstr "EVET"
+
+#: ../log.h:26
+msgid "error: "
+msgstr "hata:"
+
+#: ../log.h:30
+msgid "warning: "
+msgstr "uyarı:"
+
+#: ../package.c:50
+#, c-format
+msgid "Name           : %s\n"
+msgstr "İsim           :%s\n"
+
+#: ../package.c:51
+#, c-format
+msgid "Version        : %s\n"
+msgstr "Sürüm        :%s\n"
+
+#: ../package.c:53
+msgid "Groups         :"
+msgstr "Gruplar         :"
+
+#: ../package.c:55
+#, c-format
+msgid "Packager       : %s\n"
+msgstr "Paketleyen       :%s\n"
+
+#: ../package.c:57
+msgid "License        :"
+msgstr "Lisans        :"
+
+#: ../package.c:58
+#, c-format
+msgid "Architecture   : %s\n"
+msgstr "Mimari   :%s\n"
+
+#: ../package.c:59
+#, c-format
+msgid "Size           : %ld\n"
+msgstr "Boyut           :%ld\n"
+
+#: ../package.c:62
+#, c-format
+msgid "Build Date     : %s %s\n"
+msgstr "Paket Tarihi     :%s%s\n"
+
+#: ../package.c:64
+#, c-format
+msgid "Build Type     : %s\n"
+msgstr "Paket Tipi    :%s\n"
+
+#: ../package.c:64
+msgid "Unknown"
+msgstr "Bilinmiyor"
+
+#: ../package.c:66
+#, c-format
+msgid "Install Date   : %s %s\n"
+msgstr "Kurulum Tarihi   :%s%s\n"
+
+#: ../package.c:68
+#, c-format
+msgid "Install Script : %s\n"
+msgstr "Kurulum Betiği: %s\n"
+
+#: ../package.c:68
+msgid "Yes"
+msgstr "Evet"
+
+#: ../package.c:68
+msgid "No"
+msgstr "Hayır"
+
+#: ../package.c:70
+#, c-format
+msgid "Reason         : "
+msgstr "Sebep         : "
+
+#: ../package.c:73
+#, c-format
+msgid "Explicitly installed\n"
+msgstr "Belirgin bir şekilde kurulu\n"
+
+#: ../package.c:76
+#, c-format
+msgid "Installed as a dependency for another package\n"
+msgstr "Diğer bir paketin bağımlılığı olarak kurulmuş durumda\n"
+
+#: ../package.c:79
+#, c-format
+msgid "Unknown\n"
+msgstr "Bilinmiyor\n"
+
+#: ../package.c:83
+msgid "Provides       :"
+msgstr "Sağladıkları       :"
+
+#: ../package.c:84
+msgid "Depends On     :"
+msgstr "Bağımlı oldukları    :"
+
+#: ../package.c:85
+msgid "Removes        :"
+msgstr "Kaldırdıkları       :"
+
+#: ../package.c:86
+msgid "Required By    :"
+msgstr "Gereksinim Duyan    :"
+
+#: ../package.c:87
+msgid "Conflicts With :"
+msgstr "Çakıştıkları:"
+
+#: ../package.c:89
+#, c-format
+msgid "Description    : "
+msgstr "Tanımlama   : "
+
+#: ../package.c:114
+#, c-format
+msgid "error calculating md5sum or sha1sum for %s\n"
+msgstr "%s için md5sum ya da sha1sum hesaplanmasında hata\n"
+
+#: ../package.c:119
+#, c-format
+msgid "NOT MODIFIED\t%s\n"
+msgstr "DEĞİŞTİRİLMEDİ\t%s\n"
+
+#: ../package.c:121
+#, c-format
+msgid "MODIFIED\t%s\n"
+msgstr "DEĞİŞTİRİLDİ\t%s\n"
+
+#: ../package.c:126
+#, c-format
+msgid "MISSING\t\t%s\n"
+msgstr "KAYIP\t\t%s\n"
+
+#: ../package.c:144
+#, c-format
+msgid "Repository        : %s\n"
+msgstr "Depo        :%s\n"
+
+#: ../package.c:145
+#, c-format
+msgid "Name              : %s\n"
+msgstr "İsim          :%s\n"
+
+#: ../package.c:146
+#, c-format
+msgid "Version           : %s\n"
+msgstr "Sürüm        :%s\n"
+
+#: ../package.c:148
+msgid "Groups            :"
+msgstr "Gruplar            :"
+
+#: ../package.c:149
+msgid "Provides          :"
+msgstr "Sağlayıcılar          :"
+
+#: ../package.c:150
+msgid "Depends On        :"
+msgstr "Bağımlılıklar        :"
+
+#: ../package.c:151
+msgid "Removes           :"
+msgstr "Kaldırdıkları           :"
+
+#: ../package.c:152
+msgid "Conflicts With    :"
+msgstr "Çakıştıkları    :"
+
+#: ../package.c:153
+msgid "Replaces          :"
+msgstr "Yer Değiştirdikleri          :"
+
+#: ../package.c:155
+#, c-format
+msgid "Size (compressed) : %ld\n"
+msgstr "Boyut (sıkıştırılmış) %ld\n"
+
+#: ../package.c:156
+#, c-format
+msgid "Size (installed)  : %ld\n"
+msgstr "Boyut (kurulu)  :%ld\n"
+
+#: ../package.c:157
+#, c-format
+msgid "Description       : "
+msgstr "Tanımlama       : "
+
+#: ../package.c:161
+#, c-format
+msgid ""
+"\n"
+"MD5 Sum           : %s"
+msgstr ""
+"\n"
+"MD5 Sum           :%s"
+
+#: ../package.c:165
+#, c-format
+msgid ""
+"\n"
+"SHA1 Sum          : %s"
+msgstr ""
+"\n"
+"SHA1 Sum :           %s"
+
+#: ../package.c:194
+#, c-format
+msgid "No changelog available for '%s'.\n"
+msgstr "'%s' paketi için hazır olan sürüm notu yok.\n"
+
+#: ../pacman-g2.c:112
+#, c-format
+msgid "usage:  %s {-h --help}\n"
+msgstr "kullanım:  %s{-h --help}\n"
+
+#: ../pacman-g2.c:113
+#, c-format
+msgid "        %s {-V --version}\n"
+msgstr "        %s {-V --version}\n"
+
+#: ../pacman-g2.c:114
+#, c-format
+msgid "        %s {-A --add}     [options] <file>\n"
+msgstr "        %s {-A --add}     [seçenekler]<file>\n"
+
+#: ../pacman-g2.c:115
+#, c-format
+msgid "        %s {-R --remove}  [options] <package>\n"
+msgstr "        %s {-R --remove}  [seçenekler]<package>\n"
+
+#: ../pacman-g2.c:116
+#, c-format
+msgid "        %s {-U --upgrade} [options] <file>\n"
+msgstr "        %s {-U --upgrade} [seçenekler] <file>\n"
+
+#: ../pacman-g2.c:117
+#, c-format
+msgid "        %s {-F --freshen} [options] <file>\n"
+msgstr "        %s {-F --freshen} [seçenekler] <file>\n"
+
+#: ../pacman-g2.c:118
+#, c-format
+msgid "        %s {-Q --query}   [options] [package]\n"
+msgstr "       %s {-Q --query} [seçenekler][paket]\n"
+
+#: ../pacman-g2.c:119
+#, c-format
+msgid "        %s {-S --sync}    [options] [package]\n"
+msgstr "        %s {-S --sync} [seçenekler][paket]\n"
+
+#: ../pacman-g2.c:120
+#, c-format
+msgid "        %s {-P --ps}      [options]\n"
+msgstr "%s {-P --ps} [seçenekler]\n"
+
+#: ../pacman-g2.c:121
+#, c-format
+msgid ""
+"\n"
+"use '%s --help' with other options for more syntax\n"
+msgstr ""
+"\n"
+"dafa fazla sözdizimi için '%s --help' komutunu diğer seçenkler ile "
+"kullanınıaz\n"
+
+#: ../pacman-g2.c:124
+#, c-format
+msgid "usage:  %s {-A --add} [options] <file>\n"
+msgstr "kullanım:  %s{-A --add} [seçenekler] <file>\n"
+
+#: ../pacman-g2.c:125 ../pacman-g2.c:131 ../pacman-g2.c:143 ../pacman-g2.c:148
+#: ../pacman-g2.c:166
+#, c-format
+msgid "options:\n"
+msgstr "seçenekler:\\"
+
+#: ../pacman-g2.c:126 ../pacman-g2.c:133 ../pacman-g2.c:144 ../pacman-g2.c:168
+#, c-format
+msgid "  -d, --nodeps        skip dependency checks\n"
+msgstr "  -d, --nodeps        bağımlılık denetimini atla\n"
+
+#: ../pacman-g2.c:127 ../pacman-g2.c:145 ../pacman-g2.c:170
+#, c-format
+msgid "  -f, --force         force install, overwrite conflicting files\n"
+msgstr "  -f --force         kurulumu zorla, çakışan dosyaların üzerine yaz\n"
+
+#: ../pacman-g2.c:128
+#, c-format
+msgid ""
+"      --noarch        install the package, even if it is for an other arch\n"
+msgstr "     --noarch        başka bir mimari için olsa bile paketi kur\n"
+
+#: ../pacman-g2.c:130
+#, c-format
+msgid "usage:  %s {-R --remove} [options] <package>\n"
+msgstr "kullanım:  %s {-R --remove} [seçenekler] <paket>\n"
+
+#: ../pacman-g2.c:132
+#, c-format
+msgid ""
+"  -c, --cascade       remove packages and all packages that depend on them\n"
+msgstr ""
+"  -c, --cascade       paketleri ve bunlara bağlı tüm paketleri kaldır\n"
+
+#: ../pacman-g2.c:134
+#, c-format
+msgid "  -k, --dbonly        only remove database entry, do not remove files\n"
+msgstr ""
+"  -k, --dbonly       sadece veritabanı girdilerini sil, dosyaları silme\n"
+
+#: ../pacman-g2.c:135
+#, c-format
+msgid "  -n, --nosave        remove configuration files as well\n"
+msgstr "  -n, --nosave        yapılandırma dosyalarını olabildiğince kaldır\n"
+
+#: ../pacman-g2.c:136
+#, c-format
+msgid ""
+"  -s, --recursive     remove dependencies also (that won't break packages)\n"
+msgstr "  -s, --recursive     bağımlılıkları da kaldır(paketleri bozmaz)\n"
+
+#: ../pacman-g2.c:139
+#, c-format
+msgid "usage:  %s {-F --freshen} [options] <file>\n"
+msgstr "kullanım:  %s {-F --freshen} [seçenekler] <file>\n"
+
+#: ../pacman-g2.c:141
+#, c-format
+msgid "usage:  %s {-U --upgrade} [options] <file>\n"
+msgstr "kullanım:  %s {-U --upgrade} [seçenekler] <file>\n"
+
+#: ../pacman-g2.c:147
+#, c-format
+msgid "usage:  %s {-Q --query} [options] [package]\n"
+msgstr "kullanım:  %s {-Q --query} [seçenekler] [paket]\n"
+
+#: ../pacman-g2.c:149
+#, c-format
+msgid "  -c, --changelog     view the changelog of a package\n"
+msgstr "  -c, --changelog     bir paketin sürüm notlarını görüntüle\n"
+
+#: ../pacman-g2.c:150
+#, c-format
+msgid ""
+"  -d, --nodeps        if used with -e, list packages that were not "
+"installed\n"
+msgstr ""
+"  -d, --nodeps        eğer -e parametresi ile birlikte kullanılırsa, kurulu "
+"olmayan paketleri listeler\n"
+
+#: ../pacman-g2.c:151
+#, c-format
+msgid "                      as a dependency\n"
+msgstr "                     bağımlılık olarak\n"
+
+#: ../pacman-g2.c:152
+#, c-format
+msgid ""
+"  -e, --orphans       list all packages that were installed as a dependency\n"
+msgstr ""
+"  -e, --orphans      bağımlılık sebebiyle kurulan tüm paketleri listeler\n"
+
+#: ../pacman-g2.c:153
+#, c-format
+msgid "                      and are not required by any other packages\n"
+msgstr ""
+"                      ve diğer paketler tarafından gereksinim duyulmayanlar\n"
+
+#: ../pacman-g2.c:154
+#, c-format
+msgid "  -f, --fsck          check the integrity of packages' files\n"
+msgstr "-f, --fsck paket dosyaları bütünlüğünü denetle\n"
+
+#: ../pacman-g2.c:155 ../pacman-g2.c:171
+#, c-format
+msgid "  -g, --groups        view all members of a package group\n"
+msgstr "  -g, --groups        bir paket grubunun tüm üyelerini görüntüle\n"
+
+#: ../pacman-g2.c:156
+#, c-format
+msgid "  -i, --info          view package information\n"
+msgstr "  -i, --info          paket bilgilerini görünler\n"
+
+#: ../pacman-g2.c:157
+#, c-format
+msgid "  -l, --list          list the contents of the queried package\n"
+msgstr "  -l, --list          sorgulanan pakerin içeriğini listeler\n"
+
+#: ../pacman-g2.c:158
+#, c-format
+msgid ""
+"  -m, --foreign       list all packages that were not found in the sync db"
+"(s)\n"
+msgstr ""
+"  -m, --foreign       eşlenecek veritabanında bulunamayan tüm pakerleri "
+"listeler\n"
+
+#: ../pacman-g2.c:159
+#, c-format
+msgid "  -o, --owns <file>   query the package that owns <file>\n"
+msgstr "  -0, --owns<file>   <file> dosyasının sahiplendiği paketi sorgular\n"
+
+#: ../pacman-g2.c:160
+#, c-format
+msgid ""
+"  -p, --file          pacman-g2 will query the package file [package] "
+"instead of\n"
+msgstr ""
+"  -p, --file          yerine pacman-g2 [paket] paket dosyasını sorgular\n"
+
+#: ../pacman-g2.c:161
+#, c-format
+msgid "                      looking in the database\n"
+msgstr "                      veritabanında aranıyor\n"
+
+#: ../pacman-g2.c:162
+#, c-format
+msgid ""
+"  -s, --search        search locally-installed packages for matching "
+"strings\n"
+msgstr ""
+"  -s, --search        eşlenen karakter katarları için yerel olarak kurulu "
+"olan paketleri arar\n"
+
+#: ../pacman-g2.c:163
+#, c-format
+msgid "  -t, --test          search problems in the local database\n"
+msgstr "  -t, --test          yerel veritabanındaki sorunlar araştırılır\n"
+
+#: ../pacman-g2.c:165
+#, c-format
+msgid "usage:  %s {-S --sync} [options] [package]\n"
+msgstr "kullanım:  %s {-S --sync} [seçenekler] [paket]\n"
+
+#: ../pacman-g2.c:167
+#, c-format
+msgid ""
+"  -c, --clean         remove old packages from cache directory (use -cc for "
+"all)\n"
+msgstr ""
+"  -c, --clean          önbellek dizininden eski paketler kaldırılır(tüm "
+"paketler için -cc parametresini kullanın)\n"
+
+#: ../pacman-g2.c:169
+#, c-format
+msgid "  -e, --dependsonly   install dependencies only\n"
+msgstr "  -e, --dependsonly   sadece bağımlılıklar kurulur\n"
+
+#: ../pacman-g2.c:172
+#, c-format
+msgid ""
+"  -p, --print-uris    print out URIs for given packages and their "
+"dependencies\n"
+msgstr ""
+"  -p, --print-uris    belirlenen paket ve paketin bağımlılıkları için "
+"URI'leri yazar\n"
+
+#: ../pacman-g2.c:173
+#, c-format
+msgid "  -s, --search        search remote repositories for matching strings\n"
+msgstr ""
+"  -s, --search       eşlenen karakter katarları için uzak depoları "
+"araştırır\n"
+
+#: ../pacman-g2.c:174
+#, c-format
+msgid "  -u, --sysupgrade    upgrade all packages that are out of date\n"
+msgstr ""
+"  -u, --sysupgrade    güncelliğini kaybetmiş olan tüm paketleri günceller\n"
+
+#: ../pacman-g2.c:175
+#, c-format
+msgid ""
+"  -w, --downloadonly  download packages but do not install/upgrade anything\n"
+msgstr ""
+"  -w, --downloadonly  paketleri indirir, fakat kurulum ya da yükseltme "
+"yapmaz\n"
+
+#: ../pacman-g2.c:176
+#, c-format
+msgid ""
+"  -y, --refresh       download fresh package databases from the server\n"
+msgstr "  -y, --refresh       sunucudan güncel paket veritabanlarını indirir\n"
+
+#: ../pacman-g2.c:177
+#, c-format
+msgid ""
+"      --ignore <pkg>  ignore a package upgrade (can be used more than once)\n"
+msgstr ""
+"      --ignoner <pkg>  paket güncellemesini iptal et (birden fazla paket adı "
+"kullanılabilir)\n"
+
+#: ../pacman-g2.c:178
+#, c-format
+msgid ""
+"      --nointegrity   don't check the integrity of the packages using sha1\n"
+msgstr ""
+"      --nointegrity   paketleri sha1 kullanarak bütünlük testi yapmaz\n"
+
+#: ../pacman-g2.c:180
+#, c-format
+msgid "      --config <path> set an alternate configuration file\n"
+msgstr "      --config <path> alternatif bir yapılandırma dosyası belirler\n"
+
+#: ../pacman-g2.c:181
+#, c-format
+msgid "      --noconfirm     do not ask for anything confirmation\n"
+msgstr "      --noconfirm     doğrulama için hiçbirşey sormaz\n"
+
+#: ../pacman-g2.c:182
+#, c-format
+msgid "      --ask  <number> pre-specify answers for questions (see manpage)\n"
+msgstr ""
+"      --ask  <number> sorular için cevapları önceden belirler(detaylar için "
+"man sayfasına bakınız)\n"
+
+#: ../pacman-g2.c:183
+#, c-format
+msgid ""
+"      --noprogressbar do not show a progress bar when downloading files\n"
+msgstr ""
+"      --noprogressbar dosyalar indirilirken ilerleme çubuğu gösterilmez\n"
+
+#: ../pacman-g2.c:184
+#, c-format
+msgid ""
+"      --noscriptlet   do not execute the install scriptlet if there is any\n"
+msgstr "      --noscriptlet   olmadığı takdirde kurulum betiğini işletme\n"
+
+#: ../pacman-g2.c:185
+#, c-format
+msgid "      --regex         treat targets as regexs if no package found\n"
+msgstr ""
+"      --regex         paket bulunamadığı takdirde hedefi regex olarak işlet\n"
+
+#: ../pacman-g2.c:186
+#, c-format
+msgid "  -v, --verbose       be verbose\n"
+msgstr "  -v, --verbose       ayrıntılı olur\n"
+
+#: ../pacman-g2.c:187
+#, c-format
+msgid "  -r, --root <path>   set an alternate installation root\n"
+msgstr "  -r, --root <path>  alternatif bir kurulum yöneticisi ayarlar\n"
+
+#: ../pacman-g2.c:188
+#, c-format
+msgid "  -b, --dbpath <path> set an alternate database location\n"
+msgstr "  -b, --dbpath alternatif bir veritabanı konumu ayarlar\n"
+
+#: ../pacman-g2.c:201
+#, c-format
+msgid "                       This program may be freely redistributed under\n"
+msgstr "                       Bu program özgürce yenide dağıtılabilir\n"
+
+#: ../pacman-g2.c:202
+#, c-format
+msgid "                       the terms of the GNU General Public License\n"
+msgstr "                      GNU Genel Kamu Lisansı koşulları ile\n"
+
+#: ../pacman-g2.c:393
+msgid "bad root path"
+msgstr "kötü yönetici yolu"
+
+#: ../pacman-g2.c:421
+msgid "only one operation may be used at a time\n"
+msgstr "aynı anda sadece bir işlem yapılabilir\n"
+
+#: ../pacman-g2.c:521
+msgid "you cannot perform this operation unless you are root.\n"
+msgstr "Yönetici olmadığınız için bu işlemi gerçekleştiremezsiniz.\n"
+
+#: ../pacman-g2.c:545
+#, c-format
+msgid "failed to initialize pacman library (%s)\n"
+msgstr "(%s) pacman kütüphanesinin başlatılması başarısız oldu\n"
+
+#: ../pacman-g2.c:551
+#, c-format
+msgid "failed to set option LOGMASK (%s)\n"
+msgstr "(%s) LOGMASK seçeneğinin ayarlanması başarısız oldu\n"
+
+#: ../pacman-g2.c:555
+#, c-format
+msgid "failed to set option DBPATH (%s)\n"
+msgstr "(%s) DBPATH seçeneğinin ayarlanması başarısız oldu\n"
+
+#: ../pacman-g2.c:559
+#, c-format
+msgid "failed to set option LOGCB (%s)\n"
+msgstr "(%s) LOGCB seçeneğinin ayarlanması başarısız oldu\n"
+
+#: ../pacman-g2.c:567
+#, c-format
+msgid "failed to parse config (%s)\n"
+msgstr "(%s) yapılandırmasının ayrıştırılması başarısız oldu\n"
+
+#: ../pacman-g2.c:573
+#, c-format
+msgid "failed to set option DLCB (%s)\n"
+msgstr "(%s) DLCB seçeneğinin ayarlanması başarısız oldu\n"
+
+#: ../pacman-g2.c:577
+#, c-format
+msgid "failed to set option DLFNM (%s)\n"
+msgstr "(%s) DLFNM seçeneğinin ayarlanması başarısız oldu\n"
+
+#: ../pacman-g2.c:581
+#, c-format
+msgid "failed to set option DLOFFSET (%s)\n"
+msgstr "(%s) DLOFFSET seçeneğinin ayarlanması başarısız oldu\n"
+
+#: ../pacman-g2.c:585
+#, c-format
+msgid "failed to set option DLT0 (%s)\n"
+msgstr "(%s) DLT0 seçeneğinin ayarlanması başarısız oldu\n"
+
+#: ../pacman-g2.c:589
+#, c-format
+msgid "failed to set option DLT (%s)\n"
+msgstr "(%s) DLT seçeneğinin ayarlanması başarısız oldu\n"
+
+#: ../pacman-g2.c:593
+#, c-format
+msgid "failed to set option DLRATE (%s)\n"
+msgstr "(%s) DLRATE seçeneğinin ayarlanması başarısız oldu\n"
+
+#: ../pacman-g2.c:597
+#, c-format
+msgid "failed to set option DLXFERED1 (%s)\n"
+msgstr "(%s) DLXFERED1 seçeneğinin ayarlanması başarısız oldu\n"
+
+#: ../pacman-g2.c:601
+#, c-format
+msgid "failed to set option DLETA_H (%s)\n"
+msgstr "(%s) DLETA_H seçeneğinin ayarlanması başarısız oldu\n"
+
+#: ../pacman-g2.c:605
+#, c-format
+msgid "failed to set option DLETA_M (%s)\n"
+msgstr "(%s) DLETA_M seçeneğinin ayarlanması başarısız oldu\n"
+
+#: ../pacman-g2.c:609
+#, c-format
+msgid "failed to set option DLETA_S (%s)\n"
+msgstr "(%s) DLETA_S seçeneğinin ayarlanması başarısız oldu\n"
+
+#: ../pacman-g2.c:613
+#, c-format
+msgid "failed to set option DLREMAIN (%s)\n"
+msgstr "(%s) DLREMAIN seçeneğinin ayarlanması başarısız oldu\n"
+
+#: ../pacman-g2.c:617
+#, c-format
+msgid "failed to set option DLHOWMANY (%s)\n"
+msgstr "(%s) DLHOWMANY seçeneğinin ayarlanması başarısız oldu\n"
+
+#: ../pacman-g2.c:625
+#, c-format
+msgid "failed to set option IGNOREPKG (%s)\n"
+msgstr "(%s) IGNOREPKG seçeneğinin ayarlanması başarısız oldu\n"
+
+#: ../pacman-g2.c:633
+msgid "Targets:"
+msgstr "Hedefler:"
+
+#: ../pacman-g2.c:639
+#, c-format
+msgid "could not register 'local' database (%s)\n"
+msgstr "(%s) 'yerel' veritabanı kaydedilemedi\n"
+
+#: ../pacman-g2.c:646
+msgid "no targets specified (use -h for help)\n"
+msgstr "hedef belirlenmedi (yardım için -h parametresini kullanın)\n"
+
+#: ../pacman-g2.c:660
+msgid "no operation specified (use -h for help)\n"
+msgstr "işlem belirlenmedi (yardım için -h parametresini kullanın)\n"
+
+#: ../query.c:76
+#, c-format
+msgid ":: the database seems to be consistent\n"
+msgstr "::veritabanı uygun görünüyor\n"
+
+#: ../query.c:88 ../sync.c:265
+msgid "no usable package repositories configured.\n"
+msgstr "kullanılabilir paket depoları yapılandırılmadı.\n"
+
+#: ../query.c:127 ../sync.c:142
+#, c-format
+msgid "group \"%s\" was not found\n"
+msgstr "\"%s\" grubu bulunamadı\n"
+
+#: ../query.c:137
+msgid "no package file was specified for --file\n"
+msgstr "--file parametresi için paket dosyası belirlenmedi\n"
+
+#: ../query.c:141
+#, c-format
+msgid "failed to load package '%s' (%s)\n"
+msgstr "'%s' (%s) paketinin yüklenmesi başarısız oldu\n"
+
+#: ../query.c:163
+#, c-format
+msgid "No package owns %s\n"
+msgstr "%s paketini sahiplenen paket yok\n"
+
+#: ../query.c:169
+#, c-format
+msgid "%s %s is an owner of %s\n"
+msgstr "%s paketinin sahibi %s %s paketidir\n"
+
+#: ../query.c:180
+msgid "This query option require an package name as argument\n"
+msgstr "Bu sorgu seçeneği değişken olarak paket ismine ihtiyaç duyar\n"
+
+#: ../query.c:186
+msgid "Invalid query option , use 'pacman-g2 -Qed'\n"
+msgstr "Geçersiz sorgu seçeneği, 'pacman-g2 -Qed' komutunu kullanın\n"
+
+#. something weird happened
+#: ../query.c:202 ../query.c:255
+#, c-format
+msgid "package \"%s\" not found\n"
+msgstr "\"%\" paketi bulunamadı\n"
+
+#: ../query.c:249
+msgid "This query option cannot have an package argument\n"
+msgstr "Bu sorgu seçeneği paket değişkenine sahip olamaz\n"
+
+#: ../remove.c:64 ../sync.c:399
+#, c-format
+msgid ":: group %s:\n"
+msgstr "::grup %s:\n"
+
+#: ../remove.c:66
+msgid "    Remove whole content? [Y/n] "
+msgstr "    Tüm içerik kaldırılsın mı? [E/h] "
+
+#: ../remove.c:68
+#, c-format
+msgid ":: Remove %s from group %s? [Y/n] "
+msgstr "::%s paketi %s grubundan kaldırılsın mı? [E/h] "
+
+#: ../remove.c:81 ../sync.c:319 ../sync.c:358
+#, c-format
+msgid "failed to init transaction (%s)\n"
+msgstr "(%s) işleminin başlatılması başarısız oldu\n"
+
+#: ../remove.c:128
+#, c-format
+msgid "  %s: is required by %s\n"
+msgstr "%s: %s paketi tarafından gereksinim duyuluyor\n"
+
+#: ../remove.c:150
+msgid ""
+"\n"
+"Targets:"
+msgstr ""
+"\n"
+"Hedefler:"
+
+#. get confirmation
+#: ../remove.c:153
+msgid ""
+"\n"
+"Do you want to remove these packages? [Y/n] "
+msgstr ""
+"\n"
+"Bu paketleri kaldırmak istiyor musunuz? [E/h] "
+
+#: ../sync.c:69
+#, c-format
+msgid "failed to synchronize %s\n"
+msgstr "%s paketinin eşitlenmesi başarısız oldu\n"
+
+#: ../sync.c:71
+#, c-format
+msgid "failed to update %s (%s)\n"
+msgstr "%s (%s) paketinin güncellenmesi başarısız oldu\n"
+
+#: ../sync.c:76
+#, c-format
+msgid " %s is up to date\n"
+msgstr "%s paketi güncel\n"
+
+#: ../sync.c:113
+msgid "Installed"
+msgstr "Kurulmuş"
+
+#: ../sync.c:116
+msgid "Desc"
+msgstr "Azalan"
+
+#: ../sync.c:188
+#, c-format
+msgid "package \"%s\" was not found.\n"
+msgstr "\"%s\" paketi bulunamadı.\n"
+
+#: ../sync.c:226
+#, c-format
+msgid "repository \"%s\" was not found.\n"
+msgstr "\"%s\" deposu bulunamadı.\n"
+
+#: ../sync.c:273
+msgid "Do you want to remove old packages from cache? [Y/n] "
+msgstr "Ön bellekten eski paketleri kaldırmak istiyor musunuz? [E/h] "
+
+#: ../sync.c:275
+msgid "removing old packages from cache... "
+msgstr "ön bellekten eski paketler kaldırılıyor... "
+
+#: ../sync.c:278
+msgid "Do you want to remove all packages from cache? [Y/n] "
+msgstr "Tüm paketleri ön bellekten kaldırmak istiyor musunuz? [E/h] "
+
+#: ../sync.c:280
+msgid "removing all packages from cache... "
+msgstr "tüm paketler ön bellekten kaldırılıyor... "
+
+#: ../sync.c:286
+#, c-format
+msgid "failed to clean the cache (%s)\n"
+msgstr "(%s) ön bellek temizlenmesi başarısız oldu\n"
+
+#. grab a fresh package list
+#: ../sync.c:293
+msgid ":: Synchronizing package databases...\n"
+msgstr "::Paket veritabanları eşleniyor...\n"
+
+#: ../sync.c:294
+msgid "synchronizing package lists"
+msgstr "paket listeleri eşleniyor"
+
+#: ../sync.c:328
+msgid ":: Starting local database upgrade...\n"
+msgstr "::Yerel veritabanı yükseltmesi başlatılıyor...\n"
+
+#: ../sync.c:347
+msgid ""
+"\n"
+":: pacman-g2 has detected a newer version of the \"pacman-g2\" package.\n"
+msgstr ""
+"\n"
+"::pacman-g2 \"pacman-g2\" paketinin yeni bir sürümünü algıladı.\n"
+
+#: ../sync.c:348
+msgid ":: It is recommended that you allow pacman-g2 to upgrade itself\n"
+msgstr "::pacman-g2 paketinin kendisini yükseltmesini kabul etmeniz önerilir\n"
+
+#: ../sync.c:349
+msgid ":: first, then you can re-run the operation with the newer version.\n"
+msgstr "::yeni sürüm ile yeniden işlemi işletmeniz gerekir.\n"
+
+#: ../sync.c:351
+msgid ":: Upgrade pacman-g2 first? [Y/n] "
+msgstr "::İlk olarak pacman-g2 sürümü yükseltilsin mi? [E/h]"
+
+#: ../sync.c:366 ../sync.c:387 ../sync.c:430
+#, c-format
+msgid "could not add target '%s': %s\n"
+msgstr ""
+"'%s':%s hedefi eklenemedi\n"
+" "
+
+#: ../sync.c:405
+msgid ":: Install whole content? [Y/n] "
+msgstr "::Tüm bileşenler kurulsun mu? [E/h] "
+
+#: ../sync.c:412
+#, c-format
+msgid ":: Install %s from group %s? [Y/n] "
+msgstr "%s grubundan %s paketi kurulsun mu? [E/h] "
+
+#: ../sync.c:455
+#, c-format
+msgid "could not add target '%s': not found in sync db\n"
+msgstr "'%s' hedefi eklenemedi: veritabanında eşleme bulunamadı\n"
+
+#: ../sync.c:474
+msgid "requires"
+msgstr "gereksinim duyar"
+
+#: ../sync.c:474
+msgid "is required by"
+msgstr "tarafından gereksinim duyulur"
+
+#: ../sync.c:551
+msgid ""
+"\n"
+"Remove:  "
+msgstr ""
+"\n"
+"Kaldır:  "
+
+#: ../sync.c:567
+msgid ""
+"\n"
+"Targets: "
+msgstr ""
+"\n"
+"Hedefler:  "
+
+#: ../sync.c:570
+#, c-format
+msgid ""
+"\n"
+"Total Package Size:   %.1f MB\n"
+msgstr ""
+"\n"
+"Toplam Paket Boyutu:   %.1f MB\n"
+
+#: ../sync.c:572
+#, c-format
+msgid ""
+"\n"
+"Total Uncompressed Package Size:   %.1f MB\n"
+msgstr ""
+"\n"
+"Toplam Açılmamış Paket Boyut:   %.1f MB\n"
+
+#: ../sync.c:579
+msgid ""
+"\n"
+"Beginning download...\n"
+msgstr ""
+"\n"
+"İndirme işlemi başlıyor...\n"
+
+#: ../sync.c:583
+msgid "Proceed with download? [Y/n] "
+msgstr "İndirme işlemine başlansın mı? [E/h] "
+
+#: ../sync.c:591
+msgid ""
+"\n"
+"Beginning upgrade process...\n"
+msgstr ""
+"\n"
+"Yükseltme işlemine başlanıyor...\n"
+
+#: ../sync.c:595
+msgid "Proceed with upgrade? [Y/n] "
+msgstr "Yükseltme işlemine başlansın mı? [E/h] "
+
+#: ../sync.c:644
+msgid ":: There are running processes that use files deleted by pacman-g2.\n"
+msgstr ""
+"::pacman-g2 tarafından silinen dosyaları kullanan çalışan süreçler var.\n"
+
+#: ../sync.c:645
+#, c-format
+msgid ":: You may wish to restart some of them. Run '%s' to list them.\n"
+msgstr ""
+"::Bazılarını yeniden başlatmak isteyebilirsiniz. Bunları listelemek için "
+"'%s' komutunu çalıştırınız.\n"
+
+#: ../trans.c:59
+msgid "checking dependencies... "
+msgstr "bağımlılıklar denetleniyor... "
+
+#: ../trans.c:63
+msgid "checking for file conflicts... "
+msgstr "dosya çakışmaları denetleniyor... "
+
+#: ../trans.c:67
+msgid "resolving dependencies... "
+msgstr "bağımlılıklar çözümleniyor... "
+
+#: ../trans.c:71
+msgid "looking for inter-conflicts... "
+msgstr "karşılıklı çakışmalar aranıyor... "
+
+#: ../trans.c:94
+#, c-format
+msgid "installing %s... "
+msgstr "%s kuruluyor... "
+
+#: ../trans.c:108
+#, c-format
+msgid "removing %s... "
+msgstr "%s kaldırılıyor... "
+
+#: ../trans.c:124
+#, c-format
+msgid "upgrading %s... "
+msgstr "%s yükseltiliyor..."
+
+#: ../trans.c:138
+msgid "checking package integrity... "
+msgstr "paket bütünlüğü denetleniyor... "
+
+#: ../trans.c:152
+msgid " done.\n"
+msgstr " tamamlandı.\n"
+
+#: ../trans.c:154
+msgid " failed.\n"
+msgstr " başarısız oldu.\n"
+
+#: ../trans.c:161
+#, c-format
+msgid ""
+"\n"
+":: Retrieving packages from %s...\n"
+msgstr ""
+"\n"
+":: %s deposundan paketler alınıyor...\n"
+
+#: ../trans.c:172
+msgid "] 100%    LOCAL "
+msgstr "]100%    YEREL "
+
+#: ../trans.c:190
+#, c-format
+msgid ":: %s requires %s, but it is in IgnorePkg. Install anyway? [Y/n] "
+msgstr ""
+"::%s %s'e ihtiyaç duyar, fakat bu paket IgnorePkg içerisinde. Yine de "
+"kurulsun mu? [E/h] "
+
+#: ../trans.c:204
+#, c-format
+msgid ":: %s is designated as a HoldPkg.  Remove anyway? [Y/n] "
+msgstr ""
+"::%s paketi HoldPkg olarak belirlenmiş.  Yine de kaldırılsın mı? [E/h] "
+
+#: ../trans.c:217
+#, c-format
+msgid ":: Replace %s with %s/%s? [Y/n] "
+msgstr "::%s paketi %s/%s paketi ile yerdeğiştirilsin mi? [E/h] "
+
+#: ../trans.c:232
+#, c-format
+msgid ":: %s conflicts with %s. Remove %s? [Y/n] "
+msgstr "::%s paketi %s paketi ile çakışıyor. %s paketi kaldırılsın mı? [E/h] "
+
+#: ../trans.c:248
+#, c-format
+msgid ":: %s-%s: local version is newer. Upgrade anyway? [Y/n] "
+msgstr "::%s-%s: yerel sürüm daha yeni. Yine de yükseltme yapılsın mı? [E/h] "
+
+#: ../trans.c:266
+#, c-format
+msgid ":: %s-%s: local version is up to date. Upgrade anyway? [Y/n] "
+msgstr "::%s-%s: yerel sürüm güncel. Yine de yükseltme yapılsın mı? [E/h] "
+
+#: ../trans.c:284
+#, c-format
+msgid ":: Archive %s is corrupted. Do you want to delete it? [Y/n] "
+msgstr "::%s arşivi bozulmuş. Bu arşivi silmek istiyor musunuz? [E/h] "
+
+#: ../trans.c:301
+msgid "installing"
+msgstr "kuruluyor"
+
+#: ../trans.c:302
+msgid "upgrading"
+msgstr "yükseltiliyor"
+
+#: ../trans.c:303
+msgid "removing"
+msgstr "kaldırılıyor"
+
+#: ../trans.c:304
+msgid "checking for file conflicts"
+msgstr "dosya çakışmaları denetleniyor"
+
+#: ../trans.c:305
+msgid "looking for inter-conflicts"
+msgstr "karşılıklı çakışmalar taranıyor"
+
+#: ../util.c:102
+#, c-format
+msgid "failed to allocated %d bytes\n"
+msgstr "%d byte bölümlenmesi başarısız oldu\n"
