@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-04-18 02:07+0200\n"
-"PO-Revision-Date: 2011-04-18 14:52+0200\n"
+"POT-Creation-Date: 2011-10-24 02:08+0200\n"
+"PO-Revision-Date: 2011-10-20 11:00+0200\n"
 "Last-Translator: Tutku Dalmaz <tutkudalmaz@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: tr\n"
@@ -55,7 +55,7 @@ msgstr ""
 "fazla yansıyı seçebilirsiniz."
 
 #: ../src/plugins/configsource.c:166 ../src/plugins/formatdisk.c:655
-#: ../src/plugins/partdisk.c:197
+#: ../src/plugins/partdisk.c:202
 msgid "Continue"
 msgstr "Devam"
 
@@ -69,8 +69,8 @@ msgid ""
 "faster. If you don't have a custom mirror, select Continue."
 msgstr ""
 "Şuan özel bir yansı belirleyebilirsiniz (örn. LAN) böylece paketleri daha "
-"hızlı indirebilirsiniz. Belirlemek istediğiniz özel bir yansı yoksa \"Devam\" "
-"burada yeterlidir."
+"hızlı indirebilirsiniz. Belirlemek istediğiniz özel bir yansı yoksa \"Devam"
+"\" burada yeterlidir."
 
 #: ../src/plugins/configsource.c:195
 msgid "Failed to configure the network"
@@ -86,8 +86,8 @@ msgstr ""
 "adresi ve/veya statik IP kullanıyorsanız da geçerli ağ maskesi verdiğinizden "
 "emin olarak tekrar deneyiniz."
 
-#: ../src/plugins/configsource.c:203 ../src/plugins/select.c:422
-#: ../src/plugins/select.c:438 ../src/plugins/select.c:477
+#: ../src/plugins/configsource.c:203 ../src/plugins/select.c:421
+#: ../src/plugins/select.c:437 ../src/plugins/select.c:476
 msgid "Please wait"
 msgstr "Lütfen bekleyiniz"
 
@@ -352,47 +352,52 @@ msgstr "/dev/%s içerisinde Frugalware kurulum diski bulundu"
 msgid "Partitioning the disk drives"
 msgstr "Disk sürücüleri bölümlendiriliyor"
 
-#: ../src/plugins/partdisk.c:118
+#: ../src/plugins/partdisk.c:117
 msgid "User friendly (curses based) version of fdisk"
 msgstr "Kullanıcı dostu (curses tabanlı) fdisk sürümü"
 
-#: ../src/plugins/partdisk.c:119
+#: ../src/plugins/partdisk.c:118
 msgid "The traditional partitioning program for Linux"
 msgstr "Linux için geleneksek bölümleme yazılımı"
 
-#: ../src/plugins/partdisk.c:120 ../src/plugins/partdisk.c:127
+#: ../src/plugins/partdisk.c:119
+msgid "Works like fdisk, but uses GPT instead of MBR."
+msgstr "fdisk gibi çalışır, fakat MBR yerine GPT kullanılır."
+
+#: ../src/plugins/partdisk.c:120 ../src/plugins/partdisk.c:126
 msgid "A partition manipulation program"
 msgstr "Bölüm yönetim yazılımı"
 
-#: ../src/plugins/partdisk.c:126
+#: ../src/plugins/partdisk.c:125
 msgid "Apple disk partitioning utility"
 msgstr "Apple disk bölümleme aracı"
 
-#: ../src/plugins/partdisk.c:131 ../src/plugins/partdisk.c:183
+#: ../src/plugins/partdisk.c:136 ../src/plugins/partdisk.c:188
 msgid "Creating partitions"
 msgstr "Bölümler oluşturuluyor"
 
-#: ../src/plugins/partdisk.c:134
+#: ../src/plugins/partdisk.c:139
 msgid "Select partitioning program"
 msgstr "Bölümleme programını seçiniz"
 
-#: ../src/plugins/partdisk.c:135
+#: ../src/plugins/partdisk.c:140
 msgid "Select the program you want to use for partitioning:"
 msgstr "Bölümleme yapmak istediğiniz yazılımı seçiniz:"
 
-#: ../src/plugins/partdisk.c:147
+#: ../src/plugins/partdisk.c:152
 msgid "Want to create RAID partitions?"
 msgstr "RAID bölümleme oluşturmak ister misiniz?"
 
-#: ../src/plugins/partdisk.c:148
+#: ../src/plugins/partdisk.c:153
 msgid "Do you want to create software RAID partitions during partitioning?"
-msgstr "Bölümleme sırasında yazılımsal raid bölümleri oluşturmak ister misiniz?"
+msgstr ""
+"Bölümleme sırasında yazılımsal raid bölümleri oluşturmak ister misiniz?"
 
-#: ../src/plugins/partdisk.c:177
+#: ../src/plugins/partdisk.c:182
 msgid "Disk drive not found"
 msgstr "Disk sürücüsü bulunmadı"
 
-#: ../src/plugins/partdisk.c:177
+#: ../src/plugins/partdisk.c:182
 msgid ""
 "Sorry, no hard disk drives were found in this computer. Press ENTER to "
 "reboot."
@@ -400,15 +405,15 @@ msgstr ""
 "Üzgünüz, bu bilgisayarda hiçbir sabit disk bulunmadı. Sistemi yeniden "
 "başlatmak için ENTER tuşuna basınız."
 
-#: ../src/plugins/partdisk.c:192
+#: ../src/plugins/partdisk.c:197
 msgid "Create RAID"
 msgstr "RAID oluşturtur"
 
-#: ../src/plugins/partdisk.c:200
+#: ../src/plugins/partdisk.c:205
 msgid "Select a hard disk to partition"
 msgstr "Bölümlenecek yerel diski seçin"
 
-#: ../src/plugins/partdisk.c:201
+#: ../src/plugins/partdisk.c:206
 msgid ""
 "Please select a hard disk to partition. Once you are done, or in case you "
 "don't want to partition your disks at all, select 'Continue'. The following "
@@ -437,7 +442,7 @@ msgstr ""
 "yeniden başlatmak için ENTER tuşuna basın."
 
 #: ../src/plugins/select.c:54 ../src/plugins/select.c:282
-#: ../src/plugins/select.c:419
+#: ../src/plugins/select.c:418
 msgid "Selecting packages"
 msgstr "Paketler seçiliyor"
 
@@ -472,40 +477,40 @@ msgstr ""
 "kullanmak için \"HAYIR\"ı seçin. Her paketi elle seçebildiğiniz uzman "
 "menüsünü kullanmak için de \"EVET\"i seçin."
 
-#: ../src/plugins/select.c:360 ../src/plugins/select.c:368
-#: ../src/plugins/select.c:382 ../src/plugins/select.c:386
+#: ../src/plugins/select.c:359 ../src/plugins/select.c:367
+#: ../src/plugins/select.c:381 ../src/plugins/select.c:385
 msgid "Error"
 msgstr "Hata"
 
-#: ../src/plugins/select.c:360
+#: ../src/plugins/select.c:359
 #, c-format
 msgid "Failed to parse pacman-g2 configuration file (%s)"
 msgstr "(%s) pacman-g2 yapılandırma dosyası ayrıştırılmasında hata"
 
-#: ../src/plugins/select.c:368
+#: ../src/plugins/select.c:367
 #, c-format
 msgid "Could not register '%s' database (%s)"
 msgstr "(%s)'e '%s' veritabanı kaydedilemedi."
 
-#: ../src/plugins/select.c:382
+#: ../src/plugins/select.c:381
 #, c-format
 msgid "Failed to synchronize %s"
 msgstr "%s senkronlamasında hata"
 
-#: ../src/plugins/select.c:386
+#: ../src/plugins/select.c:385
 #, c-format
 msgid "Failed to update %s (%s)"
 msgstr "(%s) %s güncellemesinde hata"
 
-#: ../src/plugins/select.c:422
+#: ../src/plugins/select.c:421
 msgid "Searching for categories..."
 msgstr "Kategoriler aranıyor..."
 
-#: ../src/plugins/select.c:438
+#: ../src/plugins/select.c:437
 msgid "Searching for packages..."
 msgstr "Paketler aranıyor..."
 
-#: ../src/plugins/select.c:477
+#: ../src/plugins/select.c:476
 msgid "Searching for missing dependencies..."
 msgstr "Eksik bağımlılıklar aranıyor..."
 
@@ -634,11 +639,11 @@ msgstr ""
 msgid "Post-install configuration"
 msgstr "Kurulum sonrası yapılandırması"
 
-#: ../src/plugins/postconf.c:273
+#: ../src/plugins/postconf.c:270
 msgid "Configuring kernel modules"
 msgstr "Kernel modülleri yapılandırılıyor"
 
-#: ../src/plugins/postconf.c:274
+#: ../src/plugins/postconf.c:271
 msgid "Updating module dependencies..."
 msgstr "Modül bağımlılıkları güncelleniyor..."
 
