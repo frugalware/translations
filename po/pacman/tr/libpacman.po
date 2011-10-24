@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-04-18 02:07+0200\n"
-"PO-Revision-Date: 2011-04-18 16:00+0200\n"
+"POT-Creation-Date: 2011-10-24 02:08+0200\n"
+"PO-Revision-Date: 2011-10-20 11:04+0200\n"
 "Last-Translator: Tutku Dalmaz <tutkudalmaz@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: tr\n"
@@ -22,267 +22,262 @@ msgstr ""
 msgid "could not parse token %s"
 msgstr "%s verisi ayrıştırılamadı"
 
-#: ../add.c:130
+#: ../add.c:131
 #, c-format
 msgid "loading target '%s'"
 msgstr "'%s' hedefi yükleniyor"
 
-#: ../add.c:168
+#: ../add.c:169
 #, c-format
 msgid "replacing older version %s-%s by %s in target list"
 msgstr "hedef listesindeki %s ile %s-%s eski sürümü yer değiştiriyor"
 
-#: ../add.c:177
+#: ../add.c:178
 #, c-format
 msgid "newer version %s-%s is in the target list -- skipping"
 msgstr "yeni sürüm %s-%s hedef listede -- atlanıyor"
 
 #. look for unsatisfied dependencies
-#: ../add.c:220 ../remove.c:103
+#: ../add.c:222 ../remove.c:105
 msgid "looking for unsatisfied dependencies"
 msgstr "yetersiz bağımlılıklar araştırılıyor"
 
 #. no unsatisfied deps, so look for conflicts
-#: ../add.c:232 ../sync.c:500
+#: ../add.c:234 ../sync.c:348
 msgid "looking for conflicts"
 msgstr "çakışmalar araştırılıyor"
 
 #. re-order w.r.t. dependencies
-#: ../add.c:244 ../remove.c:139
+#: ../add.c:246 ../remove.c:141
 msgid "sorting by dependencies"
 msgstr "bağımlılıkları göre sıralanıyor"
 
-#: ../add.c:256
+#: ../add.c:258
 msgid "cleaning up"
 msgstr "temizleniyor"
 
-#: ../add.c:273
+#: ../add.c:275
 msgid "looking for file conflicts"
 msgstr "dosya çakışmaları araştırılıyor"
 
-#: ../add.c:341
+#: ../add.c:344
 #, c-format
 msgid "upgrading package %s-%s"
 msgstr "%s-%s paketi yükseltiliyor"
 
-#: ../add.c:351 ../conflict.c:322 ../conflict.c:338 ../package.c:554
+#: ../add.c:354 ../conflict.c:318 ../conflict.c:334 ../package.c:551
 #, c-format
 msgid "loading FILES info for '%s'"
 msgstr "'%s' için FILES bilgisi yükleniyor"
 
-#: ../add.c:367
+#: ../add.c:370
 #, c-format
 msgid "removing old package first (%s-%s)"
 msgstr "eski paket kaldırılıyor ilk (%s-%s)"
 
-#: ../add.c:397
+#: ../add.c:401
 #, c-format
 msgid "adding package %s-%s"
 msgstr "%s-%s paketi ekleniyor"
 
-#: ../add.c:408
+#: ../add.c:412
 #, c-format
 msgid "adding new package %s-%s"
 msgstr "%s-%s yeni paketi ekleniyor"
 
-#: ../add.c:412
+#: ../add.c:416
 msgid "extracting files"
 msgstr "dosyalar çıkartılıyor"
 
-#: ../add.c:428 ../util.c:530 ../util.c:629
+#: ../add.c:431 ../util.c:530 ../util.c:629
 msgid "could not get current working directory"
 msgstr "geçerli çalışma dizini alınamadı"
 
-#: ../add.c:485
+#: ../add.c:488
 #, c-format
 msgid "notice: %s is in NoExtract -- skipping extraction"
 msgstr "uyarma: %s paketi NoExtract içerisinde --dışa çıkartma atlanıyor"
 
-#: ../add.c:525 ../add.c:526 ../add.c:679
+#: ../add.c:528 ../add.c:529 ../add.c:682
 #, c-format
 msgid "could not extract %s (%s)"
 msgstr "%s (%s) dışa çıkartılamadı"
 
-#: ../add.c:569
+#: ../add.c:572
 #, c-format
 msgid "checking md5 hashes for %s"
 msgstr "%s için md5sum denetimi yapılıyor"
 
-#: ../add.c:570 ../add.c:577
+#: ../add.c:573 ../add.c:580
 #, c-format
 msgid "current:  %s"
 msgstr "geçerli:  %s"
 
-#: ../add.c:571 ../add.c:578
+#: ../add.c:574 ../add.c:581
 #, c-format
 msgid "new:      %s"
 msgstr "yeni:      %s"
 
-#: ../add.c:573 ../add.c:580
+#: ../add.c:576 ../add.c:583
 #, c-format
 msgid "original: %s"
 msgstr "özgün: %s"
 
-#: ../add.c:576
+#: ../add.c:579
 #, c-format
 msgid "checking sha1 hashes for %s"
 msgstr "%s için sha1 denetimi yapılıyor"
 
-#: ../add.c:594
+#: ../add.c:597
 #, c-format
 msgid "could not rename %s (%s)"
 msgstr "%s (%s) yeniden isimlendirilemiyor"
 
-#: ../add.c:595
+#: ../add.c:598
 #, c-format
 msgid "error: could not rename %s (%s)"
 msgstr "hata:%s (%s) yeniden isimlendirilemedi"
 
-#: ../add.c:599 ../add.c:643
+#: ../add.c:602 ../add.c:646
 #, c-format
 msgid "could not copy %s to %s (%s)"
 msgstr "%s %s (%s)e kopyalanamadı"
 
-#: ../add.c:600
+#: ../add.c:603
 #, c-format
 msgid "error: could not copy %s to %s (%s)"
 msgstr "hata: %s %s (%s)e kopyalanamadı"
 
-#: ../add.c:604
+#: ../add.c:607
 #, c-format
 msgid "%s saved as %s.pacorig"
 msgstr "%s %s.pacorig olara farklı kaydedildi"
 
-#: ../add.c:605
+#: ../add.c:608
 #, c-format
 msgid "warning: %s saved as %s"
 msgstr "uyarı: %s %s olarak farklı kaydedildi"
 
-#: ../add.c:615 ../add.c:618 ../add.c:624
+#: ../add.c:618 ../add.c:621 ../add.c:627
 msgid "action: installing new file"
 msgstr "eylem: yeni dosya kuruluyor"
 
-#: ../add.c:622
+#: ../add.c:625
 msgid "action: leaving existing file in place"
 msgstr "eylem: var olan dosya olduğu yerde bırakılıyor"
 
-#: ../add.c:628
+#: ../add.c:631
 msgid "action: keeping current file and installing new one with .pacnew ending"
 msgstr ""
 "eylem:geçerli dosya saklanıyor ve yeni dosya .pacnew uzantısı ile kuruluyor"
 
-#: ../add.c:632
+#: ../add.c:635
 #, c-format
 msgid "could not install %s as %s: %s"
 msgstr "%s %s:%s olarak kurulamadı"
 
-#: ../add.c:633
+#: ../add.c:636
 #, c-format
 msgid "error: could not install %s as %s: %s"
 msgstr "hata: %s %s:%s olarak kurulamadı"
 
-#: ../add.c:635
+#: ../add.c:638
 #, c-format
 msgid "%s installed as %s"
 msgstr "%s %s olarak kuruldu"
 
-#: ../add.c:636
+#: ../add.c:639
 #, c-format
 msgid "warning: %s installed as %s"
 msgstr "uyarı: %s %s olarak kuruldu"
 
-#: ../add.c:641 ../add.c:661
+#: ../add.c:644 ../add.c:664
 #, c-format
 msgid "extracting %s"
 msgstr "%s dışa çıkartılıyor"
 
-#: ../add.c:663
+#: ../add.c:666
 #, c-format
 msgid "%s is in NoUpgrade -- skipping"
 msgstr "%s NoUpgrade listesinde --atlanıyor"
 
-#: ../add.c:665
+#: ../add.c:668
 #, c-format
 msgid "extracting %s as %s.pacnew"
 msgstr "%s %s.pacnew olarak dışa çıkartılıyor"
 
-#: ../add.c:666
+#: ../add.c:669
 #, c-format
 msgid "warning: extracting %s%s as %s"
 msgstr "uyarı: %s%s %s olarak dışa çıkartılıyor"
 
-#: ../add.c:680
+#: ../add.c:683
 #, c-format
 msgid "error: could not extract %s (%s)"
 msgstr "hata: %s (%s) dışar çıkartılamadı"
 
-#: ../add.c:691
+#: ../add.c:694
 msgid "appending backup entry"
 msgstr "yedek girdi sona ekleniyor"
 
-#: ../add.c:726 ../add.c:728
+#: ../add.c:729 ../add.c:731
 #, c-format
 msgid "errors occurred while %s %s"
 msgstr "%s %s esnasında hata oluştu"
 
-#: ../add.c:727 ../add.c:729
+#: ../add.c:730 ../add.c:732
 msgid "upgrading"
 msgstr "yükseltiliyor"
 
-#: ../add.c:727 ../add.c:729
+#: ../add.c:730 ../add.c:732
 msgid "installing"
 msgstr "kuruluyor"
 
-#: ../add.c:752 ../add.c:803
+#: ../add.c:755 ../add.c:806
 #, c-format
 msgid "adding '%s' in requiredby field for '%s'"
 msgstr "'%s' '%s' için gereksinim duyulanlar alanına ekleniyor"
 
 #. remove the package from the database
-#: ../add.c:763 ../remove.c:288
+#: ../add.c:766 ../remove.c:291
 msgid "updating database"
 msgstr "veritabanı güncelleniyor"
 
-#: ../add.c:764
+#: ../add.c:767
 #, c-format
 msgid "adding database entry '%s'"
 msgstr "'%s' veritabanı girdisi ekleniyor"
 
-#: ../add.c:766
+#: ../add.c:769
 #, c-format
 msgid "could not update database entry %s-%s"
 msgstr "%s-%s veritabanı girdisi güncellenemedi"
 
-#: ../add.c:768
+#: ../add.c:771
 #, c-format
 msgid "error updating database for %s-%s!"
 msgstr "%s-%s! için veritabanı güncellemesinde hata"
 
-#: ../add.c:772
+#: ../add.c:775
 #, c-format
 msgid "could not add entry '%s' in cache"
 msgstr "'%s' girdisi ön belleğe eklenemedi"
 
 #. update dependency packages' REQUIREDBY fields
-#: ../add.c:777 ../remove.c:298
+#: ../add.c:780 ../remove.c:301
 msgid "updating dependency packages 'requiredby' fields"
 msgstr "'gereksinim duyulanlar' kısmındaki bağımlı paketler güncelleniyor"
 
-#: ../add.c:798 ../remove.c:326
+#: ../add.c:801 ../remove.c:329
 #, c-format
 msgid "could not find dependency '%s'"
 msgstr "'%s' bağımlılığı bulunamadı"
 
-#: ../add.c:806 ../remove.c:336
+#: ../add.c:809 ../remove.c:339
 #, c-format
 msgid "could not update 'requiredby' database entry %s-%s"
 msgstr ""
 "'gereksinim duyulanlar' kısmındaki %s-%s veritabanı girdisi güncellenemedi"
-
-#: ../add.c:832 ../remove.c:348
-#, c-format
-msgid "running \"ldconfig -r %s\""
-msgstr "\"ldconfig -r %s\" komutu işletiliyor"
 
 #: ../pacman.c:215
 #, c-format
@@ -306,206 +301,188 @@ msgstr ""
 msgid "serverlist flushed for '%s'"
 msgstr "'%s' için sunucu listesi temizlendi"
 
-#: ../pacman.c:346
+#: ../pacman.c:345
 #, c-format
 msgid "failed to get lastupdate time for %s (no big deal)\n"
 msgstr "%s için son güncelleme zamanı alınması başarısız oldu\n"
 
-#: ../pacman.c:360
+#: ../pacman.c:359
 #, c-format
 msgid "failed to sync db: %s [%d]\n"
 msgstr "veritabanı eşlemesi başarısız oldu: %s [%d]\n"
 
-#: ../pacman.c:367
+#: ../pacman.c:366
 #, c-format
 msgid "sync: new mtime for %s: %s\n"
 msgstr "eşleme: %s için yeni mtime: %s\n"
 
-#: ../pacman.c:374
-#, c-format
-msgid "flushing database %s/%s"
-msgstr "%s/%s veritabanı temizleniyor"
-
-#: ../pacman.c:378
-#, c-format
-msgid "could not remove database entry %s/%s"
-msgstr "%s/%s veritabanı girdisi kaldırılamadı"
-
-#: ../pacman.c:401 ../pacman.c:944
+#: ../pacman.c:385 ../pacman.c:934
 #, c-format
 msgid "could not remove lock file %s"
 msgstr "%s kilit dosyası kaldırılamadı"
 
-#: ../pacman.c:402 ../pacman.c:945
+#: ../pacman.c:386 ../pacman.c:935
 #, c-format
 msgid "warning: could not remove lock file %s"
 msgstr "uyarı: %s kilit dosyası kaldırılamadı"
 
-#: ../pacman.c:576
+#: ../pacman.c:560
 #, c-format
 msgid "could not get sha1 checksum for package %s-%s\n"
 msgstr "%s-%s paketi için sha1 bütünlük denetimi alınamadı\n"
 
-#: ../pacman.c:582 ../pacman.c:629 ../package.c:536
+#: ../pacman.c:566 ../pacman.c:613 ../package.c:533
 #, c-format
 msgid "loading DESC info for '%s'"
 msgstr "'%s' için DESC bilgisi yükleniyor"
 
-#: ../pacman.c:587 ../pacman.c:634
+#: ../pacman.c:571 ../pacman.c:618
 #, c-format
 msgid "checksums for package %s-%s are matching"
 msgstr "%s-%s paketi için checksum denetimleri uyuşuyor"
 
-#: ../pacman.c:590
+#: ../pacman.c:574
 #, c-format
 msgid "sha1sums do not match for package %s-%s\n"
 msgstr "%s-%s paketi için sha1sum denetimleri uyuşmuyor\n"
 
-#: ../pacman.c:623
+#: ../pacman.c:607
 #, c-format
 msgid "could not get md5 checksum for package %s-%s\n"
 msgstr "%s-%s paketi için md5 değeri alınamadı\n"
 
-#: ../pacman.c:637
+#: ../pacman.c:621
 #, c-format
 msgid "md5sums do not match for package %s-%s\n"
 msgstr "%s-%s paketi için md5sum denetimleri uyuşmuyor\n"
 
-#: ../pacman.c:1216
+#: ../pacman.c:1206
 #, c-format
 msgid "config: new section '%s'\n"
 msgstr "yapılandırma: '%s' yeni bölüm\n"
 
-#: ../pacman.c:1247
+#: ../pacman.c:1237
 msgid "config: usesyslog\n"
 msgstr "yapılandırma: sistem günlüğünü kullan\n"
 
-#: ../pacman.c:1258
+#: ../pacman.c:1248
 #, c-format
 msgid "config: including %s\n"
 msgstr "yapıalndırma: %s içeriliyor\n"
 
-#: ../pacman.c:1270 ../pacman.c:1278
+#: ../pacman.c:1260 ../pacman.c:1268
 #, c-format
 msgid "config: noupgrade: %s\n"
 msgstr "yapılandırma: noupgrade: %s\n"
 
-#: ../pacman.c:1288 ../pacman.c:1296
+#: ../pacman.c:1278 ../pacman.c:1286
 #, c-format
 msgid "config: noextract: %s\n"
 msgstr "yapılandırma: noextract: %s\n"
 
-#: ../pacman.c:1306 ../pacman.c:1314
+#: ../pacman.c:1296 ../pacman.c:1304
 #, c-format
 msgid "config: ignorepkg: %s\n"
 msgstr "yapılandırma: ignorepkg: %s\n"
 
-#: ../pacman.c:1324 ../pacman.c:1332
+#: ../pacman.c:1314 ../pacman.c:1322
 #, c-format
 msgid "config: holdpkg: %s\n"
 msgstr "yapılandırma: holdpkg: %s\n"
 
-#: ../pacman.c:1342
+#: ../pacman.c:1332
 #, c-format
 msgid "config: dbpath: %s\n"
 msgstr "yapılandırma: dbpath: %s\n"
 
-#: ../pacman.c:1352
+#: ../pacman.c:1342
 #, c-format
 msgid "config: cachedir: %s\n"
 msgstr "yapılandırma: cachedir: %s\n"
 
-#: ../pacman.c:1358
+#: ../pacman.c:1348
 #, c-format
 msgid "config: log file: %s\n"
 msgstr "yapılandırma: günlük dosyası: %s\n"
 
 #. The config value is in days, we use seconds
-#: ../pacman.c:1366
+#: ../pacman.c:1356
 #, c-format
 msgid "config: UpgradeDelay: %i\n"
 msgstr "yapılandırma: UpgradeDelay: %i\n"
 
 #. The config value is in days, we use seconds
-#: ../pacman.c:1373
+#: ../pacman.c:1363
 #, c-format
 msgid "config: OldDelay: %i\n"
 msgstr "yapılandırma: OldDelay: %i\n"
 
 #. add to the list
-#: ../pacman.c:1399
+#: ../pacman.c:1389
 #, c-format
 msgid "config: %s: server: %s\n"
 msgstr "yapılandırma: %s sunucu: %s\n"
 
-#. TODO
-#. we should not simply unpack the archive, but better parse it and
-#. db_write each entry (see sync_load_dbarchive to get archive content)
-#: ../be_files.c:56
-#, c-format
-msgid "unpacking database '%s'"
-msgstr "'%s' veritabanı açılıyor"
-
-#: ../be_files.c:81
+#: ../be_files.c:75
 #, c-format
 msgid "%s: description file is missing"
 msgstr "%s: tanımlama dosyası eksik"
 
-#: ../be_files.c:87
+#: ../be_files.c:81
 #, c-format
 msgid "%s: dependency information is missing"
 msgstr "%s: bağımlılık bilgisi eksik"
 
-#: ../be_files.c:93
+#: ../be_files.c:87
 #, c-format
 msgid "%s: file list is missing"
 msgstr "%s: dosya listesi eksik"
 
-#: ../be_files.c:205
+#: ../be_files.c:283
 #, c-format
 msgid "invalid name for dabatase entry '%s'"
 msgstr "'%s' veritabanı girdisi için geçersiz isim"
 
-#: ../be_files.c:230
+#: ../be_files.c:537
 msgid "invalid package entry provided to _pacman_db_read"
 msgstr "_pacman_db_read için geçeresin paket girdisi"
 
-#: ../be_files.c:489
+#: ../be_files.c:648
 #, c-format
 msgid "db_write: could not open file %s/desc"
 msgstr "db_write: %s/desc dosyası açılamadı"
 
-#: ../be_files.c:574
+#: ../be_files.c:733
 #, c-format
 msgid "db_write: could not open file %s/files"
 msgstr "db_write: %s/files dosyası açılamadı"
 
-#: ../be_files.c:600
+#: ../be_files.c:759
 #, c-format
 msgid "db_write: could not open file %s/depends"
 msgstr "db_write: %s/depends dosyası açılamadı"
 
-#: ../cache.c:57
+#: ../cache.c:60
 #, c-format
 msgid "loading package cache (infolevel=%#x) for repository '%s'"
 msgstr "'%s' deposu için paket ön belleği (infolevel=%#x) yükleniyor"
 
-#: ../cache.c:77
+#: ../cache.c:80
 #, c-format
 msgid "freeing package cache for repository '%s'"
 msgstr "'%s' deposu için paket ön belleği boşa çıkartılıyor"
 
-#: ../cache.c:112
+#: ../cache.c:115
 #, c-format
 msgid "adding entry '%s' in '%s' cache"
 msgstr "'%s' ön belleğime '%s' girdisi ekleniyor"
 
-#: ../cache.c:134
+#: ../cache.c:137
 #, c-format
 msgid "removing entry '%s' from '%s' cache"
 msgstr "'%s' ön belleğinden '%s' girdisi kaldırılıyor"
 
-#: ../cache.c:165
+#: ../cache.c:168
 #, c-format
 msgid "loading group cache for repository '%s'"
 msgstr "'%s' deposu için grup ön belleği yükleniyor"
@@ -546,102 +523,89 @@ msgstr "çakışmaları denetle: db vs targs '%s'"
 msgid "db vs targs: found %s as a conflict for %s"
 msgstr "db vs targs:%s %s için çakışma olarak bulundu"
 
-#: ../conflict.c:284 ../conflict.c:369 ../deps.c:68 ../deps.c:625
-#: ../deps.c:665 ../group.c:40 ../handle.c:52 ../package.c:103 ../sync.c:63
-#: ../sync.c:631 ../sync.c:647 ../sync.c:742 ../trans.c:65 ../util.c:772
-#: ../util.c:779
-#, c-format
-msgid "malloc failure: could not allocate %d bytes"
-msgstr "malloc hatası: %d byte bölümlenemedi"
-
-#: ../db.c:59 ../db.c:66
-#, c-format
-msgid "malloc failed: could not allocate %d bytes"
-msgstr "malloc hatası: %d byte bölümlenemedi"
-
-#: ../db.c:185
+#: ../db.c:180
 msgid "attempt to re-register the 'local' DB\n"
 msgstr "'yerel' veritabanını kaydetmeyi tekrar dene\n"
 
-#: ../db.c:193
+#: ../db.c:188
 #, c-format
 msgid "attempt to re-register the '%s' database, using existing\n"
 msgstr "'yerel' veritabanını kaydetmeyi, var olanı kullanarak tekrar dene\n"
 
-#: ../db.c:199
+#: ../db.c:194
 #, c-format
 msgid "registering database '%s'"
 msgstr "'%s' veritabanı kaydediliyor"
 
-#: ../db.c:204
+#: ../db.c:199
 #, c-format
 msgid "database directory '%s' does not exist -- try creating it"
 msgstr "'%s' veritabanı dizini yok --bu dizini oluşturmayı deneyin"
 
-#: ../db.c:215
+#: ../db.c:210
 #, c-format
 msgid "opening database '%s'"
 msgstr "'%s' veritabanı açılıyor"
 
-#: ../deps.c:128
+#: ../deps.c:124
 msgid "started sorting dependencies"
 msgstr "bağımlılıkların sıralanması başlatıldı"
 
-#: ../deps.c:172
+#: ../deps.c:168
 msgid "dependency cycle detected"
 msgstr "bağımlılık çevrimi algılandı"
 
-#: ../deps.c:190
+#: ../deps.c:186
 msgid "sorting dependencies finished"
 msgstr "bağımlılıkların sıralanması bitirildi"
 
-#: ../deps.c:253
+#: ../deps.c:249
 #, c-format
 msgid "checkdeps: updated '%s' won't satisfy a dependency of '%s'"
 msgstr ""
 "bağımlılıkları denetle: güncellenmiş '%s' '%s' bağımlılığı için uygun değil"
 
-#: ../deps.c:390
+#: ../deps.c:386
 #, c-format
 msgid "checkdeps: found %s as a dependency for %s"
 msgstr "bağımlılıkları denetle: '%s' '%s' için bağımlılık olarak bulundu"
 
-#: ../deps.c:426
+#: ../deps.c:422
 #, c-format
 msgid "checkdeps: found %s which requires %s"
 msgstr "bağımlılıkları denetle: %s paketine gereksinim duyan %s paketi bulundu"
 
-#: ../deps.c:518
+#: ../deps.c:514
 #, c-format
 msgid "cannot find package \"%s\" or anything that provides it!"
 msgstr "\"%s\" paketi ya da bu paketi sağlayan başka bir paket bulunamadı!"
 
-#: ../deps.c:523
+#: ../deps.c:519
 msgid "dep is NULL!"
 msgstr "bağımlılık YOK!"
 
-#: ../deps.c:535
+#: ../deps.c:531
 #, c-format
 msgid "excluding %s -- explicitly installed"
 msgstr "%s hariç bırakılıyor --zaten kurulmuş durumda"
 
 #. add it to the target list
-#: ../deps.c:552
+#: ../deps.c:548
 #, c-format
 msgid "loading ALL info for '%s'"
 msgstr "'%s' için ALL bilgisi yükleniyor"
 
-#: ../deps.c:555
+#: ../deps.c:551
 #, c-format
 msgid "adding '%s' to the targets"
 msgstr "'%s' hedeflere ekleniyor"
 
-#: ../deps.c:597
+#: ../deps.c:593
 #, c-format
 msgid "%s provides dependency %s -- skipping"
 msgstr "%s %s bağımlılığını sağlar --atlanıyor"
 
-#: ../deps.c:621
+#: ../deps.c:617
 #, c-format
 msgid ""
 "cannot resolve dependencies for \"%s\" (\"%s\" is not in the package set)"
@@ -650,33 +614,33 @@ msgstr ""
 "değil)"
 
 #. this dep is already in the target list
-#: ../deps.c:638
+#: ../deps.c:632
 #, c-format
 msgid "dependency %s is already in the target list -- skipping"
 msgstr "%s bağımlılığı zaten hedef listesinde var --atlanıyor"
 
-#: ../deps.c:658
+#: ../deps.c:652
 #, c-format
 msgid "pulling dependency %s (needed by %s)"
 msgstr "çekilen bağımlılık %s (%s tarafından ihtiyaç duyuluyor)"
 
-#: ../deps.c:662
+#: ../deps.c:656
 #, c-format
 msgid "cannot resolve dependencies for \"%s\""
 msgstr "\"%s\" için bağımlılıklar çözümlenemiyor"
 
 #. cycle detected -- skip it
-#: ../deps.c:678
+#: ../deps.c:670
 #, c-format
 msgid "dependency cycle detected: %s"
 msgstr "bağımlılık çevrimi algılandı: %s"
 
-#: ../deps.c:722
+#: ../deps.c:714
 #, c-format
 msgid "depcmp: %s-%s %s %s-%s => %s"
 msgstr "depcmp: %s-%s %s %s-%s => %s"
 
-#: ../deps.c:727
+#: ../deps.c:719
 #, c-format
 msgid "depcmp: %s-%s %s %s => %s"
 msgstr "depcmp: %s-%s %s %s => %s"
@@ -889,112 +853,112 @@ msgstr "paket bu mimari için değil"
 msgid "could not retrieve the file"
 msgstr "dosya alınamıyor"
 
-#: ../handle.c:142
+#: ../handle.c:139
 #, c-format
 msgid "PM_OPT_DBPATH set to '%s'"
 msgstr "PM_OPT_DBPATH '%s' olarak ayarla"
 
-#: ../handle.c:149
+#: ../handle.c:146
 #, c-format
 msgid "PM_OPT_CACHEDIR set to '%s'"
 msgstr "PM_OPT_CACHEDIR '%s' olarak ayarla"
 
-#: ../handle.c:156
+#: ../handle.c:153
 #, c-format
 msgid "PM_OPT_HOOKSDIR set to '%s'"
 msgstr "PM_OPT_HOOKSDIR '%s' olarak ayarla"
 
-#: ../handle.c:183
+#: ../handle.c:180
 #, c-format
 msgid "can't open log file %s"
 msgstr "%s günlük dosyası açılamıyor"
 
-#: ../handle.c:187
+#: ../handle.c:184
 #, c-format
 msgid "PM_OPT_LOGFILE set to '%s'"
 msgstr "PM_OPT_LOGFILE '%s' olarak ayarla"
 
-#: ../handle.c:192
+#: ../handle.c:189
 #, c-format
 msgid "'%s' added to PM_OPT_NOUPGRADE"
 msgstr "'%s' PM_OPT_NOUPGRADE listesine eklendi"
 
-#: ../handle.c:195
+#: ../handle.c:192
 msgid "PM_OPT_NOUPGRADE flushed"
 msgstr "PM_OPT_NOUPGRADE temizlendi"
 
-#: ../handle.c:201
+#: ../handle.c:198
 #, c-format
 msgid "'%s' added to PM_OPT_NOEXTRACT"
 msgstr "'%s' PM_OPT_NOEXTRACT listesine eklendi"
 
-#: ../handle.c:204
+#: ../handle.c:201
 msgid "PM_OPT_NOEXTRACT flushed"
 msgstr "PM_OPT_NOEXTRACT temizlendi"
 
-#: ../handle.c:210
+#: ../handle.c:207
 #, c-format
 msgid "'%s' added to PM_OPT_IGNOREPKG"
 msgstr "'%s' PM_OPT_IGNOREPKG listesine eklendi"
 
-#: ../handle.c:213
+#: ../handle.c:210
 msgid "PM_OPT_IGNOREPKG flushed"
 msgstr "PM_OPT_IGNOREPKG temizlendi"
 
-#: ../handle.c:219
+#: ../handle.c:216
 #, c-format
 msgid "'%s' added to PM_OPT_HOLDPKG"
 msgstr "'%s' PM_OPT_HOLDPKG listesine eklendi"
 
-#: ../handle.c:222
+#: ../handle.c:219
 msgid "PM_OPT_HOLDPKG flushed"
 msgstr "PM_OPT_HOLDPKG temizlendi"
 
-#: ../handle.c:228
+#: ../handle.c:225
 #, c-format
 msgid "'%s' added to PM_OPT_NEEDLES"
 msgstr "'%s' PM_OPT_NEEDLES listesine eklendi"
 
-#: ../handle.c:231
+#: ../handle.c:228
 msgid "PM_OPT_NEEDLES flushed"
 msgstr "PM_OPT_NEEDLES temizlendi"
 
-#: ../handle.c:247
+#: ../handle.c:244
 #, c-format
 msgid "PM_OPT_USESYSLOG set to '%d'"
 msgstr "PM_OPT_USESYSLOG '%d' olarak ayarlandı"
 
-#: ../handle.c:296
+#: ../handle.c:293
 #, c-format
 msgid "PM_OPT_LOGMASK set to '%02x'"
 msgstr "PM_OPT_LOGMASK '%02x' olarak ayarlandı"
 
-#: ../handle.c:315
+#: ../handle.c:312
 #, c-format
 msgid "PM_OPT_PROXYHOST set to '%s'"
 msgstr "PM_OPT_PROXYHOST '%s' olarak ayarlandı"
 
-#: ../handle.c:319
+#: ../handle.c:316
 #, c-format
 msgid "PM_OPT_PROXYPORT set to '%d'"
 msgstr "PM_OPT_PROXYPORT '%d' olarak ayarlandı"
 
-#: ../handle.c:330
+#: ../handle.c:327
 #, c-format
 msgid "PM_OPT_XFERCOMMAND set to '%s'"
 msgstr "PM_OPT_XFERCOMMAND '%s' olarak ayarlandı"
 
-#: ../handle.c:334
+#: ../handle.c:331
 #, c-format
 msgid "PM_OPT_NOPASSIVEFTP set to '%d'"
 msgstr "PM_OPT_NOPASSIVEFTP '%d' olarak ayarlandı"
 
-#: ../handle.c:338
+#: ../handle.c:335
 #, c-format
 msgid "PM_OPT_CHOMP set to '%d'"
 msgstr "PM_OPT_CHOMP '%d' olarak ayarlandı"
 
-#: ../handle.c:342
+#: ../handle.c:339
 #, c-format
 msgid "PM_OPT_MAXTRIES set to '%d'"
 msgstr "PM_OPT_MAXTRIES '%d' olarak ayarlandı"
@@ -1004,263 +968,204 @@ msgstr "PM_OPT_MAXTRIES '%d' olarak ayarlandı"
 msgid "%s can't be opened\n"
 msgstr "%s açılamıyor\n"
 
-#: ../package.c:191
+#: ../package.c:189
 #, c-format
 msgid "could not open file %s"
 msgstr "%s dosyası açılamadı"
 
-#: ../package.c:208 ../package.c:262
+#: ../package.c:206 ../package.c:260
 #, c-format
 msgid "%s: syntax error in description file line %d"
 msgstr "%s: tanımlama dosyasındaki %d satırında söz dizimi hatası"
 
-#: ../package.c:321
+#: ../package.c:318
 msgid "could not parse the package description file"
 msgstr "paket tanımlama dosyası ayrıştırılamadı"
 
-#: ../package.c:329
+#: ../package.c:326
 #, c-format
 msgid "missing package name in %s"
 msgstr "%s içerisinde eksik paket ismi"
 
-#: ../package.c:337
+#: ../package.c:334
 #, c-format
 msgid "missing package version in %s"
 msgstr "%s içerisinde eksik paket sürümü"
 
-#: ../package.c:346
+#: ../package.c:343
 #, c-format
 msgid "missing package architecture in %s"
 msgstr "%s içerisinde eksik paket mimarisi"
 
-#: ../package.c:356
+#: ../package.c:353
 #, c-format
 msgid "wrong package architecture in %s"
 msgstr "%s içerisinde yanlış paket mimarisi"
 
-#: ../package.c:396
+#: ../package.c:393
 #, c-format
 msgid "could not remove tempfile %s"
 msgstr "%s geçici dosyası kaldırılamıyor"
 
-#: ../package.c:413
+#: ../package.c:410
 #, c-format
 msgid "bad package file in %s"
 msgstr "%s içerisinde kötü paket dosyası"
 
-#: ../package.c:421
+#: ../package.c:418
 #, c-format
 msgid "missing package info file in %s"
 msgstr "%s içerisinde eksik paket bilgi dosyası"
 
-#: ../package.c:561
+#: ../package.c:558
 #, c-format
 msgid "loading SCRIPLET info for '%s'"
 msgstr "'%s' için SCRIPLET bilgisi yükleniyor"
 
-#: ../remove.c:74
+#: ../remove.c:75
 #, c-format
 msgid "could not find %s in database"
 msgstr "%s veritabanı içerisinde bulunamadı"
 
-#: ../remove.c:87
+#: ../remove.c:88
 #, c-format
 msgid "adding %s in the targets list"
 msgstr "hedef listesine %s ekleniyor"
 
-#: ../remove.c:113
+#: ../remove.c:115
 #, c-format
 msgid "pulling %s in the targets list"
 msgstr "hedef listesindeki %s çekiliyor"
 
-#: ../remove.c:116
+#: ../remove.c:118
 #, c-format
 msgid "could not find %s in database -- skipping"
 msgstr "%s veritabanı içerisinde bulunamadı -- atlanıyor"
 
-#: ../remove.c:134
+#: ../remove.c:136
 msgid "finding removable dependencies"
 msgstr "kaldırılabilir bağımlılıklar bulunuyor"
 
-#: ../remove.c:184
+#: ../remove.c:187
 #, c-format
 msgid "removing package %s-%s"
 msgstr "%s-%s paketi kaldırılıyor"
 
-#: ../remove.c:195
+#: ../remove.c:198
 msgid "removing files"
 msgstr "dosyalar kaldırılıyor"
 
-#: ../remove.c:221
+#: ../remove.c:224
 #, c-format
 msgid "file %s does not exist"
 msgstr "%s dosyası yok"
 
 #. this is okay, other packages are probably using it.
-#: ../remove.c:227
+#: ../remove.c:230
 #, c-format
 msgid "keeping directory %s"
 msgstr "%s dizini saklanıyor"
 
-#: ../remove.c:229
+#: ../remove.c:232
 #, c-format
 msgid "removing directory %s"
 msgstr "%s dizini kaldırılıyor"
 
-#: ../remove.c:243
+#: ../remove.c:246
 #, c-format
 msgid "skipping removal of %s as it has moved to another package"
 msgstr "başka bir pakete aktarıldığı için %s'in kaldırılma işlemi atlanıyor"
 
-#: ../remove.c:255 ../remove.c:256
+#: ../remove.c:258 ../remove.c:259
 #, c-format
 msgid "%s saved as %s"
 msgstr "%s %s olarak farklı kaydedildi"
 
-#: ../remove.c:258 ../remove.c:265
+#: ../remove.c:261 ../remove.c:268
 #, c-format
 msgid "unlinking %s"
 msgstr "%s bağlantıları iptal ediliyor"
 
-#: ../remove.c:260 ../remove.c:270
+#: ../remove.c:263 ../remove.c:273
 #, c-format
 msgid "cannot remove file %s"
 msgstr "%s dosyası kaldırılamıyor"
 
-#: ../remove.c:289
+#: ../remove.c:292
 #, c-format
 msgid "removing database entry '%s'"
 msgstr "'%s' veritabanı girdisi kaldırılıyor"
 
-#: ../remove.c:291
+#: ../remove.c:294
 #, c-format
 msgid "could not remove database entry %s-%s"
 msgstr "%s-%s veritabanı girdisi kaldırılamadı"
 
-#: ../remove.c:294
+#: ../remove.c:297
 #, c-format
 msgid "could not remove entry '%s' from cache"
 msgstr "'%s' girdisi ön bellekten kaldırılamadı"
 
-#: ../remove.c:334
+#: ../remove.c:337
 #, c-format
 msgid "updating 'requiredby' field for package '%s'"
 msgstr "'%s' paketi için 'requiredby' kısmı güncelleniyor"
 
-#. check for "recommended" package replacements
-#: ../sync.c:129
-msgid "checking for package replacements"
-msgstr "paket değişimleri denetleniyor"
-
-#: ../sync.c:138
-#, c-format
-msgid "checking replacement '%s' for package '%s'"
-msgstr "'%s' paketi için '%s' değişimi denetleniyor"
-
-#: ../sync.c:140
-#, c-format
-msgid "%s-%s: ignoring package upgrade (to be replaced by %s-%s)"
-msgstr ""
-"%s-%s: paket yükseltmesi ihmal ediliyor (%s-%s tarafından değiştirilecek)"
-
-#: ../sync.c:174
-#, c-format
-msgid "%s-%s elected for upgrade (to be replaced by %s-%s)"
-msgstr "%s-%s yükseltme için seçildi (%s-%s tarafından değiştirilecek)"
-
-#. match installed packages with the sync dbs and compare versions
-#: ../sync.c:186
-msgid "checking for package upgrades"
-msgstr "paket yükseltmeleri denetleniyor"
-
-#: ../sync.c:198
-#, c-format
-msgid "'%s' not found in sync db -- skipping"
-msgstr "eşlenen veritabanı içerisinde '%s' bulunamadı --atlanıyor"
-
-#: ../sync.c:212 ../sync.c:526
-#, c-format
-msgid "'%s' is already elected for removal -- skipping"
-msgstr "'%s' kaldırma için zaten seçilmiş durumda -- atlanıyor"
-
-#. local version is newer
-#: ../sync.c:221
-#, c-format
-msgid "%s-%s: local version is newer"
-msgstr "%s-%s: yerel sürüm daha yeni"
-
-#. package should be ignored (IgnorePkg)
-#: ../sync.c:227
-#, c-format
-msgid "%s-%s: ignoring package upgrade (%s)"
-msgstr ":%s-%s: paket yükseltmesi yoksayılıyor (%s)"
-
-#. package too new (UpgradeDelay)
-#: ../sync.c:231
-#, c-format
-msgid "%s-%s: delaying upgrade of package (%s)\n"
-msgstr "%s-%s: paket yükseltmesi geciktiriliyor (%s)\n"
-
-#: ../sync.c:234
-#, c-format
-msgid "%s-%s: please upgrade manually (%s => %s)"
-msgstr ":%s-%s: lütfen elle yükseltme yapınız (%s=>%s)"
-
-#: ../sync.c:237
-#, c-format
-msgid "%s-%s elected for upgrade (%s => %s)"
-msgstr "%s-%s yükseltme için seçildi (%s => %s)"
-
 #. Search provides
-#: ../sync.c:289 ../sync.c:308
+#: ../sync.c:135 ../sync.c:154
 #, c-format
 msgid "target '%s' not found -- looking for provisions"
 msgstr "'%s' hedefi bulunamadı --hazırlıklar araştırılıyor"
 
-#: ../sync.c:294 ../sync.c:313
+#: ../sync.c:140 ../sync.c:159
 #, c-format
 msgid "found '%s' as a provision for '%s'"
 msgstr "'%s' hazırlığı olarak '%s' bulundu"
 
-#: ../sync.c:332
+#: ../sync.c:178
 #, c-format
 msgid "%s-%s: local version is newer -- skipping"
 msgstr "%s-%s: yerel sürüm daha yeni -- atlanıyor"
 
-#: ../sync.c:340
+#: ../sync.c:186
 #, c-format
 msgid "%s-%s is up to date -- skipping"
 msgstr "%s-%s güncel -- atlanıyor"
 
-#: ../sync.c:360
+#: ../sync.c:206
 #, c-format
 msgid "adding target '%s' to the transaction set"
 msgstr "'%s' hedefi işlem kümesine ekleniyor"
 
-#: ../sync.c:398
+#: ../sync.c:244
 #, c-format
 msgid "local copy of '%s' repo is too old"
 msgstr "'%s' deposunun yerel kopyas çok eski"
 
-#: ../sync.c:430
+#: ../sync.c:278
 msgid "resolving targets dependencies"
 msgstr "hedef bağımlılıklar çözümleniyor"
 
-#: ../sync.c:450
+#: ../sync.c:298
 #, c-format
 msgid "adding package %s-%s to the transaction targets"
 msgstr "%s-%s paketi işlem hedeflerine ekleniyor"
 
-#: ../sync.c:481
+#: ../sync.c:329
 msgid "looking for unresolvable dependencies"
 msgstr "çözümlenemeyen bağımlılıklar araştırılıyor"
 
-#: ../sync.c:511
+#: ../sync.c:359
 #, c-format
 msgid "package '%s' is conflicting with '%s'"
 msgstr "'%s' paketi '%s' ile çakışıyor"
 
-#: ../sync.c:533
+#: ../sync.c:374
+#, c-format
+msgid "'%s' is already elected for removal -- skipping"
+msgstr "'%s' kaldırma için zaten seçilmiş durumda -- atlanıyor"
+
+#: ../sync.c:381
 #, c-format
 msgid "'%s' not found in transaction set -- skipping"
 msgstr "'%s' işlem kümesinde bulunamadı --atlanıyor"
@@ -1268,65 +1173,120 @@ msgstr "'%s' işlem kümesinde bulunamadı --atlanıyor"
 #. so just treat it like a "replaces" item so the REQUIREDBY
 #. * fields are inherited properly.
 #.
-#: ../sync.c:544
+#: ../sync.c:392
 #, c-format
 msgid "package '%s' provides its own conflict"
 msgstr "'%s' paketi kendi çakışmasına sebep oluyor"
 
-#: ../sync.c:567 ../sync.c:572
+#: ../sync.c:415 ../sync.c:420
 #, c-format
 msgid "'%s' is in the target list -- keeping it"
 msgstr "'%s' hedef listede var --saklanıyor"
 
-#: ../sync.c:584 ../sync.c:621
+#: ../sync.c:432 ../sync.c:469
 #, c-format
 msgid "removing '%s' from target list"
 msgstr "'%s' hedef listeden kaldırılıyor"
 
 #. It's a conflict -- see if they want to remove it
 #.
-#: ../sync.c:593
+#: ../sync.c:441
 #, c-format
 msgid "resolving package '%s' conflict"
 msgstr "'%s' paketi çakışmaları çözümleniyor"
 
 #. append to the replaces list
-#: ../sync.c:616
+#: ../sync.c:464
 #, c-format
 msgid "electing '%s' for removal"
 msgstr "'%s' kaldırma için seçiliyor"
 
 #. abort
-#: ../sync.c:627 ../sync.c:643
+#: ../sync.c:475 ../sync.c:489
 msgid "unresolvable package conflicts detected"
 msgstr "çözümlenemeyen paket çakışması algılandı"
 
-#: ../sync.c:695
+#: ../sync.c:539
 msgid "checking dependencies of packages designated for removal"
 msgstr "kaldırmak için belirlenen paketlerin bağımlılıkları denetleniyor"
 
-#: ../sync.c:708
+#: ../sync.c:552
 msgid "something has gone horribly wrong"
 msgstr "birşeyler fena halde ters gitti"
 
 #. found matching provisio -- we're good to go
-#: ../sync.c:727
+#: ../sync.c:571
 #, c-format
 msgid "found '%s' as a provision for '%s' -- conflict aborted"
 msgstr "'%s' hazırlığı için '%s' bulundu --çakışma sonlandırıldı"
 
-#: ../sync.c:841
+#: ../sync.c:646
+msgid "could not create removal transaction"
+msgstr "kaldırma işlemi oluşturulamadı"
+
+#: ../sync.c:652
+msgid "could not initialize the removal transaction"
+msgstr "kaldırma işlemi başlatılmadı"
+
+#: ../sync.c:671
+msgid "removing conflicting and to-be-replaced packages"
+msgstr "çakışan ve yeri değiştirilecek paketler kaldırılıyor"
+
+#: ../sync.c:673
+msgid "could not prepare removal transaction"
+msgstr "kaldırma işlemi hazırlanamadı"
+
+#: ../sync.c:679
+msgid "could not commit removal transaction"
+msgstr "kaldırma işlemi yerine getirilemedi"
+
+#. install targets
+#: ../sync.c:686
+msgid "installing packages"
+msgstr "paketler kuruluyor"
+
+#: ../sync.c:689
+msgid "could not create transaction"
+msgstr "işlem oluşturulamadı"
+
+#: ../sync.c:694
+msgid "could not initialize transaction"
+msgstr "işlem başlatılamadı"
+
+#: ../sync.c:715
+msgid "could not prepare transaction"
+msgstr "işlem hazırlanamadı"
+
+#: ../sync.c:720
+msgid "could not commit transaction"
+msgstr "işlem teslim edilemedi"
+
+#: ../sync.c:727
+msgid "updating database for replaced packages' dependencies"
+msgstr "yeri değişen paketlerin bağımlılıkları için veritabanı güncelleniyor"
+
+#: ../sync.c:755
+#, c-format
+msgid "could not update requiredby for database entry %s-%s"
+msgstr "gereksinim duyulanar için olan %s-%s veritabanı girdisi güncellenemedi"
+
+#: ../sync.c:764
+#, c-format
+msgid "could not update new database entry %s-%s"
+msgstr "%s-%s yeni veritabanı girdisi güncellenemedi"
+
+#: ../sync.c:835
 #, c-format
 msgid "%s-%s-%s%s is already in the cache\n"
 msgstr "%s-%s-%s%s zaten ön bellekte var\n"
 
 #. no cache directory.... try creating it
-#: ../sync.c:853
+#: ../sync.c:847
 #, c-format
 msgid "no %s cache exists.  creating...\n"
 msgstr "%s ön belleği yok.  oluşturuluyor...\n"
 
-#: ../sync.c:854
+#: ../sync.c:848
 #, c-format
 msgid "warning: no %s cache exists.  creating..."
 msgstr "uyarı:%s ön belleği yok.  oluşturuluyor..."
@@ -1334,130 +1294,85 @@ msgstr "uyarı:%s ön belleği yok.  oluşturuluyor..."
 #. couldn't mkdir the cache directory, so fall back to /tmp and unlink
 #. * the package afterwards.
 #.
-#: ../sync.c:859
+#: ../sync.c:853
 msgid "couldn't create package cache, using /tmp instead\n"
 msgstr ""
 "paket öm belleği oluşturulamadı, bunun yerine /tmp dizini kullanılıyor\n"
 
-#: ../sync.c:860
+#: ../sync.c:854
 msgid "warning: couldn't create package cache, using /tmp instead"
 msgstr ""
 "uyarı:paket öm belleği oluşturulamadı, bunun yerine /tmp dizini kullanılıyor"
 
-#: ../sync.c:863
+#: ../sync.c:857
 #, c-format
 msgid "failed to set option CACHEDIR (%s)\n"
 msgstr "CACHEDIR (%s) seçeneği ayarlaması başarısız oldu\n"
 
-#: ../sync.c:870
+#: ../sync.c:864
 #, c-format
 msgid "failed to retrieve some files from %s\n"
 msgstr "%s den bazı dosyaların alınması başarısız oldu\n"
 
-#: ../sync.c:901 ../sync.c:913
+#: ../sync.c:895 ../sync.c:907
 #, c-format
 msgid "can't get md5 or sha1 checksum for package %s\n"
 msgstr "%s paketi için md5 ya da sha1 denetimi yapılamıyor\n"
 
-#: ../sync.c:919
+#: ../sync.c:913
 #, c-format
 msgid "expected md5:  '%s'"
 msgstr "beklenilen md5:  '%s'"
 
-#: ../sync.c:920
+#: ../sync.c:914
 #, c-format
 msgid "actual md5:    '%s'"
 msgstr "anlık md5:    '%s'"
 
-#: ../sync.c:921
+#: ../sync.c:915
 #, c-format
 msgid "expected sha1: '%s'"
 msgstr "beklenilen sha1:  '%s'"
 
-#: ../sync.c:922
+#: ../sync.c:916
 #, c-format
 msgid "actual sha1:   '%s'"
 msgstr "anlık sha1:   '%s'"
 
-#: ../sync.c:936
+#: ../sync.c:930
 #, c-format
 msgid "archive %s was corrupted (bad MD5 or SHA1 checksum)\n"
 msgstr "%s arşivi bozulmuş (kötü MD5 ya da SHA1bütünlük denetimi)\n"
 
-#: ../sync.c:938
+#: ../sync.c:932
 #, c-format
 msgid "archive %s is corrupted (bad MD5 or SHA1 checksum)\n"
 msgstr "%s arşivi bozuk (kötü MD5 ya da SHA1bütünlük denetimi)\n"
 
-#: ../sync.c:969
-msgid "could not create removal transaction"
-msgstr "kaldırma işlemi oluşturulamadı"
-
-#: ../sync.c:975
-msgid "could not initialize the removal transaction"
-msgstr "kaldırma işlemi başlatılmadı"
-
-#: ../sync.c:994
-msgid "removing conflicting and to-be-replaced packages"
-msgstr "çakışan ve yeri değiştirilecek paketler kaldırılıyor"
-
-#: ../sync.c:996
-msgid "could not prepare removal transaction"
-msgstr "kaldırma işlemi hazırlanamadı"
-
-#: ../sync.c:1002
-msgid "could not commit removal transaction"
-msgstr "kaldırma işlemi yerine getirilemedi"
-
-#. install targets
-#: ../sync.c:1009
-msgid "installing packages"
-msgstr "paketler kuruluyor"
-
-#: ../sync.c:1012
-msgid "could not create transaction"
-msgstr "işlem oluşturulamadı"
-
-#: ../sync.c:1017
-msgid "could not initialize transaction"
-msgstr "işlem başlatılamadı"
-
-#: ../sync.c:1038
-msgid "could not prepare transaction"
-msgstr "işlem hazırlanamadı"
-
-#: ../sync.c:1043
-msgid "could not commit transaction"
-msgstr "işlem teslim edilemedi"
-
-#: ../sync.c:1050
-msgid "updating database for replaced packages' dependencies"
-msgstr "yeri değişen paketlerin bağımlılıkları için veritabanı güncelleniyor"
-
-#: ../sync.c:1078
-#, c-format
-msgid "could not update requiredby for database entry %s-%s"
-msgstr "gereksinim duyulanar için olan %s-%s veritabanı girdisi güncellenemedi"
-
-#: ../sync.c:1087
-#, c-format
-msgid "could not update new database entry %s-%s"
-msgstr "%s-%s yeni veritabanı girdisi güncellenemedi"
-
-#: ../trans.c:52
+#: ../trans.c:54
 #, c-format
 msgid "cache for '%s' repo is too old"
 msgstr "'%s' ön belleği için depo çok eski"
 
-#: ../trans.c:55
+#: ../trans.c:57
 #, c-format
 msgid "cache for '%s' repo is up to date"
 msgstr "'%s' ön belleği için depo güncel"
 
-#: ../util.c:346
+#: ../trans.c:115
+#, c-format
+msgid "could not initialize transaction: Unknown Transaction Type %d"
+msgstr "işlem başlatılamadı: Bilinmeyen İşlem Tipi %d"
+
+#: ../util.c:345
 #, c-format
 msgid "could not extract %s: %s\n"
 msgstr "%s dışa çıkartılamadı: %s\n"
+
+#: ../util.c:447
+#, c-format
+msgid "running \"ldconfig -r %s\""
+msgstr "\"ldconfig -r %s\" komutu işletiliyor"
 
 #: ../util.c:510
 msgid "could not create temp directory"
@@ -1532,3 +1447,52 @@ msgstr "boşalan_denetle: toplam paket boyutu: %lld, disk alanı: bilinmiyor"
 #, c-format
 msgid "check_freespace: total pkg size: %lld, disk space: %lld"
 msgstr "boşalan_denetle: toplam paket boyutu: %lld, disk alanı: %lld"
+
+#~ msgid "checking for package replacements"
+#~ msgstr "paket değişimleri denetleniyor"
+
+#~ msgid "checking replacement '%s' for package '%s'"
+#~ msgstr "'%s' paketi için '%s' değişimi denetleniyor"
+
+#~ msgid "%s-%s: ignoring package upgrade (to be replaced by %s-%s)"
+#~ msgstr ""
+#~ "%s-%s: paket yükseltmesi ihmal ediliyor (%s-%s tarafından değiştirilecek)"
+
+#~ msgid "%s-%s elected for upgrade (to be replaced by %s-%s)"
+#~ msgstr "%s-%s yükseltme için seçildi (%s-%s tarafından değiştirilecek)"
+
+#~ msgid "checking for package upgrades"
+#~ msgstr "paket yükseltmeleri denetleniyor"
+
+#~ msgid "'%s' not found in sync db -- skipping"
+#~ msgstr "eşlenen veritabanı içerisinde '%s' bulunamadı --atlanıyor"
+
+#~ msgid "%s-%s: local version is newer"
+#~ msgstr "%s-%s: yerel sürüm daha yeni"
+
+#~ msgid "%s-%s: ignoring package upgrade (%s)"
+#~ msgstr ":%s-%s: paket yükseltmesi yoksayılıyor (%s)"
+
+#~ msgid "%s-%s: delaying upgrade of package (%s)\n"
+#~ msgstr "%s-%s: paket yükseltmesi geciktiriliyor (%s)\n"
+
+#~ msgid "%s-%s: please upgrade manually (%s => %s)"
+#~ msgstr ":%s-%s: lütfen elle yükseltme yapınız (%s=>%s)"
+
+#~ msgid "%s-%s elected for upgrade (%s => %s)"
+#~ msgstr "%s-%s yükseltme için seçildi (%s => %s)"
+
+#~ msgid "malloc failure: could not allocate %d bytes"
+#~ msgstr "malloc hatası: %d byte bölümlenemedi"
+
+#~ msgid "malloc failed: could not allocate %d bytes"
+#~ msgstr "malloc hatası: %d byte bölümlenemedi"
+
+#~ msgid "flushing database %s/%s"
+#~ msgstr "%s/%s veritabanı temizleniyor"
+
+#~ msgid "could not remove database entry %s/%s"
+#~ msgstr "%s/%s veritabanı girdisi kaldırılamadı"
+
+#~ msgid "unpacking database '%s'"
+#~ msgstr "'%s' veritabanı açılıyor"
