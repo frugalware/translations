@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-04-18 02:07+0200\n"
-"PO-Revision-Date: 2011-04-18 16:43+0200\n"
+"POT-Creation-Date: 2011-10-24 02:08+0200\n"
+"PO-Revision-Date: 2011-10-20 11:02+0200\n"
 "Last-Translator: Tutku Dalmaz <tutkudalmaz@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: tr\n"
@@ -26,345 +26,19 @@ msgstr ""
 "Frugalware orta seviye kullanıcılar için (metin tabanlı sistemlerden "
 "korkmayan) tasarlanmış genel amaçlı bir Linux dağıtımıdır."
 
-#: ../about.php:38
-msgid "What branches does Frugalware have?"
-msgstr "Frugalware hangi dallara sahiptir?"
-
-#: ../about.php:39
+#: ../about.php:37
 msgid ""
-"We have a <i>current</i> and a <i>stable</i> branch. The <i>current</i> "
-"branch is updated daily, and we update our <i>stable</i> branch around every "
-"6 months."
+"Please read the dedicated <a href=\"http://wiki.frugalware.org/index.php/FAQ"
+"\">FAQ page on the wiki</a>."
 msgstr ""
-"Frugalware <i>current</i> ve <i>stable</i> dallarına sahiptir. <i>current</"
-"i> dalı hergün güncellenirken, <i>stable</i> dalı her 6 ayda bir güncellenir."
-
-#: ../about.php:40
-msgid "What is &quot;The Frugalware Philosophy&quot; about?"
-msgstr "&quot;Frugalware Fesefesi&quot; ne hakkındadır?"
-
-#: ../about.php:41
-msgid ""
-"Briefly: simplicity, multimedia, design. We try to make Frugalware as simple "
-"as possible while not forgetting to keep it comfortable for the user. We try "
-"to ship fresh and stable software, as close to the original source as "
-"possible, because in our opinion most software is the best as is, and "
-"doesn't need patching."
-msgstr ""
-"Kısaca: basitlik, çokluortam, tasarım. Biz Frugalware'i kullanıcı "
-"rahatlığını unutmadan olabildiğince basit hale getirmeyi denedik. Taze ve "
-"kararlı yazılımları üzgün kaynağına sadık kalarak kullanıcıya sunmaya "
-"çalışıyoruz, bizim düşüncemize göre her yazılım olduğu gibi en iyisidir, ve "
-"yamaya ihtiyaç duymaz."
-
-#: ../about.php:42
-msgid "What is the license of Frugalware?"
-msgstr "Frugalware'in lisansı nedir?"
+"Lütfen  <a href=\"http://wiki.frugalware.org/index.php/FAQ\">Wiki üzerindeki "
+"özelleşmiş SSS sayfasını</a> okuyunuz."
 
 #: ../about.php:43
-msgid ""
-"That's two questions. Most software included in Frugalware have a GPL or BSD "
-"compatible license, for more information about a license of a specific "
-"package, refer to the LICENSE or COPYRIGHT file in the source tarball of the "
-"package. On the other hand, the part written by our team (FrugalBuild "
-"scripts, setup, homepage, etc) is released under GPL license. To make it "
-"even more complicated, some parts of the setup and init scripts are written "
-"by Patrick J. Volkerding. We GPL our additions, but Patrick J. Volkerding's "
-"code is still under the BSD license. For more information, refer to the "
-"COPYRIGHT file in the root directory of the FST (Frugalware Source Tree)."
-msgstr ""
-"Bu iki sorudur. Frugalware bünyesindeki bir çok yazılım GPL ya da BSD uyumlu "
-"lisanslar içerir, belirli paketlerin lisans bilgileri için kaynak dosya "
-"içerisindeki LICENSE ya da COPYRIGHT dosyalarını inceleyebilirsiniz. Diğer "
-"taraftan, bizim takımımız tarafından yazılan kısımlar (FrugalBuild "
-"betikleri, kurulum, anasayfa vb.) GPL lisansı ile yayımlanmaktadır. Daha "
-"açıklamak gerekirse init betikleri ve bazı kurulum kısımları Patrick J. "
-"Volkerding tarafından geliştirilmiştir. GPL lisansı bizim eklentimizdir, "
-"fakat Patrick J. Volkerding'in kodları hala BSD lisansı altındadır.Daha "
-"fazla bilgi için Frugalware Kaynak Ağacı (FST) altındaki çekirdek dizini "
-"içerisinde bulunan COPYRIGHT dosyasını içeleyebilirsiniz."
-
-#: ../about.php:44
-msgid "What package manager does Frugalware use?"
-msgstr "Frugalware hangi paket yöneticisini kullanır?"
-
-#: ../about.php:45
-msgid ""
-"We don't have our own package manager, we use Judd Vinet's great work, the "
-"<a href=\"http://www.archlinux.org/pacman\">pacman</a> package manager. It's "
-"a tar.bz2 based package manager, similar to Slackware's .tgz. Our packages' "
-"extension is .fpm to differentiate them from regular tarballs. Unlike "
-"Slackware's scripts, pacman is written in C, so it's much faster."
-msgstr ""
-"Kendimize ait bir paket yöneticimiz yok, Judd Vinet'in harika bir çalışması "
-"olan <a href=\"http://www.archlinux.org/pacman\">pacman</a> paket "
-"yöneticisini kullanıyoruz. Pacman tar.bz2 tabanlı bir paket yöneticisi olup "
-"Slackware'ın .tgz'sine çok benzer. Bizim paket uzantımız .fpm'dir. "
-"Slackware'ın betiklerinin aksine pacman C ile yazıldığı için daha hızlıdır."
-
-#: ../about.php:46
-msgid "How does Frugalware manage updating obsolete packages?"
-msgstr "Frugalware kullanılmayan ya da eskimiş paketleri nasıl günceller?"
-
-#: ../about.php:47
-msgid ""
-"We don't have any standalone program for updating packages as pacman manages "
-"this task too. To update your package database, use <tt>pacman&nbsp;-Sy</"
-"tt>, and to update your packages according the just synchronized package "
-"database, you use <tt>pacman&nbsp;-Su</tt>. To install a package with the "
-"necessary dependencies directly from a mirror ftp server, you issue "
-"<tt>pacman&nbsp;-S&nbsp;foo</tt>. For more information, refer to the pacman "
-"man page."
-msgstr ""
-"Pacman'in yaptığı gibi paketleri  güncellemek için tekbaşına kullandığımız "
-"bir yazılımımız yok. Paket veritabanınızı güncellemek için <tt>pacman&nbsp;-"
-"Sy</tt> komutunu, güncellenmiş veritabanına göre paketlerinizi güncellemek "
-"için <tt>pacman&nbsp;-Su</tt> komutunu, gerekli bağımlılıkları ile ftp ya da "
-"herhangi bir yansı üzerinden paket kurmak için <tt>pacman&nbsp;-S&nbsp;foo</"
-"tt> komutunu kullanabilirsiniz. Daha fazla bilgi için pacman man sayfalarını "
-"kullanabilirsiniz."
-
-#: ../about.php:48
-msgid "Is there any community support available for Frugalware?"
-msgstr "Frugalware için herhangi bir topluluk desteği var mı?"
-
-#: ../about.php:49
-msgid ""
-"Currently we have three mailing lists, an irc channel and forums that can be "
-"used to communicate with us or other users and to get help. The irc channel "
-"is on the Freenode network (server: irc.freenode.net). For more information "
-"about our mailing lists, please refer to the <a href=\"mailman/listinfo"
-"\">list section</a> of our web site."
-msgstr ""
-"Şuan için 3 adete-posta listemiz bulunmaktadır. IRC kanalı ve forumlar da "
-"bizimle ya da diğer kullanıcılar ile iletişim kurmak için kullanılabilir. "
-"IRC kanalı Freenode ağı üzerindedir (sunucu: irc.freenode.net) E-posta "
-"listelerimiz hakkında daha fazla bilgi için web sitemizdeki <a href="
-"\"mailman/listinfo\">liste seçimi</a> bölümünü kullanabilirsiniz."
-
-#: ../about.php:50
-msgid "Is there any commercial support available for Frugalware?"
-msgstr "Frugalware için herhangi bir ticari destek var mı?"
-
-#: ../about.php:51
-msgid "No, there isn't for now, and <i>currently</i> it isn't planned, either."
-msgstr "Hayır şimdilik yok, ve aynı zamanda <i>şuan için</i> planlanmıyor."
-
-#: ../about.php:52
-msgid "For whom is Frugalware recommended to use?"
-msgstr "Frugalware kullanımı kimler için önerilir?"
-
-#: ../about.php:53
-msgid ""
-"Frugalware is designed for intermediate users. Installing Frugalware is not "
-"a magic, of course, but you should know what a partition, an MBR (Master "
-"Boot Record), etc. is."
-msgstr ""
-"Frugalware orta seviye kullanıcılar için tasarlanmıştır. Frugalware kurulumu "
-"elbetteki büyük değildir, fakat partisyon, MBR (Master Boot Record) vb. "
-"kavramları bilmeniz gerekir."
-
-#: ../about.php:54
-msgid "How to become a developer?"
-msgstr "Nasıl geliştirici olunur?"
-
-#: ../about.php:55
-msgid ""
-"Get involved! :) If you installed Frugalware from CDs, get the full FST via "
-"repoman, which is available in pacman-tools. The sources are included in the "
-"DVD edition. Then start to play with the FrugalBuild scripts, for a typical "
-"example, refer to the <a href=\"/packages/44\">cabextract</a> package. Try "
-"to improve them, or write a new one for a currently unsupported program. "
-"Then send your patches to the <a href=\"mailman/listinfo/frugalware-devel"
-"\">devel</a> mailing list. From this point everything will come naturally to "
-"you :)"
-msgstr ""
-"Sarmalanın :) Eğer CD üzerinden Frugalware kurduysanız, repoman ile pacman-"
-"tools grubu içinde yer alan FST'yi kurun. KAynaklar DVD sürümünde de "
-"bulunmaktadır. Ardından FrugalBuild betikleri ile oynamaya başlayın. Tipik "
-"örnek için <a href=\"/packages/44\">cabextract</a> paketine bakabilirsiniz. "
-"Bunları geliştirmeyi ya da şuan için desteklenmeyen yazılımlara yenisini "
-"yazmayı deneyin. Ardından yamalarınızı <a href=\"mailman/listinfo/frugalware-"
-"devel\">devel</a> e-posta listemize gönderin. Bu noktadan sonra herşey "
-"kendiliğinden gelişecektir."
-
-#: ../about.php:56
-msgid "What do developers do?"
-msgstr "Geliştiriciler ne yapar?"
-
-#: ../about.php:57
-msgid ""
-"In short, what they want to, if they play a square game. They may maintain "
-"packages: building them if a newer version is available and update the "
-"FrugalBuild scripts to work correctly against a newer version. They can "
-"contribute a new build script to a previously non-existent package. They can "
-"write articles about Frugalware, or anything else in connection with the "
-"Frugalware community. If you only want to help us, but you don't want to "
-"hack, you may help in translating Frugalware to your or other language. And, "
-"of course, we happily accept <a href=\"/donations\">donations</a>. :) More "
-"on this <a href=\"/docs/getting-"
-"involved#_further_options_for_those_who_have_developer_account_packagers_coders"
-"\">here</a>."
-msgstr ""
-"Kısaca, geliştiriciler eğer bir oyun oynuyorlarsa istediklerini yaparlar. "
-"Geliştiriciler paketlerin bakımını yapabilirler: onları yeni sürümüne "
-"yükseltirler, FrugalBuild betiklerini yeni sürüm ile düzgün çalışacak "
-"şekilde güncelleyebilirler, ayrıca daha önceleri desteklenmeyen paketler "
-"için inşa betiği hazırlayabilirler.Frugalware hakkında makaleler yazarlerken "
-"bir yanda da Frugalware topluluğu ile iletişimde kalıp istekleri "
-"dinleyebilirler. Eğer bize sadece yardım etmek istiyorsanız ve hack yapmak "
-"istemiyorsanız da Frugalware'ı başka dillere çevirmede bizlere yardımcı "
-"olabilirsiniz. Ayrıca  <a href=\"/donations\">bağışları da</a> büyük bir "
-"mutlulukla kabul etmekteyiz. Daha detaylı açıklama için <a href=\"/docs/"
-"getting-"
-"involved#_further_options_for_those_who_have_developer_account_packagers_coders"
-"\">burayı</a> kullanabilirsiniz."
-
-#: ../about.php:58
-msgid "Who develops Frugalware?"
-msgstr "Frugalware'ı kimler geliştirir?"
-
-#: ../about.php:59
-msgid "A young group, but your age is not conditional to become a developer"
-msgstr ""
-"Genç bir grup tarafından geliştirilir, fakat yaşınız geliştirici olmak için "
-"de koşul değildir."
-
-#: ../about.php:60
-msgid "Is Frugalware specialized in a certain purpose?"
-msgstr "Frugalware belirli bir amaç için özelleşmiş midir?"
-
-#: ../about.php:61
-msgid "No, it's a general purpose distribution, for desktops and servers."
-msgstr ""
-"Hayır, Frugalware masaüstü ve sunucu bilgisayarlarda kullanılabilen genel "
-"amaçlı bir Linux dağıtımıdır."
-
-#: ../about.php:62
-msgid "Do you plan to release a live cd?"
-msgstr "Canlı CD hazırlamayı düşünüyor musunuz?"
-
-#: ../about.php:63
-msgid ""
-"Well, we have already a live cd, called FwLive. Currently it supports only "
-"i686, but an x86_64 version is also under development. You can find it in "
-"the standard release directories."
-msgstr ""
-"Elbette, zaten FwLive isimli bir canlı CD'miz mevcuttur. Şuan için sadece "
-"i686 desteği olan bu canlı CD'nin x86_64 desteği ise hala geliştirme "
-"aşamasındadır. Bu canlı CD'ye standart dağıtım dizinlerinden ulaşabilirsiniz."
-
-#: ../about.php:64
-msgid "Does Frugalware support languages other than English?"
-msgstr "Frugalware İngilizce'den başka bir dil desteğine sahip mi?"
-
-#: ../about.php:65
-msgid ""
-"Yes, it supports all languages supported by the packages. If the init "
-"scripts or the setup is not available in your language, then it simply means "
-"it haven't yet translated."
-msgstr ""
-"Evet, paketlerin destekleridi tüm dilleri Frugalware da destekler. Eğer init "
-"betikleri ya da kurulum sizin diliniz de değilse, bunlar henüz çevrilmemiş "
-"demektir."
-
-#: ../about.php:66
-msgid "What about Asian languages?"
-msgstr "Asya dilleri hakkındaki durum nedir?"
-
-#: ../about.php:67
-msgid "Yes you just have to switch to UTF-8 encoding."
-msgstr "Evet UTF-8 kodlamaya dönmek zorundasınız."
-
-#: ../about.php:68
-msgid "What architectures does Frugalware support?"
-msgstr "Frugalware hangi mimarileri destekler?"
-
-#: ../about.php:69
-msgid ""
-"Currently we support x86, x86_64 and ppc platforms, and inside x86, only "
-"i686 (Pentium Pro or higher instruction set), inside x86_64 only k8 (amd64) "
-"and inside ppc only PowerPC. If there are any claims, an i386 port will be "
-"created, but currently we don't have resources to build and maintain those "
-"packages. Outside x86, currently we don't have any non-x86 hardware, but "
-"happily accept such patches or any effort to create non-x86 optimized "
-"packages."
-msgstr ""
-"Şuan için x86 ve x86_86 platformlarını desteklemekteyiz.x86 mimarisi "
-"içerisinde i686(Pentium Pro ya da daha yüksek komut kümesi) ve x86_64 "
-"mimarisi içerisinde de sadece k8(amd64) desteği vardır. Eğer istek olursa "
-"i386 desteği de sağlanabilir, fakat şuan için bu paketleri inşa edip "
-"denetleyecek kaynaklara sahip değiliz. x86 mimarisi haricinde herhangi bir "
-"x86 olmayan donanım sahip değiliz, fahat bazı yamaların kullanılması ya da "
-"çabalarımız ile x86 olmayan paketler de yaratılmıştır. "
-
-#: ../about.php:70
-msgid "How are compressed the Frugalware packages?"
-msgstr "Sıkıştırılmış Frugalware paketleri nasıldır?"
-
-#: ../about.php:71
-msgid ""
-"FPM packages were originally .tar.gz packages, then a bit later we migrated "
-"to libarchive, which allowed bzip2 compression. Life was good, but then lzma "
-"was came, and I added support for libarchive, though others were not really "
-"interested in a migration, so we stick to .tar.bz2. A few months ago "
-"libarchive got support for the xz format (which is the successor of lzma), "
-"so we switched to it. pacman-g2 still\n"
-"support .tar.gz and .tar.bz2 as well, and the package extension is .fpm all "
-"the time to make it clear that it's a Frugalware package."
-msgstr ""
-"FPM paketleri en temelinde .tar.gz paketleriydi, bir süre sonra lbzip2 "
-"sıkıştırmasına olanak sağlayan libarchive'ı entegre ettik. Hayat güzeldi, "
-"sonra Izma geldi, ve ben libarchive desteğini ekledim, aslında diğerleri "
-"entegre etme konusunda çok da istekli değillerdi.Birkaç ay sonra libarchive "
-"xz dosya biçimi desteğini aldı(bu Izma'nın başarısıdır) bu yüzden biz de "
-"buna dönüştürdük. pacman-g2 hala\n"
-".tar.gz ve .tar.bz2 dosya sıkıştırma biçimlerini destekler, ve bunun bir "
-"Frugalware paketi olduğunu açıkca belirtmek için dosya uzantısı herzaman "
-".fpm olacaktır."
-
-#: ../about.php:73
-msgid "What's the difference between Arch and Frugalware?"
-msgstr "Arch ve Frugalware arasındaki fark nedir?"
-
-#: ../about.php:74
-msgid ""
-"Many people think that as we use basically the same <tt>pacman</tt> as <a "
-"href=\"http://www.archlinux.org\">Arch Linux</a> then the two distribution "
-"are the same. Originally the package manager was the same, there is almost "
-"nothing other similar. There are also other major differences. We have "
-"console (such as <tt>grubconfig</tt> and <tt>netconfig</tt>) and graphical "
-"(such as <tt>gService</tt> and <tt>gFPM</tt>) configuration tools. At the "
-"end of the installation you will get a working system with x, network, mouse "
-"(and much more configured. We have an unique repo (stable or current) and "
-"it's easy to contribute with new packages, so we don't need such thing like "
-"<a href=\"http://aur.archlinux.org/\">AUR</a>. We officially support PPC "
-"arch."
-msgstr ""
-"Birçok insan bizim <a href=\"http://www.archlinux.org\">Arch Linux</a> ile "
-"aynı <tt>pacman</tt>'i kullandığımızı ve dolayısıyla iki dağıtımının aynı "
-"olduğunu düşünür. Temelde paket yöneticisi aynıdır, bundan başka bir "
-"benzerlik yoktur. Bunun haricinde belirgin farklarda mevcuttur. Biz terminal "
-" (<tt>grubconfig</tt> ve <tt>netconfig</tt> gibi) ve görsel "
-"(<tt>gService</tt> ve <tt>gFPM</tt>gibi) yapılandırma araçlarımız vardır. "
-"Kurulum sonunda çalışan bir X ortamı, ağ sistemi, fareniz olur ve yeni "
-"paketleri oluşturmanız oldukça kolaydır, bu yüzden <a "
-"href=\"http://aur.archlinux.org/\">AUR</a> gibi birşeye ihtiyacımız yoktur. "
-"Biz resmi olarak PPC mimarisini destekleriz."
-
-#: ../about.php:81
 msgid "Short"
 msgstr "Kısa"
 
-#: ../about.php:85
-msgid "Question"
-msgstr "Soru"
-
-#: ../about.php:86
-msgid "Answer"
-msgstr "Cevap"
-
-#: ../about.php:88
+#: ../about.php:44
 msgid "Long"
 msgstr "Uzun"
 
@@ -527,14 +201,14 @@ msgstr "Git deposu"
 msgid "Translation portal"
 msgstr "Çeviri portalı"
 
-#: ../config.inc.php:83 ../donations.php:50 ../header.php:74
+#: ../config.inc.php:83 ../donations.php:50 ../header.php:85
 msgid "Donations"
 msgstr "Bağışlar"
 
 #: ../config.inc.php:95 ../config.inc.php:97 ../config.inc.php:99
 #: ../config.inc.php:101 ../config.inc.php:103 ../config.inc.php:105
 #: ../config.inc.php:107 ../config.inc.php:109 ../config.inc.php:111
-#: ../config.inc.php:113
+#: ../config.inc.php:114 ../config.inc.php:118
 msgid "Change language"
 msgstr "Dili değiştir"
 
@@ -627,23 +301,27 @@ msgstr ""
 "@freenode üzerindeki #frugalware kanalında IroNİQ ile iletişime "
 "geçebilirsiniz, ya da herhangi bir e-posta listesine de sorabilirsiniz."
 
-#: ../header.php:70
+#: ../header.php:86
 msgid "Languages"
 msgstr "Diller"
 
-#: ../header.php:71
+#: ../header.php:87
+msgid "Share"
+msgstr "Paylaş"
+
+#: ../header.php:88
 msgid "Recent updates"
 msgstr "Son güncellemeler"
 
-#: ../header.php:72
+#: ../header.php:89
 msgid "Releases"
 msgstr "Sürümler"
 
-#: ../header.php:75
+#: ../header.php:90
 msgid "Information"
 msgstr "Bilgilendirme"
 
-#: ../header.php:76
+#: ../header.php:91
 msgid "Server information"
 msgstr "Sunucu bilgileri"
 
@@ -655,6 +333,10 @@ msgstr "Uptime:<br /> %d gün %d s %d dk %d sn"
 #: ../header.inc.php:142
 msgid "Donate to support our development efforts."
 msgstr "Geliştirici çabalarına destek olmak için bağış yapın."
+
+#: ../header.inc.php:150
+msgid "Share Frugalware with your friends."
+msgstr "Frugalware'ı arkadaşlarınızla paylaşın."
 
 #: ../index.php:97 ../index.php:116
 msgid "Sorry, no news on your language, using English instead."
@@ -838,8 +520,8 @@ msgid ""
 "Click <a href=\"javascript:addEngine()\">here</a> to install the Firefox "
 "search plugin."
 msgstr ""
-"Firefox arama eklentisini kurmak için <a href=\"javascript:addEngine()"
-"\">buraya</a> tıklayın."
+"Firefox arama eklentisini kurmak için <a href=\"javascript:addEngine"
+"()\">buraya</a> tıklayın."
 
 #: ../packages.php:196
 msgid "Error in the query, please change the searching conditions"
@@ -1449,6 +1131,309 @@ msgstr "CVEs"
 #: ../security.php:94
 msgid "Description"
 msgstr "Tanım"
+
+#~ msgid "What branches does Frugalware have?"
+#~ msgstr "Frugalware hangi dallara sahiptir?"
+
+#~ msgid ""
+#~ "We have a <i>current</i> and a <i>stable</i> branch. The <i>current</i> "
+#~ "branch is updated daily, and we update our <i>stable</i> branch around "
+#~ "every 6 months."
+#~ msgstr ""
+#~ "Frugalware <i>current</i> ve <i>stable</i> dallarına sahiptir. "
+#~ "<i>current</i> dalı hergün güncellenirken, <i>stable</i> dalı her 6 ayda "
+#~ "bir güncellenir."
+
+#~ msgid "What is &quot;The Frugalware Philosophy&quot; about?"
+#~ msgstr "&quot;Frugalware Fesefesi&quot; ne hakkındadır?"
+
+#~ msgid ""
+#~ "Briefly: simplicity, multimedia, design. We try to make Frugalware as "
+#~ "simple as possible while not forgetting to keep it comfortable for the "
+#~ "user. We try to ship fresh and stable software, as close to the original "
+#~ "source as possible, because in our opinion most software is the best as "
+#~ "is, and doesn't need patching."
+#~ msgstr ""
+#~ "Kısaca: basitlik, çokluortam, tasarım. Biz Frugalware'i kullanıcı "
+#~ "rahatlığını unutmadan olabildiğince basit hale getirmeyi denedik. Taze ve "
+#~ "kararlı yazılımları üzgün kaynağına sadık kalarak kullanıcıya sunmaya "
+#~ "çalışıyoruz, bizim düşüncemize göre her yazılım olduğu gibi en iyisidir, "
+#~ "ve yamaya ihtiyaç duymaz."
+
+#~ msgid "What is the license of Frugalware?"
+#~ msgstr "Frugalware'in lisansı nedir?"
+
+#~ msgid ""
+#~ "That's two questions. Most software included in Frugalware have a GPL or "
+#~ "BSD compatible license, for more information about a license of a "
+#~ "specific package, refer to the LICENSE or COPYRIGHT file in the source "
+#~ "tarball of the package. On the other hand, the part written by our team "
+#~ "(FrugalBuild scripts, setup, homepage, etc) is released under GPL "
+#~ "license. To make it even more complicated, some parts of the setup and "
+#~ "init scripts are written by Patrick J. Volkerding. We GPL our additions, "
+#~ "but Patrick J. Volkerding's code is still under the BSD license. For more "
+#~ "information, refer to the COPYRIGHT file in the root directory of the FST "
+#~ "(Frugalware Source Tree)."
+#~ msgstr ""
+#~ "Bu iki sorudur. Frugalware bünyesindeki bir çok yazılım GPL ya da BSD "
+#~ "uyumlu lisanslar içerir, belirli paketlerin lisans bilgileri için kaynak "
+#~ "dosya içerisindeki LICENSE ya da COPYRIGHT dosyalarını "
+#~ "inceleyebilirsiniz. Diğer taraftan, bizim takımımız tarafından yazılan "
+#~ "kısımlar (FrugalBuild betikleri, kurulum, anasayfa vb.) GPL lisansı ile "
+#~ "yayımlanmaktadır. Daha açıklamak gerekirse init betikleri ve bazı kurulum "
+#~ "kısımları Patrick J. Volkerding tarafından geliştirilmiştir. GPL lisansı "
+#~ "bizim eklentimizdir, fakat Patrick J. Volkerding'in kodları hala BSD "
+#~ "lisansı altındadır.Daha fazla bilgi için Frugalware Kaynak Ağacı (FST) "
+#~ "altındaki çekirdek dizini içerisinde bulunan COPYRIGHT dosyasını "
+#~ "içeleyebilirsiniz."
+
+#~ msgid "What package manager does Frugalware use?"
+#~ msgstr "Frugalware hangi paket yöneticisini kullanır?"
+
+#~ msgid ""
+#~ "We don't have our own package manager, we use Judd Vinet's great work, "
+#~ "the <a href=\"http://www.archlinux.org/pacman\">pacman</a> package "
+#~ "manager. It's a tar.bz2 based package manager, similar to Slackware's ."
+#~ "tgz. Our packages' extension is .fpm to differentiate them from regular "
+#~ "tarballs. Unlike Slackware's scripts, pacman is written in C, so it's "
+#~ "much faster."
+#~ msgstr ""
+#~ "Kendimize ait bir paket yöneticimiz yok, Judd Vinet'in harika bir "
+#~ "çalışması olan <a href=\"http://www.archlinux.org/pacman\">pacman</a> "
+#~ "paket yöneticisini kullanıyoruz. Pacman tar.bz2 tabanlı bir paket "
+#~ "yöneticisi olup Slackware'ın .tgz'sine çok benzer. Bizim paket uzantımız ."
+#~ "fpm'dir. Slackware'ın betiklerinin aksine pacman C ile yazıldığı için "
+#~ "daha hızlıdır."
+
+#~ msgid "How does Frugalware manage updating obsolete packages?"
+#~ msgstr "Frugalware kullanılmayan ya da eskimiş paketleri nasıl günceller?"
+
+#~ msgid ""
+#~ "We don't have any standalone program for updating packages as pacman "
+#~ "manages this task too. To update your package database, use "
+#~ "<tt>pacman&nbsp;-Sy</tt>, and to update your packages according the just "
+#~ "synchronized package database, you use <tt>pacman&nbsp;-Su</tt>. To "
+#~ "install a package with the necessary dependencies directly from a mirror "
+#~ "ftp server, you issue <tt>pacman&nbsp;-S&nbsp;foo</tt>. For more "
+#~ "information, refer to the pacman man page."
+#~ msgstr ""
+#~ "Pacman'in yaptığı gibi paketleri  güncellemek için tekbaşına "
+#~ "kullandığımız bir yazılımımız yok. Paket veritabanınızı güncellemek için "
+#~ "<tt>pacman&nbsp;-Sy</tt> komutunu, güncellenmiş veritabanına göre "
+#~ "paketlerinizi güncellemek için <tt>pacman&nbsp;-Su</tt> komutunu, gerekli "
+#~ "bağımlılıkları ile ftp ya da herhangi bir yansı üzerinden paket kurmak "
+#~ "için <tt>pacman&nbsp;-S&nbsp;foo</tt> komutunu kullanabilirsiniz. Daha "
+#~ "fazla bilgi için pacman man sayfalarını kullanabilirsiniz."
+
+#~ msgid "Is there any community support available for Frugalware?"
+#~ msgstr "Frugalware için herhangi bir topluluk desteği var mı?"
+
+#~ msgid ""
+#~ "Currently we have three mailing lists, an irc channel and forums that can "
+#~ "be used to communicate with us or other users and to get help. The irc "
+#~ "channel is on the Freenode network (server: irc.freenode.net). For more "
+#~ "information about our mailing lists, please refer to the <a href="
+#~ "\"mailman/listinfo\">list section</a> of our web site."
+#~ msgstr ""
+#~ "Şuan için 3 adete-posta listemiz bulunmaktadır. IRC kanalı ve forumlar da "
+#~ "bizimle ya da diğer kullanıcılar ile iletişim kurmak için kullanılabilir. "
+#~ "IRC kanalı Freenode ağı üzerindedir (sunucu: irc.freenode.net) E-posta "
+#~ "listelerimiz hakkında daha fazla bilgi için web sitemizdeki <a href="
+#~ "\"mailman/listinfo\">liste seçimi</a> bölümünü kullanabilirsiniz."
+
+#~ msgid "Is there any commercial support available for Frugalware?"
+#~ msgstr "Frugalware için herhangi bir ticari destek var mı?"
+
+#~ msgid ""
+#~ "No, there isn't for now, and <i>currently</i> it isn't planned, either."
+#~ msgstr "Hayır şimdilik yok, ve aynı zamanda <i>şuan için</i> planlanmıyor."
+
+#~ msgid "For whom is Frugalware recommended to use?"
+#~ msgstr "Frugalware kullanımı kimler için önerilir?"
+
+#~ msgid ""
+#~ "Frugalware is designed for intermediate users. Installing Frugalware is "
+#~ "not a magic, of course, but you should know what a partition, an MBR "
+#~ "(Master Boot Record), etc. is."
+#~ msgstr ""
+#~ "Frugalware orta seviye kullanıcılar için tasarlanmıştır. Frugalware "
+#~ "kurulumu elbetteki büyük değildir, fakat partisyon, MBR (Master Boot "
+#~ "Record) vb. kavramları bilmeniz gerekir."
+
+#~ msgid "How to become a developer?"
+#~ msgstr "Nasıl geliştirici olunur?"
+
+#~ msgid ""
+#~ "Get involved! :) If you installed Frugalware from CDs, get the full FST "
+#~ "via repoman, which is available in pacman-tools. The sources are included "
+#~ "in the DVD edition. Then start to play with the FrugalBuild scripts, for "
+#~ "a typical example, refer to the <a href=\"/packages/44\">cabextract</a> "
+#~ "package. Try to improve them, or write a new one for a currently "
+#~ "unsupported program. Then send your patches to the <a href=\"mailman/"
+#~ "listinfo/frugalware-devel\">devel</a> mailing list. From this point "
+#~ "everything will come naturally to you :)"
+#~ msgstr ""
+#~ "Sarmalanın :) Eğer CD üzerinden Frugalware kurduysanız, repoman ile "
+#~ "pacman-tools grubu içinde yer alan FST'yi kurun. KAynaklar DVD sürümünde "
+#~ "de bulunmaktadır. Ardından FrugalBuild betikleri ile oynamaya başlayın. "
+#~ "Tipik örnek için <a href=\"/packages/44\">cabextract</a> paketine "
+#~ "bakabilirsiniz. Bunları geliştirmeyi ya da şuan için desteklenmeyen "
+#~ "yazılımlara yenisini yazmayı deneyin. Ardından yamalarınızı <a href="
+#~ "\"mailman/listinfo/frugalware-devel\">devel</a> e-posta listemize "
+#~ "gönderin. Bu noktadan sonra herşey kendiliğinden gelişecektir."
+
+#~ msgid "What do developers do?"
+#~ msgstr "Geliştiriciler ne yapar?"
+
+#~ msgid ""
+#~ "In short, what they want to, if they play a square game. They may "
+#~ "maintain packages: building them if a newer version is available and "
+#~ "update the FrugalBuild scripts to work correctly against a newer version. "
+#~ "They can contribute a new build script to a previously non-existent "
+#~ "package. They can write articles about Frugalware, or anything else in "
+#~ "connection with the Frugalware community. If you only want to help us, "
+#~ "but you don't want to hack, you may help in translating Frugalware to "
+#~ "your or other language. And, of course, we happily accept <a href=\"/"
+#~ "donations\">donations</a>. :) More on this <a href=\"/docs/getting-"
+#~ "involved#_further_options_for_those_who_have_developer_account_packagers_coders"
+#~ "\">here</a>."
+#~ msgstr ""
+#~ "Kısaca, geliştiriciler eğer bir oyun oynuyorlarsa istediklerini yaparlar. "
+#~ "Geliştiriciler paketlerin bakımını yapabilirler: onları yeni sürümüne "
+#~ "yükseltirler, FrugalBuild betiklerini yeni sürüm ile düzgün çalışacak "
+#~ "şekilde güncelleyebilirler, ayrıca daha önceleri desteklenmeyen paketler "
+#~ "için inşa betiği hazırlayabilirler.Frugalware hakkında makaleler "
+#~ "yazarlerken bir yanda da Frugalware topluluğu ile iletişimde kalıp "
+#~ "istekleri dinleyebilirler. Eğer bize sadece yardım etmek istiyorsanız ve "
+#~ "hack yapmak istemiyorsanız da Frugalware'ı başka dillere çevirmede "
+#~ "bizlere yardımcı olabilirsiniz. Ayrıca  <a href=\"/donations\">bağışları "
+#~ "da</a> büyük bir mutlulukla kabul etmekteyiz. Daha detaylı açıklama için "
+#~ "<a href=\"/docs/getting-"
+#~ "involved#_further_options_for_those_who_have_developer_account_packagers_coders"
+#~ "\">burayı</a> kullanabilirsiniz."
+
+#~ msgid "Who develops Frugalware?"
+#~ msgstr "Frugalware'ı kimler geliştirir?"
+
+#~ msgid "A young group, but your age is not conditional to become a developer"
+#~ msgstr ""
+#~ "Genç bir grup tarafından geliştirilir, fakat yaşınız geliştirici olmak "
+#~ "için de koşul değildir."
+
+#~ msgid "Is Frugalware specialized in a certain purpose?"
+#~ msgstr "Frugalware belirli bir amaç için özelleşmiş midir?"
+
+#~ msgid "No, it's a general purpose distribution, for desktops and servers."
+#~ msgstr ""
+#~ "Hayır, Frugalware masaüstü ve sunucu bilgisayarlarda kullanılabilen genel "
+#~ "amaçlı bir Linux dağıtımıdır."
+
+#~ msgid "Do you plan to release a live cd?"
+#~ msgstr "Canlı CD hazırlamayı düşünüyor musunuz?"
+
+#~ msgid ""
+#~ "Well, we have already a live cd, called FwLive. Currently it supports "
+#~ "only i686, but an x86_64 version is also under development. You can find "
+#~ "it in the standard release directories."
+#~ msgstr ""
+#~ "Elbette, zaten FwLive isimli bir canlı CD'miz mevcuttur. Şuan için sadece "
+#~ "i686 desteği olan bu canlı CD'nin x86_64 desteği ise hala geliştirme "
+#~ "aşamasındadır. Bu canlı CD'ye standart dağıtım dizinlerinden "
+#~ "ulaşabilirsiniz."
+
+#~ msgid "Does Frugalware support languages other than English?"
+#~ msgstr "Frugalware İngilizce'den başka bir dil desteğine sahip mi?"
+
+#~ msgid ""
+#~ "Yes, it supports all languages supported by the packages. If the init "
+#~ "scripts or the setup is not available in your language, then it simply "
+#~ "means it haven't yet translated."
+#~ msgstr ""
+#~ "Evet, paketlerin destekleridi tüm dilleri Frugalware da destekler. Eğer "
+#~ "init betikleri ya da kurulum sizin diliniz de değilse, bunlar henüz "
+#~ "çevrilmemiş demektir."
+
+#~ msgid "What about Asian languages?"
+#~ msgstr "Asya dilleri hakkındaki durum nedir?"
+
+#~ msgid "Yes you just have to switch to UTF-8 encoding."
+#~ msgstr "Evet UTF-8 kodlamaya dönmek zorundasınız."
+
+#~ msgid "What architectures does Frugalware support?"
+#~ msgstr "Frugalware hangi mimarileri destekler?"
+
+#~ msgid ""
+#~ "Currently we support x86, x86_64 and ppc platforms, and inside x86, only "
+#~ "i686 (Pentium Pro or higher instruction set), inside x86_64 only k8 "
+#~ "(amd64) and inside ppc only PowerPC. If there are any claims, an i386 "
+#~ "port will be created, but currently we don't have resources to build and "
+#~ "maintain those packages. Outside x86, currently we don't have any non-x86 "
+#~ "hardware, but happily accept such patches or any effort to create non-x86 "
+#~ "optimized packages."
+#~ msgstr ""
+#~ "Şuan için x86 ve x86_86 platformlarını desteklemekteyiz.x86 mimarisi "
+#~ "içerisinde i686(Pentium Pro ya da daha yüksek komut kümesi) ve x86_64 "
+#~ "mimarisi içerisinde de sadece k8(amd64) desteği vardır. Eğer istek olursa "
+#~ "i386 desteği de sağlanabilir, fakat şuan için bu paketleri inşa edip "
+#~ "denetleyecek kaynaklara sahip değiliz. x86 mimarisi haricinde herhangi "
+#~ "bir x86 olmayan donanım sahip değiliz, fahat bazı yamaların kullanılması "
+#~ "ya da çabalarımız ile x86 olmayan paketler de yaratılmıştır. "
+
+#~ msgid "How are compressed the Frugalware packages?"
+#~ msgstr "Sıkıştırılmış Frugalware paketleri nasıldır?"
+
+#~ msgid ""
+#~ "FPM packages were originally .tar.gz packages, then a bit later we "
+#~ "migrated to libarchive, which allowed bzip2 compression. Life was good, "
+#~ "but then lzma was came, and I added support for libarchive, though others "
+#~ "were not really interested in a migration, so we stick to .tar.bz2. A few "
+#~ "months ago libarchive got support for the xz format (which is the "
+#~ "successor of lzma), so we switched to it. pacman-g2 still\n"
+#~ "support .tar.gz and .tar.bz2 as well, and the package extension is .fpm "
+#~ "all the time to make it clear that it's a Frugalware package."
+#~ msgstr ""
+#~ "FPM paketleri en temelinde .tar.gz paketleriydi, bir süre sonra lbzip2 "
+#~ "sıkıştırmasına olanak sağlayan libarchive'ı entegre ettik. Hayat güzeldi, "
+#~ "sonra Izma geldi, ve ben libarchive desteğini ekledim, aslında diğerleri "
+#~ "entegre etme konusunda çok da istekli değillerdi.Birkaç ay sonra "
+#~ "libarchive xz dosya biçimi desteğini aldı(bu Izma'nın başarısıdır) bu "
+#~ "yüzden biz de buna dönüştürdük. pacman-g2 hala\n"
+#~ ".tar.gz ve .tar.bz2 dosya sıkıştırma biçimlerini destekler, ve bunun bir "
+#~ "Frugalware paketi olduğunu açıkca belirtmek için dosya uzantısı herzaman ."
+#~ "fpm olacaktır."
+
+#~ msgid "What's the difference between Arch and Frugalware?"
+#~ msgstr "Arch ve Frugalware arasındaki fark nedir?"
+
+#~ msgid ""
+#~ "Many people think that as we use basically the same <tt>pacman</tt> as <a "
+#~ "href=\"http://www.archlinux.org\">Arch Linux</a> then the two "
+#~ "distribution are the same. Originally the package manager was the same, "
+#~ "there is almost nothing other similar. There are also other major "
+#~ "differences. We have console (such as <tt>grubconfig</tt> and "
+#~ "<tt>netconfig</tt>) and graphical (such as <tt>gService</tt> and "
+#~ "<tt>gFPM</tt>) configuration tools. At the end of the installation you "
+#~ "will get a working system with x, network, mouse (and much more "
+#~ "configured. We have an unique repo (stable or current) and it's easy to "
+#~ "contribute with new packages, so we don't need such thing like <a href="
+#~ "\"http://aur.archlinux.org/\">AUR</a>. We officially support PPC arch."
+#~ msgstr ""
+#~ "Birçok insan bizim <a href=\"http://www.archlinux.org\">Arch Linux</a> "
+#~ "ile aynı <tt>pacman</tt>'i kullandığımızı ve dolayısıyla iki dağıtımının "
+#~ "aynı olduğunu düşünür. Temelde paket yöneticisi aynıdır, bundan başka bir "
+#~ "benzerlik yoktur. Bunun haricinde belirgin farklarda mevcuttur. Biz "
+#~ "terminal  (<tt>grubconfig</tt> ve <tt>netconfig</tt> gibi) ve görsel "
+#~ "(<tt>gService</tt> ve <tt>gFPM</tt>gibi) yapılandırma araçlarımız vardır. "
+#~ "Kurulum sonunda çalışan bir X ortamı, ağ sistemi, fareniz olur ve yeni "
+#~ "paketleri oluşturmanız oldukça kolaydır, bu yüzden <a href=\"http://aur."
+#~ "archlinux.org/\">AUR</a> gibi birşeye ihtiyacımız yoktur. Biz resmi "
+#~ "olarak PPC mimarisini destekleriz."
+
+#~ msgid "Question"
+#~ msgstr "Soru"
+
+#~ msgid "Answer"
+#~ msgstr "Cevap"
 
 #~ msgid "National sites"
 #~ msgstr "Ulusal siteler"
