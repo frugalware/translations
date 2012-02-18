@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-17 01:49+0100\n"
-"PO-Revision-Date: 2012-02-17 06:54+0200\n"
+"POT-Creation-Date: 2012-02-18 01:49+0100\n"
+"PO-Revision-Date: 2012-02-18 13:33+0200\n"
 "Last-Translator: Michel <michel.hermier@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fr\n"
@@ -957,7 +957,8 @@ msgstr "Installation hors ligne, installation réseau disponible (netboot)"
 # type: Bullet: '* '
 #. type: Plain text
 #: quickref.txt:19
-msgid "Prebuilt CD/DVD, USB, TFTP images are available"
+#, fuzzy
+msgid "Prebuilt CD/DVD/USB hybrid, TFTP images are available"
 msgstr "Des images CD/DVD, USB, TFTP sont disponibles"
 
 # type: Bullet: '* '
@@ -1009,6 +1010,7 @@ msgstr "Ne pas avoir peur du mode texte (console)"
 #: install.txt:11
 msgid "Some kind of installation media or set of downloaded packages"
 msgstr ""
+"Une sorte de support d'installation ou un ensemble de paquets téléchargés"
 
 #. type: Title ===
 #: install.txt:12
@@ -1054,7 +1056,7 @@ msgstr "ppc"
 #. type: Plain text
 #: install.txt:27
 msgid "A 32-bit PowerPC CPU - Apple ones have active testers"
-msgstr ""
+msgstr "Un processeur PowerPC 32-bit - Ceux d'Apple sont activement testés"
 
 #. type: Plain text
 #: install.txt:28
@@ -1189,6 +1191,9 @@ msgid ""
 "If you use Virtualbox, don't forget to set the network to `bridged` to avoid "
 "stalled package download during installation!"
 msgstr ""
+"Si vous utilisez Virtualbox, n'oubliez pas de configurer la partie réseau "
+"avec accès par pont `bridge` afin d'éviter de bloquer le transfert des "
+"paquet pendant l'installation."
 
 # type: Plain text
 #. type: Plain text
@@ -1323,40 +1328,33 @@ msgstr ""
 # type: Plain text
 #. type: Title ===
 #: install.txt:114
-#, no-wrap
-msgid "USB image"
+#, fuzzy, no-wrap
+msgid "USB isohybrid image"
 msgstr "Image USB"
 
-# type: Plain text
 #. type: Plain text
-#: install.txt:120
+#: install.txt:119
 msgid ""
-"This is a disk image (MBR + partition table + partition data), for USB pen/"
-"thumb drives. The functionalities and requirements are similar to the "
-"network install ISO image (eg. you need a working network connection for "
-"installing packages)."
+"The ISO images you would use to burn the CD now also double as the USB image "
+"as well. They are installed the same way as the old USB images were.  All "
+"you do is copy them directly to the USB stick's device node."
 msgstr ""
-"C'est une image disque (MBR + table des partitions + partition de données) "
-"pour les périphériques USB. Les fonctionnalités et exigences matérielles "
-"sont similaires à l'ISO de l'installation par le réseau (net install) (c'est-"
-"à-dire que vous avez besoin d'une connexion réseau fonctionnelle pour "
-"installer les paquets)."
 
 #. type: Plain text
-#: install.txt:122
+#: install.txt:121
 msgid "Pros: No need to burn any CD, you can reuse the media."
 msgstr ""
 "Avantages: Pas de besoin de graver aucun CD, vous pouvez réutiliser le média."
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:124
+#: install.txt:123
 msgid "Cons: You have to be able to boot from USB."
 msgstr "Inconvénients: Vous devez pouvoir démarrer depuis la clef USB."
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:129
+#: install.txt:127
 msgid ""
 "Writing the image to a USB stick will destroy all the data on the drive. Be "
 "careful when specifying target devices / partitions othervise you can easily "
@@ -1368,7 +1366,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:132
+#: install.txt:130
 msgid ""
 "The following command will install the image to the USB stick on any recent "
 "Linux system:"
@@ -1378,7 +1376,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:135
+#: install.txt:133
 msgid ""
 "Pay attention to see what /dev/sdX device your USB stick is, for example by "
 "having a look at the contents of the `/dev/disk/by-id/` directory!"
@@ -1388,14 +1386,14 @@ msgstr ""
 
 # type: Plain text
 #. type: delimited block -
-#: install.txt:138
-#, no-wrap
-msgid "# dd if=frugalware-<version>-<arch>-usb.img of=/dev/sdX\n"
+#: install.txt:136
+#, fuzzy, no-wrap
+msgid "# dd if=frugalware-<version>-<arch>-cd1.iso of=/dev/sdX\n"
 msgstr "# dd if=frugalware-<version>-<arch>-usb.img of=/dev/sdX\n"
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:145
+#: install.txt:142
 msgid ""
 "You might be able to use a similar tool (link:http://www.chrysocome.net/dd"
 "[like this]) on Windows systems as well, but it seems only supports "
@@ -1410,7 +1408,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:149
+#: install.txt:145
 msgid ""
 "On PPC, create a partition of type \"Apple_Bootstrap\" on your USB stick "
 "using `mac-fdisk` and extract the image there. For example:"
@@ -1420,7 +1418,7 @@ msgstr ""
 
 # type: Plain text
 #. type: delimited block -
-#: install.txt:162
+#: install.txt:158
 #, no-wrap
 msgid ""
 "# dd if=/dev/zero of=/dev/sda bs=1M count=1\n"
@@ -1449,7 +1447,7 @@ msgstr ""
 
 # type: Plain text
 #. type: delimited block -
-#: install.txt:165
+#: install.txt:161
 #, no-wrap
 msgid ""
 "Block size=512, Number of Blocks=1014784\n"
@@ -1460,7 +1458,7 @@ msgstr ""
 
 # type: Plain text
 #. type: delimited block -
-#: install.txt:174
+#: install.txt:170
 #, no-wrap
 msgid ""
 "Command (? for help): C\n"
@@ -1483,7 +1481,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:181
+#: install.txt:177
 msgid ""
 "On PPC, to boot from a USB stick, you will need to use the Open Firmware "
 "prompt, since Open Firmware does not search USB storage devices by default. "
@@ -1498,7 +1496,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:185
+#: install.txt:181
 msgid ""
 "You will need to work out where the USB storage device appears in the device "
 "tree. Type `dev / ls` and `devalias` at the Open Firmware prompt to get a "
@@ -1511,13 +1509,13 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:187
+#: install.txt:183
 msgid "Example, in case the path is `/pci@f2000000/usb@1b`:"
 msgstr "Par exemple, dans ce cas le chemin est `/pci@f2000000/usb@1b`:"
 
 # type: Plain text
 #. type: delimited block -
-#: install.txt:191
+#: install.txt:187
 #, no-wrap
 msgid ""
 "devalias usb0 /pci@f2000000/usb@1b\n"
@@ -1528,39 +1526,39 @@ msgstr ""
 
 # type: Plain text
 #. type: Title ===
-#: install.txt:193
+#: install.txt:189
 #, no-wrap
 msgid "TFTP image"
 msgstr "Image TFTP"
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:196
+#: install.txt:192
 msgid "This is a floppy image, for a very special case:"
 msgstr ""
 "Ceci est une image de disquette, pour une utilisation très particulière:"
 
 # type: Bullet: '* '
 #. type: Plain text
-#: install.txt:198
+#: install.txt:194
 msgid "you want to do a network installation"
 msgstr "vous voulez faire une installation réseau"
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:199
+#: install.txt:195
 msgid "you don't want to / can't use CDs"
 msgstr "vous ne voulez/pouvez pas utiliser de CDs"
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:200
+#: install.txt:196
 msgid "you don't want to / can't boot from an USB stick"
 msgstr "vous ne voulez/pouvez pas démarrer depuis une clef USB"
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:201
+#: install.txt:197
 msgid "you can boot from a network card, but your BIOS does not supports so"
 msgstr ""
 "vous pouvez démarrer depuis une carte réseau, mais votre BIOS ne le supporte "
@@ -1568,13 +1566,13 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:202
+#: install.txt:198
 msgid "you have a floppy drive"
 msgstr "vous possédez un lecteur de disquette"
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:204
+#: install.txt:200
 msgid "Pros: In some cases this is the only way you can install Frugalware"
 msgstr ""
 "Avantages: Dans certains cas c'est la seule façon que vous pouvez utiliser "
@@ -1582,7 +1580,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:206
+#: install.txt:202
 msgid "Cons: You need a bootable network card and a working TFTP server"
 msgstr ""
 "Inconvénients: Vous avez besoin d'une carte réseau bootable et d'un serveur "
@@ -1590,14 +1588,14 @@ msgstr ""
 
 # type: Plain text
 #. type: Title ===
-#: install.txt:207
+#: install.txt:203
 #, no-wrap
 msgid "Fwbootstrap (self-contained chroot)"
 msgstr "Fwbootstrap (chroot auto-contenu)"
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:212
+#: install.txt:208
 msgid ""
 "This is a tarball which has to be downloaded and unpacked. Mostly useful for "
 "developers who can compile packages in this build environment on a non-"
@@ -1610,20 +1608,20 @@ msgstr ""
 
 # type: Plain text
 #. type: Block title
-#: install.txt:213
+#: install.txt:209
 #, no-wrap
 msgid "Usage example:"
 msgstr "Exemple d'utilisation:"
 
 # type: Bullet: '1) '
 #. type: Plain text
-#: install.txt:215
+#: install.txt:211
 msgid "Download the tarball"
 msgstr "Télécharger l'archive"
 
 # type: Plain text
 #. type: delimited block -
-#: install.txt:219
+#: install.txt:215
 #, no-wrap
 msgid ""
 "$ wget ftp://ftp5.frugalware.org/packages/frugalware/pub/frugalware/\\\n"
@@ -1634,26 +1632,26 @@ msgstr ""
 
 # type: Bullet: '2) '
 #. type: Plain text
-#: install.txt:222
+#: install.txt:218
 msgid "Unpack it"
 msgstr "Décompacter la"
 
 # type: Plain text
 #. type: delimited block -
-#: install.txt:225
+#: install.txt:221
 #, no-wrap
 msgid "$ tar xvjf fwchroot-<version>-<arch>.tar.bz2\n"
 msgstr "$ tar xvjf fwchroot-<version>-<arch>.tar.bz2\n"
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:228
+#: install.txt:224
 msgid "Enter the chroot."
 msgstr "Entrez dans le chroot."
 
 # type: Plain text
 #. type: delimited block -
-#: install.txt:232
+#: install.txt:228
 #, no-wrap
 msgid ""
 "$ cd fwchroot-<version>-<arch>\n"
@@ -1664,13 +1662,13 @@ msgstr ""
 
 # type: Bullet: '4) '
 #. type: Plain text
-#: install.txt:235
+#: install.txt:231
 msgid "Use it (build a package or two)"
 msgstr "Utiliser le (pour construire un paquet ou deux)"
 
 # type: Bullet: '5) '
 #. type: Plain text
-#: install.txt:237
+#: install.txt:233
 msgid ""
 "Exit from the shell and fwbootstrap will unmount the necessary dirs for you."
 msgstr ""
@@ -1679,7 +1677,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:240
+#: install.txt:236
 msgid ""
 "You can get a list of installed packages in the chroot with issuing the "
 "'pacman-g2 -Q' command."
@@ -1689,14 +1687,14 @@ msgstr ""
 
 # type: Plain text
 #. type: Title ===
-#: install.txt:241
+#: install.txt:237
 #, no-wrap
 msgid "A manual bootstrap"
 msgstr "Un bootstrap manuel"
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:245
+#: install.txt:241
 msgid ""
 "So you want a complete Frugalware installed into /mnt/foo. First of all, you "
 "must have a running Frugalware where you are able to do"
@@ -1707,14 +1705,14 @@ msgstr ""
 
 # type: Plain text
 #. type: delimited block -
-#: install.txt:248
+#: install.txt:244
 #, no-wrap
 msgid "# pacman-g2 -Sy core base -r /mnt/foo\n"
 msgstr "# pacman-g2 -Sy core base -r /mnt/foo\n"
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:251
+#: install.txt:247
 msgid "which installs the core and base pkgs into it. But beware:"
 msgstr ""
 "ce qui y installera le système de base et les paquet primordiaux. Mais "
@@ -1722,7 +1720,7 @@ msgstr ""
 
 # type: Plain text
 #. type: delimited block -
-#: install.txt:259
+#: install.txt:255
 #, no-wrap
 msgid ""
 "$ pacman-g2 -Qo /etc/sysconfig/keymap\n"
@@ -1741,12 +1739,12 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:262
+#: install.txt:258
 msgid "so you have to copy or forge them by hand."
 msgstr "vous aurez donc à les copier ou à les écrire à la main."
 
 #. type: Plain text
-#: install.txt:266
+#: install.txt:262
 msgid ""
 "A script is http://rafaelmartins.eng.br/en-us/projects/fwinstall/[available] "
 "to somewhat automate this bootstrap method."
@@ -1755,7 +1753,7 @@ msgstr ""
 "[disponible) pour automatiser cette méthode du bootstrap."
 
 #. type: Plain text
-#: install.txt:271
+#: install.txt:267
 msgid ""
 "Manual bootstrap is the only way to install the arm port at the moment. "
 "Follow the http://elentir.sleipnir.fr/?p=489&lang=en[qemu] and http://"
@@ -1763,21 +1761,20 @@ msgid ""
 "howtos if you need more info."
 msgstr ""
 "Actuellement, la seule façon d'installer le port arm est d'utiliser "
-"bootstrap. Suivez les guides arm-bootstrap pour "
-"http://elentir.sleipnir.fr/?p=489&lang=en[qemu] et pour "
-"http://vmiklos.hu/blog/frugalware-arm-install-howto[machine physique] si "
-"vous avez besoin de plus d'informations."
+"bootstrap. Suivez les guides arm-bootstrap pour http://elentir.sleipnir.fr/?"
+"p=489&lang=en[qemu] et pour http://vmiklos.hu/blog/frugalware-arm-install-"
+"howto[machine physique] si vous avez besoin de plus d'informations."
 
 # type: Plain text
 #. type: Title ==
-#: install.txt:272
+#: install.txt:268
 #, no-wrap
 msgid "Obtaining a source media"
 msgstr "Obtenir un média source"
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:278
+#: install.txt:274
 #, no-wrap
 msgid ""
 "A Frugalware installation media can be obtained from several sources. You can\n"
@@ -1787,7 +1784,7 @@ msgstr "Un média d'installation de Frugalware peut être obtenu à partir de pl
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:281
+#: install.txt:277
 msgid ""
 "The following examples explains how you can get the iso images. You have to "
 "replace respectively `$version$`, `$arch$` and `$media$` to get the wanted "
@@ -1799,13 +1796,13 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:283
+#: install.txt:279
 msgid "Via FTP:"
 msgstr "Via FTP:"
 
 # type: Plain text
 #. type: delimited block -
-#: install.txt:287
+#: install.txt:283
 #, no-wrap
 msgid ""
 "$ wget ftp://ftp3.frugalware.org/mirrors/frugalware/pub/frugalware/\\\n"
@@ -1816,13 +1813,13 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:290
+#: install.txt:286
 msgid "Via HTTP:"
 msgstr "Via HTTP:"
 
 # type: Plain text
 #. type: delimited block -
-#: install.txt:294
+#: install.txt:290
 #, no-wrap
 msgid ""
 "$ wget http://www5.frugalware.org/linux/frugalware/pub/frugalware/\\\n"
@@ -1833,13 +1830,13 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:297
+#: install.txt:293
 msgid "Via rsync:"
 msgstr "Via rsync:"
 
 # type: Plain text
 #. type: delimited block -
-#: install.txt:301
+#: install.txt:297
 #, no-wrap
 msgid ""
 "$ rsync -avP rsync://rsync4.frugalware.org/ftp/pub/linux/distributions/\\\n"
@@ -1850,7 +1847,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:305
+#: install.txt:301
 msgid ""
 "More info and the full list of mirrors can be found at our http://frugalware."
 "org/download[download page]."
@@ -1860,14 +1857,14 @@ msgstr ""
 
 # type: Plain text
 #. type: Title ==
-#: install.txt:306
+#: install.txt:302
 #, no-wrap
 msgid "Using packages from CD/DVD"
 msgstr "Utiliser des paquets depuis les CD/DVD"
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:310
+#: install.txt:306
 msgid ""
 "You have a skeleton system installed from CD/DVD, and you want to use the "
 "packages from the media afterwards. There are two methods."
@@ -1877,7 +1874,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:315
+#: install.txt:311
 msgid ""
 "First is the easiest, but needs quite a lot of space (and caution not to use "
 "pacman-g2 -Scc ;) ): mount the media and install all the .fpm's found in "
@@ -1890,7 +1887,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:318
+#: install.txt:314
 msgid ""
 "Second is a bit more challenging, but more usable. Add a new line to '/etc/"
 "pacman-g2/repos/frugalware' before the other Server lines:"
@@ -1901,25 +1898,25 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:320
+#: install.txt:316
 msgid "`Server = file:///media/dvd/frugalware-i686`"
 msgstr "`Server = file:///media/dvd/frugalware-i686`"
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:322
+#: install.txt:318
 msgid "On x86_64, use this one:"
 msgstr "Pour x86_64, utilisez ceci:"
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:324
+#: install.txt:320
 msgid "`Server = file:///media/dvd/frugalware-x86_64`"
 msgstr "`Server = file:///media/dvd/frugalware-x86_64`"
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:327
+#: install.txt:323
 msgid ""
 "The media should be mounted on /media/dvd, or change the Server lines "
 "appropriately."
@@ -1929,7 +1926,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:331
+#: install.txt:327
 msgid ""
 "Also you can only install packages then from the given media, so you have to "
 "insert the first CD if you install a package from the first CD and so on. "
@@ -1942,14 +1939,14 @@ msgstr ""
 
 # type: Plain text
 #. type: Title ==
-#: install.txt:332
+#: install.txt:328
 #, no-wrap
 msgid "The installation process"
 msgstr "Le processus d'installation"
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:337
+#: install.txt:333
 msgid ""
 "Do not worry if you misconfigured something! Just press <Cancel> in the next "
 "dialog and you will see the menu. Just go back to the given part and you can "
@@ -1961,7 +1958,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:343
+#: install.txt:339
 msgid ""
 "After downloading and burning the CDs/DVD, insert the first CD/DVD to your "
 "CD/DVD drive, and reboot your computer. In the grub menu, you can disable "
@@ -1977,7 +1974,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:347
+#: install.txt:343
 msgid ""
 "At the first dialog, you should select your language. If your language is "
 "not on the list, you should choose a language fits for you. You can change "
@@ -1989,7 +1986,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:350
+#: install.txt:346
 msgid ""
 "The next dialog is only a greetings. Just push <Enter>. Now it is time to "
 "select your keyboard type. Pick your one, then hit <OK>!"
@@ -2000,7 +1997,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:353
+#: install.txt:349
 msgid ""
 "After selecting your keyboard map, setup searches for installation media "
 "automatically."
@@ -2010,7 +2007,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:356
+#: install.txt:352
 msgid ""
 "If you use a netinstall image follow these sub-steps. Otherwise jump to the "
 "partitioning point!"
@@ -2020,7 +2017,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:360
+#: install.txt:356
 msgid ""
 "These steps sets up your network options during the install. When you "
 "finished installing Frugalware the installer will ask for network options "
@@ -2033,7 +2030,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:364
+#: install.txt:360
 msgid ""
 "Now you should select your connection type. The installer uses the netconfig "
 "utility. You can also find the documentation for netconfig in this "
@@ -2046,7 +2043,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:368
+#: install.txt:364
 msgid ""
 "After setting up the network you can choose a mirror for downloading the "
 "packages.  The installer will try other mirrors too. This feature is useful "
@@ -2059,7 +2056,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:375
+#: install.txt:371
 msgid ""
 "The next step is partitioning. Frugalware setup displays a list of your hard "
 "disks, you should choose one of them to partition it with a program. You can "
@@ -2083,7 +2080,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:380
+#: install.txt:376
 msgid ""
 "On PPC, first you *must* create an `Apple Partition Map` and an `Apple "
 "Bootstrap` first (in this order). Use the `i` and `b` commands of `mac-"
@@ -2097,7 +2094,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:384
+#: install.txt:380
 msgid ""
 "The following list displays your swap partitions, here you can choose which "
 "swap partitions are allowed to be used by Frugalware. Then setup formats "
@@ -2110,7 +2107,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:392
+#: install.txt:388
 msgid ""
 "In the next window, you should select your root partition first, then you "
 "can choose if you wish to format it or keep the existing filesystem on it. "
@@ -2131,7 +2128,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:396
+#: install.txt:392
 msgid ""
 "After having your Linux partitions mounted, you should do the same with your "
 "DOS/Windows ones. Setup will display a list of them, if any exists.  You "
@@ -2143,7 +2140,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:403
+#: install.txt:399
 msgid ""
 "Now it is the time to select if you want to use expert menus or not. If you "
 "choose expert menu after selecting the categories you will be able to pick "
@@ -2163,7 +2160,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:406
+#: install.txt:402
 msgid ""
 "If you choose the normal menu (it's the default) then you will only see the "
 "groups, but not the individual packages. So after picking the groups "
@@ -2175,7 +2172,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:411
+#: install.txt:407
 msgid ""
 "The next step is to select package categories. If you will not use KDE or "
 "GNOME, you may probably want to disable them. In most cases, it is not a "
@@ -2190,7 +2187,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:415
+#: install.txt:411
 msgid ""
 "If the group list is empty that means you probably misconfigured your "
 "network. Please go back and try to fix it. You can also test your connection "
@@ -2203,7 +2200,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: install.txt:419
+#: install.txt:415
 msgid ""
 "Setup will install the packages your selected from the first CD. When it is "
 "done, you will be prompted to insert the next Frugalware install.  If you "
@@ -4581,7 +4578,7 @@ msgid ""
 "good reason not fixing / implementing them. You can see a list of such "
 "topics in the http://wiki.frugalware.org/index.php/Bugs_FAQ[wiki]."
 msgstr ""
-"Quelques sujet sont régulièrement demandé / rapporté mais mais nous avons de "
+"Quelques sujet sont régulièrement demandé / rapporté mais nous avons de "
 "bonnes raisons de ne pas les résoudre / implémenter. Vous pouvez voir une "
 "liste de tels sujet dans le http://wiki.frugalware.org/Bugs_FAQ[wiki]."
 
@@ -8725,8 +8722,7 @@ msgid ""
 "systemctl enable fw32.service (required for boot-time fw32 root mounting)\n"
 msgstr ""
 "fw32-create\n"
-"systemctl enable fw32.service (nécessaire pour le montage de fw32 en tant "
-"que root au démarrage)\n"
+"systemctl enable fw32.service (nécessaire pour le montage de fw32 en tant que root au démarrage)\n"
 
 #. type: Title ===
 #: packages.txt:1298
@@ -8810,7 +8806,7 @@ msgstr ""
 #: packages.txt:1345
 #, no-wrap
 msgid "fw32-merge <package>\n"
-msgstr ""
+msgstr "fw32-merge <paquet>"
 
 # type: Plain text
 #. type: Title ===
@@ -8823,19 +8819,19 @@ msgstr "Création d'une image système"
 #: packages.txt:1355
 #, no-wrap
 msgid "fw32-clean\n"
-msgstr ""
+msgstr "fw32-clean"
 
 #. type: Title ===
 #: packages.txt:1359
 #, no-wrap
 msgid "Deleting chroot"
-msgstr ""
+msgstr "Suppression du chroot"
 
 #. type: delimited block -
 #: packages.txt:1365
 #, no-wrap
 msgid "fw32-delete\n"
-msgstr ""
+msgstr "fw32-delete"
 
 # type: Plain text
 #. type: Title ===
@@ -8853,71 +8849,82 @@ msgid ""
 "rm -f /var/cache/pacman-g2/pkg/*i686.fpm (only needed if you want to delete the fpm cache)\n"
 "pacman-g2 -R fw32\n"
 msgstr ""
+"fw32-delete\n"
+" systemctl disable fw32.service # nécessaire seulement si vous l'avez activé "
+"pendant la configuration\n"
+" rm -f /var/cache/pacman-g2/pkg/*i686.fpm # nécessaire seulement si vous "
+"voulez supprimer le cache fpm\n"
+" pacman-g2 -R fw32\n"
 
 #. type: Title ===
 #: packages.txt:1382
 #, no-wrap
 msgid "Running a command within the chroot"
-msgstr ""
+msgstr "Exécuter une commande à l'intérieur du chroot"
 
 #. type: Plain text
 #: packages.txt:1385
 msgid "Commands run will have the permissions of the user."
-msgstr ""
+msgstr "L'exécution des commandes aura les permissions de l'utilisateur."
 
 #. type: Plain text
 #: packages.txt:1387
 msgid "To get a shell:"
-msgstr ""
+msgstr "Pour obtenir un terminal:"
 
 #. type: delimited block -
 #: packages.txt:1390
 #, no-wrap
 msgid "fw32-run\n"
-msgstr ""
+msgstr "fw32-run\n"
 
 #. type: Plain text
 #: packages.txt:1393
 msgid "To run a specific command:"
-msgstr ""
+msgstr "Pour exécuter une commande spécifique:"
 
 #. type: delimited block -
 #: packages.txt:1396
 #, no-wrap
 msgid "fw32-run <command> [<arguments>]\n"
-msgstr ""
+msgstr "fw32-run <commande> [<arguments>]\n"
 
 # type: Plain text
 #. type: Title ===
 #: packages.txt:1398
-#, fuzzy, no-wrap
+#, no-wrap
+#, fuzzy
 msgid "Commands"
-msgstr "commandes."
+msgstr "Commandes."
 
 #. type: Plain text
 #: packages.txt:1401
 msgid "fw32-clean: Clean the cache of old packages."
-msgstr ""
+msgstr "fw32-clean: Supprime les anciens paquets du cache."
 
 #. type: Plain text
 #: packages.txt:1405
 msgid "fw32-create: Create the initial chroot."
-msgstr ""
+msgstr "fw32-create: Crée le chroot initial."
 
 #. type: Plain text
 #: packages.txt:1407
 msgid "fw32-delete: Delete the chroot, ensuring everything is umounted."
-msgstr ""
+msgstr "fw32-delete: Supprime le chroot en s'assurant que tout est démonté."
 
 #. type: Plain text
 #: packages.txt:1411
 msgid "fw32-install: Install all packages and groups specified to the chroot."
 msgstr ""
+"fw32-install: Installe tous les paquets et tous les groupes indiqués au/vers "
+"le chroot."
 
 #. type: Plain text
 #: packages.txt:1415
 msgid "fw32-install-package: Install all i686 FPMs specified to chroot."
 msgstr ""
+"fw32-install-package: Installe tous les FPMs i686 indiqués au/vers le "
+"chroot."
 
 #. type: Plain text
 #: packages.txt:1419
@@ -17812,6 +17819,19 @@ msgstr ""
 #: upgrade.txt:86
 msgid "Done!"
 msgstr "Fini!"
+
+# type: Plain text
+#~ msgid ""
+#~ "This is a disk image (MBR + partition table + partition data), for USB "
+#~ "pen/thumb drives. The functionalities and requirements are similar to the "
+#~ "network install ISO image (eg. you need a working network connection for "
+#~ "installing packages)."
+#~ msgstr ""
+#~ "C'est une image disque (MBR + table des partitions + partition de "
+#~ "données) pour les périphériques USB. Les fonctionnalités et exigences "
+#~ "matérielles sont similaires à l'ISO de l'installation par le réseau (net "
+#~ "install) (c'est-à-dire que vous avez besoin d'une connexion réseau "
+#~ "fonctionnelle pour installer les paquets)."
 
 #~ msgid "flightgear"
 #~ msgstr "flightgear"
