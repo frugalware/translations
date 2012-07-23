@@ -1,0 +1,207 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-28 02:08+0200\n"
+"PO-Revision-Date: 2012-01-23 18:29+0200\n"
+"Last-Translator: Dawid <maxdawid@o2.pl>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Pootle 2.0.2\n"
+
+#: ../configsave.sh:12 ../fileswap.sh:11 ../fpm2lzm.sh:33
+msgid "Only root can run %s.\\n"
+msgstr "Tylko root może uruchomić %s.\n"
+
+#: ../configsave.sh:23
+msgid "usage: %s /media/sda?/%s\\n"
+msgstr "użycie: %s /media/sda?/%s\n"
+
+#: ../configsave.sh:24
+msgid "Not a regular file: %s\\n"
+msgstr "Nie jest zwykłym plikiem: %s\n"
+
+#: ../configsave.sh:28
+msgid "This script can work only from FWLive."
+msgstr "Ten skrypt może pracować tylko z FWLive."
+
+#: ../configsave.sh:40
+msgid "Saving changes to %s... "
+msgstr "Zapisuję zmiany do %s..."
+
+#: ../configsave.sh:45
+msgid "Can't write config to %s\\n"
+msgstr "Nie mogę zapisać konfiguracji do %s\n"
+
+#: ../configsave.sh:47 ../configsave.sh:58
+msgid "done."
+msgstr "zrobione."
+
+#: ../configsave.sh:55
+msgid "Restoring changes from %s... "
+msgstr "Wczytuję zmiany z %s..."
+
+#: ../fileswap.sh:18
+msgid "File Swap - create swap as a file in writable filesystem"
+msgstr "Plik Swap - tworzy swap jako plik na systemie plików"
+
+#: ../fileswap.sh:19
+msgid "usage: %s [/media/partition/new_name.swap] [size MB]\\n"
+msgstr "użycie: %s [/media/partition/new_name.swap] [rozmiar MB]\n"
+
+#: ../fileswap.sh:29
+msgid "you must use path in /media"
+msgstr "musisz użyć ścieżki w /media"
+
+#: ../fileswap.sh:33
+msgid "creating empty %s\\n"
+msgstr "tworzenie pustego %s\n"
+
+#: ../fileswap.sh:37
+msgid "setting up Linux swap area on %s\\n"
+msgstr "utworzenie Linuxowej przestrzeni swap na %s\n"
+
+#: ../fileswap.sh:41
+msgid "activating swap on %s\\n"
+msgstr "aktywacja swap na %s\n"
+
+#: ../fpm2lzm.sh:37
+msgid "usage: %s out.lzm pkg1 [ pkg2 [ ... ] ]\\n"
+msgstr "użycie: %s out.lzm pkg1 [ pkg2 [ ... ] ]\n"
+
+#: ../rc.config.sh:30
+msgid "Searching for a previous FWLive configuration file"
+msgstr "Szukam starszych plików konfiguracyjnych FWLive"
+
+#: ../rc.config.sh:33 ../rc.config.sh:67
+msgid "Found an FWLive config file."
+msgstr "Znaleziono plik konfiguracyjny FWLive."
+
+#: ../rc.config.sh:34
+msgid "Do you want to restore saved settings from %s?\\n"
+msgstr "Chcesz wczytać zapisane ustawienia z %s?\n"
+
+#: ../rc.config.sh:39 ../rc.config.sh:73
+msgid "No previous FWLive config file found."
+msgstr "Nie znaleziono pliku konfiguracyjnego FWLive."
+
+#: ../rc.config.sh:48
+msgid "enter=confirm"
+msgstr "enter=zatwierdź"
+
+#: ../rc.config.sh:56
+msgid "\\nTimed out. Never mind, skipped."
+msgstr ""
+"\n"
+" Upłynął limit czasu. Nieważne, pomijane."
+
+#. automatically restore/save settings in the case fwliveconf.lzm is found
+#. in root directory of any partition. Only the first one is used.
+#: ../rc.config.sh:64
+msgid "Storing FWLive configuration file"
+msgstr "Przechowywanie pliku konfiguracyjnego FWLive"
+
+#: ../rc.config.sh:68
+msgid "Save settings to %s?\\n"
+msgstr "Zapisać ustawienia do %s?\n"
+
+#: ../rc.config.sh:74
+msgid "Do you want to save settings?"
+msgstr "Chcesz zachować ustawienia?"
+
+#: ../rc.config.sh:75
+msgid "Where do you want to save your settings? [example: /media/hda1]: "
+msgstr "Gdzie chcesz zapisać ustawienia ? [przykład: /media/hda1]:"
+
+#: ../rc.config.sh:81
+msgid "No such directory."
+msgstr "Nie ma takiego katalogu."
+
+#: ../rc.fsupd.sh:16
+msgid "fstab updater daemon"
+msgstr "demon aktualizacji fstab"
+
+#: ../rc.fwlive.sh:16
+msgid "\\e[01mWelcome to \\e[01;36mFwlive\\e[0m\\e[01m!\\e[0m"
+msgstr "\\e[01mWitaj w \\e[01;36mFwlive\\e[0m\\e[01m!\\e[0m"
+
+#: ../rc.parse_cmdline.sh:17
+msgid "Parsing /proc/cmdline"
+msgstr "Parsowanie /proc/cmdline"
+
+#. eg. Welcome to FWLive 1.0 by Frugalware
+#: ../parse_cmdline.sh:49
+msgid "Welcome to FWLive %s by %s"
+msgstr "Witaj w FWLive %s według %s"
+
+#: ../parse_cmdline.sh:53
+msgid "The system is up and running now."
+msgstr "System jest uruchomiony."
+
+#: ../parse_cmdline.sh:54
+msgid "Login as '%s', with password '%s' or"
+msgstr "Zaloguj się jako '%s' używając hasła '%s' lub"
+
+#: ../parse_cmdline.sh:56
+msgid "login as 'root', with password '%s', both without quotes, lowercase."
+msgstr ""
+"zaloguj się jako 'root' używając hasła '%s', oba bez apostrofów, małymi "
+"literami."
+
+#: ../parse_cmdline.sh:57
+msgid "After login, try the following commands:"
+msgstr "Po zalogowaniu spróbuj następujących poleceń:"
+
+#: ../parse_cmdline.sh:58
+msgid ""
+"mc .... to start Midnight Commander (edit/copy/move/create/delete files)"
+msgstr ""
+"mc .... aby uruchomić Midnight Commander (edytuj/kopiuj/przenoś/twórz/usuwaj "
+"pliki)"
+
+#: ../parse_cmdline.sh:59
+msgid "configsave/configrestore  - or use - service config save/restore ..."
+msgstr "configsave/configrestore - lub użyj - service config save/restore ..."
+
+#: ../parse_cmdline.sh:60
+msgid "to save and restore all filesystem changes"
+msgstr "do zapisu i przywracania wszystkich zmian systemu plików"
+
+#: ../parse_cmdline.sh:61
+msgid "fileswap .... to create special file for swapping RAM to your harddisk"
+msgstr ""
+"fileswap .... do utworzenia specjalnego pliku na dysku twardym w celu "
+"wymiany pamięci RAM"
+
+#: ../parse_cmdline.sh:62
+msgid "make_disk .... to install FWLive, use make_disk script on FWLive CD"
+msgstr ""
+"make_disk .... do instalacji FWLive, użyj skryptu make_disk na FWLive CD"
+
+#: ../parse_cmdline.sh:63
+msgid ""
+"xstart .... to start KDE with autodetected settings (upon failure vesa "
+"driver will be used)"
+msgstr ""
+"xstart .... do uruchomienia KDE z autowykrywaniem ustawień (w przypadku "
+"niepowodzenia, zostanie użyty sterownik vesa)"
+
+#: ../parse_cmdline.sh:64
+msgid "setup .... a script for your own settings"
+msgstr "setup .... skrypt dla twoich własnych ustawień"
+
+#: ../parse_cmdline.sh:65
+msgid ""
+"When finished, use 'poweroff' or 'reboot' command and wait until it completes"
+msgstr ""
+"Kiedy skończysz użyj polecenia 'poweroff' lub 'reboot' i czekaj na jego "
+"zakończenie"
